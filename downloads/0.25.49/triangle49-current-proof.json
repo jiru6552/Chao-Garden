@@ -1,0 +1,473 @@
+{
+  "version": "0.25.49",
+  "source_parent": "codex/download-0.25.48",
+  "parent_commit": "4578f52f56d6b2accb6c159843ca5564b74ee5fc",
+  "parent048_jar_sha256": "826ee746af8623d1e27f66e350072b7cc220b84c1b9f6d299f6275d41839843c",
+  "exit_code": 1,
+  "summary": "Triangle transition samples=267696 failures=25 minHandHeadPixels=-0.54432297",
+  "failure_tick_distribution": "{0=10, 1=8, 2=7}",
+  "result_sha256": "99bce5827d20d9d3aba51fef07728eb609dda4bc14e2c0534e903aacba50b6f8",
+  "byte_identical_to_previous_048_047_baseline": true,
+  "exact_test_helper_sources_unchanged": {
+    "src/lionfishTest/java/com/chaogarden/client/TriangleTransitionRigTest.java": "9573f9d3ff4c36319e2d6ad2ee7fab2f2fbc0c9b0c3e30c33f18c4d01b3734e7",
+    "src/lionfishTest/java/com/chaogarden/client/TrumpetRigTest.java": "e3f41f85716ca633d132d25e6d3ae256a98296816bd8590127d93522d50dbbaf",
+    "src/lionfishTest/java/com/chaogarden/client/PropMeshClearance.java": "5378e8bd4d35b3fb694124e654470e416a690871d2cf7264152535eeaf892f28",
+    "src/main/java/com/chaogarden/client/Toy02533PoseVisualSmoke.java": "e10d4bbfba0993b124de73174b532d252ba9090a6c41127114e022f992ca4b4c",
+    "src/main/java/com/chaogarden/test/ToyVariantCases02522.java": "09467df0939062f27e414147278763ffb8d303d777f591e4708770a5aa213028"
+  },
+  "class_snapshot_stable_before_after_copy": true,
+  "production_classes_loaded": 24,
+  "all_loaded_production_classes_equal_parent048": true,
+  "unchanged_entity_and_clip_resource_files": 122,
+  "loaded_chao_classes": [
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest",
+      "source": "file:/tmp/garden049-triangle-proof/classes/lionfishTest/",
+      "current049_sha256": "242379661ed1001dfe14c7fd7a15953275b7e72f505e552126e77baf44e4b51f",
+      "lionfish_test_fixture": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "e5440cbf11f47ceb5a4e91d1403fc944eec57ba1c9c6ec9abc3b76fe0a8466b4",
+      "parent048_sha256": "e5440cbf11f47ceb5a4e91d1403fc944eec57ba1c9c6ec9abc3b76fe0a8466b4",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "67dfdac398b482e35cd2abc5f75a29b628161b2dd3944ee3d62738371f499c30",
+      "parent048_sha256": "67dfdac398b482e35cd2abc5f75a29b628161b2dd3944ee3d62738371f499c30",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Motion",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "1ad47ecc660dcaae3c4ebb703fb7f7af3eec1a20175877285d1c84b19593efd8",
+      "parent048_sha256": "1ad47ecc660dcaae3c4ebb703fb7f7af3eec1a20175877285d1c84b19593efd8",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Frame",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "5021cb5e3e9acdd0711a018c92e2feec85b7fa855c491e59a825102a26d8e84a",
+      "parent048_sha256": "5021cb5e3e9acdd0711a018c92e2feec85b7fa855c491e59a825102a26d8e84a",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Bone",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "40a6ed53c078cd5e1920af2b7d1dc0d0a55925befe3c58fce23ed14c20fb9ec1",
+      "parent048_sha256": "40a6ed53c078cd5e1920af2b7d1dc0d0a55925befe3c58fce23ed14c20fb9ec1",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Face",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "a89f3d2b76addb5abc02b1b398946ce52e6241b775e42c4c2cc425541fe709e5",
+      "parent048_sha256": "a89f3d2b76addb5abc02b1b398946ce52e6241b775e42c4c2cc425541fe709e5",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Mesh",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "8d55b10365219c9c5c03695ac960beef959b1daba42997c40447eee57b01af04",
+      "parent048_sha256": "8d55b10365219c9c5c03695ac960beef959b1daba42997c40447eee57b01af04",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Pose",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "b8caf42bc3b33ad4d6203c3d16f3f5a5a160ed55412d813534126794460e9082",
+      "parent048_sha256": "b8caf42bc3b33ad4d6203c3d16f3f5a5a160ed55412d813534126794460e9082",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.LionfishTriangleClip",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "95de59cfcc8a2e4d4bea0d0ed1891d4a4c324597d0ee6ef94c87fb2b276ecb4a",
+      "parent048_sha256": "95de59cfcc8a2e4d4bea0d0ed1891d4a4c324597d0ee6ef94c87fb2b276ecb4a",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.toys.TrianglePlayRules",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "b76b230a6b2930ecfadef23771942d6aa09871a16107bbc6760151d5887d0d42",
+      "parent048_sha256": "b76b230a6b2930ecfadef23771942d6aa09871a16107bbc6760151d5887d0d42",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "7cd9d4af919ba5d1c064b98e9c8587e056afc8a054e1337019419b1a3f236b82",
+      "development_fixture": true
+    },
+    {
+      "class": "com.chaogarden.core.ChaoState",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "e929fd81e068cdf0b917e1bf2e0a1c9993d3e3151d3ba0fa45996b7113aba16f",
+      "parent048_sha256": "e929fd81e068cdf0b917e1bf2e0a1c9993d3e3151d3ba0fa45996b7113aba16f",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$Case",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "9372c60ed4ad3fd97341d17d7968f277c3464277d78e7303d2e541bd2f3a146e",
+      "development_fixture": true
+    },
+    {
+      "class": "com.chaogarden.core.GradualEvolutionRules",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "02edc1ffc39814abed194b422e726fd432097369de50a9eb5cea08f01103ceaa",
+      "parent048_sha256": "02edc1ffc39814abed194b422e726fd432097369de50a9eb5cea08f01103ceaa",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.ChaoVariants",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "9d5a2edd7db94557293153f49c9893180b794afe556ddb058f175266463c8673",
+      "parent048_sha256": "9d5a2edd7db94557293153f49c9893180b794afe556ddb058f175266463c8673",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.ChaoVariants$Definition",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "c59100f8add0e29f9792c15bad74a4e5868f995ac93d2ce03d746c9beb4bb9b9",
+      "parent048_sha256": "c59100f8add0e29f9792c15bad74a4e5868f995ac93d2ce03d746c9beb4bb9b9",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.core.ChaoGaitClock",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "08359f3938e3ec1d74a4ce75c4bdb33f45f4c3af7af1cc3bc0cb71170886acf9",
+      "parent048_sha256": "08359f3938e3ec1d74a4ce75c4bdb33f45f4c3af7af1cc3bc0cb71170886acf9",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Expression",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "6359d166c49c5dde7abaaca76b9c2f8f4adf48fb000e786464a37481f008d577",
+      "parent048_sha256": "6359d166c49c5dde7abaaca76b9c2f8f4adf48fb000e786464a37481f008d577",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.toys.MaracasPlayRules",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "e27820d281cc6db31d229c75530bb141f5bf8358d6b895885ee1e3802450c8af",
+      "parent048_sha256": "e27820d281cc6db31d229c75530bb141f5bf8358d6b895885ee1e3802450c8af",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Transition",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "a0941fcf42bb0b4e3c74df02fd11a5c05f41257abd7ed1ce931409fef96e76e2",
+      "parent048_sha256": "a0941fcf42bb0b4e3c74df02fd11a5c05f41257abd7ed1ce931409fef96e76e2",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.TrumpetRigTest",
+      "source": "file:/tmp/garden049-triangle-proof/classes/lionfishTest/",
+      "current049_sha256": "a7a2aae44236d273db9acf341f66b8b2a9ebf5bed1516175d69bf13c397a8dd2",
+      "lionfish_test_fixture": true
+    },
+    {
+      "class": "com.chaogarden.client.PropMeshClearance",
+      "source": "file:/tmp/garden049-triangle-proof/classes/lionfishTest/",
+      "current049_sha256": "4ee1d15a2e8a3044b351fc12d7ac36cbdf9a04724cf4428d2a12cfd658e6c734",
+      "lionfish_test_fixture": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoSittingPose",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "37c9b18036b311814c66de29b6235577dfc725f45687d9f055b7bf8baacc8ff5",
+      "parent048_sha256": "37c9b18036b311814c66de29b6235577dfc725f45687d9f055b7bf8baacc8ff5",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoTriangleAnimation",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "2d2ed668f7bca8f40d80769dbb7127c2d426c560ad9a5c9d03099b0070c3bf79",
+      "parent048_sha256": "2d2ed668f7bca8f40d80769dbb7127c2d426c560ad9a5c9d03099b0070c3bf79",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoInstrumentFocus",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "95db48fb3e1ae582774e1c6b200c96fb93d36aa5e2a3fc460dd2151c2cf7fea1",
+      "parent048_sha256": "95db48fb3e1ae582774e1c6b200c96fb93d36aa5e2a3fc460dd2151c2cf7fea1",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoTrumpetAnimation",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "89ec9fd6a450526d75faf77afc7ebb2e848ef159978a30d108c4f3277865e1ff",
+      "parent048_sha256": "89ec9fd6a450526d75faf77afc7ebb2e848ef159978a30d108c4f3277865e1ff",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.entity.ChaoEntity",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "a3b94be08d5b993843fcd462565f4c6b6b8d195cedc8ef901c486bb902e44188",
+      "parent048_sha256": "a3b94be08d5b993843fcd462565f4c6b6b8d195cedc8ef901c486bb902e44188",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoTambourineAnimation",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "eef9558f5d4fded8d5eef3cbe49bd68ef1ca0d840adf0c6797be9d76ee7bb183",
+      "parent048_sha256": "eef9558f5d4fded8d5eef3cbe49bd68ef1ca0d840adf0c6797be9d76ee7bb183",
+      "equal_parent048": true
+    },
+    {
+      "class": "com.chaogarden.client.Toy02533PoseVisualSmoke",
+      "source": "file:/tmp/garden049-triangle-proof/classes/main/",
+      "current049_sha256": "6ee4d51964239efa3c4b80dbd3dc2669a1aafb4b112adff90dfa70ab5e88dddd",
+      "development_fixture": true
+    }
+  ],
+  "generated_lambdas": [
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007fd69000a650",
+      "source": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007fd69000aee8",
+      "source": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007fd69000b130",
+      "source": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007fd690014bc0",
+      "source": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007fd690014e10",
+      "source": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007fd690015050",
+      "source": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007fd6900152a0",
+      "source": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.LionfishTriangleClip$$Lambda/0x00007fd69001b158",
+      "source": "com.chaogarden.client.LionfishTriangleClip"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd6900223b0",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd6900227f0",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd690022a20",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd690022c50",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd690022e80",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd6900230b8",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd6900232e8",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd690023518",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd690023750",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd690023980",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd690023bb0",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd69002c000",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd69002c230",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd69002c460",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd69002c690",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007fd69002c8c0",
+      "source": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007fd69002caf0",
+      "source": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.ChaoVariants$$Lambda/0x00007fd69002d160",
+      "source": "com.chaogarden.ChaoVariants"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007fd69002d3b0",
+      "source": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007fd690187990",
+      "source": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007fd6901824a8",
+      "source": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007fd690195a90",
+      "source": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007fd690195cc8",
+      "source": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007fd690181a08",
+      "source": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007fd690181c40",
+      "source": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007fd69022fd98",
+      "source": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007fd6902360e0",
+      "source": "com.chaogarden.client.TriangleTransitionRigTest"
+    }
+  ],
+  "classpath": [
+    "/tmp/garden049-triangle-proof/classes/lionfishTest",
+    "/workspace/Chao-Garden/libs/lionfishapi-3.1.jar",
+    "/workspace/Chao-Garden/build/moddev/artifacts/neoforge-21.1.219.jar",
+    "/workspace/Chao-Garden/build/moddev/artifacts/neoforge-21.1.219-client-extra-aka-minecraft-resources.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/4.0.42/46555dbfff14e9e052f1f693aed14d542a74e111/earlydisplay-4.0.42.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.42/76e15f98bf676fb44b36c5e776f52a55581ec43a/loader-4.0.42.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged.accesstransformers/at-modlauncher/10.0.1/5aba50202aceead086bc09fbc2751c9f05cb4890/at-modlauncher-10.0.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/accesstransformers/10.0.1/fd83b5725f76eae9115e9355fa1c456a6a441400/accesstransformers-10.0.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/bus/8.0.5/5b2d33285ab5d1554e9798ad98c40d6ea3868bd5/bus-8.0.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/coremods/7.0.3/9147e6f638b4272b3bd5fc8f92ad37802512c6c/coremods-7.0.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/11.0.5/b8f0d49294f733fdb6173931b263553e943dc950/modlauncher-11.0.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/mergetool/2.0.0/52fe1949be64e3303aabaaa21e315f551db9c9f4/mergetool-2.0.0-api.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.electronwill.night-config/toml/3.8.3/90b2fd6efcb4a7d5b9810cf78f9d824994d717f2/toml-3.8.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.electronwill.night-config/core/3.8.3/b442a95f09e349927f5a945ecb594455870fcf4f/core-3.8.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/JarJarSelector/0.4.1/fb3cc7a58af22ad2880adb98af6d518128c47dae/JarJarSelector-0.4.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/JarJarMetadata/0.4.1/f8da03683dc81694556dc3e177c5e3bb77ae6fcb/JarJarMetadata-0.4.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.5/4433f50c07debefaed0553bd0068f4f48d449313/maven-artifact-3.8.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.6.3/a01aaa6ddaea9ec07ec4f209487b7a46a526283a/typetools-0.6.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.minecrell/terminalconsoleappender/1.3.0/b562e9bb61235c9520e26282cdee71f8f802d1fc/terminalconsoleappender-1.3.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.openjdk.nashorn/nashorn-core/15.4/f67f5ffaa5f5130cf6fb9b133da00c7df3b532a5/nashorn-core-15.4.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.14.0/1ed471194b02f2c6cb734a0cd6f6f107c673afae/commons-lang3-3.14.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/cpw.mods/bootstraplauncher/2.0.2/1a2d076cbc33b0520cbacd591224427b2a20047d/bootstraplauncher-2.0.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/cpw.mods/securejarhandler/3.0.8/c0ef95cecd8699a0449053ac7d9c160748d902cd/securejarhandler-3.0.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.8/36e4d212970388e5bd2c5180292012502df461bb/asm-commons-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.8/395f1c1f035258511f27bc9b2583d76e4b143f59/asm-util-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.8/b9747a320844b6cb1eacd90d8ecfd260a16c01d3/asm-analysis-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.8/18419ca5b77a2f81097c741e7872e6ab8d2f40d/asm-tree-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.8/dc19ecb3f7889b7860697215cae99c0f9b6f6b4b/asm-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/JarJarFileSystems/0.4.1/78f59f89defcd032ed788b151ca6a0d40ace796a/JarJarFileSystems-0.4.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.15.1/f11560da189ab563a5c8e351941415430e9304ea/commons-io-2.15.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/logging/1.2.7/24cb95ffb0e3433fd6e844c04e68009e504ca1c0/logging-1.2.7.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.22.1/d7e6693c2606cb7e7335047d7bb96dec52db5665/log4j-slf4j2-impl-2.22.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.22.1/7183a25510a02ad00cc6a95d3b3d2a7d3c5a8dc4/log4j-core-2.22.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.22.1/bea6fede6328fabafd7e68363161a7ea6605abd1/log4j-api-2.22.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.2-jre/5e64ec7e056456bef3a4bc4c6fdaef71e8ab6318/guava-32.1.2-jre.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.9/7cf2726fdcfbc8610f9a71fb3ed639871f315340/slf4j-api-2.0.9.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.13.1/17125bae1d965624e265ef49552f6465a2bfa307/antlr4-runtime-4.13.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.minecraftforge/srgutils/0.4.15/ca408b131759478f164e010fae0d73997e125fb5/srgutils-0.4.15.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/cf43b5391de623b36fe066a21127baef82c64022/plexus-utils-3.3.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.20.0/8f15415b022a25b473e8e16c28ae913186ffb9c4/jline-reader-3.20.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.machinezoo.noexception/noexception/1.7.1/b65330c98e38a1f915fa54a6e5eca496505e3f0a/noexception-1.7.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/73.2/61ad4ef7f9131fcf6d25c34b817f90d6da06c9e9/icu4j-73.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/6.0.54/de8bc95660e1b2fe8793fd427a7a10dcec5b3ea7/authlib-6.0.54.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/blocklist/1.0.10/5c685c5ffa94c4cd39496c7184c1d122e515ecef/blocklist-1.0.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.3.10/d15b53a14cf20fdcaa98f731af5dda654452c010/brigadier-1.3.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/8.0.16/67d4de6d7f95d89bcf5862995fb854ebaec02a34/datafixerupper-8.0.16.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/2.2.10/da05971b07cbb379d002cf7eaec6a2048211fefc/patchy-2.2.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.17.9/3cad216e3a7f0c19b4b394388bc9ffc446f13b14/text2speech-1.17.9.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.16.0/4e3eb3d79888d76b54e28b350915b5dc3919c9de/commons-codec-1.16.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.97.Final/f8f3d8644afa5e6e1a40a3a6aeb9d9aa970ecb4f/netty-buffer-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.97.Final/384ba4d75670befbedb45c4d3b497a93639c206d/netty-codec-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.97.Final/7cceacaf11df8dc63f23d0fb58e9d4640fc88404/netty-common-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.97.Final/abb86c6906bf512bf2b797a41cd7d2e8d3cd7c36/netty-handler-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.97.Final/cec8348108dc76c47cf87c669d514be52c922144/netty-resolver-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.97.Final/795da37ded759e862457a82d9d92c4d39ce8ecee/netty-transport-classes-epoll-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.97.Final/d469d84265ab70095b01b40886cabdd433b6e664/netty-transport-native-unix-common-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.97.Final/f37380d23c9bb079bc702910833b2fd532c9abd0/netty-transport-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.12/c24946d46824bd528054bface3231d2ecb7e95e8/fastutil-8.5.12.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.14.0/28934d48aed814f11e4c584da55c49fa7032b31b/jna-platform-5.14.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.14.0/67bf3eaea4f0718cb376a181a629e5f88fa1c9dd/jna-5.14.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.26.0/659feffdd12280201c8aacb8f7be94f9a883c824/commons-compress-1.26.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.16/51cf043c87253c9f58b539c9f7e44c8894223850/httpcore-4.4.16.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jcraft/jorbis/0.0.17/8872d22b293e8f5d7d56ff92be966e6dc28ebdc6/jorbis-0.0.17.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-freetype/3.3.3/a0db6c84a8becc8ca05f9dbfa985edc348a824c7/lwjgl-freetype-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-freetype/3.3.3/149070a5480900347071b7074779531f25a6e3dc/lwjgl-freetype-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.3/efa1eb78c5ccd840e9f329717109b5e892d72f8e/lwjgl-glfw-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.3/a03684c5e4b1b1dbbe0d29dbbdc27b985b6840f2/lwjgl-glfw-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.3/b543467b7ff3c6920539a88ee602d34098628be5/lwjgl-jemalloc-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.3/4f86728bf449b1dd61251c4e0ac01df1389cb51e/lwjgl-jemalloc-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.3/daada81ceb5fc0c291fbfdd4433cb8d9423577f2/lwjgl-openal-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.3/3037360cc4595079bea240af250b6d1a527e0905/lwjgl-openal-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.3/2f6b0147078396a58979125a4c947664e98293a/lwjgl-opengl-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.3/62c70a4b00ca5391882b0f4b787c1588d24f1c86/lwjgl-opengl-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.3/25dd6161988d7e65f71d5065c99902402ee32746/lwjgl-stb-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.3/fd1271ccd9d85eff2fa31f3fd543e02ccfaf5041/lwjgl-stb-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.3/82d755ca94b102e9ca77283b9e2dc46d1b15fbe5/lwjgl-tinyfd-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.3/d8d58daa0c3e5fd906fee96f5fddbcbc07cc308b/lwjgl-tinyfd-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.3/29589b5f87ed335a6c7e7ee6a5775f81f97ecb84/lwjgl-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.3/1713758e3660ba66e1e954396fd18126038b33c0/lwjgl-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/4b986a99445e49ea5fbf5d149c4b63f6ed6c6780/lz4-java-1.8.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.20.0/d0ddcc708ddf527a3454c941b7b9225cc83a15ff/jline-terminal-3.20.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.97.Final/5514744c588190ffda076b35a9b8c9f24946a960/netty-transport-native-epoll-4.1.97.Final-linux-aarch_64.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.97.Final/54188f271e388e7f313aea995e82f58ce2cdb809/netty-transport-native-epoll-4.1.97.Final-linux-x86_64.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.33.0/de2b60b62da487644fc11f734e73c8b0b431238f/checker-qual-3.33.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.18.0/89b684257096f548fa39a7df9fdaa409d4d4df91/error_prone_annotations-2.18.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/2.8/c85270e307e7b822f1086b93689124b89768e273/j2objc-annotations-2.8.jar",
+    "/tmp/garden049-triangle-proof/classes/main",
+    "/workspace/Chao-Garden/build/resources/main"
+  ],
+  "isolated_working_directory": "/tmp/garden049-triangle-proof/work",
+  "shared_build_outputs_modified": false,
+  "notes": "Targeted unchanged test run in an isolated JVM against current 0.25.49 class snapshots. Source resources are a read-only symlink; the test built-in relative build/report write remains under /tmp. Current tests were not relaxed or changed."
+}

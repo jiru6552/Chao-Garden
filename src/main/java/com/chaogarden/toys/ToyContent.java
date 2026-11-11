@@ -62,6 +62,7 @@ public final class ToyContent {
               && (id.equals("chao_tv")||id.equals("chao_radio"))?4:0))));
     }
   }
+  public static final DeferredBlock<com.chaogarden.toys.RetiredCoffinBlock> RETIRED_COFFIN=BLOCKS.register("chao_coffin",com.chaogarden.toys.RetiredCoffinBlock::new);
   private ToyContent() {}
   public static void register(IEventBus bus){BLOCKS.register(bus);ToyCueNetwork.register(bus);}
   public static List<String> ids(){return List.copyOf(TOYS.keySet());}
@@ -106,7 +107,7 @@ public final class ToyContent {
         &&!ActivityManager.isBusy(chao)&&!CompanionContent.isManaged(chao);
   }
   public static boolean isWaterToy(String kind){return kind.equals("chao_rubber_duck")||kind.equals("chao_lifesaver");}
-  private static boolean mounted(String kind){return kind.equals("chao_rocking_horse")||kind.equals("chao_coffin")||kind.equals("chao_lifesaver");}
+  public static boolean mounted(String kind){return kind.equals("chao_rocking_horse")||kind.equals("chao_pogo_stick")||kind.equals("chao_lifesaver");}
   private static boolean knowsToy(ChaoEntity chao,String kind) {
     if(kind.equals("chao_shovel"))return chao.state().traitInt("reward.shovel",0)>0;
     String id=kind.substring("chao_".length());
@@ -125,10 +126,12 @@ public final class ToyContent {
     BlockPos best=null;double distance=Double.MAX_VALUE;
     var state=level.getBlockState(pos);
     String kind=((ChaoToyBlock)state.getBlock()).toy;
-    // Screens, keyboard keys and the coffin opening have an authored front.
+    // Screens and keyboard keys have an authored front.
     // Round/percussive toys can be approached from any clear side.
-    Iterable<Direction> sides=ToyInteractionRules.frontOnly(kind)
-        ?List.of(state.getValue(ChaoToyBlock.FACING)):Direction.Plane.HORIZONTAL;
+    var front=state.getValue(ChaoToyBlock.FACING);
+    Iterable<Direction> sides=kind.equals("chao_toy_car")?List.of(front.getOpposite()):kind.equals("chao_rocking_horse")
+        ?List.of(front.getClockWise(),front.getCounterClockWise(),front)
+        :ToyInteractionRules.frontOnly(kind)?List.of(front):Direction.Plane.HORIZONTAL;
     for(Direction direction:sides) {
       var at=pos.relative(direction);
       if(isWaterToy(kind)&&state.getValue(ChaoToyBlock.WATERLOGGED))at=at.above();
@@ -136,6 +139,7 @@ public final class ToyContent {
           ||!level.getBlockState(at).getCollisionShape(level,at).isEmpty()
           ||!level.getBlockState(at).getFluidState().isEmpty())continue;
       if(ToyInteractionRules.stationary(kind)&&!supportedStationaryAt(chao,stationaryAnchor(chao,pos,at)))continue;
+      if(mounted(kind)&&!mountPathClear(chao,pos,at))continue;
       double d=chao.distanceToSqr(Vec3.atBottomCenterOf(at));
       if(d<distance){best=at;distance=d;}
     }
@@ -229,6 +233,61 @@ public final class ToyContent {
     Direction facing=state.getValue(ChaoToyBlock.FACING);double z=ToyInteractionRules.horseRiderZ(frame);
     return Vec3.atBottomCenterOf(pos).add(-facing.getStepX()*z,ToyInteractionRules.horseRiderY(frame),-facing.getStepZ()*z);
   }
+  /** Continuous production seat/foot clock shared with mounted operator previews. */
+  public static Vec3 mountedAnchor(ChaoEntity c,BlockPos pos,net.minecraft.world.level.block.state.BlockState state,double ticks){
+    String kind=((ChaoToyBlock)state.getBlock()).toy;float scale=c.state().immortal?.86f:c.state().adult?.80f:.64f;
+    if(kind.equals("chao_pogo_stick"))return Vec3.atBottomCenterOf(pos).add(0,ActiveToyPlayRules049.pogoHeight((float)ticks,scale),0);
+    if(!kind.equals("chao_rocking_horse"))return mountedAnchor(pos,state,ToyInteractionRules.mountedFrame((int)ticks));
+    var front=state.getValue(ChaoToyBlock.FACING);double z=RockingHorsePlayRules.riderZ(ticks,scale);
+    return Vec3.atBottomCenterOf(pos).add(-front.getStepX()*z,RockingHorsePlayRules.riderY(ticks,scale),-front.getStepZ()*z);
+  }
+  private static boolean mountPathClear(ChaoEntity c,BlockPos at,BlockPos stand){
+    var state=c.level().getBlockState(at);
+    for(int t=0;t<=160;t+=4){
+      double occupied=state.is(block("chao_rocking_horse"))?RockingHorsePlayRules.occupancy(t):ToyInteractionRules.mountOccupancy(t);
+      var point=Vec3.atBottomCenterOf(stand).lerp(mountedAnchor(c,at,state,t),occupied);
+      String kind=((ChaoToyBlock)state.getBlock()).toy;
+      if(kind.equals("chao_lifesaver"))point=point.add(0,ToyInteractionRules.ringEntryLift(occupied),0);
+      if(kind.equals("chao_rocking_horse"))point=point.add(0,.15*Math.sin(Math.PI*occupied),0);
+      if(!mountedClear(c,at,point))return false;
+    }
+    return true;
+  }
+  public static BlockPos previewMounted(ChaoEntity c,String kind){
+    if(!mounted(kind)||kind.equals("chao_lifesaver")||!(c.level() instanceof ServerLevel level))return null;
+    BlockPos best=null;double nearest=9;
+    for(var p:BlockPos.betweenClosed(c.blockPosition().offset(-3,-1,-3),c.blockPosition().offset(3,1,3))){
+      if(!level.getBlockState(p).is(block(kind))||!available(level,p,c))continue;
+      var stand=standAt(level,p,c);if(stand==null||!mountPathClear(c,p,stand))continue;
+      double distance=c.distanceToSqr(Vec3.atCenterOf(p));if(distance<nearest){nearest=distance;best=p.immutable();}
+    }
+    return best;
+  }
+  public static boolean beginMountedPreview(ChaoEntity c,BlockPos at){
+    if(!(c.level() instanceof ServerLevel level)||!(level.getBlockState(at).getBlock() instanceof ChaoToyBlock b)||!mounted(b.toy))return false;
+    var stand=standAt(level,at,c);if(stand==null||!mountPathClear(c,at,stand))return false;
+    var tag=c.getPersistentData();boolean had=tag.contains(NEXT);long next=tag.getLong(NEXT);
+    var origin=Vec3.atBottomCenterOf(stand);c.setPos(origin.x,origin.y,origin.z);
+    beginPlaying(c,at,stand,b);if(had)tag.putLong(NEXT,next);else tag.remove(NEXT);
+    return holdMounted(c,at,0);
+  }
+  public static boolean holdMounted(ChaoEntity c,BlockPos at,double elapsed){
+    var state=c.level().getBlockState(at);
+    if(!(state.getBlock() instanceof ChaoToyBlock b)||!mounted(b.toy)||!b.toy.equals(c.getPersistentData().getString(KIND))
+        ||c.distanceToSqr(Vec3.atCenterOf(at))>16)return false;
+    var tag=c.getPersistentData();if(!tag.contains(RETURN))return false;
+    BlockPos stand=BlockPos.of(tag.getLong(RETURN));
+    if(elapsed>=148&&!safeStand(c,stand))return false;
+    double occupied=b.toy.equals("chao_rocking_horse")?RockingHorsePlayRules.occupancy((float)elapsed):ToyInteractionRules.mountOccupancy(elapsed);
+    Vec3 point=Vec3.atBottomCenterOf(stand).lerp(mountedAnchor(c,at,state,elapsed),occupied);
+    if(b.toy.equals("chao_lifesaver"))point=point.add(0,ToyInteractionRules.ringEntryLift(occupied),0);
+    if(b.toy.equals("chao_rocking_horse"))point=point.add(0,.15*Math.sin(Math.PI*occupied),0);
+    if(c.distanceToSqr(point)>.25||!mountedClear(c,at,point))return false;
+    c.getNavigation().stop();c.setDeltaMovement(Vec3.ZERO);c.fallDistance=0;c.setPos(point.x,point.y,point.z);
+    var facing=state.getValue(ChaoToyBlock.FACING);if(b.toy.equals("chao_rocking_horse"))facing=facing.getOpposite();
+    face(c,facing);c.getLookControl().setLookAt(c.getX()+facing.getStepX(),c.getEyeY(),c.getZ()+facing.getStepZ(),180,180);
+    return true;
+  }
   /** Ignore only the owned prop's collision, never nearby blocks, roofs or other living actors. */
   private static boolean mountedClear(ChaoEntity chao,BlockPos toy,Vec3 at) {
     var level=chao.level();var body=chao.getBoundingBox().move(at.subtract(chao.position()));
@@ -266,6 +325,8 @@ public final class ToyContent {
     var tag=chao.getPersistentData();
     // A keeper may rescue/teleport the suspended actor far from its original toy.
     if(tag.getBoolean(DISMOUNT_WAIT)&&safeDismountAt(chao,chao.position()))return chao.position();
+    if(tag.contains(TARGET)&&chao.distanceToSqr(Vec3.atCenterOf(target(chao)))>2.25
+        &&safeDismountAt(chao,chao.position()))return chao.position();
     BlockPos saved=BlockPos.of(tag.getLong(RETURN));
     if(safeStand(chao,saved)&&safeDismountAt(chao,Vec3.atBottomCenterOf(saved)))return Vec3.atBottomCenterOf(saved);
     BlockPos origin=tag.contains(TARGET)?target(chao):saved;
@@ -330,7 +391,7 @@ public final class ToyContent {
     level.playSound(null,pos,sound,SoundSource.BLOCKS,toy.equals("chao_tv")?.18f:.35f,pitch);
     if(toy.equals("chao_bubble_wand")||isWaterToy(toy))
       level.sendParticles(ParticleTypes.BUBBLE_POP,pos.getX()+.5,pos.getY()+.7,pos.getZ()+.5,4,.25,.2,.25,.01);
-    else if(!List.of("chao_ball","chao_coffin","chao_shovel","chao_rocking_horse").contains(toy))
+    else if(!List.of("chao_ball","chao_shovel","chao_rocking_horse").contains(toy))
       level.sendParticles(ParticleTypes.NOTE,pos.getX()+.5,pos.getY()+1.1,
         pos.getZ()+.5,1,.1,0,.1,0);
   }
@@ -349,7 +410,8 @@ public final class ToyContent {
     tag.putLong(NEXT,now+PLAY_TICKS+600+Math.floorMod(chao.getUUID().hashCode(),201));
     chao.setToyPlaying(block.toy,PLAY_TICKS);chao.setToyTarget(pos);chao.getNavigation().stop();
     if(mounted(block.toy)) {
-      tag.putBoolean(MOUNT,true);tag.putLong(RETURN,stand.asLong());tag.putBoolean(GRAVITY,chao.isNoGravity());
+      if(!tag.getBoolean(MOUNT)){tag.putLong(RETURN,stand.asLong());tag.putBoolean(GRAVITY,chao.isNoGravity());}
+      tag.putBoolean(MOUNT,true);
       chao.setNoGravity(true);chao.setDeltaMovement(Vec3.ZERO);
     }
     var state=level.getBlockState(pos);
@@ -426,11 +488,7 @@ public final class ToyContent {
             ||(block.toy.equals("chao_lifesaver")&&!level.getBlockState(mutable).getValue(ChaoToyBlock.WATERLOGGED))
             ||!available(level,mutable,chao))continue;
         BlockPos at=standAt(level,mutable,chao);if(at==null)continue;
-        if(block.toy.equals("chao_rocking_horse")||block.toy.equals("chao_lifesaver")) {
-          boolean clear=true;for(int frame=0;frame<4;frame++)
-            if(!mountedClear(chao,mutable,mountedAnchor(mutable,level.getBlockState(mutable),frame))){clear=false;break;}
-          if(!clear)continue;
-        }
+        if(mounted(block.toy)&&!mountPathClear(chao,mutable,at))continue;
         double distance=chao.distanceToSqr(Vec3.atBottomCenterOf(at));
         if(distance>=best)continue;
         var path=chao.getNavigation().createPath(at,0);
@@ -460,6 +518,7 @@ public final class ToyContent {
       if(!(state.getBlock() instanceof ChaoToyBlock block)||!block.toy.equals(selectedKind))return false;
       if(!ToyInteractionRules.environmentValid(block.toy,state.getValue(ChaoToyBlock.WATERLOGGED),selectedWaterlogged,
           chao.level().getBlockState(toy.below()).is(net.minecraft.tags.BlockTags.SAND)))return false;
+      if(block.toy.equals("chao_toy_car")&&Direction.getNearest(stand.getX()-toy.getX(),0,stand.getZ()-toy.getZ())!=state.getValue(ChaoToyBlock.FACING).getOpposite())return false;
       if(ToyInteractionRules.stationary(block.toy)&&ToyInteractionRules.frontOnly(block.toy)) {
         Direction side=Direction.getNearest(stand.getX()-toy.getX(),0,stand.getZ()-toy.getZ());
         if(side!=state.getValue(ChaoToyBlock.FACING))return false;
@@ -476,7 +535,7 @@ public final class ToyContent {
           ||!(level.getBlockState(toy).getBlock() instanceof ChaoToyBlock)||!available(level,toy,chao))return false;
       var state=level.getBlockState(toy);String kind=((ChaoToyBlock)state.getBlock()).toy;
       if(!environmentValid(state)||(engaged&&!stationaryValid(state)))return false;
-      if(engaged&&(kind.equals("chao_ball")||kind.equals("chao_rocking_horse")||kind.equals("chao_lifesaver"))
+      if(engaged&&(kind.equals("chao_ball")||mounted(kind))
           &&chao.distanceToSqr(Vec3.atCenterOf(toy))>16)return false;
       long now=level.getGameTime();
       // Completion belongs to tick(), including the first resumed tick at/after the deadline.
@@ -497,41 +556,15 @@ public final class ToyContent {
         chao.getPersistentData().putLong(APPROACH,approachExpiry);
       }
       if(engaged&&((block.toy.equals("chao_lifesaver")&&!blockState.getValue(ChaoToyBlock.WATERLOGGED))
-          ||((block.toy.equals("chao_ball")||block.toy.equals("chao_rocking_horse")||block.toy.equals("chao_lifesaver"))
+          ||((block.toy.equals("chao_ball")||mounted(block.toy))
               &&chao.distanceToSqr(Vec3.atCenterOf(toy))>16))) {
         endPlaying(chao,false);approachExpiry=0;return;
       }
       if(engaged) {
         chao.getLookControl().setLookAt(toy.getX()+.5,toy.getY()+(ToyInteractionRules.keyboard(block.toy)?.18:.6),toy.getZ()+.5,30,20);
         if(mounted(block.toy)) {
-          chao.getNavigation().stop();chao.setDeltaMovement(Vec3.ZERO);chao.fallDistance=0;
-          if(block.toy.equals("chao_coffin")) {
-            int elapsed=(int)(PLAY_TICKS-(chao.getPersistentData().getLong(UNTIL)-now));
-            if(elapsed>=128&&!safeStand(chao,stand)){endPlaying(chao,false);approachExpiry=0;return;}
-            double occupied=ToyInteractionRules.coffinOccupancy(elapsed);
-            Direction along=blockState.getValue(ChaoToyBlock.FACING).getClockWise();
-            // Reclining around the feet puts the head behind the actor; center that span over the bed.
-            Vec3 start=Vec3.atBottomCenterOf(stand),inside=Vec3.atBottomCenterOf(toy)
-                .add(along.getStepX()*.18,.12,along.getStepZ()*.18);
-            Vec3 at=start.lerp(inside,occupied);chao.setPos(at.x,at.y,at.z);
-            // The imported coffin's long axis is local X, not its front/back axis.
-            face(chao,along);
-            chao.getLookControl().setLookAt(chao.getX()+along.getStepX(),chao.getEyeY(),chao.getZ()+along.getStepZ(),180,180);
-          } else {
-            int elapsed=(int)(PLAY_TICKS-(chao.getPersistentData().getLong(UNTIL)-now));
-            if(elapsed>=148&&!safeStand(chao,stand)){endPlaying(chao,false);approachExpiry=0;return;}
-            int frame=ToyInteractionRules.mountedFrame(elapsed);
-            Direction facing=blockState.getValue(ChaoToyBlock.FACING);
-            Vec3 inside=mountedAnchor(toy,blockState,frame);
-            // Source muzzle points +Z, opposite the authored north-facing block front.
-            if(block.toy.equals("chao_rocking_horse"))facing=facing.getOpposite();
-            double occupied=ToyInteractionRules.mountOccupancy(elapsed);
-            Vec3 at=Vec3.atBottomCenterOf(stand).lerp(inside,occupied);
-            if(block.toy.equals("chao_lifesaver"))at=at.add(0,ToyInteractionRules.ringEntryLift(occupied),0);
-            if(!mountedClear(chao,toy,at)){endPlaying(chao,false);approachExpiry=0;return;}
-            chao.setPos(at.x,at.y,at.z);face(chao,facing);
-            chao.getLookControl().setLookAt(chao.getX()+facing.getStepX(),chao.getEyeY(),chao.getZ()+facing.getStepZ(),180,180);
-          }
+          int elapsed=(int)(PLAY_TICKS-(chao.getPersistentData().getLong(UNTIL)-now));
+          if(!holdMounted(chao,toy,elapsed)){endPlaying(chao,false);approachExpiry=0;return;}
         } else if(ToyInteractionRules.keyboard(block.toy)) {
           if(!holdKeyboard(chao,toy)){endPlaying(chao,false);approachExpiry=0;return;}
         } else if(block.toy.equals("chao_ball")) {
@@ -581,17 +614,22 @@ public final class ToyContent {
         // cell, then use the same short collision-checked contact handoff as
         // other toys; do not ask MoveControl to climb into the low manual.
         boolean keyboard=ToyInteractionRules.keyboard(block.toy);
-        Vec3 approach=keyboard&&chao.distanceToSqr(anchor)>.0064?Vec3.atBottomCenterOf(toy).add(blockState.getValue(ChaoToyBlock.FACING).getStepX()*.55,0,blockState.getValue(ChaoToyBlock.FACING).getStepZ()*.55):anchor;
+        boolean staged=keyboard||stationary&&BlockPos.containing(anchor).equals(toy);
+        var entry=keyboard?blockState.getValue(ChaoToyBlock.FACING):Direction.getNearest(stand.getX()-toy.getX(),0,stand.getZ()-toy.getZ());
+        Vec3 approach=staged&&chao.distanceToSqr(anchor)>.0064?Vec3.atBottomCenterOf(toy).add(entry.getStepX()*.55,0,entry.getStepZ()*.55):anchor;
         if(stationary&&!supportedStationaryAt(chao,anchor)){endPlaying(chao,false);approachExpiry=0;return;}
         if(keyboard&&standAt(level,toy,chao)==null){endPlaying(chao,false);approachExpiry=0;return;}
         if(precise&&chao.distanceToSqr(approach)>.0064) {
           // Final short approach stays in the clear stand cell; don't accept the path's broad arrival radius.
           chao.getNavigation().stop();
-          if(keyboard){
+          if(staged){
             var velocity=chao.getDeltaMovement();double horizontal=velocity.horizontalDistance();
             if(horizontal>.08)chao.setDeltaMovement(velocity.x*.08/horizontal,velocity.y,velocity.z*.08/horizontal);
           }
-          chao.getMoveControl().setWantedPosition(approach.x,approach.y,approach.z,keyboard?.3:.9);
+          // Below this effective speed, vanilla zeroes a crawling baby's motion.
+          // Keep the ordinary movement attribute and unlocks; only the last goal pace changes.
+          double pace=staged?Math.min(.9,Math.max(.3,.0675/Math.max(.001,chao.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)))):.9;
+          chao.getMoveControl().setWantedPosition(approach.x,approach.y,approach.z,pace);
         } else if(!precise||level.noCollision(chao,chao.getBoundingBox().move(anchor.subtract(chao.position())))) {
           if(precise){chao.setPos(anchor.x,anchor.y,anchor.z);chao.setDeltaMovement(Vec3.ZERO);}
           beginPlaying(chao,toy,stand,block);engaged=true;

@@ -156,6 +156,10 @@ neoForge {
             if (project.findProperty('companion046InputStudy') == 'true') gameDirectory = project.file(project.findProperty('companion046Dir') ?: 'run-companion-input046')
             systemProperty 'chao_garden.companion046CarryStudy', project.findProperty('companion046CarryStudy') ?: 'false'
             if (project.findProperty('companion046CarryStudy') == 'true') gameDirectory = project.file(project.findProperty('companion046Dir') ?: 'run-companion-carry046')
+            systemProperty 'chao_garden.gardenToy049Study', project.findProperty('gardenToy049Study') ?: 'false'
+            systemProperty 'chao_garden.gardenToy049Start', project.findProperty('gardenToy049Start') ?: '0'
+            systemProperty 'chao_garden.gardenToy049Limit', project.findProperty('gardenToy049Limit') ?: '64'
+            if (project.findProperty('gardenToy049Study') == 'true') gameDirectory = project.file(project.findProperty('gardenToy049Dir') ?: 'run-garden-toys049')
             systemProperty 'chao_garden.instrument048Start', project.findProperty('instrument048Start') ?: '0'
             systemProperty 'chao_garden.instrument048Limit', project.findProperty('instrument048Limit') ?: '12'
             systemProperty 'chao_garden.instrument048Study', project.findProperty('instrument048Study') ?: 'false'
@@ -504,6 +508,9 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_organ44/**'
     exclude 'data/chao_guitar45/**'
     exclude 'data/chao_instruments48/**'
+    exclude 'data/chao_toys49/**'
+    exclude 'data/chao_floor49/**'
+    exclude 'data/chao_retired49/**'
     exclude 'data/chao_focused46/**'
     exclude 'data/chao_equipped46/**'
     exclude 'data/chao_equipped46_save/**'
@@ -684,3 +691,47 @@ tasks.register('accordionRigTest', JavaExec) {
  jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
 }
 tasks.named('check') { dependsOn accordionTimingTest, accordionRigTest }
+
+// Individual source-contact and production-clock checks for the garden toys.
+tasks.register('rockingHorseTimingTest', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.RockingHorseTimingTest'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn rockingHorseTimingTest }
+tasks.register('rockingHorseRigTest', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.RockingHorseRigTest'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn rockingHorseRigTest }
+tasks.register('activeToyRigTest049', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.ActiveToyRigTest049'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn activeToyRigTest049 }
+tasks.register('activeToyTimingTest049', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.ActiveToyTimingTest049'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn activeToyTimingTest049 }
+tasks.register('quietToyRigTest049', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.QuietToyRigTest049'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn quietToyRigTest049 }
+tasks.register('quietToyTimingTest049', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.QuietToyTimingTest049'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn quietToyTimingTest049 }

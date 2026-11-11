@@ -1,0 +1,283 @@
+Chao Garden 0.25.49
+
+Cumulative source overlay: 330 changed/new files and 21 explicit deletions onto full 0.25.43 source. Includes all previous updates. This ZIP is not a standalone project. The delivery branch contains the complete updated project.
+
+Extract files at the full project root, preserving paths. Then apply SOURCE_DELETIONS.txt by hand, or run:
+python3 apply-source-deletions.py /path/to/full/Chao-Garden
+The deletion helper refuses edited files and never touches Minecraft saves. Run it with --verify-only to review first.
+Deleting the retired assets matters: extracting an overlay alone cannot remove old files.
+
+Java 21, Minecraft 1.21.1, NeoForge 21.1.219 and external Lionfish API 3.1 are required. Use matching 0.25.49 client/server JARs.
+Read TOYS_02549.md, TOY_REFERENCES_02549.md and COFFIN_RETIREMENT_02549.md for scope, references, migration and test limits.
+
+0.25.48-to-0.25.49 source changes:
+CHANGELOG.md
+TESTING.md
+art/build_cwe_content_019.py
+build.gradle
+docs/ACTIVE_TOYS_02549.md
+docs/COFFIN_RETIREMENT_02549.md
+docs/TOYS_02549.md
+docs/TOY_REFERENCES_02549.md
+gradle.properties
+scripts/generate_active_toys_02549.py
+scripts/generate_floor_toys_02549.py
+scripts/generate_quiet_toys_02549.py
+scripts/generate_sa2_assets_02515.py
+scripts/test_active_toy_assets_02549.py
+scripts/test_coffin_geometry_02518.py
+scripts/test_floor_toys_02549.py
+scripts/test_quiet_toy_assets_02549.py
+scripts/test_rocking_horse_02549.py
+scripts/test_stationary_toy_geometry_02518.py
+scripts/validate_sa2_assets_02515.py
+src/lionfishTest/java/com/chaogarden/client/ActiveToyRigTest049.java
+src/lionfishTest/java/com/chaogarden/client/ActiveToyTimingTest049.java
+src/lionfishTest/java/com/chaogarden/client/QuietToyRigTest049.java
+src/lionfishTest/java/com/chaogarden/client/QuietToyTimingTest049.java
+src/lionfishTest/java/com/chaogarden/client/RockingHorseRigTest.java
+src/lionfishTest/java/com/chaogarden/client/RockingHorseTimingTest.java
+src/main/java/com/chaogarden/ChaoGarden.java
+src/main/java/com/chaogarden/ChaoSounds.java
+src/main/java/com/chaogarden/activities/ActivityRewards.java
+src/main/java/com/chaogarden/client/ChaoActiveToyAnimation049.java
+src/main/java/com/chaogarden/client/ChaoHeldItemLayer.java
+src/main/java/com/chaogarden/client/ChaoModel.java
+src/main/java/com/chaogarden/client/ChaoQuietToyAnimation049.java
+src/main/java/com/chaogarden/client/ChaoRenderer.java
+src/main/java/com/chaogarden/client/ChaoRockingHorseAnimation.java
+src/main/java/com/chaogarden/client/GardenToyVisualSmoke049.java
+src/main/java/com/chaogarden/client/LionfishActiveToyClip049.java
+src/main/java/com/chaogarden/client/LionfishQuietToyClip049.java
+src/main/java/com/chaogarden/client/LionfishRockingHorseClip.java
+src/main/java/com/chaogarden/client/Refinement02515VisualSmoke.java
+src/main/java/com/chaogarden/client/Refinement02517VisualSmoke.java
+src/main/java/com/chaogarden/market/ChaoToyItem.java
+src/main/java/com/chaogarden/market/MarketContent.java
+src/main/java/com/chaogarden/market/MarketStock.java
+src/main/java/com/chaogarden/test/FloorToyGameTests049.java
+src/main/java/com/chaogarden/test/GardenToyGameTests049.java
+src/main/java/com/chaogarden/test/GuitarGameTests045.java
+src/main/java/com/chaogarden/test/MobileToyGameTests02518.java
+src/main/java/com/chaogarden/test/RetiredCoffinGameTests049.java
+src/main/java/com/chaogarden/test/ToyInteractionGameTests02518.java
+src/main/java/com/chaogarden/toys/ActiveToyPlayRules049.java
+src/main/java/com/chaogarden/toys/BubblePlayRules.java
+src/main/java/com/chaogarden/toys/ChaoToyBlock.java
+src/main/java/com/chaogarden/toys/GardenToyPerformance049.java
+src/main/java/com/chaogarden/toys/HandToyEffects.java
+src/main/java/com/chaogarden/toys/QuietToyPlayRules049.java
+src/main/java/com/chaogarden/toys/RetiredCoffinBlock.java
+src/main/java/com/chaogarden/toys/RetiredCoffinItem.java
+src/main/java/com/chaogarden/toys/RockingHorsePlayRules.java
+src/main/java/com/chaogarden/toys/ToyContent.java
+src/main/java/com/chaogarden/toys/ToyInteractionRules.java
+src/main/java/com/chaogarden/toys/ToyPreview.java
+src/main/resources/assets/chao_garden/blockstates/chao_broom.json
+src/main/resources/assets/chao_garden/blockstates/chao_coffin.json
+src/main/resources/assets/chao_garden/blockstates/chao_crayons.json
+src/main/resources/assets/chao_garden/blockstates/chao_picture_book.json
+src/main/resources/assets/chao_garden/blockstates/chao_pogo_stick.json
+src/main/resources/assets/chao_garden/blockstates/chao_shadow_doll.json
+src/main/resources/assets/chao_garden/blockstates/chao_sonic_doll.json
+src/main/resources/assets/chao_garden/blockstates/chao_toy_car.json
+src/main/resources/assets/chao_garden/lang/en_us.json
+src/main/resources/assets/chao_garden/models/active02549/chao_pogo_stick_floor.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_pogo_stick_hand.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_shadow_doll_floor.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_shadow_doll_hand.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_sonic_doll_floor.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_sonic_doll_hand.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_toy_car_floor.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_toy_car_hand.obj
+src/main/resources/assets/chao_garden/models/active02549/manifest.json
+src/main/resources/assets/chao_garden/models/active02549/materials.mtl
+src/main/resources/assets/chao_garden/models/block/chao_accordion_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_accordion_play_0.json
+src/main/resources/assets/chao_garden/models/block/chao_accordion_play_1.json
+src/main/resources/assets/chao_garden/models/block/chao_accordion_play_2.json
+src/main/resources/assets/chao_garden/models/block/chao_accordion_play_3.json
+src/main/resources/assets/chao_garden/models/block/chao_broom.json
+src/main/resources/assets/chao_garden/models/block/chao_bubble_wand_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_bubble_wand_play_0.json
+src/main/resources/assets/chao_garden/models/block/chao_bubble_wand_play_1.json
+src/main/resources/assets/chao_garden/models/block/chao_bubble_wand_play_2.json
+src/main/resources/assets/chao_garden/models/block/chao_bubble_wand_play_3.json
+src/main/resources/assets/chao_garden/models/block/chao_castanets_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_castanets_play_0.json
+src/main/resources/assets/chao_garden/models/block/chao_castanets_play_1.json
+src/main/resources/assets/chao_garden/models/block/chao_castanets_play_2.json
+src/main/resources/assets/chao_garden/models/block/chao_castanets_play_3.json
+src/main/resources/assets/chao_garden/models/block/chao_crayons.json
+src/main/resources/assets/chao_garden/models/block/chao_guitar_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_guitar_play_0.json
+src/main/resources/assets/chao_garden/models/block/chao_guitar_play_1.json
+src/main/resources/assets/chao_garden/models/block/chao_guitar_play_2.json
+src/main/resources/assets/chao_garden/models/block/chao_guitar_play_3.json
+src/main/resources/assets/chao_garden/models/block/chao_picture_book.json
+src/main/resources/assets/chao_garden/models/block/chao_pogo_stick_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_shadow_doll_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_sonic_doll_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_toy_car_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_triangle_idle.json
+src/main/resources/assets/chao_garden/models/block/chao_triangle_play_0.json
+src/main/resources/assets/chao_garden/models/block/chao_triangle_play_1.json
+src/main/resources/assets/chao_garden/models/block/chao_triangle_play_2.json
+src/main/resources/assets/chao_garden/models/block/chao_triangle_play_3.json
+src/main/resources/assets/chao_garden/models/block/retired_toy_marker.json
+src/main/resources/assets/chao_garden/models/floor02549/accordion.obj
+src/main/resources/assets/chao_garden/models/floor02549/bubble_wand.obj
+src/main/resources/assets/chao_garden/models/floor02549/castanets.obj
+src/main/resources/assets/chao_garden/models/floor02549/guitar.obj
+src/main/resources/assets/chao_garden/models/floor02549/manifest.json
+src/main/resources/assets/chao_garden/models/floor02549/materials.mtl
+src/main/resources/assets/chao_garden/models/floor02549/triangle.obj
+src/main/resources/assets/chao_garden/models/item/chao_broom.json
+src/main/resources/assets/chao_garden/models/item/chao_coffin.json
+src/main/resources/assets/chao_garden/models/item/chao_crayons.json
+src/main/resources/assets/chao_garden/models/item/chao_picture_book.json
+src/main/resources/assets/chao_garden/models/item/chao_pogo_stick.json
+src/main/resources/assets/chao_garden/models/item/chao_pogo_stick_hand.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_book_left.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_book_page.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_book_right.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_broom.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_crayon.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_crayon_box.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_0.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_1.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_2.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_3.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_4.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_5.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_6.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_7.json
+src/main/resources/assets/chao_garden/models/item/chao_quiet_hand_paper_8.json
+src/main/resources/assets/chao_garden/models/item/chao_rocking_horse_motion.json
+src/main/resources/assets/chao_garden/models/item/chao_shadow_doll.json
+src/main/resources/assets/chao_garden/models/item/chao_shadow_doll_hand.json
+src/main/resources/assets/chao_garden/models/item/chao_sonic_doll.json
+src/main/resources/assets/chao_garden/models/item/chao_sonic_doll_hand.json
+src/main/resources/assets/chao_garden/models/item/chao_toy_car.json
+src/main/resources/assets/chao_garden/models/item/chao_toy_car_hand.json
+src/main/resources/assets/chao_garden/models/item/chao_triangle.json
+src/main/resources/assets/chao_garden/models/item/chao_triangle_display.json
+src/main/resources/assets/chao_garden/models/quiet02549/chao_broom_floor.obj
+src/main/resources/assets/chao_garden/models/quiet02549/chao_crayons_floor.obj
+src/main/resources/assets/chao_garden/models/quiet02549/chao_picture_book_floor.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_book_left.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_book_page.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_book_right.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_broom.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_crayon.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_crayon_box.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_0.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_1.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_2.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_3.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_4.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_5.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_6.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_7.obj
+src/main/resources/assets/chao_garden/models/quiet02549/hand_paper_8.obj
+src/main/resources/assets/chao_garden/models/quiet02549/manifest.json
+src/main/resources/assets/chao_garden/models/quiet02549/materials.mtl
+src/main/resources/assets/chao_garden/models/sa2_02515/materials.mtl
+src/main/resources/assets/chao_garden/sounds.json
+src/main/resources/assets/chao_garden/sounds/toys/book_page.ogg
+src/main/resources/assets/chao_garden/sounds/toys/broom.ogg
+src/main/resources/assets/chao_garden/sounds/toys/car.ogg
+src/main/resources/assets/chao_garden/sounds/toys/crayon.ogg
+src/main/resources/assets/chao_garden/sounds/toys/doll.ogg
+src/main/resources/assets/chao_garden/sounds/toys/pogo.ogg
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_pogo_stick/sa2_fue02_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_pogo_stick/sa2_hop01_36.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_pogo_stick/sa2_hop02_148.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_pogo_stick/sa2_hop03_148.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_pogo_stick/sa2_silver_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_pogo_stick/sa2_star01_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_shadow_doll/sa2_soni01_36.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_shadow_doll/sa2_soni01_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_shadow_doll/sa2_soni02_148.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_shadow_doll/sa2_soni03_148.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_shadow_doll/sa2_soni03_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_shadow_doll/sa2_soni04_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_sonic_doll/sa2_soni01_36.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_sonic_doll/sa2_soni01_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_sonic_doll/sa2_soni02_148.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_sonic_doll/sa2_soni03_148.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_sonic_doll/sa2_soni03_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_sonic_doll/sa2_soni04_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_toy_car/sa2_car01_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_toy_car/sa2_car02_148.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_toy_car/sa2_car02_52.png
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_toy_car/sa2_car03_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_0.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_1.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_2.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_3.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_4.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_5.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_6.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_ink_7.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/quiet_paper.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_book01_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_book02_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_book03_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_hanabi02_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_houki01_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_johro01_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_kureyon01_148.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_kureyon02_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_kureyon03_20.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_piano02_52.png
+src/main/resources/assets/chao_garden/textures/block/quiet02549/sa2_sabon_0.png
+src/main/resources/assets/chao_garden/textures/item/chao_broom.png
+src/main/resources/assets/chao_garden/textures/item/chao_crayons.png
+src/main/resources/assets/chao_garden/textures/item/chao_picture_book.png
+src/main/resources/assets/chao_garden/textures/item/chao_pogo_stick.png
+src/main/resources/assets/chao_garden/textures/item/chao_shadow_doll.png
+src/main/resources/assets/chao_garden/textures/item/chao_sonic_doll.png
+src/main/resources/assets/chao_garden/textures/item/chao_toy_car.png
+src/main/resources/data/chao_floor49/structure/activity_test.nbt
+src/main/resources/data/chao_floor49/structure/empty.nbt
+src/main/resources/data/chao_garden/loot_table/blocks/chao_broom.json
+src/main/resources/data/chao_garden/loot_table/blocks/chao_crayons.json
+src/main/resources/data/chao_garden/loot_table/blocks/chao_picture_book.json
+src/main/resources/data/chao_garden/loot_table/blocks/chao_pogo_stick.json
+src/main/resources/data/chao_garden/loot_table/blocks/chao_shadow_doll.json
+src/main/resources/data/chao_garden/loot_table/blocks/chao_sonic_doll.json
+src/main/resources/data/chao_garden/loot_table/blocks/chao_toy_car.json
+src/main/resources/data/chao_garden/recipe/chao_broom.json
+src/main/resources/data/chao_garden/recipe/chao_crayons.json
+src/main/resources/data/chao_garden/recipe/chao_picture_book.json
+src/main/resources/data/chao_garden/recipe/chao_pogo_stick.json
+src/main/resources/data/chao_garden/recipe/chao_shadow_doll.json
+src/main/resources/data/chao_garden/recipe/chao_sonic_doll.json
+src/main/resources/data/chao_garden/recipe/chao_toy_car.json
+src/main/resources/data/chao_retired49/structure/activity_test.nbt
+src/main/resources/data/chao_toys49/structure/activity_test.nbt
+src/main/resources/data/chao_toys49/structure/empty.nbt
+src/test/java/com/chaogarden/activities/ActivityRewardsTest.java
+src/test/java/com/chaogarden/toys/ToyInteractionRulesTest.java
+DELETE src/main/resources/assets/chao_garden/models/block/chao_coffin_idle.json
+DELETE src/main/resources/assets/chao_garden/models/block/chao_coffin_play_0.json
+DELETE src/main/resources/assets/chao_garden/models/block/chao_coffin_play_1.json
+DELETE src/main/resources/assets/chao_garden/models/block/chao_coffin_play_2.json
+DELETE src/main/resources/assets/chao_garden/models/block/chao_coffin_play_3.json
+DELETE src/main/resources/assets/chao_garden/models/item/sa2_02515/chao_coffin.json
+DELETE src/main/resources/assets/chao_garden/models/sa2_02515/chao_coffin.obj
+DELETE src/main/resources/assets/chao_garden/models/sa2_02515/chao_coffin_idle.obj
+DELETE src/main/resources/assets/chao_garden/models/sa2_02515/chao_coffin_play_0.obj
+DELETE src/main/resources/assets/chao_garden/models/sa2_02515/chao_coffin_play_1.obj
+DELETE src/main/resources/assets/chao_garden/models/sa2_02515/chao_coffin_play_2.obj
+DELETE src/main/resources/assets/chao_garden/models/sa2_02515/chao_coffin_play_3.obj
+DELETE src/main/resources/assets/chao_garden/textures/block/sa2_02515/chao_coffin/sa2_kanoke01_212.png
+DELETE src/main/resources/assets/chao_garden/textures/block/sa2_02515/chao_coffin/sa2_kanoke01_52.png
+DELETE src/main/resources/assets/chao_garden/textures/block/sa2_02515/chao_coffin/sa2_kanoke02_20.png
+DELETE src/main/resources/assets/chao_garden/textures/block/sa2_02515/chao_coffin/sa2_kanoke02_52.png
+DELETE src/main/resources/assets/chao_garden/textures/block/sa2_02515/chao_coffin/sa2_kanoke03_196.png
+DELETE src/main/resources/assets/chao_garden/textures/block/sa2_02515/chao_coffin/sa2_kanoke03_20.png
+DELETE src/main/resources/assets/chao_garden/textures/block/sa2_02515/chao_coffin/sa2_kanoke03_52.png
+DELETE src/main/resources/assets/chao_garden/textures/item/chao_coffin.png
+DELETE src/main/resources/data/chao_garden/loot_table/blocks/chao_coffin.json

@@ -1,0 +1,69 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_sonic_doll",
+    "particle": "chao_garden:block/active02549/chao_sonic_doll/sa2_soni01_52"
+  },
+  "base": {
+    "parent": "chao_garden:item/chao_sonic_doll_hand",
+    "display": {
+      "thirdperson_righthand": {
+        "translation": [
+          0,
+          2,
+          0
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "thirdperson_lefthand": {
+        "translation": [
+          0,
+          2,
+          0
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "ground": {
+        "translation": [
+          0,
+          2,
+          0
+        ],
+        "scale": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "fixed": {
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "scale": [
+          0.8,
+          0.8,
+          0.8
+        ]
+      }
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_sonic_doll"
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ EXTRA_GENES=['bee','ladybug','scorpion','deer','elephant','kangaroo','koala','li
 GENE_COLORS=['e9bf37','dd5550','9d4b9b','c69c63','a0a6b5','ca915c','aeb4c1','d7aa47','8d6655','5c92c6']
 ACCESSORIES=['baseball_cap_accessory','bowtie_accessory','round_glasses_accessory','aviators_accessory','headphones_accessory','pacifier_accessory','press_hat_accessory','blue_hoodie_accessory','pink_hoodie_accessory','cheese_bowtie_accessory']
 GIFTS=[x+'_lens' for x in ['clear','blue','green','red','yellow','purple','pink','orange','cyan','hero','dark','chaos']]+['cosmetic_wings','reverse_mirror','suspicious_potion']+[x+'_hero_brush' for x in ['normal','swim','fly','run','power']]+['omochao_parts_box']
-NEW_TOYS=['chao_rocking_horse','chao_piano','chao_organ','chao_rubber_duck','chao_lifesaver','chao_coffin','chao_triangle','chao_guitar','chao_accordion','chao_bubble_wand','chao_shovel','chao_bell','chao_castanets','chao_cymbals','chao_flute','chao_tambourine']
+NEW_TOYS=['chao_rocking_horse','chao_piano','chao_organ','chao_rubber_duck','chao_lifesaver','chao_triangle','chao_guitar','chao_accordion','chao_bubble_wand','chao_shovel','chao_bell','chao_castanets','chao_cymbals','chao_flute','chao_tambourine']
 def write(path,data):orchard.write(path,data)
 def save(im,path):orchard.save(im,path)
 def replace(data,a,b):
@@ -142,10 +142,7 @@ def toy_model(ident,active=False,frame=0):
  elif ident=='chao_lifesaver':
   for q in ((2,0,4,5,3,12),(11,0,4,14,3,12),(5,0,2,11,3,5),(5,0,11,11,3,14)):b(q,'white')
   for q in ((2,-.05,7,5,3.05,9),(11,-.05,7,14,3.05,9),(7,-.05,2,9,3.05,5),(7,-.05,11,9,3.05,14)):b(q,'red')
- elif ident=='chao_coffin':
-  b((3,0,2,13,2,14),'purple');b((3,2,2,4,7,14),'wood');b((12,2,2,13,7,14),'wood');b((4,2,2,12,7,3),'wood');b((4,2,13,12,7,14),'wood')
-  if not active:b((3,7,2,13,8,14),'black');b((7,8,4,9,8.2,11),'metal');b((5,8,6,11,8.2,8),'metal')
-  else:b((12,7,2,13,16,14),'black')
+
  elif ident=='chao_triangle':
   b((4,2,6,12,2.7,7),'metal')
   for angle in (-22.5,22.5):parts.append(toys.cube((7.65,1.5,6,8.35,11,7),'metal',rotation={'origin':[8,11,6.5],'axis':'z','angle':angle}))

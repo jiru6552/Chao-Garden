@@ -17,6 +17,9 @@ public final class ChaoHeldItemLayer extends RenderLayer<ChaoEntity,ChaoModel> {
   public ChaoHeldItemLayer(RenderLayerParent<ChaoEntity,ChaoModel> parent) { super(parent); }
   @Override public void render(PoseStack stack,MultiBufferSource buffers,int light,ChaoEntity chao,
       float swing,float amount,float partialTick,float age,float yaw,float pitch) {
+    if(ChaoRockingHorseAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
+    if(ChaoActiveToyAnimation049.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
+    if(ChaoQuietToyAnimation049.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoRattleAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoBubbleAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoMaracasAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;

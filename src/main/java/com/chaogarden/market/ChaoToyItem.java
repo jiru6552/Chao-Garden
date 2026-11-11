@@ -40,7 +40,13 @@ public final class ChaoToyItem extends BlockItem {
       case "chao_radio" -> "A musical radio to entertain your Chao";
       case "chao_tv" -> "A small television for a Chao play session";
       case "chao_rocking_horse" -> "A garden rocking horse that Chao can ride";
-      case "chao_coffin" -> "A little coffin for a Chao's pretend nap";
+      case "chao_toy_car" -> "A little car for Chao to push along the ground";
+      case "chao_sonic_doll" -> "A Sonic plush for gentle play";
+      case "chao_shadow_doll" -> "A Shadow plush for gentle play";
+      case "chao_broom" -> "A small broom for a Chao sweeping session";
+      case "chao_picture_book" -> "A picture book for quiet reading and page turning";
+      case "chao_pogo_stick" -> "A spring toy for hopping; leave clear ground and room overhead";
+      case "chao_crayons" -> "A box of crayons for a Chao drawing session";
       case "chao_lifesaver" -> "Place in shallow water beside a clear shore; a Chao can float in it";
       case "chao_rubber_duck" -> "A floating rubber duck to splash with from the shore";
       case "chao_piano", "chao_organ" -> "A garden keyboard for a voluntary music session";

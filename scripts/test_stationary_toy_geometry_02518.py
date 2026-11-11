@@ -34,8 +34,8 @@ STAGES = ('idle', 'play_0', 'play_1', 'play_2', 'play_3')
 # of all five shipped animation frames, allowing at most .01 model units.
 ENVELOPES = {
     'radio': (2, 0, 5.75, 14, 5.63, 10.25),
-    'guitar': (3, 0, 5.84, 13, 4.89, 10.16),
-    'triangle': (4, 0, 6, 12, 14, 10.6),
+    'guitar': (6.23, 0, 2.77, 9.77, .73, 13.23),
+    'triangle': (2, 0, 2, 12.9, 1, 14),
     'rubber_duck': (1, 0, 3, 16, 11, 13),
     'jack_in_box': (3.8, 0, 3.8, 14, 16, 12.5),
     'rattle': (6.25, 0, 4.74, 9.61, 3.96, 11.26),
@@ -43,8 +43,8 @@ ENVELOPES = {
 }
 UNIONS = {
     'radio': (2, .08, 5.756056, 14, 5.6236688, 10.243944),
-    'guitar': (3, 0, 5.845896, 13, 4.8887632, 10.154104),
-    'triangle': (4, 1, 6, 12, 14, 10.6),
+    'guitar': (6.232390432, 0, 2.770284656, 9.767609568, .727482448, 13.229715344),
+    'triangle': (2, 0, 2, 12.9, 1, 14),
     'rubber_duck': (1, 1, 3, 16, 11, 13),
     'jack_in_box': (3.8, 0, 3.8, 14, 16, 12.5),
     'rattle': (6.2529744, .08, 4.741616, 9.6089536, 3.9577792, 11.258384),
@@ -211,7 +211,7 @@ class GeometryParserTest(unittest.TestCase):
             self.assertPointAlmostEqual(rotate_element(point, rotation), scaled)
 
     def test_real_triangle_rotated_corners_are_not_unrotated_boxes(self):
-        model = json.loads((ASSETS / 'models/block/chao_triangle_idle.json').read_text())
+        model = json.loads((ASSETS / 'models/item/chao_triangle_display.json').read_text())
         arm = model['elements'][1]
         actual = bounds(element_vertices(arm))
         unrotated = tuple(arm['from']+arm['to'])
@@ -313,9 +313,9 @@ class StationaryToyGeometryTest(unittest.TestCase):
                 differs = any(actual[i] < box[i]-1e-8 or actual[i+3] > box[i+3]+1e-8
                               for i in (0, 2))
                 # Duck/rattle Z is symmetric, so east happens to fit the old swap.
-                # Triangle's X is symmetric, so west alone also happens to fit it.
+                # The flat triangle/beater layout is symmetric on Z, so east also fits it.
                 expected = (name, turns) not in {
-                    ('rubber_duck', 1), ('rattle', 1), ('triangle', 3)}
+                    ('rubber_duck', 1), ('rattle', 1), ('triangle', 1)}
                 self.assertEqual(differs, expected, (name, turns, actual, box))
 
 

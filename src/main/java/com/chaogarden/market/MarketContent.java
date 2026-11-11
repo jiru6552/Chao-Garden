@@ -40,6 +40,8 @@ public final class MarketContent {
   public static void bootstrap() {
     if (bootstrapped) return;
     bootstrapped = true;
+    // Retain this removed ID as an inert item so old containers keep their data.
+    ChaoGarden.add("chao_coffin",com.chaogarden.toys.RetiredCoffinItem::new);
     for (String toy : ToyContent.ids())
       ChaoGarden.add(toy, () -> new ChaoToyItem(toy, ToyContent.block(toy)));
     ChaoGarden.add("chao_watering_can",com.chaogarden.fruit.WateringCanItem::new);

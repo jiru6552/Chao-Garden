@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Requested material rollbacks, source school art, toys and fitted wearables."""
 from pathlib import Path
-import json,math,sys,copy,shutil
+import json,math,sys,shutil
 from collections import Counter
 from PIL import Image,ImageOps,ImageFilter
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'art'))
@@ -9,7 +9,7 @@ from fruit_forms02512 import Mesh,normal,render
 from generate_fruit_models_02512 import DISPLAY
 from generate_sa2_assets_02514 import wrap_atlas
 D=ROOT/'art/sa2_02515';A=ROOT/'src/main/resources/assets/chao_garden'
-TOYS=json.loads((D/'toys.json').read_text());HATS=json.loads((D/'hats.json').read_text())
+TOYS={k:v for k,v in json.loads((D/'toys.json').read_text()).items() if k!='chao_coffin'};HATS=json.loads((D/'hats.json').read_text())
 MATERIALS=set()
 def write(path,value):
  path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(value,indent=2)+'\n' if not isinstance(value,str) else value)
@@ -59,7 +59,7 @@ def native(mesh,n,tex,display=None):
   if sum(v*v for v in nn)<.9:continue
   lines.append('usemtl '+mat)
   lines+=['v '+' '.join(f'{v/16:.7f}' for v in p) for p in pts]
-  # Keep exact-edge UVs inside their own atlas sprite (coffin lid edge otherwise samples its neighbor).
+  # Keep exact-edge UVs inside their own atlas sprite.
   with Image.open(A/'textures'/(tex[mat].split(':')[1]+'.png')) as texture:
    eu,ev=.5/texture.width,.5/texture.height
   lines += [f'vt {max(eu,min(1-eu,u)):.7f} {1-max(ev,min(1-ev,v)):.7f}' for u,v in uv]
@@ -78,7 +78,7 @@ def item(mesh,n,mats,tex):
  write(A/'models/item'/(n+'.json'),{'loader':'neoforge:separate_transforms','gui_light':'front','textures':{'layer0':'chao_garden:item/'+n,'particle':tex['particle']},'base':{'parent':'chao_garden:item/sa2_02515/'+n},'perspectives':{'gui':{'parent':'minecraft:item/generated','textures':{'layer0':'chao_garden:item/'+n},'gui_light':'front'}}})
  icon(mesh,n,mats).save(A/'textures/item'/(n+'.png'))
 
-LIMITS={'chao_trumpet':(1,0,4,15,7,12),'chao_drum':(3,0,3,13,9,13),'chao_radio':(2,0,4,14,14,12),'chao_tv':(2,0,3,14,16,13),'chao_rocking_horse':(1,0,2,15,14,14),'chao_piano':(1,0,1,15,15,15),'chao_organ':(1,0,1,15,15,15),'chao_coffin':(2,0,1,14,7,15),'chao_lifesaver':(1,0,1,15,3,15),'chao_rattle':(3,0,3,13,4,13),'chao_maracas':(3,0,3,13,4,13)}
+LIMITS={'chao_trumpet':(1,0,4,15,7,12),'chao_drum':(3,0,3,13,9,13),'chao_radio':(2,0,4,14,14,12),'chao_tv':(2,0,3,14,16,13),'chao_rocking_horse':(1,0,2,15,14,14),'chao_piano':(1,0,1,15,15,15),'chao_organ':(1,0,1,15,15,15),'chao_lifesaver':(1,0,1,15,3,15),'chao_rattle':(3,0,3,13,4,13),'chao_maracas':(3,0,3,13,4,13)}
 def toy_mesh(n):
  m,mats=adapt(TOYS[n])
  if n in ('chao_drum','chao_cymbals'):m=rotate(m,2,90)
@@ -93,43 +93,6 @@ def toy_item_mesh(n):
  m,mats=toy_mesh(n)
  if n in ('chao_rattle','chao_flute','chao_bell','chao_bubble_wand'):m=rotate(m,0,-75)
  return m,mats
-
-# ChaoMain.prs lid node 0x30a8a8: local translation plus root Z=0.05,
-# and source Y rotation 18887/65536 turns. Its LOCAL Z is the long-edge hinge.
-# Rotating about world X misses that slanted edge and pulls the lid off its hull.
-COFFIN_LID_NODE='0x30a8a8'
-COFFIN_OPEN_ANGLES=(0,25,50,75)
-COFFIN_HINGE=(0.5462960004806519,1.4999990463256836,2.0303240306675434)
-COFFIN_SOURCE_Y=18887*math.tau/65536
-COFFIN_AXIS=(math.sin(COFFIN_SOURCE_Y),0,math.cos(COFFIN_SOURCE_Y))
-
-def coffin_source_pose(frame):
- info=copy.deepcopy(TOYS['chao_coffin'])
- angle=math.radians(0 if frame<0 else COFFIN_OPEN_ANGLES[frame]);c,s=math.cos(angle),math.sin(angle)
- ax,ay,az=COFFIN_AXIS;cx,cy,cz=COFFIN_HINGE
- def hinged(p):
-  x,y,z=p[0]-cx,p[1]-cy,p[2]-cz;dot=ax*x+ay*y+az*z
-  return (cx+x*c+(ay*z-az*y)*s+ax*dot*(1-c),
-          cy+y*c+(az*x-ax*z)*s+ay*dot*(1-c),
-          cz+z*c+(ax*y-ay*x)*s+az*dot*(1-c))
- if angle:
-  for face in info['faces']:
-   if face['node']==COFFIN_LID_NODE:face['points']=[hinged(p) for p in face['points']]
- return info
-
-def coffin_pose(frame):
- rest=adapt(TOYS['chao_coffin'])[0]
- limits=list(LIMITS['chao_coffin']);limits[1]=.08;limits[4]-=.08
- return fit(adapt(coffin_source_pose(frame))[0],limits,reference_bounds=rest.bounds())
-
-def coffin_poses_only():
- # Reuse existing bindings: no unrelated toys, textures, icons or manifests change.
- tex=json.loads((A/'models/block/chao_coffin_idle.json').read_text())['textures']
- for frame in (-1,0,1,2,3):
-  stage='idle' if frame<0 else 'play_'+str(frame)
-  n='chao_coffin_'+stage
-  write(A/'models/block'/(n+'.json'),native(coffin_pose(frame),n,tex))
- print('Regenerated only the five coffin poses (fixed source hinge and rest-pose fit).')
 
 # Mounted toys share one fitted rest geometry with the runtime rider transform.
 # Horse source forward is +Z; X rotation is fore/aft, never sideways Z rotation.
@@ -226,10 +189,8 @@ def toys():
     # Original screen child uses the original TV channel frames. Cabinet stays still.
     k=next(k for k in mats if k.startswith('sa2_channel_a_01_'))
     screen=source('al_toy','channel_a_0'+str(1 if frame<0 else frame+1));p='block/sa2_02515/chao_tv/screen_'+stage;screen.save(A/'textures'/(p+'.png'));binding[k]='chao_garden:'+p
-   elif frame>=0 and n=='chao_coffin':
-    pose=adapt(coffin_source_pose(frame))[0]
    elif frame>=0:
-    angle=(0,8,0,-8)[frame] if n!='chao_coffin' else (0,3,0,-3)[frame]
+    angle=(0,8,0,-8)[frame]
     if n in (*MOUNTED_TOYS,*RIGID_TOYS):pass  # Fixed-rest transform applied below.
     elif n not in ('chao_radio','chao_piano','chao_organ'):pose=rotate(pose,2,angle)
     else:
@@ -242,8 +203,7 @@ def toys():
    lim=list(limits)
    if frame>=0 and n=='chao_maracas':lim[4]=6
    lim[1]=.08;lim[4]-=.08
-   if n=='chao_coffin':pose=coffin_pose(frame)
-   elif n in MOUNTED_TOYS:pose=mounted_toy_pose(n,frame)
+   if n in MOUNTED_TOYS:pose=mounted_toy_pose(n,frame)
    elif n in RIGID_TOYS:pose=rigid_toy_pose(n,frame)
    else:pose=fit(pose,lim)
    d=native(pose,n+'_'+stage,binding);write(A/'models/block'/(n+'_'+stage+'.json'),d);poses.append({'stage':stage,'bounds':pose.bounds()})
@@ -325,8 +285,7 @@ def main():
  write(ROOT/'docs/validation-0.25.15/source-assets.json',{'release':'0.25.15','toys':tr,'hats':hr,'restored_textures':json.loads((D/'rollback.json').read_text()),'artwork':json.loads((D/'artwork.json').read_text()),'hoodies':'original-wool material adaptation and chamfered body/sleeves; custom garment, not a vanilla SA2 model'})
  print('0.25.15: eight texture reversions, filtered grass, ten original school pictures, 17 toys/85 poses, twelve hats, two hoodie colors and sleeves.')
 if __name__=='__main__':
- if sys.argv[1:]==['--coffin-poses']:coffin_poses_only()
- elif sys.argv[1:]==['--mounted-toy-poses']:mounted_toy_poses_only()
+ if sys.argv[1:]==['--mounted-toy-poses']:mounted_toy_poses_only()
  elif sys.argv[1:]==['--rigid-toy-poses']:rigid_toy_poses_only()
  elif not sys.argv[1:]:main()
- else:raise SystemExit('Usage: generate_sa2_assets_02515.py [--coffin-poses | --mounted-toy-poses | --rigid-toy-poses]')
+ else:raise SystemExit('Usage: generate_sa2_assets_02515.py [--mounted-toy-poses | --rigid-toy-poses]')

@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/quiet02549/hand_paper_6.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "quiet_paper": "chao_garden:block/quiet02549/quiet_paper",
+    "quiet_ink_0": "chao_garden:block/quiet02549/quiet_ink_0",
+    "quiet_ink_1": "chao_garden:block/quiet02549/quiet_ink_1",
+    "quiet_ink_2": "chao_garden:block/quiet02549/quiet_ink_2",
+    "quiet_ink_3": "chao_garden:block/quiet02549/quiet_ink_3",
+    "quiet_ink_4": "chao_garden:block/quiet02549/quiet_ink_4",
+    "quiet_ink_5": "chao_garden:block/quiet02549/quiet_ink_5",
+    "quiet_ink_6": "chao_garden:block/quiet02549/quiet_ink_6",
+    "quiet_ink_7": "chao_garden:block/quiet02549/quiet_ink_7",
+    "particle": "chao_garden:block/quiet02549/quiet_paper"
+  },
+  "render_type": "minecraft:cutout"
+}

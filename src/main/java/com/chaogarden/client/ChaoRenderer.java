@@ -20,7 +20,13 @@ public final class ChaoRenderer extends MobRenderer<ChaoEntity, ChaoModel> {
   }
 
   @Override public boolean shouldRender(ChaoEntity entity, Frustum frustum, double x, double y, double z) {
-    return !CompanionBackLayer.attached(entity) && super.shouldRender(entity, frustum, x, y, z);
+    if(CompanionBackLayer.attached(entity))return false;
+    if(super.shouldRender(entity,frustum,x,y,z))return true;
+    // The reserved horse can remain in view during its rider's side approach.
+    // Extend only presentation culling; physical entity dimensions stay intact.
+    var target=entity.toyTarget();String kind=entity.toyPlayingKind();
+    return target!=null&&(kind.equals("chao_rocking_horse")||kind.equals("chao_pogo_stick"))
+        &&entity.shouldRender(x,y,z)&&frustum.isVisible(new net.minecraft.world.phys.AABB(target).inflate(.5,1.5,.5));
   }
 
   @Override public void render(ChaoEntity entity, float yaw, float partialTick, PoseStack pose,

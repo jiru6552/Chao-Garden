@@ -22,7 +22,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT)
 public final class Refinement02515VisualSmoke {
   private static int page=-1;private static boolean checked;
-  private static List<String> ids(){return List.of("chao_maracas","chao_bell","chao_drum","chao_flute","chao_castanets","chao_trumpet","chao_cymbals","chao_tambourine","chao_rattle","chao_bubble_wand","chao_rocking_horse","chao_radio","chao_tv","chao_coffin","chao_organ","chao_piano","chao_lifesaver","apple_hat","bucket_hat","empty_can_hat","cardboard_box_hat","flower_pot_hat","paper_bag_hat","pan_hat","stump_hat","watermelon_hat","red_wool_beanie","blue_wool_beanie","black_white_wool_beanie");}
+  private static List<String> ids(){return List.of("chao_maracas","chao_bell","chao_drum","chao_flute","chao_castanets","chao_trumpet","chao_cymbals","chao_tambourine","chao_rattle","chao_bubble_wand","chao_rocking_horse","chao_radio","chao_tv","chao_organ","chao_piano","chao_lifesaver","apple_hat","bucket_hat","empty_can_hat","cardboard_box_hat","flower_pot_hat","paper_bag_hat","pan_hat","stump_hat","watermelon_hat","red_wool_beanie","blue_wool_beanie","black_white_wool_beanie");}
   public static void select(String key) {
     page=key.startsWith("refinement-native-")?Integer.parseInt(key.substring("refinement-native-".length())):-1;
     if(page<0||checked)return;var mc=Minecraft.getInstance();int items=0,blocks=0,faces=0;
@@ -33,7 +33,7 @@ public final class Refinement02515VisualSmoke {
         throw new IllegalStateException("02512 bad native item bake "+id+" quads="+quads.size());
       items++;faces+=quads.size();
     }
-    for(String toy:List.of("chao_maracas","chao_bell","chao_drum","chao_flute","chao_castanets","chao_trumpet","chao_cymbals","chao_tambourine","chao_rattle","chao_bubble_wand","chao_rocking_horse","chao_radio","chao_tv","chao_coffin","chao_organ","chao_piano","chao_lifesaver"))for(var state:com.chaogarden.toys.ToyContent.block(toy).getStateDefinition().getPossibleStates()){
+    for(String toy:List.of("chao_maracas","chao_bell","chao_drum","chao_flute","chao_castanets","chao_trumpet","chao_cymbals","chao_tambourine","chao_rattle","chao_bubble_wand","chao_rocking_horse","chao_radio","chao_tv","chao_organ","chao_piano","chao_lifesaver"))for(var state:com.chaogarden.toys.ToyContent.block(toy).getStateDefinition().getPossibleStates()){
       var quads=mc.getBlockRenderer().getBlockModel(state).getQuads(state,null,RandomSource.create(15));
       if(quads.isEmpty()||quads.stream().anyMatch(q->q.getSprite().contents().name().getPath().equals("missingno")))throw new IllegalStateException("02515 bad toy bake "+state);
       blocks++;faces+=quads.size();

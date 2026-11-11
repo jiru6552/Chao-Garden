@@ -1,0 +1,330 @@
+{
+  "version": "0.25.49",
+  "toys": {
+    "accordion": {
+      "sources": [
+        "models/cwe02516/chao_accordion.obj"
+      ],
+      "faces": 619,
+      "bounds_blocks": [
+        0.24418357751637468,
+        0.0,
+        0.23918261060478807,
+        0.7558164224836253,
+        0.14007274505329226,
+        0.7608173893952119
+      ],
+      "collision_envelope_pixels": [
+        3.9,
+        0.0,
+        3.82,
+        12.1,
+        2.25,
+        12.18
+      ],
+      "transforms": [
+        {
+          "matrix": [
+            [
+              0.5529550824962801,
+              0.3824004519974275,
+              -0.7402773608950199
+            ],
+            [
+              0.8329784335914261,
+              -0.27469995601250474,
+              0.4802987230238096
+            ],
+            [
+              -0.01968770969682304,
+              -0.8822186965140171,
+              -0.47042806634808954
+            ]
+          ],
+          "scale": 0.575,
+          "offset": [
+            0.4091323700694448,
+            -0.22286954093270916,
+            0.8722959321612401
+          ]
+        }
+      ],
+      "reference": "Original fan-open CWE accordion, lying on its back with the actual key fronts facing upward."
+    },
+    "guitar": {
+      "sources": [
+        "models/cwe02516/chao_guitar.obj"
+      ],
+      "faces": 93,
+      "bounds_blocks": [
+        0.38952440246024916,
+        0.0,
+        0.17314279105215002,
+        0.6104755975397508,
+        0.04546765299461225,
+        0.82685720894785
+      ],
+      "collision_envelope_pixels": [
+        6.23,
+        0.0,
+        2.77,
+        9.77,
+        0.73,
+        13.23
+      ],
+      "transforms": [
+        {
+          "matrix": [
+            [
+              0.389876996255688,
+              -0.6428148717684707,
+              -0.659382262745918
+            ],
+            [
+              -0.025791638175525284,
+              -0.7233867169432199,
+              0.6899611939452339
+            ],
+            [
+              -0.9205056866694877,
+              -0.2519934490882541,
+              -0.29861108891958527
+            ]
+          ],
+          "scale": 0.7142857142857143,
+          "offset": [
+            0.7240777215405111,
+            -0.08447302639335746,
+            0.9737721347440679
+          ]
+        }
+      ],
+      "reference": "Original CWE guitar; measured outward string face up and neck along the floor toward north."
+    },
+    "triangle": {
+      "sources": [
+        "models/item/chao_triangle_display.json"
+      ],
+      "faces": 30,
+      "bounds_blocks": [
+        0.125,
+        0.0,
+        0.125,
+        0.8062499999999999,
+        0.0625,
+        0.875
+      ],
+      "collision_envelope_pixels": [
+        2.0,
+        0.0,
+        2.0,
+        12.9,
+        1.0,
+        14.0
+      ],
+      "transforms": [
+        {
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "scale": 1,
+          "offset": [
+            -0.125,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "matrix": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              -1,
+              0,
+              0
+            ]
+          ],
+          "scale": 1,
+          "offset": [
+            0.7062499999999999,
+            0.6625,
+            1.0
+          ]
+        }
+      ],
+      "reference": "Existing palette triangle and beater, laid side by side; original item geometry retained separately."
+    },
+    "bubble_wand": {
+      "sources": [
+        "models/sa2_02515/chao_bubble_wand.obj"
+      ],
+      "faces": 92,
+      "bounds_blocks": [
+        0.4174,
+        0.0,
+        0.190075,
+        0.5826,
+        0.03158224999999998,
+        0.809925
+      ],
+      "collision_envelope_pixels": [
+        6.67,
+        0.0,
+        3.04,
+        9.33,
+        0.51,
+        12.96
+      ],
+      "transforms": [
+        {
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.7,
+          "offset": [
+            0.15000000000000002,
+            -0.33420890999999997,
+            0.853675
+          ]
+        }
+      ],
+      "reference": "Original SA2 wand, rotated exactly flat with the ring toward north."
+    },
+    "castanets": {
+      "sources": [
+        "models/sa2_02515/chao_castanets_hand_base.obj",
+        "models/sa2_02515/chao_castanets_hand_lid.obj"
+      ],
+      "faces": 64,
+      "bounds_blocks": [
+        0.2536329065,
+        0.0,
+        0.2850493684999999,
+        0.7463670935,
+        0.1933518675,
+        0.7149506314999999
+      ],
+      "collision_envelope_pixels": [
+        4.05,
+        0.0,
+        4.56,
+        11.95,
+        3.1,
+        11.44
+      ],
+      "transforms": [
+        {
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "scale": 0.55,
+          "offset": [
+            0.224999978,
+            0.36681431600000003,
+            0.7750000275
+          ]
+        }
+      ],
+      "reference": "Existing rigid SA2 shell adaptations, closed and resting with the star-decorated lid upward."
+    }
+  },
+  "protected_sha256": {
+    "models/accordion02548/bass.obj": "dfd9c033f4ba5ae7f0b43a546b0ab305112f308f557c437786d88ae7e9fbb495",
+    "models/accordion02548/bellows.obj": "d00a80fee1679b51745437f288de12ba2dfdc750bdc4e5d29909fb0cb5706460",
+    "models/accordion02548/keys.obj": "3b4a758e66ede08f172d0fa09b3182b34a026f2cefc2e90d395c3ba39abf135b",
+    "models/accordion02548/manifest.json": "9df9a022658f5250afe163f4c22f75d94dc555e7f725d5d97faf0768902c5f67",
+    "models/cwe02516/chao_accordion.obj": "0d628ab7b59fa27892fe8bcaf0df42ea5f9b6e372d08a6e9bed05c519d80da94",
+    "models/cwe02516/chao_accordion_idle.obj": "08277061114e27bb3c8ef46ca39466604fe0d92681fa25b8691d3dc819510b51",
+    "models/cwe02516/chao_accordion_play_0.obj": "051880382ca3d5f92d258bcb746392f83956b556042a462b1d798511d70442c5",
+    "models/cwe02516/chao_accordion_play_1.obj": "53f6ae1991932ed7ac72632ed5cc55da384140d232f5dab12196bbb9b528fb6b",
+    "models/cwe02516/chao_accordion_play_2.obj": "051880382ca3d5f92d258bcb746392f83956b556042a462b1d798511d70442c5",
+    "models/cwe02516/chao_accordion_play_3.obj": "08277061114e27bb3c8ef46ca39466604fe0d92681fa25b8691d3dc819510b51",
+    "models/cwe02516/chao_guitar.obj": "6587b90748ae04809be8180fba32bc8142a6a9c8ec8a5cce9e730c50558a7444",
+    "models/cwe02516/chao_guitar_idle.obj": "ae5043ce4b76dd664f9c4eccb9abc8e054cead81f742a0bfcf68e1f11e241d62",
+    "models/cwe02516/chao_guitar_play_0.obj": "ae5043ce4b76dd664f9c4eccb9abc8e054cead81f742a0bfcf68e1f11e241d62",
+    "models/cwe02516/chao_guitar_play_1.obj": "ae5043ce4b76dd664f9c4eccb9abc8e054cead81f742a0bfcf68e1f11e241d62",
+    "models/cwe02516/chao_guitar_play_2.obj": "ae5043ce4b76dd664f9c4eccb9abc8e054cead81f742a0bfcf68e1f11e241d62",
+    "models/cwe02516/chao_guitar_play_3.obj": "ae5043ce4b76dd664f9c4eccb9abc8e054cead81f742a0bfcf68e1f11e241d62",
+    "models/item/chao_accordion.json": "d2f8e3dc46d7901ada154f4d2c53e3fc3821d6aee58bc2b4cd0ed2d763cc4649",
+    "models/item/chao_accordion_hand_bass.json": "499f0b3adc17fdf7706dc8bbe15ff7388995ee75d96d31085bd9ea2562943e20",
+    "models/item/chao_accordion_hand_bellows.json": "ded907a2a7f47f10d401dfa0a1e8e9f9908a04d3ee94a2558dddb81df1c78ad5",
+    "models/item/chao_accordion_hand_keys.json": "d2c41cf3428d644f8fed48c4aeeff65a74fc1cfceaf524162db0f3b15bf69833",
+    "models/item/chao_bubble_wand.json": "4e740f8e89461c26aa28cb401973c7cfa1e91dee1ce282632c5066e7271d548e",
+    "models/item/chao_castanets.json": "2b6e1e32742f09ceddfc56dcae785bc0f4055982aa69f405f4efc982976cced3",
+    "models/item/chao_guitar.json": "09412e1bef5e3ca2153791a610fdd9e64a4f6f5fdbb2c1df5fdd6af1a6145db6",
+    "models/item/chao_triangle_hand_beater.json": "45317a1d8583e7916c9fafbcc9705fc9791e196073d94e8ce9a3bc0e1b1e8467",
+    "models/item/chao_triangle_hand_body.json": "3b7d93389366b32a71d3975129313d173f7f9cd8a99139b8a2595766b743cfb0",
+    "models/item/cwe02516/chao_accordion.json": "5458518ef3bbab04decf410b9d83745d39232a186955d3f6b04e2fdc7b447aeb",
+    "models/item/cwe02516/chao_guitar.json": "88586e95c8f48d4b7c13d22e7c9cad05dd7e51b27004d5e426ccbdb69a3c48be",
+    "models/item/sa2_02515/chao_bubble_wand.json": "12e4a165b787693a9f41f3cec8be857424cc3c3284bcf73198d46e4883189f8d",
+    "models/item/sa2_02515/chao_castanets.json": "3f3c9f3e61715eb6a35ff1b548de6f5c4b92ecacdb1ee1b8aa0867d9e6a0cc8c",
+    "models/item/sa2_02515/chao_castanets_hand_base.json": "91b5c5b329111f4871278a60c2e734bbff86dcd32f567e217134d5af43f39017",
+    "models/item/sa2_02515/chao_castanets_hand_lid.json": "f23257fff447cd0d675fa71332832162ecda3108ab0ae1f7e01166c58ca55612",
+    "models/sa2_02515/chao_bubble_wand.obj": "095a14e4b58636ab08d36264da4b5cb2be242bd4b57e23753ce34168bed04bf3",
+    "models/sa2_02515/chao_bubble_wand_idle.obj": "ed015f222682a5de0350b0f0c0768a1995d7ade6d96c537507b6908c1327aa38",
+    "models/sa2_02515/chao_bubble_wand_play_0.obj": "ed015f222682a5de0350b0f0c0768a1995d7ade6d96c537507b6908c1327aa38",
+    "models/sa2_02515/chao_bubble_wand_play_1.obj": "0e71bd942c82f6731da7ed4d9d01ab02e6015a41a05f1c20d34e63685eb572b1",
+    "models/sa2_02515/chao_bubble_wand_play_2.obj": "ed015f222682a5de0350b0f0c0768a1995d7ade6d96c537507b6908c1327aa38",
+    "models/sa2_02515/chao_bubble_wand_play_3.obj": "d213af9ded30faec886ced32da6e4d11de3a83014a124de15c022cd1652a86c2",
+    "models/sa2_02515/chao_castanets.obj": "0ca8cfb5882e59e8af062102f40dba8d7923597fdc120b3775608a1393184b10",
+    "models/sa2_02515/chao_castanets_hand_base.obj": "ff50791850dabc5806fd473b41c81fedd165993cb4809906370eddb42fd39621",
+    "models/sa2_02515/chao_castanets_hand_lid.obj": "88ac078630ce209a590d8c6d7014fcc8cf2377b646bc7e2e8ad5c4e24c95de20",
+    "models/sa2_02515/chao_castanets_idle.obj": "e0d351c47291d49bf62c6ac7bddd097d9fd16c6308f6c9889661a99b0decb76d",
+    "models/sa2_02515/chao_castanets_play_0.obj": "e0d351c47291d49bf62c6ac7bddd097d9fd16c6308f6c9889661a99b0decb76d",
+    "models/sa2_02515/chao_castanets_play_1.obj": "b67489602eaa981b0abe5c967b5465df0588574e2e1d2d67a3007beeb242ce3f",
+    "models/sa2_02515/chao_castanets_play_2.obj": "e0d351c47291d49bf62c6ac7bddd097d9fd16c6308f6c9889661a99b0decb76d",
+    "models/sa2_02515/chao_castanets_play_3.obj": "ab11e365c581165eb81a411ee1d6eba2ad313d836bddeba335127c6123462bc4",
+    "models/item/chao_triangle_display.json": "754c19eb2d1718916dc1c87331d2df223058431d74330a741ee8dae9ee215939"
+  },
+  "scope": "Only block model families use these layouts. Item and actual held-animation source meshes/transforms are preserved."
+}

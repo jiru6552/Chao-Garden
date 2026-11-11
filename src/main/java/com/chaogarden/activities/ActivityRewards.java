@@ -50,7 +50,6 @@ public final class ActivityRewards {
       if(wins>=5)put(state,"reward.wrench",1);
       grant(state,items,wins>=6&&state.align>-.5f,"piano","chao_piano");
       grant(state,items,wins>=6&&state.align<=-.5f,"organ","chao_organ");
-      grant(state,items,wins>=10&&state.align<=-.5f,"coffin","chao_coffin");
     }else{
       grant(state,items,wins>=1,"bubble_wand","chao_bubble_wand");
       grant(state,items,wins>=3,"drum","chao_drum");

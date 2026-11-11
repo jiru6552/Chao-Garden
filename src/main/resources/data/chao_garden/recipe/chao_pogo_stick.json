@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W ",
+    "SIS",
+    " S "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:slime_ball"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "id": "chao_garden:chao_pogo_stick",
+    "count": 1
+  }
+}

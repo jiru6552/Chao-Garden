@@ -130,7 +130,7 @@ public final class GuitarGameTests045 {
     state.setTraitInt("learned.guitar",1);var c=actor(h,at,state.adult,false);c.setState(state);var began=new long[]{-1};
     cleanup(h,()->{CUES.remove(c);c.discard();});
     h.onEachTick(()->{if(ToyContent.isPlaying(c)){if(began[0]<0)began[0]=start(c);h.assertTrue(h.getLevel().getBlockState(at).getRenderShape()==RenderShape.INVISIBLE,"variant uses one hand-held presentation");}});
-    h.succeedWhen(()->{h.assertTrue(began[0]>=0&&h.getLevel().getGameTime()-began[0]>=180,"observe whole variant session");h.assertTrue(!ToyContent.isPlaying(c)&&c.state().happiness==24,"variant completes once");h.assertTrue(CUES.get(c).equals(expected(began[0],160)),"variant receives the same strum clock");h.assertTrue(c.state().character.equals(state.character)&&c.state().immortal==state.immortal,"variant identity preserved");});
+    h.succeedWhen(()->{h.assertTrue(began[0]>=0&&h.getLevel().getGameTime()-began[0]>=180,"observe whole variant session: began="+began[0]+" pos="+c.position()+" ground="+c.onGround()+" velocity="+c.getDeltaMovement()+" navDone="+c.getNavigation().isDone()+" kind="+c.toyPlayingKind()+" approach="+c.getPersistentData().getLong("ChaoToyApproachUntil"));h.assertTrue(!ToyContent.isPlaying(c)&&c.state().happiness==24,"variant completes once");h.assertTrue(CUES.get(c).equals(expected(began[0],160)),"variant receives the same strum clock");h.assertTrue(c.state().character.equals(state.character)&&c.state().immortal==state.immortal,"variant identity preserved");});
   }
   private static void learned(GameTestHelper h,boolean adult,String mode){
     var at=floor(h,Direction.NORTH);h.getLevel().setBlock(at,Blocks.AIR.defaultBlockState(),3);

@@ -77,7 +77,7 @@ public final class MobileToyGameTests02518 {
       if(!ToyContent.isPlaying(c))return;int elapsed=ToyContent.sessionElapsed(h.getLevel(),pos);
       if(elapsed<16||elapsed>140||elapsed%8<2)return;
       seen.set(true);int frame=ToyInteractionRules.mountedFrame(elapsed);frames.getAndUpdate(v->v|(1<<frame));
-      Vec3 expected=Vec3.atBottomCenterOf(pos).add(-facing.getStepX()*ToyInteractionRules.horseRiderZ(frame),ToyInteractionRules.horseRiderY(frame),-facing.getStepZ()*ToyInteractionRules.horseRiderZ(frame));
+      Vec3 expected=ToyContent.mountedAnchor(c,pos,h.getLevel().getBlockState(pos),elapsed);
       h.assertTrue(c.distanceToSqr(expected)<.001,"Rider follows measured saddle pivot");
       h.assertTrue(Math.abs(net.minecraft.util.Mth.wrapDegrees(c.getYRot()-facing.getOpposite().toYRot()))<1,"Rider faces source muzzle");
       h.assertTrue(h.getLevel().getBlockState(pos).getValue(ChaoToyBlock.FRAME)==frame,"Prop and rider share session phase");

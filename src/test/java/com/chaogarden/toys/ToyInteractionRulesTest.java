@@ -15,22 +15,6 @@ public final class ToyInteractionRulesTest {
     }
     check(ToyInteractionRules.frontOnly("chao_tv"),"TV remains directional");
     check(!ToyInteractionRules.frontOnly("chao_ball"),"Ball may be approached from any side");
-    int openingStarts=0,previous=0;
-    for(int tick=0;tick<=160;tick++) {
-      int frame=ToyInteractionRules.coffinFrame(tick);
-      double occupancy=ToyInteractionRules.coffinOccupancy(tick);
-      check(frame>=0&&frame<=3,"Valid blockstate frame");
-      check(occupancy>=0&&occupancy<=1,"Bounded occupancy");
-      if(frame==1&&previous==0)openingStarts++;
-      if(occupancy>0&&occupancy<1)check(frame==3,"Enter and exit only through fully open lid");
-      if(tick>=40&&tick<116)check(frame==3&&occupancy==1,"Quiet open rest, not repeated flutter");
-      if(tick>=144)check(occupancy==0,"Chao exits before lid closes");
-      if(tick>0)check(Math.abs(occupancy-ToyInteractionRules.coffinOccupancy(tick-1))<.13,"No mount teleport");
-      previous=frame;
-    }
-    check(openingStarts==1,"Exactly one opening, held until the actor exits");
-    check(ToyInteractionRules.coffinFrame(-1)==0&&ToyInteractionRules.coffinFrame(200)==0,"Inactive lid closed");
-    check(ToyInteractionRules.coffinOccupancy(0)==0&&ToyInteractionRules.coffinOccupancy(160)==0,"Safe adjacent endpoints");
     for(double width:new double[]{.35,.44,.55,.8}) {
       double contact=ToyInteractionRules.ballContactDistance(width);
       check(ToyInteractionRules.ballWithinReach(contact*contact,0,width),"Contact anchor is kickable");
@@ -76,7 +60,7 @@ public final class ToyInteractionRulesTest {
       check(!ToyInteractionRules.stationaryWithinReach(kind,1),"Displaced stationary player invalid");
       check(ToyInteractionRules.stationaryLookHeight(kind)>0&&ToyInteractionRules.stationaryLookHeight(kind)<1,"Look toward toy, not air");
     }
-    for(String kind:new String[]{"chao_ball","chao_piano","chao_organ","chao_coffin","chao_rocking_horse","chao_lifesaver"})
+    for(String kind:new String[]{"chao_ball","chao_piano","chao_organ","chao_rocking_horse","chao_lifesaver"})
       check(!ToyInteractionRules.stationary(kind),"Dedicated interaction preserved");
     check(ToyInteractionRules.environmentValid("chao_shovel",false,false,true),"Sand enables shovel");
     check(!ToyInteractionRules.environmentValid("chao_shovel",false,false,false),"Sand loss invalidates shovel");

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chao_garden:block/chao_picture_book",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "chao_garden:block/chao_picture_book",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chao_garden:block/chao_picture_book",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chao_garden:block/chao_picture_book",
+      "y": 270
+    }
+  }
+}

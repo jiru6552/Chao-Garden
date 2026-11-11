@@ -27,8 +27,11 @@ public final class ActivityRewardsTest {
     }
     ChaoState dark=new ChaoState();dark.align=-1;
     var darkPrizes=ActivityRewards.recordVictory(dark,"race",10);
-    check(darkPrizes.containsAll(List.of("chao_organ","chao_coffin")),"Dark milestone props missing");
+    check(darkPrizes.contains("chao_organ")&&!darkPrizes.contains("chao_coffin"),"Dark milestone retains organ and never grants the retired coffin");
     check(!darkPrizes.contains("chao_piano"),"Dark Chao received the ordinary piano");
+    check(dark.intTrait("reward.coffin")==0,"Retirement must not record a newly earned coffin");
+    ChaoState legacy=ChaoState.decode(dark.encode());legacy.setTraitInt("reward.coffin",1);legacy.setTrait("foreign.keep","untouched");
+    check(!ActivityRewards.recordVictory(legacy,"race",11).contains("chao_coffin")&&legacy.intTrait("reward.coffin")==1&&legacy.trait("foreign.keep").equals("untouched"),"Legacy reward flags and unrelated state survive without regranting the retired toy");
     check(dark.intTrait("reward.wrench")==1,"Assembly ability not unlocked");
     check(ActivityRewards.medals(dark).size()==4,"Migrated ten-win journal did not credit all medal tiers");
     ChaoState full=new ChaoState();int index=0;

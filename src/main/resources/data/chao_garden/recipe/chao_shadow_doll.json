@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W ",
+    "SIS",
+    " S "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:black_wool"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "id": "chao_garden:chao_shadow_doll",
+    "count": 1
+  }
+}

@@ -76,7 +76,6 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
       case "chao_rocking_horse" -> {minX=5.3;maxX=10.7;minZ=.9;maxZ=15.1;height=14;}
       case "chao_piano" -> {minX=1;maxX=15;minZ=1.9;maxZ=14.1;height=9.6;}
       case "chao_organ" -> {minX=1.8;maxX=14.2;minZ=5;maxZ=11;height=15;}
-      case "chao_coffin" -> {minX=2;maxX=14;minZ=4.15;maxZ=11.85;height=4.4;}
       case "chao_lifesaver" -> {
         minX=3.4;maxX=12.6;minZ=3.4;maxZ=12.6;height=3;
         if(state.getValue(WATERLOGGED)){minY=12.4;height=16.2;}
@@ -120,7 +119,8 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
   }
   @Override protected net.minecraft.world.level.block.RenderShape getRenderShape(BlockState state) {
     // FRAME=1 is hand presentation of the one reserved physical toy.
-    return BubblePlayRules.handToy(toy)&&state.getValue(PLAYING)&&state.getValue(FRAME)==1
+    return (toy.equals("chao_rocking_horse")&&state.getValue(PLAYING))
+        ||BubblePlayRules.handToy(toy)&&state.getValue(PLAYING)&&state.getValue(FRAME)==1
         ?net.minecraft.world.level.block.RenderShape.INVISIBLE:super.getRenderShape(state);
   }
   @Override protected boolean isRandomlyTicking(BlockState state) { return state.getValue(PLAYING); }
@@ -162,11 +162,6 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
         if(state.getValue(FRAME)==0&&elapsed>=ToyInteractionRules.JACK_POP_TICK&&elapsed<128)
           ToyContent.playPulse(level,pos,toy);
       }
-      level.scheduleTick(pos,this,1);return;
-    }
-    if(toy.equals("chao_coffin")) {
-      int frame=ToyInteractionRules.coffinFrame(ToyContent.sessionElapsed(level,pos));
-      if(frame!=state.getValue(FRAME))level.setBlock(pos,state.setValue(FRAME,frame),3);
       level.scheduleTick(pos,this,1);return;
     }
     int frame=Math.floorMod(ToyContent.sessionElapsed(level,pos)/4,4);

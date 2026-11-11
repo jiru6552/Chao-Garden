@@ -4,7 +4,7 @@ from pathlib import Path
 import json,hashlib,sys,math
 from PIL import Image,ImageOps
 ROOT=Path(__file__).resolve().parents[1];A=ROOT/'src/main/resources/assets/chao_garden';D=ROOT/'art/sa2_02515';sys.path.insert(0,str(ROOT/'scripts'))
-from generate_sa2_assets_02515 import TOYS,HATS,adapt,toy_mesh,toy_item_mesh,fit,render,icon,LIMITS,source,normal,COFFIN_LID_NODE,RIGID_TOYS,rigid_toy_pose
+from generate_sa2_assets_02515 import TOYS,HATS,adapt,toy_mesh,toy_item_mesh,fit,render,icon,LIMITS,source,normal,RIGID_TOYS,rigid_toy_pose
 checks=0
 def check(value,msg):
  global checks
@@ -54,28 +54,12 @@ def main():
   m,mats=toy_item_mesh(n) if n in TOYS else adapt(HATS[n]);expected=icon(fit(m,(1,1,1,15,15,15)),n,mats)
   with Image.open(A/'textures/item'/(n+'.png')) as actual:check(actual.tobytes()==expected.tobytes(),'Icon/model mismatch '+n)
   data=json.loads((A/'models/item/sa2_02515'/(n+'.json')).read_text());ps,used=obj(A/data['model'].split(':')[1]);check(used<=data['textures'].keys(),'Unbound item material '+n)
- # Ownership follows the source face order (including back faces and degenerate filtering).
- coffin_hull=[];index=0
- for face in TOYS['chao_coffin']['faces']:
-  mesh,_=adapt({**TOYS['chao_coffin'],'faces':[face]})
-  count=sum(len(ps) for ps,_,_ in mesh.faces if sum(v*v for v in normal(ps))>=.9)
-  if face['node']!=COFFIN_LID_NODE:coffin_hull.extend(range(index,index+count))
-  index+=count
- coffin_rest=obj(A/'models/sa2_02515/chao_coffin_idle.obj')[0];coffin_top=max(p[1] for p in coffin_rest)
  for n in TOYS:
   for stage in toy_stages(n):
    d=json.loads((A/'models/block'/(n+'_'+stage+'.json')).read_text())
    check(d['model']=='chao_garden:models/sa2_02515/'+n+'_'+stage+'.obj','Wrong placed toy pose binding '+n+'/'+stage)
    ps,mats=obj(A/d['model'].split(':')[1]);lim=list(LIMITS.get(n,(3,0,3,13,8,13)))
    if stage!='idle' and n=='chao_maracas':lim[4]=6
-   if n=='chao_coffin':
-    check(all(ps[i]==coffin_rest[i] for i in coffin_hull),'Coffin hull moved '+stage)
-    check(all(lim[a]-.002<=ps[i][a]*16<=lim[a+3]+.002 for i in coffin_hull for a in range(3)),'Coffin hull escapes closed envelope '+stage)
-    if stage=='play_0':check(ps==coffin_rest,'Coffin frame zero must be closed')
-    elif stage.startswith('play_'):
-     top=max(p[1] for p in ps);check(top>coffin_top+.02,'Coffin lid must open monotonically '+stage);coffin_top=top
-    # A rigid lid sweeps above/beside the closed collision hull; do not shrink it to fit.
-    if stage!='idle':lim=[2,0,1,15,11,15]
    # Rigid mounted motion sweeps beyond the rest fit without changing scale.
    if n=='chao_rocking_horse':lim=[1,0,1,15,14,15.1]
    elif n=='chao_lifesaver':

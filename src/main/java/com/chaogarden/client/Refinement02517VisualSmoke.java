@@ -73,8 +73,6 @@ public final class Refinement02517VisualSmoke {
     if(ticks==440){check(mc.player.getMainHandItem().is(ChaoGarden.item("chao_accordion")),"Actual accordion hand slot");capture("accordion-held");}
     if(ticks==460)server(p->{p.getInventory().setItem(6,new ItemStack(ChaoGarden.item("chao_garden_music_disc")));});
     if(ticks==490){check(mc.player.getMainHandItem().is(ChaoGarden.item("chao_garden_music_disc")),"Actual disc hand slot");capture("disc-held");}
-    if(ticks==510)server(p->{p.getInventory().setItem(6,ItemStack.EMPTY);var at=new BlockPos(12,80,14);p.serverLevel().setBlock(at,com.chaogarden.toys.ToyContent.block("chao_coffin").defaultBlockState(),3);p.connection.teleport(12.5,80.4,16.3,180,45);});
-    if(ticks==550)capture("coffin-lid");
     if(ticks==570)server(p->{var at=new BlockPos(15,80,10);for(int i=0;i<49;i++)p.serverLevel().setBlock(at.offset(KarateMatBlock.offset(i)),ActivityContent.MAT.get().defaultBlockState().setValue(KarateMatBlock.TILE,i),3);p.connection.teleport(15.5,86,5,0,55);});
     if(ticks==610)capture("tatami-carpet");
     if(ticks==640){check(saves.get()==13,"Screenshot writes incomplete: "+saves.get());LogUtils.getLogger().info("CHAO02517_VISUAL_PASS screenshots={} nativeDrag=true unregister=true journalChapterSearch=true journalSectionSearch=true",saves.get());mc.stop();}

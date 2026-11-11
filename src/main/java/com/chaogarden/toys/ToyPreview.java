@@ -39,11 +39,18 @@ public final class ToyPreview {
       return "This Chao is busy. Let its current activity finish first.";
     if(!c.getHeldChaoItem().isEmpty()||!c.getMainHandItem().isEmpty())return "Let the Chao put down its item first.";
     if(c.officialComparison())return "Use /chao appearance garden first to enable gameplay animations.";
-    if(c.isInWater()||!c.onGround())return "Place the Chao on dry, solid ground first.";
+    if(c.isInWater()||!c.onGround()&&!(active(c)&&ToyContent.mounted(ACTIVE.get(c).kind)))return "Place the Chao on dry, solid ground first.";
     if(!active(c)&&(c.toyPlayingTicks()>0||c.getPersistentData().getLong("ChaoToyApproachUntil")>c.level().getGameTime()))return "This Chao is already approaching or using a placed toy.";
     return "";
   }
   public static String start(ChaoEntity c,ServerPlayer keeper,String id,boolean loop){
+    if(id.equals("rocking_horse")||id.equals("pogo_stick")){
+      String kind="chao_"+id;String problem=unavailable(c);if(!problem.isEmpty())return problem;
+      stop(c);var at=ToyContent.previewMounted(c,kind);if(at==null)return "Place a "+id+" nearby with clear supported ground and room to ride.";
+      problem=startKind(c,keeper,kind,loop);
+      if(problem.isEmpty()&&!ToyContent.beginMountedPreview(c,at)){stop(c);return "The toy no longer has clear mounting space.";}
+      return problem;
+    }
     if(id.equals("piano")||id.equals("organ")){
       String kind="chao_"+id;
       String problem=unavailable(c);if(!problem.isEmpty())return problem;
@@ -59,6 +66,7 @@ public final class ToyPreview {
   private static String startKind(ChaoEntity c,ServerPlayer keeper,String kind,boolean loop){
     String problem=unavailable(c);if(!problem.isEmpty())return problem;
     stop(c);
+    problem=unavailable(c);if(!problem.isEmpty())return problem;
     c.getPersistentData().putBoolean(RESTORE_AI,c.isNoAi());c.getNavigation().stop();c.setDeltaMovement(Vec3.ZERO);c.setNoAi(true);
     ACTIVE.put(c,new Session(kind,loop,keeper,c.level().getGameTime()));c.setToyPlaying(kind,ToyContent.PLAY_TICKS);
     return "";
@@ -78,6 +86,8 @@ public final class ToyPreview {
       if(ToyInteractionRules.keyboard(s.kind)){
         var at=c.toyTarget();if(at==null||!ToyContent.holdKeyboard(c,at)){stop(c);return true;}
         ToyContent.beginKeyboardPreview(c,at);
+      }else if(ToyContent.mounted(s.kind)){
+        var at=c.toyTarget();if(at==null||!ToyContent.holdMounted(c,at,160)||!ToyContent.beginMountedPreview(c,at)){stop(c);return true;}
       }else c.setToyPlaying(s.kind,ToyContent.PLAY_TICKS);
     }
     c.getNavigation().stop();c.setDeltaMovement(new Vec3(0,c.getDeltaMovement().y,0));
@@ -85,6 +95,9 @@ public final class ToyPreview {
       var at=c.toyTarget();
       if(at==null||!c.level().getBlockState(at).is(ToyContent.block(s.kind))||!ToyContent.holdKeyboard(c,at)){stop(c);return true;}
       if(s.kind.equals(OrganPlayRules.KIND))OrganPlayRules.cue(c,(int)elapsed);else PianoPlayRules.cue(c,(int)elapsed);
+    }else if(ToyContent.mounted(s.kind)){
+      var at=c.toyTarget();if(at==null||!ToyContent.holdMounted(c,at,elapsed)){stop(c);return true;}
+      HandToyEffects.tick(c,s.kind,(int)elapsed);
     }else HandToyEffects.tick(c,s.kind,(int)elapsed);return true;
   }
   public static boolean stop(ChaoEntity c){
@@ -130,7 +143,7 @@ public final class ToyPreview {
     e.getDispatcher().register(Commands.literal("chao").then(poseRoot));
   }
   private static int help(CommandSourceStack source){
-    source.sendSuccess(()->Component.literal("/chao testtoy <toy> [once|loop|stop] — nearest Chao within 12 blocks. Toys: "+String.join(", ",HandToyEffects.clips().stream().map(HandToyEffects.Clip::id).toList())+", piano, organ (require the matching placed keyboard nearby). No lessons/items needed for hand toys; no rewards or saved trait changes. Stop: /chao testtoy stop. Carrying: /chao testcarry once|loop|stop with an equipped Chao. Loops also stop on interaction, damage, unload, logout or leaving 64 blocks/dimension."),false);return 1;
+    source.sendSuccess(()->Component.literal("/chao testtoy <toy> [once|loop|stop] — nearest Chao within 12 blocks. Toys: "+String.join(", ",HandToyEffects.clips().stream().map(HandToyEffects.Clip::id).toList())+", piano, organ (require the matching placed keyboard nearby; rocking_horse and pogo_stick require their placed toy). No lessons/items needed for hand toys; no rewards or saved trait changes. Stop: /chao testtoy stop. Carrying: /chao testcarry once|loop|stop with an equipped Chao. Loops also stop on interaction, damage, unload, logout or leaving 64 blocks/dimension."),false);return 1;
   }
   private static int run(CommandSourceStack source,String id,String mode) throws com.mojang.brigadier.exceptions.CommandSyntaxException {
     var player=source.getPlayerOrException();

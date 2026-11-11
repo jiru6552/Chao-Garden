@@ -1,6 +1,6 @@
 package com.chaogarden.toys;
 
-/** Shared, deterministic contact and coffin choreography. Times are session ticks. */
+/** Shared, deterministic contact choreography. Times are session ticks. */
 public final class ToyInteractionRules {
   private ToyInteractionRules() {}
   public static final int SESSION_TICKS=160;
@@ -12,7 +12,7 @@ public final class ToyInteractionRules {
     return kind.equals("chao_piano")||kind.equals("chao_organ");
   }
   public static boolean frontOnly(String kind) {
-    return keyboard(kind)||kind.equals("chao_tv")||kind.equals("chao_jack_in_box")||kind.equals("chao_coffin");
+    return keyboard(kind)||kind.equals("chao_tv")||kind.equals("chao_jack_in_box");
   }
   /** Distance from the toy center; cabinet front plus the actor's collision radius. */
   public static double keyboardDistance(String kind,double actorWidth) {
@@ -24,7 +24,7 @@ public final class ToyInteractionRules {
   /** Ground-placeable stationary play; dedicated keyboard/ball/mount controllers stay separate. */
   public static boolean stationary(String kind) {
     return !kind.isEmpty()&&!keyboard(kind)&&!kind.equals("chao_ball")
-        &&!kind.equals("chao_rocking_horse")&&!kind.equals("chao_coffin")&&!kind.equals("chao_lifesaver");
+        &&!kind.equals("chao_rocking_horse")&&!kind.equals("chao_pogo_stick")&&!kind.equals("chao_lifesaver");
   }
   public static boolean viewing(String kind) {
     return kind.equals("chao_tv")||kind.equals("chao_radio")
@@ -59,8 +59,17 @@ public final class ToyInteractionRules {
   public static double[] collisionEnvelope(String kind) {
     return switch(kind) {
       case "chao_radio"->new double[]{2,0,5.75,14,5.63,10.25};
-      case "chao_guitar"->new double[]{3,0,5.84,13,4.89,10.16};
-      case "chao_triangle"->new double[]{4,0,6,12,14,10.6};
+      case "chao_toy_car"->new double[]{4.94,0,3.27,11.06,4.8,12.73};
+      case "chao_sonic_doll","chao_shadow_doll"->new double[]{6.49,0,5.64,9.51,3,10.36};
+      case "chao_pogo_stick"->new double[]{4.78,0,4,11.22,3,12};
+      case "chao_broom"->new double[]{6.30,0,2.56,9.70,3.40,13.44};
+      case "chao_picture_book"->new double[]{4.50,0,4,11.50,1.03,12};
+      case "chao_crayons"->new double[]{4.16,0,6,11.84,1.16,10};
+      case "chao_guitar"->new double[]{6.23,0,2.77,9.77,.73,13.23};
+      case "chao_accordion"->new double[]{3.9,0,3.82,12.1,2.25,12.18};
+      case "chao_bubble_wand"->new double[]{6.67,0,3.04,9.33,.51,12.96};
+      case "chao_castanets"->new double[]{4.05,0,4.56,11.95,3.1,11.44};
+      case "chao_triangle"->new double[]{2,0,2,12.9,1,14};
       case "chao_rubber_duck"->new double[]{1,0,3,16,11,13};
       case "chao_jack_in_box"->new double[]{3.8,0,3.8,14,16,12.5};
       case "chao_rattle"->new double[]{6.25,0,4.74,9.61,3.96,11.26};
@@ -91,21 +100,6 @@ public final class ToyInteractionRules {
     return Math.sin(Math.PI*(elapsed-JACK_POP_TICK)/24);
   }
   public static boolean jackReactionDue(int elapsed) { return elapsed>=JACK_REACTION_TICK; }
-  public static int coffinFrame(int elapsed) {
-    if(elapsed<0||elapsed>=SESSION_TICKS)return 0;
-    if(elapsed<12)return elapsed/4;
-    // This shallow source prop stays open while occupied; close only after exit.
-    if(elapsed<144)return 3;
-    if(elapsed<156)return 2-(elapsed-144)/4;
-    return 0;
-  }
-  /** Only enter/leave while the lid is fully open. Smooth endpoints avoid snapping. */
-  public static double coffinOccupancy(double elapsed) {
-    if(elapsed<16||elapsed>=140)return 0;
-    if(elapsed<28)return smooth((elapsed-16)/12);
-    if(elapsed<128)return 1;
-    return 1-smooth((elapsed-128)/12);
-  }
   public static final int BALL_KICK_TICKS=10, BALL_CONTACT_TICK=4;
   public static double ballContactDistance(double actorWidth){return .25+actorWidth*.5+.06;}
   public static boolean ballWithinReach(double horizontalSquared,double verticalDelta,double actorWidth) {

@@ -28,7 +28,9 @@ public final class MarketStock {
   }
   public static final List<String> TOYS = List.of("chao_trumpet", "chao_drum", "chao_jack_in_box", "chao_radio", "chao_tv",
       "chao_rocking_horse", "chao_piano", "chao_organ", "chao_rubber_duck", "chao_lifesaver",
-      "chao_coffin", "chao_triangle", "chao_guitar", "chao_accordion", "chao_bubble_wand");
+      "chao_triangle", "chao_guitar", "chao_accordion", "chao_bubble_wand",
+      "chao_toy_car", "chao_sonic_doll", "chao_shadow_doll", "chao_broom",
+      "chao_picture_book", "chao_pogo_stick", "chao_crayons");
   public static final List<String> GARDEN_TOOLS=List.of("chao_shovel","chao_watering_can");
   public static final List<String> LEGACY_TOYS = List.of("chao_ball", "chao_rattle", "chao_maracas");
   /** Classroom rewards: source has no buy price, so these never enter market stock. */
@@ -85,7 +87,7 @@ public final class MarketStock {
     int[] hats = {2000,2000,2000,4000,4000,4000,6000,6000,6000,8000,10000,20000};
     for (int i=0;i<HATS.size();i++) add(p,HATS.get(i),hats[i],2);
     // Additional toys have explicit Minecraft prices; the source unlocks these as rewards.
-    int[] toys = {5000,15000,30000,60000,100000, 15000,20000,25000,3000,4000,20000,5000,10000,10000,3000};
+    int[] toys = {5000,15000,30000,60000,100000, 15000,20000,25000,3000,4000,5000,10000,10000,3000,12000,8000,8000,2000,4000,10000,3000};
     add(p,"chao_shovel",2000,Integer.MAX_VALUE);
     add(p,"chao_watering_can",2500,Integer.MAX_VALUE);
     for (int i=0;i<TOYS.size();i++) add(p,TOYS.get(i),toys[i],1);

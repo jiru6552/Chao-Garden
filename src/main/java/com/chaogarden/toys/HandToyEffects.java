@@ -13,6 +13,14 @@ import net.minecraft.sounds.SoundSource;
 public final class HandToyEffects {
   public record Clip(String id, String kind, IntPredicate due, BiConsumer<ChaoEntity,Integer> cue) {}
   private static final List<Clip> CLIPS=List.of(
+      new Clip("rocking_horse",RockingHorsePlayRules.KIND,RockingHorsePlayRules::soundDue,RockingHorsePlayRules::cue),
+      new Clip("toy_car","chao_toy_car",t->ActiveToyPlayRules049.soundDue("chao_toy_car",t),(c,t)->GardenToyPerformance049.cue(c,"chao_toy_car")),
+      new Clip("sonic_doll","chao_sonic_doll",t->ActiveToyPlayRules049.soundDue("chao_sonic_doll",t),(c,t)->GardenToyPerformance049.cue(c,"chao_sonic_doll")),
+      new Clip("shadow_doll","chao_shadow_doll",t->ActiveToyPlayRules049.soundDue("chao_shadow_doll",t),(c,t)->GardenToyPerformance049.cue(c,"chao_shadow_doll")),
+      new Clip("pogo_stick","chao_pogo_stick",t->ActiveToyPlayRules049.soundDue("chao_pogo_stick",t),(c,t)->GardenToyPerformance049.cue(c,"chao_pogo_stick")),
+      new Clip("broom","chao_broom",t->QuietToyPlayRules049.soundDue("chao_broom",t),(c,t)->GardenToyPerformance049.cue(c,"chao_broom")),
+      new Clip("picture_book","chao_picture_book",t->QuietToyPlayRules049.soundDue("chao_picture_book",t),(c,t)->GardenToyPerformance049.cue(c,"chao_picture_book")),
+      new Clip("crayons","chao_crayons",t->QuietToyPlayRules049.soundDue("chao_crayons",t),(c,t)->GardenToyPerformance049.cue(c,"chao_crayons")),
       new Clip("rattle",RattlePlayRules.KIND,RattlePlayRules::soundDue,(c,t)->sound(c,ChaoSounds.RATTLE.get(),.35f,1)),
       new Clip("bubble_wand",BubblePlayRules.KIND,BubblePlayRules::puffDue,(c,t)->{
         ToyCueNetwork.bubble(c,t);

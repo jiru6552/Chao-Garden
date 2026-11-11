@@ -1,3 +1,11 @@
+## 0.25.49 — Garden toys and retirement
+
+- Retire the coffin from active toys, rewards, crafting, market and creative inventory. Preserve saved IDs as inert compatibility markers and non-placeable tokens, with no inventory or chunk scans.
+- Give accordion, guitar, triangle, bubble wand and castanets separate flat floor models while preserving their held and inventory presentation.
+- Refine rocking-horse mounting, continuous rocking, measured seat/handle/foot contact, safe exit and production previews.
+- Add car, Sonic/Shadow dolls, broom, picture book, pogo stick and crayons with source-derived assets and individual Lionfish interactions. Document source geometry, authored adaptations and reference limits.
+- Expand native recovery/preview/save checks and actual client quality studies. See docs/TOYS_02549.md for per-toy results and remaining limitations.
+
 ## 0.25.48 — Piano and accordion interactions
 
 - Bring piano performers closer to the measured front keys, limit arm extension and follow the key depression with visible replacement hands. Keep the existing alternating harp phrase and gameplay rewards.

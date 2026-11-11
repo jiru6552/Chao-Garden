@@ -40,6 +40,9 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
   private final LionfishOrganClip organClip = new LionfishOrganClip();
   private final LionfishGuitarClip guitarClip = new LionfishGuitarClip();
   private final LionfishAccordionClip accordionClip = new LionfishAccordionClip();
+  private final LionfishRockingHorseClip rockingHorseClip = new LionfishRockingHorseClip();
+  private final LionfishActiveToyClip049 activeToyClip049 = new LionfishActiveToyClip049();
+  private final LionfishQuietToyClip049 quietToyClip049 = new LionfishQuietToyClip049();
   float accordionBellows(float phase){return accordionClip.bellows(phase);}
   private final LionfishTriangleClip triangleClip = new LionfishTriangleClip();
   float triangleTap(float phase){return triangleClip.tap(phase);}
@@ -142,6 +145,8 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     String toyKind=entity.toyPlayingKind();
     boolean rattle=ChaoRattleAnimation.active(entity),rattleHappy=ChaoRattleAnimation.happy(entity,partial);
     boolean bubble=ChaoBubbleAnimation.active(entity),bubbleHappy=ChaoBubbleAnimation.happy(entity,partial),maracas=ChaoMaracasAnimation.active(entity);
+    boolean horse049=ChaoRockingHorseAnimation.active(entity),active049=ChaoActiveToyAnimation049.active(entity),quiet049=ChaoQuietToyAnimation049.active(entity);
+    rattleHappy|=ChaoRockingHorseAnimation.happy(entity,partial)||ChaoActiveToyAnimation049.happy(entity,partial)||ChaoQuietToyAnimation049.happy(entity,partial);
     rattleHappy|=bubbleHappy||ChaoPianoAnimation.happy(entity,partial)||ChaoOrganAnimation.happy(entity,partial)||ChaoGuitarAnimation.happy(entity,partial)||ChaoAccordionAnimation.happy(entity,partial);
     boolean bell=ChaoBellAnimation.active(entity),tambourine=ChaoTambourineAnimation.active(entity),castanets=ChaoCastanetsAnimation.active(entity),cymbals=ChaoCymbalsAnimation.active(entity),drum=ChaoDrumAnimation.active(entity),flute=ChaoFluteAnimation.active(entity),trumpet=ChaoTrumpetAnimation.active(entity),triangle=ChaoTriangleAnimation.active(entity),piano=ChaoPianoAnimation.active(entity),organ=ChaoOrganAnimation.active(entity),guitar=ChaoGuitarAnimation.active(entity),accordion=ChaoAccordionAnimation.active(entity);
     rattleHappy|=ChaoMaracasAnimation.happy(entity,partial)||ChaoBellAnimation.happy(entity,partial)||ChaoTambourineAnimation.happy(entity,partial)||ChaoCastanetsAnimation.happy(entity,partial)||ChaoCymbalsAnimation.happy(entity,partial)||ChaoDrumAnimation.happy(entity,partial)||ChaoFluteAnimation.happy(entity,partial)||ChaoTrumpetAnimation.happy(entity,partial)||ChaoTriangleAnimation.happy(entity,partial);
@@ -171,6 +176,7 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     else if(toyKind.equals(com.chaogarden.toys.ToyPreview.SITTING_KIND)) {
       float phase=160-entity.toyPlayingTicks();motion=phase<20||phase>=140?OfficialChaoRig.Motion.WALK:OfficialChaoRig.Motion.SIT;
     }
+    else if(entity.toyPlayingKind().equals("chao_pogo_stick")||entity.toyPlayingKind().equals("chao_broom"))motion=OfficialChaoRig.Motion.WALK;
     else if(entity.toyPlayingTicks()>0&&!ballChasing)motion=rattle||bubble
         ?OfficialChaoRig.Motion.WALK:OfficialChaoRig.Motion.PLAY;
     else if (pet) motion = OfficialChaoRig.Motion.PET;
@@ -220,11 +226,11 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     if(actualChaos){var marker=official.pose("chaos_marker");if(marker!=null){marker.visible=emotion==0;marker.y+=Mth.sin(age*.075f)*.18f;marker.ry+=age*.012f;}}
     if(!gripping&&entity.isHandlingItem()) itemAction(entity,action,partial,age);
     else if(!gripping&&entity.toyPlayingTicks()>0) {
-      if(!rattle&&!bubble&&!maracas&&!bell&&!tambourine&&!castanets&&!cymbals&&!flute&&!trumpet&&!triangle&&!piano&&!organ&&!guitar&&!accordion)toyAction(entity.toyPlayingKind(),age,entity.toyPlayingTicks(),partial,entity.toyKickElapsed());
+      if(!rattle&&!bubble&&!maracas&&!bell&&!tambourine&&!castanets&&!cymbals&&!flute&&!trumpet&&!triangle&&!piano&&!organ&&!guitar&&!accordion&&!horse049&&!active049&&!quiet049)toyAction(entity.toyPlayingKind(),age,entity.toyPlayingTicks(),partial,entity.toyKickElapsed());
     }
     else if(eat) {
       holdHands(.15f);addRotation("skull",.10f+Mth.sin(age*.55f)*.025f,0,0);
-    } else if(!gripping&&!rest&&!pet&&!held&&gesture&&!maracas&&!bell&&!tambourine&&!castanets&&!cymbals&&!flute&&!trumpet&&!triangle&&!guitar&&!accordion) {
+    } else if(!gripping&&!rest&&!pet&&!held&&gesture&&!maracas&&!bell&&!tambourine&&!castanets&&!cymbals&&!flute&&!trumpet&&!triangle&&!guitar&&!accordion&&!active049&&!quiet049) {
       // Generic behavior saves retain the remaining timer. A newborn's one
       // settling sequence must not restart its head turn after such a reload.
       float behaviorProgress=behavior==ChaoEntity.Behavior.HATCH
@@ -245,10 +251,7 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     if(!gripping&&"normal".equals(state.character)&&!state.immortal
         &&official.attachmentEyes()!=null) {
       long seed=entity.getUUID().getLeastSignificantBits()^entity.getUUID().getMostSignificantBits();
-      boolean coffinRest=entity.toyPlayingKind().equals("chao_coffin")
-          &&com.chaogarden.toys.ToyInteractionRules.coffinOccupancy(
-              com.chaogarden.toys.ToyInteractionRules.SESSION_TICKS-entity.toyPlayingTicks()+partial)>.999;
-      eyeExpression=rest||coffinRest||behavior==ChaoEntity.Behavior.GROGGY?3
+      eyeExpression=rest||behavior==ChaoEntity.Behavior.GROGGY?3
           :motion==OfficialChaoRig.Motion.FLAIL||behavior==ChaoEntity.Behavior.CRY?2
           :action==ChaoEntity.ItemAction.EAT||rattleHappy?1
           :pet&&Mth.sin(age*.15f)>.72f?1
@@ -293,7 +296,7 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     if(gripping)official.applyCompanionCarry(entity.companionBackBlend(partial));
     if(rattle||bubble||maracas||bell||tambourine||castanets||cymbals||drum||flute||trumpet||triangle)toyPalm=toyGrip.locate(state,official);
     if(maracas||tambourine||castanets||cymbals||drum||flute||trumpet||triangle)leftToyPalm=toyGrip.locate(state,official,true);
-    if(trumpet||triangle||piano||organ||guitar||accordion){toyPalm=toyGrip.locateVisible(state,official,false);leftToyPalm=toyGrip.locateVisible(state,official,true);}
+    if(trumpet||triangle||piano||organ||guitar||accordion||horse049||active049||quiet049){toyPalm=toyGrip.locateVisible(state,official,false);leftToyPalm=toyGrip.locateVisible(state,official,true);}
     ChaoRattleAnimation.pose(entity,this,rattleClip,partial);
     ChaoBubbleAnimation.pose(entity,this,bubbleClip,partial);
     ChaoMaracasAnimation.pose(entity,this,maracasClip,partial);
@@ -305,7 +308,7 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     ChaoFluteAnimation.pose(entity,this,fluteClip,partial);
     // Record the complete Lionfish pose, so cancellation blends the visible
     // outgoing arm back to the next activity instead of snapping to idle.
-    int toyTransition=rattle?1:bubble?2:maracas?3:bell?4:tambourine?5:castanets?6:cymbals?7:drum?8:flute?9:trumpet?10:triangle?11:piano?12:organ?13:guitar?14:accordion?15:0;
+    int toyTransition=rattle?1:bubble?2:maracas?3:bell?4:tambourine?5:castanets?6:cymbals?7:drum?8:flute?9:trumpet?10:triangle?11:piano?12:organ?13:guitar?14:accordion?15:horse049?16:active049?17+com.chaogarden.toys.GardenToyPerformance049.KINDS.indexOf(entity.toyPlayingKind()):quiet049?25+com.chaogarden.toys.QuietToyPlayRules049.index(entity.toyPlayingKind()):0;
     official.finishGameplayFrame(entity.getUUID(),emotion+16*behavior.ordinal()+1024*toyTransition,age);
     // Fit the mouth-held trumpet to the actual blended incoming skeleton.
     // Blending its already-solved arms independently from the head can sweep
@@ -316,6 +319,9 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     if(organ){ChaoOrganAnimation.pose(entity,this,organClip,partial);official.rememberGameplayFrame(entity.getUUID());}
     if(guitar){ChaoGuitarAnimation.pose(entity,this,guitarClip,partial);official.rememberGameplayFrame(entity.getUUID());}
     if(accordion){ChaoAccordionAnimation.pose(entity,this,accordionClip,partial);official.rememberGameplayFrame(entity.getUUID());}
+    if(horse049){ChaoRockingHorseAnimation.pose(entity,this,rockingHorseClip,partial);official.rememberGameplayFrame(entity.getUUID());}
+    if(active049){ChaoActiveToyAnimation049.pose(entity,this,activeToyClip049,partial);official.rememberGameplayFrame(entity.getUUID());}
+    if(quiet049){ChaoQuietToyAnimation049.pose(entity,this,quietToyClip049,partial);official.rememberGameplayFrame(entity.getUUID());}
     if(!official.finite())throw new IllegalStateException("Non-finite imported Chao pose");
   }
   private void holdHands(float lift) {
@@ -379,17 +385,6 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
       case "chao_tv","chao_radio" -> {
         addRotation("skull",.08f,0,tap*.025f);
         if(kind.equals("chao_radio")){addRotation("body",0,0,tap*.035f);holdHands(.1f);}
-      }
-      case "chao_rocking_horse" -> {
-        holdHands(.25f);addRotation("foot_left",-.6f,0,.35f);addRotation("foot_right",-.6f,0,-.35f);
-        // Source horse faces +Z, opposite block FACING: local rider pitch follows the same world rock.
-        addRotation("root",(float)com.chaogarden.toys.ToyInteractionRules.horseAngle(frame),0,0);
-      }
-      case "chao_coffin" -> {
-        float rest=(float)com.chaogarden.toys.ToyInteractionRules.coffinOccupancy(
-            com.chaogarden.toys.ToyInteractionRules.SESSION_TICKS-remaining+partial);
-        // Skull and body are siblings: recline their common root, not just the torso.
-        addRotation("root",-1.35f*rest,0,0);addRotation("skull",.08f*rest,0,0);holdHands(.1f);
       }
       case "chao_piano" -> {
         // Low source keyboards: seated, hands forward with small independent key presses.

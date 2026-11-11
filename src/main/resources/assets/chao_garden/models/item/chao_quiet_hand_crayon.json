@@ -1,0 +1,12 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/quiet02549/hand_crayon.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_kureyon02_52": "chao_garden:block/quiet02549/sa2_kureyon02_52",
+    "particle": "chao_garden:block/quiet02549/sa2_kureyon02_52"
+  },
+  "render_type": "minecraft:cutout"
+}

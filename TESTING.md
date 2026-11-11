@@ -66,3 +66,8 @@ See [interaction changes, preview commands and verification](docs/INSTRUMENTS_02
 Check baby/adult and replacement hands from the front and both sides, all four piano facings, accordion keys facing outward, bellows opening and closing, entry/exit, damage, stop, movement and removal of the placed toy. Listen to the harp/accordion timing and volume with multiple Chao; independent multiplayer and full-modpack checks remain manual.
 
 The full 0.25.48 `build` still hits an unchanged triangle transition assertion that was reproduced against the delivered 0.25.47 JAR. The installable JAR assembles successfully; see the report for baseline proof and the passing focused checks.
+
+
+## Garden toys 0.25.49
+
+See [per-toy changes and verification](docs/TOYS_02549.md), [source references](docs/TOY_REFERENCES_02549.md) and [coffin retirement compatibility](docs/COFFIN_RETIREMENT_02549.md). All new toys expose `/chao testtoy <id> once|loop|stop`; horse and pogo require a nearby matching placed toy. The opt-in `gardenToy049Study` client creates a disposable world and supports `gardenToy049Start` / `gardenToy049Limit` for individual quality passes.

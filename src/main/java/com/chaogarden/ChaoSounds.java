@@ -32,6 +32,12 @@ public final class ChaoSounds {
 
   public static final DeferredHolder<SoundEvent, SoundEvent> GUITAR = register("toy.guitar");
   public static final DeferredHolder<SoundEvent, SoundEvent> ACCORDION = register("toy.accordion");
+  public static final DeferredHolder<SoundEvent, SoundEvent> TOY_CAR = register("toy.car");
+  public static final DeferredHolder<SoundEvent, SoundEvent> TOY_DOLL = register("toy.doll");
+  public static final DeferredHolder<SoundEvent, SoundEvent> TOY_BROOM = register("toy.broom");
+  public static final DeferredHolder<SoundEvent, SoundEvent> TOY_BOOK_PAGE = register("toy.book_page");
+  public static final DeferredHolder<SoundEvent, SoundEvent> TOY_POGO = register("toy.pogo");
+  public static final DeferredHolder<SoundEvent, SoundEvent> TOY_CRAYON = register("toy.crayon");
 
   private ChaoSounds() {}
 

@@ -1,0 +1,17 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/active02549/chao_shadow_doll_hand.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_soni01_52": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni01_52",
+    "sa2_soni01_36": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni01_36",
+    "sa2_soni04_52": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni04_52",
+    "sa2_soni03_52": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni03_52",
+    "sa2_soni03_148": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni03_148",
+    "sa2_soni02_148": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni02_148",
+    "particle": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni01_52"
+  },
+  "render_type": "minecraft:cutout"
+}

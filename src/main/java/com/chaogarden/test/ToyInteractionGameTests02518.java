@@ -6,14 +6,11 @@ import com.chaogarden.core.ChaoState;
 import com.chaogarden.entity.ChaoEntity;
 import com.chaogarden.toys.ChaoToyBlock;
 import com.chaogarden.toys.ToyContent;
-import com.chaogarden.toys.ToyInteractionRules;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.gametest.GameTestHolder;
@@ -68,32 +65,8 @@ public final class ToyInteractionGameTests02518 {
     var c=actor(h,pos.south(2));h.onEachTick(()->h.assertTrue(!ToyContent.isPlaying(c),"Blocked keys must prevent selection"));
     h.runAfterDelay(450,h::succeed);
   }
-  @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void coffinOpensRestsAndExitsBeforeClosing(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_coffin").defaultBlockState(),3);
-    var c=actor(h,pos.north(2));var open=new AtomicBoolean();var rest=new AtomicBoolean();var exit=new AtomicBoolean();
-    var previousFrame=new AtomicInteger();var openings=new AtomicInteger();
-    h.onEachTick(()->{
-      if(!ToyContent.isPlaying(c))return;
-      int elapsed=ToyContent.sessionElapsed(h.getLevel(),pos),frame=h.getLevel().getBlockState(pos).getValue(ChaoToyBlock.FRAME);
-      if(previousFrame.getAndSet(frame)==0&&frame==1)openings.incrementAndGet();
-      if(frame==3)open.set(true);
-      if(elapsed>48&&elapsed<110){rest.set(true);h.assertTrue(frame==3,"Coffin rests open without flutter");h.assertTrue(c.isNoGravity(),"Occupied coffin owns gravity");}
-      if(elapsed>145){exit.set(true);h.assertTrue(c.position().subtract(Vec3.atCenterOf(pos)).horizontalDistanceSqr()>.8,"Exit before final lid closure");}
-    });
-    h.succeedWhen(()->{h.assertTrue(open.get()&&rest.get()&&exit.get()&&openings.get()==1,"Observe one opening and complete coffin choreography");h.assertTrue(!ToyContent.isPlaying(c)&&!c.isNoGravity()&&c.state().happiness>20,"Completion restores gravity and grants reward");});
-  }
-  @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void coffinReloadCancelsMountWithoutReward(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_coffin").defaultBlockState(),3);
-    var c=actor(h,pos.north(2));var done=new AtomicBoolean();
-    h.onEachTick(()->{
-      if(done.get()||!ToyContent.isPlaying(c)||ToyContent.sessionElapsed(h.getLevel(),pos)<60)return;done.set(true);
-      var save=new CompoundTag();c.saveWithoutId(save);c.discard();
-      var loaded=ChaoGarden.CHAO.get().create(h.getLevel());h.assertTrue(loaded!=null,"Reload actor creates");loaded.load(save);h.getLevel().addFreshEntity(loaded);
-      h.runAfterDelay(8,()->{h.assertTrue(!ToyContent.isPlaying(loaded)&&!loaded.isNoGravity()&&loaded.state().happiness==20,"Reload releases mount without completion reward");h.assertTrue(!h.getLevel().getBlockState(pos).getValue(ChaoToyBlock.PLAYING),"Orphan lid closes");h.succeed();});
-    });
-  }
+
+
 
   @GameTest(template="activity_test",timeoutTicks=1400)
   public static void displacedKeyboardPlayerCancelsInsteadOfPlayingRemotely(GameTestHelper h) {
@@ -104,16 +77,7 @@ public final class ToyInteractionGameTests02518 {
       h.runAfterDelay(8,()->{h.assertTrue(!ToyContent.isPlaying(c)&&c.state().happiness==20,"Displacement cancels without reward");h.assertTrue(!h.getLevel().getBlockState(pos).getValue(ChaoToyBlock.PLAYING),"Keyboard no longer animates");h.succeed();});
     });
   }
-  @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void breakingOccupiedCoffinSafelyReleasesChao(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_coffin").defaultBlockState(),3);
-    var c=actor(h,pos.north(2));var done=new AtomicBoolean();
-    h.onEachTick(()->{
-      if(done.get()||!ToyContent.isPlaying(c)||ToyContent.sessionElapsed(h.getLevel(),pos)<60)return;done.set(true);
-      h.getLevel().destroyBlock(pos,true);
-      h.runAfterDelay(8,()->{h.assertTrue(!ToyContent.isPlaying(c)&&!c.isNoGravity()&&c.state().happiness==20,"Broken coffin releases without reward");h.assertTrue(h.getLevel().noCollision(c,c.getBoundingBox())&&c.onGround(),"Safe grounded dismount");h.succeed();});
-    });
-  }
+
   @GameTest(template="activity_test",timeoutTicks=1400)
   public static void keyboardPrecisionApproachRetainsExclusiveReservation(GameTestHelper h) {
     floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_organ").defaultBlockState(),3);
@@ -125,81 +89,10 @@ public final class ToyInteractionGameTests02518 {
     h.succeedWhen(()->h.assertTrue(seen.get()&&(first.state().happiness>20||second.state().happiness>20),"Reserved precision approach still completes"));
   }
 
-  @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void obstructedCoffinExitUsesSafeAlternativeWithoutReward(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_coffin").defaultBlockState(),3);
-    var c=actor(h,pos.north(2));var done=new AtomicBoolean();
-    h.onEachTick(()->{
-      if(done.get()||!ToyContent.isPlaying(c)||ToyContent.sessionElapsed(h.getLevel(),pos)<60)return;done.set(true);
-      h.getLevel().setBlock(pos.north(),Blocks.STONE.defaultBlockState(),3);
-      h.runAfterDelay(100,()->{
-        h.assertTrue(!ToyContent.isPlaying(c)&&!c.isNoGravity()&&c.state().happiness==20,"Obstructed exit interrupts safely without reward");
-        h.assertTrue(h.getLevel().noCollision(c,c.getBoundingBox())&&c.onGround(),"Fallback dismount is supported and clear");
-        h.assertTrue(c.distanceToSqr(Vec3.atBottomCenterOf(pos.north()))>.5,"Never return inside blocked stand");h.succeed();
-      });
-    });
-  }
 
-  @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void allImmediateCoffinExitsBlockedFindsValidatedWiderFallback(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_coffin").defaultBlockState(),3);
-    var c=actor(h,pos.north(2));var done=new AtomicBoolean();
-    h.onEachTick(()->{
-      if(done.get()||!ToyContent.isPlaying(c)||ToyContent.sessionElapsed(h.getLevel(),pos)<60)return;done.set(true);
-      for(int dx=-1;dx<=1;dx++)for(int dz=-1;dz<=1;dz++)for(int dy=0;dy<=4;dy++)
-        if(dx!=0||dz!=0||dy!=0)h.getLevel().setBlock(pos.offset(dx,dy,dz),Blocks.STONE.defaultBlockState(),3);
-      ToyContent.endPlaying(c,false);
-      h.assertTrue(!c.getPersistentData().getBoolean("ChaoToyMounted")&&!c.isNoGravity(),"Wider validated fallback completes dismount");
-      h.assertTrue(h.getLevel().noCollision(c,c.getBoundingBox()),"All cardinal exits blocked: never clear mount inside coffin");
-      h.assertTrue(c.position().subtract(Vec3.atBottomCenterOf(pos)).horizontalDistanceSqr()>=4,"Use wider clear stand when adjacent and top are blocked");
-      h.runAfterDelay(8,()->{h.assertTrue(c.onGround()&&c.state().happiness==20,"Fallback is supported and interruption unrewarded");h.succeed();});
-    });
-  }
-  @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void fullySealedCoffinRetainsRecoveryAcrossReloadUntilSafeSpaceOpens(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_coffin").defaultBlockState(),3);
-    var c=actor(h,pos.north(2));c.setInvulnerable(false);var done=new AtomicBoolean();
-    h.onEachTick(()->{
-      if(done.get()||!ToyContent.isPlaying(c)||ToyContent.sessionElapsed(h.getLevel(),pos)<60)return;done.set(true);
-      for(int dx=-4;dx<=4;dx++)for(int dz=-4;dz<=4;dz++)for(int dy=0;dy<=4;dy++)
-        if(dx!=0||dz!=0||dy!=0)h.getLevel().setBlock(pos.offset(dx,dy,dz),Blocks.STONE.defaultBlockState(),3);
-      ToyContent.endPlaying(c,false);
-      h.assertTrue(c.getPersistentData().getBoolean("ChaoToyDismountWait")&&c.getPersistentData().getBoolean("ChaoToyMounted"),"No safe position: preserve recovery metadata");
-      h.assertTrue(c.isNoGravity()&&c.isNoAi()&&!ToyContent.mayPlay(c)&&!ToyContent.isPlaying(c),"Suspend movement and forbid new play while sealed");
-      h.getLevel().setBlock(pos,Blocks.STONE.defaultBlockState(),3);
-      float health=c.getHealth();c.hurt(c.damageSources().inWall(),2);
-      h.assertTrue(c.getHealth()==health,"Pending recovery suppresses wall suffocation, not just movement");
-      var save=new CompoundTag();c.saveWithoutId(save);c.discard();
-      var loaded=ChaoGarden.CHAO.get().create(h.getLevel());h.assertTrue(loaded!=null,"Reload recovery actor creates");loaded.load(save);h.getLevel().addFreshEntity(loaded);
-      h.runAfterDelay(5,()->{
-        h.assertTrue(loaded.isAlive()&&loaded.getHealth()==health&&!loaded.isInvulnerable(),"Non-invulnerable actor survives sealed overlap across reload");
-        h.assertTrue(loaded.getPersistentData().getBoolean("ChaoToyDismountWait")&&loaded.isNoGravity()&&loaded.isNoAi(),"Reload retains original recovery ownership");
-        h.getLevel().setBlock(pos.east(3),Blocks.AIR.defaultBlockState(),3);
-        h.getLevel().setBlock(pos.east(3).above(),Blocks.AIR.defaultBlockState(),3);
-        h.runAfterDelay(25,()->{
-          h.assertTrue(!loaded.getPersistentData().getBoolean("ChaoToyMounted")&&!loaded.getPersistentData().contains("ChaoToyDismountWait"),"Clear recovery only after validated relocation");
-          h.assertTrue(!loaded.isNoGravity()&&!loaded.isNoAi()&&loaded.onGround(),"Restore original gravity and AI exactly once");
-          h.assertTrue(h.getLevel().noCollision(loaded,loaded.getBoundingBox())&&loaded.state().happiness==20,"Recovery is collision-free and never grants completion reward");h.succeed();
-        });
-      });
-    });
-  }
 
-  @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void externallyRescuedPendingDismountRestoresStateFarFromOldToy(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,1,9));h.getLevel().setBlock(pos,ToyContent.block("chao_coffin").defaultBlockState(),3);
-    var c=actor(h,pos.north(2));var done=new AtomicBoolean();
-    h.onEachTick(()->{
-      if(done.get()||!ToyContent.isPlaying(c)||ToyContent.sessionElapsed(h.getLevel(),pos)<60)return;done.set(true);
-      for(int dx=-4;dx<=4;dx++)for(int dz=-4;dz<=4;dz++)for(int dy=0;dy<=4;dy++)
-        if(dx!=0||dz!=0||dy!=0)h.getLevel().setBlock(pos.offset(dx,dy,dz),Blocks.STONE.defaultBlockState(),3);
-      ToyContent.endPlaying(c,false);
-      h.assertTrue(c.getPersistentData().getBoolean("ChaoToyDismountWait"),"Fixture enters pending recovery");
-      Vec3 rescue=Vec3.atBottomCenterOf(pos.east(7));c.setPos(rescue.x,rescue.y,rescue.z);
-      h.runAfterDelay(15,()->{
-        h.assertTrue(!c.getPersistentData().getBoolean("ChaoToyMounted")&&!c.isNoAi()&&!c.isNoGravity(),"Safe external rescue restores original state even beyond original search radius");
-        h.assertTrue(c.distanceToSqr(rescue)<.1&&h.getLevel().noCollision(c,c.getBoundingBox())&&c.onGround(),"Keep externally rescued actor at safe destination");h.succeed();
-      });
-    });
-  }
+
+
+
+
 }

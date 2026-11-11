@@ -1,0 +1,2687 @@
+{
+  "parent_commit": "da616c8e15e010f9e8a60e0ed0cb36945516a74b",
+  "jar_sha256": "384dbd5e3f49c72beb9a4d3e9aea7ffb0f4ae00736953d8afeacb470b08688d1",
+  "identical_test_helper_sources": {
+    "src/lionfishTest/java/com/chaogarden/client/TriangleTransitionRigTest.java": "9573f9d3ff4c36319e2d6ad2ee7fab2f2fbc0c9b0c3e30c33f18c4d01b3734e7",
+    "src/lionfishTest/java/com/chaogarden/client/TrumpetRigTest.java": "e3f41f85716ca633d132d25e6d3ae256a98296816bd8590127d93522d50dbbaf",
+    "src/lionfishTest/java/com/chaogarden/client/PropMeshClearance.java": "5378e8bd4d35b3fb694124e654470e416a690871d2cf7264152535eeaf892f28",
+    "src/main/java/com/chaogarden/client/Toy02533PoseVisualSmoke.java": "e10d4bbfba0993b124de73174b532d252ba9090a6c41127114e022f992ca4b4c",
+    "src/main/java/com/chaogarden/test/ToyVariantCases02522.java": "09467df0939062f27e414147278763ffb8d303d777f591e4708770a5aa213028"
+  },
+  "resource_files_checked": 122,
+  "identical_current_runtime_classes": 432,
+  "different_current_runtime_classes": [
+    {
+      "class": "com/chaogarden/ChaoSounds.class",
+      "parent047_sha256": "143cc9355b4ca47156e032baf5e28dc4f7810538be0b2a07238c9f3d0e2f4107",
+      "current_sha256": "5a59b56ed3484826c1f75ff8e05450dadea43c9b00ec096630ba44fcc8246fd9"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoHeldItemLayer.class",
+      "parent047_sha256": "11cb27f934710958d206894869b25f8622e055e722d27ea54fa8f8eba0562ac3",
+      "current_sha256": "4b247c76a3f2214345d1862e378c160524367e70ce8082fa475da93e61f224e8"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoModel$1.class",
+      "parent047_sha256": "c75e8d4d32231c986a4e0d034fe372f6e4aa10877974a368a33d37eda8c6e2a9",
+      "current_sha256": "b1497fe9205099a7d12e33cb107f331c1d89e5e1d4ebebf33dc833eeb4339c96"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoModel.class",
+      "parent047_sha256": "97ca655c53335d1544a8d47e6aef210dfbc9a3ff28051ef431e5d5181f4611d0",
+      "current_sha256": "250ca40e5e62d263e15aabeb38b44a7e7c49a5bf862676acf4b155b28ba2f41f"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoPianoAnimation.class",
+      "parent047_sha256": "f4f2bec0cba120e0211ca8263e50c161c25887d738431effad9af0d0bf6f3a43",
+      "current_sha256": "e1d6ff3fb7c00b4567b5dd59686c903bae44b1ea5bbd63c5baf2eb3168dc0af9"
+    },
+    {
+      "class": "com/chaogarden/toys/BubblePlayRules.class",
+      "parent047_sha256": "333277aee745d8a3584142cb15982b61dd98d506b54e0f42875e1300498c8113",
+      "current_sha256": "b3bb60ab962d1e4cadb0e9e491de0b14d57d3246e598e85e26f1cfe34284d345"
+    },
+    {
+      "class": "com/chaogarden/toys/ChaoToyBlock.class",
+      "parent047_sha256": "e37fc1c6ea4723027a59031b0a85652bbb9d5b5a5dc1cc2ef579532b105e1af2",
+      "current_sha256": "a15d6b35f44ed8b5cbb9858de7d027d59993053db3e1b70c725eac1732da5408"
+    },
+    {
+      "class": "com/chaogarden/toys/HandToyEffects.class",
+      "parent047_sha256": "d77e73f20b23d203b27ecbae3ce133b5bc7dcde7d01a66fbd02f71bb7dce4db6",
+      "current_sha256": "654561df8de405b718fc3f5db4675bd322c5364da39a748faa5798b8555670ad"
+    },
+    {
+      "class": "com/chaogarden/toys/InstrumentPerformance.class",
+      "parent047_sha256": "3dbc47b55fc061291c49c2206348044b9fe8097a97f98b50adb2dfc7fe66c84f",
+      "current_sha256": "2fe261824788383a306004f23306c69564819129b679ec0499791de76a2922fe"
+    },
+    {
+      "class": "com/chaogarden/toys/PianoPlayRules.class",
+      "parent047_sha256": "cf561baa72852bd82fb4564a6720bc980ec3ff98266efe53a2c75f695a88e9e8",
+      "current_sha256": "bc0df04fc4af0e877586d1bf87b6c5b5832e3aee7f879a9287bd8f7a48aa9162"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyContent$PlayGoal.class",
+      "parent047_sha256": "dd0be4d973ad9d916ec98213be8b5227b2f311bb5e0768d68a52e9f265ed8f5a",
+      "current_sha256": "13b79d71326cbb8f4569763295d2a6e5374e1fa2931966734ab17b27c7d70c9c"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyContent.class",
+      "parent047_sha256": "0a04a59beeaf461b432050d39bb212afeaae0faecd70daf9402b088c5629219e",
+      "current_sha256": "6df2c90ec819ccc66e44e95809355331d0ed8bf4975f148772d19a83fbee60a3"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyInteractionRules.class",
+      "parent047_sha256": "0d655fa9c29c80c6b9a7d715f0538e4aa6eb9c5500a21ffbb4b49d0fa3a6585c",
+      "current_sha256": "a860d68e09289906be2e809a982d044bde89ab725f5dc2ad0850c1a4ab4207b8"
+    }
+  ],
+  "class_hashes": [
+    {
+      "class": "com/chaogarden/ChaoGarden.class",
+      "parent047_sha256": "1422342756bf5f919491e38c1a3ec503d3c5b3ca79d127efcf17d4bb19521253",
+      "current_sha256": "1422342756bf5f919491e38c1a3ec503d3c5b3ca79d127efcf17d4bb19521253"
+    },
+    {
+      "class": "com/chaogarden/ChaoVariants$Definition.class",
+      "parent047_sha256": "c59100f8add0e29f9792c15bad74a4e5868f995ac93d2ce03d746c9beb4bb9b9",
+      "current_sha256": "c59100f8add0e29f9792c15bad74a4e5868f995ac93d2ce03d746c9beb4bb9b9"
+    },
+    {
+      "class": "com/chaogarden/ChaoVariants.class",
+      "parent047_sha256": "9d5a2edd7db94557293153f49c9893180b794afe556ddb058f175266463c8673",
+      "current_sha256": "9d5a2edd7db94557293153f49c9893180b794afe556ddb058f175266463c8673"
+    },
+    {
+      "class": "com/chaogarden/GardenCommands.class",
+      "parent047_sha256": "363185bb1bf987032b4205720dcbec08cf3e31958caab42d64aaac78903b43dc",
+      "current_sha256": "363185bb1bf987032b4205720dcbec08cf3e31958caab42d64aaac78903b43dc"
+    },
+    {
+      "class": "com/chaogarden/GardenConfig.class",
+      "parent047_sha256": "bd04a3a61a0f99105c6324b62ed7ddd2175517b62e61df7be4fc656e852778d3",
+      "current_sha256": "bd04a3a61a0f99105c6324b62ed7ddd2175517b62e61df7be4fc656e852778d3"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityBlock$Kind.class",
+      "parent047_sha256": "5478c4eb982eee51a1b785a0d6a62b04f99bb8ea40e4aa7d55f4f881e7432bd5",
+      "current_sha256": "5478c4eb982eee51a1b785a0d6a62b04f99bb8ea40e4aa7d55f4f881e7432bd5"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityBlock.class",
+      "parent047_sha256": "b94acd62d6d95047d7eaed2a313a9857816594512672c0ff7e8f0e64516f7a55",
+      "current_sha256": "b94acd62d6d95047d7eaed2a313a9857816594512672c0ff7e8f0e64516f7a55"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityContent.class",
+      "parent047_sha256": "ee4cb1befe82feb9ead70f05a40a4cf5f07ee8062f0d238efee62ec2b2de0ad6",
+      "current_sha256": "ee4cb1befe82feb9ead70f05a40a4cf5f07ee8062f0d238efee62ec2b2de0ad6"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityManager$1.class",
+      "parent047_sha256": "783b03f85cdf7b963f2c937dc924c1c4d7e4ae779d73881cf5f354f83754b7c4",
+      "current_sha256": "783b03f85cdf7b963f2c937dc924c1c4d7e4ae779d73881cf5f354f83754b7c4"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityManager$Contest.class",
+      "parent047_sha256": "8436effdb5ebb1c300708a874849fcb34ff8c764df67e566be069a612f66a728",
+      "current_sha256": "8436effdb5ebb1c300708a874849fcb34ff8c764df67e566be069a612f66a728"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityManager$Lobby.class",
+      "parent047_sha256": "373d53b67eeca57ec922a718deb5b3750798dcc3c1e0bf1e45319d1c6bcbe40d",
+      "current_sha256": "373d53b67eeca57ec922a718deb5b3750798dcc3c1e0bf1e45319d1c6bcbe40d"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityManager$Runner.class",
+      "parent047_sha256": "257ee7390da9589165bcf3d6f90ad1601d859242d67ffbd0b646fa0584f50bd0",
+      "current_sha256": "257ee7390da9589165bcf3d6f90ad1601d859242d67ffbd0b646fa0584f50bd0"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityManager.class",
+      "parent047_sha256": "96106a35f77dacabbdffe5db77e945415dbd1492867910ec39dd6d06159cb527",
+      "current_sha256": "96106a35f77dacabbdffe5db77e945415dbd1492867910ec39dd6d06159cb527"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityNetwork$Action.class",
+      "parent047_sha256": "1634798d6aa8303b3697752d4505ad1a3d395e7b51c350e33f87bad8a4e13350",
+      "current_sha256": "1634798d6aa8303b3697752d4505ad1a3d395e7b51c350e33f87bad8a4e13350"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityNetwork$Register.class",
+      "parent047_sha256": "b780550e8806a361df948019b3b44c749f3b6ea524bb6021040a2d10b8fc3f99",
+      "current_sha256": "b780550e8806a361df948019b3b44c749f3b6ea524bb6021040a2d10b8fc3f99"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityNetwork$Snapshot.class",
+      "parent047_sha256": "7c3ee32205f766eb37c48c9619a3cda7dcdece7e4d90cc0d1a2b9ec5b8a9d551",
+      "current_sha256": "7c3ee32205f766eb37c48c9619a3cda7dcdece7e4d90cc0d1a2b9ec5b8a9d551"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityNetwork.class",
+      "parent047_sha256": "a6bc2ac1a989933a5690e64689c1a5235e65ef89a395a4a25727bcd13444f188",
+      "current_sha256": "a6bc2ac1a989933a5690e64689c1a5235e65ef89a395a4a25727bcd13444f188"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityRewards$JournalFull.class",
+      "parent047_sha256": "860dfdc690c24c31a7b60508fc4c103831f8a5ca3d9cc5237326f2a43d1f6ea9",
+      "current_sha256": "860dfdc690c24c31a7b60508fc4c103831f8a5ca3d9cc5237326f2a43d1f6ea9"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityRewards.class",
+      "parent047_sha256": "f2dee8ea009f020a978ce5ddeb750552c435b64c1e5d7fa46707d2dcb1cbee67",
+      "current_sha256": "f2dee8ea009f020a978ce5ddeb750552c435b64c1e5d7fa46707d2dcb1cbee67"
+    },
+    {
+      "class": "com/chaogarden/activities/ActivityRules.class",
+      "parent047_sha256": "3af0cb2642e2726cf9410f50703f171671b4a3c9f682b22be0300474d9225ab9",
+      "current_sha256": "3af0cb2642e2726cf9410f50703f171671b4a3c9f682b22be0300474d9225ab9"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenArea.class",
+      "parent047_sha256": "83d06e3bb6e311bbab061ebbbb2a9bfdd1b768c37c65e19d3fa61c6580e7bf3e",
+      "current_sha256": "83d06e3bb6e311bbab061ebbbb2a9bfdd1b768c37c65e19d3fa61c6580e7bf3e"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenBellItem.class",
+      "parent047_sha256": "1e9b9f6e4fe3203d859bd41d69df5b623e7b47dc772d252be4556e9953fc13e9",
+      "current_sha256": "1e9b9f6e4fe3203d859bd41d69df5b623e7b47dc772d252be4556e9953fc13e9"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenDeviceGeometry0254$1.class",
+      "parent047_sha256": "9c387da66ad7ca4219ce6d33bc979c93145f6ac792bccc5b5bacdef680d907cf",
+      "current_sha256": "9c387da66ad7ca4219ce6d33bc979c93145f6ac792bccc5b5bacdef680d907cf"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenDeviceGeometry0254.class",
+      "parent047_sha256": "65a85455f27898678ed5689c9f7351381e1a0114e55bfacf0985cedb681f6c12",
+      "current_sha256": "65a85455f27898678ed5689c9f7351381e1a0114e55bfacf0985cedb681f6c12"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenRegistry$Entry.class",
+      "parent047_sha256": "271b2f5dad70f9bbf4ac9a26d7361643873f3aed217b02c54acee779f0dc5789",
+      "current_sha256": "271b2f5dad70f9bbf4ac9a26d7361643873f3aed217b02c54acee779f0dc5789"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenRegistry$Garden.class",
+      "parent047_sha256": "85edde3b07c5ca9c69427d89e7a291b4222b653bba25173704094f4d4638e7d8",
+      "current_sha256": "85edde3b07c5ca9c69427d89e7a291b4222b653bba25173704094f4d4638e7d8"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenRegistry$Home.class",
+      "parent047_sha256": "1639c54f4bcce3ab3477d43a68d188a54d26c7371226bc88a9793f43f15fa293",
+      "current_sha256": "1639c54f4bcce3ab3477d43a68d188a54d26c7371226bc88a9793f43f15fa293"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenRegistry$Place.class",
+      "parent047_sha256": "3528f7b0c96449f9e337af3f708f23babc26f404e05f147d2ef79a803426bd2b",
+      "current_sha256": "3528f7b0c96449f9e337af3f708f23babc26f404e05f147d2ef79a803426bd2b"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenRegistry$Relocation.class",
+      "parent047_sha256": "aaacee6aa6a64eb6cf1c7d029d3422525c819b98e29fbb6d1ea8cff4735341a4",
+      "current_sha256": "aaacee6aa6a64eb6cf1c7d029d3422525c819b98e29fbb6d1ea8cff4735341a4"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenRegistry.class",
+      "parent047_sha256": "f3b3494e7ac11006e6eaf98a2b5ecc5c5d389a8513290ad29280a6fcfadbb6cf",
+      "current_sha256": "f3b3494e7ac11006e6eaf98a2b5ecc5c5d389a8513290ad29280a6fcfadbb6cf"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenTransporterBlock$1.class",
+      "parent047_sha256": "d1d0b981e0c3664f4cea1be96c1fba2178294aed73828bef2d6f91be315a1522",
+      "current_sha256": "d1d0b981e0c3664f4cea1be96c1fba2178294aed73828bef2d6f91be315a1522"
+    },
+    {
+      "class": "com/chaogarden/activities/GardenTransporterBlock.class",
+      "parent047_sha256": "0bc2aba204ac9820c67286608cc721290a96ea54d9c9a2dc75881d94a926e6a1",
+      "current_sha256": "0bc2aba204ac9820c67286608cc721290a96ea54d9c9a2dc75881d94a926e6a1"
+    },
+    {
+      "class": "com/chaogarden/activities/KarateMatBlock.class",
+      "parent047_sha256": "b0da6b5c0cd9918f47f205340e73218929aba3c2e5992fc9d15db95831b2dc04",
+      "current_sha256": "b0da6b5c0cd9918f47f205340e73218929aba3c2e5992fc9d15db95831b2dc04"
+    },
+    {
+      "class": "com/chaogarden/activities/RaceMarkerItem.class",
+      "parent047_sha256": "d6085313f1d1305bfa10e6f9f609815294dcfc27ad96af0a386be3687bf63f87",
+      "current_sha256": "d6085313f1d1305bfa10e6f9f609815294dcfc27ad96af0a386be3687bf63f87"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoCareNetwork$Action.class",
+      "parent047_sha256": "d00eae16ab382bea90a7c0afe4574e7ee939669286fa2289baaa88fe99ff1528",
+      "current_sha256": "d00eae16ab382bea90a7c0afe4574e7ee939669286fa2289baaa88fe99ff1528"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoCareNetwork$Open.class",
+      "parent047_sha256": "dc727228f526f7ca44e73ce04bca43ac0297ebac46e306191a42903b30cdf42d",
+      "current_sha256": "dc727228f526f7ca44e73ce04bca43ac0297ebac46e306191a42903b30cdf42d"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoCareNetwork$StatEdit.class",
+      "parent047_sha256": "8c0387a64e933cd556a6a08ded95f257aef083292d5c692af69a75a9d3e6d79e",
+      "current_sha256": "8c0387a64e933cd556a6a08ded95f257aef083292d5c692af69a75a9d3e6d79e"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoCareNetwork.class",
+      "parent047_sha256": "c2831f163a60df1d6a5b877ab3e40f77ffe7505213baf1948375e24b836ae542",
+      "current_sha256": "c2831f163a60df1d6a5b877ab3e40f77ffe7505213baf1948375e24b836ae542"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoCareServices$Lesson.class",
+      "parent047_sha256": "b9876164f766cf798d3afd6d41be3f34eb3a9b0e2750a0fc6d111226acc93b88",
+      "current_sha256": "b9876164f766cf798d3afd6d41be3f34eb3a9b0e2750a0fc6d111226acc93b88"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoCareServices.class",
+      "parent047_sha256": "70e96729d475a2feb9daee84b731fd18c0e63e78f4e23de005a80c5e81bde64e",
+      "current_sha256": "70e96729d475a2feb9daee84b731fd18c0e63e78f4e23de005a80c5e81bde64e"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoMedicineItem.class",
+      "parent047_sha256": "2ea280e2757a82164f17065107691954ea3563ba38c170fb8df23dfb7b512f68",
+      "current_sha256": "2ea280e2757a82164f17065107691954ea3563ba38c170fb8df23dfb7b512f68"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoSchoolBlock$1.class",
+      "parent047_sha256": "40bce671730f5bb51922d000efcfbfbb787362e8f85250d005ce8d2c5025f667",
+      "current_sha256": "40bce671730f5bb51922d000efcfbfbb787362e8f85250d005ce8d2c5025f667"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoSchoolBlock$Kind.class",
+      "parent047_sha256": "e66c945136c93209d1b0e59bb79e0804cc01edf64042569cfcc4ff8e52c24b5e",
+      "current_sha256": "e66c945136c93209d1b0e59bb79e0804cc01edf64042569cfcc4ff8e52c24b5e"
+    },
+    {
+      "class": "com/chaogarden/care/ChaoSchoolBlock.class",
+      "parent047_sha256": "a31fe6f09f0b768629c43181db3b4f276e9cecdacfbb5f6d078933882af5a94b",
+      "current_sha256": "a31fe6f09f0b768629c43181db3b4f276e9cecdacfbb5f6d078933882af5a94b"
+    },
+    {
+      "class": "com/chaogarden/care/DoctorContent.class",
+      "parent047_sha256": "f9a89ea5aba74575e55c270c33fea678b5faa84d065051d51e223c9b8ed4b90f",
+      "current_sha256": "f9a89ea5aba74575e55c270c33fea678b5faa84d065051d51e223c9b8ed4b90f"
+    },
+    {
+      "class": "com/chaogarden/client/AdventureButton.class",
+      "parent047_sha256": "4d5b15cb506c91e0ba845de2a4461596a5bae8b628ec03198379da2215470e71",
+      "current_sha256": "4d5b15cb506c91e0ba845de2a4461596a5bae8b628ec03198379da2215470e71"
+    },
+    {
+      "class": "com/chaogarden/client/AdventureGuideScreen$Row.class",
+      "parent047_sha256": "641213be4879c5ac44f00539e46a51dd943fd8d164ff5715666aa946d26d570d",
+      "current_sha256": "641213be4879c5ac44f00539e46a51dd943fd8d164ff5715666aa946d26d570d"
+    },
+    {
+      "class": "com/chaogarden/client/AdventureGuideScreen.class",
+      "parent047_sha256": "cac2f39fdf86f64d07af6860ed01359bd099183856ab116f0d58f050de2a32a5",
+      "current_sha256": "cac2f39fdf86f64d07af6860ed01359bd099183856ab116f0d58f050de2a32a5"
+    },
+    {
+      "class": "com/chaogarden/client/AdventureItemButton.class",
+      "parent047_sha256": "51ea000e8a7988f94252d0e51bb4ddf743664459b87b531ef600560a90882584",
+      "current_sha256": "51ea000e8a7988f94252d0e51bb4ddf743664459b87b531ef600560a90882584"
+    },
+    {
+      "class": "com/chaogarden/client/AdventureScreen.class",
+      "parent047_sha256": "22d7e048d639fb660f726618d70ab975e9fd4671664787215620492cbb328e9a",
+      "current_sha256": "22d7e048d639fb660f726618d70ab975e9fd4671664787215620492cbb328e9a"
+    },
+    {
+      "class": "com/chaogarden/client/AreaMusic0257$Loop.class",
+      "parent047_sha256": "1d221444b5f46be4ea094d646e0c80e51d49279da4d7a7199370f00a898161ba",
+      "current_sha256": "1d221444b5f46be4ea094d646e0c80e51d49279da4d7a7199370f00a898161ba"
+    },
+    {
+      "class": "com/chaogarden/client/AreaMusic0257.class",
+      "parent047_sha256": "96a4eb5fecee4b8aa32bc7f6db03144b6815623d0b10d0dba84480b81f19466f",
+      "current_sha256": "96a4eb5fecee4b8aa32bc7f6db03144b6815623d0b10d0dba84480b81f19466f"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoAccessoryFit$Fit.class",
+      "parent047_sha256": "f7fcef013cc4e02703102719e61f49bfca05cd7c2d0d367b1f4643d650284cf3",
+      "current_sha256": "f7fcef013cc4e02703102719e61f49bfca05cd7c2d0d367b1f4643d650284cf3"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoAccessoryFit.class",
+      "parent047_sha256": "8a013ed5cd8f2aee1c2289b0e81bfe679a990c3cd137b10265e5e9014bde5c97",
+      "current_sha256": "8a013ed5cd8f2aee1c2289b0e81bfe679a990c3cd137b10265e5e9014bde5c97"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoBehaviorPoses$1.class",
+      "parent047_sha256": "a9663d644f0471d1f4a85eaba666d21f1928c9e692752fdb9672458428db85c0",
+      "current_sha256": "a9663d644f0471d1f4a85eaba666d21f1928c9e692752fdb9672458428db85c0"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoBehaviorPoses.class",
+      "parent047_sha256": "889e9993a177dc1308db3ac9dfdc096501811c3d6149ed647570c5b0b04875ca",
+      "current_sha256": "889e9993a177dc1308db3ac9dfdc096501811c3d6149ed647570c5b0b04875ca"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoBellAnimation.class",
+      "parent047_sha256": "f8d9b32ff8150af07c0f0b9f1533bb30e97cede68e682eacb15f1fa8575d3441",
+      "current_sha256": "f8d9b32ff8150af07c0f0b9f1533bb30e97cede68e682eacb15f1fa8575d3441"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoBubbleAnimation.class",
+      "parent047_sha256": "590398f089eed8238f5121745e0fb9bcf95fabf2223749aa84b89adab937bec4",
+      "current_sha256": "590398f089eed8238f5121745e0fb9bcf95fabf2223749aa84b89adab937bec4"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoBubbleCues$Anchor.class",
+      "parent047_sha256": "0baf385a65398a44c78f4b96b926223065aaa6bb85207e7a51ee883ca0735008",
+      "current_sha256": "0baf385a65398a44c78f4b96b926223065aaa6bb85207e7a51ee883ca0735008"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoBubbleCues$Pending.class",
+      "parent047_sha256": "38fdfffe6f264754fbe00efa577d5c0838beb19194a6ac07f55e94371706584e",
+      "current_sha256": "38fdfffe6f264754fbe00efa577d5c0838beb19194a6ac07f55e94371706584e"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoBubbleCues.class",
+      "parent047_sha256": "e8c12d14694c5c5303c7f5df7cb44809ddc32357d4443d3078a123b0a612fba7",
+      "current_sha256": "e8c12d14694c5c5303c7f5df7cb44809ddc32357d4443d3078a123b0a612fba7"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoCareClient.class",
+      "parent047_sha256": "86191246ad9d5a4f443c9559aea2f6e93c69bd29cd99ca8b026325a12254398b",
+      "current_sha256": "86191246ad9d5a4f443c9559aea2f6e93c69bd29cd99ca8b026325a12254398b"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoCastanetsAnimation.class",
+      "parent047_sha256": "0b1dfe10b68441536ef2086aa2a34eb85cc7c6f9f79bb693f5ad73addf01f0d4",
+      "current_sha256": "0b1dfe10b68441536ef2086aa2a34eb85cc7c6f9f79bb693f5ad73addf01f0d4"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoChaosGlassLayer$Rig.class",
+      "parent047_sha256": "62df0c7678c4271c8c5b6a0c4b8962adb6fa8f44fce385f815ab9a0eab9219a9",
+      "current_sha256": "62df0c7678c4271c8c5b6a0c4b8962adb6fa8f44fce385f815ab9a0eab9219a9"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoChaosGlassLayer.class",
+      "parent047_sha256": "82f71ee78c16d0459d7d810058f1c0292d7985d5dd599f689c695b1da93c09d7",
+      "current_sha256": "82f71ee78c16d0459d7d810058f1c0292d7985d5dd599f689c695b1da93c09d7"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoChaosGlassMaterial$Reload.class",
+      "parent047_sha256": "a7f0b5e661690b95b82ba6eb26b11864decc62baa4412ca7845e56bb87a30f02",
+      "current_sha256": "a7f0b5e661690b95b82ba6eb26b11864decc62baa4412ca7845e56bb87a30f02"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoChaosGlassMaterial.class",
+      "parent047_sha256": "53309ff713dc0d0eb27230b06ccfed8446dfd055e04059ec4e53f51787230f7d",
+      "current_sha256": "53309ff713dc0d0eb27230b06ccfed8446dfd055e04059ec4e53f51787230f7d"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoClient.class",
+      "parent047_sha256": "4060e84210d11723ac9446a52e16e96b55234e007c3b0a502028acc3192bb98c",
+      "current_sha256": "4060e84210d11723ac9446a52e16e96b55234e007c3b0a502028acc3192bb98c"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoClientInteractions.class",
+      "parent047_sha256": "5d588eeb981c8ade3e361bdaa75516b84e70890d5b88194ffad10d5ae08f3019",
+      "current_sha256": "5d588eeb981c8ade3e361bdaa75516b84e70890d5b88194ffad10d5ae08f3019"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoCymbalsAnimation.class",
+      "parent047_sha256": "65e942adea6e1bcd7fceba29e3f52149656f5b25383356ca2c111f6162d1f90e",
+      "current_sha256": "65e942adea6e1bcd7fceba29e3f52149656f5b25383356ca2c111f6162d1f90e"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoDrumAnimation.class",
+      "parent047_sha256": "0f5b7ed73bca60b55fdcbc07ddaaac1bdb00fb9bc3e46296964208e380f6b30d",
+      "current_sha256": "0f5b7ed73bca60b55fdcbc07ddaaac1bdb00fb9bc3e46296964208e380f6b30d"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoEggClient$1.class",
+      "parent047_sha256": "e5a85fadc0d4be7f11be2372787e17b0c794685cf24f1cfe76e1e8441e950912",
+      "current_sha256": "e5a85fadc0d4be7f11be2372787e17b0c794685cf24f1cfe76e1e8441e950912"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoEggClient.class",
+      "parent047_sha256": "0ec2e3b7f2ece99a7987dc1168f44a96cc84b3cf51e8b9262d761e7a90ac13c9",
+      "current_sha256": "0ec2e3b7f2ece99a7987dc1168f44a96cc84b3cf51e8b9262d761e7a90ac13c9"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoEggModel.class",
+      "parent047_sha256": "b725462fddd177f36be9c9f23c43b3d4de327a143e51d784477e14ff466c6652",
+      "current_sha256": "b725462fddd177f36be9c9f23c43b3d4de327a143e51d784477e14ff466c6652"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoEggRenderer.class",
+      "parent047_sha256": "dee40f0cdfe04116d87605ab6e4a6025395488fbdd84c7a2bc337f5a9f91fb0d",
+      "current_sha256": "dee40f0cdfe04116d87605ab6e4a6025395488fbdd84c7a2bc337f5a9f91fb0d"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoExpressionLayer025.class",
+      "parent047_sha256": "452ec001adc0499b592fd517e091abace8a8b7c8447e80ae60e3276413406db7",
+      "current_sha256": "452ec001adc0499b592fd517e091abace8a8b7c8447e80ae60e3276413406db7"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoFluteAnimation.class",
+      "parent047_sha256": "1a30aa14571fc5d0f609fe5f24b406c42d1eed8375b3a49dac9d93d87b46b785",
+      "current_sha256": "1a30aa14571fc5d0f609fe5f24b406c42d1eed8375b3a49dac9d93d87b46b785"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoGuideInteractions.class",
+      "parent047_sha256": "1d369f7186fc59839bd02d862f1279bcd7a35deeb0d60962ab250fb386aaac71",
+      "current_sha256": "1d369f7186fc59839bd02d862f1279bcd7a35deeb0d60962ab250fb386aaac71"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoGuitarAnimation.class",
+      "parent047_sha256": "78908fc56bc892e027a253fff9fc76c8a831bcd9d612010c32d565dc494664fd",
+      "current_sha256": "78908fc56bc892e027a253fff9fc76c8a831bcd9d612010c32d565dc494664fd"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoHatLayer.class",
+      "parent047_sha256": "099d9f8dac2602d362b93e94bad807716203d709ce21457351b75ddcd308cc52",
+      "current_sha256": "099d9f8dac2602d362b93e94bad807716203d709ce21457351b75ddcd308cc52"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoHeadwear$Rig.class",
+      "parent047_sha256": "919ea3c2fb55f9332abee886c8614019f9356f7bf6425edd6f54419a24d6675e",
+      "current_sha256": "919ea3c2fb55f9332abee886c8614019f9356f7bf6425edd6f54419a24d6675e"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoHeadwear.class",
+      "parent047_sha256": "c670f7810b20d9484df6a9a0a37fe4d38b6d1a079499020b23c5ec8025abdb86",
+      "current_sha256": "c670f7810b20d9484df6a9a0a37fe4d38b6d1a079499020b23c5ec8025abdb86"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoInspectionScreen$1.class",
+      "parent047_sha256": "135026bd953fc3f6ef335dcc00854963d5b98504bdd2b14538a17da4199f8ab4",
+      "current_sha256": "135026bd953fc3f6ef335dcc00854963d5b98504bdd2b14538a17da4199f8ab4"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoInspectionScreen.class",
+      "parent047_sha256": "ba9130d17196a3a86d18d6fff6fe1c102a43a72521cbff1c1c6440dafa828ce4",
+      "current_sha256": "ba9130d17196a3a86d18d6fff6fe1c102a43a72521cbff1c1c6440dafa828ce4"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoInstrumentFocus.class",
+      "parent047_sha256": "95db48fb3e1ae582774e1c6b200c96fb93d36aa5e2a3fc460dd2151c2cf7fea1",
+      "current_sha256": "95db48fb3e1ae582774e1c6b200c96fb93d36aa5e2a3fc460dd2151c2cf7fea1"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoMaracasAnimation.class",
+      "parent047_sha256": "b3db6fa5d21b45f274e74bc5831d7486b697eba3182b9fd3431891a57786abfb",
+      "current_sha256": "b3db6fa5d21b45f274e74bc5831d7486b697eba3182b9fd3431891a57786abfb"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoMeshAsset$Bone.class",
+      "parent047_sha256": "40a6ed53c078cd5e1920af2b7d1dc0d0a55925befe3c58fce23ed14c20fb9ec1",
+      "current_sha256": "40a6ed53c078cd5e1920af2b7d1dc0d0a55925befe3c58fce23ed14c20fb9ec1"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoMeshAsset$Face.class",
+      "parent047_sha256": "a89f3d2b76addb5abc02b1b398946ce52e6241b775e42c4c2cc425541fe709e5",
+      "current_sha256": "a89f3d2b76addb5abc02b1b398946ce52e6241b775e42c4c2cc425541fe709e5"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoMeshAsset$Mesh.class",
+      "parent047_sha256": "8d55b10365219c9c5c03695ac960beef959b1daba42997c40447eee57b01af04",
+      "current_sha256": "8d55b10365219c9c5c03695ac960beef959b1daba42997c40447eee57b01af04"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoMeshAsset$Pose.class",
+      "parent047_sha256": "b8caf42bc3b33ad4d6203c3d16f3f5a5a160ed55412d813534126794460e9082",
+      "current_sha256": "b8caf42bc3b33ad4d6203c3d16f3f5a5a160ed55412d813534126794460e9082"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoMeshAsset.class",
+      "parent047_sha256": "67dfdac398b482e35cd2abc5f75a29b628161b2dd3944ee3d62738371f499c30",
+      "current_sha256": "67dfdac398b482e35cd2abc5f75a29b628161b2dd3944ee3d62738371f499c30"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoOrganAnimation.class",
+      "parent047_sha256": "ae305533c577ccba27b5af715e2f399016a536f48247bcbb9ae858125688c2cc",
+      "current_sha256": "ae305533c577ccba27b5af715e2f399016a536f48247bcbb9ae858125688c2cc"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoOverlayLayer$Animal.class",
+      "parent047_sha256": "c4927524552cd735cdc652438394839fa3da092aba625110b5a2d6167040285a",
+      "current_sha256": "c4927524552cd735cdc652438394839fa3da092aba625110b5a2d6167040285a"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoOverlayLayer$Rig.class",
+      "parent047_sha256": "87901c3ee28b0c5e2cd7fc4660c2ce9f5cc27a7f27d67cc3d2737e7a9c7dedc2",
+      "current_sha256": "87901c3ee28b0c5e2cd7fc4660c2ce9f5cc27a7f27d67cc3d2737e7a9c7dedc2"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoOverlayLayer.class",
+      "parent047_sha256": "a481299454328e8051402b8c6bcedadd72cc33291629794613feda6d7d75d99b",
+      "current_sha256": "a481299454328e8051402b8c6bcedadd72cc33291629794613feda6d7d75d99b"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoPaletteMaterial$Reload.class",
+      "parent047_sha256": "b42e5ae800a35ed350810a14d2475e2c3ecb91be51d106bd810338ee4f32d5a5",
+      "current_sha256": "b42e5ae800a35ed350810a14d2475e2c3ecb91be51d106bd810338ee4f32d5a5"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoPaletteMaterial.class",
+      "parent047_sha256": "a42d6ca20d1b58d1292010ebc3f85d5cea198f58afea75e064285c9446412e90",
+      "current_sha256": "a42d6ca20d1b58d1292010ebc3f85d5cea198f58afea75e064285c9446412e90"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoPartyLayer$Hat.class",
+      "parent047_sha256": "4059b800e140b16eff58bde3867ef6c9c1a77dd531b1d8513b731533d208673f",
+      "current_sha256": "4059b800e140b16eff58bde3867ef6c9c1a77dd531b1d8513b731533d208673f"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoPartyLayer.class",
+      "parent047_sha256": "1483e1ef95e75eae36bb940a28b0f60c2acde40e4c77d734454c78bae8ed4469",
+      "current_sha256": "1483e1ef95e75eae36bb940a28b0f60c2acde40e4c77d734454c78bae8ed4469"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoRattleAnimation.class",
+      "parent047_sha256": "4c26afd9a4e64c452d14a067cca5ed85b0741da396cd4e8b11c85508a049013c",
+      "current_sha256": "4c26afd9a4e64c452d14a067cca5ed85b0741da396cd4e8b11c85508a049013c"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoRenderer.class",
+      "parent047_sha256": "3e8264e68312ef47175c1d501994d9f73d0755fd42d0bd88bfa79355c41286a6",
+      "current_sha256": "3e8264e68312ef47175c1d501994d9f73d0755fd42d0bd88bfa79355c41286a6"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoShine$1.class",
+      "parent047_sha256": "b063fa3294fbbe4d845ef273a46b21ed4c33549b2d20c3ef65db5b68a13df1ac",
+      "current_sha256": "b063fa3294fbbe4d845ef273a46b21ed4c33549b2d20c3ef65db5b68a13df1ac"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoShine.class",
+      "parent047_sha256": "f21c60b6337bbe8fcdc16debb53f7d92d22dde41a3bb293db25fb59ba86e6026",
+      "current_sha256": "f21c60b6337bbe8fcdc16debb53f7d92d22dde41a3bb293db25fb59ba86e6026"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoShineLayer.class",
+      "parent047_sha256": "08bdcd2df790bf7ee7717c812a9e41144ac3a0053c79319f5677a799005ffbcc",
+      "current_sha256": "08bdcd2df790bf7ee7717c812a9e41144ac3a0053c79319f5677a799005ffbcc"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoSittingPose.class",
+      "parent047_sha256": "37c9b18036b311814c66de29b6235577dfc725f45687d9f055b7bf8baacc8ff5",
+      "current_sha256": "37c9b18036b311814c66de29b6235577dfc725f45687d9f055b7bf8baacc8ff5"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoTambourineAnimation.class",
+      "parent047_sha256": "eef9558f5d4fded8d5eef3cbe49bd68ef1ca0d840adf0c6797be9d76ee7bb183",
+      "current_sha256": "eef9558f5d4fded8d5eef3cbe49bd68ef1ca0d840adf0c6797be9d76ee7bb183"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoToyGrip$Hand.class",
+      "parent047_sha256": "7df41c2450cf898f5391584ebfc94f84c6c2219a1efda8d8f6d52c49e6a7da3e",
+      "current_sha256": "7df41c2450cf898f5391584ebfc94f84c6c2219a1efda8d8f6d52c49e6a7da3e"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoToyGrip.class",
+      "parent047_sha256": "8d87ce7a17afc0c83e7a0f13eb897cec78b4f6c177676bd487c8e771a191c42b",
+      "current_sha256": "8d87ce7a17afc0c83e7a0f13eb897cec78b4f6c177676bd487c8e771a191c42b"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoTriangleAnimation.class",
+      "parent047_sha256": "2d2ed668f7bca8f40d80769dbb7127c2d426c560ad9a5c9d03099b0070c3bf79",
+      "current_sha256": "2d2ed668f7bca8f40d80769dbb7127c2d426c560ad9a5c9d03099b0070c3bf79"
+    },
+    {
+      "class": "com/chaogarden/client/ChaoTrumpetAnimation.class",
+      "parent047_sha256": "89ec9fd6a450526d75faf77afc7ebb2e848ef159978a30d108c4f3277865e1ff",
+      "current_sha256": "89ec9fd6a450526d75faf77afc7ebb2e848ef159978a30d108c4f3277865e1ff"
+    },
+    {
+      "class": "com/chaogarden/client/CompanionBackLayer$Tracking.class",
+      "parent047_sha256": "b8a7ce05e5c4538708e413e777ebadb49052be6742f64e37a0e1eb6f8a491fbc",
+      "current_sha256": "b8a7ce05e5c4538708e413e777ebadb49052be6742f64e37a0e1eb6f8a491fbc"
+    },
+    {
+      "class": "com/chaogarden/client/CompanionBackLayer.class",
+      "parent047_sha256": "26e0bf16b51c9774d1d4db80a60516051023554045bb1e1afac8813d5596563d",
+      "current_sha256": "26e0bf16b51c9774d1d4db80a60516051023554045bb1e1afac8813d5596563d"
+    },
+    {
+      "class": "com/chaogarden/client/CompanionClientEvents$Keys.class",
+      "parent047_sha256": "4e068b2e1607f53e4351d8d56d0f4557d9ed079981f41e4d679782228dffcc9a",
+      "current_sha256": "4e068b2e1607f53e4351d8d56d0f4557d9ed079981f41e4d679782228dffcc9a"
+    },
+    {
+      "class": "com/chaogarden/client/CompanionClientEvents.class",
+      "parent047_sha256": "54f5bfe904d4795ecba3d0efa90b23e8dc0d1a0e0291d6763aef3da845023154",
+      "current_sha256": "54f5bfe904d4795ecba3d0efa90b23e8dc0d1a0e0291d6763aef3da845023154"
+    },
+    {
+      "class": "com/chaogarden/client/CweAccessoryLayer$Mesh.class",
+      "parent047_sha256": "3183b1e106c73759373c4456c08b3754745d1a416f21bef4a4649a028ea7bfe5",
+      "current_sha256": "3183b1e106c73759373c4456c08b3754745d1a416f21bef4a4649a028ea7bfe5"
+    },
+    {
+      "class": "com/chaogarden/client/CweAccessoryLayer.class",
+      "parent047_sha256": "55295ee38fb4a3cbac11c4bd8d3b472b43599709086b8bce7c0595798d8894a6",
+      "current_sha256": "55295ee38fb4a3cbac11c4bd8d3b472b43599709086b8bce7c0595798d8894a6"
+    },
+    {
+      "class": "com/chaogarden/client/DarkGardenEffects0255$SkyMaterial.class",
+      "parent047_sha256": "f2943d2b55eb5f982ddcd042cbe07cdbcb5c431fd195dd619880dbe5544bfc39",
+      "current_sha256": "f2943d2b55eb5f982ddcd042cbe07cdbcb5c431fd195dd619880dbe5544bfc39"
+    },
+    {
+      "class": "com/chaogarden/client/DarkGardenEffects0255$SkyPass.class",
+      "parent047_sha256": "ad4fc011c617b46a461533373e997137f1fbbe7302dbb10999f908232350e2f8",
+      "current_sha256": "ad4fc011c617b46a461533373e997137f1fbbe7302dbb10999f908232350e2f8"
+    },
+    {
+      "class": "com/chaogarden/client/DarkGardenEffects0255$SkyVertex.class",
+      "parent047_sha256": "77fb8d223183667c4978bf77b8cd9ee88367684c81b060e97536d0fa9e0cc4fb",
+      "current_sha256": "77fb8d223183667c4978bf77b8cd9ee88367684c81b060e97536d0fa9e0cc4fb"
+    },
+    {
+      "class": "com/chaogarden/client/DarkGardenEffects0255.class",
+      "parent047_sha256": "d36b4ae0b58c63ffafca4cda8bfae92640fc9e1edb09d671fd476b9d8e834606",
+      "current_sha256": "d36b4ae0b58c63ffafca4cda8bfae92640fc9e1edb09d671fd476b9d8e834606"
+    },
+    {
+      "class": "com/chaogarden/client/DarkGateFlames0257.class",
+      "parent047_sha256": "f392f3c4d7f4f2ab020b9b395c22a206d2fa9d036f53a6d986f995ec28f32e52",
+      "current_sha256": "f392f3c4d7f4f2ab020b9b395c22a206d2fa9d036f53a6d986f995ec28f32e52"
+    },
+    {
+      "class": "com/chaogarden/client/EggshellMask$1.class",
+      "parent047_sha256": "be22f6729b4160184b0b46429030a974ed2143bc1a1e1e0ce40f7afbf8ac5bf1",
+      "current_sha256": "be22f6729b4160184b0b46429030a974ed2143bc1a1e1e0ce40f7afbf8ac5bf1"
+    },
+    {
+      "class": "com/chaogarden/client/EggshellMask$Shape.class",
+      "parent047_sha256": "0136749873bd90a6abe27fac1c2a3c3202bbc3fa700d6b2895b862b9ae932e64",
+      "current_sha256": "0136749873bd90a6abe27fac1c2a3c3202bbc3fa700d6b2895b862b9ae932e64"
+    },
+    {
+      "class": "com/chaogarden/client/EggshellMask.class",
+      "parent047_sha256": "2d178b792c3c15d4d8fcf1fe4e91228c8ded395fa138340fd5d26c0feff3e385",
+      "current_sha256": "2d178b792c3c15d4d8fcf1fe4e91228c8ded395fa138340fd5d26c0feff3e385"
+    },
+    {
+      "class": "com/chaogarden/client/GradualCoatMaterial$Reload.class",
+      "parent047_sha256": "876ec316e53fea94aa5ff4c92d71fadd96cf6a66de318f542377daf6b7530977",
+      "current_sha256": "876ec316e53fea94aa5ff4c92d71fadd96cf6a66de318f542377daf6b7530977"
+    },
+    {
+      "class": "com/chaogarden/client/GradualCoatMaterial.class",
+      "parent047_sha256": "5d0e714f712165348e7132a080a132cef50936d951b9cd672c5b8f9168291c57",
+      "current_sha256": "5d0e714f712165348e7132a080a132cef50936d951b9cd672c5b8f9168291c57"
+    },
+    {
+      "class": "com/chaogarden/client/HeldChaoRenderer$1.class",
+      "parent047_sha256": "83168888fe4b3a1f4422bf460eebe785f0b13536500934e9452862191045ca07",
+      "current_sha256": "83168888fe4b3a1f4422bf460eebe785f0b13536500934e9452862191045ca07"
+    },
+    {
+      "class": "com/chaogarden/client/HeldChaoRenderer$2.class",
+      "parent047_sha256": "8dd0305908ee75f9f46b5f2c149d79aec26434072146df02cf02d730296ce950",
+      "current_sha256": "8dd0305908ee75f9f46b5f2c149d79aec26434072146df02cf02d730296ce950"
+    },
+    {
+      "class": "com/chaogarden/client/HeldChaoRenderer$CacheStats.class",
+      "parent047_sha256": "bb4cabe640a7277d9467389423e6f1774762319313cc8cb1bdd89aaf78b6ca64",
+      "current_sha256": "bb4cabe640a7277d9467389423e6f1774762319313cc8cb1bdd89aaf78b6ca64"
+    },
+    {
+      "class": "com/chaogarden/client/HeldChaoRenderer$DataKey.class",
+      "parent047_sha256": "1112df44d7308d0b0b5b8b8c8c271c3599570b758436c02e2bb3bb3ff9dd4c24",
+      "current_sha256": "1112df44d7308d0b0b5b8b8c8c271c3599570b758436c02e2bb3bb3ff9dd4c24"
+    },
+    {
+      "class": "com/chaogarden/client/HeldChaoRenderer$Entry.class",
+      "parent047_sha256": "cb845019ed76d00fede49cffcbad85b956f15047144883a8f46dc7b416552704",
+      "current_sha256": "cb845019ed76d00fede49cffcbad85b956f15047144883a8f46dc7b416552704"
+    },
+    {
+      "class": "com/chaogarden/client/HeldChaoRenderer$Snapshot.class",
+      "parent047_sha256": "a8c49fc31fca64a567479dea1a54334fda82e4370d3eac42529493cc13cbf05a",
+      "current_sha256": "a8c49fc31fca64a567479dea1a54334fda82e4370d3eac42529493cc13cbf05a"
+    },
+    {
+      "class": "com/chaogarden/client/HeldChaoRenderer.class",
+      "parent047_sha256": "1a01d843628e4fbf2b089f2e957402058143e8e1c692faa21a40e855bb2a27c6",
+      "current_sha256": "1a01d843628e4fbf2b089f2e957402058143e8e1c692faa21a40e855bb2a27c6"
+    },
+    {
+      "class": "com/chaogarden/client/HeroGardenEffects0253$CloudMaterial.class",
+      "parent047_sha256": "7cef2715d2732f216bf4cb2da80959ec7862ff5ac3154d5c6d5108685b24c64c",
+      "current_sha256": "7cef2715d2732f216bf4cb2da80959ec7862ff5ac3154d5c6d5108685b24c64c"
+    },
+    {
+      "class": "com/chaogarden/client/HeroGardenEffects0253$CloudPass.class",
+      "parent047_sha256": "957556da2d578644d0d45e87de6b36532ada8bc3c76ea9964a86e68ade2fa4aa",
+      "current_sha256": "957556da2d578644d0d45e87de6b36532ada8bc3c76ea9964a86e68ade2fa4aa"
+    },
+    {
+      "class": "com/chaogarden/client/HeroGardenEffects0253.class",
+      "parent047_sha256": "9f3243bac4753c6f3fd06600ff6535a97b37b5adfbf321293eeb3b6802864f3d",
+      "current_sha256": "9f3243bac4753c6f3fd06600ff6535a97b37b5adfbf321293eeb3b6802864f3d"
+    },
+    {
+      "class": "com/chaogarden/client/KindergartenClient.class",
+      "parent047_sha256": "46bca0fa4f1a6801804b9fd8c986045e105ae97a1589582a0d667c7f75943560",
+      "current_sha256": "46bca0fa4f1a6801804b9fd8c986045e105ae97a1589582a0d667c7f75943560"
+    },
+    {
+      "class": "com/chaogarden/client/KindergartenSceneHud025.class",
+      "parent047_sha256": "db3a7e10e20e87985a06dbb35163c7f794c712737f9934811962feaff19a0914",
+      "current_sha256": "db3a7e10e20e87985a06dbb35163c7f794c712737f9934811962feaff19a0914"
+    },
+    {
+      "class": "com/chaogarden/client/KindergartenScreen$SceneButton.class",
+      "parent047_sha256": "30c168f05376078d8fb0ad28b2d08a814f322004209383bf12f2f866a3b1be63",
+      "current_sha256": "30c168f05376078d8fb0ad28b2d08a814f322004209383bf12f2f866a3b1be63"
+    },
+    {
+      "class": "com/chaogarden/client/KindergartenScreen.class",
+      "parent047_sha256": "63c14b6afb6dddc401be47f9b5dcc88f173f145add51450b57f131b9d9310935",
+      "current_sha256": "63c14b6afb6dddc401be47f9b5dcc88f173f145add51450b57f131b9d9310935"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishBellClip.class",
+      "parent047_sha256": "3b5b1510b3dc2c9d9704950c01bf8a9270f507a1a9d48a06e3b819242a95dcb3",
+      "current_sha256": "3b5b1510b3dc2c9d9704950c01bf8a9270f507a1a9d48a06e3b819242a95dcb3"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishBubbleClip.class",
+      "parent047_sha256": "ce64cb480eef103f6cd0f2b220332d539ace648cc23cca852e9c9c491669eb8c",
+      "current_sha256": "ce64cb480eef103f6cd0f2b220332d539ace648cc23cca852e9c9c491669eb8c"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishCastanetsClip.class",
+      "parent047_sha256": "a86f000d0ec70b4f0b9d8b25948c3f7e929c3943f2e06cf3a980d2d62b15b0be",
+      "current_sha256": "a86f000d0ec70b4f0b9d8b25948c3f7e929c3943f2e06cf3a980d2d62b15b0be"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishCymbalsClip.class",
+      "parent047_sha256": "73ed52e9f3e204280e22ac90faae02de5420b2d0f0be7b97fd1fa9800ea9f1ca",
+      "current_sha256": "73ed52e9f3e204280e22ac90faae02de5420b2d0f0be7b97fd1fa9800ea9f1ca"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishDrumClip.class",
+      "parent047_sha256": "a76f679e690263440d311483b92e9b92c79702ad5a82c540bfe3442d31ad3108",
+      "current_sha256": "a76f679e690263440d311483b92e9b92c79702ad5a82c540bfe3442d31ad3108"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishFluteClip.class",
+      "parent047_sha256": "0fa939c4c096481fb64cae8cfa5e2f97c776aecbef4782585f84c2f83b3f9df1",
+      "current_sha256": "0fa939c4c096481fb64cae8cfa5e2f97c776aecbef4782585f84c2f83b3f9df1"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishGuitarClip.class",
+      "parent047_sha256": "452a97a75931fbb9480a6dbee0ced0761263a8dde0c7e611e65f468b323a5803",
+      "current_sha256": "452a97a75931fbb9480a6dbee0ced0761263a8dde0c7e611e65f468b323a5803"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishMaracasClip.class",
+      "parent047_sha256": "1dc45914327595fa845644cc12cf73e108a4153c26ebed633e8b82e29d0e1108",
+      "current_sha256": "1dc45914327595fa845644cc12cf73e108a4153c26ebed633e8b82e29d0e1108"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishOrganClip.class",
+      "parent047_sha256": "f7dda0996740064576107956d35eb70e15c58fc24cd9a7da4f5326f4a6133c24",
+      "current_sha256": "f7dda0996740064576107956d35eb70e15c58fc24cd9a7da4f5326f4a6133c24"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishPianoClip.class",
+      "parent047_sha256": "ffef160084eeb8fb7ccc34bd07dbc8ae71fd30912a60f4652573c5469238f950",
+      "current_sha256": "ffef160084eeb8fb7ccc34bd07dbc8ae71fd30912a60f4652573c5469238f950"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishRattleClip.class",
+      "parent047_sha256": "bd47a16402a9d8af83a8a72cd66f73507823b485b7ef9b9cc838a70ff3b7e88f",
+      "current_sha256": "bd47a16402a9d8af83a8a72cd66f73507823b485b7ef9b9cc838a70ff3b7e88f"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishTambourineClip.class",
+      "parent047_sha256": "ce58999204851634b2ec1b71347ba8a964d8a0918d02b2ba747e37adb50014da",
+      "current_sha256": "ce58999204851634b2ec1b71347ba8a964d8a0918d02b2ba747e37adb50014da"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishTriangleClip.class",
+      "parent047_sha256": "95de59cfcc8a2e4d4bea0d0ed1891d4a4c324597d0ee6ef94c87fb2b276ecb4a",
+      "current_sha256": "95de59cfcc8a2e4d4bea0d0ed1891d4a4c324597d0ee6ef94c87fb2b276ecb4a"
+    },
+    {
+      "class": "com/chaogarden/client/LionfishTrumpetClip.class",
+      "parent047_sha256": "ca409aaf27920b0f9d1b6305b3d2d0a5b33edbfa92e6f215644db48d828ddadf",
+      "current_sha256": "ca409aaf27920b0f9d1b6305b3d2d0a5b33edbfa92e6f215644db48d828ddadf"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025$1.class",
+      "parent047_sha256": "528b4972986a68802b4033fd6da1e1e7ad8b7ae8aab1fd0a0429e3faf602f9d8",
+      "current_sha256": "528b4972986a68802b4033fd6da1e1e7ad8b7ae8aab1fd0a0429e3faf602f9d8"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025$AlphaScene.class",
+      "parent047_sha256": "e8fd57161abf4e2431238e0a32a8222b37de87e2e7d04f4435a31deb872dbd1a",
+      "current_sha256": "e8fd57161abf4e2431238e0a32a8222b37de87e2e7d04f4435a31deb872dbd1a"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025$Material.class",
+      "parent047_sha256": "0edbd64db6942982e09c73fe7f5a8c0704ff56ded473af8cdce92452bee02d45",
+      "current_sha256": "0edbd64db6942982e09c73fe7f5a8c0704ff56ded473af8cdce92452bee02d45"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025$Mesh.class",
+      "parent047_sha256": "59b703d7a6ff1908a59dfb5f2a6ae6bcc274aa1817ef7ad212d013148962db64",
+      "current_sha256": "59b703d7a6ff1908a59dfb5f2a6ae6bcc274aa1817ef7ad212d013148962db64"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025$SceneBuffers.class",
+      "parent047_sha256": "b2d43e4cc8159cff1bb38cfec8f87c559326881dd7b309c552e177d8ec76a16f",
+      "current_sha256": "b2d43e4cc8159cff1bb38cfec8f87c559326881dd7b309c552e177d8ec76a16f"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025$TranslucentPass.class",
+      "parent047_sha256": "41c6a480f8e6d448c35c7b8cce54446221eedd2abd6456b5865a15b8b0cc5a66",
+      "current_sha256": "41c6a480f8e6d448c35c7b8cce54446221eedd2abd6456b5865a15b8b0cc5a66"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025$V.class",
+      "parent047_sha256": "86d3d509cbfdff6c4245f409051bb8e31faffe22857a84a33043ee13c7621009",
+      "current_sha256": "86d3d509cbfdff6c4245f409051bb8e31faffe22857a84a33043ee13c7621009"
+    },
+    {
+      "class": "com/chaogarden/client/LobbySceneRenderer025.class",
+      "parent047_sha256": "6bee6bb251525fd84beb222a77c266b9983867befe11fe94c7c8565407385465",
+      "current_sha256": "6bee6bb251525fd84beb222a77c266b9983867befe11fe94c7c8565407385465"
+    },
+    {
+      "class": "com/chaogarden/client/OfficialChaoRig$CrawlStep.class",
+      "parent047_sha256": "4952c762fa6640f5234729d21fbc51bff06a83e6d31072cfe8625a0265bd54e1",
+      "current_sha256": "4952c762fa6640f5234729d21fbc51bff06a83e6d31072cfe8625a0265bd54e1"
+    },
+    {
+      "class": "com/chaogarden/client/OfficialChaoRig$Expression.class",
+      "parent047_sha256": "6359d166c49c5dde7abaaca76b9c2f8f4adf48fb000e786464a37481f008d577",
+      "current_sha256": "6359d166c49c5dde7abaaca76b9c2f8f4adf48fb000e786464a37481f008d577"
+    },
+    {
+      "class": "com/chaogarden/client/OfficialChaoRig$Frame.class",
+      "parent047_sha256": "5021cb5e3e9acdd0711a018c92e2feec85b7fa855c491e59a825102a26d8e84a",
+      "current_sha256": "5021cb5e3e9acdd0711a018c92e2feec85b7fa855c491e59a825102a26d8e84a"
+    },
+    {
+      "class": "com/chaogarden/client/OfficialChaoRig$Motion.class",
+      "parent047_sha256": "1ad47ecc660dcaae3c4ebb703fb7f7af3eec1a20175877285d1c84b19593efd8",
+      "current_sha256": "1ad47ecc660dcaae3c4ebb703fb7f7af3eec1a20175877285d1c84b19593efd8"
+    },
+    {
+      "class": "com/chaogarden/client/OfficialChaoRig$Transition.class",
+      "parent047_sha256": "a0941fcf42bb0b4e3c74df02fd11a5c05f41257abd7ed1ce931409fef96e76e2",
+      "current_sha256": "a0941fcf42bb0b4e3c74df02fd11a5c05f41257abd7ed1ce931409fef96e76e2"
+    },
+    {
+      "class": "com/chaogarden/client/OfficialChaoRig.class",
+      "parent047_sha256": "e5440cbf11f47ceb5a4e91d1403fc944eec57ba1c9c6ec9abc3b76fe0a8466b4",
+      "current_sha256": "e5440cbf11f47ceb5a4e91d1403fc944eec57ba1c9c6ec9abc3b76fe0a8466b4"
+    },
+    {
+      "class": "com/chaogarden/client/OmochaoMaterial$ImageSource.class",
+      "parent047_sha256": "4c80ace616244a89020cd737b41cf075d93f120c1f0c05d7b14d844b89794236",
+      "current_sha256": "4c80ace616244a89020cd737b41cf075d93f120c1f0c05d7b14d844b89794236"
+    },
+    {
+      "class": "com/chaogarden/client/OmochaoMaterial$Reload.class",
+      "parent047_sha256": "95e94ad1d8da0de317b1b517ff947571e45e292857bacf58b4817a07e86efb90",
+      "current_sha256": "95e94ad1d8da0de317b1b517ff947571e45e292857bacf58b4817a07e86efb90"
+    },
+    {
+      "class": "com/chaogarden/client/OmochaoMaterial.class",
+      "parent047_sha256": "a1cf70ace1e162a546bcd11d0d7895c7bf9b7fcb730aaa7e4dc1b5161a2c76a7",
+      "current_sha256": "a1cf70ace1e162a546bcd11d0d7895c7bf9b7fcb730aaa7e4dc1b5161a2c76a7"
+    },
+    {
+      "class": "com/chaogarden/client/PlantedPalmRenderer02536.class",
+      "parent047_sha256": "e61361959a96d4eeefe9d6648fa068db07c5a461f7ad3e3bfd476824081fbc0d",
+      "current_sha256": "e61361959a96d4eeefe9d6648fa068db07c5a461f7ad3e3bfd476824081fbc0d"
+    },
+    {
+      "class": "com/chaogarden/client/SceneShaderPack$Queries.class",
+      "parent047_sha256": "ce13a745183480b21302e441f9c522c5fa48f85fc4fa94b2839679d9dd8c5a20",
+      "current_sha256": "ce13a745183480b21302e441f9c522c5fa48f85fc4fa94b2839679d9dd8c5a20"
+    },
+    {
+      "class": "com/chaogarden/client/SceneShaderPack.class",
+      "parent047_sha256": "36b618289d0830be24e0f48c1fecd27d2807ead898157aa98a6674e063150099",
+      "current_sha256": "36b618289d0830be24e0f48c1fecd27d2807ead898157aa98a6674e063150099"
+    },
+    {
+      "class": "com/chaogarden/client/SchoolChorus0259$Chorus.class",
+      "parent047_sha256": "1b73497704307e8ace170a95b29cb867aaa9c081988ca488bdda7e28949f96b1",
+      "current_sha256": "1b73497704307e8ace170a95b29cb867aaa9c081988ca488bdda7e28949f96b1"
+    },
+    {
+      "class": "com/chaogarden/client/SchoolChorus0259.class",
+      "parent047_sha256": "671d2be49778837b28181611310c4b102154d8b495df799e36b397fa64ac0e79",
+      "current_sha256": "671d2be49778837b28181611310c4b102154d8b495df799e36b397fa64ac0e79"
+    },
+    {
+      "class": "com/chaogarden/client/SoapBubbleParticle.class",
+      "parent047_sha256": "2f493d6b3e7dba12061f45e5edc4d4cca386770e3eeb243e4a6bc62b6f19f9da",
+      "current_sha256": "2f493d6b3e7dba12061f45e5edc4d4cca386770e3eeb243e4a6bc62b6f19f9da"
+    },
+    {
+      "class": "com/chaogarden/client/StaffChaoClient025.class",
+      "parent047_sha256": "a58f34994b70a3be1ab607bfcfe14d56019a502508b98b3a78efbce1417db408",
+      "current_sha256": "a58f34994b70a3be1ab607bfcfe14d56019a502508b98b3a78efbce1417db408"
+    },
+    {
+      "class": "com/chaogarden/client/StaffChaoModel025$1.class",
+      "parent047_sha256": "5fa2b04a5d4ea7b9352d6a3ca1510dc2d3b1501ac259b1ecd08e54c734ba50b5",
+      "current_sha256": "5fa2b04a5d4ea7b9352d6a3ca1510dc2d3b1501ac259b1ecd08e54c734ba50b5"
+    },
+    {
+      "class": "com/chaogarden/client/StaffChaoModel025$FortuneEyelids.class",
+      "parent047_sha256": "71502a5d70480cf1ac25f6cbbf46618a4f4a3962dd36302fa3364ef4144c6922",
+      "current_sha256": "71502a5d70480cf1ac25f6cbbf46618a4f4a3962dd36302fa3364ef4144c6922"
+    },
+    {
+      "class": "com/chaogarden/client/StaffChaoModel025$Frame.class",
+      "parent047_sha256": "b259846d3dddec083d5acb0e80e94c8015b50102bb8368d883fe64c74b283458",
+      "current_sha256": "b259846d3dddec083d5acb0e80e94c8015b50102bb8368d883fe64c74b283458"
+    },
+    {
+      "class": "com/chaogarden/client/StaffChaoModel025.class",
+      "parent047_sha256": "6698b33c31eba1be7a24cc385684b6bc300c170f753d5299c1322469ecf23c5d",
+      "current_sha256": "6698b33c31eba1be7a24cc385684b6bc300c170f753d5299c1322469ecf23c5d"
+    },
+    {
+      "class": "com/chaogarden/client/StaffChaoRenderer025.class",
+      "parent047_sha256": "c59860727aba39c0439e4dccdbbb98cb2b6b2c632a4a3594bcd07b89d6ccf97a",
+      "current_sha256": "c59860727aba39c0439e4dccdbbb98cb2b6b2c632a4a3594bcd07b89d6ccf97a"
+    },
+    {
+      "class": "com/chaogarden/client/StaffFaceMotion0251.class",
+      "parent047_sha256": "e8eb20a6e59b5ff16b4aaece228dc195cec9dc8e9d56dc1b1efb4abb8fb0fea2",
+      "current_sha256": "e8eb20a6e59b5ff16b4aaece228dc195cec9dc8e9d56dc1b1efb4abb8fb0fea2"
+    },
+    {
+      "class": "com/chaogarden/companion/AccessoriesBridge$StoredAccessory.class",
+      "parent047_sha256": "bbdaaa2e85f4aea9b06ab04368296f818a79c146cbf7966f0617848b645703db",
+      "current_sha256": "bbdaaa2e85f4aea9b06ab04368296f818a79c146cbf7966f0617848b645703db"
+    },
+    {
+      "class": "com/chaogarden/companion/AccessoriesBridge.class",
+      "parent047_sha256": "921ad6244062913ab9a217bbba05c029b7286191b58d1045bef20184435994dd",
+      "current_sha256": "921ad6244062913ab9a217bbba05c029b7286191b58d1045bef20184435994dd"
+    },
+    {
+      "class": "com/chaogarden/companion/CarryPreview$Session.class",
+      "parent047_sha256": "0c14c8b8f141adebf38e43a2c74d4e30aadbbd32a63aad8d67a0a11553e4e8cc",
+      "current_sha256": "0c14c8b8f141adebf38e43a2c74d4e30aadbbd32a63aad8d67a0a11553e4e8cc"
+    },
+    {
+      "class": "com/chaogarden/companion/CarryPreview.class",
+      "parent047_sha256": "2f8a4e5e811780658d9647f010ec2e8ae5247641f7e575f625e70fc737044bae",
+      "current_sha256": "2f8a4e5e811780658d9647f010ec2e8ae5247641f7e575f625e70fc737044bae"
+    },
+    {
+      "class": "com/chaogarden/companion/CarryRules.class",
+      "parent047_sha256": "bbea5d83d83e82a7ba6b54d3e2d83e9e6c08cc88c093c60257cb145393bae2fd",
+      "current_sha256": "bbea5d83d83e82a7ba6b54d3e2d83e9e6c08cc88c093c60257cb145393bae2fd"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionContent$1.class",
+      "parent047_sha256": "771f41c8d167691ea85e6b94177b86b92ba69ac3e9978c5b2d1d89deb93658a4",
+      "current_sha256": "771f41c8d167691ea85e6b94177b86b92ba69ac3e9978c5b2d1d89deb93658a4"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionContent$Active.class",
+      "parent047_sha256": "c125190c47d33cd5a15ebc822cd5de8f99a3b157df2845522da1cb334a0423ea",
+      "current_sha256": "c125190c47d33cd5a15ebc822cd5de8f99a3b157df2845522da1cb334a0423ea"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionContent$PendingSnapshot.class",
+      "parent047_sha256": "4a4dd57f840c36c48c8aea2078147222d61eaf0189a8146c511a6544abf3975a",
+      "current_sha256": "4a4dd57f840c36c48c8aea2078147222d61eaf0189a8146c511a6544abf3975a"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionContent.class",
+      "parent047_sha256": "18d524524eb6babc104648c09a56f6977fb6f73c2d64c59d817041d6129915f3",
+      "current_sha256": "18d524524eb6babc104648c09a56f6977fb6f73c2d64c59d817041d6129915f3"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionFlight.class",
+      "parent047_sha256": "6691b635b97137d8448d295f4229a9b02bd8b7fe4488b0c5591ca179d9e92a63",
+      "current_sha256": "6691b635b97137d8448d295f4229a9b02bd8b7fe4488b0c5591ca179d9e92a63"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionGoal.class",
+      "parent047_sha256": "241161f51657d217307b850091c721f1cb9169f2d096a29deaf85537bc210582",
+      "current_sha256": "241161f51657d217307b850091c721f1cb9169f2d096a29deaf85537bc210582"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionNetwork$Boost.class",
+      "parent047_sha256": "0332703db8ad55d9bf72de6af1765dc2fd03b854492825171b68b9c8c2b5ce70",
+      "current_sha256": "0332703db8ad55d9bf72de6af1765dc2fd03b854492825171b68b9c8c2b5ce70"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionNetwork$OpenEnderChest.class",
+      "parent047_sha256": "a9f10e0448432af842a351562d647f3d5315fab2761264a4316b663113ae4f9b",
+      "current_sha256": "a9f10e0448432af842a351562d647f3d5315fab2761264a4316b663113ae4f9b"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionNetwork$Status.class",
+      "parent047_sha256": "94c512390516e35d3afa99f177a3f041db16e3a1163208c4e92eae5363903c91",
+      "current_sha256": "94c512390516e35d3afa99f177a3f041db16e3a1163208c4e92eae5363903c91"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionNetwork.class",
+      "parent047_sha256": "8b8920cc1966e22c32fad0408c69a13204c3d932490578a95759009985725064",
+      "current_sha256": "8b8920cc1966e22c32fad0408c69a13204c3d932490578a95759009985725064"
+    },
+    {
+      "class": "com/chaogarden/companion/CompanionRules.class",
+      "parent047_sha256": "6f7d25f1ce619483bc87008e458eb002b65c257c63eae9620ca185e7d46aba98",
+      "current_sha256": "6f7d25f1ce619483bc87008e458eb002b65c257c63eae9620ca185e7d46aba98"
+    },
+    {
+      "class": "com/chaogarden/core/AnalyzerStatRules$Edit.class",
+      "parent047_sha256": "2b51d649c16d656911da9d3466ae0ffcd77ecb1709dadf3141f60714a9f324da",
+      "current_sha256": "2b51d649c16d656911da9d3466ae0ffcd77ecb1709dadf3141f60714a9f324da"
+    },
+    {
+      "class": "com/chaogarden/core/AnalyzerStatRules.class",
+      "parent047_sha256": "b83628f309f25a9beb58b8803974708e409babc5db46299d8e77d59fc65838c6",
+      "current_sha256": "b83628f309f25a9beb58b8803974708e409babc5db46299d8e77d59fc65838c6"
+    },
+    {
+      "class": "com/chaogarden/core/AreaMusicRules0257$Track.class",
+      "parent047_sha256": "0ce903a3222424870db76e691f4cb5d6b1f38ed2f68ba74e87810f9563a0cb98",
+      "current_sha256": "0ce903a3222424870db76e691f4cb5d6b1f38ed2f68ba74e87810f9563a0cb98"
+    },
+    {
+      "class": "com/chaogarden/core/AreaMusicRules0257.class",
+      "parent047_sha256": "f502e991b453abc406fc22cd2c8712902e1298e981cc40d5835005943ee1f4f6",
+      "current_sha256": "f502e991b453abc406fc22cd2c8712902e1298e981cc40d5835005943ee1f4f6"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoAnimationRules.class",
+      "parent047_sha256": "3bf50432d0bfe6ded1920616ab668ba9efadd7f39f8a47537b6f07860768db93",
+      "current_sha256": "3bf50432d0bfe6ded1920616ab668ba9efadd7f39f8a47537b6f07860768db93"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoEmotion.class",
+      "parent047_sha256": "e44647d9085f4cfe131415c6115ffa42112464802e1f641a848927814192bccb",
+      "current_sha256": "e44647d9085f4cfe131415c6115ffa42112464802e1f641a848927814192bccb"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoGaitClock.class",
+      "parent047_sha256": "08359f3938e3ec1d74a4ce75c4bdb33f45f4c3af7af1cc3bc0cb71170886acf9",
+      "current_sha256": "08359f3938e3ec1d74a4ce75c4bdb33f45f4c3af7af1cc3bc0cb71170886acf9"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoIllness.class",
+      "parent047_sha256": "de45c389368721ab09bda5031dc34c6005df5acbcf6501b91ce7c981e4658c23",
+      "current_sha256": "de45c389368721ab09bda5031dc34c6005df5acbcf6501b91ce7c981e4658c23"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoPersonality.class",
+      "parent047_sha256": "d9a68057db805456f3c7e01009db643df4925072e80825ace561f22735f3a812",
+      "current_sha256": "d9a68057db805456f3c7e01009db643df4925072e80825ace561f22735f3a812"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoPreferences.class",
+      "parent047_sha256": "881348f8c6f0b9973f345653f031d62312e068fbf273b61e9a815dc970a7b55d",
+      "current_sha256": "881348f8c6f0b9973f345653f031d62312e068fbf273b61e9a815dc970a7b55d"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoState$Transition.class",
+      "parent047_sha256": "0104cb6f9fd83f636b60255a4cf8ea625bdda76b01c992d3e8b7fef8c36d4072",
+      "current_sha256": "0104cb6f9fd83f636b60255a4cf8ea625bdda76b01c992d3e8b7fef8c36d4072"
+    },
+    {
+      "class": "com/chaogarden/core/ChaoState.class",
+      "parent047_sha256": "e929fd81e068cdf0b917e1bf2e0a1c9993d3e3151d3ba0fa45996b7113aba16f",
+      "current_sha256": "e929fd81e068cdf0b917e1bf2e0a1c9993d3e3151d3ba0fa45996b7113aba16f"
+    },
+    {
+      "class": "com/chaogarden/core/ClassroomToyGeometry0258.class",
+      "parent047_sha256": "a70b1831212caf28302cb88c4c59202ba33b82d8241322e1a9e78485a327f7d6",
+      "current_sha256": "a70b1831212caf28302cb88c4c59202ba33b82d8241322e1a9e78485a327f7d6"
+    },
+    {
+      "class": "com/chaogarden/core/DriveRules$Tier.class",
+      "parent047_sha256": "bd7341eaf6a74c6dc7f8a566b4b8d25674adf9033f6debd96e99a7f771190cfe",
+      "current_sha256": "bd7341eaf6a74c6dc7f8a566b4b8d25674adf9033f6debd96e99a7f771190cfe"
+    },
+    {
+      "class": "com/chaogarden/core/DriveRules.class",
+      "parent047_sha256": "a6ea6d5d8f8c9cb5ecd5fab5d7d1f2505a987d8177d4d7fa9737cf54b8ad7aae",
+      "current_sha256": "a6ea6d5d8f8c9cb5ecd5fab5d7d1f2505a987d8177d4d7fa9737cf54b8ad7aae"
+    },
+    {
+      "class": "com/chaogarden/core/GardenGateGeometry0256$Builder.class",
+      "parent047_sha256": "49edaf5ea97d3559f2e770fdf310e90e2f653b6e562f4561e0965f626b080dd6",
+      "current_sha256": "49edaf5ea97d3559f2e770fdf310e90e2f653b6e562f4561e0965f626b080dd6"
+    },
+    {
+      "class": "com/chaogarden/core/GardenGateGeometry0256$Face.class",
+      "parent047_sha256": "57b6fe7c6797a2b5be5a11b3c433ebd429cc561888339bd0a60356f1a2a265fd",
+      "current_sha256": "57b6fe7c6797a2b5be5a11b3c433ebd429cc561888339bd0a60356f1a2a265fd"
+    },
+    {
+      "class": "com/chaogarden/core/GardenGateGeometry0256$Material.class",
+      "parent047_sha256": "64fd5f1c26deacf41a04fa5ee48a8b558e61a17f1105f0b881dbdbd89134fa5c",
+      "current_sha256": "64fd5f1c26deacf41a04fa5ee48a8b558e61a17f1105f0b881dbdbd89134fa5c"
+    },
+    {
+      "class": "com/chaogarden/core/GardenGateGeometry0256$Point.class",
+      "parent047_sha256": "6eb42a18623390546f3fd29fe431dcf4f934cd6dc13e0aa799c97fca46f0027d",
+      "current_sha256": "6eb42a18623390546f3fd29fe431dcf4f934cd6dc13e0aa799c97fca46f0027d"
+    },
+    {
+      "class": "com/chaogarden/core/GardenGateGeometry0256.class",
+      "parent047_sha256": "8f15af9d1dffc64f6e78256e90ad560525220bfa4c06802709f1bbb39d47a0de",
+      "current_sha256": "8f15af9d1dffc64f6e78256e90ad560525220bfa4c06802709f1bbb39d47a0de"
+    },
+    {
+      "class": "com/chaogarden/core/GradualEvolutionRules.class",
+      "parent047_sha256": "02edc1ffc39814abed194b422e726fd432097369de50a9eb5cea08f01103ceaa",
+      "current_sha256": "02edc1ffc39814abed194b422e726fd432097369de50a9eb5cea08f01103ceaa"
+    },
+    {
+      "class": "com/chaogarden/core/HeroCloudGeometry0253$Vertex.class",
+      "parent047_sha256": "5faff0768edb0aa5ff4b29baede72af0b9e01861c722708093f745385aa67489",
+      "current_sha256": "5faff0768edb0aa5ff4b29baede72af0b9e01861c722708093f745385aa67489"
+    },
+    {
+      "class": "com/chaogarden/core/HeroCloudGeometry0253.class",
+      "parent047_sha256": "5ab909f47493182d5a885a7b989f364d4dee037c9219826f6afb2ef2ce00e90b",
+      "current_sha256": "5ab909f47493182d5a885a7b989f364d4dee037c9219826f6afb2ef2ce00e90b"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyApproachGeometry0255$Box.class",
+      "parent047_sha256": "51bf501c5d20d4a482290b7a4b30b1fe993ce70efd220377377e0a869ae42751",
+      "current_sha256": "51bf501c5d20d4a482290b7a4b30b1fe993ce70efd220377377e0a869ae42751"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyApproachGeometry0255$Cell.class",
+      "parent047_sha256": "b7dd09d931d8f5295306e62ca623b6aae696adf930a4bf5124a0159a7c403ab5",
+      "current_sha256": "b7dd09d931d8f5295306e62ca623b6aae696adf930a4bf5124a0159a7c403ab5"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyApproachGeometry0255$Edge.class",
+      "parent047_sha256": "f3ab5c71c08bdbde996059bca708fd67a8c7d117074eee3adeea2b7339f590c7",
+      "current_sha256": "f3ab5c71c08bdbde996059bca708fd67a8c7d117074eee3adeea2b7339f590c7"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyApproachGeometry0255$Face.class",
+      "parent047_sha256": "d37af5c6c401666ac4a48a2d9c6545cf54db0d9928de4218d123cead8e207919",
+      "current_sha256": "d37af5c6c401666ac4a48a2d9c6545cf54db0d9928de4218d123cead8e207919"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyApproachGeometry0255$Point.class",
+      "parent047_sha256": "4618624ec1e9469cbdb37e9f0f222733095637e51dcec094bf06e0936b28cecb",
+      "current_sha256": "4618624ec1e9469cbdb37e9f0f222733095637e51dcec094bf06e0936b28cecb"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyApproachGeometry0255$Rail.class",
+      "parent047_sha256": "fb68fec382c4d5216d16b9420681ac16acae9c732d1a809d50558d347200280a",
+      "current_sha256": "fb68fec382c4d5216d16b9420681ac16acae9c732d1a809d50558d347200280a"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyApproachGeometry0255.class",
+      "parent047_sha256": "2de8df001ee6db17aca60c6d8b4a65c2ab16dfc8fe6696556a78ca31ac9af8d0",
+      "current_sha256": "2de8df001ee6db17aca60c6d8b4a65c2ab16dfc8fe6696556a78ca31ac9af8d0"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyGeometry0252$Face.class",
+      "parent047_sha256": "e9e2255fc597ee5664c69f245c342e395a9fa8e19bb4c21de610ab8b049be8a3",
+      "current_sha256": "e9e2255fc597ee5664c69f245c342e395a9fa8e19bb4c21de610ab8b049be8a3"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyGeometry0252$Point.class",
+      "parent047_sha256": "ed2e4e77d034ec9500340f52e6733d6ad14628b59b3917788e98145586eca8ca",
+      "current_sha256": "ed2e4e77d034ec9500340f52e6733d6ad14628b59b3917788e98145586eca8ca"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyGeometry0252$Stem.class",
+      "parent047_sha256": "8d5efe5c0ffdcf82ae07019ae2f4424d034b662af1b0f8aa24175c3788d2d620",
+      "current_sha256": "8d5efe5c0ffdcf82ae07019ae2f4424d034b662af1b0f8aa24175c3788d2d620"
+    },
+    {
+      "class": "com/chaogarden/core/LobbyGeometry0252.class",
+      "parent047_sha256": "235100f64ed402c7474c98da86915ad3c1bfc520048475cceb18fe06002e2c3a",
+      "current_sha256": "235100f64ed402c7474c98da86915ad3c1bfc520048475cceb18fe06002e2c3a"
+    },
+    {
+      "class": "com/chaogarden/core/LocomotionRules$GroundGait.class",
+      "parent047_sha256": "48a37175810bcef2a3f7788fdf3242d415ea3878ff938c0cd2734dd7eb84a419",
+      "current_sha256": "48a37175810bcef2a3f7788fdf3242d415ea3878ff938c0cd2734dd7eb84a419"
+    },
+    {
+      "class": "com/chaogarden/core/LocomotionRules.class",
+      "parent047_sha256": "6ad4e2e3b05bb1711f7a16727a3b250c61cb51524488cc1d514eeb56880afe50",
+      "current_sha256": "6ad4e2e3b05bb1711f7a16727a3b250c61cb51524488cc1d514eeb56880afe50"
+    },
+    {
+      "class": "com/chaogarden/core/OmochaoRules.class",
+      "parent047_sha256": "205edcdc4b051f8cbf5a596fa21a227e9daad689f5af39748bc602cfdec52382",
+      "current_sha256": "205edcdc4b051f8cbf5a596fa21a227e9daad689f5af39748bc602cfdec52382"
+    },
+    {
+      "class": "com/chaogarden/core/PortalGeometry0251$Point.class",
+      "parent047_sha256": "0827e3a16931773b2b3f8ed75a913e2858e4a6b9bb7d3b22e6ffe7a921c94b80",
+      "current_sha256": "0827e3a16931773b2b3f8ed75a913e2858e4a6b9bb7d3b22e6ffe7a921c94b80"
+    },
+    {
+      "class": "com/chaogarden/core/PortalGeometry0251$Quad.class",
+      "parent047_sha256": "035243a1be97461a715e171d501211542d21e68d6de9a8244ef0308179c19689",
+      "current_sha256": "035243a1be97461a715e171d501211542d21e68d6de9a8244ef0308179c19689"
+    },
+    {
+      "class": "com/chaogarden/core/PortalGeometry0251$Vertex.class",
+      "parent047_sha256": "87a9e2b9967bf0dbd87b18d7cf9f0c4f854ad19ce0d148a60dd40334a0926127",
+      "current_sha256": "87a9e2b9967bf0dbd87b18d7cf9f0c4f854ad19ce0d148a60dd40334a0926127"
+    },
+    {
+      "class": "com/chaogarden/core/PortalGeometry0251.class",
+      "parent047_sha256": "5b9e602f20c6ce3cfe0ada7afefebaf3de64b811f6d1554140bc19898a668b20",
+      "current_sha256": "5b9e602f20c6ce3cfe0ada7afefebaf3de64b811f6d1554140bc19898a668b20"
+    },
+    {
+      "class": "com/chaogarden/core/SchoolDoorGeometry0254$Box.class",
+      "parent047_sha256": "da0041cf5baf041035e8e13272ff1a2e7222541978956b1a0a3e495a0a3bf4c2",
+      "current_sha256": "da0041cf5baf041035e8e13272ff1a2e7222541978956b1a0a3e495a0a3bf4c2"
+    },
+    {
+      "class": "com/chaogarden/core/SchoolDoorGeometry0254.class",
+      "parent047_sha256": "1c78c36fe0a212340d0f34fdd7fcbad0a0de65104a20977af2fb48375dc9e99b",
+      "current_sha256": "1c78c36fe0a212340d0f34fdd7fcbad0a0de65104a20977af2fb48375dc9e99b"
+    },
+    {
+      "class": "com/chaogarden/core/SchoolDoorGeometry0255$Box.class",
+      "parent047_sha256": "a880fb3edf710a029d1ac6a363d67ada5dc654e47bad9a6f980a4ac3e7fd5f8f",
+      "current_sha256": "a880fb3edf710a029d1ac6a363d67ada5dc654e47bad9a6f980a4ac3e7fd5f8f"
+    },
+    {
+      "class": "com/chaogarden/core/SchoolDoorGeometry0255.class",
+      "parent047_sha256": "99e7a39810d81ef48fe388de26835198bdf21f54b4e71b56bd356b5760659df3",
+      "current_sha256": "99e7a39810d81ef48fe388de26835198bdf21f54b4e71b56bd356b5760659df3"
+    },
+    {
+      "class": "com/chaogarden/core/SchoolSingingRules0258.class",
+      "parent047_sha256": "44d49c2b2fbcda2170b4f51dd25ebbd991525778646fa234f032346792a0c66e",
+      "current_sha256": "44d49c2b2fbcda2170b4f51dd25ebbd991525778646fa234f032346792a0c66e"
+    },
+    {
+      "class": "com/chaogarden/core/WardrobeChoice.class",
+      "parent047_sha256": "1997aba7eb9cd8c365ab7169f4a6c46b03d9d46b8177d49482cdf89f36e1a316",
+      "current_sha256": "1997aba7eb9cd8c365ab7169f4a6c46b03d9d46b8177d49482cdf89f36e1a316"
+    },
+    {
+      "class": "com/chaogarden/cwe/CweCatalog$Gift.class",
+      "parent047_sha256": "de1b75f8969c82e2c994e2f695c1b88edf60f7ef7175d1bf3648f02cf037fa3d",
+      "current_sha256": "de1b75f8969c82e2c994e2f695c1b88edf60f7ef7175d1bf3648f02cf037fa3d"
+    },
+    {
+      "class": "com/chaogarden/cwe/CweCatalog$Kind.class",
+      "parent047_sha256": "0922cf71a7ed7491b1c4116e7e76058f41c2d1a0e993fa3f5feb4278ef870a28",
+      "current_sha256": "0922cf71a7ed7491b1c4116e7e76058f41c2d1a0e993fa3f5feb4278ef870a28"
+    },
+    {
+      "class": "com/chaogarden/cwe/CweCatalog.class",
+      "parent047_sha256": "647feb75d1e2cb23a7c3535b14bd17a0a8858487f330d4d136019fb4329efdf6",
+      "current_sha256": "647feb75d1e2cb23a7c3535b14bd17a0a8858487f330d4d136019fb4329efdf6"
+    },
+    {
+      "class": "com/chaogarden/cwe/CweContent.class",
+      "parent047_sha256": "df4f0631c8635ff2cfa056964bc8102c1bbfaaa1053988787dcc21bf9bba59d6",
+      "current_sha256": "df4f0631c8635ff2cfa056964bc8102c1bbfaaa1053988787dcc21bf9bba59d6"
+    },
+    {
+      "class": "com/chaogarden/cwe/CweGiftItem$1.class",
+      "parent047_sha256": "05ff53281618782635d5f66954db179f7693608d2c9f9883259ac42496a16c80",
+      "current_sha256": "05ff53281618782635d5f66954db179f7693608d2c9f9883259ac42496a16c80"
+    },
+    {
+      "class": "com/chaogarden/cwe/CweGiftItem.class",
+      "parent047_sha256": "e9c3249521330211094c74966df67f088d12e2f328c1b853941186f800935613",
+      "current_sha256": "e9c3249521330211094c74966df67f088d12e2f328c1b853941186f800935613"
+    },
+    {
+      "class": "com/chaogarden/cwe/CweRobotPartItem.class",
+      "parent047_sha256": "cf578cd7a673ca39b48ae8871700a59f06900430e10a20740eb7a3ae2f8c0486",
+      "current_sha256": "cf578cd7a673ca39b48ae8871700a59f06900430e10a20740eb7a3ae2f8c0486"
+    },
+    {
+      "class": "com/chaogarden/cwe/OmochaoLifecycle.class",
+      "parent047_sha256": "42adc2039674c14f5772f78c391dfaee84673c95091a1707e69e7e61fe35085d",
+      "current_sha256": "42adc2039674c14f5772f78c391dfaee84673c95091a1707e69e7e61fe35085d"
+    },
+    {
+      "class": "com/chaogarden/cwe/RetiredCweGiftItem.class",
+      "parent047_sha256": "ec3153a6bece10854eb46cac38c50c31ec46cf07d92c732ef114f8529d71f4b5",
+      "current_sha256": "ec3153a6bece10854eb46cac38c50c31ec46cf07d92c732ef114f8529d71f4b5"
+    },
+    {
+      "class": "com/chaogarden/distribution/ChestEggLootModifier.class",
+      "parent047_sha256": "17e2bad2c354e9d0cba624b96a55f26c60dc8ac7ea643413fbc89ac9c2c20c20",
+      "current_sha256": "17e2bad2c354e9d0cba624b96a55f26c60dc8ac7ea643413fbc89ac9c2c20c20"
+    },
+    {
+      "class": "com/chaogarden/distribution/ChestFillWitness$Fill.class",
+      "parent047_sha256": "e9ec9ac8ae0dd3e58010c8e5292518457fe1005601cbc7d53b26e06f08eb56b3",
+      "current_sha256": "e9ec9ac8ae0dd3e58010c8e5292518457fe1005601cbc7d53b26e06f08eb56b3"
+    },
+    {
+      "class": "com/chaogarden/distribution/ChestFillWitness.class",
+      "parent047_sha256": "9b6d3a32f5a57df99259bb62cf99b9808eab504cd9955237e93a33961169d916",
+      "current_sha256": "9b6d3a32f5a57df99259bb62cf99b9808eab504cd9955237e93a33961169d916"
+    },
+    {
+      "class": "com/chaogarden/distribution/EggDistribution.class",
+      "parent047_sha256": "78b2fcca47c3087f0ff813b67097a82be35ee0fa8221b7c03def2b3fc7c6c24a",
+      "current_sha256": "78b2fcca47c3087f0ff813b67097a82be35ee0fa8221b7c03def2b3fc7c6c24a"
+    },
+    {
+      "class": "com/chaogarden/distribution/EggDistributionRules.class",
+      "parent047_sha256": "d73193fc03a657071dbc52ac927df0a590b85f15c24946bc4557e9bfada7a8b1",
+      "current_sha256": "d73193fc03a657071dbc52ac927df0a590b85f15c24946bc4557e9bfada7a8b1"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoEggEntity.class",
+      "parent047_sha256": "2f6ab3d0d72d948b7a1360ff295a865d7e48c209bc27fba2a7d1a0da3ba49d4b",
+      "current_sha256": "2f6ab3d0d72d948b7a1360ff295a865d7e48c209bc27fba2a7d1a0da3ba49d4b"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoEntity$1.class",
+      "parent047_sha256": "37f3e12e5a72a363a1f97d8d981f9a423653af40ad6578a4f22104e37099dba8",
+      "current_sha256": "37f3e12e5a72a363a1f97d8d981f9a423653af40ad6578a4f22104e37099dba8"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoEntity$2.class",
+      "parent047_sha256": "62993baa6fb19e9f9324bc3bd4dda1706ad39786cb82a03e68f0a128fd7af46e",
+      "current_sha256": "62993baa6fb19e9f9324bc3bd4dda1706ad39786cb82a03e68f0a128fd7af46e"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoEntity$3.class",
+      "parent047_sha256": "12f45ce3befb9cae8618b41893e9eb79935605e36f085af11564dbf2f9ea85f1",
+      "current_sha256": "12f45ce3befb9cae8618b41893e9eb79935605e36f085af11564dbf2f9ea85f1"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoEntity$Behavior.class",
+      "parent047_sha256": "f6faa332314815b84ef758b1d18b603861126e3b8598307446ad3567b2dd234a",
+      "current_sha256": "f6faa332314815b84ef758b1d18b603861126e3b8598307446ad3567b2dd234a"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoEntity$ItemAction.class",
+      "parent047_sha256": "9bb0e731fbea6b59189396885aebf679261baf503ef42630a53e1cc40049b90b",
+      "current_sha256": "9bb0e731fbea6b59189396885aebf679261baf503ef42630a53e1cc40049b90b"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoEntity.class",
+      "parent047_sha256": "a3b94be08d5b993843fcd462565f4c6b6b8d195cedc8ef901c486bb902e44188",
+      "current_sha256": "a3b94be08d5b993843fcd462565f4c6b6b8d195cedc8ef901c486bb902e44188"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoItemDrops$ResolvedVanillaItem.class",
+      "parent047_sha256": "db460607d6cd6be100fed7ad8c385be0a75ad6e02de20332d881b71bd56a2308",
+      "current_sha256": "db460607d6cd6be100fed7ad8c385be0a75ad6e02de20332d881b71bd56a2308"
+    },
+    {
+      "class": "com/chaogarden/entity/ChaoItemDrops.class",
+      "parent047_sha256": "1fd7ffdfc2c0a4ae637b262efcd4b0aa88bf3a071e6e81e7310cea599f869bb3",
+      "current_sha256": "1fd7ffdfc2c0a4ae637b262efcd4b0aa88bf3a071e6e81e7310cea599f869bb3"
+    },
+    {
+      "class": "com/chaogarden/fruit/ChaoFruitTrunkBlock.class",
+      "parent047_sha256": "cdf25326a982ca093a28774ab5e0e99410439ee17cce52d94c7f280e257a36df",
+      "current_sha256": "cdf25326a982ca093a28774ab5e0e99410439ee17cce52d94c7f280e257a36df"
+    },
+    {
+      "class": "com/chaogarden/fruit/ChaoSaplingBlock.class",
+      "parent047_sha256": "e65f9aacc346327fb0672c9f3d48f6e626d4b23d00d54d62078fb56d93ebdd11",
+      "current_sha256": "e65f9aacc346327fb0672c9f3d48f6e626d4b23d00d54d62078fb56d93ebdd11"
+    },
+    {
+      "class": "com/chaogarden/fruit/ChaoTreeCrownBlock.class",
+      "parent047_sha256": "28bf27467f5dc9945e5a192f3a0c63b5ad2015216b7ae45c4d16e2e884b41fd2",
+      "current_sha256": "28bf27467f5dc9945e5a192f3a0c63b5ad2015216b7ae45c4d16e2e884b41fd2"
+    },
+    {
+      "class": "com/chaogarden/fruit/DarkFruitTrunkBlock.class",
+      "parent047_sha256": "bedd163d0508deb0dfa7870615dc0672cd52b00f66a41fc2af36047d3df7a7c2",
+      "current_sha256": "bedd163d0508deb0dfa7870615dc0672cd52b00f66a41fc2af36047d3df7a7c2"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitCatalog.class",
+      "parent047_sha256": "5ab9ce36c5fe479be3868358efb246f4bb5d7dfd4cb8943df5f2e291f99e97a3",
+      "current_sha256": "5ab9ce36c5fe479be3868358efb246f4bb5d7dfd4cb8943df5f2e291f99e97a3"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitClient.class",
+      "parent047_sha256": "7b850fb01afd4c93613b07834cd3db33471949edbc122a97ba34acda8d94d7c1",
+      "current_sha256": "7b850fb01afd4c93613b07834cd3db33471949edbc122a97ba34acda8d94d7c1"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitContent$1.class",
+      "parent047_sha256": "5ffe620db3a8996583e415a1b7dd189e96f37f720f46f6c86c381d4b9574d9bd",
+      "current_sha256": "5ffe620db3a8996583e415a1b7dd189e96f37f720f46f6c86c381d4b9574d9bd"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitContent$Growth.class",
+      "parent047_sha256": "f5ad7b8f968d0a1e0134fa41263770f4b68b8e92071aff662fe16d3ad9195b9f",
+      "current_sha256": "f5ad7b8f968d0a1e0134fa41263770f4b68b8e92071aff662fe16d3ad9195b9f"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitContent.class",
+      "parent047_sha256": "c36d5587e633fc2141533f0fff27f554a3c3aefc64ff463c5476bf390cb035ab",
+      "current_sha256": "c36d5587e633fc2141533f0fff27f554a3c3aefc64ff463c5476bf390cb035ab"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitCrownEntity.class",
+      "parent047_sha256": "2ee298978accff195fa4b695612f465b8260c016cf35b1c6fd0710d2bf75b262",
+      "current_sha256": "2ee298978accff195fa4b695612f465b8260c016cf35b1c6fd0710d2bf75b262"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitEffects.class",
+      "parent047_sha256": "a31b245d796acced3ea58aa7ff1802035d2ad33cf14b86398e55a5f1427dcd9f",
+      "current_sha256": "a31b245d796acced3ea58aa7ff1802035d2ad33cf14b86398e55a5f1427dcd9f"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitSeedItem.class",
+      "parent047_sha256": "107ae185d045d14a657f615ebc3ff14f9f40bdccff6d67b083f53c27728e77de",
+      "current_sha256": "107ae185d045d14a657f615ebc3ff14f9f40bdccff6d67b083f53c27728e77de"
+    },
+    {
+      "class": "com/chaogarden/fruit/FruitTreeFeature.class",
+      "parent047_sha256": "fbd3b0c17ddd1528393dbb7463e7fcc6e7429c9cd1af53f1400f3e4004290f90",
+      "current_sha256": "fbd3b0c17ddd1528393dbb7463e7fcc6e7429c9cd1af53f1400f3e4004290f90"
+    },
+    {
+      "class": "com/chaogarden/fruit/GardenTools.class",
+      "parent047_sha256": "6a77e5954748be88de16ed83fcf8f88f5c3382ba2bb579f3228d8c9d4beecfbc",
+      "current_sha256": "6a77e5954748be88de16ed83fcf8f88f5c3382ba2bb579f3228d8c9d4beecfbc"
+    },
+    {
+      "class": "com/chaogarden/fruit/GardenTreeData$Tree.class",
+      "parent047_sha256": "1820a9efa6b5876ac3057ae9aff4f1c44d6655b483f1179ffc6218525fdadb02",
+      "current_sha256": "1820a9efa6b5876ac3057ae9aff4f1c44d6655b483f1179ffc6218525fdadb02"
+    },
+    {
+      "class": "com/chaogarden/fruit/GardenTreeData.class",
+      "parent047_sha256": "8b5d71db63ddf477d31c92ff48031ef65e4d6ef07e6ef8ae7b31f25c6b2d30c2",
+      "current_sha256": "8b5d71db63ddf477d31c92ff48031ef65e4d6ef07e6ef8ae7b31f25c6b2d30c2"
+    },
+    {
+      "class": "com/chaogarden/fruit/HangingFruitBlock.class",
+      "parent047_sha256": "b863c72572f7dc4f4e7c95b8a2b494449aded764139b5d9a9e27d26303324852",
+      "current_sha256": "b863c72572f7dc4f4e7c95b8a2b494449aded764139b5d9a9e27d26303324852"
+    },
+    {
+      "class": "com/chaogarden/fruit/WateringCanItem.class",
+      "parent047_sha256": "e85bcef3d2f65f473202a37a8c428b7e7808cb136c310e0b5c05bec262794c30",
+      "current_sha256": "e85bcef3d2f65f473202a37a8c428b7e7808cb136c310e0b5c05bec262794c30"
+    },
+    {
+      "class": "com/chaogarden/fruit/WildFruit.class",
+      "parent047_sha256": "a3199e7929cc99ce9275e6a832bcf2216794146f893854d43b8c718f74c74707",
+      "current_sha256": "a3199e7929cc99ce9275e6a832bcf2216794146f893854d43b8c718f74c74707"
+    },
+    {
+      "class": "com/chaogarden/genes/EnemyDriveDrops.class",
+      "parent047_sha256": "692b3cbf63ed6b6690b125ba1a35a0987c8c509dc304732f7aba2e57bd2d5d27",
+      "current_sha256": "692b3cbf63ed6b6690b125ba1a35a0987c8c509dc304732f7aba2e57bd2d5d27"
+    },
+    {
+      "class": "com/chaogarden/genes/GeneContent.class",
+      "parent047_sha256": "7fae1e0723af2c556647b56b016ca632110988f6c100aeea65ef1e7f9dd79306",
+      "current_sha256": "7fae1e0723af2c556647b56b016ca632110988f6c100aeea65ef1e7f9dd79306"
+    },
+    {
+      "class": "com/chaogarden/genes/GeneItem.class",
+      "parent047_sha256": "f559c9576901cf3c173a7c67af895138091303755a5c1987bc036e9f3f05a9f5",
+      "current_sha256": "f559c9576901cf3c173a7c67af895138091303755a5c1987bc036e9f3f05a9f5"
+    },
+    {
+      "class": "com/chaogarden/genes/GenericChestTrainingModifier.class",
+      "parent047_sha256": "e514db8b4859e4c17cd31b1b9825023f638daa9bffc09105a2ab974d96fdc03f",
+      "current_sha256": "e514db8b4859e4c17cd31b1b9825023f638daa9bffc09105a2ab974d96fdc03f"
+    },
+    {
+      "class": "com/chaogarden/genes/TrainingSupplyRules.class",
+      "parent047_sha256": "f906dab9d66e76c3c5b77f7c4ebe236cc2594ba9131b92c04f5addffb71f71fe",
+      "current_sha256": "f906dab9d66e76c3c5b77f7c4ebe236cc2594ba9131b92c04f5addffb71f71fe"
+    },
+    {
+      "class": "com/chaogarden/hub/ChaoTeleporterBlock.class",
+      "parent047_sha256": "a591d9c977649b51de99c7e42bf6b27d0130238a11135d228bb2c2f993773ea8",
+      "current_sha256": "a591d9c977649b51de99c7e42bf6b27d0130238a11135d228bb2c2f993773ea8"
+    },
+    {
+      "class": "com/chaogarden/hub/DarkGardenDecor0255$1.class",
+      "parent047_sha256": "2a5bf9b3481a36a3b3e5e991052079c9ecfc832f30b0be3f659cddf68f6620bd",
+      "current_sha256": "2a5bf9b3481a36a3b3e5e991052079c9ecfc832f30b0be3f659cddf68f6620bd"
+    },
+    {
+      "class": "com/chaogarden/hub/DarkGardenDecor0255$Deadwood.class",
+      "parent047_sha256": "15714b52af89ed8f7b9d80be00f1f646a117e51805e5dd38016b7dd26dc49e9d",
+      "current_sha256": "15714b52af89ed8f7b9d80be00f1f646a117e51805e5dd38016b7dd26dc49e9d"
+    },
+    {
+      "class": "com/chaogarden/hub/DarkGardenDecor0255$Effigy.class",
+      "parent047_sha256": "6140545ec9957767999d835d4e3223a31fb213c5e81180ec447ca2752e66c997",
+      "current_sha256": "6140545ec9957767999d835d4e3223a31fb213c5e81180ec447ca2752e66c997"
+    },
+    {
+      "class": "com/chaogarden/hub/DarkGardenDecor0255$Gravestone.class",
+      "parent047_sha256": "9a3d32be13b04d754c290748a7336b968a73a47eb6e4016c61c6d71c7d2676ed",
+      "current_sha256": "9a3d32be13b04d754c290748a7336b968a73a47eb6e4016c61c6d71c7d2676ed"
+    },
+    {
+      "class": "com/chaogarden/hub/DarkGardenDecor0255.class",
+      "parent047_sha256": "2513e0255b45f3a9d187e883436cd4c0143065939cf8efab0fe497cf93893b58",
+      "current_sha256": "2513e0255b45f3a9d187e883436cd4c0143065939cf8efab0fe497cf93893b58"
+    },
+    {
+      "class": "com/chaogarden/hub/DarkGardenRooms0255$PlannedWorld.class",
+      "parent047_sha256": "c6f1a8f636f3aa02dd51c45da37b4c145ba6ac31e474531cddda24f2f869b813",
+      "current_sha256": "c6f1a8f636f3aa02dd51c45da37b4c145ba6ac31e474531cddda24f2f869b813"
+    },
+    {
+      "class": "com/chaogarden/hub/DarkGardenRooms0255.class",
+      "parent047_sha256": "47b90ee5f80afccff4ca9db82ee25037c73dba778e60ae0cae2989aa7dbf84da",
+      "current_sha256": "47b90ee5f80afccff4ca9db82ee25037c73dba778e60ae0cae2989aa7dbf84da"
+    },
+    {
+      "class": "com/chaogarden/hub/GardenRooms025$CareMigration.class",
+      "parent047_sha256": "118341e078ec4f5060d692609e7620dbf352c3117576179ce7cf1c2ac4859ae2",
+      "current_sha256": "118341e078ec4f5060d692609e7620dbf352c3117576179ce7cf1c2ac4859ae2"
+    },
+    {
+      "class": "com/chaogarden/hub/GardenRooms025$PlannedWorld.class",
+      "parent047_sha256": "7f344e42fda336225416b0ea55b5f494bf46c85188c531cd4589ee7d2460e90d",
+      "current_sha256": "7f344e42fda336225416b0ea55b5f494bf46c85188c531cd4589ee7d2460e90d"
+    },
+    {
+      "class": "com/chaogarden/hub/GardenRooms025.class",
+      "parent047_sha256": "23b265dfdab4fdb504c68255222a19fa90d347cacabf339a9f46c80e2a88b791",
+      "current_sha256": "23b265dfdab4fdb504c68255222a19fa90d347cacabf339a9f46c80e2a88b791"
+    },
+    {
+      "class": "com/chaogarden/hub/HeroColumn0259$Part.class",
+      "parent047_sha256": "3ff790887eefd938a14f1b6199ec78f22017c71041e46bb714aee3804a8ba537",
+      "current_sha256": "3ff790887eefd938a14f1b6199ec78f22017c71041e46bb714aee3804a8ba537"
+    },
+    {
+      "class": "com/chaogarden/hub/HeroColumn0259.class",
+      "parent047_sha256": "24419dd2e23f91c834ca44d0afc4a4904dcad32921bf1a5494717baae4763b7c",
+      "current_sha256": "24419dd2e23f91c834ca44d0afc4a4904dcad32921bf1a5494717baae4763b7c"
+    },
+    {
+      "class": "com/chaogarden/hub/HeroCorniceBlock0254.class",
+      "parent047_sha256": "821dc47ad235ce0bd0810330f757f844651c908112429ba79ab92c3411f599fe",
+      "current_sha256": "821dc47ad235ce0bd0810330f757f844651c908112429ba79ab92c3411f599fe"
+    },
+    {
+      "class": "com/chaogarden/hub/HeroGardenDecor0253.class",
+      "parent047_sha256": "6fc66a4ddb534caf996d9607300d2ae6bd12d4910ad6b1bf21db3b9fb155c120",
+      "current_sha256": "6fc66a4ddb534caf996d9607300d2ae6bd12d4910ad6b1bf21db3b9fb155c120"
+    },
+    {
+      "class": "com/chaogarden/hub/HeroGardenRooms0253$PlannedWorld.class",
+      "parent047_sha256": "d5e2255bc6ddd2b789fd5388fe1356edb264a94254efd711a640c680480f8ea5",
+      "current_sha256": "d5e2255bc6ddd2b789fd5388fe1356edb264a94254efd711a640c680480f8ea5"
+    },
+    {
+      "class": "com/chaogarden/hub/HeroGardenRooms0253.class",
+      "parent047_sha256": "f57d320e6a7ed77bb64d60564ed93b67ba4535cb8a923acc193153728da41517",
+      "current_sha256": "f57d320e6a7ed77bb64d60564ed93b67ba4535cb8a923acc193153728da41517"
+    },
+    {
+      "class": "com/chaogarden/hub/HubContent$1.class",
+      "parent047_sha256": "d56bc45e57232e9f7c83a263823d11c109b8fbb43a30485e89f4cd4424aaeacf",
+      "current_sha256": "d56bc45e57232e9f7c83a263823d11c109b8fbb43a30485e89f4cd4424aaeacf"
+    },
+    {
+      "class": "com/chaogarden/hub/HubContent.class",
+      "parent047_sha256": "29e3146947b606a3166ec8ca7670b2afbfb454a3bd948701e3bf4caad02b57ee",
+      "current_sha256": "29e3146947b606a3166ec8ca7670b2afbfb454a3bd948701e3bf4caad02b57ee"
+    },
+    {
+      "class": "com/chaogarden/hub/HubRooms$1.class",
+      "parent047_sha256": "ced676027dc3a312da8473f3b3f2286a9b852080987dcac69640726ce448abd6",
+      "current_sha256": "ced676027dc3a312da8473f3b3f2286a9b852080987dcac69640726ce448abd6"
+    },
+    {
+      "class": "com/chaogarden/hub/HubRooms.class",
+      "parent047_sha256": "06d10340bb8fed5e906ccc35d59679ddb3440396b9ec00615097601dab485bd5",
+      "current_sha256": "06d10340bb8fed5e906ccc35d59679ddb3440396b9ec00615097601dab485bd5"
+    },
+    {
+      "class": "com/chaogarden/hub/HubWorldData.class",
+      "parent047_sha256": "66767f1aa6be095b706b667b110c516d50ca180229999425d88902e27a2a40cf",
+      "current_sha256": "66767f1aa6be095b706b667b110c516d50ca180229999425d88902e27a2a40cf"
+    },
+    {
+      "class": "com/chaogarden/hub/LobbyApproachDecor0255$FloorStairs.class",
+      "parent047_sha256": "ef2f0260dc36d3822f803fbeb8b6f68b5251b4ced6a8a3de962852437a413d98",
+      "current_sha256": "ef2f0260dc36d3822f803fbeb8b6f68b5251b4ced6a8a3de962852437a413d98"
+    },
+    {
+      "class": "com/chaogarden/hub/LobbyApproachDecor0255.class",
+      "parent047_sha256": "7ea7d67f9de5199681d03520770dc112d0264c9c02099f5d4c1584e5f9753869",
+      "current_sha256": "7ea7d67f9de5199681d03520770dc112d0264c9c02099f5d4c1584e5f9753869"
+    },
+    {
+      "class": "com/chaogarden/hub/LobbyDecor025$GlassFloor.class",
+      "parent047_sha256": "513d6f7623aea63c87614fe7886f0feeea496bf1a944b9e1ee74410b1dbe4d9c",
+      "current_sha256": "513d6f7623aea63c87614fe7886f0feeea496bf1a944b9e1ee74410b1dbe4d9c"
+    },
+    {
+      "class": "com/chaogarden/hub/LobbyDecor025$PalmTrunk.class",
+      "parent047_sha256": "e02db7d9f655fcd8df463bfc3570d8adf8caa285c34754cbd4028c2a0d89f245",
+      "current_sha256": "e02db7d9f655fcd8df463bfc3570d8adf8caa285c34754cbd4028c2a0d89f245"
+    },
+    {
+      "class": "com/chaogarden/hub/LobbyDecor025$SceneAnchor.class",
+      "parent047_sha256": "6c11e034b8a79489edbb7dd56a849ad0c6166a0e00a0284bf1185275540b9002",
+      "current_sha256": "6c11e034b8a79489edbb7dd56a849ad0c6166a0e00a0284bf1185275540b9002"
+    },
+    {
+      "class": "com/chaogarden/hub/LobbyDecor025$SceneEntity.class",
+      "parent047_sha256": "b51e9a2100020ebc5821ad1c29ebb9c67c9e4635a3ae9b1146371287740b5bf0",
+      "current_sha256": "b51e9a2100020ebc5821ad1c29ebb9c67c9e4635a3ae9b1146371287740b5bf0"
+    },
+    {
+      "class": "com/chaogarden/hub/LobbyDecor025.class",
+      "parent047_sha256": "4c565ca8be98a0fc2ff0cfb752373c83782b4b901d9ed893a3e444240e981efa",
+      "current_sha256": "4c565ca8be98a0fc2ff0cfb752373c83782b4b901d9ed893a3e444240e981efa"
+    },
+    {
+      "class": "com/chaogarden/hub/NeutralGardenDecor02510.class",
+      "parent047_sha256": "855dacf9e2c5c2990414b5bb8d907327aeb4e14c553b7d1cf721c445780395bd",
+      "current_sha256": "855dacf9e2c5c2990414b5bb8d907327aeb4e14c553b7d1cf721c445780395bd"
+    },
+    {
+      "class": "com/chaogarden/hub/PortalScenes0251.class",
+      "parent047_sha256": "9ed378728d4d819af1edc2556122a22a72c4f98acfd281401dab7b4d8d58a0de",
+      "current_sha256": "9ed378728d4d819af1edc2556122a22a72c4f98acfd281401dab7b4d8d58a0de"
+    },
+    {
+      "class": "com/chaogarden/hub/ScenePlan025$Notice.class",
+      "parent047_sha256": "fcf37a20f5d0f67f73126a19f3f197c284b7ad9e6163121cbdffb4556150a54e",
+      "current_sha256": "fcf37a20f5d0f67f73126a19f3f197c284b7ad9e6163121cbdffb4556150a54e"
+    },
+    {
+      "class": "com/chaogarden/hub/ScenePlan025.class",
+      "parent047_sha256": "631a8fe952a7c23ce77dd2f4663603864fad97f812cf1c6d0ea6edbb41a09769",
+      "current_sha256": "631a8fe952a7c23ce77dd2f4663603864fad97f812cf1c6d0ea6edbb41a09769"
+    },
+    {
+      "class": "com/chaogarden/interaction/ChaoBehaviorGoal.class",
+      "parent047_sha256": "2d0e465c8f20b45228859c0fb249104f5a47d49ac68b67b1a5856e24d4f933af",
+      "current_sha256": "2d0e465c8f20b45228859c0fb249104f5a47d49ac68b67b1a5856e24d4f933af"
+    },
+    {
+      "class": "com/chaogarden/interaction/ChaoFruitSeekingGoal.class",
+      "parent047_sha256": "30845c6621da2eab3aafbb58be8a2c02be6f4862ba077f3aa58b95d95a761b44",
+      "current_sha256": "30845c6621da2eab3aafbb58be8a2c02be6f4862ba077f3aa58b95d95a761b44"
+    },
+    {
+      "class": "com/chaogarden/interaction/ChaoGardeningGoal.class",
+      "parent047_sha256": "99c1e898214822511817002d7fde7a4150cd0032b47e93ad970faf6d0ba1d742",
+      "current_sha256": "99c1e898214822511817002d7fde7a4150cd0032b47e93ad970faf6d0ba1d742"
+    },
+    {
+      "class": "com/chaogarden/interaction/ChaoPickupItemGoal.class",
+      "parent047_sha256": "cd369f6f44ab871997583c9d741c9d8199a100be04b18b08fedb532b5483143b",
+      "current_sha256": "cd369f6f44ab871997583c9d741c9d8199a100be04b18b08fedb532b5483143b"
+    },
+    {
+      "class": "com/chaogarden/item/CareItem$Kind.class",
+      "parent047_sha256": "943979806f900ee4a500e6d7c3c9430ac3a03c9c5ed2c5e081222c1e7f30367d",
+      "current_sha256": "943979806f900ee4a500e6d7c3c9430ac3a03c9c5ed2c5e081222c1e7f30367d"
+    },
+    {
+      "class": "com/chaogarden/item/CareItem.class",
+      "parent047_sha256": "026a07c1b7d3f4028934a3d4fe1e693dc8723cb42fa52ae39499e7cea2f988f2",
+      "current_sha256": "026a07c1b7d3f4028934a3d4fe1e693dc8723cb42fa52ae39499e7cea2f988f2"
+    },
+    {
+      "class": "com/chaogarden/item/ChaoCarrierItem.class",
+      "parent047_sha256": "083f9c474506a61151356805a299d7a7cc124890cd84f2784996f5d30eadbb6f",
+      "current_sha256": "083f9c474506a61151356805a299d7a7cc124890cd84f2784996f5d30eadbb6f"
+    },
+    {
+      "class": "com/chaogarden/item/ChaoEggItem.class",
+      "parent047_sha256": "9b9bf7c32f71cf18748e8b0daf0b69244f87f7cb60c50102bbdb3ef39fcecf52",
+      "current_sha256": "9b9bf7c32f71cf18748e8b0daf0b69244f87f7cb60c50102bbdb3ef39fcecf52"
+    },
+    {
+      "class": "com/chaogarden/item/ChaoKeyItem.class",
+      "parent047_sha256": "6b0b2cd7c36e109f434ee7802cd41abd5b8be465765d4fa9074154c1c23f844a",
+      "current_sha256": "6b0b2cd7c36e109f434ee7802cd41abd5b8be465765d4fa9074154c1c23f844a"
+    },
+    {
+      "class": "com/chaogarden/item/CombinedDriveItem$1.class",
+      "parent047_sha256": "f8f867f789f59e73a0ce365dae030e55f05f2b4b22a7a81871a754740c02e7cd",
+      "current_sha256": "f8f867f789f59e73a0ce365dae030e55f05f2b4b22a7a81871a754740c02e7cd"
+    },
+    {
+      "class": "com/chaogarden/item/CombinedDriveItem.class",
+      "parent047_sha256": "d97b5eb05e61c8dedcc36d71b2857770fc55afb9295ea48cf65f929da5e599b7",
+      "current_sha256": "d97b5eb05e61c8dedcc36d71b2857770fc55afb9295ea48cf65f929da5e599b7"
+    },
+    {
+      "class": "com/chaogarden/item/GardenGuideItem.class",
+      "parent047_sha256": "c8720793fa228fcae342bcdfe15f71cb2c2ef6c141ab68e694bd15e5431aa975",
+      "current_sha256": "c8720793fa228fcae342bcdfe15f71cb2c2ef6c141ab68e694bd15e5431aa975"
+    },
+    {
+      "class": "com/chaogarden/item/KeeperJournalRecipe$Serializer.class",
+      "parent047_sha256": "d4be0c08a9ef4a204e1ca9280383e808aadfc779dc9b372ba94a86f788c689b9",
+      "current_sha256": "d4be0c08a9ef4a204e1ca9280383e808aadfc779dc9b372ba94a86f788c689b9"
+    },
+    {
+      "class": "com/chaogarden/item/KeeperJournalRecipe.class",
+      "parent047_sha256": "8e91ce7442484323b00c165632d6113576f2a8293d6438a41b23047fdca7357c",
+      "current_sha256": "8e91ce7442484323b00c165632d6113576f2a8293d6438a41b23047fdca7357c"
+    },
+    {
+      "class": "com/chaogarden/item/RetiredChaoEggItem.class",
+      "parent047_sha256": "4d171f8389464d20da86182342ec8305ae373d4a695a7d887e2f65659a68ad07",
+      "current_sha256": "4d171f8389464d20da86182342ec8305ae373d4a695a7d887e2f65659a68ad07"
+    },
+    {
+      "class": "com/chaogarden/item/VariantEggRecipe$Serializer.class",
+      "parent047_sha256": "61d71e88026b8798ece85ac6310b0e35219660d0092ee1ccddb631d31fb35dca",
+      "current_sha256": "61d71e88026b8798ece85ac6310b0e35219660d0092ee1ccddb631d31fb35dca"
+    },
+    {
+      "class": "com/chaogarden/item/VariantEggRecipe.class",
+      "parent047_sha256": "a688b6f87c27d40da97bc124c775c68cf82b576559ac28fe4067bd0bfd6ba2a3",
+      "current_sha256": "a688b6f87c27d40da97bc124c775c68cf82b576559ac28fe4067bd0bfd6ba2a3"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/IonicColumnMesh0254$1.class",
+      "parent047_sha256": "0bafaab7fe5381d22f36465ab371f7717784d9eaf3d31388d69258a5db6660dc",
+      "current_sha256": "0bafaab7fe5381d22f36465ab371f7717784d9eaf3d31388d69258a5db6660dc"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/IonicColumnMesh0254.class",
+      "parent047_sha256": "d1bce17be1e6395911c1a722aaa49a8988536ce11482090073ca3c4d723ec054",
+      "current_sha256": "d1bce17be1e6395911c1a722aaa49a8988536ce11482090073ca3c4d723ec054"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenContent$Choice.class",
+      "parent047_sha256": "8825b7e70317311118e91984bcc15f2cc642cda254730b9255b5b15a8ffb6ffe",
+      "current_sha256": "8825b7e70317311118e91984bcc15f2cc642cda254730b9255b5b15a8ffb6ffe"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenContent$Role.class",
+      "parent047_sha256": "06b3652b0ac3123f6d9c823787d5e6734c590cc676a3c34fa2d030b1bb8aae56",
+      "current_sha256": "06b3652b0ac3123f6d9c823787d5e6734c590cc676a3c34fa2d030b1bb8aae56"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenContent$Session.class",
+      "parent047_sha256": "a45664771d055cceaa56569e73e6a51e6f829a79274eb78b1a65754f15c6d7bb",
+      "current_sha256": "a45664771d055cceaa56569e73e6a51e6f829a79274eb78b1a65754f15c6d7bb"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenContent.class",
+      "parent047_sha256": "d80207a78069629cb52e470c16f75dd49f9f0a93adce2912dedee1b5e46bc580",
+      "current_sha256": "d80207a78069629cb52e470c16f75dd49f9f0a93adce2912dedee1b5e46bc580"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenDecor025$1.class",
+      "parent047_sha256": "ba29b1cbd3ee47e202ca602523d601d2ea3175fe41951fb4cc6fc9166eea1203",
+      "current_sha256": "ba29b1cbd3ee47e202ca602523d601d2ea3175fe41951fb4cc6fc9166eea1203"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenDecor025$AtlasBlock.class",
+      "parent047_sha256": "110c57aae13105f021dc42306dd63593a0157d286a879c9ea05a4480404839c1",
+      "current_sha256": "110c57aae13105f021dc42306dd63593a0157d286a879c9ea05a4480404839c1"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenDecor025$DecorBlock.class",
+      "parent047_sha256": "cdf853f454468407bb465e46a77bec23ce73b76a8dd8aae79eabf0f4bbd93eca",
+      "current_sha256": "cdf853f454468407bb465e46a77bec23ce73b76a8dd8aae79eabf0f4bbd93eca"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenDecor025$Kind.class",
+      "parent047_sha256": "a2b9e03dff5d70f85f45ae431f32c18093e8690a4e9d9c5b7ad6a0428b98cf17",
+      "current_sha256": "a2b9e03dff5d70f85f45ae431f32c18093e8690a4e9d9c5b7ad6a0428b98cf17"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenDecor025$SchoolDoorBlock$DoorSection.class",
+      "parent047_sha256": "3e9e95409cdfcf1a99f4116cd11f30f1a32dedbf2e164184e4024420e763c5c5",
+      "current_sha256": "3e9e95409cdfcf1a99f4116cd11f30f1a32dedbf2e164184e4024420e763c5c5"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenDecor025$SchoolDoorBlock.class",
+      "parent047_sha256": "cffadecef9a6bc513f8fc9e7ad29c9deaafe3f6a3da007005edad9b69b9c55c9",
+      "current_sha256": "cffadecef9a6bc513f8fc9e7ad29c9deaafe3f6a3da007005edad9b69b9c55c9"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenDecor025.class",
+      "parent047_sha256": "39b5117e0a0aabddd4e3a9f887fc535a7ba2cc5fac5fac1b15a450b295b30219",
+      "current_sha256": "39b5117e0a0aabddd4e3a9f887fc535a7ba2cc5fac5fac1b15a450b295b30219"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenHallDisplays0252$Goods.class",
+      "parent047_sha256": "e2e47b918f4493debff54b6c1c17bd44e38336ffbce49bc6edc9669401e6b301",
+      "current_sha256": "e2e47b918f4493debff54b6c1c17bd44e38336ffbce49bc6edc9669401e6b301"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenHallDisplays0252.class",
+      "parent047_sha256": "33694f4d93aa8faf823a2b9c45f9bdba4de83cddb2a431680aa7df45af8b4ab7",
+      "current_sha256": "33694f4d93aa8faf823a2b9c45f9bdba4de83cddb2a431680aa7df45af8b4ab7"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenHallThemes0252$WallShelfBlock.class",
+      "parent047_sha256": "9acf6cedcbc2ffbb7c49b3df415a8690d3c12d359c523156a504828d2e3368a4",
+      "current_sha256": "9acf6cedcbc2ffbb7c49b3df415a8690d3c12d359c523156a504828d2e3368a4"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenHallThemes0252.class",
+      "parent047_sha256": "e38a82df4d7f2a10634d5aaff3d8e698bbc9f294b9e0054d60258d98b28126f1",
+      "current_sha256": "e38a82df4d7f2a10634d5aaff3d8e698bbc9f294b9e0054d60258d98b28126f1"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenIonicColumn0254$Part.class",
+      "parent047_sha256": "91217bdc8e7939fbb039311e18910426c647067f7caff908ace828eb45c68c2e",
+      "current_sha256": "91217bdc8e7939fbb039311e18910426c647067f7caff908ace828eb45c68c2e"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenIonicColumn0254.class",
+      "parent047_sha256": "1a884d2d7f8cbca2f1f4bb39b6fb751a8efa8fa3c3f2aa336245e9f90a3eb0da",
+      "current_sha256": "1a884d2d7f8cbca2f1f4bb39b6fb751a8efa8fa3c3f2aa336245e9f90a3eb0da"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenMarket025$Offer.class",
+      "parent047_sha256": "8a4b99a26657ef0bf65e576933a9db0381d39755cf7899c6dba328a307a543fd",
+      "current_sha256": "8a4b99a26657ef0bf65e576933a9db0381d39755cf7899c6dba328a307a543fd"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenMarket025$Session.class",
+      "parent047_sha256": "2ad6982bc646c215c9fd6ff185703f58401704237f8682e280ca68c22c9ebb16",
+      "current_sha256": "2ad6982bc646c215c9fd6ff185703f58401704237f8682e280ca68c22c9ebb16"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenMarket025.class",
+      "parent047_sha256": "bbacde9bf77fd84776173d2deaed738aa7038a3a7c17625e623652e3e8b14085",
+      "current_sha256": "bbacde9bf77fd84776173d2deaed738aa7038a3a7c17625e623652e3e8b14085"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenNetwork$Action.class",
+      "parent047_sha256": "c7b2dfcec2e61b76a08f2c7b0f3e4e501e682335f15d786eeba5d7bc744af577",
+      "current_sha256": "c7b2dfcec2e61b76a08f2c7b0f3e4e501e682335f15d786eeba5d7bc744af577"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenNetwork$Open.class",
+      "parent047_sha256": "5b22d7524f4500a0472420ec3b7376f69f23ca8f00eb5bdce8af33ca92885ef4",
+      "current_sha256": "5b22d7524f4500a0472420ec3b7376f69f23ca8f00eb5bdce8af33ca92885ef4"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenNetwork.class",
+      "parent047_sha256": "6e39b3dbe55377262c041a2e2cdda7ba623ada6118838ee48861199f14eda368",
+      "current_sha256": "6e39b3dbe55377262c041a2e2cdda7ba623ada6118838ee48861199f14eda368"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenNpc.class",
+      "parent047_sha256": "522e42e1766de81623c2e8f4896ba101bb86b4a15d682f28825f0a8d70a7b59a",
+      "current_sha256": "522e42e1766de81623c2e8f4896ba101bb86b4a15d682f28825f0a8d70a7b59a"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenPupil0257$1.class",
+      "parent047_sha256": "fbfd6bf24dde7bf05fc4d278d4f84b6208ce79f0c6ac85d036879528059e26a9",
+      "current_sha256": "fbfd6bf24dde7bf05fc4d278d4f84b6208ce79f0c6ac85d036879528059e26a9"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenPupil0257.class",
+      "parent047_sha256": "c5e8b58e0779c0ad4a4ad5bacd598798b5ee9ebc050166b9552f360e9b644bfb",
+      "current_sha256": "c5e8b58e0779c0ad4a4ad5bacd598798b5ee9ebc050166b9552f360e9b644bfb"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenPupils0257.class",
+      "parent047_sha256": "da3d8053a5cf8d970d14d300820350678d3fc1a2ba86676c41100e6d6c9dea0b",
+      "current_sha256": "da3d8053a5cf8d970d14d300820350678d3fc1a2ba86676c41100e6d6c9dea0b"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenRooms025$1.class",
+      "parent047_sha256": "aa38f90c97248c03eb649b4194dfff8af42f46de82634123c687b56bb93ea333",
+      "current_sha256": "aa38f90c97248c03eb649b4194dfff8af42f46de82634123c687b56bb93ea333"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenRooms025$DoorPair.class",
+      "parent047_sha256": "d04be6723e76a5c4eaacf582d8f2b6252cc4ab78fbbbc2707a6351ef04030599",
+      "current_sha256": "d04be6723e76a5c4eaacf582d8f2b6252cc4ab78fbbbc2707a6351ef04030599"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenRooms025$Hall.class",
+      "parent047_sha256": "f8b574cdefa23753981e3e2d7ba845180a6793b66efc9b4cf5d3df2dbf3f26a5",
+      "current_sha256": "f8b574cdefa23753981e3e2d7ba845180a6793b66efc9b4cf5d3df2dbf3f26a5"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenRooms025$Plan.class",
+      "parent047_sha256": "163d52147c6c285a1188a22cd15853ac00333a9be2daf50bb7c62bfe26d7228a",
+      "current_sha256": "163d52147c6c285a1188a22cd15853ac00333a9be2daf50bb7c62bfe26d7228a"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenRooms025.class",
+      "parent047_sha256": "fd27221d26c10be26ba6a10d03737dc243efbd5a1f53b3ada45e56a6373074be",
+      "current_sha256": "fd27221d26c10be26ba6a10d03737dc243efbd5a1f53b3ada45e56a6373074be"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenRoster$Student.class",
+      "parent047_sha256": "b292699792ac4a69576a79e5b4bdcb1c3588ba6bc6b479de3705dfb6e37f451f",
+      "current_sha256": "b292699792ac4a69576a79e5b4bdcb1c3588ba6bc6b479de3705dfb6e37f451f"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/KindergartenRoster.class",
+      "parent047_sha256": "876db8560f974c3e1e5127a5f2a2c9968426ab93da026d8dfde814e4edfc0750",
+      "current_sha256": "876db8560f974c3e1e5127a5f2a2c9968426ab93da026d8dfde814e4edfc0750"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/MarketBuybackRules025.class",
+      "parent047_sha256": "b28e68a248df436cef6703be374479ed24c896ef88e7c5ca9525975f7fd92fe2",
+      "current_sha256": "b28e68a248df436cef6703be374479ed24c896ef88e7c5ca9525975f7fd92fe2"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/PrincipalTopics025$Topic.class",
+      "parent047_sha256": "7df27271a8add7d720410d636d2b9ce38a4fb2e1ef57ad0649b52dccec05ee26",
+      "current_sha256": "7df27271a8add7d720410d636d2b9ce38a4fb2e1ef57ad0649b52dccec05ee26"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/PrincipalTopics025.class",
+      "parent047_sha256": "53fa6f196d250b59f0c2943188fed96163b640d74ec1065d0b1d07a6b5c8e0de",
+      "current_sha256": "53fa6f196d250b59f0c2943188fed96163b640d74ec1065d0b1d07a6b5c8e0de"
+    },
+    {
+      "class": "com/chaogarden/kindergarten/SchoolSinging0258.class",
+      "parent047_sha256": "487f8b45536ff75c8ecc68785ee640cec36efcf74fa749f99f83c4bf2eede01c",
+      "current_sha256": "487f8b45536ff75c8ecc68785ee640cec36efcf74fa749f99f83c4bf2eede01c"
+    },
+    {
+      "class": "com/chaogarden/market/BlackMarketTrader.class",
+      "parent047_sha256": "3aaa629d919848ae40f8ba022d9ac3c8dc85a40d212c39019f8f90f5df13da30",
+      "current_sha256": "3aaa629d919848ae40f8ba022d9ac3c8dc85a40d212c39019f8f90f5df13da30"
+    },
+    {
+      "class": "com/chaogarden/market/ChaoHatItem.class",
+      "parent047_sha256": "b7a4b28fbaaaf7a05c18d80534d88fb8fb44f500bdecea075d9196e30d9c0239",
+      "current_sha256": "b7a4b28fbaaaf7a05c18d80534d88fb8fb44f500bdecea075d9196e30d9c0239"
+    },
+    {
+      "class": "com/chaogarden/market/ChaoToyItem.class",
+      "parent047_sha256": "cd6865c6d7cbba76ce3091152c95a262ca5200aac226fa32877e5c0eb090c19e",
+      "current_sha256": "cd6865c6d7cbba76ce3091152c95a262ca5200aac226fa32877e5c0eb090c19e"
+    },
+    {
+      "class": "com/chaogarden/market/MarketContent.class",
+      "parent047_sha256": "89ca4ecc88ba2534ba13666ac39a32cd57dea4769a57a5e65af4638884354974",
+      "current_sha256": "89ca4ecc88ba2534ba13666ac39a32cd57dea4769a57a5e65af4638884354974"
+    },
+    {
+      "class": "com/chaogarden/market/MarketNetwork$StockClock.class",
+      "parent047_sha256": "6b08c75728baee5ac3b62dbcab0d572fb5726ec4a117c8fefa04994ad423228a",
+      "current_sha256": "6b08c75728baee5ac3b62dbcab0d572fb5726ec4a117c8fefa04994ad423228a"
+    },
+    {
+      "class": "com/chaogarden/market/MarketNetwork.class",
+      "parent047_sha256": "5df222854219e96e5d03677b8354df85089a4e2d88d80f2fa448b83859f40631",
+      "current_sha256": "5df222854219e96e5d03677b8354df85089a4e2d88d80f2fa448b83859f40631"
+    },
+    {
+      "class": "com/chaogarden/market/MarketStock$Listing.class",
+      "parent047_sha256": "55147a600391236695bd2ab3e9680102cd76235be2b64741e1a1b78c0d14c5ac",
+      "current_sha256": "55147a600391236695bd2ab3e9680102cd76235be2b64741e1a1b78c0d14c5ac"
+    },
+    {
+      "class": "com/chaogarden/market/MarketStock$Payment.class",
+      "parent047_sha256": "2ff876a7a2766cd083eed992e4b360f16bfc9af064f96eb54bd8e110dd927e4c",
+      "current_sha256": "2ff876a7a2766cd083eed992e4b360f16bfc9af064f96eb54bd8e110dd927e4c"
+    },
+    {
+      "class": "com/chaogarden/market/MarketStock$Product.class",
+      "parent047_sha256": "f23bde48086d300c432b994659a34fc28d255486f516f0c176673ffa9db607ca",
+      "current_sha256": "f23bde48086d300c432b994659a34fc28d255486f516f0c176673ffa9db607ca"
+    },
+    {
+      "class": "com/chaogarden/market/MarketStock.class",
+      "parent047_sha256": "e56dc4d2b6c7e98e446c2f6fa814de7f50454d52a4aeba86cc056128f656bf4e",
+      "current_sha256": "e56dc4d2b6c7e98e446c2f6fa814de7f50454d52a4aeba86cc056128f656bf4e"
+    },
+    {
+      "class": "com/chaogarden/market/MarketVisitData.class",
+      "parent047_sha256": "6ac2ffbe6988aef1ff0d68a9dbe9be7a31a46603b766ffddbba80b11e9d139d8",
+      "current_sha256": "6ac2ffbe6988aef1ff0d68a9dbe9be7a31a46603b766ffddbba80b11e9d139d8"
+    },
+    {
+      "class": "com/chaogarden/mixin/ChestTableFillMixin.class",
+      "parent047_sha256": "29db36ff0412da6664c77a67a4a565a8827fa45365971ae328880c7fe67df40b",
+      "current_sha256": "29db36ff0412da6664c77a67a4a565a8827fa45365971ae328880c7fe67df40b"
+    },
+    {
+      "class": "com/chaogarden/mixin/CompanionLivingFlightMixin.class",
+      "parent047_sha256": "e0712ba081069101d100145e5ba2a618868b15951b2ad380427e611cf84063fb",
+      "current_sha256": "e0712ba081069101d100145e5ba2a618868b15951b2ad380427e611cf84063fb"
+    },
+    {
+      "class": "com/chaogarden/mixin/CompanionLocalPlayerFlightMixin.class",
+      "parent047_sha256": "ea2eba3cab3a445caf3fe1bea1eab19e7526c1c9857625dd0dc62802c18b0e4a",
+      "current_sha256": "ea2eba3cab3a445caf3fe1bea1eab19e7526c1c9857625dd0dc62802c18b0e4a"
+    },
+    {
+      "class": "com/chaogarden/mixin/CompanionPlayerFlightMixin.class",
+      "parent047_sha256": "9ade7a754c60893ff707ffe6af254fb89e3172356810e4fae435ebc66b44bd60",
+      "current_sha256": "9ade7a754c60893ff707ffe6af254fb89e3172356810e4fae435ebc66b44bd60"
+    },
+    {
+      "class": "com/chaogarden/music/GardenMusicContent.class",
+      "parent047_sha256": "1700c3e97d31fcaddac548a4546a8ae217fb802592e76a8a6bad5d466d15d198",
+      "current_sha256": "1700c3e97d31fcaddac548a4546a8ae217fb802592e76a8a6bad5d466d15d198"
+    },
+    {
+      "class": "com/chaogarden/recovery/ChaoRecovery$Record.class",
+      "parent047_sha256": "3877bde5eceea5c152c73bcb935a6eee879be8a5ef329567c3a68799194caa1b",
+      "current_sha256": "3877bde5eceea5c152c73bcb935a6eee879be8a5ef329567c3a68799194caa1b"
+    },
+    {
+      "class": "com/chaogarden/recovery/ChaoRecovery.class",
+      "parent047_sha256": "d67850df2120d6e407faf19b85946492254a8f54b9d9e9912ea17d222b73aa22",
+      "current_sha256": "d67850df2120d6e407faf19b85946492254a8f54b9d9e9912ea17d222b73aa22"
+    },
+    {
+      "class": "com/chaogarden/toys/BellPlayRules.class",
+      "parent047_sha256": "e0bd7a25d71a3551553fe1672fe7ce9e22e2f6add987d535ee1c5e12d6cc5b34",
+      "current_sha256": "e0bd7a25d71a3551553fe1672fe7ce9e22e2f6add987d535ee1c5e12d6cc5b34"
+    },
+    {
+      "class": "com/chaogarden/toys/CastanetsPlayRules.class",
+      "parent047_sha256": "d3701c2cb6a17c8f1896c991282f0d01a3647716c1b293a061c87dd8f2af0336",
+      "current_sha256": "d3701c2cb6a17c8f1896c991282f0d01a3647716c1b293a061c87dd8f2af0336"
+    },
+    {
+      "class": "com/chaogarden/toys/ChaoToyBlock$1.class",
+      "parent047_sha256": "67e7fc633165b8904b6cc52fc8822322105c0e929209ed81aeb32b3a5b8670e7",
+      "current_sha256": "67e7fc633165b8904b6cc52fc8822322105c0e929209ed81aeb32b3a5b8670e7"
+    },
+    {
+      "class": "com/chaogarden/toys/ChaoToyParticles.class",
+      "parent047_sha256": "20012b907b050625cac5cbb83548ca2ed9c63c69663c5b4ed8f1b05f7064ce03",
+      "current_sha256": "20012b907b050625cac5cbb83548ca2ed9c63c69663c5b4ed8f1b05f7064ce03"
+    },
+    {
+      "class": "com/chaogarden/toys/CymbalsPlayRules.class",
+      "parent047_sha256": "1c48f47d62a302e4215df73bb986952f35bfc92b95c393f9a127a17ea2aa990c",
+      "current_sha256": "1c48f47d62a302e4215df73bb986952f35bfc92b95c393f9a127a17ea2aa990c"
+    },
+    {
+      "class": "com/chaogarden/toys/DrumPlayRules.class",
+      "parent047_sha256": "2267d843ca1238987df6c22dec95b3f9314f62043dbfb18b841accddb4079383",
+      "current_sha256": "2267d843ca1238987df6c22dec95b3f9314f62043dbfb18b841accddb4079383"
+    },
+    {
+      "class": "com/chaogarden/toys/FlutePlayRules.class",
+      "parent047_sha256": "e18a8c7fecd3d4e27dc14acec826f0cd09c356772f91ea5bd7422e1cbe93a5a7",
+      "current_sha256": "e18a8c7fecd3d4e27dc14acec826f0cd09c356772f91ea5bd7422e1cbe93a5a7"
+    },
+    {
+      "class": "com/chaogarden/toys/GuitarPlayRules.class",
+      "parent047_sha256": "7f43834a980e931042f4779d2cb8d6fddc494c479e8e73f09af675694fc09839",
+      "current_sha256": "7f43834a980e931042f4779d2cb8d6fddc494c479e8e73f09af675694fc09839"
+    },
+    {
+      "class": "com/chaogarden/toys/HandToyEffects$Clip.class",
+      "parent047_sha256": "843553ecbbca667806ff897e05122d235722a3f68ddaafcf56022b988acd84b3",
+      "current_sha256": "843553ecbbca667806ff897e05122d235722a3f68ddaafcf56022b988acd84b3"
+    },
+    {
+      "class": "com/chaogarden/toys/MaracasPlayRules.class",
+      "parent047_sha256": "e27820d281cc6db31d229c75530bb141f5bf8358d6b895885ee1e3802450c8af",
+      "current_sha256": "e27820d281cc6db31d229c75530bb141f5bf8358d6b895885ee1e3802450c8af"
+    },
+    {
+      "class": "com/chaogarden/toys/OrganPlayRules.class",
+      "parent047_sha256": "fe7bc80abe874759d0bccb57123de7229698f09e340c6a00f09b372f656572eb",
+      "current_sha256": "fe7bc80abe874759d0bccb57123de7229698f09e340c6a00f09b372f656572eb"
+    },
+    {
+      "class": "com/chaogarden/toys/RattlePlayRules.class",
+      "parent047_sha256": "cc4eb085e7a9e17532844b80d11d3e791847c0b80144c80f7eb93115e657d6c4",
+      "current_sha256": "cc4eb085e7a9e17532844b80d11d3e791847c0b80144c80f7eb93115e657d6c4"
+    },
+    {
+      "class": "com/chaogarden/toys/TambourinePlayRules.class",
+      "parent047_sha256": "ac26372babb138f99703e89229b93a3c5955e2b08bd43f201e55ed878173fbac",
+      "current_sha256": "ac26372babb138f99703e89229b93a3c5955e2b08bd43f201e55ed878173fbac"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyContent$1.class",
+      "parent047_sha256": "495f0fd4bc44356cad10a264c58e12dc4362a083067bb3e3c039661a4a3664e5",
+      "current_sha256": "495f0fd4bc44356cad10a264c58e12dc4362a083067bb3e3c039661a4a3664e5"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyCueNetwork$Bubble.class",
+      "parent047_sha256": "2cbd7f20e81f555ad3e84555d39f96918319087edbd355ae7f422aadef1b1527",
+      "current_sha256": "2cbd7f20e81f555ad3e84555d39f96918319087edbd355ae7f422aadef1b1527"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyCueNetwork.class",
+      "parent047_sha256": "104c954750134db430fe1602c28cea308c4722415803454a818a5fe994329235",
+      "current_sha256": "104c954750134db430fe1602c28cea308c4722415803454a818a5fe994329235"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyPreview$Session.class",
+      "parent047_sha256": "df0ab61717ccd0eca60078eff12293eeda4984971bc1cb1fd94f8b573895a4fc",
+      "current_sha256": "df0ab61717ccd0eca60078eff12293eeda4984971bc1cb1fd94f8b573895a4fc"
+    },
+    {
+      "class": "com/chaogarden/toys/ToyPreview.class",
+      "parent047_sha256": "bf8f6bfc4400e9e10588f8c4893ced2a438d66acfc5e87e9caa83ab0c4b6b0f4",
+      "current_sha256": "bf8f6bfc4400e9e10588f8c4893ced2a438d66acfc5e87e9caa83ab0c4b6b0f4"
+    },
+    {
+      "class": "com/chaogarden/toys/TrianglePlayRules.class",
+      "parent047_sha256": "b76b230a6b2930ecfadef23771942d6aa09871a16107bbc6760151d5887d0d42",
+      "current_sha256": "b76b230a6b2930ecfadef23771942d6aa09871a16107bbc6760151d5887d0d42"
+    },
+    {
+      "class": "com/chaogarden/toys/TrumpetPlayRules.class",
+      "parent047_sha256": "46188eed5a53a7eb6ddde6912679929891501a4bcb0df560eefe6bff93802d3a",
+      "current_sha256": "46188eed5a53a7eb6ddde6912679929891501a4bcb0df560eefe6bff93802d3a"
+    },
+    {
+      "class": "com/chaogarden/client/activities/ActivityScreen.class",
+      "parent047_sha256": "c43cd9b4e9c56706a3ab0bbc96c0373acdc83dd3881ddf3774a3c78337eba550",
+      "current_sha256": "c43cd9b4e9c56706a3ab0bbc96c0373acdc83dd3881ddf3774a3c78337eba550"
+    },
+    {
+      "class": "com/chaogarden/client/activities/CoursePreview$Link.class",
+      "parent047_sha256": "ea6e20bf7bd061c29ed8c5b1aa3851e7033318df56567f21faa9c8ccda1b71c5",
+      "current_sha256": "ea6e20bf7bd061c29ed8c5b1aa3851e7033318df56567f21faa9c8ccda1b71c5"
+    },
+    {
+      "class": "com/chaogarden/client/activities/CoursePreview.class",
+      "parent047_sha256": "5a19909c82d96d2b519776ae94d54d7c485d10e399f85715b0b6298b8168ccf4",
+      "current_sha256": "5a19909c82d96d2b519776ae94d54d7c485d10e399f85715b0b6298b8168ccf4"
+    },
+    {
+      "class": "com/chaogarden/client/activities/GardenScreen.class",
+      "parent047_sha256": "29ec5d2032d83208fc8b121dd335aed37b02e7b4d779705c0919894cfa7c0e5b",
+      "current_sha256": "29ec5d2032d83208fc8b121dd335aed37b02e7b4d779705c0919894cfa7c0e5b"
+    },
+    {
+      "class": "com/chaogarden/market/client/CweMarketClient.class",
+      "parent047_sha256": "3cabfe0f6108b800eb0f719b217ff5def35218975078caf253ba3ff9bbfca7a5",
+      "current_sha256": "3cabfe0f6108b800eb0f719b217ff5def35218975078caf253ba3ff9bbfca7a5"
+    },
+    {
+      "class": "com/chaogarden/market/client/CweMarketScreen.class",
+      "parent047_sha256": "7cfd8d36bfb34e809d5929cf9f2bb6cd69f176fb94e20d831f0b80d0d1d04a32",
+      "current_sha256": "7cfd8d36bfb34e809d5929cf9f2bb6cd69f176fb94e20d831f0b80d0d1d04a32"
+    },
+    {
+      "class": "com/chaogarden/market/client/MarketClient.class",
+      "parent047_sha256": "2e2e63c6f36e970baa1958972b4420afb376180f657b3b804e8a69e8fff40045",
+      "current_sha256": "2e2e63c6f36e970baa1958972b4420afb376180f657b3b804e8a69e8fff40045"
+    },
+    {
+      "class": "com/chaogarden/market/client/MarketModel.class",
+      "parent047_sha256": "74d6fd6c45a86f4a7a8b952b7a846889831647ba011bfc028898a2131bf90d34",
+      "current_sha256": "74d6fd6c45a86f4a7a8b952b7a846889831647ba011bfc028898a2131bf90d34"
+    },
+    {
+      "class": "com/chaogarden/market/client/MarketRenderer$1.class",
+      "parent047_sha256": "fe8b5ea0a9bc40d0ac7e364cfb769474563988a1a53316f444ebc71cbb776a17",
+      "current_sha256": "fe8b5ea0a9bc40d0ac7e364cfb769474563988a1a53316f444ebc71cbb776a17"
+    },
+    {
+      "class": "com/chaogarden/market/client/MarketRenderer.class",
+      "parent047_sha256": "4dc45cc554945c3b907b56b7e5e35db484249512f0ad8ec342a56d9d9cfa03d3",
+      "current_sha256": "4dc45cc554945c3b907b56b7e5e35db484249512f0ad8ec342a56d9d9cfa03d3"
+    }
+  ],
+  "classpath": [
+    "/tmp/triangle047-baseline/classes",
+    "/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+    "/workspace/Chao-Garden/libs/lionfishapi-3.1.jar",
+    "/workspace/Chao-Garden/build/moddev/artifacts/neoforge-21.1.219.jar",
+    "/workspace/Chao-Garden/build/moddev/artifacts/neoforge-21.1.219-client-extra-aka-minecraft-resources.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/4.0.42/46555dbfff14e9e052f1f693aed14d542a74e111/earlydisplay-4.0.42.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.42/76e15f98bf676fb44b36c5e776f52a55581ec43a/loader-4.0.42.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged.accesstransformers/at-modlauncher/10.0.1/5aba50202aceead086bc09fbc2751c9f05cb4890/at-modlauncher-10.0.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/accesstransformers/10.0.1/fd83b5725f76eae9115e9355fa1c456a6a441400/accesstransformers-10.0.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/bus/8.0.5/5b2d33285ab5d1554e9798ad98c40d6ea3868bd5/bus-8.0.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/coremods/7.0.3/9147e6f638b4272b3bd5fc8f92ad37802512c6c/coremods-7.0.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/11.0.5/b8f0d49294f733fdb6173931b263553e943dc950/modlauncher-11.0.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/mergetool/2.0.0/52fe1949be64e3303aabaaa21e315f551db9c9f4/mergetool-2.0.0-api.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.electronwill.night-config/toml/3.8.3/90b2fd6efcb4a7d5b9810cf78f9d824994d717f2/toml-3.8.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.electronwill.night-config/core/3.8.3/b442a95f09e349927f5a945ecb594455870fcf4f/core-3.8.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/JarJarSelector/0.4.1/fb3cc7a58af22ad2880adb98af6d518128c47dae/JarJarSelector-0.4.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/JarJarMetadata/0.4.1/f8da03683dc81694556dc3e177c5e3bb77ae6fcb/JarJarMetadata-0.4.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.5/4433f50c07debefaed0553bd0068f4f48d449313/maven-artifact-3.8.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.6.3/a01aaa6ddaea9ec07ec4f209487b7a46a526283a/typetools-0.6.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.minecrell/terminalconsoleappender/1.3.0/b562e9bb61235c9520e26282cdee71f8f802d1fc/terminalconsoleappender-1.3.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.openjdk.nashorn/nashorn-core/15.4/f67f5ffaa5f5130cf6fb9b133da00c7df3b532a5/nashorn-core-15.4.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.14.0/1ed471194b02f2c6cb734a0cd6f6f107c673afae/commons-lang3-3.14.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/cpw.mods/bootstraplauncher/2.0.2/1a2d076cbc33b0520cbacd591224427b2a20047d/bootstraplauncher-2.0.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/cpw.mods/securejarhandler/3.0.8/c0ef95cecd8699a0449053ac7d9c160748d902cd/securejarhandler-3.0.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.8/36e4d212970388e5bd2c5180292012502df461bb/asm-commons-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.8/395f1c1f035258511f27bc9b2583d76e4b143f59/asm-util-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.8/b9747a320844b6cb1eacd90d8ecfd260a16c01d3/asm-analysis-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.8/18419ca5b77a2f81097c741e7872e6ab8d2f40d/asm-tree-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.8/dc19ecb3f7889b7860697215cae99c0f9b6f6b4b/asm-9.8.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.neoforged/JarJarFileSystems/0.4.1/78f59f89defcd032ed788b151ca6a0d40ace796a/JarJarFileSystems-0.4.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.15.1/f11560da189ab563a5c8e351941415430e9304ea/commons-io-2.15.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/logging/1.2.7/24cb95ffb0e3433fd6e844c04e68009e504ca1c0/logging-1.2.7.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.22.1/d7e6693c2606cb7e7335047d7bb96dec52db5665/log4j-slf4j2-impl-2.22.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.22.1/7183a25510a02ad00cc6a95d3b3d2a7d3c5a8dc4/log4j-core-2.22.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.22.1/bea6fede6328fabafd7e68363161a7ea6605abd1/log4j-api-2.22.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.2-jre/5e64ec7e056456bef3a4bc4c6fdaef71e8ab6318/guava-32.1.2-jre.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.9/7cf2726fdcfbc8610f9a71fb3ed639871f315340/slf4j-api-2.0.9.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.13.1/17125bae1d965624e265ef49552f6465a2bfa307/antlr4-runtime-4.13.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.minecraftforge/srgutils/0.4.15/ca408b131759478f164e010fae0d73997e125fb5/srgutils-0.4.15.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/cf43b5391de623b36fe066a21127baef82c64022/plexus-utils-3.3.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.20.0/8f15415b022a25b473e8e16c28ae913186ffb9c4/jline-reader-3.20.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.machinezoo.noexception/noexception/1.7.1/b65330c98e38a1f915fa54a6e5eca496505e3f0a/noexception-1.7.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.10/b1d8ab82d11d92fd639b56d639f8f46f739dd5fa/oshi-core-6.4.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/73.2/61ad4ef7f9131fcf6d25c34b817f90d6da06c9e9/icu4j-73.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/6.0.54/de8bc95660e1b2fe8793fd427a7a10dcec5b3ea7/authlib-6.0.54.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/blocklist/1.0.10/5c685c5ffa94c4cd39496c7184c1d122e515ecef/blocklist-1.0.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.3.10/d15b53a14cf20fdcaa98f731af5dda654452c010/brigadier-1.3.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/8.0.16/67d4de6d7f95d89bcf5862995fb854ebaec02a34/datafixerupper-8.0.16.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/2.2.10/da05971b07cbb379d002cf7eaec6a2048211fefc/patchy-2.2.10.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.17.9/3cad216e3a7f0c19b4b394388bc9ffc446f13b14/text2speech-1.17.9.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.16.0/4e3eb3d79888d76b54e28b350915b5dc3919c9de/commons-codec-1.16.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.97.Final/f8f3d8644afa5e6e1a40a3a6aeb9d9aa970ecb4f/netty-buffer-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.97.Final/384ba4d75670befbedb45c4d3b497a93639c206d/netty-codec-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.97.Final/7cceacaf11df8dc63f23d0fb58e9d4640fc88404/netty-common-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.97.Final/abb86c6906bf512bf2b797a41cd7d2e8d3cd7c36/netty-handler-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.97.Final/cec8348108dc76c47cf87c669d514be52c922144/netty-resolver-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.97.Final/795da37ded759e862457a82d9d92c4d39ce8ecee/netty-transport-classes-epoll-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.97.Final/d469d84265ab70095b01b40886cabdd433b6e664/netty-transport-native-unix-common-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.97.Final/f37380d23c9bb079bc702910833b2fd532c9abd0/netty-transport-4.1.97.Final.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.12/c24946d46824bd528054bface3231d2ecb7e95e8/fastutil-8.5.12.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.14.0/28934d48aed814f11e4c584da55c49fa7032b31b/jna-platform-5.14.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.14.0/67bf3eaea4f0718cb376a181a629e5f88fa1c9dd/jna-5.14.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.26.0/659feffdd12280201c8aacb8f7be94f9a883c824/commons-compress-1.26.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.16/51cf043c87253c9f58b539c9f7e44c8894223850/httpcore-4.4.16.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jcraft/jorbis/0.0.17/8872d22b293e8f5d7d56ff92be966e6dc28ebdc6/jorbis-0.0.17.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-freetype/3.3.3/a0db6c84a8becc8ca05f9dbfa985edc348a824c7/lwjgl-freetype-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-freetype/3.3.3/149070a5480900347071b7074779531f25a6e3dc/lwjgl-freetype-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.3/efa1eb78c5ccd840e9f329717109b5e892d72f8e/lwjgl-glfw-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.3/a03684c5e4b1b1dbbe0d29dbbdc27b985b6840f2/lwjgl-glfw-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.3/b543467b7ff3c6920539a88ee602d34098628be5/lwjgl-jemalloc-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.3/4f86728bf449b1dd61251c4e0ac01df1389cb51e/lwjgl-jemalloc-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.3/daada81ceb5fc0c291fbfdd4433cb8d9423577f2/lwjgl-openal-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.3/3037360cc4595079bea240af250b6d1a527e0905/lwjgl-openal-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.3/2f6b0147078396a58979125a4c947664e98293a/lwjgl-opengl-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.3/62c70a4b00ca5391882b0f4b787c1588d24f1c86/lwjgl-opengl-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.3/25dd6161988d7e65f71d5065c99902402ee32746/lwjgl-stb-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.3/fd1271ccd9d85eff2fa31f3fd543e02ccfaf5041/lwjgl-stb-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.3/82d755ca94b102e9ca77283b9e2dc46d1b15fbe5/lwjgl-tinyfd-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.3/d8d58daa0c3e5fd906fee96f5fddbcbc07cc308b/lwjgl-tinyfd-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.3/29589b5f87ed335a6c7e7ee6a5775f81f97ecb84/lwjgl-3.3.3.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.3/1713758e3660ba66e1e954396fd18126038b33c0/lwjgl-3.3.3-natives-linux.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/4b986a99445e49ea5fbf5d149c4b63f6ed6c6780/lz4-java-1.8.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.20.0/d0ddcc708ddf527a3454c941b7b9225cc83a15ff/jline-terminal-3.20.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.97.Final/5514744c588190ffda076b35a9b8c9f24946a960/netty-transport-native-epoll-4.1.97.Final-linux-aarch_64.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.97.Final/54188f271e388e7f313aea995e82f58ce2cdb809/netty-transport-native-epoll-4.1.97.Final-linux-x86_64.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.33.0/de2b60b62da487644fc11f734e73c8b0b431238f/checker-qual-3.33.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.18.0/89b684257096f548fa39a7df9fdaa409d4d4df91/error_prone_annotations-2.18.0.jar",
+    "/workspace/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/2.8/c85270e307e7b822f1086b93689124b89768e273/j2objc-annotations-2.8.jar",
+    "/workspace/Chao-Garden/build/resources/main"
+  ],
+  "exact_result_report_sha256": "99bce5827d20d9d3aba51fef07728eb609dda4bc14e2c0534e903aacba50b6f8",
+  "exact_result_report_equal_current": true,
+  "loaded_chao_classes": [
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest",
+      "source": "file:/tmp/triangle047-baseline/classes/",
+      "baseline_test_or_helper": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "e5440cbf11f47ceb5a4e91d1403fc944eec57ba1c9c6ec9abc3b76fe0a8466b4",
+      "current_sha256": "e5440cbf11f47ceb5a4e91d1403fc944eec57ba1c9c6ec9abc3b76fe0a8466b4",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "67dfdac398b482e35cd2abc5f75a29b628161b2dd3944ee3d62738371f499c30",
+      "current_sha256": "67dfdac398b482e35cd2abc5f75a29b628161b2dd3944ee3d62738371f499c30",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Motion",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "1ad47ecc660dcaae3c4ebb703fb7f7af3eec1a20175877285d1c84b19593efd8",
+      "current_sha256": "1ad47ecc660dcaae3c4ebb703fb7f7af3eec1a20175877285d1c84b19593efd8",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Frame",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "5021cb5e3e9acdd0711a018c92e2feec85b7fa855c491e59a825102a26d8e84a",
+      "current_sha256": "5021cb5e3e9acdd0711a018c92e2feec85b7fa855c491e59a825102a26d8e84a",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Bone",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "40a6ed53c078cd5e1920af2b7d1dc0d0a55925befe3c58fce23ed14c20fb9ec1",
+      "current_sha256": "40a6ed53c078cd5e1920af2b7d1dc0d0a55925befe3c58fce23ed14c20fb9ec1",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Face",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "a89f3d2b76addb5abc02b1b398946ce52e6241b775e42c4c2cc425541fe709e5",
+      "current_sha256": "a89f3d2b76addb5abc02b1b398946ce52e6241b775e42c4c2cc425541fe709e5",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Mesh",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "8d55b10365219c9c5c03695ac960beef959b1daba42997c40447eee57b01af04",
+      "current_sha256": "8d55b10365219c9c5c03695ac960beef959b1daba42997c40447eee57b01af04",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$Pose",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "b8caf42bc3b33ad4d6203c3d16f3f5a5a160ed55412d813534126794460e9082",
+      "current_sha256": "b8caf42bc3b33ad4d6203c3d16f3f5a5a160ed55412d813534126794460e9082",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.LionfishTriangleClip",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "95de59cfcc8a2e4d4bea0d0ed1891d4a4c324597d0ee6ef94c87fb2b276ecb4a",
+      "current_sha256": "95de59cfcc8a2e4d4bea0d0ed1891d4a4c324597d0ee6ef94c87fb2b276ecb4a",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.toys.TrianglePlayRules",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "b76b230a6b2930ecfadef23771942d6aa09871a16107bbc6760151d5887d0d42",
+      "current_sha256": "b76b230a6b2930ecfadef23771942d6aa09871a16107bbc6760151d5887d0d42",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522",
+      "source": "file:/tmp/triangle047-baseline/classes/",
+      "baseline_test_or_helper": true
+    },
+    {
+      "class": "com.chaogarden.core.ChaoState",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "e929fd81e068cdf0b917e1bf2e0a1c9993d3e3151d3ba0fa45996b7113aba16f",
+      "current_sha256": "e929fd81e068cdf0b917e1bf2e0a1c9993d3e3151d3ba0fa45996b7113aba16f",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$Case",
+      "source": "file:/tmp/triangle047-baseline/classes/",
+      "baseline_test_or_helper": true
+    },
+    {
+      "class": "com.chaogarden.core.GradualEvolutionRules",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "02edc1ffc39814abed194b422e726fd432097369de50a9eb5cea08f01103ceaa",
+      "current_sha256": "02edc1ffc39814abed194b422e726fd432097369de50a9eb5cea08f01103ceaa",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.ChaoVariants",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "9d5a2edd7db94557293153f49c9893180b794afe556ddb058f175266463c8673",
+      "current_sha256": "9d5a2edd7db94557293153f49c9893180b794afe556ddb058f175266463c8673",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.ChaoVariants$Definition",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "c59100f8add0e29f9792c15bad74a4e5868f995ac93d2ce03d746c9beb4bb9b9",
+      "current_sha256": "c59100f8add0e29f9792c15bad74a4e5868f995ac93d2ce03d746c9beb4bb9b9",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.core.ChaoGaitClock",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "08359f3938e3ec1d74a4ce75c4bdb33f45f4c3af7af1cc3bc0cb71170886acf9",
+      "current_sha256": "08359f3938e3ec1d74a4ce75c4bdb33f45f4c3af7af1cc3bc0cb71170886acf9",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Expression",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "6359d166c49c5dde7abaaca76b9c2f8f4adf48fb000e786464a37481f008d577",
+      "current_sha256": "6359d166c49c5dde7abaaca76b9c2f8f4adf48fb000e786464a37481f008d577",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.toys.MaracasPlayRules",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "e27820d281cc6db31d229c75530bb141f5bf8358d6b895885ee1e3802450c8af",
+      "current_sha256": "e27820d281cc6db31d229c75530bb141f5bf8358d6b895885ee1e3802450c8af",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$Transition",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "a0941fcf42bb0b4e3c74df02fd11a5c05f41257abd7ed1ce931409fef96e76e2",
+      "current_sha256": "a0941fcf42bb0b4e3c74df02fd11a5c05f41257abd7ed1ce931409fef96e76e2",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.TrumpetRigTest",
+      "source": "file:/tmp/triangle047-baseline/classes/",
+      "baseline_test_or_helper": true
+    },
+    {
+      "class": "com.chaogarden.client.PropMeshClearance",
+      "source": "file:/tmp/triangle047-baseline/classes/",
+      "baseline_test_or_helper": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoSittingPose",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "37c9b18036b311814c66de29b6235577dfc725f45687d9f055b7bf8baacc8ff5",
+      "current_sha256": "37c9b18036b311814c66de29b6235577dfc725f45687d9f055b7bf8baacc8ff5",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoTriangleAnimation",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "2d2ed668f7bca8f40d80769dbb7127c2d426c560ad9a5c9d03099b0070c3bf79",
+      "current_sha256": "2d2ed668f7bca8f40d80769dbb7127c2d426c560ad9a5c9d03099b0070c3bf79",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoInstrumentFocus",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "95db48fb3e1ae582774e1c6b200c96fb93d36aa5e2a3fc460dd2151c2cf7fea1",
+      "current_sha256": "95db48fb3e1ae582774e1c6b200c96fb93d36aa5e2a3fc460dd2151c2cf7fea1",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoTrumpetAnimation",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "89ec9fd6a450526d75faf77afc7ebb2e848ef159978a30d108c4f3277865e1ff",
+      "current_sha256": "89ec9fd6a450526d75faf77afc7ebb2e848ef159978a30d108c4f3277865e1ff",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.entity.ChaoEntity",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "a3b94be08d5b993843fcd462565f4c6b6b8d195cedc8ef901c486bb902e44188",
+      "current_sha256": "a3b94be08d5b993843fcd462565f4c6b6b8d195cedc8ef901c486bb902e44188",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.ChaoTambourineAnimation",
+      "source": "file:/workspace/artifacts/chao-garden-0.25.47/chao_garden-0.25.47.jar",
+      "parent047_sha256": "eef9558f5d4fded8d5eef3cbe49bd68ef1ca0d840adf0c6797be9d76ee7bb183",
+      "current_sha256": "eef9558f5d4fded8d5eef3cbe49bd68ef1ca0d840adf0c6797be9d76ee7bb183",
+      "identical_current": true
+    },
+    {
+      "class": "com.chaogarden.client.Toy02533PoseVisualSmoke",
+      "source": "file:/tmp/triangle047-baseline/classes/",
+      "baseline_test_or_helper": true
+    }
+  ],
+  "generated_lambdas": [
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007f837000a650",
+      "generated_from": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007f837000aee8",
+      "generated_from": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007f837000b130",
+      "generated_from": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007f8370014bc0",
+      "generated_from": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007f8370014e10",
+      "generated_from": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007f8370015050",
+      "generated_from": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.ChaoMeshAsset$$Lambda/0x00007f83700152a0",
+      "generated_from": "com.chaogarden.client.ChaoMeshAsset"
+    },
+    {
+      "class": "com.chaogarden.client.LionfishTriangleClip$$Lambda/0x00007f837001b158",
+      "generated_from": "com.chaogarden.client.LionfishTriangleClip"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f83700223b0",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f83700227f0",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f8370022a20",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f8370022c50",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f8370022e80",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f83700230b8",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f83700232e8",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f8370023518",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f8370023750",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f8370023980",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f8370023bb0",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f837002c000",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f837002c230",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f837002c460",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f837002c690",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.test.ToyVariantCases02522$$Lambda/0x00007f837002c8c0",
+      "generated_from": "com.chaogarden.test.ToyVariantCases02522"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007f837002caf0",
+      "generated_from": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.ChaoVariants$$Lambda/0x00007f837002d160",
+      "generated_from": "com.chaogarden.ChaoVariants"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007f837002d3b0",
+      "generated_from": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007f8370186000",
+      "generated_from": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007f8370186af8",
+      "generated_from": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007f8370196090",
+      "generated_from": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007f83701962c8",
+      "generated_from": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.OfficialChaoRig$$Lambda/0x00007f8370198608",
+      "generated_from": "com.chaogarden.client.OfficialChaoRig"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007f8370198840",
+      "generated_from": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007f83702364e0",
+      "generated_from": "com.chaogarden.client.TriangleTransitionRigTest"
+    },
+    {
+      "class": "com.chaogarden.client.TriangleTransitionRigTest$$Lambda/0x00007f8370236728",
+      "generated_from": "com.chaogarden.client.TriangleTransitionRigTest"
+    }
+  ],
+  "exit": 1
+}

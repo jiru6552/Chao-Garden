@@ -194,7 +194,7 @@ public final class ChaoGarden {
   }
 
   public static boolean visibleInCreative(Item item) {
-    if(item instanceof com.chaogarden.activities.GardenBellItem)return false;
+    if(item instanceof com.chaogarden.activities.GardenBellItem || item instanceof com.chaogarden.toys.RetiredCoffinItem)return false;
     if(item instanceof BlockItem block && block.getBlock() instanceof com.chaogarden.care.ChaoSchoolBlock)return false;
     if (item instanceof RetiredChaoEggItem || item instanceof ChaoCarrierItem
         || item instanceof com.chaogarden.cwe.RetiredCweGiftItem) return false;
