@@ -51,23 +51,18 @@ public final class ChaoPaletteMaterial {
       int coat=counts.entrySet().stream().max(Map.Entry.comparingByValue()).map(Map.Entry::getKey).orElse(0xeff09d);
       for(int y=0;y<image.getHeight();y++)for(int x=0;x<image.getWidth();x++) {
         int mx=x*skin.getWidth()/image.getWidth(),my=y*skin.getHeight()/image.getHeight();
-        boolean body=(skin.getPixelRGBA(mx,my)>>>24)!=0;
+        int reserved=prototypeReservedKind(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight());
+        boolean body=(skin.getPixelRGBA(mx,my)>>>24)!=0||(reserved&1)!=0;
         boolean wing=state.cosmeticWings&&(wings.getPixelRGBA(mx,my)>>>24)!=0;
-        boolean accent=brush!=0&&(accents.getPixelRGBA(mx,my)>>>24)!=0;
+        boolean accent=brush!=0&&((accents.getPixelRGBA(mx,my)>>>24)!=0||(reserved&2)!=0);
         int rgba=image.getPixelRGBA(x,y);if((rgba>>>24)==0||!body&&!wing&&!accent)continue;
         int red=rgba&255,green=(rgba>>>8)&255,blue=(rgba>>>16)&255;
         if(wing) {
           float shade=.76f+Math.max(red,Math.max(green,blue))/255f*.24f;
           red=Math.round((coat&255)*shade);green=Math.round(((coat>>>8)&255)*shade);blue=Math.round(((coat>>>16)&255)*shade);
         }
-        if(accent) {
-          int[] rgb=switch(brush){case 1->new int[]{246,214,79};case 2->new int[]{161,91,222};case 3->new int[]{80,192,115};default->new int[]{222,73,83};};
-          float shade=.7f+Math.max(red,Math.max(green,blue))/255f*.3f;
-          red=Math.round(rgb[0]*shade);green=Math.round(rgb[1]*shade);blue=Math.round(rgb[2]*shade);
-        }
-        if(state.negativePalette){red=255-red;green=255-green;blue=255-blue;}
-        if(state.brightCoat){red=Math.min(255,Math.round(28+red*1.18f));green=Math.min(255,Math.round(28+green*1.18f));blue=Math.min(255,Math.round(28+blue*1.18f));}
-        image.setPixelRGBA(x,y,(rgba&0xff000000)|(blue<<16)|(green<<8)|red);
+        image.setPixelRGBA(x,y,paletteEffects((rgba&0xff000000)|(blue<<16)|(green<<8)|red,
+            accent,brush,state.negativePalette,state.brightCoat));
       }
       var id=ResourceLocation.fromNamespaceAndPath("chao_garden","dynamic/palette/"+UUID.nameUUIDFromBytes(key.getBytes(StandardCharsets.UTF_8)));
       mc.getTextureManager().register(id,new DynamicTexture(image));image=null;
@@ -80,6 +75,30 @@ public final class ChaoPaletteMaterial {
       if(image!=null)image.close();
       throw new IllegalStateException("Cannot build Chao palette from "+source,error);
     }
+  }
+
+  /** Prototype-only UV additions. Overlay/ordinary materials retain their exact
+   * old masks; protected eye texels are outside every listed rectangle. */
+  static int prototypeReservedKind(String sourcePath,String layout,int x,int y,int width,int height) {
+    if(!sourcePath.startsWith("dynamic/hero_run052/")||!layout.equals("baby")||width<=0||height<=0)return 0;
+    int u=x*128/width,v=y*64/height;
+    if(u==127&&v==63)return 1;
+    if(u==126&&v==63||u==104&&v==56)return 3;
+    if(u>=112&&u<120&&v>=40&&v<48)return 3;
+    if(u>=112&&u<120&&v>=52&&v<60)return v<55?3:1;
+    return 0;
+  }
+  /** Shared actual pixel implementation, also sampled by focused pure checks. */
+  static int paletteEffects(int rgba,boolean accent,int brush,boolean negative,boolean bright) {
+    int red=rgba&255,green=rgba>>>8&255,blue=rgba>>>16&255;
+    if(accent) {
+      int[] rgb=switch(brush){case 1->new int[]{246,214,79};case 2->new int[]{161,91,222};case 3->new int[]{80,192,115};default->new int[]{222,73,83};};
+      float shade=.7f+Math.max(red,Math.max(green,blue))/255f*.3f;
+      red=Math.round(rgb[0]*shade);green=Math.round(rgb[1]*shade);blue=Math.round(rgb[2]*shade);
+    }
+    if(negative){red=255-red;green=255-green;blue=255-blue;}
+    if(bright){red=Math.min(255,Math.round(28+red*1.18f));green=Math.min(255,Math.round(28+green*1.18f));blue=Math.min(255,Math.round(28+blue*1.18f));}
+    return rgba&0xff000000|blue<<16|green<<8|red;
   }
 
   /** Release evicted textures only after queued entity batches have rendered. */

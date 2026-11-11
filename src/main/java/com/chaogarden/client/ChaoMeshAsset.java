@@ -28,19 +28,22 @@ final class ChaoMeshAsset {
     }
   }
 
-  private record Face(int[] indices, float[][] uv, float[][] gameplayUv, Vector3f normal) {}
+  private record Face(int[] indices, float[][] uv, float[][] gameplayUv,float[][] heroRunUv, Vector3f normal) {}
 
   private record Mesh(
       String name,
       String material,
       float[][] vertices,
       float[][][] morphVertices,
+      float[][][] heroRunVertices,
+      float[][][] heroRunLegacyVertices,
       List<Face> faces,
       Vector3f[] vertexNormals) {}
 
   private static final class Bone {
     final String name, parent;
     final float[] pivot, rotation;
+    float[][] heroRunPivots,heroRunRotations;
     final List<Mesh> meshes;
     final List<Bone> children = new ArrayList<>();
 
@@ -61,6 +64,9 @@ final class ChaoMeshAsset {
   private final Map<String, Float> forwardReaches = new HashMap<>();
   private final float[] developmentWeights = {0,0,0,0,1,0,0,0,0};
   private float developmentStrength=1;
+  private final float[] heroRunWeights={1,0,0,0,0,0};
+  private boolean heroRunActive,heroRunAdult,heroRunNaturalTwoTone;
+  private float heroRunMaturity,heroRunSwimFly,heroRunPower;
   private int lensColor,expression;
   private final Map<String,float[]> uvOverrides=new HashMap<>();
   private final Map<String,float[]> attachmentLandmarks=new HashMap<>();
@@ -134,6 +140,8 @@ final class ChaoMeshAsset {
                   if(!Float.isFinite(value))throw new IllegalStateException("Non-finite development vertex");
               }
             }
+            float[][][] heroRun=endpointVectors(mesh,"hero_run_vertices_052",5,vertices.length);
+            float[][][] heroRunLegacy=endpointVectors(mesh,"hero_run_legacy_vertices_052",9,vertices.length);
             List<Face> faces = new ArrayList<>();
             for (JsonElement fe : mesh.getAsJsonArray("faces")) {
               JsonObject face = fe.getAsJsonObject();
@@ -157,7 +165,12 @@ final class ChaoMeshAsset {
                 gameplayUv=new float[uv.length][2];
                 for(float[] point:gameplayUv){point[0]=60.5f;point[1]=1.5f;}
               }
-              faces.add(new Face(vi, uv, gameplayUv, normal));
+              float[][] heroRunUv=face.has("hero_run_uv_052")?vectors(face.getAsJsonArray("hero_run_uv_052"),2):null;
+              if(heroRunUv!=null) {
+                if(heroRunUv.length!=vi.length)throw new IllegalStateException("Morphology UV/vertex count differs");
+                for(var point:heroRunUv)for(float value:point)if(!Float.isFinite(value))throw new IllegalStateException("Non-finite morphology UV");
+              }
+              faces.add(new Face(vi, uv, gameplayUv,heroRunUv, normal));
             }
             meshes.add(
                 new Mesh(
@@ -165,6 +178,7 @@ final class ChaoMeshAsset {
                     mesh.has("material") ? mesh.get("material").getAsString() : "body",
                     vertices,
                     morphs,
+                    heroRun,heroRunLegacy,
                     List.copyOf(faces),
                     mesh.has("shading") && mesh.get("shading").getAsString().equals("flat")
                         ? null
@@ -211,7 +225,33 @@ final class ChaoMeshAsset {
         if(!Float.isFinite(result.proportionMarkerYoung))throw new IllegalStateException("Non-finite crown marker offset");
         for(float offset:result.proportionMarkerTargets)if(!Float.isFinite(offset))throw new IllegalStateException("Non-finite crown marker target");
       }
+      for(var element:data.getAsJsonArray("bones")) {
+        var value=element.getAsJsonObject();var bone=bones.get(value.get("name").getAsString());
+        if(value.has("hero_run_pivots_052"))bone.heroRunPivots=endpointVectors(value,"hero_run_pivots_052",5,3,true);
+        if(value.has("hero_run_rotations_052")) {
+          bone.heroRunRotations=endpointVectors(value,"hero_run_rotations_052",5,3,true);
+          for(var target:bone.heroRunRotations)for(int axis=0;axis<3;axis++)target[axis]*=(float)Math.PI/180f;
+        }
+      }
       return result;
+  }
+
+  private static float[][][] endpointVectors(JsonObject data,String key,int count,int vertexCount) {
+    if(!data.has(key))return null;
+    var values=data.getAsJsonArray(key);if(values.size()!=count)throw new IllegalStateException("Invalid morphology endpoint count: "+key);
+    float[][][] result=new float[count][][];
+    for(int i=0;i<count;i++) {
+      result[i]=vectors(values.get(i).getAsJsonArray(),3);
+      if(result[i].length!=vertexCount)throw new IllegalStateException("Morphology topology differs: "+key);
+      for(var vertex:result[i])for(float coordinate:vertex)if(!Float.isFinite(coordinate))throw new IllegalStateException("Non-finite morphology endpoint");
+    }
+    return result;
+  }
+  private static float[][] endpointVectors(JsonObject data,String key,int count,int dimensions,boolean vectors) {
+    var values=data.getAsJsonArray(key);if(values.size()!=count)throw new IllegalStateException("Invalid morphology joint endpoints: "+key);
+    float[][] result=new float[count][];
+    for(int i=0;i<count;i++){result[i]=vector(values.get(i).getAsJsonArray(),dimensions);for(float v:result[i])if(!Float.isFinite(v))throw new IllegalStateException("Non-finite morphology joint");}
+    return result;
   }
 
   private static Vector3f[] smoothNormals(float[][] vertices, List<Face> faces) {
@@ -262,10 +302,49 @@ final class ChaoMeshAsset {
   }
 
   private float coordinate(Mesh mesh,int vertex,int axis) {
-    float young=mesh.vertices[vertex][axis];
-    if(mesh.morphVertices==null||developmentStrength==0)return young;
-    float aged=0;for(int target=0;target<9;target++)aged+=mesh.morphVertices[target][vertex][axis]*developmentWeights[target];
-    return young+(aged-young)*developmentStrength;
+    float young=mesh.vertices[vertex][axis],legacy=young;
+    if(mesh.morphVertices!=null&&developmentStrength!=0) {
+      float aged=0;for(int target=0;target<9;target++)aged+=mesh.morphVertices[target][vertex][axis]*developmentWeights[target];
+      legacy=young+(aged-young)*developmentStrength;
+    }
+    if(!heroRunActive||mesh.heroRunVertices==null)return legacy;
+    float value=(heroRunAdult?young:legacy)*heroRunWeights[0];
+    for(int i=0;i<5;i++)value+=mesh.heroRunVertices[i][vertex][axis]*heroRunWeights[i+1];
+    if(heroRunAdult&&mesh.heroRunLegacyVertices!=null) {
+      float inherited=0;
+      for(int y=0;y<3;y++)for(int x=0;x<3;x++) {
+        float w=Math.max(0,1-Math.abs(heroRunSwimFly-(y-1)))*Math.max(0,1-Math.abs(heroRunPower-(x-1)));
+        inherited+=mesh.heroRunLegacyVertices[y*3+x][vertex][axis]*w;
+      }
+      value+=(inherited-mesh.heroRunLegacyVertices[4][vertex][axis])*heroRunMaturity;
+    }
+    return value;
+  }
+
+  /** One matched surface/joint sampler serves rendering and every attachment. */
+  void heroRunDevelopment(com.chaogarden.core.HeroRunMorphology052.Sample sample,float swimFly,float runPower) {
+    float[] next=new float[6];boolean enabled=sample!=null&&sample.enabled();
+    if(!enabled)next[0]=1;
+    else if(sample.adult()) {
+      float maturity=Math.clamp(sample.maturity(),0,1),growth=Math.clamp(sample.adultGrowth(),0,maturity);
+      next[3]=1-maturity;next[4]=maturity-growth;next[5]=growth;
+    } else {
+      float hero=Math.clamp(sample.babyHero(),0,1),run=Math.clamp(sample.babyRun(),0,1);
+      next[0]=1-hero;next[1]=hero*(1-run);next[3]=hero*run;
+    }
+    boolean changed=heroRunActive!=enabled||heroRunAdult!=(sample!=null&&sample.adult())||!Arrays.equals(heroRunWeights,next)
+        ||heroRunSwimFly!=swimFly||heroRunPower!=Math.max(0,runPower);
+    heroRunActive=enabled;heroRunAdult=sample!=null&&sample.adult();heroRunMaturity=sample==null?0:sample.maturity();
+    heroRunSwimFly=Math.clamp(swimFly,-1,1);heroRunPower=Math.clamp(runPower,0,1);
+    System.arraycopy(next,0,heroRunWeights,0,6);if(changed)forwardReaches.clear();
+  }
+  void heroRunTwoTone(boolean enabled){heroRunNaturalTwoTone=enabled;}
+  boolean heroRunPrototype(){return bones.values().stream().anyMatch(b->b.heroRunPivots!=null);}
+  private float pivot(Bone bone,int axis){return jointCoordinate(bone.pivot,bone.heroRunPivots,axis);}
+  private float rotation(Bone bone,int axis){return jointCoordinate(bone.rotation,bone.heroRunRotations,axis);}
+  private float jointCoordinate(float[] base,float[][] targets,int axis) {
+    if(!heroRunActive||targets==null)return base[axis];float value=base[axis]*heroRunWeights[0];
+    for(int i=0;i<5;i++)value+=targets[i][axis]*heroRunWeights[i+1];return value;
   }
 
   void naturalHeroCore(boolean enabled) {
@@ -305,7 +384,7 @@ final class ChaoMeshAsset {
 
   float pivot(String name, int axis) {
     Bone bone = bones.get(name);
-    return bone == null ? 0 : bone.pivot[axis];
+    return bone == null ? 0 : pivot(bone,axis);
   }
 
   /** Authored toe reach in the ankle's local frame, cached for gait fitting. */
@@ -322,8 +401,8 @@ final class ChaoMeshAsset {
   }
 
   private void forwardReach(Bone bone, Matrix4f parent, float[] minimum) {
-    var transform = new Matrix4f(parent).translate(bone.pivot[0], bone.pivot[1], bone.pivot[2])
-        .rotateZ(bone.rotation[2]).rotateY(bone.rotation[1]).rotateX(bone.rotation[0]);
+    var transform = new Matrix4f(parent).translate(pivot(bone,0), pivot(bone,1), pivot(bone,2))
+        .rotateZ(rotation(bone,2)).rotateY(rotation(bone,1)).rotateX(rotation(bone,0));
     var point = new Vector3f();
     for (Mesh mesh : bone.meshes) for (int i=0;i<mesh.vertices.length;i++) {
       transform.transformPosition(coordinate(mesh,i,0),coordinate(mesh,i,1),coordinate(mesh,i,2),point);
@@ -371,6 +450,22 @@ final class ChaoMeshAsset {
     var chain=new ArrayDeque<Bone>();
     for(Bone at=bone;at!=null;at=at.parent==null?null:bones.get(at.parent))chain.push(at);
     while(!chain.isEmpty())applyTransform(chain.pop(),stack,poses);
+  }
+
+  /** Copy a sampled joint to a separate attachment rig without losing its
+   * morphed bind pose. Procedural fields stay relative to the target bind pose. */
+  void copyJointPoseTo(String name,ChaoMeshAsset target,Pose from,Pose to) {
+    to.x=from.x;to.y=from.y;to.z=from.z;to.rx=from.rx;to.ry=from.ry;to.rz=from.rz;
+    to.sx=from.sx;to.sy=from.sy;to.sz=from.sz;to.reach=from.reach;to.visible=true;
+    if(!heroRunActive||!heroRunPrototype())return;
+    Bone source=bones.get(name),destination=target.bones.get(name);
+    if(source==null||destination==null)return;
+    to.x+=pivot(source,0)-target.pivot(destination,0);
+    to.y+=pivot(source,1)-target.pivot(destination,1);
+    to.z+=pivot(source,2)-target.pivot(destination,2);
+    to.rx+=rotation(source,0)-target.rotation(destination,0);
+    to.ry+=rotation(source,1)-target.rotation(destination,1);
+    to.rz+=rotation(source,2)-target.rotation(destination,2);
   }
 
   /** Actual deformed palm, including the hand cube's local transform; arm-local pixels. */
@@ -518,8 +613,8 @@ final class ChaoMeshAsset {
     Matrix4f matrix=new Matrix4f();
     while(!chain.isEmpty()) {
       Bone bone=chain.pop();Pose p=poses.get(bone.name);if(p==null)p=new Pose();
-      matrix.translate(bone.pivot[0]+p.x,bone.pivot[1]+p.y,bone.pivot[2]+p.z)
-          .rotateZ(bone.rotation[2]+p.rz).rotateY(bone.rotation[1]+p.ry).rotateX(bone.rotation[0]+p.rx)
+      matrix.translate(pivot(bone,0)+p.x,pivot(bone,1)+p.y,pivot(bone,2)+p.z)
+          .rotateZ(rotation(bone,2)+p.rz).rotateY(rotation(bone,1)+p.ry).rotateX(rotation(bone,0)+p.rx)
           .scale(p.sx,p.sy,p.sz);
     }
     float[] bounds={Float.POSITIVE_INFINITY,Float.POSITIVE_INFINITY,Float.POSITIVE_INFINITY,
@@ -555,8 +650,8 @@ final class ChaoMeshAsset {
     Matrix4f toArm=new Matrix4f();
     while(!chain.isEmpty()) {
       Bone at=chain.pop();Pose p=poses.get(at.name);
-      toArm.translate(at.pivot[0]+p.x,at.pivot[1]+p.y,at.pivot[2]+p.z)
-          .rotateZ(at.rotation[2]+p.rz).rotateY(at.rotation[1]+p.ry).rotateX(at.rotation[0]+p.rx).scale(p.sx,p.sy,p.sz);
+      toArm.translate(pivot(at,0)+p.x,pivot(at,1)+p.y,pivot(at,2)+p.z)
+          .rotateZ(rotation(at,2)+p.rz).rotateY(rotation(at,1)+p.ry).rotateX(rotation(at,0)+p.rx).scale(p.sx,p.sy,p.sz);
     }
     float reach=poses.get(arm.name).reach;Matrix4f stretch=new Matrix4f();
     if(hand)stretch.translate(arm.name.equals("arm_left")?reach:-reach,0,0);
@@ -568,10 +663,10 @@ final class ChaoMeshAsset {
     return new Matrix4f(toArm).invert().mul(stretch).mul(toArm);
   }
 
-  private static void applyTransform(Bone bone,PoseStack stack,Map<String,Pose> poses) {
+  private void applyTransform(Bone bone,PoseStack stack,Map<String,Pose> poses) {
     Pose p=poses.get(bone.name);
-    stack.translate((bone.pivot[0]+p.x)/16f,(bone.pivot[1]+p.y)/16f,(bone.pivot[2]+p.z)/16f);
-    float rz=p.rz+bone.rotation[2],ry=p.ry+bone.rotation[1],rx=p.rx+bone.rotation[0];
+    stack.translate((pivot(bone,0)+p.x)/16f,(pivot(bone,1)+p.y)/16f,(pivot(bone,2)+p.z)/16f);
+    float rz=p.rz+rotation(bone,2),ry=p.ry+rotation(bone,1),rx=p.rx+rotation(bone,0);
     if(rz!=0)stack.mulPose(Axis.ZP.rotation(rz));
     if(ry!=0)stack.mulPose(Axis.YP.rotation(ry));
     if(rx!=0)stack.mulPose(Axis.XP.rotation(rx));
@@ -605,7 +700,13 @@ final class ChaoMeshAsset {
         int meshColor=mesh.material.equals("lens")?lensColor:color;
         int meshLight = isLuminous(mesh.material) ? 0x00f000f0 : light;
         for (Face face : mesh.faces) {
-          matrix.transformNormal(face.normal, normal);
+          if(heroRunActive&&mesh.name.equals("source_informed_rear_point")) {
+            int a=face.indices[0],b=face.indices[1],c=face.indices[2];
+            var edge=new Vector3f(coordinate(mesh,b,0)-coordinate(mesh,a,0),coordinate(mesh,b,1)-coordinate(mesh,a,1),coordinate(mesh,b,2)-coordinate(mesh,a,2));
+            var next=new Vector3f(coordinate(mesh,c,0)-coordinate(mesh,a,0),coordinate(mesh,c,1)-coordinate(mesh,a,1),coordinate(mesh,c,2)-coordinate(mesh,a,2));
+            edge.cross(next);if(edge.lengthSquared()<.00000001f)edge.set(face.normal);else edge.normalize();
+            matrix.transformNormal(edge,normal);
+          }else matrix.transformNormal(face.normal, normal);
           // Minecraft entity buffers use quads. A repeated last vertex encodes a triangle.
           if (face.indices.length <= 4)
             emitFace(
@@ -684,7 +785,7 @@ final class ChaoMeshAsset {
       pose.transformNormal(mesh.vertexNormals[face.indices[index]], normal);
     int at=face.indices[index];
     pose.pose().transformPosition(coordinate(mesh,at,0)/16f,coordinate(mesh,at,1)/16f,coordinate(mesh,at,2)/16f,vertex);
-    float[] uv = activeUvOverride!=null?activeUvOverride:(gameplayUv?face.gameplayUv:face.uv)[index];
+    float[] uv = activeUvOverride!=null?activeUvOverride:heroRunActive&&heroRunNaturalTwoTone&&face.heroRunUv!=null?face.heroRunUv[index]:(gameplayUv?face.gameplayUv:face.uv)[index];
     consumer.addVertex(
         vertex.x,
         vertex.y,

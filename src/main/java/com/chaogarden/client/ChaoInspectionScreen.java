@@ -3,6 +3,7 @@ package com.chaogarden.client;
 import com.chaogarden.ChaoGarden;
 import com.chaogarden.GardenConfig;
 import com.chaogarden.core.ChaoState;
+import com.chaogarden.core.HeroRunMorphology052;
 import com.chaogarden.core.LocomotionRules;
 import com.chaogarden.core.ChaoPreferences;
 import com.chaogarden.core.ChaoPersonality;
@@ -281,12 +282,23 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     int x=localX(mouseX),y=localY(mouseY);if(x<214||x>571)return;
     var lines=new ArrayList<Component>();
     if(y>=289&&y<=301) {
-      lines.add(Component.literal((s.adult?"Gradual evolution: ":"First evolution: ")+String.format(Locale.ROOT,s.adult?"%.2f / 1.20":"%.2f / 1.00",s.evolutionStrength())));
-      if(!s.adult)lines.add(Component.literal("First type if evolved now: "+ChaoState.TYPES[s.prospectivePrimaryType()]));
+      lines.add(Component.literal((s.adult?"Biological maturity: ":"First evolution: ")+String.format(Locale.ROOT,s.adult?"%.2f / 1.20":"%.2f / 1.00",s.evolutionStrength())));
+      if(!s.adult)lines.add(Component.literal("Ordinary first type now: "+ChaoState.TYPES[s.prospectivePrimaryType()]+" (Stamina excluded)"));
       lines.add(Component.literal("Alignment and first adult type lock at first evolution."));
-      lines.add(Component.literal("Later training changes the secondary type as maturity grows."));
+      var morph=HeroRunMorphology052.sample(s);
+      if(morph.enabled()) {
+        if(s.adult) {
+          lines.add(Component.literal("Hero Run target: "+Math.round(morph.specialization()*100)+"%; visible specialization: "+Math.round(morph.adultGrowth()*100)+"%"));
+          lines.add(Component.literal("Run minus Power training changes the target, not biological age."));
+          lines.add(Component.literal("Provisional full target: "+Math.round(HeroRunMorphology052.ADULT_RUN_PROGRESS)+" net training progress from zero."));
+        } else {
+          lines.add(Component.literal("Hero development: "+Math.round(morph.babyHero()*100)+"%; Run development: "+Math.round(morph.babyRun()*100)+"%"));
+          lines.add(Component.literal("Provisional full Run target: "+Math.round(HeroRunMorphology052.BABY_RUN_PROGRESS)+" net training progress from zero."));
+        }
+        lines.add(Component.literal("Earlier baby training counts toward the adult training target."));
+      } else lines.add(Component.literal("Later training changes the secondary form as maturity grows."));
       lines.add(Component.literal("Swim opposes Fly; Run opposes Power."));
-      lines.add(Component.literal("Full ordinary influence stays between -1 and +1."));
+      lines.add(Component.literal("Chaos admission keeps its separate Stamina/Normal balance check."));
       g.renderComponentTooltip(font,lines,mouseX,mouseY);return;
     }
     int stat=-1;for(int i=ChaoState.SWIM;i<=ChaoState.POWER;i++) {
@@ -366,7 +378,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       text(g,lean(s.runPower,"Run","Power"),220,219,.8f,INK);
       String form=s.immortal?"This special form no longer evolves.":s.adult?"First type: "+ChaoState.TYPES[s.primaryType]+" · Adult form: "+s.typeName():"First evolution if ready now: "+ChaoState.TYPES[s.prospectivePrimaryType()];
       fitText(g,form,220,246,340,.8f,INK);
-      paragraph(g,"These markers shape appearance and adult subtypes. First evolution uses the highest stat points (Stamina = Normal); the latest increase breaks a tie.",220,267,340,.8f,MUTED);
+      paragraph(g,"First type uses the highest Swim, Fly, Run or Power points; Stamina is excluded. The latest actual increase among tied abilities wins. Hero Run training and biological maturity are separate.",220,267,340,.8f,MUTED);
     }
   }
   private static String lean(float value,String left,String right){return Math.abs(value)<.01f?"Balanced between "+left+" and "+right:"Leans "+(value<0?left:right)+" · "+Math.round(Math.min(1,Math.abs(value))*100)+"% from the middle";}
@@ -413,7 +425,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     text(g,"CHAOS CHAO REQUIREMENTS",220,258,.8f,0xffaa5884);
     condition(g,s.reincarnations>=2,"Third life",220,273,82);
     condition(g,s.happiness>80,"Happy >80",400,273,81);
-    condition(g,s.prospectivePrimaryType()==ChaoState.NORMAL,"Normal",486,273,77);
+    condition(g,s.chaosNormalCandidate(),"Stamina",486,273,77);
     text(g,s.adult?"Requirements are checked at child-to-adult evolution.":received+"/"+ChaoState.ANIMALS.length+" DNA · click Animal DNA for what is missing",220,299,.8f,MUTED);
   }
   private List<Integer> checklistDnaIds() {

@@ -20,6 +20,8 @@ public final class DriveRules {
   /** Returns false without consuming randomness or changing state when no benefit is possible. */
   public static boolean apply(ChaoState s,Tier tier,int stat,RandomGenerator random){
     if(!canUse(s,tier,stat))return false;
+    int[] previousHistory=s.trainingHistorySnapshot(),beforePoints=s.points.clone(),beforeTotals=new int[5];
+    for(int i=0;i<5;i++)beforeTotals[i]=total(s,i);
     if(tier==Tier.PERFECT){
       int[] candidates=new int[5];int count=0;
       for(int i=0;i<5;i++)if(s.levels[i]<99)candidates[count++]=i;
@@ -55,6 +57,7 @@ public final class DriveRules {
       adjustHidden(s,ChaoState.HIDDEN_LUCK,40,random);
       adjustHidden(s,ChaoState.HIDDEN_INTELLIGENCE,20,random);
     }
+    s.recordTrainingTransaction(previousHistory,beforeTotals,beforePoints);
     if(s.driveCount<Integer.MAX_VALUE)s.driveCount++;
     return true;
   }

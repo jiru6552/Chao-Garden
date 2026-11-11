@@ -32,6 +32,7 @@ public final class ChaoStateTest {
     checks += RetiredCharacterState020Test.run();
     checks += ChaoFamilyPresentation020Test.run();
     checks += GradualEvolutionRulesTest.run();
+    checks += HeroRunMorphology052Test.run();
     checks += OmochaoRulesTest.run();
     checks += LifecycleRules022Test.run();
     checks += ChaoVariantAvailabilityTest.run();

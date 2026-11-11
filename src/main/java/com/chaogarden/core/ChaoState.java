@@ -362,6 +362,12 @@ public final class ChaoState {
   /** Called once after one successfully eaten whole four-bite fruit. */
   public void onFruitEaten(){if(!dead)gradualStrength=GradualEvolutionRules.strength(gradualStrength+(adult?.005:.02),adult);}
   void recordCreativeTraining(int stat){trainingRecency=GradualEvolutionRules.recordIncrease(trainingRecency,stat);}
+  int[] trainingHistorySnapshot(){return trainingRecency.clone();}
+  void recordTrainingTransaction(int[] previous,int[] beforeTotals,int[] beforePoints){
+    boolean[] increased=new boolean[5];
+    for(int stat=0;stat<5;stat++)increased[stat]=HeroRunMorphology052.totalTraining(this,stat)>beforeTotals[stat]||points[stat]>beforePoints[stat];
+    trainingRecency=GradualEvolutionRules.recordIncreases(previous,increased);
+  }
   public int lastTrainedStat(){return trainingRecency[0];}
   public boolean robotLifeInitialized(){return robotLifeInitialized;}
   public void markRobotLifeInitialized(){robotLifeInitialized=true;}
@@ -371,8 +377,11 @@ public final class ChaoState {
   public void markRobotOutputCommitted(){robotOutputCommitted=true;}
   public void setRobotOutputCommitted(boolean committed){robotOutputCommitted=committed;}
   public int prospectivePrimaryType(){return GradualEvolutionRules.firstType(points,trainingRecency);}
-  public int lockedPrimaryType(){normalizeEvolutionState();return adult?firstEvolutionType:prospectivePrimaryType();}
-  public float lockedAlignment(){normalizeEvolutionState();return adult?firstEvolutionAlignment:align;}
+  /** Legacy Normal admission is retained only for the existing rare Chaos route. */
+  public boolean chaosNormalCandidate(){return GradualEvolutionRules.legacyNormalForChaos(points,trainingRecency);}
+  /** Read-only view: rendering must not create a new identity lock or mutate axes. */
+  public int lockedPrimaryType(){return adult?(firstEvolutionLocked?firstEvolutionType:clamp(primaryType,0,4)):prospectivePrimaryType();}
+  public float lockedAlignment(){return adult&&firstEvolutionLocked?firstEvolutionAlignment:Float.isFinite(align)?clamp(align,-1,1):0;}
   public String maturityName(){
     if(dead)return "Passed away";if(!adult)return "Child";
     if(immortal)return characterDisplayName().isEmpty()?"Chaos Chao":"Adult";
@@ -496,12 +505,14 @@ public final class ChaoState {
     }
     if(!adult)advanceEvolutionClock(childDuration);
     if (!adult && (ageTicks >= GradualEvolutionRules.durationTicks(childDuration)||gradualStrength>=1)) {
+      boolean chaosNormal=chaosNormalCandidate();
       primaryType = prospectivePrimaryType();
       if (reincarnations >= 2
           && happiness > 80
           && (animalMask & ALL_ANIMALS) == ALL_ANIMALS
-          && primaryType == NORMAL) {
+          && chaosNormal) {
         immortal = true;
+        primaryType = NORMAL;
         clearParts();
         flameOrb = ghostBody = false;
       }

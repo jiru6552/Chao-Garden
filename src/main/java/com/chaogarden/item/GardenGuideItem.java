@@ -78,17 +78,18 @@ public final class GardenGuideItem extends WrittenBookItem {
                                 + "Dark Garden Fruit to influence alignment. Check GENES / GROWTH as you raise your Chao: "
                                 + "alignment locks at first evolution."),
                         page(
-                            "Evolution\n\nTo aim for a first form, compare ability POINTS in the Analyzer. The highest "
-                                + "wins; the most recently increased tied ability breaks a tie. Stamina gives Normal.\n\nFor "
-                                + "example, make Run points highest for a Run first form. Animals and drives also move "
-                                + "separate shape influences: Swim versus Fly and Run versus Power. Those influences are not "
-                                + "the same as levels or points."),
+                            "Evolution\n\nCompare Swim, Fly, Run and Power POINTS in the Analyzer. The highest wins; "
+                                + "the most recently raised tied ability breaks a tie. Stamina does not compete.\n\nFor a "
+                                + "Hero Run adult, develop Hero alignment before the cocoon and keep Run points highest. "
+                                + "Baby Hero/Run changes are gradual too. The separate Chaos Chao requirements remain in place."),
                         page(
-                            "Adult forms\n\nOnce your Chao becomes an adult, its first form stays fixed. Later training "
-                                + "changes its secondary shape gradually as it matures.\n\nYou can combine one Swim/Fly "
-                                + "direction with one Run/Power direction. Opposites cannot be secondary directions together. "
-                                + "A first Swim form can still develop a Fly secondary. Check GENES / GROWTH to follow the "
-                                + "change."),
+                            "Adult forms\n\nFirst alignment and type lock at the cocoon. A Hero adult remains Hero. "
+                                + "This prototype follows Hero Run toward Hero/Run/Run: Run training advances its target; "
+                                + "Power training or lost Run training can reverse it.\n\nBiological maturity continues "
+                                + "separately and never runs backwards with a stat loss. Other first forms retain their "
+                                + "existing opposing Swim/Fly and Run/Power paths. Check GENES / GROWTH for progress.\n\n"
+                                + "Provisional full Run targets: 20/40 net green-drive units from zero for baby/adult, including "
+                                + "baby training. Fruit helps reach full maturity before the default adult lifespan ends."),
                         page(
                             "Breeding\n\nGive Heart Fruit to two eligible adults and keep them close. After they lay an "
                                 + "egg, wait five minutes before trying again.\n\nChildren and Omochao cannot breed. By "
@@ -119,8 +120,8 @@ public final class GardenGuideItem extends WrittenBookItem {
                                 + "life's animal checklist reset."),
                         page(
                             "Chaos Chao\n\nPrepare before first evolution in the third life or later:\n1. Finish all " + ChaoState.ANIMALS.length + " "
-                                + "animal DNA species in that life.\n2. Keep happiness above 80.\n3. Aim for Normal by making "
-                                + "Stamina points highest.\n\nCheck the Analyzer's DNA checklist for missing species. Neutral "
+                                + "animal DNA species in that life.\n2. Keep happiness above 80.\n3. Meet the separate Chaos balance check: make "
+                                + "Stamina points highest (latest raised wins a tie).\n\nCheck the Analyzer's DNA checklist for missing species. Neutral "
                                 + "becomes Light, Hero becomes Angel, and Dark becomes Devil. Chaos Chao are immortal and "
                                 + "cannot breed under default rules."),
                         page(

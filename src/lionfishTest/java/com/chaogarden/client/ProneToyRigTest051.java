@@ -102,8 +102,10 @@ public final class ProneToyRigTest051 {
     var rig=new OfficialChaoRig(clips,key->assets.computeIfAbsent(key,k->{try{return load(ROOT.resolve(k+".json"));}catch(Exception e){throw new IllegalStateException(e);}}));
     int serial=0;
     for(var path:Files.list(ROOT.resolve("gameplay")).filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")).sorted().toList()){
-      String model=path.getFileName().toString().replace("chao_","").replace(".json","");
-      for(boolean adult:new boolean[]{false,true})for(var profile:PROFILES){
+      String nominal=path.getFileName().toString().replace("chao_","").replace(".json","");
+      boolean prototype=nominal.equals("hero_run_proto052");
+      for(boolean adult:new boolean[]{false,true})for(var profile:PROFILES)for(int stage=0;stage<(prototype?5:1);stage++){
+        String model=prototype?(adult?"hero_run":"baby"):nominal;
         var state=new ChaoState();state.adult=adult;state.setEvolutionStrength(1.2f);
         state.align=model.startsWith("hero")?1:model.startsWith("dark")?-1:0;
         if(model.endsWith("swim"))state.primaryType=ChaoState.SWIM_TYPE;
@@ -112,6 +114,11 @@ public final class ProneToyRigTest051 {
         if(model.endsWith("power"))state.primaryType=ChaoState.POWER_TYPE;
         if(List.of("tails","knuckles","amy","omochao").contains(model))state.character=model;
         state.immortal=model.startsWith("chaos_");
+        if(prototype){
+          float fraction=stage/4f;state.align=adult?1:.5f*fraction;state.primaryType=adult?ChaoState.RUN_TYPE:ChaoState.NORMAL;
+          int bars=Math.round(fraction*(adult?960:480));state.levels[ChaoState.RUN]=bars/100;state.progress[ChaoState.RUN]=bars%100;state.points[ChaoState.RUN]=bars;
+          state.setEvolutionStrength(adult?1.2f:.8f);
+        }
         var id=new java.util.UUID(510051,++serial);
         Function<String,float[]> box=null;BiConsumer<String,PoseStack> anchor=rig::transformBone;
         var previous=new HashMap<String,Vector3f>();
@@ -122,7 +129,7 @@ public final class ProneToyRigTest051 {
               age,0,0,0,0,0,0,false,false);rig.development(state);
           rig.finishGameplayFrame(id,active?1024*profile.transition:0,age);
           if(box==null){
-            var mesh=assets.get("gameplay/chao_"+model);
+            var mesh=rig.sampledMesh();
             var soles=state.immortal?load(path.resolveSibling(path.getFileName().toString().replace(".json","_glass.json"))):mesh;
             var support=bounds(mesh,rig.poses(),soles,soles.createPoses(),-1,adult);
             box=bone->{
@@ -160,6 +167,27 @@ public final class ProneToyRigTest051 {
       }
     }
   }
+  /** Exercise the state-derived canonical surface and its actual Baby-layout
+   * replacement feet; raw JSON's neutral pose is not enough for a morph asset. */
+  private static void heroRunStages(int[] all,int[] contacts)throws Exception {
+    for(boolean adult:new boolean[]{false,true})for(int stage=0;stage<=4;stage++){
+      float fraction=stage/4f;var state=new ChaoState();state.adult=adult;state.align=adult?1:.5f*fraction;state.primaryType=adult?ChaoState.RUN_TYPE:ChaoState.NORMAL;
+      int bars=Math.round(fraction*(adult?960:480));state.levels[ChaoState.RUN]=bars/100;state.progress[ChaoState.RUN]=bars%100;state.points[ChaoState.RUN]=bars;state.setEvolutionStrength(adult?1.2f:.8f);
+      var mesh=load(ROOT.resolve("gameplay/chao_hero_run_proto052.json"));
+      mesh.development(0,0,adult?state.gradualVisualStrength():state.gradualVisualStrength()*.14f);
+      mesh.heroRunDevelopment(com.chaogarden.core.HeroRunMorphology052.sample(state),0,0);
+      mesh.heroRunTwoTone(state.isTwoTone());
+      var poses=mesh.createPoses();var skin=bounds(mesh,poses,mesh,mesh.createPoses(),-1,adult);
+      String label="HeroRun052 age="+adult+" progress="+fraction;
+      for(var profile:PROFILES){cases++;verify(mesh,poses,skin,adult,false,profile,label+" skin",all);}
+      for(int animal=0;animal<ChaoState.ANIMALS.length;animal++){
+        if((ChaoState.animalSlots(animal)&(1<<ChaoState.FEET))==0)continue;
+        var feet=load(ROOT.resolve((animal<21?"overlays/":"cwe_parts/")+"chao_baby.json"));
+        var fitted=bounds(mesh,poses,feet,feet.createPoses(),animal,adult);
+        for(var profile:PROFILES){footCases++;verify(mesh,poses,fitted,adult,false,profile,label+" replacement="+animal,contacts);}
+      }
+    }
+  }
   public static void main(String[] args)throws Exception{
     int[] all=new int[641];for(int i=0;i<all.length;i++)all[i]=i;
     int[] contacts={1,4,12,24,40,48,96,160,320,560,600,624,636,639};
@@ -179,6 +207,7 @@ public final class ProneToyRigTest051 {
         }
       }
     }
+    heroRunStages(all,contacts);
     actualTransitions();
     StringBuilder out=new StringBuilder("Prone support: "+checks+" checks; "+cases+" source form/age/morph/head cases; "+frames+" quarter/contact frames; "+footCases+" actual replacement-foot cases; maxQuarterJointPixels="+maxStep+" minHeadFloor="+minHeadFloor+" minHeadBody="+minSeparation+" maxBellyY="+maxBodyY+" maxFootY="+maxFootY+" actualExitFrames="+exitFrames+" maxExitJointPixels="+maxExitStep+" maxExitRootLiftPixels="+maxExitLift+" failures="+failures+"\n");
     for(String kind:List.of("car","crayons"))out.append(kind).append(" model XZ[minX,minZ,maxX,maxZ]=").append(Arrays.toString(FOOTPRINTS.get(kind))).append(" world XZ=").append(Arrays.toString(WORLD_FOOTPRINTS.get(kind))).append('\n');

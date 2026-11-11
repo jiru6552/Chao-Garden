@@ -108,7 +108,7 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
     rig.geometry.clearUvOverrides();
     for (var anchor : model.officialPoses().entrySet()) {
       var target = rig.poses.get(anchor.getKey());
-      if (target != null) copy(anchor.getValue(), target);
+      if (target != null) model.copyAccessoryPoseTo(anchor.getKey(),rig.geometry,target);
       // Legacy overlays use the logical right-foot name on donors whose
       // supplied joint is named feet_bone_right. Keep those attachments moving.
       if(anchor.getKey().equals("feet_bone_right")) {
@@ -155,8 +155,9 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
         pose.ry += age * .012f;
       }
     }
-    var texture = ChaoPaletteMaterial.texture(ResourceLocation.fromNamespaceAndPath("chao_garden",
-        "textures/entity/chao/"+ChaoRenderer.textureKey(state)+".png"),state,"overlay");
+    var raw=HeroRunAppearance052.sample(state).enabled()?HeroRunCoatMaterial052.textureOverlay(state)
+        :ResourceLocation.fromNamespaceAndPath("chao_garden","textures/entity/chao/"+ChaoRenderer.textureKey(state)+".png");
+    var texture = ChaoPaletteMaterial.texture(raw,state,"overlay");
     rig.geometry.render(stack, buffers.getBuffer(RenderType.entityCutoutNoCull(texture)),
         light, OverlayTexture.NO_OVERLAY, -1, rig.poses);
     if (ChaoShine.visible(state))
@@ -169,7 +170,7 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
       });
       parts.poses.values().forEach(ChaoMeshAsset.Pose::reset);
       for(var anchor:model.officialPoses().entrySet()) {
-        var pose=parts.poses.get(anchor.getKey());if(pose!=null)copy(anchor.getValue(),pose);
+        var pose=parts.poses.get(anchor.getKey());if(pose!=null)model.copyAccessoryPoseTo(anchor.getKey(),parts.geometry,pose);
       }
       for(var entry:parts.animals.entrySet()) {
         int slot=entry.getValue().slot,animal=entry.getValue().id;

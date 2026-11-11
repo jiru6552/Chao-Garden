@@ -1,0 +1,39 @@
+{
+  "version": "0.25.52",
+  "model": "models/entity/gameplay/chao_hero_run_proto052.json",
+  "sha256": "434b3af9bb47e26796e52d18b56cedce80e7e0048fb7067937d67f5e5bf1d8c6",
+  "protected_source_sha256": {
+    "models/entity/gameplay/chao_baby.json": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+    "models/entity/gameplay/chao_hero.json": "0ac4166dd46a3337192a0db21ee6045751f2d6dbdcbcac7381af0248ad6e2c3e",
+    "models/entity/gameplay/chao_run.json": "f11a948abff032968b17f304bda5d1886dc02ad220768cd3387183f15383c35c",
+    "models/entity/gameplay/chao_hero_run.json": "504e5682224135c858a5f013a6414b6660ff3bd70df974def3d83a3275719a5a"
+  },
+  "endpoint_order": [
+    "hero_baby",
+    "run_baby",
+    "hero_run",
+    "mature",
+    "run_run"
+  ],
+  "source_ratios": {
+    "body_normal": [
+      1.0659987815609557,
+      1.046015297310634,
+      0.9805012296521841
+    ],
+    "body_run": [
+      1,
+      0.9444855662472242,
+      0.9473006206815786
+    ],
+    "foot_run": [
+      1.397,
+      1.178
+    ],
+    "hand_run": 1.1329,
+    "head_run_depth": 1.3020915077280018,
+    "neck_normal": 0.2,
+    "neck_run": 0.28764
+  },
+  "source_mesh_imported": false
+}

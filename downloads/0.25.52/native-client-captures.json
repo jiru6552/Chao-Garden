@@ -1,0 +1,2910 @@
+{
+  "frames": 708,
+  "scene_count": 27,
+  "archives": [
+    {
+      "group": "adult-stages",
+      "file": "native-client-adult-stages-01.zip",
+      "frames": 45,
+      "sha256": "0f24fa36cb8de4315b3b4c9f2266f9c669cfd827a5d60af623be0a899ad14272"
+    },
+    {
+      "group": "baby-stages",
+      "file": "native-client-baby-stages-01.zip",
+      "frames": 45,
+      "sha256": "ff3129d0606135d595680f672429e7bbf294b54488f72b4461dc9071bd3baa06"
+    },
+    {
+      "group": "equipped",
+      "file": "native-client-equipped-01.zip",
+      "frames": 99,
+      "sha256": "f22447d624be9894bafa68b1fb68adeec4eeadd48e6aa17598cc31697b0dab41"
+    },
+    {
+      "group": "first-evolution",
+      "file": "native-client-first-evolution-01.zip",
+      "frames": 72,
+      "sha256": "81bad72abacc27217d6bf237c4a210394fade9c119b6db046414d375c4f09f26"
+    },
+    {
+      "group": "hats-parts",
+      "file": "native-client-hats-parts-01.zip",
+      "frames": 27,
+      "sha256": "9f6a9af327bf0a41a101211c2d6acef19b45971b8c4a6cb94ed470a669cbfb60"
+    },
+    {
+      "group": "inherited-coats",
+      "file": "native-client-inherited-coats-01.zip",
+      "frames": 18,
+      "sha256": "34a9e429005faea5c573e1fd7e9b910eaa342d395a00c9d988e86be2adac387a"
+    },
+    {
+      "group": "locked-alignment",
+      "file": "native-client-locked-alignment-01.zip",
+      "frames": 56,
+      "sha256": "268d42693930508c274836383487a7bcc9a048b336afa8a653f69d34ce71a0c2"
+    },
+    {
+      "group": "maturity",
+      "file": "native-client-maturity-01.zip",
+      "frames": 59,
+      "sha256": "1089d4992bcb7a4088eaa895a4bdab387ffb3cc10e06b2667f489a8df39e922d"
+    },
+    {
+      "group": "toys",
+      "file": "native-client-toys-01.zip",
+      "frames": 83,
+      "sha256": "096390749c704c5feef4841f1cc6d7d371fc58f3455e7a42565f5bf55cf2982b"
+    },
+    {
+      "group": "training",
+      "file": "native-client-training-01.zip",
+      "frames": 135,
+      "sha256": "565aba951c815115c3ea3cf2e69083f919f7440ad9a339cfb4c9d1ac44a254df"
+    },
+    {
+      "group": "training-decrease",
+      "file": "native-client-training-decrease-01.zip",
+      "frames": 69,
+      "sha256": "3498b670d15502f53a4a8132be1a068b5b15db5bc850f893eb7868ca9570636f"
+    }
+  ],
+  "stage_galleries": [
+    "gallery-baby-stages.png",
+    "gallery-adult-stages.png"
+  ],
+  "files": [
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-front-t000-f0016.png",
+      "sha256": "1c8693d0c6da96692e91eccd4d0b46105b357cb3778fb2c5dfaa3675a4784f2d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-front-t000-f0020.png",
+      "sha256": "c3a3db3fd12b8e6ed47ca87d56de93667ed490b921faa5d54cf28fe9af35916b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-front-t000-f0024.png",
+      "sha256": "c3a3db3fd12b8e6ed47ca87d56de93667ed490b921faa5d54cf28fe9af35916b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-rear-t000-f0070.png",
+      "sha256": "ab21cae1e3eb61562a5c20035ac42219ad224970031d02762904d681143c1de4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-rear-t000-f0074.png",
+      "sha256": "ab21cae1e3eb61562a5c20035ac42219ad224970031d02762904d681143c1de4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-rear-t000-f0078.png",
+      "sha256": "ab21cae1e3eb61562a5c20035ac42219ad224970031d02762904d681143c1de4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-side-t000-f0043.png",
+      "sha256": "82ea81f7960490803ec3104963d6283a2bd8fc6739e499de56a525c0b0bf4d2b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-side-t000-f0047.png",
+      "sha256": "82ea81f7960490803ec3104963d6283a2bd8fc6739e499de56a525c0b0bf4d2b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-00-baby_p000-side-t000-f0051.png",
+      "sha256": "82ea81f7960490803ec3104963d6283a2bd8fc6739e499de56a525c0b0bf4d2b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-front-t000-f0016.png",
+      "sha256": "6edfd737282b59e47855d2ac5131c028a85f360d8400d751e941aa3936824a46"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-front-t000-f0020.png",
+      "sha256": "ee5a1b735a025696e65eae2366a7adf809d1077df56cd2ae1d31d5fcdbaecb72"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-front-t000-f0024.png",
+      "sha256": "7e9d11b2bc53185eda7086e756755f2fc623aa3ed8f22dd6333636229e927343"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-rear-t000-f0070.png",
+      "sha256": "7b5932e6b85c6d707dc4386144ef9bf904041bfb07196b556ec34068c482de9f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-rear-t000-f0074.png",
+      "sha256": "7b5932e6b85c6d707dc4386144ef9bf904041bfb07196b556ec34068c482de9f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-rear-t000-f0078.png",
+      "sha256": "7b5932e6b85c6d707dc4386144ef9bf904041bfb07196b556ec34068c482de9f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-side-t000-f0043.png",
+      "sha256": "dd2d5ecfa26d5be6fc4d2b198573a43acffd773c65c8f50a9fa161f7144bea0b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-side-t000-f0047.png",
+      "sha256": "dd2d5ecfa26d5be6fc4d2b198573a43acffd773c65c8f50a9fa161f7144bea0b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-01-baby_p025-side-t000-f0051.png",
+      "sha256": "dd2d5ecfa26d5be6fc4d2b198573a43acffd773c65c8f50a9fa161f7144bea0b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-front-t000-f0016.png",
+      "sha256": "d77cf75ffe30a558101fc5b5361fd1d01208a7758dd4ffeacaeda635eae23c57"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-front-t000-f0020.png",
+      "sha256": "d77cf75ffe30a558101fc5b5361fd1d01208a7758dd4ffeacaeda635eae23c57"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-front-t000-f0024.png",
+      "sha256": "d77cf75ffe30a558101fc5b5361fd1d01208a7758dd4ffeacaeda635eae23c57"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-rear-t000-f0070.png",
+      "sha256": "438dbac0df097e6c04742674e907a682aeb1787d900c626fc4c690c1b6e0ba2e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-rear-t000-f0074.png",
+      "sha256": "438dbac0df097e6c04742674e907a682aeb1787d900c626fc4c690c1b6e0ba2e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-rear-t000-f0078.png",
+      "sha256": "438dbac0df097e6c04742674e907a682aeb1787d900c626fc4c690c1b6e0ba2e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-side-t000-f0043.png",
+      "sha256": "bbbe320b9be6a35d710b77f09151330685edd30129c850f5f1ae66d8bac67dce"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-side-t000-f0047.png",
+      "sha256": "bbbe320b9be6a35d710b77f09151330685edd30129c850f5f1ae66d8bac67dce"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-02-baby_p050-side-t000-f0051.png",
+      "sha256": "bbbe320b9be6a35d710b77f09151330685edd30129c850f5f1ae66d8bac67dce"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-front-t000-f0016.png",
+      "sha256": "16c282defc749a5befd0c99f2e44750d0b936d3954b9793d382c89056ecadd65"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-front-t000-f0020.png",
+      "sha256": "16c282defc749a5befd0c99f2e44750d0b936d3954b9793d382c89056ecadd65"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-front-t000-f0024.png",
+      "sha256": "16c282defc749a5befd0c99f2e44750d0b936d3954b9793d382c89056ecadd65"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-rear-t000-f0070.png",
+      "sha256": "87ffaac00ced75f426f47e5b3a616e41dc9f594f84e80e904de967662c49cffe"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-rear-t000-f0074.png",
+      "sha256": "87ffaac00ced75f426f47e5b3a616e41dc9f594f84e80e904de967662c49cffe"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-rear-t000-f0078.png",
+      "sha256": "87ffaac00ced75f426f47e5b3a616e41dc9f594f84e80e904de967662c49cffe"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-side-t000-f0043.png",
+      "sha256": "1a83b57b169d47ba21e190f1c4a6c6a5e7d2b95ec64484157f84e781711e693c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-side-t000-f0047.png",
+      "sha256": "1a83b57b169d47ba21e190f1c4a6c6a5e7d2b95ec64484157f84e781711e693c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-03-baby_p075-side-t000-f0051.png",
+      "sha256": "1a83b57b169d47ba21e190f1c4a6c6a5e7d2b95ec64484157f84e781711e693c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-front-t000-f0016.png",
+      "sha256": "855463ae09c8511d9f314b4444984d069a23f847fc8f2228899313542fd89705"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-front-t000-f0020.png",
+      "sha256": "855463ae09c8511d9f314b4444984d069a23f847fc8f2228899313542fd89705"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-front-t000-f0024.png",
+      "sha256": "855463ae09c8511d9f314b4444984d069a23f847fc8f2228899313542fd89705"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-rear-t000-f0070.png",
+      "sha256": "43dfb37282450b0af02dfac2f2bb2dbe7311f507f73e28b68c5c2e7b5254ffa4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-rear-t000-f0074.png",
+      "sha256": "43dfb37282450b0af02dfac2f2bb2dbe7311f507f73e28b68c5c2e7b5254ffa4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-rear-t000-f0078.png",
+      "sha256": "43dfb37282450b0af02dfac2f2bb2dbe7311f507f73e28b68c5c2e7b5254ffa4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-side-t000-f0043.png",
+      "sha256": "fe368e6adb57e071b132c606bf354d16814f72992c4c856444035a43ef1ec68f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-side-t000-f0047.png",
+      "sha256": "fe368e6adb57e071b132c606bf354d16814f72992c4c856444035a43ef1ec68f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-04-baby_p100-side-t000-f0051.png",
+      "sha256": "fe368e6adb57e071b132c606bf354d16814f72992c4c856444035a43ef1ec68f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-front-t000-f0016.png",
+      "sha256": "cd13343af0c4e1ada9aa2d98744f74c81efabe5e25af7b9e20e1a2d82e41dba0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-front-t000-f0020.png",
+      "sha256": "cd13343af0c4e1ada9aa2d98744f74c81efabe5e25af7b9e20e1a2d82e41dba0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-front-t000-f0024.png",
+      "sha256": "cd13343af0c4e1ada9aa2d98744f74c81efabe5e25af7b9e20e1a2d82e41dba0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-rear-t000-f0070.png",
+      "sha256": "450604e347ffe7e3e4bdaf6e57c9d0d512cb68148e596e32104e7a074970ba10"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-rear-t000-f0074.png",
+      "sha256": "450604e347ffe7e3e4bdaf6e57c9d0d512cb68148e596e32104e7a074970ba10"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-rear-t000-f0078.png",
+      "sha256": "450604e347ffe7e3e4bdaf6e57c9d0d512cb68148e596e32104e7a074970ba10"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-side-t000-f0043.png",
+      "sha256": "eba8f4251aea60550d417a296efc7d83307d222ec3892d4a4245b3338583934e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-side-t000-f0047.png",
+      "sha256": "eba8f4251aea60550d417a296efc7d83307d222ec3892d4a4245b3338583934e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-05-adult_p000-side-t000-f0051.png",
+      "sha256": "eba8f4251aea60550d417a296efc7d83307d222ec3892d4a4245b3338583934e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-front-t000-f0016.png",
+      "sha256": "02aa95ffb4f6763af6968325d1b84cd5a69842f980decf30800deda8c8aafbd8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-front-t000-f0020.png",
+      "sha256": "02aa95ffb4f6763af6968325d1b84cd5a69842f980decf30800deda8c8aafbd8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-front-t000-f0024.png",
+      "sha256": "02aa95ffb4f6763af6968325d1b84cd5a69842f980decf30800deda8c8aafbd8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-rear-t000-f0070.png",
+      "sha256": "ea0435393c748b7781f140c33ce8597cbfb65bcefef1c326bc16de93ead3629d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-rear-t000-f0074.png",
+      "sha256": "ea0435393c748b7781f140c33ce8597cbfb65bcefef1c326bc16de93ead3629d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-rear-t000-f0078.png",
+      "sha256": "ea0435393c748b7781f140c33ce8597cbfb65bcefef1c326bc16de93ead3629d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-side-t000-f0043.png",
+      "sha256": "b8d90d14e5a65114ad8a8ffd887279a8a22c079a7a12805cdab3692210c3c3ee"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-side-t000-f0047.png",
+      "sha256": "b8d90d14e5a65114ad8a8ffd887279a8a22c079a7a12805cdab3692210c3c3ee"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-06-adult_p025-side-t000-f0051.png",
+      "sha256": "b8d90d14e5a65114ad8a8ffd887279a8a22c079a7a12805cdab3692210c3c3ee"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-front-t000-f0016.png",
+      "sha256": "b6792e7287d51392a1ae35b8fd928589d7a94a432f6f551d54f5e61673c2466a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-front-t000-f0020.png",
+      "sha256": "b6792e7287d51392a1ae35b8fd928589d7a94a432f6f551d54f5e61673c2466a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-front-t000-f0024.png",
+      "sha256": "b6792e7287d51392a1ae35b8fd928589d7a94a432f6f551d54f5e61673c2466a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-rear-t000-f0070.png",
+      "sha256": "af4f3d70b1558f44972d30c48eebb4c3129b1ae6701d8bc7c56c1a8afdd7e6e3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-rear-t000-f0074.png",
+      "sha256": "af4f3d70b1558f44972d30c48eebb4c3129b1ae6701d8bc7c56c1a8afdd7e6e3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-rear-t000-f0078.png",
+      "sha256": "af4f3d70b1558f44972d30c48eebb4c3129b1ae6701d8bc7c56c1a8afdd7e6e3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-side-t000-f0043.png",
+      "sha256": "79b96830507b7226cefc4f4c6a802dd3a1e60323daf360bf3b2c0e3fb56a70f1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-side-t000-f0047.png",
+      "sha256": "79b96830507b7226cefc4f4c6a802dd3a1e60323daf360bf3b2c0e3fb56a70f1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-07-adult_p050-side-t000-f0051.png",
+      "sha256": "79b96830507b7226cefc4f4c6a802dd3a1e60323daf360bf3b2c0e3fb56a70f1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-front-t000-f0016.png",
+      "sha256": "b9db275d0a1430bd231164e502cb4b70d9e0e3595c48cde8b2afbfbeae09b703"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-front-t000-f0020.png",
+      "sha256": "b9db275d0a1430bd231164e502cb4b70d9e0e3595c48cde8b2afbfbeae09b703"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-front-t000-f0024.png",
+      "sha256": "b9db275d0a1430bd231164e502cb4b70d9e0e3595c48cde8b2afbfbeae09b703"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-rear-t000-f0070.png",
+      "sha256": "e8b346cd3507b551cce9270a300a75f5c722b4c7aa4897bb8552ae31059c2302"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-rear-t000-f0074.png",
+      "sha256": "e8b346cd3507b551cce9270a300a75f5c722b4c7aa4897bb8552ae31059c2302"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-rear-t000-f0078.png",
+      "sha256": "e8b346cd3507b551cce9270a300a75f5c722b4c7aa4897bb8552ae31059c2302"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-side-t000-f0043.png",
+      "sha256": "9d4c23b7bb2bee9d826fead8aa32761c7b23cf14ab5b8e5a9d7871a412a3b403"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-side-t000-f0047.png",
+      "sha256": "9d4c23b7bb2bee9d826fead8aa32761c7b23cf14ab5b8e5a9d7871a412a3b403"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-08-adult_p075-side-t000-f0051.png",
+      "sha256": "9d4c23b7bb2bee9d826fead8aa32761c7b23cf14ab5b8e5a9d7871a412a3b403"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-front-t000-f0016.png",
+      "sha256": "33ef8505ddca011d7dcbd93b757a78c633a9ae211c81ca97d902012fb30d2d34"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-front-t000-f0020.png",
+      "sha256": "33ef8505ddca011d7dcbd93b757a78c633a9ae211c81ca97d902012fb30d2d34"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-front-t000-f0024.png",
+      "sha256": "33ef8505ddca011d7dcbd93b757a78c633a9ae211c81ca97d902012fb30d2d34"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-rear-t000-f0070.png",
+      "sha256": "b930baa7c94959ac2133764e4fc337e7e2f9a38d9a164d012bd4a2b6759506f1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-rear-t000-f0074.png",
+      "sha256": "b930baa7c94959ac2133764e4fc337e7e2f9a38d9a164d012bd4a2b6759506f1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-rear-t000-f0078.png",
+      "sha256": "b930baa7c94959ac2133764e4fc337e7e2f9a38d9a164d012bd4a2b6759506f1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-side-t000-f0043.png",
+      "sha256": "8b272a0580816baa5d2724f9e49ef00118bff552f98b513035c73b3a41e08891"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-side-t000-f0047.png",
+      "sha256": "8b272a0580816baa5d2724f9e49ef00118bff552f98b513035c73b3a41e08891"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-09-adult_p100-side-t000-f0051.png",
+      "sha256": "8b272a0580816baa5d2724f9e49ef00118bff552f98b513035c73b3a41e08891"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-front-t000-f0016.png",
+      "sha256": "a2bdaa2089a74a279497202701fc07bdb477cadd840ac764ced2eac5d7aacd36"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-front-t000-f0020.png",
+      "sha256": "a2bdaa2089a74a279497202701fc07bdb477cadd840ac764ced2eac5d7aacd36"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-front-t000-f0024.png",
+      "sha256": "a2bdaa2089a74a279497202701fc07bdb477cadd840ac764ced2eac5d7aacd36"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-rear-t000-f0070.png",
+      "sha256": "e5778eb7a75d2682bb41cbd81b94137e7670cd92c33c85e6bcf7fde9fa6ea15d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-rear-t000-f0074.png",
+      "sha256": "e5778eb7a75d2682bb41cbd81b94137e7670cd92c33c85e6bcf7fde9fa6ea15d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-rear-t000-f0078.png",
+      "sha256": "e5778eb7a75d2682bb41cbd81b94137e7670cd92c33c85e6bcf7fde9fa6ea15d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-side-t000-f0043.png",
+      "sha256": "3644068e53bd15c71b6a3186251ac230c2676893740d3e2557f85e361d57c56d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-side-t000-f0047.png",
+      "sha256": "3644068e53bd15c71b6a3186251ac230c2676893740d3e2557f85e361d57c56d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-10-first_evolved_adult-side-t000-f0051.png",
+      "sha256": "3644068e53bd15c71b6a3186251ac230c2676893740d3e2557f85e361d57c56d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-front-t000-f0016.png",
+      "sha256": "2ed6f9469915175c051a3b7f7dd908f916a3882bd31c23bfec9c7378127f7ec3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-front-t000-f0020.png",
+      "sha256": "2ed6f9469915175c051a3b7f7dd908f916a3882bd31c23bfec9c7378127f7ec3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-front-t000-f0024.png",
+      "sha256": "2ed6f9469915175c051a3b7f7dd908f916a3882bd31c23bfec9c7378127f7ec3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-rear-t000-f0070.png",
+      "sha256": "73885da3374a85632fe9bb1f290072aaf7b2d7d0a357d295038fbfe04836d188"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-rear-t000-f0074.png",
+      "sha256": "73885da3374a85632fe9bb1f290072aaf7b2d7d0a357d295038fbfe04836d188"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-rear-t000-f0078.png",
+      "sha256": "73885da3374a85632fe9bb1f290072aaf7b2d7d0a357d295038fbfe04836d188"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-side-t000-f0043.png",
+      "sha256": "298c8c0bd6fdd22ba6e95d3876109412598e0a4ee316e1f335ba649a00372c84"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-side-t000-f0047.png",
+      "sha256": "298c8c0bd6fdd22ba6e95d3876109412598e0a4ee316e1f335ba649a00372c84"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-11-baby_p075_rabbit_skull-side-t000-f0051.png",
+      "sha256": "298c8c0bd6fdd22ba6e95d3876109412598e0a4ee316e1f335ba649a00372c84"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-front-t000-f0016.png",
+      "sha256": "647b996699b026c61b0b9e6c5127fd9ebf24ba3fe4fec214a4428003febe0db4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-front-t000-f0020.png",
+      "sha256": "647b996699b026c61b0b9e6c5127fd9ebf24ba3fe4fec214a4428003febe0db4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-front-t000-f0024.png",
+      "sha256": "647b996699b026c61b0b9e6c5127fd9ebf24ba3fe4fec214a4428003febe0db4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-rear-t000-f0070.png",
+      "sha256": "72965d70a108906412fd6140a052383aba2dfebf75bdf7ac27146c3936225e5c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-rear-t000-f0074.png",
+      "sha256": "72965d70a108906412fd6140a052383aba2dfebf75bdf7ac27146c3936225e5c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-rear-t000-f0078.png",
+      "sha256": "72965d70a108906412fd6140a052383aba2dfebf75bdf7ac27146c3936225e5c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-side-t000-f0043.png",
+      "sha256": "419877759d6ab3f9c40962f2f527c7ffa4efa7b8b2a12e050fab63644a140226"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-side-t000-f0047.png",
+      "sha256": "419877759d6ab3f9c40962f2f527c7ffa4efa7b8b2a12e050fab63644a140226"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-12-adult_p050_rabbit_pumpkin-side-t000-f0051.png",
+      "sha256": "419877759d6ab3f9c40962f2f527c7ffa4efa7b8b2a12e050fab63644a140226"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-front-t000-f0016.png",
+      "sha256": "eda4ffb7dcbb18974de78e66f38d8128d71228284adc01dbe7336dbf9a533fad"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-front-t000-f0020.png",
+      "sha256": "eda4ffb7dcbb18974de78e66f38d8128d71228284adc01dbe7336dbf9a533fad"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-front-t000-f0024.png",
+      "sha256": "eda4ffb7dcbb18974de78e66f38d8128d71228284adc01dbe7336dbf9a533fad"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-rear-t000-f0070.png",
+      "sha256": "2c51d4da38f942692c236541b04c75b85e5762c9f05bb20550c9583736b2f9e2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-rear-t000-f0074.png",
+      "sha256": "2c51d4da38f942692c236541b04c75b85e5762c9f05bb20550c9583736b2f9e2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-rear-t000-f0078.png",
+      "sha256": "2c51d4da38f942692c236541b04c75b85e5762c9f05bb20550c9583736b2f9e2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-side-t000-f0043.png",
+      "sha256": "6b148c7e77278565042ee2d981c0f92b8823a2e180f60e515d8d786ac6425bb3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-side-t000-f0047.png",
+      "sha256": "6b148c7e77278565042ee2d981c0f92b8823a2e180f60e515d8d786ac6425bb3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-13-adult_p100_melon-side-t000-f0051.png",
+      "sha256": "6b148c7e77278565042ee2d981c0f92b8823a2e180f60e515d8d786ac6425bb3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t008-f0023.png",
+      "sha256": "5329f1725c416ad4eb1f8e2f9c90c470e08a40573151975720b878a3bdaa99d2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t012-f0029.png",
+      "sha256": "affbf4020d98165aebe5bf663aabbb2ceacab00ef251ad636b6e7af2cc55d023"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t016-f0034.png",
+      "sha256": "50af79016191a48c406b9629eae1d14f3343f11693eaa9f1f8231a63326c9b27"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t020-f0040.png",
+      "sha256": "091fa845af030b71c3bc4714ea8cdbb2e01e1e384369348b502cc8dd3186c64d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t024-f0046.png",
+      "sha256": "4732e74ea343a8515fa148c3c0d166f91a05c7445522bfccf3236f6b98b5fd1d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t028-f0052.png",
+      "sha256": "6212d6b87cc8adbb9e434456b28c5a0059e084538a0df5d6bb88b020b45157d5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t032-f0058.png",
+      "sha256": "6de6d93d7e6752b206a26f28a0d0ee7f09c55065d5118c9eae9841d3f08d21b7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t036-f0064.png",
+      "sha256": "6f4f458f2de922976fa7884b0442ff306a919e17eb8c88312b97bf57278ff017"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t040-f0070.png",
+      "sha256": "28b09d96d922cf9b0d2dc874134de7c5a8dd8a3e0f3a0f19076f4193f0da290a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t044-f0076.png",
+      "sha256": "b63b2b7973700e2b078c675283f52edad716b9041a00bbe5cc58cbc09c817992"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t048-f0082.png",
+      "sha256": "d37397101c34306c46e8ec9f18e2f6b5d9e0ba6aff07b8010b5b72e44d333508"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t052-f0088.png",
+      "sha256": "9e4da56feb0d6545f54c66d859bce01c0b692e44d3353da104ac3ca9eaa9a974"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t056-f0094.png",
+      "sha256": "003758b83d51b95901eb95ae98021bd9768561195fc64da519cb862d7aa8ac9f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t060-f0100.png",
+      "sha256": "20b1da25e10f6e29394619875e5b7263c3db573e61a4e663386154690439eaca"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t064-f0106.png",
+      "sha256": "3bf4bd0580d6722b765c85796bc6e04bd2427294e8a86c8ff5db5e1701fdb35a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t068-f0112.png",
+      "sha256": "095ba60761a7248feb15a3381d6e92d02d4a48c7e0d422292a9261c46c39be9a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t072-f0118.png",
+      "sha256": "11cde3b89f54a8b64dbd75a3db73dcb1fd8249bdb78dafa991d03bf463f3e045"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t076-f0124.png",
+      "sha256": "4639a25d25890a39be3e2d80316f507964a311fe262962ae620ade241ad74b48"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t080-f0130.png",
+      "sha256": "506536514b3d0d05170f85ba24729540ac8a6c3ea3dfabb96cfa0aa168492547"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t084-f0135.png",
+      "sha256": "049bc46082008a7bb8d3188c4a7386cbe954ebe8861b8604a75d0356978c5cde"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t088-f0141.png",
+      "sha256": "4f618a039c9bdafb798ff70865b6cf4c53390df2c97ab50627f5f1274deb42cd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-front-t092-f0147.png",
+      "sha256": "804db85075f57bc01696f5da4dce8d0ba1339d5cb68170eeeac0aa8ed48d41bc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t192-f0296.png",
+      "sha256": "b52cc3004f5b70979de72b923db5e7190407c5e421a87890d2aa6275b6997bc8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t196-f0302.png",
+      "sha256": "9f9ea3fdc0a9708cace62ad0681d9aa9d246cce312f3032373757e9be5fd82b3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t200-f0308.png",
+      "sha256": "ad0dc881c20fae87bb9e19270295202f00b7079449c31dddc47f289d7631513f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t204-f0314.png",
+      "sha256": "e5d64809c5abb7098ba8fb21b9fa0eb184c035b62631fa2718ede05f26ff1e8f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t208-f0320.png",
+      "sha256": "1056a95a4d7b69c7516971ae1a8769a50dd7c78e2cffb5fcb4ccc931beb84758"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t212-f0326.png",
+      "sha256": "9cddda60cb0a99adeef496131440b48c8310b97504450867eedaec1f2c2c8b03"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t216-f0332.png",
+      "sha256": "4b6fc4cf5bb773a203fde459cfcbef70b4f168a28b53fbef772eeb40ca172aa3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t220-f0338.png",
+      "sha256": "343a0ccc53c1b12164bc7a338bb440bfae118d3cb2bdab9831ebbfb18c08338a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t224-f0344.png",
+      "sha256": "581b8cf54a3a4c659f1261e90c4b0098f9272ec9e6950fd90033d773a4307769"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t228-f0350.png",
+      "sha256": "4d3ccc488409574513feec50415b0de389d7c019c26845a34055ffbbff004a56"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t232-f0356.png",
+      "sha256": "373f1e49b357be4c24e793d621ca2a8e8f585519989fc931ba18996c6d81f4c1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t236-f0362.png",
+      "sha256": "24875483377adba91a9b30c8bd01cda331cd49e61c42a417c1b612adca8b7a00"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t240-f0368.png",
+      "sha256": "ea5546d3c36b7910616b6d85dbc0873e963d92d72da9cbfa608463d80d517df6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t244-f0373.png",
+      "sha256": "692efbfe6426e8a53affec2398154940a3cba7b2c8933d9697c65d875ea2b391"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t248-f0379.png",
+      "sha256": "c4815f09c119e2b93a44d7630098d5b3397dca622caf4ca249c61a797fde334d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t252-f0385.png",
+      "sha256": "abd63e7be6dc2ddc3c396092968a4d5d4f219193599a9f30efded409f06e6cbb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t256-f0391.png",
+      "sha256": "f8e66ce19a75b7edcdb71f2124e4f99bcd75197749447eff4f21dc6a1beff8b0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t260-f0397.png",
+      "sha256": "f9593253c6914ff181965982df3810043eaf1ac99c759bc708818a88c986d8b4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t264-f0403.png",
+      "sha256": "89400de812fe76f804208151f2fa5d2f69275bcb85308eddb7519adab2de0d90"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t268-f0409.png",
+      "sha256": "d5cdf0bd3bbaa08d73c810053777e2a3db84f46a6d906352c682170cb4ce2530"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t272-f0415.png",
+      "sha256": "47934a563224911242e1d310573f853d7cb29052d0ece2f60dce3c699af4bad4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t276-f0421.png",
+      "sha256": "c25254a0a3eb13ab500094e0b76464fe98c5bc93aee3fdd0f65606f019ec21c2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-rear-t280-f0427.png",
+      "sha256": "50254131f95ad74d5af6d87882a2198100714a1d4200f818ccb99a52641bd145"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t096-f0154.png",
+      "sha256": "eb9fa16e2791f09bffdf1307deb9c52fe3b75a17535f57cd2a461bf8e06f91ef"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t100-f0159.png",
+      "sha256": "dd9410527c0ddad08497342bf0d28e98a3b3322df15ad68085c9aef055a69fbc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t104-f0165.png",
+      "sha256": "04f32a2b0292509e8e4b540736ee6dbff2109a3773224cdfaac52b350fedb62c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t108-f0171.png",
+      "sha256": "0e0e07483711a44cc35ebbaf5fe6ab1dd3243847124b08269e16d2c5309f681e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t112-f0177.png",
+      "sha256": "e60fc463bbb11b6bbd7988413022c139d1d539518be1d63b9bba15404c8a4867"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t116-f0183.png",
+      "sha256": "1eefa91dbdc2e4228ac963db3dd38ae536bca39eb5400db2856344c0745cceab"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t120-f0189.png",
+      "sha256": "6ac20366641c82a89c47a43070e80f2521e4e5ac3369d8b6e30566c5e3fccb3e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t124-f0195.png",
+      "sha256": "b53533940bf57ad4ee95049f0dff62410655313c60286a60128e33480e2b9e02"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t128-f0201.png",
+      "sha256": "27c98a49095e8085201a916d0b537dedb291a44a36024db92224b032f8f2d019"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t132-f0207.png",
+      "sha256": "eeac6c87f54d0fcff0112dc8853edbcea2a4c79c34796a4d4250f662c82089e0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t140-f0219.png",
+      "sha256": "eef0319772636a7fcf90aece315112b41af50de9fe593d1685dd3c993ceeb06a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t144-f0225.png",
+      "sha256": "7be2b71d920c291d098b7ff22836a0d4cf7c364175dfee0bdec49a18d3d07232"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t148-f0230.png",
+      "sha256": "869170cb4909146b40e735b7825a5cbc4fef8edba381fa7dc39f1d3130aa9e58"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t152-f0236.png",
+      "sha256": "558a7e273d5f4389a16eb773a9d22a96d9ae233f5b103541c40fb4f65294360e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t156-f0242.png",
+      "sha256": "e7d111a3a7f3eadc3c3c3acaf205163c2c4afda9f803f5d3d94e58ab15951d96"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t160-f0248.png",
+      "sha256": "3bc614f32afc750cea99a2bfb3cca26f6f55fb4d19f04df4b14086515d38f4f4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t164-f0254.png",
+      "sha256": "2f36d1ca062266d489164d9f7d9744ce6f3602f08f6bb7fd979f3affab24277f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t168-f0260.png",
+      "sha256": "c86ea836e9a202cc67b6955cc5435abbe27907795747c8285ce5587112cfb0f0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t172-f0266.png",
+      "sha256": "63c4a96cf69f32c2e476cd640255c2de467c5c34e482a60683d9470c81f0c201"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t176-f0272.png",
+      "sha256": "957941200a6cc08914a01ec0624cf80297ae03f488fcaa6bdf26b8843048f571"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t180-f0278.png",
+      "sha256": "95072c883debc8152b4fa071089369da140df817e18bf0b1d7f99f52282b9c5b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-14-baby_training_walk-side-t184-f0284.png",
+      "sha256": "9e9f04af449e3d67b414f244f69787fc52fda4f427db91942f9b1963e575bc33"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t008-f0024.png",
+      "sha256": "dfdd4db8f06632edb21fd541e563d8f972c5ef2c6b86503055f5e7427c81222a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t012-f0030.png",
+      "sha256": "6404e2e4528dbbdb29e4825595a51493df333bd47a767e5a1c96524f09b0a37d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t016-f0036.png",
+      "sha256": "8dac3ef4753cc082f950445bf3760340ff7251c42d5f48e35b5fa0f8644796d3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t020-f0042.png",
+      "sha256": "a66b4223b34a45dc4da9ace8feb4693e6357badc63523f28fb0f60daf2a36645"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t024-f0048.png",
+      "sha256": "324207779bc3e1bae0b157f7e41c163723224fc9481ea90e91c164f37fd79816"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t028-f0054.png",
+      "sha256": "ffaf9b957fbadb645eee5a6d1caf393a30e21e32addf850fb024fdc7997e9aa8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t032-f0059.png",
+      "sha256": "c2bf823b9198e02868e2bd466f2842eb44e5fb14e72d657b810cce9b6ad03898"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t036-f0065.png",
+      "sha256": "57b5f623431e5fe02cfcdfde628564b86a1351958801871eb08cc895e56c555d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t040-f0072.png",
+      "sha256": "350c924e4e76fd6edd4f2ca3320ae46362d56030c71f81ae6e402e5d5bf58624"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t044-f0077.png",
+      "sha256": "e02d4553e0b9309a2a5d092b9c5a2c7ab151883c41bde7cb8aedc98b59a0a9c6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t048-f0083.png",
+      "sha256": "ab2711a168ac1bc44bafd692be7c76bc79f2d25cf4c278d4e1ea400feb627cab"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t052-f0089.png",
+      "sha256": "42ed7464ac8449c53110aa997c10c45fc3bbf6f3ba7e29570236aebf56edf2a0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t056-f0094.png",
+      "sha256": "f0c34f38e0d9b5fa11f495b1f2e3df49ccf2fa0c706a7fa45cdcb886836beaa8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t060-f0100.png",
+      "sha256": "c45674834cbec98eb1a2526817147483d3e9a0d00b9e286ee3c26096d6697021"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t064-f0106.png",
+      "sha256": "2fbac90db952129ed3227e2827adb17849b447287c90ba9fcf6e611f61c8451e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t068-f0112.png",
+      "sha256": "bfb99636ece67b429a7c3602b635b317c03a980ce6109888d6bf684e59f15818"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t072-f0118.png",
+      "sha256": "8a149a42295f2c67c1fcba1153d87de724e9b8a14d680381634b30cb107d4c63"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t076-f0124.png",
+      "sha256": "ff81819b7f0731d042bf0cd691ff41328170cf32ac0bebc0d8c39fa3622370c8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t080-f0130.png",
+      "sha256": "1bd5c964ded5336bf7d5c3cd05572953843013d6fecbe365cad530be8c6b4a09"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t084-f0136.png",
+      "sha256": "6875848531590ed2c0df8f44d42847b05fbdaaea27afc0f823630aa64fdc2a95"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t088-f0142.png",
+      "sha256": "ed34ea82e52d87f329e74ddc8e3d53b3ba76af0440c91de95640163c2aaeb86e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-front-t092-f0148.png",
+      "sha256": "2db8ba8237e3b5496709f97e466eae866309be0bd0cba48e4ba12a8c8fdc5c51"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t192-f0297.png",
+      "sha256": "15bfb94f85339c5cc5f5762d143723ba2318d162f44ab1807781585e1146ca96"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t196-f0303.png",
+      "sha256": "8d2867bfd80e0ab82e3bfff794285e4505b6e18920f762ab163bd6a4e75039a5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t200-f0309.png",
+      "sha256": "9008e44b56e4850074e352a4e1ea9b9cc49c080c28dbc380790118d80b2ceefa"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t204-f0315.png",
+      "sha256": "bb3295642300f979ac9b4bf45520eba07e89e6e1a4a0862d3b0a42b5b22f4414"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t208-f0321.png",
+      "sha256": "185858d76d1d92f93345f236873f927f85a68904756c67acea579819435f3339"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t212-f0327.png",
+      "sha256": "eabe63cd4ad0b457a2089255e30a1fc99216357daab46c677467824f42ba7f42"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t216-f0333.png",
+      "sha256": "b0d8752bb46bcc4d4970e7126ec52539310e163ea746fa30229387cc5dc7e083"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t220-f0339.png",
+      "sha256": "b5212f8d41c867e44ea604c979561d5f6dc126ed19ac4ce2492bd1dcc5c54940"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t224-f0345.png",
+      "sha256": "4db93c6cb80ba6ceb72a1f8e9745ae6b9a284d1bec572449825ff246a80e8165"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t228-f0351.png",
+      "sha256": "d1adfd26fcec3d89ba49fc506cec55597a1ac7ac7ba07cd92e57830aedcb42b0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t232-f0357.png",
+      "sha256": "f782307b68840bc772dce615fc3b788b2b4c69b3152c98721df9c3a4bc60929a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t236-f0362.png",
+      "sha256": "7b24c3d78a64250cc8ada8ed4219e7c414f5b9a2324120b15d1dfcf2892d9d34"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t240-f0368.png",
+      "sha256": "f17cae66f2274b5a2b9d422908c8a3c582f2e8be2190be5847ea497c2de33e2f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t244-f0374.png",
+      "sha256": "dd7d5d5e885744226309b80d2de86564bd030ee50ab377613a21242a7c4ad8ea"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t248-f0380.png",
+      "sha256": "f7cfde9e2232b380410daa0edcfb840ea7d27db9270f2dc68613a4b9a700d2e1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t252-f0386.png",
+      "sha256": "d01f31e315bd98fe3dc1dbdfa00e2d22fc0d9cae94357b02e04f88a95811dda2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t256-f0392.png",
+      "sha256": "f26f84a9a191d1a243ad2e814b3712a99bbc872e610bd7d00615539e9aed85ae"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t260-f0398.png",
+      "sha256": "959772d09401e1879c91ae87de1a1b6b7ad746b4e418809627559444c44f234d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t264-f0404.png",
+      "sha256": "7e44ea6595ff87181d46164c235f10957bad5e10bf1c38484c62c1959ac753e0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t268-f0410.png",
+      "sha256": "9da6d11303b912274489f0667311d6102fe273e3678197b0ca32e41a7492ee1e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t272-f0416.png",
+      "sha256": "685973bb1cd8a59d27375a1917297f6b0781bf62df3a50e363a96f1aeb04d5ae"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t276-f0422.png",
+      "sha256": "7ebd5ef4c8674b3e2543d0cd66bbdacbdf520d35d780174345bc9cf90c2cfc0a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-rear-t280-f0428.png",
+      "sha256": "e928e54b2138a9f651afe0ae8508aad6a3256ff3915f9614ef7e88707cc6c4a2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t096-f0154.png",
+      "sha256": "56d6c9d4b0ed293bc62380c7faa174e3660136dcbed2e5a18e638aca2c5344a3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t100-f0160.png",
+      "sha256": "7ad02ff6051bf130df17d70d96c059a85dfbbf61000bcec4927dd07a50632741"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t104-f0166.png",
+      "sha256": "52ff8990038cea49835854e8bb5330a135817dd9e61b917d053ce34d1b7797ed"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t108-f0172.png",
+      "sha256": "526bbcdccdeac89914bc2b9ce9703d7600be72e65679ab65dba1b02c370c0503"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t112-f0178.png",
+      "sha256": "6e99ee55eeb4d51b6eddda11a52051d570f0fc3997855b390053f54fe111014f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t116-f0184.png",
+      "sha256": "1f69a3b0f7a5d868e65cf5821ca1fef3e9ad08af80b1b7674a612c39031c3672"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t120-f0190.png",
+      "sha256": "a93b416ee9bcdcd120093de04c70746ace93ae044774d4be982ee6f7de62f9b1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t124-f0196.png",
+      "sha256": "f62ceba82a1df272c4a21e15bf33904b0739f02bbd6eeae307ca2fa1c259465e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t128-f0202.png",
+      "sha256": "b64f3f0a37aae7ddfdb909ed9389a2063405ac364fe71ae6bfddce3b39e48edb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t132-f0208.png",
+      "sha256": "a0e72e60c376904368e56c7d1011d8ba166d0f961ea8845a74aa6564e1a06685"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t136-f0214.png",
+      "sha256": "8e0a6319e0c72221aeff03f0f7f82cc0ff6de57a3e25ce99b5a9b9d39d8e751e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t140-f0220.png",
+      "sha256": "80880fc467c5a65d127be0e377886f217c7533c6930e319c88e956d6f7ec93f0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t144-f0226.png",
+      "sha256": "71a4a2846a6836ea1708ec1502930469a37038ab237374dc77623d28f07b037b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t148-f0231.png",
+      "sha256": "dd408bb626f608dce57ce05f7c7215c821fea1aa4cd60697bb13ebb4c3ae4b9b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t152-f0237.png",
+      "sha256": "baa73fecbad5ef5a4f1554c867c25d5e52a3f3533863f26e902cca72dd4a12cc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t156-f0243.png",
+      "sha256": "5ef9c66c5eebd5cf73e27f3c263424d6d9d784d2404651a4bdd3e0d08fc52297"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t160-f0249.png",
+      "sha256": "b6af2c7e4d6e61b0388742ae301889b10b60e9e5f914fb13cffe2a9a83c11650"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t164-f0255.png",
+      "sha256": "ee2660ebe38efd102ab007d95ea367ef7b103872dbe819664820a35f0b9e3728"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t168-f0261.png",
+      "sha256": "dd0d34101513db801dd7ef4c4cbedb170b8169c297c48530fe9417ae16db657d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t172-f0267.png",
+      "sha256": "be2da46f9b945da2db563d038efdd43647ad3b154e1c5b59f028fad3c8925c5b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t176-f0273.png",
+      "sha256": "bc66c4a4ab88b19e2542f4704c955139c117c8fc1a57ead72a83bd6f32d40bc1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t180-f0279.png",
+      "sha256": "c12f0b4fef4f6ef932c8e9a1cfe8899644e25815f47b56d8e4a244c5dfc16d71"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-15-adult_training_walk-side-t184-f0285.png",
+      "sha256": "a873fc65d200801b58a848a8e322bd6f30259cb7bde9e944cd8dd73ded6bdabd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t008-f0024.png",
+      "sha256": "31074dc5788251801d7318f133131fecab877e79b9ae871e57df64a404b540e9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t016-f0035.png",
+      "sha256": "7e965c6792a51e89a00041c093a098094ee9ca61d6cf1d9f5f560c54590b2df0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t020-f0041.png",
+      "sha256": "60bc323b8526d0d8f743d27d11c7e9c99480cfbb79e132a61ddd2a56d75272be"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t024-f0046.png",
+      "sha256": "a70f1b1ffc2954bce600ab5d0e2f66c7de4c7274c5dc739b4f0d2c7f384ba8b6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t028-f0053.png",
+      "sha256": "91f964943a30f381084cfd66a7d2b9f2db061d4ef9a0b1d48412306a7fdfeb9c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t032-f0059.png",
+      "sha256": "bd41007c3ee4683251d8ebeb05dd8d8673177813dc819729b700a32530bb93fc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t036-f0064.png",
+      "sha256": "692ab9a53b5880b04dfb9e27cb9e374d0ab2be269bdf4735d5cc2187f6e67542"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t040-f0070.png",
+      "sha256": "f07c1584c766cf9befcf294e64f2d1ccdc70a85252022cdb34075a0e9da8af2f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t044-f0076.png",
+      "sha256": "59f36fa7d8b06bddb42fd4351ac27011bb6bbb02ffabad1ee09ae0d241ed9287"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t048-f0082.png",
+      "sha256": "c603be214564e8402f3729c0024671ea17383a8398a1e36611ca9a90d33c56b6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t052-f0088.png",
+      "sha256": "8fcf33e1683738f82793ce86daca7f1511f2a18fbe0370ea078432f72fffdcbd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-front-t056-f0093.png",
+      "sha256": "15637c2232c2a62af04949940d2cb57997222367bae48da26597db014351c332"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t124-f0194.png",
+      "sha256": "73b27fed16f43434dc15473e88691d7020a28226a978fb9a9ed4e9964ae53730"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t128-f0200.png",
+      "sha256": "7683d88596894806ee229804c2aa6917ccc9485e94238d20888a938722ea40e4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t132-f0206.png",
+      "sha256": "ebf9504291ceab5aa66453a932355fc80368041874f9a0bb6d383b2d078d94dd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t136-f0212.png",
+      "sha256": "e6cdda20b3dfbaa1e5edf533f3add6b7d460d411e5243cb4133d05063e73d684"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t140-f0218.png",
+      "sha256": "f39a9708421a5d91d585a0b38810467858f1aec3d9c039c346bac9d74f01cf55"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t144-f0224.png",
+      "sha256": "21b245ebc8f3eebda0e7c47b08a48c9ae7fc413d4de60f956773c0f8cb37c842"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t148-f0230.png",
+      "sha256": "a6c45fb24f1853d7dd003ee1db642f1f7d2249554e845e48b8ef410f1ecf2f20"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t152-f0236.png",
+      "sha256": "8f33f1a3d5b8290f763a1002cb01c0d903699112db702296c7937df1d61b2ed3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t156-f0242.png",
+      "sha256": "40a232c57e23bf1444646355b63940a0720eda8e31b44bb5a17363ab92b118fd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t160-f0248.png",
+      "sha256": "a0e17b1c2d9645e0cb520188ccbe612601b0584ced226a3617d25db787583604"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t164-f0254.png",
+      "sha256": "128a61848ccd768ee4a915e35979dfbc98e64ce362e46421eee28261b71ad672"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t168-f0260.png",
+      "sha256": "fdbe382449021893f73ab5c6483a37b6ccc874f7814bf6c9f9dbd10d37652e0d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t172-f0265.png",
+      "sha256": "9ae1880608bb4b9e778f15c2df195e3a126ddd6294f20bf756ce622871a73bdc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t176-f0270.png",
+      "sha256": "7074cd352446387d057b345fad92ba9c8e0aea0a1c9de518e84e1d74e8e6e9f5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-rear-t180-f0277.png",
+      "sha256": "f5124a37b056590a91d12baded9a5e59c2ef2b65fce0f2f0b3b3f891b4dd4fcd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t064-f0105.png",
+      "sha256": "ed6457578b238698be7f62ca3abb8da795d0ee46c8048c528bffca40d81c2228"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t068-f0111.png",
+      "sha256": "22a4a3c89f25ec9d7e894591e420a8f24138b8012fe733dd2ba2f3fe4cb3e9f5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t072-f0117.png",
+      "sha256": "ada947bfeaf26b2e543f4b2737b6f4fb3135c36178edaca1c410bd77c0aa9b16"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t076-f0123.png",
+      "sha256": "83d43b71756a988b266273e9ae2861f07f0212e6c9f0d53e9e6f0175dad3cf3f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t080-f0129.png",
+      "sha256": "9ba0a78d7270c926b9bb3fceab869c667190302e6e650d399fc3c8b2d9854681"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t084-f0135.png",
+      "sha256": "d7e769031d0dd05c71f2b118168dc160e16e1d57f4608292f571c88e8ea3228a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t088-f0141.png",
+      "sha256": "5c255d0eec8d5567ca91fb11acbe1af32dceaeec7e496342096537271e6af3c8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t092-f0147.png",
+      "sha256": "cef0778ffdd93eefb5871baaa860c14a810879b7ecc5c4abc74cfffa302beb0b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t096-f0153.png",
+      "sha256": "d59050e97df46707c493186af0464b44a0824f8e6069c858cb539cde25c0b990"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t100-f0159.png",
+      "sha256": "6f03711bf31b261c4672c3ac11d3a7759675733a0f438fe08a9a106dfeb6da1c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t104-f0165.png",
+      "sha256": "9c0a8eff9a79e8a7b9fa530acf73129f391c08d1de9870bc419a4f6497bbf89c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t108-f0170.png",
+      "sha256": "5816491c998deaf2245774522c126e6f3045d161b4ecb27a708878a93d206134"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t112-f0176.png",
+      "sha256": "8079cf921a7d4d1a404db0687151c0f1283a8c4451dabd87a5e9622790644adc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-16-adult_p100_broom-side-t116-f0182.png",
+      "sha256": "6c2d96361629dfa9882fc3b7cb77ca268df8afd13a4cc9ac0acf4f19642d42c2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t008-f0023.png",
+      "sha256": "aa56c6d02083a09d3cc3330515516f52cee63e515386d13260fddf09109648f2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t012-f0029.png",
+      "sha256": "338a9f3bdba7be9a5b499aceda629a58c34ed03d26a5b515888000c3daed7ff1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t016-f0035.png",
+      "sha256": "3d22b88add46c0c0daff969a95aa3f94c29b5cd3ba7bc42c75e82fcfa8751f5f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t020-f0041.png",
+      "sha256": "3d22b88add46c0c0daff969a95aa3f94c29b5cd3ba7bc42c75e82fcfa8751f5f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t024-f0047.png",
+      "sha256": "dce47330b89d158e7a8810fe5355fbea2b348e12be4972b1b453374d4133d324"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t028-f0053.png",
+      "sha256": "1ba6229cdbae19ebc41f598d4aad3c7ebbf62bfcfa4c7b05bb2f4caca9b1ae01"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t032-f0059.png",
+      "sha256": "f4906a4fc60ac1e847c810c35c7c264affa730df8fc08174f6ccdeb55a7dde72"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t036-f0065.png",
+      "sha256": "0735c09211b3fb142f5aeb3bee5b9d8432166e4cb1c39440add77a83f457620f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t040-f0071.png",
+      "sha256": "41015e12ffcdccfe66a594264e63f5e6d2579a265794152a2e6c748cfd494680"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t044-f0077.png",
+      "sha256": "c533cf8ae920a50e0f1cf7ed3176aac6449519192dd4f8b0f82a7cfea6e72dd5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t048-f0083.png",
+      "sha256": "56fdac053fb5dc8154287aa85d955a57918b1994f2ef8d5db05f0e3a5d2e009b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t052-f0089.png",
+      "sha256": "f672082135c449f46eb006143aadf64ce952847f22375536ebb6f249392ba857"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-front-t056-f0095.png",
+      "sha256": "c0cc60c7575deb5aaa71e154b8375649887034825db543d808c3eec2b350e70d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t124-f0195.png",
+      "sha256": "a7cfe5ee0bdbce84d7658c1f5f1e9a5f73a9ed4ea1464a4fa24a785a6740499e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t128-f0201.png",
+      "sha256": "75a8fec3437d23ca36be2a8cd63f31bd908e032c9f94dbab09858a9053758e57"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t132-f0207.png",
+      "sha256": "36598a86071cd0e396edd3b8d820ecd69f3d1f414c78fe2b1404bdb9cb2e703b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t136-f0213.png",
+      "sha256": "276ebaa372d567eb0266ff6bc41d5ae73ae10beec1f3e532380a32591d1cd001"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t140-f0219.png",
+      "sha256": "6a517c270b571001d26b29e4cd22d5a4f2586340b1aebf1fe703bc08b98aa095"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t144-f0225.png",
+      "sha256": "93e969452628e1e84f2702eb3b34748266dc79f89c1c76b57ec8d83f3ceb6233"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t148-f0231.png",
+      "sha256": "c8aa2ba0f9c5070107c529a4715b3e97f98335197d37c5352728fdf41b1e5023"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t152-f0237.png",
+      "sha256": "5ef7f806f600ba4e649d5bcf14485544772e05c63ad77141b25cd82727f1319e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t156-f0243.png",
+      "sha256": "a3253ea5ad9f9521080dfac20be536670df98969a2379f562c40ba9d4198ee7d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t160-f0249.png",
+      "sha256": "c11bd18cffd313f723c02289edc27bcf6a35d649b9fdc145a9308828ccbf38a3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t164-f0255.png",
+      "sha256": "d6b6c76c470bbff3d91b6c871427ec8545ad5ed03197069558f10addfd5da26c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t168-f0261.png",
+      "sha256": "93384aef7ef210e8eb7becc0778c676a53138442c94910620d433701960beb27"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t172-f0267.png",
+      "sha256": "ca45a26fc58829d6f10ac3ddcae9ef2ecdd8df04d6730fb46efff6a3f288e674"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t176-f0273.png",
+      "sha256": "9b68c701c12cdf4ec41192276da55e1d20fd6596a1a3206c8ee7328898956577"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-rear-t180-f0279.png",
+      "sha256": "14ce541b425f60d957fa9f27572166af4f6004c59ad4625f061813123a76bbcd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t064-f0107.png",
+      "sha256": "2dc31db360811b7de4cd87be03525fee45c6716ae422009a7360d90006800abb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t072-f0118.png",
+      "sha256": "c00ab57aaf6199eea19884af1e03d9aca0d7405398a5f1436ddb5bde221104d8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t076-f0124.png",
+      "sha256": "6a4f9a05414b57380063dbc1ca1ff7d5649229f71304fd67447ad15a70d6a23c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t080-f0130.png",
+      "sha256": "a60247bb895c6016283792a08ab9e7aa863b0808f0ea2de405d9c0689a142fff"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t084-f0136.png",
+      "sha256": "4dd6732c0275d2269fa493662968b167dc079088384ec308a8c74a4381f0fbf6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t088-f0142.png",
+      "sha256": "7d70f8d5b781c49085a622baf7f6444607a9b253d057a8308ed12b2c845579a0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t092-f0148.png",
+      "sha256": "95e583a290fa088fc60f7eab8d38996899bf0233f8bc6d8e6065738f80d634bf"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t096-f0154.png",
+      "sha256": "126273ea3a4c6357a88fb8a98ca94b0493c3db9809b112fbcdb5d6e790ba962d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t100-f0160.png",
+      "sha256": "00b81c012f6f73844745bcbe89001c49e75d8ba5a8c8cc20b0b6dd3cb40baf0b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t104-f0166.png",
+      "sha256": "d3c6560911595a49ef94bf1316f9e79f77a9f0bbbf924b9f60160dbe48f3d7e8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t108-f0172.png",
+      "sha256": "fcf42dd075b65bb623488cf745f62fdede7719101ddf4f98f185761c9ecd2a7b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t112-f0178.png",
+      "sha256": "142007ef61f7051921f7d32801757fd504b5b3705e25cf4675e04701dcc1157a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t116-f0184.png",
+      "sha256": "64df8877f610927c094c1d18c66b8244191cb479aa3fcdcf96c3204de5a29bed"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-17-adult_p100_picture_book-side-t120-f0189.png",
+      "sha256": "5b411f19ba9a645c6f1b76e5bee14d552bef621717deee1069f0dd935186a1ae"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t008-f0023.png",
+      "sha256": "7565302a015e58a6c4b971251bc6a34b54332aff302503eb7d946eeff3ab4edf"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t012-f0029.png",
+      "sha256": "bd5a8c903541a71dad6347ce7ca4bc56eee638ae8c12fdb19ce285f6f472e511"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t016-f0035.png",
+      "sha256": "91b2c77c127a5294216ee0e58511eae57aebe2e534d02f2fc34024b873507870"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t020-f0041.png",
+      "sha256": "0fddb9044f4bf7f003971a0d671ab44788ec4266325851ef02585bb6fb5a917f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t024-f0047.png",
+      "sha256": "a22403ac11ce43f3e21bd567de68b7d0762d25567036ecfa72e5abfcda573bcb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t028-f0053.png",
+      "sha256": "17a4c9d247806997bc76275948eaf86c8869b74ffdaa4227e65fbef3cdc3fca0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t032-f0059.png",
+      "sha256": "cd78a9e8002974377c23c132f8c786d2999a3cc778b33c12ffd2f462c25d7196"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t036-f0065.png",
+      "sha256": "59f93af6ba8bfa1efdf45a3113f02b6f5287a9480b94bca60fb4290ab56244ba"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t040-f0071.png",
+      "sha256": "b5322e6b193f48462ff8ebd52fc3f36d5fa85efd6d4a806deed00a981270aa03"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-front-t044-f0077.png",
+      "sha256": "969e89443f8c93776476ef93a67da5ee7ea373d713f56031c7405f764274cecc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t096-f0154.png",
+      "sha256": "c94ab8858f30c38df8b1557a7d2f6e78ded32cb63964e6105f7bc44a6df0cbb9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t100-f0160.png",
+      "sha256": "67e4b935c15b121ac810dd48f1ad05c7bc86d1f1ff71bc21e25e10453a3932f4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t104-f0166.png",
+      "sha256": "08f2cf688cc0e85588086f3c8d05991ccc649df7b81abb4851ae2c9dddb13bc6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t108-f0172.png",
+      "sha256": "a928866b4b027625f6d52c40119a937071390269ba894ad309ff9d0ae6bf37fc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t112-f0178.png",
+      "sha256": "9a1712ddcb3fb7a81adcb833565aa23740763315a8adc274a9e2936b63a3c576"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t116-f0184.png",
+      "sha256": "2230091d9514be920c0c0e539b954e92113fd539802dbe49b53e0c3d9388b6d6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t120-f0190.png",
+      "sha256": "f48e3cc20726aa8541ffe18c6e6379916ba6112bd7bba8b38bd3425b9bb884f1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t124-f0196.png",
+      "sha256": "f1bdaabb882425bc37dc9e6f11c8b9aca89b93189d0c399750b1c962f48cf960"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t128-f0202.png",
+      "sha256": "f7147513eaa924a48fadd45a352e50141603690c06f2700fe8f4fb69d3d1d66c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t132-f0208.png",
+      "sha256": "0d60181644a719383030bb4c6ac6a0994240b270b6e404c9eed5dab23c0dafd5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t136-f0214.png",
+      "sha256": "07d6f95bd1f5f6e05b79c07d70311ad40f6e36955ba84b4f44c120574dbd5f19"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-rear-t140-f0220.png",
+      "sha256": "0483676214697f4edaa7a1169535f2c79e5c20044a7e5b5b75927703e5cfd82c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t048-f0083.png",
+      "sha256": "256fcc042d05d80894d19abc15a5b781d741e0bed41882c54bee131b5e487ad3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t052-f0089.png",
+      "sha256": "1a543a6de61fc4d513f7829f1c9fe72b9c2f2ca6859cbe5163708c1a854df65d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t056-f0095.png",
+      "sha256": "84378c5028e1934e97ef0b59b59c4f3f9171f68c01f8a8bc4397afa68bccee71"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t060-f0100.png",
+      "sha256": "3d197c7ae09b7e62c64ae29bb6fe4f2456a615cd7ba7400e1fdcc1812df9dea1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t064-f0106.png",
+      "sha256": "4982b9e002ebb7f513c7ca1177e6413222ee6ac45b92cd91c45dc4252ce7ebc5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t068-f0112.png",
+      "sha256": "fcbbf4eefe213bdce4af292b35b2493531abeedad241a377414296ca5b39c0e6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t072-f0118.png",
+      "sha256": "6141faf09a129f70b26f3553b7b3a0a363cefc2390053b5e5a58751f8fb148aa"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t076-f0124.png",
+      "sha256": "23af3cf3f67de977c3fad5dcbf154fa51c68b5270d5027b31e42889869112511"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t080-f0130.png",
+      "sha256": "db2cff06a34060e5a1d9f12f3dd656ff42d598212dbb9189ee8bad7e8d0d7165"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t084-f0136.png",
+      "sha256": "2e4363dc848e4956c2975cab66c52adb5c3cb0372d8309d1270ef5f6ea08878f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t088-f0142.png",
+      "sha256": "7e9c687c5eb2e13ef6d7f264705a94699c75dc72ae3f08bf1cfd79c7fcfb2a1c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-18-baby_p075_equipped_ground-side-t092-f0148.png",
+      "sha256": "2fe62b500de4f959a7855fa90fd464d13dbcf5fdc374ba50e53526661d0ae221"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t008-f0024.png",
+      "sha256": "1cf72c7c585222a497d72fe5ed0f4e581c0cd0f870a44a38660d4e7d0d887e40"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t012-f0030.png",
+      "sha256": "18864acea6404d2972c89da96bbb386ede8c1dc1d02ccdbbdc247d6dbf35e7db"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t020-f0041.png",
+      "sha256": "ba8d250708e9d088f563bac54d4ddadaf6786f93e3df6a959a49ecb2e29156d7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t024-f0047.png",
+      "sha256": "5bdf66a88c1c3820531bc9bd47e510e839b78851b06da520de784e341b4d0bb2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t028-f0053.png",
+      "sha256": "5b5cb77a12b6571f31199c5ffb384e4d90402e4e5b3284b15e515dc78bdeed0e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t032-f0059.png",
+      "sha256": "1c91050677ef200ddb72310543ae22eea20f2a4b32cd125491ac625066a966ef"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t036-f0065.png",
+      "sha256": "18d2e6c096fb259b3d1fd93aece646f5277818e217f8cd9b55d0273a48ffbcbe"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t040-f0071.png",
+      "sha256": "4c77d19510ee7a254e76027c02433066ed8c28dd4b4a7557174cc17bd4dab5d6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-front-t044-f0077.png",
+      "sha256": "4472f5d73cda88224a234fca836164f85f1a7b643c0606c69479770b48e4e6ef"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t096-f0155.png",
+      "sha256": "9cb7cf5210c9ae4b7fe40a3205acbcff52f33fbce0f7a1673b3740d53353d930"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t100-f0160.png",
+      "sha256": "b35875348e5fb6ea3809ca57ca01f8bb1413c2756633310eed2638e2e3a751c4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t104-f0166.png",
+      "sha256": "4e0a4810ef3171b05d9c7c58fe76dd94c29f2f838edda185e6db205b334b27d9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t108-f0172.png",
+      "sha256": "023094c96f24d5cbda0aee414207fddfd6f7df79042eea1c0e2ad071dd87c99b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t112-f0178.png",
+      "sha256": "26a45c8df02d8d507454d8cdf91242dfc63583a4bd25a018c5da68268ff007ce"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t116-f0184.png",
+      "sha256": "c409516eb7cde96fa50f3e8a1679246f9647f5b6aae58ee0b78133d9e742463e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t120-f0190.png",
+      "sha256": "629866391190effa2101fd13beb926c8616e2b4ee9cebb18149574ec54495561"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t124-f0196.png",
+      "sha256": "4cf7b3d8c188f9507ea18835900cf1df32d381601b02070bcbf8cb577872692b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t128-f0202.png",
+      "sha256": "1c9a5f00db1bb8d3875efdc13118ba55ad4dffff2fb6eec19731b624f49885be"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t132-f0208.png",
+      "sha256": "e5dd3d21b609819744128160da81cf0ef41c3b691ba332d9e6bce5f605afc6b8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t136-f0214.png",
+      "sha256": "af18d2c38d94a667066451b030cdaae87d5324255083160f08866ddec4d20440"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-rear-t140-f0220.png",
+      "sha256": "0f630b3ffb55217910148380db20f9f28bd445139423b5ec563573c2615d5aa7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t052-f0089.png",
+      "sha256": "6442c37bf6c62d2f6015c46848f1e3c12230dbea8b75638af13b21ec42dff049"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t056-f0095.png",
+      "sha256": "ceb0305789179f8deef9dbb73814eed36ef74bd1edc98fb63ecf80d07e9a0d6d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t060-f0101.png",
+      "sha256": "2d54fb170e2602798ca2a7d83b48a15927866fcfb2ae019f3922af0798114a6b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t064-f0107.png",
+      "sha256": "ada43111eb7c84fe0d34cfe4f10da719f8eb868ba4f1aba32e60448946ddf99a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t068-f0113.png",
+      "sha256": "4b1d3b06d9512f1d82f42c5daef12a10f153cb918cd75cf30665863fb289ab85"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t072-f0119.png",
+      "sha256": "01c31db419f8961246b212c3ebc2df7c73b7f6d9179cbdb4462b13b713900afb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t076-f0125.png",
+      "sha256": "8cd93ec172dcadb0c44c8b9e17a946db1dcb8a0af10c3d4d4b270a85f1145c8d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t080-f0131.png",
+      "sha256": "733530d7879fe25fd2e153b98245255c4d6d4556537445e95cf5b26911d3732f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t084-f0137.png",
+      "sha256": "6f0dabc776e3f75136c13d914cbdf3741aaa12690d474d9bc0f5db5388210889"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t088-f0143.png",
+      "sha256": "5da9c941e595974ef922bfe1a0f62e233c766e92e93cb4a8eed857373d61280d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-19-baby_p075_equipped_flying-side-t092-f0149.png",
+      "sha256": "46984a0978bea97f95a4e409ebb55948a6aeba9d64f9d20de414e1bb073e17e5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t008-f0023.png",
+      "sha256": "8ab61936ac2aa175696b63e552564b2982c34fc86fb5a5fd823921f9537d4274"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t012-f0029.png",
+      "sha256": "0bf092b8a6f9ff73782905d8257c652b56852ac969350c2b4be26289f02af654"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t016-f0035.png",
+      "sha256": "903046506bd19962628d3afe9b2db456420c89f3e2ce60b6a904d5432979f818"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t020-f0041.png",
+      "sha256": "7145be534f7e8fae92f0f1c5e51a5bd75fc4cb1494a48b389654f126eea4a045"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t024-f0047.png",
+      "sha256": "ea3db269dedab2b8cd20b1926abd39238f919f7cce792ea9eb82b61d0e36deaf"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t028-f0053.png",
+      "sha256": "df6b4ddd72009b7972e7e3921f849cdb8969da086239cfbcf560b56af0ab2326"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t032-f0059.png",
+      "sha256": "3555a6f8e0f1ae07a99419ffee7f33eb2aecafaa543a3fee3769c190f313c99c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t036-f0065.png",
+      "sha256": "c600b48a9a56bad624b2a0629297fc5c610c482fdc1a7c2cff43a76468b9543f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t040-f0071.png",
+      "sha256": "573f70bafac0615e79bb0ffd9800953c1e8d9bc684b282621a3683cefa0b04a6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-front-t044-f0077.png",
+      "sha256": "e9022c22c237f73a768b98d34586b813ca2fc4984921949d21e667804d8ea643"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t096-f0155.png",
+      "sha256": "982c017b08a130337247ed03d27c2bd66992941d4b336c6e9e62761706dd3a09"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t100-f0160.png",
+      "sha256": "7eb3e34f55c91b12967d3aabb19dfde2c9e1520781bef7c243a795b6c45f6ae9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t104-f0166.png",
+      "sha256": "8102ff0b176f5fc8c031d88cc22f491838ed43f1664d135d5cf6f8579707a62e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t108-f0172.png",
+      "sha256": "85ea3a45e851a0b9073ccf738e3c619ffc80c44303c21039717fa1ed3d0d9e14"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t112-f0177.png",
+      "sha256": "45006fae51cb8233d846f68520da735b4f3b8629b1a8fdf88d75d9d390cc871f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t116-f0183.png",
+      "sha256": "ef2ea9e9fafb6d36b6fd88426887f9a2430c6fd72be6645539ea2ec20eb476de"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t120-f0189.png",
+      "sha256": "e0797d67b7e38b518e9aa6463749b75d220d3e1790a64b923f30da8e22368fc5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t124-f0195.png",
+      "sha256": "65909eac51f9a4ba878443bb9bf2da3b10a5f54a54a5a03a8b2fad48379403e7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t128-f0201.png",
+      "sha256": "b15c8c600e0424ebda8134e32816a1426a099370c4d980ce18e50664213cd595"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t132-f0207.png",
+      "sha256": "c3e1dd03926b1bc2a209e136c87189d7bcdf3a061331113ef93509e3a9273096"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t136-f0213.png",
+      "sha256": "da345413dd941fd12c59d55a43cd1e990bf538ac7cc24a166cb84d8792441fb2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-rear-t140-f0219.png",
+      "sha256": "2b7914d1d1557949d0d36ceee9077656a88f09f6e1426297b98db1cce0c14b60"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t052-f0089.png",
+      "sha256": "b1f3fbed1e892fd49f8d98f2f92a938e1636eeabc91d837a01e969932b043f0e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t056-f0095.png",
+      "sha256": "361310445169e55ff077aec247a1a93ff44592d756928c73dcf1b16285696af5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t060-f0101.png",
+      "sha256": "04d07c62399f830a4daa37ca9009135edfc8c725b52d440f76a6cb9f03e51d2d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t064-f0107.png",
+      "sha256": "5074203b6bb5dd111ee608cd7b015991c8a8c1825c2aecb2e94111cced66e6b5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t068-f0113.png",
+      "sha256": "f3cf63672a59e2939b6730c0e6785002a0785ddddcba7fb5cb8ed2322a57eaf9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t072-f0119.png",
+      "sha256": "31f6017500adbbb51c2156eafb3b34db34c2add78de02dec6b158ac6e4232c1b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t076-f0125.png",
+      "sha256": "60524163cf71766f9b18010b1545c37ff4d94731d6cf4ef9d6b76247ef671143"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t080-f0131.png",
+      "sha256": "50b5b4c693af0c6de844c95d32dd178390ed078edf0d6a289245f57ce07db819"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t084-f0137.png",
+      "sha256": "d5feabe45abd0c42f7d440d9f3542e5cf5a49d4b9b61ceb94f7892f36cf5d485"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t088-f0142.png",
+      "sha256": "694ee6a8a2bf56486d1ed3cfad8c81ab26eb2527bfac4f4f10d0689e8aaf3112"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-20-adult_p100_equipped_flying-side-t092-f0148.png",
+      "sha256": "9a9db471c9d66ec9f72dbfad7f15063b9dc25d33c9a60ea5c294d108f5f92a3f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t008-f0023.png",
+      "sha256": "57cfe4fd87935a199fcf07d0282580dd5c3db81eaa12fe7aa6da99d2a87cf460"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t012-f0029.png",
+      "sha256": "d14539b67babfafb908961a288d5511accdee7e72e2d57acad668bea6e3ab324"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t016-f0035.png",
+      "sha256": "dcdb0b6987a11a153a733008716cc38ff98a23cc348d8e22ba9b34c71b21922a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t020-f0041.png",
+      "sha256": "74075fd51684064a713fe7932e12e7aa1e0f9b08de92ecd24c6cb0578de39f70"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t024-f0047.png",
+      "sha256": "7a65028db3f14a1a88dfc6de65d0f598387c75867a359fe42922b8f55bcab293"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t028-f0053.png",
+      "sha256": "84fa1a5314b945a78dd03aa036485168757f885910e0cad2f30db39bb64bfe16"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t032-f0059.png",
+      "sha256": "0e28e3214195d25e86b136cb052476ee71a4db0268430b825303d1badeb0b811"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t036-f0065.png",
+      "sha256": "98edb5d78377594a13dda14af92f2dcf3d4dc074a4c343b01406fc7805cc534f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t040-f0071.png",
+      "sha256": "198e3da811a56a3e384fb8c880af871e79af52fc903580a57babd1a7a178c499"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t044-f0077.png",
+      "sha256": "4532991812eacccd315e932e593b2ae303b013f4b03956c9af7ae2a8bb3b1b6d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t048-f0083.png",
+      "sha256": "43394bb99f159b6c79892275882fe69ceff7d2a7e4a1c3c3e43b3fe07d8e76ff"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t052-f0089.png",
+      "sha256": "12f98b26111efafe8040c601fa86a1aeda8fbfb04aef1c45af4c7bbc02d460fd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t056-f0095.png",
+      "sha256": "2822eae23855f987159bbe6abba081f2768d55b4a297c0144bc6a58052a3a7b3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t060-f0101.png",
+      "sha256": "439d2ca6365574db3a0c68a7698a9739a11de5cfba63aaa96c3e02e3441988bd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t064-f0107.png",
+      "sha256": "7952a7223b82f548469a85350e68f9c933a511c76bff54eff5ad3ec810ae717d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t068-f0113.png",
+      "sha256": "880186a4ebe26c33814e9b497168c9efd5cd6ea8b3242b3b6ce24a179f77d121"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t072-f0119.png",
+      "sha256": "ad2579de712a890bdfd35d0bbe2bd2482ed1afe4cd6bb52fd70407f90c02edc0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t076-f0124.png",
+      "sha256": "3f84d91fbb772a7302f9d8bc8b08ea88ecadbea3ab0f95922605a6828708412d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-front-t080-f0130.png",
+      "sha256": "64159b4e6b899a7f3a8b65dde24d5011c9bbcf612ab9a9edbab6f06baf7ebac5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t164-f0255.png",
+      "sha256": "8dc32b74de88c2ce54a94fc57db15bbda7fcf1799b6c9076867cbb03974b3406"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t168-f0261.png",
+      "sha256": "8f8b069b9a9c1887ba63d075e6b6f563828d7ae8aa73f133dde2b882317671ca"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t172-f0267.png",
+      "sha256": "728e3c6c9d1abd1942684351bdbb75d717acb149d122ef79f33ad57f5d983bb0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t176-f0273.png",
+      "sha256": "a8e05abf0c17b325ce57bd96c86f6f2848e01dcdc1ec56d7df80588186824dea"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t180-f0279.png",
+      "sha256": "273f5faf437512173343e7db2d9b2941badd87189751623631244e6eef752f22"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t184-f0285.png",
+      "sha256": "cdc0c150860228716f30ad63d7ed4ab054141cacf276c10925df7bc9cdb59d1f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t188-f0291.png",
+      "sha256": "fc22ff921ecb2a43629a1beda8f2f2b0791b9b69fe15bdf092cfe5cb58f3f858"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t192-f0297.png",
+      "sha256": "1cbdfaece920dc3c91fb35573ad0967bd49074c4bd920ddd29e59d2ded6ccb1c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t196-f0303.png",
+      "sha256": "b2c9cef81b4974c818cfc2e7520b91a4d1aff85972af46e31c262ae97dde5e11"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t200-f0309.png",
+      "sha256": "1f3fbf48d9e43c4348295c17d82b53c41441952eebf64190e767195322f7f704"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t204-f0315.png",
+      "sha256": "7ba50f370c6922f0d72857ff3d96819be6ef5768a7ddf7bea821c3b299fcb8d0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t208-f0321.png",
+      "sha256": "9eb8ba443f829d37d2a6bf589099d75744cbd4458cdd293300c4042507cd0b1d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t212-f0327.png",
+      "sha256": "900c0aa35c394ac1f94e6b9686a6620f4d8ab4008f9b1db3b0edf728cc0f246e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t216-f0333.png",
+      "sha256": "a51822a4d5656cf1c4ba7a249c2ca0e782d729172fe13d23b79165ba02804e5b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t220-f0339.png",
+      "sha256": "d3a72f0190fb4390c31b9772b90586e15cacf09456cb57c484cdb5966cd9a76e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t224-f0345.png",
+      "sha256": "0830d8ac8cdad357243b9543b06984b91f1a88ded4ff2671aa5f26441444ea77"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t228-f0351.png",
+      "sha256": "85367ecbb92db722dc7337e78e359134cccba576146cd5dd1ffbf7976f847b15"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t232-f0357.png",
+      "sha256": "3df08bfa034fa47a928ce6f8895da2c03d650e9b520bc7e400c36d302e0fde13"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t236-f0362.png",
+      "sha256": "7dfd238400ae7271f81cdfee190c2110b2a25637ff30afbe45be4e985acdc672"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-rear-t240-f0369.png",
+      "sha256": "e5267b137b6af1ce680a6004f6a35dca373818ac7efc22bb997c3bcdce1016cd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t084-f0136.png",
+      "sha256": "4679396bca6d8e54d18652e1d8d740736b82049a32e3fe7b9d16c6add5fdcd40"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t088-f0142.png",
+      "sha256": "6f903f8bcce66ff8408c8d0d842330136168811c2eebaea2dea25f49ed03f130"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t092-f0148.png",
+      "sha256": "7024c778dfeffeccade17e73b3fb0d04fbd0b4a2d9b49a30867a9b4318051428"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t096-f0154.png",
+      "sha256": "4d3cac40ccd89987b6a56e691776d8e0996bc7067ddcfb96942720ea4df942a0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t100-f0160.png",
+      "sha256": "b0b43d200f3df3cd087fc5ea68bfbf9d4c1dc2caa9a3cce4c7458b6e9b9e3379"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t104-f0166.png",
+      "sha256": "56b84c50d8a6497ed50322b78a434ad65a3c19fda99c626a727ad31451d79017"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t108-f0172.png",
+      "sha256": "f23faacfcaf8de5b79d462166e49e8391e42359918cd903d29abbcfd50cfb4c1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t112-f0178.png",
+      "sha256": "793fd1891abcb0d3ccb067a4b445e3f3f12571d3835460bc4eeb1ddada149e58"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t116-f0184.png",
+      "sha256": "c8ef72659b4b03f5dff0343e6ba957b2e5641474833b93423f10f930fcc1b563"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t120-f0190.png",
+      "sha256": "1a782a4e94e3bf7be83dc9cadc9a6fc27d31c05e59f437ff593ff0a0602b627d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t124-f0196.png",
+      "sha256": "8006a5e6d54c0cbf79ccbed92b39bd1d69fc436d47150d169ce54c6d0ae0e6ce"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t128-f0202.png",
+      "sha256": "408748cb02622f608ba5ed25085ec14fd6043d0fc6f0034664f062d773d228a9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t132-f0208.png",
+      "sha256": "6c6337f56a12a34b0911991acc461afe3f7ca7c65075f6d66660c047ec013171"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t136-f0214.png",
+      "sha256": "9306366acc3161bc06e2a11e7ca022e3c22dcd0a4a6201f1acd2c2cb38d2c89e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t140-f0220.png",
+      "sha256": "ade954ad6b2893b0eb1f2456949a8b3d15869e6ad8241f36e0b9f2934e57b9df"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t144-f0226.png",
+      "sha256": "bb255abfddc4983a8ecfe33601de3cb5299c34c78bf46f3e27135c74c274bd6c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t148-f0232.png",
+      "sha256": "eae64f70b6bd94d807f2897a1c94522c5d4bf641a08d0958685e2303479ff53b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t152-f0238.png",
+      "sha256": "72db2faf893256d695c9747119b2df774dc02fe868537c75f2710b8e9a878d16"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t156-f0244.png",
+      "sha256": "705b02ab8bed4e32736adbbcd7416399de9833968d45b293293c733ecc0d725b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-21-adult_maturity_clock-side-t160-f0250.png",
+      "sha256": "27dc314e5eeaee28ad383c0cf6d33163748347662dd1e4768f0e25abc7d24b85"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t008-f0023.png",
+      "sha256": "1ec8b815c4d9d754378c55c03bd6ecbf809fcc517c7d20da881005aafb5c9f14"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t012-f0029.png",
+      "sha256": "5a3fb6b900f08997eb9668a20fe4796cfe5ddfa80fea917a466296b2e70ee08f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t016-f0035.png",
+      "sha256": "29eec8a4eb01cdc98a43179f95525486c0e73dbce3889e834f13279c185d0666"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t020-f0041.png",
+      "sha256": "081063d0d5bfd8a81d06d88c924797ca1669bb78154ff647b33959f88fcc9847"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t024-f0047.png",
+      "sha256": "df5e9419a426bc01819a185aea3b6ed1f221aa39bd61548ebabfb8157200a0c2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t028-f0053.png",
+      "sha256": "eb8bbc986c80018ae821668dabf92edaf22830438c73c92c81fd6df147a9eee1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t032-f0059.png",
+      "sha256": "56925a9ac8e4d2ec7303454bfbbba50c244d3d70a90ade08511e5f5df5d95cb7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t036-f0065.png",
+      "sha256": "da8333e6176562b14287f84e38c0b4b7e69a7f56ef6236a619f99427801cd6f7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t040-f0071.png",
+      "sha256": "5d106e208a3c996583403759bb63fd352db28251d81f55ef51d88a0c8ec2f2fb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t044-f0077.png",
+      "sha256": "a82afd0be07ec01dc92cf00ce4564df28c5a8aa6b6e8424d3a171577fcbf50d2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t048-f0083.png",
+      "sha256": "efd24e043996e07e8c3981a08dcb3bdd2534a6fcc525cb89bd8769d4e68943e2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t052-f0089.png",
+      "sha256": "13f8e462fd0c0d1958d5616815e0ff91c58c509d2af34a50999a89f30e587b37"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t056-f0095.png",
+      "sha256": "122f5c48cedc9a53f191d08858389abe546d713ee9c6e1149a26c8fac2c1ed25"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t060-f0101.png",
+      "sha256": "24e13a508d6ee88a3ecff027d3e08092a8f9077de60279b52eff2898b26e44a9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t064-f0107.png",
+      "sha256": "2540958445920e90afdda6892c722ae8c5106451c4d7dc46059abe50c95326b5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t068-f0113.png",
+      "sha256": "5213d272ac2a555df7ac426fa225d588db08f7fd430ad47b25a6a722c37d12a7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t072-f0119.png",
+      "sha256": "8ce5d529af2ac0eb59d7c80459624fbe83ab84b054c0aa96deec3b531d662648"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t076-f0125.png",
+      "sha256": "032111fbd961e16f204888ed498a604b0af11c3dae5e0bcc50a50e696249ca0d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t080-f0131.png",
+      "sha256": "b839814dc27a2d649e389b970860071a0299db2c82bd3056db3dcefd9bcf50b2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t084-f0136.png",
+      "sha256": "c481ca5ab9348d6bc29f05d498b8e1adaa92cf5d66ef33ac06e64c45259db3b2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t088-f0143.png",
+      "sha256": "6c079d9d1956d202d4d651b0b1b021351c323404801e65441a9f4bfc76cc5d90"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-front-t092-f0148.png",
+      "sha256": "cb56e07dc659bed2340f04755bad0ac1a4cfbb7675f62022c479cf7f04cfa747"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t188-f0291.png",
+      "sha256": "c7ce842ae62111f576ae0ea83fe07ebaa83f56bcf4e7ec6aab08b9a44a441770"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t192-f0297.png",
+      "sha256": "efed569d0cd4fb4c9e4a423b2ed17575c6ace99cf75cdc7e14bff26386e925a3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t196-f0302.png",
+      "sha256": "8f880d3ff5ddfa23fac3246654afb4b318fff2aea9646ee613098a0486dddf86"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t200-f0308.png",
+      "sha256": "b04a2510096003290dfa437b5c630f84e949f3b3eebf151e1143e7fe074a3811"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t204-f0314.png",
+      "sha256": "41d754bdce5f0df907f3794cf7a7fb2bd17a17d218a63024d47392d26bbdc039"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t208-f0320.png",
+      "sha256": "0a835f672bb5626e0368e18bf61b4cd0033beeee07ce298779f16e9be0030caa"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t212-f0326.png",
+      "sha256": "49fb061127ca38ae686a5025f833517251ec94cd6d97bc6f4f18e89fe8a0d295"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t216-f0332.png",
+      "sha256": "35934b19676a3e79a9ea2d1f32dec4748ee91cc320a0943e0e2cdffe7c4b1074"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t220-f0338.png",
+      "sha256": "7381f677888ad25cef8dc3403558c7c7571ff3bc3ede44f2dbf9d08611c0d39a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t224-f0344.png",
+      "sha256": "9ff07b49f7f0c1d0423a2355f48f97b52ca466836516137c9ff96d39fb0c7c14"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t228-f0350.png",
+      "sha256": "866e3151023fdf0a41bbac4de7a428a557f7bf08e39e26026116a7d097e4fe74"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t232-f0356.png",
+      "sha256": "b6861d60cb1edfcdf4c344e6bb79bc6f27219f42dc46d3ed362023f7f9c819a3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t236-f0362.png",
+      "sha256": "ae3c94cae2c268a6846be8b5e7b07e3a9c0a32495006f4db1ebcccb163cd3c8e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t240-f0368.png",
+      "sha256": "4b691bebb58a5a6527636caefeb47e840ae70e1d89f3b4eea778aaa03852204a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t244-f0374.png",
+      "sha256": "4c930f2e70a02d71a8cc2840340c5298bdb522721f8ff3f1bab81820ebfaed19"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t248-f0380.png",
+      "sha256": "2ae8e2d65fcc03e5a04e93c2b9f48ec0e016735421755b0a9c719dab5551b8c1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t252-f0386.png",
+      "sha256": "5e24f2977d03418f578e514a056a3ba9a0572482130589b2426d938cf8c317a2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t256-f0390.png",
+      "sha256": "a084963de6c43fd746f128821145aef707f2715de0ab0405fe7eb8cb1222cc2f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t260-f0396.png",
+      "sha256": "bcc18b63ac446460e446d18b5598b0fbeb447579c84bae2ce0f7506fa4f90669"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t264-f0402.png",
+      "sha256": "e9144973eb8f629ffd03f7227f0ebb2060d80d4ea72cfc385d147c3c5e371d66"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t268-f0408.png",
+      "sha256": "c14ac0729712720c9c3a8c47181445e04b81552ea46a726f8f1870b236051245"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t272-f0414.png",
+      "sha256": "a757dbabb23a302474e029c0630826c17e752dcb5b039f0f7239422ddbd00a4c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t276-f0420.png",
+      "sha256": "5315aa8a3630ac9fa2b97347f27f67cc7ec513935623cc2fa7909c975c55eb77"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-rear-t280-f0426.png",
+      "sha256": "6a2b1ac1a737f95a480da837ffade448e260d25ae9bfefb2cd5791fd28f4aa38"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t096-f0154.png",
+      "sha256": "1790e28d9886a1d3ba177076b64051b7482f75f7070a8f0b112420380c1167db"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t100-f0160.png",
+      "sha256": "28352247fee553df6d698a35e7f2926d6b794ca23c11b21fce8c1067bee6670f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t104-f0166.png",
+      "sha256": "87cb9ce1d5e153643adaf777eb208425dc462de75fcfe7c3e08e98170ffee270"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t108-f0171.png",
+      "sha256": "f44674dd7a93ae380898e8b47ab7e7e7395cb820879899e333bfa4524ec3398a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t112-f0177.png",
+      "sha256": "a21fdad03e3a7973dbcddeae981605555b00b6a1da6f3433dd4a94307d34aadc"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t116-f0183.png",
+      "sha256": "f16b24d39cdd67744975d30f4df6405afe162cc540fdb72fb13bef71fb026b49"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t120-f0189.png",
+      "sha256": "fd47f788b99641ddd902e2c0698dd16000bdeb1a18ca8d4079fd95d4c6358326"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t124-f0195.png",
+      "sha256": "51e10b6df6f7f2961390c7acfc6e9b881e8fdcc6a39677d3c38a48cbe5391da6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t128-f0201.png",
+      "sha256": "5b9e5cbaf2f08f9995ee80d16a5c22eab311fcb5905b0e8f74218e3cf3360733"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t132-f0207.png",
+      "sha256": "04c56d325709d7eb144063f07339b37e56cade35721f96d2ea4faa5df3668534"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t136-f0213.png",
+      "sha256": "8350ac5014127af924f93ff8a896352b0ea4f87304587bacff28cb9e5a33fa56"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t140-f0219.png",
+      "sha256": "585813c265fe988a4a46b1445ac6a5df61456f487b37afed63e8d1e380e577a5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t144-f0225.png",
+      "sha256": "32540e17fedccf6850c4e4191d746d0549ede07800f6e1991cd27f1b76282e5e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t148-f0231.png",
+      "sha256": "fc0cc3b1dea4ae627f66763a6a352db2c5c86ca56abcfd12e8bee93ab680fa7c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t152-f0237.png",
+      "sha256": "0743e473d7e19fe265b46d468517b9af159ed5a3c06958a2ca584cf711b2de9d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t156-f0243.png",
+      "sha256": "51092791ca084ed3cc9812d88492173f6cc45d2750ab70ecbd11999b67990ccd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t160-f0249.png",
+      "sha256": "e7b33111bf29db59bb39b1c0c0a8365e52cb4f61a32ed403c99224054e8f089d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t164-f0255.png",
+      "sha256": "e90d56aa81dfda0eace368f4ba7e8d052e7424a74cb855e9c7bbbdbbd272a964"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t168-f0261.png",
+      "sha256": "b2267550bf8d13f5c2de0281f3116a27cbb88c93d706873596e8a23b68ea86dd"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t172-f0267.png",
+      "sha256": "1c4a52b735200387edeb2d4f25322c61f63f85099804a167fe2fa6d03c8dbfa7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t176-f0273.png",
+      "sha256": "480b113eaf0b803ea5becb35e6a779c624c3bab7223e2bd871d270e7862afd12"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t180-f0279.png",
+      "sha256": "436a695f39bb3fe6525618f604b823637846af3c3c54b92810bdf5570f1c909f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-22-adult_training_decrease_walk-side-t184-f0285.png",
+      "sha256": "846b3878f82018c60fddb87be77f03a33774820ce4924ab2008f70dbccf5f389"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t012-f0029.png",
+      "sha256": "c1b8d6efe4a2c1ac01edfcdf3f3e60733d06d2459d1711f20c2ec7fcbd64a71c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t016-f0035.png",
+      "sha256": "4cccb339ca012f3443f3c1af90256d453e30dcb8b39fccb9c34824f52cb82e2e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t020-f0041.png",
+      "sha256": "8bf50f0fbef4816de4b7487842c497b2f7a711bda80c5a1a86228990ca1f1586"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t024-f0047.png",
+      "sha256": "44771e1e11f6f33e9f5f29083ac5e7ba1df330f05853726a3805f8d15034148e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t028-f0053.png",
+      "sha256": "44771e1e11f6f33e9f5f29083ac5e7ba1df330f05853726a3805f8d15034148e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t032-f0058.png",
+      "sha256": "8d95eed4e6d93cd8ba58fa1c0f2ecf20e98518ce966a35458685a656df93f49d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t036-f0064.png",
+      "sha256": "fba0d632b2a953b111739ad51a1797bd310d63f1edf0ad2339bd9606edb6c507"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t040-f0070.png",
+      "sha256": "35cbef1a2092ecc025a6bfa857a73506ea63bc4312cebc6f5dd37fd651687c4c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t044-f0076.png",
+      "sha256": "d2f6aa575279d651403d852fc85427971bab8777fe864877572ca6fff717b522"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t048-f0082.png",
+      "sha256": "9fc4413fb1ce60c2f2da7f740e5323d758b62e2317c8801ef030b276e7a516a1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t052-f0087.png",
+      "sha256": "3de2d64e7ae8a1c9df4e7974189e3eec855898b7414fea8db3d128d1ac6c998a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t056-f0093.png",
+      "sha256": "52cdfc91fc8596accf450d78b73c3f276d3b22f98ee943c3fe3938ada51a1ba1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t060-f0099.png",
+      "sha256": "8053d4adf42264e3d69666fc804552467e47236bd5eb75eb2202dd133f6552e8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t064-f0105.png",
+      "sha256": "86e0043e323225a4956ca0b283e37d42b2177b7efde18e0c596794c7a973b758"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t068-f0111.png",
+      "sha256": "efc8695441e26796321b4a2f199dc8359a16987c5e2b308ff4ddd49404992566"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t072-f0117.png",
+      "sha256": "33ef8505ddca011d7dcbd93b757a78c633a9ae211c81ca97d902012fb30d2d34"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-front-t076-f0123.png",
+      "sha256": "dfe706dbd907f500c232200e0ec6710a81e0d1ef0bdc85ae5ed67d0ee35f7929"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t164-f0254.png",
+      "sha256": "f05c86dc99e260a9d0ff30237d23d6b0f33ec68f7a8e822abefa4402fb36030d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t168-f0260.png",
+      "sha256": "aaa234479223462613d05951826b1e451e289cb8c907d47d1cafebd52e474b66"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t172-f0266.png",
+      "sha256": "bf6a91ba16e8d90d4f3dceec58f9555bbca122e5df40448bfd6025d533bcc814"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t176-f0272.png",
+      "sha256": "5735bccbb2d510c47ea4126a88986aedbeff542518dfaf2e655be8ac031d6db1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t180-f0277.png",
+      "sha256": "5746d6f8a3f5b2444ba3701c5e445f78a3cf0a7ba78283362453e049f407bcf7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t184-f0283.png",
+      "sha256": "3bd32229679c09cbd05cf17a088f0bcfa10ee1f08f3be0f8c324a8d6442e9455"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t188-f0289.png",
+      "sha256": "4d4cb19b51a090ba8ff58d6f58cf4022b1698346d37129061b7562b48d037e76"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t192-f0295.png",
+      "sha256": "2a399fe5c6e4a6c99a2e342fc550f3292029451ca939e6d81c9dbc212bd6c7d7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t196-f0301.png",
+      "sha256": "b390e202fbd4d2297df3b44b2172a61effe0f24a986623c513bcfbf3449f4374"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t200-f0307.png",
+      "sha256": "2a360dc9786332e4c50077f65d4d09033db7abe4ea115885776db7fc09360a73"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t204-f0313.png",
+      "sha256": "d29e184235ebf7870284cc0c0209d478b648a5afd99e23a626b9666ce04ed70b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t208-f0319.png",
+      "sha256": "61baec95ace68d73f3704486fec79841665a2c44a1d09c76e04e0865b9e9b4c9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t212-f0325.png",
+      "sha256": "27d19231c8fdcf59f621503d3f0499f4d09be8b5385c494c16e61b4a2796be1c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t216-f0331.png",
+      "sha256": "2771c4cb0881c95ea16fdd894f99c9ba5488698014dd7abac486f4840a570d55"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t220-f0337.png",
+      "sha256": "21614403dc349c9d2d64784cd84754821a065a6bc1a8b97ba8796fcbef20137a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t224-f0343.png",
+      "sha256": "419a17bac5e9ac3261645361c626d1452a6d19c43b3fb4714b8f9aa30333055b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t228-f0349.png",
+      "sha256": "ddc1fca8ff3056b28b1fa033d524b79f543531ab2531aebca01e6d8489825ca6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t232-f0355.png",
+      "sha256": "088e05f364d3fe3efc0f838c41c18f4f1dae7ac988030c87189e131ac7e3045a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t236-f0361.png",
+      "sha256": "9832e55e143282df9034d275a21a1387572ba84936127e4c97aeadf67471385b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-rear-t240-f0367.png",
+      "sha256": "1ab8b59e7d7aeb3f48cc23925dd36585bd379c15d7c92ebb2dbbac2ac714d048"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t084-f0135.png",
+      "sha256": "9c6cb84d7ae04c7c1e37d74bec6baf20a7a22fd0a4e7224c9de885a984de38d0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t088-f0141.png",
+      "sha256": "8cfd171bce65c1151e88a79101af9111ce7185decc11d00b874aae16d78fc260"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t092-f0147.png",
+      "sha256": "041d898c2d153dfadee6a07ae1c3173dc771fa8a0bd5b766bc1cce429645a937"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t096-f0153.png",
+      "sha256": "9f454f6d708daad82d9e9f1b375f909cfe469dff8dfbed1f7124c368f1973e1c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t100-f0159.png",
+      "sha256": "d0fc84f4ebdaf49b95523303b0d089932e730634a18665a3ff7c3008d719df36"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t104-f0165.png",
+      "sha256": "42cb447db966caa935df54d2fe3d3c7b4487b608b3218392b8aedc3b46f098d9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t108-f0171.png",
+      "sha256": "7bfee2454d5ec083e9f5986d28c5588f17f18b54ba1bba1f51f5ea4c68ba262f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t112-f0177.png",
+      "sha256": "ce4fee0d4879c9d08b23071f8ed9f4d7d94708b847f71dd569132f19d146606d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t116-f0183.png",
+      "sha256": "11c20d242dd82396a25a53ede4ca440869f56084e26e6a74986e91801d0be4cb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t120-f0189.png",
+      "sha256": "6bdea29b2d748eee649da5aa2bd3a3d127b646e33e67536f4edb185a8e6d8eaf"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t124-f0195.png",
+      "sha256": "d31f8537c38a2455aa934e94f465cc906ad8aa887f36860bb8366dc7151384cb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t128-f0201.png",
+      "sha256": "4d29fae04c252295bd04bdbbbe1e9d2416bbcdf4964cee41d131f84bcbeb5929"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t132-f0206.png",
+      "sha256": "8b440946b1a5775ac56267992ee304bbfe28d934bc83d4ce87d2301212c6f3aa"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t136-f0212.png",
+      "sha256": "afad5d7ae96c77e9ee6a64cee530ceb0385fd0a9421cda97b71374a6e6d87edb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t140-f0218.png",
+      "sha256": "8f99fe0d4c23f69b1055059ac12b74c76744d17bab8ef01cf85bd32602573214"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t144-f0224.png",
+      "sha256": "bd71e8a459fd3635d488fd43660ce94516263b18b87297bb318e681587886331"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t148-f0230.png",
+      "sha256": "52a753f4f2d6dedac4457de09787045747abf327285717e95a45e72816bdc4c8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t152-f0236.png",
+      "sha256": "409943e93aaf7a714a1f0342e89dc15f9d71c5d95c34f260a623aa3e7f05110d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-23-adult_opposite_alignment-side-t156-f0242.png",
+      "sha256": "72952a57c0b3120c1913aaf89cbaf7a49c107409b0977cd504efffb28683b40e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t008-f0024.png",
+      "sha256": "1763221f179aae1b715a3ffe5cbd42ac4b4ac3907fee7281a7a726b26c3fc8a4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t012-f0030.png",
+      "sha256": "36b4814861d06e63ca415041e40241733f22f04c33342071adf6d3251d5d236b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t016-f0036.png",
+      "sha256": "3df95a2b61a23ed0a051624205a4917e855ce8ae8a1b5d2ade268fca98e517f5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t020-f0042.png",
+      "sha256": "853f6e90c1982e2b45e80f982f1299c8fc6ea4d887ae07cd0e478a63497f9ea9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t024-f0048.png",
+      "sha256": "b6db4d5215cf0e0678a896af16160d28083987e0fad52860b710de23d903d6eb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t028-f0054.png",
+      "sha256": "1cf5c786a5f4a8e5d993e0a26b7712b712553cc7dd75c04839893e0f8eb7f27b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t032-f0060.png",
+      "sha256": "4e7bf4ec7bc5cd2b411e4bf5a463b99405a8f2973040898cc61c6a3137352dc4"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t036-f0066.png",
+      "sha256": "0021fbca9e019da1ee04f4af0bcb1badd0a0fbd38826c6381dd906e8e48c73ef"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t040-f0071.png",
+      "sha256": "75d90487e97652a40664c67bf9c5990d94b5784daef90eac65fa43e650172ea8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t044-f0077.png",
+      "sha256": "7d5301faa9f7af97bf283de59429b45fa1d68826cf464ab41abb38b19cdf01a9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t048-f0083.png",
+      "sha256": "459ed71b8e61a50584a571a6567b18032d8cc3c1d79fa2ec81580ff8eba1d915"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t052-f0088.png",
+      "sha256": "30ea3784be6c54a9e5de80aecb541682230a11990e491273bb6305457684d0bf"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t056-f0094.png",
+      "sha256": "e452b48495202b14b885e7b3e6c707941acd753d7bd9077e6b4057bece9f8c6f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t060-f0100.png",
+      "sha256": "24b391a23a2934a30a031c9e1c811083007fdeb46ae22f23fface1fc97686835"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t064-f0106.png",
+      "sha256": "7137f90c4e0870f4343b78cf00bbe3c306cad474f5d0d3e0b28fb334a5202ac0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t068-f0112.png",
+      "sha256": "449833b2e1ffb9f4469d7ce18af13a724506554449b371e48a54b9fbe3026bd1"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t072-f0118.png",
+      "sha256": "f309da5c2f42ff3ad1a273a810f3b01028fd19f5c6f060176a70d21a5549d455"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t076-f0124.png",
+      "sha256": "8cafc3c5a57104ebace093be419f9b9d10fff0dc7198a286a21bd81f62f953fb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t080-f0130.png",
+      "sha256": "b51249433e2714caea9aa040034005c1d19a40014a5d7e7ce9214f59d207691a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-front-t084-f0136.png",
+      "sha256": "08904ec49a707502fc36c7e02b48887157a7ece6ed8701b00f7317274c98b086"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t176-f0273.png",
+      "sha256": "0785f38e4847a3b291c39f20d34905b3cfefcde5de6aa8ab5065007691da5187"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t180-f0278.png",
+      "sha256": "1def4a12f7edaade823b65303d3e7c6f12f7b12bf7f534a79093b24fc9227fdf"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t184-f0284.png",
+      "sha256": "fd9a8a3eba048750c4cb87b2e400a69987eae7fe89ce3cafe9421847c35adf9c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t188-f0290.png",
+      "sha256": "a83f86e8561f1f5168fe6632a2b8a12c07d9f2124d1cd001f32820cbc5da70d0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t192-f0296.png",
+      "sha256": "25a35d64cfe6a11836c7c188d757ad9f477d87f9b04e816d441916f97f56b854"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t196-f0302.png",
+      "sha256": "fbe6aa919732eeeddf679bf38aefc25e740e37a3b9969992302efefbde2f8044"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t200-f0308.png",
+      "sha256": "c84325743005286b40d898de2571d01fc60cd6fb110489374ae91deb3e96a3e9"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t204-f0314.png",
+      "sha256": "e5c818bbb1b6a83c9bc07f4aa670b994c9a9e1a6560de746c9ac2144c604d42a"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t208-f0320.png",
+      "sha256": "7c75eb4a1b9122f75161320c576cd825120770d4c1f09f70275f0832ba266504"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t212-f0326.png",
+      "sha256": "8fc6efdce0acfa187a3956ed15b62081797527b4c77fdebf5f3901b7c666573e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t216-f0332.png",
+      "sha256": "dc14b950748d50f6a719c181f1aedeba54f83bc5f42781cb5c118b6c47448cd5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t220-f0338.png",
+      "sha256": "59e205fc8eb3be16758a2b0474a90be07f84d03d6ab0a909b1d749676161cee0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t224-f0344.png",
+      "sha256": "c4f7876685a6e7a5d38cd78952dea6df1e0dea1223da0dbcbcccddf4e09939ad"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t228-f0350.png",
+      "sha256": "35acb27625bfc5908635e10c3cf1ce3aa6485b22c5b6b09b27a3b74408cd481d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t232-f0356.png",
+      "sha256": "0e8c38aaa2d9157ac8602f16bf6b0c4dbad6bff6524fd985e88595d76e94aaab"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t236-f0362.png",
+      "sha256": "3d2a6ee447d41049831b286278e142a998c71a5ef9779a6e22c403acd821c3e2"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t240-f0368.png",
+      "sha256": "4cffd9eb867563c2b6f7c60197c42effd9a26004375a076391993cef2b1d4579"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t244-f0374.png",
+      "sha256": "a33c1e5746e82d12c1a19935d79041e65d5eb139e30fdeb67c88bfd8d5f046ca"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t248-f0380.png",
+      "sha256": "be8587962fb04fcd50101a5eb5201209a7ee6c2c99bce22a1feb3c20063fc11e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t252-f0386.png",
+      "sha256": "2bccc93671d9dcd265da9ba55121c7456ea72c75fa8879c94e334b3d102413a5"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t256-f0392.png",
+      "sha256": "1ff6cb365d1a15f3c94b900b9cfeaea6002a405ecf10fb0cad68988ae74f2566"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-rear-t260-f0398.png",
+      "sha256": "52d1587ceed41fd80a72ff54d565f7f0dbf303e544f3e3cf4ed99166ac77a340"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t092-f0148.png",
+      "sha256": "b0527d374abe54a0e7b5c104b18b7ce9bf7159cd54fb996b338e35b8daeb941c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t096-f0154.png",
+      "sha256": "96c05ffc4c33a409aae8daa9570e140438b6a7ef76da0e422feea227321ff811"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t100-f0160.png",
+      "sha256": "ac031f23606a0c9c90ff835de02b9c63c3f4a4eb65bad783256fe8c2c02af523"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t104-f0166.png",
+      "sha256": "e2ed6b095f9e2e2f9b0fb61a3742082e9e0c0e23977c373f1da20668316c9a18"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t108-f0172.png",
+      "sha256": "9240eccf25e23b54341432cccaa2a3a31ed0cc656003754ec1febe379f0bd2c3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t112-f0178.png",
+      "sha256": "04e5eba82b418faa3e479c4041f378f680f8cd55b3854064f33c9c2932ec7014"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t116-f0184.png",
+      "sha256": "5118eaf5672326eda42042d425635473d2b3f778e469988542606d5b7e1ac7a8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t120-f0190.png",
+      "sha256": "ca76372e19af87e1d72cbf6ed5103e018abfcc9efd285f983a457aa6b28a654e"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t124-f0196.png",
+      "sha256": "23d430c9c18bc4b1a8ef02e89c3333fc5079e0958cd2ddca2df7c330e7ec243d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t128-f0201.png",
+      "sha256": "7b6d0bfad19fe853fa10f8089bad2c3ae28166bbb681b4b0c199402d4d123070"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t132-f0208.png",
+      "sha256": "122344d389ecec984746ea0a3ff98253049fc55b4c5ed102d5d5ae50f500fdfb"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t136-f0214.png",
+      "sha256": "3e549f5f8a14060cbff4d16a89ae3fbfe556f44eec4eb1fcae2eff05e81b8dd7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t140-f0219.png",
+      "sha256": "db415ec5924bde4267d0b6f1e83992b31bb04a7c367670a216c5c11321fd3d6d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t144-f0225.png",
+      "sha256": "21b3f95cbde285e9769692f5dd0f4410a694cfc8414cf59348397a55eaed18df"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t148-f0231.png",
+      "sha256": "e72fbb3cb2fb887a9c00a4fc2679ed43c08eacb869a68408af4ebd23a690a777"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t152-f0237.png",
+      "sha256": "75502294c2f49e7222abb5cbe7abfc29e4eca7ebe934736dad1ce64ee7466631"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t156-f0243.png",
+      "sha256": "b9dbf1efcb93f5679eae91c0e68692cbe1be91505d3d8e70e91c7d2ea5e45b34"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t160-f0249.png",
+      "sha256": "6964ace9748a7ec3afa1f57ccb4efefa3dd42a42526898e27bcd742e2b855924"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t164-f0255.png",
+      "sha256": "06305783dbe698525653ad5e883c26135bab82b8a2e1fb2ebdd591b937cbf73b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t168-f0261.png",
+      "sha256": "338be4a0524492d4e121e7df1a0cb06c2f593dd42109284887b4333429ce7134"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-24-first_evolution_cocoon-side-t172-f0266.png",
+      "sha256": "76cc5b311312aa78aa7b57b1936739cf3d3b4548f72f1417ddaeb1c2f4f24a18"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-front-t000-f0016.png",
+      "sha256": "d7303a8d3dcc0b54ad3ef73a05712206925c22ed6c9d28fe308c14d3033dd632"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-front-t000-f0020.png",
+      "sha256": "6ddec8781a28c9e393e058d8970adc9de33fcb6ad17906c79da6d9dd582fefb7"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-front-t000-f0024.png",
+      "sha256": "66568dc56d15a1d0c58b7da3a28599f8c32a5cd7c33e2cd5c1237148fb5eacd3"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-rear-t000-f0070.png",
+      "sha256": "8462028b468928d8b9a82a8bfb8964f59709f6c6d145c34ab5fc440d14924163"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-rear-t000-f0074.png",
+      "sha256": "de78a8ea995ab8b28fc1a82466b6cbf193edeae4bfdd8a7800a48c65baa2b7f8"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-rear-t000-f0078.png",
+      "sha256": "c69c713ba14aef3c87a39c2eb2b03d855e074f0ed44f5a1ff85aa287adedad8f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-side-t000-f0043.png",
+      "sha256": "0034b59875b941f42f2a2f6b124db84fa7488123f9f44e182c35ae14464a014b"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-side-t000-f0047.png",
+      "sha256": "1e2bf285f72b376eb537b7c133f05b0ab6b64543e417ede13c4a497cbe75f326"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-25-baby_p075_red_shiny_rabbit_wings-side-t000-f0051.png",
+      "sha256": "4b8898614857603fdbab5d93629a332962481ed7b788d219345f907a9d617712"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-front-t000-f0016.png",
+      "sha256": "9805f6c6b4e069c49aed0724ef1e09b4ef515e6f5c3c8b852a4ebacf4b3c1dde"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-front-t000-f0020.png",
+      "sha256": "084206247c82a728195b676f45c0dd3563eb69b966cbace25228c32397c7a26d"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-front-t000-f0024.png",
+      "sha256": "0b5a48c038bc68bf137581e4bd695792ed708c62ad7d611e74720821ba933e7f"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-rear-t000-f0070.png",
+      "sha256": "83711b608ce96fa469cf7c8d2ca581536ecf6dafe02a6d8f4e2bfaf877cc0415"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-rear-t000-f0074.png",
+      "sha256": "e58f529ce79a37d61b6dfc399b19ff42d9596c565cd3660bd5a5f88f8ac093d0"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-rear-t000-f0078.png",
+      "sha256": "3393cb4e2578ed96fa64cf256122e02fe9448e1d2d5c9a4c488e69d4666c9f9c"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-side-t000-f0043.png",
+      "sha256": "ef9806184bb8ce56734997f05a01b7f2f2dfbe6b1807bbb9a29d516cc340a8c6"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-side-t000-f0047.png",
+      "sha256": "82e5547f0466e69c6ddb1d2a416d31ecdd340db8c7ebad6bf5d4617283da3171"
+    },
+    {
+      "path": "00-morph052-client-accepted/hero052-26-adult_p100_ruby_rabbit_wings_glasses-side-t000-f0051.png",
+      "sha256": "872f06fe745da52918a8dd7a5612a5d28a67e95c07df0996784ee479a0d97c95"
+    }
+  ]
+}

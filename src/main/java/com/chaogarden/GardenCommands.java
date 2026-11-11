@@ -1,6 +1,7 @@
 package com.chaogarden;
 
 import com.chaogarden.entity.ChaoEntity;
+import com.chaogarden.core.HeroRunMorphology052;
 import com.chaogarden.item.ChaoEggItem;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import net.minecraft.commands.Commands;
@@ -104,6 +105,17 @@ public final class GardenCommands {
                                                       [s.favoriteFruit]
                                                   + " Fruit"),
                                       false);
+                              var morph=HeroRunMorphology052.sample(s);
+                              c.getSource().sendSuccess(() -> Component.literal(
+                                  "Biological maturity " + Math.round(morph.maturity()*100) + "%"
+                                      + (s.adult ? " • Locked first type " + com.chaogarden.core.ChaoState.TYPES[s.lockedPrimaryType()]
+                                          : " • Ordinary first type now " + com.chaogarden.core.ChaoState.TYPES[s.prospectivePrimaryType()] + " (Stamina excluded)")
+                                      + " • Chaos Stamina balance " + (s.chaosNormalCandidate() ? "ready" : "not ready")), false);
+                              if(morph.enabled())c.getSource().sendSuccess(() -> Component.literal(
+                                  s.adult ? "Hero Run prototype: training target " + Math.round(morph.specialization()*100)
+                                      + "%, visible specialization " + Math.round(morph.adultGrowth()*100) + "%"
+                                      : "Hero Run prototype: Hero development " + Math.round(morph.babyHero()*100)
+                                          + "%, Run development " + Math.round(morph.babyRun()*100) + "%"), false);
                               return 1;
                             }))
                 .then(

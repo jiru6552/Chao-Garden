@@ -8,9 +8,15 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 JAVA = ROOT / 'src/main/java/com/chaogarden'
 SOURCE = (JAVA / 'item/GardenGuideItem.java').read_text()
+# The two DNA chapters use the registered species count in their Java string
+# concatenation. Resolve that existing constant before parsing quoted pages.
+ANIMAL_SOURCE = (JAVA / 'core/ChaoState.java').read_text()
+ANIMAL_BLOCK = re.search(r'public static final String\[\] ANIMALS = \{(.*?)\n  \};', ANIMAL_SOURCE, re.S).group(1)
+ANIMAL_COUNT = len(re.findall(r'"[^"]+"', ANIMAL_BLOCK))
+PAGE_SOURCE = SOURCE.replace('ChaoState.ANIMALS.length', json.dumps(str(ANIMAL_COUNT)))
 PAGE = re.compile(r'page\(\s*((?:"(?:[^"\\]|\\.)*"\s*(?:\+\s*)?)+)\)', re.S)
 PAGES = [''.join(json.loads(s) for s in re.findall(r'"(?:[^"\\]|\\.)*"', m.group(1)))
-         for m in PAGE.finditer(SOURCE)]
+         for m in PAGE.finditer(PAGE_SOURCE)]
 SECTIONS = dict(p.split('\n\n', 1) for p in PAGES)
 EXPECTED_TITLES = '''A Keeper's Journal|First care|Care supplies|The Analyzer|Training|Learning to move|Learning to swim|Learning to fly|Growth and alignment|Evolution|Adult forms|Breeding|Inheritance|Special eggs|Animal Genes|Reincarnation|Chaos Chao|Safe transport|Minecraft adaptations|Pack makers|Fruit orchards|Learning gardening|Watering trees|Planted-tree life|Black Market|Rare egg discovery|Gem eggs|Other market gifts|Your gardens|Garden registration|Garden boundaries|Building a race|Races and karate|Chao companions|Companion flight and water|Nether companions|End companions|Robot legacy|A robot's next life|Companion recovery|Choosing a gift|Curious hands|Personalities|Portable adventure fruit|Kindergarten travel|Meet the staff|Doctor care|Grade care|Classroom|Learned skills|Wardrobe|Handling eggs|Garden friends|Contest awards|Expanded garden gifts|Birthday parties|Optional garden rules|Official comparison (OP)'''.split('|')
 
@@ -37,7 +43,8 @@ class JournalContentTest(unittest.TestCase):
     def test_growth_and_evolution_teach_mechanics(self):
         self.assertIn('Eating whole fruit speeds growth', SECTIONS['Growth and alignment'])
         self.assertIn('POINTS', SECTIONS['Evolution'])
-        self.assertIn('Stamina gives Normal', SECTIONS['Evolution'])
+        self.assertIn('Swim, Fly, Run and Power POINTS', SECTIONS['Evolution'])
+        self.assertIn('Stamina does not compete', SECTIONS['Evolution'])
         self.assertIn('tied ability', SECTIONS['Evolution'])
 
     def test_robot_and_breeding_contradictions_removed(self):

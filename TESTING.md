@@ -77,3 +77,18 @@ For the 0.25.50 hat, complete-DNA, stock-rotation and gem-egg update, see [resul
 
 
 For 0.25.51, see [toy polish verification](docs/TOY_POLISH_02551.md) and [Shadow/icon asset references](docs/TOY_ASSETS_02551.md). The existing broom, book, dolls, crayons and car previews use their revised production interactions. Car/crayon previews require clear supported floor space.
+
+
+## Hero Run morphology prototype (0.25.52)
+
+See [the implementation and results report](docs/HERO_RUN_02552.md) and [reference audit](docs/HERO_RUN_REFERENCES_02552.md). Use Java 21 and the existing external Lionfish API 3.1 dependency.
+
+```sh
+./gradlew coreTest heroRunMorphRigTest052
+./gradlew runGameTestServer -PchaoGameTestNamespaces=chao_morph52 -PchaoGameTestDir=run-morph052-tests
+./gradlew runClient -PheroRun052Study=true -PheroRun052Start=0 -PheroRun052Limit=27 -PheroRun052Dir=run-morph052-visual
+```
+
+Run the server and client in separate invocations. The development client helper creates a fresh isolated flat world and intentionally stages training/maturity values; it is excluded from the production JAR. Scenes 18–20 require the real Accessories/owo test runtime supplied via the existing `chaoAccessoriesTest`/`chaoAccessoriesDir` properties. The helper's frames and normal-time recording complement, rather than replace, manual checks in a real save and multiplayer.
+
+Production evaluation uses Hero Garden Fruit, Run drives, Creative Analyzer edits and `/chao inspect`; `/chao mature` is the existing first-evolution shortcut. Existing toy once/loop/stop previews remain available. Stage percentages in the galleries are controlled inputs, not a claim of having observed an entire natural lifetime.

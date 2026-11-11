@@ -85,6 +85,9 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
   public String officialGeometryKey() { return official.sourceGeometryKey(); }
   public String gameplayFormKey() { return official.geometryKey(); }
   public void transformAccessoryAnchor(String semanticBone,PoseStack stack) { official.transformBone(semanticBone,stack); }
+  void copyAccessoryPoseTo(String semanticBone,ChaoMeshAsset target,ChaoMeshAsset.Pose to) {
+    official.copyAttachmentPoseTo(semanticBone,target,to);
+  }
   public float[] accessoryBounds(String semanticBone) { return official.attachmentBounds(semanticBone); }
   float[] toyMouth() { return official.attachmentMouth(); }
   public float[] accessoryEyes() { return official.attachmentEyes(); }
@@ -202,6 +205,7 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     // authored Chao gaits instead track distance, with only the 0.64/0.80 body
     // scale difference shortening a child's stride.
     float gaitSwing = state.adult ? swing : swing * (1.25f / 3f);
+    HeroRunAppearance052.prepare(entity.getUUID(),state,age);
     official.prepareDevelopment(model,state);
     official.animateGameplay(model,entity.getUUID(),motion,age,gaitSwing,
         rest||eat||pet||held||entity.isHandlingItem()&&action!=ChaoEntity.ItemAction.GARDEN||entity.toyPlayingTicks()>0&&!ballChasing||gesture&&behavior!=ChaoEntity.Behavior.FLEE&&behavior!=ChaoEntity.Behavior.HOLD_HANDS?0:amount,emotion,emotionalTime,

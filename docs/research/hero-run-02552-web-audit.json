@@ -1,0 +1,115 @@
+{
+  "retrieval_kind": "Fresh inherited-proxy HTTPS after chao-island.com became permitted; explicit ordinary User-Agent; no challenge bypass",
+  "resources": [
+    {
+      "name": "run.html",
+      "url": "https://chao-island.com/gallery/chao-types/run.html",
+      "final_url": "https://chao-island.com/gallery/chao-types/run.html",
+      "status": 200,
+      "bytes": 141115,
+      "content_type": "text/html",
+      "sha256": "1488b0fca180c1add1bc286a7918b5868fb1a77ac6a60b7194da338f833afbec"
+    },
+    {
+      "name": "hero.html",
+      "url": "https://chao-island.com/gallery/advanced-evolution/hero.html",
+      "final_url": "https://chao-island.com/gallery/advanced-evolution/hero.html",
+      "status": 200,
+      "bytes": 119551,
+      "content_type": "text/html",
+      "sha256": "5a993119a75bf93b1cc6515a06e03453dbfc7ec4346dd129f05aecda4bb3d8ec"
+    },
+    {
+      "name": "age.html",
+      "url": "https://chao-island.com/info-center/advanced/age",
+      "final_url": "https://chao-island.com/info-center/advanced/age",
+      "status": 200,
+      "bytes": 111295,
+      "content_type": "text/html",
+      "sha256": "0437c1b0bf228b593259386c4a61a1f588fd71e16dd5ae8c0f91dd227c09a718"
+    },
+    {
+      "name": "evolution.html",
+      "url": "https://chao-island.com/wiki/Evolution",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "status": 403,
+      "cf_mitigated": "challenge",
+      "response_sha256": "1a273b8e6a4bfb9243d82408dd00c4b374304c609625793eab85ea18ea2c15d5",
+      "readable_article": false
+    },
+    {
+      "name": "alignment.html",
+      "url": "https://chao-island.com/wiki/Alignment",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "status": 403,
+      "cf_mitigated": "challenge",
+      "response_sha256": "bbd7d43df2e970fd1ff494fae327f0e437f4c25a6b603a5a5c6e05ff6049a10e",
+      "readable_article": false
+    },
+    {
+      "name": "hero-run-young.jpg",
+      "url": "https://chao-island.com/assets/images/gallery/twotone/run/heroruntwotoneregular.jpg",
+      "final_url": "https://chao-island.com/assets/images/gallery/twotone/run/heroruntwotoneregular.jpg",
+      "status": 200,
+      "bytes": 11745,
+      "content_type": "image/jpeg",
+      "sha256": "ce3903ab49f9385fc02664b103e56307c807cbf134e8fce5f036e055e15b1114"
+    },
+    {
+      "name": "hero-run-normal.jpg",
+      "url": "https://chao-island.com/assets/images/gallery/advanced-evolution/hero/runnormal.jpg",
+      "final_url": "https://chao-island.com/assets/images/gallery/advanced-evolution/hero/runnormal.jpg",
+      "status": 200,
+      "bytes": 8952,
+      "content_type": "image/jpeg",
+      "sha256": "406a4d4f98c299fd64bcec7379706b131504e58a0a274ccdd4d7fc94247b48e4"
+    },
+    {
+      "name": "hero-run-run.jpg",
+      "url": "https://chao-island.com/assets/images/gallery/advanced-evolution/hero/runrun.jpg",
+      "final_url": "https://chao-island.com/assets/images/gallery/advanced-evolution/hero/runrun.jpg",
+      "status": 200,
+      "bytes": 9024,
+      "content_type": "image/jpeg",
+      "sha256": "b44a55c1b45fd09fdc41183582db24dabe701d9265a3bdb0bba0cfece78bf8ef"
+    },
+    {
+      "name": "evolution-info.html",
+      "url": "https://chao-island.com/info-center/life-cycle/evolution.html",
+      "status": 200,
+      "bytes": 118575,
+      "sha256": "af9fc1ea7209864365bc36874b84f2823c0c60480e22669ab994856574258e63",
+      "role": "linked Info Center counterpart to blocked wiki page"
+    },
+    {
+      "name": "alignment-info.html",
+      "url": "https://chao-island.com/info-center/life-cycle/alignment.html",
+      "status": 200,
+      "bytes": 113382,
+      "sha256": "00a1fb01cae5bb4d77f7a56a17a3fd471b8ee86f4d2b550126d2a7fd939fdd05",
+      "role": "linked Info Center counterpart to blocked wiki page"
+    }
+  ],
+  "browser_attempt": [
+    {
+      "url": "https://chao-island.com/wiki/Evolution",
+      "tool": "normal headless Chromium",
+      "outcome": "No readable page returned within 30 seconds"
+    },
+    {
+      "url": "https://chao-island.com/wiki/Alignment",
+      "tool": "normal headless Chromium",
+      "outcome": "No readable DOM; Chromium log reported net::ERR_CERT_AUTHORITY_INVALID and NSS default-database initialization error"
+    }
+  ],
+  "wiki_limitation": "Exact /wiki/Evolution and /wiki/Alignment returned HTTP403 with cf-mitigated:challenge and Just a moment HTML. Normal Chromium did not retrieve readable content; its NSS certificate trust could not initialize in its read-only default location. No certificate-ignore flag used.",
+  "verified_text_findings": {
+    "age_child": "Body shape and regular colour gradually approach the favoured first evolution; identity is selected at cocoon entry.",
+    "age_adult": "Mutable after evolution; based on animals/drives and aging, no fixed age and not visible stats. Opposing pairs can reverse the secondary.",
+    "hero_run_young": "Blue/yellow hand markings, blue/purple stomach markings, small straight spike, yellow halo.",
+    "hero_run_aged_normal": "Long spike, blue markings and stripy blue hands.",
+    "hero_run_aged_run": "Light blue markings; head splits into three petal-like parts.",
+    "evolution_original_rule": "The linked Info Center says highest visible stat and Stamina-to-Normal are false descriptions of the original rule; recent hidden animal/drive interaction determines the original type.",
+    "prototype_override": "Four-stat highest-points/latest-increase first selection and current-bar reversible specialization are user-requested Minecraft policies, not exact original-game algorithms."
+  }
+}

@@ -17,7 +17,9 @@ public final class ChaoHeadwear {
     });
   }
 
-  private void render(String path, String selected, Map<String, ChaoMeshAsset.Pose> source,ChaoAccessoryFit.Fit fit,
+  @FunctionalInterface private interface JointCopy {void apply(String name,ChaoMeshAsset target,ChaoMeshAsset.Pose pose);}
+
+  private void render(String path, String selected, Map<String, ChaoMeshAsset.Pose> source,JointCopy copier,ChaoAccessoryFit.Fit fit,
                       PoseStack stack, VertexConsumer vertices, int light, int overlay) {
     var rig = rig(path);
     rig.poses.values().forEach(ChaoMeshAsset.Pose::reset);
@@ -25,9 +27,7 @@ public final class ChaoHeadwear {
       var pose = entry.getValue();
       var from = source.get(entry.getKey());
       if (from != null) {
-        pose.x = from.x; pose.y = from.y; pose.z = from.z;
-        pose.rx = from.rx; pose.ry = from.ry; pose.rz = from.rz;
-        pose.sx = from.sx; pose.sy = from.sy; pose.sz = from.sz;
+        copier.apply(entry.getKey(),rig.geometry,pose);
       } else {
         // The source mesh's hidden base pieces do not hide replacement objects.
         pose.visible = entry.getKey().equals(selected);
@@ -40,7 +40,7 @@ public final class ChaoHeadwear {
 
   public void renderMerchant(OfficialChaoRig body, PoseStack stack, VertexConsumer vertices,
                              int light, int overlay) {
-    render("market_accessories", "merchant_accessories", body.poses(),
+    render("market_accessories", "merchant_accessories", body.poses(),body::copyAttachmentPoseTo,
         ChaoAccessoryFit.legacyHead(body.attachmentBounds("skull"),"baby"),
         stack, vertices, light, overlay);
   }
@@ -49,7 +49,7 @@ public final class ChaoHeadwear {
                  int light, int overlay) {
     String key = model.officialGeometryKey();
     if (!key.startsWith("chao_")) key = "chao_" + key;
-    render("hats/" + key, hat, model.officialPoses(),
+    render("hats/" + key, hat, model.officialPoses(),model::copyAccessoryPoseTo,
         ChaoAccessoryFit.legacyHead(model.accessoryBounds("skull"),key),stack, vertices, light, overlay);
   }
 }

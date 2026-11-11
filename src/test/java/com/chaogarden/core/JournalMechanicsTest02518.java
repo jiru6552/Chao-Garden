@@ -27,7 +27,7 @@ public final class JournalMechanicsTest02518 {
     check(LocomotionRules.canFly(child), "135 Fly points unlock gliding");
     check(child.prospectivePrimaryType() == ChaoState.RUN_TYPE, "Highest points select Run");
     child.points[ChaoState.STAMINA] = 1335;
-    check(child.prospectivePrimaryType() == ChaoState.NORMAL, "Highest Stamina points select Normal");
+    check(child.prospectivePrimaryType() == ChaoState.RUN_TYPE, "Stamina is excluded from ordinary four-ability first evolution");
 
     var tied = new ChaoState();
     tied.train(ChaoState.RUN, 1);

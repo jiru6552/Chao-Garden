@@ -15,7 +15,7 @@ public final class GradualEvolutionRulesTest {
     for(int stat=0;stat<5;stat++)for(float alignment:new float[]{-1,0,1}){
       var s=new ChaoState();s.points[stat]=100;s.align=alignment;s.ageTicks=99;
       check(s.tick(100,1000,new Random(1))==ChaoState.Transition.EVOLVED,"A child reaches its actual first cocoon");
-      check(s.primaryType==(stat==4?0:stat+1),"Highest trained ability or Stamina selects the requested primary");
+      check(s.primaryType==(stat==4?0:stat+1),"Highest earned four-ability points select the primary; Stamina-only records retain untouched Normal");
       check(s.align==alignment&&s.adult&&s.evolutionStrength()==0,"First evolution locks alignment and restarts adult development");
     }
     var partial=new ChaoState();partial.train(ChaoState.FLY,1,new Random(1));
@@ -27,7 +27,8 @@ public final class GradualEvolutionRulesTest {
     tie=ChaoState.decode(tie.encode());
     check(tie.lastTrainedStat()==2&&tie.prospectivePrimaryType()==ChaoState.FLY_TYPE,"Most recent AMONG tied greatest stats wins, even when the latest overall stat is not greatest");
     tie.train(0,1);check(tie.prospectivePrimaryType()==ChaoState.SWIM_TYPE,"Changing which tied stat was last raised changes the prospective primary");
-    tie.points[4]=101;check(tie.prospectivePrimaryType()==ChaoState.NORMAL,"Highest Stamina keeps Normal and legitimate Chaos evolution obtainable");
+    tie.points[4]=101;check(tie.prospectivePrimaryType()==ChaoState.SWIM_TYPE,"Higher Stamina cannot override ordinary four-ability selection");
+    check(tie.chaosNormalCandidate(),"The former five-stat Normal predicate remains available only for rare Chaos admission");
   }
 
   private static void ageAndFood(){

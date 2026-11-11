@@ -1,3 +1,11 @@
+## 0.25.52 — Hero Run morphology prototype
+
+- Develop Hero alignment and Run body traits continuously through one baby-to-Hero-Run-to-Hero/Run/Run path, with source-informed crown, feet and natural markings.
+- Extend the current mesh sampler to share changing vertices, base joints and attachment bounds; retain Lionfish and existing genetic/wardrobe UV layouts without another dependency.
+- Select ordinary first evolution from four earned-point abilities and saved tie history, excluding Stamina; preserve the qualified legacy Chaos route explicitly.
+- Derive reversible Hero Run appearance from current Run-minus-Power training bars, keep biological maturity and adult identity, and group simultaneous combined-drive tie history.
+- Keep existing save formats and add focused core/native/geometry checks plus controlled actual-client stages and motion. See docs/HERO_RUN_02552.md for rates, verified references and test limits.
+
 ## 0.25.51 — Focused toy pose and inventory polish
 
 - Refit the broom for two measured hands with shorter arm extension and a closer grounded sweep.
