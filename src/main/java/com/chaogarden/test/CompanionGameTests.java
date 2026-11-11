@@ -173,7 +173,9 @@ public final class CompanionGameTests {
     ItemStack young = carrier.copy(); CompoundTag entity = ChaoCarrierItem.entityData(young);
     ChaoState youngState = ChaoState.decode(entity.getString("Chao")); youngState.adult = false;
     entity.putString("Chao", youngState.encode()); ChaoCarrierItem.storeEntity(young, entity);
-    helper.assertTrue(Boolean.FALSE.equals(canEquip.invoke(accessory, young, reference)), "Actual Accessory callback admitted a child");
+    helper.assertTrue(Boolean.TRUE.equals(canEquip.invoke(accessory, young, reference)), "Actual Accessory callback rejected an eligible child");
+    helper.assertTrue(!com.chaogarden.companion.CompanionRules.adult(youngState)
+        &&!com.chaogarden.companion.CompanionRules.canElytra(youngState),"Equipping a child granted adult flight eligibility");
     inventory.setItem(0, carrier); containerType.getMethod("markChanged", boolean.class).invoke(container, false);
     ItemStack pendingGift=new ItemStack(Items.DIAMOND_SWORD);
     pendingGift.setDamageValue(11);

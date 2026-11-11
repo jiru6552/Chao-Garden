@@ -3,6 +3,7 @@ package com.chaogarden.test;
 import com.chaogarden.ChaoGarden;
 import com.chaogarden.companion.*;
 import com.chaogarden.core.ChaoState;
+import com.chaogarden.core.LocomotionRules;
 import com.chaogarden.core.OmochaoRules;
 import com.chaogarden.entity.ChaoEntity;
 import com.chaogarden.item.ChaoCarrierItem;
@@ -66,7 +67,9 @@ public final class CompanionSkillGameTests {
         +",used="+p.getPersistentData().getInt(CompanionContent.AIR_USED)
         +",started="+p.getPersistentData().getLong(CompanionContent.AIR_STARTED)+",time="+p.server.overworld().getGameTime()+"]";
   }
-  private static ChaoState adult(){var s=ChaoState.egg(4,false,true,0,new Random(211));s.adult=true;s.energy=100;return s;}
+  /** These free-following ability probes require the earned running milestone.
+   * Without it, current carry rules correctly perch even an adult on the head. */
+  private static ChaoState adult(){var s=ChaoState.egg(4,false,true,0,new Random(211));s.adult=true;s.energy=100;s.points[ChaoState.RUN]=LocomotionRules.RUN_POINTS;return s;}
   static Equipped equip(GameTestHelper helper,ChaoState state){
     return equip(helper,state,TestConnections.makeServerPlayer(helper));
   }
@@ -139,7 +142,14 @@ public final class CompanionSkillGameTests {
             keeper.setItemSlot(EquipmentSlot.CHEST,new ItemStack(Items.ELYTRA));
             helper.assertTrue(keeper.tryToStartFallFlying(),"Expired companion budget disabled a real chest elytra");
             helper.runAfterDelay(3,()->{
-              helper.assertTrue(keeper.isFallFlying()&&!c.isCompanionGripping(),"Independent chest elytra did not continue without Chao support");finish(helper,e);
+              helper.assertTrue(keeper.isFallFlying()&&c.isCompanionGripping()&&c.noPhysics,
+                  "Independent chest elytra should continue with the companion carried on the back");
+              helper.assertTrue(!CompanionContent.flightEligible(keeper),"Native wings renewed the exhausted companion flight permit");
+              CompanionContent.unequip(keeper,e.inventory().getItem(0));e.inventory().setItem(0,ItemStack.EMPTY);
+              helper.runAfterDelay(3,()->{
+                helper.assertTrue(c.isRemoved()&&keeper.isFallFlying(),"Unequipping the Chao interrupted independent chest elytra");
+                finish(helper,e);
+              });
             });
           });
         });
@@ -150,7 +160,7 @@ public final class CompanionSkillGameTests {
   @GameTest(template="empty",timeoutTicks=110)
   public static void actualWaterBonusesPreservePotionsAndClearOnExit(GameTestHelper helper){
     if(!AccessoriesBridge.available()){helper.succeed();return;}
-    var s=adult();s.levels[ChaoState.RUN]=1;s.levels[ChaoState.SWIM]=99;var e=equip(helper,s);
+    var s=adult();s.levels[ChaoState.RUN]=1;s.levels[ChaoState.SWIM]=99;s.points[ChaoState.SWIM]=LocomotionRules.SWIM_POINTS;var e=equip(helper,s);
     helper.runAfterDelay(12,()->{
       body(helper,e);var player=e.keeper();
       var run=player.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getModifier(CompanionContent.RUN_SPEED);

@@ -171,7 +171,8 @@ public final class CompanionCareUpdateGameTests {
     });
     h.runAtTickTime(32,()->{
       var c=CompanionSkillGameTests.body(h,e);
-      h.assertTrue(!c.isCompanionGripping() && c.companionKeeperId()==-1 && !c.noPhysics,"Grip stayed after stopping flight");
+      h.assertTrue(!c.isCompanionGripping() && c.companionCarryPosition()==com.chaogarden.companion.CarryRules.HEAD
+          && c.companionKeeperId()==keeper.getId() && c.noPhysics,"An adult without the Run unlock did not return to the head after flight");
       c.state().energy=0;keeper.getAbilities().flying=true;keeper.setOnGround(false);
     });
     h.runAtTickTime(40,()->{

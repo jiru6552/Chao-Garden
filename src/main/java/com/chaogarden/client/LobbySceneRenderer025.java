@@ -176,16 +176,24 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
         // faces, guards, crown, tube walls and ribbons now sort together. Using
         // the emissive/eyes shader here makes shaderpacks treat glass as glow
         // with incompatible depth/composite rules.
-        for(var scene:ALPHA_SCENES)APPROACH_STARS.draw(scene.stack(),buffers,STAR_TEX,0);
-        flush(buffers,Material.get(STAR_TEX,0));
-        for(var scene:ALPHA_SCENES){
-          var poses=scene.stack();
-          FLOOR.draw(poses,buffers,WHITE,0);APPROACH_GLASS.draw(poses,buffers,WHITE,0);
-          GLAZING.draw(poses,buffers,WHITE,0);energy(poses,buffers,scene.phase());
-        }
-        flush(buffers,Material.get(WHITE,0));
+        // Treads and their landing contain coplanar glass/star surfaces. Blend
+        // every color layer before resolving depth, so equal-depth fragments
+        // cannot turn into visible stripes. The final depth-only pass still
+        // supplies the nearest foreground to shader fog and compositing.
+        alphaGeometry(buffers,shaderPack?4:0);
+        if(shaderPack)alphaGeometry(buffers,5);
       }finally{try{buffers.endBatch();}finally{ALPHA_SCENES.clear();}}
     }
+  }
+  private static void alphaGeometry(MultiBufferSource buffers,int mode){
+    for(var scene:ALPHA_SCENES)APPROACH_STARS.draw(scene.stack(),buffers,STAR_TEX,mode);
+    flush(buffers,Material.get(STAR_TEX,mode));
+    for(var scene:ALPHA_SCENES){
+      var poses=scene.stack();
+      FLOOR.draw(poses,buffers,WHITE,mode);APPROACH_GLASS.draw(poses,buffers,WHITE,mode);
+      GLAZING.draw(poses,buffers,WHITE,mode);energy(poses,buffers,scene.phase(),mode);
+    }
+    flush(buffers,Material.get(WHITE,mode));
   }
   private static void submitUnregisteredLobby(RenderLevelStageEvent event){
     var mc=Minecraft.getInstance();if(mc.level==null)return;
@@ -263,8 +271,8 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
       // Emissive/color-only is appropriate for the distant authored background,
       // never for glass that must supply foreground depth to the shaderpack.
       if(shaderPack && mode==3)return RenderType.entityTranslucentEmissive(texture,false);
-      if(shaderPack && mode==0)return CACHE.computeIfAbsent(texture+":translucent",key->create("chao_scene_translucent",
-          DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,262144,false,true,
+      if(shaderPack && (mode==0||mode==4||mode==5))return CACHE.computeIfAbsent(texture+":translucent:"+mode,key->create("chao_scene_translucent_"+mode,
+          DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,262144,false,mode!=5,
           CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_SHADER)
               .setTextureState(new TextureStateShard(texture,false,false))
               .setLightmapState(LIGHTMAP).setOverlayState(OVERLAY)
@@ -272,7 +280,7 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
               .setDepthTestState(LEQUAL_DEPTH_TEST)
               // Standard shader translucency needs foreground depth for fog,
               // reflections and compositing. Background sky remains color-only.
-              .setWriteMaskState(COLOR_DEPTH_WRITE).createCompositeState(false)));
+              .setWriteMaskState(mode==4?COLOR_WRITE:mode==5?DEPTH_WRITE:COLOR_DEPTH_WRITE).createCompositeState(false)));
       if(shaderPack)return switch(mode){
         case 2 -> RenderType.entityCutout(texture);
         default -> RenderType.entityCutoutNoCull(texture);
@@ -621,7 +629,7 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     out.addVertex(pose,x,y,z).setColor(color).setUv(u,v).setOverlay(OverlayTexture.NO_OVERLAY)
         .setLight(LightTexture.FULL_BRIGHT).setNormal(pose,nx,ny,nz);
   }
-  private static void energy(PoseStack poses,MultiBufferSource buffers,float t){var b=buffers.getBuffer(Material.get(WHITE,0));var matrix=poses.last();
+  private static void energy(PoseStack poses,MultiBufferSource buffers,float t,int mode){var b=buffers.getBuffer(Material.get(WHITE,mode));var matrix=poses.last();
     for(int x:new int[]{-3,3})for(int z:new int[]{-3,3}){
       for(int i=0;i<14;i++){float y0=.35f+i*.34f,y1=y0+.34f;float ox0=(float)Math.sin(t+i*.7f)*.09f,ox1=(float)Math.sin(t+(i+1)*.7f)*.09f;
         int color=0xaacb75ff;energyVertex(b,matrix,x+ox0-.035f,y0,z,0,0,color,0,0,1);energyVertex(b,matrix,x+ox1-.035f,y1,z,1,0,color,0,0,1);energyVertex(b,matrix,x+ox1+.035f,y1,z,1,1,color,0,0,1);energyVertex(b,matrix,x+ox0+.035f,y0,z,0,1,color,0,0,1);

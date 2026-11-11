@@ -1,0 +1,105 @@
+0.25.47 verification
+The initial 35-test diagnostic is retained below; six stale test fixtures/assertions were corrected, then the final 36-test suite passed. See report.
+
+fixes046-native-final.log
+[05:01:40] [Server thread/INFO] [minecraft/GameTestServer]: ========= 106 GAME TESTS COMPLETE IN 32.51 s ======================
+[05:01:40] [Server thread/INFO] [minecraft/GameTestServer]: All 106 required tests passed :)
+BUILD SUCCESSFUL in 1m 16s
+
+fixes046-rig.log
+ChaoState: 168905 checks passed
+Toy interaction rules: 3092 checks passed
+Egg distribution policy: 243 checks passed
+Training supplies: 248 checks passed
+Wardrobe choices: 6644 checks passed
+Baby animation timing: 26057 checks passed
+Portal geometry: 1233 checks passed
+Lobby geometry0252: 18509 checks passed
+Lobby perimeter approaches0256: 40670 checks passed
+Garden gate geometry0256: 48346 checks passed
+Area music rules0257: 136 checks passed
+School singing rules0258: 2472 checks passed
+Staff face timing0251: 177195 checks passed
+Black Market stock: 921359 checks passed
+Kindergarten buyback: 220052 checks passed
+Activity rules: 101311 checks passed
+Companion rules: 2103 checks passed
+SA2 fruit effects: 4765 checks passed
+Locomotion rules: 1209 checks passed
+Organ mesh fit: 152604 hand samples; 3168 body/skull surface checks; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels
+Guitar mesh fit: 302382 pose samples; 506796 emitted-hand samples; max contact=3.7282695E-7 blocks; rendered center error=0.011720353; min head=0.35219622 pixels; min torso=0.16891503 pixels; min floor=0.73127747 pixels; max reach=3.292374 pixels
+PASS: 99572 running pose checks across 132 form/age/speed cases and 31812 real-mesh frames; bounded cadence, retained foot travel and gait-unlock continuity
+PASS: 17286 carry checks; 396 form/age/morph cases; back skin gap=-0.014375001..0.051500008 blocks; max transition step=0.034974005 blocks
+BUILD SUCCESSFUL in 1m 34s
+
+companion046-real-client.log
+[05:41:52] [Server thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_CASE 0 baby_native_elytra mode=actual-Accessories-slot
+[05:41:58] [Server thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_CASE 1 adult_maximum_companion mode=actual-Accessories-slot
+[05:42:04] [Server thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_CASE 2 adult_finite_companion mode=actual-Accessories-slot
+[05:42:10] [Server thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_CASE 3 baby_no_flight_and_creative mode=actual-Accessories-slot
+[05:42:15] [Server thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_CASE 4 baby_swimming mode=actual-Accessories-slot
+[05:42:21] [Server thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_CASE 5 baby_ground_return mode=actual-Accessories-slot
+[05:42:27] [Server thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_CASE 6 hero_companion mode=actual-Accessories-slot
+[05:42:33] [Render thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_COMPLETE shots=45 carryRenders=964 mode=actual-Accessories-slot
+BUILD SUCCESSFUL in 1m 20s
+
+equipped046-real-native.log
+[05:43:27] [Server thread/ERROR] [minecraft/LogTestReporter]: equippedcareflightandfullrecovery failed at -7396992, -60, -4951449! Grip stayed after stopping flight
+[05:43:28] [Server thread/ERROR] [minecraft/LogTestReporter]: waterbonusesandpotionpreservation failed at -7397021, -60, -4951419! Level-one runner did not give a slight bounded boost
+[05:43:28] [Server thread/ERROR] [minecraft/LogTestReporter]: companioncombatlevels failed at -7396914, -60, -4951449! An untrained companion did not land an ordinary one-damage punch
+[05:43:28] [Server thread/ERROR] [minecraft/LogTestReporter]: actualslotflightandfinitebudget failed at -7396924, -60, -4951449! Independent chest elytra did not continue without Chao support
+[05:43:28] [Server thread/ERROR] [minecraft/LogTestReporter]: finiteglideandlandingreset failed at -7396981, -60, -4951419! Expired finite glide retained its back attachment
+[05:43:35] [Server thread/ERROR] [minecraft/LogTestReporter]: equipdefeatrecoveryandunequip failed at -7396963, -60, -4951329! Actual Accessory callback admitted a child
+[05:43:35] [Server thread/INFO] [minecraft/GameTestServer]: ========= 35 GAME TESTS COMPLETE IN 10.60 s ======================
+[05:43:35] [Server thread/INFO] [minecraft/GameTestServer]: 6 required tests failed :(
+BUILD FAILED in 39s
+
+equipped046-real-native-final.log
+[05:54:34] [Server thread/INFO] [minecraft/GameTestServer]: ========= 36 GAME TESTS COMPLETE IN 9.816 s ======================
+[05:54:34] [Server thread/INFO] [minecraft/GameTestServer]: All 36 required tests passed :)
+BUILD SUCCESSFUL in 41s
+
+equipped046-restart-save.log
+[05:56:43] [Server thread/INFO] [minecraft/GameTestServer]: ========= 1 GAME TESTS COMPLETE IN 865.2 ms ======================
+[05:56:43] [Server thread/INFO] [minecraft/GameTestServer]: All 1 required tests passed :)
+BUILD SUCCESSFUL in 28s
+
+equipped046-restart-load.log
+[05:58:56] [Server thread/INFO] [minecraft/GameTestServer]: ========= 1 GAME TESTS COMPLETE IN 924.2 ms ======================
+[05:58:56] [Server thread/INFO] [minecraft/GameTestServer]: All 1 required tests passed :)
+BUILD SUCCESSFUL in 26s
+
+solas047-final-client.log
+[06:15:39] [Render thread/INFO] [Iris/]: Using shaderpack: Solas Shader V3.7b.zip
+[06:16:03] [Server thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_WORLD existingSave= dimension=chao_garden:hub
+[06:16:23] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-00.png view=0 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-00.png
+[06:16:35] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-01.png view=1 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-01.png
+[06:16:47] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-02.png view=2 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-02.png
+[06:16:59] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-03.png view=3 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-03.png
+[06:17:13] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-04.png view=4 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-04.png
+[06:17:27] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-05.png view=5 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-05.png
+[06:17:41] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-06.png view=6 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-06.png
+[06:17:54] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-07.png view=7 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-07.png
+[06:18:05] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-08.png view=8 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-08.png
+[06:18:18] [IO-Worker-6/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-solas37b-final47-09.png view=9 nativeMaterialProbe=false irisActive=true Saved screenshot as lobby046-solas37b-final47-09.png
+[06:18:20] [Render thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_COMPLETE mode=solas37b-final47 views=10 irisActive=true
+BUILD SUCCESSFUL in 3m 5s
+
+solas047-off-final.log
+[06:21:12] [Server thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_WORLD existingSave=ExistingSolas046 dimension=chao_garden:hub
+[06:21:21] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-00.png view=0 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-00.png
+[06:21:29] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-01.png view=1 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-01.png
+[06:21:37] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-02.png view=2 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-02.png
+[06:21:45] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-03.png view=3 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-03.png
+[06:21:53] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-04.png view=4 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-04.png
+[06:22:01] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-05.png view=5 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-05.png
+[06:22:09] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-06.png view=6 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-06.png
+[06:22:17] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-07.png view=7 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-07.png
+[06:22:25] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-08.png view=8 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-08.png
+[06:22:33] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla47-09.png view=9 nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla47-09.png
+[06:22:33] [Render thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_COMPLETE mode=vanilla47 views=10 irisActive=false
+BUILD SUCCESSFUL in 1m 57s
+
+fixes047-build.log
+Production JAR integrity: complete central directory, unique entries and all CRCs verified; entries=8763; bytes=30621563; sha256=384dbd5e3f49c72beb9a4d3e9aea7ffb0f4ae00736953d8afeacb470b08688d1
+BUILD SUCCESSFUL in 10s

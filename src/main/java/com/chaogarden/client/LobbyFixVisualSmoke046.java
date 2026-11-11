@@ -26,7 +26,13 @@ public final class LobbyFixVisualSmoke046 {
       {19,77,1,21,83,-6}, {-17,76,1,-22,75,9}, {-19,68,8,-22,73,10},
       {6,82,9,0,82,0}, {1,82,7,3,82,3}, {5,79,5,3,83,3}, {1,85,4,3,82,3}
   };
-  private static boolean started,prepared;
+  private static final int[] VIEW_INDICES=selectedViews();
+  private static int[] selectedViews(){
+    String selected=System.getProperty("chao_garden.lobbyFixViews","");
+    if(selected.isBlank())return java.util.stream.IntStream.range(0,VIEWS.length).toArray();
+    return java.util.Arrays.stream(selected.split(",")).mapToInt(s->{int i=Integer.parseInt(s.trim());if(i<0||i>=VIEWS.length)throw new IllegalArgumentException("Lobby view "+i);return i;}).toArray();
+  }
+  private static boolean started,prepared,finished;
   private static volatile boolean ready;
   private static int ticks,stage,frames;
   private static long viewBegan;
@@ -37,13 +43,19 @@ public final class LobbyFixVisualSmoke046 {
     // formats/material/depth states without claiming that Iris or Solas is loaded.
     // The first ten views remain ordinary shaders-off rendering.
     String mode=System.getProperty("chao_garden.lobbyFixStudy","");
-    if(mode.equals("material")||mode.equals("vanilla-material")&&stage>=VIEWS.length){
+    if(mode.equals("material")||mode.equals("vanilla-material")&&stage>=VIEW_INDICES.length){
       var field=LobbySceneRenderer025.class.getDeclaredField("shaderPack");field.setAccessible(true);field.setBoolean(null,true);
     }
   }
-  @SubscribeEvent public static void frame(net.neoforged.neoforge.client.event.RenderFrameEvent.Post event){if(viewBegan!=0)frames++;}
+  @SubscribeEvent public static void frame(net.neoforged.neoforge.client.event.RenderLevelStageEvent event)throws ReflectiveOperationException{
+    var mc=Minecraft.getInstance();
+    if(viewBegan==0||mc.screen!=null||mc.getOverlay()!=null||SceneShaderPack.shadows()
+        ||event.getStage()!=net.neoforged.neoforge.client.event.RenderLevelStageEvent.Stage.AFTER_LEVEL)return;
+    var submitted=LobbySceneRenderer025.class.getDeclaredField("mainSceneSubmitted");submitted.setAccessible(true);
+    if(submitted.getBoolean(null))frames++;
+  }
   @SubscribeEvent public static void tick(ClientTickEvent.Post event){
-    String mode=System.getProperty("chao_garden.lobbyFixStudy","");if(mode.isBlank())return;
+    String mode=System.getProperty("chao_garden.lobbyFixStudy","");if(mode.isBlank()||finished)return;
     var mc=Minecraft.getInstance();if(++ticks>16000)throw new IllegalStateException("Lobby046 timeout");
     if(mc.screen instanceof AccessibilityOnboardingScreen)mc.setScreen(new TitleScreen());
     if(!started&&mc.screen instanceof TitleScreen){
@@ -63,10 +75,11 @@ public final class LobbyFixVisualSmoke046 {
       });
     }
     if(!ready||mc.level==null||mc.player==null||!mc.level.dimension().equals(HubContent.HUB))return;
-    int total=mode.equals("vanilla-material")?VIEWS.length*2:VIEWS.length;
-    if(stage==total){if(frames>8){LogUtils.getLogger().info("LOBBY046_COMPLETE mode={} views={} irisActive={}",mode,stage,SceneShaderPack.active());mc.stop();}return;}
+    if(mc.screen!=null||mc.getOverlay()!=null){frames=0;viewBegan=0;return;}
+    int total=mode.equals("vanilla-material")?VIEW_INDICES.length*2:VIEW_INDICES.length;
+    if(stage==total){if(frames>8){finished=true;LogUtils.getLogger().info("LOBBY046_COMPLETE mode={} views={} irisActive={}",mode,stage,SceneShaderPack.active());mc.stop();}return;}
     if(SceneShaderPack.active()!=mode.startsWith("solas"))throw new IllegalStateException("Lobby046 requested shader state "+mode+" actual="+SceneShaderPack.active());
-    var v=VIEWS[stage%VIEWS.length];double x=v[0],y=v[1],z=v[2];
+    int viewIndex=VIEW_INDICES[stage%VIEW_INDICES.length];var v=VIEWS[viewIndex];double x=v[0],y=v[1],z=v[2];
     float yaw=(float)Math.toDegrees(Math.atan2(x-v[3],v[5]-z));
     float pitch=(float)-Math.toDegrees(Math.atan2(v[4]-y,Math.hypot(v[3]-x,v[5]-z)));
     if(camera==null)camera=new ArmorStand(mc.level,x,y,z);
@@ -75,8 +88,8 @@ public final class LobbyFixVisualSmoke046 {
     if(viewBegan==0)viewBegan=System.nanoTime();
     if(frames>45&&System.nanoTime()-viewBegan>8_000_000_000L){
       String name=String.format("lobby046-%s-%02d.png",mode,stage);
-      boolean probe=mode.equals("material")||mode.equals("vanilla-material")&&stage>=VIEWS.length;
-      Screenshot.grab(mc.gameDirectory,name,mc.getMainRenderTarget(),message->LogUtils.getLogger().info("LOBBY046_CAPTURE {} nativeMaterialProbe={} irisActive={} {}",name,probe,SceneShaderPack.active(),message.getString()));
+      boolean probe=mode.equals("material")||mode.equals("vanilla-material")&&stage>=VIEW_INDICES.length;
+      Screenshot.grab(mc.gameDirectory,name,mc.getMainRenderTarget(),message->LogUtils.getLogger().info("LOBBY046_CAPTURE {} view={} nativeMaterialProbe={} irisActive={} {}",name,viewIndex,probe,SceneShaderPack.active(),message.getString()));
       stage++;frames=0;viewBegan=System.nanoTime();
     }
   }

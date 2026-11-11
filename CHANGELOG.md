@@ -1,3 +1,10 @@
+## 0.25.47 — Real shader and Accessories verification
+
+- Blend late lobby glass color before a separate depth-only resolve. This removes Solas banding where the final tread and landing share a plane, retaining all geometry and foreground depth for shader effects.
+- Verify exact Solas Shader V3.7b with official NeoForge Iris/Sodium and real Accessories/owo. Preserve all 0.25.46 toy, equipped-flight, back attachment and running changes.
+- Correct stale native tests for baby equipping, earned Run/Swim milestones and head/back carrying; add actual baby release and separate-process equipped save/load probes.
+- Add focused lobby view selection and require actual rendered lobby frames before captures. See docs/REAL_MOD_CHECKS_02547.md for verified versions, results and limitations.
+
 ## 0.25.46 — Toy contact, equipped flight, running and lobby rendering
 
 - Move organ performers closer to the actual front manual; fit natural arms and preserve clear-front access, rewards, cooldowns and player collision.

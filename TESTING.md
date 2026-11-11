@@ -56,4 +56,4 @@ See [guitar interaction, commands and validation](docs/GUITAR_02545.md). Native 
 
 ## Focused fixes 0.25.46
 
-See [causes, verification and manual review](docs/FIXES_02546.md) for organ/guitar contact, equipped input/back attachment, bounded running cadence and lobby translucency. Exact Solas V3.7b and real optional Accessories-slot coverage have explicit dependency-download limitations.
+See [causes, verification and manual review](docs/FIXES_02546.md) for organ/guitar contact, equipped input/back attachment, bounded running cadence and lobby translucency. Real Solas V3.7b and Accessories follow-up results are recorded in [0.25.47 verification](docs/REAL_MOD_CHECKS_02547.md).

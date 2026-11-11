@@ -1,0 +1,26 @@
+Chao Garden 0.25.47
+
+Cumulative source overlay: 74 changed/new files onto full 0.25.43 source (Git fcde2f9d012499b2e2cb1ec1d50a7f58d4dc3ca2); includes 0.25.44, 0.25.45, 0.25.46 and 0.25.47. Not a standalone project. Extract at project root preserving paths. Complete updated source is also in the delivery branch.
+
+Use Java 21, Minecraft 1.21.1/NeoForge 21.1.219 and external Lionfish API 3.1. Install matching Chao Garden 0.25.47 client/server JARs.
+
+Exact Solas V3.7b and real Accessories/owo testing is now completed. Read docs/REAL_MOD_CHECKS_02547.md and validation-summary.txt. Listening, physical-GPU performance, independent multiplayer and full-modpack checks remain manual.
+
+0.25.46-to-0.25.47 source changes:
+CHANGELOG.md
+TESTING.md
+build.gradle
+docs/FIXES_02546.md
+docs/REAL_MOD_CHECKS_02547.md
+docs/real-mod-versions-02547.json
+gradle.properties
+src/main/java/com/chaogarden/client/LobbyFixVisualSmoke046.java
+src/main/java/com/chaogarden/client/LobbySceneRenderer025.java
+src/main/java/com/chaogarden/test/CompanionCareUpdateGameTests.java
+src/main/java/com/chaogarden/test/CompanionGameTests.java
+src/main/java/com/chaogarden/test/CompanionSkillGameTests.java
+src/main/java/com/chaogarden/test/EquippedGameTests046.java
+src/main/java/com/chaogarden/test/EquippedRestartGameTests046.java
+src/main/resources/data/chao_equipped46/structure/empty.nbt
+src/main/resources/data/chao_equipped46_load/structure/empty.nbt
+src/main/resources/data/chao_equipped46_save/structure/empty.nbt

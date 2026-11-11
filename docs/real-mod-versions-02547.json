@@ -1,0 +1,152 @@
+{
+  "source": "Official Modrinth API/CDN",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.219",
+  "java": "21.0.9",
+  "verified": "Published SHA512, size and archive CRCs; Accessories/owo also match the pinned published SHA256 values. No third-party JARs or shader ZIP were patched.",
+  "artifacts": [
+    {
+      "version_id": "t3ruzodq",
+      "project_id": "YL57xq9U",
+      "version": "1.8.12+1.21.1-neoforge",
+      "name": "Iris 1.8.12 for NeoForge 1.21.1",
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "filename": "iris-neoforge-1.8.12+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/t3ruzodq/iris-neoforge-1.8.12%2Bmc1.21.1.jar",
+      "size": 2438548,
+      "hashes": {
+        "sha1": "a3e6355915c7d3b2bc392724795113e51d289378",
+        "sha512": "57b8026a3c3c433cf6123d63dc6ce7e11f6d480a72926370db1fc7f2b06059bc16a753ecd7e7af659c19e90b592103196b0e89585ce4f0744a4ca433f59bcf1a"
+      },
+      "dependencies": [
+        {
+          "version_id": "Pb3OXVqC",
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "version_id": "Pb3OXVqC",
+      "project_id": "AANobbMI",
+      "version": "mc1.21.1-0.6.13-neoforge",
+      "name": "Sodium 0.6.13 for NeoForge 1.21.1",
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "filename": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/AANobbMI/versions/Pb3OXVqC/sodium-neoforge-0.6.13%2Bmc1.21.1.jar",
+      "size": 1162994,
+      "hashes": {
+        "sha512": "ce58f34d05d96c0a109a5cea23c741f6bdb2e6be31fc087c5989274cefca5f10ba0c08c62083cf554a51f2c7667bf46e4164383f675c844e77633aef2659996b",
+        "sha1": "38af70fa4dc4b2aaac636e92fdba3bedd5a025e1"
+      },
+      "dependencies": []
+    },
+    {
+      "version_id": "KcfQaN5J",
+      "project_id": "EpQFjzrQ",
+      "version": "3.7b",
+      "name": "Solas Shader 3.7b",
+      "game_versions": [
+        "1.12",
+        "1.12.1",
+        "1.12.2",
+        "1.13",
+        "1.13.1",
+        "1.13.2",
+        "1.14",
+        "1.14.1",
+        "1.14.2",
+        "1.14.3",
+        "1.14.4",
+        "1.15",
+        "1.15.1",
+        "1.15.2",
+        "1.16",
+        "1.16.1",
+        "1.16.2",
+        "1.16.3",
+        "1.16.4",
+        "1.16.5",
+        "1.17",
+        "1.17.1",
+        "1.18",
+        "1.18.1",
+        "1.18.2",
+        "1.19",
+        "1.19.1",
+        "1.19.2",
+        "1.19.3",
+        "1.19.4",
+        "1.20",
+        "1.20.1",
+        "1.20.2",
+        "1.20.3",
+        "1.20.4",
+        "1.20.5",
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.10",
+        "1.21.11",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8",
+        "1.21.9",
+        "26.1",
+        "26.1.1",
+        "26.1.2",
+        "26.2"
+      ],
+      "loaders": [
+        "iris",
+        "optifine"
+      ],
+      "filename": "Solas Shader V3.7b.zip",
+      "url": "https://cdn.modrinth.com/data/EpQFjzrQ/versions/KcfQaN5J/Solas%20Shader%20V3.7b.zip",
+      "size": 1252311,
+      "hashes": {
+        "sha1": "abf2e33feae040cc91894aea11e6d30750d50ee9",
+        "sha512": "5c184091c2d9b1d8ee0f4f7eb720fdcd9e2f4aea5a0d7a425927f205ee6d1a3577ad1411176d3705b5945e1f39d81a50cac479ed6f2054d49d90a6002f2878d9"
+      },
+      "dependencies": []
+    },
+    {
+      "version_id": "dy9BbDEy",
+      "version": "1.1.0-beta.54+1.21.1",
+      "filename": "accessories-neoforge-1.1.0-beta.54+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/jtmvUHXj/versions/dy9BbDEy/accessories-neoforge-1.1.0-beta.54%2B1.21.1.jar",
+      "hashes": {
+        "sha1": "0d0b07fa319a9f93c82873f9851ad35e100031f6",
+        "sha512": "2ebf453d11892fc8b12520af3b154a49acd9b93fc10c9c9777dcb6afe3b93ad17b0ce019b35ba7935a2ecb306b7094f97fecf056bbcb4dbeeb8477a76cd93f2d"
+      },
+      "size": 1086553
+    },
+    {
+      "version_id": "wbdHEItB",
+      "version": "0.12.15.6-beta.1+1.21",
+      "filename": "owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar",
+      "url": "https://cdn.modrinth.com/data/ccKDOlHs/versions/wbdHEItB/owo-lib-neoforge-0.12.15.6-beta.1%2B1.21.jar",
+      "hashes": {
+        "sha1": "3a7f843ce3a4d24f8765a74bc5dde914b316b992",
+        "sha512": "fc843ef350c4af6748d9fd6ecd3c28f96262cf46d46a8329029f49ea4f9eb87238113a8a415e8bba2c4f346c718bf450194f6f5823dfbf1ae7312529a81c3e5c"
+      },
+      "size": 1223197
+    }
+  ],
+  "compatibility_note": "NeoForge FML4.0.42 VersionSupportMatrix provides the built-in Minecraft1.21.1 ->1.21 compatibility alias; official Iris metadata [1.21,1.21.1) is therefore supported without jar patches or overrides."
+}
