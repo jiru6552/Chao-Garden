@@ -34,6 +34,14 @@ public final class OrganGameTests044 {
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_complete") public static void organ_true_SOUTH(GameTestHelper h){natural(h,true,Direction.SOUTH,"complete");}
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_complete") public static void organ_true_EAST(GameTestHelper h){natural(h,true,Direction.EAST,"complete");}
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_complete") public static void organ_true_WEST(GameTestHelper h){natural(h,true,Direction.WEST,"complete");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_baby_NORTH(GameTestHelper h){natural(h,false,Direction.NORTH,"max_run");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_baby_SOUTH(GameTestHelper h){natural(h,false,Direction.SOUTH,"max_run");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_baby_EAST(GameTestHelper h){natural(h,false,Direction.EAST,"max_run");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_baby_WEST(GameTestHelper h){natural(h,false,Direction.WEST,"max_run");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_adult_NORTH(GameTestHelper h){natural(h,true,Direction.NORTH,"max_run");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_adult_SOUTH(GameTestHelper h){natural(h,true,Direction.SOUTH,"max_run");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_adult_EAST(GameTestHelper h){natural(h,true,Direction.EAST,"max_run");}
+ @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_max_run") public static void max_run_adult_WEST(GameTestHelper h){natural(h,true,Direction.WEST,"max_run");}
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_hurt") public static void organ_true_hurt(GameTestHelper h){natural(h,true,Direction.NORTH,"hurt");}
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_remove") public static void organ_true_remove(GameTestHelper h){natural(h,true,Direction.NORTH,"remove");}
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_reload") public static void organ_true_reload(GameTestHelper h){natural(h,true,Direction.NORTH,"reload");}
@@ -42,6 +50,7 @@ public final class OrganGameTests044 {
  @GameTest(template="activity_test",timeoutTicks=500,batch="organ_blocked") public static void blocked_SOUTH(GameTestHelper h){blocked(h,Direction.SOUTH);}
  @GameTest(template="activity_test",timeoutTicks=500,batch="organ_blocked") public static void blocked_EAST(GameTestHelper h){blocked(h,Direction.EAST);}
  @GameTest(template="activity_test",timeoutTicks=500,batch="organ_blocked") public static void blocked_WEST(GameTestHelper h){blocked(h,Direction.WEST);}
+ @GameTest(template="activity_test",timeoutTicks=60,batch="organ_clearance") public static void close_contact_clearance(GameTestHelper h){clearance(h);}
  @GameTest(template="activity_test",timeoutTicks=400,batch="organ_preview_once") public static void preview_once(GameTestHelper h){preview(h,"once");}
  @GameTest(template="activity_test",timeoutTicks=400,batch="organ_preview_stop") public static void preview_stop(GameTestHelper h){preview(h,"stop");}
  @GameTest(template="activity_test",timeoutTicks=400,batch="organ_preview_hurt") public static void preview_hurt(GameTestHelper h){preview(h,"hurt");}
@@ -56,10 +65,11 @@ public final class OrganGameTests044 {
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_crawl") public static void crawler_SOUTH(GameTestHelper h){natural(h,false,Direction.SOUTH,"crawl");}
  @GameTest(template="activity_test",timeoutTicks=1800,batch="organ_crawl") public static void crawler_WEST(GameTestHelper h){natural(h,false,Direction.WEST,"crawl");}
  static void natural(GameTestHelper h,boolean adult,Direction facing,String mode){
-  boolean complete=mode.equals("complete")||mode.equals("crawl");
+  boolean complete=mode.equals("complete")||mode.equals("crawl")||mode.equals("max_run");
   var at=RattleGameTests02520.floor(h);var l=h.getLevel();l.setBlock(at,ToyContent.block(OrganPlayRules.KIND).defaultBlockState().setValue(ChaoToyBlock.FACING,facing),3);
   var c=RattleGameTests02520.actor(h,at,adult,ChaoState.NORMAL,adult);
   if(!adult&&!mode.equals("crawl"))c.state().points[ChaoState.RUN]=LocomotionRules.WALK_POINTS;
+  if(mode.equals("max_run"))c.state().points[ChaoState.RUN]=9999;
   // Start behind the instrument: real navigation must walk round to its keys.
   c.moveTo(Vec3.atBottomCenterOf(at.relative(facing.getOpposite(),3)));
   var anchor=ToyContent.keyboardAnchor(c,at);
@@ -67,13 +77,16 @@ public final class OrganGameTests044 {
   CUES.put(c,new ArrayList<>());
   var began=new long[]{-1};var ended=new boolean[]{false};
   h.onEachTick(()->{
+   if(mode.equals("max_run")&&c.tickCount>1)h.assertTrue(Math.abs(c.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)-.44)<1e-6,"max-Run approach actually uses the physical speed cap");
+   if(began[0]<0)h.assertTrue(c.getY()<anchor.y+.15,"flat approach must go round the organ without jumping onto its cabinet");
    if(c.toyPlayingKind().equals(OrganPlayRules.KIND)&&began[0]<0)began[0]=c.getPersistentData().getLong("ChaoToyUntil")-160;
    if(began[0]<0||ended[0])return;
    if(c.toyPlayingTicks()>0){
     h.assertTrue(at.equals(c.toyTarget()),"actual organ remains reserved");
     h.assertTrue(c.position().distanceToSqr(anchor)<.007,"performer stays at key-side anchor, never a side");
     var offset=c.position().subtract(Vec3.atBottomCenterOf(at));
-    h.assertTrue(offset.dot(new Vec3(facing.getStepX(),0,facing.getStepZ()))>.4,"must approach authored key front");
+    double front=offset.dot(new Vec3(facing.getStepX(),0,facing.getStepZ()));
+    h.assertTrue(Math.abs(front-ToyInteractionRules.keyboardDistance(OrganPlayRules.KIND,c.getBbWidth()))<.02&&front<.32,"must approach close authored key front, without old arm-stretch gap");
     h.assertTrue(l.noCollision(c,c.getBoundingBox()),"body clear of cabinet");
     if(l.getGameTime()-began[0]>1)h.assertTrue(Math.abs(net.minecraft.util.Mth.wrapDegrees(c.getYRot()-facing.getOpposite().toYRot()))<1,"body faces keys for every block orientation");
    }
@@ -88,7 +101,7 @@ public final class OrganGameTests044 {
    }
   });
   h.succeedWhen(()->{
-   h.assertTrue(began[0]>=0&&l.getGameTime()-began[0]>=175,"observe full interaction");
+   h.assertTrue(began[0]>=0&&l.getGameTime()-began[0]>=175,"observe full interaction; began="+began[0]+" pos="+c.position()+" anchor="+anchor+" target="+c.toyTarget()+" grounded="+c.onGround()+" eligible="+ToyContent.mayPlay(c)+" navDone="+c.getNavigation().isDone()+" velocity="+c.getDeltaMovement()+" collided="+c.horizontalCollision);
    h.assertTrue(c.isRemoved()||c.toyPlayingTicks()==0&&c.toyTarget()==null,"session cleans target and clock");
    if(!mode.equals("remove"))h.assertFalse(l.getBlockState(at).getValue(ChaoToyBlock.PLAYING),"organ restored idle");
    var expected=new ArrayList<Integer>();for(int t=0;t<(complete?160:60);t++)if(OrganPlayRules.soundDue(t)){expected.add(t);expected.add(t);}
@@ -102,6 +115,24 @@ public final class OrganGameTests044 {
   l.setBlock(at.relative(facing),Blocks.STONE.defaultBlockState(),3);
   var c=RattleGameTests02520.actor(h,at,true,ChaoState.NORMAL,false);c.moveTo(Vec3.atBottomCenterOf(at.relative(facing.getOpposite(),3)));
   h.onEachTick(()->h.assertFalse(ToyContent.isPlaying(c),"blocked organ keys cannot fall back to sides or rear"));h.runAfterDelay(420,h::succeed);
+ }
+ static void clearance(GameTestHelper h){
+  var at=RattleGameTests02520.floor(h);var l=h.getLevel();
+  for(boolean adult:new boolean[]{false,true})for(var facing:Direction.Plane.HORIZONTAL){
+   var state=ToyContent.block(OrganPlayRules.KIND).defaultBlockState().setValue(ChaoToyBlock.FACING,facing);l.setBlock(at,state,3);
+   var c=RattleGameTests02520.actor(h,at,adult,ChaoState.NORMAL,false);c.setNoAi(true);c.moveTo(ToyContent.keyboardAnchor(c,at));
+   h.assertTrue(l.noCollision(c,c.getBoundingBox()),"baby/adult close anchor clears actual collision in "+facing);
+   var deeper=new Vec3(-facing.getStepX()*.06,0,-facing.getStepZ()*.06);
+   h.assertFalse(l.noCollision(c,c.getBoundingBox().move(deeper)),"rear cabinet remains solid to Chao in "+facing);
+   h.assertTrue(state.getCollisionShape(l,at).bounds().equals(state.getShape(l,at).bounds()),"full player collision and organ outline stay intact");
+   l.setBlock(at.relative(facing),Blocks.STONE.defaultBlockState(),3);
+   h.assertTrue(ToyContent.previewKeyboard(c,OrganPlayRules.KIND)==null,"close preview cannot bypass blocked authored front in "+facing);
+   h.assertFalse(ToyContent.holdKeyboard(c,at),"new front obstruction interrupts close contact in "+facing);
+   l.setBlock(at.relative(facing),Blocks.AIR.defaultBlockState(),3);
+   h.assertTrue(at.equals(ToyContent.previewKeyboard(c,OrganPlayRules.KIND)),"clear front restores close preview in "+facing);
+   c.discard();
+  }
+  h.succeed();
  }
  static void preview(GameTestHelper h,String mode){
   var at=RattleGameTests02520.floor(h);var l=h.getLevel();l.setBlock(at,ToyContent.block(OrganPlayRules.KIND).defaultBlockState(),3);

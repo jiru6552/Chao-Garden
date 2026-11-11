@@ -10,15 +10,16 @@ import java.util.function.BiConsumer;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
 
-/** Source-mesh contact, emitted palms and head/floor clearance, independent of GL. */
+/** Actual string-side orientation, compact reach, emitted palms and body/head/floor clearance. */
 public final class GuitarRigTest {
   private static final Path MODELS=Path.of("src/main/resources/assets/chao_garden/models/entity/gameplay");
   private static final Vector3f STRING_START=new Vector3f(.1603256f,.1487173f,.4255777f);
   private static final Vector3f STRING_END=new Vector3f(.75974105f,.31281055f,.62002745f);
-  private static final Vector3f FRONT=new Vector3f(.0257916f,.7233867f,-.6899612f);
+  // Read from the string-texture triangles below, independently of the rig.
+  private static final Vector3f FRONT=new Vector3f();
   private static final Vector3f LONG=new Vector3f(STRING_END).sub(STRING_START).normalize();
-  private static final Vector3f ACROSS=new Vector3f(FRONT).cross(LONG).normalize();
-  private static int samples,renderedSamples;private static float contact,renderError,minHead=Float.POSITIVE_INFINITY,minFloor=Float.POSITIVE_INFINITY,maxReach;
+  private static final Vector3f ACROSS=new Vector3f();
+  private static int samples,renderedSamples;private static float contact,renderError,minHead=Float.POSITIVE_INFINITY,minBody=Float.POSITIVE_INFINITY,minFloor=Float.POSITIVE_INFINITY,maxReach;
   private static int failures;private static final Map<String,Integer> failureGroups=new TreeMap<>();
   private static final List<String> examples=new ArrayList<>();
   private static void check(boolean ok,String why){
@@ -26,13 +27,30 @@ public final class GuitarRigTest {
   }
   record Hands(float[] right,float[] left,String label,ChaoMeshAsset renderMesh,int animal){}
   private static List<Vector3f[]> sourceFaces()throws Exception{
-    var vertices=new ArrayList<Vector3f>();var faces=new ArrayList<Vector3f[]>();
+    var vertices=new ArrayList<Vector3f>();var normals=new ArrayList<Vector3f>();
+    var uv=new ArrayList<float[]>();var faces=new ArrayList<Vector3f[]>();
+    String material="";int stringFaces=0;
     for(String line:Files.readAllLines(Path.of("src/main/resources/assets/chao_garden/models/cwe02516/chao_guitar.obj"))){
       var words=line.split("\\s+");
       if(line.startsWith("v "))vertices.add(new Vector3f(Float.parseFloat(words[1])-.5f,Float.parseFloat(words[2])-.5f,Float.parseFloat(words[3])-.5f));
+      if(line.startsWith("vn "))normals.add(new Vector3f(Float.parseFloat(words[1]),Float.parseFloat(words[2]),Float.parseFloat(words[3])));
+      if(line.startsWith("vt "))uv.add(new float[]{Float.parseFloat(words[1]),Float.parseFloat(words[2])});
+      if(line.startsWith("usemtl "))material=words[1];
+      if(line.startsWith("f ")&&material.equals("cwe_chaoguitar2_ffffffff_192")){
+        // The narrow U=.43..57 region is the string strip; the separate
+        // U=.12..38 region is the soundhole decal on the opposite side.
+        boolean strings=true;
+        for(int i=1;i<words.length;i++){
+          var point=uv.get(Integer.parseInt(words[i].split("/")[1])-1);
+          strings&=point[0]>.42f&&point[0]<.58f&&point[1]<=.51f;
+        }
+        if(strings){FRONT.add(normals.get(Integer.parseInt(words[1].split("/")[2])-1));stringFaces++;}
+      }
       if(line.startsWith("f "))for(int i=2;i<words.length-1;i++)faces.add(new Vector3f[]{vertices.get(Integer.parseInt(words[1].split("/")[0])-1),vertices.get(Integer.parseInt(words[i].split("/")[0])-1),vertices.get(Integer.parseInt(words[i+1].split("/")[0])-1)});
     }
-    check(!faces.isEmpty(),"actual source guitar triangles loaded");return faces;
+    check(!faces.isEmpty(),"actual source guitar triangles loaded");
+    check(stringFaces>=2&&FRONT.lengthSquared()>1,"actual string-strip face normals loaded");
+    FRONT.normalize();ACROSS.set(FRONT).cross(LONG).normalize();return faces;
   }
   private static ChaoMeshAsset handOnly(JsonObject source,int animal){
     var json=source.deepCopy();
@@ -94,8 +112,13 @@ public final class GuitarRigTest {
               var body=new PoseStack();anchor.accept("body",body);var local=new Matrix4f(body.last().pose()).invert().mul(prop);
               check(local.transformDirection(new Vector3f(LONG)).normalize().x>.85f,"neck lies to Chao left "+label);
               check(local.transformDirection(new Vector3f(FRONT)).normalize().z<-.85f,"strings face outward "+label);
+              var strike=local.transformPosition(new Vector3f(.3291302f,.19492848f,.48033774f).sub(.5f,.5f,.5f));
+              check(strike.z>=-.23f&&strike.z<=-.19f,"guitar rests close to torso "+label);
+              check(strike.y>=-.06f&&strike.y<=-.025f,"guitar and hands raised to chest "+label);
+              float torso=PropMeshClearance.separation(faces,new Matrix4f(local),mesh.attachmentBounds("body",poses));
+              minBody=Math.min(minBody,torso);check(torso>.10f,"guitar clear of torso "+torso+" "+label);
               var skull=new PoseStack();anchor.accept("skull",skull);
-              float head=PropMeshClearance.separation(faces,new Matrix4f(skull.last().pose()).invert().mul(prop),mesh.attachmentBounds("skull",poses));minHead=Math.min(minHead,head);check(head>.005f,"guitar clear of skull "+head+" "+label);
+              float head=PropMeshClearance.separation(faces,new Matrix4f(skull.last().pose()).invert().mul(prop),mesh.attachmentBounds("skull",poses));minHead=Math.min(minHead,head);check(head>.25f,"guitar clear of skull "+head+" "+label);
               for(var face:faces)for(var vertex:face){float floor=24-prop.transformPosition(new Vector3f(vertex)).y*16;minFloor=Math.min(minFloor,floor);check(floor>.01f,"guitar clear of floor "+label);}
               var renderedPoses=hand.renderMesh.createPoses();renderedPoses.forEach((name,p)->{var from=poses.get(name);if(from!=null)ChaoOverlayLayer.copy(from,p);});
               if(hand.animal>=0&&!adult&&hand.animal<21)for(boolean left:new boolean[]{false,true}){
@@ -103,6 +126,7 @@ public final class GuitarRigTest {
               }
               for(boolean left:new boolean[]{false,true}){
                 var arm=poses.get(left?"arm_left":"arm_right");maxReach=Math.max(maxReach,arm.reach);
+                check(arm.reach<3.4f,"arm reach remains compact "+arm.reach+" "+label);
                 check(new Vector3f(arm.x,arm.y,arm.z).length()<.81f,"shoulder shift bounded "+label);
                 var at=new PoseStack();anchor.accept(left?"arm_left":"arm_right",at);
                 var palm=ChaoTrumpetAnimation.reachedPalm(left?hand.left:hand.right,arm.reach,left);
@@ -122,7 +146,7 @@ public final class GuitarRigTest {
     }
     check(samples>0&&renderedSamples>0,"rig and emitted-hand cases executed");
     System.out.println("Guitar failure groups: "+failureGroups);
-    System.out.println("Guitar mesh fit: "+samples+" pose samples; "+renderedSamples+" emitted-hand samples; max contact="+contact+" blocks; rendered center error="+renderError+"; min head="+minHead+" pixels; min floor="+minFloor+" pixels; max reach="+maxReach+" pixels");
+    System.out.println("Guitar mesh fit: "+samples+" pose samples; "+renderedSamples+" emitted-hand samples; max contact="+contact+" blocks; rendered center error="+renderError+"; min head="+minHead+" pixels; min torso="+minBody+" pixels; min floor="+minFloor+" pixels; max reach="+maxReach+" pixels");
     if(failures>0)throw new AssertionError(failures+" guitar rig failures: "+String.join("\n",examples));
   }
 }

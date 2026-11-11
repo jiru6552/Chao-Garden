@@ -1,0 +1,41 @@
+Chao Garden 0.25.46 focused fixes
+
+This is a cumulative source overlay of 64 changed/new files onto the full 0.25.43 project (fcde2f9d012499b2e2cb1ec1d50a7f58d4dc3ca2). It includes the 0.25.44 organ and 0.25.45 guitar updates. It is NOT a standalone project. Extract at the project root preserving paths. Full updated source is also in the GitHub delivery branch.
+
+Use Java 21, NeoForge 1.21.1 and Lionfish API 3.1 separately. Install matching 0.25.46 Chao Garden JARs on client/server. Remove the previous Chao Garden JAR from mods first.
+
+Read docs/FIXES_02546.md and validation-summary.txt for changes, actual tests, dependency limits and in-game checks. Exact Solas 3.7b, real Accessories-slot launch, listening and independent multiplayer still require manual verification.
+
+This update's source files relative to 0.25.45:
+CHANGELOG.md
+TESTING.md
+build.gradle
+docs/FIXES_02546.md
+gradle.properties
+src/lionfishTest/java/com/chaogarden/client/CompanionCarryRigTest.java
+src/lionfishTest/java/com/chaogarden/client/GuitarRigTest.java
+src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java
+src/lionfishTest/java/com/chaogarden/client/RunningGaitRigTest.java
+src/main/java/com/chaogarden/client/ChaoGuitarAnimation.java
+src/main/java/com/chaogarden/client/ChaoOrganAnimation.java
+src/main/java/com/chaogarden/client/CompanionBackLayer.java
+src/main/java/com/chaogarden/client/CompanionInputVisualSmoke046.java
+src/main/java/com/chaogarden/client/CompanionVisualSmoke046.java
+src/main/java/com/chaogarden/client/LobbyFixVisualSmoke046.java
+src/main/java/com/chaogarden/client/LobbySceneRenderer025.java
+src/main/java/com/chaogarden/client/LocomotionVisualSmokePoseProbe.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/client/RunningVisualStudy046.java
+src/main/java/com/chaogarden/core/ChaoGaitClock.java
+src/main/java/com/chaogarden/mixin/CompanionLocalPlayerFlightMixin.java
+src/main/java/com/chaogarden/test/FocusedGameTests046.java
+src/main/java/com/chaogarden/test/OrganGameTests044.java
+src/main/java/com/chaogarden/toys/ChaoToyBlock.java
+src/main/java/com/chaogarden/toys/OrganPlayRules.java
+src/main/java/com/chaogarden/toys/ToyContent.java
+src/main/java/com/chaogarden/toys/ToyInteractionRules.java
+src/main/resources/chao_garden.mixins.json
+src/main/resources/data/chao_focused46/structure/empty.nbt
+src/test/java/com/chaogarden/core/ChaoAnimationRules025Test.java
+src/test/java/com/chaogarden/core/ChaoGaitClockTest.java
+src/test/java/com/chaogarden/toys/ToyInteractionRulesTest.java

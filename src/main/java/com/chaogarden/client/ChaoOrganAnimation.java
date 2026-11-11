@@ -32,7 +32,7 @@ final class ChaoOrganAnimation {
    var target=new Vector3f(keyX/scale,1.501f-(dy+keyY)/scale,-(distance-OrganPlayRules.KEY_FRONT)/scale);
    var shoulder=new PoseStack();anchor.accept(left?"arm_left":"arm_right",shoulder);
    float length=shoulder.last().pose().transformPosition(new Vector3f()).distance(target)*16;
-   arm.reach=Math.max(0,(float)Math.sqrt(Math.max(0,length*length-palm[1]*palm[1]-palm[2]*palm[2]))-Math.abs(palm[0])-.20f)*ease;
+   arm.reach=Math.min(2f,Math.max(0,(float)Math.sqrt(Math.max(0,length*length-palm[1]*palm[1]-palm[2]*palm[2]))-Math.abs(palm[0])-.20f))*ease;
    ChaoTambourineAnimation.alignPalm(poses,anchor,ChaoTrumpetAnimation.reachedPalm(palm,arm.reach,left),ease,target,left,.30f);
   }
  }

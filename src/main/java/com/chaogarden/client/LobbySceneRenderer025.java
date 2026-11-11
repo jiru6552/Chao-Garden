@@ -14,6 +14,7 @@ import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.blaze3d.systems.RenderSystem;
 import java.io.IOException;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.texture.OverlayTexture;
@@ -43,14 +44,16 @@ import org.joml.Vector3f;
 @EventBusSubscriber(modid="chao_garden",bus=EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
 public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDecor025.SceneEntity> {
   private static ResourceLocation texture(String name){return ResourceLocation.fromNamespaceAndPath("chao_garden","textures/scene/"+name+".png");}
-  private static final ResourceLocation WHITE=texture("white"),GLASS_TEX=texture("lobby_glass"),SKY_TEX=texture("lobby_celestial_sky"),STAR_TEX=texture("lobby_star_panel"),WOOD_TEX=texture("lobby_wood"),LEAF_TEX=texture("garden_palm_frond"),SIGN_TEX=texture("kindergarten_portal_sign"),PAD_TEX=texture("lobby_exit_pad"),EXIT_TEX=texture("lobby_exit_sign");
+  private static final ResourceLocation WHITE=texture("white"),SKY_TEX=texture("lobby_celestial_sky"),STAR_TEX=texture("lobby_star_panel"),WOOD_TEX=texture("lobby_wood"),LEAF_TEX=texture("garden_palm_frond"),SIGN_TEX=texture("kindergarten_portal_sign"),PAD_TEX=texture("lobby_exit_pad"),EXIT_TEX=texture("lobby_exit_sign");
   private static final ResourceLocation QUARTZ=ResourceLocation.fromNamespaceAndPath("minecraft","textures/block/quartz_block_side.png"),STONE=ResourceLocation.fromNamespaceAndPath("minecraft","textures/block/stone_bricks.png");
   private static ShaderInstance shader;
   private static final Mesh SKY=sky(),STARS=panels(false),REFLECTED_STARS=panels(true),WOOD=wood(false),REFLECTED_WOOD=wood(true),FLOOR=floor(),GRID=grid(),ARCHITECTURE=architecture(),GARDEN_STONES=gardenStones(),GARDEN_QUARTZ=gardenQuartz(),GARDEN_LEAVES=gardenLeaves(),SIGN=sign(),PALM=palm(),GLAZING=glazing(),PAD=pad(.04,2.68,96),UPPER_PAD=pad(5.30,3.34,32),EXIT=exitSign(),APPROACH_GLASS=approachGlass(),APPROACH_STARS=approachStars(),APPROACH_TRIM=approachTrim(),APPROACH_GATES=approachGates(false),APPROACH_GATE_MASONRY=approachGates(true);
   private static final List<Vector3f> PALM_NORMALS = palmNormals();
   private static final Mesh[] PORTAL_FRAMES={portalFrame(0),portalFrame(1),portalFrame(2),portalFrame(3),portalFrame(4),portalFrame(5)};
   private static final List<List<PortalGeometry0251.Point>> PORTAL_OPENINGS=List.of(PortalGeometry0251.aperture(0),PortalGeometry0251.aperture(1),PortalGeometry0251.aperture(2),PortalGeometry0251.aperture(3),PortalGeometry0251.aperture(4),PortalGeometry0251.aperture(5));
-  private static final int GOLD=0xffffce49,CREAM=0xfff3e9ca,CYAN=0xff68e1df;
+  // lobby_glass.png is a uniform texel (21,37,68,59). Vertex tint lets all
+  // clear scene surfaces share a single back-to-front sorted material.
+  private static final int GLASS_COLOR=0x3b152544,GOLD=0xffffce49,CREAM=0xfff3e9ca,CYAN=0xff68e1df;
   private record AlphaScene(Matrix4f pose,Matrix3f normal,float phase){
     PoseStack stack(){
       var stack=new PoseStack();
@@ -59,6 +62,12 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     }
   }
   private static final List<AlphaScene> ALPHA_SCENES=new ArrayList<>();
+  private static final class SceneBuffers {
+    // Iris intentionally ignores explicit flushes on its shared entity source.
+    // Own this immediate source so scene order, late submissions and temporary
+    // background fog state take effect at the actual draw, including fallbacks.
+    private static final MultiBufferSource.BufferSource SOURCE=MultiBufferSource.immediate(new com.mojang.blaze3d.vertex.ByteBufferBuilder(262144));
+  }
   private static boolean mainSceneSubmitted, shaderPack;
   private static final java.util.Set<BlockPos> renderedPortals = new java.util.HashSet<>();
   private static final List<BlockPos> HUB_ANCHORS=List.of(new BlockPos(0,78,0),PortalScenes0251.HUB_SCHOOL,
@@ -98,6 +107,7 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
   @Override public net.minecraft.world.phys.AABB getRenderBoundingBox(LobbyDecor025.SceneEntity entity){return entity.sceneBounds();}
   @Override public void render(LobbyDecor025.SceneEntity entity,float partial,PoseStack poses,MultiBufferSource buffers,int light,int overlay){
     poses.pushPose();
+    boolean ownsBuffers=false;
     try{
       if(entity.getBlockState().is(LobbyDecor025.PALM_CROWN.get())){
         renderPalm(poses,buffers,light,overlay);return;
@@ -105,6 +115,7 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
       // The lobby sky, glass, projected reflections and portal energy are visual scenery.
       // A shadow-map submission must never consume the visible pass or its queued transforms.
       if(shaderPack && SceneShaderPack.shadows())return;
+      buffers=SceneBuffers.SOURCE;ownsBuffers=true;
       if(entity.getBlockState().getValue(LobbyDecor025.SceneAnchor.PORTAL)){
         if(renderedPortals.add(entity.getBlockPos()))portal(entity,poses,buffers);return;
       }
@@ -114,12 +125,6 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
       if(mainSceneSubmitted)return;
       mainSceneSubmitted=true;
       poses.translate(.5,2.002,.5);
-      // Sky and reflected underside are emitted first and never write depth. The
-      // glass surface subsequently blends over them; no opaque foundation exists.
-      SKY.draw(poses,buffers,SKY_TEX,0);flush(buffers,Material.get(SKY_TEX,0));
-      REFLECTED_STARS.draw(poses,buffers,STAR_TEX,0);flush(buffers,Material.get(STAR_TEX,0));
-      REFLECTED_WOOD.draw(poses,buffers,WOOD_TEX,0);flush(buffers,Material.get(WOOD_TEX,0));
-      FLOOR.draw(poses,buffers,GLASS_TEX,0);flush(buffers,Material.get(GLASS_TEX,0));
       APPROACH_TRIM.draw(poses,buffers,WHITE,1);APPROACH_GATES.draw(poses,buffers,WHITE,1);
       APPROACH_GATE_MASONRY.draw(poses,buffers,STONE,1);
       GRID.draw(poses,buffers,WHITE,1);STARS.draw(poses,buffers,STAR_TEX,1);WOOD.draw(poses,buffers,WOOD_TEX,1);ARCHITECTURE.draw(poses,buffers,WHITE,1);
@@ -136,7 +141,7 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
       // Preserve this frame's camera-relative transform for the final alpha pass.
       long time=entity.getLevel()==null?0:entity.getLevel().getGameTime();
       ALPHA_SCENES.add(new AlphaScene(new Matrix4f(poses.last().pose()),new Matrix3f(poses.last().normal()),(time+partial)*.09f));
-    }finally{poses.popPose();}
+    }finally{try{if(ownsBuffers)SceneBuffers.SOURCE.endBatch();}finally{poses.popPose();}}
   }
   @EventBusSubscriber(modid="chao_garden",value=Dist.CLIENT)
   public static final class TranslucentPass {
@@ -147,20 +152,39 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
       if(shaderPack && SceneShaderPack.shadows())return;
       if(event.getStage()==RenderLevelStageEvent.Stage.AFTER_BLOCK_ENTITIES){submitUnregisteredLobby(event);return;}
       if(event.getStage()!=RenderLevelStageEvent.Stage.AFTER_PARTICLES||ALPHA_SCENES.isEmpty())return;
-      var buffers=Minecraft.getInstance().renderBuffers().bufferSource();
+      var buffers=SceneBuffers.SOURCE;
       try{
-        // Every End-portal surface and opaque scene face has established depth.
-        // Crown, all tube walls and ribbons share one sorted translucent batch.
+        // Shaderpacks may replace pixels with sky during their deferred pass
+        // when depth is empty. Submit the authored sky/reflections afterwards,
+        // still without depth writes, before the actual transparent surfaces.
+        float fogStart=RenderSystem.getShaderFogStart(),fogEnd=RenderSystem.getShaderFogEnd();
+        try{
+          // The authored sky is scenery beyond the room, not fogged geometry.
+          // Solas's late emissive program leaves it unlit; disable the stock
+          // shader's distance fade too, and restore fog before all foregrounds.
+          if(shaderPack){RenderSystem.setShaderFogStart(10000);RenderSystem.setShaderFogEnd(10001);}
+          for(var scene:ALPHA_SCENES)SKY.draw(scene.stack(),buffers,SKY_TEX,3);
+          flush(buffers,Material.get(SKY_TEX,3));
+          for(var scene:ALPHA_SCENES)REFLECTED_STARS.draw(scene.stack(),buffers,STAR_TEX,3);
+          flush(buffers,Material.get(STAR_TEX,3));
+          for(var scene:ALPHA_SCENES)REFLECTED_WOOD.draw(scene.stack(),buffers,WOOD_TEX,3);
+          flush(buffers,Material.get(WOOD_TEX,3));
+        }finally{
+          if(shaderPack){RenderSystem.setShaderFogStart(fogStart);RenderSystem.setShaderFogEnd(fogEnd);}
+        }
+        // Opaque geometry and portals have established depth. The floor, stair
+        // faces, guards, crown, tube walls and ribbons now sort together. Using
+        // the emissive/eyes shader here makes shaderpacks treat glass as glow
+        // with incompatible depth/composite rules.
+        for(var scene:ALPHA_SCENES)APPROACH_STARS.draw(scene.stack(),buffers,STAR_TEX,0);
+        flush(buffers,Material.get(STAR_TEX,0));
         for(var scene:ALPHA_SCENES){
           var poses=scene.stack();
+          FLOOR.draw(poses,buffers,WHITE,0);APPROACH_GLASS.draw(poses,buffers,WHITE,0);
           GLAZING.draw(poses,buffers,WHITE,0);energy(poses,buffers,scene.phase());
         }
         flush(buffers,Material.get(WHITE,0));
-        for(var scene:ALPHA_SCENES)APPROACH_STARS.draw(scene.stack(),buffers,STAR_TEX,0);
-        flush(buffers,Material.get(STAR_TEX,0));
-        for(var scene:ALPHA_SCENES)APPROACH_GLASS.draw(scene.stack(),buffers,GLASS_TEX,0);
-        flush(buffers,Material.get(GLASS_TEX,0));
-      }finally{ALPHA_SCENES.clear();}
+      }finally{try{buffers.endBatch();}finally{ALPHA_SCENES.clear();}}
     }
   }
   private static void submitUnregisteredLobby(RenderLevelStageEvent event){
@@ -236,15 +260,27 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     }
     static RenderType get(ResourceLocation texture,int mode){
       if(shaderPack && texture.equals(PAD_TEX))return energy(texture);
+      // Emissive/color-only is appropriate for the distant authored background,
+      // never for glass that must supply foreground depth to the shaderpack.
+      if(shaderPack && mode==3)return RenderType.entityTranslucentEmissive(texture,false);
+      if(shaderPack && mode==0)return CACHE.computeIfAbsent(texture+":translucent",key->create("chao_scene_translucent",
+          DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,262144,false,true,
+          CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_SHADER)
+              .setTextureState(new TextureStateShard(texture,false,false))
+              .setLightmapState(LIGHTMAP).setOverlayState(OVERLAY)
+              .setTransparencyState(TRANSLUCENT_TRANSPARENCY).setCullState(NO_CULL)
+              .setDepthTestState(LEQUAL_DEPTH_TEST)
+              // Standard shader translucency needs foreground depth for fog,
+              // reflections and compositing. Background sky remains color-only.
+              .setWriteMaskState(COLOR_DEPTH_WRITE).createCompositeState(false)));
       if(shaderPack)return switch(mode){
-        case 0 -> RenderType.entityTranslucentEmissive(texture,false);
         case 2 -> RenderType.entityCutout(texture);
         default -> RenderType.entityCutoutNoCull(texture);
       };
       return CACHE.computeIfAbsent(texture+":"+mode,key->create("chao_scene_"+mode,DefaultVertexFormat.POSITION_TEX_COLOR,VertexFormat.Mode.QUADS,262144,false,mode!=1,
         CompositeState.builder().setShaderState(new ShaderStateShard(()->shader)).setTextureState(new TextureStateShard(texture,false,false))
         .setTransparencyState(mode!=1?TRANSLUCENT_TRANSPARENCY:NO_TRANSPARENCY).setCullState(mode==2?CULL:NO_CULL).setDepthTestState(LEQUAL_DEPTH_TEST)
-        .setWriteMaskState(mode==0?COLOR_WRITE:COLOR_DEPTH_WRITE).createCompositeState(false)));}
+        .setWriteMaskState(mode==0||mode==3?COLOR_WRITE:COLOR_DEPTH_WRITE).createCompositeState(false)));}
   }
   private record V(float x,float y,float z,float u,float v,int color){}
   private static final class Mesh {
@@ -359,28 +395,37 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     return p(r*Math.cos(a),0,r*Math.sin(a));
   }
   private static Mesh floor(){var m=new Mesh();for(int i=0;i<192;i++){double a=i*Math.PI/96,b=(i+1)*Math.PI/96;
-    m.floorQuad(padEdge(i),p(Math.cos(a)*24.8,0,Math.sin(a)*24.8),p(Math.cos(b)*24.8,0,Math.sin(b)*24.8),padEdge(i+1),0xffffffff);
+    // Short radial spans keep translucent sorting accurate beside the tubes
+    // and curved stairs, including views up through the floor.
+    m.floorQuad(padEdge(i),p(Math.cos(a)*4,0,Math.sin(a)*4),p(Math.cos(b)*4,0,Math.sin(b)*4),padEdge(i+1),GLASS_COLOR);
+    for(int r=4;r<25;r++){
+      double outer=Math.min(r+1,24.8);
+      m.floorQuad(p(Math.cos(a)*r,0,Math.sin(a)*r),p(Math.cos(a)*outer,0,Math.sin(a)*outer),
+          p(Math.cos(b)*outer,0,Math.sin(b)*outer),p(Math.cos(b)*r,0,Math.sin(b)*r),GLASS_COLOR);
+    }
   }return m;}
   private static Mesh grid(){var m=new Mesh();for(int r=4;r<=24;r+=4)m.floorRing(r,.026,.007,0xffa2bfdc);
     for(int i=0;i<24;i++){double a=i*Math.PI/12,dx=Math.cos(a),dz=Math.sin(a),nx=-dz*.015,nz=dx*.015;m.floorQuad(p(dx*3.5+nx,.008,dz*3.5+nz),p(dx*24.7+nx,.008,dz*24.7+nz),p(dx*24.7-nx,.008,dz*24.7-nz),p(dx*3.5-nx,.008,dz*3.5-nz),0xff9db7d4);}
     m.floorRing(7,.24,.013,GOLD);m.floorRing(19,.3,.013,GOLD);m.floorRing(24.2,.25,.013,GOLD);return m;}
   private static Mesh approachGlass(){var m=new Mesh();
     for(boolean hero:new boolean[]{true,false}){
-      for(var face:LobbyApproachGeometry0255.stairFaces(hero))approachFace(m,face,0,0xffffffff);
+      for(var face:LobbyApproachGeometry0255.stairFaces(hero))approachFace(m,face,0,GLASS_COLOR);
       for(var rail:LobbyApproachGeometry0255.rails(hero,false))approachRail(m,rail,false);
     }
     for(var rail:LobbyApproachGeometry0255.rails(false,true))approachRail(m,rail,false);
     return m;
   }
   private static void approachFace(Mesh m,LobbyApproachGeometry0255.Face f,double dy,int color){
-    m.quad(p(f.a().x(),f.a().y()+dy,f.a().z()),p(f.b().x(),f.b().y()+dy,f.b().z()),p(f.c().x(),f.c().y()+dy,f.c().z()),p(f.d().x(),f.d().y()+dy,f.d().z()),color);
+    // The shared stair plan has outward CCW winding; scene meshes use the
+    // opposite convention. Keep shader normals outward on tops AND undersides.
+    m.quad(p(f.a().x(),f.a().y()+dy,f.a().z()),p(f.d().x(),f.d().y()+dy,f.d().z()),p(f.c().x(),f.c().y()+dy,f.c().z()),p(f.b().x(),f.b().y()+dy,f.b().z()),color);
   }
   private static Mesh approachStars(){var m=new Mesh();
     for(boolean hero:new boolean[]{true,false})for(var f:LobbyApproachGeometry0255.stairFaces(hero))
       if(f.a().y()==f.b().y()&&f.a().y()==f.c().y()&&f.a().y()==f.d().y()&&Math.abs(f.a().y()*2-Math.rint(f.a().y()*2))<1e-8){
         // Every thin native tread shares the lobby's star-and-glass material.
         double y=f.a().y()-.018;
-        m.quad(p(f.a().x(),y,f.a().z()),p(f.b().x(),y,f.b().z()),p(f.c().x(),y,f.c().z()),p(f.d().x(),y,f.d().z()),0x8f96aed3,
+        m.quad(p(f.a().x(),y,f.a().z()),p(f.d().x(),y,f.d().z()),p(f.c().x(),y,f.c().z()),p(f.b().x(),y,f.b().z()),0x8f96aed3,
             (float)f.a().x()/2,(float)f.a().z()/2,(float)f.c().x()/2,(float)f.c().z()/2);
       }
     return m;
@@ -388,10 +433,10 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
   private static void approachRail(Mesh m,LobbyApproachGeometry0255.Rail rail,boolean cap){
     var a=rail.edge().a();var b=rail.edge().b();double dx=b.x()-a.x(),dz=b.z()-a.z(),length=Math.hypot(dx,dz);
     if(length<1e-8)return;double nx=-dz/length*(cap?.075:.06),nz=dx/length*(cap?.075:.06);
-    double y0=rail.y0()-80+(cap?1.23:-rail.skirt()),y1=rail.y1()-80+(cap?1.23:-rail.skirt()),height=cap?.06:LobbyApproachGeometry0255.RAIL_HEIGHT+rail.skirt();int color=cap?GOLD:0xffffffff;
+    double y0=rail.y0()-80+(cap?1.23:-rail.skirt()),y1=rail.y1()-80+(cap?1.23:-rail.skirt()),height=cap?.06:LobbyApproachGeometry0255.RAIL_HEIGHT+rail.skirt();int color=cap?GOLD:GLASS_COLOR;
     var a0=p(a.x()+nx,y0,a.z()+nz);var a1=p(a.x()-nx,y0,a.z()-nz);var b0=p(b.x()+nx,y1,b.z()+nz);var b1=p(b.x()-nx,y1,b.z()-nz);
     var at0=p(a.x()+nx,y0+height,a.z()+nz);var at1=p(a.x()-nx,y0+height,a.z()-nz);var bt0=p(b.x()+nx,y1+height,b.z()+nz);var bt1=p(b.x()-nx,y1+height,b.z()-nz);
-    m.quad(a0,b0,bt0,at0,color);m.quad(b1,a1,at1,bt1,color);m.quad(at0,bt0,bt1,at1,color);m.quad(a1,b1,b0,a0,color);m.quad(a1,a0,at0,at1,color);m.quad(b0,b1,bt1,bt0,color);
+    m.quad(a0,at0,bt0,b0,color);m.quad(b1,bt1,at1,a1,color);m.quad(at0,at1,bt1,bt0,color);m.quad(a1,a0,b0,b1,color);m.quad(a1,at1,at0,a0,color);m.quad(b0,bt0,bt1,b1,color);
     // Rounded shared endpoint caps overlap both strips at every rail turn.
     if(cap){m.cylinder(a.x(),y0,a.z(),.081,height,8,color);m.cylinder(b.x(),y1,b.z(),.081,height,8,color);}
     else {m.cylinder(a.x(),y0,a.z(),.07,height,8,color);m.cylinder(b.x(),y1,b.z(),.07,height,8,color);}
@@ -571,18 +616,18 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
   }
   private static Mesh sign(){var m=new Mesh();m.quad(p(-3.45,5.6,-21.25),p(3.45,5.6,-21.25),p(3.45,7.32,-21.25),p(-3.45,7.32,-21.25),0xffffffff,0,1,1,0);return m;}
   private static Mesh palm(){var m=new Mesh();for(int i=0;i<8;i++){double a=i*Math.PI/4,dx=Math.cos(a),dz=Math.sin(a),nx=-dz,nz=dx;for(int j=0;j<8;j++){double t=j/8.0,u=(j+1)/8.0;double r0=t*4.6,r1=u*4.6,y0=.8*Math.sin(t*Math.PI)-t*.85,y1=.8*Math.sin(u*Math.PI)-u*.85,w0=.54*Math.sin((t+.03)*Math.PI),w1=.54*Math.sin((u+.03)*Math.PI);m.quad(p(dx*r0+nx*w0,y0,dz*r0+nz*w0),p(dx*r1+nx*w1,y1,dz*r1+nz*w1),p(dx*r1-nx*w1,y1,dz*r1-nz*w1),p(dx*r0-nx*w0,y0,dz*r0-nz*w0),0xffffffff,(float)t,0,(float)u,1);}}return m;}
-  private static void energyVertex(VertexConsumer out,PoseStack.Pose pose,float x,float y,float z,float u,float v,int color){
+  private static void energyVertex(VertexConsumer out,PoseStack.Pose pose,float x,float y,float z,float u,float v,int color,float nx,float ny,float nz){
     if(!shaderPack){emit(out,pose.pose(),x,y,z,u,v,color);return;}
     out.addVertex(pose,x,y,z).setColor(color).setUv(u,v).setOverlay(OverlayTexture.NO_OVERLAY)
-        .setLight(LightTexture.FULL_BRIGHT).setNormal(pose,0,0,1);
+        .setLight(LightTexture.FULL_BRIGHT).setNormal(pose,nx,ny,nz);
   }
   private static void energy(PoseStack poses,MultiBufferSource buffers,float t){var b=buffers.getBuffer(Material.get(WHITE,0));var matrix=poses.last();
     for(int x:new int[]{-3,3})for(int z:new int[]{-3,3}){
       for(int i=0;i<14;i++){float y0=.35f+i*.34f,y1=y0+.34f;float ox0=(float)Math.sin(t+i*.7f)*.09f,ox1=(float)Math.sin(t+(i+1)*.7f)*.09f;
-        int color=0xaacb75ff;energyVertex(b,matrix,x+ox0-.035f,y0,z,0,0,color);energyVertex(b,matrix,x+ox1-.035f,y1,z,1,0,color);energyVertex(b,matrix,x+ox1+.035f,y1,z,1,1,color);energyVertex(b,matrix,x+ox0+.035f,y0,z,0,1,color);
-        energyVertex(b,matrix,x-.16f,y0,z-.16f,0,0,0x3976f3f1);energyVertex(b,matrix,x+.16f,y0,z+.16f,1,0,0x3976f3f1);energyVertex(b,matrix,x+.16f,y1,z+.16f,1,1,0x3976f3f1);energyVertex(b,matrix,x-.16f,y1,z-.16f,0,1,0x3976f3f1);
+        int color=0xaacb75ff;energyVertex(b,matrix,x+ox0-.035f,y0,z,0,0,color,0,0,1);energyVertex(b,matrix,x+ox1-.035f,y1,z,1,0,color,0,0,1);energyVertex(b,matrix,x+ox1+.035f,y1,z,1,1,color,0,0,1);energyVertex(b,matrix,x+ox0+.035f,y0,z,0,1,color,0,0,1);
+        energyVertex(b,matrix,x-.16f,y0,z-.16f,0,0,0x3976f3f1,.70710677f,0,-.70710677f);energyVertex(b,matrix,x+.16f,y0,z+.16f,1,0,0x3976f3f1,.70710677f,0,-.70710677f);energyVertex(b,matrix,x+.16f,y1,z+.16f,1,1,0x3976f3f1,.70710677f,0,-.70710677f);energyVertex(b,matrix,x-.16f,y1,z-.16f,0,1,0x3976f3f1,.70710677f,0,-.70710677f);
       }
     }
-    float[] corners={-2.15f,2.15f};for(float x:corners)for(float z:corners){energyVertex(b,matrix,x-.15f,.035f,z-.15f,0,0,0x6676e5ff);energyVertex(b,matrix,x+.15f,.035f,z-.15f,1,0,0x6676e5ff);energyVertex(b,matrix,x+.15f,.035f,z+.15f,1,1,0x6676e5ff);energyVertex(b,matrix,x-.15f,.035f,z+.15f,0,1,0x6676e5ff);}
+    float[] corners={-2.15f,2.15f};for(float x:corners)for(float z:corners){energyVertex(b,matrix,x-.15f,.035f,z-.15f,0,0,0x6676e5ff,0,1,0);energyVertex(b,matrix,x+.15f,.035f,z-.15f,1,0,0x6676e5ff,0,1,0);energyVertex(b,matrix,x+.15f,.035f,z+.15f,1,1,0x6676e5ff,0,1,0);energyVertex(b,matrix,x-.15f,.035f,z+.15f,0,1,0x6676e5ff,0,1,0);}
   }
 }

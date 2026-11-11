@@ -7,9 +7,10 @@ public final class ToyInteractionRulesTest {
     for(String kind:new String[]{"chao_piano","chao_organ"}) {
       check(ToyInteractionRules.frontOnly(kind),"Keyboard must be approached from its keys");
       for(double width:new double[]{.35,.55,.8}) {
-        double front=kind.equals("chao_organ")?.1875:.38125;
         double distance=ToyInteractionRules.keyboardDistance(kind,width);
-        check(Math.abs(distance-width/2-front-.025)<1e-9,"Collision-safe keyboard clearance");
+        double clearance=kind.equals("chao_organ")?.015:.38125+.025;
+        check(Math.abs(distance-width/2-clearance)<1e-9,"Collision-safe keyboard clearance");
+        if(kind.equals("chao_organ"))check(distance<width/2+.04,"Organ uses under-manual clearance instead of extending arms across the old cabinet gap");
       }
     }
     check(ToyInteractionRules.frontOnly("chao_tv"),"TV remains directional");

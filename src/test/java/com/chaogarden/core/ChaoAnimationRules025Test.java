@@ -43,7 +43,7 @@ public final class ChaoAnimationRules025Test {
       float pour=ChaoAnimationRules.wateringPour(i/1000f);
       check(Float.isFinite(pour)&&pour>=0&&pour<=1,"Watering pose range");
     }
-    return checks;
+    return checks + ChaoGaitClockTest.run();
   }
   public static void main(String[] args){System.out.println("Baby animation timing: "+run()+" checks passed");}
 }

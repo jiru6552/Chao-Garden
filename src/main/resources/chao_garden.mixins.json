@@ -8,6 +8,9 @@
     "CompanionLivingFlightMixin",
     "ChestTableFillMixin"
   ],
+  "client": [
+    "CompanionLocalPlayerFlightMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

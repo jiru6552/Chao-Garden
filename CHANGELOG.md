@@ -1,3 +1,12 @@
+## 0.25.46 — Toy contact, equipped flight, running and lobby rendering
+
+- Move organ performers closer to the actual front manual; fit natural arms and preserve clear-front access, rewards, cooldowns and player collision.
+- Bring the guitar closer and higher, and correct the string-face orientation and two-hand grip.
+- Admit the server-authorized equipped glide at vanilla's initial double-jump gate; retain normal elytra and all server eligibility checks. Fit the baby carry anchor to the keeper's back.
+- Bound and ease running cadence while retaining movement speed and Run unlocks; steady high-speed torso/head motion.
+- Render lobby glass with normal shader translucency and appropriate depth, sort floor/stairs/tubes together, preserve authored backgrounds after deferred rendering, and correct stair/rail normals.
+- Add focused rig/native regressions and disposable native-client studies. Exact Solas V3.7b and independent multiplayer verification remain required; see docs/FIXES_02546.md.
+
 ## 0.25.45 — Guitar interaction
 
 - Refine the existing guitar with a torso-held CWE mesh, left-hand fretting and alternating Lionfish strums aligned to the measured string face.

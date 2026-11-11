@@ -9,7 +9,8 @@ import net.minecraft.sounds.SoundSource;
 public final class OrganPlayRules {
   public static final String KIND="chao_organ";
   // Shipped idle OBJ, material sa2_piano01_20: x=.23512..79223, z=.39713..48796.
-  public static final float KEY_Y=.18667f, KEY_FRONT=.057455f, KEY_CENTER_X=.013675f;
+  // Contact the front quarter of the white keys, rather than reaching to the rear.
+  public static final float KEY_Y=.18667f, KEY_FRONT=.085f, KEY_CENTER_X=.013675f;
   private static final int[] UPPER={7,9,12,11,9,7,4,7}, LOWER={0,2,5,4,2,0,-3,0};
   private OrganPlayRules(){}
   public static boolean soundDue(int t){return t>=24&&t<=136&&(t-24)%16==0;}

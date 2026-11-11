@@ -1,6 +1,7 @@
 package com.chaogarden.client;
 
 import com.chaogarden.ChaoVariants;
+import com.chaogarden.core.ChaoGaitClock;
 import com.chaogarden.core.ChaoState;
 import com.google.gson.*;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -30,6 +31,9 @@ public final class OfficialChaoRig {
     PONDER, INSPECT, EAT, TRAIN, REJECT, DELIGHT, PLAY, PET }
   private Motion motion = Motion.WALK;
   private float idleGestureWeight;
+  // Entity UUIDs stay strongly held while that entity is loaded. Weak keys avoid
+  // retaining departed creatures, without evicting every stride in a busy garden.
+  private final Map<UUID, ChaoGaitClock> gaitClocks = new WeakHashMap<>();
   private final LinkedHashMap<UUID, Transition> transitions = new LinkedHashMap<>(128, .75f, true);
   private static final class Transition {
     Motion mode;
@@ -210,12 +214,25 @@ public final class OfficialChaoRig {
       apply("animation.chao.idle", 0, 1 - walk - idleGestureWeight, 0, 0);
       apply("animation.chao.idle", gestureTime(ageTicks, seed), idleGestureWeight, 0, 0);
     }
-    // Vanilla limbSwing integrates distance travelled. A stopped creature never
-    // advances its walking cycle merely because the game clock is advancing.
-    if(emotion==0)apply("animation.chao.walk", limbSwing * .9f, walk, 0, 0);
+    // Vanilla limbSwing integrates distance, not clip seconds. Feeding it directly
+    // to the imported clip made a high-Run Chao flicker through many full strides.
+    var gaitClock = gaitClocks.computeIfAbsent(id, ignored -> new ChaoGaitClock());
+    float gaitTime = gaitClock.sample(ageTicks, limbSwing, movement, uprightGait && emotion == 0);
+    if(emotion==0)apply("animation.chao.walk", gaitTime, walk, 0, 0);
     float breath = Mth.sin(ageTicks * .055f + (seed & 1023) * .01f);
     var body = pose("body");
     var skull = pose("skull");
+    if (requested == Motion.RUN || requested == Motion.DASH) {
+      // Keep the authored feet and their ground contact, but steady the broad
+      // walking shimmy as the faster gait leans into its direction of travel.
+      float steady = 1 - walk * (requested == Motion.DASH ? .60f : .38f);
+      if (body != null) {
+        body.x *= steady; body.y *= steady; body.ry *= steady; body.rz *= steady;
+      }
+      if (skull != null) {
+        skull.x *= steady; skull.y *= steady; skull.z *= steady; skull.rz *= steady;
+      }
+    }
     // Broad Dark Power, Chaos, Tails and developed Swim heads can meet walking palms;
     // that inherited overlap also carries into the first toy-entry frames.
     if((broadWalkHead||powerSwimWeight>0)&&uprightGait&&skull!=null){

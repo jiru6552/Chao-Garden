@@ -90,6 +90,21 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
     double[] b=ToyInteractionRules.rotateEnvelope(envelope,turns);
     return box(b[0],b[1],b[2],b[3],b[4],b[5]);
   }
+  @Override protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos,
+                                                   CollisionContext context) {
+    if(toy.equals("chao_organ") && context instanceof net.minecraft.world.phys.shapes.EntityCollisionContext entity
+        && entity.getEntity() instanceof com.chaogarden.entity.ChaoEntity) {
+      // A Chao's single rectangular body box includes the empty space behind
+      // its feet/torso. Let that box enter the clearance below the low manual;
+      // the rendered body remains in front of the cabinet and pipes. Keep the
+      // full player collision and interaction outline, and the rear wall here.
+      double[] rear={1.8,0,8,14.2,15,11};
+      int turns=switch(state.getValue(FACING)){case EAST->1;case SOUTH->2;case WEST->3;default->0;};
+      double[] b=ToyInteractionRules.rotateEnvelope(rear,turns);
+      return box(b[0],b[1],b[2],b[3],b[4],b[5]);
+    }
+    return getShape(state,level,pos,context);
+  }
   @Override protected boolean isPathfindable(BlockState state,PathComputationType type) {
     // A non-full collision box is OPEN under BlockBehaviour's default rule.
     // These are physical toys: plan around their occupied cell, as for a chest,

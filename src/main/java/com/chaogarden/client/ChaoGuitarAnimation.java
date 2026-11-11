@@ -17,7 +17,9 @@ final class ChaoGuitarAnimation {
  static final Vector3f SOURCE_STRUM=new Vector3f(.3291302f,.19492848f,.48033774f);
  static final Vector3f SOURCE_NECK=new Vector3f(.60f,.26908057f,.56820762f);
  static final Vector3f NECK_AXIS=new Vector3f(.92050569f,.25199345f,.29861109f);
- static final Vector3f FRONT=new Vector3f(.0257916f,.7233867f,-.6899612f);
+ // Outward normal of the actual string-strip triangles, not the opposite
+ // wood/soundhole decal. Rotating about the neck keeps the mesh unmirrored.
+ static final Vector3f FRONT=new Vector3f(-.0257916f,-.7233867f,.6899612f);
  static final Vector3f ACROSS=new Vector3f(FRONT).cross(NECK_AXIS).normalize();
  private static Matrix4f basis(){
   var v=new Vector3f(ACROSS).negate();return new Matrix4f()
@@ -30,7 +32,7 @@ final class ChaoGuitarAnimation {
  static float propWeight(float w){return Math.clamp((w-.45f)/.55f,0,1);}
  static Matrix4f propMatrix(BiConsumer<String,PoseStack> anchor,float w){
   var body=new PoseStack();anchor.accept("body",body);
-  return new Matrix4f(body.last().pose()).translate(-.02f,-.01f,-.30f-.06f*(1-w))
+  return new Matrix4f(body.last().pose()).translate(-.02f,-.045f,-.215f-.06f*(1-w))
    .rotateZ(-.18f*w).scale(SCALE*propWeight(w)).mul(basis()).translate(new Vector3f(.5f).sub(SOURCE_STRUM));
  }
  static Vector3f neckGrip(Matrix4f prop,float fret){

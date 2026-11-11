@@ -1,0 +1,143 @@
+Chao Garden 0.25.46 native and build evidence
+See FIXES_02546.md for scope/limitations.
+
+fixes046-rig.log
+ChaoState: 168905 checks passed
+Toy interaction rules: 3092 checks passed
+Egg distribution policy: 243 checks passed
+Training supplies: 248 checks passed
+Wardrobe choices: 6644 checks passed
+Baby animation timing: 26057 checks passed
+Portal geometry: 1233 checks passed
+Lobby geometry0252: 18509 checks passed
+Lobby perimeter approaches0256: 40670 checks passed
+Garden gate geometry0256: 48346 checks passed
+Area music rules0257: 136 checks passed
+School singing rules0258: 2472 checks passed
+Staff face timing0251: 177195 checks passed
+Black Market stock: 921359 checks passed
+Kindergarten buyback: 220052 checks passed
+Activity rules: 101311 checks passed
+Companion rules: 2103 checks passed
+SA2 fruit effects: 4765 checks passed
+Locomotion rules: 1209 checks passed
+Organ timing: 1282 real Lionfish samples, eight two-hand sustained chords, contact/cues and endpoints passed
+Organ mesh fit: 152604 hand samples; 3168 body/skull surface checks; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels
+Guitar Lionfish timing: 641 quarter-tick samples; 16 alternating string crossings, bounded fret positions, cue/pitch limits and endpoints passed
+Guitar mesh fit: 302382 pose samples; 506796 emitted-hand samples; max contact=3.7282695E-7 blocks; rendered center error=0.011720353; min head=0.35219622 pixels; min torso=0.16891503 pixels; min floor=0.73127747 pixels; max reach=3.292374 pixels
+PASS: 99572 running pose checks across 132 form/age/speed cases and 31812 real-mesh frames; bounded cadence, retained foot travel and gait-unlock continuity
+PASS: 17286 carry checks; 396 form/age/morph cases; back skin gap=-0.014375001..0.051500008 blocks; max transition step=0.034974005 blocks
+BUILD SUCCESSFUL in 1m 34s
+
+fixes046-native-final.log
+[05:01:40] [Server thread/INFO] [minecraft/GameTestServer]: ========= 106 GAME TESTS COMPLETE IN 32.51 s ======================
+[05:01:40] [Server thread/INFO] [minecraft/GameTestServer]: All 106 required tests passed :)
+BUILD SUCCESSFUL in 1m 16s
+
+fixes046-native-with-drives.log
+[04:49:27] [Server thread/ERROR] [minecraft/LogTestReporter]: equippeddriveupdatescarrier failed at -8329617, -60, 9827087! io.wispforest.accessories.api.AccessoriesCapability
+[04:49:29] [Server thread/ERROR] [minecraft/LogTestReporter]: dedicateddropsattributionandequipment failed at -8329481, -60, 9827087! Requires actual Accessories mod
+[04:49:30] [Server thread/ERROR] [minecraft/LogTestReporter]: dragononcecancelleddropsandcombinedgear failed at -8329511, -60, 9827117! io.wispforest.accessories.api.AccessoriesCapability
+[04:49:41] [Server thread/INFO] [minecraft/GameTestServer]: ========= 122 GAME TESTS COMPLETE IN 40.28 s ======================
+[04:49:41] [Server thread/INFO] [minecraft/GameTestServer]: 3 required tests failed :(
+BUILD FAILED in 1m 26s
+
+organ046-client.log
+[04:52:20] [Render thread/INFO] [co.ch.cl.OrganVisualSmoke044/]: ORGAN044_VISUAL_COMPLETE shots=237 hurtFrames=14
+BUILD SUCCESSFUL in 1m 43s
+
+guitar046-client.log
+[04:42:11] [Render thread/INFO] [co.ch.cl.GuitarVisualSmoke045/]: GUITAR045_VISUAL_COMPLETE shots=308 hurtFrames=13
+BUILD SUCCESSFUL in 1m 57s
+
+running046-client-final.log
+[04:55:47] [Server thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_SERVER_CASE_COMPLETE 0 distance=6.836286361118595
+[04:55:53] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_CLIENT_RATE scene=1 speed=0.84497917 swing=66.546135
+[04:55:53] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_CLIENT_RATE scene=1 speed=0.50698745 swing=67.05312
+[04:55:55] [Server thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_SERVER_CASE_COMPLETE 1 distance=18.026794451461946
+[04:56:00] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_CLIENT_RATE scene=2 speed=0.9984811 swing=88.26121
+[04:56:00] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_CLIENT_RATE scene=2 speed=0.59908867 swing=88.8603
+[04:56:03] [Server thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_SERVER_CASE_COMPLETE 2 distance=44.20458581839432
+[04:56:08] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_CLIENT_RATE scene=3 speed=0.3137381 swing=25.514023
+[04:56:08] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_CLIENT_RATE scene=3 speed=0.18824287 swing=25.702265
+[04:56:10] [Server thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_SERVER_CASE_COMPLETE 3 distance=6.814387788476516
+[04:56:18] [Server thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_SERVER_CASE_COMPLETE 4 distance=18.003355295145965
+[04:56:25] [Server thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_SERVER_CASE_COMPLETE 5 distance=44.139436337695756
+[04:56:25] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_AGE_VERIFIED scene=0 adult=false cocoon=false movingTicks=83 stoppedTicks=16 renderedFrames=192
+[04:56:25] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_AGE_VERIFIED scene=1 adult=false cocoon=false movingTicks=84 stoppedTicks=14 renderedFrames=205
+[04:56:25] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_AGE_VERIFIED scene=2 adult=false cocoon=false movingTicks=85 stoppedTicks=15 renderedFrames=203
+[04:56:25] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_AGE_VERIFIED scene=3 adult=true cocoon=false movingTicks=85 stoppedTicks=15 renderedFrames=204
+[04:56:25] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_AGE_VERIFIED scene=4 adult=true cocoon=false movingTicks=84 stoppedTicks=15 renderedFrames=208
+[04:56:25] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_AGE_VERIFIED scene=5 adult=true cocoon=false movingTicks=83 stoppedTicks=15 renderedFrames=206
+[04:56:25] [Render thread/INFO] [co.ch.cl.RunningVisualStudy046/]: RUNNING046_VISUAL_COMPLETE shots=209 movingTicks=504 stoppedTicks=90 observedRate=0.14423943..0.99967194
+BUILD SUCCESSFUL in 1m 42s
+
+companion046-input-client.log
+[04:47:36] [Render thread/INFO] [co.ch.cl.CompanionInputVisualSmoke046/]: COMPANION046_INPUT_COMPLETE: six real keyboard cases; ordinary elytra preserved; inactive/expired denied; synthetic predicted permits rejected by server
+BUILD SUCCESSFUL in 1m 19s
+
+companion046-carry-client.log
+[04:59:55] [Render thread/INFO] [co.ch.cl.CompanionVisualSmoke046/]: COMPANION046_VISUAL_COMPLETE shots=45 carryRenders=644 mode=attachment-render-only
+BUILD SUCCESSFUL in 1m 34s
+
+lobby046-client-initialprobe.log
+[05:03:47] [Server thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_WORLD existingSave=Existing045 dimension=chao_garden:hub
+[05:03:56] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-00.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-00.png
+[05:04:04] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-01.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-01.png
+[05:04:12] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-02.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-02.png
+[05:04:20] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-03.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-03.png
+[05:04:28] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-04.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-04.png
+[05:04:36] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-05.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-05.png
+[05:04:44] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-06.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-06.png
+[05:04:52] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-07.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-07.png
+[05:05:00] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-08.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-08.png
+[05:05:08] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-09.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-09.png
+[05:05:16] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-10.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-10.png
+[05:05:24] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-11.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-11.png
+[05:05:32] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-12.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-12.png
+[05:05:40] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-13.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-13.png
+[05:05:48] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-14.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-14.png
+[05:05:56] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-15.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-15.png
+[05:06:04] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-16.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-16.png
+[05:06:12] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-17.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-17.png
+[05:06:20] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-18.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-18.png
+[05:06:28] [IO-Worker-2/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-19.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-19.png
+[05:06:29] [Render thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_COMPLETE mode=vanilla-material views=20 irisActive=false
+BUILD SUCCESSFUL in 4m 31s
+
+lobby046-client-final.log
+[05:15:22] [Server thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_WORLD existingSave=Existing045 dimension=chao_garden:hub
+[05:15:30] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-00.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-00.png
+[05:15:38] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-01.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-01.png
+[05:15:46] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-02.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-02.png
+[05:15:54] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-03.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-03.png
+[05:16:02] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-04.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-04.png
+[05:16:10] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-05.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-05.png
+[05:16:18] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-06.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-06.png
+[05:16:26] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-07.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-07.png
+[05:16:34] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-08.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-08.png
+[05:16:42] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-09.png nativeMaterialProbe=false irisActive=false Saved screenshot as lobby046-vanilla-material-09.png
+[05:16:50] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-10.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-10.png
+[05:16:58] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-11.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-11.png
+[05:17:06] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-12.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-12.png
+[05:17:14] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-13.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-13.png
+[05:17:23] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-14.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-14.png
+[05:17:31] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-15.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-15.png
+[05:17:39] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-16.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-16.png
+[05:17:47] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-17.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-17.png
+[05:17:55] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-18.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-18.png
+[05:18:03] [IO-Worker-4/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_CAPTURE lobby046-vanilla-material-19.png nativeMaterialProbe=true irisActive=false Saved screenshot as lobby046-vanilla-material-19.png
+[05:18:03] [Render thread/INFO] [co.ch.cl.LobbyFixVisualSmoke046/]: LOBBY046_COMPLETE mode=vanilla-material views=20 irisActive=false
+BUILD SUCCESSFUL in 3m 34s
+
+fixes046-regressions.log
+Production JAR integrity: complete central directory, unique entries and all CRCs verified; entries=8762; bytes=30620300; sha256=c0ae750caa429681d44fa74c896414901cf248c3b8ad5c62b0eb64e2ae257bf2
+Piano Lionfish timing: 322 samples, 16 alternating contacts, key frames, pitch limits and endpoints passed
+Piano mesh fit: 16272 hand samples; no crossed hands; max key-height error=6.2584877E-7 blocks; max reach=7.3371654 pixels
+Posture samples=1203876 headChecks=3023820 failures=0 headPixels=0.087901115 groundPixels=0.19929123 shoulderPixels=1.0800712 contactBlocks=0.018833788 handHeight=-2.8413506..-1.9999943
+PASS: 264 visible transition checks across 88 form/age/history cases; nearby blending preserved, stale offscreen pose discarded
+BUILD SUCCESSFUL in 2m 13s
+
+fixes046-build.log
+Production JAR integrity: complete central directory, unique entries and all CRCs verified; entries=8763; bytes=30621433; sha256=6a70ae587df964ee466686c45b7112d3daef1cdf055e34a71155e96fde44995f
+BUILD SUCCESSFUL in 16s

@@ -1,0 +1,20 @@
+Production JAR:8763 unique entries, all CRCs verified; no test classes/dev fixtures; version0.25.46. New gait, client flight mixin and owned scene buffer classes present.
+SHA256 6a70ae587df964ee466686c45b7112d3daef1cdf055e34a71155e96fde44995f
+
+These16 preserved entries match0.25.45 byte-for-byte:
+com/chaogarden/client/ChaoPianoAnimation.class
+com/chaogarden/client/LionfishPianoClip.class
+com/chaogarden/companion/CompanionContent$1.class
+com/chaogarden/companion/CompanionContent$Active.class
+com/chaogarden/companion/CompanionContent$PendingSnapshot.class
+com/chaogarden/companion/CompanionContent.class
+com/chaogarden/companion/CompanionFlight.class
+com/chaogarden/core/AnalyzerStatRules$Edit.class
+com/chaogarden/core/AnalyzerStatRules.class
+com/chaogarden/core/DriveRules$Tier.class
+com/chaogarden/core/DriveRules.class
+com/chaogarden/hub/HubRooms$1.class
+com/chaogarden/hub/HubRooms.class
+com/chaogarden/mixin/CompanionLivingFlightMixin.class
+com/chaogarden/mixin/CompanionPlayerFlightMixin.class
+com/chaogarden/toys/PianoPlayRules.class

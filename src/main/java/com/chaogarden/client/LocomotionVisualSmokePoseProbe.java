@@ -37,8 +37,10 @@ public final class LocomotionVisualSmokePoseProbe {
     rig.animateGameplay("baby",stride,OfficialChaoRig.Motion.WALK,120,0,.04f,0,0,0,0,false);
     float firstFoot=rig.pose("foot_left").rx;
     rig.animateGameplay("baby",stride,OfficialChaoRig.Motion.WALK,120,.2f,.04f,0,0,0,0,false);
+    require(rig.pose("foot_left").rx==firstFoot,"another pass of the same frame advanced the feet");
+    rig.animateGameplay("baby",stride,OfficialChaoRig.Motion.WALK,124,.8f,.04f,0,0,0,0,false);
     require(Math.abs(rig.pose("foot_left").rx-firstFoot)>.15f,"walking stride stretched into a nearly static clip");
-    samples+=2;
+    samples+=3;
     for(int i=0;i<KEYS.length;i++)for(var mode:OfficialChaoRig.Motion.values()) {
       UUID id=new UUID(i+1,mode.ordinal()+1);
       for(int age=0;age<=160;age+=4) {

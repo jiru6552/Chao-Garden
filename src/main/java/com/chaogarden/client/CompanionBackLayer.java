@@ -22,7 +22,10 @@ import net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent;
 
 /** The real companion follows its keeper's torso in both player skin models. */
 public final class CompanionBackLayer extends RenderLayer<AbstractClientPlayer, PlayerModel<AbstractClientPlayer>> {
-  static final float FOOT_Y=.55f, BACK_Z=.42f;
+  // The player torso spans Y=0..12 and Z=-2..2 pixels. A Chao's chest
+  // projects two pixels towards the keeper, placing it against the back skin
+  // at this offset instead of leaving the old ~three-pixel air gap.
+  static final float FOOT_Y=.48f, BACK_Z=.27f;
   private static long renders;
   private static ClientLevel indexedLevel;
   private static final Map<Integer,ChaoEntity> bodies=new HashMap<>();
@@ -65,11 +68,16 @@ public final class CompanionBackLayer extends RenderLayer<AbstractClientPlayer, 
         float back=chao.companionBackBlend(partialTick);
         getParentModel().body.translateAndRotate(stack);
         // The head perch follows torso movement, so looking down cannot bury the Chao in the keeper's face.
-        float arc=net.minecraft.util.Mth.sin(back*(float)Math.PI);
-        stack.translate(0,net.minecraft.util.Mth.lerp(back,-.50f,FOOT_Y)-arc*.35f,
-            net.minecraft.util.Mth.lerp(back,0,BACK_Z)+arc*.35f);
-        stack.mulPose(Axis.XP.rotationDegrees(180));
+        carryTransform(stack,back);
         chaoRenderer.renderOnBack(chao,partialTick,stack,buffers,light);renders++;
       } finally { stack.popPose(); }
+  }
+
+  /** Torso-local placement also follows vanilla swimming and flight rotations. */
+  static void carryTransform(PoseStack stack,float back) {
+    float arc=net.minecraft.util.Mth.sin(back*(float)Math.PI);
+    stack.translate(0,net.minecraft.util.Mth.lerp(back,-.50f,FOOT_Y)-arc*.35f,
+        net.minecraft.util.Mth.lerp(back,0,BACK_Z)+arc*.35f);
+    stack.mulPose(Axis.XP.rotationDegrees(180));
   }
 }
