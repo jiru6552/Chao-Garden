@@ -67,6 +67,7 @@ public final class ToyPreview {
     String problem=unavailable(c);if(!problem.isEmpty())return problem;
     stop(c);
     problem=unavailable(c);if(!problem.isEmpty())return problem;
+    if(!ToyContent.proneSpaceReady(c,kind,c.position(),c.getYRot(),null))return "Give the Chao clear, supported floor space for this toy.";
     c.getPersistentData().putBoolean(RESTORE_AI,c.isNoAi());c.getNavigation().stop();c.setDeltaMovement(Vec3.ZERO);c.setNoAi(true);
     ACTIVE.put(c,new Session(kind,loop,keeper,c.level().getGameTime()));c.setToyPlaying(kind,ToyContent.PLAY_TICKS);
     return "";
@@ -75,7 +76,8 @@ public final class ToyPreview {
   public static boolean tick(ChaoEntity c){
     var s=ACTIVE.get(c);if(s==null)return false;
     var keeper=c.getServer().getPlayerList().getPlayer(s.keeper);
-    if(keeper==null||keeper.level()!=c.level()||keeper.distanceToSqr(c)>64*64||!unavailable(c).isEmpty()){
+    if(keeper==null||keeper.level()!=c.level()||keeper.distanceToSqr(c)>64*64||!unavailable(c).isEmpty()
+        ||!ToyContent.proneSpaceReady(c,s.kind,c.position(),c.getYRot(),null)){
       stop(c);return false;
     }
     long now=c.level().getGameTime();if(s.lastTick==now)return true;s.lastTick=now;

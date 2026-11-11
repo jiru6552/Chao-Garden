@@ -9,7 +9,7 @@ public final class ActiveToyPlayRules049 {
   public static boolean doll(String kind){return kind.equals(SONIC)||kind.equals(SHADOW);}
   public static boolean soundDue(String kind,int tick){
     if(kind.equals(CAR))return tick>=32&&tick<=128&&(tick-32)%32==0;
-    if(doll(kind))return tick>=36&&tick<=132&&(tick-36)%48==0;
+    if(doll(kind))return false;
     return kind.equals(POGO)&&tick>=24&&tick<=136&&(tick-24)%16==0;
   }
   public static float presence(float tick){return MaracasPlayRules.presence(tick);}

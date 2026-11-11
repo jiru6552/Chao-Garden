@@ -34,6 +34,22 @@ final class ChaoToyGrip {
     return hand.mesh.visiblePalm(hand.poses,left);
   }
 
+  /** Unreached arm-local volume from the same actual layer as locateVisible. */
+  float[] boundsVisible(ChaoState state,OfficialChaoRig rig,boolean left) {
+    boolean glass=state.immortal&&"normal".equals(state.character)&&rig.geometryKey().startsWith("chaos_");
+    int animal=animalArm(state);
+    if(!glass&&animal<0)return rig.baseToyHandBounds(left);
+    String path=glass?"gameplay/chao_"+rig.geometryKey()+"_glass"
+        :(animal<21?"overlays/":"cwe_parts/")+"chao_"+rig.sourceGeometryKey();
+    Hand hand=hands.computeIfAbsent(path,p->{var mesh=ChaoMeshAsset.load(p);return new Hand(mesh,mesh.createPoses());});
+    hand.poses.values().forEach(ChaoMeshAsset.Pose::reset);
+    if(glass)return hand.mesh.visibleHandBounds(hand.poses,left);
+    var limb=hand.poses.get("animal_0_"+animal+(left?"_left":"_right"));
+    if(limb==null)return null;
+    if(!state.adult&&animal<21)limb.sx=limb.sy=limb.sz=.92f;
+    return hand.mesh.animalHandBounds(animal,hand.poses,left);
+  }
+
   float[] locate(ChaoState state,OfficialChaoRig rig) {
     return locate(state,rig,false);
   }

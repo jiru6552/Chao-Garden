@@ -144,6 +144,10 @@ neoForge {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
+            systemProperty 'chao_garden.toyPolish051Study', project.findProperty('toyPolish051Study') ?: 'false'
+            systemProperty 'chao_garden.toyPolish051Start', project.findProperty('toyPolish051Start') ?: '0'
+            systemProperty 'chao_garden.toyPolish051Limit', project.findProperty('toyPolish051Limit') ?: '49'
+            if (project.findProperty('toyPolish051Study') == 'true') gameDirectory = project.file(project.findProperty('toyPolish051Dir') ?: 'run-toy-polish051')
             systemProperty 'chao_garden.hat050Study', project.findProperty('hat050Study') ?: 'false'
             systemProperty 'chao_garden.hat050Start', project.findProperty('hat050Start') ?: '0'
             systemProperty 'chao_garden.hat050Limit', project.findProperty('hat050Limit') ?: '40'
@@ -526,6 +530,7 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_market50/**'
     exclude 'data/chao_eggs50/**'
     exclude 'data/chao_regress50/**'
+    exclude 'data/chao_polish51/**'
     exclude 'data/chao_focused46/**'
     exclude 'data/chao_equipped46/**'
     exclude 'data/chao_equipped46_save/**'
@@ -750,3 +755,11 @@ tasks.register('quietToyTimingTest049', JavaExec) {
  jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
 }
 tasks.named('check') { dependsOn quietToyTimingTest049 }
+
+tasks.register('proneToyRigTest051', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.ProneToyRigTest051'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn proneToyRigTest051 }

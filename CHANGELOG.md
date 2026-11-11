@@ -1,3 +1,11 @@
+## 0.25.51 — Focused toy pose and inventory polish
+
+- Refit the broom for two measured hands with shorter arm extension and a closer grounded sweep.
+- Correct Shadow's official face atlas repetition and nose UVs; improve book, crayon-box and broom GUI views without replacing their held or placed models.
+- Raise book/doll grips above visible feet, and make book, crayon and doll interactions silent.
+- Share grounded prone poses for floor drawing and smaller one-hand lateral car play, with actual hand/foot volumes, safe space checks and interruption recovery.
+- Preserve previous item/DNA/shop/loot, toy, movement and lobby updates. See docs/TOY_POLISH_02551.md for verification and limits.
+
 ## 0.25.50 — Vanilla hats, complete DNA and gem chest eggs
 
 - Use vanilla carved pumpkins, melon blocks and skeleton skulls as Chao hats, with measured head fitting and saved-stack preservation. Retire the custom watermelon hat from market/creative inventory while retaining safe conversion of old saved stacks.

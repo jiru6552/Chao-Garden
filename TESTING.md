@@ -74,3 +74,6 @@ See [per-toy changes and verification](docs/TOYS_02549.md), [source references](
 
 
 For the 0.25.50 hat, complete-DNA, stock-rotation and gem-egg update, see [results and compatibility](docs/ITEM_DNA_EGGS_02550.md), [hat migration](docs/HATS_02550.md) and [Lootr chest behavior](docs/GEM_EGGS_02550.md). Existing toy preview commands are unchanged.
+
+
+For 0.25.51, see [toy polish verification](docs/TOY_POLISH_02551.md) and [Shadow/icon asset references](docs/TOY_ASSETS_02551.md). The existing broom, book, dolls, crayons and car previews use their revised production interactions. Car/crayon previews require clear supported floor space.

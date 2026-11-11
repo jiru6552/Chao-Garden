@@ -27,7 +27,11 @@ import org.joml.Vector3f;
 final class ChaoActiveToyAnimation049 {
   private static final String[] KINDS={ActiveToyPlayRules049.CAR,ActiveToyPlayRules049.SONIC,ActiveToyPlayRules049.SHADOW,ActiveToyPlayRules049.POGO};
   private static final LionfishActiveToyClip049 RENDER_CLIP=new LionfishActiveToyClip049();
-  static final float MAX_REACH=3.2f;
+  static final float MAX_REACH=3.2f,CAR_REACH=2.0f,CAR_SCALE=.42f;
+  // A real floor car does not shrink while the Chao lies down or gets up.
+  // The reserved source is hidden, so keep this one full-size presentation
+  // throughout the session; presence controls the rider's pose and handoff.
+  static float carPropWeight(float w){return Float.isFinite(w)?1:0;}
   private static ModelResourceLocation model(String kind){return ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChaoGarden.MODID,"item/"+kind+"_hand"));}
   @SubscribeEvent public static void models(ModelEvent.RegisterAdditional event){for(String kind:KINDS)event.register(model(kind));}
   static boolean active(ChaoEntity c){return ActiveToyPlayRules049.supports(c.toyPlayingKind())&&GardenToyPerformance049.active(c,c.toyPlayingKind());}
@@ -40,11 +44,14 @@ final class ChaoActiveToyAnimation049 {
       return new Matrix4f().translate(0,1.501f+s*(ActiveToyPlayRules049.POGO_PEDAL-.5f),-.24f).scale(s,-s,-s);
     }
     if(kind.equals(ActiveToyPlayRules049.CAR)){
-      float s=.60f*visible;
-      return new Matrix4f().translate(0,1.501f-.5f*s,-.45f-.065f*clip.push(t)).scale(s,-s,-s);
+      float s=CAR_SCALE*carPropWeight(w);
+      // The wheels remain on the model floor while the smaller car rolls
+      // sideways in front of the resting Chao, facing along its travel axis.
+      return new Matrix4f().translate(-.16f+.14f*clip.carSweep(t),1.501f-.5f*s,-.54f)
+          .rotateY((float)Math.PI*.5f).scale(s,-s,-s);
     }
     var body=new PoseStack();anchor.accept("body",body);
-    return new Matrix4f(body.last().pose()).translate(0,.04f-.035f*clip.lift(t),-.29f)
+    return new Matrix4f(body.last().pose()).translate(0,-.22f-.035f*clip.lift(t),-.37f)
         .rotateZ(.035f*(float)Math.sin(t*.10f)*w).scale(.38f*visible,-.38f*visible,-.38f*visible);
   }
   static Vector3f gripTarget(Matrix4f prop,String kind,boolean left){
@@ -52,24 +59,41 @@ final class ChaoActiveToyAnimation049 {
     if(kind.equals(ActiveToyPlayRules049.POGO)){
       p=new Vector3f(left?.273f:-.273f,.4182036f,.0652465f);n=new Vector3f(0,-.7071068f,.7071068f);
     }else if(kind.equals(ActiveToyPlayRules049.CAR)){
-      p=new Vector3f(left?.13f:-.13f,-.02163597f,-.1931909f);n=new Vector3f(0,.8526014f,-.52256185f);
+      // One right hand contacts the real near-side body panel, rather
+      // than reaching over the roof beneath the broad Chao head.
+      p=new Vector3f(-.2731261f,-.16566159f,-.19002593f);n=new Vector3f(-.84989864f,.52694536f,-.00095286f);
     }else if(left){p=new Vector3f(.19482157f,-.06478134f,.06651182f);n=new Vector3f(.22753964f,.64948946f,-.7255268f);}
     else {p=new Vector3f(-.19523951f,-.06416742f,.06582883f);n=new Vector3f(-.2186724f,.65077925f,-.7270961f);}
     return prop.transformPosition(p.fma(.035f,n));
   }
-  private static void fit(Map<String,ChaoMeshAsset.Pose> poses,BiConsumer<String,PoseStack> anchor,float[] palm,boolean left,float w,Vector3f target){
+  static Vector3f carSupportTarget(BiConsumer<String,PoseStack> anchor,Function<String,float[]> bounds){
+    var box=bounds.apply("body");if(box==null)box=new float[]{-2,-3.5f,-2,2,.5f,2};
+    var body=ChaoProneToyPose051.worldBounds(anchor,box,"body");
+    float y=1.466f;var hand=bounds.apply("hand_left");
+    if(hand!=null){var volume=ChaoProneToyPose051.worldBounds(anchor,hand,"arm_left");y=1.499f-(volume[4]-volume[1])*.5f;}
+    return new Vector3f(body[3]+.18f,y,body[2]+.12f);
+  }
+  private static void fit(Map<String,ChaoMeshAsset.Pose> poses,BiConsumer<String,PoseStack> anchor,float[] palm,boolean left,float w,Vector3f target,float limit){
     var arm=poses.get(left?"arm_left":"arm_right");var at=new PoseStack();anchor.accept(left?"arm_left":"arm_right",at);
     float length=at.last().pose().transformPosition(new Vector3f()).distance(target)*16;
-    arm.reach=Math.clamp((float)Math.sqrt(Math.max(0,length*length-palm[1]*palm[1]-palm[2]*palm[2]))-Math.abs(palm[0])-.20f,0,MAX_REACH)*w;
+    arm.reach=Math.clamp((float)Math.sqrt(Math.max(0,length*length-palm[1]*palm[1]-palm[2]*palm[2]))-Math.abs(palm[0])-.20f,0,limit)*w;
     ChaoTambourineAnimation.alignPalm(poses,anchor,ChaoTrumpetAnimation.reachedPalm(palm,arm.reach,left),w,target,left,.90f);
   }
   static void pose(Map<String,ChaoMeshAsset.Pose> poses,BiConsumer<String,PoseStack> anchor,float[] right,float[] left,String kind,float t,float w,LionfishActiveToyClip049 clip){
+    pose(poses,anchor,right,left,kind,t,w,clip,name->null);
+  }
+  static void pose(Map<String,ChaoMeshAsset.Pose> poses,BiConsumer<String,PoseStack> anchor,float[] right,float[] left,String kind,float t,float w,LionfishActiveToyClip049 clip,Function<String,float[]> bounds){
     ChaoInstrumentFocus.apply(poses,w);
     var head=poses.get("skull");head.rx+=w*(kind.equals(ActiveToyPlayRules049.CAR)?.07f*clip.push(t):.015f);
-    if(kind.equals(ActiveToyPlayRules049.CAR))poses.get("body").z-=.05f*clip.push(t)*w;
+    if(kind.equals(ActiveToyPlayRules049.CAR))ChaoProneToyPose051.apply(poses,anchor,bounds,w,.20f,.80f);
     if(kind.equals(ActiveToyPlayRules049.POGO)){var body=poses.get("body");body.y+=.55f*clip.flex(t)*w;head.y+=.55f*clip.flex(t)*w;}
-    var prop=propMatrix(anchor,kind,t,w,clip);float ease=w*w*(3-2*w);
-    fit(poses,anchor,right,false,ease,gripTarget(new Matrix4f(prop),kind,false));fit(poses,anchor,left,true,ease,gripTarget(new Matrix4f(prop),kind,true));
+    var prop=propMatrix(anchor,kind,t,w,clip);float grip=ActiveToyPlayRules049.doll(kind)?Math.clamp(w/.45f,0,1):kind.equals(ActiveToyPlayRules049.CAR)?Math.clamp(w/.80f,0,1):w;float ease=grip*grip*(3-2*grip);
+    fit(poses,anchor,right,false,ease,gripTarget(new Matrix4f(prop),kind,false),kind.equals(ActiveToyPlayRules049.CAR)?CAR_REACH:MAX_REACH);
+    if(kind.equals(ActiveToyPlayRules049.CAR)){
+      // Re-evaluate the real paw's vertical extent after rotation, so the
+      // supporting palm rests on the floor instead of sinking into it.
+      for(int i=0;i<3;i++)fit(poses,anchor,left,true,ease,carSupportTarget(anchor,bounds),CAR_REACH);
+    } else fit(poses,anchor,left,true,ease,gripTarget(new Matrix4f(prop),kind,true),MAX_REACH);
   }
   private record FootRig(ChaoMeshAsset mesh,Map<String,ChaoMeshAsset.Pose> poses){}
   private static final Map<String,FootRig> FOOT_RIGS=new HashMap<>();
@@ -105,12 +129,12 @@ final class ChaoActiveToyAnimation049 {
   static void pose(ChaoEntity c,ChaoModel m,LionfishActiveToyClip049 clip,float partial){
     if(!active(c)||m.baseToyPalm(false)==null||m.baseToyPalm(true)==null)return;
     String kind=c.toyPlayingKind();float t=GardenToyPerformance049.phase(c,partial),w=GardenToyPerformance049.presence(c,partial);
-    pose(m.officialPoses(),m::transformAccessoryAnchor,m.baseToyPalm(false),m.baseToyPalm(true),kind,t,w,clip);
+    pose(m.officialPoses(),m::transformAccessoryAnchor,m.baseToyPalm(false),m.baseToyPalm(true),kind,t,w,clip,ChaoProneToyPose051.runtimeBounds(c,m));
     if(kind.equals(ActiveToyPlayRules049.POGO))fitFeet(m.officialPoses(),m::transformAccessoryAnchor,name->footBounds(c,m,name),w);
   }
   static boolean render(ChaoEntity c,ChaoModel m,PoseStack stack,MultiBufferSource buffers,int light,float partial){
     if(!active(c)||c.isInvisible()||!m.officialActive()||m.toyPalm(false)==null||m.toyPalm(true)==null)return false;
-    String kind=c.toyPlayingKind();float t=GardenToyPerformance049.phase(c,partial),w=GardenToyPerformance049.presence(c,partial);if(propWeight(w)<=0)return true;
+    String kind=c.toyPlayingKind();float t=GardenToyPerformance049.phase(c,partial),w=GardenToyPerformance049.presence(c,partial);if((kind.equals(ActiveToyPlayRules049.CAR)?carPropWeight(w):propWeight(w))<=0)return true;
     stack.pushPose();try{
       stack.mulPose(propMatrix(m::transformAccessoryAnchor,kind,t,w,RENDER_CLIP));var mc=Minecraft.getInstance();
       mc.getItemRenderer().render(new ItemStack(ChaoGarden.item(kind)),ItemDisplayContext.NONE,false,stack,buffers,light,OverlayTexture.NO_OVERLAY,mc.getModelManager().getModel(model(kind)));

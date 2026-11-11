@@ -41,6 +41,7 @@ public final class OfficialChaoRig {
     String geometry;
     float age, started;
     Map<String, float[]> last, from;
+    boolean lastProne,fromProne;
   }
 
 
@@ -130,6 +131,14 @@ public final class OfficialChaoRig {
   void expression(int value){current.mesh.expression(value);}
   void eyesVisible(boolean visible){current.mesh.eyesVisible(current.poses,visible);}
   Map<String, ChaoMeshAsset.Pose> poses() { return current.poses; }
+  /** Visible terminal volume in arm-local pixels, before procedural reach. */
+  float[] baseToyHandBounds(boolean left) {
+    var arm=pose(left?"arm_left":"arm_right");
+    if(arm==null)return null;
+    float reach=arm.reach;arm.reach=0;
+    try{return current.mesh.visibleHandBounds(current.poses,left);}
+    finally{arm.reach=reach;}
+  }
   ChaoMeshAsset.Pose pose(String name) { return current.poses.get(name); }
   public int sampledFrames() { return sampledFrames; }
 
@@ -504,6 +513,8 @@ public final class OfficialChaoRig {
       state = new Transition(); state.mode = mode; state.emotion=emotion; state.geometry = key;
       transitions.put(id, state);
     } else if (state.mode != mode || state.emotion != emotion || !key.equals(state.geometry)) {
+      state.fromProne=state.lastProne||(state.fromProne&&state.from!=null);
+      state.lastProne=false;
       state.from = state.last; state.last = null; state.started = age; state.mode = mode; state.emotion=emotion; state.geometry = key;
     }
     if (state.from != null) {
@@ -516,7 +527,7 @@ public final class OfficialChaoRig {
         p.rx=Mth.lerp(weight,prior[3],p.rx);p.ry=Mth.lerp(weight,prior[4],p.ry);p.rz=Mth.lerp(weight,prior[5],p.rz);
         p.sx=Mth.lerp(weight,prior[6],p.sx);p.sy=Mth.lerp(weight,prior[7],p.sy);p.sz=Mth.lerp(weight,prior[8],p.sz);p.reach=Mth.lerp(weight,prior[9],p.reach);
       });
-      if (blend >= 1) state.from = null;
+      if (blend >= 1){state.from = null;state.fromProne=false;}
     }
     state.age = age;
     if (state.last == null) state.last = new HashMap<>();
@@ -537,6 +548,9 @@ public final class OfficialChaoRig {
     if(state.last==null)state.last=new HashMap<>();
     snapshot(current.poses,state.last);
   }
+  /** Only the actual completed car/crayon pose marks an outgoing floor-play blend. */
+  void rememberProneFrame(UUID id,boolean prone){var state=transitions.get(id);if(state!=null)state.lastProne=prone;}
+  boolean recoveringProne(UUID id){var state=transitions.get(id);return state!=null&&state.from!=null&&state.fromProne;}
 
   void transformBone(String name, PoseStack stack) { current.mesh.transformBone(name,stack,current.poses); }
 

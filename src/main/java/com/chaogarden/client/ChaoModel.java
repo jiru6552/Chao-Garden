@@ -58,6 +58,13 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
   private final ChaoToyGrip toyGrip = new ChaoToyGrip();
   private float[] toyPalm,leftToyPalm;
   float[] baseToyPalm(boolean left){return left?leftToyPalm:toyPalm;}
+  /** Current actual visible hand volume in arm-local pixels, including reach. */
+  float[] toyHandBounds(ChaoState state,boolean left){
+    var bounds=toyGrip.boundsVisible(state,official,left);if(bounds==null)return null;
+    var arm=official.poses().get(left?"arm_left":"arm_right");
+    float reach=arm==null?0:arm.reach*(left?1:-1);
+    bounds[0]+=reach;bounds[3]+=reach;return bounds;
+  }
   float[] toyPalm(boolean left){
     float[] palm=baseToyPalm(left);if(palm==null)return null;
     var arm=official.poses().get(left?"arm_left":"arm_right");
@@ -176,7 +183,8 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     else if(toyKind.equals(com.chaogarden.toys.ToyPreview.SITTING_KIND)) {
       float phase=160-entity.toyPlayingTicks();motion=phase<20||phase>=140?OfficialChaoRig.Motion.WALK:OfficialChaoRig.Motion.SIT;
     }
-    else if(entity.toyPlayingKind().equals("chao_pogo_stick")||entity.toyPlayingKind().equals("chao_broom"))motion=OfficialChaoRig.Motion.WALK;
+    else if(entity.toyPlayingKind().equals("chao_pogo_stick")||entity.toyPlayingKind().equals("chao_broom")
+        ||entity.toyPlayingKind().equals("chao_toy_car")||entity.toyPlayingKind().equals("chao_crayons"))motion=OfficialChaoRig.Motion.WALK;
     else if(entity.toyPlayingTicks()>0&&!ballChasing)motion=rattle||bubble
         ?OfficialChaoRig.Motion.WALK:OfficialChaoRig.Motion.PLAY;
     else if (pet) motion = OfficialChaoRig.Motion.PET;
@@ -310,6 +318,8 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     // outgoing arm back to the next activity instead of snapping to idle.
     int toyTransition=rattle?1:bubble?2:maracas?3:bell?4:tambourine?5:castanets?6:cymbals?7:drum?8:flute?9:trumpet?10:triangle?11:piano?12:organ?13:guitar?14:accordion?15:horse049?16:active049?17+com.chaogarden.toys.GardenToyPerformance049.KINDS.indexOf(entity.toyPlayingKind()):quiet049?25+com.chaogarden.toys.QuietToyPlayRules049.index(entity.toyPlayingKind()):0;
     official.finishGameplayFrame(entity.getUUID(),emotion+16*behavior.ordinal()+1024*toyTransition,age);
+    if(official.recoveringProne(entity.getUUID())&&ChaoProneToyPose051.clearExitFloor(entity,this))
+      official.rememberGameplayFrame(entity.getUUID());
     // Fit the mouth-held trumpet to the actual blended incoming skeleton.
     // Blending its already-solved arms independently from the head can sweep
     // the hands through the face and detach their supports on a late observer.
@@ -322,6 +332,8 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     if(horse049){ChaoRockingHorseAnimation.pose(entity,this,rockingHorseClip,partial);official.rememberGameplayFrame(entity.getUUID());}
     if(active049){ChaoActiveToyAnimation049.pose(entity,this,activeToyClip049,partial);official.rememberGameplayFrame(entity.getUUID());}
     if(quiet049){ChaoQuietToyAnimation049.pose(entity,this,quietToyClip049,partial);official.rememberGameplayFrame(entity.getUUID());}
+    official.rememberProneFrame(entity.getUUID(),ChaoProneToyPose051.supports(toyKind)
+        &&(active049||quiet049)&&com.chaogarden.toys.GardenToyPerformance049.presence(entity,partial)>0);
     if(!official.finite())throw new IllegalStateException("Non-finite imported Chao pose");
   }
   private void holdHands(float lift) {

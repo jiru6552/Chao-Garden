@@ -12,24 +12,24 @@
       1.0
     ],
     "floor_bounds_pixels": [
-      4.891564047341884,
+      5.824094833139319,
       0.0,
-      3.1924555173431557,
-      11.108435952658116,
-      4.8,
-      12.807544482656844
+      4.634718862140209,
+      10.17590516686068,
+      3.36,
+      11.36528113785979
     ],
     "contacts": {
       "right": {
         "point": [
-          -0.13000000000000003,
-          -0.02163596718627407,
-          -0.19319090450209753
+          -0.2731261104766218,
+          -0.16566158833413136,
+          -0.19002592772928742
         ],
         "normal": [
-          0.0,
-          0.8526013749260822,
-          -0.5225618580361125
+          -0.8498986327740524,
+          0.5269453539665598,
+          -0.0009528598289229319
         ]
       },
       "left": {
@@ -141,7 +141,7 @@
         ]
       }
     },
-    "provenance": "Supplied SA2B ChaoMain.prs / al_toy.prs; Sonic geometry/Shadow face + authored palette adaptation"
+    "provenance": "Supplied SA2B ChaoMain.prs / al_toy.prs; Sonic geometry/Shadow face + authored palette adaptation; face atlas uses original mirrored-repeat UV range, corrected0.25.51"
   },
   "chao_pogo_stick": {
     "offset": "0x6bb48",
@@ -194,5 +194,26 @@
   "inputs": {
     "art/sa2_02514/original/ChaoMain.prs": "d296ebbb14a8386e86eba3035b9fb35c6e1add0e563ef233ef67c8830be17dc8",
     "art/sa2_02514/original/al_toy.prs": "8d34e34e4d69e011cf02c2e297b4d4f83053bcb8a367bea17a3ffd9f89b076b7"
+  },
+  "shadow_face_02551": {
+    "reference": "Primary supplied SA2 Battle al_toy.prs texture sh_doll01; exact decoded source tile",
+    "source_texture": "sh_doll01",
+    "source_size": [
+      32,
+      32
+    ],
+    "source_rgba_sha256": "f222555b028317f1935b2f5e8552e8b2d15e535d437824585e0be31697ee7a45",
+    "material148_wrap": "Two32px source tiles; right tile mirrors U, rather than stretching one tile across both repeats",
+    "nose_uv": "Four donor nose triangles remapped from Sonic black-pupil UV(.5,.5), which is red on Shadow, to black source pixel centre(1/64,1/64)",
+    "geometry": "Existing Sonic-doll adaptation; all vertices/contact geometry unchanged, no independently recovered Shadow mesh claimed"
+  },
+  "car_scale_02551": {
+    "factor": 0.7,
+    "pivot_pixels": [
+      8,
+      0,
+      8
+    ],
+    "held_source_unchanged": true
   }
 }

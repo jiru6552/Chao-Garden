@@ -45,7 +45,8 @@ class QuietAssets(unittest.TestCase):
  def test_all_four_block_orientations_and_no_held_floor_alias(self):
   for name in ['chao_broom','chao_picture_book','chao_crayons']:
    block=json.loads((A/'models/block'/(name+'.json')).read_text());item=json.loads((A/'models/item'/(name+'.json')).read_text())
-   self.assertIn('display',item);states=json.loads((A/'blockstates'/(name+'.json')).read_text())['variants']
+   self.assertEqual(item['loader'],'neoforge:separate_transforms');self.assertEqual(item['base'],block)
+   self.assertIn('display',item['base']);self.assertEqual(item['perspectives'],{'gui':{'parent':'minecraft:item/generated','textures':{'layer0':'chao_garden:item/'+name}}});states=json.loads((A/'blockstates'/(name+'.json')).read_text())['variants']
    for facing,angle in [('north',0),('east',90),('south',180),('west',270)]:self.assertEqual(states['facing='+facing]['y'],angle)
    self.assertTrue(block['model'].endswith(name+'_floor.obj'))
   for p in (A/'models/item').glob('chao_quiet_hand_*.json'):
@@ -70,13 +71,23 @@ class QuietAssets(unittest.TestCase):
   self.assertIn('New paper/ink presentation',self.manifest['provenance'])
  def test_broom_brush_and_side_box_stay_on_ground_during_presentation(self):
   vertices=np.array(obj('hand_broom')[0])-.5
+  low,high=vertices.min(0),vertices.max(0)
+  corners=np.array([[low[axis] if not mask&(1<<axis) else high[axis] for axis in range(3)] for mask in range(8)])
   for scale in [.64,.80,.86]:
    for sweep in np.linspace(-1,1,101):
-    a=.10*sweep;c,s=math.cos(a),math.sin(a);support=1.8833337*c+.5665011*abs(s)
-    y=(vertices[:,0]*s+(vertices[:,1]-support)*c)*.23
-    ground=.008-y.max()*scale;self.assertGreaterEqual(ground,-.000001);self.assertLess(ground,.02)
+    # Production uses Y yaw then Z rocking with no forward X tilt.
+    yaw,rock=.10*sweep,.06*sweep;cy,sy=math.cos(yaw),math.sin(yaw);cz,sz=math.cos(rock),math.sin(rock)
+    rotation=np.array([[cy,0,sy],[0,1,0],[-sy,0,cy]])@np.array([[cz,-sz,0],[sz,cz,0],[0,0,1]])
+    support=(corners@rotation.T)[:,1].max()
+    for visible in [.1,.5,1]:
+     size=.23*visible;translation=1.501-.008/scale-support*size
+     ground=(1.501-(translation+(vertices@rotation.T)[:,1].max()*size))*scale
+     self.assertGreaterEqual(ground,.007999);self.assertLess(ground,.02)
   box=np.array(obj('hand_crayon_box')[0])-.5
   self.assertAlmostEqual(float(box[:,1].max()),.1,places=6)
+  for visible in [.1,.5,1]:
+   size=.18*visible;translation=1.501-.004-.10*size
+   self.assertAlmostEqual(1.501-(translation+float(box[:,1].max())*size),.004,places=7)
  def test_new_items_have_one_recoverable_loot_and_explicit_recipes(self):
   for name in ['chao_broom','chao_picture_book','chao_crayons']:
    recipe=json.loads((ROOT/'src/main/resources/data/chao_garden/recipe'/(name+'.json')).read_text());self.assertEqual(recipe['result']['id'],'chao_garden:'+name)

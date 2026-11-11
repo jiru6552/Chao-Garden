@@ -70,8 +70,7 @@ public final class GardenToyGameTests049 {
   // Authored times deliberately do not call the production predicates.
   private static boolean due(String kind,int tick){return switch(kind){
     case "chao_toy_car"->tick==32||tick==64||tick==96||tick==128;
-    case "chao_sonic_doll","chao_shadow_doll"->tick==36||tick==84||tick==132;
-    case "chao_picture_book"->tick==56||tick==120;
+    case "chao_sonic_doll","chao_shadow_doll","chao_picture_book","chao_crayons"->false;
     default->tick>=24&&tick<=136&&(tick-24)%16==0;
   };}
   private static List<Long> expected(String kind,long began,int cutoff){var result=new ArrayList<Long>();for(int t=0;t<cutoff;t++)if(due(kind,t%160))result.add(began+t);return result;}

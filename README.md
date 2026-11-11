@@ -96,6 +96,8 @@ An **Analyzer** uses a glass pane above iron/copper/iron, with redstone below th
 
 There is no craftable or creative empty carrier. Pickup directly stores the same creature's UUID, name, keeper and complete state. A successful release consumes the filled item in survival and creative; blocked or rejected placement preserves it. See [pickup and music](docs/PICKUP_AND_MUSIC_015.md).
 
+The focused [0.25.51 toy update](docs/TOY_POLISH_02551.md) refines two-hand broom play, book/doll foot clearance, Shadow face mapping and inventory views, with prone floor drawing and smaller one-hand car play. Picture-book, doll and crayon interactions are silent.
+
 ## Learning to move
 
 Fresh Chao start with zero ability points and crawl. Train with drives, animal genes, fruit and activities to earn points. The Analyzer's stat rows and Care Guide show movement guidance.

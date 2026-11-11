@@ -26,15 +26,11 @@ public final class GardenToyPerformance049 {
     if(!(c.level() instanceof ServerLevel level))return;
     var sound=switch(kind){
       case "chao_toy_car"->ChaoSounds.TOY_CAR;
-      case "chao_sonic_doll","chao_shadow_doll"->ChaoSounds.TOY_DOLL;
       case "chao_broom"->ChaoSounds.TOY_BROOM;
-      case "chao_picture_book"->ChaoSounds.TOY_BOOK_PAGE;
       case "chao_pogo_stick"->ChaoSounds.TOY_POGO;
-      case "chao_crayons"->ChaoSounds.TOY_CRAYON;
       default->null;
     };
     if(sound!=null)level.playSound(null,c.getX(),c.getY()+.25,c.getZ(),sound.get(),SoundSource.NEUTRAL,
-        kind.equals("chao_picture_book")?.14f:kind.equals("chao_pogo_stick")?.22f:.18f,
-        kind.equals("chao_shadow_doll")?.86f:1f);
+        kind.equals("chao_pogo_stick")?.22f:.18f,1f);
   }
 }

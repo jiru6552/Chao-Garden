@@ -87,9 +87,21 @@ def models():
   m=mapped(m,lambda p:((p[0]-centre[0])*scale+.5,(p[1]-bounds[1])*scale,(p[2]-centre[2])*scale+.5))
   tex={**bindings['book_left'],**bindings['book_right'],**bindings['book_page']} if name=='chao_picture_book' else bindings['broom' if name=='chao_broom' else 'crayon_box']
   data=native(name+'_floor',m,tex,DISPLAY);write(A/'models/block'/(name+'.json'),data)
-  write(A/'models/item'/(name+'.json'),{**data,'display':DISPLAY})
+  # GUI only: present the supplied top/cover surface to the viewer. The
+  # exact previous mesh/display model remains the non-GUI base, including
+  # first/third-person, ground, fixed and held presentations.
+  base={**data,'display':DISPLAY}
+  write(A/'models/item'/(name+'.json'),{'loader':'neoforge:separate_transforms','gui_light':'front',
+    'base':base,'perspectives':{'gui':{'parent':'minecraft:item/generated','textures':{'layer0':'chao_garden:item/'+name}}}})
   write(A/'blockstates'/(name+'.json'),{'variants':{f'facing={f}':{'model':f'chao_garden:block/{name}','y':rot} for f,rot in [('north',0),('east',90),('south',180),('west',270)]}})
-  icon=mapped(m,lambda p:tuple(v*16 for v in p));render(icon,mats_all).save(A/'textures/item'/(name+'.png'))
+  # Rotate floor-up+Y onto camera-front+Z before the shared orthographic
+  # render. A small in-plane turn keeps long broom/book silhouettes legible.
+  turn=math.radians({'chao_broom':-27,'chao_picture_book':-12,'chao_crayons':-12}[name])
+  def gui_point(p):
+   x,y,z=(p[i]*16-8 for i in range(3));x,y,z=x,-z,y
+   c,s=math.cos(turn),math.sin(turn)
+   return (x*c-y*s+8,x*s+y*c+8,z+8)
+  icon=mapped(m,gui_point);render(icon,mats_all).save(A/'textures/item'/(name+'.png'))
   records[name]={'world_bounds':m.bounds(),'collision_model_units':[v*16 for v in m.bounds()]}
  # Official box/crayon remain unchanged. Only the expendable drawing sheet and
  # ink are new geometry; using the supplied paper texture does not make the
@@ -135,4 +147,6 @@ def sound():
    dest=A/'sounds/toys'/(name+'.ogg');dest.parent.mkdir(parents=True,exist_ok=True)
    subprocess.run(['ffmpeg','-v','error','-y','-i',str(wav),'-fflags','+bitexact','-flags:a','+bitexact','-c:a','libvorbis','-q:a','5',str(dest)],check=True)
  print('Original procedural sweep/page/crayon samples generated')
-if __name__=='__main__':models();sound()
+if __name__=='__main__':
+ models()
+ if '--models-only' not in sys.argv:sound()

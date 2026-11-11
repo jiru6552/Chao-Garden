@@ -1,0 +1,60 @@
+Chao Garden 0.25.51 cumulative source overlay.
+
+384 changed/new files and 21 explicit deletions onto full 0.25.43 source, including all prior updates. This ZIP is not a standalone project. The delivery branch contains the full updated project.
+
+Extract at the full project root, then apply SOURCE_DELETIONS.txt manually or run:
+python3 apply-source-deletions.py /path/to/full/Chao-Garden
+Use --verify-only to review first. The helper refuses locally edited files and never touches Minecraft saves.
+
+Java 21, Minecraft 1.21.1, NeoForge 21.1.219 and external Lionfish API 3.1. Use matching client/server 0.25.51 JARs.
+Read TOY_POLISH_02551.md for migration, test results and compatibility limits.
+
+0.25.50 to 0.25.51 paths:
+CHANGELOG.md
+README.md
+TESTING.md
+build.gradle
+docs/QUIET_TOY_POLISH_02551.md
+docs/TOY_ASSETS_02551.md
+docs/TOY_POLISH_02551.md
+gradle.properties
+scripts/generate_active_toys_02549.py
+scripts/generate_quiet_toys_02549.py
+scripts/test_quiet_toy_assets_02549.py
+scripts/test_toy_polish_assets_02551.py
+src/lionfishTest/java/com/chaogarden/client/ActiveToyRigTest049.java
+src/lionfishTest/java/com/chaogarden/client/ActiveToyTimingTest049.java
+src/lionfishTest/java/com/chaogarden/client/ProneToyRigTest051.java
+src/lionfishTest/java/com/chaogarden/client/QuietToyRigTest049.java
+src/lionfishTest/java/com/chaogarden/client/QuietToyTimingTest049.java
+src/main/java/com/chaogarden/client/ChaoActiveToyAnimation049.java
+src/main/java/com/chaogarden/client/ChaoModel.java
+src/main/java/com/chaogarden/client/ChaoProneToyPose051.java
+src/main/java/com/chaogarden/client/ChaoQuietToyAnimation049.java
+src/main/java/com/chaogarden/client/ChaoToyGrip.java
+src/main/java/com/chaogarden/client/LionfishActiveToyClip049.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/client/ToyPolishVisualSmoke051.java
+src/main/java/com/chaogarden/test/GardenToyGameTests049.java
+src/main/java/com/chaogarden/test/ToyPolishGameTests051.java
+src/main/java/com/chaogarden/toys/ActiveToyPlayRules049.java
+src/main/java/com/chaogarden/toys/ChaoToyBlock.java
+src/main/java/com/chaogarden/toys/GardenToyPerformance049.java
+src/main/java/com/chaogarden/toys/QuietToyPlayRules049.java
+src/main/java/com/chaogarden/toys/ToyContent.java
+src/main/java/com/chaogarden/toys/ToyInteractionRules.java
+src/main/java/com/chaogarden/toys/ToyPreview.java
+src/main/resources/assets/chao_garden/models/active02549/chao_shadow_doll_floor.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_shadow_doll_hand.obj
+src/main/resources/assets/chao_garden/models/active02549/chao_toy_car_floor.obj
+src/main/resources/assets/chao_garden/models/active02549/manifest.json
+src/main/resources/assets/chao_garden/models/item/chao_broom.json
+src/main/resources/assets/chao_garden/models/item/chao_crayons.json
+src/main/resources/assets/chao_garden/models/item/chao_picture_book.json
+src/main/resources/assets/chao_garden/models/toy_polish02551/manifest.json
+src/main/resources/assets/chao_garden/textures/block/active02549/chao_shadow_doll/sa2_soni03_148.png
+src/main/resources/assets/chao_garden/textures/item/chao_broom.png
+src/main/resources/assets/chao_garden/textures/item/chao_crayons.png
+src/main/resources/assets/chao_garden/textures/item/chao_picture_book.png
+src/main/resources/assets/chao_garden/textures/item/chao_shadow_doll.png
+src/main/resources/data/chao_polish51/structure/activity_test.nbt

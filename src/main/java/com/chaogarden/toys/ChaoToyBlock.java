@@ -115,7 +115,12 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
     // Chao cannot carry its body forward far enough during that one-block
     // jump. Treat furniture above the ordinary0.6-block step as a fence-like
     // path obstacle, while preserving its actual collision/interaction shape.
-    return ToyInteractionRules.keyboard(toy)||state.getCollisionShape(level,pos).max(Direction.Axis.Y)>.6?PathType.FENCE:null;
+    // The minicar is low enough to be a tempting stepping stone. A crawling
+    // baby cannot reliably step down across it on its way to the rear contact.
+    // The path cache also asks without a Mob, so this classification must not
+    // depend on an entity being supplied. Keep the real collision for everyone.
+    boolean carRoute=toy.equals("chao_toy_car");
+    return carRoute||ToyInteractionRules.keyboard(toy)||state.getCollisionShape(level,pos).max(Direction.Axis.Y)>.6?PathType.FENCE:null;
   }
   @Override protected net.minecraft.world.level.block.RenderShape getRenderShape(BlockState state) {
     // FRAME=1 is hand presentation of the one reserved physical toy.

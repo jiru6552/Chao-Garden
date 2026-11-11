@@ -1,108 +1,120 @@
 {
-  "loader": "neoforge:obj",
-  "model": "chao_garden:models/quiet02549/chao_crayons_floor.obj",
-  "automatic_culling": false,
-  "shade_quads": true,
-  "flip_v": true,
-  "textures": {
-    "sa2_sabon_0": "chao_garden:block/quiet02549/sa2_sabon_0",
-    "sa2_kureyon03_20": "chao_garden:block/quiet02549/sa2_kureyon03_20",
-    "sa2_kureyon01_148": "chao_garden:block/quiet02549/sa2_kureyon01_148",
-    "particle": "chao_garden:block/quiet02549/sa2_sabon_0"
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "loader": "neoforge:obj",
+    "model": "chao_garden:models/quiet02549/chao_crayons_floor.obj",
+    "automatic_culling": false,
+    "shade_quads": true,
+    "flip_v": true,
+    "textures": {
+      "sa2_sabon_0": "chao_garden:block/quiet02549/sa2_sabon_0",
+      "sa2_kureyon03_20": "chao_garden:block/quiet02549/sa2_kureyon03_20",
+      "sa2_kureyon01_148": "chao_garden:block/quiet02549/sa2_kureyon01_148",
+      "particle": "chao_garden:block/quiet02549/sa2_sabon_0"
+    },
+    "render_type": "minecraft:cutout",
+    "display": {
+      "thirdperson_righthand": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          2,
+          0
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "thirdperson_lefthand": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          2,
+          0
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "firstperson_righthand": {
+        "rotation": [
+          0,
+          -35,
+          0
+        ],
+        "translation": [
+          -1,
+          4,
+          0
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "firstperson_lefthand": {
+        "rotation": [
+          0,
+          35,
+          0
+        ],
+        "translation": [
+          -1,
+          4,
+          0
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "ground": {
+        "translation": [
+          0,
+          2,
+          0
+        ],
+        "scale": [
+          0.45,
+          0.45,
+          0.45
+        ]
+      },
+      "fixed": {
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "scale": [
+          0.7,
+          0.7,
+          0.7
+        ]
+      }
+    }
   },
-  "render_type": "minecraft:cutout",
-  "display": {
-    "thirdperson_righthand": {
-      "rotation": [
-        0,
-        0,
-        0
-      ],
-      "translation": [
-        0,
-        2,
-        0
-      ],
-      "scale": [
-        0.55,
-        0.55,
-        0.55
-      ]
-    },
-    "thirdperson_lefthand": {
-      "rotation": [
-        0,
-        0,
-        0
-      ],
-      "translation": [
-        0,
-        2,
-        0
-      ],
-      "scale": [
-        0.55,
-        0.55,
-        0.55
-      ]
-    },
-    "firstperson_righthand": {
-      "rotation": [
-        0,
-        -35,
-        0
-      ],
-      "translation": [
-        -1,
-        4,
-        0
-      ],
-      "scale": [
-        0.55,
-        0.55,
-        0.55
-      ]
-    },
-    "firstperson_lefthand": {
-      "rotation": [
-        0,
-        35,
-        0
-      ],
-      "translation": [
-        -1,
-        4,
-        0
-      ],
-      "scale": [
-        0.55,
-        0.55,
-        0.55
-      ]
-    },
-    "ground": {
-      "translation": [
-        0,
-        2,
-        0
-      ],
-      "scale": [
-        0.45,
-        0.45,
-        0.45
-      ]
-    },
-    "fixed": {
-      "rotation": [
-        0,
-        180,
-        0
-      ],
-      "scale": [
-        0.7,
-        0.7,
-        0.7
-      ]
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_crayons"
+      }
     }
   }
 }

@@ -59,7 +59,7 @@ public final class ToyInteractionRules {
   public static double[] collisionEnvelope(String kind) {
     return switch(kind) {
       case "chao_radio"->new double[]{2,0,5.75,14,5.63,10.25};
-      case "chao_toy_car"->new double[]{4.94,0,3.27,11.06,4.8,12.73};
+      case "chao_toy_car"->new double[]{5.82,0,4.63,10.18,3.36,11.37};
       case "chao_sonic_doll","chao_shadow_doll"->new double[]{6.49,0,5.64,9.51,3,10.36};
       case "chao_pogo_stick"->new double[]{4.78,0,4,11.22,3,12};
       case "chao_broom"->new double[]{6.30,0,2.56,9.70,3.40,13.44};

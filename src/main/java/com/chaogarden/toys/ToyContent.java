@@ -139,6 +139,8 @@ public final class ToyContent {
           ||!level.getBlockState(at).getCollisionShape(level,at).isEmpty()
           ||!level.getBlockState(at).getFluidState().isEmpty())continue;
       if(ToyInteractionRules.stationary(kind)&&!supportedStationaryAt(chao,stationaryAnchor(chao,pos,at)))continue;
+      if((kind.equals("chao_toy_car")||kind.equals("chao_crayons"))
+          &&!proneSpaceReady(chao,kind,stationaryAnchor(chao,pos,at),direction.getOpposite().toYRot(),pos))continue;
       if(mounted(kind)&&!mountPathClear(chao,pos,at))continue;
       double d=chao.distanceToSqr(Vec3.atBottomCenterOf(at));
       if(d<distance){best=at;distance=d;}
@@ -221,6 +223,40 @@ public final class ToyContent {
         &&level.getBlockCollisions(chao,body.move(0,-.02,0)).iterator().hasNext()
         &&level.getEntitiesOfClass(net.minecraft.world.entity.LivingEntity.class,body,
             other->other!=chao&&other.isAlive()&&!other.isSpectator()).isEmpty();
+  }
+  /** Room for the visible belly, head, feet and floor props, without changing entity hitboxes. */
+  public static boolean proneSpaceReady(ChaoEntity c,String kind,Vec3 at,float yaw,BlockPos ownSource) {
+    if(!kind.equals("chao_toy_car")&&!kind.equals("chao_crayons"))return true;
+    var level=c.level();double scale=c.state().immortal?.86:c.state().adult?.80:.64;
+    // The source-rig union reaches X[-.519,.334], Z[-.616,.604] model units.
+    // Include palms, the small car/paper/box, and a margin for head additions.
+    double half=.72*scale,forward=1.10*scale,back=.75*scale;
+    double angle=Math.toRadians(yaw),fx=-Math.sin(angle),fz=Math.cos(angle),rx=fz,rz=-fx;
+    double minX=Double.POSITIVE_INFINITY,minZ=minX,maxX=Double.NEGATIVE_INFINITY,maxZ=maxX;
+    for(double x:new double[]{-half,half})for(double z:new double[]{-back,forward}) {
+      double px=at.x+rx*x+fx*z,pz=at.z+rz*x+fz*z;
+      minX=Math.min(minX,px);maxX=Math.max(maxX,px);minZ=Math.min(minZ,pz);maxZ=Math.max(maxZ,pz);
+    }
+    var body=new AABB(minX,at.y+.012,minZ,maxX,at.y+Math.max(.45,c.getBbHeight()),maxZ);
+    if(level.containsAnyLiquid(body))return false;
+    var occupied=net.minecraft.world.phys.shapes.Shapes.create(body);
+    for(var cell:BlockPos.betweenClosed(BlockPos.containing(body.minX,body.minY,body.minZ),
+        BlockPos.containing(body.maxX,body.maxY,body.maxZ))) {
+      if(!level.hasChunkAt(cell))return false;
+      var state=level.getBlockState(cell);
+      if(ownSource!=null&&cell.equals(ownSource)&&state.getBlock() instanceof ChaoToyBlock toy&&toy.toy.equals(kind))continue;
+      var shape=state.getCollisionShape(level,cell,net.minecraft.world.phys.shapes.CollisionContext.of(c));
+      if(!shape.isEmpty()&&net.minecraft.world.phys.shapes.Shapes.joinIsNotEmpty(occupied,
+          shape.move(cell.getX(),cell.getY(),cell.getZ()),net.minecraft.world.phys.shapes.BooleanOp.AND))return false;
+    }
+    if(!level.getEntitiesOfClass(net.minecraft.world.entity.LivingEntity.class,body,
+        other->other!=c&&other.isAlive()&&!other.isSpectator()).isEmpty())return false;
+    for(double x:new double[]{-half,0,half})for(double z:new double[]{-back,0,forward}) {
+      double px=at.x+rx*x+fx*z,pz=at.z+rz*x+fz*z;
+      var support=new AABB(px-.015,at.y-.035,pz-.015,px+.015,at.y-.001,pz+.015);
+      if(!level.getBlockCollisions(c,support).iterator().hasNext())return false;
+    }
+    return true;
   }
   public static Vec3 ballAnchor(ChaoEntity chao,BlockPos pos,BlockPos stand) {
     Direction side=Direction.getNearest(stand.getX()-pos.getX(),0,stand.getZ()-pos.getZ());
@@ -528,7 +564,9 @@ public final class ToyContent {
     private boolean stationaryValid(net.minecraft.world.level.block.state.BlockState state) {
       String kind=((ChaoToyBlock)state.getBlock()).toy;if(!ToyInteractionRules.stationary(kind))return true;
       Vec3 anchor=stationaryAnchor(chao,toy,stand);
-      return ToyInteractionRules.stationaryWithinReach(kind,chao.distanceToSqr(anchor))&&supportedStationaryAt(chao,anchor);
+      float yaw=Direction.getNearest(toy.getX()+.5-anchor.x,0,toy.getZ()+.5-anchor.z).toYRot();
+      return ToyInteractionRules.stationaryWithinReach(kind,chao.distanceToSqr(anchor))&&supportedStationaryAt(chao,anchor)
+          &&proneSpaceReady(chao,kind,anchor,yaw,toy);
     }
     @Override public boolean canContinueToUse() {
       if(!(chao.level() instanceof ServerLevel level)||toy==null||!mayPlay(chao)
@@ -617,7 +655,9 @@ public final class ToyContent {
         boolean staged=keyboard||stationary&&BlockPos.containing(anchor).equals(toy);
         var entry=keyboard?blockState.getValue(ChaoToyBlock.FACING):Direction.getNearest(stand.getX()-toy.getX(),0,stand.getZ()-toy.getZ());
         Vec3 approach=staged&&chao.distanceToSqr(anchor)>.0064?Vec3.atBottomCenterOf(toy).add(entry.getStepX()*.55,0,entry.getStepZ()*.55):anchor;
-        if(stationary&&!supportedStationaryAt(chao,anchor)){endPlaying(chao,false);approachExpiry=0;return;}
+        float facing=Direction.getNearest(toy.getX()+.5-anchor.x,0,toy.getZ()+.5-anchor.z).toYRot();
+        if(stationary&&(!supportedStationaryAt(chao,anchor)
+            ||!proneSpaceReady(chao,block.toy,anchor,facing,toy))){endPlaying(chao,false);approachExpiry=0;return;}
         if(keyboard&&standAt(level,toy,chao)==null){endPlaying(chao,false);approachExpiry=0;return;}
         if(precise&&chao.distanceToSqr(approach)>.0064) {
           // Final short approach stays in the clear stand cell; don't accept the path's broad arrival radius.

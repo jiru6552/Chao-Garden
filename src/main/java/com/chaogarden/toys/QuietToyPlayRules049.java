@@ -9,8 +9,7 @@ public final class QuietToyPlayRules049 {
   public static float presence(float tick){return MaracasPlayRules.presence(tick);}
   public static boolean happy(String kind,float tick){return supports(kind)&&tick>=16&&tick<148;}
   public static boolean soundDue(String kind,int tick){
-    if(kind.equals(BOOK))return tick==56||tick==120;
-    return (kind.equals(BROOM)||kind.equals(CRAYONS))&&tick>=24&&tick<=136&&(tick-24)%16==0;
+    return kind.equals(BROOM)&&tick>=24&&tick<=136&&(tick-24)%16==0;
   }
   public static String soundKey(String kind){return kind.equals(BROOM)?"toy.broom":kind.equals(BOOK)?"toy.book_page":"toy.crayon";}
   public static float volume(String kind){return kind.equals(BOOK)?.14f:.18f;}
