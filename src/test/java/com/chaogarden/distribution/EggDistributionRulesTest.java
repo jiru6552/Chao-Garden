@@ -15,7 +15,7 @@ public final class EggDistributionRulesTest {
     check(EggDistributionRules.COLORS.equals(Arrays.asList(ChaoState.COLORS)),"Base catalog drifted from native coats");
     check(EggDistributionRules.GEMS.equals(Arrays.asList(ChaoState.JEWELS).subList(1,14)),"Gem catalog drifted from native jewels");
     check(EggDistributionRules.BASE_CHANCE==.0025&&EggDistributionRules.SHINY_CHANCE==.001
-        &&EggDistributionRules.GEM_CHANCE==.0002&&EggDistributionRules.DIMENSION_CHANCE==.01,"Rarity policy changed");
+        &&EggDistributionRules.GEM_CHANCE==.03&&EggDistributionRules.DIMENSION_CHANCE==.01,"Chest gem chance is 3%; other rarity policies remain unchanged");
     Map<String,Integer> tickets=new HashMap<>();
     for(int i=0;i<81;i++){
       final int draw=i;

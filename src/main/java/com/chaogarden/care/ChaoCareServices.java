@@ -216,7 +216,7 @@ public final class ChaoCareServices {
   }
   public static boolean wardrobeSlot(EquipmentSlot slot) {return Arrays.asList(WARDROBE).contains(slot);}
   public static EquipmentSlot accessorySlot(ItemStack item) {
-    if(item.getItem() instanceof com.chaogarden.market.ChaoHatItem)return EquipmentSlot.HEAD;
+    if(com.chaogarden.market.ChaoHats.isHat(item))return EquipmentSlot.HEAD;
     return com.chaogarden.cwe.CweCatalog.isAccessory(item)
         ?com.chaogarden.cwe.CweCatalog.slot(BuiltInRegistries.ITEM.getKey(item.getItem()).getPath()):null;
   }

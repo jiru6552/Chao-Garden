@@ -15,6 +15,7 @@ public final class ChaoHatLayer extends RenderLayer<ChaoEntity, ChaoModel> {
       "chao_garden", "textures/entity/chao/market_accessories.png");
   private final ChaoHeadwear headwear = new ChaoHeadwear();
   private final EggshellMask shell=new EggshellMask();
+  private final VanillaHatRenderer050 vanilla=new VanillaHatRenderer050();
 
   public ChaoHatLayer(RenderLayerParent<ChaoEntity, ChaoModel> parent) { super(parent); }
 
@@ -27,6 +28,7 @@ public final class ChaoHatLayer extends RenderLayer<ChaoEntity, ChaoModel> {
     if (chao.officialComparison() || hat.isBlank() || !model.officialActive()
         || chao.isCocooned() || chao.isInvisible()) return;
     if(hat.equals("eggshell_hat")){shell.render(model,chao,chao.getItemBySlot(net.minecraft.world.entity.EquipmentSlot.HEAD),stack,buffers,light);return;}
+    if(VanillaHatRenderer050.supports(hat)){vanilla.render(model,hat,stack,buffers,light);return;}
     headwear.renderHat(model, hat, stack,
         buffers.getBuffer(RenderType.entityCutoutNoCull(TEXTURE)), light,
         OverlayTexture.NO_OVERLAY);

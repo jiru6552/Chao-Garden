@@ -82,7 +82,7 @@ public final class GeneContent {
         .withStyle(ChatFormatting.LIGHT_PURPLE));
     if (index == 20) tips.add(Component.literal("Hides feet, tail and wings until replaced or cleared.")
         .withStyle(ChatFormatting.LIGHT_PURPLE));
-    tips.add(Component.literal(index<21?"+2 happiness; +20% intelligence and luck; Chaos checklist.":"+2 happiness; +20% intelligence and luck; bonus animal parts.")
+    tips.add(Component.literal("+2 happiness; +20% intelligence and luck; Chaos checklist.")
         .withStyle(ChatFormatting.DARK_AQUA));
 
   }

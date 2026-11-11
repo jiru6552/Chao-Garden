@@ -71,3 +71,6 @@ The full 0.25.48 `build` still hits an unchanged triangle transition assertion t
 ## Garden toys 0.25.49
 
 See [per-toy changes and verification](docs/TOYS_02549.md), [source references](docs/TOY_REFERENCES_02549.md) and [coffin retirement compatibility](docs/COFFIN_RETIREMENT_02549.md). All new toys expose `/chao testtoy <id> once|loop|stop`; horse and pogo require a nearby matching placed toy. The opt-in `gardenToy049Study` client creates a disposable world and supports `gardenToy049Start` / `gardenToy049Limit` for individual quality passes.
+
+
+For the 0.25.50 hat, complete-DNA, stock-rotation and gem-egg update, see [results and compatibility](docs/ITEM_DNA_EGGS_02550.md), [hat migration](docs/HATS_02550.md) and [Lootr chest behavior](docs/GEM_EGGS_02550.md). Existing toy preview commands are unchanged.

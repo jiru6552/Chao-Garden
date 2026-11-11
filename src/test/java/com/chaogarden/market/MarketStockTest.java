@@ -13,17 +13,28 @@ public final class MarketStockTest {
   public static int run() {
     checks=0;
     var seen=new HashSet<String>();
+    String halfFish="half_fish_animal_gene";
+    check(MarketStock.SPECIAL_GENES.equals(List.of("dragon_animal_gene","unicorn_animal_gene","phoenix_animal_gene",halfFish)),"Four special DNA choices include Half-fish and Unicorn");
+    check(MarketStock.ORDINARY_GENES.size()==27&&!MarketStock.ORDINARY_GENES.contains(halfFish),"Half-fish cannot occupy an ordinary shop slot");
+    var allGenes=new HashSet<>(MarketStock.ORDINARY_GENES);allGenes.addAll(MarketStock.SPECIAL_GENES);
+    check(allGenes.size()==31&&allGenes.equals(new HashSet<>(com.chaogarden.genes.TrainingSupplyRules.ANIMALS.stream().map(id->id+"_animal_gene").toList())),"Shop pools partition every registered DNA without losing a type");
+    check(!MarketStock.HATS.contains("watermelon_hat")&&!MarketStock.catalog().containsKey("watermelon_hat"),"Legacy melon hat is not sold");
+    for(String retired:List.of("pumpkin_hat","skull_hat","melon_hat","watermelon_hat"))check(!MarketStock.catalog().containsKey(retired),"Vanilla replacement hats are never market products");
+    int[] specialSeen=new int[MarketStock.SPECIAL_GENES.size()];
     for (long seed=0;seed<1000;seed++) {
       var stock=MarketStock.select(seed,List.of("mushroom_seed","garden_fruit_seed"),List.of("rabbit_animal_gene"));
       check(stock.equals(MarketStock.select(seed,List.of(),List.of())),"Deterministic stock ignores untrusted obsolete category inputs");
-      check(stock.size()==MarketStock.OFFER_COUNT || stock.size()==MarketStock.OFFER_COUNT+1,"Forty-one offers plus an optional rare gem");
+      check(stock.size()==MarketStock.OFFER_COUNT || stock.size()==MarketStock.OFFER_COUNT+1,"Forty-two offers plus an optional rare gem");
       check(MarketStock.validStock(stock.stream().map(MarketStock.Listing::itemId).toList(),false),"Current selection satisfies saved-stock contract");
       check(stock.stream().map(MarketStock.Listing::itemId).toList().containsAll(MarketStock.BASE_EGGS),"All sixteen ordinary colors are available together");
       check(stock.stream().map(MarketStock.Listing::itemId).toList().containsAll(MarketStock.GARDEN_TOOLS),"Both gardening tools are always available");
       check(stock.stream().filter(x->MarketStock.SHINY_EGGS.contains(x.itemId())).count()==1,"Exactly one shiny color rotates");
       check(stock.stream().map(MarketStock.Listing::itemId).toList().containsAll(MarketStock.DRIVES),"All four inexpensive drives are always offered");
       check(stock.stream().filter(x->MarketStock.ORDINARY_GENES.contains(x.itemId())).count()==3,"Three finite ordinary gene offers");
-      check(stock.stream().filter(x->MarketStock.MYTHICAL_GENES.contains(x.itemId())).count()==1,"One finite mythical gene offer");
+      check(stock.stream().filter(x->MarketStock.SPECIAL_GENES.contains(x.itemId())).count()==1,"One finite special DNA offer");
+      var special=stock.stream().filter(x->MarketStock.SPECIAL_GENES.contains(x.itemId())).findFirst().orElseThrow();
+      specialSeen[MarketStock.SPECIAL_GENES.indexOf(special.itemId())]++;
+      check(stock.stream().filter(x->x.itemId().equals(halfFish)).count()<=1,"Half-fish never appears in both DNA pools");
       check(stock.stream().map(MarketStock.Listing::itemId).distinct().count()==stock.size(),"No duplicate offers");
       check(stock.stream().anyMatch(x->x.itemId().equals("normal_egg")),"Regular egg exception always offered");
       check(stock.stream().anyMatch(x->x.itemId().equals("strong_fruit_seed")),"Strong seed always offered");
@@ -48,6 +59,7 @@ public final class MarketStockTest {
         check(payments.stream().allMatch(p->p.count()>0 && p.count()<=64),"Every payment stack fits");
       }
     }
+    for(int count:specialSeen)check(count>=150&&count<=350,"Each of the four special DNA choices rotates repeatedly");
     var gemsSeen=new HashSet<String>();int gemVisits=0;
     for(long seed=0;seed<200000;seed++) {
       var stock=MarketStock.select(seed,List.of(),List.of());
@@ -74,7 +86,15 @@ public final class MarketStockTest {
       var product=MarketStock.catalog().get(id);check(MarketStock.permanent(id)&&product.uses()==Integer.MAX_VALUE&&product.listing().emeralds()==1,"Drive stock is cheap and unlimited");
     }
     for(String id:MarketStock.ORDINARY_GENES){var product=MarketStock.catalog().get(id);check(!MarketStock.permanent(id)&&product.uses()==4&&product.listing().emeralds()==1,"Ordinary DNA costs one emerald and has four uses");}
-    for(String id:MarketStock.MYTHICAL_GENES){var product=MarketStock.catalog().get(id);check(!MarketStock.permanent(id)&&product.uses()==2&&product.listing().emeralds()==2,"Mythical DNA costs slightly more and has two uses");}
+    for(String id:com.chaogarden.genes.TrainingSupplyRules.MYTHICAL_GENES){var product=MarketStock.catalog().get(id);check(!MarketStock.permanent(id)&&product.uses()==2&&product.listing().emeralds()==2,"Original mythical DNA costs slightly more and has two uses");}
+    var half=MarketStock.catalog().get(halfFish).listing();
+    check(half.emeralds()==1&&half.count()==1&&half.uses()==4&&!MarketStock.permanent(halfFish),"Moving Half-fish to special stock preserves its price and quantity");
+    int halfTickets=0;
+    for(int ticket=0;ticket<90;ticket++){
+      final int t=ticket;
+      if(com.chaogarden.genes.TrainingSupplyRules.ANIMALS.get(com.chaogarden.genes.TrainingSupplyRules.geneIndex(bound->t)).equals("half_fish"))halfTickets++;
+    }
+    check(halfTickets==3&&com.chaogarden.genes.TrainingSupplyRules.TOTAL_GENE_WEIGHT==90,"Half-fish chest rarity stays three out of ninety sample tickets");
     for(String id:MarketStock.SHINY_EGGS)check(!MarketStock.permanent(id) && MarketStock.catalog().get(id).uses()==1,"Shiny stock stays finite");
     var ids=MarketStock.select(0,List.of(),List.of()).stream().map(MarketStock.Listing::itemId).toList();
     check(!MarketStock.validStock(ids.subList(1,ids.size()),false),"Saved stock cannot omit a permanent color");
@@ -82,6 +102,15 @@ public final class MarketStockTest {
     check(!MarketStock.validStock(duplicate,false),"Duplicate saved offers must be migrated");
     var foreign=new java.util.ArrayList<>(ids);foreign.set(0,"create_chao_egg");
     check(!MarketStock.validStock(foreign,false),"Paused addon stock must be rejected");
+    var retiredHat=new java.util.ArrayList<>(ids);retiredHat.set(java.util.stream.IntStream.range(0,ids.size()).filter(i->MarketStock.HATS.contains(ids.get(i))).findFirst().orElseThrow(),"watermelon_hat");
+    check(!MarketStock.validStock(retiredHat,false),"Saved retired hat stock is invalid even at the current stock version");
+    List<String> preRotation;
+    long oldSeed=0;
+    do {preRotation=MarketStock.select(oldSeed++,List.of(),List.of()).stream().map(MarketStock.Listing::itemId).toList();}while(preRotation.contains(halfFish));
+    var oldHalfFish=new java.util.ArrayList<>(preRotation);
+    for(int i=0;i<oldHalfFish.size();i++)if(MarketStock.ORDINARY_GENES.contains(oldHalfFish.get(i))){oldHalfFish.set(i,halfFish);break;}
+    check(!MarketStock.validStock(oldHalfFish,false),"Old ordinary Half-fish plus a second special sample must be restocked");
+    check(MarketStock.catalog().get("red_wool_beanie").listing().emeralds()==80&&MarketStock.catalog().get("blue_wool_beanie").listing().emeralds()==100&&MarketStock.catalog().get("black_white_wool_beanie").listing().emeralds()==200,"Removing melon does not shift the remaining hat prices");
     check(MarketStock.catalog().get("white_egg").listing().emeralds()==4,"400 ring white egg costs4emeralds");
     check(MarketStock.catalog().get("shiny_white_egg").listing().emeralds()==40,"Shiny egg preserves10xprice");
     check(MarketStock.catalog().get("chao_radio").listing().emeralds()==603,"Radio rounded up to67blocks");

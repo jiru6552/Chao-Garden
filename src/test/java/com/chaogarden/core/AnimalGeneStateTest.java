@@ -77,7 +77,7 @@ public final class AnimalGeneStateTest {
     check(mixed.animalParts[ChaoState.HORNS] == 15 && mixed.animalParts[ChaoState.EARS] == 15,
         "Dragon completes its matching ears and horns without oscillating");
     mixed.immortal = true; mixed.clearParts(); mixed.flameOrb = mixed.ghostBody = false;
-    for (int animal = 0; animal < 21; animal++) mixed.giveAnimal(animal);
+    for (int animal = 0; animal < ChaoState.ANIMALS.length; animal++) mixed.giveAnimal(animal);
     check(mixed.animalMask == ChaoState.ALL_ANIMALS && mixed.animalPartsMask == 0
         && !mixed.flameOrb && !mixed.ghostBody,
         "Chaos forms train and record genes without changing their own appearance");

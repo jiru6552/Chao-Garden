@@ -1,0 +1,62 @@
+Chao Garden 0.25.50 cumulative source overlay.
+
+373 changed/new files and 21 explicit deletions onto full 0.25.43 source, including all prior updates. This ZIP is not a standalone project. The delivery branch contains the full updated project.
+
+Extract at the full project root, then apply SOURCE_DELETIONS.txt manually or run:
+python3 apply-source-deletions.py /path/to/full/Chao-Garden
+Use --verify-only to review first. The helper refuses locally edited files and never touches Minecraft saves.
+
+Java 21, Minecraft 1.21.1, NeoForge 21.1.219 and external Lionfish API 3.1. Use matching client/server 0.25.50 JARs.
+Read ITEM_DNA_EGGS_02550.md for migration, test results and compatibility limits.
+
+0.25.49 to 0.25.50 paths:
+CHANGELOG.md
+LOOT.md
+MECHANICS.md
+README.md
+TESTING.md
+build.gradle
+docs/GEM_EGGS_02550.md
+docs/HATS_02550.md
+docs/ITEM_DNA_EGGS_02550.md
+gradle.properties
+src/main/java/com/chaogarden/ChaoGarden.java
+src/main/java/com/chaogarden/care/ChaoCareServices.java
+src/main/java/com/chaogarden/client/ChaoHatLayer.java
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java
+src/main/java/com/chaogarden/client/ChaoOverlayLayer.java
+src/main/java/com/chaogarden/client/DnaChecklistVisualSmoke050.java
+src/main/java/com/chaogarden/client/HatVisualSmoke050.java
+src/main/java/com/chaogarden/client/VanillaHatRenderer050.java
+src/main/java/com/chaogarden/core/ChaoState.java
+src/main/java/com/chaogarden/cwe/CweContent.java
+src/main/java/com/chaogarden/distribution/EggDistributionRules.java
+src/main/java/com/chaogarden/entity/ChaoEntity.java
+src/main/java/com/chaogarden/genes/GeneContent.java
+src/main/java/com/chaogarden/item/GardenGuideItem.java
+src/main/java/com/chaogarden/market/BlackMarketTrader.java
+src/main/java/com/chaogarden/market/ChaoHatItem.java
+src/main/java/com/chaogarden/market/ChaoHats.java
+src/main/java/com/chaogarden/market/LegacyMelonHatItem.java
+src/main/java/com/chaogarden/market/MarketContent.java
+src/main/java/com/chaogarden/market/MarketStock.java
+src/main/java/com/chaogarden/test/DnaEligibilityGameTests050.java
+src/main/java/com/chaogarden/test/GemEggGameTests050.java
+src/main/java/com/chaogarden/test/HatGameTests050.java
+src/main/java/com/chaogarden/test/ItemDnaRegressionGameTests050.java
+src/main/java/com/chaogarden/test/MarketMenuGameTests.java
+src/main/java/com/chaogarden/test/MarketRotationGameTests050.java
+src/main/resources/assets/chao_garden/models/item/watermelon_hat.json
+src/main/resources/data/chao_dna50/structure/empty.nbt
+src/main/resources/data/chao_eggs50/structure/empty.nbt
+src/main/resources/data/chao_garden/loot_modifiers/chest_eggs.json
+src/main/resources/data/chao_hats50/structure/activity_test.nbt
+src/main/resources/data/chao_market50/structure/empty.nbt
+src/main/resources/data/chao_regress50/structure/activity_test.nbt
+src/main/resources/data/chao_regress50/structure/empty.nbt
+src/test/java/com/chaogarden/core/AnimalGeneStateTest.java
+src/test/java/com/chaogarden/core/ChaoStateTest.java
+src/test/java/com/chaogarden/core/ChaosDnaRequirements050Test.java
+src/test/java/com/chaogarden/core/LifecycleRules022Test.java
+src/test/java/com/chaogarden/distribution/EggDistributionRulesTest.java
+src/test/java/com/chaogarden/market/MarketStockTest.java

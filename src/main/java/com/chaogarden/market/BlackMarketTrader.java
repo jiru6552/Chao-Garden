@@ -27,7 +27,7 @@ import net.minecraft.world.level.Level;
 /** A real merchant with saved stock, normal emerald payment and a finite visit. */
 public final class BlackMarketTrader extends WanderingTrader {
   private static final EntityDataAccessor<Boolean> RESIDENT=SynchedEntityData.defineId(BlackMarketTrader.class,EntityDataSerializers.BOOLEAN);
-  public static final int STOCK_VERSION = 36;
+  public static final int STOCK_VERSION = 37;
   private long restockAt;
   private long visitExpiry;
 

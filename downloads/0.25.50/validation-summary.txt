@@ -1,0 +1,359 @@
+Actual 0.25.50 verification excerpts. See report for scope and limitations.
+
+items050-compile-core.log
+ChaoState: 169566 checks passed
+Toy interaction rules: 2491 checks passed
+Egg distribution policy: 243 checks passed
+Training supplies: 248 checks passed
+Wardrobe choices: 6644 checks passed
+Baby animation timing: 26057 checks passed
+Portal geometry: 1233 checks passed
+Lobby geometry0252: 18509 checks passed
+Lobby perimeter approaches0256: 40670 checks passed
+Garden gate geometry0256: 48346 checks passed
+Area music rules0257: 136 checks passed
+School singing rules0258: 2472 checks passed
+Staff face timing0251: 177195 checks passed
+Black Market stock: 922385 checks passed
+Kindergarten buyback: 220052 checks passed
+Activity rules: 101313 checks passed
+Companion rules: 2103 checks passed
+SA2 fruit effects: 4765 checks passed
+Locomotion rules: 1209 checks passed
+BUILD SUCCESSFUL in 32s
+
+items050-native-release.log
+[18:17:08] [Server thread/INFO] [minecraft/GameTestServer]: ========= 119 GAME TESTS COMPLETE IN 7.665 s ======================
+[18:17:08] [Server thread/INFO] [minecraft/GameTestServer]: All 119 required tests passed :)
+BUILD SUCCESSFUL in 41s
+
+items050-hat-client-release.log
+[18:14:26] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 0 item=carved_pumpkin variant=baby_neutral key=vanilla_carved_pumpkin savedComponents=true expectedAdult=false
+[18:14:27] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 0 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:27] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 0 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:14:27] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-00-carved_pumpkin-baby_neutral-v0.png case=0 view=0
+[18:14:28] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-00-carved_pumpkin-baby_neutral-v1.png case=0 view=1
+[18:14:28] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 0 item=carved_pumpkin variant=baby_neutral worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:28] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 1 item=carved_pumpkin variant=adult_neutral_type0 key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:28] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-00-carved_pumpkin-baby_neutral-v2.png case=0 view=2
+[18:14:28] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 1 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:28] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 1 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:14:28] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-01-carved_pumpkin-adult_neutral_type0-v0.png case=1 view=0
+[18:14:29] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-01-carved_pumpkin-adult_neutral_type0-v1.png case=1 view=1
+[18:14:29] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 1 item=carved_pumpkin variant=adult_neutral_type0 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:29] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 2 item=carved_pumpkin variant=adult_hero_type4 key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:29] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-01-carved_pumpkin-adult_neutral_type0-v2.png case=1 view=2
+[18:14:29] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 2 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:29] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 2 item=carved_pumpkin geometry=hero_power skullBounds=[-3.566354, -6.04875, -3.0, 3.566354, 0.0, 3.065] fittedVanillaBounds=[-3.866354, -6.34875, -3.3, 3.866354, 0.3, 3.365] motion=RUN
+[18:14:30] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-02-carved_pumpkin-adult_hero_type4-v0.png case=2 view=0
+[18:14:30] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-02-carved_pumpkin-adult_hero_type4-v1.png case=2 view=1
+[18:14:30] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 2 item=carved_pumpkin variant=adult_hero_type4 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:30] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 3 item=carved_pumpkin variant=adult_dark_type3 key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:30] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-02-carved_pumpkin-adult_hero_type4-v2.png case=2 view=2
+[18:14:30] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 3 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:30] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 3 item=carved_pumpkin geometry=dark_run skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:14:31] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-03-carved_pumpkin-adult_dark_type3-v0.png case=3 view=0
+[18:14:31] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-03-carved_pumpkin-adult_dark_type3-v1.png case=3 view=1
+[18:14:32] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 3 item=carved_pumpkin variant=adult_dark_type3 worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:32] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 4 item=carved_pumpkin variant=chaos_0 key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:32] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-03-carved_pumpkin-adult_dark_type3-v2.png case=3 view=2
+[18:14:32] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 4 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:32] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 4 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=[-3.8, -6.5, -3.3, 3.8, 0.3, 2.95] motion=RUN
+[18:14:32] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-04-carved_pumpkin-chaos_0-v0.png case=4 view=0
+[18:14:32] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-04-carved_pumpkin-chaos_0-v1.png case=4 view=1
+[18:14:33] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 4 item=carved_pumpkin variant=chaos_0 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:33] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 5 item=carved_pumpkin variant=chaos_1 key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:33] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-04-carved_pumpkin-chaos_0-v2.png case=4 view=2
+[18:14:33] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 5 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:33] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 5 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=[-3.8, -6.5, -3.3, 3.8, 0.3, 2.95] motion=RUN
+[18:14:33] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-05-carved_pumpkin-chaos_1-v0.png case=5 view=0
+[18:14:34] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-05-carved_pumpkin-chaos_1-v1.png case=5 view=1
+[18:14:34] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 5 item=carved_pumpkin variant=chaos_1 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:34] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 6 item=carved_pumpkin variant=chaos_2 key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:34] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-05-carved_pumpkin-chaos_1-v2.png case=5 view=2
+[18:14:34] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 6 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:34] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 6 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=[-3.8, -6.5, -3.3, 3.8, 0.3, 2.95] motion=RUN
+[18:14:34] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-06-carved_pumpkin-chaos_2-v0.png case=6 view=0
+[18:14:35] [IO-Worker-5/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-06-carved_pumpkin-chaos_2-v1.png case=6 view=1
+[18:14:35] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 6 item=carved_pumpkin variant=chaos_2 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:35] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 7 item=carved_pumpkin variant=tails_adult key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:35] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-06-carved_pumpkin-chaos_2-v2.png case=6 view=2
+[18:14:35] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 7 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:35] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 7 item=carved_pumpkin geometry=tails skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:14:36] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-07-carved_pumpkin-tails_adult-v0.png case=7 view=0
+[18:14:36] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-07-carved_pumpkin-tails_adult-v1.png case=7 view=1
+[18:14:37] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 7 item=carved_pumpkin variant=tails_adult worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:37] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 8 item=carved_pumpkin variant=knuckles_baby key=vanilla_carved_pumpkin savedComponents=true expectedAdult=false
+[18:14:37] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-07-carved_pumpkin-tails_adult-v2.png case=7 view=2
+[18:14:37] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 8 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:37] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 8 item=carved_pumpkin geometry=knuckles skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:14:37] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-08-carved_pumpkin-knuckles_baby-v0.png case=8 view=0
+[18:14:37] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-08-carved_pumpkin-knuckles_baby-v1.png case=8 view=1
+[18:14:38] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 8 item=carved_pumpkin variant=knuckles_baby worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:38] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 9 item=carved_pumpkin variant=amy_adult key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:38] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-08-carved_pumpkin-knuckles_baby-v2.png case=8 view=2
+[18:14:38] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 9 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:38] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 9 item=carved_pumpkin geometry=baby skullBounds=[-3.57, -6.3, -2.95, 3.57, 0.18, 2.85] fittedVanillaBounds=[-3.87, -6.6000004, -3.25, 3.87, 0.48000002, 3.1499999] motion=RUN
+[18:14:38] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-09-carved_pumpkin-amy_adult-v0.png case=9 view=0
+[18:14:39] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-09-carved_pumpkin-amy_adult-v1.png case=9 view=1
+[18:14:39] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 9 item=carved_pumpkin variant=amy_adult worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:39] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 10 item=carved_pumpkin variant=animal_dragon_baby key=vanilla_carved_pumpkin savedComponents=true expectedAdult=false
+[18:14:39] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-09-carved_pumpkin-amy_adult-v2.png case=9 view=2
+[18:14:39] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 10 actualPoseChecks=165 coveredHeadNodes=2 retainedAnimalNodes=7 closedMask=true savedDNAUnchanged=true
+[18:14:39] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 10 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:14:39] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-10-carved_pumpkin-animal_dragon_baby-v0.png case=10 view=0
+[18:14:40] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-10-carved_pumpkin-animal_dragon_baby-v1.png case=10 view=1
+[18:14:40] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 10 item=carved_pumpkin variant=animal_dragon_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:40] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 11 item=carved_pumpkin variant=animal_sheep_adult key=vanilla_carved_pumpkin savedComponents=true expectedAdult=true
+[18:14:40] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-10-carved_pumpkin-animal_dragon_baby-v2.png case=10 view=2
+[18:14:40] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 11 actualPoseChecks=165 coveredHeadNodes=2 retainedAnimalNodes=5 closedMask=true savedDNAUnchanged=true
+[18:14:40] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 11 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:14:41] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-11-carved_pumpkin-animal_sheep_adult-v0.png case=11 view=0
+[18:14:41] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-11-carved_pumpkin-animal_sheep_adult-v1.png case=11 view=1
+[18:14:41] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 11 item=carved_pumpkin variant=animal_sheep_adult worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:41] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 12 item=melon variant=baby_neutral key=watermelon_hat savedComponents=true expectedAdult=false
+[18:14:41] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-11-carved_pumpkin-animal_sheep_adult-v2.png case=11 view=2
+[18:14:42] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 12 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:42] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 12 item=melon geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=null motion=SIT
+[18:14:42] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-12-melon-baby_neutral-v0.png case=12 view=0
+[18:14:42] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-12-melon-baby_neutral-v1.png case=12 view=1
+[18:14:43] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 12 item=melon variant=baby_neutral worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:43] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 13 item=melon variant=adult_neutral_type0 key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:43] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-12-melon-baby_neutral-v2.png case=12 view=2
+[18:14:43] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 13 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:43] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 13 item=melon geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=null motion=RUN
+[18:14:43] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-13-melon-adult_neutral_type0-v0.png case=13 view=0
+[18:14:44] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-13-melon-adult_neutral_type0-v1.png case=13 view=1
+[18:14:44] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 13 item=melon variant=adult_neutral_type0 worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:44] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 14 item=melon variant=adult_hero_type4 key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:44] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-13-melon-adult_neutral_type0-v2.png case=13 view=2
+[18:14:44] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 14 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:44] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 14 item=melon geometry=hero_power skullBounds=[-3.566354, -6.04875, -3.0, 3.566354, 0.0, 3.065] fittedVanillaBounds=null motion=RUN
+[18:14:44] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-14-melon-adult_hero_type4-v0.png case=14 view=0
+[18:14:45] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-14-melon-adult_hero_type4-v1.png case=14 view=1
+[18:14:45] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 14 item=melon variant=adult_hero_type4 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:45] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 15 item=melon variant=adult_dark_type3 key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:45] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-14-melon-adult_hero_type4-v2.png case=14 view=2
+[18:14:45] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 15 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:45] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 15 item=melon geometry=dark_run skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=null motion=RUN
+[18:14:46] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-15-melon-adult_dark_type3-v0.png case=15 view=0
+[18:14:46] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-15-melon-adult_dark_type3-v1.png case=15 view=1
+[18:14:46] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 15 item=melon variant=adult_dark_type3 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:46] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 16 item=melon variant=chaos_0 key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:46] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-15-melon-adult_dark_type3-v2.png case=15 view=2
+[18:14:46] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 16 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:46] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 16 item=melon geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=null motion=RUN
+[18:14:47] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-16-melon-chaos_0-v0.png case=16 view=0
+[18:14:47] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-16-melon-chaos_0-v1.png case=16 view=1
+[18:14:48] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 16 item=melon variant=chaos_0 worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:48] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 17 item=melon variant=chaos_1 key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:48] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-16-melon-chaos_0-v2.png case=16 view=2
+[18:14:48] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 17 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:48] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 17 item=melon geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=null motion=RUN
+[18:14:48] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-17-melon-chaos_1-v0.png case=17 view=0
+[18:14:48] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-17-melon-chaos_1-v1.png case=17 view=1
+[18:14:49] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 17 item=melon variant=chaos_1 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:49] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 18 item=melon variant=chaos_2 key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:49] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 18 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:49] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 18 item=melon geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=null motion=RUN
+[18:14:49] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-17-melon-chaos_1-v2.png case=17 view=2
+[18:14:49] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-18-melon-chaos_2-v0.png case=18 view=0
+[18:14:50] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-18-melon-chaos_2-v1.png case=18 view=1
+[18:14:50] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 18 item=melon variant=chaos_2 worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:50] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 19 item=melon variant=tails_adult key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:50] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-18-melon-chaos_2-v2.png case=18 view=2
+[18:14:50] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 19 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:50] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 19 item=melon geometry=tails skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=null motion=RUN
+[18:14:50] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-19-melon-tails_adult-v0.png case=19 view=0
+[18:14:51] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-19-melon-tails_adult-v1.png case=19 view=1
+[18:14:51] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 19 item=melon variant=tails_adult worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:51] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 20 item=melon variant=knuckles_baby key=watermelon_hat savedComponents=true expectedAdult=false
+[18:14:51] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-19-melon-tails_adult-v2.png case=19 view=2
+[18:14:51] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 20 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:51] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 20 item=melon geometry=knuckles skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=null motion=SIT
+[18:14:52] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-20-melon-knuckles_baby-v0.png case=20 view=0
+[18:14:52] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-20-melon-knuckles_baby-v1.png case=20 view=1
+[18:14:53] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 20 item=melon variant=knuckles_baby worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:53] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 21 item=melon variant=amy_adult key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:53] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-20-melon-knuckles_baby-v2.png case=20 view=2
+[18:14:53] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 21 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=false savedDNAUnchanged=true
+[18:14:53] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 21 item=melon geometry=baby skullBounds=[-3.57, -6.3, -2.95, 3.57, 0.18, 2.85] fittedVanillaBounds=null motion=RUN
+[18:14:53] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-21-melon-amy_adult-v0.png case=21 view=0
+[18:14:53] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-21-melon-amy_adult-v1.png case=21 view=1
+[18:14:54] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 21 item=melon variant=amy_adult worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:54] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 22 item=melon variant=animal_dragon_baby key=watermelon_hat savedComponents=true expectedAdult=false
+[18:14:54] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-21-melon-amy_adult-v2.png case=21 view=2
+[18:14:54] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 22 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=9 closedMask=false savedDNAUnchanged=true
+[18:14:54] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 22 item=melon geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=null motion=SIT
+[18:14:54] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-22-melon-animal_dragon_baby-v0.png case=22 view=0
+[18:14:55] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-22-melon-animal_dragon_baby-v1.png case=22 view=1
+[18:14:55] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 22 item=melon variant=animal_dragon_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:55] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 23 item=melon variant=animal_sheep_adult key=watermelon_hat savedComponents=true expectedAdult=true
+[18:14:55] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-22-melon-animal_dragon_baby-v2.png case=22 view=2
+[18:14:55] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 23 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=7 closedMask=false savedDNAUnchanged=true
+[18:14:55] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 23 item=melon geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=null motion=RUN
+[18:14:55] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-23-melon-animal_sheep_adult-v0.png case=23 view=0
+[18:14:56] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-23-melon-animal_sheep_adult-v1.png case=23 view=1
+[18:14:56] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 23 item=melon variant=animal_sheep_adult worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:56] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 24 item=skeleton_skull variant=baby_neutral key=vanilla_skeleton_skull savedComponents=true expectedAdult=false
+[18:14:56] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-23-melon-animal_sheep_adult-v2.png case=23 view=2
+[18:14:56] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 24 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:56] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 24 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:14:57] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-24-skeleton_skull-baby_neutral-v0.png case=24 view=0
+[18:14:57] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-24-skeleton_skull-baby_neutral-v1.png case=24 view=1
+[18:14:58] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 24 item=skeleton_skull variant=baby_neutral worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:14:58] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 25 item=skeleton_skull variant=adult_neutral_type0 key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:14:58] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-24-skeleton_skull-baby_neutral-v2.png case=24 view=2
+[18:14:58] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 25 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:58] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 25 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:14:58] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-25-skeleton_skull-adult_neutral_type0-v0.png case=25 view=0
+[18:14:58] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-25-skeleton_skull-adult_neutral_type0-v1.png case=25 view=1
+[18:14:59] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 25 item=skeleton_skull variant=adult_neutral_type0 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:14:59] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 26 item=skeleton_skull variant=adult_hero_type4 key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:14:59] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-25-skeleton_skull-adult_neutral_type0-v2.png case=25 view=2
+[18:14:59] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 26 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:14:59] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 26 item=skeleton_skull geometry=hero_power skullBounds=[-3.566354, -6.04875, -3.0, 3.566354, 0.0, 3.065] fittedVanillaBounds=[-3.866354, -6.34875, -3.3, 3.866354, 0.3, 3.365] motion=RUN
+[18:14:59] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-26-skeleton_skull-adult_hero_type4-v0.png case=26 view=0
+[18:15:00] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-26-skeleton_skull-adult_hero_type4-v1.png case=26 view=1
+[18:15:00] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 26 item=skeleton_skull variant=adult_hero_type4 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:00] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 27 item=skeleton_skull variant=adult_dark_type3 key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:15:00] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-26-skeleton_skull-adult_hero_type4-v2.png case=26 view=2
+[18:15:00] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 27 actualPoseChecks=165 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:15:00] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 27 item=skeleton_skull geometry=dark_run skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:15:00] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-27-skeleton_skull-adult_dark_type3-v0.png case=27 view=0
+[18:15:01] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-27-skeleton_skull-adult_dark_type3-v1.png case=27 view=1
+[18:15:01] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 27 item=skeleton_skull variant=adult_dark_type3 worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:15:01] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 28 item=skeleton_skull variant=chaos_0 key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:15:01] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-27-skeleton_skull-adult_dark_type3-v2.png case=27 view=2
+[18:15:01] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 28 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:15:01] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 28 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=[-3.8, -6.5, -3.3, 3.8, 0.3, 2.95] motion=RUN
+[18:15:02] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-28-skeleton_skull-chaos_0-v0.png case=28 view=0
+[18:15:02] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-28-skeleton_skull-chaos_0-v1.png case=28 view=1
+[18:15:02] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 28 item=skeleton_skull variant=chaos_0 worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:15:02] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 29 item=skeleton_skull variant=chaos_1 key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:15:02] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-28-skeleton_skull-chaos_0-v2.png case=28 view=2
+[18:15:02] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 29 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:15:02] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 29 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=[-3.8, -6.5, -3.3, 3.8, 0.3, 2.95] motion=RUN
+[18:15:03] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-29-skeleton_skull-chaos_1-v0.png case=29 view=0
+[18:15:03] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-29-skeleton_skull-chaos_1-v1.png case=29 view=1
+[18:15:04] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 29 item=skeleton_skull variant=chaos_1 worldFrames=36 actorFrames=37 views=3 saveReload=true
+[18:15:04] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 30 item=skeleton_skull variant=chaos_2 key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:15:04] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-29-skeleton_skull-chaos_1-v2.png case=29 view=2
+[18:15:04] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 30 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:15:04] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 30 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.2, -3.0, 3.5, 0.0, 2.65] fittedVanillaBounds=[-3.8, -6.5, -3.3, 3.8, 0.3, 2.95] motion=RUN
+[18:15:04] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-30-skeleton_skull-chaos_2-v0.png case=30 view=0
+[18:15:05] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-30-skeleton_skull-chaos_2-v1.png case=30 view=1
+[18:15:05] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 30 item=skeleton_skull variant=chaos_2 worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:05] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 31 item=skeleton_skull variant=tails_adult key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:15:05] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-30-skeleton_skull-chaos_2-v2.png case=30 view=2
+[18:15:05] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 31 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:15:05] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 31 item=skeleton_skull geometry=tails skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:15:05] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-31-skeleton_skull-tails_adult-v0.png case=31 view=0
+[18:15:06] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-31-skeleton_skull-tails_adult-v1.png case=31 view=1
+[18:15:06] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 31 item=skeleton_skull variant=tails_adult worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:06] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 32 item=skeleton_skull variant=knuckles_baby key=vanilla_skeleton_skull savedComponents=true expectedAdult=false
+[18:15:06] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-31-skeleton_skull-tails_adult-v2.png case=31 view=2
+[18:15:06] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 32 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:15:06] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 32 item=skeleton_skull geometry=knuckles skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:15:07] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-32-skeleton_skull-knuckles_baby-v0.png case=32 view=0
+[18:15:07] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-32-skeleton_skull-knuckles_baby-v1.png case=32 view=1
+[18:15:07] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 32 item=skeleton_skull variant=knuckles_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:07] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 33 item=skeleton_skull variant=amy_adult key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:15:07] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-32-skeleton_skull-knuckles_baby-v2.png case=32 view=2
+[18:15:07] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 33 actualPoseChecks=109 coveredHeadNodes=0 retainedAnimalNodes=0 closedMask=true savedDNAUnchanged=true
+[18:15:07] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 33 item=skeleton_skull geometry=baby skullBounds=[-3.57, -6.3, -2.95, 3.57, 0.18, 2.85] fittedVanillaBounds=[-3.87, -6.6000004, -3.25, 3.87, 0.48000002, 3.1499999] motion=RUN
+[18:15:08] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-33-skeleton_skull-amy_adult-v0.png case=33 view=0
+[18:15:08] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-33-skeleton_skull-amy_adult-v1.png case=33 view=1
+[18:15:09] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 33 item=skeleton_skull variant=amy_adult worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:09] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 34 item=skeleton_skull variant=animal_dragon_baby key=vanilla_skeleton_skull savedComponents=true expectedAdult=false
+[18:15:09] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-33-skeleton_skull-amy_adult-v2.png case=33 view=2
+[18:15:09] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 34 actualPoseChecks=165 coveredHeadNodes=2 retainedAnimalNodes=7 closedMask=true savedDNAUnchanged=true
+[18:15:09] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 34 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:15:09] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-34-skeleton_skull-animal_dragon_baby-v0.png case=34 view=0
+[18:15:09] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-34-skeleton_skull-animal_dragon_baby-v1.png case=34 view=1
+[18:15:10] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 34 item=skeleton_skull variant=animal_dragon_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:10] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 35 item=skeleton_skull variant=animal_sheep_adult key=vanilla_skeleton_skull savedComponents=true expectedAdult=true
+[18:15:10] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-34-skeleton_skull-animal_dragon_baby-v2.png case=34 view=2
+[18:15:10] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 35 actualPoseChecks=165 coveredHeadNodes=2 retainedAnimalNodes=5 closedMask=true savedDNAUnchanged=true
+[18:15:10] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 35 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=RUN
+[18:15:10] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-35-skeleton_skull-animal_sheep_adult-v0.png case=35 view=0
+[18:15:11] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-35-skeleton_skull-animal_sheep_adult-v1.png case=35 view=1
+[18:15:11] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 35 item=skeleton_skull variant=animal_sheep_adult worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:11] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 36 item=carved_pumpkin variant=animal_parrot_baby key=vanilla_carved_pumpkin savedComponents=true expectedAdult=false
+[18:15:11] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-35-skeleton_skull-animal_sheep_adult-v2.png case=35 view=2
+[18:15:11] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 36 actualPoseChecks=165 coveredHeadNodes=1 retainedAnimalNodes=5 closedMask=true savedDNAUnchanged=true
+[18:15:11] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 36 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:15:11] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-36-carved_pumpkin-animal_parrot_baby-v0.png case=36 view=0
+[18:15:12] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-36-carved_pumpkin-animal_parrot_baby-v1.png case=36 view=1
+[18:15:12] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 36 item=carved_pumpkin variant=animal_parrot_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:12] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 37 item=skeleton_skull variant=animal_parrot_baby key=vanilla_skeleton_skull savedComponents=true expectedAdult=false
+[18:15:12] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-36-carved_pumpkin-animal_parrot_baby-v2.png case=36 view=2
+[18:15:12] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 37 actualPoseChecks=165 coveredHeadNodes=1 retainedAnimalNodes=5 closedMask=true savedDNAUnchanged=true
+[18:15:12] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 37 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:15:13] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-37-skeleton_skull-animal_parrot_baby-v0.png case=37 view=0
+[18:15:13] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-37-skeleton_skull-animal_parrot_baby-v1.png case=37 view=1
+[18:15:13] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 37 item=skeleton_skull variant=animal_parrot_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:13] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 38 item=carved_pumpkin variant=animal_boar_baby key=vanilla_carved_pumpkin savedComponents=true expectedAdult=false
+[18:15:13] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 38 actualPoseChecks=165 coveredHeadNodes=2 retainedAnimalNodes=5 closedMask=true savedDNAUnchanged=true
+[18:15:13] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 38 item=carved_pumpkin geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:15:13] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-37-skeleton_skull-animal_parrot_baby-v2.png case=37 view=2
+[18:15:14] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-38-carved_pumpkin-animal_boar_baby-v0.png case=38 view=0
+[18:15:14] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-38-carved_pumpkin-animal_boar_baby-v1.png case=38 view=1
+[18:15:15] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 38 item=carved_pumpkin variant=animal_boar_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:15] [Server thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CASE 39 item=skeleton_skull variant=animal_boar_baby key=vanilla_skeleton_skull savedComponents=true expectedAdult=false
+[18:15:15] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-38-carved_pumpkin-animal_boar_baby-v2.png case=38 view=2
+[18:15:15] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_OVERLAY_VISIBILITY 39 actualPoseChecks=165 coveredHeadNodes=2 retainedAnimalNodes=5 closedMask=true savedDNAUnchanged=true
+[18:15:15] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_FIT 39 item=skeleton_skull geometry=baby skullBounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0] fittedVanillaBounds=[-3.8, -6.3, -3.3, 3.8, 0.3, 3.3] motion=SIT
+[18:15:15] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-39-skeleton_skull-animal_boar_baby-v0.png case=39 view=0
+[18:15:15] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-39-skeleton_skull-animal_boar_baby-v1.png case=39 view=1
+[18:15:16] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_RENDER_COMPLETE 39 item=skeleton_skull variant=animal_boar_baby worldFrames=36 actorFrames=36 views=3 saveReload=true
+[18:15:16] [IO-Worker-6/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_CAPTURE hat050-39-skeleton_skull-animal_boar_baby-v2.png case=39 view=2
+[18:15:16] [Render thread/INFO] [co.ch.cl.HatVisualSmoke050/]: HAT050_VISUAL_COMPLETE cases=40 start=0 limit=40 screenshots=120 saved=120 actualWorldActor=true staticFitStudy=true
+BUILD SUCCESSFUL in 1m 37s
+
+items050-dna-client.log
+[18:11:28] [IO-Worker-6/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_CAPTURE original21-page1
+[18:11:29] [IO-Worker-6/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_CAPTURE extra10-page2
+[18:11:30] [IO-Worker-6/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_CAPTURE missing-extra10
+[18:11:33] [IO-Worker-6/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_CAPTURE all-missing-page2
+[18:11:34] [IO-Worker-6/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_CAPTURE live-clamped-missing
+[18:11:35] [IO-Worker-2/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_CAPTURE complete31
+[18:11:36] [IO-Worker-2/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_CAPTURE last-species-missing
+[18:11:39] [Render thread/INFO] [co.ch.cl.DnaChecklistVisualSmoke050/]: DNA050_VISUAL_PASS screenshots=7 renderedFrames=152 species=31 nativeButtons=true bothPages=true missingFilter=true liveClamp=true completion=true
+BUILD SUCCESSFUL in 2m 7s
+
+items050-build.log
+Production JAR integrity: complete central directory, unique entries and all CRCs verified; entries=8928; bytes=30901417; sha256=b7843c4c89711a3c3c6938a1908eef747a748fe81db41d02be632e375a0d6127
+PASS: 17286 carry checks; 396 form/age/morph cases; back skin gap=-0.014375001..0.051500008 blocks; max transition step=0.034974005 blocks
+ChaoState: 169566 checks passed
+Toy interaction rules: 2491 checks passed
+Egg distribution policy: 243 checks passed
+Training supplies: 248 checks passed
+Wardrobe choices: 6644 checks passed
+Baby animation timing: 26057 checks passed
+Portal geometry: 1233 checks passed
+Lobby geometry0252: 18509 checks passed
+Lobby perimeter approaches0256: 40670 checks passed
+Garden gate geometry0256: 48346 checks passed
+Area music rules0257: 136 checks passed
+School singing rules0258: 2472 checks passed
+Staff face timing0251: 177195 checks passed
+Black Market stock: 922385 checks passed
+Kindergarten buyback: 220052 checks passed
+Activity rules: 101313 checks passed
+Companion rules: 2103 checks passed
+SA2 fruit effects: 4765 checks passed
+Locomotion rules: 1209 checks passed
+PASS: 96316 variant checks; 1092 replacement-hand rig/age/animal cases, all four clips, both maracas hands measured against rendered vertices. Visual quality requires the separate client study.
+PASS: 508539 maracas checks, 396 rig/morph/hand cases, 641 subticks, max grip error=1.2287812E-7; visual review separate.
+PASS: 254255 bell checks, 198 rig/morph/hand cases, 641 subticks, max grip error=1.2377834E-7; visual review separate.
+PASS: 382569 tambourine checks, 198 rig/morph cases, 641 subticks, maxGripError=1.2287812E-7 maxContactGap=1.2731557E-7 maxRequestedShoulderShiftPixels=0.3743237; visual review separate.
+PASS: 14742 tambourine replacement checks; 546 two-hand rig/age/animal cases; maxGripError=1.4901161E-8 maxContactGap=1.3265381E-7; visual review separate.
+PASS: 383971 castanets checks, 198 rig/morph cases, 641 subticks, maxGripError=1.1944189E-7 maxContactGap=0.018833859 maxRequestedShoulderShiftPixels=0.70134205; visual review separate.
+PASS: 5215402 cymbal checks; 1413 rig/age/morph/replacement cases, 641 subticks; maxGrip=2.4268772E-7 maxRimGap=0.0040377327 minHeadPixels=0.09137273 maxRequestedShoulderShiftPixels=2.1457672E-6; visual and listening review separate.
+PASS: 14742 castanets replacement checks; 546 two-hand rig/age/animal cases; maxGripError=1.4901161E-8 maxContactGap=0.011859947; visual review separate.
+PASS: 796662 assertions; 23 hand rigs/ages; 3 material-only glass overlays; 9 morphology endpoints; 641 sub-tick samples each; max grip error=1.8491855E-7 blocks. Real Lionfish 3.1; offline rig checks, not an in-game visual pass.
+PASS: 99572 running pose checks across 132 form/age/speed cases and 31812 real-mesh frames; bounded cadence, retained foot travel and gait-unlock continuity
+PASS: 1068408 sitting checks; 396 form/age/morph cases with two real entry/exit transitions; maxFloorPixels=0.025001526 minHeadPixels=1.9800167 maxHalfTickJointStepPixels=0.048315074 adultTiltDegrees=3.7276623 babyTiltDegrees=7.4598904 maxTransitionPenetrationPixels=0.145401
+PASS: 264 visible transition checks across 88 form/age/history cases; nearby blending preserved, stale offscreen pose discarded
+BUILD FAILED in 8m 47s

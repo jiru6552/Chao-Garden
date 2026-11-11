@@ -28,7 +28,6 @@ public final class ChaoState {
       HORNS = 5,
       TAIL = 6,
       WINGS = 7;
-  public static final int ALL_ANIMALS = (1 << 21) - 1;
   public static final String[] STATS = {"Swim", "Fly", "Run", "Power", "Stamina"};
   public static final String[] TYPES = {"Normal", "Swim", "Fly", "Run", "Power"};
   public static final String[] COLORS = {
@@ -89,6 +88,16 @@ public final class ChaoState {
     "bat",
     "bee", "ladybug", "scorpion", "deer", "elephant", "kangaroo", "koala", "lion", "mole", "swallow"
   };
+  /** The saved checklist uses the stable indices of every registered DNA species. */
+  public static final int ALL_ANIMALS = registeredAnimalMask();
+
+  private static int registeredAnimalMask() {
+    // The compact save format reserves the sign bit. Refuse a future expansion
+    // until its persistence is migrated rather than silently wrapping shifts.
+    if (ANIMALS.length < 1 || ANIMALS.length > 31)
+      throw new IllegalStateException("Animal DNA checklist requires a save-format migration");
+    return (int) ((1L << ANIMALS.length) - 1);
+  }
   private static final int[][] ANIMAL_STATS = {
     {36, 12, 8, -24},
     {40, -16, 0, 8},

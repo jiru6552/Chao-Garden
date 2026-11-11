@@ -1,5 +1,6 @@
 package com.chaogarden.item;
 
+import com.chaogarden.core.ChaoState;
 import java.util.List;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -105,9 +106,9 @@ public final class GardenGuideItem extends WrittenBookItem {
                                 + "loot, and End eggs in End chest loot.\n\nNew mod-addon Chao cannot be obtained yet. Existing "
                                 + "addon eggs keep their data and can be recovered, but do not hatch during this pause."),
                         page(
-                            "Animal Genes\n\nOffer one of the 21 SA2 DNA tubes, wait for it to finish, then check the "
+                            "Animal Genes\n\nOffer any of the " + ChaoState.ANIMALS.length + " animal DNA tubes, wait for it to finish, then check the "
                                 + "Analyzer's animal DNA list. Each species counts once for this life. Chaos evolution needs "
-                                + "all 21, not every visible part.\n\nAn ordinary tube adds one new compatible part. Repeat it "
+                                + "every registered species, not every visible part.\n\nAn ordinary tube adds one new compatible part. Repeat it "
                                 + "for a fuller set or mix species. Ears and horns from different animals conflict; Skeleton "
                                 + "Dog clears parts."),
                         page(
@@ -117,8 +118,8 @@ public final class GardenGuideItem extends WrittenBookItem {
                                 + "learned skills, equipment and friends survive; some parts remain. Personality and this "
                                 + "life's animal checklist reset."),
                         page(
-                            "Chaos Chao\n\nPrepare before first evolution in the third life or later:\n1. Finish all 21 "
-                                + "SA2 animal samples in that life.\n2. Keep happiness above 80.\n3. Aim for Normal by making "
+                            "Chaos Chao\n\nPrepare before first evolution in the third life or later:\n1. Finish all " + ChaoState.ANIMALS.length + " "
+                                + "animal DNA species in that life.\n2. Keep happiness above 80.\n3. Aim for Normal by making "
                                 + "Stamina points highest.\n\nCheck the Analyzer's DNA checklist for missing species. Neutral "
                                 + "becomes Light, Hero becomes Angel, and Dark becomes Devil. Chaos Chao are immortal and "
                                 + "cannot breed under default rules."),

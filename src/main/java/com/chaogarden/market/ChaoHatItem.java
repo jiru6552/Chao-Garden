@@ -24,15 +24,18 @@ public final class ChaoHatItem extends Item {
   }
   public static InteractionResult interact(ChaoEntity chao, Player player, InteractionHand hand) {
     ItemStack held=player.getItemInHand(hand), old=chao.getItemBySlot(EquipmentSlot.HEAD);
-    boolean remove=held.is(Items.SHEARS) && old.getItem() instanceof ChaoHatItem;
-    if (!(held.getItem() instanceof ChaoHatItem) && !remove) return InteractionResult.PASS;
-    if (!remove) return chao.offerItem(player,hand);
+    boolean remove=held.is(Items.SHEARS) && ChaoHats.isHat(old);
+    if (!ChaoHats.isHat(held) && !remove) return InteractionResult.PASS;
+    if (!remove) {
+      if(!chao.level().isClientSide&&held.getItem() instanceof LegacyMelonHatItem)
+        player.setItemInHand(hand,ChaoHats.canonicalCopy(held));
+      return chao.offerItem(player,hand);
+    }
     if (!chao.canCare(player)) return InteractionResult.FAIL;
     if (ActivityManager.isBusy(chao) || chao.isHandlingItem() || chao.isCocooned() || chao.isResting()) return InteractionResult.FAIL;
     if (chao.level().isClientSide) return InteractionResult.SUCCESS;
-    ItemStack returned=old.copy();
-    chao.setItemSlot(EquipmentSlot.HEAD,ItemStack.EMPTY);
-    if (!returned.isEmpty() && !player.addItem(returned)) player.drop(returned,false);
+    // Share wardrobe's detach-before-callback transaction and failed-drop retry.
+    if(!chao.removeWearable(player,EquipmentSlot.HEAD))return InteractionResult.FAIL;
     chao.playSound(net.minecraft.sounds.SoundEvents.ARMOR_EQUIP_LEATHER.value(),.4f,1.3f);
     return InteractionResult.CONSUME;
   }

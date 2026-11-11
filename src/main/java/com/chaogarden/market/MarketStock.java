@@ -38,7 +38,7 @@ public final class MarketStock {
   /** All four training drives are always available at a low, fixed price. */
   public static final List<String> DRIVES = List.of("swim_drive", "fly_drive", "run_drive", "power_drive");
   public static final List<String> HATS = List.of("apple_hat", "cardboard_box_hat", "pan_hat", "paper_bag_hat",
-      "empty_can_hat", "stump_hat", "flower_pot_hat", "bucket_hat", "watermelon_hat", "red_wool_beanie",
+      "empty_can_hat", "stump_hat", "flower_pot_hat", "bucket_hat", "red_wool_beanie",
       "blue_wool_beanie", "black_white_wool_beanie");
   public static final List<String> COLORED_EGGS = List.of("white_egg", "red_egg", "yellow_egg", "blue_egg",
       "sky_blue_egg", "pink_egg", "orange_egg", "brown_egg", "purple_egg", "green_egg", "grey_egg", "lime_egg", "black_egg", "aqua_egg", "cyan_egg");
@@ -57,8 +57,14 @@ public final class MarketStock {
       "aviators_accessory","headphones_accessory","pacifier_accessory","press_hat_accessory","blue_hoodie_accessory","pink_hoodie_accessory","cheese_bowtie_accessory");
   public static final List<String> GIFTS=List.of("clear_lens","blue_lens","green_lens","red_lens","yellow_lens","purple_lens","pink_lens","orange_lens","cyan_lens","hero_lens","dark_lens","chaos_lens",
       "cosmetic_wings","reverse_mirror","suspicious_potion","normal_hero_brush","swim_hero_brush","fly_hero_brush","run_hero_brush","power_hero_brush","omochao_parts_box");
-  public static final List<String> ORDINARY_GENES=TrainingSupplyRules.ORDINARY_GENES;
-  public static final List<String> MYTHICAL_GENES=TrainingSupplyRules.MYTHICAL_GENES;
+  /** Shop slots are separate from sample prices and chest rarity. Half-fish is
+   * special stock, but retains its former ordinary-sample price and quantity. */
+  public static final List<String> ORDINARY_GENES=TrainingSupplyRules.ORDINARY_GENES.stream()
+      .filter(id->!id.equals("half_fish_animal_gene")).toList();
+  public static final List<String> SPECIAL_GENES=java.util.stream.Stream.concat(
+      TrainingSupplyRules.MYTHICAL_GENES.stream(),java.util.stream.Stream.of("half_fish_animal_gene")).toList();
+  /** Historical public name for the market's special rotating slot. */
+  public static final List<String> MYTHICAL_GENES=SPECIAL_GENES;
   public static final int OFFER_COUNT=42;
   public static final int GEM_RESTOCK_DENOMINATOR=1000;
   private static final Map<String, Product> CATALOG;
@@ -66,8 +72,8 @@ public final class MarketStock {
     var p = new LinkedHashMap<String, Product>();
     add(p,"chao_key",400,Integer.MAX_VALUE); // Four emeralds; permanent survival access.
     for(String id:DRIVES)add(p,id,100,Integer.MAX_VALUE);
-    for(String id:ORDINARY_GENES)add(p,id,100,4);
-    for(String id:MYTHICAL_GENES)add(p,id,200,2);
+    for(String id:TrainingSupplyRules.ORDINARY_GENES)add(p,id,100,4);
+    for(String id:TrainingSupplyRules.MYTHICAL_GENES)add(p,id,200,2);
     add(p, "normal_egg", 200, Integer.MAX_VALUE); // Explicit exception requested; source has no purchase price.
     int[] eggs = {400,500,500,500,600,600,600,800,600,800,1000,1500,2000,600,800};
     int[] shiny = {4000,5000,5000,5000,6000,6000,6000,8000,8000,8000,10000,15000,20000,6000,8000};
@@ -84,7 +90,7 @@ public final class MarketStock {
     for (String fruit : FruitCatalog.ADVENTURE) add(p,fruit,800,4);
     int[] seeds = {200,300,300,300,400,400,500};
     for (int i=0;i<SEEDS.size();i++) add(p,SEEDS.get(i),seeds[i],8);
-    int[] hats = {2000,2000,2000,4000,4000,4000,6000,6000,6000,8000,10000,20000};
+    int[] hats = {2000,2000,2000,4000,4000,4000,6000,6000,8000,10000,20000};
     for (int i=0;i<HATS.size();i++) add(p,HATS.get(i),hats[i],2);
     // Additional toys have explicit Minecraft prices; the source unlocks these as rewards.
     int[] toys = {5000,15000,30000,60000,100000, 15000,20000,25000,3000,4000,5000,10000,10000,3000,12000,8000,8000,2000,4000,10000,3000};
@@ -124,7 +130,7 @@ public final class MarketStock {
     ids.addAll(GARDEN_TOOLS);
     ids.add("chao_key");
     ids.addAll(sample(ORDINARY_GENES,3,random));
-    ids.addAll(sample(MYTHICAL_GENES,1,random));
+    ids.addAll(sample(SPECIAL_GENES,1,random));
     ids.addAll(sample(SHINY_EGGS,1,random));
     if(random.nextInt(GEM_RESTOCK_DENOMINATOR)==0)
       ids.addAll(sample(JEWEL_EGGS.stream().filter(x->!moonOnlyOnMoon || !x.equals("moon_jewel_egg")).toList(),1,random));
@@ -147,7 +153,7 @@ public final class MarketStock {
         ||(moonOnlyOnMoon && ids.contains("moon_jewel_egg")))return false;
     return count(ids,SHINY_EGGS)==1 && count(ids,JEWEL_EGGS)==ids.size()-OFFER_COUNT
         &&count(ids,SHAPED_FRUITS)==2 &&count(ids,OTHER_FRUITS)==1 &&count(ids,SEEDS)==3
-        &&count(ids,ORDINARY_GENES)==3 && count(ids,MYTHICAL_GENES)==1
+        &&count(ids,ORDINARY_GENES)==3 && count(ids,SPECIAL_GENES)==1
         &&count(ids,HATS)==2 &&count(ids,TOYS)==2 &&count(ids,FruitCatalog.ADVENTURE)==1
         &&count(ids,FruitCatalog.CWE)==1 &&count(ids,ACCESSORIES)==1 &&count(ids,GIFTS)==1;
   }

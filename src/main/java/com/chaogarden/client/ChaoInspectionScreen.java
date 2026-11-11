@@ -32,14 +32,15 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   private static final String[] THEMES = {"status", "genetics", "animals","status","status"};
   private final ChaoEntity chao;
   private int page;
-  private int liveTicks, mindTab, careTab, inventoryPage, animalTab, geneTab;
+  private int liveTicks, mindTab, careTab, inventoryPage, animalTab, geneTab, dnaPage;
+  private static final int DNA_PER_PAGE=21;
   private boolean missingOnly;
   private final long doctorVisit;
   private static final LinkedHashMap<UUID,Long> VISITS=new LinkedHashMap<>();
   private final List<AdventureButton> mindButtons=new ArrayList<>(),careButtons=new ArrayList<>(),geneButtons=new ArrayList<>();
   private final List<AdventureButton> upgradeButtons=new ArrayList<>(),removeButtons=new ArrayList<>(),dyeButtons=new ArrayList<>();
   private final List<AdventureItemButton> inventoryButtons=new ArrayList<>();
-  private AdventureButton cureButton,previousItems,nextItems,medalButton,claimButton,animalButton,dnaFilterButton,chaosDnaButton;
+  private AdventureButton cureButton,previousItems,nextItems,medalButton,claimButton,animalButton,dnaFilterButton,chaosDnaButton,previousDna,nextDna;
   private boolean clinicNearby;
   private final Map<String,String> observedAncestorNames=new HashMap<>();
 
@@ -49,7 +50,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     doctorVisit=VISITS.merge(chao.getUUID(),1L,Long::sum)-1;
     if(VISITS.size()>256)VISITS.remove(VISITS.keySet().iterator().next());
   }
-  public void showAnimals(int value) {page=2;animalTab=Math.floorMod(value,2);}
+  public void showAnimals(int value) {page=2;animalTab=Math.floorMod(value,2);dnaPage=0;}
   public void showGenes(int value) {page=1;geneTab=Math.floorMod(value,3);}
   public void showMind(int value) {page=3;mindTab=Math.floorMod(value,4);}
   public void showCare(int value) {page=4;careTab=Math.floorMod(value,3);}
@@ -85,8 +86,10 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     String[] geneNames={"APPEARANCE","SKILL GENES","GROWTH"};
     for(int i=0;i<3;i++){final int tab=i;var button=new AdventureButton(218+i*116,84,110,18,geneNames[i],0xffffd563,()->geneTab==tab,()->geneTab=tab);geneButtons.add(button);addRenderableWidget(button);}
     animalButton=addRenderableWidget(new AdventureButton(465,81,100,20,"BODY PARTS",0xffffafd6,()->false,()->animalTab=0));
-    dnaFilterButton=addRenderableWidget(new AdventureButton(447,104,116,18,"MISSING ONLY",0xffffafd6,()->missingOnly,()->missingOnly=!missingOnly));
-    chaosDnaButton=addRenderableWidget(new AdventureButton(307,273,88,17,"ANIMAL DNA",0xffffafd6,()->false,()->{animalTab=1;missingOnly=false;}));
+    dnaFilterButton=addRenderableWidget(new AdventureButton(447,104,116,18,"MISSING ONLY",0xffffafd6,()->missingOnly,()->{missingOnly=!missingOnly;dnaPage=0;}));
+    chaosDnaButton=addRenderableWidget(new AdventureButton(307,273,88,17,"ANIMAL DNA",0xffffafd6,()->false,()->{animalTab=1;missingOnly=false;dnaPage=0;}));
+    previousDna=addRenderableWidget(new AdventureButton(220,263,54,17,"PREV",0xffffafd6,()->false,()->dnaPage=Math.max(0,dnaPage-1)));
+    nextDna=addRenderableWidget(new AdventureButton(509,263,54,17,"NEXT",0xffffafd6,()->false,()->dnaPage++));
     cureButton=addRenderableWidget(new AdventureButton(220,195,166,20,"USE MEDICINE",0xffa4e3b8,()->false,()->sendCare("cure","")));
     claimButton=addRenderableWidget(new AdventureButton(405,166,158,18,"CLAIM INSTRUMENTS",0xffffd563,()->false,()->sendCare("claim","")));
     for(int i=0;i<5;i++) {
@@ -387,14 +390,15 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     int received=Integer.bitCount(s.animalMask&ChaoState.ALL_ANIMALS);
     if(animalTab==1){
       chartTitle(g,"CHAOS DNA CHECKLIST","");
-      text(g,received+"/21 received · "+(21-received)+" missing",220,109,.8f,INK);
-      var ids=new ArrayList<Integer>();for(int i=0;i<21;i++)if(!missingOnly||(s.animalMask&(1<<i))==0)ids.add(i);
-      for(int n=0;n<ids.size();n++){int i=ids.get(n),x=218+(n/7)*117,y=126+(n%7)*21;boolean done=(s.animalMask&(1<<i))!=0;
-        round(g,x,y,113,19,4,done?0xffe0f0e5:0xfff6e9ef);g.renderItem(new ItemStack(ChaoGarden.item(ChaoGarden.ANIMALS[i]+"_animal_gene")),x+2,y+1);
+      text(g,received+"/"+ChaoState.ANIMALS.length+" received · "+(ChaoState.ANIMALS.length-received)+" missing",220,109,.8f,INK);
+      var ids=visibleDnaIds();
+      for(int n=0;n<ids.size();n++){int i=ids.get(n),x=218+(n/7)*117,y=126+(n%7)*19;boolean done=(s.animalMask&(1<<i))!=0;
+        round(g,x,y,113,18,4,done?0xffe0f0e5:0xfff6e9ef);g.renderItem(new ItemStack(ChaoGarden.item(ChaoGarden.ANIMALS[i]+"_animal_gene")),x+2,y+1);
         fitText(g,title(ChaoGarden.ANIMALS[i]),x+22,y+3,87,.8f,INK);text(g,done?"RECEIVED":"NEEDED",x+22,y+12,.48f,done?0xff338957:0xffa24f6c);}
-      if(ids.isEmpty())text(g,"All 21 animal DNA gifts have been received.",220,147,.8f,0xff338957);
-      text(g,"Counts accepted DNA, even after parts are replaced.",220,282,.8f,MUTED);
-      text(g,"Bonus DNA does not replace these 21 original animals.",220,296,.8f,MUTED);return;
+      if(ids.isEmpty())text(g,"All "+ChaoState.ANIMALS.length+" animal DNA gifts have been received.",220,147,.8f,0xff338957);
+      text(g,"PAGE "+(dnaPage+1)+" / "+dnaPageCount(),352,268,.7f,MUTED);
+      text(g,"Every animal DNA type is required in this life.",220,285,.8f,MUTED);
+      text(g,"Counts accepted DNA, even after parts are replaced.",220,298,.8f,MUTED);return;
     }
     chartTitle(g,"CURRENT BODY PARTS","");
     outline(g);
@@ -410,7 +414,18 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     condition(g,s.reincarnations>=2,"Third life",220,273,82);
     condition(g,s.happiness>80,"Happy >80",400,273,81);
     condition(g,s.prospectivePrimaryType()==ChaoState.NORMAL,"Normal",486,273,77);
-    text(g,s.adult?"Requirements are checked at child-to-adult evolution.":received+"/21 DNA · click Animal DNA for what is missing",220,299,.8f,MUTED);
+    text(g,s.adult?"Requirements are checked at child-to-adult evolution.":received+"/"+ChaoState.ANIMALS.length+" DNA · click Animal DNA for what is missing",220,299,.8f,MUTED);
+  }
+  private List<Integer> checklistDnaIds() {
+    var ids=new ArrayList<Integer>();var s=chao.state();
+    for(int i=0;i<ChaoState.ANIMALS.length;i++)if(!missingOnly||(s.animalMask&(1<<i))==0)ids.add(i);
+    return ids;
+  }
+  int dnaPageCount(){return Math.max(1,(checklistDnaIds().size()+DNA_PER_PAGE-1)/DNA_PER_PAGE);}
+  int dnaPageIndex(){return dnaPage;}
+  List<Integer> visibleDnaIds(){
+    var ids=checklistDnaIds();dnaPage=Math.max(0,Math.min(dnaPage,Math.max(0,(ids.size()-1)/DNA_PER_PAGE)));
+    int start=dnaPage*DNA_PER_PAGE;return ids.subList(start,Math.min(ids.size(),start+DNA_PER_PAGE));
   }
   public static String partName(ChaoState s,int slot){
     if("omochao".equals(s.character))return "Mechanical";
@@ -456,7 +471,13 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     int index=choices.indexOf(chao.state().trait("medal.selected"));sendCare("medal",choices.get((index+1)%choices.size()));
   }
   private void updateCareButtons() {
-    if(animalButton!=null){animalButton.visible=page==2&&animalTab==1;dnaFilterButton.visible=page==2&&animalTab==1;dnaFilterButton.setMessage(Component.literal(missingOnly?"SHOW ALL":"MISSING ONLY"));chaosDnaButton.visible=page==2&&animalTab==0&&!chao.state().immortal&&!"omochao".equals(chao.state().character);}
+    if(animalButton!=null){
+      boolean checklist=page==2&&animalTab==1;
+      animalButton.visible=dnaFilterButton.visible=previousDna.visible=nextDna.visible=checklist;
+      dnaFilterButton.setMessage(Component.literal(missingOnly?"SHOW ALL":"MISSING ONLY"));
+      visibleDnaIds();previousDna.active=dnaPage>0;nextDna.active=dnaPage+1<dnaPageCount();
+      chaosDnaButton.visible=page==2&&animalTab==0&&!chao.state().immortal&&!"omochao".equals(chao.state().character);
+    }
     for(var b:geneButtons)b.visible=page==1;
     for(var b:mindButtons)b.visible=page==3;
     for(var b:careButtons)b.visible=page==4;

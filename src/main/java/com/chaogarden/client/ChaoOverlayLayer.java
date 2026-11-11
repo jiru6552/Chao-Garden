@@ -60,6 +60,12 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
     return slot==ChaoState.EARS||slot==ChaoState.FOREHEAD||slot==ChaoState.HORNS;
   }
 
+  /** Closed vanilla masks cover added head surfaces without changing saved DNA.
+   * Existing open/SA2 hats keep their established animal-part presentation. */
+  static boolean animalPartHiddenByHat(String hat,int slot) {
+    return VanillaHatRenderer050.supports(hat)&&(headSlot(slot)||slot==ChaoState.FACE);
+  }
+
   /** Fit only the added root in skull space; the semantic skull keeps its sampled pose. */
   static void fitHead(Rig rig,String name,ChaoMeshAsset.Pose pose,ChaoAccessoryFit.Fit fit) {
     float px=rig.geometry.pivot(name,0),py=rig.geometry.pivot(name,1),pz=rig.geometry.pivot(name,2);
@@ -95,6 +101,7 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
     var bodyFit=ChaoAccessoryFit.legacyBody(model.accessoryBounds("body"),model.officialGeometryKey());
     var markerFit=ChaoAccessoryFit.legacyMarker(headBounds,model.officialGeometryKey());
     boolean covered=ChaoAccessoryFit.headCovered(entity);
+    String hat=entity.getChaoHat();
     float headTop=headBounds==null?-6:headBounds[1];
     Rig rig = rig(model.officialGeometryKey());
     rig.poses.values().forEach(ChaoMeshAsset.Pose::reset);
@@ -114,7 +121,8 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
       var tag=rig.animals.get(name);
       if (tag!=null) {
         int slot = tag.slot, animal = tag.id;
-        pose.visible = hasGene(state, slot) && state.animalParts[slot] == animal;
+        pose.visible = hasGene(state, slot) && state.animalParts[slot] == animal
+            && !animalPartHiddenByHat(hat,slot);
         if(pose.visible&&headSlot(slot)) {
           fitHead(rig,name,pose,headFit);
           if(!state.adult&&(slot==ChaoState.EARS||slot==ChaoState.FOREHEAD||slot==ChaoState.HORNS))
@@ -165,7 +173,8 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
       }
       for(var entry:parts.animals.entrySet()) {
         int slot=entry.getValue().slot,animal=entry.getValue().id;
-        var pose=parts.poses.get(entry.getKey());pose.visible=hasGene(state,slot)&&state.animalParts[slot]==animal;
+        var pose=parts.poses.get(entry.getKey());pose.visible=hasGene(state,slot)&&state.animalParts[slot]==animal
+            &&!animalPartHiddenByHat(hat,slot);
         if(pose.visible&&headSlot(slot)) {
           fitHead(parts,entry.getKey(),pose,headFit);
           if(!state.adult&&(slot==ChaoState.EARS||slot==ChaoState.HORNS||slot==ChaoState.FOREHEAD))

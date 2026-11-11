@@ -5,7 +5,7 @@ import java.util.function.IntUnaryOperator;
 
 /** Pure acquisition policy. Rates apply once per qualifying chest generation. */
 public final class EggDistributionRules {
-  public static final double BASE_CHANCE=.0025, SHINY_CHANCE=.001, GEM_CHANCE=.0002, DIMENSION_CHANCE=.01;
+  public static final double BASE_CHANCE=.0025, SHINY_CHANCE=.001, GEM_CHANCE=.03, DIMENSION_CHANCE=.01;
   public static final List<String> COLORS=List.of("normal","white","red","yellow","blue","aqua",
       "pink","orange","purple","brown","green","grey","lime","black","sky_blue","cyan");
   public static final List<String> GEMS=List.of("silver","gold","ruby","sapphire","emerald","amethyst",

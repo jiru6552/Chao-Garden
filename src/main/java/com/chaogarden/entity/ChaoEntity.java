@@ -175,8 +175,7 @@ public class ChaoEntity extends Animal {
 
   /** Vanilla head equipment is synchronized and survives held/companion snapshots. */
   public String getChaoHat() {
-    var item = getItemBySlot(EquipmentSlot.HEAD).getItem();
-    return item instanceof com.chaogarden.market.ChaoHatItem hat ? hat.hat : "";
+    return com.chaogarden.market.ChaoHats.kind(getItemBySlot(EquipmentSlot.HEAD));
   }
 
   public boolean isResting() {
@@ -968,7 +967,7 @@ public class ChaoEntity extends Animal {
 
   private void beginHeldItem(ItemStack stack,UUID giver) {
     clearBehavior();
-    setItemSlot(EquipmentSlot.MAINHAND,stack.copyWithCount(1));
+    setItemSlot(EquipmentSlot.MAINHAND,com.chaogarden.market.ChaoHats.canonicalCopy(stack).copyWithCount(1));
     setDropChance(EquipmentSlot.MAINHAND,0); // Our guaranteed drop path preserves all components.
     offeredBy=giver;wardrobeChoiceMade=false;wardrobeChoiceAccepted=false;
     entityData.set(AFFECTION,0);
@@ -977,7 +976,7 @@ public class ChaoEntity extends Animal {
         || stack.getItem() instanceof com.chaogarden.fruit.FruitSeedItem
         || stack.getItem() instanceof CareItem
         || isBirthdayServing(stack)
-        || stack.getItem() instanceof com.chaogarden.market.ChaoHatItem
+        || com.chaogarden.market.ChaoHats.isHat(stack)
         || stack.getItem() instanceof com.chaogarden.care.ChaoMedicineItem
         || stack.getItem() instanceof com.chaogarden.cwe.CweGiftItem;
     itemAction(familiar ? ItemAction.THINK : ItemAction.INSPECT,
@@ -1068,6 +1067,8 @@ public class ChaoEntity extends Animal {
   /** Detach the authoritative slot before inventory or world callbacks can re-enter care. */
   private boolean returnWornStack(EquipmentSlot slot, Player giver) {
     ItemStack old = getItemBySlot(slot);
+    if(old.getItem() instanceof com.chaogarden.market.LegacyMelonHatItem)
+      old=com.chaogarden.market.ChaoHats.canonicalCopy(old);
     if (old.isEmpty()) return true;
     setItemSlot(slot,ItemStack.EMPTY);
     boolean committed = false;
@@ -1399,6 +1400,7 @@ public class ChaoEntity extends Animal {
   @Override
   public void readAdditionalSaveData(CompoundTag t) {
     super.readAdditionalSaveData(t);
+    com.chaogarden.market.ChaoHats.migrateEquipment(this);
     pendingDeathItems = t.getBoolean("PendingDeathItems");
     if (t.contains("Chao")) setState(ChaoState.decode(t.getString("Chao")));
     if(t.contains("OriginEggCoat"))setOriginEggCoat(ChaoState.decode(t.getString("OriginEggCoat")));

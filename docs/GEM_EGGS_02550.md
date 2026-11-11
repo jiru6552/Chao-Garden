@@ -1,0 +1,21 @@
+# Gem chest eggs — 0.25.50
+
+The shipped `chao_garden:chest_eggs` global loot modifier now uses `gem_chance: 0.03`; its codec default is also 0.03. This replaces the previous 0.0002 (0.02%) chance. There is still one gem probability draw per qualifying loot generation, independent of the existing base, shiny and dimension egg draws. A successful gem draw adds one egg.
+
+The qualifying tables are unchanged: vanilla ancient-city, desert-pyramid, stronghold and bastion chest tables, and end-city treasure. The existing configured space-mod/moon exception, exact dimension matching, moon exclusivity and uniform gem selection are unchanged. Other egg category chances and Black Market egg odds are unchanged. No extra loot event handler, second global modifier registration or Lootr-specific roll is added.
+
+Generated vanilla chests retain their saved contents. Existing unopened loot-table chests use the new chance when they first generate; opening an already generated chest does not reroll it. Custom data packs can still override the loot-modifier JSON. The default update does not force its rate over another pack's explicit configuration.
+
+## Lootr behavior
+
+The actual NeoForge Minecraft 1.21.1 Lootr release inspected for this update is **1.11.38.127** ([Modrinth release](https://modrinth.com/mod/lootr/version/SPOrIzX8)), SHA-256 `5c74de4709d1c13b25880fdd241a89d5d9f331346d20edc76f80ccd4d99dc66c`. It is an optional test dependency and is not bundled in Chao Garden.
+
+Lootr's `DefaultLootFiller.unpackLootTable` builds a chest loot context and calls vanilla `LootTable.fill`. Its `LootrSavedData` creates and fills one inventory for each resolved player/team key; `ILootrSavedData.getOrCreateInventory` returns the saved inventory on later opens. These paths were checked in the release JAR's bytecode and compared with [the available source](https://github.com/LootrMinecraft/Lootr/tree/fef3d548482ce08ba43fa9acaeaac71bc842e9ed). The source snapshot is the later 1.11.38.128 development version; the binary integration target remains the exact 127 release above.
+
+Consequently, Lootr applies the 3% opportunity **once per newly generated player inventory**, or once per shared inventory when a supported team integration shares its key. It is not a global 3% result shared by every independent player's first opening of the same block. Cached inventory opens, including after save/reload, have no new generation and no new opportunity. Lootr's own configured refresh/reset intentionally generates a new inventory and therefore permits a new opportunity; Chao Garden does not intercept or change that policy. The retained source loot-table ID and chest context provide qualification without adding a second roll to compensate for Lootr.
+
+## Verification coverage
+
+`GemEggGameTests050` in namespace `chao_eggs50` covers the loaded modifier and codec default, exact probability boundaries immediately below and at 0.03, random-draw counts, nonqualifying tables, 1,024 actual chest generations with fixed seeds, and cached vanilla reopening. When real Lootr is loaded, that synchronous vanilla fixture temporarily disables Lootr conversion and restores the exact previous setting in `finally`: otherwise Lootr deliberately cancels vanilla generation to queue a replacement. The fixture still requires actual generation, a cleared source loot-table key, at most one gem and byte-identical cached contents on reopening. A separate method uses the enabled real Lootr block, real default filler and real saved-data serialization for two independent server players, forty cached inventory opens and reload. The old `EggDistributionGameTests` continues to cover arbitrary chest IDs, physical generic chest/minecart provenance, nonchests and independent egg categories. The pure `EggDistributionRulesTest` retains exhaustive category selection and existing site boundaries.
+
+The release coordinator records actual executions and results in the main 0.25.50 report. This document describes coverage and mechanics; it does not itself claim that a test was run. Physical multiplayer clients, every Lootr version, team-integration mods, third-party loot modifiers and server-specific refresh/data-pack configurations still require their own compatibility checks.

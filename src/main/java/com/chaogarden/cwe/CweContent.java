@@ -19,6 +19,9 @@ import net.neoforged.neoforge.event.tick.LevelTickEvent;
 @EventBusSubscriber(modid=ChaoGarden.MODID)
 public final class CweContent {
   private static boolean bootstrapped;
+  // This separate character-form route retains its original SA2 requirement.
+  // Only biological Chaos evolution expands to every registered DNA species.
+  private static final int CHARACTER_ANIMAL_MASK = (1 << 21) - 1;
   public static final int ATTRACTION_TICKS=600;
   private static final Map<String,int[]> POOLS=Map.of(
       "orange_fruit",new int[]{21,40,22,40,23,20},
@@ -69,7 +72,7 @@ public final class CweContent {
   /** Called at the real first-evolution transition, never inferred again during load. */
   public static void onFirstEvolution(ChaoEntity chao){
     var s=chao.state();s.retireRemovedCharacters();if(!"normal".equals(s.character))return;
-    if(s.reincarnations>=2 && (s.animalMask&ChaoState.ALL_ANIMALS)==ChaoState.ALL_ANIMALS && s.happiness>=80){
+    if(s.reincarnations>=2 && (s.animalMask&CHARACTER_ANIMAL_MASK)==CHARACTER_ANIMAL_MASK && s.happiness>=80){
       s.character=switch(s.primaryType){case ChaoState.FLY_TYPE->"tails";case ChaoState.RUN_TYPE->"amy";case ChaoState.POWER_TYPE->"knuckles";default->"normal";};
       if(!s.character.equals("normal")){s.immortal=true;s.clearParts();}
     }

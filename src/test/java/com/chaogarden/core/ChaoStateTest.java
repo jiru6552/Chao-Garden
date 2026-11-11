@@ -36,6 +36,7 @@ public final class ChaoStateTest {
     checks += LifecycleRules022Test.run();
     checks += ChaoVariantAvailabilityTest.run();
     checks += AnimalGeneStateTest.run();
+    checks += ChaosDnaRequirements050Test.run();
     System.out.println("ChaoState: " + checks + " checks passed");
   }
 
@@ -404,14 +405,14 @@ public final class ChaoStateTest {
     ChaoState s = new ChaoState();
     s.reincarnations = 2;
     s.happiness = 80;
-    for (int i = 0; i < 21; i++) s.giveAnimal(i);
+    for (int i = 0; i < ChaoState.ANIMALS.length; i++) s.giveAnimal(i);
     s.train(ChaoState.STAMINA,10000,new Random(17));
     s.swimFly = s.runPower = 0;
     s.ageTicks = 19;
     s.align = 1;
     check(
         s.tick(20, 100, new Random(1)) == ChaoState.Transition.EVOLVED && s.immortal,
-        "All21 animals and two reincarnations unlock Chaos");
+        "Every registered DNA species and two reincarnations unlock Chaos");
     check(
         s.typeName().equals("Angel") && s.animalPartsMask == 0 && !s.canBreed(),
         "Angel phenotype and immortality restrictions");

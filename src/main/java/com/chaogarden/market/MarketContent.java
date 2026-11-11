@@ -46,6 +46,7 @@ public final class MarketContent {
       ChaoGarden.add(toy, () -> new ChaoToyItem(toy, ToyContent.block(toy)));
     ChaoGarden.add("chao_watering_can",com.chaogarden.fruit.WateringCanItem::new);
     ChaoGarden.add("eggshell_hat", () -> new ChaoHatItem("eggshell_hat"));
+    ChaoGarden.add("watermelon_hat",LegacyMelonHatItem::new);
     for (String hat : MarketStock.HATS) ChaoGarden.add(hat, () -> new ChaoHatItem(hat));
     ChaoGarden.add("black_market_trader_spawn_egg", () -> new DeferredSpawnEggItem(
         TRADER, 0x526a58, 0xdec070, new Item.Properties()));

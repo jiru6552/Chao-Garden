@@ -96,7 +96,7 @@ public final class LifecycleRules022Test {
       require(s.tick(20,1000,new Random(1))==ChaoState.Transition.EVOLVED,"Eligible child enters actual first evolution");
       require(s.immortal==(happiness>80),"SA2B Chaos requires strictly over80 happiness, across all alignments");
     }
-    for(int missing=0;missing<21;missing++){
+    for(int missing=0;missing<ChaoState.ANIMALS.length;missing++){
       var s=life();s.happiness=100;s.reincarnations=2;s.animalMask=ChaoState.ALL_ANIMALS&~(1<<missing);s.points[4]=100;s.ageTicks=19;s.tick(20,1000,new Random(1));
       require(!s.immortal,"Every current-life animal independently required for Chaos");
     }
@@ -115,9 +115,9 @@ public final class LifecycleRules022Test {
       require(s.tick(20,20,new Random(generation))==ChaoState.Transition.REINCARNATED&&s.reincarnations==generation+1,"Actual positive-care lifespan creates the next biological life");
       for(int i=0;i<200;i++)s.tick(20,20,new Random(i));
     }
-    for(int animal=0;animal<21;animal++)s.giveAnimal(animal);
+    for(int animal=0;animal<ChaoState.ANIMALS.length;animal++)s.giveAnimal(animal);
     staminaMeals(s);s.happiness=81;s.align=1;s.ageTicks=19;
-    require(s.animalMask==ChaoState.ALL_ANIMALS&&Arrays.stream(Arrays.copyOf(s.points,4)).allMatch(v->v<s.points[ChaoState.STAMINA]),"Current-life21genes and fruit-trained Stamina satisfy the actual Minecraft Normal rule");
+    require(s.animalMask==ChaoState.ALL_ANIMALS&&Arrays.stream(Arrays.copyOf(s.points,4)).allMatch(v->v<s.points[ChaoState.STAMINA]),"Every current-life registered gene and fruit-trained Stamina satisfy the actual Minecraft Normal rule");
     require(s.tick(20,20,new Random(22))==ChaoState.Transition.EVOLVED&&s.immortal&&s.primaryType==ChaoState.NORMAL&&s.typeName().equals("Angel"),"Third natural life at81care can actually attain Chaos");
     require(s.grades[ChaoState.STAMINA]==5&&s.animalPartsMask==0,"Third Normal evolution reaches S Stamina and canonical Chaos anatomy");
   }

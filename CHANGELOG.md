@@ -1,3 +1,11 @@
+## 0.25.50 — Vanilla hats, complete DNA and gem chest eggs
+
+- Use vanilla carved pumpkins, melon blocks and skeleton skulls as Chao hats, with measured head fitting and saved-stack preservation. Retire the custom watermelon hat from market/creative inventory while retaining safe conversion of old saved stacks.
+- Require all 31 registered current-life DNA species for Chaos eligibility; expand the Analyzer checklist and journal guidance, preserving existing DNA and Chaos Chao.
+- Rotate Half-fish alongside Dragon, Unicorn and Phoenix without ordinary-pool duplication; preserve prices, quantities and chest DNA weights, and migrate old trader stock.
+- Raise the existing qualifying gem-egg chest roll from 0.02% to 3%, preserving selection and Black Market odds. Verify actual Lootr inventory generation and cache behavior.
+- See docs/ITEM_DNA_EGGS_02550.md for actual verification and compatibility limits.
+
 ## 0.25.49 — Garden toys and retirement
 
 - Retire the coffin from active toys, rewards, crafting, market and creative inventory. Preserve saved IDs as inert compatibility markers and non-placeable tokens, with no inventory or chunk scans.

@@ -144,6 +144,12 @@ neoForge {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
+            systemProperty 'chao_garden.hat050Study', project.findProperty('hat050Study') ?: 'false'
+            systemProperty 'chao_garden.hat050Start', project.findProperty('hat050Start') ?: '0'
+            systemProperty 'chao_garden.hat050Limit', project.findProperty('hat050Limit') ?: '40'
+            if (project.findProperty('hat050Study') == 'true') gameDirectory = project.file(project.findProperty('hat050Dir') ?: 'run-hats050')
+            systemProperty 'chao_garden.dna050Study', project.findProperty('dna050Study') ?: 'false'
+            if (project.findProperty('dna050Study') == 'true') gameDirectory = project.file(project.findProperty('dna050Dir') ?: 'run-dna050')
             systemProperty 'chao_garden.lobbyFixStudy', project.findProperty('lobbyFixStudy') ?: ''
             systemProperty 'chao_garden.lobbyFixViews', project.findProperty('lobbyFixViews') ?: ''
             systemProperty 'chao_garden.lobbyFixSave', project.findProperty('lobbyFixSave') ?: ''
@@ -358,6 +364,10 @@ dependencies {
         localRuntime fileTree(dir: project.findProperty('chaoAccessoriesDir') ?: 'dev-mods/accessories',
                 include: ['accessories-neoforge-*.jar', 'owo-lib-neoforge-*.jar'])
     }
+    if (project.findProperty('chaoLootrTest')?.toString()?.toBoolean()) {
+        localRuntime fileTree(dir: project.findProperty('chaoLootrDir') ?: 'dev-mods/lootr',
+                include: ['lootr-neoforge-*.jar'])
+    }
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -511,6 +521,11 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_toys49/**'
     exclude 'data/chao_floor49/**'
     exclude 'data/chao_retired49/**'
+    exclude 'data/chao_hats50/**'
+    exclude 'data/chao_dna50/**'
+    exclude 'data/chao_market50/**'
+    exclude 'data/chao_eggs50/**'
+    exclude 'data/chao_regress50/**'
     exclude 'data/chao_focused46/**'
     exclude 'data/chao_equipped46/**'
     exclude 'data/chao_equipped46_save/**'

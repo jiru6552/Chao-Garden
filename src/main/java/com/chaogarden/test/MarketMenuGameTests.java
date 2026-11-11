@@ -79,7 +79,7 @@ public final class MarketMenuGameTests {
       var offer=trader.getOffers().get(index);String id=net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(offer.getResult().getItem()).getPath();
       if(!MarketStock.ORDINARY_GENES.contains(id)&&!MarketStock.MYTHICAL_GENES.contains(id))continue;
       tested++;trader.setTradingPlayer(player);var menu=new MerchantMenu(24+tested,player.getInventory(),trader);
-      int limit=MarketStock.MYTHICAL_GENES.contains(id)?2:4;
+      int limit=com.chaogarden.genes.TrainingSupplyRules.mythicalGene(id)?2:4;
       for(int purchase=0;purchase<limit;purchase++){
         player.getInventory().clearContent();player.getInventory().setItem(9,offer.getCostA().copy());
         menu.setSelectionHint(index);menu.tryMoveItems(index);
@@ -93,7 +93,7 @@ public final class MarketMenuGameTests {
       menu.removed(player);
       h.assertTrue(player.getInventory().countItem(Items.EMERALD)==offer.getCostA().getCount(),"Failed sold-out DNA purchase consumed its currency");
     }
-    h.assertTrue(tested==4,"Expected three ordinary and one mythical DNA offer");
+    h.assertTrue(tested==4,"Expected three ordinary and one special DNA offer");
     var saved=new net.minecraft.nbt.CompoundTag();trader.saveWithoutId(saved);var loaded=MarketContent.TRADER.get().create(h.getLevel());loaded.load(saved);
     for(var offer:loaded.getOffers())if(offer.getResult().getItem() instanceof com.chaogarden.genes.GeneItem)
       h.assertTrue(offer.isOutOfStock(),"Reload reset finite DNA stock");
