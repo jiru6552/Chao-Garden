@@ -1,0 +1,156 @@
+CHAO GARDEN 0.10.0
+Minecraft Java 1.21.1 | NeoForge 21.1.219+ (21.1 series) | Java 21
+
+INSTALL
+Replace the older Chao Garden jar with chao_garden-0.10.0.jar in mods/.
+Install the same jar on the server and every client. The base mod works alone.
+Optional adult equipment companions require compatible NeoForge Accessories
+and its oωo dependency on client and server. Third-party mods are not bundled.
+The optional runtime tested versions and results are in source/TESTING.md.
+
+FIRST CHAO
+Craft a Normal Chao Egg: egg + emerald + wheat seeds + oak sapling (shapeless).
+Place it on a block; by default it hatches after five active minutes.
+Craft the Care Guide with a book + wheat seeds. Read it for recipes and pages
+about the new systems. Use an Analyzer to inspect care, genes and training.
+The player placing or claiming a Chao becomes its keeper.
+
+CONTROLS
+- Empty-hand right-click: pet or claim an unowned Chao.
+- Sneak + empty-hand right-click: pick up your Chao into a filled carrier.
+  No empty carrier is needed first. The selected hand receives the item.
+- Use a filled carrier on a block: release into clear space.
+- Select a filled carrier in either hand: see its animated saved Chao.
+- Use an empty carrier on your Chao: the older capture method still works.
+- Right-click with fruit, a drive or a DNA sample: give the care item.
+- Right-click with an Analyzer: open the care journal.
+- Right-click with a toy: play; reusable toys have a 30-second Chao cooldown.
+- Garden Bell on a Garden Block, then your Chao: assign that Chao.
+- Sneak-use Garden Bell on an assigned Chao: unassign and resume following.
+  On an unassigned Chao, sneak-use the bell toggles stay/follow.
+Ownership is enforced. Activity-controlled Chao cannot be picked up.
+
+DRIVES AND ANIMAL GENES
+Swim, Fly, Run and Power Drives give 24 progress toward the next level in
+their ability. Conventional chest loot tables (chests/ in any namespace)
+have an extra 40% chance of 1-2 drives and 12% chance of one animal gene.
+Earlier regional supply pools remain additive; opened chests are not refilled.
+There are 21 colored DNA-vial samples. Hover for the animal, exact training
+changes, appearance slots and special effects. Use a sample on your Chao.
+Parts can mix across slots and animate with the body; the main head remains
+broad and block-built. Skeleton Dog clears acquired parts. Half Fish changes
+the marker to a green flame; Bat hides feet, wings and tail. Chaos Chao keep
+training/checklist benefits without animal parts or ghost changes.
+Existing animal-item IDs remain working aliases. No new animal mobs appear.
+
+FRUIT ORCHARDS
+Twelve tree fruits: Garden, Strong, Tasty, Hero, Dark, Heart, Chao, Smart,
+Stamina, Round, Square and Triangle. Mushroom and Mint Candy are not trees.
+Craft one fruit into one matching seed, or buy seeds from farmers and the
+Black Market. Plant on dirt/farmland in a bright area. Leave four blocks of
+height and a clear 3x3 canopy area. Bone meal advances seedlings and pods.
+Each mature tree has three trunk blocks, a branch canopy and four hanging
+pods. Pods have four stages. Right-click a ripe pod for one fruit; it regrows.
+A supported canopy can replace missing pods. Obstructed trees do not grow
+through existing blocks. Fruit retains its normal Chao care effects.
+
+BLACK MARKET
+A Chao-like wandering trader takes emeralds. A stock includes four seeds,
+four drives, six genes, a shiny egg, a jewel egg, and ball/rattle/maracas.
+Seeds cost 4-8 emeralds; drives 3; ordinary genes 8, exotic genes 16;
+shiny eggs 32, jewel eggs 48; ball 8, rattle 6, maracas 10.
+Stock refreshes after 3-7 minutes while trading is closed. Natural visits
+are attempted at most every 20 minutes of world play with a 60% visit roll;
+trader- and mob-spawning rules apply. A visit lasts up to 20 minutes.
+Seeds are sold instead of fruit. Toys are reusable and add happiness/bond.
+
+GARDENS
+Place and right-click a Garden Block to enroll up to eight nearby unassigned
+Chao you own. Use a linked Garden Bell for particular Chao. Registered Chao
+roam within 16 blocks. The garden screen can move or unassign your loaded
+Chao. Race/karate lobbies list your registered Chao across gardens/dimensions.
+The records refer to existing entities; carried/missing Chao are unavailable.
+
+BUILD A RACE
+1. Build a straight row of 2-8 Starting Line sections facing the same way.
+   Each supplies one entrant slot. Build a straight Ending Line row.
+2. Use Race Markers on the start, then place flags in sequence. Each new flag
+   becomes the next source. Each connection must be at most 32 blocks.
+   A green/red preview shows whether the placement is within range.
+3. Use a linked marker on the ending line to finish. An existing flag can
+   be selected to continue or edit. Routes allow up to 64 links, no loops,
+   and must total at least eight blocks. Build traversable terrain yourself.
+4. Ordinary/empty-hand right-click the start for the lobby. Select multiple
+   Chao from your gardens; nearby keepers can enter theirs in free slots.
+   Only the host starts/cancels. Races time out after five minutes.
+Run aids land speed, Swim water, Power climbing and Fly descent. Participants
+earn skill training and Race Experience; winners get a bonus.
+
+CHAO KARATE
+Build exactly one connected 7x7 square of Karate Mats (49 tiles), then
+right-click any tile. Up to eight Chao enter successive two-Chao bouts.
+Each bout has a 90-second limit, virtual health, ring-out and timeout rules.
+Power aids strikes; Swim defence; Fly dodging; Run attack frequency;
+Stamina bout health; Intelligence helps zeal. Competitors gain skill training
+and Karate Experience, with a champion bonus. Actual pets are not injured.
+Breaking the arena, cancellation or disconnect returns entrants safely.
+
+ADULT EQUIPMENT COMPANIONS (OPTIONAL ACCESSORIES)
+Put one healthy adult filled carrier into the Chao Companion equipment slot.
+A temporary world body follows its keeper. Unequipping, logout or changing
+dimensions recalls the body and saves its state in the same carrier.
+Power level 10: combat help against your recent target (excluding players
+and your tamed animals). Fly level 10: automatic slow glide while falling;
+hold sneak to descend normally. Both require energy above 5. Recover energy
+on the ground while not fighting. Holding/equipment pauses normal age/care.
+Defeat disables the equipped Chao for 1,200 server ticks (one minute at
+20 TPS), costs 10 happiness and one level in a randomly chosen trained skill.
+Levels/points never go below zero. If all skills are zero, happiness is still
+lost. Recovery is stored and cannot be bypassed by unequipping/releasing.
+The companion slot retains its item on player death.
+
+LIFECYCLE AND MAIN FORMS
+Default active times: egg 5 minutes, child 3 hours, adult 12 hours. Unloaded
+Chao and stored carriers do not age. Happiness 50+ at end of adulthood gives
+reincarnation. Primary type/alignment lock at first evolution; adult training
+can change the secondary form. Chaos evolution needs a third life or later,
+happiness ABOVE 50, all 21 genes this life, and balanced Normal influences.
+Neutral/Hero/Dark alignment selects Light/Angel/Devil Chaos respectively.
+Two adults given Heart Fruit can breed; cooldown is five minutes.
+
+MOD THEMES AND SAVES
+The existing 48 themes remain (46 mod tributes plus Nether and End).
+Mod-theme recipes/eggs require a matching loaded mod ID and a compatible
+NeoForge 1.21.1 build. Nether/End require no extra mod. /chao variants lists
+enabled themes; operators can use /chao variantegg <id>. The catalog includes
+accepted aliases, current projects, community ports and dormant classics.
+Saved heritage survives a removed dependency and resumes when it returns.
+Existing Chao, eggs and carriers retain data. source/MECHANICS.md and the
+feature documents explain exact behavior and Minecraft adaptations.
+
+PREVIEWS AND SOURCE
+Open previews/index.html: 15 actual full-frame Minecraft captures, with
+search/category controls and keyboard-friendly enlargement. All frames are
+embedded, so the mechanics gallery opens offline as one HTML file.
+The gallery includes real Accessories equipment and companion views.
+previews/historical-0.9-head-gallery.html retains the previous head study,
+clearly labelled as 0.9 evidence. It is not a new 0.10 capture session.
+Blockbench/ contains eight editable projects with embedded textures.
+source/ contains all code, resources, tests, generators and research notes;
+build caches, runtime worlds and third-party mod jars are excluded.
+
+BUILD AND VERIFICATION
+With a Java 21 JDK, open source/ and run:
+  ./gradlew build coreTest
+  ./gradlew runGameTestServer
+Windows: gradlew.bat. Initial setup downloads development dependencies.
+See source/TESTING.md for completed release checks and optional-mod tests.
+The installable JAR excludes identity fixtures, test classes and visual
+capture harnesses. SHA256SUMS.txt records the packaged JAR checksum.
+
+CREDITS
+Unofficial fan project; Chao/Sonic Adventure belong to their rights holders.
+Models, textures and mod-theme tributes are original reconstructions.
+Included Chao voices are Sega game recordings; see source/docs/AUDIO_CREDITS.md,
+source/LICENSE and source/TEMPLATE_LICENSE.txt. No other mod's jar or visual
+assets are bundled. Chao Island reference links accompany the feature docs.

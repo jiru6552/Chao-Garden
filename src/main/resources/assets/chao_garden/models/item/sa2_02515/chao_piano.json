@@ -1,0 +1,111 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/chao_piano.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_piano05_52": "chao_garden:block/sa2_02515/chao_piano/sa2_piano05_52",
+    "sa2_piano06_52": "chao_garden:block/sa2_02515/chao_piano/sa2_piano06_52",
+    "sa2_piano01_4": "chao_garden:block/sa2_02515/chao_piano/sa2_piano01_4",
+    "sa2_star01_52": "chao_garden:block/sa2_02515/chao_piano/sa2_star01_52",
+    "sa2_piano04_20": "chao_garden:block/sa2_02515/chao_piano/sa2_piano04_20",
+    "sa2_piano05_148": "chao_garden:block/sa2_02515/chao_piano/sa2_piano05_148",
+    "particle": "chao_garden:block/sa2_02515/chao_piano/sa2_piano05_52"
+  },
+  "render_type": "minecraft:cutout",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    }
+  }
+}

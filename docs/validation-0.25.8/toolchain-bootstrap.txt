@@ -1,0 +1,90 @@
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/workspace/tools/neoform-command-fallback.jar -XX:ActiveProcessorCount=4 -Djdk.lang.Process.launchMechanism=FORK -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=43635 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=43635 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+
+Welcome to Gradle 9.2.1!
+
+Here are the highlights of this release:
+ - Windows ARM support
+ - Improved publishing APIs
+ - Better guidance for dependency verification failures
+
+For more details see https://docs.gradle.org/9.2.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts
+
+Invalid Java installation found at '/usr/lib/jvm/java-17-openjdk-amd64' (Common Linux Locations) auto-detected. It will be re-checked in the next build. This might have performance impact if it keeps failing. Run the 'javaToolchains' task for more details.
+
+> Task :createMinecraftArtifacts
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/workspace/tools/neoform-command-fallback.jar -XX:ActiveProcessorCount=4 -Djdk.lang.Process.launchMechanism=FORK -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=43635 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=43635 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Applied sandbox executable fallback to net/neoforged/neoform/runtime/engine/NeoFormEngine (build environment only).
+Applied sandbox executable fallback to net/neoforged/neoform/runtime/actions/ExternalJavaToolAction (build environment only).
+Loaded 131 artifacts from /workspace/scratch/c3ab64e7d80c/chao-garden-0258/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+*** Started working on downloadJson
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+  ↓ https://piston-meta.mojang.com/v1/packages/018296bcb207bea6fd25b05f08eee3942dcec406/1.21.1.json
+ ✓ Completed downloadJson in 3.21s
+*** Started working on downloadServer
+*** Started working on downloadClient
+*** Started working on downloadClientMappings
+  ↓ https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar
+  ↓ https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar
+  ↓ https://piston-data.mojang.com/v1/objects/2244b6f072256667bcd9a73df124d6c58de77992/client.txt
+ ✓ Completed downloadClientMappings in 4.05s
+*** Started working on mergeMappings
+ ↳ Running external tool net.neoforged.installertools:installertools:2.1.2:fatjar
+ ✓ Completed downloadClient in 4.85s
+*** Started working on stripClient
+ ✓ Completed downloadServer in 5.31s
+*** Started working on extractServer
+ ↳ Running external tool net.neoforged.installertools:installertools:2.1.2:fatjar
+ ✓ Completed extractServer in 0.55s
+*** Started working on stripServer
+ ✓ Completed mergeMappings in 2.65s
+ ✓ Completed stripClient in 2.42s
+ ✓ Completed stripServer in 1.39s
+*** Started working on merge
+ ↳ Running external tool net.neoforged:mergetool:2.0.3:fatjar
+ ✓ Completed merge in 2.60s
+*** Started working on rename
+ ↳ Running external tool net.neoforged:AutoRenamingTool:2.0.3:all
+ ✓ Completed rename in 4.44s
+*** Started working on decompile
+ ↳ Running external tool org.vineflower:vineflower:1.10.1
+ ✓ Completed decompile in 40.26s
+*** Started working on inject
+ ✓ Completed inject in 1.95s
+*** Started working on patch
+ ↳ Running external tool io.codechicken:DiffPatch:2.0.0.36:all
+ ✓ Completed patch in 1.91s
+*** Started working on applyNeoforgePatches
+ ↳ Running external tool io.codechicken:DiffPatch:2.0.0.36:all
+ ✓ Completed applyNeoforgePatches in 1.86s
+*** Started working on transformSources
+ ↳ Running external tool net.neoforged.jst:jst-cli-bundle:2.0.11
+ ✓ Completed transformSources in 4.97s
+*** Started working on recompile
+ 96 items on the compile classpath
+ 0 items on the sourcepath
+*** Started working on sourcesWithNeoForge
+ Compiling 5364 source files
+ ✓ Completed sourcesWithNeoForge in 2.11s
+Copied 0 resource files
+ ✓ Completed recompile in 32.31s
+*** Started working on compiledWithNeoForge
+ ✓ Completed compiledWithNeoForge in 4.13s
+*** Started working on sourcesAndCompiledWithNeoForge
+ ✓ Completed sourcesAndCompiledWithNeoForge in 2.52s
+Total runtime: 108.56s
+
+
+[Incubating] Problems report is available at: file:///workspace/scratch/c3ab64e7d80c/chao-garden-0258/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 3m 21s
+1 actionable task: 1 executed

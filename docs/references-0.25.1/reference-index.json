@@ -1,0 +1,440 @@
+{
+  "release": "0.25.1",
+  "source_video_manifest": "../references-0.25/video-source-manifest.json",
+  "timing": "Exact requested -ss target, nearest decodable native source frame from the original variable-frame-rate MP4. These are user-video references, never current mod captures.",
+  "native_keyframes": [
+    {
+      "file": "native-keyframes/first-022.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 22,
+      "timecode": "00:22",
+      "sha256": "6fbe735fc9aee5818a5b37530291e3339f22e4c3c5ecd61c39c08668fb9fa579",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-037.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 37,
+      "timecode": "00:37",
+      "sha256": "87365c857a3d489b34f946e1b21546596e3112c653689e100642205295c797aa",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-043.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 43,
+      "timecode": "00:43",
+      "sha256": "a20ec2a0d04d9ab062c86f768ad7184a848e11bc9d37ab4fc73e499336a3b7fb",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-047.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 47,
+      "timecode": "00:47",
+      "sha256": "9fdd16b33e89639702b17caf9993468c498118cca63761e679961b222ea406e6",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-061.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 61,
+      "timecode": "01:01",
+      "sha256": "71a6942a0e72e7f2cfa794f4d3a7ce587ac9f33e14b7720b8c9bd4b5ffe02c54",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-190.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 190,
+      "timecode": "03:10",
+      "sha256": "e241c7d5b0bdbee178aec736398599ef3e9a48886b1fa1f6c19b5804011324e1",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-204.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 204,
+      "timecode": "03:24",
+      "sha256": "9aa3d8d553ca677545847ead1dc41603a96fbde0280307f9bc4e0ad24ef8a7bc",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-211.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 211,
+      "timecode": "03:31",
+      "sha256": "2f41a853dab19922dd438205eb2ab7c7f7867d7f9389e4e8d66b92d481697e40",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-305.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 305,
+      "timecode": "05:05",
+      "sha256": "989991c76e70f4436ef7d6e80563c8935d0fc3529b5fddac9d19d95ca31f70fd",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-307.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 307,
+      "timecode": "05:07",
+      "sha256": "c54254bc60387f3fb6b4d9e6387e61bf9bbc9a9e83e7e3e1b3420c1d0689aa77",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-309.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 309,
+      "timecode": "05:09",
+      "sha256": "8d8aa7a7311da6d424e52aaba2fca9e615696c411a9ad1c274e4f817dc4367e1",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-311.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 311,
+      "timecode": "05:11",
+      "sha256": "99b7526b7b553866dcca5fcd53b7a6a3f1a8aa5b3a0e99390d5e053c4d14bc29",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-315.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 315,
+      "timecode": "05:15",
+      "sha256": "c2a22eb8727e8f7bd288ae4d3b7182465d6469dd98b34f7bd6bab868dd6f6aa8",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-321.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 321,
+      "timecode": "05:21",
+      "sha256": "d3596a1604f22d7087b83b93e1d514992ae66aa682848186e680c87c9e545213",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-324.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 324,
+      "timecode": "05:24",
+      "sha256": "6a32eaa51e87e41085ad25d9ba17c60ba07d225ee7046837967414a545ef9dcd",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-334.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 334,
+      "timecode": "05:34",
+      "sha256": "02a59b9f3d74ddf80009e5f10ef9bfff5f8b08310429f798b20193fd4452155d",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-348.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 348,
+      "timecode": "05:48",
+      "sha256": "417be318ad76bf2320e245a1bc122e5ebd4e8257b8f83c333143add43a80adf5",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-350.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 350,
+      "timecode": "05:50",
+      "sha256": "949e6e6b0b2d2b81a9a06bd142f3265e4958cfefc4ca24df9e698301ccbd0455",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-380.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 380,
+      "timecode": "06:20",
+      "sha256": "d702166001547ca5dc85008f55ec29a9ec75473aa790e390f15d4eb3e3f1f41a",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-390.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 390,
+      "timecode": "06:30",
+      "sha256": "41e8ec9ab01cb254285a3e813002c663832f1a1d1f2b7daae48fba4519b7bd36",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-410.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 410,
+      "timecode": "06:50",
+      "sha256": "dca6fa8d674acda41ffc33c013f4615961109a8932074b37f309add7c814f53c",
+      "native_size": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "user_feedback": [
+    {
+      "file": "user-feedback/2026-11-01_18.14.40.png",
+      "sha256": "2b2de9bf513437074052faabae1ba91addd6abfa32449082b162924c37345bef",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.15.04.png",
+      "sha256": "8dc6095235542444067df9828c1f0551512901d051d861b32442dc85388d4123",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.15.30.png",
+      "sha256": "5e5f1a6310e1cad4c3fc6600eb2cf411504a5523c6907ea662c3a6d87caf7e43",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.16.00.png",
+      "sha256": "129e0b5a5939c7d4d004829fab9ba15cab30a11cd357be1df0b858103fdaf98e",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.16.10.png",
+      "sha256": "7e673a54a3397edeae94aad04dea49d4aef6d6e43230347e5af64f984d98ed61",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.16.19.png",
+      "sha256": "d052a2c8e9f0bc71827f9339a8ad29644f02330452a09e2970ebc6312abd71c1",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.16.41.png",
+      "sha256": "0bb35345ee4dbd3e4df9f84335f122c6e5ed18cbf9690f8551e0f854c1bb0871",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.17.12.png",
+      "sha256": "c8b8bbaf0100b9b6e90391d9f24d376dcb49cfb95080b3ea67ce9008ee6e3df1",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.17.29.png",
+      "sha256": "8c0f09839385ecf294efd565d37c2b93fc4fc5ff00b126c4b1f4b1f19f62bff4",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.17.38.png",
+      "sha256": "1a6cc84d336ae2ed733e009206f04bf78a68f18876a0a8b1bf1e1c44282068bb",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.17.56.png",
+      "sha256": "062576f5788bd3e91779853c1953091498c5e92b5e6b97b71cceed790975fb46",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.18.01.png",
+      "sha256": "faf91a97e96a1115c184ee89fcbb1aef5402acae524167f5115b6e1a60b39a8b",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.18.05.png",
+      "sha256": "5be85c6a55f61287e3661483902f60a2ec0217e532892122e83929da8b56fe20",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.18.14.png",
+      "sha256": "6128d6a57a248105fd6111fd381685614f6ce42130a10bbd9118d5b345538dbb",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.18.49.png",
+      "sha256": "e3f89422dded9c2ae0ffadaca3fc55a7516f98f5836e483f858d7ba64f406b6b",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.18.56.png",
+      "sha256": "ecde4d5f5ba0b19ab396e17089fb3a6127a686bc75684f23982780d923f9accb",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.19.16.png",
+      "sha256": "8389c71164b7aa8bcc1374ca307546a3ed4fced5b469d90fc0ab801564467b02",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.19.40.png",
+      "sha256": "b22c69af40f25efc6467223594f2783c39a026b9d95fcebdc60ff76b16e30b9d",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.19.42.png",
+      "sha256": "3d299a8b64c014a2a98b61f027003ecf77a2c4aff01256b059ba15de9a5c0366",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.20.07.png",
+      "sha256": "e83428e966a1f0ebabf436b3186fc93e98e763b3405c6a4b310dec54a40e57c2",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.20.49.png",
+      "sha256": "651bd0876a578c46ecddea76ba955973601b244f2469ed72ba5cab74bf254c94",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.20.59.png",
+      "sha256": "044da6c0c1322d3dfe2dcebd204d36400ff1b7b6a88769e14b5fddc884b78fa8",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.21.15.png",
+      "sha256": "a42b91e37c49e0dd17885203030b9e5b19ba3a9a86c2562227d4e6eb755804bd",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/2026-11-01_18.21.36.png",
+      "sha256": "63d78de965c1ac8f563d1d0f08836ed0e78f3ad2bb6fdd1bd339da34181b3b1a",
+      "size": [
+        2048,
+        1095
+      ]
+    },
+    {
+      "file": "user-feedback/wrea.png",
+      "sha256": "09a46639c94a7f2ffb133e88937b831025e6d86f308aae9618a1984c92259e29",
+      "size": [
+        1521,
+        1323
+      ]
+    }
+  ]
+}

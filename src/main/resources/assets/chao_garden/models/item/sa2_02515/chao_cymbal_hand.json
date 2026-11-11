@@ -1,0 +1,15 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/chao_cymbal_hand.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_sinbal_100": "chao_garden:block/sa2_02515/chao_cymbals/sa2_sinbal_100",
+    "sa2_rappa_gold_4": "chao_garden:block/sa2_02515/chao_cymbals/sa2_rappa_gold_4",
+    "sa2_rappa_gold_52": "chao_garden:block/sa2_02515/chao_cymbals/sa2_rappa_gold_52",
+    "sa2_star01_52": "chao_garden:block/sa2_02515/chao_cymbals/sa2_star01_52",
+    "particle": "chao_garden:block/sa2_02515/chao_cymbals/sa2_rappa_gold_52"
+  },
+  "render_type": "minecraft:cutout"
+}

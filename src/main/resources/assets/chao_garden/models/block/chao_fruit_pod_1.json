@@ -1,0 +1,16 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/fruit02512/chao_fruit_pod_1.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "stem": "chao_garden:block/fruit02512/stem",
+    "sa2_alm_sgo01_52": "chao_garden:block/sa2_02514/chao_fruit/sa2_alm_sgo01_52_1",
+    "sa2_alm_sgo02_52": "chao_garden:block/sa2_02514/chao_fruit/sa2_alm_sgo02_52_1",
+    "sa2_alm_sgo04_148": "chao_garden:block/sa2_02514/chao_fruit/sa2_alm_sgo04_148_1",
+    "sa2_ali_miha_52": "chao_garden:block/sa2_02514/chao_fruit/sa2_ali_miha_52_1",
+    "particle": "chao_garden:block/sa2_02514/chao_fruit/sa2_alm_sgo01_52_1"
+  },
+  "render_type": "minecraft:cutout"
+}

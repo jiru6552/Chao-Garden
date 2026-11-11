@@ -1,0 +1,27 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "changed_theme_pixels_on_this_invocation": [],
+  "canonical_highlight_policy": "Opaque icon pixels take precedence over shell glare.",
+  "cocoon_tile": [
+    64,
+    32,
+    32,
+    32
+  ],
+  "cocoons": {
+    "evolution": {
+      "file": "textures/entity/chao/cocoon_evolution.png",
+      "sha256": "107de8bab9250508f6c5225f4d5d36e83748056bb5fedf4c6d3b2073024eba41"
+    },
+    "rebirth": {
+      "file": "textures/entity/chao/cocoon_rebirth.png",
+      "sha256": "7778d57b6f0cb663ceb28d6fce3d6ca4bc12e22fdecb8890954e6dbc4e817535"
+    },
+    "death": {
+      "file": "textures/entity/chao/cocoon_death.png",
+      "sha256": "36b78768d542d6360a8dde54016f2a3acbdf22bc5c2e8945ff7b62e15da871c2"
+    }
+  },
+  "scope": "Canonical egg-item finalizer and three lifecycle material atlases; no model or other sprite redesign."
+}

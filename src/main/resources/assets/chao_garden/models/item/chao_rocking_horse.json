@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_rocking_horse",
+    "particle": "chao_garden:block/sa2_02515/chao_rocking_horse/sa2_horse02_52"
+  },
+  "base": {
+    "parent": "chao_garden:item/sa2_02515/chao_rocking_horse"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_rocking_horse"
+      },
+      "gui_light": "front"
+    }
+  }
+}

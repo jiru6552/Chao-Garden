@@ -1,0 +1,20 @@
+{
+  "release": "0.21.0",
+  "jar": "chao_garden-0.21.0.jar",
+  "bytes": 14207027,
+  "sha256": "d516ec4918b80cef85d3cb0e871ad16f2cf06b8f632f7a90d6e02c3a35c9ffbc",
+  "crc_pass": true,
+  "entries": 7044,
+  "production_class_matches": 183,
+  "source_resource_byte_matches": 6748,
+  "class_set_exact": true,
+  "server_tested_production_class_digest": "deb740f19ecca43fd41110fb07c06a66df84b901ad09f7df73683b66582cb99b",
+  "final_production_classes_identical_to_successful_server_profiles": true,
+  "development_classes_and_test_structures_omitted": true,
+  "mixins": [
+    "CompanionPlayerFlightMixin",
+    "CompanionLivingFlightMixin"
+  ],
+  "mixins_registered_in_mod_metadata": true,
+  "version_metadata_correct": true
+}

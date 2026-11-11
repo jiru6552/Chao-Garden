@@ -1,0 +1,108 @@
+package com.chaogarden.client;
+
+import com.chaogarden.ChaoGarden;
+import com.chaogarden.entity.ChaoEntity;
+import com.chaogarden.test.ToyVariantCases02522;
+import com.chaogarden.toys.*;
+import com.mojang.logging.LogUtils;
+import java.nio.file.*;
+import java.util.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.Screenshot;
+import net.minecraft.client.gui.screens.*;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.Difficulty;
+import net.minecraft.world.level.*;
+import net.minecraft.world.level.block.Blocks;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.*;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
+
+/** Pose gallery only; live sessions and networking have a separate two-client test. */
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT)
+public final class Toy02532GalleryVisualSmoke {
+  private static final Path DIR=Path.of("/tmp/chao-flute/gallery");
+  private static final List<ToyVariantCases02522.Case> CASES=cases();
+  private static List<ToyVariantCases02522.Case> cases(){
+    var list=new ArrayList<>(ToyVariantCases02522.all());
+    for(String character:List.of("tails","knuckles"))for(int animal:new int[]{23,24,29})for(boolean adult:new boolean[]{false,true})
+      list.add(new ToyVariantCases02522.Case(character+"_rare_"+animal+"_"+adult,s->{s.character=character;s.adult=adult;s.setTraitInt("rare.parts",1);s.animalParts[0]=animal;}));
+    return List.copyOf(list);
+  }
+  private static boolean enabled(){return Boolean.getBoolean("chao_garden.toy02532Gallery");}
+  private static boolean started,setup;private static int ticks,seenAt,frames;private static int aligned;private static float worstRing;private static volatile int step=-1;
+  private static int requested=-1,observed=-1;private static volatile ChaoEntity actor;
+  private static void check(boolean ok,String why){if(!ok)throw new IllegalStateException("TOY02532_GALLERY "+why);}
+  private static String kind(int i){return FlutePlayRules.KIND;}
+  private static int at(int i){return i%4<2?24:76;}
+  private static int count(){return Math.min(CASES.size(),Integer.getInteger("chao.posture.galleryCases",CASES.size()))*4;}
+  private static String label(int i){return String.format("%03d-%s-%s-%s",i,CASES.get(i/4).name(),kind(i),i%2==0?"front":"side");}
+  private static void next(int i){
+    requested=i;Minecraft.getInstance().getSingleplayerServer().execute(()->{
+      var level=Minecraft.getInstance().getSingleplayerServer().overworld();if(actor!=null)actor.discard();
+      var c=ChaoGarden.CHAO.get().create(level);c.setState(CASES.get(i/4).state());c.setNoAi(true);c.setNoGravity(true);c.setInvulnerable(true);c.moveTo(.5,80,.5,0,0);
+      c.setCustomName(Component.literal(label(i)));
+      level.addFreshEntity(c);actor=c;step=i;
+    });
+  }
+  @SubscribeEvent public static void server(ServerTickEvent.Post event){
+    if(!enabled()||actor==null)return;actor.setToyPlaying(kind(step),160-at(step));
+  }
+  @SubscribeEvent public static void render(RenderLivingEvent.Post<?,?> event){
+    if(!enabled()||!(event.getEntity() instanceof ChaoEntity c)||!c.hasCustomName())return;
+    var model=(ChaoModel)event.getRenderer().getModel();
+    // A gallery spawns directly at a mid-performance phase. Its synthetic
+    // idle-to-mid-strike blend is not a normal entry; the live-motion suite
+    // measures every real entry/exit frame from phase zero.
+    if(observed==step&&ticks-seenAt>=14)Toy02532PoseVisualSmoke.observe(c,model);
+    check(model.officialPosesFinite(),"finite pose "+c.getName().getString());
+    if(c.toyPlayingTicks()>0&&!c.toyPlayingKind().equals(ToyPreview.SITTING_KIND))check(model.toyPalm(false)!=null&&(!ChaoFluteAnimation.active(c)||model.toyPalm(true)!=null),"visible grip "+c.getName().getString());frames++;
+    if(ChaoFluteAnimation.active(c)&&observed==step&&ticks-seenAt>=14){
+      var prop=ChaoFluteAnimation.propMatrix(model::transformAccessoryAnchor,model.toyMouth(),InstrumentPerformance.presence(c,0),model.fluteLean(InstrumentPerformance.phase(c,0)));
+      var handStack=new com.mojang.blaze3d.vertex.PoseStack();model.transformAccessoryAnchor("arm_right",handStack);
+      var hand=handStack.last().pose().transformPosition(new org.joml.Vector3f(model.toyPalm(false)).div(16));
+      var grip=ChaoFluteAnimation.grip(prop,model::transformAccessoryAnchor,model.toyPalm(false),false);
+      float error=grip.distance(hand);worstRing=Math.max(worstRing,error);check(error<.04f,"flute remains within support hand");aligned++;
+
+    }
+  }
+
+  @SubscribeEvent public static void tick(ClientTickEvent.Post event){
+    if(!enabled())return;var mc=Minecraft.getInstance();ticks++;
+    if(mc.screen instanceof AccessibilityOnboardingScreen)mc.setScreen(new TitleScreen());
+    if(!started&&mc.screen instanceof TitleScreen){
+      started=true;mc.options.renderDistance().set(3);mc.options.simulationDistance().set(5);mc.options.framerateLimit().set(30);mc.options.fov().set(42);mc.options.pauseOnLostFocus=false;mc.options.hideGui=true;
+      mc.createWorldOpenFlows().createFreshLevel("Toy02532Gallery-"+System.currentTimeMillis(),
+          new LevelSettings("Toy02532Gallery",GameType.CREATIVE,false,Difficulty.PEACEFUL,true,new GameRules(),WorldDataConfiguration.DEFAULT),
+          new net.minecraft.world.level.levelgen.WorldOptions(2523L,false,false),access->access.registryOrThrow(net.minecraft.core.registries.Registries.WORLD_PRESET)
+          .getHolderOrThrow(net.minecraft.world.level.levelgen.presets.WorldPresets.FLAT).value().createWorldDimensions(),mc.screen);
+    }
+    if(!setup&&mc.player!=null&&mc.getSingleplayerServer()!=null){
+      setup=true;mc.setScreen(null);ChaoRenderer.suppressNames=true;
+      mc.getSingleplayerServer().execute(()->{
+        var server=mc.getSingleplayerServer();var l=server.overworld();l.setDayTime(6000);l.getGameRules().getRule(GameRules.RULE_DAYLIGHT).set(false,server);l.getGameRules().getRule(GameRules.RULE_DOMOBSPAWNING).set(false,server);
+        for(var p:BlockPos.betweenClosed(-10,79,-10,10,86,10))l.setBlock(p,p.getY()==79?Blocks.SMOOTH_STONE.defaultBlockState():Blocks.AIR.defaultBlockState(),3);
+        server.getPlayerList().getPlayers().forEach(p->{p.setGameMode(GameType.SPECTATOR);p.connection.teleport(1.15,79.25,2.6,163,12);});
+      });next(0);
+    }
+    if(mc.player!=null&&mc.level!=null&&step==requested&&step>=0){
+      for(var e:mc.level.entitiesForRendering())if(e instanceof ChaoEntity c&&c.hasCustomName()&&c.getName().getString().equals(label(step))&&c.toyPlayingTicks()>0){
+        if(observed!=step){observed=step;seenAt=ticks;}
+        float yaw=step%2==0?180:-90;
+        mc.player.moveTo(step%2==0?.5:-1.8,79.25,step%2==0?2.6:.5,yaw,12);
+        mc.player.yRotO=yaw;mc.player.xRotO=12;
+        if(ticks-seenAt<(step==0?60:16))break;
+        Screenshot.grab(mc.gameDirectory,"02532-gallery-"+label(step)+".png",mc.getMainRenderTarget(),text->LogUtils.getLogger().info("TOY02532_GALLERY_CAPTURE {}",text.getString()));
+        if(step+1==count()){
+          Toy02532PoseVisualSmoke.finish(DIR);
+          try{Files.createDirectories(DIR);Files.writeString(DIR.resolve("pass.txt"),"cases="+CASES.size()+" captures="+(step+1)+" rendered="+frames+" aligned="+aligned+" maxGripError="+worstRing+"; pose gallery, not live AI proof\n");}catch(Exception ex){throw new RuntimeException(ex);}
+          LogUtils.getLogger().info("TOY02532_GALLERY_PASS cases={} captures={} frames={}",CASES.size(),step+1,frames);mc.stop();
+        }else next(step+1);break;
+      }
+    }
+    check(ticks<18000,"timeout");
+  }
+}

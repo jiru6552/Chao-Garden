@@ -1,0 +1,91 @@
+{
+  "textures": {
+    "base": "chao_garden:block/school025/school_leaf_classroom",
+    "wood": "chao_garden:block/school025/wood",
+    "gold": "chao_garden:block/school025/gold",
+    "cream": "chao_garden:block/school025/cream",
+    "white": "chao_garden:block/school025/white",
+    "red": "chao_garden:block/school025/red",
+    "blue": "chao_garden:block/school025/blue",
+    "green": "chao_garden:block/school025/green",
+    "purple": "chao_garden:block/school025/purple",
+    "pink": "chao_garden:block/school025/pink",
+    "black": "chao_garden:block/school025/black",
+    "yellow": "chao_garden:block/school025/yellow",
+    "cyan": "chao_garden:block/school025/cyan",
+    "glass": "chao_garden:block/school025/glass",
+    "stone": "chao_garden:block/school025/stone",
+    "particle": "chao_garden:block/school025/school_leaf_classroom"
+  },
+  "elements": [
+    {
+      "from": [
+        1,
+        0,
+        7
+      ],
+      "to": [
+        15,
+        32,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0,
+            0,
+            16,
+            10.67
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0,
+            0,
+            16,
+            10.67
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0,
+            0,
+            16,
+            10.67
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0,
+            0,
+            16,
+            10.67
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            0,
+            0,
+            16,
+            10.67
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            0,
+            0,
+            16,
+            10.67
+          ]
+        }
+      }
+    }
+  ],
+  "ambientocclusion": false
+}

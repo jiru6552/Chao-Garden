@@ -1,0 +1,737 @@
+Generated 19 retained theme models and original pixel icons; themed recipes remain disabled
+Generated 87 item icons/models, 24 additive loot modifiers, base recipes, and language/tags.
+Generated 19 retained theme models and original pixel icons; themed recipes remain disabled
+Generated DLC-reference Chao reconstruction prototype=False: 222 bones, 19 themes and 8 editable Blockbench projects
+Generated 21 colored DNA vials, 21 compatible legacy item appearances, benefit names, tags and generic chest loot.
+Generated 24 active SA2-inspired foods (5 wild / 19 market-first), retaining old tree IDs.
+Generated original Black Market trader atlas, three toy models/icons and names.
+Generated eight-cell 2x2x2 transporter, legacy model, inventory model, native loot and matched collision boxes.
+Generated activity resources and PC-style transporter garden terminal.
+Generated companion slot data, icon and animated Chao item model.
+Generated Chao Garden CD: 115.809592 seconds; original 16px icon; vanilla jukebox component.
+Imported 20 official Chao rigs/textures; preserved source cuboids, parent pivots, cube rotations, mirror flags, inflation and zero-thickness planes; copied eight animation clips.
+Generated 3440 native-UV coats; skin hues now extend consistently across arms and feet.
+Fitted 20 overlay skeletons, 19 theme coats, 18 visible animal-part sets (21 animal genes), and 3 Chaos forms.
+Merged SA2 fruit, music and transporter resource catalogs.
+Egg shell UVs unwrapped; 191 independent atlases checked, 185 wrap gutters completed; editable egg synchronized.
+Silver reflection generated; repaired 0 painted sparkle pixels in 0 placed-egg atlases.
+Built five 16px toy sprites/models and 89 Moon coat/egg resources; retired mushroom seed sources.
+Generated20 fitted hat rigs,12hat sprites and neutral merchant costume.
+CA2 fruit assets: 10 profiles, 10 seeds/orchards, four ripening stages; no mushroom seed acquisition.
+Eight physical toys; 40 block models; 256 oriented states; eight single-item loot tables; native palette and animated TV/radio screens.
+Heritage018: 791 resources;89Moon;348Chaoscoats×2UVlayouts; 723 protected-UV/alpha checks;20rawPNGs preserved.
+Gameplay forms019:15primaries×9continuousendpoints;Amy/Omochao character bases;20nativeUVskinmasks;raw20inputsunchanged.
+Gradual021:15 restrained young forms +135 family-specific aged endpoints; independent age/axes; native joints/eyes retained.
+Characters020: refined connected Amy silhouette; mechanical Omochao with one spiral-eye pair, native inherited-coat UVs and fixed hardware.
+{
+  "version": "0.20.0",
+  "families": {
+    "light": {
+      "opaque_faces": 305,
+      "glass_faces": 140,
+      "head_bounds": [
+        [
+          -3.5,
+          -5.6,
+          -3
+        ],
+        [
+          3.5,
+          0,
+          2.65
+        ]
+      ],
+      "eye_pairs": 1,
+      "mouths": 0,
+      "matching_semantic_hierarchy": true,
+      "opaque_glass_caps_removed": true,
+      "native_uv_bounds_checked": true
+    },
+    "angel": {
+      "opaque_faces": 351,
+      "glass_faces": 159,
+      "head_bounds": [
+        [
+          -3.5,
+          -5.6,
+          -3
+        ],
+        [
+          3.5,
+          0,
+          2.65
+        ]
+      ],
+      "eye_pairs": 1,
+      "mouths": 0,
+      "matching_semantic_hierarchy": true,
+      "opaque_glass_caps_removed": true,
+      "native_uv_bounds_checked": true
+    },
+    "devil": {
+      "opaque_faces": 444,
+      "glass_faces": 138,
+      "head_bounds": [
+        [
+          -3.5,
+          -5.6,
+          -3
+        ],
+        [
+          3.5,
+          0,
+          2.65
+        ]
+      ],
+      "eye_pairs": 1,
+      "mouths": 0,
+      "matching_semantic_hierarchy": true,
+      "opaque_glass_caps_removed": true,
+      "native_uv_bounds_checked": true
+    }
+  },
+  "inherited_textures": 351,
+  "raw_source_files_preserved": 41
+}
+{
+  "version": "0.21.0",
+  "families": {
+    "light": {
+      "opaque_faces": 333,
+      "glass_faces": 156,
+      "head_bounds": [
+        [
+          -3.5,
+          -6.2,
+          -3
+        ],
+        [
+          3.5,
+          0,
+          2.65
+        ]
+      ],
+      "eye_pairs": 1,
+      "mouths": 0,
+      "matching_semantic_hierarchy": true,
+      "opaque_glass_caps_removed": true,
+      "native_uv_bounds_checked": true
+    },
+    "angel": {
+      "opaque_faces": 367,
+      "glass_faces": 155,
+      "head_bounds": [
+        [
+          -3.5,
+          -6.2,
+          -3
+        ],
+        [
+          3.5,
+          0,
+          2.65
+        ]
+      ],
+      "eye_pairs": 1,
+      "mouths": 0,
+      "matching_semantic_hierarchy": true,
+      "opaque_glass_caps_removed": true,
+      "native_uv_bounds_checked": true
+    },
+    "devil": {
+      "opaque_faces": 424,
+      "glass_faces": 206,
+      "head_bounds": [
+        [
+          -3.5,
+          -6.2,
+          -3
+        ],
+        [
+          3.5,
+          0,
+          2.65
+        ]
+      ],
+      "eye_pairs": 1,
+      "mouths": 0,
+      "matching_semantic_hierarchy": true,
+      "opaque_glass_caps_removed": true,
+      "native_uv_bounds_checked": true
+    }
+  },
+  "raw_source_files_preserved": 41,
+  "inherited_coat_files_preserved": 351
+}
+Proportions022: six 7-high cores shortened to 6; eyes/joints/UVs, crest lengths, bodies and coats preserved.
+CWE parts019: 10 animals, 37 slot sets, 20 source skeleton fits.
+CWE019:13fruit orchards,10DNA samples,10real accessories,21specialgifts,16physicaltoys,eggshell hat
+Doctor medicine, four-facing Lesson Desk/Doctor Station, recipes and native art generated.
+0.20.0 accessory finalizer: anatomical upper-arm sleeves and independently fitted spectacle hinges; runtime skin/eye/crown fitting enabled
+Variants022: 19 themes × 11 native UV layouts = 209 atlases; protected eyes and original baby coats.
+Robot021: recoveredcomponent and calibratedheart native sprites/models generated; no shop/recipe acquisition.
+Companion021: rebindable Omochao boost control labels generated.
+Retired authored Spartoi/Egg character assets: 0 files; ordinary eggs untouched.
+Pruned 0 retired art/data files; preserved 19 active themes and 29 ordinary-egg compatibility models.
+Original Adventure panels and symbols generated
+Items/eggs022: 0 canonical glyph pixels restored; three distinct opaque, longitude-continuous cocoon atlases generated.
+Resource cleanup022: 1615 unreachable derivatives excluded; 7552940 generated bytes; exact cocoon222->2bones.
+Chao hub024: two void-backed dimensions, reversible walk-through tube and early-game recipe generated.
+Chao World0255: five isolated realms, dedicated Hero/Dark skies, eight-dimension dev preset generated.
+Hub024 native tube models: two block halves, open walking center, full-height item; no new textures.
+Distribution023 finalized: 0 obsolete acquisition files removed; all19 theme assets retained.
+Training supplies024: one enemy drive hook; one chest DNA pool;31 samples at ordinary3/mythical2 weights.
+Lobby/garden025: transparent scene material, celestial underside, pale basin/palm textures and8 internal native blocks generated.
+Garden0251 materials: three revised materials plus thin turf edge; four deterministic 64px textures and exact native atlas bindings.
+Kindergarten025: 94 native decor blocks/items; composed rug, large cloud mural and arched frames generated.
+Kindergarten0252 hall palette: 30 native repeating full-block finishes, generated independently.
+Hero Garden 0.25.3: 3 native masonry blocks and wildlife-free Hero biome generated.
+Dark Garden0255: six native blocks, pale ash/rock, red-water biome, original purple cloud dome and strict dirt/fence tag merges.
+Clinic0254: exposed bed union, quilt aspect, room-facing mirrored right curtain tie generated.
+School doors0.25.4: six slim arches and216 cut-top native leaf models; steel cabinet unchanged.
+Ionic columns and eight native oriented Hero cornice states generated; existing BlockItem IDs preserved.
+Kindergarten0255: Fortune-Teller right curtain tie mirrored; existing green curtains unchanged.
+School doors0255: six curved96-section arches;288 edge-seated outward-swinging leaf meshes,1.5px frames,0.01px crown clearance; cabinet geometry unchanged.
+Lobby approaches0255: one protected internal stair ID; shared scene material and finite curved collision, no item/loot.
+Staff025: four upright adult profession meshes, one native-derived atlas; source inputs untouched.
+src/main/resources/assets/chao_garden/textures/entity/chao/expression_stroke025.png
+Scene locale025: 110 independent labels merged.
+Area music0257:6streaming event slots;1existing supplied recording;5optional user recording slots;voices/CD preserved.
+School singing0258: two original2.8s vocal phrases; six provided voice/music inputs unchanged.
+CA2 fruit assets: 122 checks passed
+Forms019 independent validation: 95447 checks;135 distinct endpoints;37 animal slot sets×13 runtime source fits;PASS
+CWE native content: 1021 checks passed
+Gradual021 independent checks: 70725 PASS;15young/135aged; age0/.6/1.2; connected restrained forms; fixed eyes/joints; natural palettes; deterministic.
+Characters020: 3908 independent checks; single mechanical eye pair; native inherited UVs; connected Amy head; PASS
+{
+  "version": "0.20.0",
+  "families": {
+    "light": {
+      "hat_hidden_ice_branches": [
+        "chaos_crown_lobe_-1",
+        "chaos_crown_lobe_1",
+        "chaos_crown_rear"
+      ],
+      "limb_ice_remains_visible": true,
+      "full_skull_hide_covers_all_head_ice": true,
+      "uncapped_foot_material_join": true,
+      "full_opacity_gradient_uv_coverage": true,
+      "inherited_coats": 117
+    },
+    "angel": {
+      "hat_hidden_ice_branches": [
+        "chaos_crown_horn_-1",
+        "chaos_crown_horn_1",
+        "chaos_crown_rear"
+      ],
+      "limb_ice_remains_visible": true,
+      "full_skull_hide_covers_all_head_ice": true,
+      "uncapped_foot_material_join": true,
+      "full_opacity_gradient_uv_coverage": true,
+      "inherited_coats": 117
+    },
+    "devil": {
+      "hat_hidden_ice_branches": [
+        "chaos_crown_lower_-1",
+        "chaos_crown_lower_1",
+        "chaos_crown_upper_-1",
+        "chaos_crown_upper_1"
+      ],
+      "limb_ice_remains_visible": true,
+      "full_skull_hide_covers_all_head_ice": true,
+      "uncapped_foot_material_join": true,
+      "full_opacity_gradient_uv_coverage": true,
+      "inherited_coats": 117
+    }
+  },
+  "tip_material_policy": {
+    "two_tone_regular_colored_jewel": "translucent, alpha255 to97",
+    "mono_tone_regular_colored_jewel": "opaque, alpha255",
+    "shiny": "independent of opacity"
+  }
+}
+{
+  "version": "0.21.0",
+  "families": {
+    "light": {
+      "central_downward_locks": {
+        "-1": [
+          [
+            -3.95,
+            -4.25,
+            -0.55
+          ],
+          [
+            -2.65,
+            1.55,
+            2.2
+          ]
+        ],
+        "1": [
+          [
+            2.65,
+            -4.25,
+            -0.55
+          ],
+          [
+            3.95,
+            1.55,
+            2.2
+          ]
+        ]
+      },
+      "connected_volume_cells": {
+        "chaos_crown_lobe_-1": 304,
+        "chaos_crown_lobe_1": 304,
+        "chaos_crown_rear": 165
+      }
+    },
+    "angel": {
+      "head_appendage_width": 10.7,
+      "width_ratio_to_020": 1.1145833333333333,
+      "connected_volume_cells": {
+        "chaos_crown_horn_-1": 702,
+        "chaos_crown_horn_1": 702
+      }
+    },
+    "devil": {
+      "upper_hooked_horns": [
+        [
+          [
+            -4.65,
+            -9.7,
+            -0.7
+          ],
+          [
+            -2.0,
+            -4.8,
+            1.95
+          ]
+        ],
+        [
+          [
+            2.0,
+            -9.7,
+            -0.7
+          ],
+          [
+            4.65,
+            -4.8,
+            1.95
+          ]
+        ]
+      ],
+      "lower_descending_horns": [
+        [
+          [
+            -4.85,
+            -2.3,
+            -0.1
+          ],
+          [
+            -2.5,
+            2.25,
+            3.25
+          ]
+        ],
+        [
+          [
+            2.5,
+            -2.3,
+            -0.1
+          ],
+          [
+            4.85,
+            2.25,
+            3.25
+          ]
+        ]
+      ],
+      "connected_volume_cells": {
+        "chaos_crown_upper_-1": 304,
+        "chaos_crown_lower_-1": 360,
+        "chaos_crown_upper_1": 304,
+        "chaos_crown_lower_1": 360
+      }
+    }
+  },
+  "checks": 2511,
+  "result": "PASS"
+}
+{
+  "version": "0.21.0",
+  "maturity_endpoint_fits": 405,
+  "maturity_samples": [
+    0,
+    0.6,
+    1.2
+  ],
+  "changed_head_bounds": 251,
+  "maximum_core_scale_vs_source": 1.0799999999999998,
+  "verified_skull_local_attachment_roots": 750,
+  "young_head_axis_invariance": true,
+  "crown_surface_anchored_at_all_growth_scales": true,
+  "face_beak_placement": "Fixed eye-relative plane retained; no crown affine on the face."
+}
+Retired character resources: 15 checks passed.
+Inspector UI: all three bottom cards clear; Guide note well and four transparent corners preserved.
+/tmp/chao0258-clean-assets-jjz0kqyy/source/art/validate_native_rig_018.py:100: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  assert list(original.getchannel('A').getdata())==list(coat.getchannel('A').getdata())
+PASS 6486 checks; maximum source world corner error 3.552713678800501e-15
+Heritage validation: 2688 states; 348 keys; 755 PNGs; 6343 checks passed
+{
+  "reflection": {
+    "models": 21,
+    "shared_geometric_edges_with_different_uv": 6872,
+    "projected_edge_samples": 171800,
+    "old_atlas_uv_discontinuous_samples": 32775,
+    "maximum_new_projection_difference": 5.551115123125783e-17,
+    "per_mesh": {
+      "egg_mesh": 38,
+      "chao_baby": 303,
+      "chao_baghead": 295,
+      "chao_creeper": 271,
+      "chao_dad": 320,
+      "chao_dark": 358,
+      "chao_dark_run": 410,
+      "chao_dark_swim": 386,
+      "chao_dragon": 415,
+      "chao_emerald": 303,
+      "chao_ender": 295,
+      "chao_fly": 322,
+      "chao_golden": 309,
+      "chao_hero": 340,
+      "chao_hero_fly": 371,
+      "chao_hero_power": 366,
+      "chao_knuckles": 365,
+      "chao_power": 343,
+      "chao_run": 349,
+      "chao_swim": 353,
+      "chao_tails": 360
+    }
+  },
+  "accessories": {
+    "spectacles": {
+      "mesh_parts": 9,
+      "solid_intersections": 8,
+      "connected_components": 1
+    },
+    "mask": {
+      "mesh_parts": 12,
+      "solid_intersections": 17,
+      "connected_components": 1
+    }
+  },
+  "scope": "Rest geometry; five affine camera views; five positions per matching edge. Actual material/animation needs client review."
+}
+{
+  "skeleton_assertions": 10093,
+  "clip": "animation.chao.idle",
+  "rig_count": 11,
+  "samples_per_rig": 13,
+  "depth_units": "model pixels; 16 per block",
+  "scope": "Idle cuboid diagnostic only; does not establish universal clearance.",
+  "native": {
+    "checks": 572,
+    "contacts_over_0_05": 73,
+    "max_depth": 0.5664991446437533,
+    "mesh_contacts": {
+      "source_cuboid": 73
+    },
+    "top_contacts": [
+      {
+        "depth": 0.5664991446437533,
+        "rig": "hero",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.5566059308072084,
+        "rig": "hero",
+        "time": 0.917,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.5429874448072738,
+        "rig": "hero",
+        "time": 1.146,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4893125144146886,
+        "rig": "hero",
+        "time": 0.802,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "fly",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "run",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "power",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "hero_fly",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "hero_power",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "dark",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      },
+      {
+        "depth": 0.4596445885311695,
+        "rig": "dark_run",
+        "time": 1.031,
+        "bone": "arm_left__cube_0",
+        "mesh": "source_cuboid"
+      }
+    ]
+  },
+  "overlay": {
+    "checks": 11726,
+    "contacts_over_0_05": 602,
+    "max_depth": 0.44585409690745337,
+    "mesh_contacts": {
+      "gene_arm_connector": 602
+    },
+    "top_contacts": [
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_0_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_1_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_2_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_6_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_7_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_8_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_9_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_10_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_11_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_12_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_13_left",
+        "mesh": "gene_arm_connector"
+      },
+      {
+        "depth": 0.44585409690745337,
+        "rig": "baby",
+        "time": 1.031,
+        "bone": "animal_0_14_left",
+        "mesh": "gene_arm_connector"
+      }
+    ]
+  }
+}
+{
+  "motion": "crawl",
+  "head_lower_model_pixels": {
+    "hero": 0.3,
+    "other_rigs": 0.7
+  },
+  "movement_weight": 1,
+  "rig_count": 11,
+  "samples_per_rig": 49,
+  "authored_arm_sets": 18,
+  "equip_compatible_arm_species": 14,
+  "depth_units": "model pixels; 16 per block",
+  "scope": "Full-movement crawl cuboids only; midpoint breathing, zero look/reaction/transition deltas. Not universal animation clearance.",
+  "native": {
+    "checks": 2156,
+    "contacts_over_0_05": 0,
+    "max_depth": 0,
+    "mesh_contacts": {},
+    "native_cube_contacts": {},
+    "top_contacts": []
+  },
+  "overlay": {
+    "checks": 44198,
+    "contacts_over_0_05": 0,
+    "max_depth": 0,
+    "mesh_contacts": {},
+    "native_cube_contacts": {},
+    "top_contacts": []
+  }
+}
+PASS: 20 imported rigs; 19746 source-parity checks; 366 bones, 809 cuboids, 63 mirrored_cuboids, 72 inflated_cuboids, 69 zero_thickness_cuboids, 4576 faces; exact 20 texture files and eight-clip animation source.
+Resource cleanup022: 1615 unreachable derivatives excluded; 7552940 generated bytes; exact cocoon222->2bones.
+Gene assets passed: 52 canonical/legacy icons,31 distinct DNA samples, 109 supplied-slot bones and 461 native cuboids; expression plane remains clear.
+CWE gene descriptors/attraction and13 native fits passed:2158 additional cuboids; 17703 assertions total.
+Isolated additive generation passed: 91 resources remain byte-identical; unrelated translations/loot preserved.
+PASS:283 checks;38 distinct native seed resources,35 active fruit-first crops plus3 compatibility-only seed textures; binaryalpha, detached kernels, restrained palettes and exact no-extra catalog.
+Egg shell passed: 96 narrow longitude panels, 6 closing panels, 191 matching wrap edges, exact Blockbench roundtrip; UV stretch and texture-edge corruptions rejected.
+Variant assets passed: 19 distinct geometry themes, 19 body atlases, 19 egg atlases, 19 item icons.
+Acquisition passed: all19 themed recipes and recipe advancements disabled; 38 absence checks. Appearance assets remain intact.
+Distribution023: 398 resource acquisition checks passed
+Training supplies024: 38 resource invariants passed
+Staff025 asset assertions passed: 12,861; four adult role meshes, one eye pair each and exact neutral source pixels preserved.
+School emblem0251: 1,209 assertions passed; complete gold/green seal, separated full head/orb, all four native facings; 7 malformed fixtures rejected.
+Portal0251 source/material assertions passed: 308; real two-sided vanilla shader, closed quartz/roof geometry, readable EXIT and seamless dome; 14 malformed fixtures rejected.
+Lobby0252 renderer contract: 138 assertions; 11 malformed regressions rejected. Numeric geometry is covered separately; native oblique review pending.
+Environment025 assertions passed: 821,350; 94 reusable school decorations, 8 internal scene blocks, four isolated realms, RGBA glass/shader and dev separation; 46 malformed fixtures rejected.
+Lobby material manifest0255: native declarations retained; unrelated realm/future sky PNGs excluded.
+{"file": "/tmp/chao0257-music-pack-test-1mallkam/pack.zip", "provided_areas": ["neutral"], "missing_areas": ["lobby", "hero", "dark", "kindergarten", "black_market"]}
+Area music0257: 64 audio/resource/controller checks; malformed substitution, attribution and codec fixtures rejected.
+School singing0258: 113 audio/score/spatial/provenance checks; 5 malformed fixtures rejected.
+Classroom play city0258: 2,887 geometric/native bindings passed; 7 malformed regressions rejected.
+Hero Garden 0.25.3 assets passed: 3 native BlockItems, east-facing emblem and isolated wildlife-free sky. Self-test=True.
+Clinic0254: exposed bed union, quilt aspect, room-facing mirrored right curtain tie generated.
+Clinic0254: 72 exposed bed faces; zero overlapping coplanar surfaces; physical quilt UVs; left-facing visible tassel; 2 overlapping-skin mutants rejected; deterministic postpass. PASS
+School doors0255: 39,399 checks;288 curved meshes/1452 owned patches,6 thin circular arches, complete badges,42 unchanged cabinet geometry/art assets plus one exact inert-state extension;11 malformed regressions rejected. PASS
+School doors0.25.5 compiled native core: all48 closed/open/hinged/section/height shapes match the independently derived physical silhouette. PASS
+Kindergarten0255: 162 checks passed; moved native board/corner stack and physical Fortune curtain reflection; 7 malformed fixtures rejected.
+Lobby perimeter approaches0257: 387 bindings; 16 malformed regressions rejected.
+Dark Garden0255: 1,629 native palette/shape/atmosphere/care assertions passed; 7 malformed fixtures rejected.
+Garden device0254 passed 2488 mesh, rotation, native collision, loot and CD checks.
+Classical models 0.25.4: 2 existing column IDs / 6 Ionic member meshes, physical flutes and scrolls, 8 oriented Hero soffit states; edge UV joins passed. Self-test=True
+Kindergarten0252 halls: 30 finite full-cube surfaces; opaque, distinct and bound; PASS
+Proportions022: 14955 checks PASS; 405 ordinary age cases, 600 limb assemblies, 10 preserved special files, 351 coats and 41 raw inputs.
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "atlases": 209,
+  "pixel_comparisons": 1712128,
+  "protected_eye_pixels": 13376,
+  "type_secondary_age_fits": 7695,
+  "forehead_goggles_cases": 810,
+  "exposed_symbol_samples": 68445,
+  "rejected_corruptions": [
+    "eye",
+    "alpha",
+    "theme hue"
+  ],
+  "scope": "Native generated PNG pixels and static 15-family/9-endpoint/3-age fits. Actual moving ancestors/material selection are separately checked by the client probe."
+}
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "checks": 31997,
+  "item_sprites": 250,
+  "egg_icons": 65,
+  "dna_sprites": 52,
+  "drives": 4,
+  "item_models": 448,
+  "resolved_texture_links": 1503,
+  "additional_bound_block_textures": 178,
+  "canonical_icon_pixels": 683,
+  "placed_egg_atlases": 191,
+  "identical_shiny_albedo_pairs": 86,
+  "shell_uv_samples": 468,
+  "cocoon_uv_and_center_samples": 3216,
+  "cocoon_sha256": {
+    "evolution": "107de8bab9250508f6c5225f4d5d36e83748056bb5fedf4c6d3b2073024eba41",
+    "rebirth": "7778d57b6f0cb663ceb28d6fce3d6ca4bc12e22fdecb8890954e6dbc4e817535",
+    "death": "36b78768d542d6360a8dde54016f2a3acbdf22bc5c2e8945ff7b62e15da871c2"
+  },
+  "rejected_corruptions": [
+    "canonical icon glare overwrite",
+    "dangling item texture",
+    "fractional sprite fringe",
+    "closing shell UV stretch",
+    "placed shell longitude seam",
+    "painted shiny albedo stripe",
+    "visible cocoon alpha hole",
+    "cocoon longitude discontinuity",
+    "colored coat used for death cocoon"
+  ],
+  "scope": "Actual resource/binding/palette/UV checks. Final material animation, shell appearance and inventory presentation require the separate actual-client review."
+}
+Resource hygiene022: 2429checks;1615unreachableassets excluded;PASS
+Complete Chao Garden asset rebuild passed.

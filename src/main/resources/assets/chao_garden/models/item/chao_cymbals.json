@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_cymbals",
+    "particle": "chao_garden:block/sa2_02515/chao_cymbals/sa2_sinbal_100"
+  },
+  "base": {
+    "parent": "chao_garden:item/sa2_02515/chao_cymbals"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_cymbals"
+      },
+      "gui_light": "front"
+    }
+  }
+}

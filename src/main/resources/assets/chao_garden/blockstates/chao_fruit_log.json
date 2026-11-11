@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "chao_garden:block/garden_palm_trunk"
+    },
+    "axis=x": {
+      "model": "chao_garden:block/garden_palm_trunk",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z": {
+      "model": "chao_garden:block/garden_palm_trunk",
+      "x": 90
+    }
+  }
+}

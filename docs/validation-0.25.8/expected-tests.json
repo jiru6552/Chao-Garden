@@ -1,0 +1,28 @@
+{
+  "baseline_required_cases": 248,
+  "baseline_regression_batches": {
+    "classical0254": 3,
+    "clinic0254": 4,
+    "device0254": 3,
+    "garden0254_landscape": 1,
+    "garden0254_owned_west": 1,
+    "hero0254_transporter": 1,
+    "dark0255_care": 1,
+    "dark0255_geometry": 1,
+    "dark0255_origin": 1,
+    "dark0255_preserve": 1,
+    "dark0255_walking": 1,
+    "kindergarten_curves0255": 2,
+    "lobby0255_approaches": 2,
+    "school0255_board": 1,
+    "school0255_layout": 2,
+    "school0257_cohort": 1,
+    "school0257_lessons": 1,
+    "school0257_ownership": 1
+  },
+  "new_batches": {
+    "school0258_city": 1
+  },
+  "release": "0.25.8",
+  "scope": "All248 inherited required native cases retained, plus the authored play-city native geometry/world clearance regression."
+}

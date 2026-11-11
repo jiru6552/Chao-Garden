@@ -1,0 +1,108 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/black_white_wool_beanie.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_alo_mask_woolc02_4": "chao_garden:block/sa2_02515/black_white_wool_beanie/sa2_alo_mask_woolc02_4",
+    "sa2_alo_mask_woolc00_4": "chao_garden:block/sa2_02515/black_white_wool_beanie/sa2_alo_mask_woolc00_4",
+    "sa2_alo_mask_woolc01_148": "chao_garden:block/sa2_02515/black_white_wool_beanie/sa2_alo_mask_woolc01_148",
+    "particle": "chao_garden:block/sa2_02515/black_white_wool_beanie/sa2_alo_mask_woolc02_4"
+  },
+  "render_type": "minecraft:cutout",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    }
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "release": "0.19.0",
+  "checks": 220,
+  "result": "passed",
+  "sprites": [
+    {
+      "id": "chao_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "4ff9f6cf27bf77df8726bff14f836307ca396c74e5806724fd84cf5ff244a6ec"
+    },
+    {
+      "id": "creepy_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "0c61493b1dea4336070679d0e0ed8bebe2919b1417a491eced157012a4c1c067"
+    },
+    {
+      "id": "dark_garden_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 296,
+      "connected_regions": [
+        290,
+        4,
+        1,
+        1
+      ],
+      "color_count": 201,
+      "sha256": "5e0c4d396816ebb6327305849d2f7de78911754db1ff934515594e9eaabe33b6"
+    },
+    {
+      "id": "energy_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "83689733e5522204ef52943cdbd0aa0bf0d94de69c7be30b359ebcba86cc3de9"
+    },
+    {
+      "id": "forbidden_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 21,
+      "sha256": "9d4ebbd8b59e3df9f505c1f138bb2e08c3501fd16bd3fdc34e271aeae84f42b5"
+    },
+    {
+      "id": "garden_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "d6cd97d1a2ad7a2666c5c979184611a64d39d9f1fdbb10115df809b09d35aa89"
+    },
+    {
+      "id": "gba_blue_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "7b529a6f33b33f4242c8524d00913949b532a7b57c6bdea48d33bc9bb416fc12"
+    },
+    {
+      "id": "gba_green_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "42148f9d2502c2f4ef749b36a2f1598f6fd74801ebdb6dbe34e0ec56ad5efe65"
+    },
+    {
+      "id": "gba_orange_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "d20a501c7f4214136dfa0e371cea9cae3338bf48ab48dc5ad928d63a491bc506"
+    },
+    {
+      "id": "gba_pink_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "83bc10189d5ce03715d470a89f3e8e9c21381224e29c30186227393320859d1e"
+    },
+    {
+      "id": "gba_purple_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "f2665a67f0387fe58a7be1b57ff061b52fa2e464a0d6080b470e35214b7e547d"
+    },
+    {
+      "id": "gba_red_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "9c4a05f75a15ee4d61316e73b4f0e97ea96375cc2f51a27c26b153d0ab44d230"
+    },
+    {
+      "id": "gba_yellow_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "b09860055c152e879cfecc867bbadcfa8fd57b668be0cd99a574bc06bf7efc1f"
+    },
+    {
+      "id": "heart_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "6e5eb521c1cac8027cf525ec9ffee755ac12495ba7826872b72213539b8dc293"
+    },
+    {
+      "id": "hero_garden_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 212,
+      "connected_regions": [
+        212
+      ],
+      "color_count": 126,
+      "sha256": "9b75c42898f7963194b707d057eaf166c44c40e4818f728cb35f20b4f43cfe0f"
+    },
+    {
+      "id": "hyper_fly_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "2f95a655a304d22b1015c3b8cf9937c8aa3bd0e093409fb9b2d23194839409fa"
+    },
+    {
+      "id": "hyper_power_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "47d629194c4ca762b195331de6ec69d2e108dc511e9a56c0d58727cec872061b"
+    },
+    {
+      "id": "hyper_run_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "eb72feb4567c14aa5804dedaa75494a308823bebe22eb5bc352295b54dcf4a29"
+    },
+    {
+      "id": "hyper_swim_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 21,
+      "sha256": "c8ae0d0071d099dc051bdf61d78e0c81cb770cf82bd1916bd6f774c4dece9ae3"
+    },
+    {
+      "id": "mushroom_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": false,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "31972a13986773ea54b70a9c8b4a2af0de8820fd34350b4445f54e1f1e27cecd"
+    },
+    {
+      "id": "mushroom_alt_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": false,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "b9dd5a8705cda4dfcafe123794fd948b1a210951c7a5943334d86e9f49896831"
+    },
+    {
+      "id": "orange_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "4294624dc1acd936b798d90aac8102dc3301f331844e0f3e2b2123f059dd3407"
+    },
+    {
+      "id": "peace_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "413c5ce5cab22f5a08fd4b358fbe7b6fda0e9b48442b2a32264ca0200e7361dc"
+    },
+    {
+      "id": "rare_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "2ac55e75762f3296f72bcbf14ba6822eb3f0d1ca9569bbe81dd286c616a49a45"
+    },
+    {
+      "id": "rough_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "723093e4c21716e2d899cdaf82e733589ed6ef3dba7358d42aa4d25563121ec6"
+    },
+    {
+      "id": "round_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 177,
+      "connected_regions": [
+        177
+      ],
+      "color_count": 117,
+      "sha256": "3d9ff9e1255645fe7d42d01a4be421b301c31e2a39a036d136927494dc9b938e"
+    },
+    {
+      "id": "shiny_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "0b06ebd16a58bff7390f8369ef92fe5b9e93c1f42887d23883ae48eb97f7f983"
+    },
+    {
+      "id": "smart_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "f50ff3d4e89ade52743431e72fdfde0380f070847c9fa616ee7478b88d4dd3d7"
+    },
+    {
+      "id": "square_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 300,
+      "connected_regions": [
+        299,
+        1
+      ],
+      "color_count": 174,
+      "sha256": "779cec0953ba7429dc0867858be20add125808eb6e393cfa5ddf5fdca48d724b"
+    },
+    {
+      "id": "stamina_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": false,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "6e3539c12d2dd9ccea9f23fadc428532d0ee1450b1b01e0a83732bcbf0cadcbe"
+    },
+    {
+      "id": "strong_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 240,
+      "connected_regions": [
+        240
+      ],
+      "color_count": 170,
+      "sha256": "869efbd8868a7c46294aaaea88e67e7b6d5e938cb1f107ac63f1d7aee8386bee"
+    },
+    {
+      "id": "tall_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "9fbfc13d88e87d812b43bfb38c05818848c04cf8f465d9c193ac2c2a4ee2068e"
+    },
+    {
+      "id": "tasty_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 195,
+      "connected_regions": [
+        195
+      ],
+      "color_count": 107,
+      "sha256": "023eb7f4ede243ad0ed1da6b2558c331d07909818768185ff0ccf87d2585e904"
+    },
+    {
+      "id": "triangle_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 235,
+      "connected_regions": [
+        232,
+        1,
+        1,
+        1
+      ],
+      "color_count": 118,
+      "sha256": "8a43821afea6161600d27b0e8b33f4946b6fd1276c30109c9f6643be55eb98b7"
+    },
+    {
+      "id": "vitality_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 22,
+      "sha256": "28e628c13489bf8534e4ff7db98212bdc47652d8fa5b0a3e63c2f1705c87d3df"
+    },
+    {
+      "id": "wonder_fruit_seed",
+      "size": [
+        32,
+        32
+      ],
+      "active_acquisition": true,
+      "opaque_pixels": 228,
+      "connected_regions": [
+        228
+      ],
+      "color_count": 23,
+      "sha256": "82a078254cc16c2a165060e8fc3ac563c419b143532c3a29a20d6ab2e378753d"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "baseline": "0.25.10",
+  "baseline_archive_sha256": "0a0ef9be4e37f2d00e4aa48e8b2c01a83f30dcc81d551e14be0ee93cf464b229",
+  "release": "0.25.11",
+  "changes": {
+    "CHANGELOG.md": {
+      "before": "ba614b1ba3dbbc3c62682ba906d82a3dad16f0a1f8d8742e94d11cc46c5c9f30",
+      "after": "56b46b7738bba00b12a9dc76cf6568391ffe44853510014e9a06f06b176f4f9b"
+    },
+    "README.md": {
+      "before": "b99a5415a14d602d14fd68eb0c252c5f8c67907ae56f0c3d2eb68ba5e6189f73",
+      "after": "59000247981e8fcc740d2aba385015d93cebc22718bab80dd7a1b5d184b6668a"
+    },
+    "TESTING-0.25.10.md": {
+      "before": null,
+      "after": "22e50d87327f12bd20c1be503818347189c9ff683af015548afa86e255b6fb96"
+    },
+    "TESTING.md": {
+      "before": "22e50d87327f12bd20c1be503818347189c9ff683af015548afa86e255b6fb96",
+      "after": "dc977f349cb13f7ed36991f211aa947e0c3360356aeb53fc5fc9d9be3dcf2a5c"
+    },
+    "art/area_music_manifest_0257.json": {
+      "before": "18713e3b288e8fa1f3a14cbff893f73f5a9bda7b082fdfd9606eed7bacb7fe61",
+      "after": "79885b702b3c1bb11524dd81b6bc21bf66afa283815f8d877315b97b7cd2ce80"
+    },
+    "art/audio02511/converted/chao_k_sing_dark1.ogg": {
+      "before": null,
+      "after": "e8b2d41b342b1cf4780933d731f09332f9e440ee611a7278569e6ee3dd273273"
+    },
+    "art/audio02511/converted/chao_k_sing_dark2.ogg": {
+      "before": null,
+      "after": "20c8b0f19802d49d748962b2cdace4b095ad9dd92e8108e0c591318e95561f14"
+    },
+    "art/audio02511/converted/chao_k_sing_dark3.ogg": {
+      "before": null,
+      "after": "b807f10215c3d80d5a09640f151f6ba8fad0d07d57a3494eceea5bd55ddfc1e8"
+    },
+    "art/audio02511/converted/chao_k_sing_hero1.ogg": {
+      "before": null,
+      "after": "b1af39e10dcedbd6afa15a45a1af5c27bb2cb230d82da79f28ecf6f889ba40c1"
+    },
+    "art/audio02511/converted/chao_k_sing_hero2.ogg": {
+      "before": null,
+      "after": "d20dfdbfc98927d8a3156bdf6acc35518717f36159f040c92d921792250a52d5"
+    },
+    "art/audio02511/converted/chao_k_sing_hero3.ogg": {
+      "before": null,
+      "after": "87f0142b4fc2960e7cbf4283845ed193adf5e37e278ccc280a650ba85666ba69"
+    },
+    "art/audio02511/converted/dark.ogg": {
+      "before": null,
+      "after": "ec476f8cd1544fe86d9cda98a9fec1c67e4ccfaf30de12db39691a2a2280de42"
+    },
+    "art/audio02511/converted/hero.ogg": {
+      "before": null,
+      "after": "16c11e8a773c627f1282f20ea063283bbdc50a3c3f695207ca48a8a20afb9c01"
+    },
+    "art/audio02511/converted/kindergarten.ogg": {
+      "before": null,
+      "after": "38c3ebdfc9098393c5d2f3a3f46fa20b6a978668f8c32ccc5e7ab76f4758052c"
+    },
+    "art/audio02511/converted/lobby.ogg": {
+      "before": null,
+      "after": "ecb361ceb5b7094fbdefc3834cd2b3e91a328484d758f2fe0e42cdc6f09f961e"
+    },
+    "art/audio02511/converted/neutral.ogg": {
+      "before": null,
+      "after": "9c9c436433e5c4f8a8ce488097785256e7d097a4c3a85e19b2f6340111cf0d5c"
+    },
+    "art/audio02511/import-report.json": {
+      "before": null,
+      "after": "8e48a5f73622b47de287d942e16f93eb0c3745afb7a32db33fa5c5b7818a0e03"
+    },
+    "art/audio02511/source-adx/chao_g_bgm_d.adx": {
+      "before": null,
+      "after": "c52fa1002b2ae7d5965b64806ed8b89af29c50218ec665c339c18450ea545e63"
+    },
+    "art/audio02511/source-adx/chao_g_bgm_h.adx": {
+      "before": null,
+      "after": "127636bb475ce97d45bfe0970c2b580473bff13622a5c1e180dd982402e82d29"
+    },
+    "art/audio02511/source-adx/chao_g_bgm_n.adx": {
+      "before": null,
+      "after": "9a994f1f15af4eccb943a26cb51ef4a15dc289d8a89f9177d1b48db3dc19a096"
+    },
+    "art/audio02511/source-adx/chao_hall.adx": {
+      "before": null,
+      "after": "12797305f00b2513ee4cbbb1747968dd9bbb746e91433cc5e1f8ebef2921e90a"
+    },
+    "art/audio02511/source-adx/chao_k_m.adx": {
+      "before": null,
+      "after": "a28e4e8fa11f6f2d99439ad2df1ec8117d0b98afa18f56b5d58e8b6f838140ee"
+    },
+    "art/audio02511/source-adx/chao_k_sing_dark1.adx": {
+      "before": null,
+      "after": "4a5b5200a83a24eeac1b63dffc1ee0e7e0efe167dfd509761f0dc34283203185"
+    },
+    "art/audio02511/source-adx/chao_k_sing_dark2.adx": {
+      "before": null,
+      "after": "bce35c715b58c787e9d10ba6b434e9b8357ab03ec26e5f3c835435c084a36d98"
+    },
+    "art/audio02511/source-adx/chao_k_sing_dark3.adx": {
+      "before": null,
+      "after": "f464cd7c00bc082922b228d6cb2eee5e355607552bd3e0058ff59eb631bb0516"
+    },
+    "art/audio02511/source-adx/chao_k_sing_hero1.adx": {
+      "before": null,
+      "after": "ca5038c0cc7a43e845feac657ae99fd107c17163b04baf4d2cf169beacd49016"
+    },
+    "art/audio02511/source-adx/chao_k_sing_hero2.adx": {
+      "before": null,
+      "after": "c1032b9c2765e19d336fc15e719649e719371d735be91d4b2cef2601cf686565"
+    },
+    "art/audio02511/source-adx/chao_k_sing_hero3.adx": {
+      "before": null,
+      "after": "a5421fd24e1f602e4c985bc72aa87fb4ba5b3a91ccd37b7a6790d8f58abdb2a1"
+    },
+    "art/audio02511/supplied-inputs.json": {
+      "before": null,
+      "after": "88e77b5045b61768a46b30ab926c5d37cb43b25dba173d06d0ee1f611dd5ec53"
+    },
+    "art/school_singing_manifest_0258.json": {
+      "before": "b911c9cc0b0d566b27c6981c06bc7174e263f47e5df10f5ac7f273587df66cdc",
+      "after": "fad8d1a6ccf6735913092a3ca325fbd73e0e160b0d8d07813e20bca5606465b7"
+    },
+    "build.gradle": {
+      "before": "f9f810f043ee4d81c1aec1ed0f18bb4d2ba078e2370aae6c57f62a22c9a9f95b",
+      "after": "893d9d19effe584b53ea35de69de390938c03057a3583d1c3412491cfb1e6781"
+    },
+    "docs/ASSET_CREDITS_015.md": {
+      "before": "c4dbc6bedb73ad256e4c4314601b7040e509731438b765a5d2c4b0c5d495299b",
+      "after": "7bb346ad49994a939b50e16b91cc0779015d26bf3611690b684c8d01e31bdffe"
+    },
+    "docs/SA2-AUDIO-IMPORT.md": {
+      "before": "2e0d75717037305bbe7cfb78883cfba6d466fa1e528c6bd39e94747052fc9ae3",
+      "after": "2d9998f32201c2e1990b8c9f53829b6c94463213395b1daab2fd0445ad139595"
+    },
+    "docs/music-pack0257/README.md": {
+      "before": "ae5897eb866d6d50d05a55c06ed7226cd7f1abefa9812a76615a344a6c396e24",
+      "after": "313fede7a880c61bd88768c38649a87c1169de96dc03251a8679209e113b9792"
+    },
+    "docs/references-0.25.11.md": {
+      "before": null,
+      "after": "7a541b71f9fb877ddade8ebe3ae57811c5c24787828e8019a77d79fdaafd35e9"
+    },
+    "docs/references-0.25.11/palm-bark-reference.png": {
+      "before": null,
+      "after": "97e801044536639020ba187ee7f794e0540d1a7ed8f95c2d0ace00cd60076802"
+    },
+    "docs/references-0.25.11/reference-index.json": {
+      "before": null,
+      "after": "f7299b6876a551786910800a833ddc01b332bbf7a656c3842c07f8fa94a2b3d2"
+    },
+    "docs/references-0.25.11/waterfall-bare-side.png": {
+      "before": null,
+      "after": "1951e18e1ac2cbea714b933135db49e36784bdda0a1c3e94406c962abfd18e38"
+    },
+    "docs/release-0.25.11.md": {
+      "before": null,
+      "after": "eb86e65db3345f7841bda0d8b79da7f895e71daabf8ff3a9bbb6f5cf9ad7a3cc"
+    },
+    "gradle.properties": {
+      "before": "d08e87e305443bbd68b17a1f45ca0deb64fe324ac6b62177ad74e2c662158287",
+      "after": "d21e6d7eb09c65288a62aba50665b5df5b64a9d1e3ce07264811975ced0f2704"
+    },
+    "scripts/generate_all_assets.py": {
+      "before": "c9897d0d9fba55d427757b824edf3497d3ccf95306778907b829d351f55cc0a7",
+      "after": "7eeb3723d8295f57cf1070441784d04d2b14266ef5e4a0b9765c432f02618727"
+    },
+    "scripts/generate_palm_bark_02511.py": {
+      "before": null,
+      "after": "6c3db5382197a4f794cadfc6e08c1b381fc5767ceee3e9a2de1f82071ad72d40"
+    },
+    "scripts/generate_school_singing_0258.py": {
+      "before": "a2bf49c5abcbecd2199f1807bb484294d456a299d625b31bbd23546327ea42e9",
+      "after": "e63b80a232ded73d67bae86762765f437eab12f87f1d60a0c5749a13deaabde7"
+    },
+    "scripts/install_supplied_audio_02511.py": {
+      "before": null,
+      "after": "1a8c6e985fe3420134a96085cb342d9b69c4128c9ddf93ac20bdbf2ab6cc6a7c"
+    },
+    "scripts/package_chao02511.py": {
+      "before": null,
+      "after": "0e4f4c88119fb94a256f7936cb145617f2beeeef845a6dbe4dc21864063098ea"
+    },
+    "scripts/validate_area_music_0257.py": {
+      "before": "f6de1ee17d35b7f38e4aa1f435b1eae798d19bfa67944781bea50cb4efd0582c",
+      "after": "7d23adff066551e34c98e32a6e626fccfc331557a01e25c7a4ec485d91a0dccf"
+    },
+    "scripts/validate_lobby_approaches_0255.py": {
+      "before": "e24ae63fe5aa4b8ef08944a27ca5bd3762f5e4f0a7abc59d21d026d9a3bdc77d",
+      "after": "b4bab14342eced7c8093a57f27e2dfe829d6012c6dc6d4ad4be3c3c826baeda1"
+    },
+    "scripts/validate_supplied_audio_02511.py": {
+      "before": null,
+      "after": "2ef93a4460a4605699f0e56cf278638df12a86f082704078833a62626fa1ea44"
+    },
+    "src/main/java/com/chaogarden/client/AreaMusic0257.java": {
+      "before": "b63d55e818bfe746244e5ee51c2f0433add383802896cd67394befa4ea7eb717",
+      "after": "77d3e729a2a23ecba50e4f12b59ecfe1cfd8b7e7225fed403b8dde8962059369"
+    },
+    "src/main/java/com/chaogarden/client/Audio02511VisualSmoke.java": {
+      "before": null,
+      "after": "954bf56df002df533a77881660dac635618598c27c0aa45c7f4e345cf78c510e"
+    },
+    "src/main/java/com/chaogarden/client/SchoolChorus0259.java": {
+      "before": "9ac9bba2d30ec2381048705f0e3c46e5872511fae205425abcc26b95dd62759b",
+      "after": "534b4d9a2f9b051a6c436fb8cc167b422c2be054561da98e9289ff86c2559721"
+    },
+    "src/main/java/com/chaogarden/client/World0253VisualSmoke.java": {
+      "before": "861a3797197ecd3e8071a010b0908ed60390aa74ff5cb10079aba6ef81b231a0",
+      "after": "b6597b8e4ea2f82bc93eb019f7c957474e8969596e7453ae6480e73510f527a6"
+    },
+    "src/main/java/com/chaogarden/core/AreaMusicRules0257.java": {
+      "before": "f2b0c5a8dedc64edbde91469bfde1d287b56cb57132ff0346e372787525a35c3",
+      "after": "136d399b1dcfe3b50e33d225068c1a411766c5e164d19f69c1153876323bc16a"
+    },
+    "src/main/java/com/chaogarden/hub/GardenRooms025.java": {
+      "before": "a4c8c36ed4d25c9287873f01c573d1319f4b213107e41bd952b16c9d7a21280e",
+      "after": "537f4200b4cb8c39b0b3a101b64e861d8e8cc65b434556052cb9102bc35c2035"
+    },
+    "src/main/java/com/chaogarden/hub/HubRooms.java": {
+      "before": "b2d4f2bf2b6a264a1eeea924f1716c33a938d8074c910f07f5f8261142b60536",
+      "after": "8b564ab67e662c28600c94f1f2534773b8190fe255362267936c9a594b940616"
+    },
+    "src/main/java/com/chaogarden/test/EggInteractionGameTests.java": {
+      "before": "f7f80cd74317ec8b875b83a05052f69828eacbcbaa043b185b3b451adbeabd6e",
+      "after": "11fd6220ef43185fa09c94b74c5b24b0816b429d44bb8b443c91399f0ebc46af"
+    },
+    "src/main/java/com/chaogarden/test/GardenBankGameTests02511.java": {
+      "before": null,
+      "after": "1e4d2a908586a5dbe7754489eef51bac64d04bb8d7be2d3a7f0da940498abec5"
+    },
+    "src/main/resources/assets/chao_garden/models/block/garden_palm_trunk.json": {
+      "before": "ed3d01e1071731f7fa630e50dd7d81c40c22bb92517c825966aaeb8b1055c307",
+      "after": "0da7559b58d917fb6196c1a8e9adf411c1dd102c5173dfa54d333cbfa78957cc"
+    },
+    "src/main/resources/assets/chao_garden/sounds.json": {
+      "before": "4b70c5e17c593ae4a985a125254278a40695f9d31dfae2fcb0fb7ce13ff4cd59",
+      "after": "98cd210168567f0fb20d4d41a0f399656b683ee9c25dfa246aaad49a21ef633d"
+    },
+    "src/main/resources/assets/chao_garden/sounds/chao/chorus/chao_k_sing_dark1.ogg": {
+      "before": null,
+      "after": "e8b2d41b342b1cf4780933d731f09332f9e440ee611a7278569e6ee3dd273273"
+    },
+    "src/main/resources/assets/chao_garden/sounds/chao/chorus/chao_k_sing_dark2.ogg": {
+      "before": null,
+      "after": "20c8b0f19802d49d748962b2cdace4b095ad9dd92e8108e0c591318e95561f14"
+    },
+    "src/main/resources/assets/chao_garden/sounds/chao/chorus/chao_k_sing_dark3.ogg": {
+      "before": null,
+      "after": "b807f10215c3d80d5a09640f151f6ba8fad0d07d57a3494eceea5bd55ddfc1e8"
+    },
+    "src/main/resources/assets/chao_garden/sounds/chao/chorus/chao_k_sing_hero1.ogg": {
+      "before": null,
+      "after": "b1af39e10dcedbd6afa15a45a1af5c27bb2cb230d82da79f28ecf6f889ba40c1"
+    },
+    "src/main/resources/assets/chao_garden/sounds/chao/chorus/chao_k_sing_hero2.ogg": {
+      "before": null,
+      "after": "d20dfdbfc98927d8a3156bdf6acc35518717f36159f040c92d921792250a52d5"
+    },
+    "src/main/resources/assets/chao_garden/sounds/chao/chorus/chao_k_sing_hero3.ogg": {
+      "before": null,
+      "after": "87f0142b4fc2960e7cbf4283845ed193adf5e37e278ccc280a650ba85666ba69"
+    },
+    "src/main/resources/assets/chao_garden/sounds/music/area/dark.ogg": {
+      "before": null,
+      "after": "ec476f8cd1544fe86d9cda98a9fec1c67e4ccfaf30de12db39691a2a2280de42"
+    },
+    "src/main/resources/assets/chao_garden/sounds/music/area/hero.ogg": {
+      "before": null,
+      "after": "16c11e8a773c627f1282f20ea063283bbdc50a3c3f695207ca48a8a20afb9c01"
+    },
+    "src/main/resources/assets/chao_garden/sounds/music/area/kindergarten.ogg": {
+      "before": null,
+      "after": "38c3ebdfc9098393c5d2f3a3f46fa20b6a978668f8c32ccc5e7ab76f4758052c"
+    },
+    "src/main/resources/assets/chao_garden/sounds/music/area/lobby.ogg": {
+      "before": null,
+      "after": "ecb361ceb5b7094fbdefc3834cd2b3e91a328484d758f2fe0e42cdc6f09f961e"
+    },
+    "src/main/resources/assets/chao_garden/sounds/music/area/neutral.ogg": {
+      "before": null,
+      "after": "9c9c436433e5c4f8a8ce488097785256e7d097a4c3a85e19b2f6340111cf0d5c"
+    },
+    "src/main/resources/assets/chao_garden/textures/scene/garden_palm_bark.png": {
+      "before": "f4c39f40dac888f41495599abcfd9cbd1e6999967e14400a73e4883e0cc2b814",
+      "after": "e5b44da0d674e0b6c82764239572d6b2bc72cfcad56137b74b74a22fd52e667d"
+    }
+  }
+}

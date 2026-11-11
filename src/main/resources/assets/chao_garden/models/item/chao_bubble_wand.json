@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_bubble_wand",
+    "particle": "chao_garden:block/sa2_02515/chao_bubble_wand/sa2_syabon01_52"
+  },
+  "base": {
+    "parent": "chao_garden:item/sa2_02515/chao_bubble_wand"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_bubble_wand"
+      },
+      "gui_light": "front"
+    }
+  }
+}

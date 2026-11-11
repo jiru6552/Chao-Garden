@@ -1,0 +1,11 @@
+Native Minecraft client review, 0.25.18
+
+Twenty native frames: Stats E–A, Stats S, four hover directions; Genes Appearance/Skill Genes/Growth; Parts, all DNA, missing-only DNA; Lessons before/after claiming an earned instrument; adult, Chaos, Omochao and Bat-DNA ghost bodies; held tablet and inventory tablet.
+
+Final preview is enlarged but keeps the body and floating orb within the panel in the reviewed child/adult/Chaos/robot frames. Four mouse positions are injected through the real client MouseHandler callback: the head turns toward the corresponding side and tilts up/down. Before/after render events assert all eight current/previous rotation fields are restored.
+
+Stats has the requested brown/orange/green/blue/purple/gold grades, Stats label and Favorite Fruit wording. Genes has legible inherited-vs-expressed columns, skill grades and two labeled signed growth meters; its text distinguishes first-evolution point rules from adult form directions. Parts has eight anatomical labels and leader lines; original animal DNA rows distinguish RECEIVED/NEEDED and filter to the missing ten in the fixture. Adult/Chaos/robot/ghost states use the appropriate requirement and visible-part labels.
+
+Care Lessons lists learned levels and explains daycare without a join or desk control. Actual scaled screen clicks navigate all tabs, open/filter/return from DNA and claim an existing instrument through the care packet. The blue/yellow tablet has a legible front screen and yellow guards in the native item renderer.
+
+Limits: representative software-rendered 1280×720 frames, plus an initial small-window review, not every GPU/shader/animation or possible coat/accessory. The Omochao-specific Genes explanatory text is source-reviewed, while mechanical anatomy is covered by the native frame. No screenshot gallery is included in the release.

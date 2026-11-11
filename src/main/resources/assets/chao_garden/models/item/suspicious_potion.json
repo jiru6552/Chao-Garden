@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/suspicious_potion",
+    "particle": "chao_garden:block/cwe02516/suspicious_potion/cwe_kin_koribbon_ffffffff_32"
+  },
+  "base": {
+    "parent": "chao_garden:item/cwe02516/suspicious_potion"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/suspicious_potion"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "version": 25,
+  "blocks": [
+    {
+      "id": "school_lobby_rug",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_stone_tile",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_principal_rug",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_classroom_floor",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_clinic_tile",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_cream_wall",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_wainscot",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_clinic_wainscot",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_fortune_stone",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_frieze",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_cloud_mural",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_clapboard",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_red_shingle",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_yellow_brick",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_red_counter",
+      "kind": "COUNTER",
+      "item": true
+    },
+    {
+      "id": "school_green_counter",
+      "kind": "COUNTER",
+      "item": true
+    },
+    {
+      "id": "school_principal_desk",
+      "kind": "DESK",
+      "item": true
+    },
+    {
+      "id": "school_fortune_altar",
+      "kind": "DESK",
+      "item": true
+    },
+    {
+      "id": "school_blue_cabinet",
+      "kind": "WALL",
+      "item": true
+    },
+    {
+      "id": "school_medicine_cabinet",
+      "kind": "CABINET",
+      "item": true
+    },
+    {
+      "id": "school_pink_stool",
+      "kind": "STOOL",
+      "item": true
+    },
+    {
+      "id": "school_pink_chair",
+      "kind": "STOOL",
+      "item": true
+    },
+    {
+      "id": "school_green_chair",
+      "kind": "STOOL",
+      "item": true
+    },
+    {
+      "id": "school_fortune_chair",
+      "kind": "STOOL",
+      "item": true
+    },
+    {
+      "id": "school_white_exam_bed",
+      "kind": "BED",
+      "item": true
+    },
+    {
+      "id": "school_purple_drape",
+      "kind": "DRAPE",
+      "item": true
+    },
+    {
+      "id": "school_green_drape",
+      "kind": "DRAPE",
+      "item": true
+    },
+    {
+      "id": "school_purple_drape_plain",
+      "kind": "DRAPE",
+      "item": true
+    },
+    {
+      "id": "school_green_drape_plain",
+      "kind": "DRAPE",
+      "item": true
+    },
+    {
+      "id": "school_purple_room_curtain",
+      "kind": "CURTAIN",
+      "item": true
+    },
+    {
+      "id": "school_purple_room_curtain_tie",
+      "kind": "CURTAIN",
+      "item": true
+    },
+    {
+      "id": "school_green_room_curtain",
+      "kind": "CURTAIN",
+      "item": true
+    },
+    {
+      "id": "school_green_room_curtain_tie",
+      "kind": "CURTAIN",
+      "item": true
+    },
+    {
+      "id": "school_crystal_ball",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_globe",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_book_stack",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_open_book",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_potion_display",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_candelabra",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_quill",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_bust",
+      "kind": "SMALL",
+      "item": true
+    },
+    {
+      "id": "school_noticeboard",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_art_chao",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_art_chao_small",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_art_friends",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_art_family",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_art_garden",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_label_principal",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_label_classroom",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_label_health",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_label_fortune",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_label_market",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_label_exit",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_label_kindergarten",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_emblem",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_facade_title_left",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_facade_title_middle",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_facade_title_right",
+      "kind": "PANEL",
+      "item": true
+    },
+    {
+      "id": "school_leaf_principal",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_classroom",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_health",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_fortune",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_exit",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_principal_upper",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_classroom_upper",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_health_upper",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_fortune_upper",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_leaf_exit_upper",
+      "kind": "LEAF",
+      "item": true
+    },
+    {
+      "id": "school_door_principal",
+      "kind": "DOOR",
+      "item": true
+    },
+    {
+      "id": "school_door_classroom",
+      "kind": "DOOR",
+      "item": true
+    },
+    {
+      "id": "school_door_health",
+      "kind": "DOOR",
+      "item": true
+    },
+    {
+      "id": "school_door_fortune",
+      "kind": "DOOR",
+      "item": true
+    },
+    {
+      "id": "school_door_exit",
+      "kind": "DOOR",
+      "item": true
+    },
+    {
+      "id": "school_door_market",
+      "kind": "DOOR",
+      "item": true
+    },
+    {
+      "id": "school_tool_cabinet",
+      "kind": "DOOR",
+      "item": true
+    },
+    {
+      "id": "school_altar_guard",
+      "kind": "GUARD",
+      "item": true
+    },
+    {
+      "id": "school_mountain_composite",
+      "kind": "MURAL",
+      "item": true,
+      "atlas": {
+        "columns": 8,
+        "rows": 5,
+        "usedTiles": 40,
+        "stateMin": 0,
+        "stateMax": 127,
+        "fallback": 0,
+        "texture": "chao_garden:block/school025/school_mountain_composite"
+      }
+    },
+    {
+      "id": "school_round_window",
+      "kind": "WINDOW",
+      "item": true
+    },
+    {
+      "id": "school_toy_house_red",
+      "kind": "TOY",
+      "item": true
+    },
+    {
+      "id": "school_toy_house_blue",
+      "kind": "TOY",
+      "item": true
+    },
+    {
+      "id": "school_toy_house_yellow",
+      "kind": "TOY",
+      "item": true
+    },
+    {
+      "id": "school_toy_tower",
+      "kind": "TOY",
+      "item": true
+    },
+    {
+      "id": "school_toy_tree",
+      "kind": "TOY",
+      "item": true
+    },
+    {
+      "id": "school_toy_ball",
+      "kind": "TOY",
+      "item": true
+    },
+    {
+      "id": "school_twisted_column",
+      "kind": "COLUMN",
+      "item": true
+    },
+    {
+      "id": "school_hall_column",
+      "kind": "COLUMN",
+      "item": true
+    },
+    {
+      "id": "school_lobby_composite",
+      "kind": "RUG",
+      "item": true,
+      "atlas": {
+        "columns": 9,
+        "rows": 13,
+        "usedTiles": 117,
+        "stateMin": 0,
+        "stateMax": 127,
+        "fallback": 0,
+        "texture": "chao_garden:block/school025/school_lobby_composite"
+      }
+    },
+    {
+      "id": "school_cloud_composite",
+      "kind": "CLOUD",
+      "item": true,
+      "atlas": {
+        "columns": 4,
+        "rows": 4,
+        "usedTiles": 16,
+        "stateMin": 0,
+        "stateMax": 127,
+        "fallback": 0,
+        "texture": "chao_garden:block/school025/school_cloud_composite"
+      }
+    },
+    {
+      "id": "school_arch_principal",
+      "kind": "ARCH",
+      "item": true
+    },
+    {
+      "id": "school_arch_classroom",
+      "kind": "ARCH",
+      "item": true
+    },
+    {
+      "id": "school_arch_health",
+      "kind": "ARCH",
+      "item": true
+    },
+    {
+      "id": "school_arch_fortune",
+      "kind": "ARCH",
+      "item": true
+    },
+    {
+      "id": "school_arch_market",
+      "kind": "ARCH",
+      "item": true
+    },
+    {
+      "id": "school_arch_exit",
+      "kind": "ARCH",
+      "item": true
+    }
+  ],
+  "texturePrefix": "block/school025/"
+}

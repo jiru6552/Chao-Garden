@@ -1,0 +1,14 @@
+// Development-only native study isolation; never modifies application sources or payloads.
+gradle.projectsEvaluated {
+    def target = gradle.rootProject
+    if (target.hasProperty('chaoClientDir')) {
+        def directory = target.file(target.property('chaoClientDir')).canonicalFile
+        if (directory.parentFile != new File('/workspace/tools/chao0258-smoke').canonicalFile || !(directory.name ==~ /run-[0-9]+/)) {
+            throw new GradleException('The isolated client directory must be a tagged external0257 synthetic directory')
+        }
+        target.extensions.getByName('neoForge').runs.named('client').configure {
+            gameDirectory = directory
+        }
+        println("CHAO_CLIENT_RUN_DIRECTORY " + directory.canonicalPath)
+    }
+}

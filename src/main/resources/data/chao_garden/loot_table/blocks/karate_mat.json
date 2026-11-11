@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "block": "chao_garden:karate_mat",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "tile": "24"
+              }
+            },
+            {
+              "block": "chao_garden:karate_mat",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "tile": "49"
+              }
+            }
+          ]
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "name": "chao_garden:karate_mat",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:block"
+}

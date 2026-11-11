@@ -1,0 +1,228 @@
+{
+  "release": "0.25.8",
+  "result": "PASS",
+  "sources": [
+    {
+      "file": "docs/validation-0.25.8/production-build.txt",
+      "sha256": "4918a12d820f171794b26457b720947126efaceaf339412d06c024cd2a1b907f"
+    },
+    {
+      "file": "build.gradle",
+      "sha256": "04d7f5a148b5c88dcc916e8ec53c714bc4498420f3e00b14b0f5ad3abf931a7f"
+    },
+    {
+      "file": "gradle.properties",
+      "sha256": "ad203cb8ab41f434525722f031979e3d054184bd886ce3cbc122319e6374f9f3"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/activities/ActivityRewardsTest.java",
+      "sha256": "85b97cf3f253e616fd9dccd7d44c9c7c9522da9f6da9247a30074f94e16ef00f"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/activities/ActivityRulesTest.java",
+      "sha256": "4c72da9c9f10b6dfc2152d8d6c54bec0ec4f6748dd7d6896e0645b38d79927bb"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/client/StaffFaceMotion0251Test.java",
+      "sha256": "b102f827a20aff1355474ef6caa903ac0e4a705564588a5ee85a5c845daa6c3e"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/companion/CompanionRulesTest.java",
+      "sha256": "f96a8b324b0df50a6525eb89d49fffb19b4385de65b483e20b7fa45612d90e33"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/AnimalGeneStateTest.java",
+      "sha256": "92e1a5c66318172cc340effe6de37bfa02e80c4b620cc27e55faaba423afec29"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/AreaMusicRules0257Test.java",
+      "sha256": "bbd2a5d6fe59b3fc74aa6eed369794cee684bd7a33d0b6c922fe20963e2a5554"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/ChaoAnimationRules025Test.java",
+      "sha256": "2dc425a5da2c1b3463806a6dbc5225d4446c475d8078eb694ac7bb8ba511f734"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/ChaoFamilyPresentation020Test.java",
+      "sha256": "4cbf7de7b1226518bcbbe74d0b3fc24f998a9ecd6760098a7fea097fe7dfcd2d"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/ChaoLifeSystem019Test.java",
+      "sha256": "f52e75263c8a5a01e5032be91f60bcaabdc8ac3d430a2385c9c62b07c6585ba8"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/ChaoPreferencesTest.java",
+      "sha256": "e0c1a23b14d3d7a01f5735ed42b7cfcfde186872fdb9f09d199e3f3fa2967f3d"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/ChaoStateTest.java",
+      "sha256": "dc398d04ecb3de1c72ad17e5e2a4ead3d7deeb6eeb2bb943e3ebf56264784b4e"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/ChaoVariantAvailabilityTest.java",
+      "sha256": "9f548748cbd1a8733ca3ee9756201d7921fda58c6f59f6a60a7dc9f34fca8b6e"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/GardenGateGeometry0256Test.java",
+      "sha256": "831b659ea0747587b4c2895a9ef1e83dbf8f8ee0441e3a1ca9e0e09f7e846da7"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/GradualEvolutionRulesTest.java",
+      "sha256": "218b73f4ba13912898ed1f57908dc48d1fb45cb440c0e629a3ffa49011533c29"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/LifecycleRules022Test.java",
+      "sha256": "1b9f585563030ad39d6046abb41516947e00d164b79dfbd2da00a16063bf31cb"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/LobbyApproachGeometry0255Test.java",
+      "sha256": "e2611b5408e61a70711193368077e4e300ca35ce78d777e6afd053f739d3b520"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/LobbyGeometry0252Test.java",
+      "sha256": "76a2018ca77c38b16bdc1f21a7ece9ab3a3c01e9a72c043ffc30dcb0e79707c5"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/LocomotionRulesTest.java",
+      "sha256": "bb02a03e0e4868e8192aefbfdca8dae22e3475f32fe2602824b129f0e0d5a194"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/MechanicsTestSuite.java",
+      "sha256": "ead3e1da3c8e53f488de55eb327f7380a477ff018102faddc7ba78c1012b8b64"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/OmochaoRulesTest.java",
+      "sha256": "47f4b28ffce1b41397bbc799566a78209a626f46006830e8f66ab170a823a615"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/PortalGeometry0251Test.java",
+      "sha256": "7134a5fc3cfd05cc84971de60e0e63f256cd833c4da0c5f7568af568a47592a5"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/RetiredCharacterState020Test.java",
+      "sha256": "f1c452e51d10fc446c17b5ca143c3afc9fd5353378a9683290d5ca8f5df25ace"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/SchoolSingingRules0258Test.java",
+      "sha256": "b1a3f59b462c77ce6b2abdb60164fc7e3746a6a198afb57c364bde312e73a99b"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/WardrobeChoiceTest.java",
+      "sha256": "ab0aeacfa7e0fceb808b9bb9bf7f092fc1e8261be5977fcd8d199d72fdac97d8"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/distribution/EggDistributionRulesTest.java",
+      "sha256": "7cd6003645460d22594ba62877de9213d1d2f3ce1f234d4840c657b05f6aac13"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/fruit/FruitEffectsTest.java",
+      "sha256": "80367d5539ac762da526dff7833d07a2727d113d7fc0bcd3c40962c4345e42ca"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/genes/TrainingSupplyRulesTest.java",
+      "sha256": "577ee885862e45524fab2b34e456830052a1d255488d3c2b9a6d717e979082d5"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/kindergarten/MarketBuybackRules025Test.java",
+      "sha256": "0a8934ba3c26a807a3d11e483567e7d3c7e23cce56ff7ee7e4019e2889eac71c"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/market/MarketStockTest.java",
+      "sha256": "7640c6646d2c8d5c8e6fd4ef8f24a099399633bba18e326f8c139d464d2d1f8b"
+    }
+  ],
+  "total_checks": 1695092,
+  "core_total": 1695092,
+  "suites": [
+    {
+      "name": "ChaoState",
+      "checks": 168905,
+      "result": "PASS"
+    },
+    {
+      "name": "Egg distribution policy",
+      "checks": 243,
+      "result": "PASS"
+    },
+    {
+      "name": "Training supplies",
+      "checks": 248,
+      "result": "PASS"
+    },
+    {
+      "name": "Wardrobe choices",
+      "checks": 6644,
+      "result": "PASS"
+    },
+    {
+      "name": "Baby animation timing",
+      "checks": 1489,
+      "result": "PASS"
+    },
+    {
+      "name": "Portal geometry",
+      "checks": 1233,
+      "result": "PASS"
+    },
+    {
+      "name": "Lobby geometry0252",
+      "checks": 18509,
+      "result": "PASS"
+    },
+    {
+      "name": "Lobby perimeter approaches0256",
+      "checks": 40670,
+      "result": "PASS"
+    },
+    {
+      "name": "Garden gate geometry0256",
+      "checks": 48346,
+      "result": "PASS"
+    },
+    {
+      "name": "Area music rules0257",
+      "checks": 136,
+      "result": "PASS"
+    },
+    {
+      "name": "School singing rules0258",
+      "checks": 2472,
+      "result": "PASS"
+    },
+    {
+      "name": "Staff face timing0251",
+      "checks": 177195,
+      "result": "PASS"
+    },
+    {
+      "name": "Black Market stock",
+      "checks": 899355,
+      "result": "PASS"
+    },
+    {
+      "name": "Kindergarten buyback",
+      "checks": 220052,
+      "result": "PASS"
+    },
+    {
+      "name": "Activity rules",
+      "checks": 101311,
+      "result": "PASS"
+    },
+    {
+      "name": "Companion rules",
+      "checks": 2091,
+      "result": "PASS"
+    },
+    {
+      "name": "SA2 fruit effects",
+      "checks": 4984,
+      "result": "PASS"
+    },
+    {
+      "name": "Locomotion rules",
+      "checks": 1209,
+      "result": "PASS"
+    }
+  ]
+}

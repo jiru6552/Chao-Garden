@@ -1,0 +1,29 @@
+Chao Garden 0.25.15: native visual review
+
+Reviewed actual Minecraft Java 1.21.1 / NeoForge 21.1.219 captures from the final successful 24-scene client run. Screenshot pixels were viewed directly; the missing-material audit is an additional check, not the visual review itself.
+
+Findings:
+- The 29 source toy/hat items display their original materials and recognizable silhouettes. The native view is a fixed oblique held-model view; inventory icons separately face the TV, radio and keyboard fronts. Instruments use the original palettes. The bucket, can, pan and pot show closed/open surfaces consistent with the selected meshes.
+- All twelve hats were equipped in four groups of three Chao. Faces remain visible and the hats stay at the previous attachments. The wool-cap meshes are intentionally compressed into the existing cap envelopes, so equipped hats are adaptations rather than full-face SA2 masks. Blue and pink hoodie variants were equipped in these scenes; fine fitting across evolved shapes is covered by the separate geometry checks. The screenshots are not evidence of a complete evolved-form review.
+- Neutral view: the requested polygonal gray cliff texture, quiet waterfall stone and earlier small broadleaf plant are restored. Grass keeps the supplied top with reduced fine-grained contrast. The receiving pool and waterfall are intact.
+- Hero view: existing imported palm bark and accepted Hero masonry remain. The pool and pavilion are visible; this close view is not a complete border or terrain survey. Native garden tests separately verify the new eastern shoulder and gate route.
+- Dark view: the earlier dark rock, deadwood and gravestone materials are restored; accepted imported soil remains.
+- Foyer/classroom/principal/clinic views: the original drawings, photos and posters are visible in their intended locations. Square drawings no longer stretch across the wider frame mounting. The principal's two photos and clinic's two posters keep their original aspect ratios within the square block faces.
+- Original garden visual meshes were reconstructed from the supplied PRS/REL files and inspected from overhead and oblique views. This supports the limited Neutral/Hero cliff-foot terraces; it is not an original executable session or a complete terrain port.
+
+Review limits: representative desktop views at the existing native renderer settings; no Android, alternative shader, every FOV, every evolved outfit, or exhaustive animation matrix claim. Existing native action probes also completed eating, planting and watering during the final client run.
+
+Reviewed capture identities (SHA-256; screenshots remain internal working evidence):
+24e873f0365eb7be30f4b97304550140e2226ca324e555fa301ce973d0bec96d  chao0253-refinement-native-0.png
+aac325017bed58a42203b5697a735ac810455777eaa8d900cdad489a68789cad  chao0253-refinement-native-1.png
+dcabefaef7c7f2fa6eb707af8dcc4a1cccddbe866d77a43218e2dd38bfc2c0a9  chao0253-refinement-wearables-0.png
+1dd8ab35388e2bcac66f8889a7c383ef0ad38e2e5bd70e79b7e29fb9760b7a9e  chao0253-refinement-wearables-1.png
+f398a0dc8bd8c25e5b09ee39ab70edcf989fa7543357b7114c595116f348c9e8  chao0253-refinement-wearables-2.png
+e2629a633dd8ffb0cdcb95eeb566dbfbee32743f241f10ef70a9039732db054a  chao0253-refinement-wearables-3.png
+679ebdc73dc8d430a3477c38c348075fd22ca319fb82d1bee4f37b03947b2f52  chao0253-source-neutral.png
+56c4b0675863453d5c429f75af25a6c1918595c9dee0d4948a7719c9568c98f9  chao0253-source-hero.png
+6bf00c2d33506ba4e8a994458717bda1ef7426fafcdf393c02125177b1fe24e5  chao0253-source-dark.png
+823459918ff208d00df067457968139ba6a7225b9f06a03d801cfc6264ea163f  chao0253-source-school-foyer.png
+2bc59e81af8b8141c936903c3ff2ac40c434b4aa76b753f6c2df1f68aee5fa01  chao0253-source-school-classroom.png
+b32141b2e8deb65d9215de0bd565a716a0624ce1adce8884ee5533fd573ab535  chao0253-source-school-principal.png
+ce19919b7a274e76943840c43097e5f6afd0688bf0859ad2796e2deb88de2297  chao0253-source-school-clinic.png

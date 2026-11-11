@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W",
+    " S",
+    " S"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:red_wool"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "chao_garden:race_marker",
+    "count": 4
+  }
+}

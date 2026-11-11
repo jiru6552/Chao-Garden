@@ -1,0 +1,38 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "java": "21.0.13+9",
+  "counts": {
+    "market": 153173,
+    "activities_and_rewards": 101311,
+    "companions": 2091,
+    "fruit": 4984
+  },
+  "pure_total": 261559,
+  "source_sha256": {
+    "src/main/java/com/chaogarden/activities/ActivityRules.java": "17fca4cce8e8f419ac11f17cc952b0a838397972d89bb3fd273353ffd57470b7",
+    "src/main/java/com/chaogarden/activities/ActivityManager.java": "071b913fc4ed2214d06f921b6488919b423e2b777bce064dd183d3d0fbf6abd1",
+    "src/main/java/com/chaogarden/market/MarketStock.java": "6c11f96740e73d7cd1d280f2bce8f5d5ece6d31e9203db419d0a51e37649bb35",
+    "src/main/java/com/chaogarden/fruit/FruitEffects.java": "39762d8d527b520115e9d876a9310e023bf57a598f2c3848dcbe73dc1b779266",
+    "src/test/java/com/chaogarden/activities/ActivityRulesTest.java": "4c72da9c9f10b6dfc2152d8d6c54bec0ec4f6748dd7d6896e0645b38d79927bb",
+    "src/test/java/com/chaogarden/market/MarketStockTest.java": "f388db047039b5c807be3b0b1cb21430bd71fed65b1c6717f9cd3ec561254e07",
+    "src/test/java/com/chaogarden/companion/CompanionRulesTest.java": "f96a8b324b0df50a6525eb89d49fffb19b4385de65b483e20b7fa45612d90e33",
+    "src/test/java/com/chaogarden/fruit/FruitEffectsTest.java": "80367d5539ac762da526dff7833d07a2727d113d7fc0bcd3c40962c4345e42ca",
+    "src/main/java/com/chaogarden/test/ActivityGameTests.java": "964ae65cc288c61367b59d409608ae1e66a6ee039845d225d6b8559b2fd6f23d"
+  },
+  "real_server_regression": "ActivityGameTests.karateKnockoutCannotCounterattackAndLifetimeXpCannotWrap",
+  "scope": "Focused independent Java21 rules and one real server karate knockout/XP regression; both centralized server profiles passed. This does not certify complete third-party modpacks or endurance loads.",
+  "server_fixture_note": "The regression invokes actual begin to commit both home journals before forcing only final-bout HP/order/timing; production restore remains required.",
+  "central_server_results": {
+    "default": {
+      "required": 122,
+      "passed": 122
+    },
+    "accessories_and_identity_fixtures": {
+      "required": 122,
+      "passed": 122
+    },
+    "complete_core_assertions": 431616,
+    "verification_basis": "Central release owner confirmed the executed final logs; final log paths/hashes are recorded in TESTING.md. The focused261559math assertions are a subset of431616, not additional."
+  }
+}

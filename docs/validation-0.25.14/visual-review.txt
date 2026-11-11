@@ -1,0 +1,28 @@
+Chao Garden 0.25.14 native visual review
+
+Reviewed the final ordinary Minecraft client run recorded in client-final.log.
+All screenshots are internal QA evidence and are not included in the release.
+
+Inventory/native mesh grids: source fruits retain distinct silhouettes, original
+color bands/patterns and readable stems; seven Battle seeds retain distinct coats
+and sprouting leaves. The shovel points blade-down in the item frame. The cyan
+can has the original eye/face artwork, open filling mouth and raised spout.
+Authored extension fruit and seed families remain legible and retain identity.
+
+First-person views: held items remain readable; Dark fruit pattern is visible;
+watering-can handle, body, opening and rose resolve without missing materials.
+Dropped objects retain the same designs. Eating and planting fixtures complete
+using the real synchronized actions. The can faces toward the seedling while
+pouring and lowers through recovery. Native gameplay result gates pass.
+
+Neutral Garden: supplied rock/grass materials and broadleaf leaves resolve at
+the waterfall, retaining the existing waterfall/shore geometry and planted ledges.
+Hero Garden: palm wood, hanging fruit, masonry, frieze and fountain emblem read
+correctly; the corner molding turns continuously. End grain is registered in
+the atlas; no scene missing-texture warnings remain in the final run.
+Dark Garden: pale shore, rough cliff stone, patterned dark fruit, bare tree and
+grave markers resolve without missing textures; existing red-water scene remains.
+
+Limits: representative viewpoints and child Chao interactions, plus structural
+native checks across every food/seed/tool context and registered block state.
+Not an exhaustive visual review of every accessory, evolved form, shader or device.

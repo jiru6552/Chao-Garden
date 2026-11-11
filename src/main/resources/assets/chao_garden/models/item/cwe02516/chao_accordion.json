@@ -1,0 +1,109 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/cwe02516/chao_accordion.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "cwe_toy_kanoke03_ff0009ff_52": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_kanoke03_ff0009ff_52",
+    "cwe_toy_piano01_ffffffff_4": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_piano01_ffffffff_4",
+    "cwe_toy_channel_on_04_1a1a1aff_0": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_channel_on_04_1a1a1aff_0",
+    "cwe_toy_kami01_ffffffff_0": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_kami01_ffffffff_0",
+    "particle": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_kanoke03_ff0009ff_52"
+  },
+  "render_type": "minecraft:cutout",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    }
+  }
+}

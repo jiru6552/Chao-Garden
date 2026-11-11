@@ -1,0 +1,221 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "shell": "chao_garden:block/transporter_shell",
+    "ivory": "chao_garden:block/transporter_ivory",
+    "red": "chao_garden:block/transporter_red",
+    "gold": "chao_garden:block/transporter_gold",
+    "orb": "chao_garden:block/transporter_orb",
+    "blue": "chao_garden:block/transporter_blue",
+    "neck": "chao_garden:block/transporter_neck",
+    "screen": "chao_garden:block/transporter_screen",
+    "particle": "chao_garden:block/transporter_shell"
+  },
+  "elements": [
+    {
+      "name": "wide monitor cheeks",
+      "from": [
+        4.8,
+        0,
+        15.2
+      ],
+      "to": [
+        16,
+        4.076046,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            11.91111
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            0.888889,
+            11.91111
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            0.888889
+          ]
+        }
+      }
+    },
+    {
+      "name": "red screen surround",
+      "from": [
+        9.28,
+        0,
+        14.592
+      ],
+      "to": [
+        16,
+        7.239544,
+        15.072
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            13.041095
+          ]
+        },
+        "south": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            13.041095
+          ]
+        },
+        "west": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            13.041095
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "garden display",
+      "from": [
+        10.08,
+        0,
+        14.448
+      ],
+      "to": [
+        16,
+        6.570342,
+        14.592
+      ],
+      "faces": {
+        "north": {
+          "texture": "#screen",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            13.935484
+          ]
+        },
+        "south": {
+          "texture": "#screen",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            13.935484
+          ]
+        },
+        "west": {
+          "texture": "#screen",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            13.935484
+          ]
+        },
+        "up": {
+          "texture": "#screen",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "left cyan button",
+      "from": [
+        5.76,
+        0,
+        14.4
+      ],
+      "to": [
+        8.88,
+        2.311787,
+        15.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            14.829265
+          ]
+        },
+        "south": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            14.829265
+          ]
+        },
+        "east": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            14.829265
+          ]
+        },
+        "west": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            14.829265
+          ]
+        },
+        "up": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    }
+  ]
+}

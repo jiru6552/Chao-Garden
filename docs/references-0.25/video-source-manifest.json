@@ -1,0 +1,27 @@
+{
+  "archive_crc": "PASS",
+  "source_parts": [
+    "Captures.z01",
+    "Captures.z02",
+    "Captures.zip"
+  ],
+  "videos": [
+    {
+      "file": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "size_bytes": 925440995,
+      "sha256": "0fb69bf0caad1ebb3222fa4db255cc0b90d08b343cb59b2b5aa0e1d61f2aced4",
+      "duration_seconds": 434.112433,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "SONIC ADVENTURE 2 2026-11-01 13-45-09.mp4",
+      "size_bytes": 613963607,
+      "sha256": "b70fce3f87fcb93a54d8ee5255b1424e2ff5360e0b843a024c5265b2855270e0",
+      "duration_seconds": 299.3075,
+      "width": 2560,
+      "height": 1440
+    }
+  ],
+  "sample_note": "FFmpeg fps=1/5 overviews are labelled approximate bucket midpoints (~2.5+5n seconds), not bucket starts. Exact-ss native keyframes are authoritative for scene timestamps. Dense motion strips use6fps nominal target samples (source selection within~1/12s)."
+}

@@ -1,0 +1,80 @@
+{
+  "textures": {
+    "base": "chao_garden:block/school025/school_tool_cabinet",
+    "back": "chao_garden:block/school025/school_tool_cabinet_back",
+    "edge": "chao_garden:block/school025/school_tool_cabinet_edge",
+    "particle": "chao_garden:block/school025/school_tool_cabinet",
+    "case": "chao_garden:block/school025/school_tool_cabinet_case"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        2,
+        0
+      ],
+      "to": [
+        2,
+        16,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#back",
+          "uv": [
+            0.0,
+            10.666666666666666,
+            10.434782608695652,
+            15.333333333333334
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            5.565217391304348,
+            10.666666666666666,
+            16.0,
+            15.333333333333334
+          ]
+        },
+        "up": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ],
+  "ambientocclusion": false
+}

@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_shovel",
+    "particle": "chao_garden:block/sa2_02514/chao_shovel/sa2_scop01_52"
+  },
+  "base": {
+    "parent": "chao_garden:item/fruit02512/chao_shovel"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_shovel"
+      },
+      "gui_light": "front"
+    }
+  }
+}

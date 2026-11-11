@@ -1,0 +1,313 @@
+[
+  {
+    "command": "python scripts/validate_sa2_assets_02515.py --rigid-toy-poses",
+    "exit": 0,
+    "seconds": 0.12,
+    "tail": "{\"result\": \"PASS\", \"checks\": 4378, \"rigid_toy_poses\": 10}\n"
+  },
+  {
+    "command": "python scripts/validate_sa2_assets_02515.py",
+    "exit": 1,
+    "seconds": 0.59,
+    "tail": "assets_02515.py\", line 99, in <module>\n    elif not sys.argv[1:]:main()\n                          ^^^^^^\n  File \"/tmp/chao-integrated-review/source/scripts/validate_sa2_assets_02515.py\", line 92, in main\n    old=json.loads((D/'previous-models/cwe_accessories'/(n+'.json')).read_text());new=json.loads((A/'models/entity/cwe_accessories'/(n+'.json')).read_text());a=old['bones'][0]['meshes'][0]['vertices'];b=new['bones'][0]['meshes'][0]['vertices'];check(len(b)==16,'Missing garment bevel')\n                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/chao-integrated-review/source/scripts/validate_sa2_assets_02515.py\", line 12, in check\n    if not value:raise AssertionError(msg)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Missing garment bevel\n",
+    "interpretation": "Intermediate-stage garment contract predates final CWE garment generator; full staged rebuild not run."
+  },
+  {
+    "command": "python scripts/validate_cwe_assets_02516.py",
+    "exit": 0,
+    "seconds": 0.3,
+    "tail": "{\"release\": \"0.25.16\", \"result\": \"PASS\", \"checks\": 805, \"source_items\": 26, \"wearables\": 10, \"wearable_parts\": 13, \"toys\": 2, \"special_fruits\": 5, \"gifts\": 9, \"toy_poses\": 10, \"fruit_pod_stages\": 20, \"exact_prior_texture_reversions\": 8, \"source_archive_version\": \"9.6.2.2\"}\n"
+  },
+  {
+    "command": "python scripts/validate_fruit_models_02512.py",
+    "exit": 0,
+    "seconds": 0.38,
+    "tail": "Fruit/model contract: 41175 checks; 18514 native faces; malformed fixtures rejected 3.\n"
+  },
+  {
+    "command": "python art/validate_ca2_fruit_018.py",
+    "exit": 0,
+    "seconds": 0.06,
+    "tail": "CA2 fruit assets: 122 checks passed\n"
+  },
+  {
+    "command": "python art/validate_forms_019.py",
+    "exit": 0,
+    "seconds": 0.79,
+    "tail": "Forms019 independent validation: 95240 checks;135 distinct endpoints;37 animal slot sets\u00d713 runtime source fits;PASS\n"
+  },
+  {
+    "command": "python art/validate_cwe_content_019.py",
+    "exit": 1,
+    "seconds": 0.12,
+    "tail": "Traceback (most recent call last):\n  File \"/tmp/chao-integrated-review/source/art/validate_cwe_content_019.py\", line 33, in <module>\n    variants=read(A/'blockstates'/f'{ident}.json')['variants'];require(len(variants)==32,f'Complete physical toy states {ident}')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/chao-integrated-review/source/art/validate_cwe_content_019.py\", line 11, in require\n    if not ok:raise AssertionError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Complete physical toy states chao_lifesaver\n",
+    "retry": {
+      "exit": 0,
+      "method": "Exact domain/model-binding validator correction",
+      "output": "CWE native content: 7489 checks passed\n"
+    }
+  },
+  {
+    "command": "python art/validate_gradual_evolution_021.py",
+    "exit": 0,
+    "seconds": 6.08,
+    "tail": "Gradual021 independent checks: 70725 PASS;15young/135aged; age0/.6/1.2; connected restrained forms; fixed eyes/joints; natural palettes; deterministic.\n"
+  },
+  {
+    "command": "python art/validate_characters_020.py",
+    "exit": 0,
+    "seconds": 0.08,
+    "tail": "Characters020: 3908 independent checks; single mechanical eye pair; native inherited UVs; connected Amy head; PASS\n"
+  },
+  {
+    "command": "python art/validate_chaos_020.py",
+    "exit": 0,
+    "seconds": 0.03,
+    "tail": "inherited_coats\": 117\n    },\n    \"angel\": {\n      \"hat_hidden_ice_branches\": [\n        \"chaos_crown_horn_-1\",\n        \"chaos_crown_horn_1\",\n        \"chaos_crown_rear\"\n      ],\n      \"limb_ice_remains_visible\": true,\n      \"full_skull_hide_covers_all_head_ice\": true,\n      \"uncapped_foot_material_join\": true,\n      \"full_opacity_gradient_uv_coverage\": true,\n      \"inherited_coats\": 117\n    },\n    \"devil\": {\n      \"hat_hidden_ice_branches\": [\n        \"chaos_crown_lower_-1\",\n        \"chaos_crown_lower_1\",\n        \"chaos_crown_upper_-1\",\n        \"chaos_crown_upper_1\"\n      ],\n      \"limb_ice_remains_visible\": true,\n      \"full_skull_hide_covers_all_head_ice\": true,\n      \"uncapped_foot_material_join\": true,\n      \"full_opacity_gradient_uv_coverage\": true,\n      \"inherited_coats\": 117\n    }\n  },\n  \"tip_material_policy\": {\n    \"two_tone_regular_colored_jewel\": \"translucent, alpha255 to97\",\n    \"mono_tone_regular_colored_jewel\": \"opaque, alpha255\",\n    \"shiny\": \"independent of opacity\"\n  }\n}\n"
+  },
+  {
+    "command": "python art/validate_chaos_021.py",
+    "exit": 0,
+    "seconds": 0.18,
+    "tail": "orns\": [\n        [\n          [\n            -4.65,\n            -9.7,\n            -0.7\n          ],\n          [\n            -2.0,\n            -4.8,\n            1.95\n          ]\n        ],\n        [\n          [\n            2.0,\n            -9.7,\n            -0.7\n          ],\n          [\n            4.65,\n            -4.8,\n            1.95\n          ]\n        ]\n      ],\n      \"lower_descending_horns\": [\n        [\n          [\n            -4.85,\n            -2.3,\n            -0.1\n          ],\n          [\n            -2.5,\n            2.25,\n            3.25\n          ]\n        ],\n        [\n          [\n            2.5,\n            -2.3,\n            -0.1\n          ],\n          [\n            4.85,\n            2.25,\n            3.25\n          ]\n        ]\n      ],\n      \"connected_volume_cells\": {\n        \"chaos_crown_upper_-1\": 304,\n        \"chaos_crown_lower_-1\": 360,\n        \"chaos_crown_upper_1\": 304,\n        \"chaos_crown_lower_1\": 360\n      }\n    }\n  },\n  \"checks\": 2511,\n  \"result\": \"PASS\"\n}\n"
+  },
+  {
+    "command": "python art/validate_overlay_head_fit_021.py",
+    "exit": 0,
+    "seconds": 0.47,
+    "tail": "{\n  \"version\": \"0.21.0\",\n  \"maturity_endpoint_fits\": 405,\n  \"maturity_samples\": [\n    0,\n    0.6,\n    1.2\n  ],\n  \"changed_head_bounds\": 251,\n  \"maximum_core_scale_vs_source\": 1.0799999999999998,\n  \"verified_skull_local_attachment_roots\": 750,\n  \"young_head_axis_invariance\": true,\n  \"crown_surface_anchored_at_all_growth_scales\": true,\n  \"face_beak_placement\": \"Fixed eye-relative plane retained; no crown affine on the face.\"\n}\n"
+  },
+  {
+    "command": "python art/validate_retired_characters_020.py",
+    "exit": 0,
+    "seconds": 0.04,
+    "tail": "Retired character resources: 15 checks passed.\n"
+  },
+  {
+    "command": "python art/validate_inspector_ui_020.py",
+    "exit": 0,
+    "seconds": 0.06,
+    "tail": "Inspector UI: all three bottom cards clear; Guide note well and four transparent corners preserved.\n"
+  },
+  {
+    "command": "python art/validate_native_rig_018.py",
+    "exit": 0,
+    "seconds": 0.24,
+    "tail": "/tmp/chao-integrated-review/source/art/validate_native_rig_018.py:100: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  assert list(original.getchannel('A').getdata())==list(coat.getchannel('A').getdata())\nPASS 6486 checks; maximum source world corner error 3.552713678800501e-15\n"
+  },
+  {
+    "command": "python art/validate_heritage_018.py",
+    "exit": 0,
+    "seconds": 0.19,
+    "tail": "Heritage validation: 2688 states; 348 keys; 755 PNGs; 6343 checks passed\n"
+  },
+  {
+    "command": "python art/validate_surface_018.py",
+    "exit": 0,
+    "seconds": 4.58,
+    "tail": "ew_projection_difference\": 5.551115123125783e-17,\n    \"per_mesh\": {\n      \"egg_mesh\": 38,\n      \"chao_baby\": 303,\n      \"chao_baghead\": 295,\n      \"chao_creeper\": 271,\n      \"chao_dad\": 320,\n      \"chao_dark\": 358,\n      \"chao_dark_run\": 410,\n      \"chao_dark_swim\": 386,\n      \"chao_dragon\": 415,\n      \"chao_emerald\": 303,\n      \"chao_ender\": 295,\n      \"chao_fly\": 322,\n      \"chao_golden\": 309,\n      \"chao_hero\": 340,\n      \"chao_hero_fly\": 371,\n      \"chao_hero_power\": 366,\n      \"chao_knuckles\": 365,\n      \"chao_power\": 343,\n      \"chao_run\": 349,\n      \"chao_swim\": 353,\n      \"chao_tails\": 360\n    }\n  },\n  \"accessories\": {\n    \"spectacles\": {\n      \"mesh_parts\": 9,\n      \"solid_intersections\": 8,\n      \"connected_components\": 1\n    },\n    \"mask\": {\n      \"mesh_parts\": 12,\n      \"solid_intersections\": 17,\n      \"connected_components\": 1\n    }\n  },\n  \"scope\": \"Rest geometry; five affine camera views; five positions per matching edge. Actual material/animation needs client review.\"\n}\n"
+  },
+  {
+    "command": "python art/validate_chao_overlay_clearance.py",
+    "exit": 0,
+    "seconds": 10.95,
+    "tail": "\"rig\": \"baby\",\n        \"time\": 1.031,\n        \"bone\": \"animal_0_9_left\",\n        \"mesh\": \"gene_arm_connector\"\n      },\n      {\n        \"depth\": 0.44585409690745337,\n        \"rig\": \"baby\",\n        \"time\": 1.031,\n        \"bone\": \"animal_0_10_left\",\n        \"mesh\": \"gene_arm_connector\"\n      },\n      {\n        \"depth\": 0.44585409690745337,\n        \"rig\": \"baby\",\n        \"time\": 1.031,\n        \"bone\": \"animal_0_11_left\",\n        \"mesh\": \"gene_arm_connector\"\n      },\n      {\n        \"depth\": 0.44585409690745337,\n        \"rig\": \"baby\",\n        \"time\": 1.031,\n        \"bone\": \"animal_0_12_left\",\n        \"mesh\": \"gene_arm_connector\"\n      },\n      {\n        \"depth\": 0.44585409690745337,\n        \"rig\": \"baby\",\n        \"time\": 1.031,\n        \"bone\": \"animal_0_13_left\",\n        \"mesh\": \"gene_arm_connector\"\n      },\n      {\n        \"depth\": 0.44585409690745337,\n        \"rig\": \"baby\",\n        \"time\": 1.031,\n        \"bone\": \"animal_0_14_left\",\n        \"mesh\": \"gene_arm_connector\"\n      }\n    ]\n  }\n}\n"
+  },
+  {
+    "command": "python art/validate_chao_crawl_clearance.py",
+    "exit": 0,
+    "seconds": 35.04,
+    "tail": "{\n  \"motion\": \"crawl\",\n  \"head_lower_model_pixels\": {\n    \"hero\": 0.3,\n    \"other_rigs\": 0.7\n  },\n  \"movement_weight\": 1,\n  \"rig_count\": 11,\n  \"samples_per_rig\": 49,\n  \"authored_arm_sets\": 18,\n  \"equip_compatible_arm_species\": 14,\n  \"depth_units\": \"model pixels; 16 per block\",\n  \"scope\": \"Full-movement crawl cuboids only; midpoint breathing, zero look/reaction/transition deltas. Not universal animation clearance.\",\n  \"native\": {\n    \"checks\": 2156,\n    \"contacts_over_0_05\": 0,\n    \"max_depth\": 0,\n    \"mesh_contacts\": {},\n    \"native_cube_contacts\": {},\n    \"top_contacts\": []\n  },\n  \"overlay\": {\n    \"checks\": 44198,\n    \"contacts_over_0_05\": 0,\n    \"max_depth\": 0,\n    \"mesh_contacts\": {},\n    \"native_cube_contacts\": {},\n    \"top_contacts\": []\n  }\n}\n"
+  },
+  {
+    "command": "python scripts/validate_official_chao.py",
+    "exit": 0,
+    "seconds": 0.13,
+    "tail": "PASS: 20 imported rigs; 19746 source-parity checks; 366 bones, 809 cuboids, 63 mirrored_cuboids, 72 inflated_cuboids, 69 zero_thickness_cuboids, 4576 faces; exact 20 texture files and eight-clip animation source.\n"
+  },
+  {
+    "command": "python scripts/validate_gene_assets.py",
+    "exit": 0,
+    "seconds": 0.22,
+    "tail": "Gene assets passed: 52 canonical/legacy icons,31 distinct DNA samples, 109 supplied-slot bones and 461 native cuboids; expression plane remains clear.\nCWE gene descriptors/attraction and13 native fits passed:2158 additional cuboids; 17703 assertions total.\nIsolated additive generation passed: 91 resources remain byte-identical; unrelated translations/loot preserved.\n"
+  },
+  {
+    "command": "python scripts/validate_seed_sprites.py",
+    "exit": 0,
+    "seconds": 0.11,
+    "tail": "PASS:220 checks;36 distinct native seed resources,33 active fruit-first crops plus3 compatibility-only seed textures; binaryalpha, connected sprouting bulbs, matching native meshes and exact no-extra catalog.\n"
+  },
+  {
+    "command": "python scripts/validate_egg_shell.py",
+    "exit": 0,
+    "seconds": 0.1,
+    "tail": "Egg shell passed: 96 narrow longitude panels, 6 closing panels, 191 matching wrap edges, exact Blockbench roundtrip; UV stretch and texture-edge corruptions rejected.\n"
+  },
+  {
+    "command": "python scripts/validate_variants.py",
+    "exit": 0,
+    "seconds": 0.22,
+    "tail": "Variant assets passed: 19 distinct geometry themes, 19 body atlases, 19 egg atlases, 19 item icons.\nAcquisition passed: all19 themed recipes and recipe advancements disabled; 38 absence checks. Appearance assets remain intact.\n"
+  },
+  {
+    "command": "python scripts/validate_distribution_023.py",
+    "exit": 0,
+    "seconds": 0.03,
+    "tail": "Distribution023: 390 resource acquisition checks passed\n"
+  },
+  {
+    "command": "python scripts/validate_training_supplies_024.py",
+    "exit": 0,
+    "seconds": 0.02,
+    "tail": "Training supplies024: 38 resource invariants passed\n"
+  },
+  {
+    "command": "python art/validate_staff_025.py",
+    "exit": 0,
+    "seconds": 0.07,
+    "tail": "Staff025 asset assertions passed: 12,861; four adult role meshes, one eye pair each and exact neutral source pixels preserved.\n"
+  },
+  {
+    "command": "python art/validate_school_emblem_0251.py",
+    "exit": 0,
+    "seconds": 0.16,
+    "tail": "School emblem0251: 1,209 assertions passed; complete gold/green seal, separated full head/orb, all four native facings; 7 malformed fixtures rejected.\n"
+  },
+  {
+    "command": "python art/validate_portals_0251.py",
+    "exit": 0,
+    "seconds": 0.19,
+    "tail": "Portal0251 source/material assertions passed: 308; real two-sided vanilla shader, closed quartz/roof geometry, readable EXIT and seamless dome; 14 malformed fixtures rejected.\n"
+  },
+  {
+    "command": "python art/validate_lobby_0252.py",
+    "exit": 0,
+    "seconds": 0.04,
+    "tail": "Lobby0252 renderer contract: 138 assertions; 11 malformed regressions rejected. Numeric geometry is covered separately; native oblique review pending.\n"
+  },
+  {
+    "command": "python art/validate_environments_025.py",
+    "exit": 0,
+    "seconds": 12.53,
+    "tail": "Environment025 assertions passed: 821,405; 94 reusable school decorations, 8 internal scene blocks, four isolated realms, RGBA glass/shader and dev separation; 46 malformed fixtures rejected.\n"
+  },
+  {
+    "command": "python scripts/test_lobby_material_manifest0255.py",
+    "exit": 0,
+    "seconds": 0.03,
+    "tail": "Lobby material manifest0255: native declarations retained; unrelated realm/future sky PNGs excluded.\n"
+  },
+  {
+    "command": "python scripts/validate_area_music_0257.py",
+    "exit": 0,
+    "seconds": 0.17,
+    "tail": "{\"file\": \"/tmp/chao0257-music-pack-test-bsdkdegw/pack.zip\", \"provided_areas\": [\"neutral\"], \"missing_areas\": [\"lobby\", \"hero\", \"dark\", \"kindergarten\", \"black_market\"]}\nArea music0257: 68 audio/resource/controller checks; malformed substitution, attribution and codec fixtures rejected.\n"
+  },
+  {
+    "command": "python scripts/validate_supplied_audio_02511.py",
+    "exit": 0,
+    "seconds": 4.17,
+    "tail": "Supplied audio02511: all eleven complete source/output waveforms match; exact mappings, duration, codec, channels and native streaming bindings PASS.\n"
+  },
+  {
+    "command": "python scripts/validate_school_singing_0258.py",
+    "exit": 0,
+    "seconds": 0.71,
+    "tail": "School singing0258: 113 audio/score/spatial/provenance checks; 5 malformed fixtures rejected.\n"
+  },
+  {
+    "command": "python scripts/validate_classroom_toys_0258.py",
+    "exit": 0,
+    "seconds": 0.06,
+    "tail": "Classroom play city0258: 2,887 geometric/native bindings passed; 7 malformed regressions rejected.\n"
+  },
+  {
+    "command": "python art/validate_hero_garden_0253.py --self-test",
+    "exit": 0,
+    "seconds": 0.06,
+    "tail": "Hero Garden 0.25.3 assets passed: 3 native BlockItems, east-facing emblem and isolated wildlife-free sky. Self-test=True.\n"
+  },
+  {
+    "command": "python scripts/validate_clinic_refinement_0254.py",
+    "exit": 0,
+    "seconds": 0.15,
+    "tail": "Clinic0254: exposed bed union, quilt aspect, room-facing mirrored right curtain tie generated.\nClinic0254: 72 exposed bed faces; zero overlapping coplanar surfaces; physical quilt UVs; left-facing visible tassel; 2 overlapping-skin mutants rejected; deterministic postpass. PASS\n"
+  },
+  {
+    "command": "python scripts/validate_school_doors_0255.py",
+    "exit": 0,
+    "seconds": 0.27,
+    "tail": "School doors0255: 39,399 checks;288 curved meshes/1452 owned patches,6 thin circular arches, complete badges,42 unchanged cabinet geometry/art assets plus one exact inert-state extension;11 malformed regressions rejected. PASS\n"
+  },
+  {
+    "command": "python scripts/test_school_door_geometry_0255.py",
+    "exit": 1,
+    "seconds": 0.05,
+    "tail": "Traceback (most recent call last):\n  File \"/tmp/chao-integrated-review/source/scripts/test_school_door_geometry_0255.py\", line 42, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/tmp/chao-integrated-review/source/scripts/test_school_door_geometry_0255.py\", line 17, in main\n    require(javac is not None,'A JDK is required to test actual SchoolDoorGeometry0255')\n  File \"/tmp/chao-integrated-review/source/scripts/validate_school_doors_0255.py\", line 14, in require\n    if not ok:raise AssertionError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: A JDK is required to test actual SchoolDoorGeometry0255\n",
+    "retry": {
+      "exit": 0,
+      "method": "Temporary javac launcher using installed jdk.compiler module",
+      "output": "School doors0.25.5 compiled native core: all48 closed/open/hinged/section/height shapes match the independently derived physical silhouette. PASS\n"
+    }
+  },
+  {
+    "command": "python scripts/validate_kindergarten_layout_0255.py --self-test",
+    "exit": 0,
+    "seconds": 0.03,
+    "tail": "Kindergarten0255: 162 checks passed; moved native board/corner stack and physical Fortune curtain reflection; 7 malformed fixtures rejected.\n"
+  },
+  {
+    "command": "python scripts/validate_lobby_approaches_0255.py",
+    "exit": 0,
+    "seconds": 0.03,
+    "tail": "Lobby perimeter approaches0257: 387 bindings; 16 malformed regressions rejected.\n"
+  },
+  {
+    "command": "python art/validate_dark_garden_0255.py --self-test",
+    "exit": 0,
+    "seconds": 0.11,
+    "tail": "Dark Garden0255: 1,619 native palette/shape/atmosphere/care assertions passed; 7 malformed fixtures rejected.\n"
+  },
+  {
+    "command": "python scripts/validate_garden_device_0254.py --self-test",
+    "exit": 0,
+    "seconds": 0.07,
+    "tail": "Garden device0254 passed 2489 mesh, rotation, native collision, loot and CD checks.\n"
+  },
+  {
+    "command": "python art/validate_classical_models_0254.py --self-test",
+    "exit": 0,
+    "seconds": 0.13,
+    "tail": "Classical models 0.25.4: 2 existing column IDs / 6 Ionic member meshes, physical flutes and scrolls, 8 oriented Hero soffit states; edge UV joins passed. Self-test=True\n"
+  },
+  {
+    "command": "python scripts/validate_kindergarten_halls_0252.py --self-test",
+    "exit": 0,
+    "seconds": 0.07,
+    "tail": "Kindergarten0252 halls: 30 finite full-cube surfaces; opaque, distinct and bound; PASS\n"
+  },
+  {
+    "command": "python art/validate_proportions_022.py --self-test",
+    "exit": 0,
+    "seconds": 1.97,
+    "tail": "Proportions022: 14955 checks PASS; 405 ordinary age cases, 600 limb assemblies, 10 preserved special files, 351 coats and 41 raw inputs.\n"
+  },
+  {
+    "command": "python art/validate_variants_022.py --self-test",
+    "exit": 0,
+    "seconds": 13.76,
+    "tail": "{\n  \"release\": \"0.22.0\",\n  \"result\": \"PASS\",\n  \"atlases\": 209,\n  \"pixel_comparisons\": 1712128,\n  \"protected_eye_pixels\": 13376,\n  \"type_secondary_age_fits\": 7695,\n  \"forehead_goggles_cases\": 810,\n  \"exposed_symbol_samples\": 68445,\n  \"rejected_corruptions\": [\n    \"eye\",\n    \"alpha\",\n    \"theme hue\"\n  ],\n  \"scope\": \"Native generated PNG pixels and static 15-family/9-endpoint/3-age fits. Actual moving ancestors/material selection are separately checked by the client probe.\"\n}\n"
+  },
+  {
+    "command": "python art/validate_items_eggs_022.py --self-test",
+    "exit": 0,
+    "seconds": 0.97,
+    "tail": "\n  \"additional_bound_block_textures\": 303,\n  \"canonical_icon_pixels\": 683,\n  \"placed_egg_atlases\": 191,\n  \"identical_shiny_albedo_pairs\": 86,\n  \"shell_uv_samples\": 468,\n  \"cocoon_uv_and_center_samples\": 3216,\n  \"cocoon_sha256\": {\n    \"evolution\": \"107de8bab9250508f6c5225f4d5d36e83748056bb5fedf4c6d3b2073024eba41\",\n    \"rebirth\": \"7778d57b6f0cb663ceb28d6fce3d6ca4bc12e22fdecb8890954e6dbc4e817535\",\n    \"death\": \"36b78768d542d6360a8dde54016f2a3acbdf22bc5c2e8945ff7b62e15da871c2\"\n  },\n  \"rejected_corruptions\": [\n    \"canonical icon glare overwrite\",\n    \"dangling item texture\",\n    \"fractional sprite fringe\",\n    \"closing shell UV stretch\",\n    \"placed shell longitude seam\",\n    \"painted shiny albedo stripe\",\n    \"visible cocoon alpha hole\",\n    \"cocoon longitude discontinuity\",\n    \"colored coat used for death cocoon\"\n  ],\n  \"scope\": \"Actual resource/binding/palette/UV checks. Final material animation, shell appearance and inventory presentation require the separate actual-client review.\"\n}\n"
+  },
+  {
+    "command": "python art/validate_resource_hygiene_022.py --self-test",
+    "exit": 0,
+    "seconds": 0.09,
+    "tail": "Resource hygiene022: 2423checks;1609unreachableassets excluded;PASS\n"
+  }
+]

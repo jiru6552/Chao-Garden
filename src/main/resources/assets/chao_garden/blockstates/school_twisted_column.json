@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=north,part=base": {
+      "model": "chao_garden:block/school_twisted_column_base",
+      "y": 180
+    },
+    "facing=north,part=shaft": {
+      "model": "chao_garden:block/school_twisted_column_shaft",
+      "y": 180
+    },
+    "facing=north,part=capital": {
+      "model": "chao_garden:block/school_twisted_column_capital",
+      "y": 180
+    },
+    "facing=east,part=base": {
+      "model": "chao_garden:block/school_twisted_column_base",
+      "y": 270
+    },
+    "facing=east,part=shaft": {
+      "model": "chao_garden:block/school_twisted_column_shaft",
+      "y": 270
+    },
+    "facing=east,part=capital": {
+      "model": "chao_garden:block/school_twisted_column_capital",
+      "y": 270
+    },
+    "facing=south,part=base": {
+      "model": "chao_garden:block/school_twisted_column_base"
+    },
+    "facing=south,part=shaft": {
+      "model": "chao_garden:block/school_twisted_column_shaft"
+    },
+    "facing=south,part=capital": {
+      "model": "chao_garden:block/school_twisted_column_capital"
+    },
+    "facing=west,part=base": {
+      "model": "chao_garden:block/school_twisted_column_base",
+      "y": 90
+    },
+    "facing=west,part=shaft": {
+      "model": "chao_garden:block/school_twisted_column_shaft",
+      "y": 90
+    },
+    "facing=west,part=capital": {
+      "model": "chao_garden:block/school_twisted_column_capital",
+      "y": 90
+    }
+  }
+}

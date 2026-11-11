@@ -1,0 +1,9 @@
+# Kindergarten layout 0.25.5
+
+The Fortune-Teller's right curtain is the southern panel at `(21,80..84,8)`, viewed from the room's western entrance. It now faces EAST, opposite the unchanged WEST-facing left panel. A dedicated finite purple tie model reflects the physical Z geometry and exchanges its north/south face ownership before the native270-degree turn. The gold dangling end therefore moves to the left while remaining on the room-facing side of the cloth. All texture pixels and all existing green curtain variants are retained.
+
+The unmarked metal cupboard stays at `(-6,80,5)`, facing EAST. When looking at it from the foyer, right is north. The bulletin panel moves to `(-6,82,0)`, facing into the room from continuous west-wall backing. Its former southwest corner at `(-5,80,8)` now has a complete Ionic base, three fluted shaft cells and capital touching the existing ceiling at Y85. The displaced friends picture is rehung at `(3,82,-7)` on the north wall, beyond the full Principal door/frame footprint.
+
+The invisible board resident moves to `(-7,80,0)`. The stable resident UUID is unchanged. Its old and new anchors share entity chunk `(-1,0)`, so once that chunk is published the existing actor can be retained and reanchored instead of creating a duplicate outside the old five-block search radius. Only the actual new noticeboard block opens that service; the former corner pillar no longer acts as a hidden button.
+
+Regenerate with `python scripts/generate_kindergarten_layout_0255.py`, after the original Kindergarten and clinic writers. Validate with `python scripts/validate_kindergarten_layout_0255.py --self-test`. Native tests in `KindergartenLayoutGameTests0255` cover the built placement/backing, complete corner stack, visible gold end, existing resident identity and payload, new panel interaction, and removal of the former interaction area. The earlier Ionic model/native collision test now checks all ten school columns.

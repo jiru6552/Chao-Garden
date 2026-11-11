@@ -1,0 +1,25 @@
+{
+  "version": "0.18.0",
+  "checks": 122,
+  "profiles": [
+    "energy_fruit",
+    "peace_fruit",
+    "smart_fruit",
+    "tall_fruit",
+    "vitality_fruit",
+    "rare_fruit",
+    "wonder_fruit",
+    "creepy_fruit",
+    "rough_fruit",
+    "forbidden_fruit"
+  ],
+  "result": "passed",
+  "scope": [
+    "native sprite dimensions and binary alpha",
+    "item model bindings",
+    "nondegenerate pod geometry and four stage textures",
+    "complete blockstates",
+    "fruit-first seed recipes",
+    "no new mushroom seed recipes"
+  ]
+}

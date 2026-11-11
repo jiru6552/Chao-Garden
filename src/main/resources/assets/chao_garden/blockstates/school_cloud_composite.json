@@ -1,0 +1,1924 @@
+{
+  "variants": {
+    "facing=south,tile=0": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=0": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=0": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=0": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=1": {
+      "model": "chao_garden:block/school_cloud_composite_tile_1"
+    },
+    "facing=west,tile=1": {
+      "model": "chao_garden:block/school_cloud_composite_tile_1",
+      "y": 90
+    },
+    "facing=north,tile=1": {
+      "model": "chao_garden:block/school_cloud_composite_tile_1",
+      "y": 180
+    },
+    "facing=east,tile=1": {
+      "model": "chao_garden:block/school_cloud_composite_tile_1",
+      "y": 270
+    },
+    "facing=south,tile=2": {
+      "model": "chao_garden:block/school_cloud_composite_tile_2"
+    },
+    "facing=west,tile=2": {
+      "model": "chao_garden:block/school_cloud_composite_tile_2",
+      "y": 90
+    },
+    "facing=north,tile=2": {
+      "model": "chao_garden:block/school_cloud_composite_tile_2",
+      "y": 180
+    },
+    "facing=east,tile=2": {
+      "model": "chao_garden:block/school_cloud_composite_tile_2",
+      "y": 270
+    },
+    "facing=south,tile=3": {
+      "model": "chao_garden:block/school_cloud_composite_tile_3"
+    },
+    "facing=west,tile=3": {
+      "model": "chao_garden:block/school_cloud_composite_tile_3",
+      "y": 90
+    },
+    "facing=north,tile=3": {
+      "model": "chao_garden:block/school_cloud_composite_tile_3",
+      "y": 180
+    },
+    "facing=east,tile=3": {
+      "model": "chao_garden:block/school_cloud_composite_tile_3",
+      "y": 270
+    },
+    "facing=south,tile=4": {
+      "model": "chao_garden:block/school_cloud_composite_tile_4"
+    },
+    "facing=west,tile=4": {
+      "model": "chao_garden:block/school_cloud_composite_tile_4",
+      "y": 90
+    },
+    "facing=north,tile=4": {
+      "model": "chao_garden:block/school_cloud_composite_tile_4",
+      "y": 180
+    },
+    "facing=east,tile=4": {
+      "model": "chao_garden:block/school_cloud_composite_tile_4",
+      "y": 270
+    },
+    "facing=south,tile=5": {
+      "model": "chao_garden:block/school_cloud_composite_tile_5"
+    },
+    "facing=west,tile=5": {
+      "model": "chao_garden:block/school_cloud_composite_tile_5",
+      "y": 90
+    },
+    "facing=north,tile=5": {
+      "model": "chao_garden:block/school_cloud_composite_tile_5",
+      "y": 180
+    },
+    "facing=east,tile=5": {
+      "model": "chao_garden:block/school_cloud_composite_tile_5",
+      "y": 270
+    },
+    "facing=south,tile=6": {
+      "model": "chao_garden:block/school_cloud_composite_tile_6"
+    },
+    "facing=west,tile=6": {
+      "model": "chao_garden:block/school_cloud_composite_tile_6",
+      "y": 90
+    },
+    "facing=north,tile=6": {
+      "model": "chao_garden:block/school_cloud_composite_tile_6",
+      "y": 180
+    },
+    "facing=east,tile=6": {
+      "model": "chao_garden:block/school_cloud_composite_tile_6",
+      "y": 270
+    },
+    "facing=south,tile=7": {
+      "model": "chao_garden:block/school_cloud_composite_tile_7"
+    },
+    "facing=west,tile=7": {
+      "model": "chao_garden:block/school_cloud_composite_tile_7",
+      "y": 90
+    },
+    "facing=north,tile=7": {
+      "model": "chao_garden:block/school_cloud_composite_tile_7",
+      "y": 180
+    },
+    "facing=east,tile=7": {
+      "model": "chao_garden:block/school_cloud_composite_tile_7",
+      "y": 270
+    },
+    "facing=south,tile=8": {
+      "model": "chao_garden:block/school_cloud_composite_tile_8"
+    },
+    "facing=west,tile=8": {
+      "model": "chao_garden:block/school_cloud_composite_tile_8",
+      "y": 90
+    },
+    "facing=north,tile=8": {
+      "model": "chao_garden:block/school_cloud_composite_tile_8",
+      "y": 180
+    },
+    "facing=east,tile=8": {
+      "model": "chao_garden:block/school_cloud_composite_tile_8",
+      "y": 270
+    },
+    "facing=south,tile=9": {
+      "model": "chao_garden:block/school_cloud_composite_tile_9"
+    },
+    "facing=west,tile=9": {
+      "model": "chao_garden:block/school_cloud_composite_tile_9",
+      "y": 90
+    },
+    "facing=north,tile=9": {
+      "model": "chao_garden:block/school_cloud_composite_tile_9",
+      "y": 180
+    },
+    "facing=east,tile=9": {
+      "model": "chao_garden:block/school_cloud_composite_tile_9",
+      "y": 270
+    },
+    "facing=south,tile=10": {
+      "model": "chao_garden:block/school_cloud_composite_tile_10"
+    },
+    "facing=west,tile=10": {
+      "model": "chao_garden:block/school_cloud_composite_tile_10",
+      "y": 90
+    },
+    "facing=north,tile=10": {
+      "model": "chao_garden:block/school_cloud_composite_tile_10",
+      "y": 180
+    },
+    "facing=east,tile=10": {
+      "model": "chao_garden:block/school_cloud_composite_tile_10",
+      "y": 270
+    },
+    "facing=south,tile=11": {
+      "model": "chao_garden:block/school_cloud_composite_tile_11"
+    },
+    "facing=west,tile=11": {
+      "model": "chao_garden:block/school_cloud_composite_tile_11",
+      "y": 90
+    },
+    "facing=north,tile=11": {
+      "model": "chao_garden:block/school_cloud_composite_tile_11",
+      "y": 180
+    },
+    "facing=east,tile=11": {
+      "model": "chao_garden:block/school_cloud_composite_tile_11",
+      "y": 270
+    },
+    "facing=south,tile=12": {
+      "model": "chao_garden:block/school_cloud_composite_tile_12"
+    },
+    "facing=west,tile=12": {
+      "model": "chao_garden:block/school_cloud_composite_tile_12",
+      "y": 90
+    },
+    "facing=north,tile=12": {
+      "model": "chao_garden:block/school_cloud_composite_tile_12",
+      "y": 180
+    },
+    "facing=east,tile=12": {
+      "model": "chao_garden:block/school_cloud_composite_tile_12",
+      "y": 270
+    },
+    "facing=south,tile=13": {
+      "model": "chao_garden:block/school_cloud_composite_tile_13"
+    },
+    "facing=west,tile=13": {
+      "model": "chao_garden:block/school_cloud_composite_tile_13",
+      "y": 90
+    },
+    "facing=north,tile=13": {
+      "model": "chao_garden:block/school_cloud_composite_tile_13",
+      "y": 180
+    },
+    "facing=east,tile=13": {
+      "model": "chao_garden:block/school_cloud_composite_tile_13",
+      "y": 270
+    },
+    "facing=south,tile=14": {
+      "model": "chao_garden:block/school_cloud_composite_tile_14"
+    },
+    "facing=west,tile=14": {
+      "model": "chao_garden:block/school_cloud_composite_tile_14",
+      "y": 90
+    },
+    "facing=north,tile=14": {
+      "model": "chao_garden:block/school_cloud_composite_tile_14",
+      "y": 180
+    },
+    "facing=east,tile=14": {
+      "model": "chao_garden:block/school_cloud_composite_tile_14",
+      "y": 270
+    },
+    "facing=south,tile=15": {
+      "model": "chao_garden:block/school_cloud_composite_tile_15"
+    },
+    "facing=west,tile=15": {
+      "model": "chao_garden:block/school_cloud_composite_tile_15",
+      "y": 90
+    },
+    "facing=north,tile=15": {
+      "model": "chao_garden:block/school_cloud_composite_tile_15",
+      "y": 180
+    },
+    "facing=east,tile=15": {
+      "model": "chao_garden:block/school_cloud_composite_tile_15",
+      "y": 270
+    },
+    "facing=south,tile=16": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=16": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=16": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=16": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=17": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=17": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=17": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=17": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=18": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=18": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=18": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=18": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=19": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=19": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=19": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=19": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=20": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=20": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=20": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=20": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=21": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=21": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=21": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=21": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=22": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=22": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=22": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=22": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=23": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=23": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=23": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=23": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=24": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=24": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=24": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=24": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=25": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=25": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=25": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=25": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=26": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=26": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=26": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=26": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=27": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=27": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=27": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=27": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=28": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=28": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=28": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=28": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=29": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=29": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=29": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=29": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=30": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=30": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=30": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=30": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=31": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=31": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=31": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=31": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=32": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=32": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=32": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=32": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=33": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=33": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=33": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=33": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=34": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=34": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=34": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=34": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=35": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=35": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=35": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=35": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=36": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=36": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=36": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=36": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=37": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=37": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=37": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=37": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=38": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=38": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=38": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=38": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=39": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=39": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=39": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=39": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=40": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=40": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=40": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=40": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=41": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=41": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=41": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=41": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=42": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=42": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=42": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=42": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=43": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=43": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=43": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=43": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=44": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=44": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=44": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=44": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=45": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=45": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=45": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=45": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=46": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=46": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=46": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=46": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=47": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=47": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=47": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=47": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=48": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=48": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=48": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=48": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=49": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=49": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=49": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=49": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=50": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=50": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=50": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=50": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=51": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=51": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=51": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=51": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=52": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=52": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=52": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=52": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=53": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=53": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=53": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=53": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=54": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=54": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=54": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=54": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=55": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=55": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=55": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=55": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=56": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=56": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=56": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=56": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=57": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=57": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=57": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=57": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=58": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=58": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=58": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=58": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=59": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=59": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=59": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=59": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=60": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=60": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=60": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=60": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=61": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=61": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=61": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=61": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=62": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=62": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=62": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=62": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=63": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=63": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=63": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=63": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=64": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=64": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=64": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=64": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=65": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=65": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=65": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=65": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=66": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=66": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=66": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=66": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=67": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=67": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=67": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=67": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=68": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=68": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=68": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=68": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=69": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=69": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=69": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=69": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=70": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=70": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=70": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=70": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=71": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=71": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=71": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=71": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=72": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=72": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=72": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=72": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=73": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=73": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=73": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=73": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=74": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=74": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=74": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=74": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=75": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=75": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=75": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=75": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=76": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=76": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=76": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=76": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=77": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=77": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=77": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=77": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=78": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=78": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=78": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=78": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=79": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=79": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=79": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=79": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=80": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=80": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=80": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=80": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=81": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=81": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=81": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=81": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=82": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=82": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=82": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=82": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=83": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=83": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=83": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=83": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=84": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=84": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=84": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=84": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=85": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=85": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=85": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=85": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=86": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=86": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=86": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=86": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=87": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=87": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=87": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=87": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=88": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=88": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=88": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=88": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=89": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=89": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=89": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=89": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=90": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=90": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=90": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=90": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=91": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=91": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=91": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=91": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=92": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=92": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=92": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=92": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=93": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=93": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=93": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=93": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=94": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=94": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=94": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=94": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=95": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=95": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=95": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=95": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=96": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=96": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=96": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=96": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=97": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=97": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=97": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=97": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=98": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=98": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=98": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=98": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=99": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=99": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=99": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=99": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=100": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=100": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=100": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=100": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=101": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=101": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=101": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=101": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=102": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=102": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=102": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=102": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=103": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=103": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=103": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=103": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=104": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=104": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=104": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=104": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=105": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=105": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=105": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=105": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=106": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=106": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=106": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=106": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=107": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=107": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=107": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=107": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=108": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=108": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=108": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=108": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=109": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=109": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=109": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=109": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=110": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=110": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=110": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=110": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=111": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=111": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=111": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=111": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=112": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=112": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=112": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=112": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=113": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=113": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=113": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=113": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=114": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=114": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=114": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=114": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=115": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=115": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=115": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=115": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=116": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=116": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=116": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=116": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=117": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=117": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=117": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=117": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=118": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=118": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=118": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=118": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=119": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=119": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=119": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=119": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=120": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=120": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=120": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=120": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=121": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=121": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=121": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=121": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=122": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=122": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=122": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=122": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=123": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=123": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=123": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=123": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=124": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=124": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=124": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=124": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=125": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=125": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=125": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=125": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=126": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=126": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=126": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=126": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    },
+    "facing=south,tile=127": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0"
+    },
+    "facing=west,tile=127": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 90
+    },
+    "facing=north,tile=127": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 180
+    },
+    "facing=east,tile=127": {
+      "model": "chao_garden:block/school_cloud_composite_tile_0",
+      "y": 270
+    }
+  }
+}

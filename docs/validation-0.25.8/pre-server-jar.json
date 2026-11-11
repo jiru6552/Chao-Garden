@@ -1,0 +1,32 @@
+{
+  "release": "0.25.8",
+  "result": "PASS",
+  "sources": [
+    {
+      "file": "docs/validation-0.25.8/production-build.txt",
+      "sha256": "4918a12d820f171794b26457b720947126efaceaf339412d06c024cd2a1b907f"
+    },
+    {
+      "file": "docs/validation-0.25.8/current-production-payloads.json",
+      "sha256": "41d6971afdd297c47599b14dc7257be0979e28ee63c126587f0c230203301005"
+    }
+  ],
+  "artifact": {
+    "file": "chao_garden-0.25.8.jar",
+    "size_bytes": 14218021,
+    "sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+    "entries": 7060
+  },
+  "production_classes": 338,
+  "production_resources": 6583,
+  "asset_data_payloads": 6581,
+  "extra_payloads": [],
+  "missing_payloads": [],
+  "crc": "PASS",
+  "unique_names": true,
+  "metadata_only_exemptions": [
+    "META-INF/MANIFEST.MF",
+    "META-INF/neoforge.mods.toml"
+  ],
+  "scope": "Current compiled production classes and source runtime resources compared byte for byte against the complete release JAR. Development code and flat preset are excluded. This is artifact integrity, not a gameplay or visual claim."
+}

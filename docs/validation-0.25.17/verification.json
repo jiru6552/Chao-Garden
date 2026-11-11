@@ -1,0 +1,53 @@
+{
+  "release": "0.25.17",
+  "result": "PASS",
+  "jar_sha256": "446982ea5554d756112a864e52d8cf02417d3093afe905122ad9e4c0ddfeec35",
+  "jar_bytes": 30168670,
+  "build": {
+    "core_suites": 18,
+    "core_checks": 1710878
+  },
+  "native_servers": {
+    "default_passed": 275,
+    "default_required": 275,
+    "accessories_owo_passed": 275,
+    "accessories_owo_required": 275
+  },
+  "client": {
+    "screenshots": 13,
+    "native_inventory_drag": true,
+    "registered_slots": 6,
+    "original_items_preserved": 6,
+    "native_unregister": true,
+    "chapter_search": true,
+    "section_search": true,
+    "removed_item_aliases": true,
+    "cwe_items": 26,
+    "cwe_display_contexts": 234,
+    "cwe_toy_states": 128,
+    "sa2_items": 29,
+    "sa2_display_contexts": 261,
+    "sa2_toy_states": 1088,
+    "missing_materials": 0,
+    "visual_review": "visual-review.txt"
+  },
+  "asset_replay": {
+    "byte_identical": true,
+    "resources": 7978,
+    "changed": []
+  },
+  "logs": {
+    "core-tests.log": "d37bc303450255b6d761968e84ecf919c77da1bf828c09aa239354fbefd32e3a",
+    "final-build.log": "96395432fcf69999c853981944b11220cd8f8bb267d50bed6401cd41c0c80c2e",
+    "server-default.log": "9a225648950214b822ca4af93614c05d5ea5f650a9c6469e712ef115fff57831",
+    "server-accessories.log": "521a47d26af8f72022e1262ec6b3eb2e98bb5a56b1b2e404271002fdfed42ad1",
+    "client-final.log": "3cc95c650c8a4167c84d243382bcbb2c4f7e138569bcc7e05e23c73321b17405",
+    "asset-replay.log": "28147a0cd81e44a924419187946e989a199384de803f72ff65c12915e217964d"
+  },
+  "limits": [
+    "Enclosure inspection covers the device chunk and its eight neighbors, with a bounded floor flood fill.",
+    "One-block walls enclose; half-block steps are traversable. A changed enclosure must be rechecked to replace its saved boundary.",
+    "Visual checks cover representative native software-rendered frames, not every GPU/shader/animation.",
+    "Historical Bell behavior tests use a test-only fixture. Production Bell and robot-component IDs resolve to the requested replacement items."
+  ]
+}

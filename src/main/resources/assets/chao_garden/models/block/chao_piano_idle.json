@@ -1,0 +1,17 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/chao_piano_idle.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_piano05_52": "chao_garden:block/sa2_02515/chao_piano/sa2_piano05_52",
+    "sa2_piano06_52": "chao_garden:block/sa2_02515/chao_piano/sa2_piano06_52",
+    "sa2_piano01_4": "chao_garden:block/sa2_02515/chao_piano/sa2_piano01_4",
+    "sa2_star01_52": "chao_garden:block/sa2_02515/chao_piano/sa2_star01_52",
+    "sa2_piano04_20": "chao_garden:block/sa2_02515/chao_piano/sa2_piano04_20",
+    "sa2_piano05_148": "chao_garden:block/sa2_02515/chao_piano/sa2_piano05_148",
+    "particle": "chao_garden:block/sa2_02515/chao_piano/sa2_piano05_52"
+  },
+  "render_type": "minecraft:cutout"
+}

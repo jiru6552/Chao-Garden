@@ -1,0 +1,1275 @@
+{
+  "release": "0.22.0",
+  "theme_count": 19,
+  "atlas_count": 209,
+  "native_uv_layouts": [
+    "baby",
+    "swim",
+    "fly",
+    "run",
+    "power",
+    "hero",
+    "hero_fly",
+    "hero_power",
+    "dark",
+    "dark_run",
+    "dark_swim"
+  ],
+  "atlases": [
+    {
+      "theme": "create",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/create/baby.png",
+      "sha256": "3e5be448c76d988685d81088b724d7809702fa1c13e08635317c3035424f2917"
+    },
+    {
+      "theme": "create",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/create/swim.png",
+      "sha256": "e22f21140362c1aa33e338ed9387bc8f51abd0682e1a4cb99b9c05df7a622b58"
+    },
+    {
+      "theme": "create",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/create/fly.png",
+      "sha256": "c1701ce7aed7d70f4432bdd8bbadd0bf56eb1741932d85bb026b90533d3c7298"
+    },
+    {
+      "theme": "create",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/create/run.png",
+      "sha256": "9d644a377d9e725f77f1cd9c833e389b29aba0f6216acbd45e6959b4103abf81"
+    },
+    {
+      "theme": "create",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/create/power.png",
+      "sha256": "a81732a1ab9831777693792661a240f81fb614b5e2f1064c42bb6a05f063cedb"
+    },
+    {
+      "theme": "create",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/create/hero.png",
+      "sha256": "852dadfee9ac62842598dfbb6f7e6af27917ba805398d42fc8a9923d381a1740"
+    },
+    {
+      "theme": "create",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/create/hero_fly.png",
+      "sha256": "0113fce3dbea3a3f530792a5227bfd35a95ae18d40eb907e01baadc1599c0d49"
+    },
+    {
+      "theme": "create",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/create/hero_power.png",
+      "sha256": "614b7215fe78de03ba29835536874c3394d81b4f422c0ca11878f47012a47831"
+    },
+    {
+      "theme": "create",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/create/dark.png",
+      "sha256": "92163933d4e359b10328562a70fea718550673beb2712e877d0472f2995b2add"
+    },
+    {
+      "theme": "create",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/create/dark_run.png",
+      "sha256": "676c1cfcc6e0172dd331b81c1f7df4fdf592eb2ece8c32dedb8dd09d03d8a695"
+    },
+    {
+      "theme": "create",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/create/dark_swim.png",
+      "sha256": "419b7d49c8d2aa5264fd4b7d0bdfa081eeef42b0c08c5256e8eece1bc4e75eb5"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/baby.png",
+      "sha256": "728c04e6d767e27b9e3f0fd6d3fd7a06adf398a86c9843f328fa60862066baa7"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/swim.png",
+      "sha256": "77b72de6fcc9b8d263028c9897b994d786b8c429b861880912632855c6763c08"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/fly.png",
+      "sha256": "fe730c7f8a59de93c1337478d4b0edb6d6e10f12925bbcfb287482427d3b5fd5"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/run.png",
+      "sha256": "7e018174394cc032ed82c1c7f5fe60edcf06850ff5f074c8bec570b8fe116bb9"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/power.png",
+      "sha256": "0dcc2291f9ece77d7c52563f45cd66ca40cc1f3f2cb19d0d3d71f1c5881f08ee"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/hero.png",
+      "sha256": "4188b8c3ff6237ba614d8dc29be2b8055d3b8713c615149760cd81ab060be9f0"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/hero_fly.png",
+      "sha256": "aed49062a7c3b2d1a7a0eeea2017e8be5e12d9869d7b95df3c1974b14f37001c"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/hero_power.png",
+      "sha256": "f378dea6dcfd4c04f35780fe3c433a20437ff3c192ae137df0dc6a8c01fca1c2"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/dark.png",
+      "sha256": "6bec39eab58c1d84e8c15494b2c513abf120bb188f991394939e4edd4e450fc2"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/dark_run.png",
+      "sha256": "607bfd744b5f5cd3168f547b8c94aa19389c1b9fe1b8f86be05c0ccc033a537e"
+    },
+    {
+      "theme": "thaumcraft",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/thaumcraft/dark_swim.png",
+      "sha256": "8a90aebce39493c37d42c38522afd172596910e7c03694fcfd71f0b59be49671"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/baby.png",
+      "sha256": "21cbe17de51cd84789dd934623797d56c23860cb649bb324c144e5cb60bf14df"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/swim.png",
+      "sha256": "2752bd4b6e675433df30949d0f5fb9a8e2bbcadab8e9669b794dc15ebdf56757"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/fly.png",
+      "sha256": "838f6139547aed1cf60b410859140fcf2d47656b94b7f9a00c79fbd1f661f5a7"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/run.png",
+      "sha256": "83717e734d7bef30d8ab0bc1ff8250d865d3069631bd0b23a4c0a192cc989eba"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/power.png",
+      "sha256": "dff27930d8cd69eb15d751d5367d879c44ce759f047151a204ed8a72191bf1ff"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/hero.png",
+      "sha256": "7f21a6e4387c0d39107b4ab399f70b844949f22d1cc883400e0da579691d3ca6"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/hero_fly.png",
+      "sha256": "296c82a262113fb74fa4d10d5e9faf2c359424429c7b7168c6fabb3705d7afce"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/hero_power.png",
+      "sha256": "0c0dac20df7bd0301ca4224ae186676305a5dde62ded703bcb7b9c27e2a23757"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/dark.png",
+      "sha256": "14c20d706be8fc770a301faeb9d368991babc53fb6128895a6e1155e9e2e41bc"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/dark_run.png",
+      "sha256": "2aa312b6988df433e112991a27dc797f4135e0fbf91d2ac7aa157a7c715762bd"
+    },
+    {
+      "theme": "astral_sorcery",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/astral_sorcery/dark_swim.png",
+      "sha256": "d2abe415783a7452a18ed70a705a967efb8fb304736719c35a0343bd0e4f8b72"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/baby.png",
+      "sha256": "8691301bdc567e693df413a95b253baf1151462f349f94998011a55aec5212a6"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/swim.png",
+      "sha256": "283534b1886ee9f1da908281e0a01a05b3be484bd4bb64f3f038cda439fd7263"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/fly.png",
+      "sha256": "0b2dbd68c28b506f35c78bd4ad02f0e332155f9c8a6fa1b4bc83f0a2c4957842"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/run.png",
+      "sha256": "af2a096c52870bd6543a35dd3dcb9b30525b0a59494d171d5fadfd1472d5d663"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/power.png",
+      "sha256": "e0a196691004b8891e13db4c6c1349856d57ab02badb2c0a88ae694087fb6af2"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/hero.png",
+      "sha256": "f511b4db2f5bd42f3accbdc51b6404baa231edd02ea5f686ec899de3aef3fd45"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/hero_fly.png",
+      "sha256": "a03a9e3066ceade290ee3a997348ae52b54d148ad57d0cf24ea1b3f0c46f0040"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/hero_power.png",
+      "sha256": "1d6715f42efae364511267768f7ec70256d596249412dea2d01e412532b07af6"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/dark.png",
+      "sha256": "f14443554f80b6bb4aa605d393f059eb6c3640f04dd3445965bd31dcf4b6dae5"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/dark_run.png",
+      "sha256": "8479767360e9dbcfac3c5113b48e129dad008b310e23603f017c9870cdde4b90"
+    },
+    {
+      "theme": "blood_magic",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/blood_magic/dark_swim.png",
+      "sha256": "6b4a06876686bdc91acb418878bff053d5fc60ae7a63b28f7a32f8029a47e083"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/baby.png",
+      "sha256": "f1ca016b2279feb129acaf51675f4a19f81ab109f5737d112cc437c84354ef95"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/swim.png",
+      "sha256": "8472de04ea58b5e0bf8ea22adc813a5323ce04973e0bcbde771f93f95c1791d4"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/fly.png",
+      "sha256": "9d686109f01d195a651271481a56e1f660962ab4f02fe3031506e203dfcc20ce"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/run.png",
+      "sha256": "7379531698ab20d5fce717efb90f82597ea846983e794e5a7443d59cac3b3d92"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/power.png",
+      "sha256": "8c3b20b518740f76e9cfee9bd5bc1341db2f4fc9c7fedff0fbf795d584bf07d4"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/hero.png",
+      "sha256": "bcd8bc1a22d5dcb17cd3fbb48236e51f12fc96d5df35f4104cc51507310fccf4"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/hero_fly.png",
+      "sha256": "1d50fd89506b0fa7e3d2699b02befb78ecd0978020d0671aee7ad3fbccbe58f4"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/hero_power.png",
+      "sha256": "9b9f2d5d160d0e5051dd92b91b6aa0cd872590237d2b9acc3b288ee05cfe1d1a"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/dark.png",
+      "sha256": "502cadc248d49720b2fe723c9be89db31227d6e14c39cf1d328196657811f27d"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/dark_run.png",
+      "sha256": "01c988a5fab3da9ec18179f2ebfff62edd5c5c4cf4c15cc96480d9ccea7ea850"
+    },
+    {
+      "theme": "refined_storage",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/refined_storage/dark_swim.png",
+      "sha256": "eaca856f7dd33851cd79d8a259981327c415a9c6b8b65bf1f4cc264fb695f6b1"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/baby.png",
+      "sha256": "c9d3a45013e0c5a7eb8889b0954dc33807ebd7e30dd3ad1ad91479f66ae0f46c"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/swim.png",
+      "sha256": "cdfc3e59771cc517027ac1eee1a00f56209fece5ae57c5123ebbdbfb0316b4c7"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/fly.png",
+      "sha256": "fd04554313b43dc5700c3b9b9ccdf199aac5ba4301c326d289370b502a492ca5"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/run.png",
+      "sha256": "ced0976ca71eb7d5e987fbcdf7e87eaaeee60931ed0ea107f6fde1b5397f7074"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/power.png",
+      "sha256": "88382f2642c1b7c3c1e66c93dae5623f18769b175d7fed1d6c2b2c4fe3c4040a"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/hero.png",
+      "sha256": "0c2d8b0f81693ae2e72e8326a1ea9b1f583c441611a2d6a1aafdc030361fdd27"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/hero_fly.png",
+      "sha256": "b87e1fe4dc1796774ddb8ca8d7c5cfd21daa9dab1fcd680e108d83865112b1b6"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/hero_power.png",
+      "sha256": "afa680b4a9193c05622a795c3718faed5e9528c685b2d1d3abb32d08574cf18f"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/dark.png",
+      "sha256": "9ecb106beaeacda3ca57ecef856aa5db1bdf7e024beac2e4909bc7c8360d4f50"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/dark_run.png",
+      "sha256": "d57643c15e34d01243e91fc0dea78c4ef2f72c702e9a994709617b78b392e0a9"
+    },
+    {
+      "theme": "cataclysm",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/cataclysm/dark_swim.png",
+      "sha256": "c71f661180d0cd4102bb8325994ff2ea883bb7c3d8183d7b6e36880a3d3c4bb1"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/baby.png",
+      "sha256": "9eb5ba6cacffe4883e14b60f093bfdfd98b674541f3888c55bfe752400a78478"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/swim.png",
+      "sha256": "0b95ab9f9038815d6be81d2a9e8d955414dd448a8d4bb2cbe28023f3c47e921c"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/fly.png",
+      "sha256": "245a8781aa2bf2d7783fa39f61836207d34caf3b5f298a7555a33c16010cc543"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/run.png",
+      "sha256": "ce80ef81959af7e90894c84f5cf9afba837ec94c8c796bf4f8dbc0b0e0b3767e"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/power.png",
+      "sha256": "128cdda2c841d5de6ec6881b2fcf4b9b70a5dd117e407c64080901cca813cbaf"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/hero.png",
+      "sha256": "a1a8abb8439f27bd22693930052077b22839edbf945f8e4a8a21a44310d84cb1"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/hero_fly.png",
+      "sha256": "fe1a3ec736299b328539fc073ff5a69781b30bc061b0c5e7ca079866e78644df"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/hero_power.png",
+      "sha256": "88bf6cccb51803947f591d22891b6d562bb48c563d18612e611f555aafd8e566"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/dark.png",
+      "sha256": "5f09114637cfad6692e66e6ed62237095ebe84cffef0bab55bd0a62851bff939"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/dark_run.png",
+      "sha256": "7620392dd773e6d0f9a8c80af8a8a957d8812a275e40f373afe0de3fef3751ae"
+    },
+    {
+      "theme": "ice_fire",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/ice_fire/dark_swim.png",
+      "sha256": "34083ea70fbbbf674451c6372919fed77654ad0faa767be3124324be484d0fdb"
+    },
+    {
+      "theme": "aether",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/aether/baby.png",
+      "sha256": "4420fd163955107c1e90e30de8aaac5b7f4df59df6508138590152ea1f7c7f08"
+    },
+    {
+      "theme": "aether",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/aether/swim.png",
+      "sha256": "4957b4d2545fb80b7264412ad87227615457bf0a158c692f94b0ab28701c0bd6"
+    },
+    {
+      "theme": "aether",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/aether/fly.png",
+      "sha256": "add4d592d3c5a3acbab22c0a0ee2075412bba8b4366c9569ecc51479c13c83a1"
+    },
+    {
+      "theme": "aether",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/aether/run.png",
+      "sha256": "d0afff728ce707f4bd46e2d9b0d089567cd837d7057957fa16db19132b5641ef"
+    },
+    {
+      "theme": "aether",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/aether/power.png",
+      "sha256": "588d56feffcab79c69d98ff263d4d1d600a0c9cd165fc55c21c82d812486b387"
+    },
+    {
+      "theme": "aether",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/aether/hero.png",
+      "sha256": "17e1c8304ce90cb65c488edd2ad7fa76aaf7bb0561a65fbf876c2111e45cc492"
+    },
+    {
+      "theme": "aether",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/aether/hero_fly.png",
+      "sha256": "801ecd15b654b4c13e6764c819443d35057dc1837cc204c3e8a64e4fe31248e7"
+    },
+    {
+      "theme": "aether",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/aether/hero_power.png",
+      "sha256": "170f65ecd8d37d71eaec18a08ba40a772cd04c8915ac008edd0afac7e52ec958"
+    },
+    {
+      "theme": "aether",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/aether/dark.png",
+      "sha256": "d605b54aa43d7fdbefb4f49c66073810cb82055bc3abc907a41f27b3dfe0549e"
+    },
+    {
+      "theme": "aether",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/aether/dark_run.png",
+      "sha256": "0930b6c7448fa01d0e628c99e1e03abbe2cd0b8790de3ee7c4dccb90f7643e95"
+    },
+    {
+      "theme": "aether",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/aether/dark_swim.png",
+      "sha256": "482c1e316caf93adc9cf52be72686f3de5c63969931e1468516456f8ac80d6a8"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/baby.png",
+      "sha256": "7b3ee720910859fa72f593f446d313a9c880a09352a4795cc7940dbae91813f7"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/swim.png",
+      "sha256": "6cdef03ae28208d2bd6e59f2c9fada76f25e6606b99388458f0c846d2df9c216"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/fly.png",
+      "sha256": "20069f12c0158bf7e65dbc5bcaefa51a3178f6dd6e15550c6af2525ffc24a896"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/run.png",
+      "sha256": "0932228f369d4bfc98005f5463442c67cae4dacee6982243410ac06da9501772"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/power.png",
+      "sha256": "a3232ddd6fb8a6121d84904fa76087232cefea5846b2697a2e73c5bdbfbd449e"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/hero.png",
+      "sha256": "f81b90bff41af6ff44597c392a09a8548ceae209fadcdddda047e659e16f3a2a"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/hero_fly.png",
+      "sha256": "34b387a3464290620db40e4f225be77d67b92b51df883773182a27e7de8c2dd4"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/hero_power.png",
+      "sha256": "c5418198d64bd5fb55fef8be840b4148f5d6f66de6fb29a2a7a2b915a78411b8"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/dark.png",
+      "sha256": "28e27b5a3b483e69ce1690b99227dab1dad5ea09aa2a1acabebf7eca275d45f6"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/dark_run.png",
+      "sha256": "547ca3217f619077df7c6f8722a668da6f356690658b4fb420c36038aefbb0e0"
+    },
+    {
+      "theme": "twilight_forest",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/twilight_forest/dark_swim.png",
+      "sha256": "54c29c1f3d7cb9fc652e6756d23b6c1462d49ecc92ec2fe95389a508d4b7b38b"
+    },
+    {
+      "theme": "nether",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/nether/baby.png",
+      "sha256": "5805ebd268cb950da7e428eb19db5d3a2e7f8fc3ffc77d4115cbcff7c898abbd"
+    },
+    {
+      "theme": "nether",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/nether/swim.png",
+      "sha256": "01abeca4b18a900d1fd0dd35df3a5ddf8dfe981be3c157734674b71a0b467fc5"
+    },
+    {
+      "theme": "nether",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/nether/fly.png",
+      "sha256": "0bc08cb01c90d7dc5e2b5183c69a6e0a9706ac4f035cc1543a3df547937244a9"
+    },
+    {
+      "theme": "nether",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/nether/run.png",
+      "sha256": "31ad82b7f2e9c04deedff0e3d4af615b3a72b91bcaeacd16ede4e1442b5d9501"
+    },
+    {
+      "theme": "nether",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/nether/power.png",
+      "sha256": "5c01b470e5b18c21d41249b3c01d4d93e3c65d82a828fad3e48880bf04a4b705"
+    },
+    {
+      "theme": "nether",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/nether/hero.png",
+      "sha256": "41759e4a7736f4584c44e699cc90ff7ead38b452efaa678d98decb2783ab98fe"
+    },
+    {
+      "theme": "nether",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/nether/hero_fly.png",
+      "sha256": "72f754a6e184fd123a6a95f711b1d680a684f693dd719130df1eb8cb8f054256"
+    },
+    {
+      "theme": "nether",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/nether/hero_power.png",
+      "sha256": "5a6d7f7633c230c5da05d61dd8a4218cbf50248cbfa25f677cbe1e50d0cd4c42"
+    },
+    {
+      "theme": "nether",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/nether/dark.png",
+      "sha256": "f8d2af2eb53ee8e2309ff0b6da9d6c94972299768b08d5b03d00c37297e04eda"
+    },
+    {
+      "theme": "nether",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/nether/dark_run.png",
+      "sha256": "e531e27fe638ceb3dc28451a9f7d4e1859c626f4b6bbce868608eecb8ebed94f"
+    },
+    {
+      "theme": "nether",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/nether/dark_swim.png",
+      "sha256": "c514254da347841878bc5c71a17839791eed9dcccadff5c9d700528e35ca3f11"
+    },
+    {
+      "theme": "end",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/end/baby.png",
+      "sha256": "f007456f894604a450a2112ae9ebd47ecb6f068a6c53121823f650d067311e5d"
+    },
+    {
+      "theme": "end",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/end/swim.png",
+      "sha256": "58314c540cb8716f4e662574b44e0c32ffb81db0c760fcd5c56c66b12b1e786d"
+    },
+    {
+      "theme": "end",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/end/fly.png",
+      "sha256": "940c5f8503ea78cdc63a9c7e7bf298997eab86a6a29308da4c4ee8ce54e326b8"
+    },
+    {
+      "theme": "end",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/end/run.png",
+      "sha256": "1016318539b18faaa159f7dff32c06184bf8c3cddced7e92aeac41cc9f70a436"
+    },
+    {
+      "theme": "end",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/end/power.png",
+      "sha256": "632a495b2a75ac86429810e274a56a61377c663b579d60ce6d684fde4db49abf"
+    },
+    {
+      "theme": "end",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/end/hero.png",
+      "sha256": "8987b974ef0ea5c45bb42fd0deede9c05d8890a5b38adfb9361edcda374ce073"
+    },
+    {
+      "theme": "end",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/end/hero_fly.png",
+      "sha256": "af7d295b5d12dbdebdb205946960517719ebc65588aa28f5304aaa0c06e85d1f"
+    },
+    {
+      "theme": "end",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/end/hero_power.png",
+      "sha256": "3017d014d17c8d6665700f02b44d97b80ea0309b8120ecc50de41749fbb587e5"
+    },
+    {
+      "theme": "end",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/end/dark.png",
+      "sha256": "256dab6a9d66b5c3fd9eab8b50e66af224e7cf18eb649be57445820175b6b4c5"
+    },
+    {
+      "theme": "end",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/end/dark_run.png",
+      "sha256": "c786f586260e2ef7ae5f1dad83e17f2298244c6241da814be5e720d473c3dac8"
+    },
+    {
+      "theme": "end",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/end/dark_swim.png",
+      "sha256": "be3c9cf2ab5992b32bb7bbd66b70dfc1ab9a75b7b41442f8d0e3c337914cb600"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/baby.png",
+      "sha256": "83117b1bdbadd6532f83b024aa19256268536781e8f3535dafc173fe2150ae7f"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/swim.png",
+      "sha256": "5295797896f64cf47f18e4a3615d42bc8e57a31ee78fc8d0b827ca5a2f953973"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/fly.png",
+      "sha256": "68615875d25c9990541119d39e7ec0156a52040a6a40606c2a30eed1c1ee8860"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/run.png",
+      "sha256": "3beccbfb9b3ecae4a2a29dbe836ce4cdcbad3f83829b6646c03fa1e1d0bbdae3"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/power.png",
+      "sha256": "bf6cfdd8f2487cdda2420f3206a8c80a5f05f385c67f2cc5d7e2549f2bea48cf"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/hero.png",
+      "sha256": "45db4bfab47250f38f54a3b1beaef4f0b7a3bacff37faaf657f25d8036fa95d9"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/hero_fly.png",
+      "sha256": "b1a8bd62c200e86484b9041ab6c553c7884be3adaf3da8c8e50ea638779f9c34"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/hero_power.png",
+      "sha256": "aae65285f28818970c9cdaa14134cf11caf09d65fddc650b4e3f2c1a84416321"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/dark.png",
+      "sha256": "47adc225a96788b87fae316dc1f150ad3a556a6f1f9ecd6fde491e4c22c48275"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/dark_run.png",
+      "sha256": "5fcc2657983d1f86b65df370ad4ccde864e3fbea2e97a0724128ee5b57d312c2"
+    },
+    {
+      "theme": "ars_nouveau",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/ars_nouveau/dark_swim.png",
+      "sha256": "33b5032bebd5c3002531de38b1fa66d4bf1a73526795575dcfb3bebec6f66289"
+    },
+    {
+      "theme": "occultism",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/occultism/baby.png",
+      "sha256": "ff0e57e4ff1bb54111a99220336b0ea0ac5b82728ac45230747cf2a7678b3640"
+    },
+    {
+      "theme": "occultism",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/occultism/swim.png",
+      "sha256": "adc1d84ec483365172fcf21fb56575a0be9162b6ef48c19ea9790bb61b71be38"
+    },
+    {
+      "theme": "occultism",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/occultism/fly.png",
+      "sha256": "b9b7bc1275247be41bc6338a038ece5ad806de489b0dd2bb028ca082e0a5512c"
+    },
+    {
+      "theme": "occultism",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/occultism/run.png",
+      "sha256": "2973c04412298e88a0a56d0fd9016b9bc2e9e73ef97f1d2f3ad68c23f83e6530"
+    },
+    {
+      "theme": "occultism",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/occultism/power.png",
+      "sha256": "d3080b36a855f433f6320c6a3b98405903e9f0b984e8065599d14870197ae97b"
+    },
+    {
+      "theme": "occultism",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/occultism/hero.png",
+      "sha256": "b7770f5e17f1854a443484566a2852782012252f600be07b2e4b8aaa1039d2c1"
+    },
+    {
+      "theme": "occultism",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/occultism/hero_fly.png",
+      "sha256": "af6547c5ef2a9833f42d23120e2974b22586a4ab373d6861a8ef7ec8bce4a941"
+    },
+    {
+      "theme": "occultism",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/occultism/hero_power.png",
+      "sha256": "7183e6fd835a02c1652d7e583e47ccd9136fe0858277573de13c04948a1ff8f6"
+    },
+    {
+      "theme": "occultism",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/occultism/dark.png",
+      "sha256": "329a3b2d46a72a801f7e89cbb2b23195fbfe3be924e886e13afa7a3198470801"
+    },
+    {
+      "theme": "occultism",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/occultism/dark_run.png",
+      "sha256": "538fd30d246b7059e160052adc19bd551e0c9848c8a0a98617f4196af01e9e55"
+    },
+    {
+      "theme": "occultism",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/occultism/dark_swim.png",
+      "sha256": "f1dd8f371223f89bb317a888e58909c020664f8590d19607c1f1db48b51e8b22"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/baby.png",
+      "sha256": "cd1a6b2c846e01c1f45aca331f9c35b4e1dc5cf1d2f1d10f9b7496e579b5ac40"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/swim.png",
+      "sha256": "1742e459f00350c88df9a8ce37d9dadc425f4777eeea77598d5980955056293d"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/fly.png",
+      "sha256": "70fe436a0df3a052f24034ff3c518774ccb7d9649ab87b89ab907f3e8ed63315"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/run.png",
+      "sha256": "b4125915eb1538fcce6a84993b6c173868e82707c765abad46457d5b1e910cd5"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/power.png",
+      "sha256": "a73a58c31f2a3b505213169332180f6f3bc86a9ba36445a0f9928552db1f2c3c"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/hero.png",
+      "sha256": "59a925b0cad2acaa5d5e8c3eafd32d81bb5edb712dcd36b63d41d8995e2e87f6"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/hero_fly.png",
+      "sha256": "f0e7492b5564bf1b0ac5de271b27a885b0aad0b0e082c481a8f51458c71bd75e"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/hero_power.png",
+      "sha256": "a4944cefcdfcdfad17cacce6c6723675298731642250b6eff72574e2bcdce010"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/dark.png",
+      "sha256": "7a8a588adffc00e4cda5df0dfdc68cf139cba54a3652617d2abd66c844d1e747"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/dark_run.png",
+      "sha256": "2c38b9821e2ca079986991101df5c64fa51e3bbcdfa88084fe4fa0017d32b185"
+    },
+    {
+      "theme": "iron_spells",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/iron_spells/dark_swim.png",
+      "sha256": "3bd2b09fbdff36959cb3026d069e8be5f962f17d94b7974355e5cae6f51f41a2"
+    },
+    {
+      "theme": "projecte",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/projecte/baby.png",
+      "sha256": "76c9f2f82578d4600e718fc2833ba9f2082d35d5aae970717fbd41f3fb37a6d2"
+    },
+    {
+      "theme": "projecte",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/projecte/swim.png",
+      "sha256": "3ac563b9bcfab3e57653aabdd21fc4d75766a0a6223cd38bc2d6e0b3a56f787d"
+    },
+    {
+      "theme": "projecte",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/projecte/fly.png",
+      "sha256": "7001fcb29893886ce0c80ab22ea28b8c4f50e990fe96cdc9ab9726eb7939d18b"
+    },
+    {
+      "theme": "projecte",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/projecte/run.png",
+      "sha256": "595dbfe07ec5a7264e0e82da86ef111070d10070e259d35398836f9808405059"
+    },
+    {
+      "theme": "projecte",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/projecte/power.png",
+      "sha256": "9f279aa209754c67dde1dabcf27c749384482494614bc6f1a531143e243a2238"
+    },
+    {
+      "theme": "projecte",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/projecte/hero.png",
+      "sha256": "23bd91ee6203819fb7e13880b2a843f4e6b8a05c345c80157e0dae555b402701"
+    },
+    {
+      "theme": "projecte",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/projecte/hero_fly.png",
+      "sha256": "cb60c17c4eac5c570addab9e98aa113dab5dba77450ab43a72da092b3efee3fb"
+    },
+    {
+      "theme": "projecte",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/projecte/hero_power.png",
+      "sha256": "06d95c10e49910568e612aaa2a139b369f36bcda96dfceca9b364b25de5deb6a"
+    },
+    {
+      "theme": "projecte",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/projecte/dark.png",
+      "sha256": "a0b3de668b3e258dd3a5a65a3900c3bdf9693162ea7d170e1381d36c6a655532"
+    },
+    {
+      "theme": "projecte",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/projecte/dark_run.png",
+      "sha256": "8b0857667ed1946063a4556975ba294a13ee5fb8638e9aa7bd7ec75415c3bbf7"
+    },
+    {
+      "theme": "projecte",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/projecte/dark_swim.png",
+      "sha256": "9f9c2a45dc0b253078371aff065c1cfa2243e21b2db5926ffd715d29857cb0cd"
+    },
+    {
+      "theme": "malum",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/malum/baby.png",
+      "sha256": "c3e82510427c0161af74f8a6db536d277e80a9ac387e4d139eecc301afc6a300"
+    },
+    {
+      "theme": "malum",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/malum/swim.png",
+      "sha256": "f9321d7b2e28b93a603f1106365b3eafab9ce202435b63ba9394b446df19321a"
+    },
+    {
+      "theme": "malum",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/malum/fly.png",
+      "sha256": "b4daf5d4ff6dd8bdc5d9c2d1e71f72a6ad20d853b71d7d1258d55988c6b64e7f"
+    },
+    {
+      "theme": "malum",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/malum/run.png",
+      "sha256": "9c8c60fa44bb30588fa01ee4d6b46ba05c1f09b28ebd3c8d1e0f5982e0ecfb9b"
+    },
+    {
+      "theme": "malum",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/malum/power.png",
+      "sha256": "2f654e2cdece0a649617d0e303c057717412e9968e23a3a5bd61fc98c2b1b890"
+    },
+    {
+      "theme": "malum",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/malum/hero.png",
+      "sha256": "59acf85ed06162599a8ac80d0ac4d34bc88cedb7266c48db3a0ce2af5bcc9cdf"
+    },
+    {
+      "theme": "malum",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/malum/hero_fly.png",
+      "sha256": "2da7168e0231e4382aa7c71870bf53327ceea5d0cb33842dc7217101e6e58335"
+    },
+    {
+      "theme": "malum",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/malum/hero_power.png",
+      "sha256": "6229894fc93642526aa75b781b1411dd50c28cc6e2718f3fb7d90a3942c5bb83"
+    },
+    {
+      "theme": "malum",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/malum/dark.png",
+      "sha256": "243cd55ec09bfc59597a39cbe9b4e6e91d0017228b6deee4881bfc65e0caeed3"
+    },
+    {
+      "theme": "malum",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/malum/dark_run.png",
+      "sha256": "a8a61f3915242dd92cbc65ce99eae52f51856e6cecc4efc1619179ac1d1480b8"
+    },
+    {
+      "theme": "malum",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/malum/dark_swim.png",
+      "sha256": "0380c3682adefb629f23b1d40b1910b51813906003d1ad814e5c07e9648db9d1"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/baby.png",
+      "sha256": "8d6f1884f4b413568b1d38d4184f12d6a4001bbf21b2c534cc22012af634a0e1"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/swim.png",
+      "sha256": "c772e7f8807615668a7f12d3e572077eb7f7bc792c0fa39bae6da8ece0540e71"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/fly.png",
+      "sha256": "b3d2e0632c8ab1665639b70523687410c44ef176d4171e0ea764aba15ea946c3"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/run.png",
+      "sha256": "2c4e95304fb72394bfeda25f81be3283b9e66d9ffa7407844179a3aa51847ddb"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/power.png",
+      "sha256": "c93bbfbaea81dbf356aff369d2f32729a1f5246d299abd3cf9c4274f8ef008a2"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/hero.png",
+      "sha256": "144297f21fa35f16a97cee73dd3781c41cf288bfeb54be2dbf3e9624eaa1bce9"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/hero_fly.png",
+      "sha256": "5c13ab57153e95b491679fd4acc4b173ad6a86feb9c453324e6e282ccef8008d"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/hero_power.png",
+      "sha256": "9f5fcaa81607578ae65b74d0a58f9aba93462285122080762c01a938b727c982"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/dark.png",
+      "sha256": "ca849380ff55f2b2c07a820ab89928ef78a42cb29fea9dcb2eec1ab2a26b4b3e"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/dark_run.png",
+      "sha256": "37f7997455cd4c5c310f243162f712601c55df2be940dfcc12a9ce3ed15c721a"
+    },
+    {
+      "theme": "cobblemon",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/cobblemon/dark_swim.png",
+      "sha256": "4bde9b8373c517795fcea9ddb43583fb0ee0edd2fe6633237a47b8dfcea297e6"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/baby.png",
+      "sha256": "ef499655c92e7ca5b4cd042e5c8f076472dbb0d2cb4b16a76cddea10ab93c8dd"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/swim.png",
+      "sha256": "69bc1dcb2e59a96b2e0838d84c860b3d70682c4753186e1f21e7dc62c0a2bed7"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/fly.png",
+      "sha256": "6025736dd461dc17fb6cda920b6fa1433d37a3d2b5c4636d6100f68470d5d7b8"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/run.png",
+      "sha256": "eac08d87bb336c286909c9bfc7cb2bbef693e43b428eb9aa13a8ed91ae23e1c6"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/power.png",
+      "sha256": "900b565d7011cb2450e9b57e54fbeb44160259b177ae2610273dd332c0c2d5ef"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/hero.png",
+      "sha256": "d27650429e3396610f20fe1e875d4ec6385a87673ad6b242aa8dee211b23a45e"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/hero_fly.png",
+      "sha256": "81d443fb4564b4aacad36d3a48da9ddf69b5bbf465f0bba6bf34093eab84c7d7"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/hero_power.png",
+      "sha256": "34514ad8b03c6cc2459a4af689889e8470e3af8b0e87201303292e36ca65daf9"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/dark.png",
+      "sha256": "32bcd945664ca4ce464318a240c7a2356b5009331aa6753125112666e72518ec"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/dark_run.png",
+      "sha256": "93a46d0142e0fca06d338aa349d064b9eac784c7022c4e559a9fc3167739026a"
+    },
+    {
+      "theme": "draconic_evolution",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/draconic_evolution/dark_swim.png",
+      "sha256": "52c87cd893b69d4886cae92177cbbfd231003632a5fc93bb7a1396a79f9d6215"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "baby",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/baby.png",
+      "sha256": "4b2f783120ae3e8ab37baffb5ce2d86e5cb579f45e4a4cae7c8ba881d9e6f170"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "swim",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/swim.png",
+      "sha256": "f8498dcfcf59c079d696e569f66712359402bfc0876e9efc66b58f24f96b1c39"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "fly",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/fly.png",
+      "sha256": "d5c1ddc9bf515d9a73ea63bebe95e3cca80243610769891def0129ee1e84d13f"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "run",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/run.png",
+      "sha256": "0b4cb13332580d93270dab9d2035ba508b43702f5e05dd5a3e4200164d3e380e"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "power",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/power.png",
+      "sha256": "9e083fee11305fa98987fc52c86d01d9828ba2d660d537a7df3622076f130ac1"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "hero",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/hero.png",
+      "sha256": "6d49370f0446e0d825fad8167e5defada78feda17df2cf1d1f4d5b6feb764630"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "hero_fly",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/hero_fly.png",
+      "sha256": "de87dd9d63e4cd22cc66fb7da03769db4d78739e3afecb828eb124706ec6ed95"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "hero_power",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/hero_power.png",
+      "sha256": "8dff4d9f67011c2eefc4ea356891e5816135c397b4c1d19e0a3d0fabef16631e"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "dark",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/dark.png",
+      "sha256": "ecdfeaea0c816c1342b77e7b6581f91457b384288b1ed18660965d67286b4605"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "dark_run",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/dark_run.png",
+      "sha256": "4f7eda327fd1f8e4a6ef65823d36c5f04d775bf4b2cafce0b98b5dfa5e0e2bc1"
+    },
+    {
+      "theme": "born_in_chaos",
+      "layout": "dark_swim",
+      "file": "textures/entity/chao/gameplay/variants/born_in_chaos/dark_swim.png",
+      "sha256": "c251a2ed6e532c5061e85fc674d430fef906ed8934538ed1f245b7c9b55fe178"
+    }
+  ],
+  "rule": "Original native skin/wing UV regions recolored to the fixed theme palette; eye texels and alpha remain unchanged. Existing baby coats are byte-identical."
+}

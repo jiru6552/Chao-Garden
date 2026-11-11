@@ -1,0 +1,13 @@
+# Runtime and resource cleanup — 0.22.0
+
+The finite production selector admits 22 opaque gameplay meshes and three Chaos tip layers. Eleven native coat layouts and thirteen animal/hat layouts cover those selections. Twenty untouched original comparison rigs/textures and all 41 authoring inputs remain. Historical galleries and editable projects remain authoring references.
+
+The finalizer removes exactly 1,615 proven unreachable derivatives (7,552,940 bytes in the verified 0.21 control tree): nine unused generated coat folders, seven unused gameplay/attachment/mask families, nine obsolete item sprites, one stray coat-sheet copy and the unused runtime prototype. Existing registry IDs and compatibility items remain. The complete 222-bone prototype is archived under art/legacy_runtime; gameplay loads an exact two-bone root/cocoon copy with unchanged 208 vertices, 220 faces, UVs and parent transform.
+
+The independent guard checks finite Java selector strings, native aliases, every production gameplay caller, all expected directory domains, every removed path, the preserved source-input hashes, exact shell topology, raw PNG parity and all 755 retained heritage bindings. Its two mutation cases reject unknown selector additions. An isolated reconstruction fixture passed 2,429 checks; a second prune removed zero files and preserved every resource byte. Central full rebuild/runtime results supersede this preparation result.
+
+The silver-reflection RenderType cache now uses a 512-entry access-order LRU and clears at shader reload/logout. It owns no source textures. Held-Chao rendering keeps two 64-entry LRUs: immutable CustomData component identities map to one private tag snapshot, and creature UUIDs map to an animated client entity. Steady frames neither copy nor stringify NBT. Equal new components reuse loaded state, changed entity data reloads the existing body, outer item metadata leaves its animation intact, and world/logout clearing releases entries.
+
+The excluded RuntimeCacheVisualProbe022 exercises real render states, real item components and actual ChaoModel held poses. The centralized actual-client run passes **4,102 surface-cache checks and 764 held-component/entity/pose cases**, including the equal-new-component comparison-count regression. These are bounded correctness regressions, not a long-duration memory/load benchmark.
+
+Thirteen superseded capture drivers were removed. Shared pose/material probes and the one current driver remain opt-in under chao_garden.audit022Study and are excluded from the installable JAR. The gameplay locomotion sweep now covers the 22 actual selections, separately preserving the 20 exact-reference sweep.

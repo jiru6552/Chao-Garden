@@ -1,0 +1,59 @@
+{
+  "release": "0.25.2",
+  "provenance": "User original second MP4 verified against retained source-video manifest SHA before selection. All named primary PNGs directly visually inspected. New247 addition selected from exact-ss242/245/247/249 candidates; only247 retained.",
+  "timing": "FFmpeg input -ss targets nearest decodable native source frame from original variable-frame-rate MP4; no claim of recovered exact source frame PTS.",
+  "new_frame_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-ss",
+    "247",
+    "-i",
+    "SONIC ADVENTURE 2 2026-11-01 13-45-09.mp4",
+    "-frames:v",
+    "1",
+    "-threads",
+    "1",
+    "-y",
+    "kindergarten-247-market-cabinet.png"
+  ],
+  "references": [
+    {
+      "file": "docs/references-0.25.2/native-keyframes/kindergarten-247-market-cabinet.png",
+      "sha256": "757adb9199e39a8553af305ed96176fdfe8548a0999d1236c9e7a783d5a37e26",
+      "source_video": "SONIC ADVENTURE 2 2026-11-01 13-45-09.mp4",
+      "source_video_sha256": "b70fce3f87fcb93a54d8ee5255b1424e2ff5360e0b843a024c5265b2855270e0",
+      "requested_seconds": 247,
+      "native_size": [
+        2560,
+        1440
+      ],
+      "role": "Primary full cabinet/brooms/bucket shape reference; its original labels are intentionally omitted in the mod by the latest user instruction."
+    },
+    {
+      "file": "docs/references-0.25/native-keyframes/kindergarten-278-black-market-counter.png",
+      "sha256": "8967b414f8c809c2b986ca672a95fb2bdf4e354cb3d8a101a509a8f7dd9a959f",
+      "source_video": "SONIC ADVENTURE 2 2026-11-01 13-45-09.mp4",
+      "source_video_sha256": "b70fce3f87fcb93a54d8ee5255b1424e2ff5360e0b843a024c5265b2855270e0",
+      "requested_seconds": 278,
+      "native_size": [
+        2560,
+        1440
+      ],
+      "role": "Primary merchant and stocked room/counter reference."
+    },
+    {
+      "file": "docs/references-0.25/native-keyframes/kindergarten-047-lobby-angle.png",
+      "sha256": "1f33751b5abbb2ee10f452fc8435441d0730b25449f782044bedd98ce65cabd8",
+      "source_video": "SONIC ADVENTURE 2 2026-11-01 13-45-09.mp4",
+      "source_video_sha256": "b70fce3f87fcb93a54d8ee5255b1424e2ff5360e0b843a024c5265b2855270e0",
+      "requested_seconds": 47,
+      "native_size": [
+        2560,
+        1440
+      ],
+      "role": "Primary school child artwork and room-door atmosphere reference; requested themed walkable corridors are an adaptation."
+    }
+  ]
+}

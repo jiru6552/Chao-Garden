@@ -1,0 +1,9 @@
+# Classroom pupils in0.25.8
+
+All four ambient babies now remain inside the classroom. Two use the actual ball and rattle in its front play area; two keep their side-row lesson seats and follow the teacher's current schedule. The four keeper-owned boarding seats remain separate and unchanged. Baby homes are(-22.5,80,-9.5),(-18.5,80,-9.5),(-22.5,80,-14.5), and(-22.5,80,-12.5). The actual toys are at(-23,80,-11) and(-19,80,-11).
+
+Navigation destinations stay inside two small front play pockets. A whole-body classroom boundary immediately rehomes an externally displaced or old foyer pupil on its next AI tick; the usual pocket and collision checks also remain. Rehoming ends an old toy session without rewards before moving the body. The original per-slot UUIDs and saved state are retained. The former foyer chunks still must publish and tick before absence detection, so an existing0.25.7 saved baby is moved rather than replaced. The scene revision removes the old authored foyer toys.
+
+The two lesson participants call the dedicated school singing helper during a live song lesson, with musical notes emitted at sung-note onsets. These musical vocal phrases replace the old isolated ambient chirps. Audio provenance and availability are documented by the singing asset manifest; no missing original-game recording is silently represented as an authentic SA2 clip. Other lessons retain their synchronized poses and instrument cues.
+
+Ambient pupils remain protected school scenery, independent of keeper care, ownership, capture, enrollment, aging and rewards. Ordinary owned babies keep their original interactions. Existing native cases now also check old foyer-to-classroom identity/state migration, removal of the old foyer toys, immediate displacement recovery, and classroom confinement throughout eighty live AI ticks.

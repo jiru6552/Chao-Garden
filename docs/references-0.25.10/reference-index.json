@@ -1,0 +1,63 @@
+{
+  "release": "0.25.10",
+  "reviewed_reference_frames": [
+    {
+      "file": "native-keyframes/first-190.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 190,
+      "timecode": "03:10",
+      "sha256": "e241c7d5b0bdbee178aec736398599ef3e9a48886b1fa1f6c19b5804011324e1",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-211.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 211,
+      "timecode": "03:31",
+      "sha256": "2f41a853dab19922dd438205eb2ab7c7f7867d7f9389e4e8d66b92d481697e40",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-311.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 311,
+      "timecode": "05:11",
+      "sha256": "99b7526b7b553866dcca5fcd53b7a6a3f1a8aa5b3a0e99390d5e053c4d14bc29",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-315.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 315,
+      "timecode": "05:15",
+      "sha256": "c2a22eb8727e8f7bd288ae4d3b7182465d6469dd98b34f7bd6bab868dd6f6aa8",
+      "native_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "native-keyframes/first-348.png",
+      "video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+      "requested_seconds": 348,
+      "timecode": "05:48",
+      "sha256": "417be318ad76bf2320e245a1bc122e5ebd4e8257b8f83c333143add43a80adf5",
+      "native_size": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "hero_pool_user_attachment_sha256": "0c1796280d982fc9474c6bae7c6df93cefa5712dea19e3ac8861f987dcfb9460",
+  "primary_video": "SONIC ADVENTURE 2 2026-11-01 13-35-12.mp4",
+  "method": "Inspected the retained native source-video frames and the attached Hero pool screenshot. Compared ordinary native Minecraft client views before and after the change. No additional full video playback or measured source-map survey is claimed."
+}

@@ -1,0 +1,22 @@
+{
+  "release": "0.22.0",
+  "status": "IN_MEMORY_PREPARATION_PASS_LIVE_RUN_PENDING",
+  "checks": 14955,
+  "age_endpoint_cases": 405,
+  "internal_limb_assembly_cases": 600,
+  "rejected_corruptions": [
+    "seven-pixel head restored",
+    "front plane moved",
+    "marker age mismatch",
+    "crest length changed",
+    "hand detached",
+    "native eye displaced",
+    "head UV changed"
+  ],
+  "idempotent_models": 15,
+  "preserved_raw_inputs": 41,
+  "preserved_special_files": 10,
+  "preserved_chaos_coats": 351,
+  "python_sources_parse": 3,
+  "scope": "In-memory candidate transformation from authoritative0.21 control with current protected iris samples; no runtime assets modified."
+}

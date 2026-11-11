@@ -1,0 +1,83 @@
+{
+  "textures": {
+    "base": "chao_garden:block/school025/school_cloud_composite",
+    "particle": "chao_garden:block/school025/school_cloud_composite"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.0,
+            0.0,
+            12.0,
+            4.0
+          ],
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.0,
+            0.0,
+            12.0,
+            4.0
+          ],
+          "cullface": "south"
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.0,
+            0.0,
+            12.0,
+            4.0
+          ],
+          "cullface": "east"
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.0,
+            0.0,
+            12.0,
+            4.0
+          ],
+          "cullface": "west"
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.0,
+            0.0,
+            12.0,
+            4.0
+          ],
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            0.0
+          ],
+          "cullface": "down"
+        }
+      }
+    }
+  ],
+  "ambientocclusion": false
+}

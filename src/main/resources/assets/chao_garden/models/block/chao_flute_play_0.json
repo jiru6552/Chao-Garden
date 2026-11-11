@@ -1,0 +1,15 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/chao_flute_play_0.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_fue02_52": "chao_garden:block/sa2_02515/chao_flute/sa2_fue02_52",
+    "sa2_fue04_52": "chao_garden:block/sa2_02515/chao_flute/sa2_fue04_52",
+    "sa2_fue03_52": "chao_garden:block/sa2_02515/chao_flute/sa2_fue03_52",
+    "sa2_fue01_36": "chao_garden:block/sa2_02515/chao_flute/sa2_fue01_36",
+    "particle": "chao_garden:block/sa2_02515/chao_flute/sa2_fue02_52"
+  },
+  "render_type": "minecraft:cutout"
+}

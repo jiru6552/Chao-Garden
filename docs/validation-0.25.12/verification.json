@@ -1,0 +1,82 @@
+{
+  "release": "0.25.12",
+  "result": "PASS",
+  "jar_sha256": "0c1403a4594b3de53e7e453691933986e580b46af099dd1fbcbea2966d061af4",
+  "jar_bytes": 26022530,
+  "build": {
+    "core_suites": 18,
+    "core_checks": 1709875,
+    "result": "PASS"
+  },
+  "native_servers": {
+    "default": {
+      "required": 263,
+      "passed": 263
+    },
+    "accessories_owo": {
+      "required": 263,
+      "passed": 263,
+      "accessories": "1.1.0-beta.54+1.21.1",
+      "owo": "0.12.15.6-beta.1+1.21"
+    }
+  },
+  "client": {
+    "runtime": "Minecraft 1.21.1 / NeoForge 21.1.219; software Mesa, ordinary integrated client",
+    "all_registered_blockstates": 5822,
+    "food_seed_tool_items": 74,
+    "hanging_fruit_stages": 144,
+    "audited_native_quads": 13688,
+    "missing_materials": 0,
+    "scenes": 6,
+    "captures": 6,
+    "return_restored": true,
+    "visual_review": [
+      "all 37 food and 36 seed icons beside native 3D meshes",
+      "watering can",
+      "Neutral garden environment",
+      "Hero palm fruit attachments",
+      "raised Dark tree fruit attachments"
+    ],
+    "scope": "Inventory and NONE-context native mesh renders plus real garden block scenery. No claim of an exhaustive first-person/drop-transform or gardening-animation film review."
+  },
+  "asset_replay": {
+    "result": "PASS",
+    "live_resources": 7087,
+    "replayed_resources": 7087,
+    "different_resources": [],
+    "java_files_unchanged_by_full_generator_run": 284,
+    "java_generator_differences": [],
+    "method": "Independent full pipeline replay; current final resources compared byte for byte. All replay Java inputs compared to their pre-run snapshot. Later guide wording and test-trace removal are not generator outputs."
+  },
+  "audio_unchanged": {
+    "ogg_files_compared_to_02511": 19,
+    "different_files": []
+  },
+  "mechanics": {
+    "new_native_tests": 8,
+    "garden_tools_always_available": [
+      "chao_shovel",
+      "chao_watering_can"
+    ],
+    "shovel_run_points": 50,
+    "new_planted_trees_per_authored_garden": 4,
+    "ordinary_life_active_minutes": 60,
+    "strong_life_active_minutes": 120,
+    "wither_phase_active_minutes": 1
+  },
+  "limits": [
+    "Authored Minecraft reconstructions; community-hosted game renders supplement the official SEGA screenshot reference.",
+    "Portable and CWE shapes are authored interpretations.",
+    "Growth/life timing, emerald tool prices, direct player planting and large leafy canopies are Minecraft adaptations.",
+    "Only new seed interactions enroll trees in aging; existing untracked orchards and original scenery remain permanent.",
+    "Final guide wording was shortened after the native server runs; the final ordinary build includes that wording.",
+    "Internal captures and disposable worlds are not included in the release."
+  ],
+  "logs": {
+    "server-accessories.log": "c5116185e74206d6d12dd353adb34cf635de4c6b565a9d683640f4c234488799",
+    "server-default.log": "ef9b182cdbd8d8fabbf41408cc6bc0b5db50f47fc25825e540c61abe2a0caed0",
+    "final-build.log": "2ab938ca0206102378bf805195f0fd426fcf44f4d32b5c7eb982e674d02f11eb",
+    "asset-rebuild.log": "bce9b7a3d4ef6e66255aac1b4e16c2d46dd5fb2f75fd56a89af965a26284180e",
+    "client.log": "594f6f3e7b8fef779135982188aabda8cf0a9e013acd750298aeb86baa9094e8"
+  }
+}

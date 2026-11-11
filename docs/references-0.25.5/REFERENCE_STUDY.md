@@ -1,0 +1,17 @@
+# Garden entrance and Dark Garden visual study
+
+The two requested Dark Tiger videos were identified as **How to get the dark garden (SA2)** (10:39) and **how to get the hero garden (SA2)** (15:03). Their public pages and metadata loaded, but the media and storyboard CDNs returned a small “Site Unavailable” HTML response instead of playable bytes. The browser player remained unbuffered. **No video tail, frame or timestamp observation is claimed.**
+
+Gate observations instead come from the original SA2 Battle entrance model preview images on The Models Resource. The model geometry and textures were not imported. Browser screenshots were used only for internal inspection and are not included in this source archive.
+
+- **Hero gate, asset320119:** pale ivory/cream classical gate, two cylindrical ornamented shafts on rounded bases, gold bands and patterned top lintel/frieze, shallow curved underside around the entrance head, and small plant pots at the upper outside ends. The central aperture is open; a solid blue rectangular panel is not part of this observed silhouette.
+- **Dark gate, asset320117:** a heavy purplish-grey carved round arch, outward-flared shoulders/raked upper corners, pale banded sculptural plinths at its feet, and sparse spiky green foliage. The aperture is open and dark.
+- **Lobby floor:** the earlier user-supplied native recording frame `docs/references-0.25/native-keyframes/garden-007-lobby-floor.png` shows the glossy smoky-purple walking surface, pale blue/white grid and radial lines, and broad gold rings. Matching stair materials to this floor is an explicit current user instruction. Upward Hero and downward Dark approaches are established lobby relationships; no exact new-video stair curvature or cardinal orientation is asserted here.
+
+The archived Battle overview shows pale grey/white sandy ground surrounding a large irregular red pool, jagged pale cliff walls, a narrow back waterfall, small engraved gravestones near the banks, sparse black twisted fruit-tree trunks with orange/red fruit, curled ochre/yellow vegetation, fragments of spear-topped fencing, and a purple-and-black storm sky. A separate, much darker distant crag carries a large evil Chao face with horn-like peaks. The transporter sits at the left foreground. The pool occupies a large central/right part of the courtyard; there is usable pale ground in the foreground and along both banks. This image does not establish exact Minecraft dimensions.
+
+The four official Sega2001 screenshots are Dreamcast-era evidence, distinct from the Battle overview. They confirm the pale ground, red pool, cliffs, engraved stones and purple storm horizon. They also show brown dead trees carrying red scaled fruit and, in one view, a large horizontal branch with hanging dark cage/lantern-like ornaments. These are design landmarks rather than permission to copy a game mesh. Any exact placement, terrain block scale or new return tunnel in the Minecraft adaptation is an implementation choice.
+
+For a playable adaptation, red pool appearance can use ordinary safe water behavior and the existing care systems. Damaging lava, hostile spawns, free eggs, new acquisition rules and original-game unlock conditions are not inferred from these images or added by this research.
+
+`reference-evidence.json` records URLs, editions, attribution, retained image sizes and SHA-256 hashes. Only five small original public images are retained in `primary-dark/`; the full videos, model archives and browser captures are omitted.

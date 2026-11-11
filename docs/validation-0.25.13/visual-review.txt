@@ -1,0 +1,16 @@
+Native client review, 0.25.13
+
+Disposable elevated garden fixture; Minecraft 1.21.1 / NeoForge 21.1.219, 1280x720, software Mesa.
+Real item renderers and real Chao server-side item offers / gardening AI. Synced states observed without forcing poses.
+
+Inspected both first-person hands: Garden Fruit + Hero seed, then Watering Can + Dark Garden Fruit. General items now raised and reduced; can is further inset and its spout clears the right edge.
+Inspected four real dropped ItemEntities: Heart Fruit, Dark Garden Fruit, Round seed and Watering Can. Native geometry/materials visible with ordinary item bob/rotation.
+Inspected the Hero Garden Fruit meal at multiple phases: held stack upright between the hands and raised toward mouth; no missing texture or inverted mesh.
+Inspected the actual seed approach and planting gesture; confirmed the real seedling and empty held stack. Initial live failure reproduced a one-block path-tolerance mismatch; final exact-target path completes normally.
+Inspected can raise, pour and lowering phases, together with the actual seedling advancing to stage 1. The spout faces ahead and tips down. No real tool is spawned by learned watering.
+
+Native audit traversed all 74 food/seed/can models in eight contexts (GUI, NONE, ground, fixed, left/right first-person and left/right third-person): 592 valid model selections, finite positive transforms, zero missing materials.
+Seven main scenes / ten saved framebuffer captures plus 33 saved action-phase captures; normal return restored. All three action scenes asserted their actual results.
+
+Limits: visual judgment covers these representative live interactions and the child rig, not every fruit on every evolved/animal/character/accessory combination. All 74 context combinations were checked structurally. Native server compatibility runs separately cover installed Accessories/owo. No claim of testing Android or every FOV, resource pack or shader.
+Screenshots and disposable worlds are internal QA, not release deliverables.

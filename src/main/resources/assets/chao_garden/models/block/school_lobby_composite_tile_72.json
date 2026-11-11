@@ -1,0 +1,83 @@
+{
+  "textures": {
+    "base": "chao_garden:block/school025/school_lobby_composite",
+    "particle": "chao_garden:block/school025/school_lobby_composite"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.0,
+            9.846153846153847,
+            1.7777777777777777,
+            11.076923076923077
+          ],
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.0,
+            9.846153846153847,
+            1.7777777777777777,
+            11.076923076923077
+          ],
+          "cullface": "south"
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.0,
+            9.846153846153847,
+            1.7777777777777777,
+            11.076923076923077
+          ],
+          "cullface": "east"
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.0,
+            9.846153846153847,
+            1.7777777777777777,
+            11.076923076923077
+          ],
+          "cullface": "west"
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            0.0,
+            9.846153846153847,
+            1.7777777777777777,
+            11.076923076923077
+          ],
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            0.0,
+            11.076923076923077,
+            1.7777777777777777,
+            9.846153846153847
+          ],
+          "cullface": "down"
+        }
+      }
+    }
+  ],
+  "ambientocclusion": false
+}

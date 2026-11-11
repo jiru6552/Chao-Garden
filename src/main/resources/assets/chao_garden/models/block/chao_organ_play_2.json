@@ -1,0 +1,21 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/chao_organ_play_2.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_organ02_148": "chao_garden:block/sa2_02515/chao_organ/sa2_organ02_148",
+    "sa2_organ04_52": "chao_garden:block/sa2_02515/chao_organ/sa2_organ04_52",
+    "sa2_organ04_148": "chao_garden:block/sa2_02515/chao_organ/sa2_organ04_148",
+    "sa2_organ05_20": "chao_garden:block/sa2_02515/chao_organ/sa2_organ05_20",
+    "sa2_piano01_20": "chao_garden:block/sa2_02515/chao_organ/sa2_piano01_20",
+    "sa2_organ03_148": "chao_garden:block/sa2_02515/chao_organ/sa2_organ03_148",
+    "sa2_organ04_20": "chao_garden:block/sa2_02515/chao_organ/sa2_organ04_20",
+    "sa2_kureyon03_20": "chao_garden:block/sa2_02515/chao_organ/sa2_kureyon03_20",
+    "sa2_organ01_20": "chao_garden:block/sa2_02515/chao_organ/sa2_organ01_20",
+    "sa2_rappa_gold_52": "chao_garden:block/sa2_02515/chao_organ/sa2_rappa_gold_52",
+    "particle": "chao_garden:block/sa2_02515/chao_organ/sa2_organ02_148"
+  },
+  "render_type": "minecraft:cutout"
+}

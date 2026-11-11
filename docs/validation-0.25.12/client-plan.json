@@ -1,0 +1,96 @@
+{
+  "release": "0.25.8",
+  "scenes": [
+    {
+      "key": "fruit-native-0",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-native-1",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-native-2",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "neutral-pod-native",
+      "space": "garden",
+      "eye": [
+        -10,
+        81.62,
+        -4
+      ],
+      "target": [
+        -30,
+        85,
+        -5.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "hero-pod-native",
+      "space": "hero",
+      "eye": [
+        7,
+        81.62,
+        10
+      ],
+      "target": [
+        4.5,
+        84,
+        6.5
+      ],
+      "fov": 60
+    },
+    {
+      "key": "dark-pod-native",
+      "space": "dark",
+      "eye": [
+        0,
+        82,
+        5
+      ],
+      "target": [
+        -8,
+        83,
+        -10
+      ],
+      "fov": 70
+    }
+  ],
+  "tested_release": "0.25.12"
+}

@@ -1,0 +1,64 @@
+{
+  "release": "0.13.0",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.219",
+  "capture_count": 6,
+  "origin": "Actual Minecraft client screenshots",
+  "full_frames": true,
+  "capture_log_sha256": "44701734c19f5045e2a428cac4ba3c80775296d16f6fe6881d8dc0d86b976028",
+  "capture_directory": "source/docs/screenshots/icons-0.13/",
+  "captures": [
+    {
+      "file": "chao013-drive-inventory.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "0452d7010bb78df656fbb13377f95c3332eb19b02ba3ab5c1e9a3e7637d2d7cf",
+      "title": "Chaos Drive center lines"
+    },
+    {
+      "file": "chao013-themed-eggs-a.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "2edfb9a75018ac5c9cda6cf4f1c4a3c4a024755b172feba2701046c7c724a876",
+      "title": "Themed Chao eggs - first group"
+    },
+    {
+      "file": "chao013-themed-eggs-b.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "67d6d44e27252972fcb16e0e0698a4d5d21ad0e6eb24d8f8e8e058766809b521",
+      "title": "Themed Chao eggs - second group"
+    },
+    {
+      "file": "chao013-theme-chests-tech.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "3bf97994d91a91186c94f93ae2e990a8caba89d1f94ef54cb94efab97c82b947",
+      "title": "Technology theme badges"
+    },
+    {
+      "file": "chao013-theme-chests-magic.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "5c5317941a0cfc8a10b87cccd653693a1fed519f152efa93e46ba961d27f7226",
+      "title": "Magic theme badges"
+    },
+    {
+      "file": "chao013-theme-chests-adventure.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "7ecdb59311b02e6767e3787b7885340c7797516713d9f81acc73ee7dc22ce70c",
+      "title": "Adventure and dimension badges"
+    }
+  ],
+  "authored_sprite_sheet": {
+    "file": "item-sprites-0.13.png",
+    "sha256": "00f864f9d29bf86ef451a6d8d3908eab6114d4ce10f3bb19ec22f395d2270a16",
+    "origin": "Authored pixel art contact sheet; not a game capture"
+  },
+  "authored_theme_sheet": {
+    "file": "theme-icons-0.13.png",
+    "sha256": "1f92fb291640a52065505e144cd8e5dd598bc328eefe4c0d99ee5cc94981f885",
+    "origin": "Authored theme symbol sheet; not a game capture"
+  }
+}

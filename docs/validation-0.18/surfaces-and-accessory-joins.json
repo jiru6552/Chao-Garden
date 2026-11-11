@@ -1,0 +1,45 @@
+{
+  "reflection": {
+    "models": 21,
+    "shared_geometric_edges_with_different_uv": 6872,
+    "projected_edge_samples": 171800,
+    "old_atlas_uv_discontinuous_samples": 32775,
+    "maximum_new_projection_difference": 5.551115123125783e-17,
+    "per_mesh": {
+      "egg_mesh": 38,
+      "chao_baby": 303,
+      "chao_baghead": 295,
+      "chao_creeper": 271,
+      "chao_dad": 320,
+      "chao_dark": 358,
+      "chao_dark_run": 410,
+      "chao_dark_swim": 386,
+      "chao_dragon": 415,
+      "chao_emerald": 303,
+      "chao_ender": 295,
+      "chao_fly": 322,
+      "chao_golden": 309,
+      "chao_hero": 340,
+      "chao_hero_fly": 371,
+      "chao_hero_power": 366,
+      "chao_knuckles": 365,
+      "chao_power": 343,
+      "chao_run": 349,
+      "chao_swim": 353,
+      "chao_tails": 360
+    }
+  },
+  "accessories": {
+    "spectacles": {
+      "mesh_parts": 9,
+      "solid_intersections": 8,
+      "connected_components": 1
+    },
+    "mask": {
+      "mesh_parts": 12,
+      "solid_intersections": 17,
+      "connected_components": 1
+    }
+  },
+  "scope": "Rest geometry; five affine camera views; five positions per matching edge. Actual material/animation needs client review."
+}

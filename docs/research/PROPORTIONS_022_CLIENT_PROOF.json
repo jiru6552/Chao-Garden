@@ -1,0 +1,907 @@
+{
+  "release": "0.22.0",
+  "status": "PASS",
+  "raw_views_reviewed": 168,
+  "runtime_checks": 14215,
+  "client_log_sha256": "718257be4cc49372ec86db6a58abb49f620b67fa70065b6310569fed1c274b3e",
+  "raw_frames": [
+    {
+      "key": "forms-0-0",
+      "file": "chao022-forms-0-0.png",
+      "sha256": "05e6598668ae0451ef35894a5e6a233e2cc0e8ae0e9be1bdbd86a8ecd5f4d06a"
+    },
+    {
+      "key": "growth-0-0-front",
+      "file": "chao022-growth-0-0-front.png",
+      "sha256": "28c2eb9dd15ac51df30e2ff80f1f092062a0588494dea0184921885a38100047"
+    },
+    {
+      "key": "growth-0-0-side",
+      "file": "chao022-growth-0-0-side.png",
+      "sha256": "412929aa4976c58e384f7638162fc4413a36d5e6cc25b329ce6dae6d51bf5da4"
+    },
+    {
+      "key": "forms-0-1",
+      "file": "chao022-forms-0-1.png",
+      "sha256": "507d0cc24ed03e2689c2affc726aa726a16872fca62e0b4bddf82209409eb5da"
+    },
+    {
+      "key": "growth-0-1-front",
+      "file": "chao022-growth-0-1-front.png",
+      "sha256": "02c7300e7b864700d6364f285dd6993adf8606f86dd204c449d07e7061b860e3"
+    },
+    {
+      "key": "growth-0-1-side",
+      "file": "chao022-growth-0-1-side.png",
+      "sha256": "1886efd32c01ab0402b8066195d6dec94f516e50bf9e3c352834c6cb4cdaa5ae"
+    },
+    {
+      "key": "forms-0-2",
+      "file": "chao022-forms-0-2.png",
+      "sha256": "7cc81b395ce4e5514674313b24e208c78d70267be8a388108a8db2a9cb88dcaf"
+    },
+    {
+      "key": "growth-0-2-front",
+      "file": "chao022-growth-0-2-front.png",
+      "sha256": "46aea0d752394e8df1fd1f72a29e2a2afc73343860522baddac5316f8a67dbfc"
+    },
+    {
+      "key": "growth-0-2-side",
+      "file": "chao022-growth-0-2-side.png",
+      "sha256": "acd38389503a0b3a3010e0159f6b976b7787f162c389e83da4f98fa53933668c"
+    },
+    {
+      "key": "forms-0-3",
+      "file": "chao022-forms-0-3.png",
+      "sha256": "88b23157aa3d9aaccda4ef89e8f8af6f77a5975ea4d887d573b8b6c212765bf1"
+    },
+    {
+      "key": "growth-0-3-front",
+      "file": "chao022-growth-0-3-front.png",
+      "sha256": "38aa7e19d062b106f1fe4f9528f528e0cdc1e49ec487765af3a6e187ca29c5a5"
+    },
+    {
+      "key": "growth-0-3-side",
+      "file": "chao022-growth-0-3-side.png",
+      "sha256": "03dbd5c16c34123b777704dfa603016c2d7d58e1cf14609b697f6f8a23081e7d"
+    },
+    {
+      "key": "forms-0-4",
+      "file": "chao022-forms-0-4.png",
+      "sha256": "308c2fbef91fd702414fd05c6be54aae3561e92c3e61beca108e42e9412591b2"
+    },
+    {
+      "key": "growth-0-4-front",
+      "file": "chao022-growth-0-4-front.png",
+      "sha256": "0cf3e8860d59358e5fb9f3f312bca1d18c69afda3265b21bfcd08f97a3a5ee60"
+    },
+    {
+      "key": "growth-0-4-side",
+      "file": "chao022-growth-0-4-side.png",
+      "sha256": "84b7f03ae9e3e403e514c723970e8d458e3fcdcc10a1b101d37cee4b8deef66c"
+    },
+    {
+      "key": "forms-1-0",
+      "file": "chao022-forms-1-0.png",
+      "sha256": "9f57fbe843d570c3c3069464d1f8c898eb068c017b4a143101290bb911790ac6"
+    },
+    {
+      "key": "growth-1-0-front",
+      "file": "chao022-growth-1-0-front.png",
+      "sha256": "df6903f0def6a67d0cd8c6e64698551ef256306ad9b203969342adfd93a0d59c"
+    },
+    {
+      "key": "growth-1-0-side",
+      "file": "chao022-growth-1-0-side.png",
+      "sha256": "993f7ae8b464aa1f47cfdb29af797865681ca0545e6167589cba88bf5c3ce0c4"
+    },
+    {
+      "key": "forms-1-1",
+      "file": "chao022-forms-1-1.png",
+      "sha256": "ca5b4098cac1b67a647a30ecb24201f53fc693e20b9b1600b09081c1ca70877c"
+    },
+    {
+      "key": "growth-1-1-front",
+      "file": "chao022-growth-1-1-front.png",
+      "sha256": "16fcda38bde83700c096feb51cb1988224d2599bc1c3cee3f8f3d559110820af"
+    },
+    {
+      "key": "growth-1-1-side",
+      "file": "chao022-growth-1-1-side.png",
+      "sha256": "21e6a731bbc2b3d94fd50853cec6b3caff28f567b9d74c57f99eedaac5e308a1"
+    },
+    {
+      "key": "forms-1-2",
+      "file": "chao022-forms-1-2.png",
+      "sha256": "ffb881e36640803aa3fa65bf0bf55053f652e5395bf13dc7683c7f8331dca46d"
+    },
+    {
+      "key": "growth-1-2-front",
+      "file": "chao022-growth-1-2-front.png",
+      "sha256": "1ec2b6e59efcca1c7558ca994b0aef506eacd504d5170f9bbecdc537f90d2ee9"
+    },
+    {
+      "key": "growth-1-2-side",
+      "file": "chao022-growth-1-2-side.png",
+      "sha256": "698b798f51c42fd8c047bee2973cb55b7dbfef4af8a7773dc8110e69cc3981c2"
+    },
+    {
+      "key": "forms-1-3",
+      "file": "chao022-forms-1-3.png",
+      "sha256": "298a38bf1c180dec7d9cedd487909bcd82ed770613bf93ec1d1c72430e8323a5"
+    },
+    {
+      "key": "growth-1-3-front",
+      "file": "chao022-growth-1-3-front.png",
+      "sha256": "06bf428deb87226ed57445a2ac0105dbc2d8c9c53208cbe4173697df503c4805"
+    },
+    {
+      "key": "growth-1-3-side",
+      "file": "chao022-growth-1-3-side.png",
+      "sha256": "4df5c2bc26929bca0fef611349daef91478ea0b3f821fbaeda1344748afca73c"
+    },
+    {
+      "key": "forms-1-4",
+      "file": "chao022-forms-1-4.png",
+      "sha256": "5ec9392629d22af7256d9a8f44af19b13601898c2a8264759cb8e752d167fee1"
+    },
+    {
+      "key": "growth-1-4-front",
+      "file": "chao022-growth-1-4-front.png",
+      "sha256": "0b0c40e54847a7fc978f910591aed834912c9b4fe27198621767de589591364b"
+    },
+    {
+      "key": "growth-1-4-side",
+      "file": "chao022-growth-1-4-side.png",
+      "sha256": "24de35bd4bdec6ac6c80072c80f2cc5011aef9d7cd5e4883c1462b224b71a563"
+    },
+    {
+      "key": "forms-2-0",
+      "file": "chao022-forms-2-0.png",
+      "sha256": "e2bed76614000d4de51444fb5def9b500d66013f5e7cafca012befcb61f76672"
+    },
+    {
+      "key": "growth-2-0-front",
+      "file": "chao022-growth-2-0-front.png",
+      "sha256": "81c5329a11fa061eee7b6a1b0f2ea5a084b70d6a849e4213cc672bb7bc1bd466"
+    },
+    {
+      "key": "growth-2-0-side",
+      "file": "chao022-growth-2-0-side.png",
+      "sha256": "6a19f6e072e18e951223baf62f1775f618f2b02a3bd3631d137290e572cc1caf"
+    },
+    {
+      "key": "forms-2-1",
+      "file": "chao022-forms-2-1.png",
+      "sha256": "7324a61e61c3eca1b32aa84216d207ec180859058e22821cc949a20c30d00927"
+    },
+    {
+      "key": "growth-2-1-front",
+      "file": "chao022-growth-2-1-front.png",
+      "sha256": "cf8015ecd9309d3bbd45c16d84d64dc7e94ddc7fb3ae1b7de8b58c31bd792380"
+    },
+    {
+      "key": "growth-2-1-side",
+      "file": "chao022-growth-2-1-side.png",
+      "sha256": "882cf8425e9b151d596cb34c94d9e965059762f00700c11104665be6ff1cb4a6"
+    },
+    {
+      "key": "forms-2-2",
+      "file": "chao022-forms-2-2.png",
+      "sha256": "94fb357bb0589385789539e4a8181397bb48279dfa3c5007da9670be44b29e52"
+    },
+    {
+      "key": "growth-2-2-front",
+      "file": "chao022-growth-2-2-front.png",
+      "sha256": "25f7da53fa94c3b23ad1e44b779cf550bb2617557bca00a4e750d2c6d9ed9f96"
+    },
+    {
+      "key": "growth-2-2-side",
+      "file": "chao022-growth-2-2-side.png",
+      "sha256": "26356422de6dbe16de2d7d1119f10cf7869537dc413c961a8ed8644bfb8e5fd8"
+    },
+    {
+      "key": "forms-2-3",
+      "file": "chao022-forms-2-3.png",
+      "sha256": "4c641bdbcb996fcb620b6f68008381bc6ad3029e0de7837d74627708ec09d28f"
+    },
+    {
+      "key": "growth-2-3-front",
+      "file": "chao022-growth-2-3-front.png",
+      "sha256": "48d02748dd24eafc9a99b46ae84a27a79f788aaa4b38c889f85bd9e120206945"
+    },
+    {
+      "key": "growth-2-3-side",
+      "file": "chao022-growth-2-3-side.png",
+      "sha256": "79866a762d29456c775e50a957f4f7f1ee0126907b0a6e0433c82768463fd964"
+    },
+    {
+      "key": "forms-2-4",
+      "file": "chao022-forms-2-4.png",
+      "sha256": "59a93230e1ccf430f8479644b40656260dfc3c9a7c45071b3dfa09cc6f632030"
+    },
+    {
+      "key": "growth-2-4-front",
+      "file": "chao022-growth-2-4-front.png",
+      "sha256": "e4fa113d631b5d119eecd2beeee96903dfd2cc2da9dbad3f2e021072a731a61a"
+    },
+    {
+      "key": "growth-2-4-side",
+      "file": "chao022-growth-2-4-side.png",
+      "sha256": "771b104bcb2bf772102feb947986e8b8f545a0908797e487e464d33e5ebd444d"
+    },
+    {
+      "key": "opposite-0-1-side",
+      "file": "chao022-opposite-0-1-side.png",
+      "sha256": "de6b44036da4726acb5922230a54d707ecf6ae53a037661c2d2a066fe7a2a704"
+    },
+    {
+      "key": "opposite-0-2-side",
+      "file": "chao022-opposite-0-2-side.png",
+      "sha256": "1ebe7af8a5d0903d004e04f4e2811e588b0c43c2ea460e5d47b9aa1bef9bfdcc"
+    },
+    {
+      "key": "opposite-0-3-side",
+      "file": "chao022-opposite-0-3-side.png",
+      "sha256": "96e994c9387aebae62f9e3f15758d06791fc1aa23fca36aef4ea4c910336c373"
+    },
+    {
+      "key": "opposite-0-4-side",
+      "file": "chao022-opposite-0-4-side.png",
+      "sha256": "fce9ee04f97973b2aedc24461649b123166dd51f88f3a4d7e173f4c4ef9f1515"
+    },
+    {
+      "key": "mixed-0-0-0-front",
+      "file": "chao022-mixed-0-0-0-front.png",
+      "sha256": "78e38bc2171582215b20429e22ab5273f04e40b5c50796a5b613812e9a7ace2a"
+    },
+    {
+      "key": "mixed-0-0-1-front",
+      "file": "chao022-mixed-0-0-1-front.png",
+      "sha256": "8119cca75f64e791d4e8091a67a3a1efae84c0fc7c8c546302de5376623a99b0"
+    },
+    {
+      "key": "mixed-0-0-2-front",
+      "file": "chao022-mixed-0-0-2-front.png",
+      "sha256": "f3a0f5a57a73050d35188dc0e9014f4662a6b38dfa95cf7c4ba3d4149f2bf7b9"
+    },
+    {
+      "key": "mixed-0-0-3-front",
+      "file": "chao022-mixed-0-0-3-front.png",
+      "sha256": "ed872909aa9956b3fefd0da4c93c36f86cabbe5fe2da196dbb8c4beeead08666"
+    },
+    {
+      "key": "reverse-0-2-front",
+      "file": "chao022-reverse-0-2-front.png",
+      "sha256": "13823683610b5ff362f916fc082bc9b5e3537f86d87e163d861146d960ccd104"
+    },
+    {
+      "key": "reverse-0-2-side",
+      "file": "chao022-reverse-0-2-side.png",
+      "sha256": "587af9546e012528f098f0a18c95fb575dfac5ffa77a8181df9d6322a9aa549b"
+    },
+    {
+      "key": "opposite-1-1-side",
+      "file": "chao022-opposite-1-1-side.png",
+      "sha256": "36a37a3870f6b190b4c5a1dff7608bbb31dc6aba729d85e23816fedbbcf85f0e"
+    },
+    {
+      "key": "opposite-1-2-side",
+      "file": "chao022-opposite-1-2-side.png",
+      "sha256": "3b97f7fff0855dae883ffe65dd181e9735a5eb9ed800fa5c3dad29b782772920"
+    },
+    {
+      "key": "opposite-1-3-side",
+      "file": "chao022-opposite-1-3-side.png",
+      "sha256": "ea0536105c95ac8b97fa5d7eb88394bdff6490fbfc79b93e3b2dc04cf088d16e"
+    },
+    {
+      "key": "opposite-1-4-side",
+      "file": "chao022-opposite-1-4-side.png",
+      "sha256": "45c832b010c39b09ae9b385a0522a813f0fbb3d9bd672975380e39235a6fa040"
+    },
+    {
+      "key": "mixed-1-0-0-front",
+      "file": "chao022-mixed-1-0-0-front.png",
+      "sha256": "7d72144d1e3e86a33847bfb62954f2a4b30c8a538963dd30c853911f17c68d72"
+    },
+    {
+      "key": "mixed-1-0-1-front",
+      "file": "chao022-mixed-1-0-1-front.png",
+      "sha256": "71fdac68420623fb87fa8c7b0fe4d17fc754227678bfcc25dba6b9921ba9c7c5"
+    },
+    {
+      "key": "mixed-1-0-2-front",
+      "file": "chao022-mixed-1-0-2-front.png",
+      "sha256": "b90313b194bfa5d1ecd85ef356d3dc459c0076c8f1bc6497e88bac4fd06fc573"
+    },
+    {
+      "key": "mixed-1-0-3-front",
+      "file": "chao022-mixed-1-0-3-front.png",
+      "sha256": "3927a01781e0ad97be908155569385b19f34c346e26537a84fb73074fd3e833b"
+    },
+    {
+      "key": "reverse-1-2-front",
+      "file": "chao022-reverse-1-2-front.png",
+      "sha256": "c3d33ee1e814d7fac9ddbfa338f3ccc9c69f8686dcec5bc81e1ea09cd5a254be"
+    },
+    {
+      "key": "reverse-1-2-side",
+      "file": "chao022-reverse-1-2-side.png",
+      "sha256": "1edc4792342a172dfb61e21c64d36ee14353424de01b36647528b1e0a9445f96"
+    },
+    {
+      "key": "opposite-2-1-side",
+      "file": "chao022-opposite-2-1-side.png",
+      "sha256": "334cfe47e42e78b28f87265bc53447506b2c834b9d69638a92ed7aba0fd66aa7"
+    },
+    {
+      "key": "opposite-2-2-side",
+      "file": "chao022-opposite-2-2-side.png",
+      "sha256": "23a77f89ff13318e0192e108168a2fc5c0226cca89854a68a6523c1914e534ae"
+    },
+    {
+      "key": "opposite-2-3-side",
+      "file": "chao022-opposite-2-3-side.png",
+      "sha256": "75cabd95091badc21d6cd9f82c122d96b7a27903a8e8a789c3efd638d242247a"
+    },
+    {
+      "key": "opposite-2-4-side",
+      "file": "chao022-opposite-2-4-side.png",
+      "sha256": "fbb1f08f6083a144a7092eee83e2106bcf5345b6f814d0afa0f669fb0952cbdc"
+    },
+    {
+      "key": "mixed-2-0-0-front",
+      "file": "chao022-mixed-2-0-0-front.png",
+      "sha256": "c5d69b274ad19ae50609bef899284c48d7608984d2a47944ebc11fdafd80c371"
+    },
+    {
+      "key": "mixed-2-0-1-front",
+      "file": "chao022-mixed-2-0-1-front.png",
+      "sha256": "79d7d85c659bdc6a2566f630bb5f80d0636fd12d2175f673ccf1634f20bd0cc7"
+    },
+    {
+      "key": "mixed-2-0-2-front",
+      "file": "chao022-mixed-2-0-2-front.png",
+      "sha256": "dce8e98c6e19b1608952cc254c644f51fc6cd7fa7db01c2c337bd935f1bd8562"
+    },
+    {
+      "key": "mixed-2-0-3-front",
+      "file": "chao022-mixed-2-0-3-front.png",
+      "sha256": "9eff3a3ab7d5937ad87e864d4972d4ee50241e447d9dc2ee381f173be2787cda"
+    },
+    {
+      "key": "reverse-2-2-front",
+      "file": "chao022-reverse-2-2-front.png",
+      "sha256": "e8ccefda22f220389f77c71eea140bb9f5d1b6e07e136469d5edc0baa2a1c8eb"
+    },
+    {
+      "key": "reverse-2-2-side",
+      "file": "chao022-reverse-2-2-side.png",
+      "sha256": "9c0aa1a4fd06b69f4eb8ddec2fca5f03080b8788baf8c143198684f1f093cf3e"
+    },
+    {
+      "key": "baby-0-front",
+      "file": "chao022-baby-0-front.png",
+      "sha256": "a80d460c1e20ea5ab7b4828976baf493fb503e96401743358b6b93ac36801c8a"
+    },
+    {
+      "key": "baby-1-front",
+      "file": "chao022-baby-1-front.png",
+      "sha256": "a0c40ac8d40ace654d91108d75f50b6306254f4fb1cfc7663e70ea25e9ce037f"
+    },
+    {
+      "key": "baby-2-front",
+      "file": "chao022-baby-2-front.png",
+      "sha256": "a058477dbeeb5f29813262d7e8c6d230beaafb772c88c638b1ea17946848c4ed"
+    },
+    {
+      "key": "baby-3-front",
+      "file": "chao022-baby-3-front.png",
+      "sha256": "c70ebb84689805de6996f2baeb8d52e46ddaff4df54dc190b1f36465a13f71c1"
+    },
+    {
+      "key": "baby-4-front",
+      "file": "chao022-baby-4-front.png",
+      "sha256": "0c69a527a3338e6c4147ca26620b5d079b69e0814bf71d5e34acd365c62d6899"
+    },
+    {
+      "key": "accessory-0-0-front",
+      "file": "chao022-accessory-0-0-front.png",
+      "sha256": "d1652b408b44265cd1aa732744971632e6784bad7ba4068a5303028d3935f08b"
+    },
+    {
+      "key": "accessory-0-0-side",
+      "file": "chao022-accessory-0-0-side.png",
+      "sha256": "819849a83c57009901b655dc1acb9a35fe282e6bca36b74720fda338feeea881"
+    },
+    {
+      "key": "accessory-0-0-back",
+      "file": "chao022-accessory-0-0-back.png",
+      "sha256": "fdd540c4a29cbe573fc46a3deed75b35cefcd19d4179d3c2eb077ea2fb68e52d"
+    },
+    {
+      "key": "accessory-0-1-front",
+      "file": "chao022-accessory-0-1-front.png",
+      "sha256": "ac709d752dbff2c39174414e6a2d91ee89444b8b82d713a67cb92c4403bc6fbb"
+    },
+    {
+      "key": "accessory-0-1-side",
+      "file": "chao022-accessory-0-1-side.png",
+      "sha256": "d238818d7be475c51c7bbf9c52243eb144d5ef400282a9bfefcfc3817c614403"
+    },
+    {
+      "key": "accessory-0-1-back",
+      "file": "chao022-accessory-0-1-back.png",
+      "sha256": "948f9ef0ca6c8dd4e85da0955c675acff2b6fe73607b4c2c0fed765a40d31109"
+    },
+    {
+      "key": "accessory-0-2-front",
+      "file": "chao022-accessory-0-2-front.png",
+      "sha256": "ec0d4bf19f548df7231c76080be38873954c680cf767ff8816fa167b59c0617a"
+    },
+    {
+      "key": "accessory-0-2-side",
+      "file": "chao022-accessory-0-2-side.png",
+      "sha256": "94d860ec35cf4d7b4a93b051f3e76ba8e497c431154c5e17ef741a621aea2f45"
+    },
+    {
+      "key": "accessory-0-2-back",
+      "file": "chao022-accessory-0-2-back.png",
+      "sha256": "0de38e8f334a28436306e50f0756468336a8df0d54a3e0df318fd285ece7d2c4"
+    },
+    {
+      "key": "accessory-0-3-front",
+      "file": "chao022-accessory-0-3-front.png",
+      "sha256": "f7442f47946c024eb2c8fda8e74a0226b432f26ad08ce6399b21cf57e796f100"
+    },
+    {
+      "key": "accessory-0-3-side",
+      "file": "chao022-accessory-0-3-side.png",
+      "sha256": "0c04297625674bce84b9be22d14f3171c55e09713a15a1938193956143ed0d2f"
+    },
+    {
+      "key": "accessory-0-3-back",
+      "file": "chao022-accessory-0-3-back.png",
+      "sha256": "10513dffbba6d47c541368775d965a32ae897f527a6c5f4b52001893ac752215"
+    },
+    {
+      "key": "accessory-0-4-front",
+      "file": "chao022-accessory-0-4-front.png",
+      "sha256": "d6621b9a916b6019c9e128686d42c3c305c67629da376df1c1050d3cc99bc036"
+    },
+    {
+      "key": "accessory-0-4-side",
+      "file": "chao022-accessory-0-4-side.png",
+      "sha256": "0aca045911c81c92fe508d7330ad7d77387509ac6210d8c3292e9fab2a08bf16"
+    },
+    {
+      "key": "accessory-0-4-back",
+      "file": "chao022-accessory-0-4-back.png",
+      "sha256": "e0c87b459023e325e3637d0a49082e34055ac44fcb130000820bd33b3ea74a5d"
+    },
+    {
+      "key": "accessory-1-0-front",
+      "file": "chao022-accessory-1-0-front.png",
+      "sha256": "56a34ec8cb4cf105b2aa1091f716b361f163d1e1f47c9a2d25f106a4c985407b"
+    },
+    {
+      "key": "accessory-1-0-side",
+      "file": "chao022-accessory-1-0-side.png",
+      "sha256": "a16aec0254da0492e049cf3b40ebf9367927a67fefb85e91d0f35cf83a4964f5"
+    },
+    {
+      "key": "accessory-1-0-back",
+      "file": "chao022-accessory-1-0-back.png",
+      "sha256": "6d9dae45c8dd24f210046836b7fe35471069d917af2c509e4ed05fdef866827b"
+    },
+    {
+      "key": "accessory-1-1-front",
+      "file": "chao022-accessory-1-1-front.png",
+      "sha256": "0e8e730701aa32df5ef153379a5d4be264b215f74167a48bfd6f3d812fad1d3b"
+    },
+    {
+      "key": "accessory-1-1-side",
+      "file": "chao022-accessory-1-1-side.png",
+      "sha256": "5d3e92b21d1aac0c73cd9c85122597e265ae5703ed60cd927ff48edbc51f3142"
+    },
+    {
+      "key": "accessory-1-1-back",
+      "file": "chao022-accessory-1-1-back.png",
+      "sha256": "b2ec3ac719fa2f2d74b53024594ea0ca176da7a9631df90d710480615e4bfb0f"
+    },
+    {
+      "key": "accessory-1-2-front",
+      "file": "chao022-accessory-1-2-front.png",
+      "sha256": "5cdd3b591fd5dbe0f5923504fb6c09dea91aa631914e8a8b617fe7489e4f10fb"
+    },
+    {
+      "key": "accessory-1-2-side",
+      "file": "chao022-accessory-1-2-side.png",
+      "sha256": "8ee02be3ba6fffbb5411453aa751b2e3f9e0abb2b707a2ae6307c4f1a666582a"
+    },
+    {
+      "key": "accessory-1-2-back",
+      "file": "chao022-accessory-1-2-back.png",
+      "sha256": "24d3e316c7b734e66252757c3306585689a74fc8c6a94974b473607715f7fcb0"
+    },
+    {
+      "key": "accessory-1-3-front",
+      "file": "chao022-accessory-1-3-front.png",
+      "sha256": "54a863b09d5aa78357e36b252525c7a4b5f17163521b4019655fbe83a47af4a9"
+    },
+    {
+      "key": "accessory-1-3-side",
+      "file": "chao022-accessory-1-3-side.png",
+      "sha256": "78ab2d764950c83d779bcbb6e86df314775738cb18de1ac28446e5fa41d908ef"
+    },
+    {
+      "key": "accessory-1-3-back",
+      "file": "chao022-accessory-1-3-back.png",
+      "sha256": "f51f4fb44388652c50f33fbf90cb188b7c7106b3d51680b5b961cd5d7a2d4fa3"
+    },
+    {
+      "key": "accessory-1-4-front",
+      "file": "chao022-accessory-1-4-front.png",
+      "sha256": "acfbc2c0021276bc77bda11d234de4dc845996dee3818de1514bcaf8de9aa1ec"
+    },
+    {
+      "key": "accessory-1-4-side",
+      "file": "chao022-accessory-1-4-side.png",
+      "sha256": "894cb5d70f22575b0b9b55d4a0da93f739e4a3af345ee32d097697304ed223fe"
+    },
+    {
+      "key": "accessory-1-4-back",
+      "file": "chao022-accessory-1-4-back.png",
+      "sha256": "07770b1ba08ca5a0fdcac6ade820b62a0c69801379a43370022d1da2f5c8c917"
+    },
+    {
+      "key": "accessory-2-0-front",
+      "file": "chao022-accessory-2-0-front.png",
+      "sha256": "5e68f637afe0b5951240091e40e9a088c7e3cbcdd2d5f68c55df9f3b3457faac"
+    },
+    {
+      "key": "accessory-2-0-side",
+      "file": "chao022-accessory-2-0-side.png",
+      "sha256": "8eee3f417a7f2ff108c3de64cc751c2ea9aa04565f642b405cd571544b3195d3"
+    },
+    {
+      "key": "accessory-2-0-back",
+      "file": "chao022-accessory-2-0-back.png",
+      "sha256": "d38b4318a778fcf8fcdcbb2d8de6d95bcae2f20d714bf45da897ed1429f7f457"
+    },
+    {
+      "key": "accessory-2-1-front",
+      "file": "chao022-accessory-2-1-front.png",
+      "sha256": "404b402c078138f4667b12efa3ef6af7c226291c95acb927d84695fe057b90fb"
+    },
+    {
+      "key": "accessory-2-1-side",
+      "file": "chao022-accessory-2-1-side.png",
+      "sha256": "d62410930fe736dc4f257d00bc31260511f3381ffb1f17d69149a34ca9c8f240"
+    },
+    {
+      "key": "accessory-2-1-back",
+      "file": "chao022-accessory-2-1-back.png",
+      "sha256": "e1768ea957db06d3281834afa6e5417ed5797bd9b54dec99d12a59466637fabe"
+    },
+    {
+      "key": "accessory-2-2-front",
+      "file": "chao022-accessory-2-2-front.png",
+      "sha256": "70fea669b922f77d9c7dda9ee9b9479655847c48f9249f8af72044debc9b6daa"
+    },
+    {
+      "key": "accessory-2-2-side",
+      "file": "chao022-accessory-2-2-side.png",
+      "sha256": "41ae43716250f71141fa8bbf4f89042377bf68f4dd64d88502a972cacb43e2e6"
+    },
+    {
+      "key": "accessory-2-2-back",
+      "file": "chao022-accessory-2-2-back.png",
+      "sha256": "f412978377b6bd6f6a48c3245d3a9e19d305671dfd768dbe5055537a19f769a5"
+    },
+    {
+      "key": "accessory-2-3-front",
+      "file": "chao022-accessory-2-3-front.png",
+      "sha256": "92fb443fa9e1365a3abd6071f34dc44fd82e08ad816837199181271c5434063f"
+    },
+    {
+      "key": "accessory-2-3-side",
+      "file": "chao022-accessory-2-3-side.png",
+      "sha256": "221b751aafad4222bd815891cf9a09645e40a7019cd0c533d2b707ac2a11ac00"
+    },
+    {
+      "key": "accessory-2-3-back",
+      "file": "chao022-accessory-2-3-back.png",
+      "sha256": "e2412f3de2944d50c5a539f83fca53ef678152370c3bbeb6f07fa802fd734f40"
+    },
+    {
+      "key": "accessory-2-4-front",
+      "file": "chao022-accessory-2-4-front.png",
+      "sha256": "6369601694c3ab9229622d1096a1ecf3383ec1838f2247e08d68e3b4e25f5bf6"
+    },
+    {
+      "key": "accessory-2-4-side",
+      "file": "chao022-accessory-2-4-side.png",
+      "sha256": "e4ff009ee55b22768de184a540bef2e028c2b11ba5cc66acd2ca3a12a9ab03d0"
+    },
+    {
+      "key": "accessory-2-4-back",
+      "file": "chao022-accessory-2-4-back.png",
+      "sha256": "847e5e89d98a86dc449df5c5cb1efb3ba63fe3fa5b16145ff69f9d185a2f6a6a"
+    },
+    {
+      "key": "accessory-child-front",
+      "file": "chao022-accessory-child-front.png",
+      "sha256": "4723f7c8dde3b5172ec5b9442cd85d431ed572f749048932f4ce2b2dd57d5173"
+    },
+    {
+      "key": "accessory-child-side",
+      "file": "chao022-accessory-child-side.png",
+      "sha256": "3c797809657a55a7f3f9f0639dbcc92a67f5fed7fca2008846b954a587fbb295"
+    },
+    {
+      "key": "accessory-child-back",
+      "file": "chao022-accessory-child-back.png",
+      "sha256": "636f49b3d3ebb5207a43261e5af1e3cc1512350ee64d7a5e700315c6478658f2"
+    },
+    {
+      "key": "accessoryspecial-amy-front",
+      "file": "chao022-accessoryspecial-amy-front.png",
+      "sha256": "cc8edfae3879c647b39facbe388191038524428c0034537adca98a4452fda032"
+    },
+    {
+      "key": "accessoryspecial-amy-side",
+      "file": "chao022-accessoryspecial-amy-side.png",
+      "sha256": "b344448daf519c88406b74706ef295e0b04d87840fec384072805955dc861a88"
+    },
+    {
+      "key": "accessoryspecial-amy-back",
+      "file": "chao022-accessoryspecial-amy-back.png",
+      "sha256": "4c0d8002f20075fbb617363989d30e2ef6fa72415a056847c75bd72e3c842bce"
+    },
+    {
+      "key": "accessoryspecial-omochao-front",
+      "file": "chao022-accessoryspecial-omochao-front.png",
+      "sha256": "9a88590317eff503367b3cfeb0781f076571fac573d3fbe5af7aaf415311248c"
+    },
+    {
+      "key": "accessoryspecial-omochao-side",
+      "file": "chao022-accessoryspecial-omochao-side.png",
+      "sha256": "8f16f4071756444f9585889c595a89178d34d98744c4de26e89eddf93d3aa73b"
+    },
+    {
+      "key": "accessoryspecial-omochao-back",
+      "file": "chao022-accessoryspecial-omochao-back.png",
+      "sha256": "bb87c08a83399594aa3a926228d8418948822d64d338b2f4c0f904c2e25daa6e"
+    },
+    {
+      "key": "accessoryspecial-chaos0-front",
+      "file": "chao022-accessoryspecial-chaos0-front.png",
+      "sha256": "d1d49b556be4f7902aeec0ea03516e3a7b3eb95172950c66ad7966d5f74729b0"
+    },
+    {
+      "key": "accessoryspecial-chaos0-side",
+      "file": "chao022-accessoryspecial-chaos0-side.png",
+      "sha256": "f7e44bac1a6b312953a9b3e8849381b97a7e45c05c4eb048f529e5b853a0095e"
+    },
+    {
+      "key": "accessoryspecial-chaos0-back",
+      "file": "chao022-accessoryspecial-chaos0-back.png",
+      "sha256": "87302b56d6c21343beeab1f02bfeff1a60946e9e9af90b918d3c2bc8b6f3556b"
+    },
+    {
+      "key": "accessoryspecial-chaos1-front",
+      "file": "chao022-accessoryspecial-chaos1-front.png",
+      "sha256": "d7e8e6021c5f8f9e186d08ddc8760b00c41dd34f72543ff9989fce4da1ee6a13"
+    },
+    {
+      "key": "accessoryspecial-chaos1-side",
+      "file": "chao022-accessoryspecial-chaos1-side.png",
+      "sha256": "20bcd870b2378407cbe954ee3c120af8f978aa16cbeb1fa0280fe134a5a74b04"
+    },
+    {
+      "key": "accessoryspecial-chaos1-back",
+      "file": "chao022-accessoryspecial-chaos1-back.png",
+      "sha256": "85d9848f851e0d8f6df2e52038d47e25af0fea490e022e324916dcb2cfc7109f"
+    },
+    {
+      "key": "accessoryspecial-chaos2-front",
+      "file": "chao022-accessoryspecial-chaos2-front.png",
+      "sha256": "48a7ed2144347bcea3f747f55dbe3d089a6a652787a5926e56e3a7f9b836f65f"
+    },
+    {
+      "key": "accessoryspecial-chaos2-side",
+      "file": "chao022-accessoryspecial-chaos2-side.png",
+      "sha256": "eb6be01cbed0fae2475ad3cbe78f14884d149c0a8fde63c756a68d0e12cd0443"
+    },
+    {
+      "key": "accessoryspecial-chaos2-back",
+      "file": "chao022-accessoryspecial-chaos2-back.png",
+      "sha256": "92e9d67899c576e5eb8478e96e2f56bbc398239ae53fd4a77c9fff3e3c9509f7"
+    },
+    {
+      "key": "amy-front",
+      "file": "chao022-amy-front.png",
+      "sha256": "78fdae33fdf35f16644eaf80c3a38acd09edcd1ee42636b3c81cc2431d940280"
+    },
+    {
+      "key": "amy-side",
+      "file": "chao022-amy-side.png",
+      "sha256": "1250cdbe8c947cb5296ec601fa72aaf61b7d9a1f811ac0554a663c3551c8f7cc"
+    },
+    {
+      "key": "amy-back",
+      "file": "chao022-amy-back.png",
+      "sha256": "163f7b7bded48f5f5a376eeb814c344dfbd2e4daee6c07c4f2794c27db85fd37"
+    },
+    {
+      "key": "chaos-0-front",
+      "file": "chao022-chaos-0-front.png",
+      "sha256": "fe7b213ffed3f7af65ee97ada3bab4e10a73316679f3b8ce4f94eae38e4d8151"
+    },
+    {
+      "key": "chaos-0-oblique",
+      "file": "chao022-chaos-0-oblique.png",
+      "sha256": "8e228320e2f60044f22eaaa7705abfc58fd60d6e7415ef3369bb5788244f3844"
+    },
+    {
+      "key": "chaos-0-side",
+      "file": "chao022-chaos-0-side.png",
+      "sha256": "4cbb47f245fe7cbdeb48c4d486fab071a5149854fab4665e38c09f345242a8b9"
+    },
+    {
+      "key": "chaos-0-back",
+      "file": "chao022-chaos-0-back.png",
+      "sha256": "5f8e4fbc7bdd9f8bd17399a3ed6f474d670d58e031b4505d4770eb90036e44bb"
+    },
+    {
+      "key": "chaos-1-front",
+      "file": "chao022-chaos-1-front.png",
+      "sha256": "c9b2521da167f8be4e3e626fcf7c46d4f0c1534204bd654bfcf431261a29ee18"
+    },
+    {
+      "key": "chaos-1-oblique",
+      "file": "chao022-chaos-1-oblique.png",
+      "sha256": "c2e420f3a144c7a035c520d1a21f852c45123bbc4f4046bc3671976a3f89541e"
+    },
+    {
+      "key": "chaos-1-side",
+      "file": "chao022-chaos-1-side.png",
+      "sha256": "63f17f97e04ccd1d9680447b820181849b32f9c13ddf0536a654eaea445b2cce"
+    },
+    {
+      "key": "chaos-1-back",
+      "file": "chao022-chaos-1-back.png",
+      "sha256": "fbc8ee7ac00fc6bcff299d8cf6023121d8085497caf0944cf58fde1655a3df19"
+    },
+    {
+      "key": "chaos-2-front",
+      "file": "chao022-chaos-2-front.png",
+      "sha256": "6baa359d60d48dd5d5ca360e118ecf69aaa5446d455de94fd5c592fa567dc39a"
+    },
+    {
+      "key": "chaos-2-oblique",
+      "file": "chao022-chaos-2-oblique.png",
+      "sha256": "c6f37ec096d738690da5331b8d3ea0e31fb2aba2be73a0d036cf8bd7194a8982"
+    },
+    {
+      "key": "chaos-2-side",
+      "file": "chao022-chaos-2-side.png",
+      "sha256": "350602dff5f5816f44dee7ac7fd25c8134c2aba719fe1df23ac5d0f193db9716"
+    },
+    {
+      "key": "chaos-2-back",
+      "file": "chao022-chaos-2-back.png",
+      "sha256": "5f7c395c4640f7c5ee9e7fa85c90ff48568a9bb0121731e65802db90fe30805f"
+    },
+    {
+      "key": "chaoscoat-3",
+      "file": "chao022-chaoscoat-3.png",
+      "sha256": "eb29978d530e917bfdd19d72437482b37716062a4ffaf27122acd8c8853b7f98"
+    },
+    {
+      "key": "chaoscoat-4",
+      "file": "chao022-chaoscoat-4.png",
+      "sha256": "fa88ac55a96a5aaf87f0e4f40b4bbfcb50e0d3c6153b6453a9ea16ff2d0b3a0d"
+    },
+    {
+      "key": "chaoscoat-5",
+      "file": "chao022-chaoscoat-5.png",
+      "sha256": "18920dd73bfa8c9002a4524858de6cce73f6b223aad7e4c95dca3f3964f4e908"
+    },
+    {
+      "key": "characters-retained",
+      "file": "chao022-characters-retained.png",
+      "sha256": "7d4ae35bbe5a467c30d5f2c70455badd4fe7f207fa829ed9288488bb36c7b582"
+    },
+    {
+      "key": "proportion-hero",
+      "file": "chao022-proportion-hero.png",
+      "sha256": "6839a3a0115c631b5ccf933f8981795f643a86b3aa93e25a436c5dbe318ab1f4"
+    },
+    {
+      "key": "proportion-dark",
+      "file": "chao022-proportion-dark.png",
+      "sha256": "874b3eb4f18472a0d4488525d265913586ea8c8ec3643c15972745c977ee4e41"
+    },
+    {
+      "key": "proportion-special",
+      "file": "chao022-proportion-special.png",
+      "sha256": "47d87e2a26d600f6de2eb1652be477e567a3e0d9ed7220becc8a2d5e32994ec7"
+    },
+    {
+      "key": "proportion-chaos",
+      "file": "chao022-proportion-chaos.png",
+      "sha256": "0429974e267d99025d8fd704e690cf1b250a8c9ead5c28cced8b2285e91b2c77"
+    },
+    {
+      "key": "merchant-audit-front",
+      "file": "chao022-merchant-audit-front.png",
+      "sha256": "75aae6d398657d00f0a948d50693106585e642b5b3cb6221a96978e499ac5ebb"
+    },
+    {
+      "key": "merchant-audit-side",
+      "file": "chao022-merchant-audit-side.png",
+      "sha256": "382fa5027f294d9392c4597057be72d054c85820df54ad1ca106b8e6479632f5"
+    }
+  ],
+  "full_resolution_spot_checks": [
+    "growth-1-0-front",
+    "growth-1-4-side",
+    "growth-2-1-front",
+    "chaos-1-front",
+    "chaos-1-oblique",
+    "chaos-0-side",
+    "proportion-hero",
+    "proportion-chaos",
+    "merchant-audit-front",
+    "merchant-audit-side"
+  ],
+  "findings": [],
+  "scope": "All assigned ordinary endpoint/growth/mixed/reversal/baby, wearable/special, Chaos anatomy/coats, retained character, proportion comparison and merchant raw views visually inspected; complete PDF review follows export.",
+  "pdf_sha256": "f65667e8ac1c022befb6dc91822091cc663797a6ca621cd3cd90ff561d400183",
+  "pdf_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    107,
+    108,
+    109,
+    110,
+    127,
+    128
+  ],
+  "final_review_report": "docs/validation-0.22/review-proportions.json",
+  "final_review_sha256": "98f2e466fc729ebe088da8dd265cea5c1401255ed6f7d44c7f154e95f4cacee6"
+}

@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/mushroom_seed",
+    "particle": "chao_garden:block/fruit02512/mushroom_seed"
+  },
+  "base": {
+    "parent": "chao_garden:item/fruit02512/mushroom_seed"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/mushroom_seed"
+      },
+      "gui_light": "front"
+    }
+  }
+}

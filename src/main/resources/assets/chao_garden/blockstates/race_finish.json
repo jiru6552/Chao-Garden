@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "chao_garden:block/race_finish"
+    },
+    "axis=z": {
+      "model": "chao_garden:block/race_finish",
+      "y": 90
+    }
+  }
+}

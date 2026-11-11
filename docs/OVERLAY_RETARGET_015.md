@@ -1,0 +1,16 @@
+# Custom Chao additions on the imported rig — 0.15
+
+> Historical 0.15 implementation record. Native conversion, surface behavior and pose fitting were revised in 0.18 and 0.19; current source and [MECHANICS.md](../MECHANICS.md) take precedence over older formulas or limitations below.
+
+
+`python3 art/retarget_chao_overlays.py` rebuilds our custom additions on all twenty imported semantic skeletons. The editable earlier `chao_mesh.json` remains the source for those additions; its old base body, face and limbs are excluded from the overlay output. The imported mesh and its animation controller supply the ordinary body and motion.
+
+The fitted output retains all nineteen active themes, their forehead goggles, head shapes, chest badges and native item icons. It retains the Light, Angel and Devil Chaos silhouettes on the imported Baby body, and the existing progression and independently mixed animal slots. All twenty-one animal genes remain available: eighteen species have visible part sets; Half Fish, Skeleton Dog and Bat retain their existing special mechanics without adding animal meshes. No retired theme is restored.
+
+Every output copies the source rig's exact parent-relative pivots and static rotations. Added geometry attaches to `skull`, `body`, arm, foot, wing and tail anchors, receiving the same sampled pose deltas as the base. Geometry fits the actual seven-pixel skull width and six-pixel depth, including the different Hero/Dark/Swim head heights. On Swim the largest head cube is cube 1, so fitting does not assume cube 0. Animal hands are reoriented from the earlier downward bind frame into the source's sideways arm frame; tail geometry cancels the static tail tilt before inheriting its animated motion.
+
+Child animal parts retain shortened ears/crests and smaller hands, feet, wings and tails. Themed crowns yield to selected ears, horns or forehead parts. Custom normal markers yield to native happy, sad and alert reactions so the two marker systems do not appear together. The same old theme atlases supply the custom pixels, while official-UV recolored Baby coats supply the new base body. Separate official-UV coats cover the three Chaos forms and the Black Market shopkeeper.
+
+Run `python3 art/validate_chao_overlay_clearance.py --output docs/validation-0.15/overlay-retarget-checks.json` for reproducible skeleton checks and a bounded idle cuboid overlap diagnostic (developer Python with NumPy). It checks copied anchors across all twenty rigs and samples thirteen times across eleven ordinary source rigs. In that subset the fitted hand/finger cuboids have no measured head contact deeper than 0.05 model pixels. All 602 measured fitted contacts are shoulder connectors, with maximum depth 0.446 pixels; native source arm cubes themselves have 73 contacts with maximum depth 0.566 pixels. Counts repeat the shared connector for each available species and are not directly comparable rates.
+
+These measurements cover native idle and cuboids only. Movement/reaction blending, noncuboid features, all possible mixed parts and arbitrary camera views still require actual-client review. The check does not establish universal animation clearance or replace the release's client capture record.

@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/reverse_mirror",
+    "particle": "chao_garden:block/cwe02516/reverse_mirror/cwe_mirror_ffffffff_0"
+  },
+  "base": {
+    "parent": "chao_garden:item/cwe02516/reverse_mirror"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/reverse_mirror"
+      },
+      "gui_light": "front"
+    }
+  }
+}

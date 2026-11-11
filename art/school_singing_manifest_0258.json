@@ -1,0 +1,96 @@
+{
+  "release": "0.25.8",
+  "source_kind": "original_melody_from_provided_chao_voice",
+  "exact_sa2_recording": false,
+  "source_voice": "assets/chao_garden/sounds/chao/call.ogg",
+  "source_sha256": "f3de2f27ecbe1a2a63ed7919637a503d76d7f493fdbf145caa231f603cd8384c",
+  "arrangement": "Pitch-synchronous overlap-add retains the provided call vocal timbre; two newly composed short call-and-response melodies with syllable envelopes and rests.",
+  "cycle_ticks": 120,
+  "slot_phrase_starts": {
+    "2": 0,
+    "3": 60
+  },
+  "volume": 0.75,
+  "attenuation_distance": 12,
+  "phrases": [
+    {
+      "id": "a",
+      "sound_event": "chao_garden:chao.singing_a",
+      "asset": "assets/chao_garden/sounds/chao/singing_a.ogg",
+      "sha256": "a553a06171273bf5976b8ebe3538802c5332f254057ff354fefa430093b6eb6d",
+      "pcm_sha256": "883abb2077ab64dda2c86a3315164af0343096a88ec9cb9c9548939dea664ab1",
+      "duration_seconds": 2.8,
+      "codec": "Vorbis",
+      "sample_rate": 22050,
+      "channels": 1,
+      "onset_ticks": [
+        0,
+        8,
+        16,
+        24,
+        36,
+        44
+      ],
+      "duration_ticks": [
+        7,
+        7,
+        7,
+        11,
+        7,
+        11
+      ],
+      "midi_notes": [
+        72,
+        74,
+        76,
+        79,
+        76,
+        72
+      ]
+    },
+    {
+      "id": "b",
+      "sound_event": "chao_garden:chao.singing_b",
+      "asset": "assets/chao_garden/sounds/chao/singing_b.ogg",
+      "sha256": "df9fb9eae1e74351121ba067cc480a5311f296aec47c961de8483f48d6bf84b4",
+      "pcm_sha256": "75928777d15a0de689618b10e55de16cda8a2e6e0a5cd534547a2ad10973483b",
+      "duration_seconds": 2.8,
+      "codec": "Vorbis",
+      "sample_rate": 22050,
+      "channels": 1,
+      "onset_ticks": [
+        0,
+        8,
+        16,
+        24,
+        36,
+        44
+      ],
+      "duration_ticks": [
+        7,
+        7,
+        7,
+        11,
+        7,
+        11
+      ],
+      "midi_notes": [
+        67,
+        72,
+        74,
+        76,
+        74,
+        72
+      ]
+    }
+  ],
+  "existing_audio_sha256": {
+    "sounds/chao/call.ogg": "f3de2f27ecbe1a2a63ed7919637a503d76d7f493fdbf145caa231f603cd8384c",
+    "sounds/chao/chat_1.ogg": "d2656dd12f3108c95510abdc9b54664f4dd73d46ac6040de269a67f41942dc5d",
+    "sounds/chao/chat_2.ogg": "e338669771e9a3b2485f13c71bc932efcdc5c169c94cc7fb2efb05e341ec8ed5",
+    "sounds/chao/chat_3.ogg": "f18056f3778b4cd0a2b68e998536715e5fcabdd70beaddd3f0f8ea53666f242a",
+    "sounds/chao/startled.ogg": "5df502ea29b7b2527c00339d6131778dfc4afd113b56dc3196c53bbece917b48",
+    "sounds/records/chao_garden.ogg": "d9f873eef995064d267455f0c761493ea59417011fa02525008f175d9f94e724"
+  },
+  "scope": "Original arranged fallback phrases. The final 0.25.11 audio writer installs the supplied full-length classroom recordings; existing voices/CD remain untouched."
+}

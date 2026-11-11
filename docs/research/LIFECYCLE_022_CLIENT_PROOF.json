@@ -1,0 +1,925 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "reviewed_static_views": 41,
+  "assigned_static_views": 41,
+  "assigned_pdf_pages": [
+    19,
+    20,
+    21,
+    22,
+    32,
+    33,
+    34,
+    35,
+    36,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126
+  ],
+  "raw_frames": [
+    {
+      "key": "chart-robot-family-0",
+      "file": "run/screenshots/chao022-chart-robot-family-0.png",
+      "sha256": "4b313831ebf0150c0b75a417890e6b0618e1a4cde115eb3a61f08f1cfc3dc22f",
+      "result": "PASS"
+    },
+    {
+      "key": "chart-robot-family-1",
+      "file": "run/screenshots/chao022-chart-robot-family-1.png",
+      "sha256": "2fbff8aa1cfb4c7cba1bafa41cb57caaf0640484a1082ae9da3ae31f6a91e897",
+      "result": "PASS"
+    },
+    {
+      "key": "chart-robot-family-2",
+      "file": "run/screenshots/chao022-chart-robot-family-2.png",
+      "sha256": "26dc029386656deb58e2653d8d7a22cc3316b7da07298c40bee521a44a693ab6",
+      "result": "PASS"
+    },
+    {
+      "key": "chart-robot-family-3",
+      "file": "run/screenshots/chao022-chart-robot-family-3.png",
+      "sha256": "ab73c89b93a93b61a3a4c6d26387c3126ac163701faa9fd60b1892a57b0fd619",
+      "result": "PASS"
+    },
+    {
+      "key": "chart-robot-health",
+      "file": "run/screenshots/chao022-chart-robot-health.png",
+      "sha256": "6b22e7f7a51e1bad5cb0662597545c6188f623237c66b19085068434e9a16093",
+      "result": "PASS"
+    },
+    {
+      "key": "chart-robot-genes",
+      "file": "run/screenshots/chao022-chart-robot-genes.png",
+      "sha256": "4df8e7990297c3420d3de06173a4a0e89ebf0f0440bda88b6cdaacd2d597fb40",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-0",
+      "file": "run/screenshots/chao022-robot-coat-0.png",
+      "sha256": "ab42d3713a46e9c3db2bdf28cd26fc43c545acedbb6f5cf809d43a8a4b49950f",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-1",
+      "file": "run/screenshots/chao022-robot-coat-1.png",
+      "sha256": "8ba223ea3b3481651d3cbb4ebfa418861bb2916ca5dd3f82a066b1d152f864f3",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-2",
+      "file": "run/screenshots/chao022-robot-coat-2.png",
+      "sha256": "3f987ab6d74dd7f844a06d2e1b1ef04f186dd26953c57ee5f065679e047c88bb",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-3",
+      "file": "run/screenshots/chao022-robot-coat-3.png",
+      "sha256": "8999288eab2a8a7f6dcc72107ec93188b3f3b9ab687470fc33847be401daac15",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-4",
+      "file": "run/screenshots/chao022-robot-coat-4.png",
+      "sha256": "1925ae86b09df0b1dcf4b84cc981f7c3a35c0b04d89384695a21ebc9b16cb600",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-5",
+      "file": "run/screenshots/chao022-robot-coat-5.png",
+      "sha256": "3681789813fa0fd4aebc7bb50073cbe0b63bd2db504aad66d788612e717c8f7f",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-6",
+      "file": "run/screenshots/chao022-robot-coat-6.png",
+      "sha256": "eb75bc39ca2811d3d910449005d55e59c31e912e0d04ca13aa0e5852fa4faf48",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-coat-7",
+      "file": "run/screenshots/chao022-robot-coat-7.png",
+      "sha256": "7f8f78f6e7b37197f127c6b8044860852881efd79570e144d94081520f0adf55",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-stage-1",
+      "file": "run/screenshots/chao022-robot-stage-1.png",
+      "sha256": "25e5eb45a72ae42a252d03842e71517eabfef30b250dddd654230390aa25f376",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-stage-2",
+      "file": "run/screenshots/chao022-robot-stage-2.png",
+      "sha256": "a3d5284fa47b08e7da80bc1dcf392dca99d180005c794d4049564559f705a223",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-stage-3",
+      "file": "run/screenshots/chao022-robot-stage-3.png",
+      "sha256": "7575673c347d8a70635005c51ab832716a2df3fe51738fdd897af88e5c85daf8",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-stage-4",
+      "file": "run/screenshots/chao022-robot-stage-4.png",
+      "sha256": "abc514b591c7a36d01c3e56bd8010911856bb8c7b5ec0fa145708ed5a9e1a559",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-generation-0",
+      "file": "run/screenshots/chao022-robot-generation-0.png",
+      "sha256": "74f5725b49f3c2976e28a538cb3d767ff0dcbd306c3892be531037bd008f5358",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-generation-1",
+      "file": "run/screenshots/chao022-robot-generation-1.png",
+      "sha256": "be1369e4d878668a7cac35810b4dacca1fdfbe4e9aef29ec7b9a4bcb90b6b83f",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-generation-2",
+      "file": "run/screenshots/chao022-robot-generation-2.png",
+      "sha256": "d29c47cde89307b806913f166cd7a7250ede498917cd6762f7be5378ce4b8b83",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-generation-3",
+      "file": "run/screenshots/chao022-robot-generation-3.png",
+      "sha256": "97daf417010df0a37011228c727dbb032c3fffaef668207fa402e3222601d0f8",
+      "result": "PASS"
+    },
+    {
+      "key": "catalog-robot-parts",
+      "file": "run/screenshots/chao022-catalog-robot-parts.png",
+      "sha256": "2f869e17468564a73c24cb7d49109d6916647be42f784fc24e451640760ca98e",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-component-drop",
+      "file": "run/screenshots/chao022-robot-component-drop.png",
+      "sha256": "becd6ff029ca3676f3da4ff911120307be9e5281064741fad6462fbe5ef59d7c",
+      "result": "PASS"
+    },
+    {
+      "key": "robot-heart-drop",
+      "file": "run/screenshots/chao022-robot-heart-drop.png",
+      "sha256": "1dd84443c86342a64d8980dfeef33047238f432753286b919481459961121f29",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-egg",
+      "file": "run/screenshots/chao022-lifecycle-egg.png",
+      "sha256": "3bff4e1d50613671f348fbcecc151bb65dd1fe691d6ba3de7f8eded5402be33a",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-baby",
+      "file": "run/screenshots/chao022-lifecycle-baby.png",
+      "sha256": "104743fa3a89add446ab72e7ba2e44b8fc284cf64b2b534f1dbb6efb83490753",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-cocoon",
+      "file": "run/screenshots/chao022-lifecycle-cocoon.png",
+      "sha256": "2bd30d504733466e2137ab59b0c9139df2225c975846f37f5843e3313c08eb67",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-young",
+      "file": "run/screenshots/chao022-lifecycle-young.png",
+      "sha256": "a657409335519b7222ad2b5dab612e1738d34c149e913f53857e180afdc552ee",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-adult",
+      "file": "run/screenshots/chao022-lifecycle-adult.png",
+      "sha256": "026445b8de811dadf2264d0d94f9efaa82c3c56b8acc42aef94042b292fa633e",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-death",
+      "file": "run/screenshots/chao022-lifecycle-death.png",
+      "sha256": "23ce9f7653013812715dd8de65d7a9a872cd8e988a283d9fb2c9373221fe8a5d",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-rebirth",
+      "file": "run/screenshots/chao022-lifecycle-rebirth.png",
+      "sha256": "54fa6c5f6f5f0cb3c730f125940253b5458e94a769a36ff1669d7bb7b410436e",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-reborn-egg",
+      "file": "run/screenshots/chao022-lifecycle-reborn-egg.png",
+      "sha256": "72328f66514a71c72781aa834d2719387a5e34e6c0e5f2a60507afb2bca5cee1",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-stats-before",
+      "file": "run/screenshots/chao022-lifecycle-stats-before.png",
+      "sha256": "8a79290c0e66e4f172bbfb2aa138aa2e0192c5dd3c1dc2d5974f04ca5851e3ac",
+      "result": "PASS"
+    },
+    {
+      "key": "lifecycle-stats-after",
+      "file": "run/screenshots/chao022-lifecycle-stats-after.png",
+      "sha256": "55951769f109c3eedf9e1b3fd32b3565b40ec8891f49b4962927b34003125553",
+      "result": "PASS"
+    },
+    {
+      "key": "grade-audit-0",
+      "file": "run/screenshots/chao022-grade-audit-0.png",
+      "sha256": "165a336ba7213f384b21fe45eeefc9fb969776b6b021d595e5a716eda0976bf4",
+      "result": "PASS"
+    },
+    {
+      "key": "grade-audit-1",
+      "file": "run/screenshots/chao022-grade-audit-1.png",
+      "sha256": "5e706e96e7819b5d009cdb5d92bee7e710ece6e08d75541faddff3cf25a62ffc",
+      "result": "PASS"
+    },
+    {
+      "key": "grade-audit-2",
+      "file": "run/screenshots/chao022-grade-audit-2.png",
+      "sha256": "1ffe6a8ef0916eb4eaa45639f9a8a6f31ddc17648fa4f8486bce1ea678a3cf6e",
+      "result": "PASS"
+    },
+    {
+      "key": "grade-audit-3",
+      "file": "run/screenshots/chao022-grade-audit-3.png",
+      "sha256": "629c30a13301bb280cf7412405bb88747e808eefd2dd16a514fc599e8f9224cb",
+      "result": "PASS"
+    },
+    {
+      "key": "grade-audit-4",
+      "file": "run/screenshots/chao022-grade-audit-4.png",
+      "sha256": "0ab40387a6f4fe38a9f016eb998fc190e8b893f8f253c06caeb2340188beb15c",
+      "result": "PASS"
+    },
+    {
+      "key": "grade-audit-5",
+      "file": "run/screenshots/chao022-grade-audit-5.png",
+      "sha256": "c63275f1ffd1bab4043552e78b461eeba884fdc25429594134d203665ee3b9d1",
+      "result": "PASS"
+    }
+  ],
+  "point_order": [
+    "Swim",
+    "Fly",
+    "Run",
+    "Power",
+    "Stamina"
+  ],
+  "before": {
+    "points": [
+      1255,
+      2509,
+      1699,
+      21,
+      1009
+    ],
+    "levels": [
+      99,
+      90,
+      99,
+      1,
+      70
+    ],
+    "progress": [
+      97,
+      99,
+      36,
+      12,
+      76
+    ],
+    "grades": [
+      "S",
+      "S",
+      "B",
+      "S",
+      "B"
+    ]
+  },
+  "after": {
+    "points": [
+      125,
+      250,
+      169,
+      2,
+      100
+    ],
+    "levels": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "progress": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "grades": [
+      "S",
+      "S",
+      "B",
+      "S",
+      "B"
+    ]
+  },
+  "grade_points": [
+    [
+      12,
+      13,
+      15,
+      11,
+      14
+    ],
+    [
+      15,
+      16,
+      18,
+      14,
+      17
+    ],
+    [
+      18,
+      19,
+      21,
+      17,
+      20
+    ],
+    [
+      21,
+      22,
+      24,
+      20,
+      23
+    ],
+    [
+      24,
+      25,
+      27,
+      23,
+      26
+    ],
+    [
+      27,
+      28,
+      30,
+      26,
+      29
+    ]
+  ],
+  "findings": [],
+  "scope": "41 assigned actual Minecraft raw static frames plus 25 individually opened full-size Poppler-rendered PDF pages: robot care, creator ancestry, inherited appearance, construction, terminal output, ordinary lifecycle, literal ten-percent reincarnation carry, and E\u2013S grade training.",
+  "reviewed_pdf_pages": 25,
+  "pdf_sha256": "f65667e8ac1c022befb6dc91822091cc663797a6ca621cd3cd90ff561d400183",
+  "final_review_report": "docs/validation-0.22/review-lifecycle.json",
+  "final_review_report_sha256": "93687138892169f7282eff749843d3ab9ba9a47cd0c4b184a38a0d248bbef432",
+  "pdf_page_reviews": [
+    {
+      "page": 19,
+      "source_key": "chart-robot-family-0",
+      "source_capture_sha256": "4b313831ebf0150c0b75a417890e6b0618e1a4cde115eb3a61f08f1cfc3dc22f",
+      "render_file": "tmp/pdf022/pages/page-019.png",
+      "render_sha256": "fb38ce75f60eeb8a4e205b97e3c81f3a6c13a84782b7c9ba629c3ae102b4e9ac",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Creator Mochi and C-rank robot family tree are readable; no numeric UUID labels or tab residue."
+      ]
+    },
+    {
+      "page": 20,
+      "source_key": "chart-robot-family-3",
+      "source_capture_sha256": "ab73c89b93a93b61a3a4c6d26387c3126ac163701faa9fd60b1892a57b0fd619",
+      "render_file": "tmp/pdf022/pages/page-020.png",
+      "render_sha256": "5300cb96233572dcb72a256e67d2602b81cc5939da49c881f484a7c144304b99",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "S-rank fourth chassis shows current parent Aster and previous creator Sora as grandparent."
+      ]
+    },
+    {
+      "page": 21,
+      "source_key": "chart-robot-health",
+      "source_capture_sha256": "6b22e7f7a51e1bad5cb0662597545c6188f623237c66b19085068434e9a16093",
+      "render_file": "tmp/pdf022/pages/page-021.png",
+      "render_sha256": "2bb0097c2f1b5752a5d54ceee416f62b4f6e0cf565af0bfec9d483cce70ed1bb",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Adult Omochao health view is clear, illness-free and reports illness immunity."
+      ]
+    },
+    {
+      "page": 22,
+      "source_key": "chart-robot-genes",
+      "source_capture_sha256": "4df8e7990297c3420d3de06173a4a0e89ebf0f0440bda88b6cdaacd2d597fb40",
+      "render_file": "tmp/pdf022/pages/page-022.png",
+      "render_sha256": "12e189fe08aed90ed6ed1d69d1fc2808cfd450fd50353bbe6e4010059ea9de6f",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Genes view explains animal exclusion with no overlapping eyes or leftover status panel."
+      ]
+    },
+    {
+      "page": 32,
+      "source_key": "robot-coat-3",
+      "source_capture_sha256": "8999288eab2a8a7f6dcc72107ec93188b3f3b9ab687470fc33847be401daac15",
+      "render_file": "tmp/pdf022/pages/page-032.png",
+      "render_sha256": "b985e8a71a2ee42cf1f093f60de757a9d1b16341fcf0bad60ac28884cc513239",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Pink shiny builder coat is inherited by the robot; one mechanical eye pair, coherent fixed hardware."
+      ]
+    },
+    {
+      "page": 33,
+      "source_key": "robot-stage-4",
+      "source_capture_sha256": "abc514b591c7a36d01c3e56bd8010911856bb8c7b5ec0fa145708ed5a9e1a559",
+      "render_file": "tmp/pdf022/pages/page-033.png",
+      "render_sha256": "1d5cc11dc5ca960b4cddd26fbee2a2e59368f3631cd63788aabaab4be61a7680",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Fourth construction step renders a complete robotic adult; caption states actual assembly semantics."
+      ]
+    },
+    {
+      "page": 34,
+      "source_key": "robot-generation-3",
+      "source_capture_sha256": "97daf417010df0a37011228c727dbb032c3fffaef668207fa402e3222601d0f8",
+      "render_file": "tmp/pdf022/pages/page-034.png",
+      "render_sha256": "ab0fbf6b9e7ceafb98cf2443383471ea8a62be021238a21354236c746c4297f5",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "S-rank robot generation is readable and correctly describes one grade increase per heart reconstruction, capped at S."
+      ]
+    },
+    {
+      "page": 35,
+      "source_key": "catalog-robot-parts",
+      "source_capture_sha256": "2f869e17468564a73c24cb7d49109d6916647be42f784fc24e451640760ca98e",
+      "render_file": "tmp/pdf022/pages/page-035.png",
+      "render_sha256": "f10150cb83487491a1be38748213232d53d64bc6ac0bfc004fe90b4b8cca1af3",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Four robot components/heart render as legible complete item silhouettes in the actual inventory."
+      ]
+    },
+    {
+      "page": 36,
+      "source_key": "robot-heart-drop",
+      "source_capture_sha256": "1dd84443c86342a64d8980dfeef33047238f432753286b919481459961121f29",
+      "render_file": "tmp/pdf022/pages/page-036.png",
+      "render_sha256": "d03009bc8cb794880671bb35c684879937aa8d829eddc1ee629ae993eb417542",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "The robot heart is a visible frontal physical output beside the builder, with accelerated lifetime disclosed."
+      ]
+    },
+    {
+      "page": 111,
+      "source_key": "lifecycle-egg",
+      "source_capture_sha256": "3bff4e1d50613671f348fbcecc151bb65dd1fe691d6ba3de7f8eded5402be33a",
+      "render_file": "tmp/pdf022/pages/page-111.png",
+      "render_sha256": "8aaeaa0e2343eb65ee6494b50fae8f4105ecb4803d2e2d6abfdb96aa1998190a",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Ordinary individual egg is complete, rounded and free of a white bottom overlay or fixture residue."
+      ]
+    },
+    {
+      "page": 112,
+      "source_key": "lifecycle-baby",
+      "source_capture_sha256": "104743fa3a89add446ab72e7ba2e44b8fc284cf64b2b534f1dbb6efb83490753",
+      "render_file": "tmp/pdf022/pages/page-112.png",
+      "render_sha256": "f5f98d28bb84b3db5c7b3f8f8a41c79e91326807aa28e43b80e70edf5b61c0b7",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Actual hatch is a proportionate baby; caption correctly separates age from earned movement skills."
+      ]
+    },
+    {
+      "page": 113,
+      "source_key": "lifecycle-cocoon",
+      "source_capture_sha256": "2bd30d504733466e2137ab59b0c9139df2225c975846f37f5843e3313c08eb67",
+      "render_file": "tmp/pdf022/pages/page-113.png",
+      "render_sha256": "3423c439ce80ed46e49f31871e02bc81ba596275fc2b3dbbe401e0c186fbb574",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Blue/yellow first-evolution cocoon is distinct and clean; actual 200-tick cocoon is described."
+      ]
+    },
+    {
+      "page": 114,
+      "source_key": "lifecycle-young",
+      "source_capture_sha256": "a657409335519b7222ad2b5dab612e1738d34c149e913f53857e180afdc552ee",
+      "render_file": "tmp/pdf022/pages/page-114.png",
+      "render_sha256": "da5abd6a204883f3a672f6883d75959adc1e312f9fef0866f696ba4cbcdc8d8b",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Young adult retains its fixed alignment and first type; image and caption fit the page."
+      ]
+    },
+    {
+      "page": 115,
+      "source_key": "lifecycle-adult",
+      "source_capture_sha256": "026445b8de811dadf2264d0d94f9efaa82c3c56b8acc42aef94042b292fa633e",
+      "render_file": "tmp/pdf022/pages/page-115.png",
+      "render_sha256": "ae0fbf7d8e6b8161b6c6ce57f73edbeac1890c3815968dc2dcf9c190569f1f89",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Fully grown adult shows mature secondary morphology with no extra evolution cocoon."
+      ]
+    },
+    {
+      "page": 116,
+      "source_key": "lifecycle-death",
+      "source_capture_sha256": "23ce9f7653013812715dd8de65d7a9a872cd8e988a283d9fb2c9373221fe8a5d",
+      "render_file": "tmp/pdf022/pages/page-116.png",
+      "render_sha256": "4a4df9981a2cb92e4e6552f0af7b2b18a144e7dfaeaf12160f9c5021579339ba",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Death cocoon uses a clearly distinct gray/white material; blocked-drop retry test scope is accurately described."
+      ]
+    },
+    {
+      "page": 117,
+      "source_key": "lifecycle-rebirth",
+      "source_capture_sha256": "54fa6c5f6f5f0cb3c730f125940253b5458e94a769a36ff1669d7bb7b410436e",
+      "render_file": "tmp/pdf022/pages/page-117.png",
+      "render_sha256": "20effd322db6b8d846b05dd4c642e46acde95dc6b77e4991471b55462581e6b3",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Reincarnation cocoon uses a clearly distinct peach/pink material with continuation semantics."
+      ]
+    },
+    {
+      "page": 118,
+      "source_key": "lifecycle-reborn-egg",
+      "source_capture_sha256": "72328f66514a71c72781aa834d2719387a5e34e6c0e5f2a60507afb2bca5cee1",
+      "render_file": "tmp/pdf022/pages/page-118.png",
+      "render_sha256": "9cad391c604adfeb2a6a1e79f0b5b01d41166fcbb7f77f14406a9deb98e3df89",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "One next-life physical egg is visible; caption separates real transitions from server serialization coverage."
+      ]
+    },
+    {
+      "page": 119,
+      "source_key": "lifecycle-stats-before",
+      "source_capture_sha256": "8a79290c0e66e4f172bbfb2aa138aa2e0192c5dd3c1dc2d5974f04ca5851e3ac",
+      "render_file": "tmp/pdf022/pages/page-119.png",
+      "render_sha256": "c842305980292b4a90a4ddb7098dfcb9dc2a0fb9309bf84d8b71f3891f47d8b8",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Trained chart reads points 1255/2509/1699/21/1009, levels 99/90/99/1/70, progress 97/99/36/12/76 and grades S/S/B/S/B."
+      ]
+    },
+    {
+      "page": 120,
+      "source_key": "lifecycle-stats-after",
+      "source_capture_sha256": "55951769f109c3eedf9e1b3fd32b3565b40ec8891f49b4962927b34003125553",
+      "render_file": "tmp/pdf022/pages/page-120.png",
+      "render_sha256": "23db57e255b7e54b875fbb21c3be6f790f714757b74419e62cba81f579f457bc",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Next-life chart reads floor-ten-percent points 125/250/169/2/100, all level 1, all progress 0 and retained grades S/S/B/S/B."
+      ]
+    },
+    {
+      "page": 121,
+      "source_key": "grade-audit-0",
+      "source_capture_sha256": "165a336ba7213f384b21fe45eeefc9fb969776b6b021d595e5a716eda0976bf4",
+      "render_file": "tmp/pdf022/pages/page-121.png",
+      "render_sha256": "839e26ccb40038cc952d6ee3226a18dd30ef8ece09ef17b19bb978a47fac5438",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Grade E exact seeded point row 12/13/15/11/14 is legible, within the stated 11\u201315 range."
+      ]
+    },
+    {
+      "page": 122,
+      "source_key": "grade-audit-1",
+      "source_capture_sha256": "5e706e96e7819b5d009cdb5d92bee7e710ece6e08d75541faddff3cf25a62ffc",
+      "render_file": "tmp/pdf022/pages/page-122.png",
+      "render_sha256": "89cdc26d596834a83e02c552e8e265cac0a102729435512d23f8d88c10f5621d",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Grade D exact seeded point row 15/16/18/14/17 is legible, within the stated 14\u201318 range."
+      ]
+    },
+    {
+      "page": 123,
+      "source_key": "grade-audit-2",
+      "source_capture_sha256": "1ffe6a8ef0916eb4eaa45639f9a8a6f31ddc17648fa4f8486bce1ea678a3cf6e",
+      "render_file": "tmp/pdf022/pages/page-123.png",
+      "render_sha256": "980edf56fb30d516f3e68daa6234515325812bcaa593b175430f3ed832211a0f",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Grade C exact seeded point row 18/19/21/17/20 is legible, within the stated 17\u201321 range."
+      ]
+    },
+    {
+      "page": 124,
+      "source_key": "grade-audit-3",
+      "source_capture_sha256": "629c30a13301bb280cf7412405bb88747e808eefd2dd16a514fc599e8f9224cb",
+      "render_file": "tmp/pdf022/pages/page-124.png",
+      "render_sha256": "36cd09baef9b2a9726bbf5539ba9a7870e4528ff6bf1c5ffe81af31dbbe1056a",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Grade B exact seeded point row 21/22/24/20/23 is legible, within the stated 20\u201324 range."
+      ]
+    },
+    {
+      "page": 125,
+      "source_key": "grade-audit-4",
+      "source_capture_sha256": "0ab40387a6f4fe38a9f016eb998fc190e8b893f8f253c06caeb2340188beb15c",
+      "render_file": "tmp/pdf022/pages/page-125.png",
+      "render_sha256": "121efd61e8effb5b640e58c90c0457c95098fe8cf5ccfd411ea3607b8d0359d7",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Grade A exact seeded point row 24/25/27/23/26 is legible, within the stated 23\u201327 range."
+      ]
+    },
+    {
+      "page": 126,
+      "source_key": "grade-audit-5",
+      "source_capture_sha256": "c63275f1ffd1bab4043552e78b461eeba884fdc25429594134d203665ee3b9d1",
+      "render_file": "tmp/pdf022/pages/page-126.png",
+      "render_sha256": "a64b23f793b73e325bde3c5092c580ff2e238dd4641dc60503d37f3d11b03536",
+      "render_dimensions_px": [
+        1287,
+        910
+      ],
+      "result": "PASS",
+      "checks": {
+        "each_page_opened_individually": true,
+        "whole_source_frame_visible": true,
+        "header_caption_footer_clear": true,
+        "no_text_overlap_or_cutoff": true
+      },
+      "notes": [
+        "Grade S exact seeded point row 27/28/30/26/29 is legible, within the stated 26\u201330 range."
+      ]
+    }
+  ]
+}

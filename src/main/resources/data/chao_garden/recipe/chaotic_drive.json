@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chao_garden:swim_drive"
+    },
+    {
+      "item": "chao_garden:fly_drive"
+    },
+    {
+      "item": "chao_garden:run_drive"
+    },
+    {
+      "item": "chao_garden:power_drive"
+    }
+  ],
+  "result": {
+    "id": "chao_garden:chaotic_drive",
+    "count": 1
+  }
+}

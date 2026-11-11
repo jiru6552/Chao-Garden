@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "corner=false,facing=north": {
+      "model": "chao_garden:block/hero_marble_trim"
+    },
+    "corner=false,facing=east": {
+      "model": "chao_garden:block/hero_marble_trim",
+      "y": 90
+    },
+    "corner=false,facing=south": {
+      "model": "chao_garden:block/hero_marble_trim",
+      "y": 180
+    },
+    "corner=false,facing=west": {
+      "model": "chao_garden:block/hero_marble_trim",
+      "y": 270
+    },
+    "corner=true,facing=north": {
+      "model": "chao_garden:block/hero_marble_trim_corner"
+    },
+    "corner=true,facing=east": {
+      "model": "chao_garden:block/hero_marble_trim_corner",
+      "y": 90
+    },
+    "corner=true,facing=south": {
+      "model": "chao_garden:block/hero_marble_trim_corner",
+      "y": 180
+    },
+    "corner=true,facing=west": {
+      "model": "chao_garden:block/hero_marble_trim_corner",
+      "y": 270
+    }
+  }
+}

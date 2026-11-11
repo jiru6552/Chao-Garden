@@ -1,0 +1,346 @@
+{
+  "baseline": "0.25.9",
+  "release": "0.25.10",
+  "changes": {
+    "art/sa2_fruit_art.py": {
+      "before": "3e9f34ca949838af75070df6747e02201f136b72e3cc44606be4ddecb5280278",
+      "after": "86b8c7cc9fe580ce48cde70a13c19bddd8e5745992b5232c3c5f6f12fdf8de4c"
+    },
+    "art/validate_items_eggs_022.py": {
+      "before": "f62304cf73a4b34f72b44f7afbbd9eabec6df942ac084068e478378daceef1f9",
+      "after": "15b46060e09714eb836386bf1ce0c0b97ddc4de96eb8f6929dddc61617322b7c"
+    },
+    "gradle.properties": {
+      "before": "7f0617f5dad3f1371d941b1077c8befaddecf201c2343bd98c2ec7c23127bbdd",
+      "after": "d08e87e305443bbd68b17a1f45ca0deb64fe324ac6b62177ad74e2c662158287"
+    },
+    "scripts/consolidate_fruit_02510.py": {
+      "before": null,
+      "after": "eb0a9d343b3bf448b80400b3671c9ef432a9aae1b39e5dc94580402890f20d28"
+    },
+    "scripts/generate_all_assets.py": {
+      "before": "93e787d4c003d5a2c39b9c65b24652fb9f357832c93144707e4cfa70ce1e7ae9",
+      "after": "c9897d0d9fba55d427757b824edf3497d3ccf95306778907b829d351f55cc0a7"
+    },
+    "scripts/generate_fruit_assets.py": {
+      "before": "5fcb40be8fdb8eb9ac9c1b2edbe8c7bdab291b8c65a220f36b387aefc6426bcd",
+      "after": "91bb580f343e801ad6e0fbf6ad8c9104ceaae99a9922339b40b0de261dd8c326"
+    },
+    "scripts/generate_hub_dimensions_025.py": {
+      "before": "70807f3e4a8b746b2cd28d8b5f41fa0c68917e8e982b53475df3d30670905685",
+      "after": "802e7644e88348c70b8f1d3093adf71865a91e782f22d47c9c6fffb175f74f5c"
+    },
+    "scripts/generate_neutral_refinement_02510.py": {
+      "before": null,
+      "after": "66a13348dc518587abfd8cd2e1189b4d03ed263485b71a4a35e00f53fa16936c"
+    },
+    "scripts/package_chao02510.py": {
+      "before": null,
+      "after": "edf9520cdde662044e4fb6757369067322a6605fa8072ea42ea85511a092a21a"
+    },
+    "scripts/resource_items.json": {
+      "before": "2f45d04b176067efe8ee97646e782fb669cb1abccbbe554b2716fd60aba7191f",
+      "after": "de2d4f9be3abab5586357de8cc7e5f5261240e9e84d18a47f9eff5cc9ff906bd"
+    },
+    "scripts/validate_lobby_approaches_0255.py": {
+      "before": "558b5a847e7e9c761253252378591698d8f59c7dc12dc2ad08f1d816bcbcfd2b",
+      "after": "e24ae63fe5aa4b8ef08944a27ca5bd3762f5e4f0a7abc59d21d026d9a3bdc77d"
+    },
+    "scripts/validate_seed_sprites.py": {
+      "before": "a74242cbcf17233b045eec625368df83b3b6cc865bca1d3d1f6b7078920f03af",
+      "after": "6f505fdbb37ebf8007e9d59a03244eb3a8fb5742b78609baa2a35b86129a5688"
+    },
+    "src/main/java/com/chaogarden/ChaoGarden.java": {
+      "before": "f22e35373e546e2903fc811b9dc8ef04db55c56face98caad88a2a20fc8d3c97",
+      "after": "79132e1a73faeb92cfe7a5e31fbf1c305ea8be107bc412b571f0e3df690ca0d2"
+    },
+    "src/main/java/com/chaogarden/core/ChaoPreferences.java": {
+      "before": "61fc1caeeadaf02e93e9c0b252d13c13d59687dbcb34b2c9db6cdb6bcf2510a6",
+      "after": "626157c0d7bf33b51ef52b2c310c80723cef781950e0b33e56a00fb3c1d180c8"
+    },
+    "src/main/java/com/chaogarden/fruit/FruitCatalog.java": {
+      "before": "c1ba240a07bbeb70dea28684b18dc362b72179725ab0306b6ed3e4852328aee6",
+      "after": "a0fbd0f2b399da15d6a5dc2646ea68116365a0cac7fa27159ff3924e33d1e2b2"
+    },
+    "src/main/java/com/chaogarden/fruit/FruitContent.java": {
+      "before": "3ab21d704fdd95d74607f74bba33d3a6ad1affac316e35d695d120e941f83fae",
+      "after": "ac519eaa45797671d2f9f32196dbd6e783dd6f947fcfbad41b192f03d26012b9"
+    },
+    "src/main/java/com/chaogarden/fruit/FruitEffects.java": {
+      "before": "39762d8d527b520115e9d876a9310e023bf57a598f2c3848dcbe73dc1b779266",
+      "after": "2bdd8b4158ec54cb50181d4cd3c8d462ecfb1ee514d59b98ebe0b73e1b8fd5d6"
+    },
+    "src/main/java/com/chaogarden/hub/GardenRooms025.java": {
+      "before": "8fb7c37ebc04e9f6b40da12f15fa0237de5f1a255f6662053fdf0ebf30503fe5",
+      "after": "a4c8c36ed4d25c9287873f01c573d1319f4b213107e41bd952b16c9d7a21280e"
+    },
+    "src/main/java/com/chaogarden/hub/HeroGardenRooms0253.java": {
+      "before": "df60a8fc877d4ede696235511e5cd6d2e863cc5086fa1252aaffd14abe64444b",
+      "after": "1a0856aec2ce9b253cb87a2bbe45aa3f4980b2aaa92a7ae88a93213a2d9b447b"
+    },
+    "src/main/java/com/chaogarden/hub/HubRooms.java": {
+      "before": "98e9cf651f2a3d62437c4cf289a1b55a122d209299a8c63c42a3b25ed698e8f2",
+      "after": "b2d4f2bf2b6a264a1eeea924f1716c33a938d8074c910f07f5f8261142b60536"
+    },
+    "src/main/java/com/chaogarden/hub/NeutralGardenDecor02510.java": {
+      "before": null,
+      "after": "70448a90e3ba735ccf2b0d5849a4cd87d7d1972c2dcad47efb85b03a2df9d642"
+    },
+    "src/main/java/com/chaogarden/kindergarten/KindergartenHallDisplays0252.java": {
+      "before": "fe1c4b59e456489d61ee614442a84307cfdf3194abdac091a393888165392542",
+      "after": "9e137f76d95550b1aeadb5200f680b6594906a13753172afd9f32d80bd9bff9b"
+    },
+    "src/main/java/com/chaogarden/market/MarketStock.java": {
+      "before": "d0137be5ed0106dd07a58f0556f2fb2c653ce5ad579cd33846c019c7e6ad21c0",
+      "after": "b8dfaffff5983693d46d24d8f88e7af15b8af43f539431c98c3df855f3712465"
+    },
+    "src/main/java/com/chaogarden/test/FruitConsolidationGameTests02510.java": {
+      "before": null,
+      "after": "417d2dbff1d9c99845738764da7fff8423404e0c70ac9bf90483f2aa3df09e2e"
+    },
+    "src/main/java/com/chaogarden/test/GardenCompactGameTests0252.java": {
+      "before": "d165d94d7c7d237caf671455fc66bb8770a0c07baf0a8e25c7d30c2f253371cd",
+      "after": "649716fd295b76b6689b7af24254b13cd7cd3c05c413aee83481a60396b2b080"
+    },
+    "src/main/java/com/chaogarden/test/GardenGeometryGameTests0251.java": {
+      "before": "a7983f56dbc1da54a25cd2d004358c86ece5dd3fb379109a798ee3ce4d679438",
+      "after": "21f39cdcf339c55f870655fd7a0648147d8884c37540e20b99e00beceb0d3d66"
+    },
+    "src/main/java/com/chaogarden/test/GardenLandscapeGameTests0254.java": {
+      "before": "19a9f12c5edbe659dd31c2d981b5ee60ee2b8db3d2320093deeb7bfe4829513f",
+      "after": "5cd720d4244b2e75379c4cafd31351fe31dea1110064d25f7ef4125595f623df"
+    },
+    "src/main/java/com/chaogarden/test/GardenRefinementGameTests02510.java": {
+      "before": null,
+      "after": "3c860e0a3bce69518e0c77f009a048a7c9c1ab7ced9f3dfc684d8e0a6d84bb03"
+    },
+    "src/main/resources/assets/chao_garden/blockstates/dark_fruit_pod.json": {
+      "before": "f96e17992340885012474df0f7fbcda9bbe606cf4e601a21a921e483043cb270",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/blockstates/dark_fruit_seedling.json": {
+      "before": "8661b4f179f2d86449b7a03267eff45fe1ded6f6c912fb8b538c571224bcd32d",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/blockstates/dark_fruit_tree_crown.json": {
+      "before": "af69fddf4b63584e489ad6fc30603018314df12d45a930577caa49480195f2be",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/blockstates/hero_fruit_pod.json": {
+      "before": "8d256e9d33884f8eac91b879b582352eaea76ee1e3ade8eadb3aa5e5fb8e40d0",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/blockstates/hero_fruit_seedling.json": {
+      "before": "b1c478244cf4dc443169dab780a96ad32cf9871396c8cdcfe0c60dad99f8be35",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/blockstates/hero_fruit_tree_crown.json": {
+      "before": "af69fddf4b63584e489ad6fc30603018314df12d45a930577caa49480195f2be",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/blockstates/neutral_broadleaf.json": {
+      "before": null,
+      "after": "bb55a03c9258a0d066d85d0f020c4dd915a8cfcb5d15665397806c6483ce7a62"
+    },
+    "src/main/resources/assets/chao_garden/blockstates/neutral_cascade_rock.json": {
+      "before": null,
+      "after": "69433c2e788099a7e83adbc3156b95ea42d38cc554e13401874ce4e62bfeaff1"
+    },
+    "src/main/resources/assets/chao_garden/lang/en_us.json": {
+      "before": "25191e344318c999e2bf04693760c7fb959f9dc5c76e089647acd55aea510995",
+      "after": "9a87c1245df687da7813113c3d97087348dbf2b7d8239696fa20bb4f3be00aaa"
+    },
+    "src/main/resources/assets/chao_garden/models/block/dark_fruit_pod_0.json": {
+      "before": "496349a548759bf7e0634f160d4c3108b23cfc1514d84fbba91a98f4683933e2",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/dark_fruit_pod_1.json": {
+      "before": "eba7f82ff0153a8548f708804e8a9c1647f9a0d8246dc58dce5c48d1d496656c",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/dark_fruit_pod_2.json": {
+      "before": "8de9617848665e925a2ca53b440654d2e3a810752023f4710ff27d18f0342d64",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/dark_fruit_pod_3.json": {
+      "before": "2bbc6d1ee882a5af54ed1e0bc0121547f2d0b9e987f220c6913259cd35f644c1",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/dark_fruit_seedling.json": {
+      "before": "efb643086cd9520c1c687af5959f490d35572e2ef88df777e5ff80729ec59c89",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/hero_fruit_pod_0.json": {
+      "before": "d0a2b140e7ab5bb249453ccfda6c5eb25b1cc9e694b57267fb4f604d41eef47e",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/hero_fruit_pod_1.json": {
+      "before": "54b4c70f43d693b63d9a6463a0a4b932e926f68dce3c95b5cc2bb494ff767164",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/hero_fruit_pod_2.json": {
+      "before": "999aa25832780a209289971f4cf4e4ce4830fd5c42d23869c915d5ac56bf5939",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/hero_fruit_pod_3.json": {
+      "before": "26fd6eb2405bcd092e4a8b180f8e973a3460be342b474f265d58f19f625e7be5",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/hero_fruit_seedling.json": {
+      "before": "edf0511395c85e61c9d859fff408002ce207f85f067b6d61c699d3c45404679d",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/block/neutral_broadleaf.json": {
+      "before": null,
+      "after": "69d62fc7c25d0bfe4287f13d1ecddc50e881c4d48cc6c031a0ae331abd88e6f7"
+    },
+    "src/main/resources/assets/chao_garden/models/block/neutral_cascade_rock.json": {
+      "before": null,
+      "after": "539af2e244395a7e2d5083e0583d090049c78d3e73f6d96b851b2433f2c5e8b4"
+    },
+    "src/main/resources/assets/chao_garden/models/item/dark_fruit.json": {
+      "before": "c8c0e1782f18b24ee49378dc3ff181c1246906de87afb0bd3e0fb83c5fd6d5d3",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/item/dark_fruit_seed.json": {
+      "before": "7b4437ad82aaa11c06c3fa64b088ade7e62748e180ee8af896ce7e7d2ece1708",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/item/hero_fruit.json": {
+      "before": "c1db1a7f4769b4aecd292bde96430b1d88ff56928d21571762c23e5addb31b4b",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/models/item/hero_fruit_seed.json": {
+      "before": "80cf640807c67c3825bfbff6ad69dcb1b5c0d037411fcc0c8cac357e10ce67a6",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/dark_fruit_pod_0.png": {
+      "before": "34df978c81f02c286bf2dcc8f641135f83ecff9f1e402cd20b3d3f1f53c6b1df",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/dark_fruit_pod_1.png": {
+      "before": "1696ca5f6bcbf21f0173a0480907d6a24c0d4bf9bda7c23da0924f565028dbb7",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/dark_fruit_pod_2.png": {
+      "before": "b3e881386f57d685d4d381c498e7780ec2f12bc85ce01ee77826e7c7d55f5b33",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/dark_fruit_pod_3.png": {
+      "before": "2830bf9ab1b20ad2cbbe025810c4fbcb059b4cb25a538428e046f520de9aa6ea",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/dark_fruit_seedling.png": {
+      "before": "d3eef2ef573ceefdb04adb6d6e33a684de027c759cbf91ec1421b62e95f89d70",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/hero_fruit_pod_0.png": {
+      "before": "34df978c81f02c286bf2dcc8f641135f83ecff9f1e402cd20b3d3f1f53c6b1df",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/hero_fruit_pod_1.png": {
+      "before": "1696ca5f6bcbf21f0173a0480907d6a24c0d4bf9bda7c23da0924f565028dbb7",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/hero_fruit_pod_2.png": {
+      "before": "b3e881386f57d685d4d381c498e7780ec2f12bc85ce01ee77826e7c7d55f5b33",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/hero_fruit_pod_3.png": {
+      "before": "d15f00ef60af953145d3cd29def46be7e93c81df0268f3eff1ccfe4089541737",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/hero_fruit_seedling.png": {
+      "before": "f607c4ea699b10db7117b250f2635231ab972d841e32cec408b2fc71567db498",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/block/neutral02510/broadleaf.png": {
+      "before": null,
+      "after": "a6df72ed32d45da618116153f12cc3a95fb6e05d81b36098cce1abb7cde84363"
+    },
+    "src/main/resources/assets/chao_garden/textures/block/neutral02510/cascade_rock.png": {
+      "before": null,
+      "after": "57d268a96c5c7fff4ef1f7e4ded8a845e0fbb8a5fbba69acefe008ed11a6d01c"
+    },
+    "src/main/resources/assets/chao_garden/textures/item/dark_fruit.png": {
+      "before": "9ff928f87edcc12bf790ff12fb016e985aed603f1bec791e2a4dd2d829cd4087",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/item/dark_fruit_seed.png": {
+      "before": "75b5fb72d781943cc98af6b589f2fc28b09911a4926670e4fb244184428a064d",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/item/hero_fruit.png": {
+      "before": "596c5b109448327ed035827a9edf96688ae32d6e221c5495a7973d630ed19e65",
+      "after": null
+    },
+    "src/main/resources/assets/chao_garden/textures/item/hero_fruit_seed.png": {
+      "before": "f45fb00d1b08a44422b8bddd13d4cb6a653466731df45c713efa586cf2a9f2ab",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/loot_table/blocks/dark_fruit_pod.json": {
+      "before": "f7fc61cae9ea1e29a6a08ad7b97791c6a0eef267e4f21fde46cb8301cc871813",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/loot_table/blocks/dark_fruit_seedling.json": {
+      "before": "5530ac84c3b8e8a75d66f15e7a21d9a0c0e49394b1ece7d00db3741cb1909d21",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/loot_table/blocks/dark_fruit_tree_crown.json": {
+      "before": "5530ac84c3b8e8a75d66f15e7a21d9a0c0e49394b1ece7d00db3741cb1909d21",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/loot_table/blocks/hero_fruit_pod.json": {
+      "before": "49bce0ed8d16a452fde8f0022cc36993da3548c4041a821044b220a60783679e",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/loot_table/blocks/hero_fruit_seedling.json": {
+      "before": "acdc86859c092f117d51897a886fafdb71cea87f2070d7a9545957c929eab7be",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/loot_table/blocks/hero_fruit_tree_crown.json": {
+      "before": "acdc86859c092f117d51897a886fafdb71cea87f2070d7a9545957c929eab7be",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/recipe/dark_fruit_seed.json": {
+      "before": "faa09777d8c7320faa9677e9aeddb99a9a58decd7414308c2f9fdb482b69fa1d",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/recipe/hero_fruit_seed.json": {
+      "before": "cb3b5da6a2fb8b2d15f83c53100d9baf31c6efbdb87ea0c029aa8cd67c40b1ba",
+      "after": null
+    },
+    "src/main/resources/data/chao_garden/tags/item/garden_food.json": {
+      "before": "cb96d1c2d753dd9ad86b194ee675021e74295513999f70fc42a65f2c4916f078",
+      "after": "2478ed738a9b6c8fdd1dd28e60bcae858e4269c67e750fd0730c865b56908133"
+    },
+    "src/main/resources/data/chao_garden/worldgen/biome/scenic_daylight.json": {
+      "before": "ec350467241406938067ab69f82f185b9b1707dc2c4c0ece356941df3d0e3112",
+      "after": "d976ea9c1abe14edb8e648f654c33a47b29844e5523c9b0e1a928df89aadd9d1"
+    },
+    "src/main/resources/data/minecraft/tags/block/logs.json": {
+      "before": "2e7ea1ad466067b792af0fdde70279385bedfb71ec7d2a153dd3fa6f31cc2e68",
+      "after": "9452b2750e8f03bb9c7dcabff25f54a0a195c875dca0863f6377b154fc0c94ae"
+    },
+    "src/main/resources/data/minecraft/tags/block/logs_that_burn.json": {
+      "before": "2e7ea1ad466067b792af0fdde70279385bedfb71ec7d2a153dd3fa6f31cc2e68",
+      "after": "9452b2750e8f03bb9c7dcabff25f54a0a195c875dca0863f6377b154fc0c94ae"
+    },
+    "src/main/resources/data/minecraft/tags/block/mineable/axe.json": {
+      "before": "999852e7aa05a7158000e6ed53c2da1e13c0901f706351cc4566af16a02c38a1",
+      "after": "2e36efc79171fe57ec438d6a0b9f4b396dd21fb02a56134fc252886f079f948e"
+    },
+    "src/main/resources/data/minecraft/tags/block/saplings.json": {
+      "before": "b2523b54246ab5fecc2c87688dd03ece983127bed71fc82200a1659afcd075ce",
+      "after": "707d1fa5ad5185b41526a4bc4d206ff8a6a722bfcaba510db52300d4b43e12af"
+    },
+    "src/test/java/com/chaogarden/core/ChaoPreferencesTest.java": {
+      "before": "e0c1a23b14d3d7a01f5735ed42b7cfcfde186872fdb9f09d199e3f3fa2967f3d",
+      "after": "ac505df3c3e303cb476ea78ac2826f0b86a0ee472a27985839acc879acf8cbb6"
+    },
+    "src/test/java/com/chaogarden/fruit/FruitEffectsTest.java": {
+      "before": "80367d5539ac762da526dff7833d07a2727d113d7fc0bcd3c40962c4345e42ca",
+      "after": "78f465c443a1ce5acfe5bf8ce84cf3f1430b343825704ebe6f878d83fd121eea"
+    }
+  }
+}

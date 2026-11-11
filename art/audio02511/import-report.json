@@ -1,0 +1,141 @@
+{
+  "format": 1,
+  "source": "user-supplied ADX.zip",
+  "reference": "https://github.com/X-Hax/SA2BModdingGuide/wiki/ADX-Music-List",
+  "imported_areas": [
+    "lobby",
+    "neutral",
+    "hero",
+    "dark",
+    "kindergarten"
+  ],
+  "missing_requested_areas": [],
+  "classroom_chorus_count": 6,
+  "learned_solo_songs_imported": false,
+  "black_market_imported": false,
+  "recordings": [
+    {
+      "kind": "area",
+      "id": "lobby",
+      "source_file": "chao_hall.adx",
+      "source_sha256": "12797305f00b2513ee4cbbb1747968dd9bbb746e91433cc5e1f8ebef2921e90a",
+      "asset": "assets/chao_garden/sounds/music/area/lobby.ogg",
+      "sha256": "ecb361ceb5b7094fbdefc3834cd2b3e91a328484d758f2fe0e42cdc6f09f961e",
+      "duration_seconds": 66.993016,
+      "channels": 2,
+      "canonical_file": "art/audio02511/converted/lobby.ogg"
+    },
+    {
+      "kind": "area",
+      "id": "neutral",
+      "source_file": "chao_g_bgm_n.adx",
+      "source_sha256": "9a994f1f15af4eccb943a26cb51ef4a15dc289d8a89f9177d1b48db3dc19a096",
+      "asset": "assets/chao_garden/sounds/music/area/neutral.ogg",
+      "sha256": "9c9c436433e5c4f8a8ce488097785256e7d097a4c3a85e19b2f6340111cf0d5c",
+      "duration_seconds": 107.476009,
+      "channels": 2,
+      "canonical_file": "art/audio02511/converted/neutral.ogg"
+    },
+    {
+      "kind": "area",
+      "id": "hero",
+      "source_file": "chao_g_bgm_h.adx",
+      "source_sha256": "127636bb475ce97d45bfe0970c2b580473bff13622a5c1e180dd982402e82d29",
+      "asset": "assets/chao_garden/sounds/music/area/hero.ogg",
+      "sha256": "16c11e8a773c627f1282f20ea063283bbdc50a3c3f695207ca48a8a20afb9c01",
+      "duration_seconds": 116.695011,
+      "channels": 2,
+      "canonical_file": "art/audio02511/converted/hero.ogg"
+    },
+    {
+      "kind": "area",
+      "id": "dark",
+      "source_file": "chao_g_bgm_d.adx",
+      "source_sha256": "c52fa1002b2ae7d5965b64806ed8b89af29c50218ec665c339c18450ea545e63",
+      "asset": "assets/chao_garden/sounds/music/area/dark.ogg",
+      "sha256": "ec476f8cd1544fe86d9cda98a9fec1c67e4ccfaf30de12db39691a2a2280de42",
+      "duration_seconds": 102.85,
+      "channels": 2,
+      "canonical_file": "art/audio02511/converted/dark.ogg"
+    },
+    {
+      "kind": "area",
+      "id": "kindergarten",
+      "source_file": "chao_k_m.adx",
+      "source_sha256": "a28e4e8fa11f6f2d99439ad2df1ec8117d0b98afa18f56b5d58e8b6f838140ee",
+      "asset": "assets/chao_garden/sounds/music/area/kindergarten.ogg",
+      "sha256": "38c3ebdfc9098393c5d2f3a3f46fa20b6a978668f8c32ccc5e7ab76f4758052c",
+      "duration_seconds": 85.28,
+      "channels": 2,
+      "canonical_file": "art/audio02511/converted/kindergarten.ogg"
+    },
+    {
+      "kind": "chorus",
+      "id": "chao_k_sing_hero1",
+      "source_file": "chao_k_sing_hero1.adx",
+      "source_sha256": "ca5038c0cc7a43e845feac657ae99fd107c17163b04baf4d2cf169beacd49016",
+      "asset": "assets/chao_garden/sounds/chao/chorus/chao_k_sing_hero1.ogg",
+      "sha256": "b1af39e10dcedbd6afa15a45a1af5c27bb2cb230d82da79f28ecf6f889ba40c1",
+      "duration_seconds": 18.218957,
+      "channels": 1,
+      "canonical_file": "art/audio02511/converted/chao_k_sing_hero1.ogg"
+    },
+    {
+      "kind": "chorus",
+      "id": "chao_k_sing_hero2",
+      "source_file": "chao_k_sing_hero2.adx",
+      "source_sha256": "c1032b9c2765e19d336fc15e719649e719371d735be91d4b2cef2601cf686565",
+      "asset": "assets/chao_garden/sounds/chao/chorus/chao_k_sing_hero2.ogg",
+      "sha256": "d20dfdbfc98927d8a3156bdf6acc35518717f36159f040c92d921792250a52d5",
+      "duration_seconds": 30.416689,
+      "channels": 1,
+      "canonical_file": "art/audio02511/converted/chao_k_sing_hero2.ogg"
+    },
+    {
+      "kind": "chorus",
+      "id": "chao_k_sing_hero3",
+      "source_file": "chao_k_sing_hero3.adx",
+      "source_sha256": "a5421fd24e1f602e4c985bc72aa87fb4ba5b3a91ccd37b7a6790d8f58abdb2a1",
+      "asset": "assets/chao_garden/sounds/chao/chorus/chao_k_sing_hero3.ogg",
+      "sha256": "87f0142b4fc2960e7cbf4283845ed193adf5e37e278ccc280a650ba85666ba69",
+      "duration_seconds": 19.906757,
+      "channels": 1,
+      "canonical_file": "art/audio02511/converted/chao_k_sing_hero3.ogg"
+    },
+    {
+      "kind": "chorus",
+      "id": "chao_k_sing_dark1",
+      "source_file": "chao_k_sing_dark1.adx",
+      "source_sha256": "4a5b5200a83a24eeac1b63dffc1ee0e7e0efe167dfd509761f0dc34283203185",
+      "asset": "assets/chao_garden/sounds/chao/chorus/chao_k_sing_dark1.ogg",
+      "sha256": "e8b2d41b342b1cf4780933d731f09332f9e440ee611a7278569e6ee3dd273273",
+      "duration_seconds": 25.594195,
+      "channels": 1,
+      "canonical_file": "art/audio02511/converted/chao_k_sing_dark1.ogg"
+    },
+    {
+      "kind": "chorus",
+      "id": "chao_k_sing_dark2",
+      "source_file": "chao_k_sing_dark2.adx",
+      "source_sha256": "bce35c715b58c787e9d10ba6b434e9b8357ab03ec26e5f3c835435c084a36d98",
+      "asset": "assets/chao_garden/sounds/chao/chorus/chao_k_sing_dark2.ogg",
+      "sha256": "20c8b0f19802d49d748962b2cdace4b095ad9dd92e8108e0c591318e95561f14",
+      "duration_seconds": 22.346304,
+      "channels": 1,
+      "canonical_file": "art/audio02511/converted/chao_k_sing_dark2.ogg"
+    },
+    {
+      "kind": "chorus",
+      "id": "chao_k_sing_dark3",
+      "source_file": "chao_k_sing_dark3.adx",
+      "source_sha256": "f464cd7c00bc082922b228d6cb2eee5e355607552bd3e0058ff59eb631bb0516",
+      "asset": "assets/chao_garden/sounds/chao/chorus/chao_k_sing_dark3.ogg",
+      "sha256": "b807f10215c3d80d5a09640f151f6ba8fad0d07d57a3494eceea5bd55ddfc1e8",
+      "duration_seconds": 18.737052,
+      "channels": 1,
+      "canonical_file": "art/audio02511/converted/chao_k_sing_dark3.ogg"
+    }
+  ],
+  "release": "0.25.11",
+  "supplied_archive_sha256": "687b93de654cb4f65321e70b6ea0b84bca7d955b0652f2e0d8c97351ec138174"
+}

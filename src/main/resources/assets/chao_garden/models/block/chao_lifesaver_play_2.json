@@ -1,0 +1,13 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/chao_lifesaver_play_2.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_ukiwa01_20": "chao_garden:block/sa2_02515/chao_lifesaver/sa2_ukiwa01_20",
+    "sa2_ukiwa02_20": "chao_garden:block/sa2_02515/chao_lifesaver/sa2_ukiwa02_20",
+    "particle": "chao_garden:block/sa2_02515/chao_lifesaver/sa2_ukiwa01_20"
+  },
+  "render_type": "minecraft:cutout"
+}

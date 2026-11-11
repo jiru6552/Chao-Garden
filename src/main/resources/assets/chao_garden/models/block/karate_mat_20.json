@@ -1,0 +1,78 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#mat",
+          "uv": [
+            1.25,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#mat",
+          "uv": [
+            1.25,
+            0,
+            16,
+            16
+          ]
+        },
+        "north": {
+          "texture": "#mat",
+          "uv": [
+            1.25,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#mat",
+          "uv": [
+            1.25,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "rotation": 90,
+          "texture": "#mat",
+          "uv": [
+            1.25,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#mat",
+          "uv": [
+            1.25,
+            0,
+            16,
+            16
+          ]
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        1,
+        16
+      ]
+    }
+  ],
+  "parent": "minecraft:block/block",
+  "textures": {
+    "mat": "chao_garden:block/karate_mat",
+    "particle": "chao_garden:block/karate_mat"
+  }
+}

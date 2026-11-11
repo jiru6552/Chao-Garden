@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_emerald"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chao_garden:chao_garden_music_disc"
+    ]
+  }
+}

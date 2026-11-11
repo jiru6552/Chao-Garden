@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_tambourine",
+    "particle": "chao_garden:block/sa2_02515/chao_tambourine/sa2_sabon_0"
+  },
+  "base": {
+    "parent": "chao_garden:item/sa2_02515/chao_tambourine"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_tambourine"
+      },
+      "gui_light": "front"
+    }
+  }
+}

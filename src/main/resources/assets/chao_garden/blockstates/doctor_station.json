@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chao_garden:block/doctor_station",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "chao_garden:block/doctor_station",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chao_garden:block/doctor_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chao_garden:block/doctor_station",
+      "y": 270
+    }
+  }
+}

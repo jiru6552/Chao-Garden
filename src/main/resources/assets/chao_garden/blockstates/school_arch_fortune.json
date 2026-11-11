@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "chao_garden:block/school_arch_fortune"
+    },
+    "facing=west": {
+      "model": "chao_garden:block/school_arch_fortune",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chao_garden:block/school_arch_fortune",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "chao_garden:block/school_arch_fortune",
+      "y": 270
+    }
+  }
+}

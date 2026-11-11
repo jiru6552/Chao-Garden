@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/mint_candy",
+    "particle": "chao_garden:block/sa2_02514/mint_candy/sa2_ali_mintcandy01_20"
+  },
+  "base": {
+    "parent": "chao_garden:item/fruit02512/mint_candy"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/mint_candy"
+      },
+      "gui_light": "front"
+    }
+  }
+}

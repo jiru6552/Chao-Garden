@@ -1,0 +1,515 @@
+{
+  "release": "0.25.14",
+  "source_models": 31,
+  "items": [
+    {
+      "id": "garden_fruit",
+      "source_object": "0x3a7b18",
+      "source_archive": "al_object",
+      "faces": 36,
+      "bounds": [
+        2.072635966985045,
+        2.0,
+        2.866749757125186,
+        13.927364033014955,
+        15.0,
+        13.133250242874814
+      ]
+    },
+    {
+      "id": "hero_garden_fruit",
+      "source_object": "0x3a7f0c",
+      "source_archive": "al_object",
+      "faces": 36,
+      "bounds": [
+        2.370834350201612,
+        2.0,
+        1.5,
+        13.629165649798388,
+        14.843166195233193,
+        14.5
+      ]
+    },
+    {
+      "id": "dark_garden_fruit",
+      "source_object": "0x3a8290",
+      "source_archive": "al_object",
+      "faces": 36,
+      "bounds": [
+        2.482170229861687,
+        2.0,
+        3.2214186620134315,
+        13.517829770138313,
+        15.000000000000002,
+        12.77858133798657
+      ]
+    },
+    {
+      "id": "strong_fruit",
+      "source_object": "0x3a9180",
+      "source_archive": "al_object",
+      "faces": 36,
+      "bounds": [
+        2.2902505289224164,
+        2.0,
+        3.055210939261362,
+        13.709749471077583,
+        15.000000000000002,
+        12.944789060738639
+      ]
+    },
+    {
+      "id": "tasty_fruit",
+      "source_object": "0x3a9a64",
+      "source_archive": "al_object",
+      "faces": 46,
+      "bounds": [
+        3.5609965755847535,
+        2.0,
+        2.169464796525533,
+        12.439003424415247,
+        15.000000000000002,
+        13.830535203474467
+      ]
+    },
+    {
+      "id": "round_fruit",
+      "source_object": "0x3ab4d4",
+      "source_archive": "al_object",
+      "faces": 44,
+      "bounds": [
+        2.935915489321242,
+        2.0,
+        3.5925729134636484,
+        13.064084510678757,
+        15.0,
+        12.407427086536352
+      ]
+    },
+    {
+      "id": "triangle_fruit",
+      "source_object": "0x3abde0",
+      "source_archive": "al_object",
+      "faces": 36,
+      "bounds": [
+        2.602797975016755,
+        2.0,
+        2.94872998106824,
+        13.397202024983244,
+        15.000000000000002,
+        13.05127001893176
+      ]
+    },
+    {
+      "id": "square_fruit",
+      "source_object": "0x3ac7b4",
+      "source_archive": "al_object",
+      "faces": 52,
+      "bounds": [
+        3.3129420353240686,
+        2.0,
+        3.3129420353240686,
+        12.687057964675931,
+        15.000000000000002,
+        12.687057964675931
+      ]
+    },
+    {
+      "id": "heart_fruit",
+      "source_object": "0x3ad2a4",
+      "source_archive": "al_object",
+      "faces": 52,
+      "bounds": [
+        1.5,
+        2.0,
+        4.040129313777021,
+        14.5,
+        14.2956063353059,
+        11.95987068622298
+      ]
+    },
+    {
+      "id": "chao_fruit",
+      "source_object": "0x3ad8f8",
+      "source_archive": "al_object",
+      "faces": 64,
+      "bounds": [
+        3.1485226812391423,
+        2.0,
+        3.189514912684551,
+        12.851477318760857,
+        15.0,
+        12.810485087315449
+      ]
+    },
+    {
+      "id": "smart_fruit",
+      "source_object": "0x3ade84",
+      "source_archive": "al_object",
+      "faces": 58,
+      "bounds": [
+        2.886924121162008,
+        2.0,
+        3.2629681218290427,
+        13.113075878837993,
+        15.0,
+        12.737031878170956
+      ]
+    },
+    {
+      "id": "orange_fruit",
+      "source_object": "0x3ae43c",
+      "source_archive": "al_object",
+      "faces": 60,
+      "bounds": [
+        2.534795924230438,
+        2.0,
+        2.8577496409700256,
+        13.465204075769563,
+        15.0,
+        13.142250359029974
+      ]
+    },
+    {
+      "id": "gba_orange_fruit",
+      "source_object": "0x3ae43c",
+      "source_archive": "al_object",
+      "faces": 60,
+      "bounds": [
+        2.534795924230438,
+        2.0,
+        2.8577496409700256,
+        13.465204075769563,
+        15.0,
+        13.142250359029974
+      ]
+    },
+    {
+      "id": "gba_blue_fruit",
+      "source_object": "0x3aebb0",
+      "source_archive": "al_object",
+      "faces": 70,
+      "bounds": [
+        2.7158569647364628,
+        2.0,
+        3.275147164272446,
+        13.284143035263536,
+        15.000000000000002,
+        12.724852835727553
+      ]
+    },
+    {
+      "id": "gba_pink_fruit",
+      "source_object": "0x3af2b8",
+      "source_archive": "al_object",
+      "faces": 84,
+      "bounds": [
+        2.047555193620431,
+        2.0,
+        2.9393652230150824,
+        13.95244480637957,
+        15.0,
+        13.060634776984918
+      ]
+    },
+    {
+      "id": "gba_yellow_fruit",
+      "source_object": "0x3af9d0",
+      "source_archive": "al_object",
+      "faces": 60,
+      "bounds": [
+        3.102908632831854,
+        2.0,
+        3.654056812957469,
+        12.897091367168146,
+        15.000000000000002,
+        12.345943187042531
+      ]
+    },
+    {
+      "id": "gba_purple_fruit",
+      "source_object": "0x3b0028",
+      "source_archive": "al_object",
+      "faces": 46,
+      "bounds": [
+        3.0128286903347803,
+        2.0,
+        3.6145207696515227,
+        12.98717130966522,
+        14.999999999999998,
+        12.385479230348476
+      ]
+    },
+    {
+      "id": "gba_green_fruit",
+      "source_object": "0x3b050c",
+      "source_archive": "al_object",
+      "faces": 48,
+      "bounds": [
+        2.8311235957131275,
+        2.0,
+        3.8072532582779743,
+        13.168876404286873,
+        15.0,
+        12.192746741722026
+      ]
+    },
+    {
+      "id": "gba_red_fruit",
+      "source_object": "0x3b0bdc",
+      "source_archive": "al_object",
+      "faces": 56,
+      "bounds": [
+        2.7181965827782637,
+        2.0,
+        3.3518709764648573,
+        13.281803417221736,
+        15.0,
+        12.648129023535143
+      ]
+    },
+    {
+      "id": "mushroom",
+      "source_object": "0x3b12ac",
+      "source_archive": "al_object",
+      "faces": 68,
+      "bounds": [
+        1.4999999999999991,
+        2.0,
+        2.370834490446886,
+        14.5,
+        13.895008597175073,
+        13.629165509553115
+      ]
+    },
+    {
+      "id": "mushroom_alt",
+      "source_object": "0x3b12ac",
+      "source_archive": "al_object",
+      "faces": 68,
+      "bounds": [
+        1.4999999999999991,
+        2.0,
+        2.370834490446886,
+        14.5,
+        13.895008597175073,
+        13.629165509553115
+      ]
+    },
+    {
+      "id": "mint_candy",
+      "source_object": "0x3b1ad4",
+      "source_archive": "al_object",
+      "faces": 96,
+      "bounds": [
+        1.5,
+        2.0,
+        6.150100410810134,
+        14.5,
+        6.423071245281193,
+        9.849899589189867
+      ]
+    },
+    {
+      "id": "chao_watering_can",
+      "source_object": "0x6d11c",
+      "source_archive": "al_toy",
+      "faces": 96,
+      "bounds": [
+        1.5000000000000009,
+        2.0,
+        3.9329273605663184,
+        14.5,
+        7.182270020524348,
+        12.067072639433682
+      ]
+    },
+    {
+      "id": "chao_shovel",
+      "source_object": "0x6e508",
+      "source_archive": "al_toy",
+      "faces": 48,
+      "bounds": [
+        4.3363392606458575,
+        2.0,
+        6.514936454148527,
+        11.663660739354142,
+        15.0,
+        9.485063545851473
+      ]
+    },
+    {
+      "id": "strong_fruit_seed",
+      "source_object": "0x3c968c",
+      "source_archive": "al_object",
+      "faces": 65,
+      "bounds": [
+        3.5978865986659008,
+        1.0,
+        5.3719991413755945,
+        12.402113401334098,
+        11.05,
+        10.628000858624405
+      ]
+    },
+    {
+      "id": "tasty_fruit_seed",
+      "source_object": "0x3c9c50",
+      "source_archive": "al_object",
+      "faces": 57,
+      "bounds": [
+        5.576892344303019,
+        1.0,
+        3.4278294598720214,
+        10.423107655696981,
+        11.05,
+        12.572170540127978
+      ]
+    },
+    {
+      "id": "hero_garden_fruit_seed",
+      "source_object": "0x3ca1ac",
+      "source_archive": "al_object",
+      "faces": 60,
+      "bounds": [
+        4.468404496859572,
+        1.0,
+        5.309513487171655,
+        11.531595503140428,
+        11.05,
+        10.690486512828345
+      ]
+    },
+    {
+      "id": "dark_garden_fruit_seed",
+      "source_object": "0x3ca784",
+      "source_archive": "al_object",
+      "faces": 56,
+      "bounds": [
+        3.0,
+        1.0,
+        4.344401588962247,
+        13.0,
+        10.95371071039533,
+        11.655598411037753
+      ]
+    },
+    {
+      "id": "round_fruit_seed",
+      "source_object": "0x3cac0c",
+      "source_archive": "al_object",
+      "faces": 56,
+      "bounds": [
+        5.044311118695126,
+        1.0,
+        6.0978213516398,
+        10.955688881304873,
+        11.05,
+        9.9021786483602
+      ]
+    },
+    {
+      "id": "triangle_fruit_seed",
+      "source_object": "0x3cb0ac",
+      "source_archive": "al_object",
+      "faces": 52,
+      "bounds": [
+        3.161494257033577,
+        1.0,
+        5.039554517253915,
+        12.838505742966422,
+        11.05,
+        10.960445482746085
+      ]
+    },
+    {
+      "id": "square_fruit_seed",
+      "source_object": "0x3cb694",
+      "source_archive": "al_object",
+      "faces": 66,
+      "bounds": [
+        4.131512045475009,
+        1.0,
+        5.626327093706845,
+        11.86848795452499,
+        11.05,
+        10.373672906293155
+      ]
+    }
+  ],
+  "scene_textures": {
+    "scene/garden_palm_bark": {
+      "archive": "al_neut_obj_tex",
+      "texture": "gno_ki_def03"
+    },
+    "scene/garden_palm_end": {
+      "archive": "al_neut_obj_tex",
+      "texture": "gno_ki_def01"
+    },
+    "scene/garden_limestone": {
+      "archive": "al_stg_neut_tex",
+      "texture": "gneut04"
+    },
+    "scene/garden_turf": {
+      "archive": "al_stg_neut_tex",
+      "texture": "gneut03"
+    },
+    "scene/garden_turf_edge": {
+      "archive": "al_stg_neut_tex",
+      "texture": "gneut05"
+    },
+    "block/neutral02510/cascade_rock": {
+      "archive": "al_stg_neut_tex",
+      "texture": "gneut07"
+    },
+    "block/hero0253/hero_marble": {
+      "archive": "al_stg_hero_tex",
+      "texture": "g_herokabe02"
+    },
+    "block/hero0253/hero_marble_trim": {
+      "archive": "al_stg_hero_tex",
+      "texture": "g_herofunsui05"
+    },
+    "block/hero0253/hero_marble_trim_corner": {
+      "archive": "al_stg_hero_tex",
+      "texture": "g_herofunsui05"
+    },
+    "block/hero0253/hero_fountain_emblem": {
+      "archive": "al_stg_hero_tex",
+      "texture": "g_heroemblem"
+    },
+    "block/hero0253/hero_column": {
+      "archive": "al_hero_obj_tex",
+      "texture": "g_herohasira01"
+    },
+    "block/dark0255/dark_garden_gravestone": {
+      "archive": "al_dark_obj_tex",
+      "texture": "g_darkhakaa1"
+    },
+    "block/dark0255/dark_garden_gravestone_plain": {
+      "archive": "al_dark_obj_tex",
+      "texture": "g_darkhakaa2"
+    },
+    "block/dark0255/dark_garden_deadwood": {
+      "archive": "al_dark_obj_tex",
+      "texture": "alo_dki_kareki"
+    },
+    "block/dark0255/dark_garden_fence": {
+      "archive": "al_dark_obj_tex",
+      "texture": "g_darksaku2"
+    },
+    "block/dark0255/dark_garden_rock": {
+      "archive": "al_stg_dark_tex",
+      "texture": "g_darkiwa1"
+    },
+    "block/dark0255/dark_garden_soil": {
+      "archive": "al_stg_dark_tex",
+      "texture": "g_darkjimen1"
+    },
+    "block/neutral02510/broadleaf": {
+      "archive": "al_neut_obj_tex",
+      "texture": "gneut09",
+      "opaque": false
+    }
+  }
+}

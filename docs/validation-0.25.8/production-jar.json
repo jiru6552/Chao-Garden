@@ -1,0 +1,69 @@
+{
+  "release": "0.25.8",
+  "result": "PASS",
+  "sources": [
+    {
+      "file": "docs/validation-0.25.8/production-build.txt",
+      "sha256": "4918a12d820f171794b26457b720947126efaceaf339412d06c024cd2a1b907f"
+    },
+    {
+      "file": "docs/validation-0.25.8/client-smoke.json",
+      "sha256": "5298ca9b9ad06df1106c57aad9b92cff051ccdc6316a9f7aeb61e86a8bfa6330"
+    },
+    {
+      "file": "docs/validation-0.25.8/server-default-payloads.json",
+      "sha256": "586b5939429e59c57e38391995af48603cf481f2b3eb3f8d22a984f3f900a61c"
+    },
+    {
+      "file": "docs/validation-0.25.8/server-accessories-payloads.json",
+      "sha256": "586b5939429e59c57e38391995af48603cf481f2b3eb3f8d22a984f3f900a61c"
+    }
+  ],
+  "build_exit": 0,
+  "build_duration": "33s",
+  "artifact": {
+    "file": "build/libs/chao_garden-0.25.8.jar",
+    "size_bytes": 14218021,
+    "sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+    "entries": 7060
+  },
+  "all_server_tested_payloads_identical": true,
+  "server_profile_comparisons": {
+    "default": {
+      "server_tested_jar_sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+      "identical_jar": true,
+      "missing": [],
+      "extra": [],
+      "changed": []
+    },
+    "accessories": {
+      "server_tested_jar_sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+      "identical_jar": true,
+      "missing": [],
+      "extra": [],
+      "changed": []
+    }
+  },
+  "production_class_payloads": 338,
+  "compiled_class_mismatches": [],
+  "source_runtime_resource_payloads": 6583,
+  "source_resource_mismatches": [],
+  "source_asset_data_payloads": 6581,
+  "jar_asset_data_payloads": 6581,
+  "extra_asset_data_payloads": [],
+  "missing_asset_data_payloads": [],
+  "exact_current_asset_data_domain": true,
+  "excluded_fixture_source_files": [
+    "data/chao_garden/loot_table/distribution_test/chests/generic.json",
+    "data/chao_garden/loot_table/distribution_test/fishing.json",
+    "data/chao_garden/loot_table/distribution_test/unconventional.json",
+    "data/chao_garden/structure/activity_test.nbt",
+    "data/chao_garden/structure/empty.nbt"
+  ],
+  "forbidden_development_entries": [],
+  "crc": "PASS",
+  "unique_entry_names": true,
+  "metadata_version": "0.25.8",
+  "core_checks": 1695092,
+  "scope": "Final production build/coreTest plus current class/resource and both fresh isolated-world server profiles. Every final payload and the complete JAR hash equal both successful server-tested artifacts. Study helpers, test-only fixture refinements and the dedicated GameTest preset are excluded."
+}

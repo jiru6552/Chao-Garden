@@ -1,0 +1,25 @@
+{
+  "release": "0.25.2",
+  "result": "PASS",
+  "scope": "Static renderer binding and pass-order contract only; no native visual signoff.",
+  "assertions": 138,
+  "malformed_regressions_rejected": 11,
+  "sources": [
+    {
+      "file": "src/main/java/com/chaogarden/client/LobbySceneRenderer025.java",
+      "sha256": "e535f76a224d988e3f552eb21491d29f0126204be57caebfe5a7dd4cf5e105ea"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/core/LobbyGeometry0252.java",
+      "sha256": "1d2965ea5a4cedc8e285099da101a379cc930a0a71799df1592f28a8c68d8a28"
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/LobbyGeometry0252Test.java",
+      "sha256": "76a2018ca77c38b16bdc1f21a7ece9ab3a3c01e9a72c043ffc30dcb0e79707c5"
+    },
+    {
+      "file": "art/validate_lobby_0252.py",
+      "sha256": "9e075f9936ff68ebcf7d24134035f986c46bdb77d9767b6ed37fd9978c29cc7c"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "release": "0.25.8",
+  "result": "PASS",
+  "sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+  "size_bytes": 14218021,
+  "canonical_outside_synced_workspace": "/tmp/chao0258-production-unshared/immutable/chao_garden-0.25.8-e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb.jar",
+  "immutable_published": "/workspace/scratch/c3ab64e7d80c/validated0258/chao_garden-0.25.8-e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb.jar",
+  "standard_published": "/workspace/scratch/c3ab64e7d80c/chao-garden-0258/build/libs/chao_garden-0.25.8.jar",
+  "published_wall_clock_ns": 1793682362645997063,
+  "method": "Gradle produces outside scratch; closed bytes independently CRC/hash verified and fsynced. Distinct canonical copy outside scratch. New SHA-qualified publication and standard path use .rsync-tmp staging plus atomic rename/fresh timestamps. No hardlinks; future Gradle outputs remain outside scratch."
+}

@@ -1,0 +1,15 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/fruit02512/gba_purple_fruit_pod_3.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "stem": "chao_garden:block/fruit02512/stem",
+    "sa2_ali_mihikou_20": "chao_garden:block/sa2_02514/gba_purple_fruit/sa2_ali_mihikou_20_3",
+    "sa2_ali_mikuki_148": "chao_garden:block/sa2_02514/gba_purple_fruit/sa2_ali_mikuki_148_3",
+    "sa2_ali_miha_52": "chao_garden:block/sa2_02514/gba_purple_fruit/sa2_ali_miha_52_3",
+    "particle": "chao_garden:block/sa2_02514/gba_purple_fruit/sa2_ali_mihikou_20_3"
+  },
+  "render_type": "minecraft:cutout"
+}

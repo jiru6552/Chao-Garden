@@ -1,0 +1,183 @@
+{
+  "version": "0.21.0",
+  "result": "PASS",
+  "checks": 70725,
+  "young_forms": 15,
+  "fully_aged_forms": 135,
+  "age_strengths": [
+    0,
+    0.6,
+    1.2
+  ],
+  "ordinary_axes": [
+    -1,
+    1
+  ],
+  "profiles": [
+    {
+      "key": "baby",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "swim",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "fly",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "run",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "power",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "hero",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "hero_swim",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "hero_fly",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "hero_run",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "hero_power",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "dark",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "dark_swim",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "dark_fly",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "dark_run",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    },
+    {
+      "key": "dark_power",
+      "young_signatures": 1,
+      "aged_shapes": 9,
+      "age_midpoints": 9,
+      "core_scale_minmax": [
+        0.92,
+        1.11
+      ],
+      "eye_front_plane_fixed": true
+    }
+  ]
+}

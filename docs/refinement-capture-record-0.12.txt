@@ -1,0 +1,39 @@
+CHAO_REFINEMENT_CAPTURED chao012-orchard.png stage=0 parts={}
+[20:30:48] [IO-Worker-3/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-orchard.png: Saved screenshot as chao012-orchard.png
+[20:30:50] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-foliage-fruit.png stage=1 parts={}
+[20:30:50] [IO-Worker-5/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-foliage-fruit.png: Saved screenshot as chao012-foliage-fruit.png
+[20:30:52] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-inventory.png stage=2 parts={}
+[20:30:52] [IO-Worker-5/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-inventory.png: Saved screenshot as chao012-inventory.png
+[20:30:54] [Render thread/DEBUG] [mixin/]: Mixing client.DefaultTooltipPositionerMixin from accessories-common.mixins.json into net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner
+[20:30:54] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[20:30:54] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories->@Inject::accessories$forceLeftPositioning(IILorg/joml/Vector2i;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[20:30:54] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories->@Inject::accessories$forceLeftPositioning(IILorg/joml/Vector2i;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[20:30:54] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories->@Inject::accessories$forceLeftPositioning(IILorg/joml/Vector2i;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[20:30:55] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-gene-tooltip.png stage=3 parts={}
+[20:30:55] [IO-Worker-2/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-gene-tooltip.png: Saved screenshot as chao012-gene-tooltip.png
+[20:30:57] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-drive-tooltip.png stage=4 parts={}
+[20:30:57] [IO-Worker-2/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-drive-tooltip.png: Saved screenshot as chao012-drive-tooltip.png
+[20:30:59] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-triangle-flags.png stage=5 parts={}
+[20:30:59] [IO-Worker-2/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-triangle-flags.png: Saved screenshot as chao012-triangle-flags.png
+[20:31:02] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-flags-angle.png stage=6 parts={}
+[20:31:02] [IO-Worker-2/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-flags-angle.png: Saved screenshot as chao012-flags-angle.png
+[20:31:04] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-gene-progression.png stage=7 parts={c9843a51-3046-4de8-855a-e9b5e664101b=false:[6, 6, -1, -1, -1, -1, 6, -1]:false:false, 2ce0a1a6-63fd-4bc2-b787-e3af387c390f=false:[6, 6, -1, -1, -1, -1, -1, -1]:false:false, b4d85888-0606-4b00-95fe-3c93bbbdc1fe=false:[-1, 6, -1, -1, -1, -1, -1, -1]:false:false, 3cbaa37d-afec-4c76-a78e-6bfc9729189a=false:[6, 6, -1, -1, 6, -1, 6, -1]:false:false}
+[20:31:04] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-gene-progression.png: Saved screenshot as chao012-gene-progression.png
+[20:31:06] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-mixed-child-adult.png stage=8 parts={abadffc1-6fce-4cbe-8779-80a7ad889265=false:[6, 6, 3, -1, 3, -1, 3, 3]:false:false, 6e6541f9-5523-44a0-aac2-67f90e6f7c49=true:[6, 6, 3, -1, 3, -1, 3, 3]:false:false}
+[20:31:06] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-mixed-child-adult.png: Saved screenshot as chao012-mixed-child-adult.png
+[20:31:08] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-mixed-angle.png stage=9 parts={abadffc1-6fce-4cbe-8779-80a7ad889265=false:[6, 6, 3, -1, 3, -1, 3, 3]:false:false, 6e6541f9-5523-44a0-aac2-67f90e6f7c49=true:[6, 6, 3, -1, 3, -1, 3, 3]:false:false}
+[20:31:08] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-mixed-angle.png: Saved screenshot as chao012-mixed-angle.png
+[20:31:11] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-held-mixed.png stage=10 parts={}
+[20:31:11] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-held-mixed.png: Saved screenshot as chao012-held-mixed.png
+[20:31:13] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-animal-guide.png stage=11 parts={}
+[20:31:13] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-animal-guide.png: Saved screenshot as chao012-animal-guide.png
+[20:31:16] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-rabbit-closeup.png stage=12 parts={77931f80-e705-476e-a385-7ef9e61ff1c9=false:[6, 6, -1, -1, 6, -1, 6, -1]:false:false, 3c00cd51-1d1b-4716-a562-501873aaf5c9=true:[6, 6, -1, -1, 6, -1, 6, -1]:false:false}
+[20:31:16] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-rabbit-closeup.png: Saved screenshot as chao012-rabbit-closeup.png
+[20:31:18] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-rabbit-profile.png stage=13 parts={77931f80-e705-476e-a385-7ef9e61ff1c9=false:[6, 6, -1, -1, 6, -1, 6, -1]:false:false, 3c00cd51-1d1b-4716-a562-501873aaf5c9=true:[6, 6, -1, -1, 6, -1, 6, -1]:false:false}
+[20:31:18] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-rabbit-profile.png: Saved screenshot as chao012-rabbit-profile.png
+[20:31:20] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-animal-detail.png stage=14 parts={2123084a-1d21-4ae5-b09e-c8e4b80d6f8c=true:[13, 13, -1, -1, 13, 13, 13, -1]:false:false, 6c28a9d0-60f8-4439-9cf1-0bf566a1e626=true:[0, -1, 0, -1, 0, -1, -1, -1]:false:false, 46d5bfa0-489d-4ca2-88b4-c61384ea3a2b=true:[10, 10, -1, -1, 10, -1, 10, -1]:false:false, 80fba58d-cafb-4374-90c6-9c9bce33bf9f=true:[15, 15, -1, -1, 15, 15, 15, 15]:false:false}
+[20:31:20] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-animal-detail.png: Saved screenshot as chao012-animal-detail.png
+[20:31:23] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_CAPTURED chao012-journal-icons.png stage=15 parts={2123084a-1d21-4ae5-b09e-c8e4b80d6f8c=true:[13, 13, -1, -1, 13, 13, 13, -1]:false:false, 6c28a9d0-60f8-4439-9cf1-0bf566a1e626=true:[0, -1, 0, -1, 0, -1, -1, -1]:false:false, 46d5bfa0-489d-4ca2-88b4-c61384ea3a2b=true:[10, 10, -1, -1, 10, -1, 10, -1]:false:false, 80fba58d-cafb-4374-90c6-9c9bce33bf9f=true:[15, 15, -1, -1, 15, 15, 15, 15]:false:false}
+[20:31:23] [IO-Worker-4/INFO] [co.ch.cl.RefinementVisualSmoke/]: CHAO_REFINEMENT_SCREENSHOT chao012-journal-icons.png: Saved screenshot as chao012-journal-icons.png
+[20:31:23] [Render thread/INFO] [co.ch.cl.RefinementVisualSmoke/]:
+CHAO_REFINEMENT_STUDY_COMPLETE: 16 actual Minecraft views

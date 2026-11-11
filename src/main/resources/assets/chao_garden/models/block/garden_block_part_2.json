@@ -1,0 +1,1010 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "shell": "chao_garden:block/transporter_shell",
+    "ivory": "chao_garden:block/transporter_ivory",
+    "red": "chao_garden:block/transporter_red",
+    "gold": "chao_garden:block/transporter_gold",
+    "orb": "chao_garden:block/transporter_orb",
+    "blue": "chao_garden:block/transporter_blue",
+    "neck": "chao_garden:block/transporter_neck",
+    "screen": "chao_garden:block/transporter_screen",
+    "particle": "chao_garden:block/transporter_shell"
+  },
+  "elements": [
+    {
+      "name": "red plinth edge",
+      "from": [
+        1.6,
+        0.0,
+        0
+      ],
+      "to": [
+        16,
+        0.790875,
+        16.0
+      ],
+      "faces": {
+        "south": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            8.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            8.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "wide red plinth edge",
+      "from": [
+        0.0,
+        0.790875,
+        0
+      ],
+      "to": [
+        16,
+        1.581749,
+        14.4
+      ],
+      "faces": {
+        "south": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            8.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            8.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading platform",
+      "from": [
+        1.6,
+        1.581749,
+        0
+      ],
+      "to": [
+        16,
+        2.43346,
+        14.4
+      ],
+      "faces": {
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            8.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            8.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "rear clipped platform",
+      "from": [
+        3.2,
+        1.581749,
+        14.4
+      ],
+      "to": [
+        16,
+        2.43346,
+        16.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "left lower housing",
+      "from": [
+        6.0,
+        2.43346,
+        1.6
+      ],
+      "to": [
+        12.0,
+        7.908745,
+        11.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "left pale shoulder",
+      "from": [
+        6.8,
+        7.908745,
+        2.4
+      ],
+      "to": [
+        12.0,
+        9.125475,
+        11.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "back bridge",
+      "from": [
+        12.0,
+        6.813688,
+        4.8
+      ],
+      "to": [
+        16,
+        9.125475,
+        11.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#ivory",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#ivory",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 2",
+      "from": [
+        12.0,
+        3.742459,
+        0
+      ],
+      "to": [
+        16,
+        4.41166,
+        1.0
+      ],
+      "faces": {
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#gold",
+          "uv": [
+            8.156863,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            8.156863,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            7.843137
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 3",
+      "from": [
+        12.0,
+        4.336223,
+        1.0
+      ],
+      "to": [
+        16,
+        5.005425,
+        3.04
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 4",
+      "from": [
+        12.0,
+        4.929785,
+        3.04
+      ],
+      "to": [
+        16,
+        5.598986,
+        5.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 5",
+      "from": [
+        12.0,
+        5.523549,
+        5.08
+      ],
+      "to": [
+        16,
+        6.19275,
+        7.12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 6",
+      "from": [
+        12.0,
+        6.11711,
+        7.12
+      ],
+      "to": [
+        16,
+        6.786312,
+        9.16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 7",
+      "from": [
+        12.0,
+        6.710875,
+        9.16
+      ],
+      "to": [
+        16,
+        7.380076,
+        11.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "red side control",
+      "from": [
+        7.04,
+        4.623574,
+        1.12
+      ],
+      "to": [
+        10.56,
+        7.178707,
+        1.92
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "striped machine neck",
+      "from": [
+        14.4,
+        9.125475,
+        5.6
+      ],
+      "to": [
+        16,
+        12.775665,
+        8.8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#neck",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#neck",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#neck",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#neck",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#neck",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "rounded lower monitor",
+      "from": [
+        6.4,
+        12.1673,
+        0.32
+      ],
+      "to": [
+        16,
+        14.60076,
+        12.8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "wide monitor cheeks",
+      "from": [
+        4.8,
+        14.60076,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        13.6
+      ],
+      "faces": {
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            11.91111,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.888889,
+            11.91111,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            15.111111
+          ]
+        }
+      }
+    }
+  ]
+}

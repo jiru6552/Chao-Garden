@@ -1,0 +1,56 @@
+CHAO GARDEN 0.15.1
+Minecraft Java 1.21.1 | NeoForge 21.1.219+ (21.1 series) | Java 21
+
+DIMENSION EGGS AND FRUIT-SHAPED SEEDS
+The Nether egg now has finer netherrack rock clusters and dark cracks.
+Placed End eggs use Minecraft's actual animated End portal shader over
+their whole rounded shell, with no purple rim. The inventory icon is a
+static portal motif. Seed icons have distinct outlines and colors that
+echo their fruit; recipes, crops and item IDs remain unchanged.
+
+INSTALL
+Replace the previous jar with chao_garden-0.15.1.jar in mods/.
+Install the same version on the server and every client. Java 21 is needed.
+Adult equipment companions optionally require compatible NeoForge Accessories
+and its dependency. Third-party mods are not bundled. See source/README.md
+and source/TESTING.md for exact dependencies and completed validation.
+
+CONTINUING YOUR GARDEN
+Existing Chao, eggs, orchards, held Chao and companions keep their data.
+Five natural fruit families: Garden, Hero Garden, Dark Garden, Strong, Tasty.
+Nine market-first families: Hero, Dark, Round, Triangle, Square, Heart,
+Chao, Mushroom and Nutritious Mushroom. Buy rotating market fruit, craft
+that fruit into its seed, then plant renewable trees. New wild trees appear
+in newly generated suitable Overworld chunks.
+Craft the Care Guide with a book and wheat seeds for recipes and controls.
+The imported Chao rigs, nineteen themes, animal parts and three Chaos forms,
+transporter, contests, companions and garden CD from 0.15 remain included.
+
+PREVIEWS
+Extract the complete ZIP and open previews/index.html. Five current feature
+captures show both dimension eggs, items and the fourteen active seed pairs.
+Eight further frames show the same placed End egg from a fixed camera,
+sampled roughly 2.5 seconds apart. The GIF plays those full frames at four
+review frames per second, so it is an accelerated review sequence.
+All 13 original PNGs are in source/docs/screenshots/release-0.15.1/.
+PDF: source/docs/chao-garden-0.15.1-preview-gallery.pdf
+Three pages show the dimension shells, live portal surface and seed catalog.
+The gallery works offline after extraction. Earlier galleries and their
+individual original frames keep their historical release labels. Redundant
+composite sheets and older PDFs are omitted to reduce duplicate data.
+
+SOURCE AND EDITING
+source/ contains code, tests, resources, generators and asset-only model
+inputs. art/imported_chao retains the exact selected twenty geometries,
+twenty texture maps and eight-clip animation file. Blockbench/ contains
+eight editable authoring projects for custom additions and the egg shell.
+Build caches, worlds, private inspection files and third-party jars are
+excluded. With Java 21, use ./gradlew build coreTest runGameTestServer.
+SHA256SUMS.txt records the installable jar checksum.
+
+CREDITS
+Unofficial fan project. Supplied Sonic/Chao assets belong to their rights
+holders. The new seed and netherrack pixels are authored project work;
+the placed End egg uses Minecraft's built-in renderer and textures.
+Source provenance and art references are recorded in source/docs/.
+Read source/LICENSE, source/TEMPLATE_LICENSE.txt and source/docs/AUDIO_CREDITS.md.

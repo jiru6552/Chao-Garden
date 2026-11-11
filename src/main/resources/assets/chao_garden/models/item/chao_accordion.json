@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_accordion",
+    "particle": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_kanoke03_ff0009ff_52"
+  },
+  "base": {
+    "parent": "chao_garden:item/cwe02516/chao_accordion"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_accordion"
+      },
+      "gui_light": "front"
+    }
+  }
+}

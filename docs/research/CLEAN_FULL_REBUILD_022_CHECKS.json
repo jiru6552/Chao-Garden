@@ -1,0 +1,171 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "pipeline_exit": 0,
+  "started_ns": 1793455407585622480,
+  "finished_ns": 1793455579804304065,
+  "clean_source_root": "/tmp/chao022-clean-source-recovery-crt2xdne",
+  "baseline_resources": 5349,
+  "rebuilt_resources": 5349,
+  "missing_resources": [],
+  "extra_resources": [],
+  "changed_resources": [],
+  "raw_input_count": 41,
+  "raw_input_sha256_unchanged": true,
+  "archived_prototype_sha256_unchanged": true,
+  "archived_prototype_sha256": "02b6e41ac260eba7826dc9991737f96297b6acfeb54bb3e923acd24b147f8e8b",
+  "live_resource_tree_unchanged": true,
+  "scope": "Full source-only CLI pipeline in an independent clean /tmp copy. No Gradle or client; live project resources stayed read-only. Source/art/scripts retained; docs text/JSON retained; build/run/cache/bulk gallery media excluded.",
+  "RESOURCE_HYGIENE_022_CHECKS.json": {
+    "release": "0.22.0",
+    "result": "PASS",
+    "checks": 2429,
+    "selectors": {
+      "gameplay_forms": [
+        "amy",
+        "baby",
+        "chaos_angel",
+        "chaos_devil",
+        "chaos_light",
+        "dark",
+        "dark_fly",
+        "dark_power",
+        "dark_run",
+        "dark_swim",
+        "fly",
+        "hero",
+        "hero_fly",
+        "hero_power",
+        "hero_run",
+        "hero_swim",
+        "knuckles",
+        "omochao",
+        "power",
+        "run",
+        "swim",
+        "tails"
+      ],
+      "attachment_layouts": [
+        "baby",
+        "dark",
+        "dark_run",
+        "dark_swim",
+        "fly",
+        "hero",
+        "hero_fly",
+        "hero_power",
+        "knuckles",
+        "power",
+        "run",
+        "swim",
+        "tails"
+      ],
+      "explicit_callers": [
+        {
+          "class": "ChaoModel.java",
+          "argument": "model"
+        },
+        {
+          "class": "MarketModel.java",
+          "argument": "\"baby\""
+        }
+      ]
+    },
+    "raw_inputs": 41,
+    "pruned_resources": 1615,
+    "runtime_gameplay_meshes": 25,
+    "native_coat_layouts": 11,
+    "attachment_layouts": 13,
+    "rejected_selector_corruptions": 2,
+    "prototype_sha256": "02b6e41ac260eba7826dc9991737f96297b6acfeb54bb3e923acd24b147f8e8b"
+  },
+  "PROPORTIONS_022_INDEPENDENT_CHECKS.json": {
+    "release": "0.22.0",
+    "result": "PASS",
+    "checks": 14955,
+    "age_endpoint_cases": 405,
+    "limb_assembly_cases": 600,
+    "normalized_families": [
+      "dark",
+      "dark_run",
+      "dark_swim",
+      "hero",
+      "hero_fly",
+      "hero_power"
+    ],
+    "preserved_special_files": 10,
+    "preserved_chaos_coats": 351,
+    "preserved_raw_inputs": 41,
+    "rejected_corruptions": [
+      "seven-pixel head restored",
+      "front plane moved",
+      "marker age mismatch",
+      "crest length changed",
+      "hand detached",
+      "native eye displaced",
+      "head UV changed"
+    ],
+    "control_sha256": "c1f891d16553762f342faa716294bdad1b8e2261f9497320466aed6f205dd5de",
+    "scope": "Independent final JSON geometry, rigid limb contacts, fixed native anchors and original source hashes; actual renderer and material behavior is checked separately in Minecraft."
+  },
+  "VARIANTS_022_CHECKS.json": {
+    "release": "0.22.0",
+    "result": "PASS",
+    "atlases": 209,
+    "pixel_comparisons": 1712128,
+    "protected_eye_pixels": 13376,
+    "type_secondary_age_fits": 7695,
+    "forehead_goggles_cases": 810,
+    "exposed_symbol_samples": 68445,
+    "rejected_corruptions": [
+      "eye",
+      "alpha",
+      "theme hue"
+    ],
+    "scope": "Native generated PNG pixels and static 15-family/9-endpoint/3-age fits. Actual moving ancestors/material selection are separately checked by the client probe."
+  },
+  "ITEMS_EGGS_022_CHECKS.json": {
+    "release": "0.22.0",
+    "result": "PASS",
+    "checks": 25812,
+    "item_sprites": 250,
+    "egg_icons": 65,
+    "dna_sprites": 52,
+    "drives": 4,
+    "item_models": 314,
+    "resolved_texture_links": 389,
+    "additional_bound_block_textures": 25,
+    "canonical_icon_pixels": 683,
+    "placed_egg_atlases": 191,
+    "identical_shiny_albedo_pairs": 86,
+    "shell_uv_samples": 468,
+    "cocoon_uv_and_center_samples": 3216,
+    "cocoon_sha256": {
+      "evolution": "107de8bab9250508f6c5225f4d5d36e83748056bb5fedf4c6d3b2073024eba41",
+      "rebirth": "7778d57b6f0cb663ceb28d6fce3d6ca4bc12e22fdecb8890954e6dbc4e817535",
+      "death": "36b78768d542d6360a8dde54016f2a3acbdf22bc5c2e8945ff7b62e15da871c2"
+    },
+    "rejected_corruptions": [
+      "canonical icon glare overwrite",
+      "dangling item texture",
+      "fractional sprite fringe",
+      "closing shell UV stretch",
+      "placed shell longitude seam",
+      "painted shiny albedo stripe",
+      "visible cocoon alpha hole",
+      "cocoon longitude discontinuity",
+      "colored coat used for death cocoon"
+    ],
+    "scope": "Actual resource/binding/palette/UV checks. Final material animation, shell appearance and inventory presentation require the separate actual-client review."
+  },
+  "successful_log": "docs/validation-0.22/asset-rebuild.txt",
+  "log_sha256": "eed3225bfe8dccfc42dbdc3d75750bc5c08d30627c4f6caceb7377cb63c9ea2f",
+  "resource_tree_sha256": "d3fd8e2d9239057f6a39973e699efc23598c53ed22419a4d93ed2635ef613ade",
+  "rebuilt_resource_tree_sha256": "d3fd8e2d9239057f6a39973e699efc23598c53ed22419a4d93ed2635ef613ade",
+  "raw_input_tree_sha256": "2fc13660c0bc7f5512f0b3f4316852045fd3574510d8697391a47abcb665e00e",
+  "pipeline_source_sha256": "a22bf66d4a5b56052c577aa3e600c8bed53428b2ce84d36ea20a20b86664e0c0",
+  "python": "3.12.14",
+  "pillow": "12.3.0",
+  "numpy": "2.3.5",
+  "platform": "Linux x86_64"
+}

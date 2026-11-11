@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/tasty_fruit",
+    "particle": "chao_garden:block/sa2_02514/tasty_fruit/sa2_alo_mi_paku00_180"
+  },
+  "base": {
+    "parent": "chao_garden:item/fruit02512/tasty_fruit"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/tasty_fruit"
+      },
+      "gui_light": "front"
+    }
+  }
+}

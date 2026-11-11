@@ -1,0 +1,74 @@
+CHAO GARDEN 0.15.0
+Minecraft Java 1.21.1 | NeoForge 21.1.219+ (21.1 series) | Java 21
+
+OFFICIAL FORMS AND GARDEN REFINEMENTS
+Main Chao forms now use the supplied official addon models, textures and
+animation source. Nineteen retained mod themes, twenty-one animal-gene
+sources and Light/Angel/Devil Chaos additions follow the imported skeletons.
+Egg shell texture wrapping is repaired. Fourteen SA2-inspired fruit families
+have five natural sources and nine market-first families with rotating fruit
+offers. The Garden Block has a PC Chao transporter appearance.
+Shift-right-click pickup directly creates the filled carrier; an empty
+carrier is no longer obtainable. The new Chao Garden CD plays the Neutral
+Garden introduction plus one full loop, about 115.81 seconds in a jukebox.
+
+INSTALL
+Replace the previous jar with chao_garden-0.15.0.jar in mods/.
+Install the same version on the server and every client. Java 21 is needed.
+Optional adult equipment companions require compatible NeoForge Accessories
+and its dependency. Third-party mods are not bundled. See source/README.md
+and source/TESTING.md for exact dependencies and completed validation.
+
+START PLAYING
+Craft a Normal Chao Egg with egg + emerald + wheat seeds + oak sapling.
+Place it to incubate. The default hatch time is five active minutes.
+Craft the Care Guide with a book + wheat seeds for recipes and mechanics.
+Empty-hand right-click pets/claims an unowned Chao. Sneak + empty-hand
+right-click picks up your own Chao directly. Use its filled carrier on a
+block to release it into clear space. Holding a filled carrier displays
+the saved Chao with animation. Ownership and duplicate-UUID checks apply.
+Right-click with fruit, a drive or a DNA sample to give a care item.
+Use a Garden Bell to link a Chao to a garden. Right-click the transporter
+Garden Block for its roster and garden enrollment. Race and karate lobbies
+remain available through their starting line and complete 7x7 mat.
+
+FRUITS, MARKET AND MUSIC
+Five natural families: Garden, Hero Garden, Dark Garden, Strong and Tasty.
+Nine market-first families: Hero, Dark, Round, Triangle, Square, Heart,
+Chao, Mushroom and Nutritious Mushroom. Buy rotating fruit offers with
+emeralds, craft each obtained fruit into its seed, then grow renewable trees. Existing saved legacy crops stay
+compatible; see source/MECHANICS.md for the precise migration rules.
+Craft the Chao Garden CD with eight iron nuggets around an emerald.
+It uses normal vanilla jukebox playback and can be ejected and reused.
+
+PREVIEWS
+Extract the complete ZIP and open previews/index.html. The gallery has
+fifteen current full-frame feature captures and a motion review GIF made
+from eight distinct captured idle frames. All 23 original PNG frames
+are included once in source/docs/screenshots/release-0.15/.
+The GIF uses full frames resized to 640x360 at four review frames per second;
+it is a review sequence, not a claim about the original capture timing.
+PDF: source/docs/chao-garden-0.15.0-preview-gallery.pdf
+Eight pages show selected current game views, including the held Chao and
+music disc. The HTML gallery opens offline with its included local images.
+Optional themes are shown with development identity fixtures; these views
+do not establish compatibility with complete third-party modpacks.
+Historical previews retain their original release labels. Redundant
+composite feature sheets are omitted; their individual frames remain.
+
+SOURCE AND EDITING
+source/ contains code, tests, resources, generators and asset-only model
+inputs. art/imported_chao contains only the selected geometry, textures and
+animation input. Imported source JSON and generated overlays are editable.
+Blockbench/ retains eight editable authoring projects for custom additions;
+those older authoring rigs are not substitutes for the imported JSON forms.
+Build caches, worlds, private inspection files and third-party jars are
+excluded. With Java 21, use ./gradlew build coreTest runGameTestServer.
+SHA256SUMS.txt records the installable jar checksum.
+
+CREDITS
+Unofficial fan project. Chao/Sonic Adventure and the supplied official addon
+assets belong to their rights holders. The import preserves supplied model,
+texture and animation inputs; custom themes and Minecraft features are
+project adaptations. Audio and source provenance appear in source/docs/.
+Read source/LICENSE, source/TEMPLATE_LICENSE.txt and source/docs/AUDIO_CREDITS.md.

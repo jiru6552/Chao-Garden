@@ -1,0 +1,11 @@
+# School pupils in0.25.7
+
+The school has four ambient baby Chao. Two explore the foyer and use its authored ball and rattle. Two occupy a classroom side row, clear of the four keeper boarding seats, and participate in the teacher's current scheduled lesson. Song uses the existing synchronized singing pose, musical-note particles and supplied Chao vocal clips; drawing, dances and instruments use their existing action poses. Instrument cues use block sounds; pupil voices use the neutral entity sound category, independently of area music.
+
+These are school-owned residents of the new `kindergarten_pupil` entity type. They have stable per-slot identities and ordinary native entity saves. Creation waits for all chunks intersecting their actual bounded pockets to publish and tick. Recovery retains the canonical UUID and saved payload, removes duplicate ambient slots, and uses vanilla dimension transfer to rehome a loaded pupil accidentally moved into another realm. A different entity with the same UUID is never adopted or deleted.
+
+A dedicated goal supplies real navigation and native toy sessions. Its vanilla movement and physics tick normally; the keeper care and life simulation is skipped only for this subtype. The babies stay babies and earn no stats, lesson credit, toy rewards or inventory items. Their two toys are protected authored school blocks. The existing baby model, expressions, action poses, voices and toy textures are reused.
+
+Pupils reject care, capture, leads, damage, breeding and generic entity interactions. Their subtype is excluded from Bell/transporter management and nearest-Chao editing commands. No school roster seat is reserved and no owned creature is repurposed. Ordinary owned babies continue to use the original care, capture, enrollment and classroom paths.
+
+Three focused native cases cover saved identities and duplicate/bounds/cross-realm recovery; real live-goal lesson participation and native toy play across loaded ticks without care progression; and carrier/interaction/ownership boundaries with an ordinary owned baby as a positive control. These checks supplement the existing school and care suite. The client QA view inspects actual school pupils performing the schedule's song lesson, rather than introducing fixture-owned Chao.

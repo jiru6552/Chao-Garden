@@ -1,0 +1,108 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/cwe02516/suspicious_potion.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "cwe_kin_koribbon_ffffffff_32": "chao_garden:block/cwe02516/suspicious_potion/cwe_kin_koribbon_ffffffff_32",
+    "cwe__one_ffffffff_48": "chao_garden:block/cwe02516/suspicious_potion/cwe__one_ffffffff_48",
+    "cwe_kin_dolabel1_ffffffff_48": "chao_garden:block/cwe02516/suspicious_potion/cwe_kin_dolabel1_ffffffff_48",
+    "particle": "chao_garden:block/cwe02516/suspicious_potion/cwe_kin_koribbon_ffffffff_32"
+  },
+  "render_type": "minecraft:cutout",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        35,
+        0
+      ],
+      "translation": [
+        -1,
+        4,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "variants": {
+    "facing=north,frame=0,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 0
+    },
+    "facing=north,frame=0,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 0
+    },
+    "facing=north,frame=1,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 0
+    },
+    "facing=north,frame=1,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 0
+    },
+    "facing=north,frame=2,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 0
+    },
+    "facing=north,frame=2,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 0
+    },
+    "facing=north,frame=3,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 0
+    },
+    "facing=north,frame=3,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 0
+    },
+    "facing=north,frame=0,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_0",
+      "y": 0
+    },
+    "facing=north,frame=0,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_0",
+      "y": 0
+    },
+    "facing=north,frame=1,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_1",
+      "y": 0
+    },
+    "facing=north,frame=1,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_1",
+      "y": 0
+    },
+    "facing=north,frame=2,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_2",
+      "y": 0
+    },
+    "facing=north,frame=2,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_2",
+      "y": 0
+    },
+    "facing=north,frame=3,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_3",
+      "y": 0
+    },
+    "facing=north,frame=3,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_3",
+      "y": 0
+    },
+    "facing=east,frame=0,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 90
+    },
+    "facing=east,frame=0,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 90
+    },
+    "facing=east,frame=1,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 90
+    },
+    "facing=east,frame=1,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 90
+    },
+    "facing=east,frame=2,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 90
+    },
+    "facing=east,frame=2,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 90
+    },
+    "facing=east,frame=3,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 90
+    },
+    "facing=east,frame=3,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 90
+    },
+    "facing=east,frame=0,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_0",
+      "y": 90
+    },
+    "facing=east,frame=0,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_0",
+      "y": 90
+    },
+    "facing=east,frame=1,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_1",
+      "y": 90
+    },
+    "facing=east,frame=1,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_1",
+      "y": 90
+    },
+    "facing=east,frame=2,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_2",
+      "y": 90
+    },
+    "facing=east,frame=2,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_2",
+      "y": 90
+    },
+    "facing=east,frame=3,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_3",
+      "y": 90
+    },
+    "facing=east,frame=3,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_3",
+      "y": 90
+    },
+    "facing=south,frame=0,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 180
+    },
+    "facing=south,frame=0,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 180
+    },
+    "facing=south,frame=1,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 180
+    },
+    "facing=south,frame=1,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 180
+    },
+    "facing=south,frame=2,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 180
+    },
+    "facing=south,frame=2,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 180
+    },
+    "facing=south,frame=3,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 180
+    },
+    "facing=south,frame=3,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 180
+    },
+    "facing=south,frame=0,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_0",
+      "y": 180
+    },
+    "facing=south,frame=0,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_0",
+      "y": 180
+    },
+    "facing=south,frame=1,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_1",
+      "y": 180
+    },
+    "facing=south,frame=1,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_1",
+      "y": 180
+    },
+    "facing=south,frame=2,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_2",
+      "y": 180
+    },
+    "facing=south,frame=2,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_2",
+      "y": 180
+    },
+    "facing=south,frame=3,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_3",
+      "y": 180
+    },
+    "facing=south,frame=3,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_3",
+      "y": 180
+    },
+    "facing=west,frame=0,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 270
+    },
+    "facing=west,frame=0,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 270
+    },
+    "facing=west,frame=1,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 270
+    },
+    "facing=west,frame=1,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 270
+    },
+    "facing=west,frame=2,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 270
+    },
+    "facing=west,frame=2,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 270
+    },
+    "facing=west,frame=3,playing=false,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_idle",
+      "y": 270
+    },
+    "facing=west,frame=3,playing=false,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_idle",
+      "y": 270
+    },
+    "facing=west,frame=0,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_0",
+      "y": 270
+    },
+    "facing=west,frame=0,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_0",
+      "y": 270
+    },
+    "facing=west,frame=1,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_1",
+      "y": 270
+    },
+    "facing=west,frame=1,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_1",
+      "y": 270
+    },
+    "facing=west,frame=2,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_2",
+      "y": 270
+    },
+    "facing=west,frame=2,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_2",
+      "y": 270
+    },
+    "facing=west,frame=3,playing=true,waterlogged=false": {
+      "model": "chao_garden:block/chao_lifesaver_play_3",
+      "y": 270
+    },
+    "facing=west,frame=3,playing=true,waterlogged=true": {
+      "model": "chao_garden:block/chao_lifesaver_float_play_3",
+      "y": 270
+    }
+  }
+}

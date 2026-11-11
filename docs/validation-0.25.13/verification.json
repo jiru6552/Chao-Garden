@@ -1,0 +1,66 @@
+{
+  "release": "0.25.13",
+  "result": "PASS",
+  "jar_sha256": "264ca6fe57bd4890af2d3462df18095edbdcec3bb329a7b403d893b30ac7b92c",
+  "jar_bytes": 26022707,
+  "build": {
+    "core_suites": 18,
+    "core_checks": 1710878,
+    "result": "PASS"
+  },
+  "native_servers": {
+    "default": {
+      "passed": 266,
+      "required": 266
+    },
+    "accessories_owo": {
+      "passed": 266,
+      "required": 266,
+      "accessories": "1.1.0-beta.54+1.21.1",
+      "owo": "0.12.15.6-beta.1+1.21"
+    }
+  },
+  "client": {
+    "items": 74,
+    "contexts": 592,
+    "missing_materials": 0,
+    "scenes": 7,
+    "scene_captures": 10,
+    "action_captures": 33,
+    "return_restored": true,
+    "live_action_results": [
+      "eat",
+      "plant",
+      "water"
+    ],
+    "review": "visual-review.txt"
+  },
+  "asset_replay": {
+    "resources": 7087,
+    "byte_identical": true,
+    "java_files_unchanged": 318
+  },
+  "resource_changes": {
+    "item_display_json": 74,
+    "other_resources_byte_identical_to_02512": 7013,
+    "ogg_unchanged": 19
+  },
+  "new_native_regressions": [
+    "Exact work-spot approach from several blocks away",
+    "Watering recovery retained after a single commit",
+    "Displacement cancels watering before commit"
+  ],
+  "limits": [
+    "Representative child-rig live interactions; no exhaustive evolved-form/accessory visual matrix.",
+    "All items checked structurally across eight render contexts; player third-person poses not exhaustively reviewed.",
+    "No Android, arbitrary shader/resource-pack or every-FOV coverage.",
+    "Dev-only trace and terminal-fixture cleanup were adjusted after the reviewed client run; final production code was unchanged and compiled/tested afterward."
+  ],
+  "logs": {
+    "final-build.log": "35ff679c08c4478a7d248fb98f9c9ce2cc68dfd0b8ffe6dda0ebcb3075ad06d7",
+    "server-default.log": "cf111a79c0ff1c0f98af6f82edd7eed110e880ccedc8985523a5e6881ed75ec9",
+    "server-accessories.log": "bde03a13213cd8888fd61b91340d8cca48df585729cd39176d09af869646e524",
+    "client-final.log": "4923bcccc19b267e1172f80364ef32779bd22ca5dfba956c38a61874e47113e0",
+    "asset-rebuild.log": "83e0995665c39390827bc276fdbbe6a098cecb784fabab28cd8c96a929bdcbd7"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_drum",
+    "particle": "chao_garden:block/sa2_02515/chao_drum/sa2_dram03_196"
+  },
+  "base": {
+    "parent": "chao_garden:item/sa2_02515/chao_drum"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_drum"
+      },
+      "gui_light": "front"
+    }
+  }
+}

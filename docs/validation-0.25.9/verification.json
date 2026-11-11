@@ -1,0 +1,82 @@
+{
+  "release": "0.25.9",
+  "result": "PASS",
+  "jar_sha256": "b8b9fcbb08040f5ffd5d2bf0286b1bed92ad2baa4680451c88fa42f52276fa5b",
+  "jar_bytes": 14228072,
+  "build": {
+    "core_suites": 18,
+    "core_checks": 1695092,
+    "final_jar": "PASS"
+  },
+  "native_servers": {
+    "default": {
+      "required": 250,
+      "passed": 250
+    },
+    "accessories_owo": {
+      "required": 250,
+      "passed": 250,
+      "accessories": "1.1.0-beta.54+1.21.1",
+      "owo": "0.12.15.6-beta.1+1.21"
+    },
+    "execution": "NeoForge native development GameTest runtime; production classes and assets compared to the installable JAR during packaging"
+  },
+  "client": {
+    "runtime": "ordinary NeoForge Minecraft client, software Mesa and null OpenAL output",
+    "native_block_states": 5860,
+    "missing_models": 0,
+    "scenes": 7,
+    "frames": 8,
+    "saves": 8,
+    "return_restored": true,
+    "visual_review": [
+      "hero-wide",
+      "hero-pavilion",
+      "hero-fountain",
+      "school-chorus-start"
+    ],
+    "audio": {
+      "fixture": "synthetic nine-second ADX files imported through the production importer",
+      "areas": [
+        "lobby",
+        "hero",
+        "dark",
+        "kindergarten"
+      ],
+      "chorus_starts": 3,
+      "active_ticks": 499,
+      "no_overlap": true,
+      "stopped_after_exit": true,
+      "audible_listening_claim": false
+    }
+  },
+  "asset_replay": {
+    "result": "PASS",
+    "live_files": 6595,
+    "regenerated_files": 6595,
+    "different_files": []
+  },
+  "importer": {
+    "real_synthetic_adx_decode": true,
+    "vorbis_outputs": 11,
+    "channel_layout_checked": true,
+    "missing_ambiguous_corrupt_inputs_rejected": true,
+    "existing_output_preserved_on_failure": true
+  },
+  "limits": [
+    "Original SA2 area and chorus recordings were not supplied, bundled, or listened to.",
+    "The importer supports six classroom chorus files, not the separate learned solo singing repertoire.",
+    "Hero references were inspected still images; no additional playable walkthrough was reviewed.",
+    "Internal client frames and synthetic audio fixtures are excluded from the deliverable."
+  ],
+  "logs": {
+    "production-build.log": "520aa4b1dc532c99e2ff69ca61c6179b4d711073c00b3602d57d3f6d132be983",
+    "final-jar.log": "981c5f2d80850115584b2fd4eb23269d7d214a0321e6d9545e9c438dc9dc9516",
+    "server-default.log": "118514d1dfcda888427ffded223af7be079005f575c8be219e157c6e711874a3",
+    "server-accessories.log": "d2b0ff3331cf045eebccf107b1b6c6b916ed8db5b416f8d73b92180f30f4b66d",
+    "asset-rebuild.log": "9affbcce6e1435a49f21fc73958214b09206ef4a1ca51194e8f192c7a1f5b5e1",
+    "audio-importer.log": "aeab4eca6d5c02c72128d4b14c546f7070144501cb75af568ae50fedba64046c",
+    "client-smoke.log": "24744fff349e8d8bc640c0fc920484b9103f7b6890970907ebf2e05b929bd999",
+    "asset-replay-comparison.json": "048191a4ca1553ee9c5bdd58cdf812bed0a8227a81d4b748e6488e1748d27ecf"
+  }
+}

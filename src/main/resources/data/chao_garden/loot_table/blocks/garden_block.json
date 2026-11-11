@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        },
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "chao_garden:garden_block",
+              "properties": {
+                "part": "0"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "chao_garden:garden_block",
+              "properties": {
+                "part": "8"
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chao_garden:garden_block"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "release": "0.25.5",
+  "scope": "Public source visual study; no full game assets, model imports or browser screenshots included. User-provided video metadata inspected; media CDN returned Site Unavailable so video frames and timestamp observations are unavailable.",
+  "images": [
+    {
+      "file": "primary-dark/sega-dark-00.jpg",
+      "url": "https://sonic.sega.jp/sonicadv2/0601/shots/chaodg00.jpg",
+      "host_page": "https://sonic.sega.jp/sonicadv2/0601/shots_e.html",
+      "source_kind": "Original game screenshot on official Sonic Team/Sega2001 page",
+      "copyright": "Sonic Team / SEGA; screenshots visibly retain Gamespot attribution",
+      "edition": "Sonic Adventure 2 Dreamcast-era2001; do not silently treat as Battle geometry",
+      "use": "Visual study only; not runtime texture or mesh",
+      "size_bytes": 20434,
+      "sha256": "c4e77545cfbcdb7dc9674eb591fe5cca316264300406898574419dbd654ce5cb"
+    },
+    {
+      "file": "primary-dark/sega-dark-01.jpg",
+      "url": "https://sonic.sega.jp/sonicadv2/0601/shots/chaodg01.jpg",
+      "host_page": "https://sonic.sega.jp/sonicadv2/0601/shots_e.html",
+      "source_kind": "Original game screenshot on official Sonic Team/Sega2001 page",
+      "copyright": "Sonic Team / SEGA; screenshots visibly retain Gamespot attribution",
+      "edition": "Sonic Adventure 2 Dreamcast-era2001; do not silently treat as Battle geometry",
+      "use": "Visual study only; not runtime texture or mesh",
+      "size_bytes": 22129,
+      "sha256": "c52962f4f065f8648fc5a686ad191f18b78033338379729440f3e0bee1dda487"
+    },
+    {
+      "file": "primary-dark/sega-dark-02.jpg",
+      "url": "https://sonic.sega.jp/sonicadv2/0601/shots/chaodg02.jpg",
+      "host_page": "https://sonic.sega.jp/sonicadv2/0601/shots_e.html",
+      "source_kind": "Original game screenshot on official Sonic Team/Sega2001 page",
+      "copyright": "Sonic Team / SEGA; screenshots visibly retain Gamespot attribution",
+      "edition": "Sonic Adventure 2 Dreamcast-era2001; do not silently treat as Battle geometry",
+      "use": "Visual study only; not runtime texture or mesh",
+      "size_bytes": 20712,
+      "sha256": "936edf18af445fc0fa579f086f022d48dc84a35eb9618ebf3bb58b1314fffbc0"
+    },
+    {
+      "file": "primary-dark/sega-dark-03.jpg",
+      "url": "https://sonic.sega.jp/sonicadv2/0601/shots/chaodg03.jpg",
+      "host_page": "https://sonic.sega.jp/sonicadv2/0601/shots_e.html",
+      "source_kind": "Original game screenshot on official Sonic Team/Sega2001 page",
+      "copyright": "Sonic Team / SEGA; screenshots visibly retain Gamespot attribution",
+      "edition": "Sonic Adventure 2 Dreamcast-era2001; do not silently treat as Battle geometry",
+      "use": "Visual study only; not runtime texture or mesh",
+      "size_bytes": 20438,
+      "sha256": "83136ba96c5d6f4798e89bca3f939bd7fc78ece5c9f62f132f8160c3009ba024"
+    },
+    {
+      "file": "primary-dark/battle-dark-overview.png",
+      "url": "https://chao-island.com/assets/images/info-center/gardens-sa2b-dark.png",
+      "host_page": "https://chao-island.com/info-center/basics/gardens-sa2.html",
+      "source_kind": "Original game screenshot/overview hosted by Chao Island",
+      "copyright": "Underlying game imagery SEGA / Sonic Team; host Chao Island",
+      "edition": "Sonic Adventure 2 Battle",
+      "use": "Visual study only; not runtime texture or mesh",
+      "size_bytes": 1014682,
+      "sha256": "0ae29d80431118fedb3330c47d12cc68ea57612d2e1e67bd9f7a3538644fcc14"
+    }
+  ],
+  "requested_videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=WTwuFpCJ-uI",
+      "observed_title": "How to get the dark garden (SA2)",
+      "observed_author": "Dark Tiger",
+      "observed_duration_seconds": 639,
+      "inspection": "Metadata only. No decoded frames; no tail content/timestamp claim."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sy92GwrCZiY",
+      "observed_title": "how to get the hero garden (SA2)",
+      "observed_author": "Dark Tiger",
+      "observed_duration_seconds": 903,
+      "inspection": "Metadata via direct linked item on author video page. No decoded frames; no tail content/timestamp claim."
+    }
+  ],
+  "gate_previews": [
+    {
+      "asset": "Dark Garden Entrance",
+      "game": "Sonic Adventure 2: Battle",
+      "model_resource_asset_id": 320117,
+      "page_url": "https://models.spriters-resource.com/gamecube/sonicadventure2battle/asset/320117/",
+      "image_url": "https://models.spriters-resource.com/media/asset_icons/317/320117.png?updated=1755505309",
+      "uploader": "Models124717",
+      "inspection": "Original game-model preview icon inspected. No mesh or texture import. No browser screenshot included."
+    },
+    {
+      "asset": "Hero Garden Entrance",
+      "game": "Sonic Adventure 2: Battle",
+      "model_resource_asset_id": 320119,
+      "page_url": "https://models.spriters-resource.com/gamecube/sonicadventure2battle/asset/320119/",
+      "image_url": "https://models.spriters-resource.com/media/asset_icons/317/320119.png?updated=1755505309",
+      "uploader": "Models124717",
+      "inspection": "Original148x125 game-model preview icon inspected in browser. No mesh or texture import. No browser screenshot included."
+    }
+  ]
+}

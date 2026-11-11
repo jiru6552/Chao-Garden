@@ -1,0 +1,144 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "minecraft:overworld",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "minecraft:plains",
+          "features": false,
+          "lakes": false,
+          "layers": [
+            {
+              "block": "minecraft:bedrock",
+              "height": 1
+            },
+            {
+              "block": "minecraft:dirt",
+              "height": 2
+            },
+            {
+              "block": "minecraft:grass_block",
+              "height": 1
+            }
+          ],
+          "structure_overrides": [
+            "minecraft:strongholds",
+            "minecraft:villages"
+          ]
+        }
+      }
+    },
+    "minecraft:the_end": {
+      "type": "minecraft:the_end",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:the_end"
+        },
+        "settings": "minecraft:end"
+      }
+    },
+    "minecraft:the_nether": {
+      "type": "minecraft:the_nether",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "preset": "minecraft:nether"
+        },
+        "settings": "minecraft:nether"
+      }
+    },
+    "chao_garden:hub": {
+      "type": "chao_garden:hub",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "minecraft:the_void",
+          "features": false,
+          "lakes": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "chao_garden:kindergarten": {
+      "type": "chao_garden:kindergarten",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "chao_garden:scenic_daylight",
+          "features": false,
+          "lakes": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "chao_garden:garden": {
+      "type": "chao_garden:garden",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "chao_garden:scenic_daylight",
+          "features": false,
+          "lakes": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "chao_garden:hero_garden": {
+      "type": "chao_garden:hero_garden",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "chao_garden:hero_daylight",
+          "features": false,
+          "lakes": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "chao_garden:dark_garden": {
+      "type": "chao_garden:dark_garden",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "chao_garden:dark_twilight",
+          "features": false,
+          "lakes": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    }
+  }
+}

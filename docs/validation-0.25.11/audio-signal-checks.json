@@ -1,0 +1,107 @@
+{
+  "release": "0.25.11",
+  "result": "PASS",
+  "source": "user-supplied ADX.zip",
+  "tracks": [
+    {
+      "id": "lobby",
+      "seconds": 66.993016,
+      "channels": 2,
+      "source_samples": 1477195,
+      "converted_samples": 1477195,
+      "waveform_correlation": 0.9981425219557101,
+      "rms_ratio": 0.9987466421514477
+    },
+    {
+      "id": "neutral",
+      "seconds": 107.476009,
+      "channels": 2,
+      "source_samples": 2369846,
+      "converted_samples": 2369846,
+      "waveform_correlation": 0.9993744575325776,
+      "rms_ratio": 1.0014503937973378
+    },
+    {
+      "id": "hero",
+      "seconds": 116.695011,
+      "channels": 2,
+      "source_samples": 2573125,
+      "converted_samples": 2573125,
+      "waveform_correlation": 0.9995528383485842,
+      "rms_ratio": 1.0019818890425218
+    },
+    {
+      "id": "dark",
+      "seconds": 102.85,
+      "channels": 2,
+      "source_samples": 2267843,
+      "converted_samples": 2267843,
+      "waveform_correlation": 0.9985308920268658,
+      "rms_ratio": 0.9996004976877338
+    },
+    {
+      "id": "kindergarten",
+      "seconds": 85.28,
+      "channels": 2,
+      "source_samples": 1880424,
+      "converted_samples": 1880424,
+      "waveform_correlation": 0.9990622981980326,
+      "rms_ratio": 1.0002922832712262
+    },
+    {
+      "id": "chao_k_sing_hero1",
+      "seconds": 18.218957,
+      "channels": 1,
+      "source_samples": 401728,
+      "converted_samples": 401728,
+      "waveform_correlation": 0.9988152280225014,
+      "rms_ratio": 1.001981415634798
+    },
+    {
+      "id": "chao_k_sing_hero2",
+      "seconds": 30.416689,
+      "channels": 1,
+      "source_samples": 670688,
+      "converted_samples": 670688,
+      "waveform_correlation": 0.9978725530025462,
+      "rms_ratio": 1.000001070942093
+    },
+    {
+      "id": "chao_k_sing_hero3",
+      "seconds": 19.906757,
+      "channels": 1,
+      "source_samples": 438944,
+      "converted_samples": 438944,
+      "waveform_correlation": 0.9970922694487959,
+      "rms_ratio": 0.9982118746283752
+    },
+    {
+      "id": "chao_k_sing_dark1",
+      "seconds": 25.594195,
+      "channels": 1,
+      "source_samples": 564352,
+      "converted_samples": 564352,
+      "waveform_correlation": 0.9979045616096328,
+      "rms_ratio": 1.0003596630809641
+    },
+    {
+      "id": "chao_k_sing_dark2",
+      "seconds": 22.346304,
+      "channels": 1,
+      "source_samples": 492736,
+      "converted_samples": 492736,
+      "waveform_correlation": 0.9972906024458349,
+      "rms_ratio": 0.9986296692583415
+    },
+    {
+      "id": "chao_k_sing_dark3",
+      "seconds": 18.737052,
+      "channels": 1,
+      "source_samples": 413152,
+      "converted_samples": 413152,
+      "waveform_correlation": 0.998031982111035,
+      "rms_ratio": 1.0000739173244513
+    }
+  ],
+  "method": "Full decode of every supplied source and installed output, downmixed/resampled equally for signal comparison; original area stereo and positional chorus mono verified separately. This is not an audible listening claim."
+}

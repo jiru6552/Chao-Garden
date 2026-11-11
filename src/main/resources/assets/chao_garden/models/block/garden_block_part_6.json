@@ -1,0 +1,539 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "shell": "chao_garden:block/transporter_shell",
+    "ivory": "chao_garden:block/transporter_ivory",
+    "red": "chao_garden:block/transporter_red",
+    "gold": "chao_garden:block/transporter_gold",
+    "orb": "chao_garden:block/transporter_orb",
+    "blue": "chao_garden:block/transporter_blue",
+    "neck": "chao_garden:block/transporter_neck",
+    "screen": "chao_garden:block/transporter_screen",
+    "particle": "chao_garden:block/transporter_shell"
+  },
+  "elements": [
+    {
+      "name": "wide monitor cheeks",
+      "from": [
+        4.8,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        4.076046,
+        13.6
+      ],
+      "faces": {
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            11.91111
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.888889,
+            0.0,
+            16.0,
+            11.91111
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.888889,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "upper monitor",
+      "from": [
+        6.08,
+        4.076046,
+        0.16
+      ],
+      "to": [
+        16,
+        7.726236,
+        12.8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "upper monitor taper",
+      "from": [
+        8.16,
+        7.726236,
+        1.28
+      ],
+      "to": [
+        16,
+        9.551331,
+        12.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "monitor crown",
+      "from": [
+        10.4,
+        9.551331,
+        2.4
+      ],
+      "to": [
+        16,
+        10.768061,
+        11.04
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "chao tuft",
+      "from": [
+        12.8,
+        10.768061,
+        3.36
+      ],
+      "to": [
+        16,
+        12.228137,
+        9.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "orb mount",
+      "from": [
+        14.72,
+        12.228137,
+        5.12
+      ],
+      "to": [
+        16,
+        13.079848,
+        7.68
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "orb lower",
+      "from": [
+        14.56,
+        13.079848,
+        4.96
+      ],
+      "to": [
+        16,
+        13.688213,
+        7.84
+      ],
+      "faces": {
+        "north": {
+          "texture": "#orb",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "orb middle",
+      "from": [
+        13.92,
+        13.688213,
+        4.32
+      ],
+      "to": [
+        16,
+        15.391635,
+        8.48
+      ],
+      "faces": {
+        "north": {
+          "texture": "#orb",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "orb upper",
+      "from": [
+        14.56,
+        15.391635,
+        4.96
+      ],
+      "to": [
+        16,
+        16.0,
+        7.84
+      ],
+      "faces": {
+        "north": {
+          "texture": "#orb",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#orb",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "axis=y,branched=false": {
+      "model": "chao_garden:block/dark_garden_deadwood"
+    },
+    "axis=y,branched=true": {
+      "model": "chao_garden:block/dark_garden_deadwood_joint"
+    },
+    "axis=x,branched=false": {
+      "model": "chao_garden:block/dark_garden_deadwood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,branched=true": {
+      "model": "chao_garden:block/dark_garden_deadwood_joint"
+    },
+    "axis=z,branched=false": {
+      "model": "chao_garden:block/dark_garden_deadwood",
+      "x": 90
+    },
+    "axis=z,branched=true": {
+      "model": "chao_garden:block/dark_garden_deadwood_joint"
+    }
+  }
+}

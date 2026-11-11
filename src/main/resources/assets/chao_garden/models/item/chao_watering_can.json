@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/chao_watering_can",
+    "particle": "chao_garden:block/sa2_02514/chao_watering_can/sa2_johro01_52"
+  },
+  "base": {
+    "parent": "chao_garden:item/fruit02512/chao_watering_can"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/chao_watering_can"
+      },
+      "gui_light": "front"
+    }
+  }
+}

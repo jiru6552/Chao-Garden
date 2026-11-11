@@ -1,0 +1,85 @@
+{
+  "release": "0.25.11",
+  "bundled_recordings_count": 5,
+  "regions": [
+    {
+      "id": "lobby",
+      "title": "Chao Lobby",
+      "sound_event": "chao_garden:music.area.lobby",
+      "asset": "assets/chao_garden/sounds/music/area/lobby.ogg",
+      "bundled": true,
+      "resourcepack_file": "lobby.ogg",
+      "source_kind": "user_supplied_sa2_adx",
+      "sha256": "ecb361ceb5b7094fbdefc3834cd2b3e91a328484d758f2fe0e42cdc6f09f961e",
+      "source_file": "chao_hall.adx",
+      "source_sha256": "12797305f00b2513ee4cbbb1747968dd9bbb746e91433cc5e1f8ebef2921e90a",
+      "duration_seconds": 66.993016
+    },
+    {
+      "id": "neutral",
+      "title": "Neutral Garden",
+      "sound_event": "chao_garden:music.area.neutral",
+      "asset": "assets/chao_garden/sounds/music/area/neutral.ogg",
+      "bundled": true,
+      "resourcepack_file": "neutral.ogg",
+      "source_kind": "user_supplied_sa2_adx",
+      "sha256": "9c9c436433e5c4f8a8ce488097785256e7d097a4c3a85e19b2f6340111cf0d5c",
+      "source_file": "chao_g_bgm_n.adx",
+      "source_sha256": "9a994f1f15af4eccb943a26cb51ef4a15dc289d8a89f9177d1b48db3dc19a096",
+      "duration_seconds": 107.476009
+    },
+    {
+      "id": "hero",
+      "title": "Hero Garden",
+      "sound_event": "chao_garden:music.area.hero",
+      "asset": "assets/chao_garden/sounds/music/area/hero.ogg",
+      "bundled": true,
+      "resourcepack_file": "hero.ogg",
+      "source_kind": "user_supplied_sa2_adx",
+      "sha256": "16c11e8a773c627f1282f20ea063283bbdc50a3c3f695207ca48a8a20afb9c01",
+      "source_file": "chao_g_bgm_h.adx",
+      "source_sha256": "127636bb475ce97d45bfe0970c2b580473bff13622a5c1e180dd982402e82d29",
+      "duration_seconds": 116.695011
+    },
+    {
+      "id": "dark",
+      "title": "Dark Garden",
+      "sound_event": "chao_garden:music.area.dark",
+      "asset": "assets/chao_garden/sounds/music/area/dark.ogg",
+      "bundled": true,
+      "resourcepack_file": "dark.ogg",
+      "source_kind": "user_supplied_sa2_adx",
+      "sha256": "ec476f8cd1544fe86d9cda98a9fec1c67e4ccfaf30de12db39691a2a2280de42",
+      "source_file": "chao_g_bgm_d.adx",
+      "source_sha256": "c52fa1002b2ae7d5965b64806ed8b89af29c50218ec665c339c18450ea545e63",
+      "duration_seconds": 102.85
+    },
+    {
+      "id": "kindergarten",
+      "title": "Chao Kindergarten",
+      "sound_event": "chao_garden:music.area.kindergarten",
+      "asset": "assets/chao_garden/sounds/music/area/kindergarten.ogg",
+      "bundled": true,
+      "resourcepack_file": "kindergarten.ogg",
+      "source_kind": "user_supplied_sa2_adx",
+      "sha256": "38c3ebdfc9098393c5d2f3a3f46fa20b6a978668f8c32ccc5e7ab76f4758052c",
+      "source_file": "chao_k_m.adx",
+      "source_sha256": "a28e4e8fa11f6f2d99439ad2df1ec8117d0b98afa18f56b5d58e8b6f838140ee",
+      "duration_seconds": 85.28
+    },
+    {
+      "id": "black_market",
+      "title": "Black Market",
+      "sound_event": "chao_garden:music.area.black_market",
+      "asset": "assets/chao_garden/sounds/music/area/black_market.ogg",
+      "bundled": false,
+      "resourcepack_file": "black_market.ogg",
+      "source_kind": "user_recording_required"
+    }
+  ],
+  "missing_regional_track_ids": [
+    "black_market"
+  ],
+  "scope": "Five region themes converted from the supplied ADX archive. Provenance and codec/waveform verification are recorded in art/audio02511; no listening claim. The original jukebox recording is retained.",
+  "supplied_adx_conversion_verified": true
+}

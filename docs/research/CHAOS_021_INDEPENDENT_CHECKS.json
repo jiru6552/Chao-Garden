@@ -1,0 +1,108 @@
+{
+  "version": "0.21.0",
+  "families": {
+    "light": {
+      "central_downward_locks": {
+        "-1": [
+          [
+            -3.95,
+            -4.25,
+            -0.55
+          ],
+          [
+            -2.65,
+            1.55,
+            2.2
+          ]
+        ],
+        "1": [
+          [
+            2.65,
+            -4.25,
+            -0.55
+          ],
+          [
+            3.95,
+            1.55,
+            2.2
+          ]
+        ]
+      },
+      "connected_volume_cells": {
+        "chaos_crown_lobe_-1": 304,
+        "chaos_crown_lobe_1": 304,
+        "chaos_crown_rear": 165
+      }
+    },
+    "angel": {
+      "head_appendage_width": 10.7,
+      "width_ratio_to_020": 1.1145833333333333,
+      "connected_volume_cells": {
+        "chaos_crown_horn_-1": 702,
+        "chaos_crown_horn_1": 702
+      }
+    },
+    "devil": {
+      "upper_hooked_horns": [
+        [
+          [
+            -4.65,
+            -9.7,
+            -0.7
+          ],
+          [
+            -2.0,
+            -4.8,
+            1.95
+          ]
+        ],
+        [
+          [
+            2.0,
+            -9.7,
+            -0.7
+          ],
+          [
+            4.65,
+            -4.8,
+            1.95
+          ]
+        ]
+      ],
+      "lower_descending_horns": [
+        [
+          [
+            -4.85,
+            -2.3,
+            -0.1
+          ],
+          [
+            -2.5,
+            2.25,
+            3.25
+          ]
+        ],
+        [
+          [
+            2.5,
+            -2.3,
+            -0.1
+          ],
+          [
+            4.85,
+            2.25,
+            3.25
+          ]
+        ]
+      ],
+      "connected_volume_cells": {
+        "chaos_crown_upper_-1": 304,
+        "chaos_crown_lower_-1": 360,
+        "chaos_crown_upper_1": 304,
+        "chaos_crown_lower_1": 360
+      }
+    }
+  },
+  "checks": 2511,
+  "result": "PASS"
+}

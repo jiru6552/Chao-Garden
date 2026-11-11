@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/hero_garden_fruit",
+    "particle": "chao_garden:block/sa2_02514/hero_garden_fruit/sa2_alo_hki_pain04_20"
+  },
+  "base": {
+    "parent": "chao_garden:item/fruit02512/hero_garden_fruit"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/hero_garden_fruit"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+MECHANICS_VISUAL_CAPTURED chao-mechanics-orchard.png stage=0
+[17:49:51] [IO-Worker-2/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-orchard.png: Saved screenshot as chao-mechanics-orchard.png
+[17:49:53] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-fruit-tree.png stage=1
+[17:49:53] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-fruit-tree.png: Saved screenshot as chao-mechanics-fruit-tree.png
+[17:49:55] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-animal-genes.png stage=2
+[17:49:55] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-animal-genes.png: Saved screenshot as chao-mechanics-animal-genes.png
+[17:49:57] [Render thread/DEBUG] [mixin/]: Mixing client.DefaultTooltipPositionerMixin from accessories-common.mixins.json into net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner
+[17:49:57] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[17:49:57] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories->@Inject::accessories$forceLeftPositioning(IILorg/joml/Vector2i;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[17:49:57] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories->@Inject::accessories$forceLeftPositioning(IILorg/joml/Vector2i;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[17:49:57] [Render thread/DEBUG] [mixin/]: accessories-common.mixins.json:client.DefaultTooltipPositionerMixin from mod accessories->@Inject::accessories$forceLeftPositioning(IILorg/joml/Vector2i;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[17:49:57] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-supplies.png stage=3
+[17:49:57] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-supplies.png: Saved screenshot as chao-mechanics-supplies.png
+[17:49:59] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-trader.png stage=4
+[17:49:59] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-trader.png: Saved screenshot as chao-mechanics-trader.png
+[17:50:01] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-black-market.png stage=5
+[17:50:01] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-black-market.png: Saved screenshot as chao-mechanics-black-market.png
+[17:50:03] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-held-companion.png stage=6
+[17:50:03] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-held-companion.png: Saved screenshot as chao-mechanics-held-companion.png
+[17:50:06] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-held-companion-motion.png stage=7
+[17:50:06] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-held-companion-motion.png: Saved screenshot as chao-mechanics-held-companion-motion.png
+[17:50:08] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-race-course.png stage=8
+[17:50:08] [IO-Worker-2/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-race-course.png: Saved screenshot as chao-mechanics-race-course.png
+[17:50:10] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-race-link-preview.png stage=9
+[17:50:10] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-race-link-preview.png: Saved screenshot as chao-mechanics-race-link-preview.png
+[17:50:11] [Render thread/DEBUG] [mixin/]: Mixing tweaks.TextFieldWidgetMixin from owo.mixins.json into net.minecraft.client.gui.components.EditBox
+[17:50:11] [Render thread/DEBUG] [mixin/]: owo.mixins.json:tweaks.TextFieldWidgetMixin from mod owo: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[17:50:11] [Render thread/DEBUG] [mixin/]: Mixing ui.TextFieldWidgetMixin from owo.mixins.json into net.minecraft.client.gui.components.EditBox
+[17:50:11] [Render thread/DEBUG] [mixin/]: owo.mixins.json:ui.TextFieldWidgetMixin from mod owo: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[17:50:11] [Render thread/DEBUG] [mixin/]: Mixing ui.access.TextFieldWidgetAccessor from owo.mixins.json into net.minecraft.client.gui.components.EditBox
+[17:50:11] [Render thread/DEBUG] [mixin/]: owo.mixins.json:ui.access.TextFieldWidgetAccessor from mod owo: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[17:50:11] [Render thread/DEBUG] [mixin/]: owo.mixins.json:tweaks.TextFieldWidgetMixin from mod owo->@Inject::iProvideUsefulSeparators(IIZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable
+[17:50:11] [Render thread/DEBUG] [mixin/]: owo.mixins.json:ui.TextFieldWidgetMixin from mod owo->@Inject::callOwoListener(Ljava/lang/String;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[17:50:11] [Render thread/DEBUG] [mixin/]: owo.mixins.json:ui.TextFieldWidgetMixin from mod owo->@Inject::callOwoListener(Ljava/lang/String;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[17:50:11] [Render thread/DEBUG] [mixin/]: owo.mixins.json:ui.TextFieldWidgetMixin from mod owo->@Inject::callOwoListener(Ljava/lang/String;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[17:50:12] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-race-lobby.png stage=10
+[17:50:12] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-race-lobby.png: Saved screenshot as chao-mechanics-race-lobby.png
+[17:50:14] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-karate-lobby.png stage=11
+[17:50:14] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-karate-lobby.png: Saved screenshot as chao-mechanics-karate-lobby.png
+[17:50:16] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-guide-second-index.png stage=12
+[17:50:16] [IO-Worker-4/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-guide-second-index.png: Saved screenshot as chao-mechanics-guide-second-index.png
+[17:50:18] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-equipped-companion.png stage=13
+[17:50:18] [IO-Worker-3/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-equipped-companion.png: Saved screenshot as chao-mechanics-equipped-companion.png
+[17:50:20] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_CAPTURED chao-mechanics-accessories-slot.png stage=14
+[17:50:20] [IO-Worker-3/INFO] [co.ch.cl.MechanicsVisualSmoke/]: MECHANICS_VISUAL_SCREENSHOT chao-mechanics-accessories-slot.png: Saved screenshot as chao-mechanics-accessories-slot.png
+[17:50:21] [Render thread/INFO] [co.ch.cl.MechanicsVisualSmoke/]:
+MECHANICS_VISUAL_STUDY_COMPLETE: 15 actual Minecraft views

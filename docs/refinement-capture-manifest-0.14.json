@@ -1,0 +1,59 @@
+{
+  "release": "0.14.0",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.219",
+  "capture_count": 6,
+  "origin": "Actual Minecraft client screenshots",
+  "full_frames": true,
+  "capture_log_sha256": "f637e5e1ee52fb15adf0a0f009ba3edb77a169d9bb72e5e16cb52988a52668d2",
+  "capture_directory": "source/docs/screenshots/collection-0.14/",
+  "captures": [
+    {
+      "file": "chao014-retained-eggs.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "53dd68065ed35bfcf2944380d02e40fe927b4fe609b7af241a4d94366476d57e",
+      "title": "The retained Chao collection"
+    },
+    {
+      "file": "chao014-neovitae-tooltip.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ac85ee20b671eb174b1b7aec06f3ef231a85a59e5640afd01d77327fda879ddc",
+      "title": "Neo Vitae Chao Egg"
+    },
+    {
+      "file": "chao014-tech-icons.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "4879b8ed7d6aff514609a685609cc22c74706829f2d1d4cd6b66ca4f127f1660",
+      "title": "Clearer equipment symbols"
+    },
+    {
+      "file": "chao014-magic-icons.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "2cef66c23940a53bf8239d98d9ea5fda26859676c4a91c6eaa5649ab046238c8",
+      "title": "Simplified magic symbols"
+    },
+    {
+      "file": "chao014-magic-items.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "9c663a52cb121c75882e8ec294484f7ec6b461ab0805d1e249f050ac23ed2dd4",
+      "title": "Requested item references"
+    },
+    {
+      "file": "chao014-dimensions.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "572ec9a9de7f4495cff5ac77e734e47119d2305056d9249bfb929f761a5c893e",
+      "title": "Dimension eggs and matching badges"
+    }
+  ],
+  "authored_theme_sheet": {
+    "file": "theme-icons-0.14.png",
+    "sha256": "ee306678b1f71d06bf034ddae5caaa8c5dcd3195f4193b5e670f78b0eb3c772d",
+    "origin": "Authored theme symbol sheet; not a game capture"
+  }
+}

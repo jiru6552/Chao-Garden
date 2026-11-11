@@ -1,0 +1,18 @@
+{
+  "type": "chao_garden:dark_garden",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "chao_garden:dark_twilight",
+      "features": false,
+      "lakes": false,
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:air"
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/hyper_fly_fruit",
+    "particle": "chao_garden:block/cwe02516/hyper_fly_fruit/cwe_ali_mikuki_0080ffff_128"
+  },
+  "base": {
+    "parent": "chao_garden:item/cwe02516/hyper_fly_fruit"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/hyper_fly_fruit"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "chao_garden:block/school_altar_guard"
+    },
+    "facing=west": {
+      "model": "chao_garden:block/school_altar_guard",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chao_garden:block/school_altar_guard",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "chao_garden:block/school_altar_guard",
+      "y": 270
+    }
+  }
+}

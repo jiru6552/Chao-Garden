@@ -1,0 +1,145 @@
+{
+  "release": "0.25.8",
+  "scenes": [
+    {
+      "key": "neutral-bank",
+      "space": "garden",
+      "eye": [
+        -21,
+        81.62,
+        10
+      ],
+      "target": [
+        -32,
+        82,
+        2
+      ],
+      "fov": 65
+    },
+    {
+      "key": "neutral-waterfall",
+      "space": "garden",
+      "eye": [
+        -10,
+        81.62,
+        -4
+      ],
+      "target": [
+        -30,
+        85,
+        -5.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "neutral-wide",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "hero-bark",
+      "space": "hero",
+      "eye": [
+        7,
+        81.62,
+        10
+      ],
+      "target": [
+        4.5,
+        82,
+        6.5
+      ],
+      "fov": 60
+    },
+    {
+      "key": "lobby-music",
+      "space": "hub",
+      "eye": [
+        0,
+        81.62,
+        3
+      ],
+      "target": [
+        0,
+        83,
+        -9
+      ],
+      "fov": 70
+    },
+    {
+      "key": "dark-music",
+      "space": "dark",
+      "eye": [
+        0,
+        82,
+        5
+      ],
+      "target": [
+        -8,
+        83,
+        -10
+      ],
+      "fov": 70
+    },
+    {
+      "key": "school-chorus",
+      "space": "school",
+      "eye": [
+        -18,
+        82,
+        -18
+      ],
+      "target": [
+        -22.5,
+        81,
+        -13.5
+      ],
+      "fov": 65,
+      "probe": "school-song",
+      "motion": true,
+      "hold_ticks": 1000
+    },
+    {
+      "key": "school-foyer",
+      "space": "school",
+      "eye": [
+        1,
+        81.62,
+        3
+      ],
+      "target": [
+        0,
+        82,
+        -6
+      ],
+      "fov": 70,
+      "motion": true,
+      "hold_ticks": 80
+    },
+    {
+      "key": "lobby-exit",
+      "space": "hub",
+      "eye": [
+        0,
+        81.62,
+        3
+      ],
+      "target": [
+        0,
+        83,
+        -9
+      ],
+      "fov": 70
+    }
+  ]
+}

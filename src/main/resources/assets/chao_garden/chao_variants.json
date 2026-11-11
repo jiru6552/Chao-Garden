@@ -1,0 +1,1559 @@
+{
+  "format_version": 1,
+  "variants": [
+    {
+      "id": "create",
+      "name": "Create",
+      "mods": [
+        "create"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:copper_ingot",
+        "minecraft:iron_ingot",
+        "minecraft:redstone"
+      ],
+      "icon": "gear",
+      "palette": {
+        "body": [
+          70,
+          140,
+          136
+        ],
+        "head": [
+          70,
+          140,
+          136
+        ],
+        "tuft": [
+          212,
+          163,
+          77
+        ],
+        "accent": [
+          212,
+          163,
+          77
+        ],
+        "crest_tip": [
+          128,
+          83,
+          50
+        ],
+        "hand": [
+          128,
+          83,
+          50
+        ],
+        "toe": [
+          212,
+          163,
+          77
+        ],
+        "heel": [
+          70,
+          140,
+          136
+        ],
+        "wing": [
+          212,
+          163,
+          77
+        ],
+        "belly": [
+          128,
+          83,
+          50
+        ],
+        "collar": [
+          212,
+          163,
+          77
+        ],
+        "orb": [
+          245,
+          206,
+          105
+        ],
+        "variant_detail": [
+          128,
+          83,
+          50
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/create"
+    },
+    {
+      "id": "thaumcraft",
+      "name": "Thaumcraft",
+      "mods": [
+        "thaumcraft"
+      ],
+      "head_morph": false,
+      "ingredients": [
+        "minecraft:gold_ingot",
+        "minecraft:amethyst_shard",
+        "minecraft:glass_bottle"
+      ],
+      "icon": "rune",
+      "palette": {
+        "body": [
+          99,
+          80,
+          120
+        ],
+        "head": [
+          99,
+          80,
+          120
+        ],
+        "tuft": [
+          183,
+          138,
+          68
+        ],
+        "accent": [
+          183,
+          138,
+          68
+        ],
+        "crest_tip": [
+          96,
+          217,
+          214
+        ],
+        "hand": [
+          96,
+          217,
+          214
+        ],
+        "toe": [
+          183,
+          138,
+          68
+        ],
+        "heel": [
+          99,
+          80,
+          120
+        ],
+        "wing": [
+          183,
+          138,
+          68
+        ],
+        "belly": [
+          96,
+          217,
+          214
+        ],
+        "collar": [
+          183,
+          138,
+          68
+        ],
+        "orb": [
+          177,
+          141,
+          237
+        ],
+        "variant_detail": [
+          96,
+          217,
+          214
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/thaumcraft"
+    },
+    {
+      "id": "astral_sorcery",
+      "name": "Astral Sorcery",
+      "mods": [
+        "astralsorcery"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:quartz",
+        "minecraft:amethyst_shard",
+        "minecraft:glowstone_dust"
+      ],
+      "icon": "star",
+      "palette": {
+        "body": [
+          222,
+          223,
+          221
+        ],
+        "head": [
+          222,
+          223,
+          221
+        ],
+        "tuft": [
+          38,
+          59,
+          112
+        ],
+        "accent": [
+          38,
+          59,
+          112
+        ],
+        "crest_tip": [
+          128,
+          214,
+          237
+        ],
+        "hand": [
+          128,
+          214,
+          237
+        ],
+        "toe": [
+          38,
+          59,
+          112
+        ],
+        "heel": [
+          222,
+          223,
+          221
+        ],
+        "wing": [
+          38,
+          59,
+          112
+        ],
+        "belly": [
+          128,
+          214,
+          237
+        ],
+        "collar": [
+          38,
+          59,
+          112
+        ],
+        "orb": [
+          229,
+          246,
+          255
+        ],
+        "variant_detail": [
+          128,
+          214,
+          237
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/astral-sorcery"
+    },
+    {
+      "id": "blood_magic",
+      "name": "Neo Vitae",
+      "mods": [
+        "neovitae"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:redstone",
+        "minecraft:ghast_tear",
+        "minecraft:gold_ingot"
+      ],
+      "icon": "drop",
+      "palette": {
+        "body": [
+          84,
+          46,
+          67
+        ],
+        "head": [
+          84,
+          46,
+          67
+        ],
+        "tuft": [
+          188,
+          64,
+          89
+        ],
+        "accent": [
+          188,
+          64,
+          89
+        ],
+        "crest_tip": [
+          217,
+          170,
+          81
+        ],
+        "hand": [
+          217,
+          170,
+          81
+        ],
+        "toe": [
+          188,
+          64,
+          89
+        ],
+        "heel": [
+          84,
+          46,
+          67
+        ],
+        "wing": [
+          188,
+          64,
+          89
+        ],
+        "belly": [
+          217,
+          170,
+          81
+        ],
+        "collar": [
+          188,
+          64,
+          89
+        ],
+        "orb": [
+          240,
+          90,
+          114
+        ],
+        "variant_detail": [
+          217,
+          170,
+          81
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/neovitae"
+    },
+    {
+      "id": "refined_storage",
+      "name": "Refined Storage",
+      "mods": [
+        "refinedstorage"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:quartz",
+        "minecraft:diamond",
+        "minecraft:redstone"
+      ],
+      "icon": "disk",
+      "palette": {
+        "body": [
+          228,
+          233,
+          236
+        ],
+        "head": [
+          228,
+          233,
+          236
+        ],
+        "tuft": [
+          82,
+          103,
+          118
+        ],
+        "accent": [
+          82,
+          103,
+          118
+        ],
+        "crest_tip": [
+          85,
+          197,
+          223
+        ],
+        "hand": [
+          85,
+          197,
+          223
+        ],
+        "toe": [
+          82,
+          103,
+          118
+        ],
+        "heel": [
+          228,
+          233,
+          236
+        ],
+        "wing": [
+          82,
+          103,
+          118
+        ],
+        "belly": [
+          85,
+          197,
+          223
+        ],
+        "collar": [
+          82,
+          103,
+          118
+        ],
+        "orb": [
+          123,
+          232,
+          247
+        ],
+        "variant_detail": [
+          85,
+          197,
+          223
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/refined-storage"
+    },
+    {
+      "id": "cataclysm",
+      "name": "L_Ender's Cataclysm",
+      "mods": [
+        "cataclysm"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:blackstone",
+        "minecraft:blaze_rod",
+        "minecraft:netherite_scrap"
+      ],
+      "icon": "flame",
+      "palette": {
+        "body": [
+          52,
+          52,
+          61
+        ],
+        "head": [
+          52,
+          52,
+          61
+        ],
+        "tuft": [
+          184,
+          78,
+          49
+        ],
+        "accent": [
+          184,
+          78,
+          49
+        ],
+        "crest_tip": [
+          229,
+          179,
+          75
+        ],
+        "hand": [
+          229,
+          179,
+          75
+        ],
+        "toe": [
+          184,
+          78,
+          49
+        ],
+        "heel": [
+          52,
+          52,
+          61
+        ],
+        "wing": [
+          184,
+          78,
+          49
+        ],
+        "belly": [
+          229,
+          179,
+          75
+        ],
+        "collar": [
+          184,
+          78,
+          49
+        ],
+        "orb": [
+          255,
+          173,
+          66
+        ],
+        "variant_detail": [
+          229,
+          179,
+          75
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/lendercataclysm"
+    },
+    {
+      "id": "ice_fire",
+      "name": "Ice and Fire",
+      "mods": [
+        "iceandfire"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:packed_ice",
+        "minecraft:blaze_powder",
+        "minecraft:dragon_breath"
+      ],
+      "icon": "dragon",
+      "palette": {
+        "body": [
+          129,
+          183,
+          213
+        ],
+        "head": [
+          129,
+          183,
+          213
+        ],
+        "tuft": [
+          204,
+          107,
+          75
+        ],
+        "accent": [
+          204,
+          107,
+          75
+        ],
+        "crest_tip": [
+          220,
+          239,
+          241
+        ],
+        "hand": [
+          220,
+          239,
+          241
+        ],
+        "toe": [
+          204,
+          107,
+          75
+        ],
+        "heel": [
+          129,
+          183,
+          213
+        ],
+        "wing": [
+          204,
+          107,
+          75
+        ],
+        "belly": [
+          220,
+          239,
+          241
+        ],
+        "collar": [
+          204,
+          107,
+          75
+        ],
+        "orb": [
+          121,
+          221,
+          235
+        ],
+        "variant_detail": [
+          220,
+          239,
+          241
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons"
+    },
+    {
+      "id": "aether",
+      "name": "The Aether",
+      "mods": [
+        "aether"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:feather",
+        "minecraft:glowstone_dust",
+        "minecraft:gold_ingot"
+      ],
+      "icon": "cloud",
+      "palette": {
+        "body": [
+          229,
+          239,
+          242
+        ],
+        "head": [
+          229,
+          239,
+          242
+        ],
+        "tuft": [
+          135,
+          195,
+          229
+        ],
+        "accent": [
+          135,
+          195,
+          229
+        ],
+        "crest_tip": [
+          230,
+          200,
+          110
+        ],
+        "hand": [
+          230,
+          200,
+          110
+        ],
+        "toe": [
+          135,
+          195,
+          229
+        ],
+        "heel": [
+          229,
+          239,
+          242
+        ],
+        "wing": [
+          135,
+          195,
+          229
+        ],
+        "belly": [
+          230,
+          200,
+          110
+        ],
+        "collar": [
+          135,
+          195,
+          229
+        ],
+        "orb": [
+          188,
+          238,
+          255
+        ],
+        "variant_detail": [
+          230,
+          200,
+          110
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/aether"
+    },
+    {
+      "id": "twilight_forest",
+      "name": "The Twilight Forest",
+      "mods": [
+        "twilightforest"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:oak_sapling",
+        "minecraft:glow_berries",
+        "minecraft:diamond"
+      ],
+      "icon": "firefly",
+      "palette": {
+        "body": [
+          107,
+          139,
+          134
+        ],
+        "head": [
+          107,
+          139,
+          134
+        ],
+        "tuft": [
+          140,
+          112,
+          170
+        ],
+        "accent": [
+          140,
+          112,
+          170
+        ],
+        "crest_tip": [
+          216,
+          198,
+          124
+        ],
+        "hand": [
+          216,
+          198,
+          124
+        ],
+        "toe": [
+          140,
+          112,
+          170
+        ],
+        "heel": [
+          107,
+          139,
+          134
+        ],
+        "wing": [
+          140,
+          112,
+          170
+        ],
+        "belly": [
+          216,
+          198,
+          124
+        ],
+        "collar": [
+          140,
+          112,
+          170
+        ],
+        "orb": [
+          223,
+          235,
+          141
+        ],
+        "variant_detail": [
+          216,
+          198,
+          124
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest"
+    },
+    {
+      "id": "nether",
+      "name": "Nether",
+      "mods": [],
+      "head_morph": false,
+      "ingredients": [
+        "minecraft:blackstone",
+        "minecraft:magma_cream",
+        "minecraft:blaze_powder"
+      ],
+      "icon": "flame",
+      "palette": {
+        "body": [
+          84,
+          64,
+          72
+        ],
+        "head": [
+          84,
+          64,
+          72
+        ],
+        "tuft": [
+          185,
+          75,
+          63
+        ],
+        "accent": [
+          185,
+          75,
+          63
+        ],
+        "crest_tip": [
+          234,
+          162,
+          84
+        ],
+        "hand": [
+          234,
+          162,
+          84
+        ],
+        "toe": [
+          185,
+          75,
+          63
+        ],
+        "heel": [
+          84,
+          64,
+          72
+        ],
+        "wing": [
+          185,
+          75,
+          63
+        ],
+        "belly": [
+          234,
+          162,
+          84
+        ],
+        "collar": [
+          185,
+          75,
+          63
+        ],
+        "orb": [
+          255,
+          181,
+          83
+        ],
+        "variant_detail": [
+          234,
+          162,
+          84
+        ]
+      },
+      "source": "https://www.minecraft.net/"
+    },
+    {
+      "id": "end",
+      "name": "End",
+      "mods": [],
+      "head_morph": false,
+      "ingredients": [
+        "minecraft:end_stone",
+        "minecraft:popped_chorus_fruit",
+        "minecraft:ender_pearl"
+      ],
+      "icon": "eye",
+      "palette": {
+        "body": [
+          85,
+          71,
+          111
+        ],
+        "head": [
+          85,
+          71,
+          111
+        ],
+        "tuft": [
+          218,
+          213,
+          162
+        ],
+        "accent": [
+          218,
+          213,
+          162
+        ],
+        "crest_tip": [
+          143,
+          219,
+          190
+        ],
+        "hand": [
+          143,
+          219,
+          190
+        ],
+        "toe": [
+          218,
+          213,
+          162
+        ],
+        "heel": [
+          85,
+          71,
+          111
+        ],
+        "wing": [
+          218,
+          213,
+          162
+        ],
+        "belly": [
+          143,
+          219,
+          190
+        ],
+        "collar": [
+          218,
+          213,
+          162
+        ],
+        "orb": [
+          206,
+          157,
+          233
+        ],
+        "variant_detail": [
+          143,
+          219,
+          190
+        ]
+      },
+      "source": "https://www.minecraft.net/"
+    },
+    {
+      "id": "ars_nouveau",
+      "name": "Ars Nouveau",
+      "mods": [
+        "ars_nouveau"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:amethyst_shard",
+        "minecraft:book",
+        "minecraft:gold_ingot"
+      ],
+      "icon": "book",
+      "palette": {
+        "body": [
+          172,
+          148,
+          206
+        ],
+        "head": [
+          172,
+          148,
+          206
+        ],
+        "tuft": [
+          116,
+          94,
+          154
+        ],
+        "accent": [
+          116,
+          94,
+          154
+        ],
+        "crest_tip": [
+          225,
+          198,
+          120
+        ],
+        "hand": [
+          225,
+          198,
+          120
+        ],
+        "toe": [
+          116,
+          94,
+          154
+        ],
+        "heel": [
+          172,
+          148,
+          206
+        ],
+        "wing": [
+          116,
+          94,
+          154
+        ],
+        "belly": [
+          225,
+          198,
+          120
+        ],
+        "collar": [
+          116,
+          94,
+          154
+        ],
+        "orb": [
+          197,
+          161,
+          241
+        ],
+        "variant_detail": [
+          225,
+          198,
+          120
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ars-nouveau"
+    },
+    {
+      "id": "occultism",
+      "name": "Occultism",
+      "mods": [
+        "occultism"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:bone",
+        "minecraft:black_dye",
+        "minecraft:amethyst_shard"
+      ],
+      "icon": "rune",
+      "palette": {
+        "body": [
+          85,
+          82,
+          99
+        ],
+        "head": [
+          85,
+          82,
+          99
+        ],
+        "tuft": [
+          225,
+          220,
+          206
+        ],
+        "accent": [
+          225,
+          220,
+          206
+        ],
+        "crest_tip": [
+          173,
+          136,
+          201
+        ],
+        "hand": [
+          173,
+          136,
+          201
+        ],
+        "toe": [
+          225,
+          220,
+          206
+        ],
+        "heel": [
+          85,
+          82,
+          99
+        ],
+        "wing": [
+          225,
+          220,
+          206
+        ],
+        "belly": [
+          173,
+          136,
+          201
+        ],
+        "collar": [
+          225,
+          220,
+          206
+        ],
+        "orb": [
+          211,
+          184,
+          236
+        ],
+        "variant_detail": [
+          173,
+          136,
+          201
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/occultism"
+    },
+    {
+      "id": "iron_spells",
+      "name": "Iron's Spells 'n Spellbooks",
+      "mods": [
+        "irons_spellbooks"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:book",
+        "minecraft:lapis_lazuli",
+        "minecraft:gold_ingot"
+      ],
+      "icon": "scroll",
+      "palette": {
+        "body": [
+          87,
+          119,
+          164
+        ],
+        "head": [
+          87,
+          119,
+          164
+        ],
+        "tuft": [
+          219,
+          183,
+          115
+        ],
+        "accent": [
+          219,
+          183,
+          115
+        ],
+        "crest_tip": [
+          165,
+          209,
+          227
+        ],
+        "hand": [
+          165,
+          209,
+          227
+        ],
+        "toe": [
+          219,
+          183,
+          115
+        ],
+        "heel": [
+          87,
+          119,
+          164
+        ],
+        "wing": [
+          219,
+          183,
+          115
+        ],
+        "belly": [
+          165,
+          209,
+          227
+        ],
+        "collar": [
+          219,
+          183,
+          115
+        ],
+        "orb": [
+          126,
+          198,
+          238
+        ],
+        "variant_detail": [
+          165,
+          209,
+          227
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks"
+    },
+    {
+      "id": "projecte",
+      "name": "ProjectE",
+      "mods": [
+        "projecte"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:obsidian",
+        "minecraft:redstone",
+        "minecraft:gold_ingot"
+      ],
+      "icon": "circle",
+      "palette": {
+        "body": [
+          73,
+          67,
+          84
+        ],
+        "head": [
+          73,
+          67,
+          84
+        ],
+        "tuft": [
+          201,
+          70,
+          87
+        ],
+        "accent": [
+          201,
+          70,
+          87
+        ],
+        "crest_tip": [
+          223,
+          191,
+          105
+        ],
+        "hand": [
+          223,
+          191,
+          105
+        ],
+        "toe": [
+          201,
+          70,
+          87
+        ],
+        "heel": [
+          73,
+          67,
+          84
+        ],
+        "wing": [
+          201,
+          70,
+          87
+        ],
+        "belly": [
+          223,
+          191,
+          105
+        ],
+        "collar": [
+          201,
+          70,
+          87
+        ],
+        "orb": [
+          228,
+          117,
+          123
+        ],
+        "variant_detail": [
+          223,
+          191,
+          105
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/projecte"
+    },
+    {
+      "id": "malum",
+      "name": "Malum",
+      "mods": [
+        "malum"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:amethyst_shard",
+        "minecraft:soul_sand",
+        "minecraft:copper_ingot"
+      ],
+      "icon": "soul",
+      "palette": {
+        "body": [
+          104,
+          82,
+          118
+        ],
+        "head": [
+          104,
+          82,
+          118
+        ],
+        "tuft": [
+          217,
+          149,
+          104
+        ],
+        "accent": [
+          217,
+          149,
+          104
+        ],
+        "crest_tip": [
+          189,
+          142,
+          210
+        ],
+        "hand": [
+          189,
+          142,
+          210
+        ],
+        "toe": [
+          217,
+          149,
+          104
+        ],
+        "heel": [
+          104,
+          82,
+          118
+        ],
+        "wing": [
+          217,
+          149,
+          104
+        ],
+        "belly": [
+          189,
+          142,
+          210
+        ],
+        "collar": [
+          217,
+          149,
+          104
+        ],
+        "orb": [
+          224,
+          168,
+          238
+        ],
+        "variant_detail": [
+          189,
+          142,
+          210
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/malum"
+    },
+    {
+      "id": "cobblemon",
+      "name": "Cobblemon",
+      "mods": [
+        "cobblemon"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:red_dye",
+        "minecraft:white_dye",
+        "minecraft:iron_ingot"
+      ],
+      "icon": "ball",
+      "palette": {
+        "body": [
+          117,
+          169,
+          155
+        ],
+        "head": [
+          117,
+          169,
+          155
+        ],
+        "tuft": [
+          201,
+          80,
+          89
+        ],
+        "accent": [
+          201,
+          80,
+          89
+        ],
+        "crest_tip": [
+          233,
+          230,
+          218
+        ],
+        "hand": [
+          233,
+          230,
+          218
+        ],
+        "toe": [
+          201,
+          80,
+          89
+        ],
+        "heel": [
+          117,
+          169,
+          155
+        ],
+        "wing": [
+          201,
+          80,
+          89
+        ],
+        "belly": [
+          233,
+          230,
+          218
+        ],
+        "collar": [
+          48,
+          58,
+          61
+        ],
+        "orb": [
+          218,
+          80,
+          90
+        ],
+        "variant_detail": [
+          233,
+          230,
+          218
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/cobblemon"
+    },
+    {
+      "id": "draconic_evolution",
+      "name": "Draconic Evolution",
+      "mods": [
+        "draconicevolution"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:obsidian",
+        "minecraft:blaze_powder",
+        "minecraft:dragon_breath"
+      ],
+      "icon": "energy",
+      "palette": {
+        "body": [
+          87,
+          68,
+          103
+        ],
+        "head": [
+          87,
+          68,
+          103
+        ],
+        "tuft": [
+          220,
+          143,
+          78
+        ],
+        "accent": [
+          220,
+          143,
+          78
+        ],
+        "crest_tip": [
+          157,
+          119,
+          189
+        ],
+        "hand": [
+          157,
+          119,
+          189
+        ],
+        "toe": [
+          220,
+          143,
+          78
+        ],
+        "heel": [
+          87,
+          68,
+          103
+        ],
+        "wing": [
+          220,
+          143,
+          78
+        ],
+        "belly": [
+          157,
+          119,
+          189
+        ],
+        "collar": [
+          220,
+          143,
+          78
+        ],
+        "orb": [
+          242,
+          181,
+          93
+        ],
+        "variant_detail": [
+          157,
+          119,
+          189
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/draconic-evolution"
+    },
+    {
+      "id": "born_in_chaos",
+      "name": "Born in Chaos",
+      "mods": [
+        "born_in_chaos_v1"
+      ],
+      "head_morph": true,
+      "ingredients": [
+        "minecraft:bone",
+        "minecraft:soul_sand",
+        "minecraft:rotten_flesh"
+      ],
+      "icon": "skull",
+      "palette": {
+        "body": [
+          113,
+          106,
+          120
+        ],
+        "head": [
+          113,
+          106,
+          120
+        ],
+        "tuft": [
+          198,
+          144,
+          113
+        ],
+        "accent": [
+          198,
+          144,
+          113
+        ],
+        "crest_tip": [
+          161,
+          179,
+          166
+        ],
+        "hand": [
+          161,
+          179,
+          166
+        ],
+        "toe": [
+          198,
+          144,
+          113
+        ],
+        "heel": [
+          113,
+          106,
+          120
+        ],
+        "wing": [
+          198,
+          144,
+          113
+        ],
+        "belly": [
+          161,
+          179,
+          166
+        ],
+        "collar": [
+          198,
+          144,
+          113
+        ],
+        "orb": [
+          226,
+          172,
+          119
+        ],
+        "variant_detail": [
+          161,
+          179,
+          166
+        ]
+      },
+      "source": "https://www.curseforge.com/minecraft/mc-mods/born-in-chaos"
+    }
+  ]
+}

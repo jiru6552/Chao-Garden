@@ -1,0 +1,17 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "checks": 9,
+  "valid_fixture_accepted": true,
+  "rejected_corruptions": [
+    "stale PDF bytes",
+    "missing page approval",
+    "changed selected caption",
+    "delegated render differs from aggregate",
+    "missing static approval",
+    "omitted motion review frame",
+    "stale relative gallery",
+    "changed capture manifest"
+  ],
+  "scope": "Synthetic proof-binding controls only. These data are never final PDF, gallery or capture approvals."
+}

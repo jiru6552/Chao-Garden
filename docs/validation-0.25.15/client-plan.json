@@ -1,0 +1,378 @@
+{
+  "release": "0.25.8",
+  "tested_release": "0.25.15",
+  "scenes": [
+    {
+      "key": "refinement-native-0",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "refinement-native-1",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "refinement-wearables-0",
+      "space": "garden",
+      "eye": [
+        0,
+        111.8,
+        4.6
+      ],
+      "target": [
+        0,
+        110.35,
+        0.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "refinement-wearables-1",
+      "space": "garden",
+      "eye": [
+        0,
+        111.8,
+        4.6
+      ],
+      "target": [
+        0,
+        110.35,
+        0.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "refinement-wearables-2",
+      "space": "garden",
+      "eye": [
+        0,
+        111.8,
+        4.6
+      ],
+      "target": [
+        0,
+        110.35,
+        0.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "refinement-wearables-3",
+      "space": "garden",
+      "eye": [
+        0,
+        111.8,
+        4.6
+      ],
+      "target": [
+        0,
+        110.35,
+        0.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "refinement-finish",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-native-0",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-native-1",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-native-2",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-use-hands-fruit",
+      "space": "garden",
+      "eye": [
+        -2.2,
+        96.62,
+        3.5
+      ],
+      "target": [
+        0.5,
+        95.6,
+        6.2
+      ],
+      "fov": 55,
+      "motion": false,
+      "hold_ticks": 220
+    },
+    {
+      "key": "fruit-use-hands-can",
+      "space": "garden",
+      "eye": [
+        -2.2,
+        96.62,
+        3.5
+      ],
+      "target": [
+        0.5,
+        95.6,
+        6.2
+      ],
+      "fov": 55,
+      "motion": false,
+      "hold_ticks": 220
+    },
+    {
+      "key": "fruit-use-drops",
+      "space": "garden",
+      "eye": [
+        -2.2,
+        96.62,
+        3.5
+      ],
+      "target": [
+        0.5,
+        95.6,
+        6.2
+      ],
+      "fov": 55,
+      "motion": false,
+      "hold_ticks": 220
+    },
+    {
+      "key": "fruit-use-eat",
+      "space": "garden",
+      "eye": [
+        -1.4,
+        96.62,
+        4
+      ],
+      "target": [
+        0.5,
+        95.5,
+        6.1
+      ],
+      "fov": 40,
+      "motion": true,
+      "hold_ticks": 300
+    },
+    {
+      "key": "fruit-use-plant",
+      "space": "garden",
+      "eye": [
+        -1.4,
+        96.62,
+        4
+      ],
+      "target": [
+        0.5,
+        95.5,
+        6.1
+      ],
+      "fov": 40,
+      "motion": true,
+      "hold_ticks": 300
+    },
+    {
+      "key": "fruit-use-water",
+      "space": "garden",
+      "eye": [
+        -1.4,
+        96.62,
+        4
+      ],
+      "target": [
+        0.5,
+        95.5,
+        6.1
+      ],
+      "fov": 40,
+      "motion": true,
+      "hold_ticks": 300
+    },
+    {
+      "key": "fruit-use-finish",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-neutral",
+      "space": "garden",
+      "eye": [
+        -10,
+        81.62,
+        -4
+      ],
+      "target": [
+        -30,
+        85,
+        -5.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-hero",
+      "space": "hero",
+      "eye": [
+        7,
+        81.62,
+        10
+      ],
+      "target": [
+        4.5,
+        84,
+        6.5
+      ],
+      "fov": 60
+    },
+    {
+      "key": "source-dark",
+      "space": "dark",
+      "eye": [
+        0,
+        82,
+        5
+      ],
+      "target": [
+        -8,
+        83,
+        -10
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-school-foyer",
+      "space": "school",
+      "eye": [
+        1,
+        81.62,
+        3
+      ],
+      "target": [
+        0,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-school-classroom",
+      "space": "school",
+      "eye": [
+        -18,
+        82,
+        -18
+      ],
+      "target": [
+        -21,
+        83,
+        -21
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-school-principal",
+      "space": "school",
+      "eye": [
+        1.5,
+        81.62,
+        -17
+      ],
+      "target": [
+        -4,
+        82.5,
+        -22
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-school-clinic",
+      "space": "school",
+      "eye": [
+        19,
+        81.62,
+        -4
+      ],
+      "target": [
+        24,
+        82.3,
+        -4.5
+      ],
+      "fov": 70
+    }
+  ]
+}

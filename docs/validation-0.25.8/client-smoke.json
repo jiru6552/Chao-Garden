@@ -1,0 +1,161 @@
+{
+  "release": "0.25.8",
+  "result": "PASS",
+  "sources": [
+    {
+      "file": "docs/validation-0.25.8/client-smoke.txt",
+      "sha256": "e8d49af3342adfff1139b3daa4a87f8490f2a7ba6c4f2f4efebb26e86bd8edf8"
+    },
+    {
+      "file": "docs/validation-0.25.8/current-production-payloads.json",
+      "sha256": "41d6971afdd297c47599b14dc7257be0979e28ee63c126587f0c230203301005"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/client/World0253VisualSmoke.java",
+      "sha256": "242bd37fc6dac3d5509d802a157e33a98377c95d99c4158145cb39b186ccd018"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/client/LobbySceneRenderer025.java",
+      "sha256": "817db292b888572af87921fecfd7843f2960934f8cf12e0927f5bb7f9359fc56"
+    },
+    {
+      "file": "docs/validation-0.25.8/tooling/chao0258-record-client-smoke.py",
+      "sha256": "0cc3272213b9449d23d040c7202dead65629fd3d4c091ba1c902bd4f555f1400"
+    },
+    {
+      "file": "docs/validation-0.25.8/tooling/chao0258-prepare-visual.py",
+      "sha256": "918b604dc548870ed18bed97bd5eccc7a3442c8874ad90d40b464a9984bf52fa"
+    },
+    {
+      "file": "docs/validation-0.25.8/tooling/run-chao-client.py",
+      "sha256": "59e8616ec4a0e69edf0f70217cd432c7c8d341ce59c4d28cb1d4ef4a3983f1ed"
+    },
+    {
+      "file": "docs/validation-0.25.8/tooling/run-chao-client-check.py",
+      "sha256": "3122581a92033d2ddc94262e62b38525aa7adb9ed839a0c4b8873aabe4e6fea5"
+    },
+    {
+      "file": "docs/validation-0.25.8/tooling/chao0258-client-directory.init.gradle",
+      "sha256": "9dc9aee8dcb17040456083699c69923b247e6a999a3fc49d7aa982f73f9f8a07"
+    }
+  ],
+  "native_model_states": 5857,
+  "missing_native_models": 0,
+  "current_door_fixture_panels": 16,
+  "current_door_air_and_curve_holes": 13,
+  "current_door_native_prediction_parts": 21,
+  "current_door_native_ack": true,
+  "obsolete_stepped_matrix_run": false,
+  "normal_flat_preset_vanilla_dimensions": 3,
+  "authored_realms_loaded_and_prepared": 5,
+  "dark_biome": "chao_garden:dark_twilight",
+  "scene_count": 10,
+  "frame_count": 12,
+  "initial_direct_hub_scene_submitted": true,
+  "return_hub_scene_submitted": true,
+  "actual_school_pupils": 4,
+  "actual_classroom_pupils": 4,
+  "actual_foyer_pupils": 0,
+  "actual_classroom_singers": 2,
+  "dedicated_singing_events_observed": 2,
+  "actual_vocal_sound_manager_active": true,
+  "actual_toy_play_observed": true,
+  "raised_dark_fruit_pods": 12,
+  "dark_fruit_pod_y": 82,
+  "dark_fruit_branch_y": 83,
+  "neutral_music_actual_sound_manager_active": true,
+  "missing_optional_music_assets": 5,
+  "area_exit_stops_actual_stream": true,
+  "audible_listening_claim": false,
+  "private_frame_hashes": [
+    {
+      "filename": "chao0253-hero-first-direct.png",
+      "stage": 0,
+      "sha256": "e0619271f6274ca6c905cae96a79a295247eac6e587a49ad3d5e0f3941b7f8bf",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-school-door-gap.png",
+      "stage": 1,
+      "sha256": "99cdf4b5591dd0278b6878751a4191d445e79fd2e1e845c0d63bdbd79163d078",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-school-entrance-reverse-start.png",
+      "stage": 2,
+      "sha256": "e5fbde78ebf2d0360dc8ceac92392c3fe52b2c7dd08b5dc1b6c40128acede263",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-school-entrance-reverse-end.png",
+      "stage": 2,
+      "sha256": "23619d4278ad029770070bd644418311234cc1b3b771ff8b1d267fce358fcab5",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-school-empty-foyer.png",
+      "stage": 3,
+      "sha256": "6095cb73761580d062d3c1c6728efe45543885ab12715926ac2851b04e954003",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-classroom-city-oblique.png",
+      "stage": 4,
+      "sha256": "1e2459485ae9e7147af2180bf0f34ab9b2c80c38d47cf1262f320c5d889fb588",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-school-song-pupils-start.png",
+      "stage": 5,
+      "sha256": "a1344df1c4a8c8eae885b61843f22551a640654e27962f33833b5c504e897bdb",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-school-song-pupils-end.png",
+      "stage": 5,
+      "sha256": "2adbd40af93920f5bafdc8a557e4193d5dc58ebb1c910bc1e74fb8a0d689b021",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-school-play.png",
+      "stage": 6,
+      "sha256": "827b269d61ecbade0cb1d7e08918ccea5b98f98f8cc2c5c28fdfbcf9cfd378cc",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-dark-trees.png",
+      "stage": 7,
+      "sha256": "68007d09d2b9c83ef5ab3a7d176465df7ffd964ed0584e041ab596594eb3f65d",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-neutral-music.png",
+      "stage": 8,
+      "sha256": "d63354e2634dd687248e65e781e62ee17129aa13deb45f0015d208bd51aa7847",
+      "private_internal_only": true
+    },
+    {
+      "filename": "chao0253-hero-gate-music-stop.png",
+      "stage": 9,
+      "sha256": "b00977cadd6785219d5a84a70d71edeecc0de6dd18362d77a2ef03a0be708d5d",
+      "private_internal_only": true
+    }
+  ],
+  "private_plan_sha256": "17dbd82dba1ae4a699b8eecf7e7a257bf49eae36b45d5751b059971d8be0c883",
+  "production_jar_sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+  "production_payloads_byte_identical": true,
+  "scope": "Fresh ordinary integrated Minecraft client with real model-manager bake, direct Adventure door click,21-part client prediction and native server ACK. Focused internal stills cover reversed door swing and closed-frame jamb, separated classroom city meshes, four classroom-only babies, actual autonomous toy play and live offered-song animation. Both localized dedicated vocal events must become active in the real SoundManager; the OpenAL null sink does not establish an audible listening claim. Native client block states verify all12 higher Dark fruit pods and their horizontal supports. Provided Neutral area stream and real Hub-exit stop remain verified; five regional recordings remain absent. Camera and monotonic offered-song clock are disposable fixtures; no actor pose, direct vocal playback or toy session is forced. Images/save/plan are omitted from delivered source.",
+  "artifact_sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+  "sample_review_notes": [
+    "The closed school entrance fills its curved frame; the close oblique jamb has no view-through floor slit. A real empty-hand Adventure click swings both leaves toward the exterior/camera, opposite0257, and predicts all21 native owner cells with a real server ACK.",
+    "The close city view and wide classroom pair show separate compact houses/towers/trees with roofs contained in their own footprints. The large interpenetrating concrete/decorative-ball arrangement is gone, while the teacher desk remains clear.",
+    "Four ambient babies are observed inside the classroom and zero in the foyer. The two actual current-song pupils show synchronized singing poses and green note particles. Both dedicated vocal events become active in the real SoundManager; the OpenAL null sink supports no audible-listening claim. The vocal phrases are original arrangements of the retained supplied call recording, not exact SA2 singing samples.",
+    "The front classroom view shows the two free-play children and their toys. Native synchronized pupil playing state and an actual toy block PLAYING state confirm autonomous play; no toy session or actor pose was forced.",
+    "The Dark tree view shows rooted trunks and visibly higher attached fruit/stems. Native client block states independently confirm all12 pods atY82 and horizontal supporting branches atY83, with no old low pods.",
+    "Both initial and return Hero gate views show their columns, statues and arch immediately. The existing once-per-frame lobby scene submission remains active.",
+    "The Neutral garden renders normally while its supplied MUSIC stream is active, and the actual stream stops on returning to the Hub. Five missing regional recordings remain explicitly unavailable."
+  ],
+  "native_stills_inspected": true,
+  "private_review_notes_sha256": "56998aa302f7259b1f178b344bba06d0b516eb576a8269b92c41687a039ead54",
+  "private_assets_delivered": false
+}

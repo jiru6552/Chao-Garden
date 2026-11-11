@@ -1,0 +1,16 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/fruit02512/vitality_fruit_pod_3.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "fruit": "chao_garden:block/vitality_fruit_pod_3",
+    "particle": "chao_garden:block/vitality_fruit_pod_3",
+    "stem": "chao_garden:block/fruit02512/stem",
+    "leaf": "chao_garden:block/fruit02512/leaf",
+    "leaf_light": "chao_garden:block/fruit02512/leaf_light",
+    "stalk": "chao_garden:block/fruit02512/stalk"
+  },
+  "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PGP",
+    "PKP",
+    "PGP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:glass_pane"
+    },
+    "G": {
+      "item": "minecraft:light_weighted_pressure_plate"
+    },
+    "K": {
+      "item": "chao_garden:chao_key"
+    }
+  },
+  "result": {
+    "id": "chao_garden:chao_teleporter",
+    "count": 1
+  }
+}

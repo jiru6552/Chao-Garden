@@ -1,0 +1,76 @@
+{
+  "release": "0.25.10",
+  "result": "PASS",
+  "jar_sha256": "4c14a8b1bd744d3bea20cbe8122f5eee09e706153d50cb1765c98db98571d065",
+  "jar_bytes": 14217739,
+  "build": {
+    "core_suites": 18,
+    "core_checks": 1694873,
+    "final_jar": "PASS"
+  },
+  "native_servers": {
+    "default": {
+      "required": 254,
+      "passed": 254
+    },
+    "accessories_owo": {
+      "required": 254,
+      "passed": 254,
+      "accessories": "1.1.0-beta.54+1.21.1",
+      "owo": "0.12.15.6-beta.1+1.21"
+    },
+    "execution": "Fresh native NeoForge GameTest servers, development runtime using compiled production source and final resources; installable JAR classes/resources checked byte for byte during packaging."
+  },
+  "client": {
+    "runtime": "ordinary NeoForge Minecraft client, software Mesa and null OpenAL output",
+    "native_block_states": 5822,
+    "missing_models": 0,
+    "scenes": 5,
+    "frames": 5,
+    "saves": 5,
+    "return_restored": true,
+    "visual_review": [
+      "neutral-entry",
+      "neutral-waterfall",
+      "neutral-wide",
+      "neutral-transporter",
+      "hero-border"
+    ],
+    "scope": "Visual pass used the release production code, models and textures. Final food-tag membership was subsequently refreshed from the independent generator output and reloaded in both final native server profiles."
+  },
+  "asset_replay": {
+    "result": "PASS",
+    "live_files": 6559,
+    "regenerated_files": 6559,
+    "different_files": [],
+    "java_source_files_compared": 276,
+    "different_java_files": []
+  },
+  "targeted_regressions": [
+    "Old fruit/seed NBT resolves to garden variants with stack count and custom components intact.",
+    "Old orchard palettes preserve pod age/facing, expanded crown and seedling stage.",
+    "Removed IDs are aliases, not duplicate registry entries or market catalog entries.",
+    "Actual held-item meals shift child affinity once, after eating; core cases cover both food profiles, adult locking and bounds.",
+    "All land cells directly adjacent to Hero pool water have full marble collision; deliberately restored screenshot gaps are repaired.",
+    "Nine Neutral plants are dry, supported and collision-free; source-water cascades and pale ledges remain intact."
+  ],
+  "limits": [
+    "The garden remains a Minecraft reconstruction, with earlier user-requested layout adaptations preserved.",
+    "Reference review used five retained native Battle-video frames and the supplied Hero gap screenshot, not a new complete source-game walkthrough.",
+    "Neutral scenic water color also applies to kindergarten decorative water through the shared biome.",
+    "Internal client frames and disposable worlds are excluded from the package.",
+    "Audio features are unchanged; no new original-recording authenticity or listening test is claimed."
+  ],
+  "logs": {
+    "production-build.log": "73e58c31cd6330647ca68ef4382b456757f068678b7b2a33a1f2fb1f39a77fc3",
+    "final-jar.log": "5c35f253655426cc554297e7ff6651d840ff79d683c3366e93f4293ac1161540",
+    "server-default.log": "67c2300c7a58270016fa90ed821148bebe7f625701ebae16b8e186ad9bcbb3c3",
+    "server-accessories.log": "b2feed78e5510ad6b1105725d10a4345d3a92fe19cb53be63d166b7fd341fa3e",
+    "asset-rebuild.log": "5c96de90a6d773db30f00cb06cbb30500eabd649a4bf96d485562979a918d23c",
+    "client-smoke.log": "f9fd8d6952dac9f262944c5873337c6d29ab05868ef6735b7150c90212f7fe72",
+    "client-baseline.log": "d4cbd172342b1a706a4ee037979a540b43dfdb5c7c55286468e7bd5540cb3e83",
+    "asset-replay-comparison.json": "d84ae8be63fe419d746f2a14094bab4d562b00fce328693be088a6a5b9a0ce18",
+    "changed-source-hashes.json": "99f8645fc3fb73651cfd90d98b13b9e177b5cf505ae509a9a0aceaac6f6d6b68",
+    "resource-diff.json": "35ebf64c1cede71c86a46a1f1a839d67be4d33388e256aba2daa604332b0b918"
+  }
+}

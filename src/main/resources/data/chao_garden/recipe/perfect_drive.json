@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SCS",
+    "CNC",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "chao_garden:unstable_solid_drives"
+    },
+    "C": {
+      "item": "chao_garden:unstable_chaotic_drive"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "id": "chao_garden:perfect_drive",
+    "count": 1
+  }
+}

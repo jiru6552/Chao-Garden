@@ -1,0 +1,57 @@
+CHAO GARDEN 0.16.0
+Minecraft Java 1.21.1 | NeoForge 21.1.219+ (21.1 series) | Java 21
+
+MOVEMENT AND QUIETER IDLE
+Chao now use a quiet resting pose with a short, occasional sway gesture.
+Actual movement selects crawling, walking, running or dashing. Swim points
+select novice flailing, competent swimming or an improved stroke.
+
+STAT POINTS, NOT LEVELS
+Run: crawl below 50; walk at 50; run at 667; dash at 1334.
+Swim: flail below 100; swim at 100; improved stroke at 667.
+Fly: short garden ledge glides at 135. No powered hovering or flat-ground
+takeoff. The modern wiki threshold is used; an older Info Center page
+lists 100 instead. The research notes document this difference.
+Newborn points start at 0. A reincarnated child retains 10% of points and
+can retain learned movement if it still meets the relevant threshold.
+
+INSTALL
+Replace the previous jar with chao_garden-0.16.0.jar in mods/.
+Install the same version on the server and every client. Java 21 is needed.
+Adult equipped companions optionally require compatible NeoForge Accessories
+and its dependency. Their separate player-glide perk still requires an
+adult Chao with Fly level 10. Third-party mods are not bundled.
+
+CONTINUING YOUR GARDEN
+Existing Chao, eggs, orchards, held Chao and companions keep their data.
+The imported rigs, nineteen themes, mixed animal parts, Chaos forms,
+transporter, contests, fruits, garden CD and dimension egg refinements
+remain included. Craft the Care Guide with a book and wheat seeds.
+See source/README.md and source/TESTING.md for controls and completed checks.
+
+PREVIEWS
+Extract the ZIP and open previews/index.html. Seven feature views cover
+ground gaits, swimming, ledge glide, custom additions, a held baby and
+unlock guidance. Two review GIFs use eight actual frames each to inspect
+quiet/occasional idle behavior and moving crawling. They play at four
+review frames per second; their source game-tick intervals are recorded
+and this is not a claim of real-time capture playback.
+All 23 original PNGs are in source/docs/screenshots/release-0.16.0/.
+PDF: source/docs/chao-garden-0.16.0-preview-gallery.pdf
+Four pages show ground movement, swim styles, a ledge glide and overlays.
+The gallery works offline. Earlier galleries and original frames keep
+their historical release labels; redundant composites and old PDFs are
+omitted to reduce duplicate data.
+
+SOURCE AND EDITING
+source/ contains code, tests, resources, generators and asset-only inputs.
+art/imported_chao contains twenty geometries, twenty texture maps and one
+eight-clip animation file. Blockbench/ retains eight editable authoring
+projects. Build caches, worlds, private inspection files and third-party
+jars are excluded. With Java 21 use ./gradlew build runGameTestServer.
+SHA256SUMS.txt records the installable jar checksum.
+
+CREDITS
+Unofficial fan project. Supplied Sonic/Chao assets belong to their rights
+holders. Custom additions and Minecraft movement code are project work.
+Read source/LICENSE, source/TEMPLATE_LICENSE.txt and source/docs/ASSET_CREDITS_015.md.

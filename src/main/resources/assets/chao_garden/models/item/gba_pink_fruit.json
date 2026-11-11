@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "chao_garden:item/gba_pink_fruit",
+    "particle": "chao_garden:block/sa2_02514/gba_pink_fruit/sa2_ali_mic_52"
+  },
+  "base": {
+    "parent": "chao_garden:item/fruit02512/gba_pink_fruit"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "chao_garden:item/gba_pink_fruit"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release": "0.25.18",
+  "result": "PASS",
+  "jar_sha256": "50659989b63e2909dd8037e56f573a445d5edb8aae36aa841bec3c652578c1b5",
+  "jar_bytes": 30174185,
+  "build": {
+    "core_suites": 18,
+    "core_checks": 1710878
+  },
+  "native_servers": {
+    "default_passed": 275,
+    "default_required": 275,
+    "accessories_owo_passed": 275,
+    "accessories_owo_required": 275
+  },
+  "client": {
+    "screenshots": 20,
+    "rotation_restoration_frames": 361,
+    "native_scaled_buttons": true,
+    "mouse_input_handler_positions": 4,
+    "reward_packet_claim": true,
+    "body_states": [
+      "child",
+      "adult",
+      "Chaos",
+      "Omochao",
+      "Bat DNA ghost"
+    ],
+    "visual_review": "visual-review.txt"
+  },
+  "asset_replay": {
+    "resources": 7980,
+    "byte_identical": true,
+    "changed": []
+  },
+  "asset_validation": {
+    "all_steps_passed": true,
+    "note": "Full regeneration and all earlier validators completed; final item/hygiene validators rerun after updating the expected tablet texture count and 32px front/back sizes. Resource replay remained byte-identical."
+  },
+  "logs": {
+    "core-tests.log": "d65e39308241cb5abe5960bf73b52df309bc36004635838bac1387292f12c9d6",
+    "final-build.log": "e20f3a6ec64dfc5a1302fbdbe144e11cdc8f5b1806bdcdf03854d731772763c4",
+    "server-default.log": "07ddf0c147af3608875a103b1dbd2ea9fbc57d3d5abe10bee6cbf623ea2fd5d8",
+    "server-accessories.log": "22bf3fbd3a2f3125f7b219069ab1b60c2ec329dad4597a8a0087ea6fa916b9cb",
+    "client-final.log": "85f281e4f166e96297335ce533788e9131efc4ed48660d281897747f45da4ffc",
+    "asset-replay.log": "bf2f776ce2689b4167bf00d73e8b9cf23c681507b8de95710941fe633ae05ac7",
+    "asset-validation-tail.log": "d596918fab2945ce5e20ceb1ef53035e46c486066e6b45adf99878192a985a04"
+  },
+  "limits": [
+    "Representative native software-rendered visual coverage, not every hardware/shader/animation combination.",
+    "Legacy desk block IDs remain internally for existing saves and the authored classroom, with no standalone lesson route or new acquisition.",
+    "Old unfinished freestanding lessons stop on a loaded tick; learned skills and already-earned rewards remain."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "release": "0.25.8",
+  "result": "PASS",
+  "java": "Eclipse Temurin21.0.13+9",
+  "gradle": "9.2.1",
+  "neoforge": "21.1.219",
+  "create_minecraft_artifacts_exit": 0,
+  "sources": [
+    {
+      "file": "docs/validation-0.25.8/toolchain-bootstrap.txt",
+      "sha256": "33766b319dd11ac237374f79c44f09d71ce254036c33204df5c1038266f85a3e"
+    }
+  ],
+  "official_downloads": [
+    {
+      "name": "jdk.tar.gz",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.13_9.tar.gz",
+      "sha256": "d7f5d5cf865a2902b70ff549b97586a7d3f234e016f041ab447ea740c7d66d1c",
+      "size_bytes": 207858352
+    },
+    {
+      "name": "gradle.zip",
+      "url": "https://downloads.gradle.org/distributions/gradle-9.2.1-bin.zip",
+      "sha256": "72f44c9f8ebcb1af43838f45ee5c4aa9c5444898b3468ab3f4af7b6076c5bc3f",
+      "size_bytes": 135535598
+    },
+    {
+      "name": "accessories-neoforge-1.1.0-beta.54+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/jtmvUHXj/versions/dy9BbDEy/accessories-neoforge-1.1.0-beta.54%2B1.21.1.jar",
+      "sha256": "cbecac21acbaf323349afa263b22cda67c3e836f928f6cf3f951ba460c196d15",
+      "size_bytes": 1086553
+    },
+    {
+      "name": "owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar",
+      "url": "https://cdn.modrinth.com/data/ccKDOlHs/versions/wbdHEItB/owo-lib-neoforge-0.12.15.6-beta.1%2B1.21.jar",
+      "sha256": "5fc306ad3d42e1dc26812f2df856e7c232376405caab6af4f5aaffe89cd2b256",
+      "size_bytes": 1223197
+    }
+  ],
+  "fallback_adapter_source_sha256": "3acc3ccdf64784e692a3969aa07a4a5da7dda404498664ce6a9d8574f82fce75",
+  "fallback_adapter_scope": "Build-environment executable metadata fallback only; production classes/resources are not patched.",
+  "native_display": "Official Ubuntu Xvfb21.1.12 private runtime, TCP and keyboard initialization verified; null OpenAL sink for actual SoundManager queue/decoder checks."
+}

@@ -1,0 +1,47 @@
+{
+  "version": "0.20.0",
+  "families": {
+    "light": {
+      "hat_hidden_ice_branches": [
+        "chaos_crown_lobe_-1",
+        "chaos_crown_lobe_1",
+        "chaos_crown_rear"
+      ],
+      "limb_ice_remains_visible": true,
+      "full_skull_hide_covers_all_head_ice": true,
+      "uncapped_foot_material_join": true,
+      "full_opacity_gradient_uv_coverage": true,
+      "inherited_coats": 117
+    },
+    "angel": {
+      "hat_hidden_ice_branches": [
+        "chaos_crown_horn_-1",
+        "chaos_crown_horn_1",
+        "chaos_crown_rear"
+      ],
+      "limb_ice_remains_visible": true,
+      "full_skull_hide_covers_all_head_ice": true,
+      "uncapped_foot_material_join": true,
+      "full_opacity_gradient_uv_coverage": true,
+      "inherited_coats": 117
+    },
+    "devil": {
+      "hat_hidden_ice_branches": [
+        "chaos_crown_lower_-1",
+        "chaos_crown_lower_1",
+        "chaos_crown_upper_-1",
+        "chaos_crown_upper_1"
+      ],
+      "limb_ice_remains_visible": true,
+      "full_skull_hide_covers_all_head_ice": true,
+      "uncapped_foot_material_join": true,
+      "full_opacity_gradient_uv_coverage": true,
+      "inherited_coats": 117
+    }
+  },
+  "tip_material_policy": {
+    "two_tone_regular_colored_jewel": "translucent, alpha255 to97",
+    "mono_tone_regular_colored_jewel": "opaque, alpha255",
+    "shiny": "independent of opacity"
+  }
+}

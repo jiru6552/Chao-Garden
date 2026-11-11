@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "amount": 1,
+  "operation": "set",
+  "order": 1100,
+  "icon": "chao_garden:gui/slot/chao_companion",
+  "validators": [
+    "accessories:tag"
+  ],
+  "drop_rule": "keep"
+}

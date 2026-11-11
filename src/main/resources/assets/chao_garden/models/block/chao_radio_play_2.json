@@ -1,0 +1,23 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/sa2_02515/chao_radio_play_2.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "sa2_radi01_228": "chao_garden:block/sa2_02515/chao_radio/sa2_radi01_228",
+    "sa2_radi01_100": "chao_garden:block/sa2_02515/chao_radio/sa2_radi01_100",
+    "sa2_radi01_52": "chao_garden:block/sa2_02515/chao_radio/sa2_radi01_52",
+    "sa2_radi02_52": "chao_garden:block/sa2_02515/chao_radio/sa2_radi02_52",
+    "sa2_radi02_20": "chao_garden:block/sa2_02515/chao_radio/sa2_radi02_20",
+    "sa2_radi06_52": "chao_garden:block/sa2_02515/chao_radio/sa2_radi06_52",
+    "sa2_radi06_36": "chao_garden:block/sa2_02515/chao_radio/sa2_radi06_36",
+    "sa2_radi03_20": "chao_garden:block/sa2_02515/chao_radio/sa2_radi03_20",
+    "sa2_radi05_148": "chao_garden:block/sa2_02515/chao_radio/sa2_radi05_148",
+    "sa2_radi05_20": "chao_garden:block/sa2_02515/chao_radio/sa2_radi05_20",
+    "sa2_radi04_148": "chao_garden:block/sa2_02515/chao_radio/sa2_radi04_148",
+    "sa2_radi05_52": "chao_garden:block/sa2_02515/chao_radio/sa2_radi05_52",
+    "particle": "chao_garden:block/sa2_02515/chao_radio/sa2_radi01_228"
+  },
+  "render_type": "minecraft:cutout"
+}

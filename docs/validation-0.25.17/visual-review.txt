@@ -1,0 +1,14 @@
+Native Minecraft client review, 0.25.17
+
+13 screenshots reviewed: inactive/active Garden, six residents, unregistered slot; journal chapters, sections, chapter search, section search and reading; held accordion, held disc, coffin lid and 7x7 tatami.
+
+Final accordion: solid red casing and clean black/white bellows, without colored speckling. Corrected constant UV sampling at sprite boundaries.
+Coffin: front lid edge is dark blue, matching the surrounding lid; no pale-blue patch.
+Disc: stepped charcoal vinyl silhouette and Chao-blue center, in inventory and actual first person.
+Mat: complete woven 7x7 carpet with the original stage texture, all tiles visible.
+Garden: readable six colored resident icons, correct names, real inventory items unchanged. Native mouse drag through server packets registered six; clicking icon removed its registration. Polling no longer blocks dragging.
+Journal: broad chapter selection, section selection, chapter and section search results, readable body and arrow index navigation.
+
+The native model manager also checked 26 CWE items / 234 display contexts / 128 placed toy states and 29 SA2 items / 261 display contexts / 1,088 placed toy states, with no missing materials.
+
+Representative software-rendered native frames only; not an exhaustive hardware, shader, lighting or animation matrix.

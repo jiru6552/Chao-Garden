@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "garden=false,expanded=false": {
+      "model": "chao_garden:block/chao_fruit_crown"
+    },
+    "garden=false,expanded=true": {
+      "model": "chao_garden:block/chao_fruit_crown_expanded"
+    },
+    "garden=true": {
+      "model": "chao_garden:block/planted_palm_crown"
+    }
+  }
+}

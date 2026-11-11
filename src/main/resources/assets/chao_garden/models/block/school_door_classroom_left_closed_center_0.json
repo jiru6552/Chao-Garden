@@ -1,0 +1,149 @@
+{
+  "chao_door_profile": "curve0255",
+  "curve_sections": 96,
+  "textures": {
+    "base": "chao_garden:block/school025/school_door_classroom",
+    "back": "chao_garden:block/school025/school_door_classroom_back",
+    "edge": "chao_garden:block/school025/school_door_classroom_edge",
+    "particle": "chao_garden:block/school025/school_door_classroom"
+  },
+  "ambientocclusion": false,
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        14.0
+      ],
+      "to": [
+        8.0,
+        16,
+        16.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#back",
+          "uv": [
+            0.17391304347826164,
+            10.666666666666666,
+            5.739130434782609,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            10.26086956521739,
+            10.666666666666666,
+            15.826086956521738,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        8.0,
+        0,
+        14.0
+      ],
+      "to": [
+        16,
+        16,
+        16.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#back",
+          "uv": [
+            5.739130434782609,
+            10.666666666666666,
+            0.17391304347826164,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            15.826086956521738,
+            10.666666666666666,
+            10.26086956521739,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#edge",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}

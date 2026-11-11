@@ -1,0 +1,4034 @@
+[
+  {
+    "path": "src/main/java/com/chaogarden/entity/ChaoEntity.java",
+    "sha256": "eacb5e093e037c911814823e16b29ebcc28afad139a4341324cec260b6d9f894"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/market/BlackMarketTrader.java",
+    "sha256": "e285f5da0f68bc8470f66325484b4d557eaf4701733e9f026561e4350ca788e1"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/market/MarketStock.java",
+    "sha256": "3c12aa55631ce8ff817955bbe694f4acd57603396fff69003a7176418bb5ba5b"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/market/ChaoToyItem.java",
+    "sha256": "cf051d8024d2513b986308226fc15ebf5c9968a843e6921a0465d76e5dc1768b"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/market/MarketContent.java",
+    "sha256": "c9e0321fe7226e2e39346df6d7b32b4f4aacf8bb8b2c57142dec4a5328f1f40d"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/toys/ToyContent.java",
+    "sha256": "542b3189ae84166db26c1a09abc18f7483416add5b1f0677fdea9dce9c3fb7e9"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/fruit/WateringCanItem.java",
+    "sha256": "3483f94d6a43785c8384a77f48a855e55b34a4dd959ffe9a50e725e759142e3d"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/fruit/GardenTools.java",
+    "sha256": "9ed7fd0dbfbf202f496ff2e1a79a6093c030acf7fe2a3fa71da5758b8c8adacf"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/fruit/FruitSeedItem.java",
+    "sha256": "ae233f9578a28566a5795d8a0787494b70af91709e48b30ce84d1e4da34eb143"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/fruit/FruitContent.java",
+    "sha256": "8c2802fe0e8e47f393166079fe3b369d6d3e4a64f558883c92d264d8d3b3a2ad"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/fruit/GardenTreeData.java",
+    "sha256": "495e37164c51514f050e6476aa864dcef0f994b7dc3f21dd11b2e49badc356bf"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/test/GardeningGameTests02512.java",
+    "sha256": "7f5f8f77006dc90060a0ad526e2db2985de6e6452e2fd5e1af59c676f0c3d6a3"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/test/MarketGameTests.java",
+    "sha256": "599b710888f295669c14d82e553f9b76ac7aec179875af1e2e4af4bb0648a840"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/interaction/ChaoGardeningGoal.java",
+    "sha256": "887c6316d50ee1041dd517f1cf657c73d25baadf1e42df67c68ef8d7480437f9"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/client/ChaoModel.java",
+    "sha256": "f766fe58bfc94273e63d3f29ee123f3a1ede4fd84c853d168f146e6d1f4f915f"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/client/ChaoHeldItemLayer.java",
+    "sha256": "184402b9b4cf56e74535c26d72c4ae0f2bd022c4fd0fc2a2365ea81b3d33e62c"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/client/Fruit02512VisualSmoke.java",
+    "sha256": "40203ff30d2048d0ff6be3104a55f1d76d15e9a1cb2d99538067f9286ef94030"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/client/ChaoBehaviorPoses.java",
+    "sha256": "3ef25dff3f22c320ac7da6eabd1a26312d23e40b910d0c955a5d4565f558f251"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/client/World0253VisualSmoke.java",
+    "sha256": "a906edc31b51a5f32b1a78f04d549b503ba354efc8c75a3affe7de7637193e2d"
+  },
+  {
+    "path": "src/main/java/com/chaogarden/item/GardenGuideItem.java",
+    "sha256": "1734a3c70606a6a3595c810bfea0e97b14423d6b02f98935c00a1238c1b5a23e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/hyper_swim_fruit_seedling.json",
+    "sha256": "7b5a4fe4aabb5255d7037ca124a7794abbad1a0edfbf21d03960055d6a6f6231"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/hyper_power_fruit_seedling.json",
+    "sha256": "86d49ced8207cb93d2c923c5ab038ceccd4aa4ec16a83909724542abc1048de2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/smart_fruit_seedling.json",
+    "sha256": "bbcdd14335cf65de49f22915f3c67e83a976ed0109a8a8f785baab3a0619a6dc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/energy_fruit_seedling.json",
+    "sha256": "d09198fbb6fbba755cdd8369228593a149c90fdd05d2b35f00cd66d1675e4c6d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/rough_fruit_seedling.json",
+    "sha256": "1c55cd1d9827f396d4099bb4c9b69c32cb2f910ebeba3eb8a9432c3246e008b1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/mushroom_seedling.json",
+    "sha256": "de67fb43059797b04706e6f80c5795c2526ac86003c5f8dfc3100f98868e5e03"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/strong_fruit_seedling.json",
+    "sha256": "ff9af02b37cde39f226b7b56ba1e9f7c93890c5f6411df7c2388ae288d96e1a2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/forbidden_fruit_seedling.json",
+    "sha256": "c3a2511f2cc646bf8a168cfa870feaf08fecb132510e8668b0633a24dbf785e9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/tall_fruit_seedling.json",
+    "sha256": "39f96a2ef036e771e76a56ab60b4aad12f0f95200f031eb853378632633452f2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/hero_garden_fruit_seedling.json",
+    "sha256": "4c197287b70cbe13864934a8a37c122cfe3b120cdc38f29104c88b4a3a466eb9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/gba_orange_fruit_seedling.json",
+    "sha256": "ae00babbb762b771cdc7592ec662e9ceac728db9a3b05667dc6b5304a8a8fdd7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/garden_fruit_seedling.json",
+    "sha256": "029ef32faed9b49318955913bb3b40dd35f3f95203cff85c276ca48892268625"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/orange_fruit_seedling.json",
+    "sha256": "ed72c74479979ee7e48e8a8803f4fc3379cd0008a097e34bdc3f24e9db9392dd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/square_fruit_seedling.json",
+    "sha256": "9b938db3b96455e0f15d8edda226b4ee36f2c6b0668d86c71a2892ca88d021b8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/vitality_fruit_seedling.json",
+    "sha256": "a9bb60c3211b2e80b7b5c8235fa48c4e7f2faa74c3ac8d477edc1c8a69a75903"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/tasty_fruit_seedling.json",
+    "sha256": "7ac6ed54d5e691a4a67e5516c5fe543f07762ebb7eb136d6870407d3e782bf28"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/gba_blue_fruit_seedling.json",
+    "sha256": "ddd3bb83450cf1eb02eabfa78951685bc2e2bb666c1784c96e9d878f7f8a496c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/creepy_fruit_seedling.json",
+    "sha256": "0f2ee9da112f7583ec07fbc7a8a6e575bee32b9cfc7a238df808b6ed21f3acce"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/gba_pink_fruit_seedling.json",
+    "sha256": "08110f5ad210009dbea6c342f54080cf62bccf2c7c40b0f86468a4bed88cf4d5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/heart_fruit_seedling.json",
+    "sha256": "f5116496aec8f07d267a3204eeb05deb4052f4bf7bf4b328b32ba8001597726d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/round_fruit_seedling.json",
+    "sha256": "26d202d867aaa0077746a595c8ee92800ffb69d7da469dea0726e612fd3c1e42"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/dark_garden_fruit_seedling.json",
+    "sha256": "d1bdb4fe1eaf1735fc0e470be2edce030a8f1f5cf1682503145d922e21b711c8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/gba_green_fruit_seedling.json",
+    "sha256": "6db8828741b5f97553dde2040bf3d69379ff9a9c988e44e2527a39f42cd52b50"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/hyper_run_fruit_seedling.json",
+    "sha256": "4048cceaa27ed5ac051bc853dbe580c21c97eefa400298ef385a33114e095d32"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/hyper_fly_fruit_seedling.json",
+    "sha256": "339009d80fa70adc6bcf43e9b8ee5f913e655d5a1a1fbf3fd62339bd9b94db1b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/rare_fruit_seedling.json",
+    "sha256": "a4e675f269aff2a857974bd24d0775483b01a71ba4f933d9d0238e6af512e1de"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/stamina_fruit_seedling.json",
+    "sha256": "a3bf3d23840d02843a237f387162572f4af87a646f3a51f4a607919851bdc38b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/wonder_fruit_seedling.json",
+    "sha256": "ca4463f22ece464e39d3cbdf9c69f25bd6197c6c2830930fd51c70be88d8d381"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/gba_red_fruit_seedling.json",
+    "sha256": "3da6f2acb3ea85e8bba197895e7e926ec801cf6ecd3f09360b4d64f0768365d4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/mushroom_alt_seedling.json",
+    "sha256": "3b6b816acc5814f83c901e9adf5b5d4e1b8ef11daab545718f2e99245552eaca"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/shiny_fruit_seedling.json",
+    "sha256": "63d4264734f4e31914702636d71037413b503d3df413bd74cb778c28d9cb31bf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/gba_purple_fruit_seedling.json",
+    "sha256": "6df59891b8f79d69a37c07360a73fd66ea1a85d253c94455cdad136caa42edd1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/gba_yellow_fruit_seedling.json",
+    "sha256": "172b1b114922945e11e684f786ff34f170eea48cd62825560df9e59caf18e390"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/peace_fruit_seedling.json",
+    "sha256": "ad6dace9ab6649ddfaac1309b423562712e551a3dc95c3487acfee06a1d3fd10"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/chao_fruit_seedling.json",
+    "sha256": "f6898a36b31f26ad3c8986f787622dca332c816fa44f4b09efb781ca5af988fb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/blockstates/triangle_fruit_seedling.json",
+    "sha256": "9ceebd5f7f0fe842fbd1dd3e72a816c18d7828bedeffbf4e535aa063b5ee7f86"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/lang/en_us.json",
+    "sha256": "50c418840cde268fdcbba19edc1d1f7c2d11e49f7b4290afa6c0033669828b8f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/vitality_fruit_pod_3.png",
+    "sha256": "fea8ab9bee8c0f0c9c6e08e4495b964fd7308a7cd7e1b77c9f68b73d4bf6e1e9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/energy_fruit_pod_0.png",
+    "sha256": "d58292538caa1da0465a3b926ca0776e46f9b1aaf7c9d033e4d92a6e030682d5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/orange_fruit_pod_3.png",
+    "sha256": "23def430430dad72e46f0396fc47748bfee9efdd43e987015f169d95100b2ecf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/forbidden_fruit_pod_0.png",
+    "sha256": "2be260fc96c95244b44fb7485375044213a3fdf54a872240097bc91d1f0a848c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rare_fruit_pod_1.png",
+    "sha256": "f1e1f5f39883ea002224cb49e781a80dc108057bfb3c7b8ce4c5d877fd083400"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/strong_fruit_pod_2.png",
+    "sha256": "58ce0b460b6de53b2b9f0cc52d37346c11842d84f6dc77bf077678a220930162"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/forbidden_fruit_pod_1.png",
+    "sha256": "941ae03c17a4df1430bccc1465032da11a8fd0876fc1d6fd7cab0bba0268cc27"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_power_fruit_pod_3.png",
+    "sha256": "9a9cf053a45bcbccdfaa4f1227973d271ca4653c9bd9853d9a287958398a29ec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/triangle_fruit_pod_1.png",
+    "sha256": "331975115be0e02dee18fe957ef12e2befcaeed08914a1d94151a106e42c4852"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/chao_fruit_pod_0.png",
+    "sha256": "32f99a81c9d6756362022d7a81745d71d5cd43e13e9ee13c7e82ff955aa97cc9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/garden_fruit_pod_1.png",
+    "sha256": "d9b4a60f51184cd72afb65f45b55edae6676fb36619a012cd81bbbdbf3fc4220"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/chao_fruit_pod_3.png",
+    "sha256": "bd675acaea12f66478c190487d5ec7beb97b57334603db9fe034005dc200de27"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/smart_fruit_pod_1.png",
+    "sha256": "5ee6447140d15a0b33e2f8c6c5297dbdac57c83e9bee8d1085a0f0ec167837fd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_purple_fruit_pod_1.png",
+    "sha256": "6bb66096dbcaa427b5495cc8f2fa286e0961052f322fa4d32d2419ae4c964a66"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/peace_fruit_pod_0.png",
+    "sha256": "a396d28d0d9d5c7d33e91028fbe9318789b3759dc7002b8d54783748d59fea32"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_swim_fruit_pod_0.png",
+    "sha256": "46a7191a06a3ecd2405e879be413fe6672859042dcfa1c59682bd6babe34ffd3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_swim_fruit_pod_2.png",
+    "sha256": "4b19776b7944b89f015858649044465f0d35d5f41879fa59ed52a12e317bc531"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/forbidden_fruit_pod_2.png",
+    "sha256": "81466c7a7714adb7eb1892af5ca6fea47977214883d79cd0c9901d0531cf4166"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rare_fruit_pod_3.png",
+    "sha256": "6418dbb484eee073034d574282775b8cdea4d484bb5f291665332c32a1927c2a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/heart_fruit_pod_3.png",
+    "sha256": "18dfb11111acab2ef26ddbc49a1562e343743fd836eb5560b8f2f8665b086853"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/wonder_fruit_pod_0.png",
+    "sha256": "c00f0b42d3e49c1d20b8e561921f5fa834bdbc9cfa8f0af753a2b716ea8f2403"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_orange_fruit_pod_2.png",
+    "sha256": "713ef72ce1f6b253df8026200eb285a408b731a4084ed1aaf5ed271262514df0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_fly_fruit_pod_2.png",
+    "sha256": "5889c2cf95e39c5fcbe875e2baa2520e809b555badc9d8fd119d9a0228597abd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rough_fruit_pod_1.png",
+    "sha256": "c9b9b5f3a2238578b7b3424f59b72f83362b7f0cdf311ce7c823059839af89a6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tall_fruit_pod_2.png",
+    "sha256": "cc8ced079d951aaf82018ac8a0d10b7f85e4b8c5f9f592931c44398b086c3531"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/square_fruit_pod_3.png",
+    "sha256": "60577f0f1743491412fa649949111545ecddd95836b50d01bd532333068a82e9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/stamina_fruit_pod_3.png",
+    "sha256": "5001bc0755cf2708dd0bd3cd944a8e6fc2cadf8227b780fc7a1884279f7aa56a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/garden_fruit_pod_2.png",
+    "sha256": "bb9249ca7d07f95d7941d87138dc4ff31085a349067db4d372343d3d35a8a40f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/smart_fruit_pod_3.png",
+    "sha256": "25164aecbd8fa51fab166411b70b15d494151e917e9685e81cc53ba370aea846"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_green_fruit_pod_0.png",
+    "sha256": "0b7f617ca9e4251563decbbeab05af018398021606c3971c6e6227e808591b2c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/energy_fruit_pod_2.png",
+    "sha256": "8ff19b06b8c15fdadb850a380cebdfdd269ed817f1366c5d203a78f2d1175138"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/round_fruit_pod_2.png",
+    "sha256": "824466af92572e8566708f513cc0a20611b45d4cc8ad74fefc88f52961df551e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tasty_fruit_pod_1.png",
+    "sha256": "5047d5769ff2e9b17174bb9d002ce045a68beeff31ed191af63e4cdb8015c9cb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_purple_fruit_pod_3.png",
+    "sha256": "2cb3ecb2498087574fab5890c4fc8634fcdfa15c935c5491c12e3f38ad91c931"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_run_fruit_pod_1.png",
+    "sha256": "83915c9ea3c935744fae03f32feee86d44273f7ed937cd40ec83b5ffa4dfff29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_pod_0.png",
+    "sha256": "adc66656a4049773fb739a6246c5dd8861b34f5e0d38a8c728ab155fd2628107"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rough_fruit_pod_0.png",
+    "sha256": "4c7df8ec497c5c1a75d4604cdd0462cfff38ec7567105200d7ae03910557f839"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_purple_fruit_pod_0.png",
+    "sha256": "fe288148dc9d2c6bc6532bb5a5ed15710bb9b94fd28c27816014e238b51f8284"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_fly_fruit_pod_0.png",
+    "sha256": "3dfb902e3216f5c496269fe9157ae606ec67d392d2fe1644bc22f02429fb8f9b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/stamina_fruit_pod_2.png",
+    "sha256": "8c731f953afff37e1d4aba7993e127b280d0058d246294e0d287cd8abb38e4dc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_pod_2.png",
+    "sha256": "d4438f1649b2ff7067ca4c404ba695466291edd45fa6406ee556c8be2574ebe6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/triangle_fruit_pod_3.png",
+    "sha256": "4e700706381200303e843611ae082c4e8d5b1b4efcce969afb10feb845541380"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_power_fruit_pod_0.png",
+    "sha256": "9de0796822ba6c6b53c86c15aa486c8c6cf8749caccc09f5f07b390028272b04"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/energy_fruit_pod_1.png",
+    "sha256": "ab9ae48bca606124e7746fbb655178d30c67d2787f14ef2fb003453e222f084a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rough_fruit_pod_2.png",
+    "sha256": "4dffbb8538b44395735db4610a75d4e1809a826c771675ec7fc0720856edfc60"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_blue_fruit_pod_2.png",
+    "sha256": "72bd49eedbe45faac155dcc053e75365322f41a99ded7b78b55c827ab307b11e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/creepy_fruit_pod_1.png",
+    "sha256": "55463d4d06a10d5ed3e341d0482568b09be2f82d3dcbec5df7f5bd2e571856af"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/dark_garden_fruit_pod_1.png",
+    "sha256": "61ac0633d50f4d9f3d56c80262a0fcef807a1a0cd17c42345eadf15faf511896"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/creepy_fruit_pod_3.png",
+    "sha256": "f1ca08ba908d845fe8266b0d4630f8a020eb390f59909f7682ee00e1cee3c9e5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/energy_fruit_pod_3.png",
+    "sha256": "59a0a4eb41bc1cd49c085641ade882c6702f9e560808c195d98d426ddd279f0e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hero_garden_fruit_pod_3.png",
+    "sha256": "aebf372c30b5d122c112dcd5929fb8c1ee08fd3cb77a535fd057994f51f7a20f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_blue_fruit_pod_0.png",
+    "sha256": "99c5727e353a356700d7f1b376b40c99c1b5bb96dbdd9196a4337aa8b1781a31"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/heart_fruit_pod_2.png",
+    "sha256": "84387c5c8371d1e57f5fc86d99aff306a46508948f398afd301151bcd9ad2e73"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_power_fruit_pod_1.png",
+    "sha256": "0eb596fbf31957f9844e7e4102f71a4b8c5d84d9c7174dd18959e94b4e2139b3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/square_fruit_pod_1.png",
+    "sha256": "c2b3bb48cc1ababeac3914b6ccacb183477333ee7f5d9ac80d98fbe2c654e6e0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/garden_fruit_pod_0.png",
+    "sha256": "b4b359cfe7d8da7d3a6d370eed5ad5e1023464e1c0751c92753741b3cf120f2c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_purple_fruit_pod_2.png",
+    "sha256": "20e39c062344831f94b5b87a8e103c70aefbe45cb8beeebce698dc3ca8f29fb6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/round_fruit_pod_0.png",
+    "sha256": "e7d5739570450925a07405fcac8c8e9a7d273699fdd7b883f3201e160b9686fc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_orange_fruit_pod_3.png",
+    "sha256": "a4c7eb7732d2251aa5ae272f89b34af492a30a60ca9fe6020ba76bf2e8e49ea8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hero_garden_fruit_pod_0.png",
+    "sha256": "69a407a4aad8510c61d461fbc1f8fbf43b410b895ba5186351dc4beb6917a96f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/dark_garden_fruit_pod_2.png",
+    "sha256": "d45c8a25252f1704e6221478854113fb80bb2b23b305baa3e853ba348a1e4ff6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/triangle_fruit_pod_2.png",
+    "sha256": "f2a0823fa2ff6d32d987e56893f56868c4863e2771ae7796a1742911ce544ab4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_alt_pod_2.png",
+    "sha256": "a170a8ca6703fb9152567a12570035179ff6e57f9da9d43e98d52a35319db876"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/heart_fruit_pod_0.png",
+    "sha256": "4a4a78a2045aceba17f9e6d996aa7542f0a0949fa20aefc3007e8d6b3c8b6d1e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_swim_fruit_pod_3.png",
+    "sha256": "a1f50b65ef66e6db070e2d0a71c2967aa7963215aa7fb2b1a88bfba3534f13ac"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_pink_fruit_pod_3.png",
+    "sha256": "1b89fed4a8bff805b9d71c00dfed9f4c95c5ca9218f7204ef6caf25f1f7dd94d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tasty_fruit_pod_0.png",
+    "sha256": "978156bce3735a414385eeb56d3d1151a7fddb064f8a180b37d7ed32cc9a21bd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_yellow_fruit_pod_0.png",
+    "sha256": "fe4d54a17ab361127a1215fc2f6fca8844df5f104935ce3e7fc689994c87478a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_red_fruit_pod_3.png",
+    "sha256": "d427e4847ebbb810f96c27d5e398be5021331df155af7dcc96cfd211630a839e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/round_fruit_pod_3.png",
+    "sha256": "07190aaf482ea963c75a3dc248ce7aede92743884eca68dc62a3d2a80ce960e4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/smart_fruit_pod_0.png",
+    "sha256": "cfa6d56f4d9ddd61a7aca8bade9803f820744f64393a96c9aa933e311e99482e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_green_fruit_pod_1.png",
+    "sha256": "f22c5bd62b846f1ba7cecc82f812252ff64d521144ac24f1549db01a736f0f35"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_blue_fruit_pod_1.png",
+    "sha256": "8d9b10839898f097e972efccffe13f25c5ae5183da7d4fef0ef4d666e5502312"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_swim_fruit_pod_1.png",
+    "sha256": "eb144287b747be877d4c953b6ac8de4ab0f707ca2b181cb478df221c8aaa3960"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/wonder_fruit_pod_1.png",
+    "sha256": "df6b39f1555ba830771f8f5fcc7d90f6176aac2e6cdc2a0686a9a401be7bb9ee"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_fly_fruit_pod_1.png",
+    "sha256": "0716a707d118e94dcf3a84bce46021d2389ef96b0396fe5ce54f1334a2d9eafe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_pink_fruit_pod_1.png",
+    "sha256": "be5ad548a4f1d69972355b7f72f68110a62885462b5d478297ba2845cfc85bb0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/square_fruit_pod_2.png",
+    "sha256": "630a9163960f78c5d76de94c06593508e20a71034c10e65da679307e6addf9b3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/orange_fruit_pod_1.png",
+    "sha256": "6556066e7e5e5963701274221d42a4d9147ccd2c3c34f8c611442ccba8535393"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_green_fruit_pod_2.png",
+    "sha256": "32026ce41d12be8f564fc03dd9badff286a84f55555ac03b4f95ee5eafa4df01"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hero_garden_fruit_pod_2.png",
+    "sha256": "03232de3668b483a338158cf1cde28659123102e87f4e50af3cf67d2543f535f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/strong_fruit_pod_0.png",
+    "sha256": "b052d95c213375f09e1b2521014b1fd92e22a8684fa9506570c7ac27a6288776"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_red_fruit_pod_0.png",
+    "sha256": "8472121be9e6fd5d015ff7f736ffd470d0beab7a84df3171caf59ccd6cdb9382"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/smart_fruit_pod_2.png",
+    "sha256": "42243ed46214ea12b8e7f7b9333b86c8007516644b5af68b2baf0b9afcbe63e6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_pink_fruit_pod_2.png",
+    "sha256": "f70ad740142721459ab680a2e50628318f441b778ae49cb839c46ef27d367d09"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/vitality_fruit_pod_1.png",
+    "sha256": "84a11ec501c2f808bbbb0d0a9cbb7864d0108c68ec730623c79ca6cca8cc5820"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/wonder_fruit_pod_3.png",
+    "sha256": "163939780cc94a30e756fd1571b6e24475226f69bac247c0106bb95a6f1bd778"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/round_fruit_pod_1.png",
+    "sha256": "be9fe38465efa68c29132bd4475516aa606f9a6b56975b948d128eb9ef74b85b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/stamina_fruit_pod_1.png",
+    "sha256": "6e0907c092769604c0b2f4e8c09b0468b6c78b6472db219eea15602eaf8cfa34"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_yellow_fruit_pod_2.png",
+    "sha256": "243063c8173f2ae319b29cfa296bdf290de579f0db29147d97b97de07741b541"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/forbidden_fruit_pod_3.png",
+    "sha256": "92a5ca4166aaab6f046a1ba40b43fbfb120aa263bc8ceb983648f72ecd2f2888"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_orange_fruit_pod_1.png",
+    "sha256": "c623c6c3b68f027ca43fff6ca5fd7b1e984929c1034376db3a7112752eecc995"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_pod_1.png",
+    "sha256": "05314d51ae791b838d321e55e9beefba06f5624583cfba89dbcfb16ef59e370d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/vitality_fruit_pod_2.png",
+    "sha256": "c2401ac8574b8324716084fdabb1f4b83e10b49b39344fb72fe43ea774607d9b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rare_fruit_pod_2.png",
+    "sha256": "8a710c57ed2075cff78124fd30cdee1117cca1f154efb722b5c8c89ec5c1b282"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_run_fruit_pod_3.png",
+    "sha256": "3706c840d7425dc4532e3e1d83244506916c762693325bb884c3384b8eba0986"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/triangle_fruit_pod_0.png",
+    "sha256": "efc83d286034b3c1f88e9523b6f4aef411badbb19b9c41d001ddb96d2de29a52"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_pink_fruit_pod_0.png",
+    "sha256": "44e2b851bf38e8e1b3010b7a323c6de999a19405c3f0452d9bd6aef2adb97dc7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/peace_fruit_pod_2.png",
+    "sha256": "776f914983688053bb7498c47a4df678f9dbd1fb8c9bab21c9355218a75d28c2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_run_fruit_pod_0.png",
+    "sha256": "48459151a23c92b6ac1886dc4d6ca0376ab450c9d4100ca49eda1a93a46d2689"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tasty_fruit_pod_2.png",
+    "sha256": "ab073bb9ab1d18b06d16efb3086e5f37f08a3ca0c3ec556e3e4a06aee9d8640b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/garden_fruit_pod_3.png",
+    "sha256": "254f6cad53ab6a563783bc609130281d16f58af734b6ef9ee48fa5ec3ca715a8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/dark_garden_fruit_pod_0.png",
+    "sha256": "4e5f456ad18d766d55996fa816defad06f2e184b4f57eae1965970ade1c203a6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/dark_garden_fruit_pod_3.png",
+    "sha256": "adb04f7131ac8c2b38fd35e46a106384162628651928479432bc82ad2ffe5cfe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tasty_fruit_pod_3.png",
+    "sha256": "179d6e18950cb39ec56e04cde3d15aab543144e45151bdfb0d3ac8b0e3e3fd06"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_pod_3.png",
+    "sha256": "e1f940b323c2c390b1f2fd3b668377e0a91eed8e31d3a6401446e09b2d29eade"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_yellow_fruit_pod_3.png",
+    "sha256": "e69ed839e83017c4d514e1bed632f3b4b52f498bf4e8bf23dbe0b2db15297f3b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_red_fruit_pod_2.png",
+    "sha256": "381e292404af1d21d146954f80019ab3b0c6a062ef8c201288bb8703693f5e5b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_alt_pod_3.png",
+    "sha256": "0bff5c7379fefcf9ae7789bed3b133dddcc1b3a594a37f8cc02264717314776e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/chao_fruit_pod_2.png",
+    "sha256": "f2111d6aec59fa6b92037f73a0048c53b23f15d5a04b0ad91f5d1645cc2cad32"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_red_fruit_pod_1.png",
+    "sha256": "5241c7039f9740c5449c5312798456dec7805a54efc68683accb64fe984d42ee"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/strong_fruit_pod_1.png",
+    "sha256": "b9a0ed93b50f5ecca29d517b26cd9cd83bae5ba9ff9677fe712b0ff1281e1ae9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tall_fruit_pod_0.png",
+    "sha256": "130ea77ba4c93d45e97b4f36ed4d4a04df94ca4f9968f14c388480b2e875aaf8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/shiny_fruit_pod_0.png",
+    "sha256": "605ccde4d85457c538a9e78e9e6c35669aa8b1e73609de5adc03dcbd0da5ba25"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_run_fruit_pod_2.png",
+    "sha256": "07c28806dd13f037b48e9ed8853408777a753b7f8e082caf3298a946c15fc241"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rare_fruit_pod_0.png",
+    "sha256": "129ba0293d33a25d6df4d1e26c94de680e1bf1ab51425cd86882db187f2ef265"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/square_fruit_pod_0.png",
+    "sha256": "1745c13c0da6ab81168af811474a408e16ef71dec1ffdb8f5e6ba61cfebf17e7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/orange_fruit_pod_2.png",
+    "sha256": "a99f3013ebc4d26cbc5b205d77ff1197f71c7788b3525ead9e59308498ec4025"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/shiny_fruit_pod_2.png",
+    "sha256": "9be34243347cb670a590ba2d4a8c3420083077efd76845dacf6552eab73a5716"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/creepy_fruit_pod_0.png",
+    "sha256": "eaa1634e6de66697879bb7b6ee152936e487a6f720b612613986bd7bd709fd85"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_alt_pod_0.png",
+    "sha256": "d6ab6df4f5e2d3f19bc15b383959e3311e1c8139519d2aa95070e32d78b975e1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/stamina_fruit_pod_0.png",
+    "sha256": "f19326ad0698c6202177819ae8d43a89c31b5a01eb3fa7bdb65750c5f594e3e3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_power_fruit_pod_2.png",
+    "sha256": "50c096e4db6a5ca3f4d32df5c5285a70510dda739b68a986af8fa60a7ba5d9a0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/creepy_fruit_pod_2.png",
+    "sha256": "3452e2f3c08168a973d50d9f51a0e2041ad60dc74aa4aa02f600c0be0fed8907"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/shiny_fruit_pod_3.png",
+    "sha256": "6d4cd7f59ac84f010b2fd66c150029606969c8138f9af77b61a3197c648c2f68"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/mushroom_alt_pod_1.png",
+    "sha256": "9120ebd8e59f18df42fd6e52a5b3506e065eb960d6ea4e717ffe240d2a133042"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tall_fruit_pod_1.png",
+    "sha256": "183e9f8e77b9947290eb59f21159b80ef5210b9f33a5585d37c5a2a07c02f3ba"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/peace_fruit_pod_1.png",
+    "sha256": "2c836c251dadcdd4bb827f417f7b8a604abd7495bbc28c21e7a2348fa0251f57"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/wonder_fruit_pod_2.png",
+    "sha256": "8ccee51b690c76707afc55b478dd4a5de451925700a9664bc199bb04d7f0a22b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/orange_fruit_pod_0.png",
+    "sha256": "b5dd4d2590534232ffcdbc04acc289f132cb4b65ff24793768f001741707e364"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/rough_fruit_pod_3.png",
+    "sha256": "32a1f733d28154b03673bec03eb480c262fa43a8d4da5dab4da418b9842957a7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/tall_fruit_pod_3.png",
+    "sha256": "dbf49a958457dacedef643bf4e1c1ef627e7e84fa063b9a5b845b156aba39eb6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/peace_fruit_pod_3.png",
+    "sha256": "2a426808faa929c16b1c670e7443e7ea7f5668edf1a7fc82112980a8991da94e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_orange_fruit_pod_0.png",
+    "sha256": "6c1c32679fa4ea716cb53d5f6a4c7c9752b0072331117067272dac4371442a1c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/shiny_fruit_pod_1.png",
+    "sha256": "7a1bad70cadcda0a003e6453a27a4fd0ae28ac76cccda6b3d8b32c344ab7f966"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_yellow_fruit_pod_1.png",
+    "sha256": "139fdca6aceee7ca0510386ab5d6906e37217ca82376c28849968ec1f32e1cda"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/heart_fruit_pod_1.png",
+    "sha256": "72ad7a1a3771d6639455705aff5429cd344f051d44a38b52a602a59cb7f22e8d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/strong_fruit_pod_3.png",
+    "sha256": "2315dfad738c8a1fca094c54a547e62267eebec9a98298678382d9a6b49e61d8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/vitality_fruit_pod_0.png",
+    "sha256": "83d5309d521ade7170e078d852cbc98bd1a3c773e624d180ec2412a6ef0bef93"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_green_fruit_pod_3.png",
+    "sha256": "2e4cec3a660609b72520e1b3b8b6a979bf405f523439ad9dcd21cd04910d6e07"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/gba_blue_fruit_pod_3.png",
+    "sha256": "83ab44210ca02e81ac67e59f3e6e262ad93fd8858e551b4c4c7bdac9062fc09e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hyper_fly_fruit_pod_3.png",
+    "sha256": "e1634c89418473effa14ac09882f514d1f246af42b2d983850c77d366b2dc002"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/chao_fruit_pod_1.png",
+    "sha256": "3c390316d7d3e5d2819a64d1c7a27f7055b3234bd5403b32005c0b12ad4e1650"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/hero_garden_fruit_pod_1.png",
+    "sha256": "7f308bf4123ca141188e4f9827aeef6c1dbd06997fe6bb1c0526752765895a3a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/triangle_fruit_seed.png",
+    "sha256": "fd3b19e89f7b5276b364d979a875792360161ecccacd9ce65e1ac069238a4a45"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_fly_fruit_seed.png",
+    "sha256": "78e19b5fc00aaf020d6b6c3787fad9779e3edcb82d93b5b1a551f0409b5df0ab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/shiny_fruit_seed.png",
+    "sha256": "dbda3d31fa9d3ba8a76f660b414d6ea8bdf61ccd3569acc50e3cc0e01afacaa9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/vitality_fruit_seed.png",
+    "sha256": "c8aa406e9e02ff522de8b9cecedd0bd41a707f05ce650df5219de5ce94f6cb26"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/forbidden_fruit.png",
+    "sha256": "bba4a0297523e71639cf57eaeb816fe7f4a4e50d85625d523abad12a0ecbd98e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/square_fruit_seed.png",
+    "sha256": "424f255a72620a863b2507187b6882f3cb9cb251c2093b8c32210ea7396bba81"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/triangle_fruit.png",
+    "sha256": "6c8b4882696545b921b9a95e3d84ff51c164f0017e3a162b0b5ca4169b248ec4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/round_fruit.png",
+    "sha256": "e0404ad622d7ec14bba7155ea1e9b71a273492b923262b590221655042eaaf1d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/rough_fruit_seed.png",
+    "sha256": "382413b17b465e7f21a1d3d314749ecc4e195fb4418d58888a59c7b7d2ae6078"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/stamina_fruit_seed.png",
+    "sha256": "0bce1069e63bf9d4a79037b4ed984721b2d91bc3c6398cc196d77135e20b8a7a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/wonder_fruit_seed.png",
+    "sha256": "109961cbc6534a0547c138a4e2561f351fa05349eff8585090d98a22fd643da7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/smart_fruit_seed.png",
+    "sha256": "2f3c52017dd39d2d7d733c5a6e163a099a78f9c781e7b954c1a09884316968cc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_blue_fruit_seed.png",
+    "sha256": "ef527e5160b5719f42f8fc0b1547225d9f4f1b36aac30a9cfebcd2b421f62e18"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/tasty_fruit_seed.png",
+    "sha256": "b81feb5d1cd5084c8e819513f29c3d0108f90c81ae02eb690e4e1417f736ccd9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/stamina_fruit.png",
+    "sha256": "faf6e8983d0bd6b807b569299d2d24124b11300d640a9e1894f0cee8825ff8fe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/chao_fruit_seed.png",
+    "sha256": "826cb0e06f928d3a778f6fd74cc2244359bf50db3edeef48b527c155bfa992b3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/rare_fruit_seed.png",
+    "sha256": "2f414b4c9343761f4eeff17908af26276339c4d85c146083239d425753cf61c9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_power_fruit_seed.png",
+    "sha256": "b6005cad3a34ec21c7a487ad7c49e070a95d0253aa2784a8f69988b3562b01d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_run_fruit.png",
+    "sha256": "c2c88e92c8db70036ec72765384211f266bea9b1f2e23c775178a23ec0d73787"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_purple_fruit.png",
+    "sha256": "992d97689bed5bb51e3af8038f24e9ceb4d2e6f443cc79def2f6dde226a63b8d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hero_garden_fruit.png",
+    "sha256": "5645f19caae699a8de250365e41d70fa8a3d788d2c6dbd313fa522b56858b938"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_run_fruit_seed.png",
+    "sha256": "d272301187e2a0d2e5c233c5464f6af53ff1511266eeeaecb3e429e41a17db64"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/mushroom_alt.png",
+    "sha256": "ad9dda9c2792ed36774ffaf8e37f59b8ce87e572f504f756645f7d9147d88007"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_fly_fruit.png",
+    "sha256": "508a2c0bcc7141dc68ad233ed13bee2ed9e82c0b29f63788a249c7d4857f4eaa"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/garden_fruit_seed.png",
+    "sha256": "419a35b0ae9f5700953e3d3cfc389f23f223d63a429b36840eb22d774185eaaa"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hero_garden_fruit_seed.png",
+    "sha256": "8aff73a6fd0ab66ac65d0c78ad0d9344b06a0fd76b1996e8171e23174f764ac4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_green_fruit.png",
+    "sha256": "42ba56ef034786fca585f4f344ea7ee309d140d7280a459a33688d098b795735"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/orange_fruit.png",
+    "sha256": "699f8358dde417cd5d7732cc30573a83194628f79b3e728f95bee9842f26b05e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/strong_fruit_seed.png",
+    "sha256": "9944fd24a3c08c4b412fa750dd6a1379eccdea2a5139df3976263aa06d724c91"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/shiny_fruit.png",
+    "sha256": "a1649451c492688d99b7186af39a92e69cd1b1442ee6f4b47bf73eb6c8de7241"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_pink_fruit_seed.png",
+    "sha256": "78f2c571d5e57ec4ca9ce928265b8e08257a30a97f665377a39c3f5f78b33d4f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/creepy_fruit_seed.png",
+    "sha256": "c2358439b549b2abd84912f0a71d633e07e2414f2005439557aa2f270b0376c6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/wonder_fruit.png",
+    "sha256": "bd57f0e0abf24f5d9a416f05007cd70e1e42489462c3926b8b1b471e3ae1ccea"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/strong_fruit.png",
+    "sha256": "6ffb65c3409c45708fd3caa33824e496a0d82e14d8c75c50ef47da5863dcc270"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/square_fruit.png",
+    "sha256": "548b488511409c8422a1c77d8ff94f2e2345ab4abb25694b820a78941d9732c8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/forbidden_fruit_seed.png",
+    "sha256": "f9e2796bfd6faa9e91fef004cbd6df1acfba121324c9bad0852771d9125ce042"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/tall_fruit_seed.png",
+    "sha256": "bdfc5e366ac7acea075ff2ba91247f0bf329bb6cb871ebbae5df6e9d678ad699"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/vitality_fruit.png",
+    "sha256": "85b24c2d46dffee6dc31f1baee9ec1f9d9c483f8388ba62d6f9089f7f8ad6b0e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/peace_fruit.png",
+    "sha256": "7f0bd3cb6940ac7bb948675e5a06c45f7d3697e2121d206890c2d19b3029294e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_red_fruit.png",
+    "sha256": "e31fa4df27bfb5571c78d85d0bf62edcaf6e54eeb980aa05220de9a239c13d3d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/tasty_fruit.png",
+    "sha256": "27bfebf634186cc00bcee13914c86d7e2651b5f407e3e377ca47b40f70f8a377"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/garden_fruit.png",
+    "sha256": "ee63203bf78cf793c415cb61b7c364a52ce72d310587040c81603bbb462f04ee"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/rough_fruit.png",
+    "sha256": "74993f469b9c0c96a2881dd1bf1410ee943bfa4ca1c1357083c91e373f974148"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/dark_garden_fruit.png",
+    "sha256": "67a05d95a717796e7a02ce2d4a41f9356cb2cdfbf22e0411da670ca9216589dd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/mushroom_seed.png",
+    "sha256": "c4c33370cc03bbcd3381dbde23d8092b1b9e7740af7777df3b11e6fd53ce8563"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_red_fruit_seed.png",
+    "sha256": "eb2f42a611afe0c28d1c3f3a4dc9810196f39aeea3d9eba4b8e69e50c16cea63"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_swim_fruit.png",
+    "sha256": "0bec5802b46c26ac0c5b227f1f07309bafecf3b087e710e632fce57aa5c86ac3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_yellow_fruit.png",
+    "sha256": "0fdd895dc6fe426fef722f2a51cb763882a1060f7f0791a7aa6108f73ae588ef"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/mushroom_alt_seed.png",
+    "sha256": "d71420880ff102a2dc14f04913f252ca76783523ae44e8c883b34e243ceafc83"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/energy_fruit_seed.png",
+    "sha256": "69622e2762b830be562a2fabb9b51e2fad835396601ca88e0cebb0b9ef325a84"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/mint_candy.png",
+    "sha256": "d6e33da9cf02ed330f749dd4a122da0efd0368e5d4391382634b595f6987df51"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/tall_fruit.png",
+    "sha256": "eb908e94924207597b77118fc3d12be2b0c7f19a2f1c78efc867260ef326f89d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_pink_fruit.png",
+    "sha256": "1b68a276d38d7fa3f016971a25495061df89202d255e5b9714669039b54c2052"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/mushroom.png",
+    "sha256": "64370f94cfca357a879590749740bb3a2b58bec0717678b0422a0c47daa10c25"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_blue_fruit.png",
+    "sha256": "3ecbb8841fdb86b87d8afe1c269fe73391863685d26b390c4958f29873cba8b2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/peace_fruit_seed.png",
+    "sha256": "2722f54897465edfa6f1c2c32126102754ac7ea00c7edf783bdf9895ec7ea6d6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/energy_fruit.png",
+    "sha256": "61d9e314e44be14983178e876b9fa0e0bc034d42728d08d97a22b7aacfcdcfe8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/smart_fruit.png",
+    "sha256": "df4028865fbb6ca66f63890839fd7f21170e5be14b824f25956f611eca332fa5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_purple_fruit_seed.png",
+    "sha256": "126b96551da44c72d36dfb36150ffe82818c71a4bf5d9c03e49df145d8f349f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/chao_fruit.png",
+    "sha256": "650eaaf3db5d0224cf0d689018a36e99a904dbd4e56a2cfb42fa7c5634cf9992"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_yellow_fruit_seed.png",
+    "sha256": "4f69286eb0ad7318fca1b331d91ee536ce55da6813490a18bf882dd10b06ffc3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_orange_fruit.png",
+    "sha256": "f4ae34c445bcb684199dc238b8cc18e9b1fee93726726be09f3ae0f01a5a5f6a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_swim_fruit_seed.png",
+    "sha256": "d4df96fc537e997ed9a0fbff3bb3e533927ba0cc93597a485bf6bdddd2a82508"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/round_fruit_seed.png",
+    "sha256": "7baffce6b8c11ed514569a8b3a34eefb862bd1c26befbf0e6d375ce116708fb1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/hyper_power_fruit.png",
+    "sha256": "a605164a3816b4177de92be6b99d40516a943aa1b073fc34acef6e5dd3fbf39e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/creepy_fruit.png",
+    "sha256": "8ccb57d868b4db66bdd810b5ad70b03f1cd06b0bc54d2b1c9fd5d68f8021c432"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_green_fruit_seed.png",
+    "sha256": "a35d59b0c68ccfe318184306245db34e895264695ee13d133a14115505447bbc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/dark_garden_fruit_seed.png",
+    "sha256": "ae3b3daf7ea195d1d88beba99f3a753bd1dc9d76deddd0e4d2c176255bd8ab5f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/chao_watering_can.png",
+    "sha256": "795921e62401233b98155766d45a6e5f9450f27b346bfed45cce1522f24edfd2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/heart_fruit_seed.png",
+    "sha256": "7b628561f2af40a7658f9e4d2f745310eee17136199b586b03e42e9e6f733357"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/rare_fruit.png",
+    "sha256": "9345b8132f30489f7c37c407b9b1286be3f96fdb9ab9ea222363cd0c02979ad7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/gba_orange_fruit_seed.png",
+    "sha256": "3192411b4a3ca2c2b21705beaa80e6e4b47ff878947bff23e47dab05b9fd760d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/heart_fruit.png",
+    "sha256": "2b78591bbc061a9660b974be608c9caed650808e3077825a57401933821487f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/item/orange_fruit_seed.png",
+    "sha256": "f800675239dbd35e5373d77287c4332fd31284850faa8ad2f3f3b3754b0bacd7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/triangle_fruit_seed.png",
+    "sha256": "48e8e4c52d68fd2ddb944a3be3b839539e760ed99b06ec64611038580e1a1704"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_fly_fruit_seed.png",
+    "sha256": "d236668bd6ba5a0dfc16ac180eaffe9a84a79b195acaa85640c1c133dd97dae3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/shiny_fruit_seed.png",
+    "sha256": "629dde0748b2ea304bba941ebc3cd99ac830053d76f54ef0bd7471dc3dc6605b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/vitality_fruit_seed.png",
+    "sha256": "f634b3dd44c9b1ad8f92b1dd7b9c3f629b04211937c164aabd11e84248d9bd94"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/forbidden_fruit.png",
+    "sha256": "92a5ca4166aaab6f046a1ba40b43fbfb120aa263bc8ceb983648f72ecd2f2888"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/square_fruit_seed.png",
+    "sha256": "686388d8abfb6be7c2531bec2ac18c8bd6271387eef760c2a20a802134c32588"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/triangle_fruit.png",
+    "sha256": "4e700706381200303e843611ae082c4e8d5b1b4efcce969afb10feb845541380"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/round_fruit.png",
+    "sha256": "07190aaf482ea963c75a3dc248ce7aede92743884eca68dc62a3d2a80ce960e4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/rough_fruit_seed.png",
+    "sha256": "87c162502fdf46bade34284e40a8efc99076bae6470bd811991bc142872bfc67"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/stamina_fruit_seed.png",
+    "sha256": "91669a4c5b4ee36df71257582ab9aaed77107528496ea6b9f9c6307708a184af"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/wonder_fruit_seed.png",
+    "sha256": "c0f3684681931d055d5616545232c278a72dc15588b520cd5803e79504ccd3fe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/smart_fruit_seed.png",
+    "sha256": "0cbe97deb904d4ab93ea8c6b801d3b04c7afab4944f8291431bc4ec3861fdaa6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_blue_fruit_seed.png",
+    "sha256": "48c2c82a7cc8d7108103f9ef4b6d77f5400e9ae5f576bfe951634ffea81a2c7b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/tasty_fruit_seed.png",
+    "sha256": "10e73a28be2266005f896cff178b3e544bcec26e82f5fdcda3798e78b0f01d22"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/stamina_fruit.png",
+    "sha256": "5001bc0755cf2708dd0bd3cd944a8e6fc2cadf8227b780fc7a1884279f7aa56a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/chao_fruit_seed.png",
+    "sha256": "b028ffa0c3bb7d9eb00d2fbd7b2855520e1fa86df8cf94d0f68327cd080e7be8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/rare_fruit_seed.png",
+    "sha256": "d389caf1c55a632b01d2fb44be046817e77b7298302f37a4634c59c95714cd28"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/stem.png",
+    "sha256": "433424c5440d760de7ec5d41ac8ef77ff8d03a917d6e7f853c035c7e7c3c3f3e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_power_fruit_seed.png",
+    "sha256": "70ff4fb483780449d29f8d11dbbee1a83e24226dc74e9a4c664c99fb621af9a5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_run_fruit.png",
+    "sha256": "3706c840d7425dc4532e3e1d83244506916c762693325bb884c3384b8eba0986"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_purple_fruit.png",
+    "sha256": "2cb3ecb2498087574fab5890c4fc8634fcdfa15c935c5491c12e3f38ad91c931"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hero_garden_fruit.png",
+    "sha256": "aebf372c30b5d122c112dcd5929fb8c1ee08fd3cb77a535fd057994f51f7a20f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_run_fruit_seed.png",
+    "sha256": "47c0e83842d321669737957b1bf0549a0315c91ee8b94a014f78578a9609c2d8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/mushroom_alt.png",
+    "sha256": "0bff5c7379fefcf9ae7789bed3b133dddcc1b3a594a37f8cc02264717314776e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_fly_fruit.png",
+    "sha256": "e1634c89418473effa14ac09882f514d1f246af42b2d983850c77d366b2dc002"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/garden_fruit_seed.png",
+    "sha256": "781f39506776295051575d1a0a427184b068a074dcca20a2b5d54ef3fab029b2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hero_garden_fruit_seed.png",
+    "sha256": "fc58801d5bb1553969ad655e8f62cb3221d635e28cffd556a2394df61bb052b2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_green_fruit.png",
+    "sha256": "2e4cec3a660609b72520e1b3b8b6a979bf405f523439ad9dcd21cd04910d6e07"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/orange_fruit.png",
+    "sha256": "23def430430dad72e46f0396fc47748bfee9efdd43e987015f169d95100b2ecf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/strong_fruit_seed.png",
+    "sha256": "fa484f86c235a9562195fb7b909bd7740ca1ddb9f0bd77942edcb539ad97e25a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/shiny_fruit.png",
+    "sha256": "6d4cd7f59ac84f010b2fd66c150029606969c8138f9af77b61a3197c648c2f68"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_pink_fruit_seed.png",
+    "sha256": "1a0bd1873de2cad810888674ce3fcae72d6c4a68766d325944c4e12f68394949"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/creepy_fruit_seed.png",
+    "sha256": "95772230e46728cfad780e6be4c99c75998db600d4675d55f4cc5159f857dd66"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/wonder_fruit.png",
+    "sha256": "163939780cc94a30e756fd1571b6e24475226f69bac247c0106bb95a6f1bd778"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/leaf.png",
+    "sha256": "45acf16a822fba2f50f7b85fd61a0bff19cebeb13f4ec7c895aa07328f42c1e3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/strong_fruit.png",
+    "sha256": "2315dfad738c8a1fca094c54a547e62267eebec9a98298678382d9a6b49e61d8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/square_fruit.png",
+    "sha256": "60577f0f1743491412fa649949111545ecddd95836b50d01bd532333068a82e9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/forbidden_fruit_seed.png",
+    "sha256": "17f4894638ecd7d48206c0263cf6639f4b05f39279ed57b086c4bd6706b71580"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/tall_fruit_seed.png",
+    "sha256": "7eb77286554a6c707c62f2d8600b43b835e514f5d58785dda0927db9397a62d0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/vitality_fruit.png",
+    "sha256": "fea8ab9bee8c0f0c9c6e08e4495b964fd7308a7cd7e1b77c9f68b73d4bf6e1e9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/peace_fruit.png",
+    "sha256": "2a426808faa929c16b1c670e7443e7ea7f5668edf1a7fc82112980a8991da94e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/stalk.png",
+    "sha256": "b914c3c8be2694fbe20e8e8278f4550c640862d5ce534f00d0674a39dca2ab21"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_red_fruit.png",
+    "sha256": "d427e4847ebbb810f96c27d5e398be5021331df155af7dcc96cfd211630a839e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/tasty_fruit.png",
+    "sha256": "179d6e18950cb39ec56e04cde3d15aab543144e45151bdfb0d3ac8b0e3e3fd06"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/garden_fruit.png",
+    "sha256": "254f6cad53ab6a563783bc609130281d16f58af734b6ef9ee48fa5ec3ca715a8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/rough_fruit.png",
+    "sha256": "32a1f733d28154b03673bec03eb480c262fa43a8d4da5dab4da418b9842957a7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/dark_garden_fruit.png",
+    "sha256": "adb04f7131ac8c2b38fd35e46a106384162628651928479432bc82ad2ffe5cfe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/mushroom_seed.png",
+    "sha256": "7bedf8fdb0cc80fd2c92b9c2fe812e4cd60289743caa8eddd49e386f3f49108d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_red_fruit_seed.png",
+    "sha256": "66ca6e199bf350848cb768bfb32f346bcf6e01b59130baf6cbae123293ca5203"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_swim_fruit.png",
+    "sha256": "a1f50b65ef66e6db070e2d0a71c2967aa7963215aa7fb2b1a88bfba3534f13ac"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_yellow_fruit.png",
+    "sha256": "e69ed839e83017c4d514e1bed632f3b4b52f498bf4e8bf23dbe0b2db15297f3b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/mushroom_alt_seed.png",
+    "sha256": "905b6ffe704fc3379c61774ce154cbebaf98590e4bc50217af9d74070edaca42"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/energy_fruit_seed.png",
+    "sha256": "db23887afe9d01677080eb4baf397a29023dfe376a5ddca1de26a7ed475d9074"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/mint_candy.png",
+    "sha256": "8c56cbddd3030586e9829a9db83866b194334b8b96de461fc188f8b2b1912c52"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/tall_fruit.png",
+    "sha256": "dbf49a958457dacedef643bf4e1c1ef627e7e84fa063b9a5b845b156aba39eb6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_pink_fruit.png",
+    "sha256": "1b89fed4a8bff805b9d71c00dfed9f4c95c5ca9218f7204ef6caf25f1f7dd94d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/mushroom.png",
+    "sha256": "e1f940b323c2c390b1f2fd3b668377e0a91eed8e31d3a6401446e09b2d29eade"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_blue_fruit.png",
+    "sha256": "83ab44210ca02e81ac67e59f3e6e262ad93fd8858e551b4c4c7bdac9062fc09e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/peace_fruit_seed.png",
+    "sha256": "be5e5167fab9b04773083b27bcbe4aa75f7d76116f5e3be5396f23b725d0857f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/energy_fruit.png",
+    "sha256": "59a0a4eb41bc1cd49c085641ade882c6702f9e560808c195d98d426ddd279f0e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/smart_fruit.png",
+    "sha256": "25164aecbd8fa51fab166411b70b15d494151e917e9685e81cc53ba370aea846"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_purple_fruit_seed.png",
+    "sha256": "a4ae1d8d1f1555d8155756d9b36e2c02b1d1fc2138557f477f2a3954d4a4a112"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/chao_fruit.png",
+    "sha256": "bd675acaea12f66478c190487d5ec7beb97b57334603db9fe034005dc200de27"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_yellow_fruit_seed.png",
+    "sha256": "6907d1cd139fb7d2c25a58fb61db2156cebad7a0e19826f92b8981cd97955ae6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_orange_fruit.png",
+    "sha256": "a4c7eb7732d2251aa5ae272f89b34af492a30a60ca9fe6020ba76bf2e8e49ea8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_swim_fruit_seed.png",
+    "sha256": "4db548435bfa77902f661759277f56729ba5d11fa1c3f2bdc518ac4a0edcde06"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/round_fruit_seed.png",
+    "sha256": "3d4920a1b5ee1a585c7fe448958f3fe90ee8beb9de66cbfbc6c222a0c0469089"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/hyper_power_fruit.png",
+    "sha256": "9a9cf053a45bcbccdfaa4f1227973d271ca4653c9bd9853d9a287958398a29ec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/creepy_fruit.png",
+    "sha256": "f1ca08ba908d845fe8266b0d4630f8a020eb390f59909f7682ee00e1cee3c9e5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_green_fruit_seed.png",
+    "sha256": "b689257c1671fb7aa0be6aefdce44dd93127afed318fe107241d4d3b41405411"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/dark_garden_fruit_seed.png",
+    "sha256": "64849b291f5ee033e82d85cbf5c251923ea89f74e74f3f0bb874ab88d3c1a527"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/chao_watering_can.png",
+    "sha256": "c744f05e571c426ebb330fb4bd96a18e960e2de2955c43f5aed0c5c8ec0bb327"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/heart_fruit_seed.png",
+    "sha256": "5565c6558b4f093615777072ec29fee524576d6dabc6760747ab7c9568daeabc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/rare_fruit.png",
+    "sha256": "6418dbb484eee073034d574282775b8cdea4d484bb5f291665332c32a1927c2a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/gba_orange_fruit_seed.png",
+    "sha256": "8e46371c58308ffab4e453c8fc4e71f9710bbe7145badc45e4bc9e461c57027f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/heart_fruit.png",
+    "sha256": "18dfb11111acab2ef26ddbc49a1562e343743fd836eb5560b8f2f8665b086853"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/orange_fruit_seed.png",
+    "sha256": "ab323bc4811010d71654e736364429bcdcc6da6232994c4b77d69fe456ca4be0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/textures/block/fruit02512/leaf_light.png",
+    "sha256": "6daf5d9b3c58302811072d2984c4270591ff94edecf34fc64f118fb7d1162d53"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit_pod_0.obj",
+    "sha256": "8b84c2467950323ca26c4c24beeaacb6212dd1cd8ec981d5baa3e5d6937f59da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit_pod_1.obj",
+    "sha256": "6b435a88e5981e54c1da39ff1d2733b58fa33930f9cc743fad6859ca191fa890"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit_pod_1.obj",
+    "sha256": "ae601fe31b63c084959513a82b616386b479837680f74dc13bb758f3cab9eea6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit.obj",
+    "sha256": "fbaaf71c8c0374eccc321861c583e7c826af755d2a1045f706fc54b746bddc97"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit_pod_1.obj",
+    "sha256": "4ba557da4c8798eb99ecef53f73b52c664da913fcc59333828698c2913cf7beb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit.obj",
+    "sha256": "b4a5e85d0b1470c50277aac5a42129a57716dc479533f4f5ff6668cb4e125df9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit_pod_2.obj",
+    "sha256": "ac22c5ce4fafc373712b2454eb1b321bfe65869bea49b15db9444664d468e973"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit_pod_0.obj",
+    "sha256": "44d4dd9303dcafffa153ce1cf44d2f66b46c082bc1558462975ccd07e3f48296"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit_pod_0.obj",
+    "sha256": "8e3b67a53ef1f4e1d0aa98abf492797b0c0814c05a5801ab577e3b04b24dcc4c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_pod_1.obj",
+    "sha256": "c6df5ee4d5b4f5fad5c9013ab392beba8058b1c934a9d64a968a3938cacce1fe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit_pod_2.obj",
+    "sha256": "40c8db2fec6b5594a5c177e98a4e6619d4727be63876623151cc7667fd4add12"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit_pod_3.obj",
+    "sha256": "e90635b47a34ef0f12099f4b277f58271b8641dced78fa2fc929ea9420c2e9f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit_pod_1.obj",
+    "sha256": "2230910d0c7deb3e30d87a38e0434b7a8691cc7fde8e2bcf0029d4fea0a107d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit.obj",
+    "sha256": "b4a5e85d0b1470c50277aac5a42129a57716dc479533f4f5ff6668cb4e125df9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit.obj",
+    "sha256": "134fccf8045d0e5de9a2a0dfd93a5af66d9f63250a3204301cf644c2a0ced369"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit_seedling_0.obj",
+    "sha256": "93b4f374d903c1969ebc67a986aac5f30f7ea86308ee5382644e86312907251f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit_pod_2.obj",
+    "sha256": "ac22c5ce4fafc373712b2454eb1b321bfe65869bea49b15db9444664d468e973"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit_pod_0.obj",
+    "sha256": "be40d03fe76ab2cd7da34eefe4a4959b6d4539b31655c7466c92f91ce530ca56"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit.obj",
+    "sha256": "4492fdee5d0f968302be4f15f1769d4df8474251240ca996619330e792ee6bf8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit.obj",
+    "sha256": "578f253e58b954079d92d2906a503615d8f25253a5d01454160d84bc1bc3937c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit_pod_0.obj",
+    "sha256": "8b84c2467950323ca26c4c24beeaacb6212dd1cd8ec981d5baa3e5d6937f59da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit.obj",
+    "sha256": "c3a680905d394b9e7dedf1c4be07d233a62651fb37fb4b6ed6837dda94f86756"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit_pod_1.obj",
+    "sha256": "bb6709ab6185f9f28d47e2a30cf223a72c625d4223ffd9ce0a5192c7613876fc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit_pod_0.obj",
+    "sha256": "0b99c3336c01aa4de751f3263dd79c34c33aec8e128b18fff1411d9fcf139b94"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit.obj",
+    "sha256": "e9d1737b7365f5e01763185ee2d65492274075b5ed5ac83d1985ef38ca0abea8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mint_candy.obj",
+    "sha256": "9d71b101d4fdbe4a7348fed50dcba25f2235576c64d087afa7b0a7c9156aa6c3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit_pod_3.obj",
+    "sha256": "4f3d8145c7e72698ed18264208a6a66279b3eccd44926987bbd5ff14da446aab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit_pod_2.obj",
+    "sha256": "ac22c5ce4fafc373712b2454eb1b321bfe65869bea49b15db9444664d468e973"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit_seedling_1.obj",
+    "sha256": "f8cbf5fbd9165c9dd0ce1ed1b08ac3ec8060824e215e3a88f92161ea22ac62e1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit_pod_0.obj",
+    "sha256": "44d4dd9303dcafffa153ce1cf44d2f66b46c082bc1558462975ccd07e3f48296"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit_pod_1.obj",
+    "sha256": "2230910d0c7deb3e30d87a38e0434b7a8691cc7fde8e2bcf0029d4fea0a107d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_pod_0.obj",
+    "sha256": "3b481cc7d2fbd28323418c5af15151312e8051f536beeb687d5517fab7b32111"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit_pod_2.obj",
+    "sha256": "40c8db2fec6b5594a5c177e98a4e6619d4727be63876623151cc7667fd4add12"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit_pod_0.obj",
+    "sha256": "44d4dd9303dcafffa153ce1cf44d2f66b46c082bc1558462975ccd07e3f48296"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit_pod_1.obj",
+    "sha256": "ae601fe31b63c084959513a82b616386b479837680f74dc13bb758f3cab9eea6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit_pod_1.obj",
+    "sha256": "4ba557da4c8798eb99ecef53f73b52c664da913fcc59333828698c2913cf7beb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit_pod_1.obj",
+    "sha256": "ae601fe31b63c084959513a82b616386b479837680f74dc13bb758f3cab9eea6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit_pod_0.obj",
+    "sha256": "12c81391a249b027ea37ac54fa4700440bb2b0ca1dd76387cfa57dac8424b485"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit.obj",
+    "sha256": "947674ecc68fa830101ae67ee9ddadaa423d0bf67dc80ae79e7383639f68380a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit_pod_0.obj",
+    "sha256": "8b84c2467950323ca26c4c24beeaacb6212dd1cd8ec981d5baa3e5d6937f59da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit.obj",
+    "sha256": "d76935af56d1b581a1e8a410ccae0b3a9ce504c6c87738523204aa1723d70c27"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit.obj",
+    "sha256": "578f253e58b954079d92d2906a503615d8f25253a5d01454160d84bc1bc3937c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit_pod_2.obj",
+    "sha256": "95bb022e92602cb1ea69711dd0c1b890f2695603249d5151a39029084412fc6b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit.obj",
+    "sha256": "fbaaf71c8c0374eccc321861c583e7c826af755d2a1045f706fc54b746bddc97"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit_pod_3.obj",
+    "sha256": "4f3d8145c7e72698ed18264208a6a66279b3eccd44926987bbd5ff14da446aab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit_pod_2.obj",
+    "sha256": "40c8db2fec6b5594a5c177e98a4e6619d4727be63876623151cc7667fd4add12"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit_pod_0.obj",
+    "sha256": "44d4dd9303dcafffa153ce1cf44d2f66b46c082bc1558462975ccd07e3f48296"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit_pod_1.obj",
+    "sha256": "ae601fe31b63c084959513a82b616386b479837680f74dc13bb758f3cab9eea6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit_pod_2.obj",
+    "sha256": "817b05b1a497d7f63e3f87386eb468e3ff3a35551a83207757a270ad97fc353b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit_pod_0.obj",
+    "sha256": "ecb10b858dba81f78ba8f0adb86a1fb1deb9fcfeaf858119d8d0f60d905f427e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit_pod_1.obj",
+    "sha256": "608426b1c3c0673775509b7216b58332995110a648fc9d1a78762c8d043e27e3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit.obj",
+    "sha256": "578f253e58b954079d92d2906a503615d8f25253a5d01454160d84bc1bc3937c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit_pod_1.obj",
+    "sha256": "ae601fe31b63c084959513a82b616386b479837680f74dc13bb758f3cab9eea6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt_pod_3.obj",
+    "sha256": "469e3a697863271729c39c082d52e434ebd3dd1fae253be5585dc359e7d62df7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit_pod_2.obj",
+    "sha256": "91fa5ea5ada3eb5bf10220426b9348463e96deae6bff144f8e0b5aac67cdf81d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit_pod_1.obj",
+    "sha256": "2230910d0c7deb3e30d87a38e0434b7a8691cc7fde8e2bcf0029d4fea0a107d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit_pod_3.obj",
+    "sha256": "52ff17f021856c29c60447bbee3d3e1f6169cbd2b7a59d327a5fbec31bfc60d7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit.obj",
+    "sha256": "c3a680905d394b9e7dedf1c4be07d233a62651fb37fb4b6ed6837dda94f86756"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit.obj",
+    "sha256": "5b5f5d981a9ff696acd6058f21e3f9242916fa757a4cbed17be54a8bfe62f8ea"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit_pod_0.obj",
+    "sha256": "50ba2b2307f0488a8035055704caeb2a1e9f88f7d4a4aa0ad90a2550b91cdd45"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit_pod_0.obj",
+    "sha256": "8b84c2467950323ca26c4c24beeaacb6212dd1cd8ec981d5baa3e5d6937f59da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt.obj",
+    "sha256": "b9f91b438d4ef6f4df9a9992403b2389d452ac531903ef4e6a6161ae9bcaacfa"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit.obj",
+    "sha256": "578f253e58b954079d92d2906a503615d8f25253a5d01454160d84bc1bc3937c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit_pod_1.obj",
+    "sha256": "e345500d31b0663a30bf2123b381e495deac08499697175e65d0880be4a32ec1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit_pod_3.obj",
+    "sha256": "4f3d8145c7e72698ed18264208a6a66279b3eccd44926987bbd5ff14da446aab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit_pod_2.obj",
+    "sha256": "ac22c5ce4fafc373712b2454eb1b321bfe65869bea49b15db9444664d468e973"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit_pod_0.obj",
+    "sha256": "ecb10b858dba81f78ba8f0adb86a1fb1deb9fcfeaf858119d8d0f60d905f427e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit.obj",
+    "sha256": "134fccf8045d0e5de9a2a0dfd93a5af66d9f63250a3204301cf644c2a0ced369"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit_pod_1.obj",
+    "sha256": "4ba557da4c8798eb99ecef53f73b52c664da913fcc59333828698c2913cf7beb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit_pod_3.obj",
+    "sha256": "495c7ebc6c6d9816de4b84ac51b894decd6a03fb7919ac0817dcb701c0bc7015"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit.obj",
+    "sha256": "fbaaf71c8c0374eccc321861c583e7c826af755d2a1045f706fc54b746bddc97"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit_pod_3.obj",
+    "sha256": "495c7ebc6c6d9816de4b84ac51b894decd6a03fb7919ac0817dcb701c0bc7015"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit_pod_3.obj",
+    "sha256": "5fee2b1b16dcfa26d3683e8ebf67fa9ebb65088f7d7244b8a8e9cfb24a1c604f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/materials.mtl",
+    "sha256": "6b4283e8449730f3f1f12eb06107025a438ef9cb986a56c372846c15c36000e3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit.obj",
+    "sha256": "c3a680905d394b9e7dedf1c4be07d233a62651fb37fb4b6ed6837dda94f86756"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit_pod_0.obj",
+    "sha256": "f33e3918ea741ea7e4a3b9ae93c7081eeb81d19d8757274261a1f1a039c510ef"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit_pod_3.obj",
+    "sha256": "290e4ded1bca9e9291aab97837a02f8cd264a312f7c9dc369a5501543b04d09c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit_pod_3.obj",
+    "sha256": "52ff17f021856c29c60447bbee3d3e1f6169cbd2b7a59d327a5fbec31bfc60d7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit_pod_3.obj",
+    "sha256": "67d81a6a56afdbce8bdb5460e429f273bea6db470bd40d6ff1c07ded1822cd14"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit_pod_1.obj",
+    "sha256": "2230910d0c7deb3e30d87a38e0434b7a8691cc7fde8e2bcf0029d4fea0a107d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit.obj",
+    "sha256": "134fccf8045d0e5de9a2a0dfd93a5af66d9f63250a3204301cf644c2a0ced369"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit_pod_0.obj",
+    "sha256": "0b99c3336c01aa4de751f3263dd79c34c33aec8e128b18fff1411d9fcf139b94"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit_pod_3.obj",
+    "sha256": "4f3d8145c7e72698ed18264208a6a66279b3eccd44926987bbd5ff14da446aab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit_seed.obj",
+    "sha256": "23d0d8bcfef244e06be6d0d4540dbca559ca62da6e84e87ddeb0ab19a8d9a139"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit.obj",
+    "sha256": "134fccf8045d0e5de9a2a0dfd93a5af66d9f63250a3204301cf644c2a0ced369"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit.obj",
+    "sha256": "d76935af56d1b581a1e8a410ccae0b3a9ce504c6c87738523204aa1723d70c27"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit_pod_2.obj",
+    "sha256": "d2ce3e33b1895552201bd0cdf4080131c26ef73839490ab29d547a42e21c2b39"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_red_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit_seedling_1.obj",
+    "sha256": "becc5458d2935fb065cb28e1af99f88792eee88a6306cb4a7a76add602c61caf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit_pod_3.obj",
+    "sha256": "495c7ebc6c6d9816de4b84ac51b894decd6a03fb7919ac0817dcb701c0bc7015"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit_seed.obj",
+    "sha256": "2714bd1b76dd6b9fdb93b2dca0b082df7f3ce870d6defa1c860c451cd7098ad9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit_pod_3.obj",
+    "sha256": "e90635b47a34ef0f12099f4b277f58271b8641dced78fa2fc929ea9420c2e9f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit_pod_2.obj",
+    "sha256": "2df2b39f76959c6b31e75c6fdc8f4ce083f18da117fa75ef32f3d4a062750692"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit_pod_3.obj",
+    "sha256": "4f3d8145c7e72698ed18264208a6a66279b3eccd44926987bbd5ff14da446aab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit_pod_3.obj",
+    "sha256": "495c7ebc6c6d9816de4b84ac51b894decd6a03fb7919ac0817dcb701c0bc7015"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit_pod_1.obj",
+    "sha256": "fa63003bdabffde88432f646a6044cf3ab03831c2496b44cfea248d4f1c6e7ca"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit_pod_2.obj",
+    "sha256": "ac22c5ce4fafc373712b2454eb1b321bfe65869bea49b15db9444664d468e973"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit_pod_3.obj",
+    "sha256": "4f3d8145c7e72698ed18264208a6a66279b3eccd44926987bbd5ff14da446aab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit.obj",
+    "sha256": "fbaaf71c8c0374eccc321861c583e7c826af755d2a1045f706fc54b746bddc97"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit_pod_3.obj",
+    "sha256": "4f3d8145c7e72698ed18264208a6a66279b3eccd44926987bbd5ff14da446aab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit.obj",
+    "sha256": "fbaaf71c8c0374eccc321861c583e7c826af755d2a1045f706fc54b746bddc97"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit_pod_0.obj",
+    "sha256": "8b84c2467950323ca26c4c24beeaacb6212dd1cd8ec981d5baa3e5d6937f59da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit_pod_2.obj",
+    "sha256": "ac22c5ce4fafc373712b2454eb1b321bfe65869bea49b15db9444664d468e973"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt_pod_1.obj",
+    "sha256": "c6df5ee4d5b4f5fad5c9013ab392beba8058b1c934a9d64a968a3938cacce1fe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit_pod_2.obj",
+    "sha256": "ac22c5ce4fafc373712b2454eb1b321bfe65869bea49b15db9444664d468e973"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/creepy_fruit.obj",
+    "sha256": "578f253e58b954079d92d2906a503615d8f25253a5d01454160d84bc1bc3937c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit.obj",
+    "sha256": "578f253e58b954079d92d2906a503615d8f25253a5d01454160d84bc1bc3937c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit.obj",
+    "sha256": "0dfd1243289b69ac8eca8b4579370f9f8e1d8db812ab976cfe182717c8e238a2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit.obj",
+    "sha256": "d76935af56d1b581a1e8a410ccae0b3a9ce504c6c87738523204aa1723d70c27"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit_pod_0.obj",
+    "sha256": "8b84c2467950323ca26c4c24beeaacb6212dd1cd8ec981d5baa3e5d6937f59da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit_pod_0.obj",
+    "sha256": "ecb10b858dba81f78ba8f0adb86a1fb1deb9fcfeaf858119d8d0f60d905f427e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_watering_can.obj",
+    "sha256": "23dc99e83d64017e2371badd191c3ee382c8137da62feda9cda17b1ed07bfe65"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit_pod_2.obj",
+    "sha256": "52c66bc888aa83551d7ada49913bf3f807f72a8d4adb275d77222f4a9f79939c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit_seedling_1.obj",
+    "sha256": "53f1f8dc7a1f03952d65e030eddf80bd1d936e8f2b0d5cd1f1dec8b699d05aaa"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit_pod_3.obj",
+    "sha256": "495c7ebc6c6d9816de4b84ac51b894decd6a03fb7919ac0817dcb701c0bc7015"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit_pod_2.obj",
+    "sha256": "d944f88062955849327d4edffd097d03291241cc1f04e0f319cfc5f1445da6ec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit_pod_1.obj",
+    "sha256": "2230910d0c7deb3e30d87a38e0434b7a8691cc7fde8e2bcf0029d4fea0a107d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit_pod_2.obj",
+    "sha256": "2df2b39f76959c6b31e75c6fdc8f4ce083f18da117fa75ef32f3d4a062750692"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit_pod_2.obj",
+    "sha256": "d944f88062955849327d4edffd097d03291241cc1f04e0f319cfc5f1445da6ec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/garden_fruit_pod_1.obj",
+    "sha256": "c0e36984021d2434fccd4d7ea55e832163c2d62747b444b4805319f16c196529"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/triangle_fruit_pod_3.obj",
+    "sha256": "5bd93ea95eb3e5c748464d38018b02c6e329ac72088f9f94a2dc36e36201d3a6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit_pod_2.obj",
+    "sha256": "40c8db2fec6b5594a5c177e98a4e6619d4727be63876623151cc7667fd4add12"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit_pod_0.obj",
+    "sha256": "8b84c2467950323ca26c4c24beeaacb6212dd1cd8ec981d5baa3e5d6937f59da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt_pod_2.obj",
+    "sha256": "bd72f6232f039f218574200e53a51985f783cd0c4e8e7e5478e3dfe414bd81f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit_pod_2.obj",
+    "sha256": "d944f88062955849327d4edffd097d03291241cc1f04e0f319cfc5f1445da6ec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_yellow_fruit_pod_0.obj",
+    "sha256": "44d4dd9303dcafffa153ce1cf44d2f66b46c082bc1558462975ccd07e3f48296"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_blue_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/vitality_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit_pod_3.obj",
+    "sha256": "29acea8bea0ba538ed5cc85abe4bda93b7188fecc16cf06907d1206a11554609"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit.obj",
+    "sha256": "b4a5e85d0b1470c50277aac5a42129a57716dc479533f4f5ff6668cb4e125df9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit.obj",
+    "sha256": "fbaaf71c8c0374eccc321861c583e7c826af755d2a1045f706fc54b746bddc97"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_power_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit_pod_1.obj",
+    "sha256": "ebed5c032aff3941cf703e3ddc628838dc46be1d676df8381df5c95762ea8e9b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/strong_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_pod_2.obj",
+    "sha256": "bd72f6232f039f218574200e53a51985f783cd0c4e8e7e5478e3dfe414bd81f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/orange_fruit_pod_2.obj",
+    "sha256": "40c8db2fec6b5594a5c177e98a4e6619d4727be63876623151cc7667fd4add12"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit_seed.obj",
+    "sha256": "284dd9de27930623e8620954c706b8927ab1b16aaaa81be173db352c098989ea"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit_pod_0.obj",
+    "sha256": "9995c3e42b99aaacad967610188f7502709dfd2d955435524d6c1bc1cc774f05"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/chao_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_pod_3.obj",
+    "sha256": "469e3a697863271729c39c082d52e434ebd3dd1fae253be5585dc359e7d62df7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit_pod_2.obj",
+    "sha256": "40c8db2fec6b5594a5c177e98a4e6619d4727be63876623151cc7667fd4add12"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit.obj",
+    "sha256": "fbaaf71c8c0374eccc321861c583e7c826af755d2a1045f706fc54b746bddc97"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit_pod_0.obj",
+    "sha256": "44d4dd9303dcafffa153ce1cf44d2f66b46c082bc1558462975ccd07e3f48296"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/dark_garden_fruit_pod_3.obj",
+    "sha256": "0264675b55ba8980442ca3198e4dbea407089448449ef3ff1c9cda9cd49fc403"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit_pod_3.obj",
+    "sha256": "495c7ebc6c6d9816de4b84ac51b894decd6a03fb7919ac0817dcb701c0bc7015"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit_seedling_0.obj",
+    "sha256": "83f93931520a1a0525cd276a01429e169542714bbec073fcdb8a46db7782d741"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit_pod_1.obj",
+    "sha256": "c0e36984021d2434fccd4d7ea55e832163c2d62747b444b4805319f16c196529"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit_pod_1.obj",
+    "sha256": "10ef6d43c933a40811f0abdd97cd83a98104303476334ac20644fb554c7bc17b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_alt_pod_0.obj",
+    "sha256": "3b481cc7d2fbd28323418c5af15151312e8051f536beeb687d5517fab7b32111"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_fly_fruit.obj",
+    "sha256": "134fccf8045d0e5de9a2a0dfd93a5af66d9f63250a3204301cf644c2a0ced369"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rare_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/peace_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_swim_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit_pod_0.obj",
+    "sha256": "74da7917670e3f0e8ca7fa11ffbdf2a8ea2d77fb6cb4cda3ac8869beeb52acd4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit_pod_2.obj",
+    "sha256": "f9923ea8738f4d725c80beb5e284b927c3e3f5a72b1cb308ca9f7c6ceb759225"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_orange_fruit_pod_0.obj",
+    "sha256": "44d4dd9303dcafffa153ce1cf44d2f66b46c082bc1558462975ccd07e3f48296"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit_pod_3.obj",
+    "sha256": "495c7ebc6c6d9816de4b84ac51b894decd6a03fb7919ac0817dcb701c0bc7015"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/heart_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hyper_run_fruit_pod_3.obj",
+    "sha256": "6b51969bbaf245a4f579567dc3c8a56844e695cb57a0f639b570f4aa80cca2d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/wonder_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/energy_fruit_pod_2.obj",
+    "sha256": "40c8db2fec6b5594a5c177e98a4e6619d4727be63876623151cc7667fd4add12"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/rough_fruit_pod_3.obj",
+    "sha256": "e90635b47a34ef0f12099f4b277f58271b8641dced78fa2fc929ea9420c2e9f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tall_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_pink_fruit_pod_1.obj",
+    "sha256": "2230910d0c7deb3e30d87a38e0434b7a8691cc7fde8e2bcf0029d4fea0a107d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit_pod_1.obj",
+    "sha256": "ae601fe31b63c084959513a82b616386b479837680f74dc13bb758f3cab9eea6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/round_fruit.obj",
+    "sha256": "578f253e58b954079d92d2906a503615d8f25253a5d01454160d84bc1bc3937c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/square_fruit_seedling_0.obj",
+    "sha256": "4d52aa0346b62ef78df3a65cf3126316e656cb8c6a93492bbc4ac3e2563b9525"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/smart_fruit_pod_2.obj",
+    "sha256": "3d1281fbcf4e9cc4884a31394f1265f8d2588e7121e9393e17445bc7b802cb2a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_purple_fruit_pod_1.obj",
+    "sha256": "2230910d0c7deb3e30d87a38e0434b7a8691cc7fde8e2bcf0029d4fea0a107d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/stamina_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/hero_garden_fruit_seed.obj",
+    "sha256": "0e2a5eb3e2d3e1c724d86bf2f92be78a26e4b2478eac219ba32312a43a401d29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit_pod_1.obj",
+    "sha256": "ae601fe31b63c084959513a82b616386b479837680f74dc13bb758f3cab9eea6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/gba_green_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/forbidden_fruit.obj",
+    "sha256": "b4a5e85d0b1470c50277aac5a42129a57716dc479533f4f5ff6668cb4e125df9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/tasty_fruit_seedling_0.obj",
+    "sha256": "03fc1d6633c1dc2615f1419143c9c0427e24ce3f3e4fb2e0fa474c6027ee47f8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/mushroom.obj",
+    "sha256": "b9f91b438d4ef6f4df9a9992403b2389d452ac531903ef4e6a6161ae9bcaacfa"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/fruit02512/shiny_fruit_seedling_1.obj",
+    "sha256": "cba7ab7c2a27b9ba9fecd059d412a9d5049fb3621b8a9536eeb8d69982884ab6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tall_fruit_seedling_1.json",
+    "sha256": "b487f6546396eb63a6242768753db6f70c05715525e6839f30e133dd35537d54"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_alt_seedling_0.json",
+    "sha256": "df533625f1f5b2f2e36c7a9d4b841b80142831df2feaaf73f7fd86688028fccf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_pink_fruit_pod_1.json",
+    "sha256": "85c46738e7c8d40b08fa15d23707b1d591bf4442e46ad44f945d9db04a22d12f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/smart_fruit_pod_2.json",
+    "sha256": "45f6df39d39bc35b3b2ffa9dc32fe6b38a7e6670fa81050fd7f205574841d946"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tall_fruit_pod_2.json",
+    "sha256": "35152d7a0c9492d45e4189bbe7d0a725e2dcc741434e446858b01b6ec6b2f657"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/heart_fruit_pod_3.json",
+    "sha256": "4f4daf4017b9a8a0d41c899179635cfa3158f463bd682256e9cb0ac9a7b9884d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/chao_fruit_pod_3.json",
+    "sha256": "a8f414b270f82bad87db37e2173074ae3ee93b724148c3bf1551ccd5cebcb909"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/garden_fruit_pod_1.json",
+    "sha256": "d12dfc057173ecc7b1fa69ab3c97a15deacf1dc9d6c9772ea853aa604897037b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/chao_fruit_pod_1.json",
+    "sha256": "8efa37eff63e6f4372c00bfb0eb8f6217b1129cc406efa4eb7eef000064cc4c3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/garden_fruit_pod_0.json",
+    "sha256": "4cb1109107c196395f846c9100b8d3b364ac7b4e3bc94bd4448f35803b717aaf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/chao_fruit_pod_0.json",
+    "sha256": "0b6a05304c21f4572e76a6b79daf6444ff1eb772c4c2736cea2131744e653c6e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/dark_garden_fruit_seedling_0.json",
+    "sha256": "ae4879bfa777bbeac35b875608836e5907dca952b72bbf703c724de6b090abe0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rough_fruit_seedling_1.json",
+    "sha256": "b9949bf4fa67d5797f6221e19d6b7a736f28fd2a31b04c6c3768d82e9b3fc631"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rough_fruit_pod_2.json",
+    "sha256": "d4683cfee72c29f3fb2ca77d4f52b07a04385a5e7893d5fb7a25c8fc79130570"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/chao_fruit_pod_2.json",
+    "sha256": "0fecef823f91730c1c1e7bbd2053a976a07a3a9d280c8e1d2329d8704918a925"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tall_fruit_pod_0.json",
+    "sha256": "e2feb184816611b5e4ff258cbe1c320bdd4a3d471efb5a8524f2a09e829325f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/round_fruit_pod_0.json",
+    "sha256": "8b2612ca807cadd80ccc8ca564a33b0ad73ae5afc5d9734d19ee5d7c1b19842b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_run_fruit_pod_3.json",
+    "sha256": "e616aa5feb95b214946770634472ce128b50f95689aec1a83d2ee8768d4fece1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/round_fruit_pod_1.json",
+    "sha256": "d870c3dd8717a4b2a257a1a5c434adaf2dc8f368131e8a1efd6633a981014c63"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_power_fruit_pod_0.json",
+    "sha256": "abffda1072afe2d8b54c03d9c1bc571d91ca889e5ff2c2010889d4783b84ce19"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/square_fruit_seedling_1.json",
+    "sha256": "81490e030af5d1b133253b466c2b40447487ba25970fc64e927468912eb34e2d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_red_fruit_pod_2.json",
+    "sha256": "691280de22563bbfd9e7ec7124fdb28c2c1d8f83d5a69a6baa8aaa4f02de77c3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tall_fruit_pod_1.json",
+    "sha256": "01739c00712c0022b6e451235c3a746722c905dcda09f24245d501cd34c932c5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_pink_fruit_pod_0.json",
+    "sha256": "c8439f979c563d853b92912dd251ee166facb4ed67466447eb5d056e814589b2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_power_fruit_seedling_0.json",
+    "sha256": "e2607b606b89b721eddadcd84169ce313af491c78e2bc8abd96935c9509cb140"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/creepy_fruit_pod_0.json",
+    "sha256": "d071fe4bb67dcaf1bf520ff2e7474cb58508f0da5d7dec59adaa1fa677fd42eb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_blue_fruit_pod_1.json",
+    "sha256": "74bb372c748a240a03206004f5d22127e4263881d4c6eda126e75fa4510d34b7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_purple_fruit_seedling_1.json",
+    "sha256": "ef995f395f5a39c83c30ee9a51a24ae338c31a117eb324c27fe98e419d864c19"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_green_fruit_pod_2.json",
+    "sha256": "9fd69b523bb93c1b48b4856c5c3e3874ef5e6ed5e52516ecc8ea12d24a832f34"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_yellow_fruit_pod_3.json",
+    "sha256": "0b114db4da6d77bbf04e515681e160c459ab86b551e102c7615f7e11d59c735d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/forbidden_fruit_pod_1.json",
+    "sha256": "4bb5f6a4730ba8284ee23426111ffa108251e9eec66cf37b6ff560fe5e635aed"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_swim_fruit_seedling_0.json",
+    "sha256": "52060a7d84e56570db489a0e8c2ee25a99ec749b5c17cac59108cd5c6064e195"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/stamina_fruit_seedling_1.json",
+    "sha256": "7f3f049e8ebc0c10726ad22e4e88bef40647eddefe1406fb78006358aaed878e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/dark_garden_fruit_pod_2.json",
+    "sha256": "89dbebeac07074ca23f62ccf1144734ef3fd97437d7e5161e4d5098818c2efb5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/heart_fruit_pod_2.json",
+    "sha256": "d0c082c92324ed0e4bd6cb64d05bcc847a9c2c054cfbc629af21b602904a0fb1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_run_fruit_pod_2.json",
+    "sha256": "1940df4ce18a52fa203592c997491ee9714d94338ec6e0414bab33e2e33ff1c8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_orange_fruit_seedling_1.json",
+    "sha256": "edc0655a4c9525f599322d9a07e9170cb771c383b62a6404dd0610b104118d59"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/wonder_fruit_seedling_0.json",
+    "sha256": "92ca712a89b4178bb61ca5f12615d1fa8da682a9ed18d6239725a87ddbbd8264"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_red_fruit_pod_1.json",
+    "sha256": "d2cb13f825bf2705a3a4e537ac791fae006e891809b08b63e76bf9554f301162"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tasty_fruit_pod_2.json",
+    "sha256": "de4333bc1b8b02891e02241080209726f3fcaa3c0edf5f111fe2908d8af5c351"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/orange_fruit_seedling_1.json",
+    "sha256": "378157d53f7bda202966c7d6695961bd96994ec152a8a24482a078b2eb3a5f07"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_alt_pod_1.json",
+    "sha256": "eb8a861a182c53f49dbc478b209e798e81c2503b9df2bcbd10193d13a9cff752"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_fly_fruit_seedling_1.json",
+    "sha256": "7f9cce11ea4afe93d4b73b8ee80ee028c5abcb8f37d5d898de57d5d9fe61d210"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/garden_fruit_seedling_0.json",
+    "sha256": "73be3d226decbf6cd395857f3b92a2b2a0387397bec1c90b56c65524eef06e64"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tall_fruit_pod_3.json",
+    "sha256": "738cdfdc94d2611f7fe30d9321b5165c0804972a155c2dacff3c7c666dbc4cf2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/smart_fruit_pod_3.json",
+    "sha256": "0fdfaa9f01143bfe1053b2e137bc57e7baaa2d9600c8fcdab5383ca39c63d367"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/wonder_fruit_seedling_1.json",
+    "sha256": "aefdcc45de6f2bbaf3c837e7bcd51a1d9185a4e128f04e5169c50ff80001c3e2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tasty_fruit_pod_1.json",
+    "sha256": "4a981651c9756e9bce513a7f1e0198053388c07c0d4be4de840f1fd1f65e7ff1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/garden_fruit_pod_3.json",
+    "sha256": "27f3954a94056c19cfd592e7490d5475855d660f6741423c7ff1babfa37383d6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/wonder_fruit_pod_2.json",
+    "sha256": "95e59629f665676ff5aa8383cdb9b7f4299a95ab4375e2b3e28e343c1b5eafee"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_green_fruit_seedling_1.json",
+    "sha256": "95d8c92191ec96bc9830b9fe7c280d400dc0aceaf1f33f83dd2579f9ecaf1226"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_pod_1.json",
+    "sha256": "54991e73a67eb6fb3c1475a707a8b6801acca8e2dd6a71f0b4a6d8c00dc1ab49"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/forbidden_fruit_pod_2.json",
+    "sha256": "8d4302b573bd3d061c5e7a102e0613acd37c660ce43eafd5ddb2961e4a3965e2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_green_fruit_seedling_0.json",
+    "sha256": "95129fab4b0a400d33da412f8ab7d319863fb25920ab832a94c6ff52d3635287"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_red_fruit_seedling_1.json",
+    "sha256": "fcfd28e16dbd63025f91ce5adcd9207d43237cb9565025c492f7784f0442550d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/vitality_fruit_pod_3.json",
+    "sha256": "f3ca11ae541b3e929f9d2a667488024edc46da17a31b2c9f5c567f3ca429100d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hero_garden_fruit_seedling_0.json",
+    "sha256": "3b1c27fe386de9e8c81fcc13acc374a8a64386d9e81021a8fae3e2cdb90ce048"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/strong_fruit_pod_3.json",
+    "sha256": "6c9ec6ef11d56c26c315230f4add8620903f5b0d6b180b3b33f9e7d743489d95"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tasty_fruit_seedling_1.json",
+    "sha256": "96ab9289d67902d734b8a7589e9c5912ec764285518e3e77894387170ea81189"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_pink_fruit_seedling_1.json",
+    "sha256": "f5c6090c601ea1e7daaf57df752c0f21350921662787d01a7e814931ddba9858"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/energy_fruit_pod_1.json",
+    "sha256": "217dedfa490728832874227665d284a9f84e9aa36f7240254a0fa7dba1952848"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_yellow_fruit_pod_2.json",
+    "sha256": "66dbb4f0176b61ed8989cd0043d44b5f415d62245823fc11ec910cb426979006"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_fly_fruit_pod_1.json",
+    "sha256": "81e2614218eb0872a8183f8b642b2b4ed89e93780db953cbf0e8422ecfd6958f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hero_garden_fruit_pod_2.json",
+    "sha256": "d16a46cda421328643dba5e4900adb39508541c05e9c14668289c99b8508e240"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/creepy_fruit_pod_1.json",
+    "sha256": "232a72638df9edffab8e0d7a5cd9f4cc6c19d1825bbf8f97d67567933892223a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/forbidden_fruit_seedling_1.json",
+    "sha256": "ca3ee9af252220684e08aef8a0275bbc63d9e8fed5b9de628cbccdb8acdaa9e0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_alt_pod_3.json",
+    "sha256": "de36b18586fe4b01c77b4757dcde64c4777b5a4978607c5a3a9434758034f646"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/shiny_fruit_pod_0.json",
+    "sha256": "b8c59cca36a6f0595291fd790408f2524e9830d82326893e4e722cd280fd4838"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_green_fruit_pod_1.json",
+    "sha256": "1c79d35ee1b0b68c705946074ef4321ea9dfbc64a134b3818e7a907b64e7e005"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rare_fruit_seedling_1.json",
+    "sha256": "8c80e0439ebc1c209e65ca17f178aa6b6efbbc261d9d577cf165036ec5f4c6a6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/peace_fruit_pod_1.json",
+    "sha256": "249bc73ce9d409cc1472417d58e9f441072722b5c8e7de108b45842d3c4858f7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/forbidden_fruit_pod_0.json",
+    "sha256": "1934ad173656e163ff8a4c9ffb886eeafcaefd4e304d3e5e9d101158a6a39853"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hero_garden_fruit_seedling_1.json",
+    "sha256": "1e3ed3c1da436cd38718cb1b2355c30dfea41fbe293a5eb80125dfe0dc946897"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_green_fruit_pod_0.json",
+    "sha256": "6da1c4ec1be127a9daac916231045dd13ac006515376123898372637996dfb0a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/creepy_fruit_seedling_1.json",
+    "sha256": "e22f4fb8ebe3e5194c23207703322a55dd40a8d41f8e234e7d5a72adf991f954"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/energy_fruit_pod_3.json",
+    "sha256": "2192780d9fb07fa70a952a57cc7594872129f21540addc2be15583ebc701b68a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_run_fruit_pod_1.json",
+    "sha256": "1f14baf1c6f446ae085a03a0884af8c9a684f1676f2b4a41a8ace95b4dd0286d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/shiny_fruit_seedling_0.json",
+    "sha256": "2f033d21bfb7e8f37ff561557fdaa50118cacb7adca829fa2fdec876b8362503"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_pod_3.json",
+    "sha256": "905348dcbbb9e9fe4b27f5579dfa9f6bd432304e4dbd1afbeab2fe444874c04b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/orange_fruit_pod_0.json",
+    "sha256": "249d7d50a1caf12ee5f90aa59c77df10c2625c82de2ae720f420778f88df47b8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/shiny_fruit_pod_2.json",
+    "sha256": "f5dae426cf12ad5980f52b79b2a1ce8827602bd43ce6157c0df2077a09cef6ac"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/strong_fruit_pod_1.json",
+    "sha256": "bdd11db75acbd2c993c1172c2e60d5292bc38f480023ad7064a637c741b80c18"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_fly_fruit_pod_2.json",
+    "sha256": "6fe688db8e68e21322bf986ed914b248adef50d7c897927fa6020ec30b715588"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_yellow_fruit_seedling_0.json",
+    "sha256": "43c61067560709284245b57ce78b87b11cfc3b31db8b202d24a79b6e9db7d621"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_blue_fruit_pod_0.json",
+    "sha256": "c8c8abbce55b102886b0b266b2d8dae0a26266b2bf45e7dabc576092d7d33c72"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/peace_fruit_pod_3.json",
+    "sha256": "1b7b0640f91c2612bf1e2dfd4e0e8fd612af56fcaba50ac0dd48f70981fcfccd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/strong_fruit_pod_2.json",
+    "sha256": "55723b59cefdf83e7594463329255da0e977f6400c6f80340dad436efa55785d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/stamina_fruit_pod_2.json",
+    "sha256": "15108d72d198707208410bde1cd697d4543671c526907c7b2b8b0f4ffa2c759a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_orange_fruit_pod_2.json",
+    "sha256": "1f9b9101632b52d233220a1cad1a1f945ae1e996e7d8fbf3bfdf8c59adc59bd7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/orange_fruit_pod_3.json",
+    "sha256": "34c4b623362d7c8736422ae4adbb8c2ab2e484f236d1d462c82a2eec9e794f53"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_power_fruit_pod_3.json",
+    "sha256": "71af567ff29e2ef42319124f78874941b518c701f8d6c59309cc0e696d47503d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_orange_fruit_pod_0.json",
+    "sha256": "7a0a32e236f476c962b46b666743ba92b961ed24943a1e2afc8ada122f47cc19"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/chao_fruit_seedling_1.json",
+    "sha256": "2d7c4f68d92437465668796290337ab17e206cbc0a19becd7d590cfddcee5467"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/wonder_fruit_pod_0.json",
+    "sha256": "0e7f6fdeabb828505f07d77a88a8ec1965faa16cd3323fab5534dc55d464e6ca"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tasty_fruit_pod_3.json",
+    "sha256": "ecaaaf613b5400b8f16b580627863bb05ce6110b8199005791498a000395eb3d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/stamina_fruit_pod_0.json",
+    "sha256": "1b05a86b7a3499c86a826427e777b01887aebd13d55eab22089e270913fb69fb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/shiny_fruit_pod_3.json",
+    "sha256": "6315184ad35c283553bf34e26013fa1341c4f93605ee275d7ccb9d2c2ef1ec98"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_red_fruit_seedling_0.json",
+    "sha256": "d8360f127c93e7abc2bdea5117258a39bcdc2fba54cef45900a189fc4bfa2b5f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/square_fruit_seedling_0.json",
+    "sha256": "edf8014891da0df0fcaba434348e1e038a59eb83e6a1e5751e2a1da6c4924404"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/forbidden_fruit_seedling_0.json",
+    "sha256": "fdb850e6f602f16f7ea1fa7a3ca7f44af8e2b9e1692023b3deb5d075b09c3ef2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/stamina_fruit_seedling_0.json",
+    "sha256": "d4bba1d9faa294140903f6430fd0e3728685548286a71f0babcb677ae37bbb29"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_orange_fruit_pod_3.json",
+    "sha256": "ffb04eb239aa02b484ab1863d9e5aacedf36322d246d7c14622404bc7be4cbb2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_fly_fruit_seedling_0.json",
+    "sha256": "bd1d44af5c6386792f81031d4d6c32a7342659a50e8c874c2e2b6a1b65b0f650"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/orange_fruit_pod_2.json",
+    "sha256": "e80ddbca354f66cc3967aff88a5dffb51f17dd4bd7358208950daa0286318d47"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/round_fruit_seedling_1.json",
+    "sha256": "244c8b813e7a680fa5d9db48dc567f581623f908ccda580caa04797467447d7a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/creepy_fruit_pod_2.json",
+    "sha256": "c982a3729e0b1005a890c5de87fa42e17f20f8a06330b8b5e87bfdd7d3850b05"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rough_fruit_pod_0.json",
+    "sha256": "34f87e3592aa94328b00ce1c0bc43e92e0c804b6714fc6340de9a46d7dd43e8b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/smart_fruit_seedling_0.json",
+    "sha256": "a6889484e5981a5d9cb0e34cffc38da41cf13b5a514088e61c0e86ccf8f982a7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/orange_fruit_pod_1.json",
+    "sha256": "de54e32fd45cb7af8b3b3c26a05b9b971fe161fc072a37026d2b593d4e2df53c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_swim_fruit_pod_0.json",
+    "sha256": "0106dff977ea0e57f98fb416985cd610cfe88a8be908cc1ff1985bf4ffe58c1f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tasty_fruit_pod_0.json",
+    "sha256": "1d1be59e612c8242abf76d29c21e51f78d0f51a79406620be90ebb54c2fea0a6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rare_fruit_pod_2.json",
+    "sha256": "1f618deb5b78e93586d11edfb71b8d917f2da70f25e54de06bb115bd1a42e4b8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/stamina_fruit_pod_3.json",
+    "sha256": "2f73a22dddc0df1fa4bbe0b31b03bbe8d26fe35dc9429d48e04aa0676cc2bb94"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/orange_fruit_seedling_0.json",
+    "sha256": "e200c481346e42d1a7ceeb13c577a7461aa0d83274ccd54ddc432d26c78bd6e9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/smart_fruit_pod_0.json",
+    "sha256": "dec467b353c2b9365b14318c24863efa0011316cbb7269b2529514a64edf0d9b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/strong_fruit_seedling_1.json",
+    "sha256": "28889b630a066a5534d4921552d657e69f49229a393de2a004d0f23c7616af22"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_yellow_fruit_pod_1.json",
+    "sha256": "012b0f4d5cff3d5597f1d1982eb9bec4f81b9276a6c67d84eea87d7538d5bd7a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_power_fruit_pod_2.json",
+    "sha256": "5668a24d63047f6c6a265020681f3ed24fd0d033f6b5c3372bc96de1eb57e442"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/chao_fruit_seedling_0.json",
+    "sha256": "7024a5fad03dc7cd97497fbd30269b5a9a65d1bc47b84888771b2e437bb45014"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/heart_fruit_pod_0.json",
+    "sha256": "82955e32aaf55f7758602ceacb2f127350268e66c67947fbebdf37c172653da6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rough_fruit_pod_3.json",
+    "sha256": "be2072cb2b23f8cea2fdb7e8d7ac65feebcfbafddf1f3aa35050e756ee825321"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/dark_garden_fruit_pod_1.json",
+    "sha256": "197f3d52d38aa43d0175e445ab7615693beda5da16e0f2ccd55a61fe98415c57"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_red_fruit_pod_3.json",
+    "sha256": "2f6533fe6ab2391457670bb6c26fe89e4f9d24512945d7e3e2ce52298770a1f7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_swim_fruit_pod_1.json",
+    "sha256": "3f6384affc86fa451e81e4b08ca9788a27fe0593609433207119f7ff59c1b47a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_purple_fruit_pod_0.json",
+    "sha256": "6a50b2280f20e20198f93aec90579be29f77570449fd6f3f112af9b2bc9fabbb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/vitality_fruit_pod_2.json",
+    "sha256": "46832059b040f566e6d46da4c5c34f530c35f71250c706bcce23d81f3ef98b33"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rough_fruit_pod_1.json",
+    "sha256": "bcf6aafad7a90b8fab78d77840cd5d8fc7111ddd5d0b01ba70e6845f8a766ed7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_alt_pod_2.json",
+    "sha256": "22d99d9574f030c4ddbaa962795d426a5e6ea8f879fd810bd681c1f632e2eb0e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_orange_fruit_seedling_0.json",
+    "sha256": "5a3301323ca20f885e5f92766a4b21a4285da704734981e8fb6b54d69c49c4da"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/peace_fruit_pod_2.json",
+    "sha256": "01e7d19bd69e8318862ed8e8b3cecfbdb254d5c201d3e4c3f2135e0a3c907336"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_purple_fruit_pod_3.json",
+    "sha256": "8709e30e40ae9a35c59b66c5e0e27e0c016671eb0dba55fd69b225252c748472"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_purple_fruit_pod_1.json",
+    "sha256": "61e8bf6fd9f15a99cd2d00e7f58d0e371383f8728d286a0087901380febf00e0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/smart_fruit_seedling_1.json",
+    "sha256": "647875f0e7db07f1cbe9e9edbf793d65670a8b814885068292c614bda50c28fb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/forbidden_fruit_pod_3.json",
+    "sha256": "e981b90b3ad79825c630ea7ec45975dc9fdcb1ca22f58b3fb417c38dca4f4b84"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_blue_fruit_seedling_0.json",
+    "sha256": "af4ea0132b0aec9dfd51c89e5d63d6b5a9726418ac7f8197a2ead41043e1f750"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_blue_fruit_seedling_1.json",
+    "sha256": "cc4bcb2a168f34d102669cc0e7d909a904d1ed9813695a2a45c660421b08d1ed"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/round_fruit_pod_2.json",
+    "sha256": "5d62725c7733de8042cb0f0931bde28e40535fedc296e007d4af240558ffb567"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/energy_fruit_seedling_0.json",
+    "sha256": "08f813aa15510b075898a72d82d17c0b86e238f61e5e7151700bacd222cc5f50"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/triangle_fruit_pod_2.json",
+    "sha256": "bf9b241262e80c5631b442614a94a32d92691a1c80976ea3d6eeb8b3c91d3d98"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/vitality_fruit_seedling_0.json",
+    "sha256": "4268b2266c9af4b0448015bed21af16c05baca30393e0078b1941901f91117d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/dark_garden_fruit_seedling_1.json",
+    "sha256": "723d3c149281d705ca8c42afb17100a235d5971dbd600ec1a70511f999987c3f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/round_fruit_pod_3.json",
+    "sha256": "953cbddee784f397f90708108d62e27bbe51fe6777b4f38374facbe0c97fff78"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_pink_fruit_pod_2.json",
+    "sha256": "31b443abc701c65cc53e32701647f1579aa33ec93d68d37ed6e2f64f660d5276"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/strong_fruit_pod_0.json",
+    "sha256": "469d9db8a8e338f129534fd56f2ca3ee11b7bb5223520417ee1ae4a6453fd4a1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_orange_fruit_pod_1.json",
+    "sha256": "af7ae94dd39a170a591f1722f06b1312c7d79cd643d65632c10ef6fdc9dc62dc"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_blue_fruit_pod_3.json",
+    "sha256": "335947831e99ab86f690875926be50c48912897536d1d9dafbe0c7127bed71aa"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/smart_fruit_pod_1.json",
+    "sha256": "e0c850ae088843bfb32fb46729e4bacd9f14f2d494d493f69594365e763cce4a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_blue_fruit_pod_2.json",
+    "sha256": "a19eaad465d74f6d5d89adb01895e3631e0159837afcb48ac4025ca837561e59"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/wonder_fruit_pod_1.json",
+    "sha256": "05ffff295e1ba9ae24758d9123fb3ef6d03a9e827d569e6b0621dc129a9cd481"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_alt_seedling_1.json",
+    "sha256": "b29da47900e2ad51b7b73ee5d99d42c0c3d4b0daf5758c5be21f83c94c676253"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/triangle_fruit_pod_0.json",
+    "sha256": "64355ccc3196a4c1146c2ea7706f0835fa2648f57e8ecf676ce72c44a1c7ff28"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/vitality_fruit_pod_1.json",
+    "sha256": "e1965c03c843e2c985e86e55d48beb24f8d553a9916d3b2682b591be6011da5d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/wonder_fruit_pod_3.json",
+    "sha256": "6389f96966f7df844fb7fe54cee390b6ad29e42486b69c21d739520b4829e4e6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/energy_fruit_pod_2.json",
+    "sha256": "dcf17ac7115108c7b18b4cc8b71555ea22d299c0a72b074748c35a03e08a84d1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/shiny_fruit_pod_1.json",
+    "sha256": "b398e2f799d8fd48367976e14279151cb0b53bfa1567cd0a2d3dfb820069520c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/energy_fruit_seedling_1.json",
+    "sha256": "f69d904c73bb64a7d2c9aa943e8f7f4ba6d4b6028aeed0e7f9729624b9cbc395"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/triangle_fruit_pod_1.json",
+    "sha256": "dc0dd366c4071b394ab7340068ca500d7413ac1b04d7d1df60df5193f1de3931"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_pink_fruit_pod_3.json",
+    "sha256": "30d7eb573893a8043c05be069fcf076e1f962a16e6cc878ceda5fb6d9fcdfbbd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_yellow_fruit_pod_0.json",
+    "sha256": "fee738b5a923eb9067b13c8018dc9c895f3215f31205a0d0955d3af59c295985"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_seedling_0.json",
+    "sha256": "29b4f5a66e11beb33d2ed87838d0a854631fbee5a4700870aa2b914ed5fd9b8f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_swim_fruit_pod_2.json",
+    "sha256": "ff32ec95d72b08100503adbb5820da6124381180049269a329c1576b53d4d3c6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tasty_fruit_seedling_0.json",
+    "sha256": "9d13a9a158b8e4a712b02bc65f362ce89faacc69385cd8c26d97c19e28fba0e2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_purple_fruit_seedling_0.json",
+    "sha256": "50a9ba418e872d6ffc566b8bfde425ff49900be70fee85862252f04be5b32875"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_swim_fruit_pod_3.json",
+    "sha256": "4511d76731a829fcc82088eb4c7c089d2fab9023ce6742640beccc571e556140"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/peace_fruit_seedling_0.json",
+    "sha256": "b64b9bed2f526c6f6b91f707d232f17f457b4a2f4ad6c3e281b2ea2571436e0e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/heart_fruit_seedling_0.json",
+    "sha256": "2e82c78a25ba9c3856771ee10447210340caeafe52a2e9ed4214e438a491efda"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rough_fruit_seedling_0.json",
+    "sha256": "86549b3449b7ddf43c77a7bc4084f5f863075ce77a0fa33b4131835cee8557cf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_alt_pod_0.json",
+    "sha256": "eac2ab723179f60a567c80aafd6948a89e31fce744b1f31ad45c21583f2177ae"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hero_garden_fruit_pod_0.json",
+    "sha256": "7ee38ce79948fc893eedc70c59eacf92c9564e6624a059144ba744631f56d230"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/square_fruit_pod_0.json",
+    "sha256": "173e7d2c83fd0e483d6b1b042a5b20c5cc6af33a226f379d57a0ffca01b9a6f3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_pink_fruit_seedling_0.json",
+    "sha256": "4618819edc77c4c4fd9450b7414a6ccf053841f16d89953a4e87ce4acae62e9e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hero_garden_fruit_pod_3.json",
+    "sha256": "9a76770f72b66dbb3dfcdff1907d874ffab9e6fb52f9a108a5923008cfc0cb2a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_swim_fruit_seedling_1.json",
+    "sha256": "b7a3ebedf1a595aa47217751a42696d458d833225e821c61c330936d2b196b10"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_pod_0.json",
+    "sha256": "7a53d81768bc069caa0623680b21b1907ea085bded8eb47ccfa609721578edc7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/triangle_fruit_seedling_1.json",
+    "sha256": "dd2741df7a4ffe40b37eeafc08eb17857514d012e2a24b19bc1ee85ba5a26cfd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rare_fruit_pod_0.json",
+    "sha256": "8547a8f925659ca2d8dcfdbee51c6b7e3bfffc4ef611acd8e8f72f97fcb4e0d4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_yellow_fruit_seedling_1.json",
+    "sha256": "1b0850948dc92028c9bb904b5312bedbd2a2c96873b1d20138ba5de6aba25245"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_purple_fruit_pod_2.json",
+    "sha256": "0acc97bf2565570fcf001d600f6f4d02f56b338d2097b09fdf3f5d319627c6e8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/square_fruit_pod_1.json",
+    "sha256": "195e04641902de1542b9f99d4d2fed5bee0ec3b0c7d3f1ac6ff2a6fe63cb9868"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rare_fruit_pod_1.json",
+    "sha256": "2cc15336f64027196c86c8b5cafbc3bc1a86ac808fbc93feb51edaf7a0158476"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rare_fruit_seedling_0.json",
+    "sha256": "3f85266494a9b71444c8f0e2a77d1fc8befbdcc04b8e1cbc9da34b8a1258d76a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/dark_garden_fruit_pod_0.json",
+    "sha256": "729f72eb5c521eab13d469aed9dc5d9c9d28417bd5c4a3c5c6cf7c975737b01a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/strong_fruit_seedling_0.json",
+    "sha256": "62e0fbbc4249c90cfa86a82bc37fae11d289fa8cebff3c48873ef5c68ce80b2b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_run_fruit_seedling_0.json",
+    "sha256": "3130d1d81290d94b203435cc75976282f6af394c15eb0376ee7ca447dd62ff01"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_power_fruit_seedling_1.json",
+    "sha256": "a812733dc28a589004086cfb7deb6b293a94c21605cd875202d81ba9afd6d669"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/vitality_fruit_pod_0.json",
+    "sha256": "521a5ba9b47862e6fee08fedf4b4599513dbcc6cec75ae602833d717b26ded92"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/vitality_fruit_seedling_1.json",
+    "sha256": "a36612f006a329b68552eefda35ae606c20ec8f5da6f6d88e00baa54d5d26c1f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_pod_2.json",
+    "sha256": "0bd82dacf0290935acadf73d5eb1f778e74bfcefcec0d8baef0394d3fc7b4110"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/square_fruit_pod_3.json",
+    "sha256": "886c27b4589510350d5e7ce0b44204e87d3c49528dc38d29163bde1d1dfe4839"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_red_fruit_pod_0.json",
+    "sha256": "11f3ca69f5ab511cb57ed9056469763761766296498d18e91f78bd88b935edec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/peace_fruit_seedling_1.json",
+    "sha256": "6cd25185473c8c90ecf269581dfc02b0ded5908a1802feff4585b302e64db940"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/round_fruit_seedling_0.json",
+    "sha256": "7add81f3b9495668a4b4c997f043d6449205fcf1c7634e6fd540f8556c16357d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/triangle_fruit_seedling_0.json",
+    "sha256": "d806aa70cd1ba5f07961b0fafc13f8d94ba3eef99c6cef1d393ac64e4f17c174"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/heart_fruit_seedling_1.json",
+    "sha256": "c53dc9b491d8338ba525c228e0d175a0f86a885ea178b1f8ee8338b06e9102d0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hero_garden_fruit_pod_1.json",
+    "sha256": "59631d2888188e5194578f6e067716e7505c1c559ae17fd47d95b32a94549fc1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/mushroom_seedling_1.json",
+    "sha256": "ab11ff6741d22ab4d7bcf7be6e89be381d190ce8b44942355aa40ef61278c384"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/dark_garden_fruit_pod_3.json",
+    "sha256": "4bfc135443686fa4cdbd12daa54318a169498c0183fda898e90dc579d53b9cef"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/energy_fruit_pod_0.json",
+    "sha256": "6b8616043d47150ba05412f667f504eb7c7bc85f3301fdd815c5d2d509105a6b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/peace_fruit_pod_0.json",
+    "sha256": "71a04aa06059a35146538f9bb61ced6e7ccd16a529e0993f0f849802155864cf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/heart_fruit_pod_1.json",
+    "sha256": "cab2d9372c7014bcbf44329001c45195efd4265e61e5a5d3349a773610c948ef"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_power_fruit_pod_1.json",
+    "sha256": "963587c25ec16083f9fa54dae735c1df160bcd5dfc8e589fcb565d998edf8291"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/shiny_fruit_seedling_1.json",
+    "sha256": "57ef3898228eecbf65dd2145582e56d48b7608888ede7959e7c3f78aaf36dc8c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_fly_fruit_pod_0.json",
+    "sha256": "5c6e7b801ee5ad8cc67c77eb85f7dd1acb3f11367d30d29cbdc6fcb73b6eea5d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/tall_fruit_seedling_0.json",
+    "sha256": "10bb3c05573eff9947ff041bf381de715e68ddb6a5dc2f2b57ec1e6c1f6f62f3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/gba_green_fruit_pod_3.json",
+    "sha256": "22db6b6ae7b075501775b365d5b895d8e38cbdaed7d31172e4e9153df900a60b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/creepy_fruit_seedling_0.json",
+    "sha256": "1de87868063461f235d1cefb203deace8b66bd2ba42de94117d6e9d5192a27ad"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_fly_fruit_pod_3.json",
+    "sha256": "1a495e40e5500133f729de2db3971197bfffd7c49542aa6b3b4985c095c856ed"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/stamina_fruit_pod_1.json",
+    "sha256": "efb88998ba47fa9c09a1f3a2b1a83180a8a72accc2d20a224999621b6c56a60b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/garden_fruit_seedling_1.json",
+    "sha256": "993e3a09d587a8f3acc73c0a66d2840e25c60297c43a7fc088d412bb221477b0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_run_fruit_pod_0.json",
+    "sha256": "38bad5b86dbf7a7352cdd34d8c0a1dc669ebb97bdf68b325d1585956e6ce1a3c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/square_fruit_pod_2.json",
+    "sha256": "6bc60daeb22f0a772b623ecd972de95c310a0133b4581ce314fcc1f3487312f7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/hyper_run_fruit_seedling_1.json",
+    "sha256": "6ec2bbaa6a1e5728cbf68a47cf1e796808c3fd62ff0cb5af1887551b1486ac94"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/garden_fruit_pod_2.json",
+    "sha256": "0c1c77371e48d9ee8df1682393e444ec7445cff1238f99082e1a7d2c4bfb92ef"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/creepy_fruit_pod_3.json",
+    "sha256": "ac64c9491318da5ad87b1b474cbe14bce66df3e8fb61ceef924db1a49aa7645b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/triangle_fruit_pod_3.json",
+    "sha256": "f283c40d3f2f0edd61848ccd3ad847abbccfe0a5649ffc743887588096d50ecb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/block/rare_fruit_pod_3.json",
+    "sha256": "35a8d4fa00aa88f2b255c41a793e8236cb1848c0a42fd3518c506458951599f1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/orange_fruit.json",
+    "sha256": "7bf741667dae4eb097ddea710684fc7f0c8e018f3e05b8bdf7640946001a3195"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/orange_fruit_seed.json",
+    "sha256": "227e7b122d888272f7ff401b26cef0f15637ec3d737fc33ba5acf098d321a432"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hero_garden_fruit_seed.json",
+    "sha256": "e8655f23c350d01019d76d587a5f7c8e34f2851e7a56f9302ac9eb4b4fd8a36c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/stamina_fruit_seed.json",
+    "sha256": "1b9f5c3a6dc6a23ad009035e9b51d0cd4f9b172d2a81ec683d65d3cdebb03b1d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_power_fruit.json",
+    "sha256": "6602014ae1629206b4f33b97a1ab06c9d1ea19d74f149ddef7d2ec206c073033"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/garden_fruit.json",
+    "sha256": "85d04f82a20f3651b33911bea314bb785246ddd9b201ec75d5875bb54be1ecfe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/mushroom_alt.json",
+    "sha256": "c81de87fe28dea37c901fd7376234037d168523659aaeedf03cfb3a32a18fd74"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/rare_fruit.json",
+    "sha256": "9bd524fa4e7fb5a608f805e9694182122c40e00c7b4182d33a37755d8d07902e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/heart_fruit.json",
+    "sha256": "98870e63f91f8fc0ff04198f6e32fe2b39e5fe8dc1ca8322d318f70ef6946c02"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/smart_fruit.json",
+    "sha256": "e91b2491ff4aa186f585f3a7f0b7695d63369a8df6e0f269c0b8038766116201"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hero_garden_fruit.json",
+    "sha256": "f7d6b3dcae2d4c96249d9597f0959c6dcf72e5c97302d25e8a55987e30262b26"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/dark_garden_fruit_seed.json",
+    "sha256": "e5dfbd584ba2133f3c6ccb88062719ece1b7d571646a4791b599b663af051743"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/chao_fruit.json",
+    "sha256": "0e2a2af1d0b772a5803f9265109a6165cbe74576cf46968436513726d2fca01c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_swim_fruit_seed.json",
+    "sha256": "cfea4c3d9abdeb010c08fc0e1a6ab02af4c6bdd9bffa09822953c9e322be41ec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/rough_fruit_seed.json",
+    "sha256": "4aff66eec3baf0305caffaa3a3c62a536072ddf3873479146fb32e8a9bb45ad5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/triangle_fruit.json",
+    "sha256": "9618401e2e79dc1caa4803d0a850caa61b943201d620ebbf44a5e630b31de056"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_swim_fruit.json",
+    "sha256": "ae95b6f188e38a05bdc366a289293e190855011e0817665c2604c277af7744c1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_red_fruit_seed.json",
+    "sha256": "85fdf0ea1daf711220f49b9081936e72d0843a998271e769c8adc184f8919bb0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/tall_fruit_seed.json",
+    "sha256": "686c3ecd96043d0b8e2f23d5b8e25592d2a55f213ad71d097926b6ae01b26ebb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/stamina_fruit.json",
+    "sha256": "1faa3a4e21d5daec4a733554fccb422b54bd63d12c1fc91d3567dad10ef8168e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_green_fruit_seed.json",
+    "sha256": "c1a75176b77ce904bea750c2f2b46e02691ef8a4430d6f2b943310bdb050a588"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/tasty_fruit.json",
+    "sha256": "42bb1565711c4924b3b517613cf72e13ab182e03ed5745c7309e2f44f5dc69e4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/chao_fruit_seed.json",
+    "sha256": "5c7280c128288156b78785e547d2603ad5e8f2c5f8ed2c8b5a68a4b8b62241a7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_pink_fruit_seed.json",
+    "sha256": "60b4b5f9fd5e5768b1ba5d0a83f19234326c4ef7b557304240d5a2f1bd9e9a01"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_fly_fruit.json",
+    "sha256": "7d7c96f78f207e7f2c180a41212e065e21bfb9b81cdcfce81572d808eb3a9af8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_fly_fruit_seed.json",
+    "sha256": "2daa41dffbabf29bf810f0daf2a9a176eaf795cefaa9f038c70f83f0deb36008"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_blue_fruit_seed.json",
+    "sha256": "83a8e4a5f17614dd552b4de9dcba895e6caefde9286a6e0325f993aa94886e0e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/triangle_fruit_seed.json",
+    "sha256": "a4243f3c97bbbb39795816425b0d1475cd6b428a13489d97d11ec51de8d58dcb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_blue_fruit.json",
+    "sha256": "d05f9177ddb1f1109e5cb0e48dbb0ccb3cc4d67c9db290b87cf881e5073196b9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/strong_fruit_seed.json",
+    "sha256": "68f7d4b03bd2df28db92c0e0eef34daa6da14320dc7f80157cfa8eb2911f9dbb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/creepy_fruit.json",
+    "sha256": "0b67333c14155bfab89e7c6a5c73b3d26d0bff3036412f80ac2246d72ebc89a2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_run_fruit_seed.json",
+    "sha256": "4a87ab419fc94741f9e9d79a0f8472bf74be6f490cdb4d3741906229126bf02c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/energy_fruit.json",
+    "sha256": "82ccd535cbd2095fe4e0930f0c635373d6b095db624d130eef85ed6f64365667"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_purple_fruit.json",
+    "sha256": "5176b6e337b1b9d32e5477d12bba52d97bf681392f0243f10a8c29ad874b98d9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_green_fruit.json",
+    "sha256": "35b67a5c2a7b7ccfef9eaab1e08026a9709f078eeddd358b96222244ffe61d60"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/rare_fruit_seed.json",
+    "sha256": "41978def85d8ff80b519f29ff913ecc39fc7193f24fdd2501cd4d58e59d50e3f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/peace_fruit.json",
+    "sha256": "5483a8a8ab623775acd43668e15ae227fb3b3a54bcc5b3db9c6ae72bf63fe1e0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/energy_fruit_seed.json",
+    "sha256": "9f42064823ea03c3f6e4dbc215c1997d8c39c3d0311ec12f82d5886680f4e172"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/wonder_fruit.json",
+    "sha256": "8d0a07f2c8dbf7d5d4591c904cdb6fa9a5d987724cdc13d81ea39093cb7955db"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/heart_fruit_seed.json",
+    "sha256": "7ac85c0b20ac9d7f4630b53270639859c43f0063ff8db3ec5408466256df535b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/round_fruit_seed.json",
+    "sha256": "7b3ffcfd5e3adf22bc86586217460e38695c7936d776adc09e9f3146b06b8c13"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/wonder_fruit_seed.json",
+    "sha256": "dac0c29266ddc5b2c92e559bf6e51c5042fd2e05f6a2d444cac01e07878d0344"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/mushroom_seed.json",
+    "sha256": "9e98fd79a0c083caca70d222888cf86d957b67ed0db20bd50ef6c9da067caf90"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/mushroom_alt_seed.json",
+    "sha256": "984e26d251b4caa70efc1d4034d0577b6ab0c93ba67e229ad04e42f7bc1f878e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/square_fruit.json",
+    "sha256": "90bec44081ee44e9aaa4fbb3ea7f1c2d2dfe683eb737a03b5365d874dc45ed7a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_power_fruit_seed.json",
+    "sha256": "c2fe6df42fd49e3603114e658038cb74f2db12b65ffddf1e6cbf0c55c2c5660a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/vitality_fruit.json",
+    "sha256": "dfde19dafba717f3ace68045f3313b89881bc72c189114beb2ae9892bf2de528"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_pink_fruit.json",
+    "sha256": "91d51cc7c5d3c1ec7ba0d46ffd8648ee6595ec4474b584f5cf99ae811bbd30ae"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/creepy_fruit_seed.json",
+    "sha256": "03c2a12c6bdfce011e2e0f2e2c6e4199639e454f1485400b40cdd56c24693316"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/garden_fruit_seed.json",
+    "sha256": "ff1b00661fb67ecf768b804c0c752c80d0dc985bf82092c64f4583a996a2f89d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/shiny_fruit.json",
+    "sha256": "eb539c867ea84d6c41c75a9ca20a418997f7f042a0fc4f261e7f2c0ff86ddddb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/smart_fruit_seed.json",
+    "sha256": "4f95616ff50157ea3ecca09d5d54b2cc97f92343c130ea777f34a344f998a012"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_red_fruit.json",
+    "sha256": "256c04558442b5fd3c1481e9cb21f19a694e516a398311735bfdd04964d096d2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_orange_fruit.json",
+    "sha256": "1316519159d8cafebf2832ca756d664cfa8bf046de57d7d26d5672a701ce5e70"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/tall_fruit.json",
+    "sha256": "73dd7767a76008b133f88d4dbbab1da75ec0c382270ffa30526dfa2c175bf297"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/tasty_fruit_seed.json",
+    "sha256": "156a4da375627afe5563d449052889d9e8a3c7dcdb22e597530ba743b660f6cd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/square_fruit_seed.json",
+    "sha256": "2b34658e46afaaa7d743bcceb2c9905805efd916d46f2fe436e99bf9bb03ca8b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/chao_watering_can.json",
+    "sha256": "1ae823e9389443323e4c9ea20382815a131ab673691f3faff145430a85b9eaf3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_orange_fruit_seed.json",
+    "sha256": "273337053bb337da2ef66ea0c00873fdba9801ba1675ea15875bea9bc753466b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/forbidden_fruit.json",
+    "sha256": "00f5664a81f977a3d1e5043800c0fd24119da81e64ebf9ea87fd55c36c5f957f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/hyper_run_fruit.json",
+    "sha256": "92c5bcf8c8ee98c7966474ce6c6ba45d36b34d813a9ee0817b2fc51bbfc88733"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/round_fruit.json",
+    "sha256": "f73b12c7ea703794304aca343e10d03d12c67e9e313d40b902521675d4ee83eb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/rough_fruit.json",
+    "sha256": "834c0ee06c3816af6c54503af9d41e25adffef6748bde59e246f98c7f1722bb8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/peace_fruit_seed.json",
+    "sha256": "42557a28f14682715312efa41e0645bd3d117fe9ee42bf24370017a1fd858fde"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_purple_fruit_seed.json",
+    "sha256": "c747d604aa448329675eea69569e879f592076d1d6ddfaa2385e826375eb97f7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/forbidden_fruit_seed.json",
+    "sha256": "16970fc39ca005e0f70a957f7bcaa237f214c60b639ae0c8ae727a239b40b4a6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/mushroom.json",
+    "sha256": "6eeaa13196b9f8af78674bb2b0d4ba1fdb05fee5790c6c649f6e2425b3017786"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/strong_fruit.json",
+    "sha256": "54bb83f010c274d0abc79de53507ccd5242a15a185fc35f89742f1c378467753"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_yellow_fruit.json",
+    "sha256": "4a1cb1f84b5f06876e445b30a19ef23bcce9fb943bbe23e39e982ffefa49ebb7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/dark_garden_fruit.json",
+    "sha256": "6f26135d1f85d85d4ab5ca462e71e70bcf017c5c089ba5a467ba838b23276022"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/gba_yellow_fruit_seed.json",
+    "sha256": "9768af3874f822246693ef991da0c86a1c9cafecddd0c790f781a6afbf300b48"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/mint_candy.json",
+    "sha256": "af0a78cb01cad2feb93791d1327c72d79f46532c0bb3516038509c0b56a7c335"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/shiny_fruit_seed.json",
+    "sha256": "c7e375f763f8791d6d41364ca627bde1b48f307710a307896925443c2202d254"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/vitality_fruit_seed.json",
+    "sha256": "1d24b8e3bd82930a359f79f32715a99b2078df3e2f0697f4210646fcbc4b1db3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/orange_fruit.json",
+    "sha256": "40db7369d68f98e8b99bc7f3ed958854cd0e429b4576eaf454667406991b307a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/orange_fruit_seed.json",
+    "sha256": "51459894c0500be4f5ded3496de44238261fa7e9ff5cb9a6a5d1261dc4aa907b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hero_garden_fruit_seed.json",
+    "sha256": "0f393cd36ce8b5343e1bebec2887a0c4b47b630c98acdb72f06cc10a8454668f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/stamina_fruit_seed.json",
+    "sha256": "acaf6c315aa22eda21fb596de1834ed5121dec727e6a01ec229ec0e5eb3d373b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_power_fruit.json",
+    "sha256": "863dfdd8a01eec540c8d0093923dcbbf5f661f0932d33591b0570016367974f7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/garden_fruit.json",
+    "sha256": "fdff5af753be637bbb965c6495987abfa4541e4ed91133d530bf1998c82c12c7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/mushroom_alt.json",
+    "sha256": "ccc1b484dac7deaeaba44b7beadc2eec46aa91284e3164163b3ea7e5cfef6c9c"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/rare_fruit.json",
+    "sha256": "9d518f6227e23cdda88a3395070102b689bff4efbe8e26b829ce567d8051aa02"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/heart_fruit.json",
+    "sha256": "bbb79dc3da0c078986d87f95723ded20eebef5e99dc5c9666315eb0eb67e20a1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/smart_fruit.json",
+    "sha256": "236f3b5a7375a61ca75bcde11d4a0496fa8362a2adf00a45137fb742d7037aa6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hero_garden_fruit.json",
+    "sha256": "327b39a6c0d6eff1241526ef91c9ad6093811c66e3e3f3a8fd01dae657703067"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/dark_garden_fruit_seed.json",
+    "sha256": "cadee24aff87f6f9f7bf1b2c6b8cb99f9b4ca7528793499447516a08bd638fa7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/chao_fruit.json",
+    "sha256": "76913d50f83518c7677493c02328f7818d5e178d7e896ace31edc4e4da47499f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_swim_fruit_seed.json",
+    "sha256": "a9880f48538a616fdd4c7ec3a136372fd0bb9225abe67394826303ced6b39cab"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/rough_fruit_seed.json",
+    "sha256": "6f50a53e83254d2580de8dc8e7064628b75dac7e5a6f2264eb36a6112faa0ead"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/triangle_fruit.json",
+    "sha256": "5a07ac78959b461f49458f955ed0e297cb37e9332b8756d54b012a19fa7a8e0d"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_swim_fruit.json",
+    "sha256": "b1916f210b2689bb07d866268e0632e178d748375a3e81bbd4c87d2ec5ae9eec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_red_fruit_seed.json",
+    "sha256": "90cfcdc54ea20adb0157cc0f65e7302291b2495334d42297c2da55be97721553"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/tall_fruit_seed.json",
+    "sha256": "4610f49795e37d0f768246ec01a3ccc4942aa18ba57b96b2652592f8ec447f1f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/stamina_fruit.json",
+    "sha256": "4b01e5f57aa19d12c721f29eccf3d82176720a912d2ed13d87685df19423b123"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_green_fruit_seed.json",
+    "sha256": "d8866a3c645eabfe16672ba95b73f7bcabddcb4f766f1dd84006b0ea81c231ce"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/tasty_fruit.json",
+    "sha256": "27e7f57fdaf5af7c6a9c6282eb6d575c77928fa7681ccf644ffd3535682d7348"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/chao_fruit_seed.json",
+    "sha256": "382ef33316362354d0a9fc4ec6226f0a948ac85e2f6279d89c501478881fce5e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_pink_fruit_seed.json",
+    "sha256": "811c4bd8ab0a3577d152c98e3e91baf0e3c66aac25debaca3aaea4ab79aa3f4e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_fly_fruit.json",
+    "sha256": "08566cf1a4bdf2e2c6c29db78ab3328d1e2b2fc904f1813141aec8abff98d12f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_fly_fruit_seed.json",
+    "sha256": "2f9fe3e38232606c00cb132936a115e963aa3c52361bfbf394885ce773d47b3f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_blue_fruit_seed.json",
+    "sha256": "23e8ee4a4de07fcd4f570b3217449514105fae20089ee3a8017e83c4ccf71352"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/triangle_fruit_seed.json",
+    "sha256": "46fc2da6bcd0abecbb6c3236387169e5cd3bddbba0e7b369c42ca249e642db5f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_blue_fruit.json",
+    "sha256": "e088c1508ba87b6525da38cb50961e47e2a03e46b1514be833848f71eea57697"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/strong_fruit_seed.json",
+    "sha256": "b7178bfb03041019ed717486115a79ec3824d2f610c5026df05e2b9ec71391e7"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/creepy_fruit.json",
+    "sha256": "78cbf613d3758db3a4c23841da9fad14d97c48da5d15d873536fe282f9a5efd1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_run_fruit_seed.json",
+    "sha256": "ebc5eec45ff1956a97cd64e8fc529951da4362e7f8176d9f84fa2901fb773451"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/energy_fruit.json",
+    "sha256": "5838235d21cc0f66771901e199485380cf4c30d95855fa41f219d5e2c00a25c0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_purple_fruit.json",
+    "sha256": "f759e98418c55b809ba98bfd3ca567a626b91f4edf1bc05d9b366c40daed61e4"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_green_fruit.json",
+    "sha256": "ad7b4dbb76d440586bee1b4b14f70799c10ef1671540c1b3d752b47f8d02ddc0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/rare_fruit_seed.json",
+    "sha256": "ef5a871b938de467c5b1ee611c26493f19d22031b6d3ae492aff90b1b2eed4aa"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/peace_fruit.json",
+    "sha256": "a7bb8f7bcbff8bbd3ee0a571d51e0f282f215fbb47b2202f2d9f7508167d1581"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/energy_fruit_seed.json",
+    "sha256": "f004357ebb8f2f635d881094e98f866801e790dd24208359426790f429d46fcd"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/wonder_fruit.json",
+    "sha256": "0bac4a70ad1239abd8da3adc5c43236051edf7bf08479b6951b8d004f283097f"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/heart_fruit_seed.json",
+    "sha256": "407cffa3b9f8715574391fb67ed91ee01eae6fbe82e280092736cf15b7d94f98"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/round_fruit_seed.json",
+    "sha256": "9e09b675700502ca5a8c1534410ec3e3637bbaaee3bd884ae9415a176bbfc825"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/wonder_fruit_seed.json",
+    "sha256": "92170cc300073c82328ebf93ffce6a5413757232012dabe28634de6d91ccaf1a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/mushroom_seed.json",
+    "sha256": "d932fd39835c2c10e8b74e354550d524c3b0c26740b6aa4f06e941384f5ee842"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/mushroom_alt_seed.json",
+    "sha256": "73125e27affb44947af05cf02360fc362b8e1300d69239b77cebbcd2ee5e66f9"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/square_fruit.json",
+    "sha256": "804b745987fd96d544fe0acbecc37aac96605b6d978d044cff1555461077f5e8"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_power_fruit_seed.json",
+    "sha256": "6dfcc71af44c15a581fe9ba31d9d5c707e427b9918e387e8c5726e8b3f38dbf1"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/vitality_fruit.json",
+    "sha256": "41062ee448ed63fb564c053667e6059d002f7ff7ace0513d966b81513d103326"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_pink_fruit.json",
+    "sha256": "bad77c5b430ecfdd4fc1d3869f702ad95edaf08a51bb83e7ba85ce77c0129f17"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/creepy_fruit_seed.json",
+    "sha256": "1473e2e7d203acd044ca9c2d9242ca601025c2ce519bbd37df698d86f5e0d620"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/garden_fruit_seed.json",
+    "sha256": "73c5c4f7a71e48dd3ed0343122c5f85baf1b024eacfd613c4e80f4f45e5b4fcb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/shiny_fruit.json",
+    "sha256": "6ad30f5c7fd2342fac090d300da54edf9122092337cd6effb59f3fa549f951b6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/smart_fruit_seed.json",
+    "sha256": "b452679e6517c62cfd23d55d8663db409c53b3574c69cbc4a739c489bccd68fe"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_red_fruit.json",
+    "sha256": "9b35512afee50e6d24e2a40a439c625112dc8ac7caff14c64b8b483edfe59e92"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_orange_fruit.json",
+    "sha256": "cd0d8e27a1d680aaf3e2a1c9136af149b464845e440e1a2272cf21514bfc5438"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/tall_fruit.json",
+    "sha256": "324b58a294f53436da4bce697709359e695e13e031d5358c07c7d48c4101458e"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/tasty_fruit_seed.json",
+    "sha256": "9d6571217c0bd88a6e4b3f94023cb1abf409cc86435d3acbba11f2c06f7fffec"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/square_fruit_seed.json",
+    "sha256": "864607fa88fd7aba8589930b882b0a673552fa42a42d8fa2b8ec8cd9bb09e43b"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/chao_watering_can.json",
+    "sha256": "63c0961876dcad4123e4f3a196a95d3ecb5534551293f78fedd1ebe9e562d3f6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_orange_fruit_seed.json",
+    "sha256": "f5cade4e8918928f004b0a8ae80e7866e6d90b58d9f8ff2c4e2f61d1795a2f38"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/forbidden_fruit.json",
+    "sha256": "544e8feed977441fb98e5dbc8f81320635f3db38da2455c87abc0381d3047ce5"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/hyper_run_fruit.json",
+    "sha256": "6430d504f7feb0d16dc4a3080c1fb4c48fbc9e17290067e98e3cb417414636a6"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/round_fruit.json",
+    "sha256": "c7b7e7dc73d8676f3934ec53249ac4cfd68fc50d3b740ca40bfba4fa5d09e295"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/rough_fruit.json",
+    "sha256": "0611d1fa33d769205ee71be3340ad49fbe9fe5048a89c6b4bfde874292e578a3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/peace_fruit_seed.json",
+    "sha256": "ad126774d7cb5fb1d0137e76bd8d07f3c67fe4877282957aa3354d6e70b14a38"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_purple_fruit_seed.json",
+    "sha256": "bfabd4e0f9d39d8b03cc1efb79bfa46c4034985dc2fa73441e70a5da3964bbcf"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/forbidden_fruit_seed.json",
+    "sha256": "2e48757a3a8b099729b89ccd4d2a07bfd4842bad6373c89a44c7a508362110eb"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/mushroom.json",
+    "sha256": "82bad9fb0c3606d7f7eaee8c7fe725e7d6877e68b56fe1da2cdbac784c401d3a"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/strong_fruit.json",
+    "sha256": "29489f64db78b741f575f9ef4bb72721a10ff1d3de19d7ff7c7978f86ed45cd2"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_yellow_fruit.json",
+    "sha256": "b70c3c06c19a7ddad25fefd415d922aa17af1340dbe52cd57a31f45d7cc022f3"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/dark_garden_fruit.json",
+    "sha256": "cde80ab59d79e22452a71161950fbc595f02e2e0598e64c4ed25fa2868fc9415"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/gba_yellow_fruit_seed.json",
+    "sha256": "e962b522e14b348781777137b3678b539122c2d57c148450569e64f5cb2493e0"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/mint_candy.json",
+    "sha256": "bb9b16f2b8da19d8b96a2cbdc6e1f814931f3886b48bfe4a839e4b360000c332"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/shiny_fruit_seed.json",
+    "sha256": "396655bc5f30a2c67380c94f36d3f6d8c783b2861b617d5e221ddbafc8443c19"
+  },
+  {
+    "path": "src/main/resources/assets/chao_garden/models/item/fruit02512/vitality_fruit_seed.json",
+    "sha256": "8e04712bcef24c525974e90c19c7b617e2492c9a92d8ec49cbc4621d9065df7f"
+  }
+]

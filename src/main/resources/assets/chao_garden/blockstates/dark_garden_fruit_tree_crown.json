@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "garden=false,expanded=false": {
+      "model": "chao_garden:block/chao_fruit_crown"
+    },
+    "garden=false,expanded=true": {
+      "model": "chao_garden:block/chao_fruit_crown_expanded"
+    },
+    "garden=true,bare=false": {
+      "model": "chao_garden:block/planted_palm_crown"
+    },
+    "garden=true,bare=true": {
+      "model": "chao_garden:block/dark_garden_deadwood_joint"
+    }
+  }
+}

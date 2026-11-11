@@ -1,0 +1,11 @@
+# Doctor moustache normals, 0.25.2
+
+The user capture `2026-11-01_23.01.15.png` shows a dark upper face on one moustache lobe from an elevated clinic angle. The two lobes use the same flat gray atlas material. Their caps already accounted for reflection, but their perimeter quads did not: reflecting the x coordinates reversed handedness, leaving all seven side normals on the negative-x lobe facing inward. `ChaoMeshAsset` derives each flat normal from the first three face vertices, so the incorrect winding directly changed directional lighting.
+
+`art/build_staff_025.py` now reverses the reflected lobe's perimeter winding as well as its caps. No vertices, silhouette, gray material, highlights, skeleton, animation, or Java renderer changed. Reversing those same seven index lists in the corrected serialized asset reconstructs the original v20 Doctor SHA-256, `a44a1f046a1180b0be98424baa340c09282e25d550a35debdc4767ea778ec1dd`. The corrected Doctor SHA-256 is `43a9c8035ba877982ad254771cd909a6c56c7627857c18b998aaad59908f9f0e`.
+
+The Teacher, Principal, Fortune-Teller and shared staff atlas remain byte-identical to the authoritative 0.25.1 source. The Fortune-Teller's authored closed lids, no-blink rule, and all existing staff service gestures are unchanged.
+
+Fresh asset checks first rejected the original negative-x lobe's incoherent directed edges. After rebuilding, `art/validate_doctor_normals_0252.py` verifies outward caps and all fourteen perimeter faces, closed directed edges, positive volume, mirrored vertices and all nine corresponding face normals, fifty-four directional-light samples, and identical gray atlas samples. Its negative control recreates the historical winding error and rejects all seven affected perimeter faces. The ordinary staff validator now includes these checks and passes 12,861 assertions. Geometry results are in `docs/validation-0.25.2/doctor-normals.json`.
+
+These geometric checks do not constitute native visual signoff. The final capture must review the Doctor from the user's elevated angle, reflected left/right elevated views, and front and side views under clinic lighting; the earlier 0.25.1 front/oblique review did not expose the top-face defect.

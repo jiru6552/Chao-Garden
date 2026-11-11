@@ -1,0 +1,77 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "palette": "chao_garden:block/toy_palette",
+    "particle": "chao_garden:block/toy_palette"
+  },
+  "elements": [
+    {
+      "from": [
+        4,
+        1,
+        10
+      ],
+      "to": [
+        12,
+        1.6,
+        10.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#palette",
+          "uv": [
+            8,
+            8,
+            12,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#palette",
+          "uv": [
+            8,
+            8,
+            12,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#palette",
+          "uv": [
+            8,
+            8,
+            12,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#palette",
+          "uv": [
+            8,
+            8,
+            12,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#palette",
+          "uv": [
+            8,
+            8,
+            12,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#palette",
+          "uv": [
+            8,
+            8,
+            12,
+            12
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "textures": {
+    "base": "chao_garden:block/dark0255/dark_garden_gravestone_plain",
+    "engraving": "chao_garden:block/dark0255/dark_garden_gravestone",
+    "particle": "chao_garden:block/dark0255/dark_garden_gravestone_plain"
+  },
+  "elements": [
+    {
+      "from": [
+        1,
+        0,
+        5
+      ],
+      "to": [
+        15,
+        3,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#engraving",
+          "uv": [
+            1,
+            13,
+            15,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#engraving",
+          "uv": [
+            1,
+            13,
+            15,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            5,
+            13,
+            11,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            5,
+            13,
+            11,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1,
+            5,
+            15,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1,
+            5,
+            15,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        3,
+        5
+      ],
+      "to": [
+        13,
+        12,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#engraving",
+          "uv": [
+            3,
+            4,
+            13,
+            13
+          ]
+        },
+        "south": {
+          "texture": "#engraving",
+          "uv": [
+            3,
+            4,
+            13,
+            13
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            5,
+            4,
+            11,
+            13
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            5,
+            4,
+            11,
+            13
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3,
+            5,
+            13,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            3,
+            5,
+            13,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        4,
+        12,
+        5
+      ],
+      "to": [
+        12,
+        14,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#engraving",
+          "uv": [
+            4,
+            2,
+            12,
+            4
+          ]
+        },
+        "south": {
+          "texture": "#engraving",
+          "uv": [
+            4,
+            2,
+            12,
+            4
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            5,
+            2,
+            11,
+            4
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            5,
+            2,
+            11,
+            4
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            4,
+            5,
+            12,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4,
+            5,
+            12,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        5,
+        14,
+        5
+      ],
+      "to": [
+        11,
+        15,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#engraving",
+          "uv": [
+            5,
+            1,
+            11,
+            2
+          ]
+        },
+        "south": {
+          "texture": "#engraving",
+          "uv": [
+            5,
+            1,
+            11,
+            2
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            5,
+            1,
+            11,
+            2
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            5,
+            1,
+            11,
+            2
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            5,
+            5,
+            11,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            5,
+            5,
+            11,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        15,
+        5
+      ],
+      "to": [
+        10,
+        16,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#engraving",
+          "uv": [
+            6,
+            0,
+            10,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#engraving",
+          "uv": [
+            6,
+            0,
+            10,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            5,
+            0,
+            11,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            5,
+            0,
+            11,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            6,
+            5,
+            10,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            6,
+            5,
+            10,
+            11
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "release": "0.25.8",
+  "result": "PASS",
+  "sources": [
+    {
+      "file": "docs/validation-0.25.8/server-default.txt",
+      "sha256": "69960606d5e59bdc3b5488a94ace71a09117189a267a37f10aea473a6548728d"
+    },
+    {
+      "file": "docs/validation-0.25.8/server-default-payloads.json",
+      "sha256": "586b5939429e59c57e38391995af48603cf481f2b3eb3f8d22a984f3f900a61c"
+    },
+    {
+      "file": "docs/validation-0.25.8/production-build.txt",
+      "sha256": "4918a12d820f171794b26457b720947126efaceaf339412d06c024cd2a1b907f"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/ToyApproachGameTests025.java",
+      "sha256": "f1e962c1a715b2aad73f7b8fafe19dc038c2aea3048513a779073da9f9a11557"
+    },
+    {
+      "file": "docs/validation-0.25.8/expected-tests.json",
+      "sha256": "8a455b9c6e46e1c9f96e1fc92c0efad13e0d4313dfeac2710aad640313fdb9ca"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/LobbyApproachGameTests0255.java",
+      "sha256": "55da52a8f252787c2c6d18a77f4c92a6b544c8d7db3c07079cc61cb99890d911"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenPupilsGameTests0257.java",
+      "sha256": "87c6a52cd158e46e040bca2b26cdd39354c621c95739f4ff7cd0065e541e4da5"
+    },
+    {
+      "file": "docs/validation-0.25.8/server-default-test-fixtures.json",
+      "sha256": "06633a7d6fbfea88f51b506c6c9384b8d14940518cb432c17c054af24519fe6b"
+    },
+    {
+      "file": "build.gradle",
+      "sha256": "04d7f5a148b5c88dcc916e8ec53c714bc4498420f3e00b14b0f5ad3abf931a7f"
+    },
+    {
+      "file": "gradle.properties",
+      "sha256": "ad203cb8ab41f434525722f031979e3d054184bd886ce3cbc122319e6374f9f3"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/ActivityGameTests.java",
+      "sha256": "a973ed87e1121589391a9e3143942927ff811e56ecb959042d152ad794f65331"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/BabyAnimationGameTests025.java",
+      "sha256": "9c399d9001d51edba180e7fcbe68531014c329c22c1fa86e433e34e8c4cdecdd"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/BehaviorGameTests.java",
+      "sha256": "333fc0765bbeb6891d3324f37960c2a845e317f611f2cd5fb873cb4585a84dc5"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/ChaoGameTests.java",
+      "sha256": "c0fd0c4af39f0d56b14982f363d9ccbcf28d29b2304a484efd200543fc83e281"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/ClassicalModelsGameTests0254.java",
+      "sha256": "05582a055fd4f8e2099105d14955952c29c19bf8ea2d4e1e824d7962e217bc3e"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/ClinicRefinementGameTests0254.java",
+      "sha256": "3b0e643ea2cdb38d83e2424b7c94064c660a8295168bbc3011d75dbef2eb72d9"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/CompanionGameTests.java",
+      "sha256": "19077cc177d6d75ee3cc92e3b217d38862e9548358d474ea88120ffbd877578d"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/CompanionSkillGameTests.java",
+      "sha256": "47a043ef3af947e3f1d3e563e4f38ffe0ae5d967c298d61dc990b53e8d43863d"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/CompanionVariantGameTests.java",
+      "sha256": "8d3c8384cc42d87a11102d3da21f8255310198fc069779d6684eeedbb50921c1"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/CweContentGameTests.java",
+      "sha256": "4ff4fab657c5070051455ec893b1d82a64ce1aaf611f717f068af8c30a492df1"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/DarkGardenCareGameTests0255.java",
+      "sha256": "87862dbccbbeef23bbd06c3737cab435265ca040f61ffcb72728de4de97a5529"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/DarkGardenGameTests0255.java",
+      "sha256": "592d8d1eccd6ec79c0909eac610a54d36c701751912ca07cd56b9d8a82d69c32"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/DarkIntegrationGameTests0255.java",
+      "sha256": "8df0f019ba82a8646a0246fd1481fdb4524d9cef0bf5f2ecb6ba0bd289d327ca"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/EggDistributionGameTests.java",
+      "sha256": "35b4931d8b65dec54571dab4e1da2aa7b18add5c0c82cdf7b8329fea1697ebf4"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/EggInteractionGameTests.java",
+      "sha256": "f7f80cd74317ec8b875b83a05052f69828eacbcbaa043b185b3b451adbeabd6e"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/FamilyNameGameTests.java",
+      "sha256": "17604d0220e11a3ce7a4736ab2ad025834d3f5850478bd91f9c8c46b65151cf0"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/FruitGameTests.java",
+      "sha256": "5caf467da7deedf8dfd0359779e3c29600c70812d78f9ec387d473e6e016d2a3"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GameTestShutdownWatchdog025.java",
+      "sha256": "8981b8654e1155529538bfbf8d30ab11a14b4fba6e447d484fdd70fa1f1f53a1"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenAdventureGameTests0251.java",
+      "sha256": "8ff470390ca37d25028bbb4a3afdcdadb81a2427a9febd9488cb6ad59c98a97f"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenCompactGameTests0252.java",
+      "sha256": "d165d94d7c7d237caf671455fc66bb8770a0c07baf0a8e25c7d30c2f253371cd"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenDeviceGameTests0254.java",
+      "sha256": "668ee4527aaf7355befdbc8b65fd94dc817bc9f9d02c18f097445aa20f1e578d"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenGeometryGameTests0251.java",
+      "sha256": "a7983f56dbc1da54a25cd2d004358c86ece5dd3fb379109a798ee3ce4d679438"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenLandscapeGameTests0254.java",
+      "sha256": "19a9f12c5edbe659dd31c2d981b5ee60ee2b8db3d2320093deeb7bfe4829513f"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenLandscapeMigrationGameTests0254.java",
+      "sha256": "34c78f135cad69d71aa6584390838d61bcfb03596176077d8e6de8333300b35a"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenRegistryMigrationGameTests0251.java",
+      "sha256": "732e8d34c25a60b0bce1560fd5b0b8c4456648c58d0cc08f6aab830d8c3bf739"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenWaterfallGameTests0253.java",
+      "sha256": "b2b2d1c0aee78db97a59eeede275ecf61acb260c9c9e45c8f4c18caceebd3b5f"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GardenWorldGameTests025.java",
+      "sha256": "edca372130b0e5b921c3c3aea88c861f0327fc9f57f5ec8be11c152eb73b814c"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GeneGameTests.java",
+      "sha256": "45d9f714335300153c046f775017fc221456acd73889f098f4e2f128204a5dd1"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/GradualEvolutionGameTests.java",
+      "sha256": "cd64db9dceb059115d66be3312e78470a4be5f821ad9b26de10b309f045596fb"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/HeroGardenGeometryGameTests0253.java",
+      "sha256": "82c98a48c397b0bef65056a8f5a1a4c7a3b6063dd747ff51b90530d47661cdc2"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/HeroIntegrationGameTests0253.java",
+      "sha256": "533fffed9cbc00a75bdee33498051266a24d351c2064b1f0c6de1e1f4e225761"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/HeroTransporterMigrationGameTests0254.java",
+      "sha256": "4618f3095ac43a14881b86033a74e98cb5c2486affb7dc5d6f9a4df029b92e0d"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/HubWorldGameTests.java",
+      "sha256": "2c5ff9359bdda58c87383730a1c46afd127922ee933793bb7d5d0f1974934a7d"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/ItemHandlingGameTests.java",
+      "sha256": "0b9d4616efa732c86057fd98f8c528232f808ebd72b7ba28172e06c33b9f3bd7"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenDecorNavigationGameTests025.java",
+      "sha256": "3c1256dc7e738336ed3ebf7e70b986c844af4a4dbe84d02aed3210dcd751e8f7"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenGameTests.java",
+      "sha256": "df718ec11f7e5c0758124f983d8dddb316d68add5738a5cf0f4ee73e17de7298"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenHallGameTests0252.java",
+      "sha256": "c6cb0cc292c5ca220e6490b5ba8ee9d4cd5685a77570d22fb3e3148e8428e65f"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenLayoutGameTests0255.java",
+      "sha256": "4b22cf619d30863f7a5de702392e5d3685c812389ea749626e1dcc81d10b297f"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenMarketBuybackGameTests025.java",
+      "sha256": "f424abc4a15bfc4304112b1c3c342002fe8322c8ba951659d6f6ce83566defc4"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenRefinementGameTests025.java",
+      "sha256": "7b64cfda9735f7ce82cdd3cf90eb047a1d7095f4504532314933331c1428607b"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenRouteGameTests025.java",
+      "sha256": "8a76371497645e55e85e874a2164064ecfd7ae9edd18ddcab747b74f9644bd33"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/KindergartenServicesGameTests.java",
+      "sha256": "704dd7bc3efc4faa47ebc37979e1d5a7e780b6c76391e3efe7335779f04bb086"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/LifecycleAuditGameTests.java",
+      "sha256": "c5ccbf2c1fa4011bc5e54ad6a32812b50b26634842b4781ee882fee5de7e35e4"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/LocomotionGameTests.java",
+      "sha256": "52302862a18bb557ffb74e7c0c7acf30eacdff8f476ca1bbe9fd8425eae97977"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/MarketGameTests.java",
+      "sha256": "130c74b9a166b83c2e754664e7695d0a8716a45196e49858496bddb68a40f1c7"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/MarketMenuGameTests.java",
+      "sha256": "d015822adf6dd88f9efe23a804cc0a76b1ad323d0ae3d2f689b574550f039dc6"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/MusicGameTests.java",
+      "sha256": "2886fb9e6293196c45660418f83e70cb5461b5092b719647db49edfffa863a8c"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/OmochaoLifecycleGameTests.java",
+      "sha256": "57f308f55ea9de796484bb24548e9fd50263439725b5187385da2c2cd1a5dee8"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/RetiredThemeGameTests.java",
+      "sha256": "c82c3bad1dc74ed505795d8bc36c76ec5419b208ab64206d9550b30236119dec"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/RobotAppearanceGameTests.java",
+      "sha256": "08cc08d60b656040690c05392f0a4d262444416c24c59671e3bc628655596c15"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/SchoolBoundaryGameTests0251.java",
+      "sha256": "b75bada798b53766b808f5de6a5787a1a9fef3bebb2e7ad583d9326f3cc02a98"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/SchoolDecorPlacementGameTests0251.java",
+      "sha256": "893fa5d0cb6e689f55a8ce7c051b69c75d903446e95d689a0446c11624e0f458"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/SchoolDoorCurveGameTests0255.java",
+      "sha256": "5288464fca80b0bf87ceb396fa5018262d9fd4e79d2d5f141c951309c3b7daf9"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/SchoolDoorGameTests0251.java",
+      "sha256": "2f791b8f8c898d6cbbcd89ac55debc05340d02b59455af6cf8ac49934765abe7"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/SchoolWindowGameTests0251.java",
+      "sha256": "17975253e586c7f0fd7ccee95540130265db457935642ecb8abe939934f6f6f2"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/TestConnections.java",
+      "sha256": "19bcdc9a78b458bfb07e4f1f4b30e9c227309f93dcdd11aebb9f59b4d02cd0bd"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/ToyGameTests.java",
+      "sha256": "926aa2f8ad9c1a71c52cc739b88e9b08322dcb0d7a71570d53eacb31a9a3f7f0"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/TrainingSupplyGameTests.java",
+      "sha256": "d3deadf7692505ad79b5de822cae7bd5c771bfbe17388da5c100f80ff4dd7523"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/VariantEggRecipeGameTests.java",
+      "sha256": "8de65caec01b78f89cc14463f4085b1d78669678fe54fabd463b6a8de505b54d"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/VisualBootstrapGameTests.java",
+      "sha256": "f741190ec989e78a45f6c85fd9d97dfabcb03997fa64c0e51829f80956d900b0"
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/WardrobeGameTests.java",
+      "sha256": "b3a0c24af350607e9c3a7dc9b944a621d0c36bf67301106c4f1c2b8a0c7f3379"
+    }
+  ],
+  "profile": "default",
+  "exit_code": 0,
+  "required_tests": 249,
+  "required_tests_passed": 249,
+  "focused_new_regression_batches": {
+    "school0258_city": 1
+  },
+  "focused_new_required_cases": 1,
+  "controlled_tv_navigation_fixture": {
+    "illness_meters": 6,
+    "existing_public_treatment_immunity_ticks": 24000,
+    "test_budget_ticks": 2000,
+    "production_ai_unchanged": true,
+    "reason": "Inherited healthy routing fixture uses existing clinic treatment immunity to isolate unrelated biological illness rolls. Newborn speed, physical obstacles, route/session/reward assertions and test budget remain unchanged.",
+    "source_sha256": "f1e962c1a715b2aad73f7b8fafe19dc038c2aea3048513a779073da9f9a11557"
+  },
+  "curved_stair_fixture_readiness": {
+    "actual_player_tick": true,
+    "actual_hub_level": true,
+    "colliding_player_state": true,
+    "all_native_route_collision_chunks_published": true,
+    "initial_floor_visible_through_native_collision_getter": true,
+    "original_four_walks_and_no_collision_tolerance_preserved": true
+  },
+  "gametest_duration_seconds": 56.29,
+  "gametest_duration_reported": "56.29 s",
+  "gradle_duration": "1m 58s",
+  "core_total": 1695092,
+  "core_suites": {
+    "ChaoState": 168905,
+    "Egg distribution policy": 243,
+    "Training supplies": 248,
+    "Wardrobe choices": 6644,
+    "Baby animation timing": 1489,
+    "Portal geometry": 1233,
+    "Lobby geometry0252": 18509,
+    "Lobby perimeter approaches0256": 40670,
+    "Garden gate geometry0256": 48346,
+    "Area music rules0257": 136,
+    "School singing rules0258": 2472,
+    "Staff face timing0251": 177195,
+    "Black Market stock": 899355,
+    "Kindergarten buyback": 220052,
+    "Activity rules": 101311,
+    "Companion rules": 2091,
+    "SA2 fruit effects": 4984,
+    "Locomotion rules": 1209
+  },
+  "core_source": "production-build.txt (single build/coreTest; not repeated by this profile)",
+  "fresh_disposable_game_directory": "/tmp/chao0258-gametest-default-v1",
+  "command": "runGameTestServer -PchaoGameTestDir=<fresh disposable directory> -PchaoArchiveStagingDir=<outside synchronized workspace>",
+  "server_tested_artifact": {
+    "file": "build/libs/chao_garden-0.25.8.jar",
+    "filename": "chao_garden-0.25.8.jar",
+    "size_bytes": 14218021,
+    "sha256": "e6fce99f54c3fe77345048bc6222107c61bde44b0a75928a6207964e2dc92fdb",
+    "entries": 7060,
+    "production_class_payloads": 338,
+    "source_runtime_resource_payloads": 6583,
+    "development_helpers_and_distribution_fixtures_excluded": true,
+    "current_compiled_and_source_payloads_byte_identical": true,
+    "exact_asset_data_domain": true
+  },
+  "identity_fixture_mod_count": 0,
+  "accessories_api_registration_confirmed": false,
+  "scope": "Fresh actual NeoForge1.21.1 GameTestServer in an isolated world. Required cases execute real game APIs; optional slot cases execute only with the real Accessories profile. Identity fixtures are not full third-party mod implementations.",
+  "native_fixture_source_files": 64,
+  "native_fixture_compiled_classes": 80
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "chao_garden:block/school_toy_house_red"
+    },
+    "facing=west": {
+      "model": "chao_garden:block/school_toy_house_red",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chao_garden:block/school_toy_house_red",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "chao_garden:block/school_toy_house_red",
+      "y": 270
+    }
+  }
+}

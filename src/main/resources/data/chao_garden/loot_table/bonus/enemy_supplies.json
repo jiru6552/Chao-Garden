@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "chao_garden:regional_fruit",
+          "weight": 21
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 32
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.18
+        }
+      ]
+    }
+  ]
+}

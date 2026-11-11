@@ -1,0 +1,77 @@
+{
+  "block_atlas_textures": [
+    "scene/garden_limestone",
+    "scene/garden_palm_bark",
+    "scene/garden_palm_end",
+    "scene/garden_sand",
+    "scene/garden_turf",
+    "scene/garden_turf_edge",
+    "scene/lobby_glass"
+  ],
+  "blocks": [
+    {
+      "id": "lobby_glass_floor",
+      "item": false
+    },
+    {
+      "id": "lobby_scene_anchor",
+      "item": false
+    },
+    {
+      "id": "garden_turf",
+      "item": false
+    },
+    {
+      "id": "garden_limestone",
+      "item": false
+    },
+    {
+      "id": "garden_sand",
+      "item": false
+    },
+    {
+      "id": "garden_palm_trunk",
+      "item": false
+    },
+    {
+      "id": "garden_palm_crown",
+      "item": false
+    },
+    {
+      "id": "garden_palm_fruit_support",
+      "item": false
+    }
+  ],
+  "generator": "scripts/generate_lobby_garden_assets_025.py",
+  "glass_material": {
+    "depth_write": false,
+    "render_mode": "translucent",
+    "rgba": [
+      21,
+      37,
+      68,
+      59
+    ],
+    "texture": "scene/lobby_glass"
+  },
+  "refinement_generator": "scripts/generate_garden_refinement_assets_0251.py",
+  "render_textures": [
+    "scene/garden_limestone",
+    "scene/garden_palm_bark",
+    "scene/garden_palm_end",
+    "scene/garden_palm_frond",
+    "scene/garden_sand",
+    "scene/garden_turf",
+    "scene/garden_turf_edge",
+    "scene/kindergarten_portal_sign",
+    "scene/lobby_celestial_sky",
+    "scene/lobby_exit_pad",
+    "scene/lobby_exit_sign",
+    "scene/lobby_glass",
+    "scene/lobby_star_panel",
+    "scene/lobby_wood",
+    "scene/white"
+  ],
+  "shader": "scene_unlit",
+  "version": "0.25.0"
+}

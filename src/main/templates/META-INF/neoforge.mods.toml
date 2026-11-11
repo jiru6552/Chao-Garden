@@ -1,0 +1,46 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Chao Garden contributors"
+description='''
+Raise Minecraft-style Chao through care, training, evolution, breeding and reincarnation.
+A fan-made mod inspired by Sonic Adventure's Chao systems.
+'''
+
+[[mixins]]
+config="chao_garden.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.219,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="accessories"
+type="optional"
+# The Aether 1.5.10 embeds this 1.21.1 build of Accessories.
+versionRange="[1.1.0-beta.48+1.21.1],[1.1.0-beta.54,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+# Lionfish samples the rattle arm; existing Chao renderer is retained.
+[[dependencies.${mod_id}]]
+modId="lionfishapi"
+type="required"
+versionRange="[3.1]"
+ordering="AFTER"
+side="BOTH"

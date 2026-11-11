@@ -1,0 +1,16 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "atlases": 209,
+  "pixel_comparisons": 1712128,
+  "protected_eye_pixels": 13376,
+  "type_secondary_age_fits": 7695,
+  "forehead_goggles_cases": 810,
+  "exposed_symbol_samples": 68445,
+  "rejected_corruptions": [
+    "eye",
+    "alpha",
+    "theme hue"
+  ],
+  "scope": "Native generated PNG pixels and static 15-family/9-endpoint/3-age fits. Actual moving ancestors/material selection are separately checked by the client probe."
+}

@@ -1,0 +1,785 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "shell": "chao_garden:block/transporter_shell",
+    "ivory": "chao_garden:block/transporter_ivory",
+    "red": "chao_garden:block/transporter_red",
+    "gold": "chao_garden:block/transporter_gold",
+    "orb": "chao_garden:block/transporter_orb",
+    "blue": "chao_garden:block/transporter_blue",
+    "neck": "chao_garden:block/transporter_neck",
+    "screen": "chao_garden:block/transporter_screen",
+    "particle": "chao_garden:block/transporter_shell"
+  },
+  "elements": [
+    {
+      "name": "red plinth edge",
+      "from": [
+        0,
+        0.0,
+        0.0
+      ],
+      "to": [
+        14.4,
+        0.790875,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            8.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            8.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "wide red plinth edge",
+      "from": [
+        0,
+        0.790875,
+        1.6
+      ],
+      "to": [
+        16.0,
+        1.581749,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            8.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            8.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading platform",
+      "from": [
+        0,
+        1.581749,
+        1.6
+      ],
+      "to": [
+        14.4,
+        2.43346,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            8.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            8.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "front clipped platform",
+      "from": [
+        0,
+        1.581749,
+        0.0
+      ],
+      "to": [
+        12.8,
+        2.43346,
+        1.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 0",
+      "from": [
+        0,
+        2.555133,
+        10.88
+      ],
+      "to": [
+        4.0,
+        3.224335,
+        12.92
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 1",
+      "from": [
+        0,
+        3.148897,
+        12.92
+      ],
+      "to": [
+        4.0,
+        3.818099,
+        14.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "loading ramp tread 2",
+      "from": [
+        0,
+        3.742459,
+        14.96
+      ],
+      "to": [
+        4.0,
+        4.41166,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#gold",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#gold",
+          "uv": [
+            7.843137,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            8.156863
+          ]
+        },
+        "down": {
+          "texture": "#gold",
+          "uv": [
+            8.0,
+            7.843137,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "pad front",
+      "from": [
+        0,
+        2.457795,
+        4.0
+      ],
+      "to": [
+        4.48,
+        3.346008,
+        5.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "pad middle",
+      "from": [
+        0,
+        2.457795,
+        5.6
+      ],
+      "to": [
+        5.76,
+        3.346008,
+        10.72
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "pad rear",
+      "from": [
+        0,
+        2.457795,
+        10.72
+      ],
+      "to": [
+        4.48,
+        3.346008,
+        12.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "wide monitor cheeks",
+      "from": [
+        0,
+        14.60076,
+        15.2
+      ],
+      "to": [
+        11.2,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell",
+          "uv": [
+            0.0,
+            11.91111,
+            8.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#shell",
+          "uv": [
+            15.111111,
+            11.91111,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#shell",
+          "uv": [
+            8.0,
+            15.111111,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "red screen surround",
+      "from": [
+        0,
+        14.357414,
+        14.592
+      ],
+      "to": [
+        6.72,
+        16,
+        15.072
+      ],
+      "faces": {
+        "north": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            13.041095,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            13.041095,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#red",
+          "uv": [
+            0.0,
+            13.041095,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#red",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "garden display",
+      "from": [
+        0,
+        15.026616,
+        14.448
+      ],
+      "to": [
+        5.92,
+        16,
+        14.592
+      ],
+      "faces": {
+        "north": {
+          "texture": "#screen",
+          "uv": [
+            0.0,
+            13.935484,
+            8.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#screen",
+          "uv": [
+            8.0,
+            13.935484,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#screen",
+          "uv": [
+            0.0,
+            13.935484,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#screen",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "right cyan button",
+      "from": [
+        7.12,
+        15.81749,
+        14.4
+      ],
+      "to": [
+        10.24,
+        16,
+        15.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            14.829265,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            14.829265,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            14.829265,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            14.829265,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#blue",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    }
+  ]
+}

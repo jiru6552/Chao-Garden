@@ -1,0 +1,15 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/cwe02516/chao_guitar_play_2.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "cwe_chaoguitar_ffffffff_0": "chao_garden:block/cwe02516/chao_guitar/cwe_chaoguitar_ffffffff_0",
+    "cwe_chaoguitar2_ffffffff_0": "chao_garden:block/cwe02516/chao_guitar/cwe_chaoguitar2_ffffffff_0",
+    "cwe_chaoguitar_ffffffff_192": "chao_garden:block/cwe02516/chao_guitar/cwe_chaoguitar_ffffffff_192",
+    "cwe_chaoguitar2_ffffffff_192": "chao_garden:block/cwe02516/chao_guitar/cwe_chaoguitar2_ffffffff_192",
+    "particle": "chao_garden:block/cwe02516/chao_guitar/cwe_chaoguitar_ffffffff_0"
+  },
+  "render_type": "minecraft:cutout"
+}

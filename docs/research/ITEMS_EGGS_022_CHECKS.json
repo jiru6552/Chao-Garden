@@ -1,0 +1,34 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "checks": 32406,
+  "item_sprites": 269,
+  "egg_icons": 65,
+  "dna_sprites": 52,
+  "drives": 4,
+  "item_models": 446,
+  "resolved_texture_links": 1604,
+  "additional_bound_block_textures": 303,
+  "canonical_icon_pixels": 683,
+  "placed_egg_atlases": 191,
+  "identical_shiny_albedo_pairs": 86,
+  "shell_uv_samples": 468,
+  "cocoon_uv_and_center_samples": 3216,
+  "cocoon_sha256": {
+    "evolution": "107de8bab9250508f6c5225f4d5d36e83748056bb5fedf4c6d3b2073024eba41",
+    "rebirth": "7778d57b6f0cb663ceb28d6fce3d6ca4bc12e22fdecb8890954e6dbc4e817535",
+    "death": "36b78768d542d6360a8dde54016f2a3acbdf22bc5c2e8945ff7b62e15da871c2"
+  },
+  "rejected_corruptions": [
+    "canonical icon glare overwrite",
+    "dangling item texture",
+    "fractional sprite fringe",
+    "closing shell UV stretch",
+    "placed shell longitude seam",
+    "painted shiny albedo stripe",
+    "visible cocoon alpha hole",
+    "cocoon longitude discontinuity",
+    "colored coat used for death cocoon"
+  ],
+  "scope": "Actual resource/binding/palette/UV checks. Final material animation, shell appearance and inventory presentation require the separate actual-client review."
+}

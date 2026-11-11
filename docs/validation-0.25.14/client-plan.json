@@ -1,0 +1,213 @@
+{
+  "release": "0.25.8",
+  "tested_release": "0.25.14",
+  "scenes": [
+    {
+      "key": "fruit-native-0",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-native-1",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-native-2",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "fruit-use-hands-fruit",
+      "space": "garden",
+      "eye": [
+        -2.2,
+        96.62,
+        3.5
+      ],
+      "target": [
+        0.5,
+        95.6,
+        6.2
+      ],
+      "fov": 55,
+      "motion": false,
+      "hold_ticks": 220
+    },
+    {
+      "key": "fruit-use-hands-can",
+      "space": "garden",
+      "eye": [
+        -2.2,
+        96.62,
+        3.5
+      ],
+      "target": [
+        0.5,
+        95.6,
+        6.2
+      ],
+      "fov": 55,
+      "motion": false,
+      "hold_ticks": 220
+    },
+    {
+      "key": "fruit-use-drops",
+      "space": "garden",
+      "eye": [
+        -2.2,
+        96.62,
+        3.5
+      ],
+      "target": [
+        0.5,
+        95.6,
+        6.2
+      ],
+      "fov": 55,
+      "motion": false,
+      "hold_ticks": 220
+    },
+    {
+      "key": "fruit-use-eat",
+      "space": "garden",
+      "eye": [
+        -1.4,
+        96.62,
+        4
+      ],
+      "target": [
+        0.5,
+        95.5,
+        6.1
+      ],
+      "fov": 40,
+      "motion": true,
+      "hold_ticks": 300
+    },
+    {
+      "key": "fruit-use-plant",
+      "space": "garden",
+      "eye": [
+        -1.4,
+        96.62,
+        4
+      ],
+      "target": [
+        0.5,
+        95.5,
+        6.1
+      ],
+      "fov": 40,
+      "motion": true,
+      "hold_ticks": 300
+    },
+    {
+      "key": "fruit-use-water",
+      "space": "garden",
+      "eye": [
+        -1.4,
+        96.62,
+        4
+      ],
+      "target": [
+        0.5,
+        95.5,
+        6.1
+      ],
+      "fov": 40,
+      "motion": true,
+      "hold_ticks": 300
+    },
+    {
+      "key": "fruit-use-finish",
+      "space": "garden",
+      "eye": [
+        8,
+        96,
+        15
+      ],
+      "target": [
+        -10,
+        82,
+        -6
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-neutral",
+      "space": "garden",
+      "eye": [
+        -10,
+        81.62,
+        -4
+      ],
+      "target": [
+        -30,
+        85,
+        -5.5
+      ],
+      "fov": 70
+    },
+    {
+      "key": "source-hero",
+      "space": "hero",
+      "eye": [
+        7,
+        81.62,
+        10
+      ],
+      "target": [
+        4.5,
+        84,
+        6.5
+      ],
+      "fov": 60
+    },
+    {
+      "key": "source-dark",
+      "space": "dark",
+      "eye": [
+        0,
+        82,
+        5
+      ],
+      "target": [
+        -8,
+        83,
+        -10
+      ],
+      "fov": 70
+    }
+  ]
+}

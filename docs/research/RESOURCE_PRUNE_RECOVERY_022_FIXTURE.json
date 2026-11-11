@@ -1,0 +1,72 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "fixture_root": "/tmp/chao022-prune-recovery-sit62x25",
+  "pruned_assets": 1615,
+  "pruned_bytes": 7552940,
+  "second_invocation_removed": 0,
+  "second_invocation_resource_bytes_identical": true,
+  "hygiene": {
+    "release": "0.22.0",
+    "result": "PASS",
+    "checks": 2429,
+    "selectors": {
+      "gameplay_forms": [
+        "amy",
+        "baby",
+        "chaos_angel",
+        "chaos_devil",
+        "chaos_light",
+        "dark",
+        "dark_fly",
+        "dark_power",
+        "dark_run",
+        "dark_swim",
+        "fly",
+        "hero",
+        "hero_fly",
+        "hero_power",
+        "hero_run",
+        "hero_swim",
+        "knuckles",
+        "omochao",
+        "power",
+        "run",
+        "swim",
+        "tails"
+      ],
+      "attachment_layouts": [
+        "baby",
+        "dark",
+        "dark_run",
+        "dark_swim",
+        "fly",
+        "hero",
+        "hero_fly",
+        "hero_power",
+        "knuckles",
+        "power",
+        "run",
+        "swim",
+        "tails"
+      ],
+      "explicit_callers": [
+        {
+          "class": "ChaoModel.java",
+          "argument": "model"
+        },
+        {
+          "class": "MarketModel.java",
+          "argument": "\"baby\""
+        }
+      ]
+    },
+    "raw_inputs": 41,
+    "pruned_resources": 1615,
+    "runtime_gameplay_meshes": 25,
+    "native_coat_layouts": 11,
+    "attachment_layouts": 13,
+    "rejected_selector_corruptions": 2,
+    "prototype_sha256": "02b6e41ac260eba7826dc9991737f96297b6acfeb54bb3e923acd24b147f8e8b"
+  }
+}

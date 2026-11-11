@@ -1,0 +1,29 @@
+{
+  "release": "0.22.0",
+  "result": "PASS",
+  "checks": 14955,
+  "age_endpoint_cases": 405,
+  "limb_assembly_cases": 600,
+  "normalized_families": [
+    "dark",
+    "dark_run",
+    "dark_swim",
+    "hero",
+    "hero_fly",
+    "hero_power"
+  ],
+  "preserved_special_files": 10,
+  "preserved_chaos_coats": 351,
+  "preserved_raw_inputs": 41,
+  "rejected_corruptions": [
+    "seven-pixel head restored",
+    "front plane moved",
+    "marker age mismatch",
+    "crest length changed",
+    "hand detached",
+    "native eye displaced",
+    "head UV changed"
+  ],
+  "control_sha256": "c1f891d16553762f342faa716294bdad1b8e2261f9497320466aed6f205dd5de",
+  "scope": "Independent final JSON geometry, rigid limb contacts, fixed native anchors and original source hashes; actual renderer and material behavior is checked separately in Minecraft."
+}

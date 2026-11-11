@@ -1,0 +1,15 @@
+# Hero and Dark lobby approaches
+
+The upper Hero portal retains its existing `(23,89,7)` anchor and west-facing crossing plane. Its nine-step flight climbs from lobby floor Y80 to a glass landing at Y89. The new east-facing Dark gate is at `(-23,71,7)`, reached by a nine-step descent. Both flights have a three-block walking lane centred on Z7.5. Return landings stand in front of the appropriate gate so arrivals cannot immediately bounce back through the same opening.
+
+The native footing and half-step collisions are real blocks. One internal, unobtainable `lobby_floor_stairs` block extends Minecraft's StairBlock; its native model is invisible because the lobby scene draws the exact union of those shapes. Glass footings use the existing internal floor block. Neither path contains quartz stairs, smooth-quartz platforms or a white support pylon.
+
+The tread material uses the lobby's actual translucent blue glass, pale grid lines and gold edge details, with a translucent star layer underneath. The visible stair shell contains boundary faces of the whole flight rather than overlapping cube skins. Stair stars and glass blend after the opaque End-portal pass, and the energy-disc/tube ordering from earlier releases remains intact.
+
+The descending stair and its lower landing cut a real opening through the native Y79 floor. The same two rectangles are subtracted from the visible circular floor, radial lines and gold rings. Upper-floor rails protect the edge while leaving the entrance open; the lower flight and its landing have their own balustrades. The lobby's minimum safe visitor elevation is below the Dark landing.
+
+The Hero gate follows the inspected original game-model preview: ivory cylindrical shafts on rounded bases, gold bands, a straight decorated frieze with a shallow curved underside, and small planted urns above the outer columns. The Dark gate follows the dark purple-grey stone arch with raked shoulders, pale banded sculptural feet and sparse base foliage. The centre is an open animated portal in both cases. The exact linked YouTube media could not be decoded in this environment; no tail timestamp or frame-accurate staircase-curve claim is made. See [the reference study](references-0.25.5/REFERENCE_STUDY.md).
+
+`LobbyApproachGeometry0255` defines native flight coordinates, their closed visible boundary and the exact upper-floor openings. Its pure-Java regression checks closed stair surfaces, half-step continuity and complete non-overlapping floor subtraction. `LobbyApproachGameTests0255` checks the actual authored states and moves a real player up and down both flights using native collision and downward movement, without jumps, coordinate corrections or forced on-ground flags. The dedicated static validator binds the renderer, materials and physical paths, including malformed regressions.
+
+Regenerate the internal state/model with `python scripts/generate_lobby_approaches_0255.py`. Run `python scripts/validate_lobby_approaches_0255.py`; the ordinary asset pipeline owns the final invocation. New native tests are in batch `lobby0255_approaches`.

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chao_garden:hyper_swim_fruit",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "chao_garden:hyper_swim_fruit_pod",
+              "properties": {
+                "age": "3"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

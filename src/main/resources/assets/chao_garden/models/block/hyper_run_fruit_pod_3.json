@@ -1,0 +1,17 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/cwe02516/hyper_run_fruit_pod_3.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "cwe_h_core_00ff00ff_48": "chao_garden:block/cwe02516/hyper_run_fruit/cwe_h_core_00ff00ff_48_3",
+    "cwe_ali_miha_ffffffff_0": "chao_garden:block/cwe02516/hyper_run_fruit/cwe_ali_miha_ffffffff_0_3",
+    "cwe_ali_mikuki_ffffffff_128": "chao_garden:block/cwe02516/hyper_run_fruit/cwe_ali_mikuki_ffffffff_128_3",
+    "cwe_h_juice_80ff80ff_0": "chao_garden:block/cwe02516/hyper_run_fruit/cwe_h_juice_80ff80ff_0_3",
+    "cwe_h_run_ffffffff_48": "chao_garden:block/cwe02516/hyper_run_fruit/cwe_h_run_ffffffff_48_3",
+    "cwe_pod_stem": "chao_garden:block/cwe02516/hyper_run_fruit/cwe_pod_stem_3",
+    "particle": "chao_garden:block/cwe02516/hyper_run_fruit/cwe_h_core_00ff00ff_48_3"
+  },
+  "render_type": "minecraft:cutout"
+}

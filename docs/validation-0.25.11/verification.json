@@ -1,0 +1,96 @@
+{
+  "release": "0.25.11",
+  "result": "PASS",
+  "jar_sha256": "69055a0f81a6bf2ecaa783c9583161db8cc7c9323d397d12efada86d31fab299",
+  "jar_bytes": 24980223,
+  "build": {
+    "core_suites": 18,
+    "core_checks": 1694873,
+    "final_jar": "PASS"
+  },
+  "native_servers": {
+    "default": {
+      "required": 255,
+      "passed": 255
+    },
+    "accessories_owo": {
+      "required": 255,
+      "passed": 255,
+      "accessories": "1.1.0-beta.54+1.21.1",
+      "owo": "0.12.15.6-beta.1+1.21"
+    },
+    "execution": "Fresh native servers with compiled production source; included production JAR classes and resources checked byte for byte."
+  },
+  "client": {
+    "runtime": "ordinary native Minecraft/NeoForge, software Mesa and null OpenAL output",
+    "native_block_states": 5822,
+    "missing_models": 0,
+    "scenes": 9,
+    "frames": 11,
+    "saves": 11,
+    "return_restored": true,
+    "visual_review": [
+      "neutral-bank",
+      "neutral-waterfall",
+      "neutral-wide",
+      "hero-bark"
+    ],
+    "audio": {
+      "regional_tracks": [
+        "dark",
+        "hero",
+        "kindergarten",
+        "lobby",
+        "neutral"
+      ],
+      "chorus_starts": 4,
+      "natural_completions": 3,
+      "chorus_active_ticks": 1209,
+      "no_overlap": true,
+      "background_ducked_and_restored": true,
+      "stopped_after_exit": true,
+      "audible_listening_claim": false
+    }
+  },
+  "asset_replay": {
+    "result": "PASS",
+    "live_files": 6570,
+    "regenerated_files": 6570,
+    "different_files": [],
+    "java_source_files_compared": 278,
+    "different_java_files": []
+  },
+  "audio_signal_validation": {
+    "tracks": 11,
+    "result": "PASS",
+    "measurements": "audio-signal-checks.json"
+  },
+  "limits": [
+    "Minecraft reconstruction; existing user-requested layout adaptations retained.",
+    "No audible listening session; waveform and native playback checks are distinguished.",
+    "Black Market music and learned individual solo singing are not added.",
+    "Internal captures and disposable worlds are not release assets."
+  ],
+  "logs": {
+    "area-music-check.log": "9ef9f57b8f3aaf6b09d577dde57a442677aefc618a584d0f9b454ce33c8e3524",
+    "asset-rebuild.log": "e6f7752949a749f2977823dbd7682b21ab8af906202160f425b50617aa3398e4",
+    "asset-replay-comparison.json": "16faef37b8c76193cbbae9b7d52fd56c1ebb0ba4cab7a04a12cf08d97bf91315",
+    "audio-import.log": "6afecbd76655ac73d1592779239695746bdfc9701f15fb85e549df484527d493",
+    "audio-signal-checks.json": "24234762037542936776c306a4e354baa0162aab4c0e9f6861e65208df11238b",
+    "audio-validation.log": "045050c0cc34231387e6c07af4f5d034c879cd1e82163cf9f650608e17c120b2",
+    "changed-source-hashes.json": "dbca1a4a6951cfaffac955495a208a675ccfdda889134c7d07053f7ce20f41a5",
+    "client-final.log": "18b33463a5a5dd241356ec110433968c7ab94792f9e37b8e9dda6620bccfa823",
+    "client-plan.json": "d4ef26f15c48ed3b5c8a782d8dc0acf03bc35f7ca2a8e88c1baf25630e7448bd",
+    "final-jar.log": "6f70f7337c33b36707c4993be47c953d997fa7f777a5f4b5186a0f3d449414bc",
+    "initial-client-hold.log": "2206eb7807d0270fec7485f568bdb5fde732be4d1d039ec98010d71b2da8986f",
+    "initial-client-render-hold.log": "c604fa620784a69fb439ff32adfa255975a922306ba715a8171601bbf1969d01",
+    "initial-server-default.log": "a2340f492e6f537d0c364b1a335d93ca97b0ba6ab79b55e57bee1367b8873e89",
+    "initial-server-isolated.log": "c3c7e3da955424ba35724929542c9acfd8b67c016ff8027314d95062118bbaef",
+    "interrupted-client.log": "f7af6ac9187b111bfe15839996a64b2bb20f259c0de4cc128ba8653bae36eb08",
+    "phrase-check.log": "fbd5e583dc0ebc720bad07da0bb2bd7f34e28a4d413de6fb312f641a2a58699d",
+    "production-build.log": "e946716ca3f780af7c11cb0acbc22be2f8a852d9dea21d6fe134fb6bb413b1d9",
+    "resource-diff.json": "d80bf92064231e6ca8c49d78392595b7243124a8abb4676758655246d3b3ab94",
+    "server-accessories.log": "bfed0d9eb3d934def7e479aa65165d73fec2d706380d2a2227f31a1737eb015e",
+    "server-default.log": "96bc02437994f0371e4b14c8711af49050693cfa133ac4c2362e26d1a7d409f9"
+  }
+}

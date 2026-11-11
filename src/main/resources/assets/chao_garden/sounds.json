@@ -1,0 +1,268 @@
+{
+  "chao.ambient": {
+    "subtitle": "subtitles.chao_garden.chao.ambient",
+    "sounds": [
+      {
+        "name": "chao_garden:chao/chat_1",
+        "attenuation_distance": 12
+      },
+      {
+        "name": "chao_garden:chao/chat_2",
+        "attenuation_distance": 12
+      },
+      {
+        "name": "chao_garden:chao/chat_3",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "chao.happy": {
+    "subtitle": "subtitles.chao_garden.chao.happy",
+    "sounds": [
+      {
+        "name": "chao_garden:chao/call",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "chao.hurt": {
+    "subtitle": "subtitles.chao_garden.chao.hurt",
+    "sounds": [
+      {
+        "name": "chao_garden:chao/startled",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "chao.death": {
+    "subtitle": "subtitles.chao_garden.chao.death",
+    "sounds": [
+      {
+        "name": "chao_garden:chao/startled",
+        "attenuation_distance": 16,
+        "pitch": 0.95
+      }
+    ]
+  },
+  "chao.evolve": {
+    "subtitle": "subtitles.chao_garden.chao.evolve",
+    "sounds": [
+      {
+        "name": "chao_garden:chao/call",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "music.chao_garden": {
+    "subtitle": "subtitles.chao_garden.music.chao_garden",
+    "sounds": [
+      {
+        "name": "chao_garden:records/chao_garden",
+        "stream": true
+      }
+    ]
+  },
+  "music.area.lobby": {
+    "subtitle": "subtitles.chao_garden.music.area.lobby",
+    "sounds": [
+      {
+        "name": "chao_garden:music/area/lobby",
+        "stream": true
+      }
+    ]
+  },
+  "music.area.neutral": {
+    "subtitle": "subtitles.chao_garden.music.area.neutral",
+    "sounds": [
+      {
+        "name": "chao_garden:music/area/neutral",
+        "stream": true
+      }
+    ]
+  },
+  "music.area.hero": {
+    "subtitle": "subtitles.chao_garden.music.area.hero",
+    "sounds": [
+      {
+        "name": "chao_garden:music/area/hero",
+        "stream": true
+      }
+    ]
+  },
+  "music.area.dark": {
+    "subtitle": "subtitles.chao_garden.music.area.dark",
+    "sounds": [
+      {
+        "name": "chao_garden:music/area/dark",
+        "stream": true
+      }
+    ]
+  },
+  "music.area.kindergarten": {
+    "subtitle": "subtitles.chao_garden.music.area.kindergarten",
+    "sounds": [
+      {
+        "name": "chao_garden:music/area/kindergarten",
+        "stream": true
+      }
+    ]
+  },
+  "music.area.black_market": {
+    "subtitle": "subtitles.chao_garden.music.area.black_market",
+    "sounds": []
+  },
+  "chao.singing_a": {
+    "subtitle": "subtitles.chao_garden.chao.singing_a",
+    "sounds": [
+      {
+        "name": "chao_garden:chao/singing_a",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "chao.singing_b": {
+    "subtitle": "subtitles.chao_garden.chao.singing_b",
+    "sounds": [
+      {
+        "name": "chao_garden:chao/singing_b",
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "chao.classroom_chorus": {
+    "sounds": [
+      {
+        "name": "chao_garden:chao/chorus/chao_k_sing_hero1",
+        "stream": true,
+        "attenuation_distance": 12
+      },
+      {
+        "name": "chao_garden:chao/chorus/chao_k_sing_hero2",
+        "stream": true,
+        "attenuation_distance": 12
+      },
+      {
+        "name": "chao_garden:chao/chorus/chao_k_sing_hero3",
+        "stream": true,
+        "attenuation_distance": 12
+      },
+      {
+        "name": "chao_garden:chao/chorus/chao_k_sing_dark1",
+        "stream": true,
+        "attenuation_distance": 12
+      },
+      {
+        "name": "chao_garden:chao/chorus/chao_k_sing_dark2",
+        "stream": true,
+        "attenuation_distance": 12
+      },
+      {
+        "name": "chao_garden:chao/chorus/chao_k_sing_dark3",
+        "stream": true,
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "toy.rattle": {
+    "subtitle": "subtitles.chao_garden.toy.rattle",
+    "sounds": [
+      {
+        "name": "chao_garden:toys/rattle_1",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/rattle_2",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/rattle_3",
+        "stream": false
+      }
+    ]
+  },
+  "toy.maracas": {
+    "subtitle": "subtitles.chao_garden.toy.maracas",
+    "sounds": [
+      {
+        "name": "chao_garden:toys/maracas_1",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/maracas_2",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/maracas_3",
+        "stream": false
+      }
+    ]
+  },
+  "toy.hand_bell": {
+    "subtitle": "subtitles.chao_garden.toy.hand_bell",
+    "sounds": [
+      {
+        "name": "chao_garden:toys/hand_bell_1",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/hand_bell_2",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/hand_bell_3",
+        "stream": false
+      }
+    ]
+  },
+  "toy.tambourine": {
+    "subtitle": "subtitles.chao_garden.toy.tambourine",
+    "sounds": [
+      {
+        "name": "chao_garden:toys/tambourine_1",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/tambourine_2",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/tambourine_3",
+        "stream": false
+      }
+    ]
+  },
+  "toy.castanets": {
+    "subtitle": "subtitles.chao_garden.toy.castanets",
+    "sounds": [
+      {
+        "name": "chao_garden:toys/castanets_1",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/castanets_2",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/castanets_3",
+        "stream": false
+      }
+    ]
+  },
+  "toy.cymbals": {
+    "subtitle": "subtitles.chao_garden.toy.cymbals",
+    "sounds": [
+      {
+        "name": "chao_garden:toys/cymbals_1",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/cymbals_2",
+        "stream": false
+      },
+      {
+        "name": "chao_garden:toys/cymbals_3",
+        "stream": false
+      }
+    ]
+  }
+}

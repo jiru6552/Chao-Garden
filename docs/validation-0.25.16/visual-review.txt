@@ -1,0 +1,38 @@
+Chao Garden 0.25.16 — native-client review
+
+Environment: Minecraft Java 1.21.1 / NeoForge 21.1.219, Java 21,
+1280x720 software-rendered desktop client, disposable synthetic save.
+Plan: client-plan.json. Log: client-final.log. No user save modified.
+
+Reviewed both native CWE item grids and all four equipped-clothing groups.
+The source-derived fruits, brushes, gifts and instruments load with their
+materials; item silhouettes and inventory icons remain recognizable.
+All ten imported wearables were equipped on actual child Chao, including
+blue and pink hoodies and mixed neck/face/head accessories.
+
+Initial review caught rounded cloth intersecting the blockier Chao skin,
+misoriented source rest poses, a disconnected headphone band and duplicate
+reversed surfaces darkening/flickering in the no-cull renderer. Final meshes
+correct the rest poses, split cloth at box-corner planes before projection,
+join the source ear cups with a fitted band and emit each surface once.
+The final hood is intentionally adapted to the blocky skull; it is not the
+unmodified round CWE silhouette. Cap/press-hat crowns remain visible, eye
+openings are clear, and the hood/sleeves follow their separate anchors.
+
+Reviewed the Kindergarten exterior from the front and both roof obliques.
+Both two-by-two windows sit inside the gable faces with solid backing,
+aligned green sills and no roof masking their lower frames.
+
+Reviewed representative Neutral/Hero/Dark views and the Kindergarten foyer,
+classroom, principal room and clinic. Previous requested scenery reversions,
+grass tops, source artwork and small garden banks remain intact.
+
+Native probes also verified 26 source items in all nine display contexts,
+128 placed toy states, 75 food/seed/tool items, 144 pod states, registered
+blockstate materials and actual eating/planting/watering completion. The
+27-scene run saved 30 scene captures, saved additional action frames and
+restored the ordinary return location. See logs for exact capture hashes.
+
+Scope: selected desktop-client scenes and child outfits were visually
+inspected; independent geometric clearance covers 141 body cases. This is
+not a claim of exhaustive animated/evolved-form, shader or Android testing.
