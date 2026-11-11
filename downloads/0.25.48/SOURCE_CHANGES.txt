@@ -1,0 +1,49 @@
+Chao Garden 0.25.48
+
+Cumulative source overlay: 98 changed/new files onto full 0.25.43 source (Git fcde2f9d012499b2e2cb1ec1d50a7f58d4dc3ca2); includes updates 0.25.44 through 0.25.48. This ZIP is an overlay, not a standalone project. Extract at the project root, preserving paths. The delivery branch also contains the complete updated source.
+
+Use Java 21, Minecraft 1.21.1 / NeoForge 21.1.219 and external Lionfish API 3.1. Install matching Chao Garden 0.25.48 JARs on client and server.
+
+This update refines the existing piano and accordion. Read docs/INSTRUMENTS_02548.md for implemented behavior, actual verification and remaining limits.
+
+0.25.47-to-0.25.48 source changes:
+CHANGELOG.md
+TESTING.md
+build.gradle
+docs/INSTRUMENTS_02548.md
+gradle.properties
+scripts/generate_accordion_02548.py
+scripts/test_accordion_assets_02548.py
+src/lionfishTest/java/com/chaogarden/client/AccordionRigTest.java
+src/lionfishTest/java/com/chaogarden/client/AccordionTimingTest.java
+src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java
+src/lionfishTest/java/com/chaogarden/client/PianoTimingTest.java
+src/main/java/com/chaogarden/ChaoSounds.java
+src/main/java/com/chaogarden/client/ChaoAccordionAnimation.java
+src/main/java/com/chaogarden/client/ChaoHeldItemLayer.java
+src/main/java/com/chaogarden/client/ChaoModel.java
+src/main/java/com/chaogarden/client/ChaoPianoAnimation.java
+src/main/java/com/chaogarden/client/InstrumentVisualSmoke048.java
+src/main/java/com/chaogarden/client/LionfishAccordionClip.java
+src/main/java/com/chaogarden/test/InstrumentGameTests048.java
+src/main/java/com/chaogarden/toys/AccordionPlayRules.java
+src/main/java/com/chaogarden/toys/BubblePlayRules.java
+src/main/java/com/chaogarden/toys/ChaoToyBlock.java
+src/main/java/com/chaogarden/toys/HandToyEffects.java
+src/main/java/com/chaogarden/toys/InstrumentPerformance.java
+src/main/java/com/chaogarden/toys/PianoPlayRules.java
+src/main/java/com/chaogarden/toys/ToyContent.java
+src/main/java/com/chaogarden/toys/ToyInteractionRules.java
+src/main/resources/assets/chao_garden/lang/en_us.json
+src/main/resources/assets/chao_garden/models/accordion02548/bass.obj
+src/main/resources/assets/chao_garden/models/accordion02548/bellows.obj
+src/main/resources/assets/chao_garden/models/accordion02548/keys.obj
+src/main/resources/assets/chao_garden/models/accordion02548/manifest.json
+src/main/resources/assets/chao_garden/models/item/chao_accordion_hand_bass.json
+src/main/resources/assets/chao_garden/models/item/chao_accordion_hand_bellows.json
+src/main/resources/assets/chao_garden/models/item/chao_accordion_hand_keys.json
+src/main/resources/assets/chao_garden/sounds.json
+src/main/resources/assets/chao_garden/sounds/toys/accordion.ogg
+src/main/resources/data/chao_instruments48/structure/activity_test.nbt
+src/main/resources/data/chao_instruments48/structure/empty.nbt
+src/test/java/com/chaogarden/toys/ToyInteractionRulesTest.java

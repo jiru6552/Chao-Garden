@@ -156,6 +156,10 @@ neoForge {
             if (project.findProperty('companion046InputStudy') == 'true') gameDirectory = project.file(project.findProperty('companion046Dir') ?: 'run-companion-input046')
             systemProperty 'chao_garden.companion046CarryStudy', project.findProperty('companion046CarryStudy') ?: 'false'
             if (project.findProperty('companion046CarryStudy') == 'true') gameDirectory = project.file(project.findProperty('companion046Dir') ?: 'run-companion-carry046')
+            systemProperty 'chao_garden.instrument048Start', project.findProperty('instrument048Start') ?: '0'
+            systemProperty 'chao_garden.instrument048Limit', project.findProperty('instrument048Limit') ?: '12'
+            systemProperty 'chao_garden.instrument048Study', project.findProperty('instrument048Study') ?: 'false'
+            if (project.findProperty('instrument048Study') == 'true') gameDirectory = project.file(project.findProperty('instrument048Dir') ?: 'run-instruments048')
             systemProperty 'chao_garden.guitarVisualStudy', project.findProperty('guitarVisualStudy') ?: 'false'
             if (project.findProperty('guitarVisualStudy') == 'true') gameDirectory = project.file(project.findProperty('guitarStudyDir') ?: 'run-guitar045')
             systemProperty 'chao_garden.organVisualStudy', project.findProperty('organVisualStudy') ?: 'false'
@@ -499,6 +503,7 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_rattle_tests/**'
     exclude 'data/chao_organ44/**'
     exclude 'data/chao_guitar45/**'
+    exclude 'data/chao_instruments48/**'
     exclude 'data/chao_focused46/**'
     exclude 'data/chao_equipped46/**'
     exclude 'data/chao_equipped46_save/**'
@@ -664,3 +669,18 @@ tasks.register('runningGaitRigTest', JavaExec) {
  jvmArgs '-Xmx768m', '-XX:ActiveProcessorCount=2'
 }
 tasks.named('check') { dependsOn runningGaitRigTest }
+
+// Accordion rigid ends and continuous Lionfish bellows share the production phrase.
+tasks.register('accordionTimingTest', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.AccordionTimingTest'
+ enableAssertions = true
+}
+tasks.register('accordionRigTest', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.AccordionRigTest'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn accordionTimingTest, accordionRigTest }

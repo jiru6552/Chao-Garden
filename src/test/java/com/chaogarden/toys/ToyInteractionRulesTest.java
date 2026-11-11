@@ -8,7 +8,7 @@ public final class ToyInteractionRulesTest {
       check(ToyInteractionRules.frontOnly(kind),"Keyboard must be approached from its keys");
       for(double width:new double[]{.35,.55,.8}) {
         double distance=ToyInteractionRules.keyboardDistance(kind,width);
-        double clearance=kind.equals("chao_organ")?.015:.38125+.025;
+        double clearance=kind.equals("chao_organ")?.015:.26+.02;
         check(Math.abs(distance-width/2-clearance)<1e-9,"Collision-safe keyboard clearance");
         if(kind.equals("chao_organ"))check(distance<width/2+.04,"Organ uses under-manual clearance instead of extending arms across the old cabinet gap");
       }

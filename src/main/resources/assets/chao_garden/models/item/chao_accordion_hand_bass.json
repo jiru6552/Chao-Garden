@@ -1,0 +1,15 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chao_garden:models/accordion02548/bass.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": true,
+  "textures": {
+    "cwe_toy_kanoke03_ff0009ff_52": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_kanoke03_ff0009ff_52",
+    "cwe_toy_piano01_ffffffff_4": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_piano01_ffffffff_4",
+    "cwe_toy_channel_on_04_1a1a1aff_0": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_channel_on_04_1a1a1aff_0",
+    "cwe_toy_kami01_ffffffff_0": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_kami01_ffffffff_0",
+    "particle": "chao_garden:block/cwe02516/chao_accordion/cwe_toy_kanoke03_ff0009ff_52"
+  },
+  "render_type": "minecraft:cutout"
+}

@@ -1,3 +1,10 @@
+## 0.25.48 — Piano and accordion interactions
+
+- Bring piano performers closer to the measured front keys, limit arm extension and follow the key depression with visible replacement hands. Keep the existing alternating harp phrase and gameplay rewards.
+- Give the existing accordion a dedicated two-hand Lionfish performance: rigid keyboard/support ends, moving bellows, key presses and synchronized original reed notes for placed, learned and classroom use.
+- Expose both toys through production once/loop/stop previews with interruption cleanup and no care or inventory changes. Add focused rig, source-asset, native-server and client verification.
+- Preserve organ, guitar, Analyzer, garden, Chaos Drive, equipped-flight, carrying, running and lobby fixes. See docs/INSTRUMENTS_02548.md.
+
 ## 0.25.47 — Real shader and Accessories verification
 
 - Blend late lobby glass color before a separate depth-only resolve. This removes Solas banding where the final tread and landing share a plane, retaining all geometry and foreground depth for shader effects.

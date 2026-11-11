@@ -92,13 +92,13 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
   }
   @Override protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos,
                                                    CollisionContext context) {
-    if(toy.equals("chao_organ") && context instanceof net.minecraft.world.phys.shapes.EntityCollisionContext entity
+    if(ToyInteractionRules.keyboard(toy) && context instanceof net.minecraft.world.phys.shapes.EntityCollisionContext entity
         && entity.getEntity() instanceof com.chaogarden.entity.ChaoEntity) {
       // A Chao's single rectangular body box includes the empty space behind
       // its feet/torso. Let that box enter the clearance below the low manual;
-      // the rendered body remains in front of the cabinet and pipes. Keep the
+      // the rendered body remains in front of the cabinet. Keep the
       // full player collision and interaction outline, and the rear wall here.
-      double[] rear={1.8,0,8,14.2,15,11};
+      double[] rear=toy.equals("chao_organ")?new double[]{1.8,0,8,14.2,15,11}:new double[]{1,0,4,15,9.6,14.1};
       int turns=switch(state.getValue(FACING)){case EAST->1;case SOUTH->2;case WEST->3;default->0;};
       double[] b=ToyInteractionRules.rotateEnvelope(rear,turns);
       return box(b[0],b[1],b[2],b[3],b[4],b[5]);

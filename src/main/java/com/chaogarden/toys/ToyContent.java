@@ -164,7 +164,7 @@ public final class ToyContent {
   public static boolean holdKeyboard(ChaoEntity chao,BlockPos pos){
     var state=chao.level().getBlockState(pos);
     if(!(state.getBlock() instanceof ChaoToyBlock block)||!ToyInteractionRules.keyboard(block.toy))return false;
-    if(block.toy.equals(OrganPlayRules.KIND)&&chao.level() instanceof ServerLevel server&&standAt(server,pos,chao)==null)return false;
+    if(chao.level() instanceof ServerLevel server&&standAt(server,pos,chao)==null)return false;
     Vec3 anchor=keyboardAnchor(chao,pos);
     if(chao.distanceToSqr(anchor)>.16||!chao.level().noCollision(chao,chao.getBoundingBox().move(anchor.subtract(chao.position()))))return false;
     chao.getNavigation().stop();chao.setDeltaMovement(Vec3.ZERO);chao.setPos(anchor.x,anchor.y,anchor.z);
@@ -180,7 +180,7 @@ public final class ToyContent {
     BlockPos best=null;double distance=9;
     for(var at:BlockPos.betweenClosed(c.blockPosition().offset(-3,-1,-3),c.blockPosition().offset(3,1,3))){
       if(!level.getBlockState(at).is(block(kind))||!available(level,at,c))continue;
-      if(kind.equals(OrganPlayRules.KIND)&&standAt(level,at,c)==null)continue;
+      if(standAt(level,at,c)==null)continue;
       Vec3 anchor=keyboardAnchor(c,at);double d=c.distanceToSqr(anchor);
       if(d<distance&&level.noCollision(c,c.getBoundingBox().move(anchor.subtract(c.position())))
           &&!level.getBlockState(BlockPos.containing(anchor).below()).getCollisionShape(level,BlockPos.containing(anchor).below()).isEmpty()){
@@ -577,21 +577,21 @@ public final class ToyContent {
             :block.toy.equals("chao_ball")?ballAnchor(chao,toy,stand)
             :stationary?stationaryAnchor(chao,toy,stand):Vec3.atBottomCenterOf(stand);
         // Vanilla MoveControl tests the current block's full player collision
-        // shape when deciding to jump. Finish walking just outside the organ
+        // shape when deciding to jump. Finish walking just outside the keyboard
         // cell, then use the same short collision-checked contact handoff as
         // other toys; do not ask MoveControl to climb into the low manual.
-        boolean organ=block.toy.equals(OrganPlayRules.KIND);
-        Vec3 approach=organ&&chao.distanceToSqr(anchor)>.0064?Vec3.atBottomCenterOf(toy).add(blockState.getValue(ChaoToyBlock.FACING).getStepX()*.55,0,blockState.getValue(ChaoToyBlock.FACING).getStepZ()*.55):anchor;
+        boolean keyboard=ToyInteractionRules.keyboard(block.toy);
+        Vec3 approach=keyboard&&chao.distanceToSqr(anchor)>.0064?Vec3.atBottomCenterOf(toy).add(blockState.getValue(ChaoToyBlock.FACING).getStepX()*.55,0,blockState.getValue(ChaoToyBlock.FACING).getStepZ()*.55):anchor;
         if(stationary&&!supportedStationaryAt(chao,anchor)){endPlaying(chao,false);approachExpiry=0;return;}
-        if(organ&&standAt(level,toy,chao)==null){endPlaying(chao,false);approachExpiry=0;return;}
+        if(keyboard&&standAt(level,toy,chao)==null){endPlaying(chao,false);approachExpiry=0;return;}
         if(precise&&chao.distanceToSqr(approach)>.0064) {
           // Final short approach stays in the clear stand cell; don't accept the path's broad arrival radius.
           chao.getNavigation().stop();
-          if(organ){
+          if(keyboard){
             var velocity=chao.getDeltaMovement();double horizontal=velocity.horizontalDistance();
             if(horizontal>.08)chao.setDeltaMovement(velocity.x*.08/horizontal,velocity.y,velocity.z*.08/horizontal);
           }
-          chao.getMoveControl().setWantedPosition(approach.x,approach.y,approach.z,organ?.3:.9);
+          chao.getMoveControl().setWantedPosition(approach.x,approach.y,approach.z,keyboard?.3:.9);
         } else if(!precise||level.noCollision(chao,chao.getBoundingBox().move(anchor.subtract(chao.position())))) {
           if(precise){chao.setPos(anchor.x,anchor.y,anchor.z);chao.setDeltaMovement(Vec3.ZERO);}
           beginPlaying(chao,toy,stand,block);engaged=true;

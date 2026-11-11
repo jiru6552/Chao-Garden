@@ -5,42 +5,73 @@ import com.chaogarden.core.ChaoState;
 import com.chaogarden.toys.*;
 import java.nio.file.*;
 import java.util.*;
+import org.joml.Matrix4f;
 import org.joml.Vector3f;
 public final class PianoRigTest {
  record Hands(float[] right,float[] left,String label){}
  public static void main(String[] args)throws Exception{
-  var clip=new LionfishPianoClip();int checks=0;float error=0,maxReach=0;
+  var clip=new LionfishPianoClip();var faces=PropMeshClearance.triangles("chao_piano_idle");
+  int checks=0,clearanceChecks=0;float error=0,depthError=0,maxReach=0,maxShift=0,minClearance=Float.POSITIVE_INFINITY;
   try(var files=Files.list(Path.of("src/main/resources/assets/chao_garden/models/entity/gameplay"))){for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")).toList()){
    var mesh=ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path)).getAsJsonObject());var poses=mesh.createPoses();String key=path.getFileName().toString();
-   for(boolean adult:new boolean[]{false,true})for(float morph:new float[]{-1,0,1}){
-    mesh.development(morph,-morph,adult?1:.14f);poses.values().forEach(ChaoMeshAsset.Pose::reset);
+   for(boolean adult:new boolean[]{false,true})for(float swimFly:new float[]{-1,0,1})for(float runPower:new float[]{-1,0,1}){
+    mesh.development(swimFly,runPower,adult?1:.14f);poses.values().forEach(ChaoMeshAsset.Pose::reset);
     var handMesh=key.contains("chaos_")?ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path.resolveSibling(key.replace(".json","_glass.json")))).getAsJsonObject()):mesh;
     var hp=handMesh==mesh?poses:handMesh.createPoses();var hands=new ArrayList<Hands>();hands.add(new Hands(handMesh.visiblePalm(hp,false),handMesh.visiblePalm(hp,true),"skin"));
-    if(morph==0&&!key.contains("chaos_")&&!key.contains("omochao"))for(int animal=0;animal<ChaoState.ANIMALS.length;animal++){
+    if(swimFly==0&&runPower==0&&!key.contains("chaos_")&&!key.contains("omochao"))for(int animal=0;animal<ChaoState.ANIMALS.length;animal++){
      if((ChaoState.animalSlots(animal)&1)==0)continue;var p=path.getParent().getParent().resolve((animal<21?"overlays/":"cwe_parts/")+key);if(!Files.exists(p))continue;
      var repl=ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(p)).getAsJsonObject());var rp=repl.createPoses();var right=ChaoToyGrip.animalPalm(repl,rp,animal,adult,false);var left=ChaoToyGrip.animalPalm(repl,rp,animal,adult,true);if(right!=null&&left!=null)hands.add(new Hands(right,left,"animal"+animal));
     }
     float scale=key.contains("chaos_")?.86f:adult?.80f:.64f;
     float distance=(float)ToyInteractionRules.keyboardDistance(PianoPlayRules.KIND,adult?.55:.44);
-    for(var h:hands)for(int t:new int[]{0,4,12,24,28,32,64,96,128,144,156,160}){
+    for(var h:hands)for(int t:java.util.stream.IntStream.rangeClosed(0,80).map(n->n*2).toArray()){
      if(h.right==null||h.left==null)continue;
      poses.values().forEach(ChaoMeshAsset.Pose::reset);poses.get("body").y=.8f;poses.get("body").rx=-.08f;poses.get("skull").y=.8f;
      java.util.function.BiConsumer<String,PoseStack> anchor=(name,stack)->mesh.transformBone(name,stack,poses);
      float w=PianoPlayRules.presence(t);ChaoPianoAnimation.fit(poses,anchor,h.right,h.left,clip,t,w,scale,distance,0);
+     if(h.label.equals("skin")&&(t==0||t==6||t==12||t==24||t==64||t==104||t==144||t==152||t==160)){
+      // Test the shipped surfaces in each rendered joint frame, including
+      // entry/exit poses. A small collision proxy must not hide clipping.
+      var piano=new Matrix4f().translate(0,1.501f-.5f/scale,-distance/scale).scale(1/scale,-1/scale,-1/scale);
+      for(String bone:new String[]{"body","skull","foot_left","foot_right"}){
+       float[] bounds=bone.startsWith("foot_")?mesh.partBounds(bone,poses):mesh.attachmentBounds(bone,poses);if(bounds==null)continue;
+       var joint=new PoseStack();anchor.accept(bone,joint);
+       float gap=PropMeshClearance.separation(faces,new Matrix4f(joint.last().pose()).invert().mul(piano),bounds);
+       minClearance=Math.min(minClearance,gap);clearanceChecks++;
+       if(gap<=.05f)throw new AssertionError("actor intersects piano mesh "+key+" "+bone+" t="+t+" gap="+gap);
+      }
+     }
      for(boolean left:new boolean[]{false,true}){
       var arm=poses.get(left?"arm_left":"arm_right");var palm=ChaoTrumpetAnimation.reachedPalm(left?h.left:h.right,arm.reach,left);var at=ChaoTriangleAnimation.palm(anchor,palm,left);
-      if(!at.isFinite()||Math.abs(arm.y)>.301)throw new AssertionError("bad joint "+key+" "+h.label);
+      float shift=new Vector3f(arm.x,arm.y,arm.z).length();maxShift=Math.max(maxShift,shift);
+      if(!at.isFinite()||shift>.901)throw new AssertionError("bad joint "+key+" "+h.label+" shift="+shift);
+      // The old fit passed contact checks by growing the arm up to 7.34px.
+      // Keep the rendered limb correction short while still reaching the mesh.
+      if(arm.reach>2.001f||arm.reach<0)throw new AssertionError("elongated arm "+key+" "+h.label+" reach="+arm.reach);
       if(w==1){
+       if(h.label.equals("skin")&&!key.contains("chaos_")){
+        var visibility=new java.util.HashMap<String,Boolean>();poses.forEach((name,p)->visibility.put(name,p.visible));
+        poses.forEach((name,p)->p.visible=name.equals(left?"arm_left__cube_1":"arm_right__cube_1"));
+        var rendered=new RattleAnimationTest.Sink();mesh.render(new PoseStack(),rendered,0,0,-1,poses,false);
+        poses.forEach((name,p)->p.visible=visibility.get(name));
+        if(!rendered.vertices.isEmpty()&&rendered.center().distance(at)>.001f)throw new AssertionError("actual rendered hand differs from keyboard contact "+key+" t="+t+" "+rendered.center()+" vs "+at);
+       }
        float worldX=at.x*scale,worldY=(1.501f-at.y)*scale;
        if((left?worldX:-worldX)<.05||Math.abs(worldX)>.42)throw new AssertionError("crossed/off keyboard "+key+" "+h.label+" "+at);
-       float expected=.2325f+.052f*(1-clip.tap(t,left));error=Math.max(error,Math.abs(worldY-expected));
-       if(Math.abs(worldY-expected)>.035)throw new AssertionError("key clearance "+key+" "+h.label+" "+worldY+" expected "+expected);
+       float expected=.2324968f-.0115712f*clip.tap(t,left)+.052f*(1-clip.tap(t,left));
+       float sourceZ=.5f-(distance+at.z*scale),sourceX=.5f+worldX;
+       if(sourceZ<.1308701f||sourceZ>.3391525f||sourceX<.0740713f||sourceX>.918772f)throw new AssertionError("off actual piano key mesh "+key+" "+h.label+" "+sourceX+","+sourceZ);error=Math.max(error,Math.abs(worldY-expected));
+       // Independently measured front portion of the white manual. Contact
+       // must not drift backwards again to compensate for a distant actor.
+       depthError=Math.max(depthError,Math.abs(sourceZ-.16f));
+       if(Math.abs(sourceZ-.16f)>.015f)throw new AssertionError("keys too far behind natural hand reach "+key+" "+h.label+" "+sourceZ);
+       if(Math.abs(worldY-expected)>.015)throw new AssertionError("key clearance "+key+" "+h.label+" "+worldY+" expected "+expected);
       }
       maxReach=Math.max(maxReach,arm.reach);checks++;
      }
     }
    }
   }}
-  System.out.println("Piano mesh fit: "+checks+" hand samples; no crossed hands; max key-height error="+error+" blocks; max reach="+maxReach+" pixels");
+  System.out.println("Piano mesh fit: "+checks+" hand samples; "+clearanceChecks+" body/skull/foot surface checks; no crossed hands; max key-height error="+error+" blocks; max key-depth error="+depthError+" blocks; max reach="+maxReach+" pixels; max shoulder shift="+maxShift+" pixels; min actor surface clearance="+minClearance+" pixels");
  }
 }

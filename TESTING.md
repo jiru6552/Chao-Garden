@@ -57,3 +57,12 @@ See [guitar interaction, commands and validation](docs/GUITAR_02545.md). Native 
 ## Focused fixes 0.25.46
 
 See [causes, verification and manual review](docs/FIXES_02546.md) for organ/guitar contact, equipped input/back attachment, bounded running cadence and lobby translucency. Real Solas V3.7b and Accessories follow-up results are recorded in [0.25.47 verification](docs/REAL_MOD_CHECKS_02547.md).
+
+
+## Piano and accordion 0.25.48
+
+See [interaction changes, preview commands and verification](docs/INSTRUMENTS_02548.md). Use `/chao testtoy piano once|loop|stop` with a real piano nearby, or `/chao testtoy accordion once|loop|stop`. `/chao testtoy stop` stops the current preview. These are operator commands; previews use the production clock, visible pose and sound while preserving care, lessons, real items and AI flags.
+
+Check baby/adult and replacement hands from the front and both sides, all four piano facings, accordion keys facing outward, bellows opening and closing, entry/exit, damage, stop, movement and removal of the placed toy. Listen to the harp/accordion timing and volume with multiple Chao; independent multiplayer and full-modpack checks remain manual.
+
+The full 0.25.48 `build` still hits an unchanged triangle transition assertion that was reproduced against the delivered 0.25.47 JAR. The installable JAR assembles successfully; see the report for baseline proof and the passing focused checks.

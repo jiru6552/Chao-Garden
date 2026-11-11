@@ -18,7 +18,8 @@ public final class ToyInteractionRules {
   public static double keyboardDistance(String kind,double actorWidth) {
     // The organ's manual projects in front of its rear cabinet. Its broad
     // outline is not a wall: a Chao can sit in the low clearance below it.
-    return kind.equals("chao_organ")?actorWidth*.5+.015:.38125+actorWidth*.5+.025;
+    // The piano has a deeper lid; keep its separately measured front clearance.
+    return kind.equals("chao_organ")?actorWidth*.5+.015:.26+actorWidth*.5+.02;
   }
   /** Ground-placeable stationary play; dedicated keyboard/ball/mount controllers stay separate. */
   public static boolean stationary(String kind) {

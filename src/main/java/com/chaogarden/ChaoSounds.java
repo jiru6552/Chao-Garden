@@ -31,6 +31,7 @@ public final class ChaoSounds {
   public static final DeferredHolder<SoundEvent, SoundEvent> ORGAN = register("toy.organ");
 
   public static final DeferredHolder<SoundEvent, SoundEvent> GUITAR = register("toy.guitar");
+  public static final DeferredHolder<SoundEvent, SoundEvent> ACCORDION = register("toy.accordion");
 
   private ChaoSounds() {}
 

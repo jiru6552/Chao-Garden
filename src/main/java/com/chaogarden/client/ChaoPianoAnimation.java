@@ -25,14 +25,17 @@ final class ChaoPianoAnimation {
   ChaoInstrumentFocus.apply(poses,w);poses.get("skull").rx+=.055f*w;
   for(boolean left:new boolean[]{false,true}){
    float tap=clip.tap(t,left);var palm=left?leftPalm:right;var arm=poses.get(left?"arm_left":"arm_right");
-   // Key tops measured from the source OBJ: y=.2075, front z=.131..339.
-   float keyX=(left?.145f:-.145f)+.025f*(float)Math.sin(t*.12+(left?0:1.5));
-   float keyY=.2075f+.025f+.052f*(1-tap);
-   var target=new Vector3f(keyX/scale,1.501f-(dy+keyY)/scale,-(distance-.275f)/scale);
+   // Play the front of these keys, following their measured downstroke. The
+   // closer actor anchor must not be cancelled out by reaching into the lid.
+   float keyX=PianoPlayRules.keyX(t,left);
+   float keyY=PianoPlayRules.KEY_Y+.025f-PianoPlayRules.KEY_TRAVEL*tap+.052f*(1-tap);
+   var target=new Vector3f(keyX/scale,1.501f-(dy+keyY)/scale,-(distance-PianoPlayRules.KEY_FRONT)/scale);
    var shoulder=new PoseStack();anchor.accept(left?"arm_left":"arm_right",shoulder);
    float length=shoulder.last().pose().transformPosition(new Vector3f()).distance(target)*16;
-   arm.reach=Math.max(0,(float)Math.sqrt(Math.max(0,length*length-palm[1]*palm[1]-palm[2]*palm[2]))-Math.abs(palm[0])-.20f)*ease;
-   ChaoTambourineAnimation.alignPalm(poses,anchor,ChaoTrumpetAnimation.reachedPalm(palm,arm.reach,left),ease,target,left,.30f);
+   arm.reach=Math.min(2f,Math.max(0,(float)Math.sqrt(Math.max(0,length*length-palm[1]*palm[1]-palm[2]*palm[2]))-Math.abs(palm[0])-.20f))*ease;
+   // Short replacement palms get less than one pixel of shoulder adjustment
+   // instead of stretching their forearms to compensate for their proportions.
+   ChaoTambourineAnimation.alignPalm(poses,anchor,ChaoTrumpetAnimation.reachedPalm(palm,arm.reach,left),ease,target,left,.90f);
   }
  }
 }
