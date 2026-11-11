@@ -125,6 +125,11 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
       if(frame!=state.getValue(FRAME))level.setBlock(pos,state.setValue(FRAME,frame),3);
       level.scheduleTick(pos,this,1);return;
     }
+    if(toy.equals(OrganPlayRules.KIND)){
+      int frame=OrganPlayRules.frame(ToyContent.sessionElapsed(level,pos));
+      if(frame!=state.getValue(FRAME))level.setBlock(pos,state.setValue(FRAME,frame),3);
+      level.scheduleTick(pos,this,1);return;
+    }
     if(BubblePlayRules.handToy(toy)) {
       // The owning PlayGoal emits sound on the same timeline as the arm clip.
       // Do not also emit the old block chime or run its floating model frames.

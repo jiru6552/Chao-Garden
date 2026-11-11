@@ -37,7 +37,7 @@ public final class ToyPreviewGameTests02527 {
   }
   private static int command(ServerPlayer p,String text){return command(p,text,2);}
   private static String preview(String id){return "chao "+(id.equals("sit")?"testpose ":"testtoy ")+id;}
-  private static int cues(String id){return switch(id){case "sit"->0;case "rattle"->29;case "bubble_wand"->3;case "maracas"->31;case "castanets"->15;case "cymbals"->4;case "drum"->16;default->8;};}
+  private static int cues(String id){return switch(id){case "sit"->0;case "rattle"->29;case "bubble_wand"->3;case "maracas"->31;case "castanets"->15;case "cymbals"->4;case "drum","guitar"->16;default->8;};}
   private static String event(String id){return id.equals("triangle")?"minecraft:block.note_block.bell":id.equals("trumpet")?"minecraft:block.note_block.didgeridoo":id.equals("flute")?"minecraft:block.note_block.flute":id.equals("drum")?"minecraft:block.note_block.basedrum":id.equals("bubble_wand")?"minecraft:block.bubble_column.bubble_pop":"chao_garden:toy."+(id.equals("bell")?"hand_bell":id);}
   private static List<String> sounds(ChaoEntity c,String id){return SOUNDS.get(c).stream().filter(s->s.startsWith(event(id)+"@")).toList();}
   @GameTestGenerator public static Collection<TestFunction> previews(){

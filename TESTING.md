@@ -43,3 +43,13 @@ With operator permission, stand within 12 blocks of an ordinary idle Chao:
 ```
 
 The previews use the production poses and cues. Repeat with a baby and an adult, then check side views, interruption, and a second player's view. The tambourine's decorated face should face upward; castanet open lids should remain below and ahead of the head. Listen for one cymbal clash at each paired rim contact. No items or lessons are required for previews, and previews grant no rewards. A busy, enrolled, wet, airborne, or otherwise incompatible Chao is rejected.
+
+
+## Organ 0.25.44
+
+See [organ geometry, preview commands and verification](docs/ORGAN_02544.md). Native client captures verify presentation separately from automated assertions; this cloud run uses a silent audio backend, so listening and independent multiplayer checks remain manual.
+
+
+## Guitar 0.25.45
+
+See [guitar interaction, commands and validation](docs/GUITAR_02545.md). Native client captures are separate from rig assertions; cloud audio used a silent device. Listening, separate-client multiplayer and full-modpack testing remain manual.

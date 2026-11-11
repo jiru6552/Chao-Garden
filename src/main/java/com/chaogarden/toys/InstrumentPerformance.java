@@ -11,10 +11,10 @@ import net.minecraft.sounds.SoundSource;
 /** Shared server/client presentation clock for learned music, classroom practice and placed toys. */
 public final class InstrumentPerformance {
   private InstrumentPerformance(){}
-  public static boolean supports(String lesson){return lesson.equals("maracas")||lesson.equals("bell")||lesson.equals("tambourine")||lesson.equals("castanets")||lesson.equals("cymbals")||lesson.equals("drum")||lesson.equals("flute")||lesson.equals("triangle")||lesson.equals("trumpet");}
+  public static boolean supports(String lesson){return lesson.equals("maracas")||lesson.equals("bell")||lesson.equals("tambourine")||lesson.equals("castanets")||lesson.equals("cymbals")||lesson.equals("drum")||lesson.equals("flute")||lesson.equals("triangle")||lesson.equals("trumpet")||lesson.equals("guitar");}
   public static String kind(ChaoEntity c){
     String toy=c.toyPlayingKind();
-    if(toy.equals(MaracasPlayRules.KIND)||toy.equals(BellPlayRules.KIND)||toy.equals(TambourinePlayRules.KIND)||toy.equals(CastanetsPlayRules.KIND)||toy.equals(CymbalsPlayRules.KIND)||toy.equals(DrumPlayRules.KIND)||toy.equals(FlutePlayRules.KIND)||toy.equals(TrianglePlayRules.KIND)||toy.equals(TrumpetPlayRules.KIND))return toy;
+    if(toy.equals(MaracasPlayRules.KIND)||toy.equals(BellPlayRules.KIND)||toy.equals(TambourinePlayRules.KIND)||toy.equals(CastanetsPlayRules.KIND)||toy.equals(CymbalsPlayRules.KIND)||toy.equals(DrumPlayRules.KIND)||toy.equals(FlutePlayRules.KIND)||toy.equals(TrianglePlayRules.KIND)||toy.equals(TrumpetPlayRules.KIND)||toy.equals(GuitarPlayRules.KIND))return toy;
     if(c.getBehavior()==ChaoEntity.Behavior.INSTRUMENT&&supports(c.behaviorDetail())
         &&(c instanceof KindergartenPupil0257||ChaoCareServices.knowsLesson(c,c.behaviorDetail())))return "chao_"+c.behaviorDetail();
     String lesson=c.state().trait("lesson.active");
@@ -44,17 +44,17 @@ public final class InstrumentPerformance {
     if(c.toyPlayingTicks()>0)return weight;
     return Math.max(0,Math.min(weight,Math.min(c.getBehaviorElapsed(partial)/12,(c.getBehaviorTicks()-partial)/14)));
   }
-  public static boolean due(String kind,int phase){return kind.equals(MaracasPlayRules.KIND)?MaracasPlayRules.soundDue(phase):kind.equals(BellPlayRules.KIND)?BellPlayRules.soundDue(phase):kind.equals(TambourinePlayRules.KIND)?TambourinePlayRules.soundDue(phase):kind.equals(CastanetsPlayRules.KIND)?CastanetsPlayRules.soundDue(phase):kind.equals(CymbalsPlayRules.KIND)?CymbalsPlayRules.soundDue(phase):kind.equals(DrumPlayRules.KIND)?DrumPlayRules.soundDue(phase):kind.equals(FlutePlayRules.KIND)?FlutePlayRules.soundDue(phase):kind.equals(TrianglePlayRules.KIND)?TrianglePlayRules.soundDue(phase):kind.equals(TrumpetPlayRules.KIND)&&TrumpetPlayRules.soundDue(phase);}
+  public static boolean due(String kind,int phase){return kind.equals(GuitarPlayRules.KIND)?GuitarPlayRules.soundDue(phase):kind.equals(MaracasPlayRules.KIND)?MaracasPlayRules.soundDue(phase):kind.equals(BellPlayRules.KIND)?BellPlayRules.soundDue(phase):kind.equals(TambourinePlayRules.KIND)?TambourinePlayRules.soundDue(phase):kind.equals(CastanetsPlayRules.KIND)?CastanetsPlayRules.soundDue(phase):kind.equals(CymbalsPlayRules.KIND)?CymbalsPlayRules.soundDue(phase):kind.equals(DrumPlayRules.KIND)?DrumPlayRules.soundDue(phase):kind.equals(FlutePlayRules.KIND)?FlutePlayRules.soundDue(phase):kind.equals(TrianglePlayRules.KIND)?TrianglePlayRules.soundDue(phase):kind.equals(TrumpetPlayRules.KIND)&&TrumpetPlayRules.soundDue(phase);}
   public static void cue(ChaoEntity c,String kind,int phase,float volumeScale){
     if(!(c.level() instanceof ServerLevel level))return;
     boolean maracas=kind.equals(MaracasPlayRules.KIND);
     level.playSound(null,c.getX(),c.getY()+c.getBbHeight()*.55,c.getZ(),
-        kind.equals(TrianglePlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_BELL.value():kind.equals(TrumpetPlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_DIDGERIDOO.value():kind.equals(FlutePlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_FLUTE.value():kind.equals(DrumPlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_BASEDRUM.value():maracas?ChaoSounds.MARACAS.get():kind.equals(TambourinePlayRules.KIND)?ChaoSounds.TAMBOURINE.get():kind.equals(CastanetsPlayRules.KIND)?ChaoSounds.CASTANETS.get():kind.equals(CymbalsPlayRules.KIND)?ChaoSounds.CYMBALS.get():ChaoSounds.HAND_BELL.get(),SoundSource.NEUTRAL,
-        volume(kind)*volumeScale,maracas?((phase-20)/4)%2==0?1.02f:.98f:kind.equals(TrumpetPlayRules.KIND)?TrumpetPlayRules.pitch(phase):kind.equals(FlutePlayRules.KIND)?FlutePlayRules.pitch(phase):kind.equals(DrumPlayRules.KIND)?.9f:1f);
+        kind.equals(GuitarPlayRules.KIND)?ChaoSounds.GUITAR.get():kind.equals(TrianglePlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_BELL.value():kind.equals(TrumpetPlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_DIDGERIDOO.value():kind.equals(FlutePlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_FLUTE.value():kind.equals(DrumPlayRules.KIND)?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_BASEDRUM.value():maracas?ChaoSounds.MARACAS.get():kind.equals(TambourinePlayRules.KIND)?ChaoSounds.TAMBOURINE.get():kind.equals(CastanetsPlayRules.KIND)?ChaoSounds.CASTANETS.get():kind.equals(CymbalsPlayRules.KIND)?ChaoSounds.CYMBALS.get():ChaoSounds.HAND_BELL.get(),SoundSource.NEUTRAL,
+        volume(kind)*volumeScale,kind.equals(GuitarPlayRules.KIND)?GuitarPlayRules.pitch(phase):maracas?((phase-20)/4)%2==0?1.02f:.98f:kind.equals(TrumpetPlayRules.KIND)?TrumpetPlayRules.pitch(phase):kind.equals(FlutePlayRules.KIND)?FlutePlayRules.pitch(phase):kind.equals(DrumPlayRules.KIND)?.9f:1f);
   }
   /** Modest mixer gain only; source samples, pitch, cadence and classroom attenuation stay intact. */
   public static float volume(String kind){
-    return kind.equals(CymbalsPlayRules.KIND)?.36f:kind.equals(DrumPlayRules.KIND)?.28f
+    return kind.equals(GuitarPlayRules.KIND)?.24f:kind.equals(CymbalsPlayRules.KIND)?.36f:kind.equals(DrumPlayRules.KIND)?.28f
         :kind.equals(MaracasPlayRules.KIND)?.30f:kind.equals(TrumpetPlayRules.KIND)?.20f
         :kind.equals(FlutePlayRules.KIND)?.18f:.24f;
   }

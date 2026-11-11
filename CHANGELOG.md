@@ -1,3 +1,17 @@
+## 0.25.45 — Guitar interaction
+
+- Refine the existing guitar with a torso-held CWE mesh, left-hand fretting and alternating Lionfish strums aligned to the measured string face.
+- Use an original four-string chord at the actual strum crossings for placed play, learned performances, classroom practice and `/chao testtoy guitar once|loop|stop`.
+- Keep lesson gates, reservations, completion rewards and cooldowns; hide the reserved source only during hand presentation and never create a real inventory prop.
+- Add source-contact/rendered-hand, sound-asset and native lifecycle tests and an opt-in eight-session client study. Retain the organ, piano, Analyzer, garden and drive changes.
+
+## 0.25.44 — Organ interaction
+
+- Refine the existing organ with measured front-manual contact, sustained two-hand Lionfish chords, key-only animation, happy expressions and an original pipe-organ sound.
+- Add `/chao testtoy organ once|loop|stop` using the real placed interaction without rewards or saved care/cooldown changes.
+- Add organ mesh/timing/asset and native navigation/orientation/interruption tests, plus a disposable client study. Preserve piano, Analyzer, garden and drive behavior.
+- Correct the stale held-item damage-death test to verify inventory-preserving recovery, with separate terminal-drop coverage.
+
 ## 0.25.37 — Item, tree and care refinements
 
 - Bubble-wand play uses happy eyes and an open mouth while retaining hurt, care and other priority reactions.

@@ -23,6 +23,7 @@ public final class HandToyEffects {
       new Clip("tambourine",TambourinePlayRules.KIND,TambourinePlayRules::soundDue,(c,t)->InstrumentPerformance.cue(c,TambourinePlayRules.KIND,t,1)),
       new Clip("triangle",TrianglePlayRules.KIND,TrianglePlayRules::soundDue,(c,t)->InstrumentPerformance.cue(c,TrianglePlayRules.KIND,t,1)),
       new Clip("trumpet",TrumpetPlayRules.KIND,TrumpetPlayRules::soundDue,(c,t)->InstrumentPerformance.cue(c,TrumpetPlayRules.KIND,t,1)),
+      new Clip("guitar",GuitarPlayRules.KIND,GuitarPlayRules::soundDue,(c,t)->InstrumentPerformance.cue(c,GuitarPlayRules.KIND,t,1)),
       new Clip("flute",FlutePlayRules.KIND,FlutePlayRules::soundDue,(c,t)->InstrumentPerformance.cue(c,FlutePlayRules.KIND,t,1)),
       new Clip("drum",DrumPlayRules.KIND,DrumPlayRules::soundDue,(c,t)->InstrumentPerformance.cue(c,DrumPlayRules.KIND,t,1)),
       new Clip("cymbals",CymbalsPlayRules.KIND,CymbalsPlayRules::soundDue,(c,t)->InstrumentPerformance.cue(c,CymbalsPlayRules.KIND,t,1)),

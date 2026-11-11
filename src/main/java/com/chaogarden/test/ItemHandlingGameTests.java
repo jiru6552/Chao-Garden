@@ -164,16 +164,56 @@ public final class ItemHandlingGameTests {
   }
 
   @GameTest(template="empty",timeoutTicks=60)
-  public static void heldItemsReturnOnceOnDeathEvenWithMobLootDisabled(GameTestHelper h) {
-    var p=keeper(h);var c=chao(h,p,70);var gift=namedSword("Gift survives death");var expected=gift.copy();
+  public static void heldItemsRecoverOnceOnDeathEvenWithMobLootDisabled(GameTestHelper h) {
+    var p=TestConnections.makeSurvivalServerPlayer(h);var c=chao(h,p,70);
+    var gift=namedSword("Gift survives death");var expected=gift.copy();
     p.setItemInHand(InteractionHand.MAIN_HAND,gift);c.mobInteract(p,InteractionHand.MAIN_HAND);
+    h.assertTrue(gift.isEmpty() && ItemStack.isSameItemSameComponents(c.getMainHandItem(),expected),
+        "Death test must begin with the real gift held by the Chao");
     boolean old=h.getLevel().getGameRules().getBoolean(GameRules.RULE_DOMOBLOOT);
-    h.getLevel().getGameRules().getRule(GameRules.RULE_DOMOBLOOT).set(false,h.getLevel().getServer());
-    c.kill();
-    h.getLevel().getGameRules().getRule(GameRules.RULE_DOMOBLOOT).set(old,h.getLevel().getServer());
+    try {
+      h.getLevel().getGameRules().getRule(GameRules.RULE_DOMOBLOOT).set(false,h.getLevel().getServer());
+      c.kill();
+    } finally {
+      h.getLevel().getGameRules().getRule(GameRules.RULE_DOMOBLOOT).set(old,h.getLevel().getServer());
+    }
     h.runAtTickTime(3,()->{
-      h.assertTrue(c.getMainHandItem().isEmpty() && dropped(h,expected).stream().mapToInt(e->e.getItem().getCount()).sum()==1,
-          "Real held item was lost or duplicated by death/equipment drops");h.succeed();
+      try {
+        var recovery=com.chaogarden.recovery.ChaoRecovery.get(p.server);
+        recovery.retry(p.server);recovery.retry(p.server);
+        var carriers=p.getInventory().items.stream()
+            .filter(s->c.getUUID().equals(ChaoCarrierItem.storedUUID(s))).toList();
+        h.assertTrue(c.isRemoved() && carriers.size()==1 && carriers.getFirst().getCount()==1,
+            "Damage death must recover exactly one Chao, including after repeated delivery attempts");
+        var restored=ChaoGarden.CHAO.get().create(h.getLevel());
+        restored.load(ChaoCarrierItem.entityData(carriers.getFirst()));
+        h.assertTrue(restored.getHealth()>0 && ItemStack.matches(restored.getMainHandItem(),expected),
+            "Recovered Chao must retain the exact held item, durability and components");
+        h.assertTrue(dropped(h,expected).isEmpty(),"Recovery must not also drop a loose copy of the held item");
+        h.succeed();
+      } finally {p.server.getPlayerList().remove(p);}
+    });
+  }
+
+  @GameTest(template="empty",timeoutTicks=60)
+  public static void terminalHeldItemsDropOnceWithMobLootDisabled(GameTestHelper h) {
+    var p=keeper(h);var c=chao(h,p,70);var gift=namedSword("Terminal held gift");var expected=gift.copy();
+    p.setItemInHand(InteractionHand.MAIN_HAND,gift);c.mobInteract(p,InteractionHand.MAIN_HAND);
+    h.assertTrue(gift.isEmpty() && ItemStack.matches(c.getMainHandItem(),expected),"Chao must hold the real gift");
+    // Terminal lifecycle outcomes intentionally bypass damage recovery.
+    c.state().dead=true;
+    boolean old=h.getLevel().getGameRules().getBoolean(GameRules.RULE_DOMOBLOOT);
+    try {
+      h.getLevel().getGameRules().getRule(GameRules.RULE_DOMOBLOOT).set(false,h.getLevel().getServer());
+      c.kill();
+    } finally {
+      h.getLevel().getGameRules().getRule(GameRules.RULE_DOMOBLOOT).set(old,h.getLevel().getServer());
+    }
+    h.runAtTickTime(3,()->{
+      h.assertTrue(c.isDeadOrDying() && c.getMainHandItem().isEmpty(),"Terminal death must release the held item");
+      int returned=dropped(h,expected).stream().mapToInt(e->e.getItem().getCount()).sum();
+      h.assertTrue(returned==1,"Terminal death must return exactly one unchanged held item; found "+returned);
+      c.discard();h.succeed();
     });
   }
 

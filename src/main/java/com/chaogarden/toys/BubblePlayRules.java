@@ -11,5 +11,5 @@ public final class BubblePlayRules {
     return elapsed>=26&&elapsed<144&&(elapsed-26)%48<22;
   }
   public static float presence(float elapsed){return RattlePlayRules.presence(elapsed);}
-  public static boolean handToy(String kind){return RattlePlayRules.KIND.equals(kind)||KIND.equals(kind)||MaracasPlayRules.KIND.equals(kind)||BellPlayRules.KIND.equals(kind)||TambourinePlayRules.KIND.equals(kind)||CastanetsPlayRules.KIND.equals(kind)||CymbalsPlayRules.KIND.equals(kind)||DrumPlayRules.KIND.equals(kind)||FlutePlayRules.KIND.equals(kind)||TrianglePlayRules.KIND.equals(kind)||TrumpetPlayRules.KIND.equals(kind);}
+  public static boolean handToy(String kind){return RattlePlayRules.KIND.equals(kind)||KIND.equals(kind)||MaracasPlayRules.KIND.equals(kind)||BellPlayRules.KIND.equals(kind)||TambourinePlayRules.KIND.equals(kind)||CastanetsPlayRules.KIND.equals(kind)||CymbalsPlayRules.KIND.equals(kind)||DrumPlayRules.KIND.equals(kind)||FlutePlayRules.KIND.equals(kind)||TrianglePlayRules.KIND.equals(kind)||TrumpetPlayRules.KIND.equals(kind)||GuitarPlayRules.KIND.equals(kind);}
 }

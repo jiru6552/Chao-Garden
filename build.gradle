@@ -144,6 +144,10 @@ neoForge {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
+            systemProperty 'chao_garden.guitarVisualStudy', project.findProperty('guitarVisualStudy') ?: 'false'
+            if (project.findProperty('guitarVisualStudy') == 'true') gameDirectory = project.file(project.findProperty('guitarStudyDir') ?: 'run-guitar045')
+            systemProperty 'chao_garden.organVisualStudy', project.findProperty('organVisualStudy') ?: 'false'
+            if (project.findProperty('organVisualStudy') == 'true') gameDirectory = project.file(project.findProperty('organStudyDir') ?: 'run-organ044')
             client()
             systemProperty 'chao_garden.toy02522', project.findProperty('chaoToy02522') ?: ''
             systemProperty 'chao_garden.toy02527', project.findProperty('chaoToy02527') ?: ''
@@ -478,6 +482,8 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_garden/structure/empty.nbt'
     exclude 'data/chao_garden/structure/activity_test.nbt'
     exclude 'data/chao_rattle_tests/**'
+    exclude 'data/chao_organ44/**'
+    exclude 'data/chao_guitar45/**'
     exclude 'data/chao_refine/**'
     exclude 'data/chao_garden/loot_table/distribution_test/**'
     exclude 'data/minecraft/worldgen/world_preset/flat.json'
@@ -594,3 +600,32 @@ tasks.register('pianoRigTest', JavaExec) {
  jvmArgs '-Xmx768m', '-XX:ActiveProcessorCount=2'
 }
 tasks.named('check') { dependsOn pianoRigTest }
+
+// The organ uses its own measured keyboard surface and sustained Lionfish tracks.
+tasks.register('organTimingTest', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.OrganTimingTest'
+    enableAssertions = true
+}
+tasks.register('organRigTest', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.OrganRigTest'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn organTimingTest, organRigTest }
+
+tasks.register('guitarTimingTest', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.GuitarTimingTest'
+ enableAssertions = true
+}
+tasks.register('guitarRigTest', JavaExec) {
+ dependsOn lionfishTestClasses
+ classpath = sourceSets.lionfishTest.runtimeClasspath
+ mainClass = 'com.chaogarden.client.GuitarRigTest'
+ jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn guitarTimingTest, guitarRigTest }

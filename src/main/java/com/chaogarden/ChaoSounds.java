@@ -28,6 +28,10 @@ public final class ChaoSounds {
   public static final DeferredHolder<SoundEvent, SoundEvent> MARACAS = register("toy.maracas");
   public static final DeferredHolder<SoundEvent, SoundEvent> RATTLE = register("toy.rattle");
 
+  public static final DeferredHolder<SoundEvent, SoundEvent> ORGAN = register("toy.organ");
+
+  public static final DeferredHolder<SoundEvent, SoundEvent> GUITAR = register("toy.guitar");
+
   private ChaoSounds() {}
 
   private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {

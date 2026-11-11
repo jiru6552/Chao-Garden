@@ -23,6 +23,7 @@ public final class ChaoHeldItemLayer extends RenderLayer<ChaoEntity,ChaoModel> {
     if(ChaoTambourineAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoTriangleAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoTrumpetAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
+    if(ChaoGuitarAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoFluteAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoDrumAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;
     if(ChaoCymbalsAnimation.render(chao,getParentModel(),stack,buffers,light,partialTick))return;

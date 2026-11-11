@@ -168,15 +168,17 @@ public final class ToyContent {
     if(chao.distanceToSqr(anchor)>.16||!chao.level().noCollision(chao,chao.getBoundingBox().move(anchor.subtract(chao.position()))))return false;
     chao.getNavigation().stop();chao.setDeltaMovement(Vec3.ZERO);chao.setPos(anchor.x,anchor.y,anchor.z);
     face(chao,state.getValue(ChaoToyBlock.FACING).getOpposite());
-    if(block.toy.equals(PianoPlayRules.KIND))chao.getLookControl().setLookAt(pos.getX()+.5,chao.getEyeY()-.06,pos.getZ()+.5,180,30);
+    if(ToyInteractionRules.keyboard(block.toy))chao.getLookControl().setLookAt(pos.getX()+.5,chao.getEyeY()-.06,pos.getZ()+.5,180,30);
     return true;
   }
-  /** A real placed piano is reserved, never copied or rewarded. No care/cooldown changes. */
-  public static BlockPos previewPiano(ChaoEntity c){
+  /** A real placed keyboard is reserved, never copied or rewarded. No care/cooldown changes. */
+  public static BlockPos previewPiano(ChaoEntity c){return previewKeyboard(c,PianoPlayRules.KIND);}
+  public static BlockPos previewKeyboard(ChaoEntity c,String kind){
+    if(!ToyInteractionRules.keyboard(kind))return null;
     if(!(c.level() instanceof ServerLevel level))return null;
     BlockPos best=null;double distance=9;
     for(var at:BlockPos.betweenClosed(c.blockPosition().offset(-3,-1,-3),c.blockPosition().offset(3,1,3))){
-      if(!level.getBlockState(at).is(block(PianoPlayRules.KIND))||!available(level,at,c))continue;
+      if(!level.getBlockState(at).is(block(kind))||!available(level,at,c))continue;
       Vec3 anchor=keyboardAnchor(c,at);double d=c.distanceToSqr(anchor);
       if(d<distance&&level.noCollision(c,c.getBoundingBox().move(anchor.subtract(c.position())))
           &&!level.getBlockState(BlockPos.containing(anchor).below()).getCollisionShape(level,BlockPos.containing(anchor).below()).isEmpty()){
@@ -185,7 +187,8 @@ public final class ToyContent {
     }
     return best;
   }
-  public static void beginPianoPreview(ChaoEntity c,BlockPos at){
+  public static void beginPianoPreview(ChaoEntity c,BlockPos at){beginKeyboardPreview(c,at);}
+  public static void beginKeyboardPreview(ChaoEntity c,BlockPos at){
     var tag=c.getPersistentData();boolean had=tag.contains(NEXT);long next=tag.getLong(NEXT);
     var anchor=keyboardAnchor(c,at);c.setPos(anchor.x,anchor.y,anchor.z);
     beginPlaying(c,at,BlockPos.containing(anchor),(ChaoToyBlock)c.level().getBlockState(at).getBlock());
@@ -304,7 +307,8 @@ public final class ToyContent {
     var sound=switch(toy) {
       case "chao_trumpet"->SoundEvents.NOTE_BLOCK_DIDGERIDOO.value();
       case "chao_drum"->SoundEvents.NOTE_BLOCK_BASEDRUM.value();
-      case "chao_piano","chao_organ"->SoundEvents.NOTE_BLOCK_HARP.value();
+      case "chao_piano"->SoundEvents.NOTE_BLOCK_HARP.value();
+      case "chao_organ"->ChaoSounds.ORGAN.get();
       case "chao_tambourine"->ChaoSounds.TAMBOURINE.get();
       case "chao_bell"->ChaoSounds.HAND_BELL.get();
       case "chao_triangle"->SoundEvents.NOTE_BLOCK_BELL.value();
@@ -553,7 +557,7 @@ public final class ToyContent {
           chao.getLookControl().setLookAt(toy.getX()+.5,toy.getY()+ToyInteractionRules.stationaryLookHeight(block.toy),toy.getZ()+.5,30,20);
         }
         int elapsed=(int)(PLAY_TICKS-(chao.getPersistentData().getLong(UNTIL)-now));
-        if(lastHandToyCue!=elapsed){lastHandToyCue=elapsed;HandToyEffects.tick(chao,block.toy,elapsed);if(block.toy.equals(PianoPlayRules.KIND))PianoPlayRules.cue(chao,elapsed);}
+        if(lastHandToyCue!=elapsed){lastHandToyCue=elapsed;HandToyEffects.tick(chao,block.toy,elapsed);if(block.toy.equals(PianoPlayRules.KIND))PianoPlayRules.cue(chao,elapsed);if(block.toy.equals(OrganPlayRules.KIND))OrganPlayRules.cue(chao,elapsed);}
         if(!surprised&&block.toy.equals("chao_jack_in_box")&&ToyInteractionRules.jackReactionDue((int)(PLAY_TICKS-(chao.getPersistentData().getLong(UNTIL)-now)))) {
           surprised=true;
           if(chao.getRandom().nextFloat()<.3f) {
