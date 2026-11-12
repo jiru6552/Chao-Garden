@@ -1,0 +1,94 @@
+{
+  "movie_sha256": "8e090de22f9791596e0e1cd5d037e4cae83f06d29c8decceb1278e753476fc4b",
+  "reviewed_frames": [
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-01.png",
+      "sha256": "b550aed9e68cb99d1f7a667cb6efbc9f70706a30a29790619c2cef33348a3967",
+      "requested_seconds": 0,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-02.png",
+      "sha256": "857679988280d73a62b096b546a7451c4191d762dfe06f81ba0fab2c46ef6466",
+      "requested_seconds": 4,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-03.png",
+      "sha256": "842ce5d7553bcffa4b643ec5593c90acae07122f33ce85fa9272647eb95c8f03",
+      "requested_seconds": 8,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-04.png",
+      "sha256": "9cfd155e00c310130591277616b14e130a60e76ccc6e0f8f336c2c716ec90b84",
+      "requested_seconds": 12,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-05.png",
+      "sha256": "c1464169cf481aa79ae10c3638f99d159a8eeabcd65c716aa6eae4ceae04c5fb",
+      "requested_seconds": 16,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-06.png",
+      "sha256": "36ebfaad62e1d7832a93699b9da553f779e136f3e2d8d0a53257cf1191433338",
+      "requested_seconds": 20,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-07.png",
+      "sha256": "e799cf6084b99c19d3d6c398ac323105facc9336148cae686fc500e0fea79c03",
+      "requested_seconds": 24,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-neutral-motion-frame-08.png",
+      "sha256": "224acfebaf762b3e3d0e39586ce32d44108f8bfe6ab3bcd39ed4061841b00607",
+      "requested_seconds": 28,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    }
+  ],
+  "scope": "Eight actual decoded frames at0,4,...28s; uniformcrop/resize, nofullinteractiveplaybackclaim"
+}

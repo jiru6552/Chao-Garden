@@ -1,0 +1,40 @@
+{
+  "scope": "Actual first .58 rig diagnostic, not a game/emitter change",
+  "failure_frame": {
+    "age": 0,
+    "runPower": -1,
+    "swimFly": -1,
+    "motion": "WALK",
+    "tick": 0
+  },
+  "body_scale": [
+    1,
+    1.0022913,
+    1
+  ],
+  "actual_left_wing_matrix_column_major": [
+    0.53729564,
+    0,
+    -0.84339416,
+    0,
+    0.03678833,
+    1.0013374,
+    0.023436503,
+    0,
+    0.8425914,
+    -0.043719333,
+    0.53678423,
+    0,
+    -0.03125,
+    1.1727341,
+    0.125,
+    1
+  ],
+  "normalized_world_basis_dot_products": {
+    "0,1": -4.481163685196827e-10,
+    "0,2": 7.593956900504742e-10,
+    "1,2": -0.0001994704556299729
+  },
+  "cause": "Inherited nonuniform parent body breathing combined with wing rotation makes an affine world parallelepiped; intrinsic box geometry remains rigid",
+  "test_correction": "Inverse actual wingjoint frame for strict box rigidity; retain world positive volume/planarity/normal/winding/opposite-edge/hinge/torso overlap; SAT uses actual edge cross axes"
+}

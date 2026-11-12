@@ -1,4 +1,4 @@
-Current focused family: [0.25.57 Hero/Normal verification](docs/HERO_NORMAL_FOUNDATION_02557.md). Use Java21 and `--no-configuration-cache` for the existing resource-fixture task:
+Current focused update: [0.25.58 Neutral/Hero refinement verification](docs/MORPH_REFINEMENT_02558.md). Existing task/resource identifiers `056`/`057` are retained for these refined families. Use Java 21 and `--no-configuration-cache` for the existing resource-fixture task:
 
 ```sh
 ./gradlew --no-configuration-cache coreTest heroNormalMorphRigTest057 heroNormalMaterialTest057 neutralMorphRigTest056 neutralMaterialTest056 blockyRunMorphRigTest055 heroRunMaterialTest055 pianoRigTest organRigTest

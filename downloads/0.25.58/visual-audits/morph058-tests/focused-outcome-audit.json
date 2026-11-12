@@ -1,0 +1,35 @@
+{
+  "scope": "Read-only audit of actual root-run final focused/native/geometry outcomes; this agent ran no Gradle/native/client",
+  "source_hashes_match_rig_freeze": true,
+  "logs": [
+    {
+      "path": "/workspace/.setup/morph058-focused.log",
+      "sha256": "5efe690ed0fcccfee06417b33a6bacdf0d27e1a1ebbd8183a41eab7db57ded8c"
+    },
+    {
+      "path": "/workspace/.setup/morph058-native.log",
+      "sha256": "77fc8a3c037c57f1e27f3c8ae24206766009ccc52593d2ce2db01b16cec66599"
+    },
+    {
+      "path": "/workspace/.setup/morph058-geometry.log",
+      "sha256": "876d8f9888239d34851ce691b1ffcaed3fc930e6b7ffe623c189e1da0807051e"
+    }
+  ],
+  "literal_rig_and_keyboard_outcomes": [
+    "HeroNormal057: 10352943 checks; 1534 emitted age/axis/edit frames; 11872 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 23440 actual tilted-halo/head-feature separation checks; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; maximum hinge drift=3.819874E-6 model pixels; maximum axis step=0.036842164 model pixels; maximum20tick edit step=0.17307691; seconds=5.633919576. Fixed original head/face/rig; two-section paired features, differentiated closed wings and four-bar halo; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+    "Neutral056: 8073541 checks; 1837 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.14285788 model pixels; maximum20tick edit step=0.22264875; maximum1pct maturity step=0.038228665; seconds=5.214424858. Fixed original head/face/marker/rig; rear/up Swim neck and short forward hook, forward/up Power shoulder with short back/up curl and stepped tapered Power+Swim apex; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+    "Piano mesh fit: 175932 hand samples; 19278 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+    "Organ mesh fit: 175932 hand samples; 4320 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels"
+  ],
+  "literal_geometry_outcomes": [
+    "Neutral056 refinement058: 8 closed positive boxes, 9261 connected age/axis blends, fixed original head/face/rig, rear-rising Swim stalk with short upright/forward tip, forward-then-back upright Power hook, three-step Power+Swim taper, anchored soles and forehead clearance passed; minimum default tilted-orb gap=0.464209070 model pixels.",
+    "HeroNormal057: 15 positive closed boxes, 2205 connected paired-feature/halo age-axis blends, fixed original head/face/rig, anchored soles; actual tilted-halo OBB separation passed (minimum vertical gap=0.354107px; negative alone would not imply intersection); mirrored wing hinge maximum drift=0.000000000px."
+  ],
+  "native_required_passed": 305,
+  "inherited_first_new_test_failure": "Incorrect world-space orthogonality assumption under inherited nonuniform body breathing; exact diagnostic documented separately; final coordinate-correct tests passed",
+  "thresholds_not_widened": true,
+  "test_source_files": {
+    "src/lionfishTest/java/com/chaogarden/client/HeroNormalMorphRigTest057.java": "7d1d109d478f54794b4a75f4921b6c6a4a1635ca9eca029a7f8f2041653ab5a2",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralMorphRigTest056.java": "75b499d3e237237422d545577739cbaaefe3f0b9e8c7990a8c12d6180ebc9556"
+  }
+}

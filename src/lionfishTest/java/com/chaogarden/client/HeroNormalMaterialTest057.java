@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
  * Hero/Normal material paths. These are pixel checks, not a visual pass. */
 public final class HeroNormalMaterialTest057 {
   private static final Path ROOT=Path.of("src/main/resources/assets/chao_garden");
-  private static long checks,alpha,eyes,orbSamples,bodySamples;
+  private static long checks,alpha,eyes,orbSamples,bodySamples,wingSamples,wingEdgeSamples;
   private static int coats,maxStep;
   private static void check(boolean pass,String why){checks++;if(!pass)throw new AssertionError(why);}
   private static int rgba(BufferedImage image,int x,int y){int p=image.getRGB(x,y);return p&0xff00ff00|(p&255)<<16|p>>>16&255;}
@@ -71,8 +71,13 @@ public final class HeroNormalMaterialTest057 {
             check(result>>>24==p>>>24,"original alpha changed "+name);alpha++;
             if((f&64)!=0){check(result==p,"eye/expression changed "+name);eyes++;}
             if((f&32)!=0){check(result==(p&0xff000000|HeroNormalRegionPaint057.halo(age,rp,sf)&0xffffff),"Hero/Normal halo inherited coat or lost axis blend");orbSamples++;}
-            else if(!patch(x,y)&&!((f&4)!=0&&natural&&two)&&age==0)check(result==p,"fresh Hero limb/skin pixels flattened "+name+" at "+x+","+y);
+            else if(!patch(x,y)&&(f&4)==0&&age==0)check(result==p,"fresh Hero limb/skin pixels flattened "+name+" at "+x+","+y);
             if((f&1)!=0&&(f&(2|4|32|64))==0&&!patch(x,y)){check(result==p,"body/head pigment replaced "+name);bodySamples++;}
+            if((f&4)!=0&&p>>>24!=0) {
+              wingSamples++;
+              check(HeroNormalRegionPaint057.wingAccentWeight(in,37)==0,"proximal wing root lost its base pigment "+name);
+              check(HeroNormalRegionPaint057.wingAccentWeight(in,38)==0,"mirrored proximal wing root lost its base pigment "+name);
+            }
           }
         }
       }
@@ -122,6 +127,97 @@ public final class HeroNormalMaterialTest057 {
     var mono=new HeroNormalRegionPaint057.Input(true,false,1,1,1,0xfff5f6ed,0xfff5f6ed,ruby,0xff000000);c=HeroNormalRegionPaint057.colors(mono);
     check(c.body()==mono.body()&&c.belly()!=mono.body(),"natural monocolor loses base/contrast distinction");
   }
+  private static int red(int c){return c&255;}
+  private static int green(int c){return c>>>8&255;}
+  private static int blue(int c){return c>>>16&255;}
+  private static int maximum(int c){return Math.max(red(c),Math.max(green(c),blue(c)));}
+  private static int minimum(int c){return Math.min(red(c),Math.min(green(c),blue(c)));}
+  private static HeroNormalRegionPaint057.Input natural(float age,float rp,float sf) {
+    return new HeroNormalRegionPaint057.Input(true,true,age,rp,sf,HeroRunRegionPaint055.rgb(237,246,245),
+        HeroRunRegionPaint055.rgb(61,159,228),HeroRunRegionPaint055.rgb(234,169,227),0xff000000);
+  }
+  private static void referencedRegions()throws Exception {
+    // The user/reference distinguishes white lower stalks from colored upper
+    // caps, and blue/violet Power extremities from the old broad pink rows.
+    for(float age:new float[]{0,.25f,.5f,.75f,1})for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}) {
+      var in=natural(age,rp,sf);var c=HeroNormalRegionPaint057.colors(in);
+      check(c.featureBody()==in.body(),"lower Hero head section no longer keeps its white base");
+      check(HeroNormalRegionPaint057.wingAccentWeight(in,32)>.8f,"distal Hero wing loses its colored tip");
+      check(HeroNormalRegionPaint057.wingAccentWeight(in,43)>.8f,"mirrored distal Hero wing loses its colored tip");
+    }
+    var balanced=HeroNormalRegionPaint057.colors(natural(1,0,0));
+    var run=HeroNormalRegionPaint057.colors(natural(1,-1,0));
+    var power=HeroNormalRegionPaint057.colors(natural(1,1,0));
+    var fly=HeroNormalRegionPaint057.colors(natural(1,0,1));
+    var swim=HeroNormalRegionPaint057.colors(natural(1,0,-1));
+    check(blue(balanced.featureTip())>red(balanced.featureTip())+60&&green(balanced.featureTip())>red(balanced.featureTip())+60,"balanced Hero caps are not cyan-blue");
+    check(blue(run.featureTip())>green(run.featureTip())+70,"Hero Run caps lost their blue family");
+    check(blue(power.featureTip())>red(power.featureTip())+80&&red(power.featureTip())>green(power.featureTip())+20,"Hero Power cap is not violet-blue");
+    check(blue(power.primary())>red(power.primary())+100&&blue(power.primary())>green(power.primary())+100,"Hero Power outer extremities are not deep blue");
+    check(blue(power.secondary())>red(power.secondary())+40&&green(power.secondary())>110,"Hero Power middle rows are dominated by bright pink");
+    check(red(fly.featureTip())>140&&green(fly.featureTip())>130&&blue(fly.featureTip())>180&&maximum(fly.featureTip())-minimum(fly.featureTip())<100,"Hero Fly caps lost muted lavender");
+    check(green(swim.featureTip())>red(swim.featureTip())+140&&blue(swim.featureTip())>red(swim.featureTip())+120,"Hero Swim caps are not turquoise");
+    check(HeroNormalRegionPaint057.wingAccentWeight(natural(1,-1,0),35)>HeroNormalRegionPaint057.wingAccentWeight(natural(1,0,0),35),"Run wing does not develop a larger colored span");
+    check(HeroNormalRegionPaint057.wingAccentWeight(natural(1,0,0),35)>HeroNormalRegionPaint057.wingAccentWeight(natural(1,0,1),35),"Fly wing does not keep its broader white root");
+    // Known opaque art texels and the proximal body pigment remain stable;
+    // actual thin-edge UV/cutout coverage is checked separately below.
+    int[] flags=layout();
+    try(var paths=Files.list(ROOT.resolve("textures/entity/chao/official/coats/baby"))) {
+      for(var path:paths.filter(p->p.toString().endsWith(".png")).toList()) {
+        var image=ImageIO.read(path.toFile());String name=path.getFileName().toString();
+        boolean isNatural=name.startsWith("normal_hero_0_"),two=name.contains("_two");
+        for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}) {
+          var in=input(image,flags,isNatural,two,1,rp,sf);var c=HeroNormalRegionPaint057.colors(in);
+          int source=rgba(image,37,35),root=HeroNormalRegionPaint057.pixel(in,c,37,35,source,flags[35*128+37]);
+          check(source>>>24==255&&rgba(image,33,35)>>>24==255,"known canonical wing art texel is transparent "+name);
+          int[] b={red(in.body()),green(in.body()),blue(in.body())},p={red(root),green(root),blue(root)};
+          for(int a=0;a<3;a++)for(int k=0;k<3;k++)
+            check(Math.abs(p[a]*b[k]-p[k]*b[a])<=Math.max(1,b[a]+b[k]),"wing root replaces inherited body hue "+name);
+          check(root>>>24==255,"wing root alpha changed "+name);
+        }
+      }
+    }
+  }
+  private static void wingEdges()throws Exception {
+    var data=JsonParser.parseString(Files.readString(ROOT.resolve("models/entity/gameplay/chao_hero_normal_proto057.json"))).getAsJsonObject();
+    var wings=new java.util.ArrayList<com.google.gson.JsonObject>();
+    for(var element:data.getAsJsonArray("bones")) {
+      var bone=element.getAsJsonObject();String name=bone.get("name").getAsString();
+      if(name.equals("wing_left__cube_0")||name.equals("wing_right__cube_0"))
+        wings.add(bone.getAsJsonArray("meshes").get(0).getAsJsonObject());
+    }
+    check(wings.size()==2,"both actual Hero wing meshes must be inspected");int[] flags=layout();
+    try(var paths=Files.list(ROOT.resolve("textures/entity/chao/official/coats/baby"))) {
+      for(var path:paths.filter(p->p.toString().endsWith(".png")).toList()) {
+        var image=ImageIO.read(path.toFile());String name=path.getFileName().toString();
+        var in=input(image,flags,name.startsWith("normal_hero_0_"),name.contains("_two"),1,-1,0);var colors=HeroNormalRegionPaint057.colors(in);
+        for(var wing:wings) {
+          var faces=wing.getAsJsonArray("faces");check(faces.size()==6,"new Hero wing is not a closed six-face plate");
+          int partial=0,solid=0;
+          for(int face=2;face<6;face++) {
+            var uv=faces.get(face).getAsJsonObject().getAsJsonArray("uv");check(uv.size()==4,"wing side edge has an invalid UV quad");
+            var a=uv.get(0).getAsJsonArray();var b=uv.get(1).getAsJsonArray();
+            float au=a.get(0).getAsFloat(),av=a.get(1).getAsFloat(),bu=b.get(0).getAsFloat(),bv=b.get(1).getAsFloat();
+            check(Math.abs(au-bu)+Math.abs(av-bv)>.01f,"constant opaque wing edge would frame the transparent art cutout");
+            boolean opaque=false,transparent=false;
+            for(int step=0;step<=16;step++) {
+              float t=step/16f;int x=(int)Math.floor((au+(bu-au)*t)*2),y=(int)Math.floor((av+(bv-av)*t)*2);
+              check(x>=32&&x<38&&y>=34&&y<38,"wing thickness samples outside its visible source artwork");
+              int source=rgba(image,x,y),result=HeroNormalRegionPaint057.pixel(in,colors,x,y,source,flags[y*128+x]);wingEdgeSamples++;
+              check(result>>>24==source>>>24,"wing thickness fills a source cutout "+name);
+              opaque|=source>>>24!=0;transparent|=source>>>24==0;
+            }
+            check(opaque,"whole wing side edge unexpectedly vanished "+name);
+            if(transparent)partial++;else solid++;
+          }
+          // The old art has one clipped corner. Its two adjoining side
+          // edges must inherit that hole; opaque constant UVs drew a hollow
+          // rectangular border around it in the actual client preflight.
+          check(partial==2&&solid==2,"wing edges do not follow the authored clipped corner "+name+": partial="+partial+" solid="+solid);
+        }
+      }
+    }
+  }
   private static void continuous()throws Exception {
     int[] flags=layout();var im=ImageIO.read(ROOT.resolve("textures/entity/chao/official/coats/baby/normal_hero_0_two.png").toFile());
     for(int path=0;path<6;path++) {
@@ -138,8 +234,8 @@ public final class HeroNormalMaterialTest057 {
     }
   }
   public static void main(String[] args)throws Exception {
-    atlas();markers();regions();continuous();
-    String report="HeroNormal057 material: "+checks+" checks; "+coats+" original coats; "+alpha+" preserved alpha pixels; "+eyes+" exact face pixels; "+orbSamples+" halo samples; "+bodySamples+" exact body/head pixels; maximum1% color step="+maxStep+". Nine independently referenced color corners, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.\n";
+    atlas();markers();regions();referencedRegions();wingEdges();continuous();
+    String report="HeroNormal057 material: "+checks+" checks; "+coats+" original coats; "+alpha+" preserved alpha pixels; "+eyes+" exact face pixels; "+orbSamples+" halo samples; "+bodySamples+" exact body/head pixels; "+wingSamples+" regional wing samples; "+wingEdgeSamples+" actual wing-edge alpha samples; maximum1% color step="+maxStep+". Nine independently referenced color corners, white/inherited lower stalks and wing roots, distinct upper caps, regional wing span, cutout-following thickness, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.\n";
     Path output=Path.of(System.getProperty("chao.materialReport","build/reports/lionfish/hero-normal057-material-results.txt"));Files.createDirectories(output.toAbsolutePath().getParent());Files.writeString(output,report);System.out.print(report);
   }
 }

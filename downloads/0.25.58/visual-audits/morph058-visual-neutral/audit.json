@@ -1,0 +1,367 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "blocking_findings": [],
+  "reviewer": "/root/accept_neutral058",
+  "review_basis": "Fresh personal review of CURRENT POST-DEPTH cohort; no older preflight or before-depth visual approval reused.",
+  "source_log": {
+    "path": "/workspace/.setup/morph058-client-final.log",
+    "sha256": "cc4e0990a8afbe7bf2cea29498c1a3ff51f8677e28b95372a0e34b845e09eb12"
+  },
+  "literal_cohort_completion": "[20:33:43] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_VISUAL_COMPLETE requestedCases=77 renderedCases=77 skippedCases=0 start=0 limit=77 baseline=false captures=593 saved=593 epochMillis=1794515623107 normal20TPS=true audioListening=false output=/workspace/.setup/morph058-client-final",
+  "literal_build_completion": "BUILD SUCCESSFUL in 8m 15s",
+  "jar_sha256": "ed3f32e0f256a513bdc83732ad1c746834bce9840dfaabe3223b9c01d193eaa3",
+  "runtime_mode": "development_classpath; root frozen production/JAR byte comparison is separate evidence, not a packaged-JAR launch claim",
+  "original_index": {
+    "path": "/workspace/.setup/morph058-visual-neutral/original-index.json",
+    "sha256": "3fd3696c30da1aa937e8ffee2f4dac3a6d96b500a89a1fc276d77a4f7df0a3cc"
+  },
+  "cases": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    76
+  ],
+  "original_hashes_verified": 114,
+  "originals_visually_inspected_via_sheets": 114,
+  "reviewed_sheet_count": 7,
+  "all114_sheet_image_cells_pixel_equal_to_current_original_uniform_crop_resize": true,
+  "reviewed_sheets": [
+    {
+      "path": "/workspace/.setup/morph058-visual-neutral/final-swim-maturity-six-angles.png",
+      "sha256": "b66f68c8a291348661f023b4e6beebfcf4dbcb5ae057af7bc89aa16b935ef25e",
+      "cases": [
+        56,
+        57,
+        58
+      ],
+      "views": [
+        "front",
+        "left",
+        "right",
+        "back",
+        "above",
+        "below"
+      ],
+      "uniform_crop": [
+        420,
+        220,
+        1020,
+        820
+      ],
+      "resized": [
+        300,
+        300
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-neutral/final-swim-training-six-angles.png",
+      "sha256": "32aeb4d0567cda60b7bd9786d8d5bcd6e4fecf54e72780ca2466977214fa1aff",
+      "cases": [
+        59,
+        60,
+        61
+      ],
+      "views": [
+        "front",
+        "left",
+        "right",
+        "back",
+        "above",
+        "below"
+      ],
+      "uniform_crop": [
+        420,
+        220,
+        1020,
+        820
+      ],
+      "resized": [
+        300,
+        300
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-neutral/final-power-swim-maturity-six-angles.png",
+      "sha256": "08bd298457321c13bbd3ad2e5e6f2d6eff4ee1d34d6dda3577dba346a60fe0f0",
+      "cases": [
+        62,
+        63,
+        64
+      ],
+      "views": [
+        "front",
+        "left",
+        "right",
+        "back",
+        "above",
+        "below"
+      ],
+      "uniform_crop": [
+        420,
+        220,
+        1020,
+        820
+      ],
+      "resized": [
+        300,
+        300
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-neutral/final-power-swim-training-six-angles.png",
+      "sha256": "01641e91ab15a67a62650a67cd10a5cd88b983ab8ba519548b74856b564e865d",
+      "cases": [
+        65,
+        66,
+        67
+      ],
+      "views": [
+        "front",
+        "left",
+        "right",
+        "back",
+        "above",
+        "below"
+      ],
+      "uniform_crop": [
+        420,
+        220,
+        1020,
+        820
+      ],
+      "resized": [
+        300,
+        300
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-neutral/final-power-maturity-six-angles.png",
+      "sha256": "c539bdb76792cff1368fa09f46baa1ab5d90c20ffa325d0bc6ebc96d61bc655a",
+      "cases": [
+        68,
+        69,
+        70
+      ],
+      "views": [
+        "front",
+        "left",
+        "right",
+        "back",
+        "above",
+        "below"
+      ],
+      "uniform_crop": [
+        420,
+        220,
+        1020,
+        820
+      ],
+      "resized": [
+        300,
+        300
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-neutral/final-power-training-six-angles.png",
+      "sha256": "6e9c5af3a5eb5e70cbc1cee400f90f21bed60a386171932c883b6bbe655baede",
+      "cases": [
+        71,
+        72,
+        73
+      ],
+      "views": [
+        "front",
+        "left",
+        "right",
+        "back",
+        "above",
+        "below"
+      ],
+      "uniform_crop": [
+        420,
+        220,
+        1020,
+        820
+      ],
+      "resized": [
+        300,
+        300
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-neutral/final-centered-six-angles.png",
+      "sha256": "c7914a228fdfed7b8664f7d75e0c04d21abef5fc0a896c2c65a60e7baf23a70f",
+      "cases": [
+        76
+      ],
+      "views": [
+        "front",
+        "left",
+        "right",
+        "back",
+        "above",
+        "below"
+      ],
+      "uniform_crop": [
+        420,
+        220,
+        1020,
+        820
+      ],
+      "resized": [
+        400,
+        400
+      ]
+    }
+  ],
+  "full_resolution_originals_reopened": [
+    {
+      "case": 58,
+      "view": "left",
+      "file": "morph058-live-58-neutral_normal_swim_age100-left-t000-f0039.png",
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-58-neutral_normal_swim_age100-left-t000-f0039.png",
+      "sha256": "82d572989114881f189448672031e65ea4a3a11bc420486c4f852d6d925e4f9a",
+      "literal_capture_line": "[20:31:55] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-58-neutral_normal_swim_age100-left-t000-f0039.png case=58 angle=left tick=0 sha256=82d572989114881f189448672031e65ea4a3a11bc420486c4f852d6d925e4f9a wallNanos=12833081539228 epochMillis=1794515515541"
+    },
+    {
+      "case": 58,
+      "view": "right",
+      "file": "morph058-live-58-neutral_normal_swim_age100-right-t000-f0062.png",
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-58-neutral_normal_swim_age100-right-t000-f0062.png",
+      "sha256": "e5ad7e9918c102de4ef9e177bd556c50d1493584786e50f77a7d314ea4e3749b",
+      "literal_capture_line": "[20:31:56] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-58-neutral_normal_swim_age100-right-t000-f0062.png case=58 angle=right tick=0 sha256=e5ad7e9918c102de4ef9e177bd556c50d1493584786e50f77a7d314ea4e3749b wallNanos=12833896148013 epochMillis=1794515516355"
+    },
+    {
+      "case": 64,
+      "view": "front",
+      "file": "morph058-live-64-neutral_normal_power_swim_age100-front-t000-f0016.png",
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-64-neutral_normal_power_swim_age100-front-t000-f0016.png",
+      "sha256": "efbe11dee80d0049bd26e8a6e7989129d1985003e055abb548f887bad2558839",
+      "literal_capture_line": "[20:32:22] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-64-neutral_normal_power_swim_age100-front-t000-f0016.png case=64 angle=front tick=0 sha256=efbe11dee80d0049bd26e8a6e7989129d1985003e055abb548f887bad2558839 wallNanos=12860478628957 epochMillis=1794515542938"
+    },
+    {
+      "case": 64,
+      "view": "left",
+      "file": "morph058-live-64-neutral_normal_power_swim_age100-left-t000-f0039.png",
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-64-neutral_normal_power_swim_age100-left-t000-f0039.png",
+      "sha256": "5b701be7234d5c8e62310c57e4e2909e11c92ef087ada8d011eb09d8aa9c3c2b",
+      "literal_capture_line": "[20:32:23] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-64-neutral_normal_power_swim_age100-left-t000-f0039.png case=64 angle=left tick=0 sha256=5b701be7234d5c8e62310c57e4e2909e11c92ef087ada8d011eb09d8aa9c3c2b wallNanos=12861263309287 epochMillis=1794515543722"
+    },
+    {
+      "case": 70,
+      "view": "left",
+      "file": "morph058-live-70-neutral_normal_power_age100-left-t000-f0039.png",
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-70-neutral_normal_power_age100-left-t000-f0039.png",
+      "sha256": "e98071f7d67ff67033a1d740de0c4747b6b9f208ab41b489c9a8269be5692c0b",
+      "literal_capture_line": "[20:32:51] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-70-neutral_normal_power_age100-left-t000-f0039.png case=70 angle=left tick=0 sha256=e98071f7d67ff67033a1d740de0c4747b6b9f208ab41b489c9a8269be5692c0b wallNanos=12889486026685 epochMillis=1794515571945"
+    },
+    {
+      "case": 70,
+      "view": "right",
+      "file": "morph058-live-70-neutral_normal_power_age100-right-t000-f0062.png",
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-70-neutral_normal_power_age100-right-t000-f0062.png",
+      "sha256": "eccedb15b37858b6038b1a5a89ca4075ce44a03526a559da58b1dd6f3c92e057",
+      "literal_capture_line": "[20:32:52] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-70-neutral_normal_power_age100-right-t000-f0062.png case=70 angle=right tick=0 sha256=eccedb15b37858b6038b1a5a89ca4075ce44a03526a559da58b1dd6f3c92e057 wallNanos=12890239691572 epochMillis=1794515572699"
+    },
+    {
+      "case": 66,
+      "view": "below",
+      "file": "morph058-live-66-neutral_normal_power_swim_influence50-below-t000-f0131.png",
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-66-neutral_normal_power_swim_influence50-below-t000-f0131.png",
+      "sha256": "e55f691e4eb3d2722884bd7fefad6a134334ce37299c4b86467b89aa8d5f4913",
+      "literal_capture_line": "[20:32:36] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-66-neutral_normal_power_swim_influence50-below-t000-f0131.png case=66 angle=below tick=0 sha256=e55f691e4eb3d2722884bd7fefad6a134334ce37299c4b86467b89aa8d5f4913 wallNanos=12873772467995 epochMillis=1794515556231"
+    }
+  ],
+  "recorded_viewer_originals_reviewed": [
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-swim-age100-side.png",
+      "sha256": "1af7cd864dbaca9f481665d7741ef12b993c2da86c1c6ccacac799b0cf9c9c3d"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-power-swim-age100-side.png",
+      "sha256": "8d5baedc5cd8d6adf788870feea28ecc9ebe8a5c4b74c724d2630377a1c0cee9"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-power-age100-side.png",
+      "sha256": "7610f5ab3f01a6a709e8b83bc5596137c0f792cbb8992dc96875f7cec604859a"
+    }
+  ],
+  "read_only_model_identity": {
+    "original_pivot_rotation_count": 59,
+    "exact_protected_record_count": 37,
+    "head_bounds": [
+      [
+        -3.5,
+        3.5
+      ],
+      [
+        -6.0,
+        0.0
+      ],
+      [
+        -3.0,
+        3.0
+      ]
+    ],
+    "model_path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+    "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db"
+  },
+  "observations": [
+    {
+      "topic": "Swim red-line hook",
+      "finding": "Both mature side views show the lower feature emerging from the rear of the unchanged roof and rising farther rearward, followed by a short upright upper section turning slightly forward. It does not point toward the face as a long horizontal bar. Fresh, half-age and 25/50/75% training snapshots remain connected."
+    },
+    {
+      "topic": "Power red-line hook",
+      "finding": "Both mature side views show a forward/up lower shoulder and a short back/up upper curl. The alternating two-block direction is clear. Intermediate snapshots progressively develop the bend without a separate floating upper piece."
+    },
+    {
+      "topic": "Power+Swim stepped cone",
+      "finding": "The lower roof addition spans most of the head, then narrows into a middle tier and smaller upper point. Front, rear, side and above images show a broad three-step taper. This is an intentionally blocky cone interpretation with flat cuboid tops, not the smooth source geometry."
+    },
+    {
+      "topic": "Base head and face",
+      "finding": "The original rectangular head and pixel face stay coherent in all reviewed snapshots. Read-only model comparison additionally confirms the 59 original pivots/rotations, 37 skull/expression/emotion records and 7×6×6 skull bounds unchanged."
+    },
+    {
+      "topic": "Ordinary blink",
+      "finding": "Case64 mature Power+Swim has closed horizontal eyelid lines in its front/below snapshots. Its raw full-resolution front was reopened: this is a coherent ordinary closed-eye expression, not missing eyes or a malformed face."
+    },
+    {
+      "topic": "Connections and hidden pieces",
+      "finding": "No exposed hidden apex, disconnected tip, crack, elongated limb, visible internal geometry or striped cap join was observed across the 114 current static originals, including intermediate front/back/below views. Hands and feet remain compact in these snapshots."
+    },
+    {
+      "topic": "Orb and projection",
+      "finding": "The yellow orb remains visibly separate in side/front/back views. In above views it can overlap or occlude the crown in projection; these pictures do not imply a 3D intersection."
+    },
+    {
+      "topic": "Reference comparison",
+      "finding": "Recorded live-viewer mature side originals were personally inspected. They show a smooth rising/curling Swim feature, cone-like Power+Swim silhouette and curled Power crest. Final Minecraft directions/lengths follow the user red-line edit, with clean cuboid steps replacing those curves."
+    }
+  ],
+  "limitations": [
+    "Static selected stage/axis snapshots do not prove every continuous animation frame or the absence of popping at every possible input; dense geometry/motion checks and root movie review are separate evidence.",
+    "These natural-coat ordinary Neutral cases do not establish all shiny/color/animal/hat/accessory variants, toy contacts or player attachments.",
+    "The fixture actors are server-frozen and raised to permit underside views; no natural hovering or ground-contact behavior is inferred from their apparent height.",
+    "No physical phone/touch input, shader/resource-pack/full-modpack behavior, independent multiplayer/latency, audio or full interactive video playback was tested by this reviewer.",
+    "The smooth viewer forms are intentionally approximated with a few angled cuboids around a fixed base head, and camera-matched stills may contain different ordinary idle poses or blinks."
+  ],
+  "production_files_modified": false,
+  "build_or_game_invocations_performed_by_reviewer": false
+}

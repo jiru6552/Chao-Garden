@@ -23,7 +23,9 @@ public final class NeutralMorphRigTest056 {
   private static final Path ROOT=Path.of("src/main/resources/assets/chao_garden");
   private static final String MODEL="gameplay/chao_neutral_proto056";
   private static int checks,frames,solids,motionFrames,attachments,coatCases;
-  private static float maxStep,maxEdit;
+  private static float maxStep,maxEdit,maxMaturity;
+  private static int[][] crownFaces;
+  private static boolean[] crownUpper;
   private static void check(boolean ok,String why){checks++;if(!ok)throw new AssertionError(why);}
   private static void near(float a,float b,float e,String why){check(Float.isFinite(a)&&Float.isFinite(b)&&Math.abs(a-b)<=e,why+": "+a+" / "+b);}
   private static JsonObject data(String key)throws Exception{return JsonParser.parseString(Files.readString(ROOT.resolve("models/entity/"+key+".json"))).getAsJsonObject();}
@@ -50,6 +52,54 @@ public final class NeutralMorphRigTest056 {
   }
   private static Capture capture(ChaoMeshAsset m,Map<String,ChaoMeshAsset.Pose> p){var c=new Capture();m.render(new PoseStack(),c,0xf000f0,0,0xffffffff,p,true);check(c.n==c.nn&&c.u==c.count()*2,"Missing emitted UV/normal");return c;}
   private static Capture solid(ChaoMeshAsset m,String name){var p=m.createPoses();p.values().forEach(v->v.visible=false);check(p.containsKey(name),"Missing bone "+name);p.get(name).visible=true;return capture(m,p);}
+  private static float[] bounds(Capture c,int start,int count){
+    float[] b={Float.POSITIVE_INFINITY,Float.POSITIVE_INFINITY,Float.POSITIVE_INFINITY,
+        Float.NEGATIVE_INFINITY,Float.NEGATIVE_INFINITY,Float.NEGATIVE_INFINITY};
+    for(int v=start;v<start+count;v++)for(int axis=0;axis<3;axis++){
+      float value=c.p[v*3+axis];b[axis]=Math.min(b[axis],value);b[axis+3]=Math.max(b[axis+3],value);
+    }return b;
+  }
+  private static Vector3f[] sectionEnds(Capture c,int start){
+    var low=new Vector3f();var high=new Vector3f();int lo=0,hi=0;
+    for(int f=0;f<crownFaces.length;f++)for(int v=0;v<crownFaces[f].length;v++){
+      var point=c.point(start+f*4+v);
+      if(crownUpper[crownFaces[f][v]]){high.add(point);hi++;}else{low.add(point);lo++;}
+    }
+    check(lo==12&&hi==12,"Crown source correspondence no longer identifies two ends");
+    return new Vector3f[]{low.div(lo),high.div(hi)};
+  }
+  /** Reference directions, measured from actual emitted boxes: face is -Z,
+   * rear +Z, and smaller Y is higher. These are broad silhouette constraints,
+   * not a copy of exact authored target coordinates or original game formulas. */
+  private static void refinedSilhouettes(){
+    var m=asset(MODEL);
+    sample(m,state(0,-1,1));var swim=solid(m,"gradual_head_021");check(swim.count()==72,"Neutral crown is no longer three simple boxes");
+    var sr=sectionEnds(swim,0);var st=sectionEnds(swim,24);
+    check(sr[1].z-sr[0].z>1.2f&&sr[1].y<sr[0].y-.8f,"Swim lower section does not lean far back/up");
+    check(sr[1].z>3.8f,"Swim lower section does not extend beyond the rear roof as requested");
+    check(st[1].z<st[0].z-.25f&&st[1].y<st[0].y-.8f,"Swim upper hook does not turn upright and slightly forward");
+    check(Math.abs(st[1].y-st[0].y)>Math.abs(st[1].z-st[0].z)*2,"Swim upper hook became a long horizontal bar");
+    sample(m,state(1,0,1));var power=solid(m,"gradual_head_021");var pr=sectionEnds(power,0);var pt=sectionEnds(power,24);
+    check(pr[1].z<pr[0].z-.8f&&pr[1].y<pr[0].y-.8f,"Power lower shoulder does not lean forward/up");
+    check(pt[1].z>pt[0].z+.7f&&pt[1].y<pt[0].y-.8f,"Power upper hook does not curl rearward/up");
+    check(Math.abs(pt[1].y-pt[0].y)>Math.abs(pt[1].z-pt[0].z),"Power upper hook became a long horizontal bar");
+    sample(m,state(1,-1,1));var cone=solid(m,"gradual_head_021");var cr=bounds(cone,0,24);var cm=bounds(cone,24,24);var ca=bounds(cone,48,24);
+    check(cr[3]-cr[0]>5f&&cr[5]-cr[2]>4f,"Power+Swim lower crown does not cover most of the fixed roof");
+    check(cr[3]-cr[0]>(cm[3]-cm[0])*1.5f&&(cm[3]-cm[0])>(ca[3]-ca[0])*2,"Power+Swim crown does not narrow from shoulder to apex");
+    check(ca[1]<cm[1]-.5f&&cm[1]<cr[1]-.5f,"Power+Swim crown does not rise through three stepped sections");
+    check(Math.abs((ca[0]+ca[3])*.5f)<.00005f,"Power+Swim single apex is not centered");
+    // The newly used apex starts buried, then develops continuously. Sample
+    // actual render output through age, including formerly hidden geometry.
+    var p=poses(m);
+    for(float[] axes:new float[][]{{0,-1},{1,-1},{1,0}}){
+      Capture previous=null;
+      for(int i=0;i<=100;i++){
+        sample(m,state(axes[0],axes[1],i/100f));var now=capture(m,p);
+        if(previous!=null){check(now.n==previous.n,"Maturity swapped Neutral topology");for(int n=0;n<now.n;n+=3){float dx=now.p[n]-previous.p[n],dy=now.p[n+1]-previous.p[n+1],dz=now.p[n+2]-previous.p[n+2];float step=(float)Math.sqrt(dx*dx+dy*dy+dz*dz);maxMaturity=Math.max(maxMaturity,step);check(step<.3f,"One-percent maturity change popped refined crown geometry");}}
+        previous=now;frames++;
+      }
+    }
+  }
   private static void equal(Capture a,Capture b,float epsilon,String why){check(a.n==b.n&&a.u==b.u,why+" topology changed");for(int i=0;i<a.n;i++)near(a.p[i],b.p[i],epsilon,why);for(int i=0;i<a.u;i++)near(a.uv[i],b.uv[i],0,why+" UV changed");}
   private static float volume(Capture c,int start){var center=new Vector3f();for(int i=start;i<start+24;i++)center.add(c.point(i));center.div(24);float sum=0;for(int i=start;i<start+24;i+=4){var a=c.point(i).sub(center);var b=c.point(i+1).sub(center);var q=c.point(i+2).sub(center);var d=c.point(i+3).sub(center);sum+=a.dot(new Vector3f(b).cross(q))/6+a.dot(new Vector3f(q).cross(d))/6;}return sum;}
   private static void cuboids(Capture c){
@@ -71,6 +121,12 @@ public final class NeutralMorphRigTest056 {
   private static void topology()throws Exception{
     var d=data(MODEL);var original=data("gameplay/chao_baby");check(d.has("neutral_path_056")&&!d.has("blocky_run_path_055"),"Neutral path reused Hero selection");
     Map<String,JsonObject> old=new HashMap<>();for(var b:original.getAsJsonArray("bones"))old.put(b.getAsJsonObject().get("name").getAsString(),b.getAsJsonObject());
+    var sourceBox=old.get("skull__cube_0").getAsJsonArray("meshes").get(0).getAsJsonObject();var faces=sourceBox.getAsJsonArray("faces");
+    crownFaces=new int[faces.size()][];for(int i=0;i<faces.size();i++){var ids=faces.get(i).getAsJsonObject().getAsJsonArray("v");crownFaces[i]=new int[ids.size()];for(int j=0;j<ids.size();j++)crownFaces[i][j]=ids.get(j).getAsInt();}
+    var vertices=sourceBox.getAsJsonArray("vertices");crownUpper=new boolean[vertices.size()];for(int i=0;i<vertices.size();i++)crownUpper[i]=vertices.get(i).getAsJsonArray().get(1).getAsFloat()<-3;
+    var crown=data(MODEL).getAsJsonArray("bones").asList().stream().map(v->v.getAsJsonObject()).filter(v->v.get("name").getAsString().equals("gradual_head_021")).findFirst().orElseThrow().getAsJsonArray("meshes");
+    check(crown.size()==3,"Neutral crown gained extra segmentation");
+    for(var part:crown)for(int i=0;i<faces.size();i++)check(part.getAsJsonObject().getAsJsonArray("faces").get(i).getAsJsonObject().get("v").equals(faces.get(i).getAsJsonObject().get("v")),"Crown correspondence changed from the original box");
     for(var be:d.getAsJsonArray("bones")){var b=be.getAsJsonObject();String name=b.get("name").getAsString();check(b.get("pivot").equals(old.get(name).get("pivot"))&&b.get("rotation").equals(old.get(name).get("rotation")),"Shared rig/attachment pivot changed");if(name.startsWith("skull")||name.startsWith("expression_")||name.startsWith("emotion_"))check(b.equals(old.get(name)),"Original head/face/marker record changed "+name);}
     check(d.get("head_decorations").equals(original.get("head_decorations")),"Hat hiding family changed");
     check(d.getAsJsonObject("neutral_path_056").getAsJsonArray("targets").size()==10,"Wrong Neutral corner count");
@@ -116,6 +172,6 @@ public final class NeutralMorphRigTest056 {
     for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}){var s=state(rp,sf,1);sample(m,s);var reference=capture(m,p);for(int color=0;color<ChaoState.COLORS.length;color++)for(int jewel=0;jewel<ChaoState.JEWELS.length;jewel++)if(color==0||jewel==0)for(boolean shiny:new boolean[]{false,true})for(boolean twoTone:new boolean[]{false,true}){s.expressedColor=color;s.expressedJewel=jewel;s.shiny=shiny;s.twoTone=twoTone;sample(m,s);equal(reference,capture(m,p),0,"Color/shine changed form/UV");coatCases++;}}
   }
   public static void main(String[] args)throws Exception{
-    long start=System.nanoTime();topology();development();temporal();motion();coats();String report="Neutral056: "+checks+" checks; "+frames+" emitted age/axis/edit frames; "+solids+" closed rectangular-box samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coatCases+" coat/shape cases; maximum axis step="+maxStep+" model pixels; maximum20tick edit step="+maxEdit+"; seconds="+(System.nanoTime()-start)/1e9+". Fixed original head/face/marker/rig; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.\n";Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral056-results.txt"),report);System.out.print(report);
+    long start=System.nanoTime();topology();development();refinedSilhouettes();temporal();motion();coats();String report="Neutral056: "+checks+" checks; "+frames+" emitted age/axis/edit frames; "+solids+" closed rectangular-box samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coatCases+" coat/shape cases; maximum axis step="+maxStep+" model pixels; maximum20tick edit step="+maxEdit+"; maximum1pct maturity step="+maxMaturity+"; seconds="+(System.nanoTime()-start)/1e9+". Fixed original head/face/marker/rig; rear/up Swim neck and short forward hook, forward/up Power shoulder with short back/up curl and stepped tapered Power+Swim apex; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.\n";Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral056-results.txt"),report);System.out.print(report);
   }
 }

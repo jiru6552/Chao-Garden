@@ -1,0 +1,2886 @@
+{
+  "scope": "Currentfinalcohortonly;132selectedoriginalsaboutHero/Normalmaterials/wingcolors/caps/variants/orbs,notpreviouspreflight",
+  "source_log": "/workspace/.setup/morph058-client-final.log",
+  "source_log_sha256": "cc4e0990a8afbe7bf2cea29498c1a3ff51f8677e28b95372a0e34b845e09eb12",
+  "originals": [
+    {
+      "name": "hero_normal_normal_age100",
+      "sha256": "df4be5fe15151f90a920b22d1a600a770b6dd521b608b82b748602dc8fe29924",
+      "line": "[20:26:20] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-02-hero_normal_normal_age100-front-t000-f0016.png case=2 angle=front tick=0 sha256=df4be5fe15151f90a920b22d1a600a770b6dd521b608b82b748602dc8fe29924 wallNanos=12498540073642 epochMillis=1794515180999",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-front-t000-f0016.png",
+      "case": 2,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age100",
+      "sha256": "c9c693cf1a7c94c8461e3cea12bf1c9ddd0684174e6b1eb057a88eaef42e9ed9",
+      "line": "[20:26:35] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-05-hero_normal_run_age100-front-t000-f0016.png case=5 angle=front tick=0 sha256=c9c693cf1a7c94c8461e3cea12bf1c9ddd0684174e6b1eb057a88eaef42e9ed9 wallNanos=12512869547381 epochMillis=1794515195329",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-front-t000-f0016.png",
+      "case": 5,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_age100",
+      "sha256": "5ac1eee7d51224c2ef44ba9968ba01341f815cb03dad46318e9bcc4faa990f63",
+      "line": "[20:26:49] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-08-hero_normal_run_fly_age100-front-t000-f0016.png case=8 angle=front tick=0 sha256=5ac1eee7d51224c2ef44ba9968ba01341f815cb03dad46318e9bcc4faa990f63 wallNanos=12526924761654 epochMillis=1794515209384",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-front-t000-f0016.png",
+      "case": 8,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_swim_age100",
+      "sha256": "d59cf7a5e10b776a1b9e042605c547e04a0cb4ddd082c1e5be075dfc3a691bc2",
+      "line": "[20:27:03] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-11-hero_normal_run_swim_age100-front-t000-f0016.png case=11 angle=front tick=0 sha256=d59cf7a5e10b776a1b9e042605c547e04a0cb4ddd082c1e5be075dfc3a691bc2 wallNanos=12540944602573 epochMillis=1794515223404",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-front-t000-f0016.png",
+      "case": 11,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age100",
+      "sha256": "8ac78b2f497dad8e9dea955653e15d1863367a8b79a66fff665c2f275c0a1096",
+      "line": "[20:27:17] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-14-hero_normal_power_age100-front-t000-f0016.png case=14 angle=front tick=0 sha256=8ac78b2f497dad8e9dea955653e15d1863367a8b79a66fff665c2f275c0a1096 wallNanos=12554936214329 epochMillis=1794515237395",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-front-t000-f0016.png",
+      "case": 14,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_fly_age100",
+      "sha256": "c0ae0082a6d6d022cf9c8f8803283c51e785b988f57fe5814cf9631424a45ab7",
+      "line": "[20:27:31] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-17-hero_normal_power_fly_age100-front-t000-f0016.png case=17 angle=front tick=0 sha256=c0ae0082a6d6d022cf9c8f8803283c51e785b988f57fe5814cf9631424a45ab7 wallNanos=12568918011732 epochMillis=1794515251377",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-front-t000-f0016.png",
+      "case": 17,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_age100",
+      "sha256": "518906cf7b7e2c7e5473a12d959705c51e0db7039d0f4d41aa4e49705d348f78",
+      "line": "[20:27:45] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-20-hero_normal_power_swim_age100-front-t000-f0016.png case=20 angle=front tick=0 sha256=518906cf7b7e2c7e5473a12d959705c51e0db7039d0f4d41aa4e49705d348f78 wallNanos=12582969573362 epochMillis=1794515265429",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-front-t000-f0016.png",
+      "case": 20,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age100",
+      "sha256": "6ad12f81dafab7bd83b1404db045a052b705002f7cfd4eeba352748592345c64",
+      "line": "[20:27:59] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-23-hero_normal_fly_age100-front-t000-f0016.png case=23 angle=front tick=0 sha256=6ad12f81dafab7bd83b1404db045a052b705002f7cfd4eeba352748592345c64 wallNanos=12597156759589 epochMillis=1794515279616",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-front-t000-f0016.png",
+      "case": 23,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age100",
+      "sha256": "e4d5265ab2612b20ea300c8c4f9696b360046eb5bb56d1d8b301243df33a6b33",
+      "line": "[20:28:13] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-26-hero_normal_swim_age100-front-t000-f0016.png case=26 angle=front tick=0 sha256=e4d5265ab2612b20ea300c8c4f9696b360046eb5bb56d1d8b301243df33a6b33 wallNanos=12611247928593 epochMillis=1794515293707",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-front-t000-f0016.png",
+      "case": 26,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_red_shiny",
+      "sha256": "7255b83199c62d7457dd5b107e657e780fcd0ea84b00373b3ceb79ef4525774e",
+      "line": "[20:29:10] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-38-hero_normal_run_fly_red_shiny-front-t000-f0016.png case=38 angle=front tick=0 sha256=7255b83199c62d7457dd5b107e657e780fcd0ea84b00373b3ceb79ef4525774e wallNanos=12667724208900 epochMillis=1794515350183",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-front-t000-f0016.png",
+      "case": 38,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_ruby_phoenix_glasses",
+      "sha256": "7885a0cd77056b56440e285393d6c02e84108a15e0582a9b335700d407047d1c",
+      "line": "[20:29:14] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-front-t000-f0016.png case=39 angle=front tick=0 sha256=7885a0cd77056b56440e285393d6c02e84108a15e0582a9b335700d407047d1c wallNanos=12672491160941 epochMillis=1794515354950",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-front-t000-f0016.png",
+      "case": 39,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_green_mono",
+      "sha256": "b461c650e2126e76d5f138e79dc91ccdddb794f48dd366d5e0cc2603f9d53e60",
+      "line": "[20:29:19] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-40-hero_normal_fly_green_mono-front-t000-f0016.png case=40 angle=front tick=0 sha256=b461c650e2126e76d5f138e79dc91ccdddb794f48dd366d5e0cc2603f9d53e60 wallNanos=12677126604870 epochMillis=1794515359586",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-front-t000-f0016.png",
+      "case": 40,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_pumpkin",
+      "sha256": "a01b41f2923983d73feb1913bb57cb733f8ed98f174d993de1f16f6b5a4e6d91",
+      "line": "[20:29:24] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-41-hero_normal_power_pumpkin-front-t000-f0016.png case=41 angle=front tick=0 sha256=a01b41f2923983d73feb1913bb57cb733f8ed98f174d993de1f16f6b5a4e6d91 wallNanos=12681822336646 epochMillis=1794515364281",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-front-t000-f0016.png",
+      "case": 41,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_rabbit",
+      "sha256": "b522725738d00ff131fbbe0870e23054d29e112708b53313f36d26693beda9fd",
+      "line": "[20:29:29] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-42-hero_normal_normal_rabbit-front-t000-f0016.png case=42 angle=front tick=0 sha256=b522725738d00ff131fbbe0870e23054d29e112708b53313f36d26693beda9fd wallNanos=12686570845492 epochMillis=1794515369030",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-front-t000-f0016.png",
+      "case": 42,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_old_run_orb_regression",
+      "sha256": "9dc89180d1eaff4b8a693b1ff9bbb2a930e08d8ccb3a1facabc3d4782b782614",
+      "line": "[20:29:33] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-43-hero_baby_old_run_orb_regression-front-t000-f0016.png case=43 angle=front tick=0 sha256=9dc89180d1eaff4b8a693b1ff9bbb2a930e08d8ccb3a1facabc3d4782b782614 wallNanos=12691172835354 epochMillis=1794515373632",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-front-t000-f0016.png",
+      "case": 43,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_young_run_orb_regression",
+      "sha256": "e30f991789ae1ea9b1b3bfc78923bb3e06bbdc44c9acc5ad5d60e6f50587f20d",
+      "line": "[20:29:38] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-44-hero_baby_young_run_orb_regression-front-t000-f0016.png case=44 angle=front tick=0 sha256=e30f991789ae1ea9b1b3bfc78923bb3e06bbdc44c9acc5ad5d60e6f50587f20d wallNanos=12695919741127 epochMillis=1794515378379",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-front-t000-f0016.png",
+      "case": 44,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age100",
+      "sha256": "6de6e5800e17739f7e47d9c0e67bd99922e37b1479a8a885a0a1a31b49ed7c34",
+      "line": "[20:26:21] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-02-hero_normal_normal_age100-left-t000-f0039.png case=2 angle=left tick=0 sha256=6de6e5800e17739f7e47d9c0e67bd99922e37b1479a8a885a0a1a31b49ed7c34 wallNanos=12499319716129 epochMillis=1794515181779",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-left-t000-f0039.png",
+      "case": 2,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age100",
+      "sha256": "65cddb363aa0a718b43a5f016ac6fd9b333398c33951ebc989fed40fa0a46008",
+      "line": "[20:26:36] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-05-hero_normal_run_age100-left-t000-f0039.png case=5 angle=left tick=0 sha256=65cddb363aa0a718b43a5f016ac6fd9b333398c33951ebc989fed40fa0a46008 wallNanos=12513669860719 epochMillis=1794515196129",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-left-t000-f0039.png",
+      "case": 5,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_age100",
+      "sha256": "bddffaab420ffc41587eb6b260f68a6b54e6c4fbf36d4d6f856e0abfe20de2ad",
+      "line": "[20:26:50] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-08-hero_normal_run_fly_age100-left-t000-f0039.png case=8 angle=left tick=0 sha256=bddffaab420ffc41587eb6b260f68a6b54e6c4fbf36d4d6f856e0abfe20de2ad wallNanos=12527689140703 epochMillis=1794515210148",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-left-t000-f0039.png",
+      "case": 8,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_swim_age100",
+      "sha256": "7fe50b3f0a825ac990bcc57acbcd005768fac0444dd3a941c45fd0f9f3b21bda",
+      "line": "[20:27:04] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-11-hero_normal_run_swim_age100-left-t000-f0039.png case=11 angle=left tick=0 sha256=7fe50b3f0a825ac990bcc57acbcd005768fac0444dd3a941c45fd0f9f3b21bda wallNanos=12541716739718 epochMillis=1794515224176",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-left-t000-f0039.png",
+      "case": 11,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age100",
+      "sha256": "5df2f1ebd5af0b636b8b925d05d531508f8e730d72d3ba60674a9c4a2c9281fd",
+      "line": "[20:27:18] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-14-hero_normal_power_age100-left-t000-f0039.png case=14 angle=left tick=0 sha256=5df2f1ebd5af0b636b8b925d05d531508f8e730d72d3ba60674a9c4a2c9281fd wallNanos=12555696386680 epochMillis=1794515238155",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-left-t000-f0039.png",
+      "case": 14,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_fly_age100",
+      "sha256": "3bb18927557a5891c70da6ed04cdc3d6bfb62795c3cdd04c91a6c41f7b5bf1f4",
+      "line": "[20:27:32] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-17-hero_normal_power_fly_age100-left-t000-f0039.png case=17 angle=left tick=0 sha256=3bb18927557a5891c70da6ed04cdc3d6bfb62795c3cdd04c91a6c41f7b5bf1f4 wallNanos=12569681767378 epochMillis=1794515252141",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-left-t000-f0039.png",
+      "case": 17,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_age100",
+      "sha256": "052dcb1f111b5ed00016573a2bd8e1efe891bb2c8577fa2d9dfdcab81afab942",
+      "line": "[20:27:46] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-20-hero_normal_power_swim_age100-left-t000-f0039.png case=20 angle=left tick=0 sha256=052dcb1f111b5ed00016573a2bd8e1efe891bb2c8577fa2d9dfdcab81afab942 wallNanos=12583750624792 epochMillis=1794515266210",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-left-t000-f0039.png",
+      "case": 20,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age100",
+      "sha256": "e56f347e9d3b5be80d29fb57bcdf7b51c64b2e2b9ffa643497324f3d49a2df68",
+      "line": "[20:28:00] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-23-hero_normal_fly_age100-left-t000-f0039.png case=23 angle=left tick=0 sha256=e56f347e9d3b5be80d29fb57bcdf7b51c64b2e2b9ffa643497324f3d49a2df68 wallNanos=12597932805954 epochMillis=1794515280392",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-left-t000-f0039.png",
+      "case": 23,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age100",
+      "sha256": "2600ab6a04cd5aa6755f928ab173d1fc7196eb85abc4af507cc836553d2b20ec",
+      "line": "[20:28:14] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-26-hero_normal_swim_age100-left-t000-f0039.png case=26 angle=left tick=0 sha256=2600ab6a04cd5aa6755f928ab173d1fc7196eb85abc4af507cc836553d2b20ec wallNanos=12611984210113 epochMillis=1794515294443",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-left-t000-f0039.png",
+      "case": 26,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_red_shiny",
+      "sha256": "8d5c28fa9146449d85ca5374faaa1ce01b8d255060bfa3948b6a09a750892df2",
+      "line": "[20:29:10] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-38-hero_normal_run_fly_red_shiny-left-t000-f0039.png case=38 angle=left tick=0 sha256=8d5c28fa9146449d85ca5374faaa1ce01b8d255060bfa3948b6a09a750892df2 wallNanos=12668481713555 epochMillis=1794515350941",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-left-t000-f0039.png",
+      "case": 38,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_ruby_phoenix_glasses",
+      "sha256": "8f3ca865b6544679dd9baf613f247aa08257890a59e3dc2744d76bcc89d07652",
+      "line": "[20:29:15] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-left-t000-f0039.png case=39 angle=left tick=0 sha256=8f3ca865b6544679dd9baf613f247aa08257890a59e3dc2744d76bcc89d07652 wallNanos=12673241545431 epochMillis=1794515355701",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-left-t000-f0039.png",
+      "case": 39,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_green_mono",
+      "sha256": "aca304d95e4d8a28467ead2d13829677ac31985ea344f8e9484711b49087815c",
+      "line": "[20:29:20] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-40-hero_normal_fly_green_mono-left-t000-f0039.png case=40 angle=left tick=0 sha256=aca304d95e4d8a28467ead2d13829677ac31985ea344f8e9484711b49087815c wallNanos=12677868837224 epochMillis=1794515360328",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-left-t000-f0039.png",
+      "case": 40,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_pumpkin",
+      "sha256": "65adc1cdbaaff6e260ffa9e6f09da1fa58d40bc02128960a8b1680081aac4e0d",
+      "line": "[20:29:25] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-41-hero_normal_power_pumpkin-left-t000-f0039.png case=41 angle=left tick=0 sha256=65adc1cdbaaff6e260ffa9e6f09da1fa58d40bc02128960a8b1680081aac4e0d wallNanos=12682606452544 epochMillis=1794515365065",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-left-t000-f0039.png",
+      "case": 41,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_rabbit",
+      "sha256": "c6b905303b81402fa3f8aa687d9d1e974ef7d5855cb23fe3dbc815a86b940f9c",
+      "line": "[20:29:29] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-42-hero_normal_normal_rabbit-left-t000-f0039.png case=42 angle=left tick=0 sha256=c6b905303b81402fa3f8aa687d9d1e974ef7d5855cb23fe3dbc815a86b940f9c wallNanos=12687330747587 epochMillis=1794515369790",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-left-t000-f0039.png",
+      "case": 42,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_old_run_orb_regression",
+      "sha256": "89de0326469d2babe20cac9ddd4d8003855caa75411323583510ce3bf97d9f81",
+      "line": "[20:29:34] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-43-hero_baby_old_run_orb_regression-left-t000-f0039.png case=43 angle=left tick=0 sha256=89de0326469d2babe20cac9ddd4d8003855caa75411323583510ce3bf97d9f81 wallNanos=12691933772618 epochMillis=1794515374393",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-left-t000-f0039.png",
+      "case": 43,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_young_run_orb_regression",
+      "sha256": "d7f2f38f62e503f8ac14b69567d2bd766ba709bfe5c9682dbc6642055d41d5f4",
+      "line": "[20:29:39] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-44-hero_baby_young_run_orb_regression-left-t000-f0039.png case=44 angle=left tick=0 sha256=d7f2f38f62e503f8ac14b69567d2bd766ba709bfe5c9682dbc6642055d41d5f4 wallNanos=12696758016952 epochMillis=1794515379217",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-left-t000-f0039.png",
+      "case": 44,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age100",
+      "sha256": "8d54d28e37c1ef54c5c60baa877eeb5897605594e29961bc916bfaf9efbcd400",
+      "line": "[20:26:22] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-02-hero_normal_normal_age100-right-t000-f0062.png case=2 angle=right tick=0 sha256=8d54d28e37c1ef54c5c60baa877eeb5897605594e29961bc916bfaf9efbcd400 wallNanos=12500092388955 epochMillis=1794515182551",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-right-t000-f0062.png",
+      "case": 2,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age100",
+      "sha256": "954186c0dab700edb59e85b8a810c881f9ddf46b564b509dc458cced86f28da8",
+      "line": "[20:26:36] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-05-hero_normal_run_age100-right-t000-f0062.png case=5 angle=right tick=0 sha256=954186c0dab700edb59e85b8a810c881f9ddf46b564b509dc458cced86f28da8 wallNanos=12514422683269 epochMillis=1794515196882",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-right-t000-f0062.png",
+      "case": 5,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_age100",
+      "sha256": "e4a471d203a8d34dd9ccfa53440c3da6dbca7a5304fc9b75c57a4ac8ed7fe411",
+      "line": "[20:26:50] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-08-hero_normal_run_fly_age100-right-t000-f0062.png case=8 angle=right tick=0 sha256=e4a471d203a8d34dd9ccfa53440c3da6dbca7a5304fc9b75c57a4ac8ed7fe411 wallNanos=12528445581203 epochMillis=1794515210905",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-right-t000-f0062.png",
+      "case": 8,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_swim_age100",
+      "sha256": "737c7f470d81144dfb5a20bad02d5b2b5c3fd251dbdfa49ee1e6a3a09fd72ca0",
+      "line": "[20:27:04] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-11-hero_normal_run_swim_age100-right-t000-f0062.png case=11 angle=right tick=0 sha256=737c7f470d81144dfb5a20bad02d5b2b5c3fd251dbdfa49ee1e6a3a09fd72ca0 wallNanos=12542469198372 epochMillis=1794515224928",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-right-t000-f0062.png",
+      "case": 11,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age100",
+      "sha256": "e70a74581308aee02bf815ec0c9a23cc834ffb9ff3220254a9e887b2ab84e883",
+      "line": "[20:27:18] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-14-hero_normal_power_age100-right-t000-f0062.png case=14 angle=right tick=0 sha256=e70a74581308aee02bf815ec0c9a23cc834ffb9ff3220254a9e887b2ab84e883 wallNanos=12556453900320 epochMillis=1794515238913",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-right-t000-f0062.png",
+      "case": 14,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_fly_age100",
+      "sha256": "0363d4572aeff5fe43effa2a166d246a4852066a614d702f4039e40378c19cfd",
+      "line": "[20:27:32] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-17-hero_normal_power_fly_age100-right-t000-f0062.png case=17 angle=right tick=0 sha256=0363d4572aeff5fe43effa2a166d246a4852066a614d702f4039e40378c19cfd wallNanos=12570504646404 epochMillis=1794515252964",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-right-t000-f0062.png",
+      "case": 17,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_age100",
+      "sha256": "2c4b53db65ce05fc7197a9c904ebb71d56b8ccc35d88cc8a1b34a3afdc83eace",
+      "line": "[20:27:46] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-20-hero_normal_power_swim_age100-right-t000-f0062.png case=20 angle=right tick=0 sha256=2c4b53db65ce05fc7197a9c904ebb71d56b8ccc35d88cc8a1b34a3afdc83eace wallNanos=12584515759031 epochMillis=1794515266975",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-right-t000-f0062.png",
+      "case": 20,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age100",
+      "sha256": "97eca5baec4314ce0d7cdb80619397f52dddc394f195098a7430d6fa1e6fd017",
+      "line": "[20:28:01] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-23-hero_normal_fly_age100-right-t000-f0062.png case=23 angle=right tick=0 sha256=97eca5baec4314ce0d7cdb80619397f52dddc394f195098a7430d6fa1e6fd017 wallNanos=12598687674961 epochMillis=1794515281147",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-right-t000-f0062.png",
+      "case": 23,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age100",
+      "sha256": "c072dbd44bb9d53f263138d0c0cc33e8c81127065e328a9eeeb9393d2f987326",
+      "line": "[20:28:15] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-26-hero_normal_swim_age100-right-t000-f0062.png case=26 angle=right tick=0 sha256=c072dbd44bb9d53f263138d0c0cc33e8c81127065e328a9eeeb9393d2f987326 wallNanos=12612759244141 epochMillis=1794515295218",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-right-t000-f0062.png",
+      "case": 26,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_red_shiny",
+      "sha256": "bff6716a0b95c33c5321e1d0dd50fc6fad9332f4b189aeaf3def1b259b6c0a38",
+      "line": "[20:29:11] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-38-hero_normal_run_fly_red_shiny-right-t000-f0062.png case=38 angle=right tick=0 sha256=bff6716a0b95c33c5321e1d0dd50fc6fad9332f4b189aeaf3def1b259b6c0a38 wallNanos=12669369835310 epochMillis=1794515351829",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-right-t000-f0062.png",
+      "case": 38,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_ruby_phoenix_glasses",
+      "sha256": "43d768926f115a30c9756fee25a45a728489fc636099f9d718fc946c8147908c",
+      "line": "[20:29:16] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-right-t000-f0062.png case=39 angle=right tick=0 sha256=43d768926f115a30c9756fee25a45a728489fc636099f9d718fc946c8147908c wallNanos=12674011495570 epochMillis=1794515356470",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-right-t000-f0062.png",
+      "case": 39,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_green_mono",
+      "sha256": "f8ff2b62eac035d6e2ac799f187374dc69dc9fb9f44518ee7e0191d6b11e95b2",
+      "line": "[20:29:21] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-40-hero_normal_fly_green_mono-right-t000-f0062.png case=40 angle=right tick=0 sha256=f8ff2b62eac035d6e2ac799f187374dc69dc9fb9f44518ee7e0191d6b11e95b2 wallNanos=12678653416646 epochMillis=1794515361112",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-right-t000-f0062.png",
+      "case": 40,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_pumpkin",
+      "sha256": "417bf4892a745d5f8d3f0cb1ff38e3006a63c7957c433921a76ff2ad2b65b511",
+      "line": "[20:29:25] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-41-hero_normal_power_pumpkin-right-t000-f0062.png case=41 angle=right tick=0 sha256=417bf4892a745d5f8d3f0cb1ff38e3006a63c7957c433921a76ff2ad2b65b511 wallNanos=12683363940851 epochMillis=1794515365823",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-right-t000-f0062.png",
+      "case": 41,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_rabbit",
+      "sha256": "3719972c172f0cd2cd9d97729996f088bc79dae1bfa7854cd127f40323874796",
+      "line": "[20:29:30] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-42-hero_normal_normal_rabbit-right-t000-f0062.png case=42 angle=right tick=0 sha256=3719972c172f0cd2cd9d97729996f088bc79dae1bfa7854cd127f40323874796 wallNanos=12688076508818 epochMillis=1794515370535",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-right-t000-f0062.png",
+      "case": 42,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_old_run_orb_regression",
+      "sha256": "eb3f7c58dc3ff3fa3e10d506aedd70f778a280ab54d986e7b4300dea8eadfcdb",
+      "line": "[20:29:35] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-43-hero_baby_old_run_orb_regression-right-t000-f0062.png case=43 angle=right tick=0 sha256=eb3f7c58dc3ff3fa3e10d506aedd70f778a280ab54d986e7b4300dea8eadfcdb wallNanos=12692766846715 epochMillis=1794515375226",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-right-t000-f0062.png",
+      "case": 43,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_young_run_orb_regression",
+      "sha256": "e7e5e9e3ed1c5fa2c85343572f0a21fd88603dc16a5ececb7fcc51b18337c8f3",
+      "line": "[20:29:39] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-44-hero_baby_young_run_orb_regression-right-t000-f0062.png case=44 angle=right tick=0 sha256=e7e5e9e3ed1c5fa2c85343572f0a21fd88603dc16a5ececb7fcc51b18337c8f3 wallNanos=12697512232929 epochMillis=1794515379971",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-right-t000-f0062.png",
+      "case": 44,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age100",
+      "sha256": "e2d642a942a3411624b25a2c876c447d3d76f8ea73d94a18d7ca5c308396c443",
+      "line": "[20:26:23] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-02-hero_normal_normal_age100-back-t000-f0085.png case=2 angle=back tick=0 sha256=e2d642a942a3411624b25a2c876c447d3d76f8ea73d94a18d7ca5c308396c443 wallNanos=12500855630929 epochMillis=1794515183315",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-back-t000-f0085.png",
+      "case": 2,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age100",
+      "sha256": "517209faf083c324aecdcedcc3b773b2edd1acd7c63a4fdec9cb115431b834f8",
+      "line": "[20:26:37] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-05-hero_normal_run_age100-back-t000-f0085.png case=5 angle=back tick=0 sha256=517209faf083c324aecdcedcc3b773b2edd1acd7c63a4fdec9cb115431b834f8 wallNanos=12515210587301 epochMillis=1794515197670",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-back-t000-f0085.png",
+      "case": 5,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_age100",
+      "sha256": "881e7d76750f78f0bb745bebcb2fcf0c5bf406abf929c786cafe61589d9a3834",
+      "line": "[20:26:51] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-08-hero_normal_run_fly_age100-back-t000-f0085.png case=8 angle=back tick=0 sha256=881e7d76750f78f0bb745bebcb2fcf0c5bf406abf929c786cafe61589d9a3834 wallNanos=12529230489278 epochMillis=1794515211689",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-back-t000-f0085.png",
+      "case": 8,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_swim_age100",
+      "sha256": "7fdfd4acf0906b0b2b49d948923d7d633a0507ea7578baaacd3f71219b75a76d",
+      "line": "[20:27:05] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-11-hero_normal_run_swim_age100-back-t000-f0085.png case=11 angle=back tick=0 sha256=7fdfd4acf0906b0b2b49d948923d7d633a0507ea7578baaacd3f71219b75a76d wallNanos=12543233921956 epochMillis=1794515225693",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-back-t000-f0085.png",
+      "case": 11,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age100",
+      "sha256": "fdfd35e3ab5ed40314f12c42b4cc9390524c8fa50ceff6e7b35d8710abb096e0",
+      "line": "[20:27:19] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-14-hero_normal_power_age100-back-t000-f0085.png case=14 angle=back tick=0 sha256=fdfd35e3ab5ed40314f12c42b4cc9390524c8fa50ceff6e7b35d8710abb096e0 wallNanos=12557228199622 epochMillis=1794515239687",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-back-t000-f0085.png",
+      "case": 14,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_fly_age100",
+      "sha256": "fe7cacc71193d3940500ec9e76fe44bf87397b277ee9f817328ea8a3b66ff1cf",
+      "line": "[20:27:33] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-17-hero_normal_power_fly_age100-back-t000-f0085.png case=17 angle=back tick=0 sha256=fe7cacc71193d3940500ec9e76fe44bf87397b277ee9f817328ea8a3b66ff1cf wallNanos=12571264313830 epochMillis=1794515253723",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-back-t000-f0085.png",
+      "case": 17,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_age100",
+      "sha256": "a3cb64c0485d31c894893a0a27a1b1fd15347fcbb83f4a88a53e105aa81383e0",
+      "line": "[20:27:47] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-20-hero_normal_power_swim_age100-back-t000-f0085.png case=20 angle=back tick=0 sha256=a3cb64c0485d31c894893a0a27a1b1fd15347fcbb83f4a88a53e105aa81383e0 wallNanos=12585311343372 epochMillis=1794515267770",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-back-t000-f0085.png",
+      "case": 20,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age100",
+      "sha256": "9e2cf443d0b7bd55532cde7ee9a258a00c02ba871b98ecc7cee20331944e2f55",
+      "line": "[20:28:01] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-23-hero_normal_fly_age100-back-t000-f0085.png case=23 angle=back tick=0 sha256=9e2cf443d0b7bd55532cde7ee9a258a00c02ba871b98ecc7cee20331944e2f55 wallNanos=12599528565028 epochMillis=1794515281988",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-back-t000-f0085.png",
+      "case": 23,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age100",
+      "sha256": "6a7bd5aa7907f6872d94f39c8d8da3f5c12b9020f0033513a8efaea75705b985",
+      "line": "[20:28:16] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-26-hero_normal_swim_age100-back-t000-f0085.png case=26 angle=back tick=0 sha256=6a7bd5aa7907f6872d94f39c8d8da3f5c12b9020f0033513a8efaea75705b985 wallNanos=12613542790709 epochMillis=1794515296002",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-back-t000-f0085.png",
+      "case": 26,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_red_shiny",
+      "sha256": "da7cd29ff778efd57a8d0861591aab713bbea03deb0ec4b84fc7a4cc5a47d404",
+      "line": "[20:29:12] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-38-hero_normal_run_fly_red_shiny-back-t000-f0085.png case=38 angle=back tick=0 sha256=da7cd29ff778efd57a8d0861591aab713bbea03deb0ec4b84fc7a4cc5a47d404 wallNanos=12670109509200 epochMillis=1794515352568",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-back-t000-f0085.png",
+      "case": 38,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_ruby_phoenix_glasses",
+      "sha256": "6de43a9301e2a4cbfa03947071c333d283b3622285777d79ab0ccc4f8bf5664a",
+      "line": "[20:29:17] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-back-t000-f0085.png case=39 angle=back tick=0 sha256=6de43a9301e2a4cbfa03947071c333d283b3622285777d79ab0ccc4f8bf5664a wallNanos=12674796782662 epochMillis=1794515357256",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-back-t000-f0085.png",
+      "case": 39,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_green_mono",
+      "sha256": "3ff5b4c93fc61b1034065e4426a8dc7714407bbe62ef721d3b24e9d9825e3002",
+      "line": "[20:29:21] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-40-hero_normal_fly_green_mono-back-t000-f0085.png case=40 angle=back tick=0 sha256=3ff5b4c93fc61b1034065e4426a8dc7714407bbe62ef721d3b24e9d9825e3002 wallNanos=12679413754908 epochMillis=1794515361873",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-back-t000-f0085.png",
+      "case": 40,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_pumpkin",
+      "sha256": "b9cf9f34c4565f7f2649f3e8397918b56b2e336afabff0f22f8c351d1b97e782",
+      "line": "[20:29:26] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-41-hero_normal_power_pumpkin-back-t000-f0085.png case=41 angle=back tick=0 sha256=b9cf9f34c4565f7f2649f3e8397918b56b2e336afabff0f22f8c351d1b97e782 wallNanos=12684153433235 epochMillis=1794515366612",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-back-t000-f0085.png",
+      "case": 41,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_rabbit",
+      "sha256": "07eeb1a434b5a3c5c6b5c701bf5127179db20a7c9a7e625e81b0de390c12074f",
+      "line": "[20:29:31] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-42-hero_normal_normal_rabbit-back-t000-f0085.png case=42 angle=back tick=0 sha256=07eeb1a434b5a3c5c6b5c701bf5127179db20a7c9a7e625e81b0de390c12074f wallNanos=12688858022546 epochMillis=1794515371317",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-back-t000-f0085.png",
+      "case": 42,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_old_run_orb_regression",
+      "sha256": "2f1c5e705be4048c97d7e2b3e447541dfaf2ab55e4edf92a5e19a84c1a25db7c",
+      "line": "[20:29:36] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-43-hero_baby_old_run_orb_regression-back-t000-f0085.png case=43 angle=back tick=0 sha256=2f1c5e705be4048c97d7e2b3e447541dfaf2ab55e4edf92a5e19a84c1a25db7c wallNanos=12693560441860 epochMillis=1794515376019",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-back-t000-f0085.png",
+      "case": 43,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_young_run_orb_regression",
+      "sha256": "42eb94b6581f71046551e4112ddc868d7b9a77c26cf0143c14a42a90c06726a8",
+      "line": "[20:29:40] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-44-hero_baby_young_run_orb_regression-back-t000-f0085.png case=44 angle=back tick=0 sha256=42eb94b6581f71046551e4112ddc868d7b9a77c26cf0143c14a42a90c06726a8 wallNanos=12698307514513 epochMillis=1794515380766",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-back-t000-f0085.png",
+      "case": 44,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age100",
+      "sha256": "1f52d3ee8bf33822630b9acec3be285c0fe1e0b80ec21a04e48439c497d6d369",
+      "line": "[20:26:24] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-02-hero_normal_normal_age100-above-t000-f0108.png case=2 angle=above tick=0 sha256=1f52d3ee8bf33822630b9acec3be285c0fe1e0b80ec21a04e48439c497d6d369 wallNanos=12501701308993 epochMillis=1794515184160",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-above-t000-f0108.png",
+      "case": 2,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age100",
+      "sha256": "00480bc63c18e209e990735593d81086526a07bc2daec0235e22e1ef245bc2e3",
+      "line": "[20:26:38] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-05-hero_normal_run_age100-above-t000-f0108.png case=5 angle=above tick=0 sha256=00480bc63c18e209e990735593d81086526a07bc2daec0235e22e1ef245bc2e3 wallNanos=12516005395448 epochMillis=1794515198464",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-above-t000-f0108.png",
+      "case": 5,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_age100",
+      "sha256": "a69a65221ef78437d94091b02d3c871276a58521b71feb7efe076ba97086baad",
+      "line": "[20:26:52] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-08-hero_normal_run_fly_age100-above-t000-f0108.png case=8 angle=above tick=0 sha256=a69a65221ef78437d94091b02d3c871276a58521b71feb7efe076ba97086baad wallNanos=12529994263133 epochMillis=1794515212453",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-above-t000-f0108.png",
+      "case": 8,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_swim_age100",
+      "sha256": "b0a999b50ae699e2ccc3f0cdd1019e0eebe778ac21eb41f09e320fb559e2a70b",
+      "line": "[20:27:06] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-11-hero_normal_run_swim_age100-above-t000-f0108.png case=11 angle=above tick=0 sha256=b0a999b50ae699e2ccc3f0cdd1019e0eebe778ac21eb41f09e320fb559e2a70b wallNanos=12544021356614 epochMillis=1794515226480",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-above-t000-f0108.png",
+      "case": 11,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age100",
+      "sha256": "de101d70882cb1359676122f181b8d0c3e6ae321dd391ca678bc1ed5a5fe5e93",
+      "line": "[20:27:20] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-14-hero_normal_power_age100-above-t000-f0108.png case=14 angle=above tick=0 sha256=de101d70882cb1359676122f181b8d0c3e6ae321dd391ca678bc1ed5a5fe5e93 wallNanos=12558008741984 epochMillis=1794515240468",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-above-t000-f0108.png",
+      "case": 14,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_fly_age100",
+      "sha256": "d13e084a874c3fae3d2a83ea24df34ef108d23b54e70ce8986c087fdf8a56b04",
+      "line": "[20:27:34] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-17-hero_normal_power_fly_age100-above-t000-f0108.png case=17 angle=above tick=0 sha256=d13e084a874c3fae3d2a83ea24df34ef108d23b54e70ce8986c087fdf8a56b04 wallNanos=12572022192581 epochMillis=1794515254481",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-above-t000-f0108.png",
+      "case": 17,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_age100",
+      "sha256": "d5dfe94fb79d26849a3efdc8ea42ae8c30915a78d237a360e834920975a7bd23",
+      "line": "[20:27:48] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-20-hero_normal_power_swim_age100-above-t000-f0108.png case=20 angle=above tick=0 sha256=d5dfe94fb79d26849a3efdc8ea42ae8c30915a78d237a360e834920975a7bd23 wallNanos=12586060522698 epochMillis=1794515268519",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-above-t000-f0108.png",
+      "case": 20,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age100",
+      "sha256": "d07a235557068ebf1543fb8b1ad1da73d6ceb3fe78ff7be1b36cfb8076015e7a",
+      "line": "[20:28:02] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-23-hero_normal_fly_age100-above-t000-f0108.png case=23 angle=above tick=0 sha256=d07a235557068ebf1543fb8b1ad1da73d6ceb3fe78ff7be1b36cfb8076015e7a wallNanos=12600281208340 epochMillis=1794515282740",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-above-t000-f0108.png",
+      "case": 23,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age100",
+      "sha256": "4cc66551a84d39937b83d799df04b51afe1728abfa417b004bd98ff0d103a999",
+      "line": "[20:28:16] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-26-hero_normal_swim_age100-above-t000-f0108.png case=26 angle=above tick=0 sha256=4cc66551a84d39937b83d799df04b51afe1728abfa417b004bd98ff0d103a999 wallNanos=12614289690811 epochMillis=1794515296749",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-above-t000-f0108.png",
+      "case": 26,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_red_shiny",
+      "sha256": "ffd959013fce2b719e3cb12f4367343e53b23cf517366910cf29d782d9c11c70",
+      "line": "[20:29:13] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-38-hero_normal_run_fly_red_shiny-above-t000-f0108.png case=38 angle=above tick=0 sha256=ffd959013fce2b719e3cb12f4367343e53b23cf517366910cf29d782d9c11c70 wallNanos=12670885919124 epochMillis=1794515353345",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-above-t000-f0108.png",
+      "case": 38,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_ruby_phoenix_glasses",
+      "sha256": "ab834d4b32185c4dda5c246eea6d0657740d4e86893b614bf478e8f9e60cb671",
+      "line": "[20:29:18] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-above-t000-f0108.png case=39 angle=above tick=0 sha256=ab834d4b32185c4dda5c246eea6d0657740d4e86893b614bf478e8f9e60cb671 wallNanos=12675576467434 epochMillis=1794515358035",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-above-t000-f0108.png",
+      "case": 39,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_green_mono",
+      "sha256": "275009caf9daf7d2181d417c44f7259ed4ec520dc4338ed1467b307cb77706d9",
+      "line": "[20:29:22] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-40-hero_normal_fly_green_mono-above-t000-f0108.png case=40 angle=above tick=0 sha256=275009caf9daf7d2181d417c44f7259ed4ec520dc4338ed1467b307cb77706d9 wallNanos=12680179328585 epochMillis=1794515362638",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-above-t000-f0108.png",
+      "case": 40,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_pumpkin",
+      "sha256": "e7262daaf6f1047dcfc6d00e902ee7f4e8a908d2c1bb2e7ec1aac4638c306112",
+      "line": "[20:29:27] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-41-hero_normal_power_pumpkin-above-t000-f0108.png case=41 angle=above tick=0 sha256=e7262daaf6f1047dcfc6d00e902ee7f4e8a908d2c1bb2e7ec1aac4638c306112 wallNanos=12684889501719 epochMillis=1794515367348",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-above-t000-f0108.png",
+      "case": 41,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_rabbit",
+      "sha256": "526774f350b9fd8d9394a79a94972f2409e8fcd285263fd2556b9f86c9ba55e0",
+      "line": "[20:29:32] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-42-hero_normal_normal_rabbit-above-t000-f0108.png case=42 angle=above tick=0 sha256=526774f350b9fd8d9394a79a94972f2409e8fcd285263fd2556b9f86c9ba55e0 wallNanos=12689612049211 epochMillis=1794515372071",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-above-t000-f0108.png",
+      "case": 42,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_old_run_orb_regression",
+      "sha256": "0270097146749c62a1b58b9fe35ec5da26a9c3294acd04ab1f02e34e0e2bda9f",
+      "line": "[20:29:36] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-43-hero_baby_old_run_orb_regression-above-t000-f0108.png case=43 angle=above tick=0 sha256=0270097146749c62a1b58b9fe35ec5da26a9c3294acd04ab1f02e34e0e2bda9f wallNanos=12694304858254 epochMillis=1794515376764",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-above-t000-f0108.png",
+      "case": 43,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_young_run_orb_regression",
+      "sha256": "b5591e6a3cac81d0b72d6b36bf5b1a94d8085ae0bfa3d1f9fc50e5d1e8f6554b",
+      "line": "[20:29:41] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-44-hero_baby_young_run_orb_regression-above-t000-f0108.png case=44 angle=above tick=0 sha256=b5591e6a3cac81d0b72d6b36bf5b1a94d8085ae0bfa3d1f9fc50e5d1e8f6554b wallNanos=12699053570502 epochMillis=1794515381513",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-above-t000-f0108.png",
+      "case": 44,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age100",
+      "sha256": "6ebb81cbfcf3c772bd0f03b598c08858ae81e339ac08a1c66c21f489ba348f32",
+      "line": "[20:26:24] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-02-hero_normal_normal_age100-below-t000-f0131.png case=2 angle=below tick=0 sha256=6ebb81cbfcf3c772bd0f03b598c08858ae81e339ac08a1c66c21f489ba348f32 wallNanos=12502469617970 epochMillis=1794515184929",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-below-t000-f0131.png",
+      "case": 2,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age100",
+      "sha256": "23533651130656f58049ffdb25a801c93363013c08cb212b5fe6982f7485206f",
+      "line": "[20:26:39] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-05-hero_normal_run_age100-below-t000-f0131.png case=5 angle=below tick=0 sha256=23533651130656f58049ffdb25a801c93363013c08cb212b5fe6982f7485206f wallNanos=12516769803830 epochMillis=1794515199229",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-below-t000-f0131.png",
+      "case": 5,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_age100",
+      "sha256": "22a66934856673906b61717b5aa9e1489e354865bbcb1c70810004da7a702ee3",
+      "line": "[20:26:53] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-08-hero_normal_run_fly_age100-below-t000-f0131.png case=8 angle=below tick=0 sha256=22a66934856673906b61717b5aa9e1489e354865bbcb1c70810004da7a702ee3 wallNanos=12530779199470 epochMillis=1794515213238",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-below-t000-f0131.png",
+      "case": 8,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_swim_age100",
+      "sha256": "bf9f3c313bd482eceb8765f8e35ff5c6dc9bcd3b8c8194e470630cbb616bf19f",
+      "line": "[20:27:07] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-11-hero_normal_run_swim_age100-below-t000-f0131.png case=11 angle=below tick=0 sha256=bf9f3c313bd482eceb8765f8e35ff5c6dc9bcd3b8c8194e470630cbb616bf19f wallNanos=12544775292646 epochMillis=1794515227234",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-below-t000-f0131.png",
+      "case": 11,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age100",
+      "sha256": "006f5818fb4623e35b66bf09d78b2a9cb73c7a984b5fd5e80e238659c7950276",
+      "line": "[20:27:21] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-14-hero_normal_power_age100-below-t000-f0131.png case=14 angle=below tick=0 sha256=006f5818fb4623e35b66bf09d78b2a9cb73c7a984b5fd5e80e238659c7950276 wallNanos=12558767601805 epochMillis=1794515241227",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-below-t000-f0131.png",
+      "case": 14,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_fly_age100",
+      "sha256": "8224da5461a9b3df0fd314d8e159ebee01f4bce123ba7a0cbe4196616dc4e86f",
+      "line": "[20:27:35] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-17-hero_normal_power_fly_age100-below-t000-f0131.png case=17 angle=below tick=0 sha256=8224da5461a9b3df0fd314d8e159ebee01f4bce123ba7a0cbe4196616dc4e86f wallNanos=12572844411442 epochMillis=1794515255303",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-below-t000-f0131.png",
+      "case": 17,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_age100",
+      "sha256": "2ce031cc2ab45d50fe17f7e5ef79ac6119211dd249fcafce9ca6637fc4a2592c",
+      "line": "[20:27:49] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-20-hero_normal_power_swim_age100-below-t000-f0131.png case=20 angle=below tick=0 sha256=2ce031cc2ab45d50fe17f7e5ef79ac6119211dd249fcafce9ca6637fc4a2592c wallNanos=12586816268989 epochMillis=1794515269275",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-below-t000-f0131.png",
+      "case": 20,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age100",
+      "sha256": "bee17b0c8a6ced6a986917fc39c01a4a6d0f4241612574fd5437cc063fdfe419",
+      "line": "[20:28:03] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-23-hero_normal_fly_age100-below-t000-f0131.png case=23 angle=below tick=0 sha256=bee17b0c8a6ced6a986917fc39c01a4a6d0f4241612574fd5437cc063fdfe419 wallNanos=12601044221024 epochMillis=1794515283503",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-below-t000-f0131.png",
+      "case": 23,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age100",
+      "sha256": "0e4dd9230fbd5c215b8e518cc970ec6c8fa8c0a57238fb2411aa7dcdb4427a18",
+      "line": "[20:28:17] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-26-hero_normal_swim_age100-below-t000-f0131.png case=26 angle=below tick=0 sha256=0e4dd9230fbd5c215b8e518cc970ec6c8fa8c0a57238fb2411aa7dcdb4427a18 wallNanos=12615087101732 epochMillis=1794515297546",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-below-t000-f0131.png",
+      "case": 26,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_fly_red_shiny",
+      "sha256": "dab0dfb1b8fbb180e11a1ed3b8ad57c9c1aa177bef39b32de47289c8a2940a6a",
+      "line": "[20:29:14] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-38-hero_normal_run_fly_red_shiny-below-t000-f0131.png case=38 angle=below tick=0 sha256=dab0dfb1b8fbb180e11a1ed3b8ad57c9c1aa177bef39b32de47289c8a2940a6a wallNanos=12671662725073 epochMillis=1794515354122",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-below-t000-f0131.png",
+      "case": 38,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_swim_ruby_phoenix_glasses",
+      "sha256": "300d008d00b911cb418e790ab4c5b5448f517e10a851a3a753b37034aa043be1",
+      "line": "[20:29:18] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-below-t000-f0131.png case=39 angle=below tick=0 sha256=300d008d00b911cb418e790ab4c5b5448f517e10a851a3a753b37034aa043be1 wallNanos=12676326969211 epochMillis=1794515358786",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-below-t000-f0131.png",
+      "case": 39,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_green_mono",
+      "sha256": "e857586c209e167b40b079f9a5fa215aa6f621d933b2cf15037319068160696c",
+      "line": "[20:29:23] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-40-hero_normal_fly_green_mono-below-t000-f0131.png case=40 angle=below tick=0 sha256=e857586c209e167b40b079f9a5fa215aa6f621d933b2cf15037319068160696c wallNanos=12680940840427 epochMillis=1794515363400",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-below-t000-f0131.png",
+      "case": 40,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_pumpkin",
+      "sha256": "bd5bd9fb774209c72ad8e83417772c69f885c69d5b8857637433cc121b3eee10",
+      "line": "[20:29:28] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-41-hero_normal_power_pumpkin-below-t000-f0131.png case=41 angle=below tick=0 sha256=bd5bd9fb774209c72ad8e83417772c69f885c69d5b8857637433cc121b3eee10 wallNanos=12685723461427 epochMillis=1794515368182",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-below-t000-f0131.png",
+      "case": 41,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_rabbit",
+      "sha256": "e76740569949e602554061af89cc77fa7cf7dd7a666fe9886eb4ae69e9bcb448",
+      "line": "[20:29:32] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-42-hero_normal_normal_rabbit-below-t000-f0131.png case=42 angle=below tick=0 sha256=e76740569949e602554061af89cc77fa7cf7dd7a666fe9886eb4ae69e9bcb448 wallNanos=12690375178440 epochMillis=1794515372834",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-below-t000-f0131.png",
+      "case": 42,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_old_run_orb_regression",
+      "sha256": "f64dc86400ebd5801b69ce7fcb937ced5a60f6dbad77525482c0746422935c59",
+      "line": "[20:29:37] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-43-hero_baby_old_run_orb_regression-below-t000-f0131.png case=43 angle=below tick=0 sha256=f64dc86400ebd5801b69ce7fcb937ced5a60f6dbad77525482c0746422935c59 wallNanos=12695138605050 epochMillis=1794515377598",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-below-t000-f0131.png",
+      "case": 43,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_baby_young_run_orb_regression",
+      "sha256": "80ec703c762683524a3db8fdb01967c11a21f464307fca32c5a70f6061920892",
+      "line": "[20:29:42] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-44-hero_baby_young_run_orb_regression-below-t000-f0131.png case=44 angle=below tick=0 sha256=80ec703c762683524a3db8fdb01967c11a21f464307fca32c5a70f6061920892 wallNanos=12699823039812 epochMillis=1794515382282",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-below-t000-f0131.png",
+      "case": 44,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age0",
+      "sha256": "6e048b55153f9f3193e76e823a26ef267f3007c799d438c9414980874a597adf",
+      "line": "[20:26:11] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-00-hero_normal_normal_age0-front-t000-f0016.png case=0 angle=front tick=0 sha256=6e048b55153f9f3193e76e823a26ef267f3007c799d438c9414980874a597adf wallNanos=12489400446851 epochMillis=1794515171859",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-front-t000-f0016.png",
+      "case": 0,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age0",
+      "sha256": "8dd9212b0a21f511304db7160d5b6c45d18d783363f9a91852739dcf805dd29c",
+      "line": "[20:26:12] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-00-hero_normal_normal_age0-left-t000-f0039.png case=0 angle=left tick=0 sha256=8dd9212b0a21f511304db7160d5b6c45d18d783363f9a91852739dcf805dd29c wallNanos=12490100258088 epochMillis=1794515172559",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-left-t000-f0039.png",
+      "case": 0,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age0",
+      "sha256": "1e98a8163d9d962363169a13a491984e844f3959eb74cc4d7b70d9a875022ce7",
+      "line": "[20:26:14] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-00-hero_normal_normal_age0-back-t000-f0085.png case=0 angle=back tick=0 sha256=1e98a8163d9d962363169a13a491984e844f3959eb74cc4d7b70d9a875022ce7 wallNanos=12491614962111 epochMillis=1794515174074",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-back-t000-f0085.png",
+      "case": 0,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age0",
+      "sha256": "d592c5dd590c1e2c2eb9a20733ee79d41276145609733c2a49cfab220e32054a",
+      "line": "[20:26:25] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-03-hero_normal_run_age0-front-t000-f0016.png case=3 angle=front tick=0 sha256=d592c5dd590c1e2c2eb9a20733ee79d41276145609733c2a49cfab220e32054a wallNanos=12503299724919 epochMillis=1794515185759",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-03-hero_normal_run_age0-front-t000-f0016.png",
+      "case": 3,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age0",
+      "sha256": "ae0bbc05a9b5598d48e189bcf61707ffb6934f6f3580898cfed682bd3eecb1c6",
+      "line": "[20:26:26] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-03-hero_normal_run_age0-left-t000-f0039.png case=3 angle=left tick=0 sha256=ae0bbc05a9b5598d48e189bcf61707ffb6934f6f3580898cfed682bd3eecb1c6 wallNanos=12504077456305 epochMillis=1794515186536",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-03-hero_normal_run_age0-left-t000-f0039.png",
+      "case": 3,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age0",
+      "sha256": "cde3ed07570e9279af7411b8817b321a95dea868e66ea8a27749f45b2dffec62",
+      "line": "[20:26:28] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-03-hero_normal_run_age0-back-t000-f0085.png case=3 angle=back tick=0 sha256=cde3ed07570e9279af7411b8817b321a95dea868e66ea8a27749f45b2dffec62 wallNanos=12505709119839 epochMillis=1794515188168",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-03-hero_normal_run_age0-back-t000-f0085.png",
+      "case": 3,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age0",
+      "sha256": "25bbdb35afb95219d89ca0599ad4aa997da6329918a6eab85bf686a4b6e333b2",
+      "line": "[20:27:08] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-12-hero_normal_power_age0-front-t000-f0016.png case=12 angle=front tick=0 sha256=25bbdb35afb95219d89ca0599ad4aa997da6329918a6eab85bf686a4b6e333b2 wallNanos=12545579309797 epochMillis=1794515228038",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-12-hero_normal_power_age0-front-t000-f0016.png",
+      "case": 12,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age0",
+      "sha256": "8673a0756c83b0eda5f7577a1d6ff5b0c873df8a9472898fd35f931a7c61f590",
+      "line": "[20:27:08] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-12-hero_normal_power_age0-left-t000-f0039.png case=12 angle=left tick=0 sha256=8673a0756c83b0eda5f7577a1d6ff5b0c873df8a9472898fd35f931a7c61f590 wallNanos=12546334616862 epochMillis=1794515228794",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-12-hero_normal_power_age0-left-t000-f0039.png",
+      "case": 12,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age0",
+      "sha256": "7021a959f7afa9c0fc278db3c5de9642e79f6ee932c79c2400e4dfd0e4bd1bd6",
+      "line": "[20:27:10] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-12-hero_normal_power_age0-back-t000-f0085.png case=12 angle=back tick=0 sha256=7021a959f7afa9c0fc278db3c5de9642e79f6ee932c79c2400e4dfd0e4bd1bd6 wallNanos=12547877143228 epochMillis=1794515230336",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-12-hero_normal_power_age0-back-t000-f0085.png",
+      "case": 12,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age0",
+      "sha256": "0ad79e142ca813715791739c1d67d4080fff6d6ec3f667b5e035b60bc070e195",
+      "line": "[20:27:50] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-21-hero_normal_fly_age0-front-t000-f0016.png case=21 angle=front tick=0 sha256=0ad79e142ca813715791739c1d67d4080fff6d6ec3f667b5e035b60bc070e195 wallNanos=12587601050454 epochMillis=1794515270060",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-21-hero_normal_fly_age0-front-t000-f0016.png",
+      "case": 21,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age0",
+      "sha256": "32c69162888c71ef23c11b6e808ca4186a18bbf5cbfac60c75e31cb18dee4d82",
+      "line": "[20:27:50] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-21-hero_normal_fly_age0-left-t000-f0039.png case=21 angle=left tick=0 sha256=32c69162888c71ef23c11b6e808ca4186a18bbf5cbfac60c75e31cb18dee4d82 wallNanos=12588381555696 epochMillis=1794515270841",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-21-hero_normal_fly_age0-left-t000-f0039.png",
+      "case": 21,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age0",
+      "sha256": "37ca579f7efcd84bf59339cbbe40f466f116291ee800a400df2f3d269e58e6c7",
+      "line": "[20:27:52] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-21-hero_normal_fly_age0-back-t000-f0085.png case=21 angle=back tick=0 sha256=37ca579f7efcd84bf59339cbbe40f466f116291ee800a400df2f3d269e58e6c7 wallNanos=12589991618090 epochMillis=1794515272451",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-21-hero_normal_fly_age0-back-t000-f0085.png",
+      "case": 21,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age0",
+      "sha256": "15f70c29edfc6e4a99bb77239baf9a0a08a5e0cbed827de5586635166f8a3e9f",
+      "line": "[20:28:04] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-24-hero_normal_swim_age0-front-t000-f0016.png case=24 angle=front tick=0 sha256=15f70c29edfc6e4a99bb77239baf9a0a08a5e0cbed827de5586635166f8a3e9f wallNanos=12601861318089 epochMillis=1794515284320",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-24-hero_normal_swim_age0-front-t000-f0016.png",
+      "case": 24,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age0",
+      "sha256": "2a291d3e59cc2330cdf60bcc432b8b7fb185fe1dc71b74bc96a030b3d6a9cd7f",
+      "line": "[20:28:05] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-24-hero_normal_swim_age0-left-t000-f0039.png case=24 angle=left tick=0 sha256=2a291d3e59cc2330cdf60bcc432b8b7fb185fe1dc71b74bc96a030b3d6a9cd7f wallNanos=12602658568551 epochMillis=1794515285118",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-24-hero_normal_swim_age0-left-t000-f0039.png",
+      "case": 24,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age0",
+      "sha256": "2103eea7e00480a3d0dfe35044c69ec3a23b0b09008762f293b3c4b3dc3ad10e",
+      "line": "[20:28:06] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-24-hero_normal_swim_age0-back-t000-f0085.png case=24 angle=back tick=0 sha256=2103eea7e00480a3d0dfe35044c69ec3a23b0b09008762f293b3c4b3dc3ad10e wallNanos=12604191430357 epochMillis=1794515286650",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-24-hero_normal_swim_age0-back-t000-f0085.png",
+      "case": 24,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age50",
+      "sha256": "e4e174568b701a2fa08f213c05932f599ebbfc0743bf2e916f2b5fdd3deb36f4",
+      "line": "[20:26:16] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-01-hero_normal_normal_age50-front-t000-f0016.png case=1 angle=front tick=0 sha256=e4e174568b701a2fa08f213c05932f599ebbfc0743bf2e916f2b5fdd3deb36f4 wallNanos=12493929643151 epochMillis=1794515176389",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-front-t000-f0016.png",
+      "case": 1,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age50",
+      "sha256": "a0ec74c939def712d64030b7c02ccea052d167710e840fdb33f352b8a50f7715",
+      "line": "[20:26:17] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-01-hero_normal_normal_age50-left-t000-f0039.png case=1 angle=left tick=0 sha256=a0ec74c939def712d64030b7c02ccea052d167710e840fdb33f352b8a50f7715 wallNanos=12494709789332 epochMillis=1794515177169",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-left-t000-f0039.png",
+      "case": 1,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age50",
+      "sha256": "d5a89839024cdcbbd53643b7c4bd739e2ca0ec2eb098a40ef9b6e9f599e2ab0b",
+      "line": "[20:26:18] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-01-hero_normal_normal_age50-back-t000-f0085.png case=1 angle=back tick=0 sha256=d5a89839024cdcbbd53643b7c4bd739e2ca0ec2eb098a40ef9b6e9f599e2ab0b wallNanos=12496238167899 epochMillis=1794515178697",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-back-t000-f0085.png",
+      "case": 1,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age50",
+      "sha256": "d9ba76f5791e36fcc9f11c2fea03fa1021d779b4a9587ec871c8116934c9b9d1",
+      "line": "[20:26:30] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-04-hero_normal_run_age50-front-t000-f0016.png case=4 angle=front tick=0 sha256=d9ba76f5791e36fcc9f11c2fea03fa1021d779b4a9587ec871c8116934c9b9d1 wallNanos=12508153609600 epochMillis=1794515190613",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-04-hero_normal_run_age50-front-t000-f0016.png",
+      "case": 4,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age50",
+      "sha256": "13646777e752e558d873bb66928cba22b9f0d0c56ef2a6df8d5a8968fc81c674",
+      "line": "[20:26:31] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-04-hero_normal_run_age50-left-t000-f0039.png case=4 angle=left tick=0 sha256=13646777e752e558d873bb66928cba22b9f0d0c56ef2a6df8d5a8968fc81c674 wallNanos=12508912481505 epochMillis=1794515191371",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-04-hero_normal_run_age50-left-t000-f0039.png",
+      "case": 4,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_run_age50",
+      "sha256": "1118a5614b6b4a646250a0327e9a292c9f45f4421e634c9b48251584bf9d7356",
+      "line": "[20:26:32] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-04-hero_normal_run_age50-back-t000-f0085.png case=4 angle=back tick=0 sha256=1118a5614b6b4a646250a0327e9a292c9f45f4421e634c9b48251584bf9d7356 wallNanos=12510459483479 epochMillis=1794515192918",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-04-hero_normal_run_age50-back-t000-f0085.png",
+      "case": 4,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age50",
+      "sha256": "af263550b4b2dbce44b5c8058c3a9354ba23481eebd8f1665f6c85107273b34f",
+      "line": "[20:27:12] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-13-hero_normal_power_age50-front-t000-f0016.png case=13 angle=front tick=0 sha256=af263550b4b2dbce44b5c8058c3a9354ba23481eebd8f1665f6c85107273b34f wallNanos=12550204168752 epochMillis=1794515232663",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-13-hero_normal_power_age50-front-t000-f0016.png",
+      "case": 13,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age50",
+      "sha256": "80314e951cdfda15183d9d37204f5461c866a1b35eea6b314a2c1076cfaff222",
+      "line": "[20:27:13] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-13-hero_normal_power_age50-left-t000-f0039.png case=13 angle=left tick=0 sha256=80314e951cdfda15183d9d37204f5461c866a1b35eea6b314a2c1076cfaff222 wallNanos=12550964326750 epochMillis=1794515233423",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-13-hero_normal_power_age50-left-t000-f0039.png",
+      "case": 13,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_power_age50",
+      "sha256": "dc427a8c56139c9d8aeb5d9d1fa478062d4435136448dfe0e2c3e3c490f4b182",
+      "line": "[20:27:14] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-13-hero_normal_power_age50-back-t000-f0085.png case=13 angle=back tick=0 sha256=dc427a8c56139c9d8aeb5d9d1fa478062d4435136448dfe0e2c3e3c490f4b182 wallNanos=12552507516497 epochMillis=1794515234966",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-13-hero_normal_power_age50-back-t000-f0085.png",
+      "case": 13,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age50",
+      "sha256": "4916660682aad196a22c677142320b082f5be3157b5a9e676ac1d94aaaeb4393",
+      "line": "[20:27:54] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-22-hero_normal_fly_age50-front-t000-f0016.png case=22 angle=front tick=0 sha256=4916660682aad196a22c677142320b082f5be3157b5a9e676ac1d94aaaeb4393 wallNanos=12592436673054 epochMillis=1794515274896",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-22-hero_normal_fly_age50-front-t000-f0016.png",
+      "case": 22,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age50",
+      "sha256": "b954ab0979815e487eda9686837b49f9fa2900b93778d3765cd200b105299f59",
+      "line": "[20:27:55] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-22-hero_normal_fly_age50-left-t000-f0039.png case=22 angle=left tick=0 sha256=b954ab0979815e487eda9686837b49f9fa2900b93778d3765cd200b105299f59 wallNanos=12593265655447 epochMillis=1794515275725",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-22-hero_normal_fly_age50-left-t000-f0039.png",
+      "case": 22,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_fly_age50",
+      "sha256": "385dd2c8ade7858358756a8cf3b66523f468659d52cdbf3d3805191bb8663750",
+      "line": "[20:27:57] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-22-hero_normal_fly_age50-back-t000-f0085.png case=22 angle=back tick=0 sha256=385dd2c8ade7858358756a8cf3b66523f468659d52cdbf3d3805191bb8663750 wallNanos=12594813647187 epochMillis=1794515277273",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-22-hero_normal_fly_age50-back-t000-f0085.png",
+      "case": 22,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age50",
+      "sha256": "bb195a594bb63bd76211ec24e53270ed4f8c2c2e0fb347c52a8f3cafb701a0e8",
+      "line": "[20:28:08] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-25-hero_normal_swim_age50-front-t000-f0016.png case=25 angle=front tick=0 sha256=bb195a594bb63bd76211ec24e53270ed4f8c2c2e0fb347c52a8f3cafb701a0e8 wallNanos=12606532209937 epochMillis=1794515288991",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-25-hero_normal_swim_age50-front-t000-f0016.png",
+      "case": 25,
+      "view": "front",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age50",
+      "sha256": "84ce23b23730440998140b80d1ecef0a814a829d48420e5202d040181ea909be",
+      "line": "[20:28:09] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-25-hero_normal_swim_age50-left-t000-f0039.png case=25 angle=left tick=0 sha256=84ce23b23730440998140b80d1ecef0a814a829d48420e5202d040181ea909be wallNanos=12607303979256 epochMillis=1794515289763",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-25-hero_normal_swim_age50-left-t000-f0039.png",
+      "case": 25,
+      "view": "left",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_swim_age50",
+      "sha256": "2b274bc37171c98c9b3947239aecf6e2300512bc5be5c65ea69f23acf040047d",
+      "line": "[20:28:11] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-25-hero_normal_swim_age50-back-t000-f0085.png case=25 angle=back tick=0 sha256=2b274bc37171c98c9b3947239aecf6e2300512bc5be5c65ea69f23acf040047d wallNanos=12608862681913 epochMillis=1794515291322",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-25-hero_normal_swim_age50-back-t000-f0085.png",
+      "case": 25,
+      "view": "back",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age0",
+      "sha256": "568c1268c3d82b59e2d074b7450b65e08068e92c15dadc82c2d435c7fc76410b",
+      "line": "[20:26:13] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-00-hero_normal_normal_age0-right-t000-f0062.png case=0 angle=right tick=0 sha256=568c1268c3d82b59e2d074b7450b65e08068e92c15dadc82c2d435c7fc76410b wallNanos=12490840509137 epochMillis=1794515173299",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-right-t000-f0062.png",
+      "case": 0,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age0",
+      "sha256": "6c7f0458b805b3fff2a217766f8ce301da2f75040bc909aece595605d7271f09",
+      "line": "[20:26:14] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-00-hero_normal_normal_age0-above-t000-f0108.png case=0 angle=above tick=0 sha256=6c7f0458b805b3fff2a217766f8ce301da2f75040bc909aece595605d7271f09 wallNanos=12492389025400 epochMillis=1794515174848",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-above-t000-f0108.png",
+      "case": 0,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age0",
+      "sha256": "819b2f43f05e7d1de6de2e3a9386ca34ca0730d9a9f9493c59a90f2b3b96ff44",
+      "line": "[20:26:15] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-00-hero_normal_normal_age0-below-t000-f0131.png case=0 angle=below tick=0 sha256=819b2f43f05e7d1de6de2e3a9386ca34ca0730d9a9f9493c59a90f2b3b96ff44 wallNanos=12493126212791 epochMillis=1794515175585",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-below-t000-f0131.png",
+      "case": 0,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age50",
+      "sha256": "011c5d357ad970459e2f3b34d77b7ed6d4cdc74f0a87ae28e14ae31c529b1658",
+      "line": "[20:26:17] [IO-Worker-2/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-01-hero_normal_normal_age50-right-t000-f0062.png case=1 angle=right tick=0 sha256=011c5d357ad970459e2f3b34d77b7ed6d4cdc74f0a87ae28e14ae31c529b1658 wallNanos=12495455563295 epochMillis=1794515177915",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-right-t000-f0062.png",
+      "case": 1,
+      "view": "right",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age50",
+      "sha256": "fec2a497f20a5c0742d07b4c5daf370d310e39dc4f9cc724f09e54960c9cd904",
+      "line": "[20:26:19] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-01-hero_normal_normal_age50-above-t000-f0108.png case=1 angle=above tick=0 sha256=fec2a497f20a5c0742d07b4c5daf370d310e39dc4f9cc724f09e54960c9cd904 wallNanos=12497035017501 epochMillis=1794515179494",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-above-t000-f0108.png",
+      "case": 1,
+      "view": "above",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "name": "hero_normal_normal_age50",
+      "sha256": "bd25afdb6887d9fcc2e89834b73e47be475cc72556a3f2768038bd05dac8fa8a",
+      "line": "[20:26:20] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-01-hero_normal_normal_age50-below-t000-f0131.png case=1 angle=below tick=0 sha256=bd25afdb6887d9fcc2e89834b73e47be475cc72556a3f2768038bd05dac8fa8a wallNanos=12497763283654 epochMillis=1794515180222",
+      "ui": false,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-below-t000-f0131.png",
+      "case": 1,
+      "view": "below",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "path": "/workspace/.setup/morph058-visual-material/mature-front.png",
+      "sha256": "688aa266b5b8d0985aa9cd0188176397684bf3e6700f737a9bbcee205c32ce11",
+      "cells": [
+        {
+          "case": 2,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 5,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 8,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 11,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 14,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 17,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 20,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 23,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-front-t000-f0016.png"
+        },
+        {
+          "case": 26,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-front-t000-f0016.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/variants-front.png",
+      "sha256": "32d3ecc92d4250309ddb0dc5adda0106cc7bf6d08a591532a3a9b7c9d45dc89a",
+      "cells": [
+        {
+          "case": 38,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-front-t000-f0016.png"
+        },
+        {
+          "case": 39,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-front-t000-f0016.png"
+        },
+        {
+          "case": 40,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-front-t000-f0016.png"
+        },
+        {
+          "case": 41,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-front-t000-f0016.png"
+        },
+        {
+          "case": 42,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-front-t000-f0016.png"
+        },
+        {
+          "case": 43,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-front-t000-f0016.png"
+        },
+        {
+          "case": 44,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-front-t000-f0016.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/mature-left.png",
+      "sha256": "8668c897e7f2691f8778608d930cc0c904fc07d96b192c6598ed88b7e76d5194",
+      "cells": [
+        {
+          "case": 2,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 5,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 8,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 11,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 14,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 17,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 20,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 23,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-left-t000-f0039.png"
+        },
+        {
+          "case": 26,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-left-t000-f0039.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/variants-left.png",
+      "sha256": "e9cb2a27cd030966328e84bab7150e86c0f73215aa15f601bfdbfc1d9930fad8",
+      "cells": [
+        {
+          "case": 38,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-left-t000-f0039.png"
+        },
+        {
+          "case": 39,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-left-t000-f0039.png"
+        },
+        {
+          "case": 40,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-left-t000-f0039.png"
+        },
+        {
+          "case": 41,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-left-t000-f0039.png"
+        },
+        {
+          "case": 42,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-left-t000-f0039.png"
+        },
+        {
+          "case": 43,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-left-t000-f0039.png"
+        },
+        {
+          "case": 44,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-left-t000-f0039.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/mature-right.png",
+      "sha256": "3c493fc879424c5a62c52a0f80792319cca585406a5191422ac8d6355d105f0a",
+      "cells": [
+        {
+          "case": 2,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 5,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 8,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 11,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 14,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 17,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 20,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 23,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-right-t000-f0062.png"
+        },
+        {
+          "case": 26,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-right-t000-f0062.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/variants-right.png",
+      "sha256": "1cc5ac34e5b0200c4d6394a706a0d0d8fbc20a94cf2bd2658c2454d01d327624",
+      "cells": [
+        {
+          "case": 38,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-right-t000-f0062.png"
+        },
+        {
+          "case": 39,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-right-t000-f0062.png"
+        },
+        {
+          "case": 40,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-right-t000-f0062.png"
+        },
+        {
+          "case": 41,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-right-t000-f0062.png"
+        },
+        {
+          "case": 42,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-right-t000-f0062.png"
+        },
+        {
+          "case": 43,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-right-t000-f0062.png"
+        },
+        {
+          "case": 44,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-right-t000-f0062.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/mature-back.png",
+      "sha256": "61c09dd19cc5474071553cbafc866707353c35361efebd9455d8e67236a7b7c4",
+      "cells": [
+        {
+          "case": 2,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 5,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 8,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 11,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 14,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 17,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 20,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 23,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-back-t000-f0085.png"
+        },
+        {
+          "case": 26,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-back-t000-f0085.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/variants-back.png",
+      "sha256": "18131ed1177d84c7209b845db6703f00da889d09fbb09f032be85653851dae9b",
+      "cells": [
+        {
+          "case": 38,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-back-t000-f0085.png"
+        },
+        {
+          "case": 39,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-back-t000-f0085.png"
+        },
+        {
+          "case": 40,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-back-t000-f0085.png"
+        },
+        {
+          "case": 41,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-back-t000-f0085.png"
+        },
+        {
+          "case": 42,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-back-t000-f0085.png"
+        },
+        {
+          "case": 43,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-back-t000-f0085.png"
+        },
+        {
+          "case": 44,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-back-t000-f0085.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/mature-above.png",
+      "sha256": "0e3b4c3343f425a297cf18dc6d33390e91a1fba99e3c185056cfb499cc45038d",
+      "cells": [
+        {
+          "case": 2,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 5,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 8,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 11,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 14,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 17,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 20,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 23,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-above-t000-f0108.png"
+        },
+        {
+          "case": 26,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-above-t000-f0108.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/variants-above.png",
+      "sha256": "ccc1177e4ab612f481d47568306227cc3bfdb4264f447f572b4c180970ade84b",
+      "cells": [
+        {
+          "case": 38,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-above-t000-f0108.png"
+        },
+        {
+          "case": 39,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-above-t000-f0108.png"
+        },
+        {
+          "case": 40,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-above-t000-f0108.png"
+        },
+        {
+          "case": 41,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-above-t000-f0108.png"
+        },
+        {
+          "case": 42,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-above-t000-f0108.png"
+        },
+        {
+          "case": 43,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-above-t000-f0108.png"
+        },
+        {
+          "case": 44,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-above-t000-f0108.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/mature-below.png",
+      "sha256": "321fbf9455e2164829802a8b9a7ccc5e593cdd2f4abf370fabf2cd5be0bc8870",
+      "cells": [
+        {
+          "case": 2,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-02-hero_normal_normal_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 5,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-05-hero_normal_run_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 8,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-08-hero_normal_run_fly_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 11,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-11-hero_normal_run_swim_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 14,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-14-hero_normal_power_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 17,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-17-hero_normal_power_fly_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 20,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-20-hero_normal_power_swim_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 23,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-23-hero_normal_fly_age100-below-t000-f0131.png"
+        },
+        {
+          "case": 26,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-26-hero_normal_swim_age100-below-t000-f0131.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/variants-below.png",
+      "sha256": "cdc56f8ba830ef7621d4fe9e701596f09b77f1fac3cae7ffcaeeafced5354348",
+      "cells": [
+        {
+          "case": 38,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-38-hero_normal_run_fly_red_shiny-below-t000-f0131.png"
+        },
+        {
+          "case": 39,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-39-hero_normal_power_swim_ruby_phoenix_glasses-below-t000-f0131.png"
+        },
+        {
+          "case": 40,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-40-hero_normal_fly_green_mono-below-t000-f0131.png"
+        },
+        {
+          "case": 41,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-41-hero_normal_power_pumpkin-below-t000-f0131.png"
+        },
+        {
+          "case": 42,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-42-hero_normal_normal_rabbit-below-t000-f0131.png"
+        },
+        {
+          "case": 43,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-43-hero_baby_old_run_orb_regression-below-t000-f0131.png"
+        },
+        {
+          "case": 44,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-44-hero_baby_young_run_orb_regression-below-t000-f0131.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/principal-fresh.png",
+      "sha256": "af33e97ebf3b7b245f89017f0e7e10a30f81937f3fbd5d7e3c56af11cee7d7a0",
+      "cells": [
+        {
+          "case": 0,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-front-t000-f0016.png"
+        },
+        {
+          "case": 0,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-left-t000-f0039.png"
+        },
+        {
+          "case": 0,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-back-t000-f0085.png"
+        },
+        {
+          "case": 3,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-03-hero_normal_run_age0-front-t000-f0016.png"
+        },
+        {
+          "case": 3,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-03-hero_normal_run_age0-left-t000-f0039.png"
+        },
+        {
+          "case": 3,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-03-hero_normal_run_age0-back-t000-f0085.png"
+        },
+        {
+          "case": 12,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-12-hero_normal_power_age0-front-t000-f0016.png"
+        },
+        {
+          "case": 12,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-12-hero_normal_power_age0-left-t000-f0039.png"
+        },
+        {
+          "case": 12,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-12-hero_normal_power_age0-back-t000-f0085.png"
+        },
+        {
+          "case": 21,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-21-hero_normal_fly_age0-front-t000-f0016.png"
+        },
+        {
+          "case": 21,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-21-hero_normal_fly_age0-left-t000-f0039.png"
+        },
+        {
+          "case": 21,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-21-hero_normal_fly_age0-back-t000-f0085.png"
+        },
+        {
+          "case": 24,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-24-hero_normal_swim_age0-front-t000-f0016.png"
+        },
+        {
+          "case": 24,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-24-hero_normal_swim_age0-left-t000-f0039.png"
+        },
+        {
+          "case": 24,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-24-hero_normal_swim_age0-back-t000-f0085.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/principal-half.png",
+      "sha256": "8cbafab3403dcb8851d5ff686ed52ad277b6dda2f95c94f815fcc9756cb4dd6a",
+      "cells": [
+        {
+          "case": 1,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-front-t000-f0016.png"
+        },
+        {
+          "case": 1,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-left-t000-f0039.png"
+        },
+        {
+          "case": 1,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-back-t000-f0085.png"
+        },
+        {
+          "case": 4,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-04-hero_normal_run_age50-front-t000-f0016.png"
+        },
+        {
+          "case": 4,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-04-hero_normal_run_age50-left-t000-f0039.png"
+        },
+        {
+          "case": 4,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-04-hero_normal_run_age50-back-t000-f0085.png"
+        },
+        {
+          "case": 13,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-13-hero_normal_power_age50-front-t000-f0016.png"
+        },
+        {
+          "case": 13,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-13-hero_normal_power_age50-left-t000-f0039.png"
+        },
+        {
+          "case": 13,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-13-hero_normal_power_age50-back-t000-f0085.png"
+        },
+        {
+          "case": 22,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-22-hero_normal_fly_age50-front-t000-f0016.png"
+        },
+        {
+          "case": 22,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-22-hero_normal_fly_age50-left-t000-f0039.png"
+        },
+        {
+          "case": 22,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-22-hero_normal_fly_age50-back-t000-f0085.png"
+        },
+        {
+          "case": 25,
+          "view": "front",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-25-hero_normal_swim_age50-front-t000-f0016.png"
+        },
+        {
+          "case": 25,
+          "view": "left",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-25-hero_normal_swim_age50-left-t000-f0039.png"
+        },
+        {
+          "case": 25,
+          "view": "back",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-25-hero_normal_swim_age50-back-t000-f0085.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-material/center-fresh-half-extra-angles.png",
+      "sha256": "fb6173f062e2850825c5391465a979ed2b485e120b5b199e1b066c57e60dab58",
+      "cells": [
+        {
+          "case": 0,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-right-t000-f0062.png"
+        },
+        {
+          "case": 0,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-above-t000-f0108.png"
+        },
+        {
+          "case": 0,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-00-hero_normal_normal_age0-below-t000-f0131.png"
+        },
+        {
+          "case": 1,
+          "view": "right",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-right-t000-f0062.png"
+        },
+        {
+          "case": 1,
+          "view": "above",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-above-t000-f0108.png"
+        },
+        {
+          "case": 1,
+          "view": "below",
+          "original": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-01-hero_normal_normal_age50-below-t000-f0131.png"
+        }
+      ],
+      "method": "Uniform600x600crop420,220,1020,820 then360x360resize andlabels; originalsunchanged"
+    }
+  ]
+}

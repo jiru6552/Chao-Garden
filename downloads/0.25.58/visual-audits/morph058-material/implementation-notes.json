@@ -1,0 +1,38 @@
+{
+  "scope": "Hero/Normal material refinement .58; no Gradle/native/client invocation by this agent",
+  "production_files_changed": [
+    "src/main/java/com/chaogarden/client/HeroNormalRegionPaint057.java"
+  ],
+  "test_files_changed": [
+    "src/lionfishTest/java/com/chaogarden/client/HeroNormalMaterialTest057.java"
+  ],
+  "unchanged_owned_file": "src/main/java/com/chaogarden/client/HeroNormalCoatMaterial057.java",
+  "reference_review": "18 fresh actual .58 side/back originals personally inspected via uniform crop/resized sheets; five principal forms additionally checked by the live viewer operator",
+  "changes": [
+    "Separate authored upper-cap palette; lower root retains inherited body pigment",
+    "Power main cap/extremity blue-violet; lavender middle accent replaces dominant pink rows",
+    "Swim teal/cyan, Run blue/teal, Fly muted lavender; white body/head untouched",
+    "Existing wing source atlases are all pink; now proximal region uses inherited body and distal region uses specialization pigment",
+    "Wing colored span blends across age/current opposed axes with soft texel boundary and protected proximal root",
+    "Named/mono/jewel wings retain underlying body/accent hue instead of becoming generic white/yellow; same semantic regions and shared geometry",
+    "Halo policy, source alpha, face/eye pixels, HeroRun/Neutral/baby source paths unchanged"
+  ],
+  "approximations": [
+    "RGB values are authored reference-guided families, not recovered game formulas",
+    "Wing span values are authored root-to-tip fractions, not measured original geometry percentages",
+    "Pixel gradient and two broad limb rows simplify original smooth material transitions"
+  ],
+  "material_test_additions": [
+    "Color-family inequalities for principal upper caps and Power blue extremities",
+    "Root body invariant and regional wing span ordering",
+    "All172sourcecoats preserve source alpha/face/body and wing root inherited hue",
+    "Existing1%continuitybound8 retained",
+    "Actual generated wing edge UV sampling across172coats rejects constant opaque frame; two adjoining edges follow source cutout"
+  ],
+  "file_sha256": {
+    "src/main/java/com/chaogarden/client/HeroNormalRegionPaint057.java": "b0471e17f0469ee470569868548766f88ba9fb33aec4597726d98dd865b99d48",
+    "src/lionfishTest/java/com/chaogarden/client/HeroNormalMaterialTest057.java": "3ca162344716aad3f1239e392e9af3d2959710fa65cbb59df200275d6aa12d84"
+  },
+  "validation_status": "Awaiting root-coordinated actual Java/material/client checks; no pass claimed here",
+  "preflight_defect": "Personally viewed actual Run mature back/left: constant opaque edge UVs framed the intentional cutout. Hero agent changed edge UVs to follow inset per-vertex source art; production pixel alpha remains unchanged."
+}

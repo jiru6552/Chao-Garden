@@ -1,0 +1,14 @@
+{
+  "scope": "Read-only gameplay/save policy sources unchanged from delivered .57",
+  "parent_commit": "6632fd117b790b85d90ee444b50d0ac1758392f6",
+  "all_byte_identical": true,
+  "files": {
+    "src/main/java/com/chaogarden/core/ChaoState.java": "966a04e0f631de21548bd32ea3bc0e1f6c545695888c48b8152953a7fe031827",
+    "src/main/java/com/chaogarden/core/GradualEvolutionRules.java": "63c036a4a24a3f385635aa347fef2a2a6d4fe64ae54d489a127b79979d2f9dc4",
+    "src/main/java/com/chaogarden/core/HeroRunMorphology052.java": "3695fc6e7bce73ac641b96f280448885742d819e4b795212f25fe7c2cd48f672",
+    "src/main/java/com/chaogarden/core/HeroNormalMorphology057.java": "2fd7bc5742c45f46dbe59e56b216185cec203e1d2044165a8f1e4a080d28df4e",
+    "src/main/java/com/chaogarden/core/NeutralMorphology056.java": "f1c10b10aa091b2bf3dde3f7abaeb7f7ef0f417a09c725233484425f80fe2d61",
+    "src/main/java/com/chaogarden/core/DriveRules.java": "80da6f442ba087ca4494b70556000fee97cd94ba4838bc5cf64b5a28a47d659a",
+    "src/main/java/com/chaogarden/care/ChaoCareNetwork.java": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c"
+  }
+}

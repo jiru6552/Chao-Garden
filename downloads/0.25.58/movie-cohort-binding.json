@@ -1,0 +1,37 @@
+{
+  "source_log_sha256": "cc4e0990a8afbe7bf2cea29498c1a3ff51f8677e28b95372a0e34b845e09eb12",
+  "bindings": [
+    {
+      "movie": "morph058-motion-live.mp4",
+      "sha256": "bc68d4248f93203b9a023d0a9109b68ae590798c31359ec3d763245251483316",
+      "selected_cases": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "case_start_epoch_ms": 1794515413340,
+      "recording_start_epoch_ms": 1794515414037.9016,
+      "last_case_render_epoch_ms": 1794515470991,
+      "recording_end_epoch_ms": 1794515471313.0706,
+      "same_current_successful_cohort": true,
+      "time_rescaled": false,
+      "audio": false
+    },
+    {
+      "movie": "morph058-neutral-motion-live.mp4",
+      "sha256": "8e090de22f9791596e0e1cd5d037e4cae83f06d29c8decceb1278e753476fc4b",
+      "selected_cases": [
+        74,
+        75
+      ],
+      "case_start_epoch_ms": 1794515589437,
+      "recording_start_epoch_ms": 1794515590448.8352,
+      "last_case_render_epoch_ms": 1794515618400,
+      "recording_end_epoch_ms": 1794515618662.1494,
+      "same_current_successful_cohort": true,
+      "time_rescaled": false,
+      "audio": false
+    }
+  ]
+}

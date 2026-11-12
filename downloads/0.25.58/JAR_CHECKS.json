@@ -1,0 +1,20 @@
+{
+  "jar": "chao_garden-0.25.58.jar",
+  "sha256": "ed3f32e0f256a513bdc83732ad1c746834bce9840dfaabe3223b9c01d193eaa3",
+  "entries": 8990,
+  "unique_names_and_crc_valid": true,
+  "required_runtime_entries": [
+    "com/chaogarden/client/OfficialChaoRig.class",
+    "com/chaogarden/client/ChaoMeshAsset.class",
+    "com/chaogarden/client/HeroNormalCoatMaterial057.class",
+    "com/chaogarden/client/HeroNormalRegionPaint057.class",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+    "assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+    "assets/chao_garden/neutral056.json",
+    "assets/chao_garden/hero_normal057.json"
+  ],
+  "preserved_parent_entries": [
+    "assets/chao_garden/models/entity/gameplay/chao_baby.json",
+    "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json"
+  ]
+}

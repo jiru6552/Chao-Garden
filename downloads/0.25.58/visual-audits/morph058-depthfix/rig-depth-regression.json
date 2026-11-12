@@ -1,0 +1,15 @@
+{
+  "scope": "Focused emitted root/cap depth-plane regression; no Gradle/client execution by this reviewer",
+  "source": "/workspace/Chao-Garden/src/lionfishTest/java/com/chaogarden/client/HeroNormalMorphRigTest057.java",
+  "source_sha256": "4a23cbcc902fc8027756549c5b1d62778c9201df073ad6a45ad8738cf117029f",
+  "coverage": [
+    "All605static age/axis grid frames",
+    "All909axis-sweep frames",
+    "All20 forward easing frames and20 reversal easing frames, including initial/reset frames",
+    "All567production motion frames",
+    "Five actual quiet-book PLAY/solver poses, including observed phase36"
+  ],
+  "invariant": "After inverse actual gradual_head_021 joint transform, two fore/back emitted planes per box must remain planar/axis-aligned; cap exceeds root depth by>=.0798px, each face gap>=.0399px (authored.08/.04 with float margin)",
+  "old_limits_unchanged": true,
+  "production_changes": false
+}

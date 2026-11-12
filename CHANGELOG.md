@@ -1,3 +1,10 @@
+## 0.25.58 — Neutral and Hero morphology refinement
+
+- Correct the Neutral/Normal Swim tip's rising rear direction, broaden Power+Swim into a stepped pointed crown, and strengthen Power's swept-back crest without reshaping the head box.
+- Refit Hero/Normal tips as two connected sections with specialization-specific proportions; vary wing shapes and regional accents on the shared rig.
+- Preserve fixed faces, inherited colors and shiny finishes, existing HeroRun/baby paths, save formats, and locked adult alignment/first type.
+- Record actual viewer comparisons, in-game stages, tests and remaining approximations in [the .58 report](docs/MORPH_REFINEMENT_02558.md).
+
 ## 0.25.57 — Hero/Normal morphology foundation
 
 - Add all nine Hero/Normal adult combinations through independent maturity and opposed current-training axes, with paired cuboid features, a four-bar halo, compact limbs and shared Lionfish attachments.

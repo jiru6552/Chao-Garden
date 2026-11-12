@@ -1,0 +1,169 @@
+{
+  "scope": "READ-ONLY actual Minecraft preflight visual audit; this8-case preflight is not the final77-case delivery cohort",
+  "status": "PASS_WITH_LIMITATIONS",
+  "source_log": {
+    "path": "/workspace/.setup/morph058-client-wingcheck.log",
+    "sha256": "878ebb2b392b0562a78c9297a0c5c10ac60490ac6d59345ede7615b1f0abbbfa"
+  },
+  "selected_cases": [
+    5,
+    6,
+    7
+  ],
+  "original_png_count": 18,
+  "originals": [
+    {
+      "case": 5,
+      "view": "front",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-05-neutral_normal_swim_age100-front-t000-f0016.png",
+      "sha256": "dbef996db6e7b14e5ab51bd9baf1c869225e71374ba9e0e524c6f096c9d47985"
+    },
+    {
+      "case": 5,
+      "view": "left",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-05-neutral_normal_swim_age100-left-t000-f0039.png",
+      "sha256": "85a82fde24ed01b3ad2b1732d0b20e95120b63bd82ecfa0740fb3c3bc2c8b8e6"
+    },
+    {
+      "case": 5,
+      "view": "right",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-05-neutral_normal_swim_age100-right-t000-f0062.png",
+      "sha256": "2f5e396e496e4ac4af949370116ec4235ec8ca122fd4d9d958ea63accfcd6d52"
+    },
+    {
+      "case": 5,
+      "view": "back",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-05-neutral_normal_swim_age100-back-t000-f0085.png",
+      "sha256": "11c4ff392b727ff20b6d9ef8bb1499ef32d2662b4ef17712e76b1ffce683f2c3"
+    },
+    {
+      "case": 5,
+      "view": "above",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-05-neutral_normal_swim_age100-above-t000-f0108.png",
+      "sha256": "e7afa9e832f967bc1b3485a91081700cd4e053dd5f8356f94edcb868d10bef5f"
+    },
+    {
+      "case": 5,
+      "view": "below",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-05-neutral_normal_swim_age100-below-t000-f0131.png",
+      "sha256": "3847fda5187f0d7eaca0bf9041b4663e0bb804bcd1a5eae8786c8e11ac4b94c0"
+    },
+    {
+      "case": 6,
+      "view": "front",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-06-neutral_normal_power_swim_age100-front-t000-f0016.png",
+      "sha256": "ccb4220284633ecebda3e7bd02d407de99845cdb27763298e6586c9555423eae"
+    },
+    {
+      "case": 6,
+      "view": "left",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-06-neutral_normal_power_swim_age100-left-t000-f0039.png",
+      "sha256": "27ac6accb4b46e3989f0027f316685141c348610c81dd0a3e0b366009e6cfdd4"
+    },
+    {
+      "case": 6,
+      "view": "right",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-06-neutral_normal_power_swim_age100-right-t000-f0062.png",
+      "sha256": "d5a7eda246f16fb1868a0ece400ad740319018d210530f70ea491c5918e36026"
+    },
+    {
+      "case": 6,
+      "view": "back",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-06-neutral_normal_power_swim_age100-back-t000-f0085.png",
+      "sha256": "b81a45b665cc1aedcdb33c8f1206f955f0f3fe8d0abd6e0bb7b6f816ae8e3191"
+    },
+    {
+      "case": 6,
+      "view": "above",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-06-neutral_normal_power_swim_age100-above-t000-f0108.png",
+      "sha256": "92ed7c082860bfb73a51b130607ed5473cf55a164ea04f2abffe45d6cbc85217"
+    },
+    {
+      "case": 6,
+      "view": "below",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-06-neutral_normal_power_swim_age100-below-t000-f0131.png",
+      "sha256": "6286e27b934a3498116d1207908d05f2ebea71472ea07c18dd8c3b9bc201effb"
+    },
+    {
+      "case": 7,
+      "view": "front",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-07-neutral_normal_power_age100-front-t000-f0016.png",
+      "sha256": "94511be958869a43b4d82ce20be7c7403f98e24751331c0fc297f8ecc47c1f96"
+    },
+    {
+      "case": 7,
+      "view": "left",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-07-neutral_normal_power_age100-left-t000-f0039.png",
+      "sha256": "f29eb0e29b4397d15938c5c384278d47401a4c14e828d7e4bf58721159057bce"
+    },
+    {
+      "case": 7,
+      "view": "right",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-07-neutral_normal_power_age100-right-t000-f0062.png",
+      "sha256": "383b887f2230c64462cd0f52249c88652c433e083a581f83072548cdf7db8d91"
+    },
+    {
+      "case": 7,
+      "view": "back",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-07-neutral_normal_power_age100-back-t000-f0085.png",
+      "sha256": "5aab86d61004502a80eb3e2af57d542fa9763221b3d20f58c34bad3c80c29585"
+    },
+    {
+      "case": 7,
+      "view": "above",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-07-neutral_normal_power_age100-above-t000-f0108.png",
+      "sha256": "bef71df5d913f36d11c19f8399b8a07e3d68c639ad220d2f263e7b844eda0092"
+    },
+    {
+      "case": 7,
+      "view": "below",
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-07-neutral_normal_power_age100-below-t000-f0131.png",
+      "sha256": "3eec102d549e321d8c8958f1e3552d5198e64c0095ee5dc685152c5a28341918"
+    }
+  ],
+  "review_method": {
+    "all18_originals": "Viewed all via three uniformly cropped600x600\u2192400x400 six-angle sheets; no retouching/part resizing",
+    "full_resolution_originals_reopened": [
+      "morph058-live-05-neutral_normal_swim_age100-left-t000-f0039.png",
+      "morph058-live-05-neutral_normal_swim_age100-right-t000-f0062.png",
+      "morph058-live-06-neutral_normal_power_swim_age100-front-t000-f0016.png",
+      "morph058-live-06-neutral_normal_power_swim_age100-above-t000-f0108.png",
+      "morph058-live-07-neutral_normal_power_age100-left-t000-f0039.png"
+    ],
+    "source_pngs_changed": false,
+    "views": [
+      "front",
+      "left",
+      "right",
+      "back",
+      "above",
+      "below"
+    ]
+  },
+  "observations": {
+    "swim": "The lower cyan section extends beyond the rear roof edge and rises rearward; its compact green upper section turns upright/slightly toward the face. Both opposite side views show the intended revised hook, rather than a long horizontal bar.",
+    "power_swim": "Broad lower shoulder covers most of the original roof and narrows through a middle step to one small apex. Its three-tier pyramid is clear front/back and remains joined in side views. The front edge seen from above is the raised lower step, not a changed head box.",
+    "power": "The cyan lower section rises toward the face; the short green upper section reverses toward the back/up, making the intended upright zigzag.",
+    "head_face": "Original rectangular head silhouette, pixel eyes and facial placement remain intact in the inspected views. Compact limbs and planar pink wings look coherent.",
+    "orb": "Gold/yellow orb remains distinct in front/side/back views with visible separation from crown; above/below projection can occlude part of a feature without establishing a collision. No striped/discolored marker artifact observed.",
+    "connections": "No detached tiny dormant apex, floating crown segment, torn surface or exposed interior observed in these mature preflight views."
+  },
+  "blocking_findings": [],
+  "approximations": [
+    "Power+Swim is a three-step blocky pyramid with a small flat apex rather than a smooth cone.",
+    "Neutral wave/hook shapes use two rigid closed cuboids and broad flat texture colors."
+  ],
+  "limits": [
+    "Preflight mature static views only; fresh/intermediate/continuous transitions belong to the subsequent final cohort.",
+    "No full motion playback, audio, toy approach/interruptions, hats/animal parts, color/shiny coverage, multiplayer or physical phone interaction established by these18 frames.",
+    "No claim that the packaged final JAR was launched."
+  ],
+  "literal_case_completion_lines": [
+    "[19:50:20] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_RENDER_COMPLETE 5 name=neutral_normal_swim_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794513020352",
+    "[19:50:20] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_NATIVE_COMPLETE 5 name=neutral_normal_swim_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,0,0;60,0,0,0,0;174,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,-0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794513020353",
+    "[19:50:25] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_RENDER_COMPLETE 6 name=neutral_normal_power_swim_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794513025044",
+    "[19:50:25] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_NATIVE_COMPLETE 6 name=neutral_normal_power_swim_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794513025045",
+    "[19:50:29] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_RENDER_COMPLETE 7 name=neutral_normal_power_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794513029707",
+    "[19:50:29] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_NATIVE_COMPLETE 7 name=neutral_normal_power_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,9,0;0,0,0,60,0;0,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794513029708"
+  ]
+}

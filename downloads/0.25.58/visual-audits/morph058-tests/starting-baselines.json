@@ -1,0 +1,30 @@
+{
+  "scope": "Read-only .58 starting baseline, no .58 tests executed by this agent",
+  "delivered_parent_commit": "6632fd117b790b85d90ee444b50d0ac1758392f6",
+  "inherited_transition_results": {
+    "triangle": {
+      "path": "/workspace/Chao-Garden/build/reports/lionfish/triangle-transition-results.txt",
+      "sha256": "99bce5827d20d9d3aba51fef07728eb609dda4bc14e2c0534e903aacba50b6f8",
+      "matches_delivered057": true,
+      "header": "Triangle transition samples=267696 failures=25 minHandHeadPixels=-0.54432297"
+    },
+    "trumpet": {
+      "path": "/workspace/Chao-Garden/build/reports/lionfish/trumpet-transition-results.txt",
+      "sha256": "b64266310e866db7a3628192f974bcd9abf1eabfd4b36b797de53dfc37fa0bfa",
+      "matches_delivered057": true,
+      "header": "Trumpet transition samples=267696 failures=37 minHandHeadPixels=-0.58569264"
+    }
+  },
+  "journal_source_identity": [
+    {
+      "path": "scripts/test_journal_content_02518.py",
+      "sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "matches_delivered057": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/item/GardenGuideItem.java",
+      "sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "matches_delivered057": true
+    }
+  ]
+}

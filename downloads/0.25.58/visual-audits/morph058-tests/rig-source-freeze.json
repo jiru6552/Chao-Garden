@@ -1,0 +1,33 @@
+{
+  "scope": "Rig test source freeze for root-run compile; no Gradle/client/native invocation by agent",
+  "files": {
+    "src/lionfishTest/java/com/chaogarden/client/HeroNormalMorphRigTest057.java": "4a23cbcc902fc8027756549c5b1d62778c9201df073ad6a45ad8738cf117029f",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralMorphRigTest056.java": "75b499d3e237237422d545577739cbaaefe3f0b9e8c7990a8c12d6180ebc9556"
+  },
+  "untouched_keyboard_tests": [
+    "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java",
+    "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java"
+  ],
+  "new_tests": [
+    "Neutral semantic local-Y lower/upper section directions for latest user red-line hooks",
+    "Neutral broad3-step centered Power+Swim taper and303 actual emitted1%-maturity frames",
+    "Hero lower-root/upper-cap ownership and separate pigment swatches",
+    "Hero significant cap/root geometric aspect relationships",
+    "Hero nine distinct actual emitted wing width/height pairs",
+    "Hero original front UVs plus explicitly remapped visible back/edge island",
+    "Hero wing positive closed-box winding, static bilateral symmetry",
+    "Hero actual proximal-edge hinge drift<.001px relative original source edge and actual wing/torso OBB overlap across605densegrid+567realmotionframes",
+    "Actual emitted root/cap fore-back plane gaps across all1534 age/axis/editframes,567motionframes, extra reversal frames and five production quiet-book poses includingphase36"
+  ],
+  "unchanged_limits": [
+    "Fixedhead/eyes/UV/sharedpivots",
+    ".3px small-axis/.3px1%-maturity continuity",
+    "1px20tickedit continuity",
+    "Actual tiltedhaloSAT",
+    "Existing keyboardcontact/reach/clearance limits"
+  ],
+  "diagnostic_correction": "Actual WALK tick0 body.sy1.0022913 creates affine worldwingbasisdot\u22120.00019947; retain intrinsic rigid-box tolerance after inverse actual wingjoint transform and all world affine face/hinge/torso tests. SAT uses actual crossedge axes. No production geometry/emitter change.",
+  "wing_edge_alpha_invariant": "Every back/side UV stays inside the original visible island and within .126UVunits of its corresponding original front corner (source vertex ID modulo4), permitting a tiny inside inset but rejecting constant opaque borders.",
+  "fly_stem_visibility": "Actual mature Fly left/right cap bottom stays >.5 model pixel above unchanged head top, plus thin-stem/bulb ratio and normal-like bulb width constraints. Added after actual MC preflight exposed white stalk obscuration.",
+  "tip_depth_surface_invariant": "Caps stay at least.0798px thicker than roots; front/back plane gaps each at least.0399px in actual gradual-head joint coordinates (authored.08/.04 with float margin). All old tolerances remain unchanged."
+}

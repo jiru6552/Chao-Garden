@@ -1,0 +1,74 @@
+{
+  "scope": "Coordinator-selected literal evidence only; pass/failure claims remain in the report.",
+  "checks": [
+    {
+      "source_log": "morph058-focused.log",
+      "sha256": "0114d292df44d01326084c21d6ef6632ff6afcf6b61af54f6973c97c6eee7578",
+      "literal_lines": [
+        "Hero Normal morphology057: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+        "HeroNormal057: 10717767 checks; 1534 emitted age/axis/edit frames; 11872 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 23440 actual tilted-halo/head-feature separation checks; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; 4258 emitted root/cap depth-plane pairs; 5 production quiet-book surface frames; minimum tip face gap=0.039999485 model pixels; maximum hinge drift=3.819874E-6 model pixels; maximum axis step=0.036648598 model pixels; maximum20tick edit step=0.17294578; seconds=6.1187959. Fixed original head/face/rig; two-section paired features, differentiated closed wings and four-bar halo; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "HeroNormal057 material: 73977182 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 halo samples; 6873120 exact body/head pixels; 92880 regional wing samples; 23392 actual wing-edge alpha samples; maximum1% color step=4. Nine independently referenced color corners, white/inherited lower stalks and wing roots, distinct upper caps, regional wing span, cutout-following thickness, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.",
+        "Neutral056: 8073541 checks; 1837 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.14285788 model pixels; maximum20tick edit step=0.22264875; maximum1pct maturity step=0.038228665; seconds=5.478154756. Fixed original head/face/marker/rig; rear/up Swim neck and short forward hook, forward/up Power shoulder with short back/up curl and stepped tapered Power+Swim apex; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "Hero Run055 material: 23615146 checks; 172 original coats; 12678120 preserved-alpha pixels; 99072 exact protected eye/expression pixels; maximum1% pixel change=4; shared pixel regions, fixed UVs, no baseline pop and compatible-axis accents passed.",
+        "Piano mesh fit: 175932 hand samples; 19278 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+        "Organ mesh fit: 175932 hand samples; 4320 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels",
+        "BUILD SUCCESSFUL in 1m 6s"
+      ]
+    },
+    {
+      "source_log": "morph058-native.log",
+      "sha256": "471b1f2d8b21fe4914992ab8915c3e8dc522cde353b6e745fe37ae9fe58855e2",
+      "literal_lines": [
+        "[20:21:49] [Server thread/INFO] [minecraft/GameTestServer]: All 305 required tests passed :)",
+        "BUILD SUCCESSFUL in 47s"
+      ]
+    },
+    {
+      "source_log": "morph058-build.log",
+      "sha256": "fed45a8148c54a33a51c152d94fad707e852d478301cf265f00a5b455a527476",
+      "literal_lines": [
+        "Hero Normal morphology057: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+        "HeroNormal057 material: 73977182 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 halo samples; 6873120 exact body/head pixels; 92880 regional wing samples; 23392 actual wing-edge alpha samples; maximum1% color step=4. Nine independently referenced color corners, white/inherited lower stalks and wing roots, distinct upper caps, regional wing span, cutout-following thickness, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.",
+        "HeroNormal057: 10352943 checks; 1534 emitted age/axis/edit frames; 11872 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 23440 actual tilted-halo/head-feature separation checks; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; maximum hinge drift=3.819874E-6 model pixels; maximum axis step=0.036842164 model pixels; maximum20tick edit step=0.17307691; seconds=6.331273039. Fixed original head/face/rig; two-section paired features, differentiated closed wings and four-bar halo; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "Hero Run055 material: 23615146 checks; 172 original coats; 12678120 preserved-alpha pixels; 99072 exact protected eye/expression pixels; maximum1% pixel change=4; shared pixel regions, fixed UVs, no baseline pop and compatible-axis accents passed.",
+        "Neutral056: 8073541 checks; 1837 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.14285788 model pixels; maximum20tick edit step=0.22264875; maximum1pct maturity step=0.038228665; seconds=5.791858675. Fixed original head/face/marker/rig; rear/up Swim neck and short forward hook, forward/up Power shoulder with short back/up curl and stepped tapered Power+Swim apex; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "Organ mesh fit: 175932 hand samples; 4320 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels",
+        "Piano mesh fit: 175932 hand samples; 19278 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+        "Triangle transition samples=267696 failures=25 minHandHeadPixels=-0.54432297",
+        "> Task :triangleTransitionRigTest FAILED",
+        "> Task :trumpetTransitionRigTest FAILED",
+        "BUILD FAILED in 11m 42s"
+      ]
+    },
+    {
+      "source_log": "morph058-geometry.log",
+      "sha256": "e65970f0899626dbed78defb7d34a1e3116de64d47185021f8485676a561a079",
+      "literal_lines": [
+        "HeroNormal057: 15 positive closed boxes, 2205 connected paired-feature/halo age-axis blends, fixed original head/face/rig, anchored soles; actual tilted-halo OBB separation passed (minimum vertical gap=0.354107px; negative alone would not imply intersection); mirrored wing hinge maximum drift=0.000000000px; minimum root/cap front/back plane clearance=0.040000000px."
+      ]
+    },
+    {
+      "source_log": "morph058-jar-prepare.log",
+      "sha256": "f9673df015c3b950758d85117f2eb5fcda1e902fe928d35b69f29d97584d1368",
+      "literal_lines": [
+        "BUILD SUCCESSFUL in 11s"
+      ]
+    },
+    {
+      "source_log": "morph058-journal.log",
+      "sha256": "c176fb3b2ee166356711fef2629f6a0b4844dbc68ad67a47992de97b21212f08",
+      "literal_lines": [
+        "FAIL: test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens')",
+        "FAILED (failures=1)"
+      ]
+    },
+    {
+      "source_log": "morph058-client-final.log",
+      "sha256": "cc4e0990a8afbe7bf2cea29498c1a3ff51f8677e28b95372a0e34b845e09eb12",
+      "literal_lines": [
+        "[20:33:43] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_VISUAL_COMPLETE requestedCases=77 renderedCases=77 skippedCases=0 start=0 limit=77 baseline=false captures=593 saved=593 epochMillis=1794515623107 normal20TPS=true audioListening=false output=/workspace/.setup/morph058-client-final",
+        "BUILD SUCCESSFUL in 8m 15s"
+      ]
+    }
+  ]
+}

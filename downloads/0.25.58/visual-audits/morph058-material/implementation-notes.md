@@ -1,0 +1,13 @@
+# Hero/Normal material refinement — .58
+
+The material keeps the original white/inherited body and lower head roots, source alpha, facial pixels and halo policy. Upper head caps now have their own authored palette. Power uses blue/violet primary caps and extremities with lavender middle accents rather than broad dominant pink rows; Swim uses turquoise, Run blue/teal, and Fly muted lavender.
+
+The existing baby coat atlases all contain pink wing pixels, including named and monocolor coats. The new Hero/Normal-only wing policy keeps the two authored pixel shades and original alpha but paints a broad proximal region from the inherited body and the distal region from the appropriate variant pigment. Natural two-tone Hero wings use the observed yellow/gold/mint families. Named, mono and jewel wings use their own body/accent pigments or bounded value contrast, preserving hue and finish. A soft moving boundary develops the colored span with age and current opposing training instead of switching bands abruptly.
+
+The authored span fractions are centered .50, Run .85, Run+Fly .70, Run+Swim .60, Power .82, Power+Fly .80, Power+Swim .80, Fly .25 and Swim .35. These describe root-to-tip parameter span, not opaque pixel percentage or recovered game formulas. Exact RGBs and transitions are fitting approximations. Eighteen fresh actual .58 mature side/back viewer originals were personally inspected using uniform diagnostic sheets; hashes are retained separately.
+
+No Gradle, native server or Minecraft client was run by this agent. The root coordinator owns those checks. Added Java assertions exercise original face/alpha, independent lower/upper regions, principal cap hue families, inherited wing-root hue, regional span ordering, all172sourcecoats, and the unchanged one-percent continuity limit of8channel units. No test result is claimed until the root runs them.
+
+## Preflight wing frame correction
+
+Actual Run mature back/left captures revealed that constant opaque thickness UVs drew a hollow rectangular frame around the intentional source wing cutout. The geometry owner changed the four thin-edge UVs to follow the neighboring front artwork, slightly inset from the border. Global material alpha was not filled or weakened. Read-only source inspection sampled23,392edge points over172coats: each wing has two partially transparent adjoining edges and two opaque edges, matching the authored clipped corner. The Java material suite now asserts this actual generated UV/alpha relationship, in addition to all prior alpha/face/continuity constraints. It still requires the root-coordinated run and corrected client capture.

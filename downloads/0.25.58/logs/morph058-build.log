@@ -1,0 +1,421 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateModMetadata UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jarJar NO-SOURCE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+> Task :compileLionfishTestJava UP-TO-DATE
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses UP-TO-DATE
+
+> Task :accordionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Accordion failure groups: {}
+Accordion mesh fit: 43050 poses; 71400 emitted hands; max contact=5.3732066E-7 blocks; rendered error=0.007191392; min head=0.37905455 pixels; min torso=1.2418826 pixels; min floor=1.9928646 pixels; max reach=2.7283027 pixels (right=2.7283027, left=2.4883907); emitted-hand head=0.08447504 (right=0.1206851, left=0.08447504), torso=0.31870103 pixels
+
+> Task :accordionTimingTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Accordion Lionfish timing: 641 quarter-tick samples; eight alternating airflow/key attacks, safe pitch/release and clean rest endpoints passed
+
+> Task :activeToyRigTest049
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Active toys rig: 113400 poses; 147000 emitted hands; maxRendered=0.015625041 minHandHead=0.02567482 minHandBody=0.641623 maxContact=0.0047585513 maxReach=3.2 maxCarReach=2.0 minHead=0.5345812 minBody=0.99414515 floorError=0.009159088 propFeet=0.19527054 handFeet=0.18125653 headsByKind={chao_pogo_stick=0.02567482, chao_shadow_doll=0.857213, chao_sonic_doll=0.857213, chao_toy_car=0.37454677} feetByKind={chao_shadow_doll=1.1140709, chao_sonic_doll=1.1140709, chao_toy_car=0.18125653} failures=0 groups={}
+
+> Task :activeToyTimingTest049
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Active toys timing: 641 quarterticks; four lateral car reversals, three silent doll lifts, eight pogo landings; all ages/scales bounded and clean endpoints passed
+
+> Task :blockyRunMorphRigTest055
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Blocky Run055: 22226455 checks; 2488 emitted development frames; 3840 closed rectangular box samples; 996 compact limb samples; 350 production Lionfish motion frames; 2520 separate attachment matrices; 696 coat/shape cases; max1% step=0.07039931 model pixels; max20-tick-edit step=0.24693298 model pixels; seconds=3.731160001. Original head/face/UVs and hat/eye/mouth anchors fixed; continuous rigid boxes; age/training reversal; current production selection; compatible axes; historical052 fingerprint passed. This is geometry/rig validation, not visual or multiplayer verification.
+
+> Task :companionCarryRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+PASS: 21930 carry checks; 504 form/age/morph cases; back skin gap=0.018437505..0.045000017 blocks; max transition step=0.034974005 blocks
+
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :coreTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Hero Run morphology052: 1128 checks passed; four-stat ties, simultaneous drives, reversible training, age-conditioned baby growth, independent maturity and saved identity
+Analyzer alignment053: 785 checks passed; permission inputs, fixed-point bounds, read-only adults and exact persistence
+ChaoState: 171480 checks passed
+Analyzer editing: rank cycle, four modifiers, five hit rows, endpoints, caps, invalid requests and round trip passed
+Analyzer alignment bar053: 1835 geometry/input checks passed
+Analyzer maturity bar056: 2824 geometry/input checks passed
+Creative editing056: 361 checks passed
+Creative edit rules056: 361 checks passed
+Neutral morphology056: 1742 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Neutral morphology056: 1742 checks passed
+Hero Normal morphology057: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Hero/Normal morphology057: 1957 checks passed
+Drive rules: arithmetic, all 24 permutations, caps, hidden losses, X/rank limits, Perfect no-op, 50,000 persisted rolls; endpoints=263/242, rank=1027, Solid max=2535, middle/edge=18065/2006
+Toy interaction rules: 2491 checks passed
+Egg distribution policy: 243 checks passed
+Training supplies: 248 checks passed
+Wardrobe choices: 6644 checks passed
+Baby animation timing: 26057 checks passed
+Portal geometry: 1233 checks passed
+Lobby geometry0252: 18509 checks passed
+Lobby perimeter approaches0256: 40670 checks passed
+Garden gate geometry0256: 48346 checks passed
+Area music rules0257: 136 checks passed
+School singing rules0258: 2472 checks passed
+Staff face timing0251: 177195 checks passed
+Black Market stock: 922385 checks passed
+Kindergarten buyback: 220052 checks passed
+Activity rules: 101313 checks passed
+Companion rules: 2103 checks passed
+SA2 fruit effects: 4765 checks passed
+Locomotion rules: 1209 checks passed
+
+> Task :drumRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+WORST {}
+Drum samples=670950 headChecks=894600 failures=0 headPixels=0.17724872 groundPixels=1.6473083 shoulderPixels=0.9970783 contactBlocks=2.4202818E-5 handHeight=-3.7043839..-1.9999943
+
+
+> Task :fluteRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+WORST {}
+Flute samples=1527750 headChecks=998550 failures=0 headPixels=0.05170679 groundPixels=0.27300072 shoulderPixels=1.4350852 gripBlocks=0.03793746 mouthBlocks=0.037500083
+
+
+> Task :guitarRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Guitar failure groups: {}
+Guitar mesh fit: 337050 pose samples; 564900 emitted-hand samples; max contact=3.7282695E-7 blocks; rendered center error=0.011720353; min head=0.35219622 pixels; min torso=0.16891503 pixels; min floor=0.73127747 pixels; max reach=3.292374 pixels
+
+> Task :guitarTimingTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Guitar Lionfish timing: 641 quarter-tick samples; 16 alternating string crossings, bounded fret positions, cue/pitch limits and endpoints passed
+
+> Task :heroNormalMaterialTest057
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+HeroNormal057 material: 73977182 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 halo samples; 6873120 exact body/head pixels; 92880 regional wing samples; 23392 actual wing-edge alpha samples; maximum1% color step=4. Nine independently referenced color corners, white/inherited lower stalks and wing roots, distinct upper caps, regional wing span, cutout-following thickness, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.
+
+> Task :heroNormalMorphRigTest057
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+HeroNormal057: 10352943 checks; 1534 emitted age/axis/edit frames; 11872 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 23440 actual tilted-halo/head-feature separation checks; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; maximum hinge drift=3.819874E-6 model pixels; maximum axis step=0.036842164 model pixels; maximum20tick edit step=0.17307691; seconds=6.331273039. Fixed original head/face/rig; two-section paired features, differentiated closed wings and four-bar halo; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.
+
+> Task :heroRunMaterialTest054
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Hero Run054 material: 30076664 checks; 172 source coats; 11878320 original pixels; 10685520 exact protected pixels; 2211920 semantic pattern samples; source alpha/eye/wing UV, inherited color/mono/jewel detail, child/adult regions and dense continuity passed
+
+> Task :heroRunMaterialTest055
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Hero Run055 material: 23615146 checks; 172 original coats; 12678120 preserved-alpha pixels; 99072 exact protected eye/expression pixels; maximum1% pixel change=4; shared pixel regions, fixed UVs, no baseline pop and compatible-axis accents passed.
+
+> Task :heroRunMorphRigTest052
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Hero Run morphology: 4180524 checks; 1572 actual geometry/pose frames; 1032336 emitted vertices; max small-progress step=0.02392185 model pixels; retained052 stages/young-adult asset boundary, eyes, inherited axes, maturity and smoothing passed; historical053 babies are covered by BabyRunMorphRigTest053; current production path is covered by HeroRunMorphRigTest054
+
+> Task :neutralMaterialTest056
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Neutral056/marker material: 68841869 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 Neutral orb samples; maximum1% color step=4. Nine endpoint combinations, fresh/mid/mature, inherited hues, exact original fresh pixels and canonical blue-to-pink Hero orb passed.
+
+> Task :neutralMorphRigTest056
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Neutral056: 8073541 checks; 1837 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.14285788 model pixels; maximum20tick edit step=0.22264875; maximum1pct maturity step=0.038228665; seconds=5.791858675. Fixed original head/face/marker/rig; rear/up Swim neck and short forward hook, forward/up Power shoulder with short back/up curl and stepped tapered Power+Swim apex; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.
+
+> Task :organRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Organ mesh fit: 175932 hand samples; 4320 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels
+
+> Task :organTimingTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Organ timing: 1282 real Lionfish samples, eight two-hand sustained chords, contact/cues and endpoints passed
+
+> Task :pianoRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Piano mesh fit: 175932 hand samples; 19278 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels
+
+> Task :pianoTimingTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Piano Lionfish timing: 1282 samples, 16 alternating contacts, key frames, pitch limits, smooth presses and endpoints passed; max quarter-tick step=0.12006843
+
+> Task :postureRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+PROBE chao_run.json adult=false morph=-1.0,-1.0 skin cast t=20.25 right=(-6.772E-2  1.253E+0 -1.296E-1) left=( 6.001E-2  1.239E+0 -1.662E-1) head=1.175 bounds=[-3.51225, -6.0084, -3.0, 3.51225, 0.0, 3.0378] prop= 3.000E-1  0.000E+0  0.000E+0 -7.718E-3
+ 0.000E+0  1.912E-1 -2.312E-1  1.359E+0
+-0.000E+0  2.312E-1  1.912E-1 -1.899E-1
+ 0.000E+0  0.000E+0  0.000E+0  1.000E+0
+
+PROBE chao_run.json adult=false morph=-1.0,-1.0 skin cym t=20.25 right=(-1.352E-1  1.227E+0 -1.672E-1) left=( 1.352E-1  1.227E+0 -1.672E-1) head=1.175 bounds=[-3.51225, -6.0084, -3.0, 3.51225, 0.0, 3.0378] prop=-8.208E-2 -2.255E-1 -7.176E-9 -1.906E-1
+-2.248E-1  8.182E-2 -1.918E-2  1.277E+0
+ 1.802E-2 -6.560E-3 -2.392E-1 -2.675E-1
+ 0.000E+0  0.000E+0  0.000E+0  1.000E+0
+
+WORST {}
+Posture samples=1341900 headChecks=3370500 failures=0 headPixels=0.087901115 groundPixels=0.19929123 shoulderPixels=1.0800712 contactBlocks=0.018833788 handHeight=-2.8413506..-1.9999943
+
+
+> Task :proneToyRigTest051
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Prone support: 42555188 checks; 1048 source form/age/morph/head cases; 705256 quarter/contact frames; 2392 actual replacement-foot cases; maxQuarterJointPixels=0.4979398 minHeadFloor=0.25152433 minHeadBody=7.237196E-4 maxBellyY=1.500504 maxFootY=1.4990003 actualExitFrames=4608 maxExitJointPixels=0.54468304 maxExitRootLiftPixels=3.4387398 failures=0
+car model XZ[minX,minZ,maxX,maxZ]=[-0.51864386, -0.50929385, 0.33376777, 0.60358614] world XZ=[-0.41491508, -0.4270724, 0.26701424, 0.4828689]
+crayons model XZ[minX,minZ,maxX,maxZ]=[-0.51864386, -0.5263917, 0.33376777, 0.60358614] world XZ=[-0.41491508, -0.44151455, 0.26701424, 0.4828689]
+
+> Task :quietToyRigTest049
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Quiet samples=66150 maxError={chao_broom false=2.4405628E-7, chao_broom true=2.556103E-7, chao_crayons false=3.6893542E-7, chao_crayons true=2.4211522E-7, chao_picture_book false=1.7881393E-7, chao_picture_book true=1.7881393E-7} reach={chao_broom false=1.2, chao_broom true=1.2, chao_crayons false=1.8, chao_crayons true=0.81277925, chao_picture_book false=1.9508536, chao_picture_book true=1.9508536} head={chao_broom=0.6013131, chao_crayons=3.9239106, chao_picture_book=0.8455167} body={chao_broom=0.62459993, chao_crayons=1.3412352, chao_picture_book=1.9950478} emitted=107100 emitError=0.01562505 handHead=0.11877203 handBody=0.08044362 handFoot=0.2766583 maxHandFloor=1.4987627 maxCrayonTip=3.998401E-7 worst={chao_broom false=chao_dark_run.json skin age=true morph=-1.0,-1.0 t=32, chao_broom true=chao_hero_run.json skin age=false morph=-1.0,1.0 t=40, chao_crayons false=chao_dark_power.json skin age=true morph=0.0,1.0 t=112, chao_crayons true=chao_baby.json animal0 age=true morph=0.0,0.0 t=16, chao_picture_book false=chao_chaos_angel.json skin age=false morph=-1.0,-1.0 t=16, chao_picture_book true=chao_chaos_angel.json skin age=false morph=-1.0,-1.0 t=16} handHeads={chao_broom false=0.4900074, chao_broom true=0.11877203, chao_crayons false=0.4819889, chao_crayons true=0.38452482, chao_picture_book false=0.8920593, chao_picture_book true=0.8920593} handBodies={chao_broom false=0.08044362, chao_broom true=0.29240394, chao_crayons false=1.4703798, chao_crayons true=0.74108744, chao_picture_book false=1.3752258, chao_picture_book true=1.3752258} handWorst={body chao_broom false=chao_dark_swim.json skin age=true morph=0.0,1.0 t=32, body chao_broom true=chao_dark_swim.json skin age=true morph=0.0,1.0 t=24, body chao_crayons false=chao_dark_power.json skin age=true morph=0.0,1.0 t=48, body chao_crayons true=chao_hero_swim.json skin age=true morph=0.0,1.0 t=16, body chao_picture_book false=chao_hero_swim.json skin age=true morph=0.0,1.0 t=16, body chao_picture_book true=chao_hero_swim.json skin age=true morph=0.0,1.0 t=16, head chao_broom false=chao_hero_swim.json skin age=true morph=0.0,1.0 t=32, head chao_broom true=chao_hero_swim.json skin age=true morph=0.0,1.0 t=16, head chao_crayons false=chao_dark_swim.json skin age=true morph=1.0,0.0 t=48, head chao_crayons true=chao_dark_swim.json skin age=true morph=1.0,0.0 t=16, head chao_picture_book false=chao_dark_power.json skin age=true morph=0.0,1.0 t=16, head chao_picture_book true=chao_dark_power.json skin age=true morph=0.0,1.0 t=16} groups={} failures=0
+
+> Task :quietToyTimingTest049
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Quiet Lionfish timing: 641 quarter-tick samples; 8 sweep cues, silent book/crayons, 2 visual page passages/8 drawing starts; completed-ink order and clean endpoints passed; max step=0.036824375,0.02008462,0.16030341
+
+> Task :rattleAnimationTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+PASS: 96316 variant checks; 1092 replacement-hand rig/age/animal cases, all four clips, both maracas hands measured against rendered vertices. Visual quality requires the separate client study.
+PASS: 647211 maracas checks, 504 rig/morph/hand cases, 641 subticks, max grip error=1.2287812E-7; visual review separate.
+PASS: 323591 bell checks, 252 rig/morph/hand cases, 641 subticks, max grip error=1.2377834E-7; visual review separate.
+PASS: 486897 tambourine checks, 252 rig/morph cases, 641 subticks, maxGripError=1.2287812E-7 maxContactGap=1.2731557E-7 maxRequestedShoulderShiftPixels=0.3743237; visual review separate.
+PASS: 14742 tambourine replacement checks; 546 two-hand rig/age/animal cases; maxGripError=1.4901161E-8 maxContactGap=1.3265381E-7; visual review separate.
+PASS: 488677 castanets checks, 252 rig/morph cases, 641 subticks, maxGripError=1.1944189E-7 maxContactGap=0.018833859 maxRequestedShoulderShiftPixels=0.70134205; visual review separate.
+Castanet head separation checks=1801800 failures=0 minimumPixels=0.17311311 worst=chao_knuckles.json age=0.0 morph=0.0,0.0 tick=27.5 lid=true bounds=[-3.5, -6.0, -3.0, 3.5, 0.0, 3.0]
+PASS: 5813344 cymbal checks; 1575 rig/age/morph/replacement cases, 641 subticks; maxGrip=2.4268772E-7 maxRimGap=0.0040377327 minHeadPixels=0.09137273 maxRequestedShoulderShiftPixels=2.1457672E-6; visual and listening review separate.
+PASS: 14742 castanets replacement checks; 546 two-hand rig/age/animal cases; maxGripError=1.4901161E-8 maxContactGap=0.011859947; visual review separate.
+PASS: 1004460 assertions; 29 hand rigs/ages; 3 material-only glass overlays; 9 morphology endpoints; 641 sub-tick samples each; max grip error=1.8491855E-7 blocks. Real Lionfish 3.1; offline rig checks, not an in-game visual pass.
+
+> Task :rockingHorseRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Rocking horse failure groups: {}
+Rocking horse mesh fit: 43050 poses; 73500 hands; 17982 original horse/body/head/feet checks; max hip=1.1920929E-7 blocks; max grip=4.779999E-7 blocks; max arm extension=3.2 pixels; min body=0.111183405, head=0.3318658, feet=0.59287524 pixels; emitted hands=35700 max rendered palm error=0.012715332; min hand/head=0.20419312, hand/body=0.84877515; max real bar gap=-0.41465473 pixels
+
+> Task :rockingHorseTimingTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Rocking horse timing: 641 real Lionfish quarter-tick samples; eight loaded-rock cues; shared server/client angle max error=1.7788261E-7 radians; max quarter-tick step=0.0057521164
+
+> Task :runningGaitRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+PASS: 99572 running pose checks across 132 form/age/speed cases and 31812 real-mesh frames; bounded cadence, retained foot travel and gait-unlock continuity
+
+> Task :sittingRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+PASS: 1748304 sitting checks; 648 form/age/morph cases with two real entry/exit transitions; maxFloorPixels=0.025001526 minHeadPixels=2.5367966 maxHalfTickJointStepPixels=0.045230336 adultTiltDegrees=3.7276623 babyTiltDegrees=7.4598904 maxTransitionPenetrationPixels=0.045000076
+
+> Task :test SKIPPED
+
+> Task :triangleRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+FAILURE GROUPS {}
+Triangle samples=1527750 headChecks=1902600 failures=0 headPixels=0.89210534 groundPixels=1.8298912 shoulderPixels=0.8413325 tipBlocks=6.8367956E-7 handHeadPixels=0.18545651 maxReachPixels=5.3311653
+
+
+> Task :triangleTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Failure tick distribution {0=10, 1=8, 2=7}
+Triangle transition samples=267696 failures=25 minHandHeadPixels=-0.54432297
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.0 left=false gap=-0.49445486
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.25 left=false gap=-0.5240545
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.5 left=false gap=-0.5403247
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.75 left=false gap=-0.54432297
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.0 left=false gap=-0.53655124
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.25 left=false gap=-0.5170398
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.5 left=false gap=-0.4854231
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.75 left=false gap=-0.44105196
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.0 left=false gap=-0.38311648
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.25 left=false gap=-0.31078315
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.5 left=false gap=-0.22336292
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.75 left=false gap=-0.12050915
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.3036877
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.32213426
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.33190775
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.33337235
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.3264705
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.31078184
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.5 left=false gap=-0.28556728
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.75 left=false gap=-0.24986386
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=2.0 left=false gap=-0.20261478
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=2.25 left=false gap=-0.14278626
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=2.5 left=false gap=-0.06956816
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.052894592
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.043987036
+Exception in thread "main" java.lang.AssertionError: Triangle transition samples=267696 failures=25 minHandHeadPixels=-0.54432297
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.0 left=false gap=-0.49445486
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.25 left=false gap=-0.5240545
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.5 left=false gap=-0.5403247
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.75 left=false gap=-0.54432297
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.0 left=false gap=-0.53655124
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.25 left=false gap=-0.5170398
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.5 left=false gap=-0.4854231
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.75 left=false gap=-0.44105196
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.0 left=false gap=-0.38311648
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.25 left=false gap=-0.31078315
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.5 left=false gap=-0.22336292
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.75 left=false gap=-0.12050915
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.3036877
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.32213426
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.33190775
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.33337235
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.3264705
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.31078184
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.5 left=false gap=-0.28556728
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.75 left=false gap=-0.24986386
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=2.0 left=false gap=-0.20261478
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=2.25 left=false gap=-0.14278626
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=2.5 left=false gap=-0.06956816
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.052894592
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.043987036
+
+	at com.chaogarden.client.TriangleTransitionRigTest.main(TriangleTransitionRigTest.java:32)
+
+> Task :triangleTransitionRigTest FAILED
+
+> Task :trumpetRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+FAILURE GROUPS {}
+WORST {}
+Trumpet samples=1527750 headChecks=998550 failures=0 headPixels=0.55119514 groundPixels=1.047636 shoulderPixels=1.2843385 gripBlocks=4.942718E-7 mouthBlocks=0.037500054 handHeadPixels=0.21746564
+
+
+> Task :trumpetTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Failure tick distribution {0=11, 1=8, 2=6, 3=4, 4=3, 6=5}
+Exception in thread "main" Trumpet transition samples=267696 failures=37 minHandHeadPixels=-0.58569264
+mixed_1_4 pitch=-25.0 yaw=-12.0 age=100 seenAt=6 t=6.0 left=false gap=-0.27461374
+mixed_1_4 pitch=-25.0 yaw=-12.0 age=100 seenAt=6 t=6.25 left=false gap=-0.15473783
+mixed_1_4 pitch=-25.0 yaw=-12.0 age=100 seenAt=6 t=6.5 left=false gap=-0.032362103
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.0 left=false gap=-0.49445486
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.25 left=false gap=-0.53247344
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.5 left=false gap=-0.5591986
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.75 left=false gap=-0.5762247
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.0 left=false gap=-0.58476925
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.25 left=false gap=-0.58569264
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.5 left=false gap=-0.5795392
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.75 left=false gap=-0.5666001
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.0 left=false gap=-0.54700065
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.25 left=false gap=-0.5207696
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.5 left=false gap=-0.487944
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.75 left=false gap=-0.4486549
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.0 left=false gap=-0.4032067
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.25 left=false gap=-0.3521284
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.5 left=false gap=-0.2962551
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.75 left=false gap=-0.23669672
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=4.0 left=false gap=-0.17486954
+java.lang.AssertionError: Trumpet transition samples=267696 failures=37 minHandHeadPixels=-0.58569264
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=4.25 left=false gap=-0.112454414
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=4.5 left=false gap=-0.051363707
+mixed_1_4 pitch=-25.0 yaw=-12.0 age=100 seenAt=6 t=6.0 left=false gap=-0.27461374
+mixed_1_4 pitch=0.0 yaw=0.0 age=300 seenAt=6 t=6.0 left=false gap=-0.21280062
+mixed_1_4 pitch=0.0 yaw=0.0 age=300 seenAt=6 t=6.25 left=false gap=-0.11627638
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.3036877
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.3164711
+mixed_1_4 pitch=-25.0 yaw=-12.0 age=100 seenAt=6 t=6.25 left=false gap=-0.15473783
+mixed_1_4 pitch=-25.0 yaw=-12.0 age=100 seenAt=6 t=6.5 left=false gap=-0.032362103
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.0 left=false gap=-0.49445486
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.31575525
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.30337548
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.2810663
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.25046206
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.25 left=false gap=-0.53247344
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.5 left=false gap=-0.5591986
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=0.75 left=false gap=-0.5762247
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.0 left=false gap=-0.58476925
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.25 left=false gap=-0.58569264
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.5 left=false gap=-0.5795392
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=1.75 left=false gap=-0.5666001
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.0 left=false gap=-0.54700065
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.25 left=false gap=-0.5207696
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.5 left=false gap=-0.487944
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=2.75 left=false gap=-0.4486549
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.0 left=false gap=-0.4032067
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.25 left=false gap=-0.3521284
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.5 left=false gap=-0.2962551
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=3.75 left=false gap=-0.23669672
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=4.0 left=false gap=-0.17486954
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=4.25 left=false gap=-0.112454414
+mixed_1_4 pitch=-25.0 yaw=12.0 age=100 seenAt=0 t=4.5 left=false gap=-0.051363707
+mixed_1_4 pitch=0.0 yaw=0.0 age=300 seenAt=6 t=6.0 left=false gap=-0.21280062
+mixed_1_4 pitch=0.0 yaw=0.0 age=300 seenAt=6 t=6.25 left=false gap=-0.11627638
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.3036877
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.3164711
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.31575525
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.30337548
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.2810663
+mixed_1_4 pitch=25.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.25046206
+
+	at com.chaogarden.client.TrumpetTransitionRigTest.main(TrumpetTransitionRigTest.java:31)
+
+> Task :trumpetTransitionRigTest FAILED
+
+> Task :visibleTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+PASS: 336 visible transition checks across 112 form/age/history cases; nearby blending preserved, stale offscreen pose discarded
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':triangleTransitionRigTest'.
+> Process 'command '/workspace/.tools/jdk-21.0.9+10/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':trumpetTransitionRigTest'.
+> Process 'command '/workspace/.tools/jdk-21.0.9+10/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 11m 42s
+43 actionable tasks: 36 executed, 7 up-to-date

@@ -45,25 +45,35 @@ def crests(template):
     # not the six-spiked Run-first-evolution form used by the baby prototype.
     root=[pose([0,-6.45,.75],[1.15,1.3,1.2],[-10,0,0]),
           pose([0,-6.65,1.1],[1.25,2.1,2.0],[-20,0,0]),
-          pose([0,-6.6,.8],[1.1,2.2,1.5],[-15,0,0]),
-          pose([0,-6.65,.4],[1.25,2.0,1.2],[-5,0,0]),
+          pose([0,-6.6,3.35],[1.1,2.15,.9],[-55,0,0]),
+          pose([0,-6.35,.45],[5.8,1.5,5.0]),
           pose([0,-6.65,1.3],[1.5,2.1,2.8],[-25,0,0]),
           pose([0,-6.5,.6],[1.4,1.55,1.6],[-10,0,0]),
-          pose([0,-6.65,.35],[1.25,1.9,1.25]),
+          pose([0,-6.6,-.1],[3.2,1.85,1.2],[40,0,0]),
           pose([0,-6.15,1.0],[1.7,1.0,2.0],[-12,0,0]),
           pose([0,-6.5,.2],[1.45,1.55,1.45],[20,0,0]),
           pose([0,-6.25,.6],[1.55,1.0,1.6],[15,0,0])]
     tip=[pose([0,-7.35,1.0],[.8,1.1,.9],[-12,0,0]),
          pose([0,-7.6,2.05],[.7,1.1,2.8],[-24,0,0]),
-         pose([0,-7.8,1.7],[.55,.8,2.5],[-18,0,0]),
-         pose([0,-8.15,1.25],[.7,1.3,1.6],[-15,0,0]),
+         pose([0,-7.9,4.0],[.55,1.55,.65],[16,0,0]),
+         pose([0,-7.55,.85],[3.25,1.5,3.0],[5,0,0]),
          pose([0,-7.5,2.7],[.9,1.0,2.2],[-35,0,0]),
          pose([0,-7.5,1.1],[.85,.85,1.15],[-18,0,0]),
-         pose([0,-8.0,.65],[.65,1.15,.9],[-10,0,0]),
+         pose([0,-7.85,-.2],[1.75,1.7,.9],[-32,0,0]),
          pose([0,-6.6,2.0],[1.15,.65,1.75],[-8,0,0]),
          pose([0,-7.0,-1.1],[.95,.8,2.3],[22,0,0]),
          pose([0,-6.7,-.15],[1.0,.6,1.15],[25,0,0])]
-    hook=[pose([0,-5.65,-2.3],[.12,.12,.12]) for _ in TARGETS]
+    # Local -Z is the face and +Z the rear. Follow the user's subsequent red
+    # direction/length edit: Swim grows beyond the rear roof edge, then its
+    # short upper piece turns upright/slightly forward. Power's lower piece
+    # rises forward, then its short upper piece curls back, an upright hook.
+    # Power+Swim covers most of the unchanged skull roof, then narrows twice
+    # into a stepped cone. Reuse the third piece rather than adding topology.
+    # Its inactive targets stay fully buried centrally; the former front
+    # dormant position would detach while rising into the Power+Swim apex.
+    hook=[pose([0,-4.5,.6],[.12,.12,.12]) for _ in TARGETS]
+    hook[0]=pose([0,-5.65,.6],[.12,.12,.12])
+    hook[3]=pose([0,-8.65,1.15],[1.0,1.0,1.0],[10,0,0])
     hook[8]=pose([0,-6.35,-2.3],[.65,.65,1.1],[25,0,0])
     return [crown(template,'neutral_crown_root',root),crown(template,'neutral_crown_tip',tip,True),
             crown(template,'neutral_fly_hook_tip',hook,True)]
@@ -109,16 +119,16 @@ def author():
         'feature_body_uv':BODY_UV,'feature_tip_uv':TIP_UV,
         'reserved_pixels':{'feature_body':[127,63],'feature_tip':[126,63]},
         'scope':'Ordinary Neutral-aligned adult with locked Normal first evolution only; existing identities and other paths unchanged.',
-        'reference':'Fresh independently operated Chao Island viewer: all9 Normal first-type mature corners, front/side/back/above/below. Original addon cuboids supply block construction only.',
+        'reference':'Independently operated Chao Island viewer, refreshed in0.25.58 for Swim, Power+Swim and Power at young/half/mature stages and rotated views; subsequent user red-line direction/length edit takes priority. Original addon cuboids supply block construction only.',
         'source_geometry_copied':False,
-        'approximation':'Smooth changing skull deliberately replaced by fixed original head and 2-cuboid crown with small separate Fly hook tip; modest compact limb deltas. Original planar pink wings retained.',
+        'approximation':'Fixed original head plus three reused crown cuboids: rear Swim stalk with short upright/slightly-forward tip, forward-then-back upright Power hook, and wide-to-narrow three-step Power+Swim cone; other visible mature endpoints and limbs retained. Dormant third piece moved inside the skull for connected growth. Original planar pink wings retained.',
         'provisional_rates':'960 net current level-bar progress per signed axis; age independent; no original-game timing claim.'}
     outbones={b['name']:b for b in data['bones']}
     for b in original['bones']:
         if b['name'].startswith(('skull','expression_','emotion_')):assert outbones[b['name']]==b,b['name']
     OUT.write_text(json.dumps(data,separators=(',',':'))+'\n')
     refs=['chao_run.geo.json','chao_power.geo.json','chao_fly.geo.json','chao_swim.geo.json']
-    manifest={'version':'0.25.56','model':str(OUT.relative_to(ASSETS)),'sha256':sha(OUT),
+    manifest={'version':'0.25.58','model':str(OUT.relative_to(ASSETS)),'sha256':sha(OUT),
         'source_model_sha256':sha(source),'target_names':TARGETS,'canonical_head_and_face_unchanged':True,
         'shared_animation_attachment_rig':True,'source_geometry_copied':False,
         'construction_reference_sha256':{n:sha(ROOT/'art/imported_chao/models'/n) for n in refs}}

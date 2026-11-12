@@ -1,0 +1,189 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "scope": "Second corrected preflight only, not final accepted cohort. Read-only review of13actualoriginalPNGs: fiveHero/Normalprincipalforms\u00d7left/back plus Power/Fly/Swimfront.",
+  "source_log": "/workspace/.setup/morph058-client-wingcheck.log",
+  "source_log_sha256": "878ebb2b392b0562a78c9297a0c5c10ac60490ac6d59345ede7615b1f0abbbfa",
+  "reviewed_originals": [
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-00-hero_normal_normal_age100-left-t000-f0039.png",
+      "sha256": "a69e2788958e7af2c8c99b41c887983e5a66a2c81dcef460abe5f0879f149b2f",
+      "view": "left",
+      "case": 0,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-00-hero_normal_normal_age100-back-t000-f0085.png",
+      "sha256": "74e14eb96ff8bb951b5f08e286d0b2da548ac5c6b95c3aed0d22cc256c2276a7",
+      "view": "back",
+      "case": 0,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-01-hero_normal_run_age100-left-t000-f0039.png",
+      "sha256": "20257f43a912ea0979c2076582b7064f1f8c449443f0775538425c87d543fa64",
+      "view": "left",
+      "case": 1,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-01-hero_normal_run_age100-back-t000-f0085.png",
+      "sha256": "700f2403dff60447fc50fee1aef08ceba0263a8005a47e1c0e42d5cf7e5f5034",
+      "view": "back",
+      "case": 1,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-02-hero_normal_power_age100-left-t000-f0039.png",
+      "sha256": "2397b687c01cb03a28ded4ad845ce555dd78114b3385afb8d2c2148e4ce17505",
+      "view": "left",
+      "case": 2,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-02-hero_normal_power_age100-back-t000-f0085.png",
+      "sha256": "52a8f3139fd7a8ca98a03d54c3d30fe972ddc50b33668775eb083e4d42ba46c0",
+      "view": "back",
+      "case": 2,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-03-hero_normal_fly_age100-left-t000-f0039.png",
+      "sha256": "57ad5e4b633a4f4940edaf7ead732a55c521851841415d1648365f7e5fe43e37",
+      "view": "left",
+      "case": 3,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-03-hero_normal_fly_age100-back-t000-f0085.png",
+      "sha256": "97139e265cf5bb0365cc44d7107390d0ad5dc238d15c46323b885e24d7e2c1f0",
+      "view": "back",
+      "case": 3,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-04-hero_normal_swim_age100-left-t000-f0039.png",
+      "sha256": "a5f258b23d69dddd1dbcdc464eaca9cc0916e05c9199e6823743a89a9c547479",
+      "view": "left",
+      "case": 4,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-04-hero_normal_swim_age100-back-t000-f0085.png",
+      "sha256": "8fff26382c63b7b145234d5283387bb85c8350d9865b3bafbde15ab77838739c",
+      "view": "back",
+      "case": 4,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-02-hero_normal_power_age100-front-t000-f0016.png",
+      "sha256": "4333cece10e1678724a0c0058a77ce1e59f863fc5665442534fb7ebc61f162a8",
+      "view": "front",
+      "case": 2,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-03-hero_normal_fly_age100-front-t000-f0016.png",
+      "sha256": "265deda8087bd8b491f3b064c4524e03bd9e0322ce09e076cb9c2cd04caad169",
+      "view": "front",
+      "case": 3,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-04-hero_normal_swim_age100-front-t000-f0016.png",
+      "sha256": "74572396c8d64e2622610b611ae74acbb2eb74de61aea8f1de6f6d36e80094dc",
+      "view": "front",
+      "case": 4,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    }
+  ],
+  "separately_opened_full_resolution": [
+    "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-01-hero_normal_run_age100-back-t000-f0085.png",
+    "/workspace/.setup/morph058-client-wingcheck/screenshots/morph058-live-03-hero_normal_fly_age100-front-t000-f0016.png"
+  ],
+  "review_sheet": {
+    "path": "/workspace/.setup/morph058-material/preflight-visual-review.png",
+    "sha256": "902f067a93429390a1d8a4ebf588c668fce66a5d72829ef2bc9a589729889990",
+    "method": "Uniform600\u00d7600crop at420,220 then360\u00d7360resize and labels only; originalsunchanged"
+  },
+  "observations": [
+    "All five natural Hero/Normal principal forms keep a white/inherited-color lower head section and fixed-looking original square head/face; no torn or distorted eye was observed.",
+    "Power caps and extremities read blue/violet with lavender middle accents, a fuchsia halo and a golden belly; gold wings have a smaller white proximal region.",
+    "Run has blue upper points with distinct white lower roots; the longer thin wings read mint. The hollow rectangular end frame from the first preflight is gone in the corrected back and side views.",
+    "Balanced has cyan-blue buds and white/gold compact wings; Fly has visibly thin white stalks below substantial lavender caps and broader pale wings with ochre tips.",
+    "Swim has substantially larger turquoise upper caps above white roots, teal extremities, mint belly and white/lemon wings.",
+    "All ten reviewed principal side/back frames show intentionally cut wing corners without the opaque thickness outline; no disconnected wing root or accidental filled corner was seen.",
+    "Natural lighting shades white sides gray and recolored wing sides darker, while the surface pigment family remains consistent."
+  ],
+  "blocking_findings": [],
+  "limits": [
+    "Mature static principal natural forms only; no intermediate age/training or color/shiny/accessory variants in this13-image audit",
+    "No motion, touch input, shader or remote multiplayer assessment",
+    "Geometry dimensions, alpha/persistence/identity invariants require root-coordinated tests",
+    "The final77-case cohort will be audited independently; thispreflightis not substituted forfinal evidence"
+  ]
+}

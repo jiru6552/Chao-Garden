@@ -1,0 +1,31 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateModMetadata UP-TO-DATE
+
+> Task :processResources
+Chao dimension fixture: excluded from normal runtime
+Chao dimension fixture output: /workspace/Chao-Garden/build/resources/main/data/minecraft/worldgen/world_preset/flat.json; exists=false; resource destination=/workspace/Chao-Garden/build/resources/main
+
+> Task :classes
+> Task :jarJar NO-SOURCE
+
+> Task :jar
+Production JAR integrity: complete central directory, unique entries and all CRCs verified; entries=8990; bytes=31134161; sha256=ed3f32e0f256a513bdc83732ad1c746834bce9840dfaabe3223b9c01d193eaa3
+
+> Task :downloadAssets UP-TO-DATE
+> Task :writeClientLegacyClasspath UP-TO-DATE
+> Task :prepareClientRun UP-TO-DATE
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 11s
+8 actionable tasks: 2 executed, 6 up-to-date

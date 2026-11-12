@@ -1,0 +1,319 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "blocking_findings": [],
+  "reviewer": "/root/accept_ui058",
+  "scope": "Current final POST-DEPTH .58 cohort only; all25 UI/world originals for45..47, no pre-depth capture promoted",
+  "source_log": {
+    "path": "/workspace/.setup/morph058-client-final.log",
+    "sha256": "cc4e0990a8afbe7bf2cea29498c1a3ff51f8677e28b95372a0e34b845e09eb12"
+  },
+  "literal_cohort_completion": "[20:33:43] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_VISUAL_COMPLETE requestedCases=77 renderedCases=77 skippedCases=0 start=0 limit=77 baseline=false captures=593 saved=593 epochMillis=1794515623107 normal20TPS=true audioListening=false output=/workspace/.setup/morph058-client-final",
+  "literal_build_completion": "BUILD SUCCESSFUL in 8m 15s",
+  "jar_sha256": "ed3f32e0f256a513bdc83732ad1c746834bce9840dfaabe3223b9c01d193eaa3",
+  "runtime_mode": "development_classpath; frozen production/JAR binding separately maintained by root",
+  "source_index": {
+    "path": "/workspace/.setup/morph058-visual-ui/source-index.json",
+    "sha256": "7de93493bfa641596ae54e9f31310d5dd4311ee3403385107833b095682212a9"
+  },
+  "original_count": 25,
+  "ui_original_count": 16,
+  "world_original_count": 9,
+  "all_originals_hash_verified": true,
+  "reviewed_sheets": [
+    {
+      "path": "/workspace/.setup/morph058-visual-ui/case45-ui-full-frame-half-scale.png",
+      "sha256": "e37d80a05e1b7deadd5cc016973eaeb7076959ef5001f82902a20e2a3d592702"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-ui/case46-ui-full-frame-half-scale.png",
+      "sha256": "4c63a6e6722cb8b7e8fb64faf25bf438241a08416fa559c400dccb1c49b8aeb9"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-ui/case47-ui-full-frame-half-scale.png",
+      "sha256": "7bb7bdb387f9802fa36ec885f49f6b27d06d9fb832133d1ebf58713ae87bb450"
+    },
+    {
+      "path": "/workspace/.setup/morph058-visual-ui/world-views-uniform-crop.png",
+      "sha256": "c2cfe4d7e78af25fb17e16af5135ac8a9495ab277e718333b3b66fae9592f643"
+    }
+  ],
+  "all25_sheet_cells_pixel_compared_to_prescribed_original_crop_resize": true,
+  "actual_full_resolution_held_drag_reopens": [
+    {
+      "case": 45,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "sha256": "3d5f86fb6eddab2f2fb41f37541e502602e4cc9f614bb6c44ea01eaef6fad8d1",
+      "visible_maturity_percent": 59.4,
+      "read_from_actual_full_resolution_png": true
+    },
+    {
+      "case": 47,
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "sha256": "bdbc5c1238729c08b466d4e23102519b0f91f8d0b0f981e96ec59e58d3ff6889",
+      "visible_maturity_percent": 73.0,
+      "read_from_actual_full_resolution_png": true
+    }
+  ],
+  "reviewed_originals": [
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "case": 45,
+      "ui": true,
+      "sha256": "4a7187edff202481c4387aaca1a4eb8d63c507fdb9043b8056db4e30177bd6b5",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:44] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-adult-alignment-locked.png case=45 sha256=4a7187edff202481c4387aaca1a4eb8d63c507fdb9043b8056db4e30177bd6b5 epochMillis=1794515384478"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "case": 45,
+      "ui": true,
+      "sha256": "2ff02235ae6badc74aa0fbec7193f0da22f218e961c0b75e32f8c84c2073dbc8",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:46] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-adult-lock-tap-feedback.png case=45 sha256=2ff02235ae6badc74aa0fbec7193f0da22f218e961c0b75e32f8c84c2073dbc8 epochMillis=1794515386149"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-before.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-before.png",
+      "case": 45,
+      "ui": true,
+      "sha256": "e6bd23e53514016e621db8108972c45070dfecb9e119210a80d3cb6d6f2876a5",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:47] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-before.png case=45 sha256=e6bd23e53514016e621db8108972c45070dfecb9e119210a80d3cb6d6f2876a5 epochMillis=1794515387162"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "case": 45,
+      "ui": true,
+      "sha256": "3d5f86fb6eddab2f2fb41f37541e502602e4cc9f614bb6c44ea01eaef6fad8d1",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:47] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-drag-intermediate.png case=45 sha256=3d5f86fb6eddab2f2fb41f37541e502602e4cc9f614bb6c44ea01eaef6fad8d1 epochMillis=1794515387418"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-young.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-young.png",
+      "case": 45,
+      "ui": true,
+      "sha256": "995c95ad226a23641e2e2463cb082f4e3257393cc205eb711908b4b789b0b372",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:48] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-young.png case=45 sha256=995c95ad226a23641e2e2463cb082f4e3257393cc205eb711908b4b789b0b372 epochMillis=1794515388899"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "case": 45,
+      "ui": true,
+      "sha256": "552529b80d3d873acb850c88f7e3a4df3f74002f2c8bcd34ace1e4d09edde3c0",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:50] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-ui-maturity-safe-endpoint.png case=45 sha256=552529b80d3d873acb850c88f7e3a4df3f74002f2c8bcd34ace1e4d09edde3c0 epochMillis=1794515390654"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-front-t151-f0028.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-front-t151-f0028.png",
+      "case": 45,
+      "ui": false,
+      "sha256": "3e32040f4c0d33c072c1df5b4c18631ad4bf27d63240910bd41c401401689a1a",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:51] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-front-t151-f0028.png case=45 angle=front tick=151 sha256=3e32040f4c0d33c072c1df5b4c18631ad4bf27d63240910bd41c401401689a1a wallNanos=12708763486350 epochMillis=1794515391222"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-left-t151-f0051.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-left-t151-f0051.png",
+      "case": 45,
+      "ui": false,
+      "sha256": "3a58e91a596f5366f9bef624c87227e057751ceafc207fcd194a9efd704c4d8f",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:52] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-left-t151-f0051.png case=45 angle=left tick=151 sha256=3a58e91a596f5366f9bef624c87227e057751ceafc207fcd194a9efd704c4d8f wallNanos=12709546940525 epochMillis=1794515392006"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-45-creative_hero_normal_adult_lock_maturity-back-t151-f0074.png",
+      "file": "morph058-live-45-creative_hero_normal_adult_lock_maturity-back-t151-f0074.png",
+      "case": 45,
+      "ui": false,
+      "sha256": "35f1a82a32ed0d3002b63c6327f5e9e1f96ae2b94a3ed0dd68bd666c7929f776",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:52] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-45-creative_hero_normal_adult_lock_maturity-back-t151-f0074.png case=45 angle=back tick=151 sha256=35f1a82a32ed0d3002b63c6327f5e9e1f96ae2b94a3ed0dd68bd666c7929f776 wallNanos=12710298246316 epochMillis=1794515392757"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-46-survival_hero_normal_adult_readonly-ui-survival-readonly.png",
+      "file": "morph058-live-46-survival_hero_normal_adult_readonly-ui-survival-readonly.png",
+      "case": 46,
+      "ui": true,
+      "sha256": "7ad6cdef41669851494e715f5ce7e669cf69d6873942c9ac43987b2aacb92d12",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:54] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-46-survival_hero_normal_adult_readonly-ui-survival-readonly.png case=46 sha256=7ad6cdef41669851494e715f5ce7e669cf69d6873942c9ac43987b2aacb92d12 epochMillis=1794515394421"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-46-survival_hero_normal_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "file": "morph058-live-46-survival_hero_normal_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "case": 46,
+      "ui": true,
+      "sha256": "5c46120ebf126e44ce07ffb58a8047bd273fb599858d3b084f0ac9d614a063ed",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:56] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-46-survival_hero_normal_adult_readonly-ui-survival-alignment-tap-feedback.png case=46 sha256=5c46120ebf126e44ce07ffb58a8047bd273fb599858d3b084f0ac9d614a063ed epochMillis=1794515396088"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-46-survival_hero_normal_adult_readonly-ui-maturity-before.png",
+      "file": "morph058-live-46-survival_hero_normal_adult_readonly-ui-maturity-before.png",
+      "case": 46,
+      "ui": true,
+      "sha256": "4c28ec8a8cbe026af025ba5fd8468939dd03416153c609543db2c56c56b2064d",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:57] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-46-survival_hero_normal_adult_readonly-ui-maturity-before.png case=46 sha256=4c28ec8a8cbe026af025ba5fd8468939dd03416153c609543db2c56c56b2064d epochMillis=1794515397136"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-46-survival_hero_normal_adult_readonly-ui-maturity-survival-denied.png",
+      "file": "morph058-live-46-survival_hero_normal_adult_readonly-ui-maturity-survival-denied.png",
+      "case": 46,
+      "ui": true,
+      "sha256": "20ae2b0935d98ec3a70fff33007c3374744d4f8939dd7c9feb0b9cf305e70d15",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:58] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-46-survival_hero_normal_adult_readonly-ui-maturity-survival-denied.png case=46 sha256=20ae2b0935d98ec3a70fff33007c3374744d4f8939dd7c9feb0b9cf305e70d15 epochMillis=1794515398860"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-46-survival_hero_normal_adult_readonly-front-t109-f0028.png",
+      "file": "morph058-live-46-survival_hero_normal_adult_readonly-front-t109-f0028.png",
+      "case": 46,
+      "ui": false,
+      "sha256": "3a688b3f80ccd0827b0db45edcda52dcdd58acc2b96432cda358175fcf47f513",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:29:59] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-46-survival_hero_normal_adult_readonly-front-t109-f0028.png case=46 angle=front tick=109 sha256=3a688b3f80ccd0827b0db45edcda52dcdd58acc2b96432cda358175fcf47f513 wallNanos=12716977561902 epochMillis=1794515399437"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-46-survival_hero_normal_adult_readonly-left-t109-f0051.png",
+      "file": "morph058-live-46-survival_hero_normal_adult_readonly-left-t109-f0051.png",
+      "case": 46,
+      "ui": false,
+      "sha256": "0bbaa69669d17fbe645e1d0aab53db7b087d35621b121cb3a4327104c3a18413",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:00] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-46-survival_hero_normal_adult_readonly-left-t109-f0051.png case=46 angle=left tick=109 sha256=0bbaa69669d17fbe645e1d0aab53db7b087d35621b121cb3a4327104c3a18413 wallNanos=12717746225333 epochMillis=1794515400205"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-46-survival_hero_normal_adult_readonly-back-t109-f0074.png",
+      "file": "morph058-live-46-survival_hero_normal_adult_readonly-back-t109-f0074.png",
+      "case": 46,
+      "ui": false,
+      "sha256": "4bf9414eec254c6578877b114f4f7abef545a469a5e4747c204c924056984b98",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:00] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-46-survival_hero_normal_adult_readonly-back-t109-f0074.png case=46 angle=back tick=109 sha256=4bf9414eec254c6578877b114f4f7abef545a469a5e4747c204c924056984b98 wallNanos=12718515586627 epochMillis=1794515400975"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "case": 47,
+      "ui": true,
+      "sha256": "dc35bd2ad889511391a8e8ffe1203ec091f1838d7ae9aa680176bf271bb5b5a4",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:02] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-ui-baby-alignment.png case=47 sha256=dc35bd2ad889511391a8e8ffe1203ec091f1838d7ae9aa680176bf271bb5b5a4 epochMillis=1794515402709"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "case": 47,
+      "ui": true,
+      "sha256": "44d559e13fdb2e036a95bc55180be8864f8c5002357afc7ef698205d7cbd509d",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:04] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png case=47 sha256=44d559e13fdb2e036a95bc55180be8864f8c5002357afc7ef698205d7cbd509d epochMillis=1794515404854"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "case": 47,
+      "ui": true,
+      "sha256": "5f1616c820ebc88fdf3d99da668d8cda8e39a093cd626089d14eb8743f7b2c73",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:07] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-before.png case=47 sha256=5f1616c820ebc88fdf3d99da668d8cda8e39a093cd626089d14eb8743f7b2c73 epochMillis=1794515407610"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "case": 47,
+      "ui": true,
+      "sha256": "bdbc5c1238729c08b466d4e23102519b0f91f8d0b0f981e96ec59e58d3ff6889",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:07] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png case=47 sha256=bdbc5c1238729c08b466d4e23102519b0f91f8d0b0f981e96ec59e58d3ff6889 epochMillis=1794515407792"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "case": 47,
+      "ui": true,
+      "sha256": "031b35a26e750ea1ae8aed1810281351844f9aacc545fbc43f87bfe7766493fe",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:09] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-young.png case=47 sha256=031b35a26e750ea1ae8aed1810281351844f9aacc545fbc43f87bfe7766493fe epochMillis=1794515409306"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "case": 47,
+      "ui": true,
+      "sha256": "df169ecdbfdf8313b46ed5e1c0fccc98767118d1a3361f24b1440346e5981063",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:11] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png case=47 sha256=df169ecdbfdf8313b46ed5e1c0fccc98767118d1a3361f24b1440346e5981063 epochMillis=1794515411107"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-front-t188-f0028.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-front-t188-f0028.png",
+      "case": 47,
+      "ui": false,
+      "sha256": "7335f4ff5786a6915725d4e51ad786025a9c21a383916a77a59cfff28980b4e9",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:11] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-front-t188-f0028.png case=47 angle=front tick=188 sha256=7335f4ff5786a6915725d4e51ad786025a9c21a383916a77a59cfff28980b4e9 wallNanos=12729172880735 epochMillis=1794515411632"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-left-t188-f0051.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-left-t188-f0051.png",
+      "case": 47,
+      "ui": false,
+      "sha256": "b2a7d3454980502464b8b40a7212646f66ee3b709afbe320b1f3afa47011a201",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:12] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-left-t188-f0051.png case=47 angle=left tick=188 sha256=b2a7d3454980502464b8b40a7212646f66ee3b709afbe320b1f3afa47011a201 wallNanos=12729928047952 epochMillis=1794515412387"
+    },
+    {
+      "path": "/workspace/.setup/morph058-client-final/screenshots/morph058-live-47-creative_baby_alignment_maturity_regression-back-t188-f0074.png",
+      "file": "morph058-live-47-creative_baby_alignment_maturity_regression-back-t188-f0074.png",
+      "case": 47,
+      "ui": false,
+      "sha256": "accbaa8d2796463d3c9a006e9730b63db32408291d169286b2013fe357114975",
+      "source_log": "/workspace/.setup/morph058-client-final.log",
+      "literal_capture_line": "[20:30:13] [IO-Worker-1/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_CAPTURE morph058-live-47-creative_baby_alignment_maturity_regression-back-t188-f0074.png case=47 angle=back tick=188 sha256=accbaa8d2796463d3c9a006e9730b63db32408291d169286b2013fe357114975 wallNanos=12730707580708 epochMillis=1794515413167"
+    }
+  ],
+  "case_native_and_render_proofs": {
+    "45": {
+      "NATIVE_COMPLETE": "[20:29:52] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_NATIVE_COMPLETE 45 name=creative_hero_normal_adult_lock_maturity baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,151,151,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,56,0,0,28,70,70,28,0,9993,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,-1,-1,-1,-1,-1,1,1065353216,0,0,0,151,1,0,0,0;;normal;normal epochMillis=1794515392925",
+      "RENDER_COMPLETE": "[20:29:52] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_RENDER_COMPLETE 45 name=creative_hero_normal_adult_lock_maturity baseline=false angles=3 worldFrames=81 actorFrames=81 captures=3 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=66 uiCaptures=6 epochMillis=1794515392925",
+      "UI_NATIVE_VERIFIED": "[20:29:50] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_NATIVE_VERIFIED case=45 creative=true adult=true alignment=1.0 maturity=1.2 saveReloadExact=true stagePreserved=true epochMillis=1794515390573"
+    },
+    "46": {
+      "NATIVE_COMPLETE": "[20:30:01] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_NATIVE_COMPLETE 46 name=survival_hero_normal_adult_readonly baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,109,109,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,40,0,0,20,50,50,20,0,9995,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072609626,-1841427507,-1,-1,-1,-1,-1,1,1065353216,0,0,0,109,1,0,0,0;;normal;normal epochMillis=1794515401139",
+      "RENDER_COMPLETE": "[20:30:01] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_RENDER_COMPLETE 46 name=survival_hero_normal_adult_readonly baseline=false angles=3 worldFrames=81 actorFrames=81 captures=3 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=51 uiCaptures=4 epochMillis=1794515401139",
+      "UI_NATIVE_VERIFIED": "[20:29:58] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_NATIVE_VERIFIED case=46 creative=false adult=true alignment=1.0 maturity=0.9601262 saveReloadExact=true stagePreserved=true epochMillis=1794515398778"
+    },
+    "47": {
+      "NATIVE_COMPLETE": "[20:30:13] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_NATIVE_COMPLETE 47 name=creative_baby_alignment_maturity_regression baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,188,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.9a9fbep-1,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,72,0,0,0,90,90,36,0,9991,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672538,-1529008350,2,-1,-1,-1,-1,0,0,0,0,0,188,1,0,0,0;;normal;normal epochMillis=1794515413338",
+      "RENDER_COMPLETE": "[20:30:13] [Render thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_RENDER_COMPLETE 47 name=creative_baby_alignment_maturity_regression baseline=false angles=3 worldFrames=81 actorFrames=82 captures=3 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=91 uiCaptures=6 epochMillis=1794515413337",
+      "UI_NATIVE_VERIFIED": "[20:30:11] [Server thread/INFO] [co.ch.cl.MorphRefinementVisualSmoke058/]: MORPH058_UI_NATIVE_VERIFIED case=47 creative=true adult=false alignment=0.802 maturity=0.990125 saveReloadExact=true stagePreserved=true epochMillis=1794515411012"
+    }
+  },
+  "observations": [
+    "All16 UI captures and9 world views were personally inspected via the four exact crop/resize sheets; both held-drag originals were also reopened full resolution.",
+    "Creative Hero/Normal adult Profile clearly shows ADULT ALIGNMENT: LOCKED and Hero+100.0. Attempt feedback remains at Hero; actual forged -1000 alignment request and final native verification preserve alignment1.0.",
+    "Creative adult Stats show80.0% before dragging,59.4% in the actual held intermediate capture,25.0% after the lower edit and100.0% at the safe adult endpoint. Label, percentage and thumb remain clear without an overlapping tooltip.",
+    "Survival adult Profile remains locked and the Stats screen provides read-only guidance. Its denied maturity request remains about80.0%; native verification records0.9601262 biological strength rather than the requested250-milli edit. Existing passive age ticks explain the small numeric increment.",
+    "Creative baby Profile changes from Neutral0.0 to Hero+80.2, with corresponding white Hero skin/green accents and pink older-baby orb. Stats show80.0% initially,73.0% at the actual held intermediate,25.0% after reduction and99.0% at the baby cap. It remains Child in the screen and final world views.",
+    "All three actual UI_NATIVE_VERIFIED markers assert exact save/reload and preserved stage. Adult native maturity is1.2; baby is0.990125 with alignment0.802. No new first type, cocoon, death or reincarnation is shown by these cases.",
+    "Nine final front/side/back world views retain intact blocky heads/faces, compact limbs and separate halo/orb. These are controlled static views, not a motion/contact proof.",
+    "Case46 alignment-feedback preview has an ordinary closed-eye blink; the eyes are present in its other views. No blocking layout, clipping, missing-face or attachment issue was observed."
+  ],
+  "limitations": [
+    "Read-only visual audit of this current post-depth successful cohort, not a new UI/game invocation or review of the older archived593-image cohort.",
+    "The game helper drives real pointer callbacks and server payload paths on1440x900 GUI scale2; physical touch input on a phone was not tested.",
+    "Native/server rejection and persistence observations rely on literal current successful fixture assertions; no independent remote modified-client, latency or multiplayer test was performed by this reviewer.",
+    "Static world and screen views do not establish every transition, toy contact, shader/resource-pack/full-modpack behavior, full video playback or audio."
+  ],
+  "production_files_modified": false,
+  "game_or_build_invocations_performed_by_reviewer": false
+}

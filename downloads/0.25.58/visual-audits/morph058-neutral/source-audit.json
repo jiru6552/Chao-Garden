@@ -1,0 +1,208 @@
+{
+  "scope": "Neutral056 asset visual refinement in release0.25.58 after subsequent user red-line direction/length steering. No Minecraft/client or library/evolution changes by this agent.",
+  "parent_commit": "6632fd117b790b85d90ee444b50d0ac1758392f6",
+  "unchanged_complete_bones": [
+    "root",
+    "body",
+    "body__cube_0",
+    "foot_left",
+    "foot_left__cube_0",
+    "foot_right",
+    "foot_right__cube_0",
+    "arm_left",
+    "arm_left__cube_0",
+    "arm_left__cube_1",
+    "arm_right",
+    "arm_right__cube_0",
+    "arm_right__cube_1",
+    "wing_left",
+    "wing_left__cube_0",
+    "wing_right",
+    "wing_right__cube_0",
+    "tail",
+    "tail__cube_0",
+    "tail__cube_1",
+    "skull",
+    "skull__cube_0",
+    "skull__cube_1",
+    "skull__cube_2",
+    "skull__cube_3",
+    "emotion_dots",
+    "emotion_dot",
+    "emotion_dot__cube_0",
+    "emotion_exclamation",
+    "emotion_exclamation__cube_0",
+    "emotion_exclamation__cube_1",
+    "emotion_heart",
+    "emotion_heart__cube_0",
+    "emotion_heart__cube_1",
+    "emotion_heart__cube_2",
+    "emotion_question",
+    "emotion_question__cube_0",
+    "emotion_question__cube_1",
+    "emotion_question__cube_2",
+    "emotion_question__cube_3",
+    "emotion_question__cube_4",
+    "emotion_question__cube_5",
+    "emotion_dizzy",
+    "emotion_dizzy__cube_0",
+    "emotion_dizzy__cube_1",
+    "emotion_dizzy__cube_2",
+    "emotion_dizzy__cube_3",
+    "emotion_dizzy__cube_4",
+    "emotion_dizzy__cube_5",
+    "emotion_dizzy__cube_6",
+    "emotion_dizzy__cube_7",
+    "expression_mouth_1",
+    "expression_mouth_2",
+    "expression_mouth_3",
+    "expression_mouth_4",
+    "expression_mouth_5",
+    "expression_mouth_6",
+    "monster_crown"
+  ],
+  "unchanged_original_head_box": [
+    7,
+    6,
+    6
+  ],
+  "unchanged_root_tip_targets": [
+    {
+      "mesh": "neutral_crown_root",
+      "target": 0
+    },
+    {
+      "mesh": "neutral_crown_root",
+      "target": 1
+    },
+    {
+      "mesh": "neutral_crown_root",
+      "target": 4
+    },
+    {
+      "mesh": "neutral_crown_root",
+      "target": 5
+    },
+    {
+      "mesh": "neutral_crown_root",
+      "target": 7
+    },
+    {
+      "mesh": "neutral_crown_root",
+      "target": 8
+    },
+    {
+      "mesh": "neutral_crown_root",
+      "target": 9
+    },
+    {
+      "mesh": "neutral_crown_tip",
+      "target": 0
+    },
+    {
+      "mesh": "neutral_crown_tip",
+      "target": 1
+    },
+    {
+      "mesh": "neutral_crown_tip",
+      "target": 4
+    },
+    {
+      "mesh": "neutral_crown_tip",
+      "target": 5
+    },
+    {
+      "mesh": "neutral_crown_tip",
+      "target": 7
+    },
+    {
+      "mesh": "neutral_crown_tip",
+      "target": 8
+    },
+    {
+      "mesh": "neutral_crown_tip",
+      "target": 9
+    }
+  ],
+  "unchanged_visible_fly_hook_endpoint": true,
+  "dormant_third_piece_relocated_inside_skull": true,
+  "topology": {
+    "unchanged_mesh_count": 3,
+    "positive_rigid_box_count": 8,
+    "ten_targets": true
+  },
+  "actual_viewer_originals_personally_viewed": [
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-swim-age100-side.png",
+      "sha256": "1af7cd864dbaca9f481665d7741ef12b993c2da86c1c6ccacac799b0cf9c9c3d"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-power-swim-age100-front.png",
+      "sha256": "0e4649c9ce8fc54464c1eae665f092dbd9886663b4815680c5677ace82c4bc55"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-power-swim-age100-side.png",
+      "sha256": "8d5baedc5cd8d6adf788870feea28ecc9ebe8a5c4b74c724d2630377a1c0cee9"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-power-age100-side.png",
+      "sha256": "7610f5ab3f01a6a709e8b83bc5596137c0f792cbb8992dc96875f7cec604859a"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-swim-age000-side.png",
+      "sha256": "81dabd7eb2bf21abc375d60663104e86e6c390dc5e3dee30420c8f72f30abcaf"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-swim-age050-side.png",
+      "sha256": "c79cb8395463bb7b14697b769fc28df2a8cd838f07990d14146f9d742b19f543"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-power-swim-age050-side.png",
+      "sha256": "efe5ac638b40c308c8ac935a6054ec7f9a4af91769c6d511eb23ea84a2c4e918"
+    },
+    {
+      "path": "/workspace/.setup/morph058-viewer/neutral-normal-power-age050-side.png",
+      "sha256": "3aa523118f775e3bced0126f2d5ac598eabb377c49a32fccda4b5540f970ebc5"
+    }
+  ],
+  "observations": [
+    "Fresh/half/mature Swim side shows gradual rear/up development, not a forward-pointing crest.",
+    "Power+Swim front/side shows a broad top shoulder narrowing into a centered/rear-biased apex.",
+    "Power side shows a lower shoulder followed by a shorter upper hook.",
+    "The subsequent user red-line edit is authoritative: Swim extends beyond the rear roof edge with a short upper turn upright/slightly forward; Power lower piece rises forward and its short upper piece curls back/up.",
+    "Coordinator visually read the actual user annotation and transcribed relative directions/lengths and approximate model-unit endpoints; original new annotation file was not available to this child. No exact pixel tracing is claimed."
+  ],
+  "authored_approximations": [
+    "Swim lower centerline: base approximately(y=-6.0,z=2.5) to(y=-7.2,z=4.2), followed by a short upright/forward tip ending approximately(y=-8.6,z=3.8).",
+    "Power lower centerline: base approximately(y=-5.9,z=.5) to(y=-7.3,z=-.7); short upper curls to approximately(y=-8.6,z=.25).",
+    "Three-step Power+Swim pyramid unchanged after annotation: lower width5.8/depth5, middle width3.25, apex width1; small flat apex rather than a smooth cone.",
+    "Other visible mature endpoints, limbs, faces, original head, joints and marker bytes retained. Hidden inactive third-piece mature targets moved deeper inside the skull; actual Fly endpoint and fresh visible crown remain unchanged."
+  ],
+  "validation_log": "/workspace/.setup/morph058-neutral/geometry-validation.log",
+  "validation": {
+    "passed_connected_age_axis_samples": 9261,
+    "positive_closed_boxes": 8,
+    "minimum_default_tilted_orb_gap_model_pixels": 0.46420907,
+    "face_protection": "Entire third-piece X/Z footprint stays strictly inside canonical head; any emergence is through roof, never facial/side planes.",
+    "new_direction_assertions": "Actual evaluated upper/lower face centerlines enforce Swim back/up then up/forward and Power forward/up then back/up."
+  },
+  "model_sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+  "source_files": [
+    {
+      "path": "scripts/generate_neutral_morph_02556.py",
+      "sha256": "68724570d94d4e18929d76bae748f700527eff09a24d65494fee5eddf308488b"
+    },
+    {
+      "path": "scripts/validate_neutral_morph_02556.py",
+      "sha256": "439895a9d06a90fae92a78ab1dcb418be226306d2d2da5cc2726adb454d7266d"
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+      "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db"
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/neutral056.json",
+      "sha256": "4f526ee8f11e7dbcf71a4ce5f8783b201d050533b4669d3f57969579a06e7097"
+    }
+  ]
+}

@@ -15,21 +15,31 @@ final class HeroNormalRegionPaint057 {
   // keeps the white body. Changes belong to the cap, extremities, small torso
   // markings, wings and halo; never a Run-first-type green or Power red coat.
   private static final int[] PRIMARY={
-      rgb(42,169,223),rgb(55,184,224),rgb(72,155,235),
-      rgb(54,136,236),rgb(67,172,228),rgb(102,91,238),
-      rgb(120,151,229),rgb(164,153,212),rgb(135,126,231)};
+      rgb(42,170,227),rgb(43,205,193),rgb(61,165,231),
+      rgb(40,140,243),rgb(56,173,228),rgb(78,89,239),
+      rgb(124,153,225),rgb(170,157,215),rgb(126,120,225)};
   private static final int[] SECONDARY={
-      rgb(56,230,161),rgb(88,222,171),rgb(113,221,223),
-      rgb(53,221,170),rgb(113,207,231),rgb(220,101,219),
-      rgb(134,210,211),rgb(198,183,226),rgb(220,125,216)};
+      rgb(48,224,182),rgb(45,179,171),rgb(61,214,211),
+      rgb(40,216,197),rgb(108,207,235),rgb(158,128,235),
+      rgb(133,205,205),rgb(199,184,228),rgb(177,155,229)};
+  // The colored upper tip is independent of the white lower stalk. A broad
+  // violet Power cap must not become the old bright-pink hand stripe.
+  private static final int[] UPPER={
+      rgb(47,181,226),rgb(49,224,207),rgb(75,171,237),
+      rgb(49,142,246),rgb(66,178,232),rgb(116,78,237),
+      rgb(125,155,228),rgb(171,158,219),rgb(135,124,231)};
   private static final int[] BELLY={
       rgb(86,215,221),rgb(158,229,201),rgb(172,232,128),
       rgb(116,155,232),rgb(246,220,72),rgb(239,213,74),
       rgb(180,176,201),rgb(237,214,199),rgb(220,183,111)};
   private static final int[] WING={
-      rgb(207,235,168),rgb(239,226,165),rgb(244,226,112),
-      rgb(139,228,206),rgb(246,216,81),rgb(244,200,77),
-      rgb(211,226,188),rgb(238,218,162),rgb(245,199,85)};
+      rgb(214,232,153),rgb(247,229,89),rgb(250,207,51),
+      rgb(145,229,205),rgb(248,216,47),rgb(251,195,39),
+      rgb(183,207,177),rgb(235,203,139),rgb(239,184,63)};
+  // Approximate colored distal span, not an extracted viewer/game formula.
+  // The actual side/back references show a mostly colored Run/Power blade,
+  // but broad white Fly/Swim roots and a much smaller colored outer region.
+  private static final float[] WING_SPAN={.60f,.35f,.80f,.85f,.50f,.82f,.70f,.25f,.80f};
   private static final int[] HALO={
       rgb(159,239,209),rgb(242,235,175),rgb(246,166,219),
       rgb(46,220,219),rgb(73,173,225),rgb(226,42,237),
@@ -46,7 +56,7 @@ final class HeroNormalRegionPaint057 {
       secondary=blend(in.accent,naturalSecondary,age);
       // Canonical baby atlases retain pink wings even for their Hero coat;
       // the actual Hero/Normal young reference has yellow wings.
-      wing=blend(rgb(244,205,84),corner(WING,rp,sf),age);
+      wing=blend(rgb(248,216,47),corner(WING,rp,sf),age);
       belly=blend(YOUNG_BELLY,corner(BELLY,rp,sf),age);
       back=primary;
     } else {
@@ -57,13 +67,14 @@ final class HeroNormalRegionPaint057 {
       float value=.84f+.16f*max(naturalPrimary)/255f;
       primary=blend(in.accent,tone(accent,value),age);
       secondary=blend(in.accent,lighten(accent,.22f),age);
+      wing=contrastingCoat?in.accent:tone(body,.72f);
       belly=contrastingCoat?in.accent:tone(body,.75f);
       back=contrastingCoat?in.accent:tone(body,.82f);
     }
     // Hero/Normal uses a pale-cyan fresh halo; mature hue depends on BOTH
     // compatible/opposing influences. This pigment is independent of coat.
     int halo=blend(YOUNG_HALO,corner(HALO,rp,sf),age);
-    int tip=in.natural&&in.twoTone?blend(rgb(97,202,224),naturalPrimary,age)
+    int tip=in.natural&&in.twoTone?blend(rgb(97,202,224),corner(UPPER,rp,sf),age)
         :contrastingCoat?primary:tone(body,.75f);
     return new Colors(body,primary,primary,secondary,wing,halo,body,tip,belly,back);
   }
@@ -73,8 +84,16 @@ final class HeroNormalRegionPaint057 {
     if(reserved!=0)return reserved==1?c.featureBody:c.featureTip;
     if(source>>>24==0||(flags&HeroRunRegionPaint055.PROTECTED)!=0)return source;
     if((flags&HeroRunRegionPaint055.MARKER)!=0)return source&0xff000000|c.marker&0xffffff;
-    if((flags&HeroRunRegionPaint055.WING)!=0)
-      return in.natural&&in.twoTone?tint(source,c.wing,in.wing):source;
+    if((flags&HeroRunRegionPaint055.WING)!=0) {
+      // Both original wing faces share these semantic root-to-tip regions.
+      // Source baby coats all have pink wing texels, including colored coats;
+      // preserving that hue made the Hero references look like solid plates.
+      // Keep their two pixel shades/alpha, but use the inherited body at the
+      // broad root and the variant's pigment toward the outer tip.
+      int target=blend(c.body,c.wing,wingAccentWeight(in,x));
+      float shade=max(source)/(float)Math.max(1,max(in.wing));
+      return source&0xff000000|tone(target,Math.clamp(shade,.6f,1.25f))&0xffffff;
+    }
     if((flags&HeroRunRegionPaint055.SKIN)==0)return source;
     int result=source;
     boolean accent=(flags&HeroRunRegionPaint055.ACCENT)!=0;
@@ -95,6 +114,15 @@ final class HeroNormalRegionPaint057 {
 
   static boolean bellyUv(int x,int y){return x>=10&&x<14&&y>=36&&y<40;}
   static boolean backUv(int x,int y){return x>=26&&x<30&&y>=36&&y<40;}
+  static float wingAccentWeight(Input in,int x) {
+    // Canonical front: outer u32 -> root u38. Back is mirrored u38 -> u44.
+    float distance=x<38?(37.5f-x)/6f:(x-37.5f)/6f;
+    float span=.45f+(corner(WING_SPAN,in.runPower,in.swimFly)-.45f)*unit(in.maturity);
+    float edge=unit((distance-(1-span))/.40f+.5f);
+    // The proximal root always retains its inherited base pigment. The soft
+    // boundary moves continuously rather than switching entire pixel bands.
+    return edge*unit((distance-.15f)/.20f);
+  }
   /** Authored broad rows on actual original hand/toe UV islands. White heel
    * pixels remain untouched because they are outside the accent mask. */
   static int limbBand(int x,int y) {
@@ -119,6 +147,12 @@ final class HeroNormalRegionPaint057 {
       result|=Math.clamp(Math.round(v),0,255)<<(c*8);
     }
     return result;
+  }
+  private static float corner(float[] values,float rp,float sf) {
+    rp=axis(rp);sf=axis(sf);float value=0;
+    for(int y=0;y<3;y++)for(int x=0;x<3;x++)
+      value+=values[y*3+x]*Math.max(0,1-Math.abs(rp-(x-1)))*Math.max(0,1-Math.abs(sf-(y-1)));
+    return value;
   }
   /** Exact identity when target equals its source reference. Keep original
    * authored brightness without a generic max-channel flattening operation. */

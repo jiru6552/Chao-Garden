@@ -1,0 +1,26 @@
+Chao Garden 0.25.58 cumulative source overlay onto the complete 0.25.43 source.
+
+Extract at the full project root, review SOURCE_DELETIONS.txt, then run python3 apply-source-deletions.py /path/to/project --verify-only. Run without --verify-only after review. Modified source is refused; Minecraft saves are not touched.
+
+The download branch contains the complete source tree. Java 21, NeoForge 1.21.1, external Lionfish API 3.1; matching client/server 0.25.58.
+
+Changed since .57:
+CHANGELOG.md
+MECHANICS.md
+README.md
+TESTING.md
+docs/MORPH_REFINEMENT_02558.md
+gradle.properties
+scripts/generate_hero_normal_morph_02557.py
+scripts/generate_neutral_morph_02556.py
+scripts/validate_hero_normal_morph_02557.py
+scripts/validate_neutral_morph_02556.py
+src/lionfishTest/java/com/chaogarden/client/HeroNormalMaterialTest057.java
+src/lionfishTest/java/com/chaogarden/client/HeroNormalMorphRigTest057.java
+src/lionfishTest/java/com/chaogarden/client/NeutralMorphRigTest056.java
+src/main/java/com/chaogarden/client/HeroNormalRegionPaint057.java
+src/main/java/com/chaogarden/client/MorphRefinementVisualSmoke058.java
+src/main/resources/assets/chao_garden/hero_normal057.json
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json
+src/main/resources/assets/chao_garden/neutral056.json

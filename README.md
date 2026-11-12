@@ -1,6 +1,6 @@
-# Chao Garden 0.25.57
+# Chao Garden 0.25.58
 
-Current update **0.25.57** adds the nine **Hero / Normal-first-type** adult specialization combinations, using paired blocky features and a square halo around the unchanged original head. The approved Hero Run and Neutral/Normal paths remain included. Existing Creative editing and identity locks are preserved; maturity dragging now keeps its value unobstructed. See [the Hero/Normal implementation and verification](docs/HERO_NORMAL_FOUNDATION_02557.md), [the Neutral foundation](docs/NEUTRAL_FOUNDATION_02556.md), and [the earlier Hero Run path](docs/HERO_RUN_BLOCKY_02555.md).
+Current update **0.25.58** refines the Neutral/Normal Swim, Power+Swim and Power crowns and makes Hero/Normal head tips, accents and wings more distinct. The original head box, white natural Hero body, shared rig and locked evolution identities remain intact. See [the refinement and verification report](docs/MORPH_REFINEMENT_02558.md), [the Hero/Normal foundation](docs/HERO_NORMAL_FOUNDATION_02557.md), and [the Neutral foundation](docs/NEUTRAL_FOUNDATION_02556.md).
 
 Earlier Analyzer update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
 
@@ -36,7 +36,7 @@ The food collection includes **35 active fruit/food families**: the twelve conso
 ## Install
 
 1. Use **Minecraft Java 1.21.1**, **NeoForge 21.1.219**, and **64-bit Java 21**.
-2. Place `chao_garden-0.25.57.jar` in `mods/`, replacing the previous Chao Garden jar.
+2. Place `chao_garden-0.25.58.jar` in `mods/`, replacing the previous Chao Garden jar.
 3. Install the same version on the server and every connecting client.
 
 Install **Lionfish API 3.1** separately on both client and server; the current animation integration requires it. Adult equipped companions optionally require **Accessories for NeoForge 1.21.1 and its oωo dependency** on both sides. See [companions](docs/COMPANIONS.md). This build targets NeoForge.
