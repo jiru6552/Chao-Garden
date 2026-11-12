@@ -1,0 +1,33 @@
+{
+  "version": "0.25.55",
+  "model": "models/entity/gameplay/chao_hero_run_proto055.json",
+  "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "neutral_baby",
+    "hero_baby",
+    "neutral_run_baby",
+    "hero_run_baby",
+    "hero_run_young",
+    "hero_run_mature",
+    "hero_run_run_mature"
+  ],
+  "canonical_original_head_unchanged": true,
+  "feature_meshes": 16,
+  "feature_construction": "Closed positive-size rotated cuboids, parameter interpolation; original normal tuft retracts inside fixed head.",
+  "reserved_pixels": {
+    "feature_body": [
+      127,
+      63
+    ],
+    "feature_tip": [
+      126,
+      63
+    ]
+  },
+  "source_assets_unchanged": [
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json"
+  ],
+  "compatible_axis_source_model_sha256": "504e5682224135c858a5f013a6414b6660ff3bd70df974def3d83a3275719a5a",
+  "shared_animation_and_attachment_rig": true
+}

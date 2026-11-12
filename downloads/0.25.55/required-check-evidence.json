@@ -1,0 +1,69 @@
+{
+  "kind": "Coordinator-selected literal evidence, not inferred success",
+  "checks": [
+    {
+      "log": "run055-focused-final.log",
+      "log_sha256": "b4ab237e82f36d3746ce3d2c076dcbfbf6b503e61c2f9a5122b6f1fea77b7b68",
+      "literal_marker": "Hero Run morphology052: 1128 checks passed"
+    },
+    {
+      "log": "run055-focused-final.log",
+      "log_sha256": "b4ab237e82f36d3746ce3d2c076dcbfbf6b503e61c2f9a5122b6f1fea77b7b68",
+      "literal_marker": "Blocky Run055: 22226455 checks"
+    },
+    {
+      "log": "run055-focused-final.log",
+      "log_sha256": "b4ab237e82f36d3746ce3d2c076dcbfbf6b503e61c2f9a5122b6f1fea77b7b68",
+      "literal_marker": "Hero Run055 material: 23615146 checks"
+    },
+    {
+      "log": "run055-native-morph.log",
+      "log_sha256": "87ff8c5a21f7c2a32aceaa5f67b6edc0167bfd13a471542c872f4ade8aa01547",
+      "literal_marker": "All 163 required tests passed :)"
+    },
+    {
+      "log": "run055-keyboard-final-build.log",
+      "log_sha256": "f48c21161add75c5a048d95fd467b92333c278bbda6245ab26aa9188d5db1f4b",
+      "literal_marker": "BUILD SUCCESSFUL"
+    },
+    {
+      "log": "run055-keyboard-final-build.log",
+      "log_sha256": "f48c21161add75c5a048d95fd467b92333c278bbda6245ab26aa9188d5db1f4b",
+      "literal_marker": "54 production055 age/axis/growth configurations"
+    },
+    {
+      "log": "run055-geometry-validation.log",
+      "log_sha256": "fa31b816114c823a98d73adf6c06d386aff6726b482687489605d9497a8ecda5",
+      "literal_marker": "882 connected blends"
+    },
+    {
+      "log": "run055-client-first.log",
+      "log_sha256": "6449b8e78cbae628af823b4eae14f427d937b670d217d8080acd5ac622556cd6",
+      "literal_marker": "requestedCases=30 renderedCases=30 skippedCases=0"
+    },
+    {
+      "log": "run055-client-motion.log",
+      "log_sha256": "d01c3143a2d7577a2b3604bddc833effdeceb306cac944206e77b6d346a7f26b",
+      "literal_marker": "requestedCases=3 renderedCases=3 skippedCases=0"
+    },
+    {
+      "log": "run055-client-eyes.log",
+      "log_sha256": "d92e18bf1df4fc23900fb9fa1771e16c6573e37852e2f406d9d1006837f58f60",
+      "literal_marker": "requestedCases=1 renderedCases=1 skippedCases=0"
+    }
+  ],
+  "superseded_checks": [
+    {
+      "task": "heroRunMorphRigTest054",
+      "reason": "Unpublished rounded prototype constraints were superseded by the approved fixed-head cuboid path; current check uses blockyRunMorphRigTest055. This is a deliberate scope replacement, not a passing .54 claim."
+    },
+    {
+      "task": "babyRunMorphRigTest053",
+      "reason": "Its runtime-selection assertion specifically requires the historical .53 surface; explicit diagnostic retained. Stronger current .55 tests cover fixed heads, rigid transforms, samples, mutations, coats, motion, joints and runtime selection."
+    },
+    {
+      "task": "organRigTest/pianoRigTest archived .54 enumeration",
+      "reason": "Only the unpublished rounded .54 resource is excluded; refreshed actual-production .55 checks include54age/axis/growth configurations and preserve every original threshold."
+    }
+  ]
+}

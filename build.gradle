@@ -144,6 +144,11 @@ neoForge {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
+            systemProperty 'chao_garden.heroRun054Study', project.findProperty('heroRun054Study') ?: 'false'
+            systemProperty 'chao_garden.heroRun054Baseline', project.findProperty('heroRun054Baseline') ?: 'false'
+            systemProperty 'chao_garden.heroRun054Start', project.findProperty('heroRun054Start') ?: '0'
+            systemProperty 'chao_garden.heroRun054Limit', project.findProperty('heroRun054Limit') ?: '45'
+            if (project.findProperty('heroRun054Study') == 'true') gameDirectory = project.file(project.findProperty('heroRun054Dir') ?: 'run-hero-run054')
             systemProperty 'chao_garden.babyRun053Study', project.findProperty('babyRun053Study') ?: 'false'
             systemProperty 'chao_garden.babyRun053Start', project.findProperty('babyRun053Start') ?: '0'
             systemProperty 'chao_garden.babyRun053Limit', project.findProperty('babyRun053Limit') ?: '26'
@@ -541,6 +546,7 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_polish51/**'
     exclude 'data/chao_morph52/**'
     exclude 'data/chao_baby53/**'
+    exclude 'data/chao_morph54/**'
     exclude 'data/chao_focused46/**'
     exclude 'data/chao_equipped46/**'
     exclude 'data/chao_equipped46_save/**'
@@ -789,4 +795,38 @@ tasks.register('babyRunMorphRigTest053', JavaExec) {
     mainClass = 'com.chaogarden.client.BabyRunMorphRigTest053'
     jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
 }
-tasks.named('check') { dependsOn babyRunMorphRigTest053 }
+// Kept for historical .53-surface diagnostics. Production-selection assertions
+// for the current model live in blockyRunMorphRigTest055 below.
+
+tasks.register('heroRunMorphRigTest054', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroRunMorphRigTest054'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+// The unpublished rounded .54 experiment is retained as an explicit diagnostic.
+// Current production uses the approved blocky path and its stronger .55 suite.
+
+tasks.register('heroRunMaterialTest054', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroRunMaterialTest054'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroRunMaterialTest054 }
+
+tasks.register('blockyRunMorphRigTest055', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.BlockyRunMorphRigTest055'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn blockyRunMorphRigTest055 }
+
+tasks.register('heroRunMaterialTest055', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroRunMaterialTest055'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroRunMaterialTest055 }

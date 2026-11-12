@@ -174,7 +174,9 @@ public final class HeroRunMorphRigTest052 {
   }
   private static void motionAnchors()throws Exception {
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
-    var rig=new OfficialChaoRig(clips,HeroRunMorphRigTest052::asset);
+    // Keep this historical asset fixture explicit after production moves to
+    // the unified .54 path; do not reinterpret old donor geometry as current.
+    var rig=new OfficialChaoRig(clips,n->asset(n.equals("gameplay/chao_hero_run_proto054")?"gameplay/chao_hero_run_proto052":n));
     for(boolean adult:new boolean[]{false,true})for(int fraction=0;fraction<=4;fraction++) {
       var state=state(adult,fraction/4f);String geometry=OfficialChaoRig.geometryKey(state);
       for(var motion:List.of(OfficialChaoRig.Motion.CRAWL,OfficialChaoRig.Motion.WALK,OfficialChaoRig.Motion.RUN,OfficialChaoRig.Motion.SIT,OfficialChaoRig.Motion.SWIM,OfficialChaoRig.Motion.GLIDE,OfficialChaoRig.Motion.HELD))for(int tick=0;tick<=20;tick+=2) {
@@ -190,7 +192,7 @@ public final class HeroRunMorphRigTest052 {
   }
   public static void main(String[] args)throws Exception {
     stages();maturityAndOpposition();temporalSmoothing();separateAttachmentRigs();reservedPaletteEffects();motionAnchors();
-    String report="Hero Run morphology: "+checks+" checks; "+frames+" actual geometry/pose frames; "+vertices+" emitted vertices; max small-progress step="+largestQuarterStep+" model pixels; retained052 stages/young-adult asset boundary, eyes, inherited axes, maturity and smoothing passed; revised production babies are covered by BabyRunMorphRigTest053\n";
+    String report="Hero Run morphology: "+checks+" checks; "+frames+" actual geometry/pose frames; "+vertices+" emitted vertices; max small-progress step="+largestQuarterStep+" model pixels; retained052 stages/young-adult asset boundary, eyes, inherited axes, maturity and smoothing passed; historical053 babies are covered by BabyRunMorphRigTest053; current production path is covered by HeroRunMorphRigTest054\n";
     Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/hero-run052-results.txt"),report);System.out.print(report);
   }
 }

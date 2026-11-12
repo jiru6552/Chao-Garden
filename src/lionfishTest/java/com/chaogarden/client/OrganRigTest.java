@@ -2,6 +2,7 @@ package com.chaogarden.client;
 import com.google.gson.*;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.chaogarden.core.ChaoState;
+import com.chaogarden.core.HeroRunMorphology052;
 import com.chaogarden.toys.*;
 import java.nio.file.*;
 import java.util.*;
@@ -11,11 +12,20 @@ public final class OrganRigTest {
  record Hands(float[] right,float[] left,String label){}
  public static void main(String[] args)throws Exception{
   var clip=new LionfishOrganClip();var faces=PropMeshClearance.triangles("chao_organ_idle");
-  int checks=0,clearanceChecks=0;float error=0,depthError=0,maxReach=0,minClearance=Float.POSITIVE_INFINITY;
-  try(var files=Files.list(Path.of("src/main/resources/assets/chao_garden/models/entity/gameplay"))){for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")).toList()){
+  int checks=0,clearanceChecks=0,blockyConfigurations=0;float error=0,depthError=0,maxReach=0,minClearance=Float.POSITIVE_INFINITY;
+  // The unshipped rounded .54 experiment is archived, not a current actor.
+  // Keep the retained .52/.53 fixtures and the production .55 path covered.
+  try(var files=Files.list(Path.of("src/main/resources/assets/chao_garden/models/entity/gameplay"))){for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")&&!p.getFileName().toString().equals("chao_hero_run_proto054.json")).toList()){
    var mesh=ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path)).getAsJsonObject());var poses=mesh.createPoses();String key=path.getFileName().toString();
-   for(boolean adult:new boolean[]{false,true})for(float swimFly:new float[]{-1,0,1})for(float runPower:new float[]{-1,0,1}){
+   boolean blocky=key.equals("chao_hero_run_proto055.json");
+   for(boolean adult:new boolean[]{false,true})for(float swimFly:new float[]{-1,0,1})for(float runPower:new float[]{-1,0,1})for(float growth:blocky?new float[]{0,.5f,1}:new float[]{0}){
     mesh.development(swimFly,runPower,adult?1:.14f);poses.values().forEach(ChaoMeshAsset.Pose::reset);
+    if(blocky){
+     var state=new ChaoState();state.adult=adult;state.align=1;state.primaryType=adult?ChaoState.RUN_TYPE:ChaoState.NORMAL;
+     int training=Math.round(growth*(adult?960:480));state.levels[ChaoState.RUN]=training/100;state.progress[ChaoState.RUN]=training%100;
+     state.setEvolutionStrength(adult?1.2f:1);state.swimFly=swimFly;state.runPower=runPower;
+     mesh.heroRunDevelopment(HeroRunMorphology052.sample(state),swimFly,runPower);blockyConfigurations++;
+    }
     var handMesh=key.contains("chaos_")?ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path.resolveSibling(key.replace(".json","_glass.json")))).getAsJsonObject()):mesh;
     var hp=handMesh==mesh?poses:handMesh.createPoses();var hands=new ArrayList<Hands>();hands.add(new Hands(handMesh.visiblePalm(hp,false),handMesh.visiblePalm(hp,true),"skin"));
     if(swimFly==0&&runPower==0&&!key.contains("chaos_")&&!key.contains("omochao"))for(int animal=0;animal<ChaoState.ANIMALS.length;animal++){
@@ -70,6 +80,6 @@ public final class OrganRigTest {
     }
    }
   }}
-  System.out.println("Organ mesh fit: "+checks+" hand samples; "+clearanceChecks+" body/skull surface checks; no crossed hands; max key-height error="+error+" blocks; max key-depth error="+depthError+" blocks; max reach="+maxReach+" pixels; min body/skull clearance="+minClearance+" pixels");
+  System.out.println("Organ mesh fit: "+checks+" hand samples; "+clearanceChecks+" body/skull surface checks; "+blockyConfigurations+" production055 age/axis/growth configurations; no crossed hands; max key-height error="+error+" blocks; max key-depth error="+depthError+" blocks; max reach="+maxReach+" pixels; min body/skull clearance="+minClearance+" pixels");
  }
 }

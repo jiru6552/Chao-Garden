@@ -1,0 +1,49 @@
+{
+  "scope": "Actual X11 Minecraft window; silent normal-20TPS gain/reversal scenes23-25",
+  "started": true,
+  "start_epoch": 1794465864.1446226,
+  "window_id": "0x200009",
+  "rectangle": [
+    0,
+    0,
+    1440,
+    900
+  ],
+  "fps": 20,
+  "selected_cases": [
+    23,
+    24,
+    25
+  ],
+  "audio": false,
+  "time_rescaled": false,
+  "end_epoch": 1794465907.4220672,
+  "output": "/workspace/.setup/run055-motion-live.mp4",
+  "ffmpeg_exit": 255,
+  "output_sha256": "46d1ef05675946c176983d83473505d66ebf8bc896ce81c057ffd5430ac3a6c9",
+  "cohort": "final",
+  "source_client_log": "run055-client-motion.log",
+  "source_client_log_sha256": "d01c3143a2d7577a2b3604bddc833effdeceb306cac944206e77b6d346a7f26b",
+  "complete_final_run_proof": "[06:45:06] [Render thread/INFO] [co.ch.cl.HeroRunVisualSmoke055/]: HERO055_VISUAL_COMPLETE requestedCases=3 renderedCases=3 skippedCases=0 start=23 limit=26 baseline=false captures=65 saved=65 epochMillis=1794465906661 normal20TPS=true audioListening=false output=/workspace/.setup/run055-client-motion",
+  "scenes": [
+    {
+      "case": 23,
+      "native_completion_proof": "[06:44:37] [Server thread/INFO] [co.ch.cl.HeroRunVisualSmoke055/]: HERO055_NATIVE_COMPLETE 23 name=baby_hero_training_walk baseline=false elapsed=280 walked=4.436312761784633 sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.8012963, adultGrowth=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,74,0,0;0,0,1,0,0,0,0,280,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,0,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072276536,667310736,2,-1,-1,-1,-1,0,0,0,0,0,280,1,0,0,0;;normal;normal epochMillis=1794465877764",
+      "render_completion_proof": "[06:44:37] [Render thread/INFO] [co.ch.cl.HeroRunVisualSmoke055/]: HERO055_RENDER_COMPLETE 23 name=baby_hero_training_walk baseline=false angles=3 worldFrames=379 actorFrames=379 captures=20 movingFrames=336 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794465877781"
+    },
+    {
+      "case": 24,
+      "native_completion_proof": "[06:44:52] [Server thread/INFO] [co.ch.cl.HeroRunVisualSmoke055/]: HERO055_NATIVE_COMPLETE 24 name=adult_hero_training_walk baseline=false elapsed=280 walked=6.784416427692457 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,166,0,0;0,0,1,0,0,0,0,280,280,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,56,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,-1,-1,-1,-1,1,1065353216,3,0,0,280,1,0,0,0;;normal;normal epochMillis=1794465892213",
+      "render_completion_proof": "[06:44:52] [Render thread/INFO] [co.ch.cl.HeroRunVisualSmoke055/]: HERO055_RENDER_COMPLETE 24 name=adult_hero_training_walk baseline=false angles=3 worldFrames=412 actorFrames=412 captures=22 movingFrames=381 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794465892231"
+    },
+    {
+      "case": 25,
+      "native_completion_proof": "[06:45:06] [Server thread/INFO] [co.ch.cl.HeroRunVisualSmoke055/]: HERO055_NATIVE_COMPLETE 25 name=adult_hero_receding_walk baseline=false elapsed=280 walked=6.0258937821319805 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,5,0,0;0,0,1,0,0,0,0,280,280,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,56,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,-1,-1,-1,-1,1,1065353216,3,0,0,280,1,0,0,0;;normal;normal epochMillis=1794465906613",
+      "render_completion_proof": "[06:45:06] [Render thread/INFO] [co.ch.cl.HeroRunVisualSmoke055/]: HERO055_RENDER_COMPLETE 25 name=adult_hero_receding_walk baseline=false angles=3 worldFrames=427 actorFrames=427 captures=23 movingFrames=409 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794465906635"
+    }
+  ],
+  "observation": "14 exact recorded frames at1,4,...40seconds and representative native captures inspected; no full interactive movie playback/audio claim",
+  "actual_frame_rate": "20fps",
+  "duration_seconds": 43.1,
+  "training": "Fixture accelerates actual train/current-stat reductions; normal production morphology/easing/locomotion and20TPS clock"
+}

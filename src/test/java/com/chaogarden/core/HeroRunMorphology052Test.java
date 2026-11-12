@@ -8,7 +8,7 @@ public final class HeroRunMorphology052Test {
   private static int checks;
   private static void check(boolean value,String why){checks++;if(!value)throw new AssertionError(why);}
   private static void near(float actual,float expected,String why){check(Math.abs(actual-expected)<.000002f,why+": "+actual+" vs "+expected);}
-  public static int run(){checks=0;firstEvolution();simultaneousHistory();trainingAndLoss();allMutationRoutes();identityAndSaves();readOnlyAndScope();System.out.println("Hero Run morphology052: "+checks+" checks passed; four-stat ties, simultaneous drives, reversible training, independent maturity and saved identity");return checks;}
+  public static int run(){checks=0;firstEvolution();simultaneousHistory();trainingAndLoss();babyAgeAndTraining();allMutationRoutes();babyMutationRoutesAndSaves();identityAndSaves();readOnlyAndScope();System.out.println("Hero Run morphology052: "+checks+" checks passed; four-stat ties, simultaneous drives, reversible training, age-conditioned baby growth, independent maturity and saved identity");return checks;}
 
   private static ChaoState heroAdult(){
     var s=new ChaoState();s.adult=true;s.primaryType=ChaoState.RUN_TYPE;s.align=1;
@@ -110,6 +110,67 @@ public final class HeroRunMorphology052Test {
     for(int i=0;i<40;i++)fed.onFruitEaten();
     near(HeroRunMorphology052.sample(fed).adultGrowth(),1,"The existing forty-whole-fruit maturity credit closes the age-only 1.0-to-1.2 gap without a lifespan overhaul");
     check(fed.adultAgeTicks==adultAge,"Fruit maturity credit never fabricates biological clock ticks");
+  }
+
+  private static void babyAgeAndTraining(){
+    for(int age=0;age<=4;age++)for(int training=0;training<=4;training++){
+      var s=new ChaoState();s.align=1;s.ageTicks=73;s.setEvolutionStrength(age/4f);
+      DriveRules.setTotal(s,ChaoState.RUN,training*120,new Random(7));
+      int biologicalAge=s.ageTicks;float biologicalStrength=s.evolutionStrength();String encoded=s.encode();
+      var p=HeroRunMorphology052.sample(s);
+      near(p.babyRun(),training/4f,"The baby training target is independent of visual age");
+      near(p.maturity(),age/4f,"Baby maturity is independent of current training");
+      near(p.babyGrowth(),age*training/16f,"Visible baby shape/color development combines separate age and training inputs");
+      near(p.babyHero(),1,"Age/Run development does not weaken a baby's independently earned Hero alignment");
+      check(s.ageTicks==biologicalAge&&s.evolutionStrength()==biologicalStrength&&s.encode().equals(encoded),"Sampling every baby age/training corner is read-only");
+    }
+    var baby=new ChaoState();baby.ageTicks=81;baby.align=.25f;baby.setEvolutionStrength(.75f);
+    DriveRules.setTotal(baby,ChaoState.RUN,480,new Random(3));
+    near(HeroRunMorphology052.sample(baby).babyGrowth(),.75f,"Developed training is still gated by actual baby maturity");
+    int age=baby.ageTicks;float maturity=baby.evolutionStrength();
+    DriveRules.setTotal(baby,ChaoState.POWER,240,new Random(3));
+    near(HeroRunMorphology052.sample(baby).babyRun(),.5f,"Opposing Power reduces the Run target");
+    near(HeroRunMorphology052.sample(baby).babyGrowth(),.375f,"Opposing training reverses visible features at unchanged age");
+    DriveRules.setTotal(baby,ChaoState.POWER,0,new Random(3));
+    DriveRules.change(baby,ChaoState.RUN,-360,new Random(3));
+    near(HeroRunMorphology052.sample(baby).babyGrowth(),.1875f,"Direct Run reductions reverse visible baby development");
+    near(HeroRunMorphology052.sample(baby).babyHero(),.5f,"Reversing Run does not rewrite alignment");
+    check(baby.ageTicks==age&&baby.evolutionStrength()==maturity,"Training reversal cannot biologically de-age the baby");
+    near(HeroRunMorphology052.sample(heroAdult()).babyGrowth(),0,"Adult samples never express the baby growth curve");
+    near(HeroRunMorphology052.sample(null).babyGrowth(),0,"Missing state has no baby development");
+    near(new HeroRunMorphology052.Sample(true,false,1,Float.NaN,0,1,0).babyGrowth(),0,"Corrupt visible inputs remain finite and bounded");
+  }
+
+  private static void babyMutationRoutesAndSaves(){
+    var direct=new ChaoState();var ordinary=new ChaoState();var combined=new ChaoState();var analyzer=new ChaoState();
+    for(var s:new ChaoState[]{direct,ordinary,combined,analyzer}){s.align=.4f;s.ageTicks=127;s.setEvolutionStrength(.5f);}
+    direct.train(ChaoState.RUN,240,new Random(1));
+    for(int i=0;i<10;i++)ordinary.giveDrive(ChaoState.RUN);
+    DriveRules.apply(combined,DriveRules.Tier.SOLID,ChaoState.RUN,new Random(1));DriveRules.change(combined,ChaoState.RUN,140,new Random(1));
+    AnalyzerStatRules.apply(analyzer,ChaoState.RUN,AnalyzerStatRules.LEVEL,1);
+    AnalyzerStatRules.apply(analyzer,ChaoState.RUN,AnalyzerStatRules.LEVEL,1);
+    AnalyzerStatRules.apply(analyzer,ChaoState.RUN,AnalyzerStatRules.PROGRESS,40);
+    for(var s:new ChaoState[]{direct,ordinary,combined,analyzer}){
+      var p=HeroRunMorphology052.sample(s);near(p.babyRun(),.5f,"Equal training totals agree for every baby mutation route");
+      near(p.babyGrowth(),.25f,"Ordinary/combined/direct/Creative paths share the same visible baby curve");
+      String encoded=s.encode();var loaded=ChaoState.decode(encoded);var q=HeroRunMorphology052.sample(loaded);
+      check(loaded.encode().equals(encoded),"The age-conditioned policy introduces no save migration or hidden state");
+      near(q.babyGrowth(),p.babyGrowth(),"Reload preserves visible baby development");
+      near(q.babyHero(),p.babyHero(),"Reload preserves separate baby alignment");
+      check(loaded.ageTicks==127&&loaded.evolutionStrength()==.5f,"Reload keeps biological time distinct from training");
+    }
+    int age=analyzer.ageTicks;float maturity=analyzer.evolutionStrength();
+    AnalyzerStatRules.apply(analyzer,ChaoState.RUN,AnalyzerStatRules.PROGRESS,0);
+    near(HeroRunMorphology052.sample(analyzer).babyGrowth(),200f/480*.5f,"Creative partial-bar decreases immediately reverse baby target");
+    AnalyzerStatRules.apply(analyzer,ChaoState.RUN,AnalyzerStatRules.LEVEL,-1);
+    near(HeroRunMorphology052.sample(analyzer).babyGrowth(),100f/480*.5f,"Creative level decreases immediately reverse baby target");
+    check(analyzer.ageTicks==age&&analyzer.evolutionStrength()==maturity,"Creative training edits cannot rewrite biological age");
+    var balanced=new ChaoState();balanced.setEvolutionStrength(1);DriveRules.apply(balanced,DriveRules.Tier.CHAOTIC,-1,new Random(2));
+    near(HeroRunMorphology052.sample(balanced).babyGrowth(),0,"Balanced combined training does not invent Run-over-Power development");
+    var compatible=new ChaoState();compatible.setEvolutionStrength(1);DriveRules.setTotal(compatible,ChaoState.RUN,480,new Random(3));
+    DriveRules.setTotal(compatible,ChaoState.FLY,480,new Random(3));
+    near(HeroRunMorphology052.sample(compatible).babyGrowth(),1,"A compatible Fly-axis gain cannot erase the separate Run target");
+    check(compatible.prospectivePrimaryType()==ChaoState.FLY_TYPE,"Morph sampling preserves the actual latest-trained winner of a first-evolution tie");
   }
 
   private static void identityAndSaves(){

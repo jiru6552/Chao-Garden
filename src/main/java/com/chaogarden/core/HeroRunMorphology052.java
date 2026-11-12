@@ -12,7 +12,17 @@ public final class HeroRunMorphology052 {
 
   /** Biological maturity and the reversible training target are separate. */
   public record Sample(boolean enabled,boolean adult,float babyHero,float babyRun,
-                       float specialization,float maturity,float adultGrowth) {}
+                       float specialization,float maturity,float adultGrowth) {
+    /** Visible baby Run development, shared by shape and region colors.
+     *
+     * The viewer establishes that young and developed babies can look
+     * different at the same Run setting, but does not expose game timing.
+     * Linear age x current training is this prototype's provisional visual
+     * curve. Keep babyRun as the reversible training target; reductions must
+     * never lower biological maturity or rewrite a Chao's saved age.
+     */
+    public float babyGrowth(){return adult?0:unit(babyRun*maturity);}
+  }
 
   public static int totalTraining(ChaoState state,int stat) {
     if(state==null||stat<0||stat>=5)return 0;

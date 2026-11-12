@@ -18,7 +18,7 @@ public final class SittingRigTest {
     var rig=new OfficialChaoRig(clips,key->assets.computeIfAbsent(key,k->{try{return ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(root.resolve("models/entity/"+k+".json"))).getAsJsonObject());}catch(Exception e){throw new RuntimeException(e);}}));
     try(var files=Files.list(root.resolve("models/entity/gameplay"))){for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")).toList()){
       String nominal=path.getFileName().toString().replace("chao_","").replace(".json","");
-      boolean prototype=nominal.equals("hero_run_proto052");
+      boolean prototype=nominal.equals("hero_run_proto052")||nominal.equals("hero_run_proto054");
       for(boolean adult:new boolean[]{false,true})for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1})for(int stage=0;stage<(prototype?5:1);stage++){
         String model=prototype?(adult?"hero_run":"baby"):nominal;
         var state=new ChaoState();state.adult=adult;state.swimFly=sf;state.runPower=rp;state.setEvolutionStrength(adult?1.5f:1);var id=new UUID(cases++,83);var previous=new HashMap<String,Vector3f>();

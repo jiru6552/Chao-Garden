@@ -1,0 +1,148 @@
+{
+  "classification": "Actual supplied-run outcomes; no test-count, success or inherited-failure inference",
+  "logs": [
+    {
+      "log": "run055-focused-final.log",
+      "sha256": "b4ab237e82f36d3746ce3d2c076dcbfbf6b503e61c2f9a5122b6f1fea77b7b68",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-native-morph.log",
+      "sha256": "87ff8c5a21f7c2a32aceaa5f67b6edc0167bfd13a471542c872f4ade8aa01547",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [
+        "[06:19:24] [Server thread/INFO] [minecraft/GameTestServer]: ========= 163 GAME TESTS COMPLETE IN 10.70 s ======================",
+        "[06:19:24] [Server thread/INFO] [minecraft/GameTestServer]: All 163 required tests passed :)"
+      ],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-native-full.log",
+      "sha256": "aefb86db4a070c6d2fde4475c25532c9e5375c9ce401c68065e1e50a9a568471",
+      "build_successful_marker": false,
+      "build_failed_marker": true,
+      "failed_gradle_tasks": [
+        "runGameTestServer"
+      ],
+      "native_summaries": [
+        "[06:15:25] [Server thread/INFO] [minecraft/GameTestServer]: ========= 2880 GAME TESTS COMPLETE IN 3.175 min ======================",
+        "[06:15:25] [Server thread/INFO] [minecraft/GameTestServer]: 28 required tests failed :("
+      ],
+      "native_failure_lines": [
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_picture_book_false_false failed at -6338609, -60, -3931232! exact real sound counts: picture_book []",
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_picture_book_true_false failed at -6338551, -60, -3931232! exact real sound counts: picture_book []",
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_picture_book_false_true failed at -6338580, -60, -3931232! exact real sound counts: picture_book []",
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_picture_book_true_true failed at -6338522, -60, -3931232! exact real sound counts: picture_book []",
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_crayons_false_false failed at -6338648, -60, -3931202! exact real sound counts: crayons []",
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_crayons_true_false failed at -6338590, -60, -3931202! exact real sound counts: crayons []",
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_crayons_false_true failed at -6338619, -60, -3931202! exact real sound counts: crayons []",
+        "[06:15:05] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_crayons_true_true failed at -6338561, -60, -3931202! exact real sound counts: crayons []",
+        "[06:15:06] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_sonic_doll_false_false failed at -6338532, -60, -3931172! exact real sound counts: sonic_doll []",
+        "[06:15:06] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_sonic_doll_true_false failed at -6338474, -60, -3931172! exact real sound counts: sonic_doll []",
+        "[06:15:06] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_sonic_doll_false_true failed at -6338503, -60, -3931172! exact real sound counts: sonic_doll []",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_sonic_doll_true_true failed at -6338677, -60, -3931142! exact real sound counts: sonic_doll []",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_shadow_doll_false_false failed at -6338648, -60, -3931142! exact real sound counts: shadow_doll []",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_shadow_doll_true_false failed at -6338590, -60, -3931142! exact real sound counts: shadow_doll []",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_shadow_doll_false_true failed at -6338619, -60, -3931142! exact real sound counts: shadow_doll []",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_shadow_doll_true_true failed at -6338561, -60, -3931142! exact real sound counts: shadow_doll []",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_pogo_stick_false_false failed at -6338532, -60, -3931142! real command starts pogo_stick",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_pogo_stick_false_true failed at -6338503, -60, -3931142! real command starts pogo_stick",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_pogo_stick_true_false failed at -6338474, -60, -3931142! real command starts pogo_stick",
+        "[06:15:07] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_pogo_stick_true_true failed at -6338677, -60, -3931112! real command starts pogo_stick",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_rocking_horse_false_false failed at -6338532, -60, -3930932! real command starts rocking_horse",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_rocking_horse_false_true failed at -6338503, -60, -3930932! real command starts rocking_horse",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_rocking_horse_true_false failed at -6338474, -60, -3930932! real command starts rocking_horse",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_rocking_horse_true_true failed at -6338677, -60, -3930902! real command starts rocking_horse",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_toy_car_false_false failed at -6338532, -60, -3930872! exact real sound counts: toy_car []",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_toy_car_true_false failed at -6338474, -60, -3930872! exact real sound counts: toy_car []",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_toy_car_false_true failed at -6338503, -60, -3930872! exact real sound counts: toy_car []",
+        "[06:15:10] [Server thread/ERROR] [minecraft/LogTestReporter]: preview_toy_car_true_true failed at -6338677, -60, -3930842! exact real sound counts: toy_car []"
+      ],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-build.log",
+      "sha256": "e8d2d102469ac923130ee3b5d50e39dc724b41043c6003f42626c683da5c94a6",
+      "build_successful_marker": false,
+      "build_failed_marker": true,
+      "failed_gradle_tasks": [
+        "babyRunMorphRigTest053",
+        "organRigTest",
+        "pianoRigTest",
+        "triangleTransitionRigTest",
+        "trumpetTransitionRigTest"
+      ],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-keyboard-final-build.log",
+      "sha256": "f48c21161add75c5a048d95fd467b92333c278bbda6245ab26aa9188d5db1f4b",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-geometry-validation.log",
+      "sha256": "fa31b816114c823a98d73adf6c06d386aff6726b482687489605d9497a8ecda5",
+      "build_successful_marker": false,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-journal.log",
+      "sha256": "c176fb3b2ee166356711fef2629f6a0b4844dbc68ad67a47992de97b21212f08",
+      "build_successful_marker": false,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-client-first.log",
+      "sha256": "6449b8e78cbae628af823b4eae14f427d937b670d217d8080acd5ac622556cd6",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-client-motion.log",
+      "sha256": "d01c3143a2d7577a2b3604bddc833effdeceb306cac944206e77b6d346a7f26b",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "run055-client-eyes.log",
+      "sha256": "d92e18bf1df4fc23900fb9fa1771e16c6573e37852e2f406d9d1006837f58f60",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    }
+  ]
+}

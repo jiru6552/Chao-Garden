@@ -1,0 +1,64 @@
+Chao Garden 0.25.55 cumulative source overlay.
+
+464 changed/new files and 21 explicit source deletions onto full0.25.43 source, including prior updates. This ZIP is an overlay; the download branch contains the complete source project.
+
+Extract at the project root and review SOURCE_DELETIONS.txt, then run:
+python3 apply-source-deletions.py /path/to/full/Chao-Garden --verify-only
+Run without --verify-only after reviewing the source deletions. Modified source is refused; no saves are touched.
+
+Java21, Minecraft1.21.1, NeoForge21.1.219, external Lionfish API3.1. Use matching client/server 0.25.55 JARs.
+Read HERO_RUN_BLOCKY_02555.md for actual results and limitations.
+
+0.25.53 to 0.25.55 paths:
+CHANGELOG.md
+MECHANICS.md
+README.md
+TESTING.md
+build.gradle
+docs/HERO_RUN_BLOCKY_02555.md
+docs/HERO_RUN_REFERENCES_02554.md
+docs/HERO_RUN_REFERENCES_02555.md
+docs/HERO_RUN_VIEWER_02554.md
+docs/research/hero-run-02554-before-edits-proof.json
+docs/research/hero-run-02554-before-edits.md
+docs/research/hero-run-02554-source-audit.json
+docs/research/hero-run-02554-source-correspondence.json
+docs/research/hero-run-02554-source-landmarks.json
+docs/research/hero-run-02554-viewer-audit.json
+gradle.properties
+scripts/generate_blocky_run_morph_02555.py
+scripts/generate_hero_run_morph_02554.py
+scripts/validate_blocky_run_02555.py
+src/lionfishTest/java/com/chaogarden/client/AdultMorphSnapshot053.java
+src/lionfishTest/java/com/chaogarden/client/BabyRunMorphRigTest053.java
+src/lionfishTest/java/com/chaogarden/client/BlockyRunMorphRigTest055.java
+src/lionfishTest/java/com/chaogarden/client/HeroRunMaterialTest054.java
+src/lionfishTest/java/com/chaogarden/client/HeroRunMaterialTest055.java
+src/lionfishTest/java/com/chaogarden/client/HeroRunMorphRigTest052.java
+src/lionfishTest/java/com/chaogarden/client/HeroRunMorphRigTest054.java
+src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java
+src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java
+src/lionfishTest/java/com/chaogarden/client/ProneToyRigTest051.java
+src/lionfishTest/java/com/chaogarden/client/SittingRigTest.java
+src/main/java/com/chaogarden/client/BlockyBabyStyleVisualSmoke.java
+src/main/java/com/chaogarden/client/BlockyRunBox055.java
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java
+src/main/java/com/chaogarden/client/ChaoOverlayLayer.java
+src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java
+src/main/java/com/chaogarden/client/HeroRunCoatMaterial054.java
+src/main/java/com/chaogarden/client/HeroRunCoatMaterial055.java
+src/main/java/com/chaogarden/client/HeroRunRegionPaint054.java
+src/main/java/com/chaogarden/client/HeroRunRegionPaint055.java
+src/main/java/com/chaogarden/client/HeroRunVisualSmoke054.java
+src/main/java/com/chaogarden/client/HeroRunVisualSmoke055.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/core/HeroRunMorphology052.java
+src/main/java/com/chaogarden/test/BlockyRunMorphologyGameTests055.java
+src/main/java/com/chaogarden/test/HeroRunJourneyGameTests054.java
+src/main/resources/assets/chao_garden/hero_run055.json
+src/main/resources/assets/chao_garden/hero_run_morphology_054.json
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto054.json
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json
+src/main/resources/data/chao_morph54/states_053.json
+src/main/resources/data/chao_morph54/structure/activity_test.nbt
+src/test/java/com/chaogarden/core/HeroRunMorphology052Test.java

@@ -27,7 +27,7 @@ public final class OfficialChaoRig {
   private boolean referenceRendering;
   private boolean adultPose, broadWalkHead;
   private float powerSwimWeight;
-  private boolean prototypeSelection,babyPrototypeSelection;
+  private boolean prototypeSelection;
   private String prototypeOwnerKey;
   public enum Motion { CRAWL, WALK, RUN, DASH, FLAIL, PADDLE, SWIM, GLIDE, GRIP, FALL, HELD, SIT, REST,
     PONDER, INSPECT, EAT, TRAIN, REJECT, DELIGHT, PLAY, PET }
@@ -64,7 +64,7 @@ public final class OfficialChaoRig {
   private void select(String model,boolean gameplay) {
     key = model;
     boolean prototype=gameplay&&prototypeSelection&&model.equals(prototypeOwnerKey);
-    String prototypeModel=babyPrototypeSelection?"baby_run_proto053":"hero_run_proto052";
+    String prototypeModel="hero_run_proto055";
     String cache=prototype?"gameplay:"+prototypeModel:(gameplay?"gameplay:":"source:")+model;
     current = frames.computeIfAbsent(cache, ignored -> {
       var mesh = assets.apply(prototype?"gameplay/chao_"+prototypeModel:(gameplay?"gameplay/":"official/")+"chao_"+model);
@@ -85,7 +85,7 @@ public final class OfficialChaoRig {
   }
 
   public static ResourceLocation texture(ChaoState state) {
-    if(HeroRunAppearance052.sample(state).enabled())return ChaoPaletteMaterial.texture(HeroRunCoatMaterial052.texture(state),state,"baby");
+    if(HeroRunAppearance052.sample(state).enabled())return ChaoPaletteMaterial.texture(HeroRunCoatMaterial055.texture(state),state,"baby");
     String selected=geometryKey(state),geometry=sourceGeometryKey(selected),old=ChaoRenderer.textureKey(state),path;
     if(selected.equals("omochao"))return OmochaoMaterial.texture(state);
     if(selected.startsWith("chaos_"))
@@ -580,7 +580,7 @@ public final class OfficialChaoRig {
 
   /** Set this entity's geometry before gait fitting samples its current toe reach. */
   void prepareDevelopment(String model,ChaoState state) {
-    prototypeSelection=HeroRunAppearance052.sample(state).enabled();babyPrototypeSelection=!state.adult;prototypeOwnerKey=model;
+    prototypeSelection=HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
     select(model,true);meshDevelopment(state);
   }
 
@@ -616,7 +616,7 @@ public final class OfficialChaoRig {
     if(boost>0) {
       // Authored amplification beyond ordinary development. Semantic anchors
       // scale with their attachments; comparison sampling never enters here.
-      var skull=pose("skull");if(skull!=null){skull.sx*=1+boost*.05f;skull.sy*=1+boost*.03f;skull.sz*=1+boost*.07f;}
+      var skull=pose("skull");if(skull!=null&&!current.mesh.fixedHeadBox055()){skull.sx*=1+boost*.05f;skull.sy*=1+boost*.03f;skull.sz*=1+boost*.07f;}
       var body=pose("body");if(body!=null){body.sx*=1+boost*.08f;body.sy*=1+boost*.05f;body.y-=boost*.125f;}
       for(var entry:current.poses.entrySet())if(entry.getKey().startsWith("evolution_ridge_")||entry.getKey().startsWith("evolution020_")) {
         var ridge=entry.getValue();ridge.sx*=1+boost*.12f;ridge.sy*=1+boost*.15f;ridge.sz*=1+boost*.25f;

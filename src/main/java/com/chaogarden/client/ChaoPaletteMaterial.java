@@ -80,6 +80,10 @@ public final class ChaoPaletteMaterial {
   /** Prototype-only UV additions. Overlay/ordinary materials retain their exact
    * old masks; protected eye texels are outside every listed rectangle. */
   static int prototypeReservedKind(String sourcePath,String layout,int x,int y,int width,int height) {
+    if(sourcePath.startsWith("dynamic/hero_run055/")&&layout.equals("baby")&&width>0&&height>0)
+      return HeroRunRegionPaint055.reservedKind(x*128/width,y*64/height);
+    if(sourcePath.startsWith("dynamic/hero_run054/")&&layout.equals("baby")&&width>0&&height>0)
+      return HeroRunRegionPaint054.reservedKind(x*128/width,y*64/height);
     if(!sourcePath.startsWith("dynamic/hero_run052/")||!layout.equals("baby")||width<=0||height<=0)return 0;
     int u=x*128/width,v=y*64/height;
     if(u==127&&v==63)return 1;

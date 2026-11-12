@@ -37,6 +37,9 @@ final class ChaoMeshAsset {
       float[][][] morphVertices,
       float[][][] heroRunVertices,
       float[][][] heroRunLegacyVertices,
+      float[][][] pathVertices054,
+      BlockyRunBox055 box055,
+      boolean compatibleAxes055,
       List<Face> faces,
       Vector3f[] vertexNormals) {}
 
@@ -44,6 +47,8 @@ final class ChaoMeshAsset {
     final String name, parent;
     final float[] pivot, rotation;
     float[][] heroRunPivots,heroRunRotations;
+    float[][] pathPivots054,pathRotations054;
+    float[][] pathPivots055;
     final List<Mesh> meshes;
     final List<Bone> children = new ArrayList<>();
 
@@ -66,6 +71,19 @@ final class ChaoMeshAsset {
   private float developmentStrength=1;
   private final float[] heroRunWeights={1,0,0,0,0,0};
   private boolean heroRunActive,heroRunAdult,heroRunNaturalTwoTone,babyRun053;
+  private boolean unified054;
+  private boolean blocky055;
+  private final float[] pathWeights055={1,0,0,0,0,0,0};
+  private int pathRevision055;
+  private final Map<Mesh,PathFrame054> pathFrames055=new IdentityHashMap<>();
+  private final float[] pathWeights054={1,0,0,0,0,0,0};
+  private int pathRevision054;
+  private static final class PathFrame054 {
+    int revision=-1;
+    float[][] vertices;
+    final Map<Face,Vector3f> normals=new IdentityHashMap<>();
+  }
+  private final Map<Mesh,PathFrame054> pathFrames054=new IdentityHashMap<>();
   private float heroRunMaturity,heroRunSwimFly,heroRunPower;
   private int lensColor,expression;
   private final Map<String,float[]> uvOverrides=new HashMap<>();
@@ -142,6 +160,7 @@ final class ChaoMeshAsset {
             }
             float[][][] heroRun=endpointVectors(mesh,"hero_run_vertices_052",5,vertices.length);
             float[][][] heroRunLegacy=endpointVectors(mesh,"hero_run_legacy_vertices_052",9,vertices.length);
+            float[][][] path054=endpointVectors(mesh,"morphology_vertices_054",7,vertices.length);
             List<Face> faces = new ArrayList<>();
             for (JsonElement fe : mesh.getAsJsonArray("faces")) {
               JsonObject face = fe.getAsJsonObject();
@@ -178,7 +197,9 @@ final class ChaoMeshAsset {
                     mesh.has("material") ? mesh.get("material").getAsString() : "body",
                     vertices,
                     morphs,
-                    heroRun,heroRunLegacy,
+                    heroRun,heroRunLegacy,path054,
+                    mesh.has("blocky_box_055")?BlockyRunBox055.parse(mesh.getAsJsonObject("blocky_box_055"),vertices):null,
+                    name.startsWith("body__")||name.startsWith("arm_")||name.startsWith("foot_")||name.startsWith("wing_")||name.startsWith("tail__"),
                     List.copyOf(faces),
                     mesh.has("shading") && mesh.get("shading").getAsString().equals("flat")
                         ? null
@@ -203,6 +224,8 @@ final class ChaoMeshAsset {
         result.attachmentLandmarks.put(entry.getKey(),landmark);
       }
       result.babyRun053=data.has("baby_run_prototype_053");
+      result.unified054=data.has("hero_run_prototype_054");
+      result.blocky055=data.has("blocky_run_path_055");
       if(data.has("attachment_extra_bones"))for(var entry:data.getAsJsonObject("attachment_extra_bones").entrySet()) {
         var extra=new ArrayList<String>();
         for(var value:entry.getValue().getAsJsonArray()) {
@@ -232,6 +255,12 @@ final class ChaoMeshAsset {
         if(value.has("hero_run_rotations_052")) {
           bone.heroRunRotations=endpointVectors(value,"hero_run_rotations_052",5,3,true);
           for(var target:bone.heroRunRotations)for(int axis=0;axis<3;axis++)target[axis]*=(float)Math.PI/180f;
+        }
+        if(value.has("morphology_pivots_054"))bone.pathPivots054=endpointVectors(value,"morphology_pivots_054",7,3,true);
+        if(value.has("morphology_pivots_055"))bone.pathPivots055=endpointVectors(value,"morphology_pivots_055",7,3,true);
+        if(value.has("morphology_rotations_054")) {
+          bone.pathRotations054=endpointVectors(value,"morphology_rotations_054",7,3,true);
+          for(var target:bone.pathRotations054)for(int axis=0;axis<3;axis++)target[axis]*=(float)Math.PI/180f;
         }
       }
       return result;
@@ -303,6 +332,9 @@ final class ChaoMeshAsset {
   }
 
   private float coordinate(Mesh mesh,int vertex,int axis) {
+    if(blocky055)return pathFrame055(mesh).vertices[vertex][axis];
+    if(unified054&&heroRunActive&&mesh.pathVertices054!=null)
+      return pathFrame054(mesh).vertices[vertex][axis];
     float young=mesh.vertices[vertex][axis],legacy=young;
     if(mesh.morphVertices!=null&&developmentStrength!=0) {
       float aged=0;for(int target=0;target<9;target++)aged+=mesh.morphVertices[target][vertex][axis]*developmentWeights[target];
@@ -325,9 +357,78 @@ final class ChaoMeshAsset {
     return value;
   }
 
+  /** Cache deformed positions/normals once per weight revision. Rendering,
+   * contacts and accessories therefore sample the same actual surface. */
+  private PathFrame054 pathFrame054(Mesh mesh) {
+    var frame=pathFrames054.computeIfAbsent(mesh,ignored->new PathFrame054());
+    if(frame.revision==pathRevision054)return frame;
+    if(frame.vertices==null)frame.vertices=new float[mesh.vertices.length][3];
+    for(int i=0;i<frame.vertices.length;i++)for(int axis=0;axis<3;axis++) {
+      float value=0;
+      for(int t=0;t<7;t++)value+=mesh.pathVertices054[t][i][axis]*pathWeights054[t];
+      frame.vertices[i][axis]=value;
+    }
+    for(Face face:mesh.faces) {
+      var normal=frame.normals.computeIfAbsent(face,ignored->new Vector3f());
+      float[] a=frame.vertices[face.indices[0]];normal.set(0,0,0);
+      for(int edge=1;edge<face.indices.length-1;edge++) {
+        float[] b=frame.vertices[face.indices[edge]],c=frame.vertices[face.indices[edge+1]];
+        float ux=b[0]-a[0],uy=b[1]-a[1],uz=b[2]-a[2],vx=c[0]-a[0],vy=c[1]-a[1],vz=c[2]-a[2];
+        normal.set(uy*vz-uz*vy,uz*vx-ux*vz,ux*vy-uy*vx);
+        if(normal.lengthSquared()>=1e-18f)break;
+      }
+      if(normal.lengthSquared()<1e-18f)normal.set(face.normal);else normal.normalize();
+    }
+    frame.revision=pathRevision054;return frame;
+  }
+
+  /** All emitters and attachment samplers share the same rigid-box surface.
+   * The canonical skull/face never enter legacy or prototype deformation. */
+  private PathFrame054 pathFrame055(Mesh mesh) {
+    var frame=pathFrames055.computeIfAbsent(mesh,ignored->new PathFrame054());
+    if(frame.revision==pathRevision055)return frame;
+    if(frame.vertices==null)frame.vertices=new float[mesh.vertices.length][3];
+    if(mesh.box055!=null)mesh.box055.evaluate(pathWeights055,frame.vertices);
+    else for(int i=0;i<mesh.vertices.length;i++)System.arraycopy(mesh.vertices[i],0,frame.vertices[i],0,3);
+    // Preserve compatible Swim/Fly and opposing Power details on the existing
+    // body/limb rig only. Bounded deltas keep the approved simple proportions.
+    if(heroRunActive&&heroRunAdult&&mesh.compatibleAxes055&&mesh.morphVertices!=null) {
+      for(int i=0;i<frame.vertices.length;i++)for(int axis=0;axis<3;axis++) {
+        float inherited=0;
+        for(int y=0;y<3;y++)for(int x=0;x<3;x++) {
+          float weight=Math.max(0,1-Math.abs(heroRunSwimFly-(y-1)))*Math.max(0,1-Math.abs(heroRunPower-(x-1)));
+          inherited+=mesh.morphVertices[y*3+x][i][axis]*weight;
+        }
+        float delta=Math.clamp(inherited-mesh.morphVertices[4][i][axis],-.25f,.25f)*heroRunMaturity;
+        frame.vertices[i][axis]+=delta;
+      }
+    }
+    for(Face face:mesh.faces) {
+      var normal=frame.normals.computeIfAbsent(face,ignored->new Vector3f());
+      float[] a=frame.vertices[face.indices[0]];normal.set(0,0,0);
+      for(int edge=1;edge<face.indices.length-1;edge++) {
+        float[] b=frame.vertices[face.indices[edge]],c=frame.vertices[face.indices[edge+1]];
+        float ux=b[0]-a[0],uy=b[1]-a[1],uz=b[2]-a[2],vx=c[0]-a[0],vy=c[1]-a[1],vz=c[2]-a[2];
+        normal.set(uy*vz-uz*vy,uz*vx-ux*vz,ux*vy-uy*vx);
+        if(normal.lengthSquared()>=1e-18f)break;
+      }
+      if(normal.lengthSquared()<1e-18f)normal.set(face.normal);else normal.normalize();
+    }
+    frame.revision=pathRevision055;return frame;
+  }
+
   /** One matched surface/joint sampler serves rendering and every attachment. */
   void heroRunDevelopment(com.chaogarden.core.HeroRunMorphology052.Sample sample,float swimFly,float runPower) {
     float[] next=new float[6];boolean enabled=sample!=null&&sample.enabled();
+    float[] pathNext=new float[7];
+    if(!enabled)pathNext[0]=1;
+    else if(sample.adult()) {
+      float maturity=Math.clamp(sample.maturity(),0,1),growth=Math.clamp(sample.adultGrowth(),0,maturity);
+      pathNext[4]=1-maturity;pathNext[5]=maturity-growth;pathNext[6]=growth;
+    } else {
+      float hero=Math.clamp(sample.babyHero(),0,1),run=Math.clamp(sample.babyRun(),0,1);
+      pathNext[0]=(1-hero)*(1-run);pathNext[1]=hero*(1-run);pathNext[2]=(1-hero)*run;pathNext[3]=hero*run;
+    }
     if(!enabled)next[0]=1;
     else if(sample.adult()) {
       float maturity=Math.clamp(sample.maturity(),0,1),growth=Math.clamp(sample.adultGrowth(),0,maturity);
@@ -342,16 +443,39 @@ final class ChaoMeshAsset {
       float hero=Math.clamp(sample.babyHero(),0,1),run=Math.clamp(sample.babyRun(),0,1);
       next[0]=1-hero;next[1]=hero*(1-run);next[3]=hero*run;
     }
-    boolean changed=heroRunActive!=enabled||heroRunAdult!=(sample!=null&&sample.adult())||!Arrays.equals(heroRunWeights,next)
+    boolean pathChanged=heroRunActive!=enabled||!Arrays.equals(pathWeights054,pathNext);
+    boolean changed=pathChanged||heroRunActive!=enabled||heroRunAdult!=(sample!=null&&sample.adult())||!Arrays.equals(heroRunWeights,next)
         ||heroRunSwimFly!=swimFly||heroRunPower!=Math.max(0,runPower);
     heroRunActive=enabled;heroRunAdult=sample!=null&&sample.adult();heroRunMaturity=sample==null?0:sample.maturity();
     heroRunSwimFly=Math.clamp(swimFly,-1,1);heroRunPower=Math.clamp(runPower,0,1);
+    if(pathChanged)pathRevision054++;
+    System.arraycopy(pathNext,0,pathWeights054,0,7);
     System.arraycopy(next,0,heroRunWeights,0,6);if(changed)forwardReaches.clear();
+    float[] boxNext=new float[7];
+    if(!enabled)boxNext[0]=1;
+    else if(sample.adult()) {
+      float maturity=Math.clamp(sample.maturity(),0,1),growth=Math.clamp(sample.adultGrowth(),0,maturity);
+      boxNext[4]=1-maturity;boxNext[5]=maturity-growth;boxNext[6]=growth;
+    } else {
+      float hero=Math.clamp(sample.babyHero(),0,1),run=Math.clamp(sample.babyGrowth(),0,1);
+      boxNext[0]=(1-hero)*(1-run);boxNext[1]=hero*(1-run);boxNext[2]=(1-hero)*run;boxNext[3]=hero*run;
+    }
+    if(changed||!Arrays.equals(pathWeights055,boxNext)){pathRevision055++;forwardReaches.clear();}
+    System.arraycopy(boxNext,0,pathWeights055,0,7);
   }
   void heroRunTwoTone(boolean enabled){heroRunNaturalTwoTone=enabled;}
-  boolean heroRunPrototype(){return bones.values().stream().anyMatch(b->b.heroRunPivots!=null);}
-  private float pivot(Bone bone,int axis){return jointCoordinate(bone.pivot,bone.heroRunPivots,axis);}
-  private float rotation(Bone bone,int axis){return jointCoordinate(bone.rotation,bone.heroRunRotations,axis);}
+  boolean heroRunPrototype(){return blocky055||unified054||bones.values().stream().anyMatch(b->b.heroRunPivots!=null);}
+  boolean fixedHeadBox055(){return blocky055;}
+  private float pivot(Bone bone,int axis){return blocky055?pathJoint055(bone.pivot,bone.pathPivots055,axis):unified054?pathJoint054(bone.pivot,bone.pathPivots054,axis):jointCoordinate(bone.pivot,bone.heroRunPivots,axis);}
+  private float pathJoint055(float[] base,float[][] targets,int axis) {
+    if(targets==null)return base[axis];float value=0;
+    for(int i=0;i<7;i++)value+=targets[i][axis]*pathWeights055[i];return value;
+  }
+  private float rotation(Bone bone,int axis){return unified054?pathJoint054(bone.rotation,bone.pathRotations054,axis):jointCoordinate(bone.rotation,bone.heroRunRotations,axis);}
+  private float pathJoint054(float[] base,float[][] targets,int axis) {
+    if(!heroRunActive||targets==null)return base[axis];float value=0;
+    for(int i=0;i<7;i++)value+=targets[i][axis]*pathWeights054[i];return value;
+  }
   private float jointCoordinate(float[] base,float[][] targets,int axis) {
     if(!heroRunActive||targets==null)return base[axis];float value=base[axis]*heroRunWeights[0];
     for(int i=0;i<5;i++)value+=targets[i][axis]*heroRunWeights[i+1];return value;
@@ -562,7 +686,7 @@ final class ChaoMeshAsset {
     }
     float[] bounds=core==null?null:localBounds(core,joint,poses);
     for(String name:attachmentExtraBones.getOrDefault(anchor,List.of())) {
-      if(babyRun053) {
+      if(babyRun053||unified054) {
         Pose extraPose=poses.get(name);
         if(extraPose!=null&&!extraPose.visible)continue;
       }
@@ -714,7 +838,11 @@ final class ChaoMeshAsset {
         int meshColor=mesh.material.equals("lens")?lensColor:color;
         int meshLight = isLuminous(mesh.material) ? 0x00f000f0 : light;
         for (Face face : mesh.faces) {
-          if(heroRunActive&&(mesh.name.equals("source_informed_rear_point")||mesh.name.equals("closed_swept_quill"))) {
+          if(blocky055) {
+            matrix.transformNormal(pathFrame055(mesh).normals.get(face),normal);
+          } else if(unified054&&heroRunActive&&mesh.pathVertices054!=null) {
+            matrix.transformNormal(pathFrame054(mesh).normals.get(face),normal);
+          } else if(heroRunActive&&(mesh.name.equals("source_informed_rear_point")||mesh.name.equals("closed_swept_quill"))) {
             int a=face.indices[0],b=face.indices[1],c=face.indices[2];
             var edge=new Vector3f(coordinate(mesh,b,0)-coordinate(mesh,a,0),coordinate(mesh,b,1)-coordinate(mesh,a,1),coordinate(mesh,b,2)-coordinate(mesh,a,2));
             var next=new Vector3f(coordinate(mesh,c,0)-coordinate(mesh,a,0),coordinate(mesh,c,1)-coordinate(mesh,a,1),coordinate(mesh,c,2)-coordinate(mesh,a,2));
@@ -795,7 +923,7 @@ final class ChaoMeshAsset {
       Vector3f vertex,
       boolean gameplayUv) {
     float[] v = mesh.vertices[face.indices[index]];
-    if (mesh.vertexNormals != null)
+    if (mesh.vertexNormals != null&&!blocky055&&!(unified054&&heroRunActive&&mesh.pathVertices054!=null))
       pose.transformNormal(mesh.vertexNormals[face.indices[index]], normal);
     int at=face.indices[index];
     pose.pose().transformPosition(coordinate(mesh,at,0)/16f,coordinate(mesh,at,1)/16f,coordinate(mesh,at,2)/16f,vertex);

@@ -1,4 +1,5 @@
-// Delivered 0.25.52 JAR fingerprint independently measured before the .53 test.
+// Historical explicit052-asset fingerprint independently measured from the
+// delivered .52 JAR. Production selection is now tested by the .54 rig test.
 package com.chaogarden.client;
 import com.chaogarden.core.*;
 import com.google.gson.JsonParser;

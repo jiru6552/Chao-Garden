@@ -107,3 +107,35 @@ See [the implementation and results report](docs/BABY_RUN_02553.md) and [referen
 Serialize server and client runs. The opt-in helper creates an isolated flat world, uses actual gameplay rendering and stages controlled training values. Its last two equipped scenes need real Accessories/owo supplied through `chaoAccessoriesTest` / `chaoAccessoriesDir`. Development helpers and native fixtures are excluded from the production JAR. The report separates actual client observations from mathematical and dedicated-server checks and identifies inherited build failures.
 
 Compare fixed-alignment normal/max babies and 25/50/75% Run stages from front, side and back. Inspect walking, expressions, compact hands/feet, hats, animal parts, toys and equipped poses. Use the existing `/chao testtoy broom once`, `/chao testtoy picture_book loop` and `/chao testtoy stop` controls to recheck production attachment poses without rewards. Shaders, full modpacks, remote-player views and listening remain manual checks.
+
+
+## Archived viewer-guided experiment (unpublished 0.25.54)
+
+The .54 rounded-model draft was paused and superseded by .55. Its [retained draft report](docs/HERO_RUN_VIEWER_02554.md), research and explicit diagnostic commands are historical material. They do not establish a completed .54 release or current .55 client/native test results. Use the .55 workflow below for production validation.
+
+```sh
+./gradlew coreTest heroRunMorphRigTest054 heroRunMaterialTest054
+./gradlew runGameTestServer -PchaoGameTestNamespaces=chao_morph54 -PchaoGameTestDir=run-hero054-tests
+./gradlew runClient -PheroRun054Study=true -PheroRun054Baseline=false -PheroRun054Start=0 -PheroRun054Limit=45 -PheroRun054Dir=run-hero054-visual
+```
+
+Serialize server and client runs. The final equipped scenes require real Accessories/owo supplied through `chaoAccessoriesTest` / `chaoAccessoriesDir`. The development helper and native fixtures are excluded from the production JAR. The final report lists the additional mesh/material checks and actual outcomes; a completed fixture design alone is not a visual or test pass.
+
+## Blocky Hero Run path (0.25.55)
+
+See [implementation and actual verification](docs/HERO_RUN_BLOCKY_02555.md) and [reference evidence](docs/HERO_RUN_REFERENCES_02555.md). Use Java 21, Minecraft 1.21.1, NeoForge 21.1.219 and external Lionfish API 3.1. Run the server and client in separate invocations so the isolated GameTest dimension fixture cannot enter an ordinary client run.
+
+```sh
+python3 scripts/validate_blocky_run_02555.py
+./gradlew coreTest blockyRunMorphRigTest055 heroRunMaterialTest055
+./gradlew runGameTestServer -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55 -PchaoGameTestDir=run-morph055-tests
+CHAO_RUN055_SMOKE=true CHAO_RUN055_START=0 CHAO_RUN055_LIMIT=30 CHAO_RUN055_OUTPUT=/tmp/chao-run055-visual ./gradlew runClient
+```
+
+The client helper is development-only, creates an isolated world and uses the production renderer. `START` is inclusive and `LIMIT` is an absolute exclusive case index; split the 30-case cohort across runs if needed. Its controlled photos compare Neutral/Hero babies at 0/25/50/75/100% Run, young/fresh adults and independent adult training/maturity, from front, both sides, back, above and below. Frozen pre-evolution babies and suspended photo fixtures expose the intended endpoints/undersides; they do not introduce normal hovering or a permanent baby-at-evolution gameplay state. Motion, native toys, the genuine Analyzer and equipped cases are recorded separately.
+
+The final equipped cases need real Accessories/owo supplied through `-PchaoAccessoriesTest=true -PchaoAccessoriesDir=/path/to/accessories-mods`. An unavailable optional runtime is an explicit skip, not a pass. Test helpers, native classes and fixture data remain excluded from the production JAR. The current renderer check is `blockyRunMorphRigTest055`; the unpublished .54 rig task remains an explicit historical diagnostic outside the default `check` dependencies.
+
+In your save, compare the fixed head box, front nubs, stepped rear branches and Hero stem/fan at normal, intermediate and maximum development. Raise and lower Run, add opposing Power, try combined drives, then save/reload. In Creative, drag Analyzer **Mind → Profile** through Dark/Neutral/Hero and confirm the baby updates; Survival stays read-only and an adult stays locked. Compare the same form across natural, named two-tone, monocolor, jewel and shiny coats, and check eyes, animal parts, hats, glasses, hands/feet and player attachments in motion. Existing `/chao testtoy broom once`, `/chao testtoy picture_book loop` and `/chao testtoy stop` previews use production animations without rewards.
+
+Use the final report to distinguish actual build/native/client passes, skips and inherited failures. Remote-player views, latency, arbitrary resource packs/shaders, a full modpack, an actual user's existing world and sound listening require separate verification when absent from that report.

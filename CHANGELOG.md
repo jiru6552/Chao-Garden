@@ -1,3 +1,16 @@
+## 0.25.55 — Blocky Hero Run morphology
+
+- Keep the original 7×6×6 baby head, eyes and shared attachment rig fixed; develop the approved stepped cuboid crest, rear spikes and separate front nubs through continuous part transforms.
+- Separate baby visual development from raw Run training by including biological maturity. Continue from the short newly evolved Hero Run stem toward the mature single arch or Hero/Run/Run upper fan.
+- Preserve compact hands/feet, inherited coats, shine, animal parts and saved identity. Retain compatible Swim/Fly and opposing Power detail without importing unrelated donor vertex indices.
+- Keep four-ability earned-point selection, recency ties, adult alignment/type locking and server-authorized Creative Analyzer edits. No new save fields or format version.
+- Record actual checks and remaining limits in [the update report](docs/HERO_RUN_BLOCKY_02555.md) and [reference notes](docs/HERO_RUN_REFERENCES_02555.md).
+
+## 0.25.54 — Paused, unpublished model experiment
+
+- The rounded/faceted viewer-guided draft was stopped before release and superseded by the original-style blocky .55 path.
+- Its retained research and explicit diagnostic tasks are historical material, not evidence that the .54 draft or current .55 client verification was completed.
+
 ## 0.25.53 — Baby Run shape and Creative alignment
 
 - Replace the distorted baby Run target with canonical vertex correspondence, compact hands/feet, a tapered head and five closed swept-back quills.

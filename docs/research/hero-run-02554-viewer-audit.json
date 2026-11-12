@@ -1,0 +1,1837 @@
+{
+  "site_url": "https://chao-island.com/viewer/",
+  "renderer": {
+    "site_url": "https://chao-island.com/viewer/",
+    "browser": "156.0.8078.79",
+    "mode": "headless Chromium / software WebGL2 / live Unity canvas",
+    "webgl": {
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "contextLost": false
+    },
+    "geometry_imported": false,
+    "camera": "Manual mouse drag with R reset; approximate directions, no numeric angles or matchedFOV",
+    "values": "Basic sliders at approximately normalized track positions; raw Unity stat/age values not exposed",
+    "time_mapping": "Visual reference only; no claim of training or biological time threshold"
+  },
+  "capture_count": 121,
+  "settings_and_angles_are_approximate": true,
+  "geometry_imported": false,
+  "images": [
+    {
+      "file": "00-initial-neutral-child-front.png",
+      "sha256": "2fd89ef213130c8caa8d22c7c8a1dd80e8b9159eaf2f73401b837c497e9e7687",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "00-initial-neutral-child-front",
+        "controls": "Initial live viewer; Child selected, neutral alignment, opposed-stat sliders centered, age young",
+        "captured_at": "2026-11-12T02:31:27.005148+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "10-hero-run-adult-young-front.png",
+      "sha256": "f3911b89987c6a384279040b04722969d26b32023315e92b0f4c7b956bc638c0",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "10-hero-run-adult-young-front",
+        "controls": "Child unchecked; Hero alignment; Run first type selected; opposing stat axes centered; age young",
+        "captured_at": "2026-11-12T02:36:23.082193+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "11-hero-run-adult-young-right.png",
+      "sha256": "40f2d133e9b71f242617d65fc9b70ac0ba31b6cbd64a8395dd5ea9e11109e726",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "11-hero-run-adult-young-right",
+        "controls": "Approximate right-side mouse rotation; no numeric angle display",
+        "captured_at": "2026-11-12T02:38:19.687108+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "12-hero-run-adult-young-left.png",
+      "sha256": "7c97105432994b18003f54172918a3c23d0c7146d9616a18aa191f6891869b2f",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "12-hero-run-adult-young-left",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:38:23.394110+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "13-hero-run-adult-young-back.png",
+      "sha256": "551048d85dbeaa19e1bc46f0dfc0b3838eabde321b5c43c2822b1d06f382ec80",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "13-hero-run-adult-young-back",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:38:27.338416+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "14-hero-run-adult-young-above.png",
+      "sha256": "82ce852651520bc98b7790098f508cd78c9e99b4b9f179dfcb1a5f848c473ddf",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "14-hero-run-adult-young-above",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:38:31.515513+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "15-hero-run-adult-young-below.png",
+      "sha256": "a5614e005349dbbf1ac2b2c1f532ee0bdd5763636106bb08e0be526b8569501d",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "15-hero-run-adult-young-below",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:38:35.460266+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "20-hero-run-run-adult-mature-front.png",
+      "sha256": "469019e8c10ad776f9f299bd3c6358709e9334aadeb8f9662244324f59b3c61e",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "20-hero-run-run-adult-mature-front",
+        "controls": "Run first type selected; Hero alignment; Run endpoint; age old; proxy for visually fully developed HeroRunRun, not a training/time measurement",
+        "captured_at": "2026-11-12T02:38:39.680193+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "21-hero-run-run-adult-mature-right.png",
+      "sha256": "d7905166dde07dc058982ecd35137db077746edf1d667daf48f81f60f73e92bf",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "21-hero-run-run-adult-mature-right",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:39:49.608095+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "22-hero-run-run-adult-mature-left.png",
+      "sha256": "e156c35f9f3ee8ddfde17cbafcfff86510537ea43e625f9aea5d0f885a7cbc3f",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "22-hero-run-run-adult-mature-left",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:39:54.576038+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "23-hero-run-run-adult-mature-back.png",
+      "sha256": "e167cb92345eee394b935eb62404f4dddae0223896d100739e2612d5a8648f59",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "23-hero-run-run-adult-mature-back",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:39:58.566641+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "24-hero-run-run-adult-mature-above.png",
+      "sha256": "c09a7c5448bc83e65f90112af05409c6b4c38ece2f9e341509963c87eaf91ec3",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "24-hero-run-run-adult-mature-above",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:40:02.406763+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "25-hero-run-run-adult-mature-below.png",
+      "sha256": "46e3f4b1883b320fd8bc3db145cdaad7d242f7705abc482995dbab0197b10021",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "25-hero-run-run-adult-mature-below",
+        "controls": "Actual live viewer UI and approximate direction named in filename",
+        "captured_at": "2026-11-12T02:40:06.267436+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "30-hero-run-adult-mature-run000-front.png",
+      "sha256": "060775191417d283b0d1003df6441b944386196910ce52df7d5dbb3dc0641304",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "30-hero-run-adult-mature-run000-front",
+        "controls": "Hero adult firsttypeRun; old visual age; Run/Power centered (no secondaryRun), controls approximate",
+        "captured_at": "2026-11-12T02:46:39.691655+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "30-hero-run-adult-mature-run000-right.png",
+      "sha256": "e15832dd58a0e9da3576fd695e1997813e5cae26d6807e8074109de3c2a4e1e2",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "30-hero-run-adult-mature-run000-right",
+        "controls": "Hero adult firsttypeRun; old visual age; Run/Power centered (no secondaryRun), controls approximate",
+        "captured_at": "2026-11-12T02:46:43.378476+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "30-hero-run-adult-mature-run000-left.png",
+      "sha256": "cc7d16264806da5479b6390a27cdc9def8d1a62cf14be3e1116bd9f877bd8fb4",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "30-hero-run-adult-mature-run000-left",
+        "controls": "Hero adult firsttypeRun; old visual age; Run/Power centered (no secondaryRun), controls approximate",
+        "captured_at": "2026-11-12T02:46:47.157150+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "30-hero-run-adult-mature-run000-back.png",
+      "sha256": "3b48ef8e306c82541797fe0910d8a91e13f3a5bfe21bac99f3522e3b20d13fae",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "30-hero-run-adult-mature-run000-back",
+        "controls": "Hero adult firsttypeRun; old visual age; Run/Power centered (no secondaryRun), controls approximate",
+        "captured_at": "2026-11-12T02:46:51.040009+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "30-hero-run-adult-mature-run000-above.png",
+      "sha256": "549da3cb7afcbdbc576057d80c153822fd8a72efe2be74bf016261dc23b12d52",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "30-hero-run-adult-mature-run000-above",
+        "controls": "Hero adult firsttypeRun; old visual age; Run/Power centered (no secondaryRun), controls approximate",
+        "captured_at": "2026-11-12T02:46:54.971358+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "30-hero-run-adult-mature-run000-below.png",
+      "sha256": "53631c8a75fb14e2bc528dd7e6085595cdafaa8a778bb974c757cb3af1e7aaf4",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "30-hero-run-adult-mature-run000-below",
+        "controls": "Hero adult firsttypeRun; old visual age; Run/Power centered (no secondaryRun), controls approximate",
+        "captured_at": "2026-11-12T02:46:58.963602+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "31-hero-run-adult-mature-run025-front.png",
+      "sha256": "b71046673cc01993e3b54f8ebf8e3ba690229753ed87b62b5964584713126ad7",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "31-hero-run-adult-mature-run025-front",
+        "controls": "Hero adult firsttypeRun; old age; quarter towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:00.288180+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "31-hero-run-adult-mature-run025-right.png",
+      "sha256": "ccd96a6c6747342a609d7f62dd33c094c87138178768ca4b604d26222ffbc3cb",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "31-hero-run-adult-mature-run025-right",
+        "controls": "Hero adult firsttypeRun; old age; quarter towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:04.171493+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "31-hero-run-adult-mature-run025-left.png",
+      "sha256": "41ca9bd159cbe58d91b69dcaddeb7aa3283122ac37ade53e5cdfff0fae0a9029",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "31-hero-run-adult-mature-run025-left",
+        "controls": "Hero adult firsttypeRun; old age; quarter towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:07.973133+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "31-hero-run-adult-mature-run025-back.png",
+      "sha256": "fbbf58c9fdd068f1174a79575c33fa77fb5960378e4f5030a85c1969aa175ff3",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "31-hero-run-adult-mature-run025-back",
+        "controls": "Hero adult firsttypeRun; old age; quarter towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:11.878889+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "31-hero-run-adult-mature-run025-above.png",
+      "sha256": "07c4d23202a242d71ed3f6b6b49de5c82f21b4bb7a57befa963e46e24e153d38",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "31-hero-run-adult-mature-run025-above",
+        "controls": "Hero adult firsttypeRun; old age; quarter towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:16.061618+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "31-hero-run-adult-mature-run025-below.png",
+      "sha256": "a64ab305f33665f8461c13613114c039b0c15c928b2efe0b33f70262cdcc0daa",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "31-hero-run-adult-mature-run025-below",
+        "controls": "Hero adult firsttypeRun; old age; quarter towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:20.520254+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "32-hero-run-adult-mature-run050-front.png",
+      "sha256": "d7306d8059ab4990acee56ab5ebd6184679b0fac33de2782140ef70081b9a1a8",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "32-hero-run-adult-mature-run050-front",
+        "controls": "Hero adult firsttypeRun; old age; half towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:21.829424+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "32-hero-run-adult-mature-run050-right.png",
+      "sha256": "49495fdd628713ccf89f439ce6832b37b95f7e3fecd514a1b7866f5e73fa3815",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "32-hero-run-adult-mature-run050-right",
+        "controls": "Hero adult firsttypeRun; old age; half towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:25.710280+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "32-hero-run-adult-mature-run050-left.png",
+      "sha256": "cbbbde85cab0866309d3b1216fc4e34de473b304cc701d7b378617e3dfa102fd",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "32-hero-run-adult-mature-run050-left",
+        "controls": "Hero adult firsttypeRun; old age; half towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:29.968512+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "32-hero-run-adult-mature-run050-back.png",
+      "sha256": "e3762b8bd5a155d4bd097e5a11b225b6557d99f4344cf1c1e2d10c3f7c3c0467",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "32-hero-run-adult-mature-run050-back",
+        "controls": "Hero adult firsttypeRun; old age; half towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:34.234123+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "32-hero-run-adult-mature-run050-above.png",
+      "sha256": "38db0f30bb12b6b86d2c20910033b41a664b4ebc584815e169f35e3982f97c18",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "32-hero-run-adult-mature-run050-above",
+        "controls": "Hero adult firsttypeRun; old age; half towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:38.177700+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "32-hero-run-adult-mature-run050-below.png",
+      "sha256": "7009b2d909ef7bcaaed6868790d4a119e38da770573e34ccf942929af86fc5a4",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "32-hero-run-adult-mature-run050-below",
+        "controls": "Hero adult firsttypeRun; old age; half towardRun, approximate",
+        "captured_at": "2026-11-12T02:47:41.976418+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "33-hero-run-adult-mature-run075-front.png",
+      "sha256": "cac00f2c75aaa1cfe244a2b7fef4ccf5b91df1dd8183fb5a5ac5e84f4452f5cf",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "33-hero-run-adult-mature-run075-front",
+        "controls": "Hero firsttypeRun; oldvisualage; threequartertowardRun,approximate",
+        "captured_at": "2026-11-12T02:49:56.483468+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "33-hero-run-adult-mature-run075-right.png",
+      "sha256": "07b1a98c5f095b8b00c1a37254ab9752d78f861b029f3550a9236fabe5c94a6e",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "33-hero-run-adult-mature-run075-right",
+        "controls": "Hero firsttypeRun; oldvisualage; threequartertowardRun,approximate",
+        "captured_at": "2026-11-12T02:50:01.284479+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "33-hero-run-adult-mature-run075-left.png",
+      "sha256": "175adba8486dc044a565b9c57754bd0fe45448b09083db9f8bca67fc3e102905",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "33-hero-run-adult-mature-run075-left",
+        "controls": "Hero firsttypeRun; oldvisualage; threequartertowardRun,approximate",
+        "captured_at": "2026-11-12T02:50:06.268445+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "33-hero-run-adult-mature-run075-back.png",
+      "sha256": "3ad2e669605174dcc48706e8a0d7c678a97952f03b567f8624688541b7b8647a",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "33-hero-run-adult-mature-run075-back",
+        "controls": "Hero firsttypeRun; oldvisualage; threequartertowardRun,approximate",
+        "captured_at": "2026-11-12T02:50:11.193924+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "33-hero-run-adult-mature-run075-above.png",
+      "sha256": "ec4af31893abb1b5a25a115dcf9589c54175058262ac88869eb8381041146d08",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "33-hero-run-adult-mature-run075-above",
+        "controls": "Hero firsttypeRun; oldvisualage; threequartertowardRun,approximate",
+        "captured_at": "2026-11-12T02:50:16.034446+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "33-hero-run-adult-mature-run075-below.png",
+      "sha256": "2d31d3953ab843640014fb1a0047b8094440cfea45c652bec7058ebd724f7007",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "33-hero-run-adult-mature-run075-below",
+        "controls": "Hero firsttypeRun; oldvisualage; threequartertowardRun,approximate",
+        "captured_at": "2026-11-12T02:50:20.756868+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "41-hero-run-adult-age025-max-run-front.png",
+      "sha256": "d0d979b9cfebc811ff7909d4daf253f683f6f836a6f3122603b465c6a434fb07",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "41-hero-run-adult-age025-max-run-front",
+        "controls": "Hero firsttypeRun; Runendpoint; quartervisualage,approximate",
+        "captured_at": "2026-11-12T02:50:22.677288+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "41-hero-run-adult-age025-max-run-right.png",
+      "sha256": "411ff568e823535276e78118cbe6393a84d9480d4bbec838bbd2ce9d457e6a08",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "41-hero-run-adult-age025-max-run-right",
+        "controls": "Hero firsttypeRun; Runendpoint; quartervisualage,approximate",
+        "captured_at": "2026-11-12T02:50:28.657911+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "41-hero-run-adult-age025-max-run-left.png",
+      "sha256": "accc2572260a08829cdcf865a223341b4bf306be2d2881418ff8a326f655da1d",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "41-hero-run-adult-age025-max-run-left",
+        "controls": "Hero firsttypeRun; Runendpoint; quartervisualage,approximate",
+        "captured_at": "2026-11-12T02:50:33.488508+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "41-hero-run-adult-age025-max-run-back.png",
+      "sha256": "a85c2f2926887396ce9dfcbaa8c07f28b0a2cd86aa5a98fe5241bf48e5b15afc",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "41-hero-run-adult-age025-max-run-back",
+        "controls": "Hero firsttypeRun; Runendpoint; quartervisualage,approximate",
+        "captured_at": "2026-11-12T02:50:37.884173+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "41-hero-run-adult-age025-max-run-above.png",
+      "sha256": "1232a0e791de4556c3c80dbba29227de69729d191cdd8bb226355ce672327b1d",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "41-hero-run-adult-age025-max-run-above",
+        "controls": "Hero firsttypeRun; Runendpoint; quartervisualage,approximate",
+        "captured_at": "2026-11-12T02:50:41.851655+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "41-hero-run-adult-age025-max-run-below.png",
+      "sha256": "d66104b644ef4718b2fbdfe2357e74053a5832fc7012b3d3b2f41e7760a8d8d5",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "41-hero-run-adult-age025-max-run-below",
+        "controls": "Hero firsttypeRun; Runendpoint; quartervisualage,approximate",
+        "captured_at": "2026-11-12T02:50:46.059393+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "42-hero-run-adult-age050-max-run-front.png",
+      "sha256": "1afd25d8c50e19f82b1804c817c67a8f9f026255b7cc9c0577695a4a491ec52b",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "42-hero-run-adult-age050-max-run-front",
+        "controls": "Hero firsttypeRun; Runendpoint; halfvisualage,approximate",
+        "captured_at": "2026-11-12T02:50:47.426026+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "42-hero-run-adult-age050-max-run-right.png",
+      "sha256": "237c7865bdda3a00a2a6ce907017cc83547362e44538e9843dc83e6f5ea75f11",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "42-hero-run-adult-age050-max-run-right",
+        "controls": "Hero firsttypeRun; Runendpoint; halfvisualage,approximate",
+        "captured_at": "2026-11-12T02:50:51.770931+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "42-hero-run-adult-age050-max-run-left.png",
+      "sha256": "6a6018b53756e105f40b8f7ac97d992ac7fe2f3f5930ae97a685e3fd0d716911",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "42-hero-run-adult-age050-max-run-left",
+        "controls": "Hero firsttypeRun; Runendpoint; halfvisualage,approximate",
+        "captured_at": "2026-11-12T02:50:56.459271+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "42-hero-run-adult-age050-max-run-back.png",
+      "sha256": "de96895dc429a7af5fe2e151fc7e6b8cd717e4c192c48fdbbf853956231b4eee",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "42-hero-run-adult-age050-max-run-back",
+        "controls": "Hero firsttypeRun; Runendpoint; halfvisualage,approximate",
+        "captured_at": "2026-11-12T02:51:01.099220+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "42-hero-run-adult-age050-max-run-above.png",
+      "sha256": "b80cbebf6da5f2e43ec271dbf7330dac1cd91a29dd09690fb667bc992d4b5f16",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "42-hero-run-adult-age050-max-run-above",
+        "controls": "Hero firsttypeRun; Runendpoint; halfvisualage,approximate",
+        "captured_at": "2026-11-12T02:51:05.216158+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "42-hero-run-adult-age050-max-run-below.png",
+      "sha256": "67283eb2b6552b88ccbff88b547837c19e89b7e7a079357eb24e88d6ea134246",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "42-hero-run-adult-age050-max-run-below",
+        "controls": "Hero firsttypeRun; Runendpoint; halfvisualage,approximate",
+        "captured_at": "2026-11-12T02:51:09.515910+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "43-hero-run-adult-age075-max-run-front.png",
+      "sha256": "24753ac3a6d2b28c379d93bc15249a9791f2f5328af429bd8e0398bd15ab6f8f",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "43-hero-run-adult-age075-max-run-front",
+        "controls": "Hero firsttypeRun; Runendpoint; threequartervisualage,approximate",
+        "captured_at": "2026-11-12T02:51:59.382725+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "43-hero-run-adult-age075-max-run-right.png",
+      "sha256": "cb4f78f3becf7d7086e693da9b14eb75d7a0c374f762ef521edf60b1d32fdd2f",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "43-hero-run-adult-age075-max-run-right",
+        "controls": "Hero firsttypeRun; Runendpoint; threequartervisualage,approximate",
+        "captured_at": "2026-11-12T02:52:03.724805+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "43-hero-run-adult-age075-max-run-left.png",
+      "sha256": "06ba4327be04a1382e97e6e1905a82d49064788afe305cd107e04f4ab32c3e68",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "43-hero-run-adult-age075-max-run-left",
+        "controls": "Hero firsttypeRun; Runendpoint; threequartervisualage,approximate",
+        "captured_at": "2026-11-12T02:52:07.640450+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "43-hero-run-adult-age075-max-run-back.png",
+      "sha256": "1eecb8d993c0fe17d7b1fd9e69f3901bfe8db099a45c5260509d7a885ca5d993",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "43-hero-run-adult-age075-max-run-back",
+        "controls": "Hero firsttypeRun; Runendpoint; threequartervisualage,approximate",
+        "captured_at": "2026-11-12T02:52:11.666237+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "43-hero-run-adult-age075-max-run-above.png",
+      "sha256": "dd42df7e8fa196c5b2d4c175ee243ac5e39f0d9e5ef0d3367db2a3bbebdcd592",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "43-hero-run-adult-age075-max-run-above",
+        "controls": "Hero firsttypeRun; Runendpoint; threequartervisualage,approximate",
+        "captured_at": "2026-11-12T02:52:15.763740+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "43-hero-run-adult-age075-max-run-below.png",
+      "sha256": "12f66de45bffbc49027ec6fc19cee5c99ec4d33e9f3b4022da3a1898f10c44c5",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "43-hero-run-adult-age075-max-run-below",
+        "controls": "Hero firsttypeRun; Runendpoint; threequartervisualage,approximate",
+        "captured_at": "2026-11-12T02:52:19.958803+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "40-hero-run-adult-age000-max-run-front.png",
+      "sha256": "0184a694810a241dfff87b5ac3830ae4170f03234aeabb06e217f8b013e2044c",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "40-hero-run-adult-age000-max-run-front",
+        "controls": "Hero firsttypeRun; Runendpoint; visualageyoung,approximate",
+        "captured_at": "2026-11-12T02:52:21.204818+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "40-hero-run-adult-age000-max-run-right.png",
+      "sha256": "c882e8384e2affb92d316bee18015283e9b9aebf5f6cc7da4a932a4f5038e4c3",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "40-hero-run-adult-age000-max-run-right",
+        "controls": "Hero firsttypeRun; Runendpoint; visualageyoung,approximate",
+        "captured_at": "2026-11-12T02:52:25.440593+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "40-hero-run-adult-age000-max-run-left.png",
+      "sha256": "cc2ab4f46992cdb2fbdcbdfb7c95b1d5f8606a8c330dd7b34e3f17580fefc26b",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "40-hero-run-adult-age000-max-run-left",
+        "controls": "Hero firsttypeRun; Runendpoint; visualageyoung,approximate",
+        "captured_at": "2026-11-12T02:52:29.575662+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "40-hero-run-adult-age000-max-run-back.png",
+      "sha256": "3de16a5d05a3430aed0550fce500ded66284aa7161505c554ff84c4a84df5d36",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "40-hero-run-adult-age000-max-run-back",
+        "controls": "Hero firsttypeRun; Runendpoint; visualageyoung,approximate",
+        "captured_at": "2026-11-12T02:52:33.799873+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "40-hero-run-adult-age000-max-run-above.png",
+      "sha256": "4d1b750b82ec85bb29df64913eee3cf130b57006362d3a855c6f54f54d23bc4e",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "40-hero-run-adult-age000-max-run-above",
+        "controls": "Hero firsttypeRun; Runendpoint; visualageyoung,approximate",
+        "captured_at": "2026-11-12T02:52:37.918077+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "40-hero-run-adult-age000-max-run-below.png",
+      "sha256": "05134ea789619880373be659f30ba5341f00fd87a153e115477fec2553d8b3b4",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "40-hero-run-adult-age000-max-run-below",
+        "controls": "Hero firsttypeRun; Runendpoint; visualageyoung,approximate",
+        "captured_at": "2026-11-12T02:52:41.857905+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "54-hero-child-run100-front.png",
+      "sha256": "c00ff50a73151387860a1316856934e4019eb143fb5c98bee897c68268975f6b",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "54-hero-child-run100-front",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunendpoint; actualHeroRunbabyreference",
+        "captured_at": "2026-11-12T02:54:21.864469+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "54-hero-child-run100-right.png",
+      "sha256": "9a2f4a4ac84a86d99227c992813eec144f3c0df7d175c91a225d69d2d88e84bc",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "54-hero-child-run100-right",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunendpoint; actualHeroRunbabyreference",
+        "captured_at": "2026-11-12T02:54:25.961429+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "54-hero-child-run100-left.png",
+      "sha256": "4ba9815d265db316d7aa5fd3c53d2db6e67a86a0e913a2b338b7b4e680f9363c",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "54-hero-child-run100-left",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunendpoint; actualHeroRunbabyreference",
+        "captured_at": "2026-11-12T02:54:30.019130+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "54-hero-child-run100-back.png",
+      "sha256": "7bbb88fe905b1b445f34ceeedd6e7c0b535edc4e616dcdfc85a5fa5cb311511a",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "54-hero-child-run100-back",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunendpoint; actualHeroRunbabyreference",
+        "captured_at": "2026-11-12T02:54:34.044605+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "54-hero-child-run100-above.png",
+      "sha256": "1690429b4b5a014b09d1c6eb73d8ce9be93e6a2cc5eb1778f9e4b7fad2009e64",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "54-hero-child-run100-above",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunendpoint; actualHeroRunbabyreference",
+        "captured_at": "2026-11-12T02:54:37.910865+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "54-hero-child-run100-below.png",
+      "sha256": "3627ab90b62871877625b0c268f68e00527d81d267eba81f91c63b616f7ec442",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "54-hero-child-run100-below",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunendpoint; actualHeroRunbabyreference",
+        "captured_at": "2026-11-12T02:54:41.857189+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "50b-hero-child-run000-front.png",
+      "sha256": "2ed28c0e8b21cdc163170c28f5ae23c4bba9efa4dfd0783bc7c8eec3a3728c83",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "50b-hero-child-run000-front",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunPowercenter; actualHeroNormalbabyreference",
+        "captured_at": "2026-11-12T02:54:43.223968+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "50b-hero-child-run000-right.png",
+      "sha256": "0f9a64ff2c08df3d736ae41b7ac87ff09f4cfd0bf944aebf9ea54e559760f558",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "50b-hero-child-run000-right",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunPowercenter; actualHeroNormalbabyreference",
+        "captured_at": "2026-11-12T02:54:47.526967+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "50b-hero-child-run000-left.png",
+      "sha256": "f7649bbd5443c4d4eabbed1b53396eb7b55f58f25f7b38a57c932bf1d8091abc",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "50b-hero-child-run000-left",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunPowercenter; actualHeroNormalbabyreference",
+        "captured_at": "2026-11-12T02:54:51.813858+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "50b-hero-child-run000-back.png",
+      "sha256": "c5d75aa5126ef7b6f601fcb725182cc5041afbd947d4102d82240b41b048b077",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "50b-hero-child-run000-back",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunPowercenter; actualHeroNormalbabyreference",
+        "captured_at": "2026-11-12T02:54:55.784884+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "50b-hero-child-run000-above.png",
+      "sha256": "40454f5584f3776db5ea160402f2710402c54d268f70bd95a995db67595556c4",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "50b-hero-child-run000-above",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunPowercenter; actualHeroNormalbabyreference",
+        "captured_at": "2026-11-12T02:55:00.037367+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "50b-hero-child-run000-below.png",
+      "sha256": "3ed84df486e8bf83ad6dcf2bf8cce6d370489ac7b588b5c56a0bf8a52fd5bcc4",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "50b-hero-child-run000-below",
+        "controls": "ChildselectedHeroalignmentoldvisualageRunPowercenter; actualHeroNormalbabyreference",
+        "captured_at": "2026-11-12T02:55:04.162507+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "52-hero-child-run050-front.png",
+      "sha256": "50e9392ee15b109d9c7a7f1484dc730acedbe5a063f287b200d10838aeb599e5",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "52-hero-child-run050-front",
+        "controls": "ChildselectedHeroalignmentoldvisualageapproximatelyhalfRuninfluence",
+        "captured_at": "2026-11-12T02:55:05.425328+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "52-hero-child-run050-right.png",
+      "sha256": "445e760a311012e9eb47e5355da5a997cef99be7161704822c1c33cb43a92511",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "52-hero-child-run050-right",
+        "controls": "ChildselectedHeroalignmentoldvisualageapproximatelyhalfRuninfluence",
+        "captured_at": "2026-11-12T02:55:09.636976+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "52-hero-child-run050-left.png",
+      "sha256": "c995613c696b601d38dbc77d56f10e1723b5b87ed104de386f57ce135f05eebe",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "52-hero-child-run050-left",
+        "controls": "ChildselectedHeroalignmentoldvisualageapproximatelyhalfRuninfluence",
+        "captured_at": "2026-11-12T02:55:13.658220+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "52-hero-child-run050-back.png",
+      "sha256": "736e48a2adae7cf25995376fca8e5dedab1a9a1f31c1d30e145c0aa7281186be",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "52-hero-child-run050-back",
+        "controls": "ChildselectedHeroalignmentoldvisualageapproximatelyhalfRuninfluence",
+        "captured_at": "2026-11-12T02:55:17.637722+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "52-hero-child-run050-above.png",
+      "sha256": "d5e755b597563185d6ec3440bcf3a214489159e06a4f538cd29cde3740a6929f",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "52-hero-child-run050-above",
+        "controls": "ChildselectedHeroalignmentoldvisualageapproximatelyhalfRuninfluence",
+        "captured_at": "2026-11-12T02:55:21.723652+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "52-hero-child-run050-below.png",
+      "sha256": "bcc2fa9eccb29f95ee76a23dc9e560ffe74df07cd686057512e8688e9cedd8c7",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "52-hero-child-run050-below",
+        "controls": "ChildselectedHeroalignmentoldvisualageapproximatelyhalfRuninfluence",
+        "captured_at": "2026-11-12T02:55:25.811053+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "51-hero-child-run025-front.png",
+      "sha256": "286fe7e5fba64dce35a0ecdd93f704ac77b2fd7488771ec56362520d19d3fb8c",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "51-hero-child-run025-front",
+        "controls": "ChildHerooldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:12.279452+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "51-hero-child-run025-right.png",
+      "sha256": "7b30260ec5ba683e95a9be49bc1d264921356ababcb874561724047683b34c07",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "51-hero-child-run025-right",
+        "controls": "ChildHerooldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:16.267508+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "51-hero-child-run025-left.png",
+      "sha256": "403102377d95ce2abfd24f9cc32c4e946ed4fca066bb2576cc888b5fa5b62d60",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "51-hero-child-run025-left",
+        "controls": "ChildHerooldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:20.623673+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "51-hero-child-run025-back.png",
+      "sha256": "d488b2bda7bba28ea057ebe0d3d95b59c914e17059a56a525b3c5417d3107efd",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "51-hero-child-run025-back",
+        "controls": "ChildHerooldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:24.959687+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "51-hero-child-run025-above.png",
+      "sha256": "d6727f273fafc7de0055df33dc4b75c59ef6652ca9dfc58f0b6887cd1214cb13",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "51-hero-child-run025-above",
+        "controls": "ChildHerooldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:30.288402+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "51-hero-child-run025-below.png",
+      "sha256": "8c20fa599b718f730e6cd5560d8570c1c111d92776e74c10d370f224f13f4fd9",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "51-hero-child-run025-below",
+        "controls": "ChildHerooldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:34.356703+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "53-hero-child-run075-front.png",
+      "sha256": "f187daa3f5ca41d277ab1eaa9fe4b6a8d4c733ec563e0f4ce9f115d6681deba2",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "53-hero-child-run075-front",
+        "controls": "ChildHerooldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:35.615146+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "53-hero-child-run075-right.png",
+      "sha256": "ceb6405893bff6f1bae0fafc3fc4852bfa59caf9a77fd9d8f638dd0869a0b145",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "53-hero-child-run075-right",
+        "controls": "ChildHerooldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:39.893157+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "53-hero-child-run075-left.png",
+      "sha256": "cb2ef22c4c336a809aecd005071bdfb7a36b63c8902281551645e3bc66bcb7b7",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "53-hero-child-run075-left",
+        "controls": "ChildHerooldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:44.292913+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "53-hero-child-run075-back.png",
+      "sha256": "01ae8cb814ad5ba3e89c313da4e5be698dd522741f3f1687b7c2f8fdec09b5ed",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "53-hero-child-run075-back",
+        "controls": "ChildHerooldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:48.496830+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "53-hero-child-run075-above.png",
+      "sha256": "d87e42b5cbb9b5a0e42d07bfe635b6f4a2eb0f1a350151e377dd5e86a0d6db96",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "53-hero-child-run075-above",
+        "controls": "ChildHerooldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:52.763669+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "53-hero-child-run075-below.png",
+      "sha256": "e46c8c2eecf585bb2b54c5accbcf2c23977b476fbff2124751cde439004e4434",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "53-hero-child-run075-below",
+        "controls": "ChildHerooldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:00:57.036513+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "64b-neutral-child-run100-front.png",
+      "sha256": "6d33c876566816d10e5fdf48554a408107a307ccd2921167ecbece6b6ca998c6",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "64b-neutral-child-run100-front",
+        "controls": "ChildNeutralRunendpointoldageactualreference",
+        "captured_at": "2026-11-12T03:01:43.910592+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "64b-neutral-child-run100-right.png",
+      "sha256": "c27d715ce8428f16f0a9b429b9140e06e133f7cb97491e29f9b33d5925a98e29",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "64b-neutral-child-run100-right",
+        "controls": "ChildNeutralRunendpointoldageactualreference",
+        "captured_at": "2026-11-12T03:01:49.324085+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "64b-neutral-child-run100-left.png",
+      "sha256": "6cf84f02ef49d9d32d40767f008c8203b97adac1999c15fa177ccb47564e85eb",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "64b-neutral-child-run100-left",
+        "controls": "ChildNeutralRunendpointoldageactualreference",
+        "captured_at": "2026-11-12T03:01:54.661297+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "64b-neutral-child-run100-back.png",
+      "sha256": "1b24f32ce0b697c3949acafd4c8ffe04289965a0fd1b4454a88bdf4e630f8b4e",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "64b-neutral-child-run100-back",
+        "controls": "ChildNeutralRunendpointoldageactualreference",
+        "captured_at": "2026-11-12T03:01:59.324479+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "64b-neutral-child-run100-above.png",
+      "sha256": "922f6eb6a86f982cb37279468b79f7d0ad7e39e90ce39dc4221f7bcf83598a5f",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "64b-neutral-child-run100-above",
+        "controls": "ChildNeutralRunendpointoldageactualreference",
+        "captured_at": "2026-11-12T03:02:03.916450+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "64b-neutral-child-run100-below.png",
+      "sha256": "6e9bded4654195744f9b5d89a65628571b8a6008f35afddc64861443858f5201",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "64b-neutral-child-run100-below",
+        "controls": "ChildNeutralRunendpointoldageactualreference",
+        "captured_at": "2026-11-12T03:02:08.070491+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "60-neutral-child-run000-front.png",
+      "sha256": "7de740d1b7a0f7a11fbfae11513e43fb954a0af84a80aa5c5100e368c22d95da",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "60-neutral-child-run000-front",
+        "controls": "ChildNeutralRunPowercenteroldageactualreference",
+        "captured_at": "2026-11-12T03:02:09.407625+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "60-neutral-child-run000-right.png",
+      "sha256": "8141ada5cefb01fb4c15d84e12ad487b62c159734c1f99cf73053cd282d9304b",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "60-neutral-child-run000-right",
+        "controls": "ChildNeutralRunPowercenteroldageactualreference",
+        "captured_at": "2026-11-12T03:02:13.537669+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "60-neutral-child-run000-left.png",
+      "sha256": "3c55c9f07e3c249dcc6909728951fde05fa653d92d381e77e07f5476b434554c",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "60-neutral-child-run000-left",
+        "controls": "ChildNeutralRunPowercenteroldageactualreference",
+        "captured_at": "2026-11-12T03:02:17.702966+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "60-neutral-child-run000-back.png",
+      "sha256": "63a6a2011c65074934cf4f418c734318b31325818819334c7bc8806a0e733d38",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "60-neutral-child-run000-back",
+        "controls": "ChildNeutralRunPowercenteroldageactualreference",
+        "captured_at": "2026-11-12T03:02:22.070082+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "60-neutral-child-run000-above.png",
+      "sha256": "88c1e089b9cc9065ac6d3bc6cfc63fe3479713d9cbe0b7c60b6d2260e9c6bc73",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "60-neutral-child-run000-above",
+        "controls": "ChildNeutralRunPowercenteroldageactualreference",
+        "captured_at": "2026-11-12T03:02:26.170086+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "60-neutral-child-run000-below.png",
+      "sha256": "9f5e7a233455d35257a4161ce4d11961e6f2e578577806dc8662674ed2eb1d18",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "60-neutral-child-run000-below",
+        "controls": "ChildNeutralRunPowercenteroldageactualreference",
+        "captured_at": "2026-11-12T03:02:30.516610+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "62-neutral-child-run050-front.png",
+      "sha256": "1aba8cfdd9f03586dd16ca73489f4a23cccfc3cd1702420e36991dec3703b643",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "62-neutral-child-run050-front",
+        "controls": "ChildNeutralhalfRunoldageapproximate",
+        "captured_at": "2026-11-12T03:02:31.887472+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "62-neutral-child-run050-right.png",
+      "sha256": "6d2a3d291ee09440faf25c2c13fbcfcbca69feedc50e8d9e86d63da0fb94d139",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "62-neutral-child-run050-right",
+        "controls": "ChildNeutralhalfRunoldageapproximate",
+        "captured_at": "2026-11-12T03:02:36.291220+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "62-neutral-child-run050-left.png",
+      "sha256": "db0a4b9b23e2d3596e582f9dfd217f2abc5935e0dc7e8dec4c59452f1b613095",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "62-neutral-child-run050-left",
+        "controls": "ChildNeutralhalfRunoldageapproximate",
+        "captured_at": "2026-11-12T03:02:40.979384+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "62-neutral-child-run050-back.png",
+      "sha256": "1fd8791fdfdf71f20ee7563d4fda86c399f6a318a7a486df37db173372d02657",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "62-neutral-child-run050-back",
+        "controls": "ChildNeutralhalfRunoldageapproximate",
+        "captured_at": "2026-11-12T03:02:45.630280+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "62-neutral-child-run050-above.png",
+      "sha256": "8dbbd99595d7807ed5c79e3adfbd22ce7891a1aad24062048ff2efb7c8916805",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "62-neutral-child-run050-above",
+        "controls": "ChildNeutralhalfRunoldageapproximate",
+        "captured_at": "2026-11-12T03:02:49.968283+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "62-neutral-child-run050-below.png",
+      "sha256": "23c859faf4912f64039605967c389a64dfdc219f179d3f349c52acb50ae07322",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "62-neutral-child-run050-below",
+        "controls": "ChildNeutralhalfRunoldageapproximate",
+        "captured_at": "2026-11-12T03:02:54.457969+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "61-neutral-child-run025-front.png",
+      "sha256": "98ac12f637a38969feb1839e8284103c5a93539450f6b7624c0c4892c05da163",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "61-neutral-child-run025-front",
+        "controls": "ChildNeutraloldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:05:55.865218+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "61-neutral-child-run025-right.png",
+      "sha256": "34f62714e1b25d75327ecc21a781ffe5f79cfaacea855dfef48263f79907adc5",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "61-neutral-child-run025-right",
+        "controls": "ChildNeutraloldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:03.568582+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "61-neutral-child-run025-left.png",
+      "sha256": "d4bac9796d466ff2a7b88956c0b67f2c4f9015c721cf67702d30f0b11b1bd615",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "61-neutral-child-run025-left",
+        "controls": "ChildNeutraloldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:10.913401+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "61-neutral-child-run025-back.png",
+      "sha256": "2fad584020a73658b868b8420ec368cae89c29ded78090fb994dc96dff781805",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "61-neutral-child-run025-back",
+        "controls": "ChildNeutraloldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:18.767013+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "61-neutral-child-run025-above.png",
+      "sha256": "31f12aba19c721300ac4fbe014e356ab19348ce06f2269a627d53cf976c067f9",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "61-neutral-child-run025-above",
+        "controls": "ChildNeutraloldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:27.004722+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "61-neutral-child-run025-below.png",
+      "sha256": "4c15bdacb7d57e96aa4e3338bb4c36b9517cc31677724ff882f64c0dac2e0130",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "61-neutral-child-run025-below",
+        "controls": "ChildNeutraloldvisualagequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:33.666424+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "63-neutral-child-run075-front.png",
+      "sha256": "549cf5929697599b8e216322cf9f8afc7468c703a9aa0aa770ad47a6b0a1b7a1",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "63-neutral-child-run075-front",
+        "controls": "ChildNeutraloldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:35.100685+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "63-neutral-child-run075-right.png",
+      "sha256": "a9ab14ed3947e705eb2fc5cf5d8a1dd27bf1a9dd2e7ca68965937be25b7c0f5d",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "63-neutral-child-run075-right",
+        "controls": "ChildNeutraloldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:40.372048+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "63-neutral-child-run075-left.png",
+      "sha256": "c0b9807efdcb0a1ff1dd7f1e739970e20c4177229e93c44cfb13b5f8a4cac41e",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "63-neutral-child-run075-left",
+        "controls": "ChildNeutraloldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:47.467257+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "63-neutral-child-run075-back.png",
+      "sha256": "dbf34ca856af0dc579efc0da6a3568f8089a0181d95c2c92e899da2a204a1992",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "63-neutral-child-run075-back",
+        "controls": "ChildNeutraloldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:53.365397+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "63-neutral-child-run075-above.png",
+      "sha256": "330fada6061e3d5edc3f8f69d3626e3df55514ab36b9f9561011494b73e0143f",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "63-neutral-child-run075-above",
+        "controls": "ChildNeutraloldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:06:58.895072+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    },
+    {
+      "file": "63-neutral-child-run075-below.png",
+      "sha256": "520000ffdbaa87032e667df242df322f127029f607a39a4a38ec1e3fca46c75e",
+      "size": [
+        970,
+        486
+      ],
+      "metadata": {
+        "label": "63-neutral-child-run075-below",
+        "controls": "ChildNeutraloldvisualagethreequarterRunapproximate",
+        "captured_at": "2026-11-12T03:07:04.516730+00:00",
+        "exact_unity_values_verified": false,
+        "camera_angles": "Approximate manual rotation, not a numerical camera/FOV match"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5829 @@
+{
+  "prototype": "0.25.52",
+  "evidence_kind": "offline supplied-source audit, not a Minecraft or original-game play session",
+  "input_sha256": {
+    "art/sa2_02514/original/ChaoMain.prs": "d296ebbb14a8386e86eba3035b9fb35c6e1add0e563ef233ef67c8830be17dc8",
+    "art/sa2_02515/original/al_body.prs": "ab4932311f7600654b91dbacba5bc8320048af469c44fb120722c42c387d380c"
+  },
+  "decompressed_ChaoMain_bytes": 4402824,
+  "decompressed_ChaoMain_sha256": "ebbef2b6473f2ec32abc92ce5ded0640f975abb882b6b2f008fc3b86c8977be4",
+  "root_table_offset": "0x3a4cd0",
+  "root_table_count": 144,
+  "shape_order": [
+    "young",
+    "aged_normal",
+    "aged_swim",
+    "aged_fly",
+    "aged_run",
+    "aged_power"
+  ],
+  "part_layout_reference": "https://github.com/Exant64/CWE/blob/0aea72e06c7eb213769b7ee5fd53ef5db57b7e37/CWE/al_draw.h",
+  "type_and_group_reference": "https://github.com/Exant64/CWE/blob/0aea72e06c7eb213769b7ee5fd53ef5db57b7e37/CWE/api/api_customchao.cpp",
+  "transform_reference": "https://github.com/X-Hax/sa_tools/blob/58e6cd1ee3f1f275ccbe288f46944fec28d3883b/Libraries/SAModel.Direct3D/MatrixFunctions.cs",
+  "constant_layout_reference": "https://github.com/Exant64/CWE/blob/0aea72e06c7eb213769b7ee5fd53ef5db57b7e37/CWE/al_behavior/al_intention.h",
+  "constant_table": {
+    "DeformLimit": {
+      "decompressed_offset": "0x310740",
+      "float32": 1.0
+    },
+    "GrowthLimit": {
+      "decompressed_offset": "0x310744",
+      "float32": 1.2000000476837158
+    },
+    "GrowthMayuPoint": {
+      "decompressed_offset": "0x310748",
+      "float32": 1.0
+    },
+    "NormalBoundary": {
+      "decompressed_offset": "0x31074c",
+      "float32": 0.5
+    },
+    "NeutralBoundary": {
+      "decompressed_offset": "0x310750",
+      "float32": 0.5
+    },
+    "AddGrowthTime": {
+      "decompressed_offset": "0x310754",
+      "float32": 6.944444521650439e-06
+    },
+    "TimeAddGrowthChild": {
+      "decompressed_offset": "0x310758",
+      "float32": 0.01666666753590107
+    },
+    "TimeAddGrowthAdult": {
+      "decompressed_offset": "0x31075c",
+      "float32": 0.004166666883975267
+    },
+    "TimeAddAttrChild": {
+      "decompressed_offset": "0x310760",
+      "float32": 0.008333333767950535
+    },
+    "TimeAddAttrAdult": {
+      "decompressed_offset": "0x310764",
+      "float32": 0.004166666883975267
+    },
+    "FruitAddGrowthChild": {
+      "decompressed_offset": "0x3107ac",
+      "float32": 0.004999999888241291
+    },
+    "FruitAddGrowthAdult": {
+      "decompressed_offset": "0x3107b0",
+      "float32": 0.0012499999720603228
+    },
+    "MinimalAddFormChild": {
+      "decompressed_offset": "0x3107d0",
+      "float32": 0.10000000149011612
+    },
+    "MinimalAddFormAdult": {
+      "decompressed_offset": "0x3107d4",
+      "float32": 0.10000000149011612
+    },
+    "MinimalAddGrowthChild": {
+      "decompressed_offset": "0x3107e0",
+      "float32": 0.009999999776482582
+    },
+    "MinimalAddGrowthAdult": {
+      "decompressed_offset": "0x3107e4",
+      "float32": 0.004999999888241291
+    }
+  },
+  "adult_child_time_growth_ratio": 0.25,
+  "limits": [
+    "Absolute original wall-clock callback frequency is not verified by these constants.",
+    "Source body textures use CI4 indexed palettes; the supplied al_body member alone does not establish final in-game RGB colours.",
+    "Bind-pose extents include source crests and facial surfaces; they are not biological growth rates or Minecraft hitboxes.",
+    "The existing historical source extractor is imported only for PRS/chunk decoding; this audit supplies its own corroborated transform and changes no old exports."
+  ],
+  "shapes": {
+    "neutral_child": {
+      "table_index": 0,
+      "root_object": "0x73d20",
+      "nodes": [
+        {
+          "index": 0,
+          "part": "root",
+          "object_offset": "0x73d20",
+          "parent_index": null,
+          "pivot_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 1,
+          "part": "body",
+          "object_offset": "0x73ce8",
+          "parent_index": 0,
+          "pivot_world": [
+            0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "flags": "0x6",
+          "triangles": 60,
+          "bind_pose_bounds": [
+            [
+              -0.7776027321815491,
+              0.4205198287963867,
+              -0.8470113740692113
+            ],
+            [
+              0.7776028513908386,
+              1.8789987564086914,
+              1.0413442386856104
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "part": "arm_left_position",
+          "object_offset": "0x73774",
+          "parent_index": 1,
+          "pivot_world": [
+            0.5483999848365784,
+            1.6833639740943909,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.5483999848365784,
+            0.6833639740943909,
+            0.08968599885702133
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 3,
+          "part": "arm_left",
+          "object_offset": "0x7373c",
+          "parent_index": 2,
+          "pivot_world": [
+            0.5483999848365784,
+            1.6833639740943909,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              0.4952076993995537,
+              0.4777075872470137,
+              -0.22058401155020096
+            ],
+            [
+              1.4239935736672544,
+              1.7379002913926602,
+              0.8004934725882398
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "part": "hand_left",
+          "object_offset": "0x7331c",
+          "parent_index": 3,
+          "pivot_world": [
+            0.8856788491020606,
+            0.6455962720866641,
+            0.2504998099340363
+          ],
+          "local_position": [
+            -0.09501899778842926,
+            -1.0977380275726318,
+            0.050227999687194824
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 5,
+          "part": "leg_left_position",
+          "object_offset": "0x732e4",
+          "parent_index": 1,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.3484329879283905,
+            0.047387998551130295,
+            -0.02398199960589409
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 6,
+          "part": "leg_left",
+          "object_offset": "0x732ac",
+          "parent_index": 5,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.03167581558227539,
+              6.72750174999237e-05,
+              -0.6197663524577592
+            ],
+            [
+              0.9783600270748138,
+              0.6545851640403271,
+              1.0710825941135909
+            ]
+          ]
+        },
+        {
+          "index": 7,
+          "part": "tail_position",
+          "object_offset": "0x72ed4",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.8000010119209264
+          ],
+          "local_position": [
+            -0.0,
+            -0.025539999827742577,
+            -0.800000011920929
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 8,
+          "part": "tail",
+          "object_offset": "0x72e9c",
+          "parent_index": 7,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.8000010119209264
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x15",
+          "triangles": 36,
+          "bind_pose_bounds": [
+            [
+              -0.33014628291130066,
+              0.704666224176163,
+              -1.4334550535083026
+            ],
+            [
+              0.3301464319229126,
+              1.1775697445175677,
+              -0.746000932721681
+            ]
+          ]
+        },
+        {
+          "index": 9,
+          "part": "arm_right_position",
+          "object_offset": "0x72b0c",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.683364987373352,
+            0.08968499885702386
+          ],
+          "local_position": [
+            -0.5484309792518616,
+            0.683364987373352,
+            0.08968599885702133
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 10,
+          "part": "arm_right",
+          "object_offset": "0x72ad4",
+          "parent_index": 9,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.683364987373352,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              -1.4239927640707122,
+              0.47770771169741383,
+              -0.2205830675369968
+            ],
+            [
+              -0.49520742396197714,
+              1.7379004577193073,
+              0.8004944277530666
+            ]
+          ]
+        },
+        {
+          "index": 11,
+          "part": "hand_right",
+          "object_offset": "0x726b4",
+          "parent_index": 10,
+          "pivot_world": [
+            -0.9100833900023979,
+            0.6456024271290799,
+            0.25049895326469884
+          ],
+          "local_position": [
+            -0.07258100062608719,
+            -1.107208013534546,
+            -0.04926599934697151
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 12,
+          "part": "leg_right_position",
+          "object_offset": "0x7267c",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            -0.3484320044517517,
+            0.04738900065422058,
+            -0.02398199960589409
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 13,
+          "part": "leg_right",
+          "object_offset": "0x72644",
+          "parent_index": 12,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.9779316782951355,
+              6.827712059020996e-05,
+              -0.6197662332484697
+            ],
+            [
+              -0.03167617321014404,
+              0.6545858681201935,
+              1.0710823556950118
+            ]
+          ]
+        },
+        {
+          "index": 14,
+          "part": "neck",
+          "object_offset": "0x72278",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 15,
+          "part": "head_position",
+          "object_offset": "0x72240",
+          "parent_index": 14,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 16,
+          "part": "head",
+          "object_offset": "0x72208",
+          "parent_index": 15,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 154,
+          "bind_pose_bounds": [
+            [
+              -1.3461369276046753,
+              1.490986943244934,
+              -1.4566551910171484
+            ],
+            [
+              1.3461368083953857,
+              4.4097700119018555,
+              1.4100123180618311
+            ]
+          ]
+        },
+        {
+          "index": 17,
+          "part": "eye_left_position",
+          "object_offset": "0x714ec",
+          "parent_index": 16,
+          "pivot_world": [
+            0.5729550123214722,
+            2.4702600240707397,
+            1.2504699959030177
+          ],
+          "local_position": [
+            0.5729550123214722,
+            0.9702600240707397,
+            1.2504709959030151
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 18,
+          "part": "eye_left",
+          "object_offset": "0x714b4",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.4702600240707397,
+            1.2504699959030177
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              0.28914860182185886,
+              2.0627686274215886,
+              1.1333845180964828
+            ],
+            [
+              0.8567615383935553,
+              2.8777514190352838,
+              1.3936852285378802
+            ]
+          ]
+        },
+        {
+          "index": 19,
+          "part": "eyelid_left",
+          "object_offset": "0x70f48",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.4702600240707397,
+            1.2504699959030177
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.25442923020719505,
+              2.4505303426246785,
+              1.08973449246039
+            ],
+            [
+              0.8914809668265445,
+              2.927601867442844,
+              1.3924180047120092
+            ]
+          ]
+        },
+        {
+          "index": 20,
+          "part": "eye_right_position",
+          "object_offset": "0x70b14",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504820360412623
+          ],
+          "local_position": [
+            -0.5729770064353943,
+            0.9702600240707397,
+            1.2504830360412598
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 21,
+          "part": "eye_right",
+          "object_offset": "0x70adc",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504820360412623
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              -0.8567835076404624,
+              2.062768787124292,
+              1.133396560765948
+            ],
+            [
+              -0.28917061352657375,
+              2.87775158409916,
+              1.3936972201510356
+            ]
+          ]
+        },
+        {
+          "index": 22,
+          "part": "eyelid_right",
+          "object_offset": "0x705a8",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504820360412623
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.8915029369326704,
+              2.4505305069837515,
+              1.0897465312695658
+            ],
+            [
+              -0.2544512410526937,
+              2.9276020328346504,
+              1.3924299914974347
+            ]
+          ]
+        },
+        {
+          "index": 23,
+          "part": "feeler_left",
+          "object_offset": "0x70174",
+          "parent_index": 16,
+          "pivot_world": [
+            0.5999929904937744,
+            3.340872049331665,
+            0.04999999912286057
+          ],
+          "local_position": [
+            0.5999929904937744,
+            1.840872049331665,
+            0.05000099912285805
+          ],
+          "flags": "0x16",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              0.5999945402145386,
+              3.3299992149695754,
+              -0.030945246798751214
+            ],
+            [
+              0.8529475629329681,
+              3.4344647601246834,
+              0.13094552816653504
+            ]
+          ]
+        },
+        {
+          "index": 24,
+          "part": "ear_left",
+          "object_offset": "0x6fec0",
+          "parent_index": 16,
+          "pivot_world": [
+            0.699999988079071,
+            3.5,
+            -0.1000000031123136
+          ],
+          "local_position": [
+            0.699999988079071,
+            2.0,
+            -0.09999900311231613
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 25,
+          "part": "feeler_right",
+          "object_offset": "0x6fe88",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.6000099778175354,
+            3.340872049331665,
+            0.049999000745060584
+          ],
+          "local_position": [
+            -0.6000099778175354,
+            1.840872049331665,
+            0.05000000074505806
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -0.8529619574546814,
+              3.329999073408544,
+              -0.030946625156161617
+            ],
+            [
+              -0.5999966663375744,
+              3.4344645366072655,
+              0.13094412000680225
+            ]
+          ]
+        },
+        {
+          "index": 26,
+          "part": "ear_right",
+          "object_offset": "0x6fbc8",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.7000010013580322,
+            3.5,
+            -0.1000000031123136
+          ],
+          "local_position": [
+            -0.7000010013580322,
+            2.0,
+            -0.09999900311231613
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 27,
+          "part": "mouth",
+          "object_offset": "0x6fb90",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            1.5,
+            0.018804999308827064
+          ],
+          "local_position": [
+            0.0,
+            -0.0,
+            0.01880599930882454
+          ],
+          "flags": "0x6",
+          "triangles": 22,
+          "bind_pose_bounds": [
+            [
+              -1.0698909759521484,
+              1.7003853619098663,
+              0.8339119276573683
+            ],
+            [
+              1.0698881149291992,
+              2.3870757818222046,
+              1.4317331037094618
+            ]
+          ]
+        },
+        {
+          "index": 28,
+          "part": "tongue_position",
+          "object_offset": "0x6f878",
+          "parent_index": 27,
+          "pivot_world": [
+            0.0,
+            2.0702589750289917,
+            1.4000110349228407
+          ],
+          "local_position": [
+            -0.0,
+            0.5702589750289917,
+            1.3812060356140137
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 29,
+          "part": "forehead",
+          "object_offset": "0x6f840",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            3.4702600240707397,
+            0.8999989761581446
+          ],
+          "local_position": [
+            -0.0,
+            1.9702600240707397,
+            0.8999999761581421
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 30,
+          "part": "horn_left",
+          "object_offset": "0x6f808",
+          "parent_index": 16,
+          "pivot_world": [
+            0.8709989786148071,
+            3.4702600240707397,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            0.8709989786148071,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 31,
+          "part": "horn_right",
+          "object_offset": "0x6f7d0",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.8710010051727295,
+            3.4702600240707397,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            -0.8710010051727295,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 32,
+          "part": "office_position",
+          "object_offset": "0x6f798",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.799999952316284,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            3.299999952316284,
+            -0.0
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 33,
+          "part": "office",
+          "object_offset": "0x6f760",
+          "parent_index": 32,
+          "pivot_world": [
+            0.0,
+            4.799999952316284,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x1f",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 34,
+          "part": "back",
+          "object_offset": "0x6f728",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.4702599942684174,
+            -0.5000009999999975
+          ],
+          "local_position": [
+            -0.0,
+            0.47025999426841736,
+            -0.5
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 35,
+          "part": "navel",
+          "object_offset": "0x6f6f0",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.070260003209114,
+            0.9999990000000025
+          ],
+          "local_position": [
+            0.0,
+            0.07026000320911407,
+            1.0
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 36,
+          "part": "wing_left_position",
+          "object_offset": "0x6f6b8",
+          "parent_index": 1,
+          "pivot_world": [
+            0.20000000298023224,
+            1.4702599942684174,
+            -0.4027699993381475
+          ],
+          "local_position": [
+            0.20000000298023224,
+            0.47025999426841736,
+            -0.40276899933815
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 37,
+          "part": "wing_left",
+          "object_offset": "0x6f680",
+          "parent_index": 36,
+          "pivot_world": [
+            0.20000000298023224,
+            1.4702599942684174,
+            -0.4027699993381475
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              0.19999999757982906,
+              1.308812290430069,
+              -1.0204136090473555
+            ],
+            [
+              1.2698689547155697,
+              2.1152060329914093,
+              -0.40276999877331926
+            ]
+          ]
+        },
+        {
+          "index": 38,
+          "part": "wing_right_position",
+          "object_offset": "0x6f3c0",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.4702599942684174,
+            -0.4027689860591863
+          ],
+          "local_position": [
+            -0.20000000298023224,
+            0.47025999426841736,
+            -0.40276798605918884
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 39,
+          "part": "wing_right",
+          "object_offset": "0x6f388",
+          "parent_index": 38,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.4702599942684174,
+            -0.4027689860591863
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -1.2698097344546744,
+              1.308812290430069,
+              -1.0205151644726769
+            ],
+            [
+              -0.20000000127755968,
+              2.1152060329914093,
+              -0.4027689864848853
+            ]
+          ]
+        }
+      ],
+      "triangles": 720,
+      "bind_pose_bounds": [
+        [
+          -1.4239927640707122,
+          6.72750174999237e-05,
+          -1.4566551910171484
+        ],
+        [
+          1.4239935736672544,
+          4.4097700119018555,
+          1.4317331037094618
+        ]
+      ]
+    },
+    "hero_child": {
+      "table_index": 6,
+      "root_object": "0x906e8",
+      "nodes": [
+        {
+          "index": 0,
+          "part": "root",
+          "object_offset": "0x906e8",
+          "parent_index": null,
+          "pivot_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 1,
+          "part": "body",
+          "object_offset": "0x906b0",
+          "parent_index": 0,
+          "pivot_world": [
+            0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "flags": "0x6",
+          "triangles": 60,
+          "bind_pose_bounds": [
+            [
+              -0.7776027321815491,
+              0.4205198287963867,
+              -0.8470113740692113
+            ],
+            [
+              0.7776028513908386,
+              1.8789987564086914,
+              1.0413442386856104
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "part": "arm_left_position",
+          "object_offset": "0x9013c",
+          "parent_index": 1,
+          "pivot_world": [
+            0.5483999848365784,
+            1.6833639740943909,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.5483999848365784,
+            0.6833639740943909,
+            0.08968599885702133
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 3,
+          "part": "arm_left",
+          "object_offset": "0x90104",
+          "parent_index": 2,
+          "pivot_world": [
+            0.5483999848365784,
+            1.6833639740943909,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              0.4952076993995537,
+              0.4777075872470137,
+              -0.22058401155020096
+            ],
+            [
+              1.4239935736672544,
+              1.7379002913926602,
+              0.8004934725882398
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "part": "hand_left",
+          "object_offset": "0x8fce4",
+          "parent_index": 3,
+          "pivot_world": [
+            0.8856788491020606,
+            0.6455962720866641,
+            0.2504998099340363
+          ],
+          "local_position": [
+            -0.09501899778842926,
+            -1.0977380275726318,
+            0.050227999687194824
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 5,
+          "part": "leg_left_position",
+          "object_offset": "0x8fcac",
+          "parent_index": 1,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.3484329879283905,
+            0.047387998551130295,
+            -0.02398199960589409
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 6,
+          "part": "leg_left",
+          "object_offset": "0x8fc74",
+          "parent_index": 5,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.03167581558227539,
+              6.72750174999237e-05,
+              -0.6197663524577592
+            ],
+            [
+              0.9783600270748138,
+              0.6545851640403271,
+              1.0710825941135909
+            ]
+          ]
+        },
+        {
+          "index": 7,
+          "part": "tail_position",
+          "object_offset": "0x8f89c",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.8000010119209264
+          ],
+          "local_position": [
+            -0.0,
+            -0.025539999827742577,
+            -0.800000011920929
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 8,
+          "part": "tail",
+          "object_offset": "0x8f864",
+          "parent_index": 7,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.8000010119209264
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x15",
+          "triangles": 36,
+          "bind_pose_bounds": [
+            [
+              -0.33014628291130066,
+              0.7900625156314273,
+              -1.406048064406025
+            ],
+            [
+              0.3301464319229126,
+              1.1739802451543315,
+              -0.746000932721681
+            ]
+          ]
+        },
+        {
+          "index": 9,
+          "part": "arm_right_position",
+          "object_offset": "0x8f4d4",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.683364987373352,
+            0.08968499885702386
+          ],
+          "local_position": [
+            -0.5484309792518616,
+            0.683364987373352,
+            0.08968599885702133
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 10,
+          "part": "arm_right",
+          "object_offset": "0x8f49c",
+          "parent_index": 9,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.683364987373352,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              -1.4239927640707122,
+              0.47770771169741383,
+              -0.2205830675369968
+            ],
+            [
+              -0.49520742396197714,
+              1.7379004577193073,
+              0.8004944277530666
+            ]
+          ]
+        },
+        {
+          "index": 11,
+          "part": "hand_right",
+          "object_offset": "0x8f07c",
+          "parent_index": 10,
+          "pivot_world": [
+            -0.9100833900023979,
+            0.6456024271290799,
+            0.25049895326469884
+          ],
+          "local_position": [
+            -0.07258100062608719,
+            -1.107208013534546,
+            -0.04926599934697151
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 12,
+          "part": "leg_right_position",
+          "object_offset": "0x8f044",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            -0.3484320044517517,
+            0.04738900065422058,
+            -0.02398199960589409
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 13,
+          "part": "leg_right",
+          "object_offset": "0x8f00c",
+          "parent_index": 12,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.9779316782951355,
+              6.827712059020996e-05,
+              -0.6197662332484697
+            ],
+            [
+              -0.03167617321014404,
+              0.6545858681201935,
+              1.0710823556950118
+            ]
+          ]
+        },
+        {
+          "index": 14,
+          "part": "neck",
+          "object_offset": "0x8ec40",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 15,
+          "part": "head_position",
+          "object_offset": "0x8ec08",
+          "parent_index": 14,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 16,
+          "part": "head",
+          "object_offset": "0x8ebd0",
+          "parent_index": 15,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 154,
+          "bind_pose_bounds": [
+            [
+              -1.3192142248153687,
+              1.490986943244934,
+              -1.4010646806488012
+            ],
+            [
+              1.319214105606079,
+              3.853188991546631,
+              1.4100123180618311
+            ]
+          ]
+        },
+        {
+          "index": 17,
+          "part": "eye_left_position",
+          "object_offset": "0x8deb4",
+          "parent_index": 16,
+          "pivot_world": [
+            0.5729550123214722,
+            2.470260977745056,
+            1.2504699959030177
+          ],
+          "local_position": [
+            0.5729550123214722,
+            0.9702609777450562,
+            1.2504709959030151
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 18,
+          "part": "eye_left",
+          "object_offset": "0x8de7c",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.470260977745056,
+            1.2504699959030177
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              0.28914860182185886,
+              2.062769581095905,
+              1.1333845180964828
+            ],
+            [
+              0.8567615383935553,
+              2.8777523727096,
+              1.3936852285378802
+            ]
+          ]
+        },
+        {
+          "index": 19,
+          "part": "eyelid_left",
+          "object_offset": "0x8d910",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.470260977745056,
+            1.2504699959030177
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.25442923020719505,
+              2.450531296298995,
+              1.08973449246039
+            ],
+            [
+              0.8914809668265445,
+              2.9276028211171603,
+              1.3924180047120092
+            ]
+          ]
+        },
+        {
+          "index": 20,
+          "part": "eye_right_position",
+          "object_offset": "0x8d4dc",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504820360412623
+          ],
+          "local_position": [
+            -0.5729770064353943,
+            0.9702600240707397,
+            1.2504830360412598
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 21,
+          "part": "eye_right",
+          "object_offset": "0x8d4a4",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504820360412623
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              -0.8567835076404624,
+              2.062768787124292,
+              1.133396560765948
+            ],
+            [
+              -0.28917061352657375,
+              2.87775158409916,
+              1.3936972201510356
+            ]
+          ]
+        },
+        {
+          "index": 22,
+          "part": "eyelid_right",
+          "object_offset": "0x8cf70",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504820360412623
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.8915029369326704,
+              2.4505305069837515,
+              1.0897465312695658
+            ],
+            [
+              -0.2544512410526937,
+              2.9276020328346504,
+              1.3924299914974347
+            ]
+          ]
+        },
+        {
+          "index": 23,
+          "part": "feeler_left",
+          "object_offset": "0x8cb3c",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.10001000016927719,
+            3.6500000953674316,
+            -0.349998997283933
+          ],
+          "local_position": [
+            -0.10001000016927719,
+            2.1500000953674316,
+            -0.34999799728393555
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -0.10000589469509633,
+              3.6499988060450033,
+              -0.6726768755393201
+            ],
+            [
+              0.5096090052562874,
+              4.258320303167324,
+              -0.26642047089221493
+            ]
+          ]
+        },
+        {
+          "index": 24,
+          "part": "ear_left",
+          "object_offset": "0x8c888",
+          "parent_index": 16,
+          "pivot_world": [
+            0.699999988079071,
+            3.5,
+            -0.1000000031123136
+          ],
+          "local_position": [
+            0.699999988079071,
+            2.0,
+            -0.09999900311231613
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 25,
+          "part": "feeler_right",
+          "object_offset": "0x8c850",
+          "parent_index": 16,
+          "pivot_world": [
+            0.09998700022697449,
+            3.6500000953674316,
+            -0.350000994039533
+          ],
+          "local_position": [
+            0.09998700022697449,
+            2.1500000953674316,
+            -0.3499999940395355
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -0.5096110736915158,
+              3.649987552161341,
+              -0.6726740418657293
+            ],
+            [
+              0.0999927999379463,
+              4.258321514086968,
+              -0.2664174357052063
+            ]
+          ]
+        },
+        {
+          "index": 26,
+          "part": "ear_right",
+          "object_offset": "0x8c59c",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.7000010013580322,
+            3.5,
+            -0.1000000031123136
+          ],
+          "local_position": [
+            -0.7000010013580322,
+            2.0,
+            -0.09999900311231613
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 27,
+          "part": "mouth",
+          "object_offset": "0x8c564",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            1.5,
+            0.018804999308827064
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.01880599930882454
+          ],
+          "flags": "0x6",
+          "triangles": 22,
+          "bind_pose_bounds": [
+            [
+              -1.0698909759521484,
+              1.7003853619098663,
+              0.8339119276573683
+            ],
+            [
+              1.0698881149291992,
+              2.3870757818222046,
+              1.4317331037094618
+            ]
+          ]
+        },
+        {
+          "index": 28,
+          "part": "tongue_position",
+          "object_offset": "0x8c24c",
+          "parent_index": 27,
+          "pivot_world": [
+            0.0,
+            2.0702589750289917,
+            1.4000110349228407
+          ],
+          "local_position": [
+            -0.0,
+            0.5702589750289917,
+            1.3812060356140137
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 29,
+          "part": "forehead",
+          "object_offset": "0x8c214",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            3.4702600240707397,
+            0.8999989761581446
+          ],
+          "local_position": [
+            -0.0,
+            1.9702600240707397,
+            0.8999999761581421
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 30,
+          "part": "horn_left",
+          "object_offset": "0x8c1dc",
+          "parent_index": 16,
+          "pivot_world": [
+            0.770999014377594,
+            3.4702600240707397,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            0.770999014377594,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 31,
+          "part": "horn_right",
+          "object_offset": "0x8c1a4",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.7710009813308716,
+            3.4702600240707397,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            -0.7710009813308716,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 32,
+          "part": "office_position",
+          "object_offset": "0x8c16c",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.799999952316284,
+            -0.2500009999999975
+          ],
+          "local_position": [
+            -0.0,
+            3.299999952316284,
+            -0.25
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 33,
+          "part": "office",
+          "object_offset": "0x8c134",
+          "parent_index": 32,
+          "pivot_world": [
+            0.0,
+            4.799999952316284,
+            -0.2500009999999975
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x1f",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 34,
+          "part": "back",
+          "object_offset": "0x8c0fc",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.4702599942684174,
+            -0.5000009999999975
+          ],
+          "local_position": [
+            -0.0,
+            0.47025999426841736,
+            -0.5
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 35,
+          "part": "navel",
+          "object_offset": "0x8c0c4",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.070260003209114,
+            0.9999990000000025
+          ],
+          "local_position": [
+            0.0,
+            0.07026000320911407,
+            1.0
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 36,
+          "part": "wing_left_position",
+          "object_offset": "0x8c08c",
+          "parent_index": 1,
+          "pivot_world": [
+            0.20000000298023224,
+            1.4702599942684174,
+            -0.4027699993381475
+          ],
+          "local_position": [
+            0.20000000298023224,
+            0.47025999426841736,
+            -0.40276899933815
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 37,
+          "part": "wing_left",
+          "object_offset": "0x8c054",
+          "parent_index": 36,
+          "pivot_world": [
+            0.20000000298023224,
+            1.4702599942684174,
+            -0.4027699993381475
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              0.19999999757982906,
+              1.2751818001270294,
+              -0.9859448086705898
+            ],
+            [
+              1.2101627688343228,
+              1.9871476590633392,
+              -0.40276999877331926
+            ]
+          ]
+        },
+        {
+          "index": 38,
+          "part": "wing_right_position",
+          "object_offset": "0x8bd94",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.4702599942684174,
+            -0.4027689860591863
+          ],
+          "local_position": [
+            -0.20000000298023224,
+            0.47025999426841736,
+            -0.40276798605918884
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 39,
+          "part": "wing_right",
+          "object_offset": "0x8bd5c",
+          "parent_index": 38,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.4702599942684174,
+            -0.4027689860591863
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -1.210106899503994,
+              1.2751817107200623,
+              -0.9860405603305907
+            ],
+            [
+              -0.20000000127755968,
+              1.9871475398540497,
+              -0.4027689864848853
+            ]
+          ]
+        }
+      ],
+      "triangles": 720,
+      "bind_pose_bounds": [
+        [
+          -1.4239927640707122,
+          6.72750174999237e-05,
+          -1.406048064406025
+        ],
+        [
+          1.4239935736672544,
+          4.258321514086968,
+          1.4317331037094618
+        ]
+      ]
+    },
+    "hero_child_run": {
+      "table_index": 10,
+      "root_object": "0xa3858",
+      "nodes": [
+        {
+          "index": 0,
+          "part": "root",
+          "object_offset": "0xa3858",
+          "parent_index": null,
+          "pivot_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 1,
+          "part": "body",
+          "object_offset": "0xa3820",
+          "parent_index": 0,
+          "pivot_world": [
+            0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "flags": "0x6",
+          "triangles": 60,
+          "bind_pose_bounds": [
+            [
+              -0.7776027321815491,
+              0.4205198287963867,
+              -0.8470113740692113
+            ],
+            [
+              0.7776028513908386,
+              1.8789987564086914,
+              1.0413442386856104
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "part": "arm_left_position",
+          "object_offset": "0xa32ac",
+          "parent_index": 1,
+          "pivot_world": [
+            0.5483999848365784,
+            1.6833639740943909,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.5483999848365784,
+            0.6833639740943909,
+            0.08968599885702133
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 3,
+          "part": "arm_left",
+          "object_offset": "0xa3274",
+          "parent_index": 2,
+          "pivot_world": [
+            0.5483999848365784,
+            1.6833639740943909,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              0.4952076993995537,
+              0.4777075872470137,
+              -0.22058401155020096
+            ],
+            [
+              1.4239935736672544,
+              1.7379002913926602,
+              0.8004934725882398
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "part": "hand_left",
+          "object_offset": "0xa2e54",
+          "parent_index": 3,
+          "pivot_world": [
+            0.8856788491020606,
+            0.6455962720866641,
+            0.2504998099340363
+          ],
+          "local_position": [
+            -0.09501899778842926,
+            -1.0977380275726318,
+            0.050227999687194824
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 5,
+          "part": "leg_left_position",
+          "object_offset": "0xa2e1c",
+          "parent_index": 1,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.3484329879283905,
+            0.047387998551130295,
+            -0.02398199960589409
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 6,
+          "part": "leg_left",
+          "object_offset": "0xa2de4",
+          "parent_index": 5,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.03167581558227539,
+              6.72750174999237e-05,
+              -0.6197663524577592
+            ],
+            [
+              0.9783600270748138,
+              0.6545851640403271,
+              1.0710825941135909
+            ]
+          ]
+        },
+        {
+          "index": 7,
+          "part": "tail_position",
+          "object_offset": "0xa2a0c",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.8000010119209264
+          ],
+          "local_position": [
+            -0.0,
+            -0.025539999827742577,
+            -0.800000011920929
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 8,
+          "part": "tail",
+          "object_offset": "0xa29d4",
+          "parent_index": 7,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.8000010119209264
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x15",
+          "triangles": 36,
+          "bind_pose_bounds": [
+            [
+              -0.29383015632629395,
+              0.8274699006055437,
+              -1.4106240300372788
+            ],
+            [
+              0.2938303053379059,
+              1.2463773403118572,
+              -0.746000932721681
+            ]
+          ]
+        },
+        {
+          "index": 9,
+          "part": "arm_right_position",
+          "object_offset": "0xa2660",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.683364987373352,
+            0.08968499885702386
+          ],
+          "local_position": [
+            -0.5484309792518616,
+            0.683364987373352,
+            0.08968599885702133
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 10,
+          "part": "arm_right",
+          "object_offset": "0xa2628",
+          "parent_index": 9,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.683364987373352,
+            0.08968499885702386
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              -1.4239927640707122,
+              0.47770771169741383,
+              -0.2205830675369968
+            ],
+            [
+              -0.49520742396197714,
+              1.7379004577193073,
+              0.8004944277530666
+            ]
+          ]
+        },
+        {
+          "index": 11,
+          "part": "hand_right",
+          "object_offset": "0xa2208",
+          "parent_index": 10,
+          "pivot_world": [
+            -0.9100833900023979,
+            0.6456024271290799,
+            0.25049895326469884
+          ],
+          "local_position": [
+            -0.07258100062608719,
+            -1.107208013534546,
+            -0.04926599934697151
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 12,
+          "part": "leg_right_position",
+          "object_offset": "0xa21d0",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            -0.3484320044517517,
+            0.04738900065422058,
+            -0.02398199960589409
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 13,
+          "part": "leg_right",
+          "object_offset": "0xa2198",
+          "parent_index": 12,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.9779316782951355,
+              6.827712059020996e-05,
+              -0.6197662332484697
+            ],
+            [
+              -0.03167617321014404,
+              0.6545858681201935,
+              1.0710823556950118
+            ]
+          ]
+        },
+        {
+          "index": 14,
+          "part": "neck",
+          "object_offset": "0xa1dcc",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 15,
+          "part": "head_position",
+          "object_offset": "0xa1d94",
+          "parent_index": 14,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 16,
+          "part": "head",
+          "object_offset": "0xa1d5c",
+          "parent_index": 15,
+          "pivot_world": [
+            0.0,
+            1.5,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 154,
+          "bind_pose_bounds": [
+            [
+              -1.3192142248153687,
+              1.490986943244934,
+              -1.4208825097808813
+            ],
+            [
+              1.319214105606079,
+              4.38364839553833,
+              1.4100123180618311
+            ]
+          ]
+        },
+        {
+          "index": 17,
+          "part": "eye_left_position",
+          "object_offset": "0xa1024",
+          "parent_index": 16,
+          "pivot_world": [
+            0.5729550123214722,
+            2.4702600240707397,
+            1.250470949577334
+          ],
+          "local_position": [
+            0.5729550123214722,
+            0.9702600240707397,
+            1.2504719495773315
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 18,
+          "part": "eye_left",
+          "object_offset": "0xa0fec",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.4702600240707397,
+            1.250470949577334
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              0.28914860182185886,
+              2.0627686274215886,
+              1.1333854717707992
+            ],
+            [
+              0.8567615383935553,
+              2.8777514190352838,
+              1.3936861822121966
+            ]
+          ]
+        },
+        {
+          "index": 19,
+          "part": "eyelid_left",
+          "object_offset": "0xa0a80",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.4702600240707397,
+            1.250470949577334
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.25442923020719505,
+              2.4505303426246785,
+              1.0897354461347064
+            ],
+            [
+              0.8914809668265445,
+              2.927601867442844,
+              1.3924189583863256
+            ]
+          ]
+        },
+        {
+          "index": 20,
+          "part": "eye_right_position",
+          "object_offset": "0xa064c",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504829897155787
+          ],
+          "local_position": [
+            -0.5729770064353943,
+            0.9702600240707397,
+            1.2504839897155762
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 21,
+          "part": "eye_right",
+          "object_offset": "0xa0614",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              -0.8567835076404624,
+              2.062768787124292,
+              1.1333975144402644
+            ],
+            [
+              -0.28917061352657375,
+              2.87775158409916,
+              1.393698173825352
+            ]
+          ]
+        },
+        {
+          "index": 22,
+          "part": "eyelid_right",
+          "object_offset": "0xa00e0",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.4702600240707397,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.8915029369326704,
+              2.4505305069837515,
+              1.0897474849438822
+            ],
+            [
+              -0.2544512410526937,
+              2.9276020328346504,
+              1.3924309451717511
+            ]
+          ]
+        },
+        {
+          "index": 23,
+          "part": "feeler_left",
+          "object_offset": "0x9fcac",
+          "parent_index": 16,
+          "pivot_world": [
+            0.09999000281095505,
+            3.650001049041748,
+            -0.3500000105628942
+          ],
+          "local_position": [
+            0.09999000281095505,
+            2.150001049041748,
+            -0.34999901056289673
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              0.08053376366958316,
+              3.6499994474615045,
+              -0.4256303773651098
+            ],
+            [
+              0.1867259516532675,
+              3.7766076900360552,
+              -0.2757696451077436
+            ]
+          ]
+        },
+        {
+          "index": 24,
+          "part": "ear_left",
+          "object_offset": "0x9f9f8",
+          "parent_index": 16,
+          "pivot_world": [
+            0.699999988079071,
+            3.5,
+            -0.1000000031123136
+          ],
+          "local_position": [
+            0.699999988079071,
+            2.0,
+            -0.09999900311231613
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 25,
+          "part": "feeler_right",
+          "object_offset": "0x9f9c0",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.10001300275325775,
+            3.650001049041748,
+            -0.3500000105628942
+          ],
+          "local_position": [
+            -0.10001300275325775,
+            2.150001049041748,
+            -0.34999901056289673
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -0.18674307474438095,
+              3.6499882646564408,
+              -0.4256300346384023
+            ],
+            [
+              -0.08055087358980648,
+              3.776610798366133,
+              -0.27576931728219733
+            ]
+          ]
+        },
+        {
+          "index": 26,
+          "part": "ear_right",
+          "object_offset": "0x9f700",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.7000010013580322,
+            3.5,
+            -0.1000000031123136
+          ],
+          "local_position": [
+            -0.7000010013580322,
+            2.0,
+            -0.09999900311231613
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 27,
+          "part": "mouth",
+          "object_offset": "0x9f6c8",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            1.5,
+            0.018804999308827064
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.01880599930882454
+          ],
+          "flags": "0x6",
+          "triangles": 22,
+          "bind_pose_bounds": [
+            [
+              -1.0698909759521484,
+              1.7003853619098663,
+              0.8339119276573683
+            ],
+            [
+              1.0698881149291992,
+              2.3870757818222046,
+              1.4317331037094618
+            ]
+          ]
+        },
+        {
+          "index": 28,
+          "part": "tongue_position",
+          "object_offset": "0x9f3b0",
+          "parent_index": 27,
+          "pivot_world": [
+            0.0,
+            2.0702589750289917,
+            1.4000110349228407
+          ],
+          "local_position": [
+            -0.0,
+            0.5702589750289917,
+            1.3812060356140137
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 29,
+          "part": "forehead",
+          "object_offset": "0x9f378",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            3.384281039237976,
+            1.0029149784317042
+          ],
+          "local_position": [
+            -0.0,
+            1.884281039237976,
+            1.0029159784317017
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 30,
+          "part": "horn_left",
+          "object_offset": "0x9f340",
+          "parent_index": 16,
+          "pivot_world": [
+            0.8709989786148071,
+            3.4702600240707397,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            0.8709989786148071,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 31,
+          "part": "horn_right",
+          "object_offset": "0x9f308",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.8710010051727295,
+            3.4702600240707397,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            -0.8710010051727295,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 32,
+          "part": "office_position",
+          "object_offset": "0x9f2d0",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.800000905990601,
+            -0.9500009880790685
+          ],
+          "local_position": [
+            -0.0,
+            3.3000009059906006,
+            -0.949999988079071
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 33,
+          "part": "office",
+          "object_offset": "0x9f298",
+          "parent_index": 32,
+          "pivot_world": [
+            0.0,
+            4.800000905990601,
+            -0.9500009880790685
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x1f",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 34,
+          "part": "back",
+          "object_offset": "0x9f260",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.4702599942684174,
+            -0.5000009999999975
+          ],
+          "local_position": [
+            -0.0,
+            0.47025999426841736,
+            -0.5
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 35,
+          "part": "navel",
+          "object_offset": "0x9f228",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.070260003209114,
+            0.9999990000000025
+          ],
+          "local_position": [
+            0.0,
+            0.07026000320911407,
+            1.0
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 36,
+          "part": "wing_left_position",
+          "object_offset": "0x9f1f0",
+          "parent_index": 1,
+          "pivot_world": [
+            0.20000000298023224,
+            1.4702599942684174,
+            -0.4027699993381475
+          ],
+          "local_position": [
+            0.20000000298023224,
+            0.47025999426841736,
+            -0.40276899933815
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 37,
+          "part": "wing_left",
+          "object_offset": "0x9f1b8",
+          "parent_index": 36,
+          "pivot_world": [
+            0.20000000298023224,
+            1.4702599942684174,
+            -0.4027699993381475
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              0.19999999757982906,
+              1.2751818001270294,
+              -0.9796577607444116
+            ],
+            [
+              1.199272478667845,
+              1.9871476590633392,
+              -0.40276999877331926
+            ]
+          ]
+        },
+        {
+          "index": 38,
+          "part": "wing_right_position",
+          "object_offset": "0x9eef8",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.4702599942684174,
+            -0.4027689860591863
+          ],
+          "local_position": [
+            -0.20000000298023224,
+            0.47025999426841736,
+            -0.40276798605918884
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 39,
+          "part": "wing_right",
+          "object_offset": "0x9eec0",
+          "parent_index": 38,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.4702599942684174,
+            -0.4027689860591863
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -1.1992171889023475,
+              1.2751817107200623,
+              -0.979752508601264
+            ],
+            [
+              -0.20000000127755968,
+              1.9871475398540497,
+              -0.4027689864848853
+            ]
+          ]
+        }
+      ],
+      "triangles": 720,
+      "bind_pose_bounds": [
+        [
+          -1.4239927640707122,
+          6.72750174999237e-05,
+          -1.4208825097808813
+        ],
+        [
+          1.4239935736672544,
+          4.38364839553833,
+          1.4317331037094618
+        ]
+      ]
+    },
+    "hero_run_young": {
+      "table_index": 78,
+      "root_object": "0x1ac1a4",
+      "nodes": [
+        {
+          "index": 0,
+          "part": "root",
+          "object_offset": "0x1ac1a4",
+          "parent_index": null,
+          "pivot_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 1,
+          "part": "body",
+          "object_offset": "0x1ac16c",
+          "parent_index": 0,
+          "pivot_world": [
+            0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "flags": "0x6",
+          "triangles": 56,
+          "bind_pose_bounds": [
+            [
+              -0.7386321425437927,
+              0.5505198240280151,
+              -0.7253620491752599
+            ],
+            [
+              0.7386322021484375,
+              2.1717647314071655,
+              0.9824115766754176
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "part": "arm_left_position",
+          "object_offset": "0x1abc20",
+          "parent_index": 1,
+          "pivot_world": [
+            0.5483999848365784,
+            1.7787359952926636,
+            0.020931000130417488
+          ],
+          "local_position": [
+            0.5483999848365784,
+            0.7787359952926636,
+            0.020932000130414963
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 3,
+          "part": "arm_left",
+          "object_offset": "0x1abbe8",
+          "parent_index": 2,
+          "pivot_world": [
+            0.5483999848365784,
+            1.7787359952926636,
+            0.020931000130417488
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              0.500554838849215,
+              0.5794257704581289,
+              -0.35149490399836536
+            ],
+            [
+              1.379216056474216,
+              1.827791980490655,
+              0.6760714285638406
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "part": "hand_left",
+          "object_offset": "0x1ab7c8",
+          "parent_index": 3,
+          "pivot_world": [
+            0.7430877159030216,
+            0.8082142167430623,
+            0.1745720575240401
+          ],
+          "local_position": [
+            -0.20000000298023224,
+            -0.9800000190734863,
+            0.054967001080513
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 5,
+          "part": "leg_left_position",
+          "object_offset": "0x1ab790",
+          "parent_index": 1,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.3484329879283905,
+            0.047387998551130295,
+            -0.02398199960589409
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 6,
+          "part": "leg_left",
+          "object_offset": "0x1ab758",
+          "parent_index": 5,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 46,
+          "bind_pose_bounds": [
+            [
+              0.0473400354385376,
+              0.00027171894907951355,
+              -0.6128950097987627
+            ],
+            [
+              0.9310815036296844,
+              1.0545851858332753,
+              1.036368968205693
+            ]
+          ]
+        },
+        {
+          "index": 7,
+          "part": "tail_position",
+          "object_offset": "0x1ab304",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.7100009785423254
+          ],
+          "local_position": [
+            -0.0,
+            -0.025539999827742577,
+            -0.7099999785423279
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 8,
+          "part": "tail",
+          "object_offset": "0x1ab2cc",
+          "parent_index": 7,
+          "pivot_world": [
+            0.0,
+            0.9744600001722574,
+            -0.7100009785423254
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x15",
+          "triangles": 36,
+          "bind_pose_bounds": [
+            [
+              -0.29383015632629395,
+              0.8374699992900718,
+              -1.340622569412485
+            ],
+            [
+              0.2938303053379059,
+              1.3669497442457978,
+              -0.61600102209983
+            ]
+          ]
+        },
+        {
+          "index": 9,
+          "part": "arm_right_position",
+          "object_offset": "0x1aaf58",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.7787370085716248,
+            0.02092999988997235
+          ],
+          "local_position": [
+            -0.5484309792518616,
+            0.7787370085716248,
+            0.020930999889969826
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 10,
+          "part": "arm_right",
+          "object_offset": "0x1aaf20",
+          "parent_index": 9,
+          "pivot_world": [
+            -0.5484309792518616,
+            1.7787370085716248,
+            0.02092999988997235
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              -1.3792154035213393,
+              0.5794255463572195,
+              -0.3514944900731563
+            ],
+            [
+              -0.5005576976119978,
+              1.8277922188051756,
+              0.6760710878736637
+            ]
+          ]
+        },
+        {
+          "index": 11,
+          "part": "hand_right",
+          "object_offset": "0x1aab00",
+          "parent_index": 10,
+          "pivot_world": [
+            -0.7431174084014422,
+            0.8082182971641125,
+            0.17460388724963813
+          ],
+          "local_position": [
+            -0.20000000298023224,
+            -0.9800000190734863,
+            -0.054999999701976776
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 12,
+          "part": "leg_right_position",
+          "object_offset": "0x1aaac8",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            -0.3484320044517517,
+            0.04738900065422058,
+            -0.02398199960589409
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 13,
+          "part": "leg_right",
+          "object_offset": "0x1aaa90",
+          "parent_index": 12,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 46,
+          "bind_pose_bounds": [
+            [
+              -0.930682897567749,
+              0.00027379393577575684,
+              -0.6128954270312761
+            ],
+            [
+              -0.04734054207801819,
+              1.054585856385529,
+              1.0363686105778243
+            ]
+          ]
+        },
+        {
+          "index": 14,
+          "part": "neck",
+          "object_offset": "0x1aa658",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.6800000071525574,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.6800000071525574,
+            0.0
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 15,
+          "part": "head_position",
+          "object_offset": "0x1aa620",
+          "parent_index": 14,
+          "pivot_world": [
+            0.0,
+            1.6800000071525574,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 16,
+          "part": "head",
+          "object_offset": "0x1aa5e8",
+          "parent_index": 15,
+          "pivot_world": [
+            0.0,
+            1.6800000071525574,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 158,
+          "bind_pose_bounds": [
+            [
+              -1.2799012660980225,
+              1.6809870228171349,
+              -1.5308824048767065
+            ],
+            [
+              1.2799010276794434,
+              4.591723620891571,
+              1.4000123275985743
+            ]
+          ]
+        },
+        {
+          "index": 17,
+          "part": "eye_left_position",
+          "object_offset": "0x1a990c",
+          "parent_index": 16,
+          "pivot_world": [
+            0.5729550123214722,
+            2.560259997844696,
+            1.250470949577334
+          ],
+          "local_position": [
+            0.5729550123214722,
+            0.8802599906921387,
+            1.2504719495773315
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 18,
+          "part": "eye_left",
+          "object_offset": "0x1a98d4",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.560259997844696,
+            1.250470949577334
+          ],
+          "local_position": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              0.28914860182479224,
+              2.149076024836161,
+              1.1525289667893168
+            ],
+            [
+              0.8567615383964886,
+              2.971443968624014,
+              1.3775205539146862
+            ]
+          ]
+        },
+        {
+          "index": 19,
+          "part": "eyelid_left",
+          "object_offset": "0x1a9368",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.560259997844696,
+            1.250470949577334
+          ],
+          "local_position": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.25442923021048724,
+              2.5459445214195684,
+              1.1078786980436657
+            ],
+            [
+              0.8914809668298367,
+              3.0217461477760525,
+              1.3928826190512384
+            ]
+          ]
+        },
+        {
+          "index": 20,
+          "part": "eye_right_position",
+          "object_offset": "0x1a8f34",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.560259997844696,
+            1.2504829897155787
+          ],
+          "local_position": [
+            -0.5729770064353943,
+            0.8802599906921387,
+            1.2504839897155762
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 21,
+          "part": "eye_right",
+          "object_offset": "0x1a8efc",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.560259997844696,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              -0.8567835113887348,
+              2.149076187123162,
+              1.152541020482805
+            ],
+            [
+              -0.28917061731328575,
+              2.9714441340443045,
+              1.3775325561435976
+            ]
+          ]
+        },
+        {
+          "index": 22,
+          "part": "eyelid_right",
+          "object_offset": "0x1a89c8",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.560259997844696,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.8915029406789503,
+              2.5459446880287415,
+              1.107890747838727
+            ],
+            [
+              -0.2544512448421153,
+              3.021746313387999,
+              1.3928946164372549
+            ]
+          ]
+        },
+        {
+          "index": 23,
+          "part": "feeler_left",
+          "object_offset": "0x1a8594",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.068355977535248,
+            -0.735918985439298
+          ],
+          "local_position": [
+            0.0,
+            2.3883559703826904,
+            -0.7359179854393005
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              7.5688176019463984e-06,
+              4.068354798569838,
+              -0.8088180833156492
+            ],
+            [
+              0.08476986699317637,
+              4.135406812278658,
+              -0.7327050678292815
+            ]
+          ]
+        },
+        {
+          "index": 24,
+          "part": "ear_left",
+          "object_offset": "0x1a82f0",
+          "parent_index": 16,
+          "pivot_world": [
+            0.6999980211257935,
+            3.4899999499320984,
+            0.0
+          ],
+          "local_position": [
+            0.6999980211257935,
+            1.809999942779541,
+            9.999999974752427e-07
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 25,
+          "part": "feeler_right",
+          "object_offset": "0x1a82b8",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.068355977535248,
+            -0.7359199987182592
+          ],
+          "local_position": [
+            0.0,
+            2.3883559703826904,
+            -0.7359189987182617
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -0.08477231228214187,
+              4.068355126226738,
+              -0.8088215390316357
+            ],
+            [
+              -8.845595832857558e-06,
+              4.135402885372448,
+              -0.7327063318085422
+            ]
+          ]
+        },
+        {
+          "index": 26,
+          "part": "ear_right",
+          "object_offset": "0x1a8014",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.7000030279159546,
+            3.4899999499320984,
+            9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.7000030279159546,
+            1.809999942779541,
+            1.9999999949504854e-06
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 27,
+          "part": "mouth",
+          "object_offset": "0x1a7fdc",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            1.6800000071525574,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x7",
+          "triangles": 22,
+          "bind_pose_bounds": [
+            [
+              -1.0586539506912231,
+              1.8403854370117188,
+              0.833911611007693
+            ],
+            [
+              1.0586509704589844,
+              2.4770758748054504,
+              1.411732746528628
+            ]
+          ]
+        },
+        {
+          "index": 28,
+          "part": "tongue_position",
+          "object_offset": "0x1a7cc4",
+          "parent_index": 27,
+          "pivot_world": [
+            0.0,
+            2.160260021686554,
+            1.4000099434127833
+          ],
+          "local_position": [
+            -0.0,
+            0.4802600145339966,
+            1.4000109434127808
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 29,
+          "part": "forehead",
+          "object_offset": "0x1a7c8c",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            3.560259997844696,
+            0.8999989761581446
+          ],
+          "local_position": [
+            -0.0,
+            1.8802599906921387,
+            0.8999999761581421
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 30,
+          "part": "horn_left",
+          "object_offset": "0x1a7c54",
+          "parent_index": 16,
+          "pivot_world": [
+            0.7709969878196716,
+            3.560259997844696,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            0.7709969878196716,
+            1.8802599906921387,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 31,
+          "part": "horn_right",
+          "object_offset": "0x1a7c1c",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.771003007888794,
+            3.560259997844696,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            -0.771003007888794,
+            1.8802599906921387,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 32,
+          "part": "office_position",
+          "object_offset": "0x1a7be4",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            5.020001113414764,
+            -1.1100010143051122
+          ],
+          "local_position": [
+            -0.0,
+            3.340001106262207,
+            -1.1100000143051147
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 33,
+          "part": "office",
+          "object_offset": "0x1a7bac",
+          "parent_index": 32,
+          "pivot_world": [
+            0.0,
+            5.020001113414764,
+            -1.1100010143051122
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x1f",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 34,
+          "part": "back",
+          "object_offset": "0x1a7b74",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.5302600264549255,
+            -0.5600010023841833
+          ],
+          "local_position": [
+            -0.0,
+            0.5302600264549255,
+            -0.5600000023841858
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 35,
+          "part": "navel",
+          "object_offset": "0x1a7b3c",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.310259997844696,
+            0.9199990166893031
+          ],
+          "local_position": [
+            0.0,
+            0.31025999784469604,
+            0.9200000166893005
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 36,
+          "part": "wing_left_position",
+          "object_offset": "0x1a7b04",
+          "parent_index": 1,
+          "pivot_world": [
+            0.15000000596046448,
+            1.5302600264549255,
+            -0.48277001245116935
+          ],
+          "local_position": [
+            0.15000000596046448,
+            0.5302600264549255,
+            -0.4827690124511719
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 37,
+          "part": "wing_left",
+          "object_offset": "0x1a7acc",
+          "parent_index": 36,
+          "pivot_world": [
+            0.15000000596046448,
+            1.5302600264549255,
+            -0.48277001245116935
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 20,
+          "bind_pose_bounds": [
+            [
+              0.15000001808271995,
+              1.2458170056343079,
+              -1.010757824799104
+            ],
+            [
+              1.0645690922172326,
+              1.8849451839923859,
+              -0.48277001428630384
+            ]
+          ]
+        },
+        {
+          "index": 38,
+          "part": "wing_right_position",
+          "object_offset": "0x1a7894",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.15000000596046448,
+            1.5302600264549255,
+            -0.48276899917220817
+          ],
+          "local_position": [
+            -0.15000000596046448,
+            0.5302600264549255,
+            -0.4827679991722107
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 39,
+          "part": "wing_right",
+          "object_offset": "0x1a785c",
+          "parent_index": 38,
+          "pivot_world": [
+            -0.15000000596046448,
+            1.5302600264549255,
+            -0.48276899917220817
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 20,
+          "bind_pose_bounds": [
+            [
+              -1.0645190031863883,
+              1.2458169758319855,
+              -1.0108447571163994
+            ],
+            [
+              -0.15000000689042584,
+              1.8849450647830963,
+              -0.48276900083381874
+            ]
+          ]
+        }
+      ],
+      "triangles": 720,
+      "bind_pose_bounds": [
+        [
+          -1.3792154035213393,
+          0.00027171894907951355,
+          -1.5308824048767065
+        ],
+        [
+          1.379216056474216,
+          4.591723620891571,
+          1.411732746528628
+        ]
+      ]
+    },
+    "hero_run_aged_normal": {
+      "table_index": 79,
+      "root_object": "0x1b0d60",
+      "nodes": [
+        {
+          "index": 0,
+          "part": "root",
+          "object_offset": "0x1b0d60",
+          "parent_index": null,
+          "pivot_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 1,
+          "part": "body",
+          "object_offset": "0x1b0d28",
+          "parent_index": 0,
+          "pivot_world": [
+            0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "flags": "0x6",
+          "triangles": 56,
+          "bind_pose_bounds": [
+            [
+              -0.7873815894126892,
+              0.5506470501422882,
+              -0.7357240186462377
+            ],
+            [
+              0.7873817086219788,
+              2.2463998794555664,
+              0.9387911094894434
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "part": "arm_left_position",
+          "object_offset": "0x1b07e8",
+          "parent_index": 1,
+          "pivot_world": [
+            0.5983999967575073,
+            1.7887359857559204,
+            0.09093099670315041
+          ],
+          "local_position": [
+            0.5983999967575073,
+            0.7887359857559204,
+            0.09093199670314789
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 3,
+          "part": "arm_left",
+          "object_offset": "0x1b07b0",
+          "parent_index": 2,
+          "pivot_world": [
+            0.5983999967575073,
+            1.7887359857559204,
+            0.09093099670315041
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              0.5141074279903242,
+              0.5327632356312303,
+              -0.26452457076497804
+            ],
+            [
+              1.497316039918752,
+              1.921168247401203,
+              0.7565530440105716
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "part": "hand_left",
+          "object_offset": "0x1b0380",
+          "parent_index": 3,
+          "pivot_world": [
+            0.7930875423114055,
+            0.7182144556661274,
+            0.24456373960907016
+          ],
+          "local_position": [
+            -0.2390729933977127,
+            -1.0715789794921875,
+            0.04566400125622749
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 5,
+          "part": "leg_left_position",
+          "object_offset": "0x1b0348",
+          "parent_index": 1,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.3484329879283905,
+            0.047387998551130295,
+            -0.02398199960589409
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 6,
+          "part": "leg_left",
+          "object_offset": "0x1b0310",
+          "parent_index": 5,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 46,
+          "bind_pose_bounds": [
+            [
+              0.047172993421554565,
+              0.00027171894907951355,
+              -0.6613936403224443
+            ],
+            [
+              0.9593399465084076,
+              1.0545851858332753,
+              1.1432197114994551
+            ]
+          ]
+        },
+        {
+          "index": 7,
+          "part": "tail_position",
+          "object_offset": "0x1afecc",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.0144600002095103,
+            -0.6800010071525548
+          ],
+          "local_position": [
+            -0.0,
+            0.014460000209510326,
+            -0.6800000071525574
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 8,
+          "part": "tail",
+          "object_offset": "0x1afe94",
+          "parent_index": 7,
+          "pivot_world": [
+            0.0,
+            1.0144600002095103,
+            -0.6800010071525548
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x15",
+          "triangles": 36,
+          "bind_pose_bounds": [
+            [
+              -0.26836058497428894,
+              0.8482269031681208,
+              -1.4986397177725497
+            ],
+            [
+              0.2683606445789337,
+              1.4155388518770065,
+              -0.5860010507100595
+            ]
+          ]
+        },
+        {
+          "index": 9,
+          "part": "arm_right_position",
+          "object_offset": "0x1afb10",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.5984309911727905,
+            1.7887369990348816,
+            0.09092999832535043
+          ],
+          "local_position": [
+            -0.5984309911727905,
+            0.7887369990348816,
+            0.0909309983253479
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 10,
+          "part": "arm_right",
+          "object_offset": "0x1afad8",
+          "parent_index": 9,
+          "pivot_world": [
+            -0.5984309911727905,
+            1.7887369990348816,
+            0.09092999832535043
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              -1.4973152954782711,
+              0.5327635201989017,
+              -0.2645246371666698
+            ],
+            [
+              -0.5141072368209412,
+              1.9211686347080812,
+              0.7565529767234064
+            ]
+          ]
+        },
+        {
+          "index": 11,
+          "part": "hand_right",
+          "object_offset": "0x1af69c",
+          "parent_index": 10,
+          "pivot_world": [
+            -0.7931171954201537,
+            0.7182186288839805,
+            0.24459656447242054
+          ],
+          "local_position": [
+            -0.2390729933977127,
+            -1.0715789794921875,
+            -0.04569799825549126
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 12,
+          "part": "leg_right_position",
+          "object_offset": "0x1af664",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            -0.3484320044517517,
+            0.04738900065422058,
+            -0.02398199960589409
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 13,
+          "part": "leg_right",
+          "object_offset": "0x1af62c",
+          "parent_index": 12,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 46,
+          "bind_pose_bounds": [
+            [
+              -0.959341585636139,
+              0.00027379393577575684,
+              -0.6613944151828264
+            ],
+            [
+              -0.04717528820037836,
+              1.054585856385529,
+              1.1432187578251387
+            ]
+          ]
+        },
+        {
+          "index": 14,
+          "part": "neck",
+          "object_offset": "0x1af1f4",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.7599999904632568,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            0.7599999904632568,
+            0.0
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 15,
+          "part": "head_position",
+          "object_offset": "0x1af1bc",
+          "parent_index": 14,
+          "pivot_world": [
+            0.0,
+            1.7599999904632568,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 16,
+          "part": "head",
+          "object_offset": "0x1af184",
+          "parent_index": 15,
+          "pivot_world": [
+            0.0,
+            1.7599999904632568,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 158,
+          "bind_pose_bounds": [
+            [
+              -1.2799012660980225,
+              1.7609870061278343,
+              -2.382281826568601
+            ],
+            [
+              1.2799010276794434,
+              4.8590545654296875,
+              1.4000123275985743
+            ]
+          ]
+        },
+        {
+          "index": 17,
+          "part": "eye_left_position",
+          "object_offset": "0x1ae48c",
+          "parent_index": 16,
+          "pivot_world": [
+            0.5729550123214722,
+            2.6402599811553955,
+            1.250470949577334
+          ],
+          "local_position": [
+            0.5729550123214722,
+            0.8802599906921387,
+            1.2504719495773315
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 18,
+          "part": "eye_left",
+          "object_offset": "0x1ae454",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.6402599811553955,
+            1.250470949577334
+          ],
+          "local_position": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              0.28914860182479224,
+              2.2290760081468606,
+              1.1525289667893168
+            ],
+            [
+              0.8567615383964886,
+              3.0514439519347136,
+              1.3775205539146862
+            ]
+          ]
+        },
+        {
+          "index": 19,
+          "part": "eyelid_left",
+          "object_offset": "0x1adee8",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.6402599811553955,
+            1.250470949577334
+          ],
+          "local_position": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.25442923021048724,
+              2.625944504730268,
+              1.1078786980436657
+            ],
+            [
+              0.8914809668298367,
+              3.101746131086752,
+              1.3928826190512384
+            ]
+          ]
+        },
+        {
+          "index": 20,
+          "part": "eye_right_position",
+          "object_offset": "0x1adab4",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.6402599811553955,
+            1.2504829897155787
+          ],
+          "local_position": [
+            -0.5729770064353943,
+            0.8802599906921387,
+            1.2504839897155762
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 21,
+          "part": "eye_right",
+          "object_offset": "0x1ada7c",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.6402599811553955,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              -0.8567835113887348,
+              2.2290761704338613,
+              1.152541020482805
+            ],
+            [
+              -0.28917061731328575,
+              3.051444117355004,
+              1.3775325561435976
+            ]
+          ]
+        },
+        {
+          "index": 22,
+          "part": "eyelid_right",
+          "object_offset": "0x1ad548",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.6402599811553955,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.8915029406789503,
+              2.625944671339441,
+              1.107890747838727
+            ],
+            [
+              -0.2544512448421153,
+              3.1017462966986984,
+              1.3928946164372549
+            ]
+          ]
+        },
+        {
+          "index": 23,
+          "part": "feeler_left",
+          "object_offset": "0x1ad114",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.148355960845947,
+            -0.6559190021285985
+          ],
+          "local_position": [
+            0.0,
+            2.3883559703826904,
+            -0.6559180021286011
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              7.5688176019463984e-06,
+              4.1483547818805375,
+              -0.7288181000049497
+            ],
+            [
+              0.08476986699317637,
+              4.215406795589358,
+              -0.652705084518582
+            ]
+          ]
+        },
+        {
+          "index": 24,
+          "part": "ear_left",
+          "object_offset": "0x1ace70",
+          "parent_index": 16,
+          "pivot_world": [
+            0.6999980211257935,
+            3.569999933242798,
+            0.0
+          ],
+          "local_position": [
+            0.6999980211257935,
+            1.809999942779541,
+            9.999999974752427e-07
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 25,
+          "part": "feeler_right",
+          "object_offset": "0x1ace38",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.148355960845947,
+            -0.6559200154075597
+          ],
+          "local_position": [
+            0.0,
+            2.3883559703826904,
+            -0.6559190154075623
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -0.08477231228214187,
+              4.148355109537437,
+              -0.7288215557209362
+            ],
+            [
+              -8.845595832857558e-06,
+              4.215402868683148,
+              -0.6527063484978427
+            ]
+          ]
+        },
+        {
+          "index": 26,
+          "part": "ear_right",
+          "object_offset": "0x1acb94",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.7000030279159546,
+            3.569999933242798,
+            9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.7000030279159546,
+            1.809999942779541,
+            1.9999999949504854e-06
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 27,
+          "part": "mouth",
+          "object_offset": "0x1acb5c",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            1.7599999904632568,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x7",
+          "triangles": 22,
+          "bind_pose_bounds": [
+            [
+              -1.0586539506912231,
+              1.9203854203224182,
+              0.833911611007693
+            ],
+            [
+              1.0586509704589844,
+              2.55707585811615,
+              1.411732746528628
+            ]
+          ]
+        },
+        {
+          "index": 28,
+          "part": "tongue_position",
+          "object_offset": "0x1ac844",
+          "parent_index": 27,
+          "pivot_world": [
+            0.0,
+            2.2402600049972534,
+            1.4000099434127833
+          ],
+          "local_position": [
+            -0.0,
+            0.4802600145339966,
+            1.4000109434127808
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 29,
+          "part": "forehead",
+          "object_offset": "0x1ac80c",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            3.6402599811553955,
+            0.8999989761581446
+          ],
+          "local_position": [
+            -0.0,
+            1.8802599906921387,
+            0.8999999761581421
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 30,
+          "part": "horn_left",
+          "object_offset": "0x1ac7d4",
+          "parent_index": 16,
+          "pivot_world": [
+            0.7709969878196716,
+            3.6402599811553955,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            0.7709969878196716,
+            1.8802599906921387,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 31,
+          "part": "horn_right",
+          "object_offset": "0x1ac79c",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.771003007888794,
+            3.6402599811553955,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            -0.771003007888794,
+            1.8802599906921387,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 32,
+          "part": "office_position",
+          "object_offset": "0x1ac764",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            5.340001106262207,
+            -0.7300010190734838
+          ],
+          "local_position": [
+            -0.0,
+            3.58000111579895,
+            -0.7300000190734863
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 33,
+          "part": "office",
+          "object_offset": "0x1ac72c",
+          "parent_index": 32,
+          "pivot_world": [
+            0.0,
+            5.340001106262207,
+            -0.7300010190734838
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x1f",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 34,
+          "part": "back",
+          "object_offset": "0x1ac6f4",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.5302600264549255,
+            -0.5600010023841833
+          ],
+          "local_position": [
+            -0.0,
+            0.5302600264549255,
+            -0.5600000023841858
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 35,
+          "part": "navel",
+          "object_offset": "0x1ac6bc",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.3002600073814392,
+            0.8799989952316309
+          ],
+          "local_position": [
+            0.0,
+            0.3002600073814392,
+            0.8799999952316284
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 36,
+          "part": "wing_left_position",
+          "object_offset": "0x1ac684",
+          "parent_index": 1,
+          "pivot_world": [
+            0.15000000596046448,
+            1.610260009765625,
+            -0.4627689884433721
+          ],
+          "local_position": [
+            0.15000000596046448,
+            0.610260009765625,
+            -0.46276798844337463
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 37,
+          "part": "wing_left",
+          "object_offset": "0x1ac64c",
+          "parent_index": 36,
+          "pivot_world": [
+            0.15000000596046448,
+            1.610260009765625,
+            -0.4627689884433721
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 20,
+          "bind_pose_bounds": [
+            [
+              0.11535818943501773,
+              1.4285481125116348,
+              -0.9646091159807328
+            ],
+            [
+              1.129966267479599,
+              2.0390467941761017,
+              -0.44762574168216396
+            ]
+          ]
+        },
+        {
+          "index": 38,
+          "part": "wing_right_position",
+          "object_offset": "0x1ac414",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.15000000596046448,
+            1.610260009765625,
+            -0.4627689884433721
+          ],
+          "local_position": [
+            -0.15000000596046448,
+            0.610260009765625,
+            -0.46276798844337463
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 39,
+          "part": "wing_right",
+          "object_offset": "0x1ac3dc",
+          "parent_index": 38,
+          "pivot_world": [
+            -0.15000000596046448,
+            1.610260009765625,
+            -0.4627689884433721
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 20,
+          "bind_pose_bounds": [
+            [
+              -1.1299235745076552,
+              1.4285486340522766,
+              -0.9646989085627052
+            ],
+            [
+              -0.11535965758098804,
+              2.0390582382678986,
+              -0.4476226309395447
+            ]
+          ]
+        }
+      ],
+      "triangles": 720,
+      "bind_pose_bounds": [
+        [
+          -1.4973152954782711,
+          0.00027171894907951355,
+          -2.382281826568601
+        ],
+        [
+          1.497316039918752,
+          4.8590545654296875,
+          1.411732746528628
+        ]
+      ]
+    },
+    "hero_run_aged_run": {
+      "table_index": 82,
+      "root_object": "0x1bf124",
+      "nodes": [
+        {
+          "index": 0,
+          "part": "root",
+          "object_offset": "0x1bf124",
+          "parent_index": null,
+          "pivot_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 1,
+          "part": "body",
+          "object_offset": "0x1bf0ec",
+          "parent_index": 0,
+          "pivot_world": [
+            0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            1.0,
+            -9.999999974752427e-07
+          ],
+          "flags": "0x6",
+          "triangles": 56,
+          "bind_pose_bounds": [
+            [
+              -0.7386321425437927,
+              0.6605196595191956,
+              -0.6353621350059484
+            ],
+            [
+              0.7386322021484375,
+              2.191764712333679,
+              0.9824115766754176
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "part": "arm_left_position",
+          "object_offset": "0x1beb90",
+          "parent_index": 1,
+          "pivot_world": [
+            0.5983999967575073,
+            1.858735978603363,
+            0.13093100325966134
+          ],
+          "local_position": [
+            0.5983999967575073,
+            0.858735978603363,
+            0.1309320032596588
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 3,
+          "part": "arm_left",
+          "object_offset": "0x1beb58",
+          "parent_index": 2,
+          "pivot_world": [
+            0.5983999967575073,
+            1.858735978603363,
+            0.13093100325966134
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              0.5436102742414517,
+              0.45933322874536475,
+              -0.27242165124324996
+            ],
+            [
+              1.539155568105885,
+              1.9149122965805896,
+              0.8523013874644135
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "part": "hand_left",
+          "object_offset": "0x1be738",
+          "parent_index": 3,
+          "pivot_world": [
+            0.9356788610229896,
+            0.8209682765956363,
+            0.2917458143366738
+          ],
+          "local_position": [
+            -0.09501899778842926,
+            -1.0977380275726318,
+            0.050227999687194824
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 5,
+          "part": "leg_left_position",
+          "object_offset": "0x1be700",
+          "parent_index": 1,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.3484329879283905,
+            0.047387998551130295,
+            -0.02398199960589409
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 6,
+          "part": "leg_left",
+          "object_offset": "0x1be6c8",
+          "parent_index": 5,
+          "pivot_world": [
+            0.3484329879283905,
+            1.0473879985511303,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 46,
+          "bind_pose_bounds": [
+            [
+              -0.03799551725387573,
+              0.00027171894907951355,
+              -0.713701365275142
+            ],
+            [
+              1.1962805688381195,
+              1.0545851858332753,
+              1.229535939412358
+            ]
+          ]
+        },
+        {
+          "index": 7,
+          "part": "tail_position",
+          "object_offset": "0x1be284",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.1144599989056587,
+            -0.6300009952316259
+          ],
+          "local_position": [
+            -0.0,
+            0.11445999890565872,
+            -0.6299999952316284
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 8,
+          "part": "tail",
+          "object_offset": "0x1be24c",
+          "parent_index": 7,
+          "pivot_world": [
+            0.0,
+            1.1144599989056587,
+            -0.6300009952316259
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x15",
+          "triangles": 36,
+          "bind_pose_bounds": [
+            [
+              -0.29383015632629395,
+              0.9774699980234731,
+              -1.2606225861017855
+            ],
+            [
+              0.2938303053379059,
+              1.5069497429791991,
+              -0.5360010387891305
+            ]
+          ]
+        },
+        {
+          "index": 9,
+          "part": "arm_right_position",
+          "object_offset": "0x1bded8",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.5984309911727905,
+            1.8587369918823242,
+            0.13093000488186135
+          ],
+          "local_position": [
+            -0.5984309911727905,
+            0.8587369918823242,
+            0.13093100488185883
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 10,
+          "part": "arm_right",
+          "object_offset": "0x1bdea0",
+          "parent_index": 9,
+          "pivot_world": [
+            -0.5984309911727905,
+            1.8587369918823242,
+            0.13093000488186135
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 44,
+          "bind_pose_bounds": [
+            [
+              -1.5391516602315436,
+              0.45933283150667303,
+              -0.2724213627303767
+            ],
+            [
+              -0.5436090700477834,
+              1.9149123960939691,
+              0.8523015212659861
+            ]
+          ]
+        },
+        {
+          "index": 11,
+          "part": "hand_right",
+          "object_offset": "0x1bda80",
+          "parent_index": 10,
+          "pivot_world": [
+            -0.9600834019233269,
+            0.8209744316380521,
+            0.29174395928953634
+          ],
+          "local_position": [
+            -0.07258100062608719,
+            -1.107208013534546,
+            -0.04926599934697151
+          ],
+          "flags": "0x1c",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 12,
+          "part": "leg_right_position",
+          "object_offset": "0x1bda48",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            -0.3484320044517517,
+            0.04738900065422058,
+            -0.02398199960589409
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 13,
+          "part": "leg_right",
+          "object_offset": "0x1bda10",
+          "parent_index": 12,
+          "pivot_world": [
+            -0.3484320044517517,
+            1.0473890006542206,
+            -0.023982999605891564
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 46,
+          "bind_pose_bounds": [
+            [
+              -1.1962830424308777,
+              0.00027379393577575684,
+              -0.7137018421123003
+            ],
+            [
+              0.037992119789123535,
+              1.0545858494006097,
+              1.2295352241566206
+            ]
+          ]
+        },
+        {
+          "index": 14,
+          "part": "neck",
+          "object_offset": "0x1bd5d8",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.7950559854507446,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.0,
+            0.7950559854507446,
+            0.0
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 15,
+          "part": "head_position",
+          "object_offset": "0x1bd5a0",
+          "parent_index": 14,
+          "pivot_world": [
+            0.0,
+            1.7950559854507446,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0xf",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 16,
+          "part": "head",
+          "object_offset": "0x1bd568",
+          "parent_index": 15,
+          "pivot_world": [
+            0.0,
+            1.7950559854507446,
+            -9.999999974752427e-07
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x7",
+          "triangles": 158,
+          "bind_pose_bounds": [
+            [
+              -1.2799012660980225,
+              1.7860429286956787,
+              -2.4162402616271947
+            ],
+            [
+              1.2799010276794434,
+              5.26197350025177,
+              1.4000123275985743
+            ]
+          ]
+        },
+        {
+          "index": 17,
+          "part": "eye_left_position",
+          "object_offset": "0x1bc880",
+          "parent_index": 16,
+          "pivot_world": [
+            0.5729550123214722,
+            2.7653160095214844,
+            1.250470949577334
+          ],
+          "local_position": [
+            0.5729550123214722,
+            0.9702600240707397,
+            1.2504719495773315
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 18,
+          "part": "eye_left",
+          "object_offset": "0x1bc848",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.7653160095214844,
+            1.250470949577334
+          ],
+          "local_position": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              0.28914860182479224,
+              2.3541320365129494,
+              1.1525289667893168
+            ],
+            [
+              0.8567615383964886,
+              3.1764999803008025,
+              1.3775205539146862
+            ]
+          ]
+        },
+        {
+          "index": 19,
+          "part": "eyelid_left",
+          "object_offset": "0x1bc2dc",
+          "parent_index": 17,
+          "pivot_world": [
+            0.5729550123214722,
+            2.7653160095214844,
+            1.250470949577334
+          ],
+          "local_position": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              0.25442923021048724,
+              2.7510005330963567,
+              1.1078786980436657
+            ],
+            [
+              0.8914809668298367,
+              3.226802159452841,
+              1.3928826190512384
+            ]
+          ]
+        },
+        {
+          "index": 20,
+          "part": "eye_right_position",
+          "object_offset": "0x1bbea8",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.7653160095214844,
+            1.2504829897155787
+          ],
+          "local_position": [
+            -0.5729770064353943,
+            0.9702600240707397,
+            1.2504839897155762
+          ],
+          "flags": "0x8",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 21,
+          "part": "eye_right",
+          "object_offset": "0x1bbe70",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.7653160095214844,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 48,
+          "bind_pose_bounds": [
+            [
+              -0.8567835113887348,
+              2.35413219879995,
+              1.152541020482805
+            ],
+            [
+              -0.28917061731328575,
+              3.176500145721093,
+              1.3775325561435976
+            ]
+          ]
+        },
+        {
+          "index": 22,
+          "part": "eyelid_right",
+          "object_offset": "0x1bb93c",
+          "parent_index": 20,
+          "pivot_world": [
+            -0.5729770064353943,
+            2.7653160095214844,
+            1.2504829897155787
+          ],
+          "local_position": [
+            1.700000029813964e-05,
+            1.9999999949504854e-06,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 40,
+          "bind_pose_bounds": [
+            [
+              -0.8915029406789503,
+              2.75100069970553,
+              1.107890747838727
+            ],
+            [
+              -0.2544512448421153,
+              3.2268023250647873,
+              1.3928946164372549
+            ]
+          ]
+        },
+        {
+          "index": 23,
+          "part": "feeler_left",
+          "object_offset": "0x1bb508",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.273411870002747,
+            -0.5259200201759313
+          ],
+          "local_position": [
+            0.0,
+            2.478355884552002,
+            -0.5259190201759338
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              7.5688176019463984e-06,
+              4.273410691037337,
+              -1.884845166697862
+            ],
+            [
+              1.3157312191109194,
+              5.1252623743510455,
+              -0.5259237638664396
+            ]
+          ]
+        },
+        {
+          "index": 24,
+          "part": "ear_left",
+          "object_offset": "0x1bb264",
+          "parent_index": 16,
+          "pivot_world": [
+            0.6999980211257935,
+            3.6950559616088867,
+            0.0
+          ],
+          "local_position": [
+            0.6999980211257935,
+            1.899999976158142,
+            9.999999974752427e-07
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 25,
+          "part": "feeler_right",
+          "object_offset": "0x1bb22c",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            4.273411870002747,
+            -0.5259200201759313
+          ],
+          "local_position": [
+            0.0,
+            2.478355884552002,
+            -0.5259190201759338
+          ],
+          "flags": "0x14",
+          "triangles": 26,
+          "bind_pose_bounds": [
+            [
+              -1.315776537775827,
+              4.273411018694237,
+              -1.8848127153670156
+            ],
+            [
+              -8.845595832857558e-06,
+              5.1252262522139365,
+              -0.5259236078047468
+            ]
+          ]
+        },
+        {
+          "index": 26,
+          "part": "ear_right",
+          "object_offset": "0x1baf88",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.7000030279159546,
+            3.6950559616088867,
+            9.999999974752427e-07
+          ],
+          "local_position": [
+            -0.7000030279159546,
+            1.899999976158142,
+            1.9999999949504854e-06
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 27,
+          "part": "mouth",
+          "object_offset": "0x1baf50",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            1.7950559854507446,
+            0.018804999308827064
+          ],
+          "local_position": [
+            -0.0,
+            -0.0,
+            0.01880599930882454
+          ],
+          "flags": "0x6",
+          "triangles": 22,
+          "bind_pose_bounds": [
+            [
+              -1.0586539506912231,
+              1.995441347360611,
+              0.8339119276573683
+            ],
+            [
+              1.0586509704589844,
+              2.682131767272949,
+              1.4117331227829482
+            ]
+          ]
+        },
+        {
+          "index": 28,
+          "part": "tongue_position",
+          "object_offset": "0x1bac38",
+          "parent_index": 27,
+          "pivot_world": [
+            0.0,
+            2.3653149604797363,
+            1.4000110349228407
+          ],
+          "local_position": [
+            -0.0,
+            0.5702589750289917,
+            1.3812060356140137
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 29,
+          "part": "forehead",
+          "object_offset": "0x1bac00",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            3.7653160095214844,
+            0.8999989761581446
+          ],
+          "local_position": [
+            -0.0,
+            1.9702600240707397,
+            0.8999999761581421
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 30,
+          "part": "horn_left",
+          "object_offset": "0x1babc8",
+          "parent_index": 16,
+          "pivot_world": [
+            0.7709969878196716,
+            3.7653160095214844,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            0.7709969878196716,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 31,
+          "part": "horn_right",
+          "object_offset": "0x1bab90",
+          "parent_index": 16,
+          "pivot_world": [
+            -0.771003007888794,
+            3.7653160095214844,
+            -0.30000101192092643
+          ],
+          "local_position": [
+            -0.771003007888794,
+            1.9702600240707397,
+            -0.30000001192092896
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 32,
+          "part": "office_position",
+          "object_offset": "0x1bab58",
+          "parent_index": 16,
+          "pivot_world": [
+            0.0,
+            5.095056891441345,
+            -0.010000999776480057
+          ],
+          "local_position": [
+            -0.0,
+            3.3000009059906006,
+            -0.009999999776482582
+          ],
+          "flags": "0xe",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 33,
+          "part": "office",
+          "object_offset": "0x1bab20",
+          "parent_index": 32,
+          "pivot_world": [
+            0.0,
+            5.095056891441345,
+            -0.010000999776480057
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x1f",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 34,
+          "part": "back",
+          "object_offset": "0x1baae8",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.4702599942684174,
+            -0.5000009999999975
+          ],
+          "local_position": [
+            -0.0,
+            0.47025999426841736,
+            -0.5
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 35,
+          "part": "navel",
+          "object_offset": "0x1baab0",
+          "parent_index": 1,
+          "pivot_world": [
+            0.0,
+            1.5902600288391113,
+            0.9199990166893031
+          ],
+          "local_position": [
+            0.0,
+            0.5902600288391113,
+            0.9200000166893005
+          ],
+          "flags": "0x1e",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 36,
+          "part": "wing_left_position",
+          "object_offset": "0x1baa78",
+          "parent_index": 1,
+          "pivot_world": [
+            0.20000000298023224,
+            1.7902600169181824,
+            -0.35276998741721854
+          ],
+          "local_position": [
+            0.20000000298023224,
+            0.7902600169181824,
+            -0.35276898741722107
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 37,
+          "part": "wing_left",
+          "object_offset": "0x1baa40",
+          "parent_index": 36,
+          "pivot_world": [
+            0.20000000298023224,
+            1.7902600169181824,
+            -0.35276998741721854
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flags": "0x17",
+          "triangles": 20,
+          "bind_pose_bounds": [
+            [
+              0.20000001510248772,
+              1.4595124125480652,
+              -0.8807577997651531
+            ],
+            [
+              1.1145690892370004,
+              2.1449451744556427,
+              -0.35276998925235303
+            ]
+          ]
+        },
+        {
+          "index": 38,
+          "part": "wing_right_position",
+          "object_offset": "0x1ba7f8",
+          "parent_index": 1,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.7902600169181824,
+            -0.35276900394057975
+          ],
+          "local_position": [
+            -0.20000000298023224,
+            0.7902600169181824,
+            -0.3527680039405823
+          ],
+          "flags": "0xc",
+          "triangles": 0,
+          "bind_pose_bounds": null
+        },
+        {
+          "index": 39,
+          "part": "wing_right",
+          "object_offset": "0x1ba7c0",
+          "parent_index": 38,
+          "pivot_world": [
+            -0.20000000298023224,
+            1.7902600169181824,
+            -0.35276900394057975
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "flags": "0x17",
+          "triangles": 20,
+          "bind_pose_bounds": [
+            [
+              -1.114519000206156,
+              1.4595123529434204,
+              -0.8808447618847709
+            ],
+            [
+              -0.2000000039101936,
+              2.144945055246353,
+              -0.3527690056021903
+            ]
+          ]
+        }
+      ],
+      "triangles": 720,
+      "bind_pose_bounds": [
+        [
+          -1.5391516602315436,
+          0.00027171894907951355,
+          -2.4162402616271947
+        ],
+        [
+          1.539155568105885,
+          5.26197350025177,
+          1.4117331227829482
+        ]
+      ]
+    }
+  }
+}

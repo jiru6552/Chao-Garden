@@ -1,0 +1,39 @@
+{
+  "current_result": "9tests,8passed,unchangedYourgardensparagraphassertion",
+  "current_log": "run055-journal.log",
+  "current_log_sha256": "c176fb3b2ee166356711fef2629f6a0b4844dbc68ad67a47992de97b21212f08",
+  "unchanged_assertion": "AssertionError: '\\n\\n' not found in \"Place a Chao Garden device, open it and press Activate garden. This marks the device's chunk and its eight neighbouring chunks. No enclosure or tree is required. Owned Chao placed inside are detected automatically; Garden registration still manages residents.\"",
+  "source_comparison_to_delivered053": {
+    "scripts/test_journal_content_02518.py": {
+      "current_sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "delivered053_sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "identical": true
+    },
+    "src/main/java/com/chaogarden/item/GardenGuideItem.java": {
+      "current_sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "delivered053_sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "identical": true
+    },
+    "src/main/java/com/chaogarden/core/ChaoState.java": {
+      "current_sha256": "0ce2c8a9cda1293310cb6dc67980fb590fb776815e004086daafebc1d21a8bae",
+      "delivered053_sha256": "0ce2c8a9cda1293310cb6dc67980fb590fb776815e004086daafebc1d21a8bae",
+      "identical": true
+    },
+    "src/main/java/com/chaogarden/client/AdventureGuideScreen.java": {
+      "current_sha256": "7150a5e1b8f0115463199a99d0b2377d3ffd5f428cb9d0a18f5327f2bc7d116d",
+      "delivered053_sha256": "7150a5e1b8f0115463199a99d0b2377d3ffd5f428cb9d0a18f5327f2bc7d116d",
+      "identical": true
+    },
+    "src/main/java/com/chaogarden/client/KindergartenScreen.java": {
+      "current_sha256": "dc82d570e02d740576cb72f4ff4ae1a6d2b372a9733c64a48fe367d4348d7553",
+      "delivered053_sha256": "dc82d570e02d740576cb72f4ff4ae1a6d2b372a9733c64a48fe367d4348d7553",
+      "identical": true
+    },
+    "src/main/java/com/chaogarden/client/ChaoInspectionScreen.java": {
+      "current_sha256": "ed12b323a05a1a303c6bcba7e3d70e4c1173f49d8ee623c4e256fab71361ee8f",
+      "delivered053_sha256": "ed12b323a05a1a303c6bcba7e3d70e4c1173f49d8ee623c4e256fab71361ee8f",
+      "identical": true
+    }
+  },
+  "baseline_rerun_performed_in_055": false
+}

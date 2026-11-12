@@ -9,7 +9,7 @@ import java.nio.file.*;
 import java.util.*;
 import org.joml.Vector3f;
 
-/** Actual emitted solids and shared anchors, rather than a second morph implementation. */
+/** Historical .53 emitted solids/anchors. Current production .54 is tested separately. */
 public final class BabyRunMorphRigTest053 {
   static final Path ROOT=Path.of("src/main/resources/assets/chao_garden");
   static int checks,frames,limbSolids;static float largestStep;
@@ -66,7 +66,9 @@ public final class BabyRunMorphRigTest053 {
         for(String n:List.of("body","skull","arm_left","arm_right","foot_left","foot_right","tail","wing_left","wing_right"))if(d.containsKey(n)){var a=new PoseStack();var b=new PoseStack();mesh.transformBone(n,a,p);donor.transformBone(n,b,d);near(a.last().pose().get(new float[16]),b.last().pose().get(new float[16]),.000003f,"attachment joint separated "+family+" "+n);}
       }
     }
-    var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");var rig=new OfficialChaoRig(clips,BabyRunMorphRigTest053::asset);int serial=0;
+    // Exercise retained .53 geometry through the real animation sampler. The
+    // production asset selection intentionally changed in .54, not this fixture.
+    var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");var rig=new OfficialChaoRig(clips,n->asset(n.equals("gameplay/chao_hero_run_proto054")?"gameplay/chao_baby_run_proto053":n));int serial=0;
     for(float a:new float[]{-1,0,1})for(int q=0;q<5;q++)for(var motion:List.of(OfficialChaoRig.Motion.CRAWL,OfficialChaoRig.Motion.WALK,OfficialChaoRig.Motion.RUN,OfficialChaoRig.Motion.SIT,OfficialChaoRig.Motion.SWIM,OfficialChaoRig.Motion.GLIDE,OfficialChaoRig.Motion.HELD))for(int tick=0;tick<=40;tick+=2){var s=state(q/4f,a);String geometry=OfficialChaoRig.geometryKey(s);rig.prepareDevelopment(geometry,s);rig.animateGameplay(geometry,new UUID(530053,++serial),motion,tick,1,.05f,0,0,0,0,false);rig.development(s);frames++;check(rig.finite(),"motion nonfinite");check(rig.sourceGeometryKey().equals("baby"),"attachment UV family changed");sample(mesh,s);check(rig.sampledMesh().shapeSignature()==mesh.shapeSignature(),"runtime selected another baby surface");for(String n:List.of("skull","body","arm_left","foot_left")){var t=new PoseStack();rig.transformBone(n,t);check(t.last().pose().isFinite(),"motion joint nonfinite");check(rig.attachmentBounds(n)!=null,"motion attachment absent");}check(rig.toyPalm(false)!=null&&rig.toyPalm(true)!=null,"motion palm absent");}
   }
   static void signedAlignment(){var s=state(.75f,0);UUID id=UUID.randomUUID();HeroRunAppearance052.prepare(id,s,0);s.align=-1;String saved=s.encode();HeroRunAppearance052.prepare(id,s,1);HeroRunAppearance052.prepare(id,s,11);check(Math.abs(HeroRunAppearance052.signedAlignment(s)+.5f)<.00001f,"Dark edit did not interpolate");HeroRunAppearance052.prepare(id,s,21);check(HeroRunAppearance052.signedAlignment(s)==-1,"Dark edit did not reach endpoint");check(saved.equals(s.encode()),"presentation altered save");HeroRunAppearance052.prepare(id,s,150);check(HeroRunAppearance052.signedAlignment(s)==-1,"stale signed channel corrupted");}
@@ -81,8 +83,8 @@ public final class BabyRunMorphRigTest053 {
   }
   public static void main(String[] args)throws Exception{
     development();attachmentsAndMotion();signedAlignment();colors();
-    check(AdultMorphSnapshot053.snapshot().equals("da472d55f399960b560f03b95b6df96f3de76b26bd6af78f01c60a0492dc8782"),"adult vertices/UVs/normals/joint matrices changed from delivered .52 JAR");
-    String report="Baby Run053 morphology: "+checks+" checks; "+frames+" emitted-geometry/motion frames; "+limbSolids+" closed compact limb solids; max small-progress step="+largestStep+" model pixels; independent Run/alignment, swept head, protected eyes, attachments, grounded soles, signed interpolation and delivered052 adult fingerprint passed\n";
+    check(AdultMorphSnapshot053.snapshot().equals("da472d55f399960b560f03b95b6df96f3de76b26bd6af78f01c60a0492dc8782"),"retained historical052 asset/sampler differs from delivered .52 JAR");
+    String report="Historical Baby Run053 morphology: "+checks+" checks; "+frames+" emitted-geometry/motion frames; "+limbSolids+" closed compact limb solids; max small-progress step="+largestStep+" model pixels; independent Run/alignment, swept head, protected eyes, attachments, grounded soles, signed interpolation and historical delivered052 adult fingerprint passed; current production path is covered by HeroRunMorphRigTest054\n";
     Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/baby-run053-results.txt"),report);System.out.print(report);
   }
 }

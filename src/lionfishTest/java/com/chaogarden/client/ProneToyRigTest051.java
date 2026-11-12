@@ -103,7 +103,7 @@ public final class ProneToyRigTest051 {
     int serial=0;
     for(var path:Files.list(ROOT.resolve("gameplay")).filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")).sorted().toList()){
       String nominal=path.getFileName().toString().replace("chao_","").replace(".json","");
-      boolean prototype=nominal.equals("hero_run_proto052");
+      boolean prototype=nominal.equals("hero_run_proto052")||nominal.equals("hero_run_proto054");
       for(boolean adult:new boolean[]{false,true})for(var profile:PROFILES)for(int stage=0;stage<(prototype?5:1);stage++){
         String model=prototype?(adult?"hero_run":"baby"):nominal;
         var state=new ChaoState();state.adult=adult;state.setEvolutionStrength(1.2f);
@@ -170,15 +170,15 @@ public final class ProneToyRigTest051 {
   /** Exercise the state-derived canonical surface and its actual Baby-layout
    * replacement feet; raw JSON's neutral pose is not enough for a morph asset. */
   private static void heroRunStages(int[] all,int[] contacts)throws Exception {
-    for(boolean adult:new boolean[]{false,true})for(int stage=0;stage<=4;stage++){
+    for(String asset:List.of("hero_run_proto052","hero_run_proto054"))for(boolean adult:new boolean[]{false,true})for(int stage=0;stage<=4;stage++){
       float fraction=stage/4f;var state=new ChaoState();state.adult=adult;state.align=adult?1:.5f*fraction;state.primaryType=adult?ChaoState.RUN_TYPE:ChaoState.NORMAL;
       int bars=Math.round(fraction*(adult?960:480));state.levels[ChaoState.RUN]=bars/100;state.progress[ChaoState.RUN]=bars%100;state.points[ChaoState.RUN]=bars;state.setEvolutionStrength(adult?1.2f:.8f);
-      var mesh=load(ROOT.resolve("gameplay/chao_hero_run_proto052.json"));
+      var mesh=load(ROOT.resolve("gameplay/chao_"+asset+".json"));
       mesh.development(0,0,adult?state.gradualVisualStrength():state.gradualVisualStrength()*.14f);
       mesh.heroRunDevelopment(com.chaogarden.core.HeroRunMorphology052.sample(state),0,0);
       mesh.heroRunTwoTone(state.isTwoTone());
       var poses=mesh.createPoses();var skin=bounds(mesh,poses,mesh,mesh.createPoses(),-1,adult);
-      String label="HeroRun052 age="+adult+" progress="+fraction;
+      String label=asset+" age="+adult+" progress="+fraction;
       for(var profile:PROFILES){cases++;verify(mesh,poses,skin,adult,false,profile,label+" skin",all);}
       for(int animal=0;animal<ChaoState.ANIMALS.length;animal++){
         if((ChaoState.animalSlots(animal)&(1<<ChaoState.FEET))==0)continue;
