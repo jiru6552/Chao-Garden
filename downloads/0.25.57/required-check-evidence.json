@@ -1,0 +1,76 @@
+{
+  "scope": "Coordinator-selected literal evidence only; pass/failure claims remain in the report.",
+  "checks": [
+    {
+      "source_log": "heronormal057-core-first.log",
+      "sha256": "7d8087dc345111d1dc5163e8f5c9c542d250c1118c706c914d5f9baee755ce78",
+      "literal_lines": [
+        "Hero Normal morphology057: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+        "BUILD SUCCESSFUL in 48s"
+      ]
+    },
+    {
+      "source_log": "heronormal057-focused-final.log",
+      "sha256": "c847ac2e3d82dd52e509ba301867fa201524d5c292e29ca971e5ced8b700698c",
+      "literal_lines": [
+        "HeroNormal057 material: 73779511 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 halo samples; 6873120 exact body/head pixels; maximum1% color step=4. Nine independently referenced color corners, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.",
+        "Neutral056: 7443569 checks; 1534 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.074799635 model pixels; maximum20tick edit step=0.17027597; seconds=5.365242799. Fixed original head/face/marker/rig; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "Hero Run055 material: 23615146 checks; 172 original coats; 12678120 preserved-alpha pixels; 99072 exact protected eye/expression pixels; maximum1% pixel change=4; shared pixel regions, fixed UVs, no baseline pop and compatible-axis accents passed.",
+        "Piano mesh fit: 175932 hand samples; 19278 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+        "Organ mesh fit: 175932 hand samples; 4320 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels",
+        "BUILD SUCCESSFUL in 1m 5s"
+      ]
+    },
+    {
+      "source_log": "heronormal057-native-final.log",
+      "sha256": "41978ec5a79e6537af2932a667a7babff13a8cf9ee6a9dbd487a9206296cca89",
+      "literal_lines": [
+        "HeroNormal057: 9590990 checks; 1534 emitted age/axis/edit frames; 9528 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 23440 actual tilted-halo/head-feature separation checks; maximum axis step=0.024278762 model pixels; maximum20tick edit step=0.11147869; seconds=6.678082587. Fixed original head/face/rig; paired features and four-bar halo; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "[17:39:22] [Server thread/INFO] [minecraft/GameTestServer]: All 305 required tests passed :)",
+        "BUILD SUCCESSFUL in 52s"
+      ]
+    },
+    {
+      "source_log": "heronormal057-jar-prepare.log",
+      "sha256": "f4bad170867cc8fe8add79dfbc0e3a06b2d5be653ac7295dee5d17e1e53a8547",
+      "literal_lines": [
+        "BUILD SUCCESSFUL in 13s"
+      ]
+    },
+    {
+      "source_log": "heronormal057-geometry-validation.log",
+      "sha256": "d79a731dfd8d1c534e94290295cebdb05a6778803402f97a5103404558e77b8d",
+      "literal_lines": [
+        "HeroNormal057: 13 positive closed boxes, 2205 connected paired-feature/halo age-axis blends, fixed original head/face/rig, anchored soles; actual tilted-halo OBB separation passed (minimum vertical gap=0.718896px; negative alone would not imply intersection)."
+      ]
+    },
+    {
+      "source_log": "heronormal057-client-final.log",
+      "sha256": "e1e5d7ffb832c33595739148935735a0ad756bc605f07394fb81c83ddb14f8c3",
+      "literal_lines": [
+        "[18:02:42] [Render thread/INFO] [co.ch.cl.HeroNormalVisualSmoke057/]: HERONORMAL057_VISUAL_COMPLETE requestedCases=56 renderedCases=56 skippedCases=0 start=0 limit=56 baseline=false captures=435 saved=435 epochMillis=1794506562920 normal20TPS=true audioListening=false output=/workspace/.setup/heronormal057-client-final",
+        "BUILD SUCCESSFUL in 6m 12s"
+      ]
+    },
+    {
+      "source_log": "heronormal057-build.log",
+      "sha256": "653ece5eb5afcf7ec8cc816e027e9f5087d4563e06c7c484e92ae116982fd27a",
+      "literal_lines": [
+        "> Task :triangleTransitionRigTest FAILED",
+        "> Task :trumpetTransitionRigTest FAILED",
+        "Triangle transition samples=267696 failures=25 minHandHeadPixels=-0.54432297",
+        "Trumpet transition samples=267696 failures=37 minHandHeadPixels=-0.58569264",
+        "FAILURE: Build completed with 2 failures.",
+        "BUILD FAILED in 11m 45s"
+      ]
+    },
+    {
+      "source_log": "heronormal057-journal.log",
+      "sha256": "6daf7986f072781c592b76c24e3a3c6eae426e81cd0eff1958f9feccda3622c8",
+      "literal_lines": [
+        "FAIL: test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens')",
+        "FAILED (failures=1)"
+      ]
+    }
+  ]
+}

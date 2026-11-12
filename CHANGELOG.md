@@ -1,3 +1,11 @@
+## 0.25.57 — Hero/Normal morphology foundation
+
+- Add all nine Hero/Normal adult combinations through independent maturity and opposed current-training axes, with paired cuboid features, a four-bar halo, compact limbs and shared Lionfish attachments.
+- Preserve the original head box and face, saved first identities, inherited colors/shiny finishes, and the completed Hero Run and Neutral paths.
+- Author specialization-specific halo, belly, limb and wing colors from fresh live viewer reference; keep pixel details on the existing atlas rather than adding decorative geometry.
+- Keep Hero/Normal labels and Analyzer Growth meters aligned with current training; keep the maturity thumb/value visible while dragging.
+- Record actual checks, source/reference limits, approximated forms and delivery notes in [the .57 report](docs/HERO_NORMAL_FOUNDATION_02557.md).
+
 ## 0.25.56 — Neutral morphology foundation and Creative editing
 
 - Add the nine Neutral/Normal adult combinations through independent age and opposed current-training axes, with a fixed original head, one blocky central crown, compact limbs and shared Lionfish attachments. Preserve the approved Hero Run path and saved first identities.

@@ -1,4 +1,6 @@
-Current morphology/testing update: [0.25.56 Neutral foundation and Creative editing](docs/NEUTRAL_FOUNDATION_02556.md). The nine new combinations require Neutral alignment and a saved Normal first type; their reversible two axes read current level/progress differences. First evolution still uses four earned-point totals and recency, with adult identity locked. Creative maturity adjusts current-stage growth only, preserving chronological lifetime. No save-schema fields are added.
+Current morphology update: [0.25.57 Hero/Normal foundation](docs/HERO_NORMAL_FOUNDATION_02557.md). The new family requires a saved Normal first type and locked Hero alignment, uses the same provisional960 net current-progress opposing axes and independent maturity as the Neutral foundation, and adds no saved fields. Existing first evolution, adult identity and Creative editing rules remain unchanged.
+
+Previous morphology/testing update: [0.25.56 Neutral foundation and Creative editing](docs/NEUTRAL_FOUNDATION_02556.md). The nine new combinations require Neutral alignment and a saved Normal first type; their reversible two axes read current level/progress differences. First evolution still uses four earned-point totals and recency, with adult identity locked. Creative maturity adjusts current-stage growth only, preserving chronological lifetime. No save-schema fields are added.
 
 # Chao mechanics in 0.22.0
 

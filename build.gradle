@@ -846,3 +846,20 @@ tasks.register('neutralMaterialTest056', JavaExec) {
     jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
 }
 tasks.named('check') { dependsOn neutralMaterialTest056 }
+
+
+tasks.register('heroNormalMorphRigTest057', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroNormalMorphRigTest057'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroNormalMorphRigTest057 }
+
+tasks.register('heroNormalMaterialTest057', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroNormalMaterialTest057'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroNormalMaterialTest057 }

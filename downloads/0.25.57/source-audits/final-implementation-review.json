@@ -1,0 +1,23 @@
+{
+  "scope": "Read-only review against delivered .56 parent; no new build or client claim",
+  "parent_commit": "87f0efcc4d477decd659650649d96a01544e5abc",
+  "reviewed_production": [
+    "ChaoMeshAsset",
+    "OfficialChaoRig",
+    "ChaoModel",
+    "ChaoState",
+    "HeroNormalMorphology057",
+    "HeroNormalAppearance057",
+    "HeroNormalCoatMaterial057",
+    "HeroNormalRegionPaint057",
+    "ChaoPaletteMaterial"
+  ],
+  "findings": [
+    "Eligibility limited to ordinary living Hero/Normal-first adults",
+    "New material route requires dynamic/hero_normal057 and canonical baby layout",
+    "No persistent fields/evolution/drive changes",
+    "11 original skull/face records and 59 joint pivots/rotations unchanged",
+    "Baby, .55 HeroRun and .56 Neutral assets byte-identical to delivered parent"
+  ],
+  "blocking_findings": []
+}

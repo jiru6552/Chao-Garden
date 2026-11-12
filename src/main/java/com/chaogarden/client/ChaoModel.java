@@ -207,6 +207,7 @@ public final class ChaoModel extends HierarchicalModel<ChaoEntity> {
     float gaitSwing = state.adult ? swing : swing * (1.25f / 3f);
     HeroRunAppearance052.prepare(entity.getUUID(),state,age);
     NeutralAppearance056.prepare(entity.getUUID(),state,age);
+    HeroNormalAppearance057.prepare(entity.getUUID(),state,age);
     official.prepareDevelopment(model,state);
     official.animateGameplay(model,entity.getUUID(),motion,age,gaitSwing,
         rest||eat||pet||held||entity.isHandlingItem()&&action!=ChaoEntity.ItemAction.GARDEN||entity.toyPlayingTicks()>0&&!ballChasing||gesture&&behavior!=ChaoEntity.Behavior.FLEE&&behavior!=ChaoEntity.Behavior.HOLD_HANDS?0:amount,emotion,emotionalTime,

@@ -5,6 +5,7 @@ import com.chaogarden.GardenConfig;
 import com.chaogarden.core.ChaoState;
 import com.chaogarden.core.HeroRunMorphology052;
 import com.chaogarden.core.NeutralMorphology056;
+import com.chaogarden.core.HeroNormalMorphology057;
 import com.chaogarden.core.OmochaoRules;
 import com.chaogarden.core.LocomotionRules;
 import com.chaogarden.core.ChaoPreferences;
@@ -407,6 +408,9 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     int x=localX(mouseX),y=localY(mouseY);if(x<214||x>571)return;
     var lines=new ArrayList<Component>();
     if(y>=287&&y<=313) {
+      // Keep the live percentage and thumb visible while scrubbing. Ordinary
+      // hover help returns on release; skill tooltips keep their own behavior.
+      if(maturityDragging)return;
       lines.add(Component.literal((s.adult?"Biological maturity: ":"First evolution: ")+String.format(Locale.ROOT,s.adult?"%.2f / 1.20":"%.2f / 1.00",s.evolutionStrength())));
       if(maturityDragValue!=null)lines.add(Component.literal("Requested maturity: "+AnalyzerMaturityBar056.percent(maturityDragValue)+"; server confirms the saved value."));
       if(maturityEditable()) {
@@ -417,8 +421,14 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       if(!s.adult)lines.add(Component.literal("Ordinary first type now: "+ChaoState.TYPES[s.prospectivePrimaryType()]+" (Stamina excluded)"));
       lines.add(Component.literal("Alignment and first adult type lock at first evolution."));
       var neutral=NeutralMorphology056.sample(s);
+      var heroNormal=HeroNormalMorphology057.sample(s);
       var morph=HeroRunMorphology052.sample(s);
-      if(neutral.enabled()) {
+      if(heroNormal.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Hero Normal training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",heroNormal.runPower()*100,heroNormal.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Hero Normal form into these targets: "+Math.round(heroNormal.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(HeroNormalMorphology057.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Decreases change training influence, not biological maturity or first identity."));
+      } else if(neutral.enabled()) {
         lines.add(Component.literal(String.format(Locale.ROOT,"Neutral training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",neutral.runPower()*100,neutral.swimFly()*100)));
         lines.add(Component.literal("Maturity blends the fresh Normal form into these targets: "+Math.round(neutral.maturity()*100)+"%."));
         lines.add(Component.literal("Provisional full axis: "+Math.round(NeutralMorphology056.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
@@ -510,8 +520,9 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       text(g,"TRAINING SHAPES YOUR CHAO",220,115,.85f,INK);
       text(g,"These meters show direction, not a chance or a level.",220,133,.8f,MUTED);
       var neutral=NeutralMorphology056.sample(s);
-      float swimFly=neutral.enabled()?neutral.swimFly():s.swimFly;
-      float runPower=neutral.enabled()?neutral.runPower():s.runPower;
+      var heroNormal=HeroNormalMorphology057.sample(s);
+      float swimFly=neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():s.swimFly;
+      float runPower=neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():s.runPower;
       axis(g,"Swim","Fly",swimFly,220,159,340,STAT_COLORS[0],STAT_COLORS[1]);
       text(g,lean(swimFly,"Swim","Fly"),220,175,.8f,INK);
       axis(g,"Run","Power",runPower,220,203,340,STAT_COLORS[2],STAT_COLORS[3]);

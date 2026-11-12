@@ -1,4 +1,13 @@
-Current focused update: see [the 0.25.56 verification report](docs/NEUTRAL_FOUNDATION_02556.md) for final outcomes, inherited failures and client limits. Coordinated commands use `--no-configuration-cache`, because the existing resource-fixture task accesses `Task.project` during execution.
+Current focused family: [0.25.57 Hero/Normal verification](docs/HERO_NORMAL_FOUNDATION_02557.md). Use Java21 and `--no-configuration-cache` for the existing resource-fixture task:
+
+```sh
+./gradlew --no-configuration-cache coreTest heroNormalMorphRigTest057 heroNormalMaterialTest057 neutralMorphRigTest056 neutralMaterialTest056 blockyRunMorphRigTest055 heroRunMaterialTest055 pianoRigTest organRigTest
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56,chao_heronormal57 -PchaoGameTestDir=/path/to/private/test-world
+```
+
+Native tests and visual-study helpers remain excluded from the installable JAR. See the family report for actual results and limits; raw generic toy-model loops do not establish all mature family/contact combinations.
+
+Previous focused update: see [the 0.25.56 verification report](docs/NEUTRAL_FOUNDATION_02556.md) for final outcomes, inherited failures and client limits. Coordinated commands use `--no-configuration-cache`, because the existing resource-fixture task accesses `Task.project` during execution.
 
 ```sh
 ./gradlew --no-configuration-cache coreTest neutralMorphRigTest056 neutralMaterialTest056 blockyRunMorphRigTest055 heroRunMaterialTest055 pianoRigTest organRigTest

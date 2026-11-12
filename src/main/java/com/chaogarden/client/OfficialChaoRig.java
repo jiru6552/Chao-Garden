@@ -28,7 +28,7 @@ public final class OfficialChaoRig {
   private boolean adultPose, broadWalkHead;
   private float powerSwimWeight;
   private boolean prototypeSelection;
-  private boolean neutralSelection056;
+  private boolean neutralSelection056,heroNormalSelection057;
   private String prototypeOwnerKey;
   public enum Motion { CRAWL, WALK, RUN, DASH, FLAIL, PADDLE, SWIM, GLIDE, GRIP, FALL, HELD, SIT, REST,
     PONDER, INSPECT, EAT, TRAIN, REJECT, DELIGHT, PLAY, PET }
@@ -65,7 +65,7 @@ public final class OfficialChaoRig {
   private void select(String model,boolean gameplay) {
     key = model;
     boolean prototype=gameplay&&prototypeSelection&&model.equals(prototypeOwnerKey);
-    String prototypeModel=neutralSelection056?"neutral_proto056":"hero_run_proto055";
+    String prototypeModel=heroNormalSelection057?"hero_normal_proto057":neutralSelection056?"neutral_proto056":"hero_run_proto055";
     String cache=prototype?"gameplay:"+prototypeModel:(gameplay?"gameplay:":"source:")+model;
     current = frames.computeIfAbsent(cache, ignored -> {
       var mesh = assets.apply(prototype?"gameplay/chao_"+prototypeModel:(gameplay?"gameplay/":"official/")+"chao_"+model);
@@ -86,6 +86,7 @@ public final class OfficialChaoRig {
   }
 
   public static ResourceLocation texture(ChaoState state) {
+    if(HeroNormalAppearance057.sample(state).enabled())return ChaoPaletteMaterial.texture(HeroNormalCoatMaterial057.texture(state),state,"baby");
     if(NeutralAppearance056.sample(state).enabled())return ChaoPaletteMaterial.texture(NeutralCoatMaterial056.texture(state),state,"baby");
     if(HeroRunAppearance052.sample(state).enabled())return ChaoPaletteMaterial.texture(HeroRunCoatMaterial055.texture(state),state,"baby");
     String selected=geometryKey(state),geometry=sourceGeometryKey(selected),old=ChaoRenderer.textureKey(state),path;
@@ -131,7 +132,12 @@ public final class OfficialChaoRig {
       default -> selected;
     };
   }
-  public String sourceGeometryKey() { return current.mesh.heroRunPrototype()?"baby":sourceGeometryKey(key); }
+  public String sourceGeometryKey() {
+    // These three gameplay paths retain the original baby UV and attachment
+    // family even when their saved/logical identity is Hero or Hero Run.
+    return current.mesh.heroRunPrototype()||current.mesh.neutralPrototype056()||current.mesh.heroNormalPrototype057()
+        ?"baby":sourceGeometryKey(key);
+  }
   public String geometryKey() { return key; }
   long shapeSignature(){return current.mesh.shapeSignature();}
   boolean naturalHeroCoreActive(){return current.mesh.naturalHeroCoreActive();}
@@ -583,7 +589,8 @@ public final class OfficialChaoRig {
   /** Set this entity's geometry before gait fitting samples its current toe reach. */
   void prepareDevelopment(String model,ChaoState state) {
     neutralSelection056=NeutralAppearance056.sample(state).enabled();
-    prototypeSelection=neutralSelection056||HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
+    heroNormalSelection057=HeroNormalAppearance057.sample(state).enabled();
+    prototypeSelection=heroNormalSelection057||neutralSelection056||HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
     select(model,true);meshDevelopment(state);
   }
 
@@ -600,7 +607,8 @@ public final class OfficialChaoRig {
         develop?growth:child?growth*.14f:0);
     current.mesh.heroRunDevelopment(current.mesh.heroRunPrototype()?HeroRunAppearance052.sample(state):null,state.swimFly,state.runPower);
     current.mesh.heroRunTwoTone(state.baseColor()==0&&state.jewel()==0&&state.isTwoTone());
-    current.mesh.neutralDevelopment(current.mesh.neutralPrototype056()?NeutralAppearance056.sample(state):null);
+    if(current.mesh.neutralPrototype056())current.mesh.neutralDevelopment(NeutralAppearance056.sample(state));
+    if(current.mesh.heroNormalPrototype057())current.mesh.heroNormalDevelopment(HeroNormalAppearance057.sample(state));
   }
 
   /** Reversible secondary anatomy is blended independently from biological age. */
