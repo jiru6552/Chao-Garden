@@ -144,6 +144,7 @@ neoForge {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
+            if (project.hasProperty('neutralSwim059Dir')) gameDirectory = project.file(project.property('neutralSwim059Dir'))
             systemProperty 'chao_garden.heroRun054Study', project.findProperty('heroRun054Study') ?: 'false'
             systemProperty 'chao_garden.heroRun054Baseline', project.findProperty('heroRun054Baseline') ?: 'false'
             systemProperty 'chao_garden.heroRun054Start', project.findProperty('heroRun054Start') ?: '0'
@@ -863,3 +864,19 @@ tasks.register('heroNormalMaterialTest057', JavaExec) {
     jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
 }
 tasks.named('check') { dependsOn heroNormalMaterialTest057 }
+
+tasks.register('neutralSwimMorphRigTest059', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.NeutralSwimMorphRigTest059'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn neutralSwimMorphRigTest059 }
+
+tasks.register('neutralSwimMaterialTest059', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.NeutralSwimMaterialTest059'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn neutralSwimMaterialTest059 }

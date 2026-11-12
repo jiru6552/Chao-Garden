@@ -1,0 +1,4 @@
+PASS: python3 scripts/validate_neutral_swim_morph_02559.py on final torso-only source.14positiveclosedboxes;4851connectedage/axisblends; exacthead/face/emotion/59joints; sixmatureforms; guardrows; eyes/orb; soles/heels/winghingesandUV.
+PASS:bodyreference/10targettop-onlyextension haspreservedlowerplanes/X/Z; lowerplanespreservedinall4851blends.
+PASS:head/featureplaneclippingguardall10targets+4851blends; minpositivegap.025px.
+Exactproductiondelta:24modelleaves from02e639 to06c6c237... (20bodyposecoordinates+4requiredtopreferenceYvalues), noothermodelchanges.

@@ -1,0 +1,646 @@
+{
+  "frozen_jar_sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+  "scope": "Final actual Minecraft cohort only; cases50..60. Views change with elapsed time; angle-early/middle/late are within each camera phase, not simultaneous matched-state angles. Screenshots are original unmodified PNGs; appearance claims require separate actual image review.",
+  "case_summaries": [
+    {
+      "case": 50,
+      "name": "neutral_swim_balanced_walk",
+      "elapsed_ticks": 240,
+      "walked_blocks": 8.357523957569173,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0]",
+      "world_frames": 367,
+      "actor_frames": 368,
+      "moving_frames": 349,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 20,
+      "selected_source_sha256": [
+        "2d7373527394c8aaf50a02b7257c63fe5bc3487d6ce2e9417e943e750a19a5bd",
+        "b21f038abb63c5d5b655553b71ecbbf7ddccea6c606bd6c0e9fb001fba666c35",
+        "d19aedd18137219a744d9f577b8d12c6b48d6e0f59f6506fa2b1ab180f46ddd4",
+        "2268e61b5b6be8467af1b707f796647aa55e92fb2c56eef8f3392dcf0456db9f",
+        "bbf39768c2243cd1a6f751207c7b3dd8104f16cc23e1542150b6a08f66d41025",
+        "58b586a6fc9bb06fb2bfd06267b003ffe5074834a398e3a8526b677c92a39b37",
+        "300d1d6dd5d4d1b8c42ad8badab37995fe6c949deff9a3214f29e883fc8e5d9f",
+        "76eda6ba32c7a2cd2df394754f8d5307deca6832fc3ebe1500641cadaa92cc40",
+        "be2cc8f423e1e73dc3155ab77527d8ac10bbbdf6c2f7c4b7f195036996305353"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": -5373044435287978517,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 120,
+          "shape_signature": -5373044435287978517,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 180,
+          "shape_signature": -5373044435287978517,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 240,
+          "shape_signature": -5373044435287978517,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": 0.0
+        }
+      ]
+    },
+    {
+      "case": 51,
+      "name": "neutral_swim_run_running",
+      "elapsed_ticks": 240,
+      "walked_blocks": 18.642419881114918,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0]",
+      "world_frames": 368,
+      "actor_frames": 368,
+      "moving_frames": 348,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 20,
+      "selected_source_sha256": [
+        "8fd9df408058f72f0e0ad65640bd6309c3eea8a8053649ad9649676187e2b9b0",
+        "8576cde92df0fc9a3fd4fa2ee66ef7c2d95c9c20d31b7f3c2d5e9a9589187a32",
+        "5f72b77ad8ab87a4bb0a386c65ece8ce698cae24600d293916965fbb4ad90632",
+        "1995ee674b0b3421e05313dd7ec15f69eb0ae0c336abd21a436203006d0bee3b",
+        "73bde5134068148a68ee3582b252d2d293ba57cb6620a93ee466d2672b374133",
+        "0e33bcfe60514adcb8666fbfaa5742845c4bbcbadb6c2c31293219fd3adc0737",
+        "c4f1c75b26649c30623de57e5221adb9f2eb0f94dce35ea68897847c56bd97f4",
+        "61192dd02fe7d9a37777e87db21729d9197afe593eb2305a8a263646a028ee1d",
+        "55317410bb50f47aed87dbe49e7e9f88fc5049222a109fe576633da352bb4610"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": 3498699638568112587,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 120,
+          "shape_signature": 3498699638568112587,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 180,
+          "shape_signature": 3498699638568112587,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 240,
+          "shape_signature": 3498699638568112587,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": 0.0
+        }
+      ]
+    },
+    {
+      "case": 52,
+      "name": "neutral_swim_swim_water_motion",
+      "elapsed_ticks": 240,
+      "walked_blocks": 0.0,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=-1.0]",
+      "world_frames": 368,
+      "actor_frames": 368,
+      "moving_frames": 0,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 20,
+      "selected_source_sha256": [
+        "510d6036a512c1c41dafa4faeb36d856aece7504a1e471d9f10c5cb4c9168421",
+        "13e10f6b1c94a13cf057a61ea78c5ce5a17c2149ba552e4be7555e208245881e",
+        "d801e521db1d0e297049254c166d8ce18fecd6fdedaa1976f2f9e54c7f901466",
+        "706999528e4d21a7edbeac2acc37b1b2ed7cd5505eea726bdb612335977f5e44",
+        "e0433c2ed56b294ef22be137da1d87a9f0fdc72c7dcff89815d1638b6592ae64",
+        "3fc490d4e4f4746adf7df67bf17bed3512ff1fbd448b3145c7562b6ad274837a",
+        "d4c167a0e5493be6a09bec525b4f0df4de38a1f2f805dd7fb54f214ecacb1560",
+        "f43947918ed91f976322db358d9c275a40e3073e568592b5ac33b0b10bc4f2cf",
+        "783b1afda831ec2120bc908647555480eba15e5a4365d1c1361193ac93d979bb"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": -58549044648808379,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 120,
+          "shape_signature": -58549044648808379,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 180,
+          "shape_signature": -58549044648808379,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": -1.0
+        }
+      ]
+    },
+    {
+      "case": 53,
+      "name": "neutral_swim_run_swim_broom",
+      "elapsed_ticks": 180,
+      "walked_blocks": 0.0,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "world_frames": 278,
+      "actor_frames": 278,
+      "moving_frames": 0,
+      "toy_contacts": 378,
+      "max_toy_error": 2.5288108e-07,
+      "capture_count": 15,
+      "selected_source_sha256": [
+        "861a99b57f2136aa7d6ebe41df313c388352f0d50b60c13ac6fc572f81c70688",
+        "4ca0fcf6374b8cbadc919330ed8e0ddf4222bf106382110e7ee49d45ed19f68f",
+        "01eb50092aadb09ce162186bfc03d214b2bd7324e6c8cdc94c3af8c819df69ba",
+        "c54e8026e1397e42c09a53894a90acc063c1253ba210f718ae5c02b88674cdfe",
+        "b7b3476219a164fed68510691f6be17e636c59cdeafe565edeb49b64c0dfcf80",
+        "b10f5fe90f72a896b9407b5ec2ba471e95ff0616a994f505cb143b97eb7161f6",
+        "91d653de7ca60365c67a90ed0521afc71727b5b36b1e266c79aee8d0d4f468ae",
+        "3687853d01a387120577de57b6c1f3c03c710e21bde4a93acec0430b2578776d",
+        "82af30a26e26f06f1c271df901ca373a34cd3ee87b4769506264b8bd1953f195"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 120,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 180,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        }
+      ]
+    },
+    {
+      "case": 54,
+      "name": "neutral_swim_power_swim_book",
+      "elapsed_ticks": 180,
+      "walked_blocks": 0.0,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "world_frames": 277,
+      "actor_frames": 278,
+      "moving_frames": 0,
+      "toy_contacts": 376,
+      "max_toy_error": 3.7342204e-07,
+      "capture_count": 15,
+      "selected_source_sha256": [
+        "2743eef62f2042be8abbfc2eef5426c30d94d22f8efff002a97fa9717f5dd5f3",
+        "58048685b314b92ae43bad18ec5fd30c43d96da9988e6f8b0fba825bf881ffab",
+        "7911fd86a517c9aa1a0ffc5fdd10be601c35eb5fc762ca03e5bbbfe446892aca",
+        "8d7c17a29bfa8d1c709bf0489f1eac2ecc3d637e8ea571aa35c0a8e479df11b5",
+        "6fa8603320a846092533c7d97e9145e0a84cfb3a859ba5b0b2d24e288d59b657",
+        "8ed16cb18b54c1675e4ce9904322b361b79e19e1a2b4cc37874850bc6ce875a5",
+        "7c1629ad338b064e9e749f3ba515b5e7f632f7906cb8778fec157abc26a1754e",
+        "02db5d7e67654d6933d819eba39cf1be4d14307a9a4854bc69bd2cbc16b398b1",
+        "a82f6aca418047fca48be203a6b1a94e38e20751920e846ef4f8d7ce200b21c0"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": -1076419977083802349,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 1.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 120,
+          "shape_signature": -1076419977083802349,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 1.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 180,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        }
+      ]
+    },
+    {
+      "case": 55,
+      "name": "neutral_swim_run_swim_equipped_flying",
+      "elapsed_ticks": 240,
+      "walked_blocks": 0.0,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "world_frames": 367,
+      "actor_frames": 367,
+      "moving_frames": 16,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 20,
+      "selected_source_sha256": [
+        "66156b420d2962516913fb5c7b847dc7fbe300b43320423fc2ac3a9b8d4c0e6e",
+        "4864d6e75fe330413e857404d0c855ed1b95c9fc8e41647c866dd48688606c35",
+        "a47960ed6e19e804df78f57fcebd64cd6fe0008a599a5a68fdfcb544b61cd4e6",
+        "8d6ea918cd15a2acc3b02ffc51614999665c8e90b72bc7f9744b246696bedf4b",
+        "2145fc520dcfdce22c41ce8b5b1282be196e1ec1b669c120572c451ee852fd8b",
+        "7fe288ae3a40fda8d5bc28a8481dda2c0065818964808bace809aa059da04bf8",
+        "ce9d21faa3d8ae82589ce801b21ac2a36e40b9eea707eadc71415146d5644eca",
+        "637cdd94e0e8f0d4528983bfa0b0e399879d90c1a00efa793fc8ef669a03a779",
+        "184880221f1e736b3b8ee7065992b6bb129f8d4be0ee56937c2083a050dc4923"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 120,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 180,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        },
+        {
+          "tick": 240,
+          "shape_signature": 8926021269260745705,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -1.0,
+          "swim_fly": -1.0
+        }
+      ]
+    },
+    {
+      "case": 56,
+      "name": "neutral_swim_run_gain_walk",
+      "elapsed_ticks": 280,
+      "walked_blocks": 10.501541776927409,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0]",
+      "world_frames": 425,
+      "actor_frames": 426,
+      "moving_frames": 407,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 23,
+      "selected_source_sha256": [
+        "8e7e3591a913a81a69447a04c3f3c5f21b12a9fc69afe2588f6967a70efce831",
+        "04105b950d07ae43770bf5756912ca21c4b7aa1a4971e55b8365c4f9f158bd21",
+        "e9e344c32ba6f1952efc7395ba1497bdc1a570df906d2bf8768e0054a60bb53d",
+        "1c8f2720467254222bf866b93485c4bc08ac6fd0b2e9821dc1359eb2218651c7",
+        "d832b74793eb5293b74359f1936c906ea214d9a64378085e5b99fcc289c48150",
+        "5a25ed4b1f72bc4a5a76082671bcaffbf5e48dd4a085eec7155f0f43ce8ff405",
+        "4bec3713b2bca394f45eb34740a4e7080716099679d3773e072969d87f1d2755",
+        "75a39a964ec4d0eaf65146afa7c6fc1de0019698d824d4cd8deec0995c3f3213",
+        "bc8bfc497139eb808adad23720557266d9e61cbf9360e5af0bd11a410f1c1adb"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": -4910640551753318989,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.075518966,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 120,
+          "shape_signature": 9215328392138466011,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.2525784,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 180,
+          "shape_signature": -2924484643433693849,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.471012,
+          "swim_fly": 0.0
+        },
+        {
+          "tick": 240,
+          "shape_signature": -3429409517388564133,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.70734924,
+          "swim_fly": 0.0
+        }
+      ]
+    },
+    {
+      "case": 57,
+      "name": "neutral_swim_power_swim_gain_walk",
+      "elapsed_ticks": 280,
+      "walked_blocks": 9.769283629277412,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "world_frames": 426,
+      "actor_frames": 426,
+      "moving_frames": 407,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 23,
+      "selected_source_sha256": [
+        "55e09db70f79c9ea4914829f0eb639e02f9963986e3331f6f4fe9ffdfcaeae6a",
+        "6ceffbaf05b855d6e8bbc583230ced1f02f936d418cc88b67362f7e8a507fdd1",
+        "d877e96ebaceeb8abac9cd5f50c5e050940cab13a961497fd580a4506ca65ae4",
+        "a72b92f63e8004b11fa340948b7b88595f61ffc0c64db84664568bbb28ec2b0f",
+        "30071b99d54e7fda6869bf733e7490caa4ab96ca034c467441a59c55554dc66d",
+        "04cf2b523c5236fdfe6ffcb7bd6cf661391cefb278f2861db710e5f570a3a101",
+        "9a6312d9634c71cc090915e7c4b10dc9ce458fbaeced809ab5a5d07fcf3c1a1c",
+        "5002c3041fd80f6b97d2a5f7954ef954729c5981cc96302e0ea321b1bcc350ae",
+        "9d77f8dc451b1718bcd80c134dda50c578dc8b111340c53c1f7c6747ef932769"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": 3281665886414768833,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.07791289,
+          "swim_fly": -0.07791289
+        },
+        {
+          "tick": 120,
+          "shape_signature": -3622523562574033441,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.25238147,
+          "swim_fly": -0.25238147
+        },
+        {
+          "tick": 180,
+          "shape_signature": -8933205464008694971,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.4697289,
+          "swim_fly": -0.4697289
+        },
+        {
+          "tick": 240,
+          "shape_signature": -1216796903727068859,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.7082258,
+          "swim_fly": -0.7082258
+        }
+      ]
+    },
+    {
+      "case": 58,
+      "name": "neutral_swim_swim_loss_walk",
+      "elapsed_ticks": 280,
+      "walked_blocks": 9.769283629277412,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0]",
+      "world_frames": 426,
+      "actor_frames": 426,
+      "moving_frames": 408,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 23,
+      "selected_source_sha256": [
+        "b5c9a7794bfc6de97aa4ed1f0571b5f4cf8b29ae18bcc287f6eef59ebc8d382a",
+        "33216934485c0dafd3b2a5f5aa8784c885d9b38b446d1f23324a85557326235c",
+        "c78cbb6c40e3197ee14e5ae8fe7e7f54a3ac2c84e98e18070f05f34e9c7072ba",
+        "228bc82cda3e4dc8a81a9fdbd37769ca680fd39d18d6604f7b088a83573b931f",
+        "a210a4ab8210e8e843e0fd227286cde56ef720f9abafdf428e9ebbe71fd83ee2",
+        "801b1204022a8743921e8cf4097de310dc7e8407bbb4c98f6800ef2940f684e0",
+        "81092e5feff41b70cbffb80fe8ad3122af649b35b658c087fb5875b5fdbfdc8a",
+        "61399ad27a3924203c6dbb25eafd0a7fa08f5d129eb40ea7f9ff99ba589e6324",
+        "097b671b3d27cb53c31804db8839bcb7868a4fc022eb9b588355370196ff37af"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": 1476415022547620413,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": -0.92375547
+        },
+        {
+          "tick": 120,
+          "shape_signature": 5736672138978501711,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": -0.7488769
+        },
+        {
+          "tick": 180,
+          "shape_signature": 6439551520731485411,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": -0.5237196
+        },
+        {
+          "tick": 240,
+          "shape_signature": 2345774109806072249,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": 0.0,
+          "swim_fly": -0.29042292
+        }
+      ]
+    },
+    {
+      "case": 59,
+      "name": "neutral_swim_run_swim_pair_gain_reverse_walk",
+      "elapsed_ticks": 520,
+      "walked_blocks": 19.30716160326768,
+      "native_final_sample": "Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0]",
+      "world_frames": 764,
+      "actor_frames": 764,
+      "moving_frames": 744,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 43,
+      "selected_source_sha256": [
+        "d1d53850318dedd2d9d429061a3717e0934e17b449969993c56db7ef64a0afb1",
+        "1e3048fd4e1669c747a67c893f8ef5aa5c08ab0f1b9da66a4755ff7f6edbd319",
+        "0b60724b431c029cd180f264f861b4912176432ee8948bc45b76b67fac78326b",
+        "a51f37747588eb272574a006cd03525c42bafde3011418f735f8e10b4e059265",
+        "6581b98439e8ae25246713b53cb1ead32a2245a15c801b20ac4d3cdb3bd73953",
+        "3ebefc00e2f8d45c780ec1d06b3ac63b99b5f191cb8733656ec5e4f36128c21c",
+        "6ae3e8aa751700fa5978259a0edb52010258ffc9bb58d1259271d83c477d03ad",
+        "c85e4125b4686286ad7ea028c8bb642aab1ae3dd15ba20581aaad51796e96989",
+        "7f145dde8b97c3dd9ae95f530043c2894fe7136ac5afba277087c4f4929b6ab9",
+        "8b24e048f2894c211355b6d1f346baa7922f198fd13a04ab3a21e1dd25e522fb"
+      ],
+      "motion_samples": [
+        {
+          "tick": 60,
+          "shape_signature": -1530076944185563651,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.07661245,
+          "swim_fly": -0.07661245
+        },
+        {
+          "tick": 120,
+          "shape_signature": 7317747076612368611,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.25255373,
+          "swim_fly": -0.25255373
+        },
+        {
+          "tick": 180,
+          "shape_signature": 3291083203020791091,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.47042158,
+          "swim_fly": -0.47042158
+        },
+        {
+          "tick": 240,
+          "shape_signature": -3950614051937434961,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.70739114,
+          "swim_fly": -0.70739114
+        },
+        {
+          "tick": 300,
+          "shape_signature": 6893962117516873589,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.8017668,
+          "swim_fly": -0.8017668
+        },
+        {
+          "tick": 360,
+          "shape_signature": 4615983585719876051,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.69509655,
+          "swim_fly": -0.69509655
+        },
+        {
+          "tick": 420,
+          "shape_signature": -6761229383702988971,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.50604916,
+          "swim_fly": -0.50604916
+        },
+        {
+          "tick": 480,
+          "shape_signature": 2219377736467013081,
+          "enabled": true,
+          "maturity": 1.0,
+          "run_power": -0.27415648,
+          "swim_fly": -0.27415648
+        }
+      ]
+    },
+    {
+      "case": 60,
+      "name": "neutral_swim_actual_first_evolution",
+      "elapsed_ticks": 300,
+      "walked_blocks": 0.0,
+      "native_final_sample": "Sample[enabled=true, maturity=8.487654E-5, runPower=0.0, swimFly=-0.5]",
+      "world_frames": 447,
+      "actor_frames": 447,
+      "moving_frames": 0,
+      "toy_contacts": 0,
+      "max_toy_error": 0.0,
+      "capture_count": 25,
+      "selected_source_sha256": [
+        "0947e184c233caa092e9acadee092a41ad3ff7fc8dca75246d22c35cb58cfc13",
+        "0699e9b9b9b132766aa8e0019df0add4fb83dee46489cf3e98fbb1e0dd27fbbe",
+        "9bbc7554b8b12695b836f1ea8d26b9e0d83e7d5d8217840cad3c4586f2f90a07",
+        "572e9732875301705ca00f907a87887089eb78e51cd05be7434cb6ef291d19fd",
+        "80db8192de1cd41f1cae0cf8685662d79e8ad2a13fce437748816e1b9e5df228",
+        "7951b84262502c078d36087db538075655809c4407fcbc6e41c9581d742032b2",
+        "f5d73a6e7fd5f3d9e6ebf5a47e198fa1022d2be0c3abd9fcfb86c8f7508028c4",
+        "4c469297e60e2ecc0c9393d55e1b1a9c0f950d0077381c7e89fb508233adccbe",
+        "224944308892d0818348313e3d97669a44d8b684b66e42603b4ecd91a09e3468"
+      ],
+      "motion_samples": [
+        {
+          "tick": 240,
+          "shape_signature": 3539274281666142755,
+          "enabled": true,
+          "maturity": 7.7160485e-06,
+          "run_power": 0.0,
+          "swim_fly": -0.5
+        },
+        {
+          "tick": 300,
+          "shape_signature": 4493055430035885915,
+          "enabled": true,
+          "maturity": 6.558642e-05,
+          "run_power": 0.0,
+          "swim_fly": -0.5
+        }
+      ]
+    }
+  ],
+  "exact_running_swimming_counters": "Not logged numerically; completed run_walk/water cases imply actual production RUN/SWIM frame counters each exceeded20 by native assertions. moving_frames is logged separately.",
+  "limits": [
+    "Camera front/left/back phases occur sequentially rather than simultaneous matched input states.",
+    "Water case has no navigation request: walked0means stationary in-water animation, not autonomous swimming travel.",
+    "Toy cases use actual once-preview command and native cleanup checks, not natural acquisition/approach.",
+    "Equipped scene is upright Creative flight only; player occludes body from front and part of orb/face may be hidden near player head.",
+    "Training gains and reductions are accelerated through real rule paths at ordinary20TPS; first evolution begins from near-boundary baby fixture.",
+    "Image samples cannot establish every in-between pixel frame or all accessories/shaders/resource packs."
+  ]
+}

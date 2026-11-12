@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-11-12T22:42:12.809339+00:00",
+  "scope": "Read-only source snapshot for replacement torso audit; no test/build/game/runtime acceptance",
+  "files": {
+    "scripts/generate_neutral_swim_morph_02559.py": "25bbfabcf72482bba29c167d39cbb8234a365e1d4f016dec3f405ac026d681df",
+    "scripts/validate_neutral_swim_morph_02559.py": "8243f55b972e7231eb5376d5ecdf1f4850d96a4e3e9284b2b11ce428fb0f564a",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralSwimMorphRigTest059.java": "f853ea5f5b9352e7f9ba4ee4137e4ce1640074b9a8027ba9bc23ccc261c37516",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+    "src/main/resources/assets/chao_garden/neutral_swim059.json": "9b594b96303d6a80dd052589fd7269e9fe9c7c42df38e2766bc0327459f6d140",
+    "src/main/java/com/chaogarden/client/OfficialChaoRig.java": "64d58ff6201d7010003db5c03f53d2c23cb77de407eb00e12eb8bbdd0c329a5c",
+    "src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java": "7c59a101cbaa2a762d29a56268492f8ef39f4dfcb1776fd5fa2937db0bb047ed",
+    "src/main/java/com/chaogarden/client/NeutralSwimRegionPaint059.java": "22d5ca37f8b15b555150a2a391426b4eac9abcc28340ab63af0f1b10f0704b1b"
+  }
+}

@@ -1,0 +1,1578 @@
+{
+  "scope": "Actual FOURTH CORRECTED FINAL SWIM059 client originals only. Uniform crop640x640 at400,160 and nearest240x240 reduction; captions added outside crops. No production/source changes.",
+  "jar_sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+  "expected_corrected_jar_sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+  "model_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+  "crop": [
+    400,
+    160,
+    1040,
+    800
+  ],
+  "groups": {
+    "family-balanced": {
+      "cases": [
+        0,
+        1,
+        2
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-balanced.png",
+      "sha256": "156cdd275db74f6aece4c000d20c6871086cd0bf28b1fc76fb102cc4f0847bf4"
+    },
+    "family-run": {
+      "cases": [
+        3,
+        4,
+        5
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-run.png",
+      "sha256": "7774ee7cfec8874e36bc120f0899ce93d13688a5641b3f847217a9cdb99e435d"
+    },
+    "family-power": {
+      "cases": [
+        6,
+        7,
+        8
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-power.png",
+      "sha256": "d18729aab266d4d55e0093dc733226ccc1a2d386ae123cdeb741d2e541c8127b"
+    },
+    "family-swim": {
+      "cases": [
+        9,
+        10,
+        11
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-swim.png",
+      "sha256": "f6d3a62445bbd92e7837c328ab8da5a4468be831a412c57d68fa7eff580157cd"
+    },
+    "family-run-swim": {
+      "cases": [
+        12,
+        13,
+        14
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-run-swim.png",
+      "sha256": "e944917ce740efb5c4cb92072d867c027d45d747f3d579401b9bcd04510420d4"
+    },
+    "family-power-swim": {
+      "cases": [
+        15,
+        16,
+        17
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-power-swim.png",
+      "sha256": "6a3a1affe5b2cbf8ce33a14fae89924d1ace8e8d391f969938386414a20fdffa"
+    },
+    "training-run": {
+      "cases": [
+        18,
+        19,
+        20
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-run.png",
+      "sha256": "17c968c30b712756e135c80d9fc3000b6a02f31c77a49d2e6758d05eb28dc82d"
+    },
+    "training-power": {
+      "cases": [
+        21,
+        22,
+        23
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-power.png",
+      "sha256": "584f5feb240739bbbe5bd06053257828ac8f5da60d08db9dbceb7a7dc186b93f"
+    },
+    "training-swim": {
+      "cases": [
+        24,
+        25,
+        26
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-swim.png",
+      "sha256": "f5bf462617d36cd77ca0dffece9904c8b5b33de279a9585f4a84f97b934e74f0"
+    },
+    "training-run-swim": {
+      "cases": [
+        27,
+        28,
+        29
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-run-swim.png",
+      "sha256": "adb5b660767cc881b07445ebbf8d5e18bde431d3a6f03b0d64e0c37f2a0a274a"
+    },
+    "training-power-swim": {
+      "cases": [
+        30,
+        31,
+        32
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-power-swim.png",
+      "sha256": "b3d299bda4ae2ef29facc34c0e9da4e0654d1ec7b47d0ec2830d445e714341b8"
+    },
+    "counter-fly": {
+      "cases": [
+        33,
+        34,
+        35
+      ],
+      "path": "/workspace/.setup/swim059-final-model/counter-fly.png",
+      "sha256": "5c8a0f647b14ba13df7d1bac7e505d5feb6cc7bde9e3daed6ed58f0173b66425"
+    },
+    "cross-age-training": {
+      "cases": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "path": "/workspace/.setup/swim059-final-model/cross-age-training.png",
+      "sha256": "1a58e6b91ca150a1f98d98aa8d729a12e063762b41d76822630b1cb491a5ef4f"
+    }
+  },
+  "originals": [
+    {
+      "case": 0,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-00-neutral_swim_normal_age0-front-t000-f0016.png",
+      "sha256": "71af13e6667289ec5f619c1ee477287d048fe81ebd92fa109e1d8175721854d9"
+    },
+    {
+      "case": 0,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-00-neutral_swim_normal_age0-left-t000-f0039.png",
+      "sha256": "6b3300a297681f70229fed139fc64690481d4ae77fa4264c62820b22f2620772"
+    },
+    {
+      "case": 0,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-00-neutral_swim_normal_age0-right-t000-f0062.png",
+      "sha256": "9e2cb0736a1f8e37b094899ead43ff7e0072382fbea68eb712ea03ca651227db"
+    },
+    {
+      "case": 0,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-00-neutral_swim_normal_age0-back-t000-f0085.png",
+      "sha256": "053ff843f90651e06d86278d1893ba587424c917c97db8199bc6a852e4358d48"
+    },
+    {
+      "case": 0,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-00-neutral_swim_normal_age0-above-t000-f0108.png",
+      "sha256": "5e5ae8334c4d741b63df73dae2193249ca357367cf5f96b09898f5fec1e73d95"
+    },
+    {
+      "case": 0,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-00-neutral_swim_normal_age0-below-t000-f0131.png",
+      "sha256": "34c29835fab3645e1ff4678f7d91181144edc942c32af538c7267c255126a747"
+    },
+    {
+      "case": 1,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-01-neutral_swim_normal_age50-front-t000-f0016.png",
+      "sha256": "366cd3adf2c9fd211d414e1d45e9370ffa31cb99667f7b10b170550f549d0b4a"
+    },
+    {
+      "case": 1,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-01-neutral_swim_normal_age50-left-t000-f0039.png",
+      "sha256": "4233421a903d7654c312dfac35dacef547e0455882fc1575226752aa0fc817e3"
+    },
+    {
+      "case": 1,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-01-neutral_swim_normal_age50-right-t000-f0062.png",
+      "sha256": "3888bccd477a9d35c990cc420dc4a05554333a5202b92aa5c20864228c569498"
+    },
+    {
+      "case": 1,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-01-neutral_swim_normal_age50-back-t000-f0085.png",
+      "sha256": "d64c370eaf248332af442106dfcaae25c3c6e6e7cb813bafc7de249996d3b89f"
+    },
+    {
+      "case": 1,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-01-neutral_swim_normal_age50-above-t000-f0108.png",
+      "sha256": "4009daecd689b6bfea5e37ce11f93b14ca2d83cb5b171e642267a0630a56cc54"
+    },
+    {
+      "case": 1,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-01-neutral_swim_normal_age50-below-t000-f0131.png",
+      "sha256": "557060e73783c978a876bb5aaed99f089af1951fe91e163afb5b9ed416d1d680"
+    },
+    {
+      "case": 2,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-02-neutral_swim_normal_age100-front-t000-f0016.png",
+      "sha256": "adea61bd43d88bf0362b89b6bd4b1a5910f5b65dbd823e7019211301432846fb"
+    },
+    {
+      "case": 2,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-02-neutral_swim_normal_age100-left-t000-f0039.png",
+      "sha256": "072fc28065928bc977b2c4054498738eb0ff199a681078fa99dabfc5cf94eb1e"
+    },
+    {
+      "case": 2,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-02-neutral_swim_normal_age100-right-t000-f0062.png",
+      "sha256": "ff6e4045a506f195874cad930df5902bf961a32b8ff10df8d255d7cc6a06e547"
+    },
+    {
+      "case": 2,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-02-neutral_swim_normal_age100-back-t000-f0085.png",
+      "sha256": "4ca27fe8057496d4c911441a60b6fc6f26f34108b2721e612d466adbdc441acc"
+    },
+    {
+      "case": 2,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-02-neutral_swim_normal_age100-above-t000-f0108.png",
+      "sha256": "1267fe62ab588d29d6a8c453d8b1f96307ca01655f888fb55856d63c1ecff33a"
+    },
+    {
+      "case": 2,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-02-neutral_swim_normal_age100-below-t000-f0131.png",
+      "sha256": "9c489fe21cf10d4ad95ca386d044fe8cfd4311880f68fec4e1c96a24a0a8f977"
+    },
+    {
+      "case": 3,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-03-neutral_swim_run_age0-front-t000-f0016.png",
+      "sha256": "0d8b91d6f0f9817cf57111070b0fc233db00cc397ce401d804599cfde2b4431d"
+    },
+    {
+      "case": 3,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-03-neutral_swim_run_age0-left-t000-f0039.png",
+      "sha256": "9a5926c7a9c2c77ad7cb8417c7a758ace625c95ec7b5a99006bc3e8f8a88f315"
+    },
+    {
+      "case": 3,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-03-neutral_swim_run_age0-right-t000-f0062.png",
+      "sha256": "a5492dcf08f986c57f9318dfad19a6aa1240e876bcd05d5b5424a16fe0bade98"
+    },
+    {
+      "case": 3,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-03-neutral_swim_run_age0-back-t000-f0085.png",
+      "sha256": "9b7c9e1b94343b56b1e7e1bf47a2542e9ee0aa24aeeedb6d4ef582a39b7a3604"
+    },
+    {
+      "case": 3,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-03-neutral_swim_run_age0-above-t000-f0108.png",
+      "sha256": "f0ff025b837ac2767535c8b8bf146d307a29ef4f6fdd9535035ff099ed85a0de"
+    },
+    {
+      "case": 3,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-03-neutral_swim_run_age0-below-t000-f0131.png",
+      "sha256": "d31da3c6e9bed5004705ba43c3df4249fc02de0c4d6cb888370814bcb007c073"
+    },
+    {
+      "case": 4,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-04-neutral_swim_run_age50-front-t000-f0016.png",
+      "sha256": "0cbd29f7043f44014d59b454b54e70c281306b466854f92105e4c4d9125c4af5"
+    },
+    {
+      "case": 4,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-04-neutral_swim_run_age50-left-t000-f0039.png",
+      "sha256": "9577e6fffce934baa24ee3fcf1cc7f831f6891593bde32d8e164275743660d41"
+    },
+    {
+      "case": 4,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-04-neutral_swim_run_age50-right-t000-f0062.png",
+      "sha256": "09d4085a44aaf5f5447139edc189b44e275a99302f5c39121eb77accd9aa2e88"
+    },
+    {
+      "case": 4,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-04-neutral_swim_run_age50-back-t000-f0085.png",
+      "sha256": "2703b156b6019ee08cbe174b8736e95e4c55bb0bfdb809f1774aecfd080ba766"
+    },
+    {
+      "case": 4,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-04-neutral_swim_run_age50-above-t000-f0108.png",
+      "sha256": "9bc0d44f2a6fdfff2daf147ca70e2f56272d07ee05297a2d63fcb0eb6dca5f45"
+    },
+    {
+      "case": 4,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-04-neutral_swim_run_age50-below-t000-f0131.png",
+      "sha256": "d22d592ca3a757bb24a74f0101069614b07b77e89442ca517a5bc43e0ea43c13"
+    },
+    {
+      "case": 5,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-05-neutral_swim_run_age100-front-t000-f0016.png",
+      "sha256": "d9ccd6f954316a021339260b93cee53c86e5b202a7d3935cf516724a4732e6f0"
+    },
+    {
+      "case": 5,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-05-neutral_swim_run_age100-left-t000-f0039.png",
+      "sha256": "7daf14675a8d30c714b9200641c52a9a5dfd38e0d5764febbc0b8ff6978396c1"
+    },
+    {
+      "case": 5,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-05-neutral_swim_run_age100-right-t000-f0062.png",
+      "sha256": "d73cd91744fed253d53bd66831852afa878d539bb1616ff7e65a7531d5168da5"
+    },
+    {
+      "case": 5,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-05-neutral_swim_run_age100-back-t000-f0085.png",
+      "sha256": "35133837240db6e7ab2b8b5d463545b35d7cea9607a957203c33bdb4157951be"
+    },
+    {
+      "case": 5,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-05-neutral_swim_run_age100-above-t000-f0108.png",
+      "sha256": "84d8a2a15b42de7cb95aaadebdf240d355bb7e0b8811e289a2c714cd0306cce3"
+    },
+    {
+      "case": 5,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-05-neutral_swim_run_age100-below-t000-f0131.png",
+      "sha256": "8bc6c5665d188f84bce788a96f6a393713006bffa3710052c72f56d101663e8e"
+    },
+    {
+      "case": 6,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-06-neutral_swim_power_age0-front-t000-f0016.png",
+      "sha256": "6b314fc3882e6d11f190d50721ef00b8d5fc921aa3ede3e4d60dcc1cba90a92a"
+    },
+    {
+      "case": 6,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-06-neutral_swim_power_age0-left-t000-f0039.png",
+      "sha256": "95fb264cc4f2809f07ceee7df421dcee7958e3f5cce5d2394b845f15cedbcd61"
+    },
+    {
+      "case": 6,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-06-neutral_swim_power_age0-right-t000-f0062.png",
+      "sha256": "909f3f8f883d551823631c30851512cc00dbde1f1b943267ebb36fc7dda12255"
+    },
+    {
+      "case": 6,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-06-neutral_swim_power_age0-back-t000-f0085.png",
+      "sha256": "55ee13d2330c50413c8b442a8cc6f27fe5459c6da1107508014ad3fd2d004f2a"
+    },
+    {
+      "case": 6,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-06-neutral_swim_power_age0-above-t000-f0108.png",
+      "sha256": "53aca6485b20a01369e6fdde8edf5d586fb9c7f8cc5aeee49e5581804e4461f8"
+    },
+    {
+      "case": 6,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-06-neutral_swim_power_age0-below-t000-f0131.png",
+      "sha256": "68427840347b60fe41a656b39e2715c1d7013508505e8d68b8d6cd1934505f22"
+    },
+    {
+      "case": 7,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-07-neutral_swim_power_age50-front-t000-f0016.png",
+      "sha256": "74e9ccfdb7404e477e14bc6ff865763f5edc2d61ba5906688627bddcf2d905c0"
+    },
+    {
+      "case": 7,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-07-neutral_swim_power_age50-left-t000-f0039.png",
+      "sha256": "69b2e804bfca57817ae5beee4c603fa153b418c5a0041277f07e50ecc278197f"
+    },
+    {
+      "case": 7,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-07-neutral_swim_power_age50-right-t000-f0062.png",
+      "sha256": "ae8de2f4cf807b45f0981e5504d7c8d23efd5ff5da8e2bfc306305f63fa480cf"
+    },
+    {
+      "case": 7,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-07-neutral_swim_power_age50-back-t000-f0085.png",
+      "sha256": "c2b51ef3ad99890fd7b1efb25027b119672f302342591751620e82d8b4cca53e"
+    },
+    {
+      "case": 7,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-07-neutral_swim_power_age50-above-t000-f0108.png",
+      "sha256": "c12de8b12539a93a95e6988ad5bb7abf2f1004a41bfbe8b0b211452c7b79d1a7"
+    },
+    {
+      "case": 7,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-07-neutral_swim_power_age50-below-t000-f0131.png",
+      "sha256": "03d77905258fe86682f8cf2378bf83661ca96eccd42cfbc3706975b5cc4cdf03"
+    },
+    {
+      "case": 8,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-08-neutral_swim_power_age100-front-t000-f0016.png",
+      "sha256": "1b01578535deb9b59a8a45dd22ec489a5df3875852892ad9cfd05f612a3afe23"
+    },
+    {
+      "case": 8,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-08-neutral_swim_power_age100-left-t000-f0039.png",
+      "sha256": "cbadba08a2b5c870e4c2eabfbdbf177d8692463aa32093edebc78004c07d1e82"
+    },
+    {
+      "case": 8,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-08-neutral_swim_power_age100-right-t000-f0062.png",
+      "sha256": "59f4dd485ca7fd16e6c8a71bf9427c19bb4aaba6b3b43013823e7e1811f50d78"
+    },
+    {
+      "case": 8,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-08-neutral_swim_power_age100-back-t000-f0085.png",
+      "sha256": "7cf54608abaf78f6d760043f4221a1d667ae207fb679bcd07820eab51d21e98b"
+    },
+    {
+      "case": 8,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-08-neutral_swim_power_age100-above-t000-f0108.png",
+      "sha256": "0b106be34d4af8d53f8933c78f053a8ea7d3ffc7f1c6dd7972f3f1ab14a95491"
+    },
+    {
+      "case": 8,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-08-neutral_swim_power_age100-below-t000-f0131.png",
+      "sha256": "c11eed30ac83e1a2700bdf43791f97dae3b489e5a9fb6e16553a73a2ff3d622a"
+    },
+    {
+      "case": 9,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-09-neutral_swim_swim_age0-front-t000-f0016.png",
+      "sha256": "a5c4ee2c9474e09466dcc1b818b5b3d648b994ef01d1b966e3c8531035d5409b"
+    },
+    {
+      "case": 9,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-09-neutral_swim_swim_age0-left-t000-f0039.png",
+      "sha256": "60c3ee4a51b52f409ee48f8acad50ad862643284c9c8491a301aa48c93bef638"
+    },
+    {
+      "case": 9,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-09-neutral_swim_swim_age0-right-t000-f0062.png",
+      "sha256": "8e26756bca041d5a2fe8b5199c85d3b8c3b71d3b775a1831ded8e5633bf57a0f"
+    },
+    {
+      "case": 9,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-09-neutral_swim_swim_age0-back-t000-f0085.png",
+      "sha256": "951f7f02d19d0c676b5f1ae2374b10d954a9edbc33a20d61c4046961ad97a50f"
+    },
+    {
+      "case": 9,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-09-neutral_swim_swim_age0-above-t000-f0108.png",
+      "sha256": "054534947409aa3ab90a80481c192043f7dad50ae912506cb9e1030eec7dfecb"
+    },
+    {
+      "case": 9,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-09-neutral_swim_swim_age0-below-t000-f0131.png",
+      "sha256": "2b8014d41c2790c0e692c9500967e04d5a0301db4b663192322a1cc6b0c322d7"
+    },
+    {
+      "case": 10,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-10-neutral_swim_swim_age50-front-t000-f0016.png",
+      "sha256": "b047b816c6aaba49f6352715f0ac45dbff8ad0e77049659d0f43995350614a17"
+    },
+    {
+      "case": 10,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-10-neutral_swim_swim_age50-left-t000-f0039.png",
+      "sha256": "176c2261a33528b5c0bf2a3a6e8c37c515aca155a91d250fb37cab058559fa4a"
+    },
+    {
+      "case": 10,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-10-neutral_swim_swim_age50-right-t000-f0062.png",
+      "sha256": "a331e69388794196b30892358754c71d4fa9513badab7d813de2fd1870e510db"
+    },
+    {
+      "case": 10,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-10-neutral_swim_swim_age50-back-t000-f0085.png",
+      "sha256": "80be5e0abf5866041a643ab42b50a1c90977718fb4052d639c6aa92f35207c74"
+    },
+    {
+      "case": 10,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-10-neutral_swim_swim_age50-above-t000-f0108.png",
+      "sha256": "76cc039fa805a15905ac0f706133b06a35b2336f685a7919a5ffe7ae227a2190"
+    },
+    {
+      "case": 10,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-10-neutral_swim_swim_age50-below-t000-f0131.png",
+      "sha256": "dcce378098b0198ff6d75fdb880ea39dc80094500d4e0ee37a23f71e4947c73c"
+    },
+    {
+      "case": 11,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-11-neutral_swim_swim_age100-front-t000-f0016.png",
+      "sha256": "d757ea1745e4f3c381e891d008c60419088548ce9539454be8bd9be6cd693446"
+    },
+    {
+      "case": 11,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-11-neutral_swim_swim_age100-left-t000-f0039.png",
+      "sha256": "71504b98daac23f1faf5dc3c4afe97f92802fd3620b0707d9cde562b0b489535"
+    },
+    {
+      "case": 11,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-11-neutral_swim_swim_age100-right-t000-f0062.png",
+      "sha256": "01a03b7de79ead5ae1e5cb29df6a598df04b62c951937ea0b6a3ca4bf69cba25"
+    },
+    {
+      "case": 11,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-11-neutral_swim_swim_age100-back-t000-f0085.png",
+      "sha256": "63965eaba26b28ba2b98be268848e9be683784cac65a243472d1cfede7ad2bef"
+    },
+    {
+      "case": 11,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-11-neutral_swim_swim_age100-above-t000-f0108.png",
+      "sha256": "344b36abba43f5455b88a0a9017f31c751ca8d36a5c9ec8f6e724128d037c17b"
+    },
+    {
+      "case": 11,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-11-neutral_swim_swim_age100-below-t000-f0131.png",
+      "sha256": "d264e706fc721587cf92bf23275dba61425e50a5e4f75dd1586d913a1c13aa22"
+    },
+    {
+      "case": 12,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-12-neutral_swim_run_swim_age0-front-t000-f0016.png",
+      "sha256": "9f32d7a2dcaf7528e3150faa7a5859e7e645a1d17265a6cba3d7cfd4986f0e99"
+    },
+    {
+      "case": 12,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-12-neutral_swim_run_swim_age0-left-t000-f0039.png",
+      "sha256": "8ce603ce491001755f2b651ce522274e8b537cc5f96bdc2ff3fab1954a92b156"
+    },
+    {
+      "case": 12,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-12-neutral_swim_run_swim_age0-right-t000-f0062.png",
+      "sha256": "aa1303950aa946c95bc536ca9d00ea3cf80fdc77702f712f2475a76d57ef6d01"
+    },
+    {
+      "case": 12,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-12-neutral_swim_run_swim_age0-back-t000-f0085.png",
+      "sha256": "21e77762e90765a673b5bcd8e68a5bd98eb598bc61d730cef64a2e285512e48e"
+    },
+    {
+      "case": 12,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-12-neutral_swim_run_swim_age0-above-t000-f0108.png",
+      "sha256": "4a68557881a1834204edf6bd41726c1228ef789c7b7c50a931b9bcbdf98e5526"
+    },
+    {
+      "case": 12,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-12-neutral_swim_run_swim_age0-below-t000-f0131.png",
+      "sha256": "ba5fa66218c06ac2a6d481ab1c0eabed26229e750763d53e63439133a564adcd"
+    },
+    {
+      "case": 13,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-13-neutral_swim_run_swim_age50-front-t000-f0016.png",
+      "sha256": "9f0849a59ee898b2d5c75e36236c70e4c27138c9c0d215e034bbc6d87e588f1e"
+    },
+    {
+      "case": 13,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-13-neutral_swim_run_swim_age50-left-t000-f0039.png",
+      "sha256": "cf39c02dd00120b419b42ec7248e00653e4c76dba0eb86ff5ff3ad6e71c45492"
+    },
+    {
+      "case": 13,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-13-neutral_swim_run_swim_age50-right-t000-f0062.png",
+      "sha256": "b714a9a9dd28554eba440f2c9035356da0847721feccfb768a6b9a95c78834d4"
+    },
+    {
+      "case": 13,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-13-neutral_swim_run_swim_age50-back-t000-f0085.png",
+      "sha256": "ac2c46895e9516185d1ffe49ec38860a7e75c4ca2f2362d998106af489b2ad3f"
+    },
+    {
+      "case": 13,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-13-neutral_swim_run_swim_age50-above-t000-f0108.png",
+      "sha256": "c9d181cea9bff3a3f1a7c5b40037f79e364d061d0ad8161c27c08ff6b665ac31"
+    },
+    {
+      "case": 13,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-13-neutral_swim_run_swim_age50-below-t000-f0131.png",
+      "sha256": "0d1c44ddd3a2cefbdb1ad601f346b5b15967e6d7c67bf718d43d1dc3d38b64dd"
+    },
+    {
+      "case": 14,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-14-neutral_swim_run_swim_age100-front-t000-f0016.png",
+      "sha256": "57639b466387221c43c40ae365649a9f6d8ffd2a06b7cf779d16705b18f574c1"
+    },
+    {
+      "case": 14,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-14-neutral_swim_run_swim_age100-left-t000-f0039.png",
+      "sha256": "79e421dd2ccd2c5ced50e6c8cb14e3f58b4c2ed26a5603c9ac5d45cf085803c4"
+    },
+    {
+      "case": 14,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-14-neutral_swim_run_swim_age100-right-t000-f0062.png",
+      "sha256": "7921770955fc14e600b5291118b1d63d86ae41fe55c40be9756193192b4bb05f"
+    },
+    {
+      "case": 14,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-14-neutral_swim_run_swim_age100-back-t000-f0085.png",
+      "sha256": "8e94ac907c6a03142b839cf08b1c965dda45401296aa47bb413d76d0786aaa4a"
+    },
+    {
+      "case": 14,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-14-neutral_swim_run_swim_age100-above-t000-f0108.png",
+      "sha256": "1a8fd745f600cf8b65bca3783e49993f65af14aebc0b2f5c662d37a138b9c3b5"
+    },
+    {
+      "case": 14,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-14-neutral_swim_run_swim_age100-below-t000-f0131.png",
+      "sha256": "51c765cced46d81fda370907eb8308f240651f6810a61c4499ddecbb79f096b3"
+    },
+    {
+      "case": 15,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-15-neutral_swim_power_swim_age0-front-t000-f0016.png",
+      "sha256": "a8c3913bbbfae683cfd6692cb75bb887e8e860f9a45951050b1c1115fcc71f80"
+    },
+    {
+      "case": 15,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-15-neutral_swim_power_swim_age0-left-t000-f0039.png",
+      "sha256": "98482867ed8d1300ec867ae3b33308f753d80b4021f1443b7346a5fd9ec7193e"
+    },
+    {
+      "case": 15,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-15-neutral_swim_power_swim_age0-right-t000-f0062.png",
+      "sha256": "4a5dc050609b736c7f0bb10d362a8a7199a8aa3b0d83a29d4627c01d3ba81a63"
+    },
+    {
+      "case": 15,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-15-neutral_swim_power_swim_age0-back-t000-f0085.png",
+      "sha256": "3814cd2cfee27074acac18e78b819b8361409a6ea63c8470588aa101e44d0236"
+    },
+    {
+      "case": 15,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-15-neutral_swim_power_swim_age0-above-t000-f0108.png",
+      "sha256": "5c987c297fddee1467252234bca7717ed81028df4a4d592844a4d37e82809daa"
+    },
+    {
+      "case": 15,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-15-neutral_swim_power_swim_age0-below-t000-f0131.png",
+      "sha256": "270c75beb8c14815f212e37d1f9ef3094b46686cce6380188adefc7f4424715f"
+    },
+    {
+      "case": 16,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-16-neutral_swim_power_swim_age50-front-t000-f0016.png",
+      "sha256": "4b7972767a25173e774702f6f558fb5f2d5c751dcfeb33aed14b8196c0aee65e"
+    },
+    {
+      "case": 16,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-16-neutral_swim_power_swim_age50-left-t000-f0039.png",
+      "sha256": "4b883593f2128be4b73aeb8e922cff7eae3283fef65f8bbf614a78070dcca68a"
+    },
+    {
+      "case": 16,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-16-neutral_swim_power_swim_age50-right-t000-f0062.png",
+      "sha256": "5edda7b85aea06dcec8455aae642a2a51bbe939c5e52cdced3cef059a82b2f9b"
+    },
+    {
+      "case": 16,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-16-neutral_swim_power_swim_age50-back-t000-f0085.png",
+      "sha256": "fc8a61d4cd6f7e15f04029f8eb065427983022e19258da09252474f05fb5d273"
+    },
+    {
+      "case": 16,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-16-neutral_swim_power_swim_age50-above-t000-f0108.png",
+      "sha256": "89ef4b8c2c491174ee3f96ea670ab063f2954b080437f7f3e513a2856162dfe1"
+    },
+    {
+      "case": 16,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-16-neutral_swim_power_swim_age50-below-t000-f0131.png",
+      "sha256": "6439a8b7a7ed6c1f7a24cb86fa28d4209c849a33bcf07d81241a32cda2df6d26"
+    },
+    {
+      "case": 17,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-17-neutral_swim_power_swim_age100-front-t000-f0016.png",
+      "sha256": "338e51a24579e3e97a4092348d7dee8b446f38759693d8486985851cb480a342"
+    },
+    {
+      "case": 17,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-17-neutral_swim_power_swim_age100-left-t000-f0039.png",
+      "sha256": "05531691f200371669c7a2a24e95dd8dffb9d197f3f98b4c83d546e17538c7cf"
+    },
+    {
+      "case": 17,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-17-neutral_swim_power_swim_age100-right-t000-f0062.png",
+      "sha256": "d2497833bbb1ea702dde7e0d397194b854a876e7680ac7625039587bc2b372ee"
+    },
+    {
+      "case": 17,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-17-neutral_swim_power_swim_age100-back-t000-f0085.png",
+      "sha256": "6c9c529de4c35961a566258992446b8e368ee5cdb96799984c6ccd50f566ca11"
+    },
+    {
+      "case": 17,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-17-neutral_swim_power_swim_age100-above-t000-f0108.png",
+      "sha256": "f51ff61fdb0e89e480017dace2bb1cbd60dfda31f2322105a64c9d945302cc62"
+    },
+    {
+      "case": 17,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-17-neutral_swim_power_swim_age100-below-t000-f0131.png",
+      "sha256": "d582a425538a498b6681293b2bbc5e77132b3ce7395f798ba41ba1f626c06aa3"
+    },
+    {
+      "case": 18,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-18-neutral_swim_run_influence25-front-t000-f0016.png",
+      "sha256": "f199434d6b02578176a287c2e820c9dfbfea41b1ab32ded992fffced09ad555c"
+    },
+    {
+      "case": 18,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-18-neutral_swim_run_influence25-left-t000-f0039.png",
+      "sha256": "7707e90bf01c4d3fdbd5d68da8c8ed1f543a67b4aeb976fdfb7deb97c2c40ae1"
+    },
+    {
+      "case": 18,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-18-neutral_swim_run_influence25-right-t000-f0062.png",
+      "sha256": "36325e0f9328fd9daf8331126591e8cdabe134d8e3a34b2511f3af79c9e53c88"
+    },
+    {
+      "case": 18,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-18-neutral_swim_run_influence25-back-t000-f0085.png",
+      "sha256": "25816163292a10a895bfa5add044c6da44bd4199a5a4fbb1aaee0c7afdb6c4bb"
+    },
+    {
+      "case": 18,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-18-neutral_swim_run_influence25-above-t000-f0108.png",
+      "sha256": "8efe32be3ddec70f39e36e59565287ce643294b90a80cb0ba8db093dab7e9e86"
+    },
+    {
+      "case": 18,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-18-neutral_swim_run_influence25-below-t000-f0131.png",
+      "sha256": "d4e7f9e5c842272c3999c9ea796434d6c164dc7aa3bf0943e5cbb8ca725e2b33"
+    },
+    {
+      "case": 19,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-19-neutral_swim_run_influence50-front-t000-f0016.png",
+      "sha256": "7b90ba1d2173812d7c493dbc32ce8c1f5f00d54272eaa50cf358c09512e9aa88"
+    },
+    {
+      "case": 19,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-19-neutral_swim_run_influence50-left-t000-f0039.png",
+      "sha256": "edd3a85163915929cd64a945507279c0137d2f3a83ea704b2e636eb19539e34d"
+    },
+    {
+      "case": 19,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-19-neutral_swim_run_influence50-right-t000-f0062.png",
+      "sha256": "9e05accf37080f6ea7228448d778a8e29e6d56735bb4c5b281b4d51a4c904706"
+    },
+    {
+      "case": 19,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-19-neutral_swim_run_influence50-back-t000-f0085.png",
+      "sha256": "dc4207585a8244bf6c068515f7366e7af0fee5885cfd9e8a8488d965e566a4e9"
+    },
+    {
+      "case": 19,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-19-neutral_swim_run_influence50-above-t000-f0108.png",
+      "sha256": "7600047a337b3bcd886580583cad0ef01c78ee0d9ef1884fdedf9787e829a9d4"
+    },
+    {
+      "case": 19,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-19-neutral_swim_run_influence50-below-t000-f0131.png",
+      "sha256": "22f2d1c17960e5a860da63236f5da98575d912eefe66d457b472e8320e33ed67"
+    },
+    {
+      "case": 20,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-20-neutral_swim_run_influence75-front-t000-f0016.png",
+      "sha256": "456f7e9879088f080a474d338d33ba5fce911d97c9cc8c6bddbaab207d7963c8"
+    },
+    {
+      "case": 20,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-20-neutral_swim_run_influence75-left-t000-f0039.png",
+      "sha256": "a1c9218d9f19b998bdc8b18be5bb8497d5a562e2063480c968a9f081351d7cfe"
+    },
+    {
+      "case": 20,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-20-neutral_swim_run_influence75-right-t000-f0062.png",
+      "sha256": "dbf03f6f13e7bf256b76c05654416e9e3f60fd9ad22da0e3f6e5d05d548caa45"
+    },
+    {
+      "case": 20,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-20-neutral_swim_run_influence75-back-t000-f0085.png",
+      "sha256": "24f82d784724422541070298c8d05c5b39b6535519ba6bc0aeef6df822fdd421"
+    },
+    {
+      "case": 20,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-20-neutral_swim_run_influence75-above-t000-f0108.png",
+      "sha256": "a01cffc42a1b006c61758ac5484432cd5e188af9cb39d215fb03d3327f45a44f"
+    },
+    {
+      "case": 20,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-20-neutral_swim_run_influence75-below-t000-f0131.png",
+      "sha256": "0635fe44d96e2a3f9a8ab6ed63d612effac96b00a8c92d022144cf59ffaa6146"
+    },
+    {
+      "case": 21,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-21-neutral_swim_power_influence25-front-t000-f0016.png",
+      "sha256": "cc7dee888bdb7533fd33f6d627301b8287f00f4708a594406798e8a2bb9ec989"
+    },
+    {
+      "case": 21,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-21-neutral_swim_power_influence25-left-t000-f0039.png",
+      "sha256": "1d97c78de1d205b195b9cd82bd036a7434422223c5ba919e113df4515a9623cf"
+    },
+    {
+      "case": 21,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-21-neutral_swim_power_influence25-right-t000-f0062.png",
+      "sha256": "d251c0bf950353e0f333b6b80ac14adb5c6d65ccfcfedbb2b11f8c62e068a53e"
+    },
+    {
+      "case": 21,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-21-neutral_swim_power_influence25-back-t000-f0085.png",
+      "sha256": "7926ee0cdd79384a9de3ee9be4a5bbdaedef12e9289c75622cc51c4d3b5013e2"
+    },
+    {
+      "case": 21,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-21-neutral_swim_power_influence25-above-t000-f0108.png",
+      "sha256": "0460d0910c1c39c0623c299c29f09da454856802f7d814c45383d49d33d16426"
+    },
+    {
+      "case": 21,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-21-neutral_swim_power_influence25-below-t000-f0131.png",
+      "sha256": "f082aa92321796419f348f636c988acccb406c12e0286225816fd81bf8d852a8"
+    },
+    {
+      "case": 22,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-22-neutral_swim_power_influence50-front-t000-f0016.png",
+      "sha256": "050c50f9d953fe467bd2fb8f166fcde7a2d1dfe84885628eef52dc9c7725839d"
+    },
+    {
+      "case": 22,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-22-neutral_swim_power_influence50-left-t000-f0039.png",
+      "sha256": "6abbc0582e4201daf66bf1441e175e4edb6ca46762dc8c16e13a1fd46f1d34ff"
+    },
+    {
+      "case": 22,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-22-neutral_swim_power_influence50-right-t000-f0062.png",
+      "sha256": "e6cbd53be7529580e4cc6869460ceaa0d341169be7293d8028b308f65936083e"
+    },
+    {
+      "case": 22,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-22-neutral_swim_power_influence50-back-t000-f0085.png",
+      "sha256": "f28e736c3445969438f991b44d79fd63fa5d5c006917d2d5893b9fba4eb4ff60"
+    },
+    {
+      "case": 22,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-22-neutral_swim_power_influence50-above-t000-f0108.png",
+      "sha256": "ea63cc1d30ef35492d97553c2adb173228ee8c739f18d8529f35542530402cc4"
+    },
+    {
+      "case": 22,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-22-neutral_swim_power_influence50-below-t000-f0131.png",
+      "sha256": "94c824fd781091a1cad664ec677da6288f67b8edbc8577a2d3256f86ed3dacbd"
+    },
+    {
+      "case": 23,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-23-neutral_swim_power_influence75-front-t000-f0016.png",
+      "sha256": "7fb97093dcc779314a9e4c3028af01464577a791edb04daf169f73228c07f137"
+    },
+    {
+      "case": 23,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-23-neutral_swim_power_influence75-left-t000-f0039.png",
+      "sha256": "50b65ed8e9a823e09cf77b7e452a6d1c0fd2ca78dc8a80283e0015d41815ef6c"
+    },
+    {
+      "case": 23,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-23-neutral_swim_power_influence75-right-t000-f0062.png",
+      "sha256": "6fe9093a3427487efc725bbe401709dee9388cbdb20bfefe5ab7425aa8bfd95f"
+    },
+    {
+      "case": 23,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-23-neutral_swim_power_influence75-back-t000-f0085.png",
+      "sha256": "18d690926b21ae849de904666e394620ae995fd6c40799e5f2457c5e03204960"
+    },
+    {
+      "case": 23,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-23-neutral_swim_power_influence75-above-t000-f0108.png",
+      "sha256": "32395e399df614a49025e4f465cc69a5e8b57d0d04d8016b265e0d90447b1c30"
+    },
+    {
+      "case": 23,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-23-neutral_swim_power_influence75-below-t000-f0131.png",
+      "sha256": "498c9eceb5c70bb9c43e57ec2df44dc51e727a8b9dca1d69c35ff129f0654ebe"
+    },
+    {
+      "case": 24,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-24-neutral_swim_swim_influence25-front-t000-f0016.png",
+      "sha256": "4a8e5182153e90eb55230ae319b7ae8458c51d9c1f634453034afd6d539f25ee"
+    },
+    {
+      "case": 24,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-24-neutral_swim_swim_influence25-left-t000-f0039.png",
+      "sha256": "c1fc8b03c36ef523a4de84e247c5ce1d41d6cbffa0b206918e58c3c4784d856a"
+    },
+    {
+      "case": 24,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-24-neutral_swim_swim_influence25-right-t000-f0062.png",
+      "sha256": "221daf3bc429a77f1f02185fb2d63d8675367482c31f49826704097dc994d827"
+    },
+    {
+      "case": 24,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-24-neutral_swim_swim_influence25-back-t000-f0085.png",
+      "sha256": "5021e7dba3483f7d8b688cc7fa0373a66c43d18bcb8022941f1d4939012f1b81"
+    },
+    {
+      "case": 24,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-24-neutral_swim_swim_influence25-above-t000-f0108.png",
+      "sha256": "fc81c212b37f5c5785c5c6516456ce0759bba4411a3c5e4e0886170460109dfd"
+    },
+    {
+      "case": 24,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-24-neutral_swim_swim_influence25-below-t000-f0131.png",
+      "sha256": "7b49fc8ba0304c127865bdb699516763f5c97c232fd2284b6ce3ef445e1b7d3a"
+    },
+    {
+      "case": 25,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-25-neutral_swim_swim_influence50-front-t000-f0016.png",
+      "sha256": "51fae753d2e45e6cf2ae23bfec15c88679bc4326ef6ca0736f10f0866f578a34"
+    },
+    {
+      "case": 25,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-25-neutral_swim_swim_influence50-left-t000-f0039.png",
+      "sha256": "35308ef8f2ae0806e04db5b7317bf7a675c08c0456a6be14b38a807c5eb4a16d"
+    },
+    {
+      "case": 25,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-25-neutral_swim_swim_influence50-right-t000-f0062.png",
+      "sha256": "cca169edcbd0a7135145e42730180b3e04ccb9072cfef135ec89d474fb1b97e6"
+    },
+    {
+      "case": 25,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-25-neutral_swim_swim_influence50-back-t000-f0085.png",
+      "sha256": "6647b7e89af0deb337ac55a9b17d0e186a87b3ab1e457cdbad74a6e4e778fbe8"
+    },
+    {
+      "case": 25,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-25-neutral_swim_swim_influence50-above-t000-f0108.png",
+      "sha256": "cf8886fe0e08d4ca130bf5744696988e7a27ffd9410d7d0b1603990d41f575ca"
+    },
+    {
+      "case": 25,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-25-neutral_swim_swim_influence50-below-t000-f0131.png",
+      "sha256": "ab3ff85d494b7e93b21c7b74c32d7fc51de9ecee52df1c8536993d100b282ac0"
+    },
+    {
+      "case": 26,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-26-neutral_swim_swim_influence75-front-t000-f0016.png",
+      "sha256": "926ca2a3f128ee4b6d953409cd598c6d4d76acde7b4c59a6e7dfa36aa9641fda"
+    },
+    {
+      "case": 26,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-26-neutral_swim_swim_influence75-left-t000-f0039.png",
+      "sha256": "16b8100a9603f6f0d891602608b9fdbeee6f2dc06eba534064d6c087f475b4a5"
+    },
+    {
+      "case": 26,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-26-neutral_swim_swim_influence75-right-t000-f0062.png",
+      "sha256": "2233b890a96151c5d39130fc1e2e8c6ebd3c22e1e0ffd075a9bcc32aaa7f399c"
+    },
+    {
+      "case": 26,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-26-neutral_swim_swim_influence75-back-t000-f0085.png",
+      "sha256": "15895693e5a42cd7ffc1693f370444047590573346747952db1d17c90dc33e32"
+    },
+    {
+      "case": 26,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-26-neutral_swim_swim_influence75-above-t000-f0108.png",
+      "sha256": "955958e80b465af736833b88cb961806dff98110ccbb8e4705d8c8de976433a5"
+    },
+    {
+      "case": 26,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-26-neutral_swim_swim_influence75-below-t000-f0131.png",
+      "sha256": "a498258ee6697f57f73238c309f241485de0844061110ba36a0487b55eb5d810"
+    },
+    {
+      "case": 27,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-27-neutral_swim_run_swim_influence25-front-t000-f0016.png",
+      "sha256": "f20eed819824201b2e87eaf500879c38c4813ca36e12e16d07a18fcd38edc908"
+    },
+    {
+      "case": 27,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-27-neutral_swim_run_swim_influence25-left-t000-f0039.png",
+      "sha256": "5430b686025ba14c928d3ae4d8d9d6a8d735e42cd7f34d716e673b7d23c26d11"
+    },
+    {
+      "case": 27,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-27-neutral_swim_run_swim_influence25-right-t000-f0062.png",
+      "sha256": "53397b5a3bd27d36be37e3743be62371c076e5ea47ad84e33d9827f2bd732e3f"
+    },
+    {
+      "case": 27,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-27-neutral_swim_run_swim_influence25-back-t000-f0085.png",
+      "sha256": "cb55df2bcca480dacb37e1fef60f940ca81af987dd0c6a0c69e0be244852ff5c"
+    },
+    {
+      "case": 27,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-27-neutral_swim_run_swim_influence25-above-t000-f0108.png",
+      "sha256": "4398d727fc359000419644f3845799c790785d7eef2ff33f5083b1698b216953"
+    },
+    {
+      "case": 27,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-27-neutral_swim_run_swim_influence25-below-t000-f0131.png",
+      "sha256": "cf79444295e6492307316a648dc1860f19f407f6eb12ca3566836f91d9019f17"
+    },
+    {
+      "case": 28,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-28-neutral_swim_run_swim_influence50-front-t000-f0016.png",
+      "sha256": "47b8a3cfd9a3ab27fb08303e1b084ff46489104bce7ae25955c2d328d3bfff61"
+    },
+    {
+      "case": 28,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-28-neutral_swim_run_swim_influence50-left-t000-f0039.png",
+      "sha256": "497f4ee508e940b46b636a89eb088944874cf7947f682f6fb4d726342b51e255"
+    },
+    {
+      "case": 28,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-28-neutral_swim_run_swim_influence50-right-t000-f0062.png",
+      "sha256": "f829f3c63a4987cacc7c4a30050635e0180cba239e5af9dace2a953d1018d8e8"
+    },
+    {
+      "case": 28,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-28-neutral_swim_run_swim_influence50-back-t000-f0085.png",
+      "sha256": "be0cbcb129331d93c6568339270b953a8c9da1898f8d5142e9a8619dc37a7423"
+    },
+    {
+      "case": 28,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-28-neutral_swim_run_swim_influence50-above-t000-f0108.png",
+      "sha256": "99b32099e8532e3641653ab455acb2a811f26e8dbdee38fbbcb3d762095c827c"
+    },
+    {
+      "case": 28,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-28-neutral_swim_run_swim_influence50-below-t000-f0131.png",
+      "sha256": "c5de3bb7552dcc6d7fa847cee929c69da61d1395b761c2569aa8eb740ba82006"
+    },
+    {
+      "case": 29,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-29-neutral_swim_run_swim_influence75-front-t000-f0016.png",
+      "sha256": "6b87366ce2ec70442ffcf9fd1bdaa4b8c01fc996e588e82f5a778525bd268baa"
+    },
+    {
+      "case": 29,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-29-neutral_swim_run_swim_influence75-left-t000-f0039.png",
+      "sha256": "8ef507981ce28dbf69ce4572a2c201068d55e764bd380a2349edd1ac1559fdae"
+    },
+    {
+      "case": 29,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-29-neutral_swim_run_swim_influence75-right-t000-f0062.png",
+      "sha256": "0e26cfecb40ba062b9dc9501e257888135b39feddeba3c7ed03fdd5ecbe8c16c"
+    },
+    {
+      "case": 29,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-29-neutral_swim_run_swim_influence75-back-t000-f0085.png",
+      "sha256": "1efaebcbc3816725813fd47a04f3c392ace9606c4f9fd7efd08d2f32a0a69dda"
+    },
+    {
+      "case": 29,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-29-neutral_swim_run_swim_influence75-above-t000-f0108.png",
+      "sha256": "597a813edb366b535959c7039c095d2f64b11eec8197b8c618ee90f1b6fbc445"
+    },
+    {
+      "case": 29,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-29-neutral_swim_run_swim_influence75-below-t000-f0131.png",
+      "sha256": "06f4b8e30ece315cae0871a436d1138f18ad6973bf220e7b10362cb6cd43237d"
+    },
+    {
+      "case": 30,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-30-neutral_swim_power_swim_influence25-front-t000-f0016.png",
+      "sha256": "6f2c0800a8a7ff933c598572ae0e816dbabdc392cc5e80ac1d82fb2760db74ee"
+    },
+    {
+      "case": 30,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-30-neutral_swim_power_swim_influence25-left-t000-f0039.png",
+      "sha256": "c5f9636baa7d28559dc2979b1bff9b5a4af596cbce8e9cb1399dd25bea21e3c2"
+    },
+    {
+      "case": 30,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-30-neutral_swim_power_swim_influence25-right-t000-f0062.png",
+      "sha256": "45bac96d1b3332c61376be2a08560553fad100e69c31d53ead008419191a8302"
+    },
+    {
+      "case": 30,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-30-neutral_swim_power_swim_influence25-back-t000-f0085.png",
+      "sha256": "37826dda1a0271a570cad7689e4f3edd9b6eacd3807faa47840c7acc0b74debd"
+    },
+    {
+      "case": 30,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-30-neutral_swim_power_swim_influence25-above-t000-f0108.png",
+      "sha256": "e2728cd3716ff16c556093e730a6c8de655dfdf5e3a67d945a7d5a9cd8e116e7"
+    },
+    {
+      "case": 30,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-30-neutral_swim_power_swim_influence25-below-t000-f0131.png",
+      "sha256": "5d53e6a3e3adccc5c1c866ce65fe4afb6539c1cc954f9af20c6b460f6923015f"
+    },
+    {
+      "case": 31,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-31-neutral_swim_power_swim_influence50-front-t000-f0016.png",
+      "sha256": "3b989f5b62c6f9a583370f15d91b8d767d600f158915153466d0d7030f0a7b94"
+    },
+    {
+      "case": 31,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-31-neutral_swim_power_swim_influence50-left-t000-f0039.png",
+      "sha256": "15a928429639e222e47ede578b0b72a3d8f25a2cd10305864e36a507e252268f"
+    },
+    {
+      "case": 31,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-31-neutral_swim_power_swim_influence50-right-t000-f0062.png",
+      "sha256": "0be78ee2a68cd4c15c4675c7ff94471c454ae12bc8cef04b07dc88e9fd39f15c"
+    },
+    {
+      "case": 31,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-31-neutral_swim_power_swim_influence50-back-t000-f0085.png",
+      "sha256": "d050ea15d886d039027430e6669db4ceb2788eab4021a6221b817963c970c24b"
+    },
+    {
+      "case": 31,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-31-neutral_swim_power_swim_influence50-above-t000-f0108.png",
+      "sha256": "3d722cc68032ccadc40c1cc4b16e59820c511367d72c469a51d46ac9a9d73620"
+    },
+    {
+      "case": 31,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-31-neutral_swim_power_swim_influence50-below-t000-f0131.png",
+      "sha256": "47db71b487d91caf348ca1ba5b90d2ec4b9e6c37eba7d00fee7b23f369dfc5d5"
+    },
+    {
+      "case": 32,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-32-neutral_swim_power_swim_influence75-front-t000-f0016.png",
+      "sha256": "8fee51545727d03bd7e0b323b948a83be30d834fb2c1c7aa65521f0ca2889d47"
+    },
+    {
+      "case": 32,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-32-neutral_swim_power_swim_influence75-left-t000-f0039.png",
+      "sha256": "24efd9e431baecffd131bb1c8b6c9652c74b4d395d013b4679b96f4aa16d5079"
+    },
+    {
+      "case": 32,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-32-neutral_swim_power_swim_influence75-right-t000-f0062.png",
+      "sha256": "1a935a7c500aba0a585cf303fc0a0ae08da26322cd561bb09f27a8f1cc6db12c"
+    },
+    {
+      "case": 32,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-32-neutral_swim_power_swim_influence75-back-t000-f0085.png",
+      "sha256": "baf0f63be0ecaa3a7e61adf84c82393b2824e8d63621507c8089cfa7e57c33b1"
+    },
+    {
+      "case": 32,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-32-neutral_swim_power_swim_influence75-above-t000-f0108.png",
+      "sha256": "520027e5bfbdd65d6ecb9135f83fec2bfd83b64b3bbaa5df8a7d9d59a5d53079"
+    },
+    {
+      "case": 32,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-32-neutral_swim_power_swim_influence75-below-t000-f0131.png",
+      "sha256": "862b1a921c760ec17be04df75c290a2da6e354f6e7d7e3754473ce45d3f08d70"
+    },
+    {
+      "case": 33,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-33-neutral_swim_fly_counter50-front-t000-f0016.png",
+      "sha256": "68f02804283c030fa42589ffba762f0719c8bab5a7bcc65ee8e9d7b926f2d049"
+    },
+    {
+      "case": 33,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-33-neutral_swim_fly_counter50-left-t000-f0039.png",
+      "sha256": "9de681a99019bfcee39c0d381decf588b4c9f6ae430b8b5d5570ff7146aedb5d"
+    },
+    {
+      "case": 33,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-33-neutral_swim_fly_counter50-right-t000-f0062.png",
+      "sha256": "7826c5e24859e96ff72bb9e32f415265a372d6287338854b9e77b8b0be285366"
+    },
+    {
+      "case": 33,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-33-neutral_swim_fly_counter50-back-t000-f0085.png",
+      "sha256": "8d2b52c6a30a12925e4d3bebfca70fe44fd5c0364ea93f60e66119535780ccbb"
+    },
+    {
+      "case": 33,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-33-neutral_swim_fly_counter50-above-t000-f0108.png",
+      "sha256": "fb7683da6669e6d36c268b844073e2762c64c8cef1c7586c72f7f18ffe099774"
+    },
+    {
+      "case": 33,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-33-neutral_swim_fly_counter50-below-t000-f0131.png",
+      "sha256": "acfc278e9d27bbfa2da61028af3def6919d825713deacba40cb080231c19bfb5"
+    },
+    {
+      "case": 34,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-34-neutral_swim_fly_counter100-front-t000-f0016.png",
+      "sha256": "f9c60aa75d93203f1d853403f04eda13214165132c221da72af346851b4a13b4"
+    },
+    {
+      "case": 34,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-34-neutral_swim_fly_counter100-left-t000-f0039.png",
+      "sha256": "5eb3f8f5b16f2be6d28cff105c35e26478990495a6f85ee5fec66811815398ac"
+    },
+    {
+      "case": 34,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-34-neutral_swim_fly_counter100-right-t000-f0062.png",
+      "sha256": "16a00c96586a44c9808407237d8aed8c8ca5fa1d6de4104386b50fb68a92ca0f"
+    },
+    {
+      "case": 34,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-34-neutral_swim_fly_counter100-back-t000-f0085.png",
+      "sha256": "46d49ae10d12c1763cc4658400433e9b5fd3c8255850f281b739094a648de125"
+    },
+    {
+      "case": 34,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-34-neutral_swim_fly_counter100-above-t000-f0108.png",
+      "sha256": "d6edeb08a9e74f16152d684b9f0e6559349960e8f7af5f8edf9a1e468477c92b"
+    },
+    {
+      "case": 34,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-34-neutral_swim_fly_counter100-below-t000-f0131.png",
+      "sha256": "35d3019ffa9833313aa4fda2e1f0c80eb3fbf578a6b1051a0a4de955a918f1de"
+    },
+    {
+      "case": 35,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-35-neutral_swim_fly_counter150-front-t000-f0016.png",
+      "sha256": "4d14fcf547d3a7e755e3687d2a62d5164ba0df680a00b0d67a0120b5cb4dc8c0"
+    },
+    {
+      "case": 35,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-35-neutral_swim_fly_counter150-left-t000-f0039.png",
+      "sha256": "6b5f2f8dcf831e6d101196c0a1489133aafe66b6fe5c1e04361283c9d1075df1"
+    },
+    {
+      "case": 35,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-35-neutral_swim_fly_counter150-right-t000-f0062.png",
+      "sha256": "23426579c8434697d782a834d0ac31995520a9044147d2a92232882b61ba106b"
+    },
+    {
+      "case": 35,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-35-neutral_swim_fly_counter150-back-t000-f0085.png",
+      "sha256": "a5ab7814b50b416786bd0635a95908d90ece13fc22bda7ed043c39c08199db2c"
+    },
+    {
+      "case": 35,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-35-neutral_swim_fly_counter150-above-t000-f0108.png",
+      "sha256": "1b6a867ccec55c318a6332b9f480b57f97e98cac9bb78659423827c527f5dbeb"
+    },
+    {
+      "case": 35,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-35-neutral_swim_fly_counter150-below-t000-f0131.png",
+      "sha256": "0a47099f70b3efe4be926b2b15a7ddd5a955020c2a65cb1acfd1aa1c0eaa1907"
+    },
+    {
+      "case": 61,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-61-neutral_swim_run_swim_age25_influence50-front-t000-f0016.png",
+      "sha256": "a975e6e0f58a315758316f1969271bee5062df053dbf096eb5fe3673fc6dd29b"
+    },
+    {
+      "case": 61,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-61-neutral_swim_run_swim_age25_influence50-left-t000-f0039.png",
+      "sha256": "95f2b8f2d898cf2562fec709d838682d27c7e8092532531dd07a166d24060fce"
+    },
+    {
+      "case": 61,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-61-neutral_swim_run_swim_age25_influence50-right-t000-f0062.png",
+      "sha256": "f6f846a7e2cf73d050c59cdfdf640a97f44633b3531faad4b5b6263c98cf9a0c"
+    },
+    {
+      "case": 61,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-61-neutral_swim_run_swim_age25_influence50-back-t000-f0085.png",
+      "sha256": "2c249ef9bce602b907dacb220c53f247b305041a78100deeb07c4659d5a4deef"
+    },
+    {
+      "case": 61,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-61-neutral_swim_run_swim_age25_influence50-above-t000-f0108.png",
+      "sha256": "a23194214393c75384032b6e355747c476153a2972c17af821fb90a8a07cb862"
+    },
+    {
+      "case": 61,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-61-neutral_swim_run_swim_age25_influence50-below-t000-f0131.png",
+      "sha256": "12f95f5dec53c4451af77176393cd84b72339fc372fe9c361b3598e621f8a43f"
+    },
+    {
+      "case": 62,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-62-neutral_swim_run_swim_age75_influence50-front-t000-f0016.png",
+      "sha256": "e9971b0c4aee1b4502341bf891a140402d46d67be01403cdd935aa1535b914de"
+    },
+    {
+      "case": 62,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-62-neutral_swim_run_swim_age75_influence50-left-t000-f0039.png",
+      "sha256": "2ffad8074070eed779b5d0c9dbfea85b78d361aa8e794bbb6fa1b153f9e863f1"
+    },
+    {
+      "case": 62,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-62-neutral_swim_run_swim_age75_influence50-right-t000-f0062.png",
+      "sha256": "74ed8344a1d46f2155a753c17fba178c3cac36ec809bb5e5b8f59168be69eb52"
+    },
+    {
+      "case": 62,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-62-neutral_swim_run_swim_age75_influence50-back-t000-f0085.png",
+      "sha256": "8387fabb7e060e73131f3fde2cd477a46cb57da90f5cb49a717120c3171251d1"
+    },
+    {
+      "case": 62,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-62-neutral_swim_run_swim_age75_influence50-above-t000-f0108.png",
+      "sha256": "ec8590e106bccf228b1326634c6a60f08e35f13eb1791cb4b96f13f290ebe44c"
+    },
+    {
+      "case": 62,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-62-neutral_swim_run_swim_age75_influence50-below-t000-f0131.png",
+      "sha256": "33debfe60e02b3420f34200d511a4e7e567976ca831a60d0df6f1b9d4243ab5f"
+    },
+    {
+      "case": 63,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-63-neutral_swim_power_swim_age25_influence50-front-t000-f0016.png",
+      "sha256": "7abbcd7ff261976d67263704f0970df61464e7c80d899c4b07e1c8194da3001c"
+    },
+    {
+      "case": 63,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-63-neutral_swim_power_swim_age25_influence50-left-t000-f0039.png",
+      "sha256": "bdb505771ba1cff4b3105faa170c93deb0963bc3a8de8ea30f865696490fc730"
+    },
+    {
+      "case": 63,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-63-neutral_swim_power_swim_age25_influence50-right-t000-f0062.png",
+      "sha256": "2e7d5087380c4617509102d60133ccf01afc3de197606168855076d6124af0cf"
+    },
+    {
+      "case": 63,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-63-neutral_swim_power_swim_age25_influence50-back-t000-f0085.png",
+      "sha256": "3c3bc5e15129041d3a730348a285b431b8df8ed1f1dc63aac7edba1cfad7e919"
+    },
+    {
+      "case": 63,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-63-neutral_swim_power_swim_age25_influence50-above-t000-f0108.png",
+      "sha256": "f78ac131258a819a2d14b76a88ffb1e5004aa3523222d4b3c8fe72a0c0f6b247"
+    },
+    {
+      "case": 63,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-63-neutral_swim_power_swim_age25_influence50-below-t000-f0131.png",
+      "sha256": "404463a6a989ff6f932d0ce902f387e400be8e4730d511a945f4b967baded570"
+    },
+    {
+      "case": 64,
+      "angle": "front",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-64-neutral_swim_power_swim_age75_influence50-front-t000-f0016.png",
+      "sha256": "d28590c34044ac744289f30e4ec9502382cf405d6f277eb3e462c167bf3a99fa"
+    },
+    {
+      "case": 64,
+      "angle": "left",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-64-neutral_swim_power_swim_age75_influence50-left-t000-f0039.png",
+      "sha256": "d1a593ca0920460a31dba26bbd833b006c1bc7587871e1bbd431a65292042801"
+    },
+    {
+      "case": 64,
+      "angle": "right",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-64-neutral_swim_power_swim_age75_influence50-right-t000-f0062.png",
+      "sha256": "00a4ecb3f27ae8387a434918df4b1b08bce034626f143633d813bd9310c26e9a"
+    },
+    {
+      "case": 64,
+      "angle": "back",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-64-neutral_swim_power_swim_age75_influence50-back-t000-f0085.png",
+      "sha256": "a30b5208930800191aefadb926883c89fe0e424bfb98d1fb63859316c2886fcf"
+    },
+    {
+      "case": 64,
+      "angle": "above",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-64-neutral_swim_power_swim_age75_influence50-above-t000-f0108.png",
+      "sha256": "e08a9e28d8042bc6971e1d975001285d8f7815abaafb1cf9b8421b9e2be85262"
+    },
+    {
+      "case": 64,
+      "angle": "below",
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-64-neutral_swim_power_swim_age75_influence50-below-t000-f0131.png",
+      "sha256": "d165d3336dae8a168a747c8ad51e88b649cef445c6657f6380acddde430ec371"
+    }
+  ],
+  "completion_lines": [
+    "[23:03:36] [Render thread/INFO] [co.ch.cl.NeutralSwimVisualSmoke059/]: SWIM059_VISUAL_COMPLETE requestedCases=65 renderedCases=65 skippedCases=0 start=0 limit=65 baseline=false captures=578 saved=578 epochMillis=1794524616237 normal20TPS=true audioListening=false output=/workspace/.setup/swim059-client-final"
+  ],
+  "actual_total_png_files": 578
+}

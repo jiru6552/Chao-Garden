@@ -1,0 +1,42 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateModMetadata UP-TO-DATE
+
+> Task :processResources
+Chao dimension fixture: excluded from normal runtime
+Chao dimension fixture output: /workspace/Chao-Garden/build/resources/main/data/minecraft/worldgen/world_preset/flat.json; exists=false; resource destination=/workspace/Chao-Garden/build/resources/main
+
+> Task :classes
+> Task :compileLionfishTestJava
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses
+
+> Task :neutralSwimMaterialTest059
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+NeutralSwim059 material: 41951961 checks; 172 real canonical coats; 25350048 preserved alpha pixels; 198144 exact facial pixels; 297216 independent orb samples; 12384 four-swatch samples; maximum 1% RGB step=5. Six mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic head/fin regions, .59-only palette protection passed. Pixel checks are not in-game visual verification.
+
+> Task :heroNormalMaterialTest057
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+HeroNormal057 material: 73977182 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 halo samples; 6873120 exact body/head pixels; 92880 regional wing samples; 23392 actual wing-edge alpha samples; maximum1% color step=4. Nine independently referenced color corners, white/inherited lower stalks and wing roots, distinct upper caps, regional wing span, cutout-following thickness, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.
+
+> Task :neutralMaterialTest056
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Neutral056/marker material: 68841869 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 Neutral orb samples; maximum1% color step=4. Nine endpoint combinations, fresh/mid/mature, inherited hues, exact original fresh pixels and canonical blue-to-pink Hero orb passed.
+
+> Task :heroRunMaterialTest055
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Hero Run055 material: 23615146 checks; 172 original coats; 12678120 preserved-alpha pixels; 99072 exact protected eye/expression pixels; maximum1% pixel change=4; shared pixel regions, fixed UVs, no baseline pop and compatible-axis accents passed.
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 9s
+9 actionable tasks: 6 executed, 3 up-to-date

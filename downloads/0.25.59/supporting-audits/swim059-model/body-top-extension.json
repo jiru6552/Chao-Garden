@@ -1,0 +1,77 @@
+{
+  "purpose": "Close measured.1706..3953pixel neckgap under scoped adult walking head lift using existing torso top only.",
+  "old_model_sha256": "02e6397bea65460e49dfad2d683dfc8fd3b759fd83cc1e0bc73c7938d63f0cbe",
+  "new_model_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+  "exact_json_leaf_delta_count": 24,
+  "target_leaf_count": 20,
+  "required_reference_top_vertex_Y_count": 4,
+  "reference_vertex_indices": [
+    2,
+    3,
+    6,
+    7
+  ],
+  "change": "All10bodytargets centerY-=.225,sizeY+=.45; fourupper referenceverticesY-=.45 tokeep existingrigid-box target0corner correspondence. Lowerplanesunchanged;noothercomponentchanges.",
+  "targets": [
+    {
+      "target": 0,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.45,
+      "bottomY": 0.5
+    },
+    {
+      "target": 1,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.51,
+      "bottomY": 0.5299999999999998
+    },
+    {
+      "target": 2,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.51,
+      "bottomY": 0.5299999999999998
+    },
+    {
+      "target": 3,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.61,
+      "bottomY": 0.5800000000000001
+    },
+    {
+      "target": 4,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.51,
+      "bottomY": 0.5299999999999998
+    },
+    {
+      "target": 5,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.51,
+      "bottomY": 0.5299999999999998
+    },
+    {
+      "target": 6,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.61,
+      "bottomY": 0.5800000000000001
+    },
+    {
+      "target": 7,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.51,
+      "bottomY": 0.5299999999999998
+    },
+    {
+      "target": 8,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.51,
+      "bottomY": 0.5299999999999998
+    },
+    {
+      "target": 9,
+      "new_centerY": -1.725,
+      "new_sizeY": 4.61,
+      "bottomY": 0.5800000000000001
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-11-12T21:41:16.462369+00:00",
+  "scope": "Read-only byte/JSON structural audit; no model generation, build, tests or visual execution",
+  "protected_prior_models": {
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json": {
+      "current_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "parent_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "identical": true
+    },
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json": {
+      "current_sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "parent_sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "identical": true
+    },
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json": {
+      "current_sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "parent_sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "identical": true
+    },
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json": {
+      "current_sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "parent_sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "identical": true
+    }
+  },
+  "new_model_sha256": "4ffce905ab28a9c5298ea146cbf00a447b511756ec93f1dbff132a31ca3bb70c",
+  "new_bone_count": 59,
+  "old_bone_count": 59,
+  "all_existing_joints_unchanged": true,
+  "head_face_expression_orb_bones_identical": {
+    "skull": true,
+    "skull__cube_0": true,
+    "skull__cube_1": true,
+    "skull__cube_2": true,
+    "skull__cube_3": true,
+    "emotion_dots": true,
+    "emotion_dot": true,
+    "emotion_dot__cube_0": true,
+    "emotion_exclamation": true,
+    "emotion_exclamation__cube_0": true,
+    "emotion_exclamation__cube_1": true,
+    "emotion_heart": true,
+    "emotion_heart__cube_0": true,
+    "emotion_heart__cube_1": true,
+    "emotion_heart__cube_2": true,
+    "emotion_question": true,
+    "emotion_question__cube_0": true,
+    "emotion_question__cube_1": true,
+    "emotion_question__cube_2": true,
+    "emotion_question__cube_3": true,
+    "emotion_question__cube_4": true,
+    "emotion_question__cube_5": true,
+    "emotion_dizzy": true,
+    "emotion_dizzy__cube_0": true,
+    "emotion_dizzy__cube_1": true,
+    "emotion_dizzy__cube_2": true,
+    "emotion_dizzy__cube_3": true,
+    "emotion_dizzy__cube_4": true,
+    "emotion_dizzy__cube_5": true,
+    "emotion_dizzy__cube_6": true,
+    "emotion_dizzy__cube_7": true,
+    "expression_mouth_1": true,
+    "expression_mouth_2": true,
+    "expression_mouth_3": true,
+    "expression_mouth_4": true,
+    "expression_mouth_5": true,
+    "expression_mouth_6": true
+  },
+  "authored_positive_box_count": 14,
+  "smallest_authored_dimension": 0.16,
+  "all_box_target_dimensions_positive": true,
+  "source_geometry_alias": "OfficialChaoRig.sourceGeometryKey returns baby for new prototype; ChaoModel officialGeometryKey delegates to it",
+  "fixed_head_guard": "ChaoMeshAsset.fixedHeadBox055 includes neutralSwim059; OfficialChaoRig monster head amplification skips fixed heads"
+}

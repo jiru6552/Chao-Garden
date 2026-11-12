@@ -1,0 +1,29 @@
+{
+  "scope": "Actual X11 Minecraft window; silent normal-20TPS gain/reversal scenes56-59",
+  "started": true,
+  "start_epoch": 1794524513.2175975,
+  "window_id": "0x200009",
+  "rectangle": [
+    0,
+    0,
+    1440,
+    900
+  ],
+  "fps": 20,
+  "selected_cases": [
+    56,
+    57,
+    58,
+    59
+  ],
+  "audio": false,
+  "time_rescaled": false,
+  "end_epoch": 1794524582.471229,
+  "output": "/workspace/.setup/swim059-motion-live.mp4",
+  "ffmpeg_exit": 255,
+  "output_sha256": "c097a3a77c9de68095b14c64bcee16bfcd774b8f676240c105df40c888444019",
+  "runtime_jar_sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+  "capture_run_tag": "SWIM059",
+  "source_log": "swim059-client-final.log",
+  "completion_scope": "root-confirmed35566exit0;65rendered,0skipped,578saved"
+}

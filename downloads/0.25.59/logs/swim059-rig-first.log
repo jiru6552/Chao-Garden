@@ -1,0 +1,31 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+Note: /workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralSwimVisualSmoke059.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :generateModMetadata UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :compileLionfishTestJava
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses
+
+> Task :neutralSwimMorphRigTest059
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+NeutralSwim059: 14156424 checks; 2471 emitted age/axis/edit frames; 10338 closed rectangular-box samples; 378 production Lionfish motion frames; 4536 separate attachment matrices; 696 coat/shape cases; 5292 actual orb/feature separation checks; 5292 connected feature samples; 1416 emitted closed-wing samples; 1416 original-edge hinge samples; 5 production quiet-book surface frames; maximum hinge drift=4.249712E-6 model pixels; maximum axis step=0.077871926 model pixels; maximum20tick edit step=0.23891748; maximum1pct maturity step=0.054602757; seconds=12.463300988. Fixed original head/face/orb/59-joint rig; six distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 42s
+6 actionable tasks: 3 executed, 3 up-to-date

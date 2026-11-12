@@ -1,0 +1,172 @@
+{
+  "scope": "Neutral alignment, locked Swim first type; six mature compatible specialization endpoints plus common fresh base. Authored blocks, not copied viewer geometry.",
+  "files": {
+    "scripts/generate_neutral_swim_morph_02559.py": "25bbfabcf72482bba29c167d39cbb8234a365e1d4f016dec3f405ac026d681df",
+    "scripts/validate_neutral_swim_morph_02559.py": "8243f55b972e7231eb5376d5ecdf1f4850d96a4e3e9284b2b11ce428fb0f564a",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+    "src/main/resources/assets/chao_garden/neutral_swim059.json": "9b594b96303d6a80dd052589fd7269e9fe9c7c42df38e2766bc0327459f6d140"
+  },
+  "geometry_checks": {
+    "positive_closed_boxes": 14,
+    "head_feature_boxes": 7,
+    "original_joints": 59,
+    "dense_connected_age_axis_blends": 4851,
+    "minimum_default_tilted_orb_gap_px": 2.268437035,
+    "added_head_bounds_px": [
+      [
+        -5.85744228,
+        5.85744228
+      ],
+      [
+        -7.425,
+        0.899002128
+      ],
+      [
+        -2.525,
+        6.283391304
+      ]
+    ],
+    "canonical_head_face_emotion_exact": true,
+    "exact_wing_hinge": [
+      0,
+      0.25,
+      0
+    ],
+    "original_wing_front_uv_preserved": true,
+    "wing_back_mirrors_visible_front": true,
+    "wing_closing_uv_follows_front_alpha": true,
+    "same_facing_head_feature_coplanarity": "None at all10explicit endpoints and4851denseblends; independently clipped positive-area faceprojection guard.",
+    "minimum_positive_matching_head_plane_gap_px": 0.025,
+    "torso_top_extension_px": 0.45,
+    "torso_lower_planes_preserved": true
+  },
+  "visual_reference": {
+    "source": "Chao Island live 3D viewer, independently operated by viewer059 agent; these captures personally inspected by model059 agent.",
+    "mature_forms": [
+      "balanced",
+      "run",
+      "power",
+      "swim",
+      "run-swim",
+      "power-swim"
+    ],
+    "angles": [
+      "front",
+      "side",
+      "back",
+      "opposite side",
+      "above",
+      "below"
+    ],
+    "ages": [
+      "fresh0%",
+      "intermediate50%",
+      "mature100%"
+    ],
+    "fresh": "Common palette/shape at all current training endpoints, substantial rear/down cap already; small rearward yellow temple fins.",
+    "balanced": "Broad cap with modest downward rear extension and short rear-pointing side fins.",
+    "run": "Long upward/near-horizontal posterior cap; slim upturned side fins.",
+    "power": "Short/blunt posterior cap and short thick side fins; stocky body and palms.",
+    "swim": "Long dropped posterior hood and hanging side flippers.",
+    "combinations": "Medium down/back cap/flippers, not additive maximum branches.",
+    "training_at_fixed_mature_age": "Personally inspected live-viewer capture sheet at0/25/50/75/100%current training for Run,Power,Swim andcompatible diagonals. Pure axes vary gradually; compatible diagonals appear near their mixed endpoint by50%viewer slider. This is a visual observation, not copied/exact viewer morph math."
+  },
+  "approximations": [
+    "Original head box remains unchanged, so smooth source cap outline is expressed as three closed cuboids.",
+    "Posterior hood ends in a broad stepped rectangular hem rather than a smoothly tapered central point.",
+    "Fin zigzag bands and curved leaves are simplified into two blocks per fin and flat per-face regions.",
+    "No claim of original-game timing; current training net axis960 and independent maturity.",
+    "Prototype retains existing simple10-target bilinear lattice/960current-bar axis policy; its mixed-training pace approximates ratherthan reproduces the viewer diagonal reaching nearendpoint early."
+  ],
+  "tests_not_owned": [
+    "Gradle/native server/JAR",
+    "Minecraft screenshots, live movement and accessory visual review; root owns these."
+  ],
+  "late_final_geometry_fix": {
+    "trigger": "Exact source-plane triage after actualcandidatecase46revealed line prompted review.",
+    "real_bug": "PureSwimmature roofrearZ3 coincidedwithfixedheadrearZ3 over3.5175px\u00b2; actualhooddidnotoccludeit.",
+    "change": "OnlypureSwimroof target2sizeZ5.5->5.3;head,allXY,UV,pivots,otherfeaturesandothermodelsunchanged.",
+    "new_rear_plane_z": 2.9,
+    "proof": "RestoringoneJSONcomponent reproducesoldmodelSHA2564ffce905ab28a9c5298ea146cbf00a447b511756ec93f1dbff132a31ca3bb70c. Newguardrejectsoldroof.",
+    "important_distinction": "Observedside brightdash isconsistentwithactual.15px originalheadtopledge outside narrowerroofcap; do notclaimallsideledgelinesarecoplanarity or thatfixremoveslegitimate ledges.",
+    "candidate_before_fix": "FinalcandidateJAR1f5709d7c7fe8f14e2c0df8ef4a0f2b8149ee29ed7b9dd279d7994f2acf3bbae quarantined;newmodelrequiresfreshJARandfullactualclientcapture."
+  },
+  "late_body_top_fix": {
+    "purpose": "Close measured.1706..3953pixel neckgap under scoped adult walking head lift using existing torso top only.",
+    "old_model_sha256": "02e6397bea65460e49dfad2d683dfc8fd3b759fd83cc1e0bc73c7938d63f0cbe",
+    "new_model_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+    "exact_json_leaf_delta_count": 24,
+    "target_leaf_count": 20,
+    "required_reference_top_vertex_Y_count": 4,
+    "reference_vertex_indices": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "change": "All10bodytargets centerY-=.225,sizeY+=.45; fourupper referenceverticesY-=.45 tokeep existingrigid-box target0corner correspondence. Lowerplanesunchanged;noothercomponentchanges.",
+    "targets": [
+      {
+        "target": 0,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.45,
+        "bottomY": 0.5
+      },
+      {
+        "target": 1,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.51,
+        "bottomY": 0.5299999999999998
+      },
+      {
+        "target": 2,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.51,
+        "bottomY": 0.5299999999999998
+      },
+      {
+        "target": 3,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.61,
+        "bottomY": 0.5800000000000001
+      },
+      {
+        "target": 4,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.51,
+        "bottomY": 0.5299999999999998
+      },
+      {
+        "target": 5,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.51,
+        "bottomY": 0.5299999999999998
+      },
+      {
+        "target": 6,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.61,
+        "bottomY": 0.5800000000000001
+      },
+      {
+        "target": 7,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.51,
+        "bottomY": 0.5299999999999998
+      },
+      {
+        "target": 8,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.51,
+        "bottomY": 0.5299999999999998
+      },
+      {
+        "target": 9,
+        "new_centerY": -1.725,
+        "new_sizeY": 4.61,
+        "bottomY": 0.5800000000000001
+      }
+    ],
+    "validation": "Independent body fresh reference/10target upper/lower planes checked; lowerplanes also preserved through all4851age/axisblends. Root testsagent owns22,722actualWALKphase/look continuity checks."
+  }
+}

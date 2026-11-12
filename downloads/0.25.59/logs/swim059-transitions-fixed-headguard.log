@@ -1,0 +1,162 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoCastanetsAnimation.java:20: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoCastanetsAnimation.java:20: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoClient.java:9: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = "chao_garden", bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                           ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoClient.java:9: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = "chao_garden", bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoCymbalsAnimation.java:20: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoCymbalsAnimation.java:20: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoMaracasAnimation.java:19: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoMaracasAnimation.java:19: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoTriangleAnimation.java:22: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoTriangleAnimation.java:22: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/GradualCoatMaterial.java:119: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/GradualCoatMaterial.java:119: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeldChaoRenderer.java:30: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = ChaoGarden.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                              ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeldChaoRenderer.java:30: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = ChaoGarden.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                                                      ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/KindergartenClient.java:9: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/KindergartenClient.java:9: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/OmochaoMaterial.java:147: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/OmochaoMaterial.java:147: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroRunCoatMaterial054.java:94: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroRunCoatMaterial054.java:94: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java:65: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java:65: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroRunCoatMaterial052.java:240: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroRunCoatMaterial052.java:240: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoQuietToyAnimation049.java:25: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoQuietToyAnimation049.java:25: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroRunCoatMaterial055.java:144: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroRunCoatMaterial055.java:144: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoRockingHorseAnimation.java:24: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoRockingHorseAnimation.java:24: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroNormalCoatMaterial057.java:65: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/HeroNormalCoatMaterial057.java:65: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoActiveToyAnimation049.java:26: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoActiveToyAnimation049.java:26: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralCoatMaterial056.java:65: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralCoatMaterial056.java:65: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoAccordionAnimation.java:23: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                             ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoAccordionAnimation.java:23: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                   ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+38 warnings
+
+> Task :generateModMetadata UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :compileLionfishTestJava UP-TO-DATE
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses UP-TO-DATE
+
+> Task :triangleTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Failure tick distribution {}
+Triangle transition samples=267696 failures=0 minHandHeadPixels=0.2046349
+
+
+> Task :trumpetTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Failure tick distribution {}
+Trumpet transition samples=267696 failures=0 minHandHeadPixels=0.20083904
+
+
+> Task :neutralSwimMorphRigTest059
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+NeutralSwim059: 14156424 checks; 2471 emitted age/axis/edit frames; 10338 closed rectangular-box samples; 378 production Lionfish motion frames; 4536 separate attachment matrices; 696 coat/shape cases; 5292 actual orb/feature separation checks; 5292 connected feature samples; 1416 emitted closed-wing samples; 1416 original-edge hinge samples; 5 production quiet-book surface frames; maximum hinge drift=4.249712E-6 model pixels; maximum axis step=0.077871926 model pixels; maximum20tick edit step=0.23891748; maximum1pct maturity step=0.054602757; seconds=4.78531679. Fixed original head/face/orb/59-joint rig; six distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 33s
+8 actionable tasks: 4 executed, 4 up-to-date

@@ -155,7 +155,8 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
         pose.ry += age * .012f;
       }
     }
-    var raw=HeroNormalAppearance057.sample(state).enabled()?HeroNormalCoatMaterial057.textureOverlay(state)
+    var raw=NeutralSwimAppearance059.sample(state).enabled()?NeutralSwimCoatMaterial059.textureOverlay(state)
+        :HeroNormalAppearance057.sample(state).enabled()?HeroNormalCoatMaterial057.textureOverlay(state)
         :NeutralAppearance056.sample(state).enabled()?NeutralCoatMaterial056.textureOverlay(state)
         :HeroRunAppearance052.sample(state).enabled()?HeroRunCoatMaterial055.textureOverlay(state)
         :ResourceLocation.fromNamespaceAndPath("chao_garden","textures/entity/chao/"+ChaoRenderer.textureKey(state)+".png");

@@ -1,0 +1,22 @@
+{
+  "jar": "chao_garden-0.25.59.jar",
+  "sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+  "entries": 9001,
+  "unique_names_and_crc_valid": true,
+  "required_runtime_entries": [
+    "com/chaogarden/client/OfficialChaoRig.class",
+    "com/chaogarden/client/ChaoMeshAsset.class",
+    "com/chaogarden/core/NeutralSwimMorphology059.class",
+    "com/chaogarden/client/NeutralSwimAppearance059.class",
+    "com/chaogarden/client/NeutralSwimCoatMaterial059.class",
+    "com/chaogarden/client/NeutralSwimRegionPaint059.class",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+    "assets/chao_garden/neutral_swim059.json"
+  ],
+  "preserved_parent_entries": [
+    "assets/chao_garden/models/entity/gameplay/chao_baby.json",
+    "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+    "assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json"
+  ]
+}

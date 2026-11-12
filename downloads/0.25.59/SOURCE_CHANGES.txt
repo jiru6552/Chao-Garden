@@ -1,0 +1,39 @@
+Chao Garden 0.25.59 cumulative source overlay onto the complete 0.25.43 source.
+
+Extract at the full project root, review SOURCE_DELETIONS.txt, then run python3 apply-source-deletions.py /path/to/project --verify-only. Run without --verify-only after review. Modified source is refused; Minecraft saves are not touched.
+
+The download branch contains the complete source tree. Java 21, NeoForge 1.21.1, external Lionfish API 3.1; matching client/server 0.25.59.
+
+Changed since .58:
+CHANGELOG.md
+MECHANICS.md
+README.md
+TESTING.md
+build.gradle
+docs/NEUTRAL_SWIM_02559.md
+gradle.properties
+scripts/generate_neutral_swim_morph_02559.py
+scripts/validate_neutral_swim_morph_02559.py
+src/lionfishTest/java/com/chaogarden/client/NeutralSwimMaterialTest059.java
+src/lionfishTest/java/com/chaogarden/client/NeutralSwimMorphRigTest059.java
+src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java
+src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java
+src/lionfishTest/java/com/chaogarden/client/TriangleTransitionRigTest.java
+src/lionfishTest/java/com/chaogarden/client/TrumpetTransitionRigTest.java
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java
+src/main/java/com/chaogarden/client/ChaoModel.java
+src/main/java/com/chaogarden/client/ChaoOverlayLayer.java
+src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java
+src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java
+src/main/java/com/chaogarden/client/NeutralSwimRegionPaint059.java
+src/main/java/com/chaogarden/client/NeutralSwimVisualSmoke059.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/core/ChaoState.java
+src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java
+src/main/java/com/chaogarden/test/NeutralSwimMorphologyGameTests059.java
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json
+src/main/resources/assets/chao_garden/neutral_swim059.json
+src/test/java/com/chaogarden/core/MechanicsTestSuite.java
+src/test/java/com/chaogarden/core/NeutralSwimMorphology059Test.java

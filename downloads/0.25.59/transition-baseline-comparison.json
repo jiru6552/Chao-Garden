@@ -1,0 +1,25 @@
+{
+  "initial_broad_failure": "Two new asset-lookup NPE harness failures, fixed by sampling the actual rig mesh; no old result file accepted as current",
+  "fresh_current": {
+    "triangle": {
+      "current_sha256": "bc84b23d6476a22f76324a2c7abf310a4a0b2b3e41a64237859972db57c98c80",
+      "delivered058_result_sha256": "99bce5827d20d9d3aba51fef07728eb609dda4bc14e2c0534e903aacba50b6f8",
+      "same_as_delivered058_result": false,
+      "header": "Triangle transition samples=267696 failures=0 minHandHeadPixels=0.2046349",
+      "samples": 267696,
+      "failures": 0,
+      "minimum_pixels": 0.2046349,
+      "actual_source_log": "swim059-focused.log"
+    },
+    "trumpet": {
+      "current_sha256": "8c4435dff9f168f84eb953a8846c11cb38108fd7623b6c77b35b8d78eb22e93f",
+      "delivered058_result_sha256": "b64266310e866db7a3628192f974bcd9abf1eabfd4b36b797de53dfc37fa0bfa",
+      "same_as_delivered058_result": false,
+      "header": "Trumpet transition samples=267696 failures=0 minHandHeadPixels=0.20083904",
+      "samples": 267696,
+      "failures": 0,
+      "minimum_pixels": 0.20083904,
+      "actual_source_log": "swim059-focused.log"
+    }
+  }
+}

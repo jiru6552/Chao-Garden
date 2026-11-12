@@ -1,0 +1,23 @@
+{
+  "timestamp_utc": "2026-11-12T22:04:36.625167+00:00",
+  "scope": "Read-only source/actual root log audit; no build/game/test executed by auditor",
+  "source": "src/main/java/com/chaogarden/client/OfficialChaoRig.java",
+  "current_sha256": "64d58ff6201d7010003db5c03f53d2c23cb77de407eb00e12eb8bbdd0c329a5c",
+  "new_condition_exact_old_condition_with_scoped_prefix": true,
+  "old_condition": "state.immortal||\"tails\".equals(state.character)||state.adult&&\"normal\".equals(state.character)&&state.align<=-.5f&&state.primaryType==ChaoState.POWER_TYPE",
+  "new_condition": "neutralSwim.enabled()||state.immortal||\"tails\".equals(state.character)||state.adult&&\"normal\".equals(state.character)&&state.align<=-.5f&&state.primaryType==ChaoState.POWER_TYPE",
+  "existing_clearance_guard_body_identical_to_058": true,
+  "power_spread_recedes_independently": true,
+  "production_snapshot_changes_since_prior_audit": [
+    "src/main/java/com/chaogarden/client/OfficialChaoRig.java",
+    "docs/NEUTRAL_SWIM_02559.md"
+  ],
+  "actual_root_rerun_log": "/workspace/.setup/swim059-transitions-fixed-headguard.log",
+  "actual_log_sha256": "70be19bd434c5ac77733bd78beec4421964e2beba2f6edc2a2bddb4c167f0f70",
+  "literal_observed_outcomes": [
+    "Triangle transition samples=267696 failures=0 minHandHeadPixels=0.2046349",
+    "Trumpet transition samples=267696 failures=0 minHandHeadPixels=0.20083904",
+    "BUILD SUCCESSFUL in 33s"
+  ],
+  "pending": "New explicit eighteen-state regression is still being authored by tests059; this record does not claim it completed."
+}

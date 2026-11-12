@@ -1,0 +1,168 @@
+{
+  "timestamp_utc": "2026-11-12T21:38:11.200017+00:00",
+  "scope": "Read-only actual disk content vs delivered .58 tree; treats files untracked by ordinary .43 HEAD as existing source when present in .58",
+  "parent": "c724036321655fbdd7ee9b3f058d09367699b05e",
+  "changed": [
+    "CHANGELOG.md",
+    "MECHANICS.md",
+    "README.md",
+    "TESTING.md",
+    "build.gradle",
+    "gradle.properties",
+    "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java",
+    "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java",
+    "src/main/java/com/chaogarden/client/ChaoInspectionScreen.java",
+    "src/main/java/com/chaogarden/client/ChaoMeshAsset.java",
+    "src/main/java/com/chaogarden/client/ChaoModel.java",
+    "src/main/java/com/chaogarden/client/ChaoOverlayLayer.java",
+    "src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java",
+    "src/main/java/com/chaogarden/client/OfficialChaoRig.java",
+    "src/main/java/com/chaogarden/core/ChaoState.java",
+    "src/test/java/com/chaogarden/core/MechanicsTestSuite.java"
+  ],
+  "missing": [],
+  "new": [
+    "docs/NEUTRAL_SWIM_02559.md",
+    "scripts/generate_neutral_swim_morph_02559.py",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralSwimMaterialTest059.java",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralSwimMorphRigTest059.java",
+    "src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java",
+    "src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java",
+    "src/main/java/com/chaogarden/client/NeutralSwimRegionPaint059.java",
+    "src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java",
+    "src/main/java/com/chaogarden/test/NeutralSwimMorphologyGameTests059.java",
+    "src/test/java/com/chaogarden/core/NeutralSwimMorphology059Test.java"
+  ],
+  "files": {
+    "CHANGELOG.md": {
+      "sha256": "fc58215aed0034ad678f2e0545e22fac380d7411b0d79a386060bc79d0e7674f",
+      "bytes": 39427,
+      "parent_blob": "133c403fc4a00259048343714b5d95040db85745"
+    },
+    "MECHANICS.md": {
+      "sha256": "51102e3bfaeed7063c59baaf03cbd392665b6cd85327dea1354cf2248d43a0cb",
+      "bytes": 54902,
+      "parent_blob": "7ce864aa1752246eee4607c5dc63249fdfa1aeb7"
+    },
+    "README.md": {
+      "sha256": "b47a56050d4f8cdbaf52f5c6e36082e4226b0279cfa46a3ca81540b6d4512605",
+      "bytes": 31681,
+      "parent_blob": "406202c70e0e5784e4b266c3accd45c2f32e0010"
+    },
+    "TESTING.md": {
+      "sha256": "1a2b22f2534c3ef6370ca29e8db481ba671db8bb1b8d0698d671a17578780973",
+      "bytes": 15750,
+      "parent_blob": "7f9256aad91b5998092e534141c8697df94fa63a"
+    },
+    "build.gradle": {
+      "sha256": "9d7a66adba2bacf7ab7f034a65bb858b5e6ebe90130074ad65255172e1dbe5e1",
+      "bytes": 46163,
+      "parent_blob": "0e9a67f84b66c1928ba5b35aa478a44652626708"
+    },
+    "gradle.properties": {
+      "sha256": "52b99682170bc9144fedccc628d71dbb406589897e018773b12c77804ca02f65",
+      "bytes": 2000,
+      "parent_blob": "63a4eb8f223acb8993f5eb2e978780a86c3fa54f"
+    },
+    "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java": {
+      "sha256": "c370b26df16a559a9cf50d6279d77d1a68b3156ea77b76a98c567492fc054ce0",
+      "bytes": 9161,
+      "parent_blob": "71797dc5f7742d849ff05784bddd657172fa1b19"
+    },
+    "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java": {
+      "sha256": "43ae125e3d1a841d5d724e7290656b279b80cfb9ba716bc4baa714c46e17b82b",
+      "bytes": 9520,
+      "parent_blob": "1ba6c83834dfba6a3f8bda5473e9ceb83777bdea"
+    },
+    "src/main/java/com/chaogarden/client/ChaoInspectionScreen.java": {
+      "sha256": "33b8efe2637cacf10507b5ed30e26d1112aac7e04d69bbbecee0c785be3fbde0",
+      "bytes": 60044,
+      "parent_blob": "eecc1b64b0c490b139fcc5341e1dd2c780ad58a9"
+    },
+    "src/main/java/com/chaogarden/client/ChaoMeshAsset.java": {
+      "sha256": "665e5f317bdcb1bcfa34baddfb482d96f2959d2f7fdad1da4ee3d76c81686219",
+      "bytes": 51141,
+      "parent_blob": "bd44cc568e7e4687af41a2df610f179f4fd94f3d"
+    },
+    "src/main/java/com/chaogarden/client/ChaoModel.java": {
+      "sha256": "e25c1cb14748fba633b794efed5c22d80ffa7f153fe6acb51d7fea55139ae1a9",
+      "bytes": 30334,
+      "parent_blob": "92826d87404e04589d4083f8a796a1ddc24b5b77"
+    },
+    "src/main/java/com/chaogarden/client/ChaoOverlayLayer.java": {
+      "sha256": "f6c5ded5a4604134419b8a5003f6f56eced923bbf8e22c8625f179530ce88523",
+      "bytes": 10374,
+      "parent_blob": "13086dc78efa664bb25d4c9abd89bbf3d34031f5"
+    },
+    "src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java": {
+      "sha256": "f08de5afaeb266ff86764141be2a64dda09c23c1ba371f14fc40e17f574c6a8b",
+      "bytes": 8953,
+      "parent_blob": "01d3c7aaa03ac4a7c6036ae9c937c4c495b71d38"
+    },
+    "src/main/java/com/chaogarden/client/OfficialChaoRig.java": {
+      "sha256": "88a815eed23d41d762beb00a03d64fc2d2c24785558e239caa940e177fe95de1",
+      "bytes": 42579,
+      "parent_blob": "ae084cb8f370c82aa1d37b82a3411b9d05099678"
+    },
+    "src/main/java/com/chaogarden/core/ChaoState.java": {
+      "sha256": "f99c11349e9d969dd49e8a693639149bb15178cb8658dcc64c9a628a8ef8936d",
+      "bytes": 68310,
+      "parent_blob": "270ecccf2ced9cf565f24a530f933119743b9219"
+    },
+    "src/test/java/com/chaogarden/core/MechanicsTestSuite.java": {
+      "sha256": "b2befa8db3b13d317fd91d1666eb41adf080f6939eb32c9f80ae816b1f42e885",
+      "bytes": 2514,
+      "parent_blob": "3b8236fd117e6cb5644e986dff639ef154162753"
+    },
+    "docs/NEUTRAL_SWIM_02559.md": {
+      "sha256": "757f586b1663b48d0e3cba8ca30d1cb1594cb09e4f167a36e54262e43d70330c",
+      "bytes": 6171,
+      "new": true
+    },
+    "scripts/generate_neutral_swim_morph_02559.py": {
+      "sha256": "55f9845702b7768112f4ef21e6290e1e544f135e2c237238e19851e6170ae849",
+      "bytes": 15156,
+      "new": true
+    },
+    "src/lionfishTest/java/com/chaogarden/client/NeutralSwimMaterialTest059.java": {
+      "sha256": "58824586051036a351a0fda4209582d957e34ebff494b3a8dcde441f2570faa2",
+      "bytes": 11009,
+      "new": true
+    },
+    "src/lionfishTest/java/com/chaogarden/client/NeutralSwimMorphRigTest059.java": {
+      "sha256": "b2414d4e1df7b0acd974bfa14ae5b0c981d5ef01ee0687119a81efc9a8ab8e0c",
+      "bytes": 33380,
+      "new": true
+    },
+    "src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java": {
+      "sha256": "b045be175b451c0a2f05f86c98ccef5eec4367f5405654f5d829e8d7c9d4cbe2",
+      "bytes": 2361,
+      "new": true
+    },
+    "src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java": {
+      "sha256": "7c59a101cbaa2a762d29a56268492f8ef39f4dfcb1776fd5fa2937db0bb047ed",
+      "bytes": 4625,
+      "new": true
+    },
+    "src/main/java/com/chaogarden/client/NeutralSwimRegionPaint059.java": {
+      "sha256": "22d5ca37f8b15b555150a2a391426b4eac9abcc28340ab63af0f1b10f0704b1b",
+      "bytes": 8061,
+      "new": true
+    },
+    "src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java": {
+      "sha256": "c16f119a7ec68a62603550838287755e50beb03c4b35aab6b3e6cedcacea8ea6",
+      "bytes": 2757,
+      "new": true
+    },
+    "src/main/java/com/chaogarden/test/NeutralSwimMorphologyGameTests059.java": {
+      "sha256": "44d320fb870d029218605a33d75281c2044bd26bfc8a8b26e3d358cf805173dd",
+      "bytes": 25174,
+      "new": true
+    },
+    "src/test/java/com/chaogarden/core/NeutralSwimMorphology059Test.java": {
+      "sha256": "5359d0d35b45c3076b60ebee3d409c71bb35bab5a4de5560dfa926730039c1a1",
+      "bytes": 19742,
+      "new": true
+    }
+  }
+}

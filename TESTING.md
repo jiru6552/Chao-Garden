@@ -1,4 +1,12 @@
-Current focused update: [0.25.58 Neutral/Hero refinement verification](docs/MORPH_REFINEMENT_02558.md). Existing task/resource identifiers `056`/`057` are retained for these refined families. Use Java 21 and `--no-configuration-cache` for the existing resource-fixture task:
+Current focused update: [0.25.59 Neutral/Swim-first verification](docs/NEUTRAL_SWIM_02559.md). Use Java 21 and a private test world:
+
+```sh
+python3 scripts/validate_neutral_swim_morph_02559.py
+./gradlew --no-configuration-cache coreTest neutralSwimMorphRigTest059 neutralSwimMaterialTest059 heroNormalMorphRigTest057 heroNormalMaterialTest057 neutralMorphRigTest056 neutralMaterialTest056 blockyRunMorphRigTest055 heroRunMaterialTest055 pianoRigTest organRigTest
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56,chao_heronormal57,chao_swim59 -PchaoGameTestDir=/path/to/private/test-world
+```
+
+Previous focused update: [0.25.58 Neutral/Hero refinement verification](docs/MORPH_REFINEMENT_02558.md). Existing task/resource identifiers `056`/`057` are retained for these families. Use Java 21 and `--no-configuration-cache` for the existing resource-fixture task:
 
 ```sh
 ./gradlew --no-configuration-cache coreTest heroNormalMorphRigTest057 heroNormalMaterialTest057 neutralMorphRigTest056 neutralMaterialTest056 blockyRunMorphRigTest055 heroRunMaterialTest055 pianoRigTest organRigTest

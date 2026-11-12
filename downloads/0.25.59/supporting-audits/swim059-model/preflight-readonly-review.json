@@ -1,0 +1,85 @@
+{
+  "reviewer": "model059",
+  "scope": "Read-only review of actual Minecraft preflight originals, not projection images. No production changes.",
+  "source_count": 16,
+  "sources": [
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-01-neutral_swim_normal_age100-left-t000-f0039.png",
+      "sha256": "202a19ae28259d5ddc66b260ceae2f7e4217bf89b30af9e48a30ea13753d5eb7"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-01-neutral_swim_normal_age100-back-t000-f0085.png",
+      "sha256": "79237cca8a20df9696590f2ca15b069709a3e3e93d3cc035448c821f1ac79a99"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-02-neutral_swim_run_age100-left-t000-f0039.png",
+      "sha256": "6e557c05fc59b2465d87d6aa5d270bfbdc3f2bb6b974737d3d45cdca2ea561b3"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-02-neutral_swim_run_age100-back-t000-f0085.png",
+      "sha256": "2a43d0dff5b839ca8a439f0f507e73c3f0c9e4e577e1cd763b3a3a128d6a6fa5"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-04-neutral_swim_swim_age100-front-t000-f0016.png",
+      "sha256": "1710b51700f30d5032f0ee0e47d15e921efb5e7f64838cb23ef17e6fd020676c"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-04-neutral_swim_swim_age100-left-t000-f0039.png",
+      "sha256": "0adc47b3aa62bc9e4e6792c9129e931c62ffca056ff5427450a8da2f07e78c14"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-04-neutral_swim_swim_age100-back-t000-f0085.png",
+      "sha256": "7fbd254344950d2f719e2f86c74016aab8069b5b035292b8957937db7a9acdde"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-front-t012-f0029.png",
+      "sha256": "43e2127d5db756f3586853a893fd8bc2e9f13a84f7a7b532fbd629cb7a89e819"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-front-t036-f0065.png",
+      "sha256": "bbbc3b2c9d5d8ec453035e09f81511c9809bb035065080cf75045aefaea51a8c"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-front-t048-f0079.png",
+      "sha256": "742ec4dc0768dd0bde32e8fee37a1e744993ef1b0edc6d9d55543d97c5d40260"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-left-t072-f0115.png",
+      "sha256": "eba7492e3e8c02afb25dacdc3b75748e0aef26c6e751f8beb8d1811b0b902501"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-left-t096-f0150.png",
+      "sha256": "b6216d1ccf365c0664c1b1b2c749c731972cde64e890e0b9a5b6acaa5637b8cd"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-left-t108-f0168.png",
+      "sha256": "76930fece903c7ceebd3dd523a9d2e4feb48d1ad9f5320a1dd675456c8f8a42f"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-back-t132-f0201.png",
+      "sha256": "260df4dc5cf5b702947d3a45464a6ea58e3cef105b90ed8d664cc47f1e4fab62"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-back-t156-f0236.png",
+      "sha256": "31f0192db59db4cd39efbdd188c49d4389f27da58cbb35dceb4037dfc648e9de"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-preflight/screenshots/swim059-live-14-neutral_swim_power_swim_book-back-t180-f0272.png",
+      "sha256": "9edef1ad29899f1c1ca3f9abd17469973c049c2d881b6dc7f3d5a33d43e0e2fe"
+    }
+  ],
+  "model_sha256": "4ffce905ab28a9c5298ea146cbf00a447b511756ec93f1dbff132a31ca3bb70c",
+  "observations": {
+    "balanced_case01": "Rear cap clearly slopes down/back, short temple fins remain attached outside original head. Back view shows symmetric fins and intact blue wings and tail, with visible separation between head/cap and body appendages. No exposed internal air gap observed.",
+    "run_case02": "Long posterior cap points up/back as intended; paired short fins tilt upward/outward from temple. Back view shows symmetric raised fins, unchanged box head, and visible wing/tail attachments. No visible cap/orb/wing clipping in sampled views.",
+    "pure_swim_case04": "Front shows symmetric hanging fins outside eyes and original rectangular head/face. Side shows long descending rear cap and pale fin faces, with connected two-section joints. Fin and hood remain behind/above compact hand; back shows clear blue wing/tail attachments and symmetric rear silhouette. No eye, hand, foot, orb or wing penetration observed in these sampled frames.",
+    "book_case14": "Nine selected original frames span front t12/t36/t48, left t72/t96/t108 and back t132/t156/t180. Original open eyes and happy closed expression render; book is held across palms, page-turn visible, both hands remain compact/coherent. The medium hanging fins are above/behind the forearms; rear cap remains clear of wing/tail, no cap-arm or fin-book clipping observed. Head tilts follow shared rig.",
+    "construction_style": "Blocky original head box retained; three stepped cap blocks and two fin blocks per side produce a deliberately simple Minecraft interpretation. Broad posterior rectangular hem remains the documented silhouette approximation."
+  },
+  "qualifications": [
+    "Inspection covers these16 still frames, not all195preflight captures or a continuous motion recording.",
+    "Small lit seams at cap shoulder and between fin sections are visible as block intersections; no measured geometry disconnection or exposed interior found. No temporal z-fighting claim based on stills.",
+    "Other forms, colors/shiny, accessories and final65-case cohort were not reviewed by this agent in this subtask. Root and other agents own them."
+  ],
+  "result": "No concrete production geometry bug identified. Keep frozen geometry; no source changes requested."
+}

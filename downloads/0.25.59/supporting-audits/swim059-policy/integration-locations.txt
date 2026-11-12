@@ -1,0 +1,30 @@
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:4:import com.chaogarden.core.NeutralSwimMorphology059;
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:11:final class NeutralSwimAppearance059 {
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:14:  private static final Map<ChaoState,NeutralSwimMorphology059.Sample> FRAME=new WeakHashMap<>();
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:16:    NeutralSwimMorphology059.Sample from,target,current;
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:19:  private NeutralSwimAppearance059(){}
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:20:  static NeutralSwimMorphology059.Sample sample(ChaoState state){return FRAME.getOrDefault(state,NeutralSwimMorphology059.sample(state));}
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:21:  static NeutralSwimMorphology059.Sample prepare(UUID id,ChaoState state,float age) {
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:22:    var target=NeutralSwimMorphology059.sample(state);var blend=BLENDS.get(id);
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:34:  private static boolean near(NeutralSwimMorphology059.Sample a,NeutralSwimMorphology059.Sample b) {
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:38:  private static NeutralSwimMorphology059.Sample between(NeutralSwimMorphology059.Sample a,NeutralSwimMorphology059.Sample b,float t) {
+src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java:40:    return new NeutralSwimMorphology059.Sample(b.enabled(),lerp(a.maturity(),b.maturity(),w),
+src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java:7:public final class NeutralSwimMorphology059 {
+src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java:10:  private NeutralSwimMorphology059() {}
+src/main/java/com/chaogarden/client/ChaoModel.java:211:    NeutralSwimAppearance059.prepare(entity.getUUID(),state,age);
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java:209:                        :mesh.has("neutral_swim_box_059")?BlockyRunBox055.parse(mesh.getAsJsonObject("neutral_swim_box_059"),vertices,10):null,
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java:239:      result.neutralSwim059=data.has("neutral_swim_path_059");
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java:468:  void neutralSwimDevelopment(com.chaogarden.core.NeutralSwimMorphology059.Sample sample) {
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java:469:    float[] next=com.chaogarden.core.NeutralSwimMorphology059.weights(sample);
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java:473:  boolean neutralSwimPrototype059(){return neutralSwim059;}
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java:9:import com.chaogarden.core.NeutralSwimMorphology059;
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java:426:      var neutralSwim=NeutralSwimMorphology059.sample(s);
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java:431:        lines.add(Component.literal("Provisional full axis: "+Math.round(NeutralSwimMorphology059.SPECIALIZATION_PROGRESS)+" net training progress; earlier baby training counts."));
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java:531:      var neutralSwim=NeutralSwimMorphology059.sample(s);
+src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java:35:    var sample=NeutralSwimAppearance059.sample(state);
+src/main/java/com/chaogarden/core/ChaoState.java:429:    var neutralSwim=NeutralSwimMorphology059.sample(this);
+src/main/java/com/chaogarden/client/OfficialChaoRig.java:89:    if(NeutralSwimAppearance059.sample(state).enabled())return ChaoPaletteMaterial.texture(NeutralSwimCoatMaterial059.texture(state),state,"baby");
+src/main/java/com/chaogarden/client/OfficialChaoRig.java:139:    return current.mesh.heroRunPrototype()||current.mesh.neutralPrototype056()||current.mesh.heroNormalPrototype057()||current.mesh.neutralSwimPrototype059()
+src/main/java/com/chaogarden/client/OfficialChaoRig.java:594:    neutralSwimSelection059=NeutralSwimAppearance059.sample(state).enabled();
+src/main/java/com/chaogarden/client/OfficialChaoRig.java:601:    var neutralSwim=NeutralSwimAppearance059.sample(state);
+src/main/java/com/chaogarden/client/OfficialChaoRig.java:618:    if(current.mesh.neutralSwimPrototype059())current.mesh.neutralSwimDevelopment(neutralSwim);

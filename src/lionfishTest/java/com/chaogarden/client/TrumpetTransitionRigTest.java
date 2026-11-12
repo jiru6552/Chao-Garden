@@ -14,7 +14,9 @@ public final class TrumpetTransitionRigTest {
    var state=com.chaogarden.test.ToyVariantCases02522.all().stream().filter(v->v.name().equals(variant)).findFirst().orElseThrow().state();String model=OfficialChaoRig.geometryKey(state);var id=new UUID(1234,5678);
    for(int q=-40;q<=640;q++){float t=q/4f;if(t>=0&&t<seenAt)continue;
     rig.prepareDevelopment(model,state);rig.animateGameplay(model,id,t<0?OfficialChaoRig.Motion.WALK:OfficialChaoRig.Motion.PLAY,ageBase+t,11+t*.17f,t<0?.12f:0,0,0,yaw,pitch,false,false);rig.development(state);
-    var mesh=assets.get("gameplay/chao_"+model);var poses=rig.poses();var handMesh=mesh;
+    // Logical first-type keys can select a dedicated current morphology mesh.
+    // Measure the mesh actually emitted by the rig; preserve Chaos glass hands below.
+    var mesh=rig.sampledMesh();var poses=rig.poses();var handMesh=mesh;
     if(model.startsWith("chaos_")){String glass="gameplay/chao_"+model+"_glass";handMesh=assets.computeIfAbsent(glass,k->{try{return ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(root.resolve("models/entity/"+k+".json"))).getAsJsonObject());}catch(Exception e){throw new RuntimeException(e);}});}
     var r=handMesh.visiblePalm(poses,false);var l=handMesh.visiblePalm(poses,true);float w=com.chaogarden.toys.TrumpetPlayRules.presence(t);
     rig.finishGameplayFrame(id,t<0?0:10240,ageBase+t);

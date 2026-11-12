@@ -1,0 +1,126 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateModMetadata UP-TO-DATE
+
+> Task :processResources
+Chao dimension fixture: excluded from normal runtime
+Chao dimension fixture output: /workspace/Chao-Garden/build/resources/main/data/minecraft/worldgen/world_preset/flat.json; exists=false; resource destination=/workspace/Chao-Garden/build/resources/main
+
+> Task :classes
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :coreTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Hero Run morphology052: 1128 checks passed; four-stat ties, simultaneous drives, reversible training, age-conditioned baby growth, independent maturity and saved identity
+Analyzer alignment053: 785 checks passed; permission inputs, fixed-point bounds, read-only adults and exact persistence
+ChaoState: 171480 checks passed
+Analyzer editing: rank cycle, four modifiers, five hit rows, endpoints, caps, invalid requests and round trip passed
+Analyzer alignment bar053: 1835 geometry/input checks passed
+Analyzer maturity bar056: 2824 geometry/input checks passed
+Creative editing056: 361 checks passed
+Creative edit rules056: 361 checks passed
+Neutral morphology056: 1742 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Neutral morphology056: 1742 checks passed
+Hero Normal morphology057: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Hero/Normal morphology057: 1957 checks passed
+Neutral Swim morphology059: 1502 checks passed; six combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Neutral/Swim morphology059: 1502 checks passed
+Drive rules: arithmetic, all 24 permutations, caps, hidden losses, X/rank limits, Perfect no-op, 50,000 persisted rolls; endpoints=263/242, rank=1027, Solid max=2535, middle/edge=18065/2006
+Toy interaction rules: 2491 checks passed
+Egg distribution policy: 243 checks passed
+Training supplies: 248 checks passed
+Wardrobe choices: 6644 checks passed
+Baby animation timing: 26057 checks passed
+Portal geometry: 1233 checks passed
+Lobby geometry0252: 18509 checks passed
+Lobby perimeter approaches0256: 40670 checks passed
+Garden gate geometry0256: 48346 checks passed
+Area music rules0257: 136 checks passed
+School singing rules0258: 2472 checks passed
+Staff face timing0251: 177195 checks passed
+Black Market stock: 922385 checks passed
+Kindergarten buyback: 220052 checks passed
+Activity rules: 101313 checks passed
+Companion rules: 2103 checks passed
+SA2 fruit effects: 4765 checks passed
+Locomotion rules: 1209 checks passed
+
+> Task :compileLionfishTestJava
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses
+
+> Task :neutralSwimMorphRigTest059
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+NeutralSwim059: 18820556 checks; 2471 emitted age/axis/edit frames; 10338 closed rectangular-box samples; 378 production Lionfish motion frames; 4536 separate attachment matrices; 696 coat/shape cases; 5292 actual orb/feature separation checks; 5292 connected feature samples; 1416 emitted closed-wing samples; 1416 original-edge hinge samples; 5 production quiet-book surface frames; 18 actual baseline walking-head guard comparisons; 2900016 actual same-facing head/feature plane-pair checks; 22722 actual WALK head/torso SAT continuity frames; maximum hinge drift=4.249712E-6 model pixels; maximum axis step=0.077871926 model pixels; maximum20tick edit step=0.23891748; maximum1pct maturity step=0.054602757; seconds=5.685654215. Fixed original head/face/orb/59-joint rig; six distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.
+
+> Task :neutralSwimMaterialTest059
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+NeutralSwim059 material: 41951966 checks; 172 real canonical coats; 25350048 preserved alpha pixels; 198144 exact facial pixels; 297216 independent orb samples; 12384 four-swatch samples; maximum 1% RGB step=5. Six mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic head/fin regions, .59-only palette protection passed. Pixel checks are not in-game visual verification.
+
+> Task :heroNormalMorphRigTest057
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+HeroNormal057: 10717767 checks; 1534 emitted age/axis/edit frames; 11872 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 23440 actual tilted-halo/head-feature separation checks; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; 4258 emitted root/cap depth-plane pairs; 5 production quiet-book surface frames; minimum tip face gap=0.039999485 model pixels; maximum hinge drift=3.819874E-6 model pixels; maximum axis step=0.036648598 model pixels; maximum20tick edit step=0.17294578; seconds=5.791082909. Fixed original head/face/rig; two-section paired features, differentiated closed wings and four-bar halo; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.
+
+> Task :heroNormalMaterialTest057
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+HeroNormal057 material: 73977182 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 halo samples; 6873120 exact body/head pixels; 92880 regional wing samples; 23392 actual wing-edge alpha samples; maximum1% color step=4. Nine independently referenced color corners, white/inherited lower stalks and wing roots, distinct upper caps, regional wing span, cutout-following thickness, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.
+
+> Task :neutralMorphRigTest056
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Neutral056: 8073541 checks; 1837 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.14285788 model pixels; maximum20tick edit step=0.22264875; maximum1pct maturity step=0.038228665; seconds=5.034820082. Fixed original head/face/marker/rig; rear/up Swim neck and short forward hook, forward/up Power shoulder with short back/up curl and stepped tapered Power+Swim apex; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.
+
+> Task :neutralMaterialTest056
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Neutral056/marker material: 68841869 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 Neutral orb samples; maximum1% color step=4. Nine endpoint combinations, fresh/mid/mature, inherited hues, exact original fresh pixels and canonical blue-to-pink Hero orb passed.
+
+> Task :blockyRunMorphRigTest055
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Blocky Run055: 22226455 checks; 2488 emitted development frames; 3840 closed rectangular box samples; 996 compact limb samples; 350 production Lionfish motion frames; 2520 separate attachment matrices; 696 coat/shape cases; max1% step=0.07039931 model pixels; max20-tick-edit step=0.24693298 model pixels; seconds=3.722487467. Original head/face/UVs and hat/eye/mouth anchors fixed; continuous rigid boxes; age/training reversal; current production selection; compatible axes; historical052 fingerprint passed. This is geometry/rig validation, not visual or multiplayer verification.
+
+> Task :heroRunMaterialTest055
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Hero Run055 material: 23615146 checks; 172 original coats; 12678120 preserved-alpha pixels; 99072 exact protected eye/expression pixels; maximum1% pixel change=4; shared pixel regions, fixed UVs, no baseline pop and compatible-axis accents passed.
+
+> Task :pianoRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Piano mesh fit: 189054 hand samples; 19926 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels
+
+> Task :organRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Organ mesh fit: 189054 hand samples; 4464 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels
+
+> Task :triangleTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Failure tick distribution {}
+Triangle transition samples=267696 failures=0 minHandHeadPixels=0.2046349
+
+
+> Task :trumpetTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Failure tick distribution {}
+Trumpet transition samples=267696 failures=0 minHandHeadPixels=0.20083904
+
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 28s
+19 actionable tasks: 15 executed, 4 up-to-date

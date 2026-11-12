@@ -1,0 +1,141 @@
+{
+  "status": "PERSONALLY REVIEWED: no whole-neck background gap observed in sampled actual balanced/Run walking profiles from the latest capture rerun",
+  "source_count": 14,
+  "jar_sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+  "scope": "Representative balanced/run actual walking side frames, not full in-motion certification; separate numeric/native audit owns22,722 samples",
+  "image_processing": "All same fixed crop570,380,900,700; original pixels padded5px vertically; no scale/warp/recolor",
+  "sources": [
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t083-f0135.png",
+      "sha256": "2268e61b5b6be8467af1b707f796647aa55e92fb2c56eef8f3392dcf0456db9f",
+      "canonical_log_sha256": "2268e61b5b6be8467af1b707f796647aa55e92fb2c56eef8f3392dcf0456db9f",
+      "case": 50,
+      "view": "left",
+      "native_tick": 83,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t095-f0153.png",
+      "sha256": "f7981edddf344af7d7e5497d27d8ea19d7a443cac0397c1363f16cf91562869e",
+      "canonical_log_sha256": "f7981edddf344af7d7e5497d27d8ea19d7a443cac0397c1363f16cf91562869e",
+      "case": 50,
+      "view": "left",
+      "native_tick": 95,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t107-f0171.png",
+      "sha256": "333cbc3c03edaaf2d8df6d2a6ba1197461479d8ef59a237c00b225420eace036",
+      "canonical_log_sha256": "333cbc3c03edaaf2d8df6d2a6ba1197461479d8ef59a237c00b225420eace036",
+      "case": 50,
+      "view": "left",
+      "native_tick": 107,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t119-f0188.png",
+      "sha256": "bbf39768c2243cd1a6f751207c7b3dd8104f16cc23e1542150b6a08f66d41025",
+      "canonical_log_sha256": "bbf39768c2243cd1a6f751207c7b3dd8104f16cc23e1542150b6a08f66d41025",
+      "case": 50,
+      "view": "left",
+      "native_tick": 119,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t131-f0206.png",
+      "sha256": "eda7c8544c19e4b991a225b53827e3877319c828e1717c83708371d1acf2db74",
+      "canonical_log_sha256": "eda7c8544c19e4b991a225b53827e3877319c828e1717c83708371d1acf2db74",
+      "case": 50,
+      "view": "left",
+      "native_tick": 131,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t143-f0224.png",
+      "sha256": "81d8fb859560ab0ed11d582aabbc6f07b2083823074ee323cebe4d0f504c8c0e",
+      "canonical_log_sha256": "81d8fb859560ab0ed11d582aabbc6f07b2083823074ee323cebe4d0f504c8c0e",
+      "case": 50,
+      "view": "left",
+      "native_tick": 143,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t155-f0242.png",
+      "sha256": "58b586a6fc9bb06fb2bfd06267b003ffe5074834a398e3a8526b677c92a39b37",
+      "canonical_log_sha256": "58b586a6fc9bb06fb2bfd06267b003ffe5074834a398e3a8526b677c92a39b37",
+      "case": 50,
+      "view": "left",
+      "native_tick": 155,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-51-neutral_swim_run_running-left-t083-f0136.png",
+      "sha256": "1995ee674b0b3421e05313dd7ec15f69eb0ae0c336abd21a436203006d0bee3b",
+      "canonical_log_sha256": "1995ee674b0b3421e05313dd7ec15f69eb0ae0c336abd21a436203006d0bee3b",
+      "case": 51,
+      "view": "left",
+      "native_tick": 83,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-51-neutral_swim_run_running-left-t095-f0153.png",
+      "sha256": "84491ce273a0680303cdeaaf28f38d947817fe9851de9e0453dfa0f1636c1c46",
+      "canonical_log_sha256": "84491ce273a0680303cdeaaf28f38d947817fe9851de9e0453dfa0f1636c1c46",
+      "case": 51,
+      "view": "left",
+      "native_tick": 95,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-51-neutral_swim_run_running-left-t107-f0171.png",
+      "sha256": "2b4eee18b6b3984685703d939f48762fd442b0e5812097a8257b1df6d3f3f913",
+      "canonical_log_sha256": "2b4eee18b6b3984685703d939f48762fd442b0e5812097a8257b1df6d3f3f913",
+      "case": 51,
+      "view": "left",
+      "native_tick": 107,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-51-neutral_swim_run_running-left-t119-f0189.png",
+      "sha256": "73bde5134068148a68ee3582b252d2d293ba57cb6620a93ee466d2672b374133",
+      "canonical_log_sha256": "73bde5134068148a68ee3582b252d2d293ba57cb6620a93ee466d2672b374133",
+      "case": 51,
+      "view": "left",
+      "native_tick": 119,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-51-neutral_swim_run_running-left-t131-f0207.png",
+      "sha256": "9192d2905ca05465db3d3f2f3a1697190f263f82eeb13fce4e7d92657af976b8",
+      "canonical_log_sha256": "9192d2905ca05465db3d3f2f3a1697190f263f82eeb13fce4e7d92657af976b8",
+      "case": 51,
+      "view": "left",
+      "native_tick": 131,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-51-neutral_swim_run_running-left-t143-f0225.png",
+      "sha256": "4f68b1e136801c549f8b7f58b83199f5e1e22cfb37045e68654bc99f55c9e919",
+      "canonical_log_sha256": "4f68b1e136801c549f8b7f58b83199f5e1e22cfb37045e68654bc99f55c9e919",
+      "case": 51,
+      "view": "left",
+      "native_tick": 143,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-51-neutral_swim_run_running-left-t155-f0243.png",
+      "sha256": "0e33bcfe60514adcb8666fbfaa5742845c4bbcbadb6c2c31293219fd3adc0737",
+      "canonical_log_sha256": "0e33bcfe60514adcb8666fbfaa5742845c4bbcbadb6c2c31293219fd3adc0737",
+      "case": 51,
+      "view": "left",
+      "native_tick": 155,
+      "review_scope": "Private sampled actual native walking neck/head-torso connection; not complete animation review"
+    }
+  ],
+  "private_sheet": {
+    "path": "/workspace/.setup/swim059-final-reference-compare/private-neck-walking-spotcheck.png",
+    "sha256": "1d82684ac2846de4e15062a5fd5bd0ddc2b8a56214c770106bd90edaea094b99"
+  },
+  "personally_reviewed": true,
+  "limitations": "Sampled rendered stride/bob positions only; not complete motion/attachment certification or a replacement for dense numeric/native checks."
+}

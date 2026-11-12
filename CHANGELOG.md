@@ -1,3 +1,10 @@
+## 0.25.59 — Neutral Swim-first morphology foundation
+
+- Add fresh Neutral/Swim and six later forms: balanced, Run, Power, Swim, Swim+Run and Swim+Power, on the existing rigid-box sampler and shared animation rig.
+- Keep the original head box, facial geometry, locked first identity, inherited coats and shine; develop a separate broad crown, rear crest, paired side fins, wings and compact limbs.
+- Let Fly counter later Swim growth back to balanced Swim-first; retain independent maturity and reversible current-training influences without new save fields.
+- Document independently operated viewer references, runtime checks and first-pass approximations in [the family report](docs/NEUTRAL_SWIM_02559.md).
+
 ## 0.25.58 — Neutral and Hero morphology refinement
 
 - Correct the Neutral/Normal Swim tip's rising rear direction, broaden Power+Swim into a stepped pointed crown, and strengthen Power's swept-back crest without reshaping the head box.

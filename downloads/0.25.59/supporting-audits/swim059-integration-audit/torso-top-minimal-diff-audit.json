@@ -1,0 +1,291 @@
+{
+  "timestamp_utc": "2026-11-12T22:41:16.369209+00:00",
+  "scope": "Independent read-only recursive JSON audit against quarantined pre-torso runtime model; no generator/build/test/game run",
+  "old_path": "/workspace/.setup/swim059-before-torso-top/run059-runtime-frozen/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+  "old_sha256": "02e6397bea65460e49dfad2d683dfc8fd3b759fd83cc1e0bc73c7938d63f0cbe",
+  "new_path": "/workspace/Chao-Garden/src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+  "new_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+  "matches_root_model_expected_hash": true,
+  "changed_leaf_count": 24,
+  "all_changed_leaves": [
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/0/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/1/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/2/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/3/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/4/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/5/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/6/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/7/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/8/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/centers/9/1",
+      "before": -1.5,
+      "after": -1.725,
+      "delta": -0.2250000000000001
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/0/1",
+      "before": 4.0,
+      "after": 4.45,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/1/1",
+      "before": 4.06,
+      "after": 4.51,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/2/1",
+      "before": 4.06,
+      "after": 4.51,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/3/1",
+      "before": 4.16,
+      "after": 4.61,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/4/1",
+      "before": 4.06,
+      "after": 4.51,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/5/1",
+      "before": 4.06,
+      "after": 4.51,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/6/1",
+      "before": 4.16,
+      "after": 4.61,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/7/1",
+      "before": 4.06,
+      "after": 4.51,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/8/1",
+      "before": 4.06,
+      "after": 4.51,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/neutral_swim_box_059/sizes/9/1",
+      "before": 4.16,
+      "after": 4.61,
+      "delta": 0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/vertices/2/1",
+      "before": -3.5,
+      "after": -3.95,
+      "delta": -0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/vertices/3/1",
+      "before": -3.5,
+      "after": -3.95,
+      "delta": -0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/vertices/6/1",
+      "before": -3.5,
+      "after": -3.95,
+      "delta": -0.4500000000000002
+    },
+    {
+      "path": "/bones/2/meshes/0/vertices/7/1",
+      "before": -3.5,
+      "after": -3.95,
+      "delta": -0.4500000000000002
+    }
+  ],
+  "body_bone_index": 2,
+  "only_body_mesh_changes": true,
+  "centerY_minus_0225_count": 10,
+  "sizeY_plus_045_count": 10,
+  "reference_upperY_minus_045_count": 4,
+  "all_torso_bottoms_preserved": true,
+  "target_bottoms": [
+    {
+      "target": 0,
+      "old": 0.5,
+      "new": 0.5,
+      "difference": 0.0
+    },
+    {
+      "target": 1,
+      "old": 0.5299999999999998,
+      "new": 0.5299999999999998,
+      "difference": 0.0
+    },
+    {
+      "target": 2,
+      "old": 0.5299999999999998,
+      "new": 0.5299999999999998,
+      "difference": 0.0
+    },
+    {
+      "target": 3,
+      "old": 0.5800000000000001,
+      "new": 0.5800000000000001,
+      "difference": 0.0
+    },
+    {
+      "target": 4,
+      "old": 0.5299999999999998,
+      "new": 0.5299999999999998,
+      "difference": 0.0
+    },
+    {
+      "target": 5,
+      "old": 0.5299999999999998,
+      "new": 0.5299999999999998,
+      "difference": 0.0
+    },
+    {
+      "target": 6,
+      "old": 0.5800000000000001,
+      "new": 0.5800000000000001,
+      "difference": 0.0
+    },
+    {
+      "target": 7,
+      "old": 0.5299999999999998,
+      "new": 0.5299999999999998,
+      "difference": 0.0
+    },
+    {
+      "target": 8,
+      "old": 0.5299999999999998,
+      "new": 0.5299999999999998,
+      "difference": 0.0
+    },
+    {
+      "target": 9,
+      "old": 0.5800000000000001,
+      "new": 0.5800000000000001,
+      "difference": 0.0
+    }
+  ],
+  "all_torso_tops_extended_045": true,
+  "target_tops": [
+    {
+      "target": 0,
+      "old": -3.5,
+      "new": -3.95,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 1,
+      "old": -3.53,
+      "new": -3.98,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 2,
+      "old": -3.53,
+      "new": -3.98,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 3,
+      "old": -3.58,
+      "new": -4.03,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 4,
+      "old": -3.53,
+      "new": -3.98,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 5,
+      "old": -3.53,
+      "new": -3.98,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 6,
+      "old": -3.58,
+      "new": -4.03,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 7,
+      "old": -3.53,
+      "new": -3.98,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 8,
+      "old": -3.53,
+      "new": -3.98,
+      "delta": -0.4500000000000002
+    },
+    {
+      "target": 9,
+      "old": -3.58,
+      "new": -4.03,
+      "delta": -0.4500000000000002
+    }
+  ],
+  "all_nonbody_bones_identical": true,
+  "all_joint_parent_pivot_rotation_identical": true,
+  "body_uv_faces_other_metadata_unchanged": true,
+  "note": "Quarantined491e candidate images/movie/UI/comparison/runtime acceptance are superseded. Replacement tests, JAR, freeze, full client and visual re-review are required."
+}

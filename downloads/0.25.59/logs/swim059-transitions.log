@@ -1,0 +1,112 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateModMetadata UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileLionfishTestJava
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses
+
+> Task :triangleTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Exception in thread "main" java.lang.AssertionError: Triangle transition samples=267696 failures=10 minHandHeadPixels=-0.4170748
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.4170748
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.39684892
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.35683346
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.29753387
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.21920085
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.121941924
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.09585655
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.10117233
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.08634436
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.051402807
+
+	at com.chaogarden.client.TriangleTransitionRigTest.main(TriangleTransitionRigTest.java:34)
+Failure tick distribution {0=8, 1=2}
+Triangle transition samples=267696 failures=10 minHandHeadPixels=-0.4170748
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.4170748
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.39684892
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.35683346
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.29753387
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.21920085
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.121941924
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.09585655
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.10117233
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.08634436
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.051402807
+
+> Task :triangleTransitionRigTest FAILED
+
+> Task :trumpetTransitionRigTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Failure tick distribution {0=8, 1=2}
+Trumpet transition samples=267696 failures=10 minHandHeadPixels=-0.4170748
+Exception in thread "main" java.lang.AssertionError: Trumpet transition samples=267696 failures=10 minHandHeadPixels=-0.4170748
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.4170748
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.4170748
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.39046896
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.39046896
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.34092534
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.26960325
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.17764068
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.066278696
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.34092534
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.09585655
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.26960325
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.102356195
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.0 left=false gap=-0.17764068
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.08533275
+mixed_1_4 pitch=0.0 yaw=-12.0 age=300 seenAt=0 t=1.25 left=false gap=-0.066278696
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.045958042
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.0 left=false gap=-0.09585655
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.25 left=false gap=-0.102356195
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.5 left=false gap=-0.08533275
+mixed_1_4 pitch=25.0 yaw=12.0 age=300 seenAt=0 t=0.75 left=false gap=-0.045958042
+
+	at com.chaogarden.client.TrumpetTransitionRigTest.main(TrumpetTransitionRigTest.java:33)
+
+> Task :trumpetTransitionRigTest FAILED
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':triangleTransitionRigTest'.
+> Process 'command '/workspace/.tools/jdk-21.0.9+10/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':trumpetTransitionRigTest'.
+> Process 'command '/workspace/.tools/jdk-21.0.9+10/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 23s
+7 actionable tasks: 3 executed, 4 up-to-date

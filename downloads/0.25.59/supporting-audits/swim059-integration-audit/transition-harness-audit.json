@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-11-12T22:01:06.764212+00:00",
+  "scope": "Read-only source review; no transition test or build run by auditor",
+  "parent": "c724036321655fbdd7ee9b3f058d09367699b05e",
+  "harnesses": {
+    "src/lionfishTest/java/com/chaogarden/client/TriangleTransitionRigTest.java": {
+      "parent_sha256": "9573f9d3ff4c36319e2d6ad2ee7fab2f2fbc0c9b0c3e30c33f18c4d01b3734e7",
+      "current_sha256": "08f7f5f5619fbf5f50938b37c38e25703352e4d10a546944be84fef782cee23c",
+      "only_change_is_current_sampled_mesh_and_comment": true,
+      "old_lookup_occurrences": 1,
+      "new_lookup_occurrences": 1,
+      "sample_loops_and_thresholds_unchanged": true,
+      "chaos_glass_hand_override_unchanged": true
+    },
+    "src/lionfishTest/java/com/chaogarden/client/TrumpetTransitionRigTest.java": {
+      "parent_sha256": "ba282a3123c914f8cb625f40e79271ef7cff2d30d4e8d7e4afdcf252730420c7",
+      "current_sha256": "bf2d7416b88ddd14b5a1a8df8e75bbe5de1584423967c1230bb7193572a42be6",
+      "only_change_is_current_sampled_mesh_and_comment": true,
+      "old_lookup_occurrences": 1,
+      "new_lookup_occurrences": 1,
+      "sample_loops_and_thresholds_unchanged": true,
+      "chaos_glass_hand_override_unchanged": true
+    }
+  },
+  "conclusion": "Correctly measures actual rig-selected morphology instead of assuming logical first-type key identifies emitted mesh. Both loop matrices, clearance thresholds, fallback surface collision, result writing and special Chaos glass hands remain unchanged. This is a test harness correction, not a production animation/geometry fix. Fresh rerun output must be assessed independently; old result files/counts are baseline only."
+}

@@ -421,13 +421,14 @@ public final class ChaoState {
   /** Both adult influence axes can be expressed together; this is not a second cocoon. */
   public int[] secondaryTypes() {
     if (!adult || immortal) return new int[]{NORMAL};
-    // The Neutral and Hero Normal-first foundations read current training,
+    // The scoped Neutral/Hero first-type foundations read current training,
     // including reductions and absolute Creative edits. Labels use their
     // renderer's axes without rewriting older saved influence fields or paths.
     var neutral=NeutralMorphology056.sample(this);
     var heroNormal=HeroNormalMorphology057.sample(this);
-    float sfAxis=neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():swimFly;
-    float rpAxis=neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():runPower;
+    var neutralSwim=NeutralSwimMorphology059.sample(this);
+    float sfAxis=neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():swimFly;
+    float rpAxis=neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():runPower;
     int sf=Math.abs(sfAxis)>=.5f ? sfAxis<0 ? SWIM_TYPE : FLY_TYPE : NORMAL;
     int rp=Math.abs(rpAxis)>=.5f ? rpAxis<0 ? RUN_TYPE : POWER_TYPE : NORMAL;
     if(sf!=NORMAL && rp!=NORMAL)return new int[]{sf,rp};

@@ -1,0 +1,260 @@
+{
+  "status": "PASS within the explicitly reviewed visual scope. No production changes requested.",
+  "reviewer": "model059",
+  "candidate": "Fourth capture-only rerun, unchanged production after rear-plane and torso-top fixes. Earlier cohorts are quarantined.",
+  "jar_sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+  "model_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+  "capture_index": {
+    "path": "/workspace/.setup/swim059-final-model/capture-index.json",
+    "sha256": "7b8e27c5a6e4304ded04dfe6f5accd3ef5a9353b840888888c1dd8abe1e89565"
+  },
+  "reviewed_static_cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    61,
+    62,
+    63,
+    64
+  ],
+  "reviewed_angles": [
+    "front",
+    "left",
+    "right",
+    "back",
+    "above",
+    "below"
+  ],
+  "reviewed_main_originals": 240,
+  "additional_reviewed_originals": [
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-46-neutral_swim_swim_phoenix_glasses-left-t000-f0039.png",
+      "sha256": "16c96c2c3aa7c5840e7b13696104187aa70ec64c30d3eab59ad137da22e2d129"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-46-neutral_swim_swim_phoenix_glasses-above-t000-f0108.png",
+      "sha256": "41a4d77d14594268484912ebcdb6fbcab99547ec96936c461bb4d882a2a0038a"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-46-neutral_swim_swim_phoenix_glasses-back-t000-f0085.png",
+      "sha256": "972e6bf4985cb8c6566fb065e28eb389f55d985deb7384589eadef7eefdcf9bc"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-front-t011-f0028.png",
+      "sha256": "2d7373527394c8aaf50a02b7257c63fe5bc3487d6ce2e9417e943e750a19a5bd"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-front-t047-f0081.png",
+      "sha256": "b21f038abb63c5d5b655553b71ecbbf7ddccea6c606bd6c0e9fb001fba666c35"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-front-t071-f0117.png",
+      "sha256": "d19aedd18137219a744d9f577b8d12c6b48d6e0f59f6506fa2b1ab180f46ddd4"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t083-f0135.png",
+      "sha256": "2268e61b5b6be8467af1b707f796647aa55e92fb2c56eef8f3392dcf0456db9f"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t119-f0188.png",
+      "sha256": "bbf39768c2243cd1a6f751207c7b3dd8104f16cc23e1542150b6a08f66d41025"
+    },
+    {
+      "path": "/workspace/.setup/swim059-client-final/screenshots/swim059-live-50-neutral_swim_balanced_walk-left-t155-f0242.png",
+      "sha256": "58b586a6fc9bb06fb2bfd06267b003ffe5074834a398e3a8526b677c92a39b37"
+    }
+  ],
+  "sheets": {
+    "family-balanced": {
+      "cases": [
+        0,
+        1,
+        2
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-balanced.png",
+      "sha256": "156cdd275db74f6aece4c000d20c6871086cd0bf28b1fc76fb102cc4f0847bf4"
+    },
+    "family-run": {
+      "cases": [
+        3,
+        4,
+        5
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-run.png",
+      "sha256": "7774ee7cfec8874e36bc120f0899ce93d13688a5641b3f847217a9cdb99e435d"
+    },
+    "family-power": {
+      "cases": [
+        6,
+        7,
+        8
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-power.png",
+      "sha256": "d18729aab266d4d55e0093dc733226ccc1a2d386ae123cdeb741d2e541c8127b"
+    },
+    "family-swim": {
+      "cases": [
+        9,
+        10,
+        11
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-swim.png",
+      "sha256": "f6d3a62445bbd92e7837c328ab8da5a4468be831a412c57d68fa7eff580157cd"
+    },
+    "family-run-swim": {
+      "cases": [
+        12,
+        13,
+        14
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-run-swim.png",
+      "sha256": "e944917ce740efb5c4cb92072d867c027d45d747f3d579401b9bcd04510420d4"
+    },
+    "family-power-swim": {
+      "cases": [
+        15,
+        16,
+        17
+      ],
+      "path": "/workspace/.setup/swim059-final-model/family-power-swim.png",
+      "sha256": "6a3a1affe5b2cbf8ce33a14fae89924d1ace8e8d391f969938386414a20fdffa"
+    },
+    "training-run": {
+      "cases": [
+        18,
+        19,
+        20
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-run.png",
+      "sha256": "17c968c30b712756e135c80d9fc3000b6a02f31c77a49d2e6758d05eb28dc82d"
+    },
+    "training-power": {
+      "cases": [
+        21,
+        22,
+        23
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-power.png",
+      "sha256": "584f5feb240739bbbe5bd06053257828ac8f5da60d08db9dbceb7a7dc186b93f"
+    },
+    "training-swim": {
+      "cases": [
+        24,
+        25,
+        26
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-swim.png",
+      "sha256": "f5bf462617d36cd77ca0dffece9904c8b5b33de279a9585f4a84f97b934e74f0"
+    },
+    "training-run-swim": {
+      "cases": [
+        27,
+        28,
+        29
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-run-swim.png",
+      "sha256": "adb5b660767cc881b07445ebbf8d5e18bde431d3a6f03b0d64e0c37f2a0a274a"
+    },
+    "training-power-swim": {
+      "cases": [
+        30,
+        31,
+        32
+      ],
+      "path": "/workspace/.setup/swim059-final-model/training-power-swim.png",
+      "sha256": "b3d299bda4ae2ef29facc34c0e9da4e0654d1ec7b47d0ec2830d445e714341b8"
+    },
+    "counter-fly": {
+      "cases": [
+        33,
+        34,
+        35
+      ],
+      "path": "/workspace/.setup/swim059-final-model/counter-fly.png",
+      "sha256": "5c8a0f647b14ba13df7d1bac7e505d5feb6cc7bde9e3daed6ed58f0173b66425"
+    },
+    "cross-age-training": {
+      "cases": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "path": "/workspace/.setup/swim059-final-model/cross-age-training.png",
+      "sha256": "1a58e6b91ca150a1f98d98aa8d729a12e063762b41d76822630b1cb491a5ef4f"
+    }
+  },
+  "cohort": {
+    "completion_line": "[23:03:36] [Render thread/INFO] [co.ch.cl.NeutralSwimVisualSmoke059/]: SWIM059_VISUAL_COMPLETE requestedCases=65 renderedCases=65 skippedCases=0 start=0 limit=65 baseline=false captures=578 saved=578 epochMillis=1794524616237 normal20TPS=true audioListening=false output=/workspace/.setup/swim059-client-final",
+    "requested_cases": 65,
+    "rendered_cases": 65,
+    "skipped_cases": 0,
+    "actual_capture_count": 578,
+    "actual_saved_count": 578,
+    "logged_capture_count": 578,
+    "log_sha256": "dc86e95c57baed1022c70eab29630280740a77c7343eb08f0ae30a2c2e423150",
+    "process_exit0": "Root directly confirmed session 35566 exited 0."
+  },
+  "runtime_binding": {
+    "path": "/workspace/.setup/run059-runtime-proof.json",
+    "sha256": "9c52e7380210602fbe73493ac51f7206d4105a3d7c35ad59d0da71fb8b753ec2",
+    "mode": "development_classpath",
+    "artifact_jar_sha256": "4d7d12a601c9e001a1b10062cce668e924417fa6f21ae6a82105912593761b87",
+    "production_frozen_entries": 8303,
+    "runtime_sources_still_match": true,
+    "model_entry_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+    "coverage": "All production com/chaogarden/**/*.class and assets/chao_garden/** entries were frozen from the declared Gradle development output roots and compared byte-for-byte with the delivered JAR. Their declared runtime source files still match the frozen bytes at binding. This does not claim the JAR was loaded by runClient."
+  },
+  "findings": {
+    "head": "Original rectangular head and face remain coherent at every inspected endpoint and intermediate. Native pose leans rotate the box without reshaping it.",
+    "caps_and_fins": "Connected cap and paired two-section fins. Run rises/upturns, Power stays short/stocky, Swim drops into a longer hood/flippers; mixed forms are shorter than pure Swim.",
+    "body_and_attachments": "Compact hands/feet, clear orb, undistorted eyes, attached wings/tail. Case 46 phoenix wings and glasses remain coherent in left/above/back views.",
+    "walking_neck": "Six new native WALK front/left originals show continuous torso/head contact through the sampled stride poses after the top-only torso extension; no sky gap observed.",
+    "development": "Age 0/50/100, training 25/50/75, Fly cancellation 50/100/150 and age 25/75 with training 50 all produce coherent intermediate shapes. Excess Fly returns to balanced Swim anatomy.",
+    "rear_plane": "Pure-Swim roof rear plane remains Z=2.9, separated from unchanged head Z=3. Narrow lit original-head ledges are valid geometry and should not be confused with coplanarity.",
+    "torso_fix": "Only existing torso top extended .45 px; lower plane and all other model parts remain unchanged. Reference and target correspondence preserved.",
+    "approximations": [
+      "Broad stepped rectangular rear hem instead of a smooth central taper.",
+      "Two fin blocks with flat color regions instead of curved leaves and zigzag bands.",
+      "Provisional ten-target bilinear / 960-current-bar training pace, not copied game/viewer formulas."
+    ]
+  },
+  "limits": [
+    "Static sheets and six sampled walking frames do not constitute an exhaustive continuous-motion review; other agents own that review.",
+    "Camera angles match while some native idle poses vary.",
+    "No physical mobile/touch device test by this agent."
+  ]
+}
