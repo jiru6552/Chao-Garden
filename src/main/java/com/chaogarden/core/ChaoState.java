@@ -421,8 +421,14 @@ public final class ChaoState {
   /** Both adult influence axes can be expressed together; this is not a second cocoon. */
   public int[] secondaryTypes() {
     if (!adult || immortal) return new int[]{NORMAL};
-    int sf=Math.abs(swimFly)>=.5f ? swimFly<0 ? SWIM_TYPE : FLY_TYPE : NORMAL;
-    int rp=Math.abs(runPower)>=.5f ? runPower<0 ? RUN_TYPE : POWER_TYPE : NORMAL;
+    // The Neutral foundation reads current training, including reductions and
+    // absolute Creative edits. Its label must describe the same axes as its
+    // renderer without rewriting the older saved influence fields or paths.
+    var neutral=NeutralMorphology056.sample(this);
+    float sfAxis=neutral.enabled()?neutral.swimFly():swimFly;
+    float rpAxis=neutral.enabled()?neutral.runPower():runPower;
+    int sf=Math.abs(sfAxis)>=.5f ? sfAxis<0 ? SWIM_TYPE : FLY_TYPE : NORMAL;
+    int rp=Math.abs(rpAxis)>=.5f ? rpAxis<0 ? RUN_TYPE : POWER_TYPE : NORMAL;
     if(sf!=NORMAL && rp!=NORMAL)return new int[]{sf,rp};
     if(sf!=NORMAL)return new int[]{sf};
     if(rp!=NORMAL)return new int[]{rp};

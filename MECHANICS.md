@@ -1,3 +1,5 @@
+Current morphology/testing update: [0.25.56 Neutral foundation and Creative editing](docs/NEUTRAL_FOUNDATION_02556.md). The nine new combinations require Neutral alignment and a saved Normal first type; their reversible two axes read current level/progress differences. First evolution still uses four earned-point totals and recency, with adult identity locked. Creative maturity adjusts current-stage growth only, preserving chronological lifetime. No save-schema fields are added.
+
 # Chao mechanics in 0.22.0
 
 This file describes the implemented mod. Sonic Adventure 2 Battle provides the main inspiration, with jewel coats and Chaos forms drawn from the wider Adventure-era system. Timing, consumable amounts, movement benefits, and some inheritance details are adapted for Minecraft.

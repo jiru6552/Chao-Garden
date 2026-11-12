@@ -1,0 +1,81 @@
+{
+  "result": "PASS: no new material/marker/attachment defect observed in inspected captures",
+  "visual_inspection_performed": true,
+  "case_count": 16,
+  "original_image_count": 96,
+  "views": [
+    "front",
+    "left",
+    "right",
+    "back",
+    "above",
+    "below"
+  ],
+  "method": "All96 original views inspected through four uniform crop/nearest-resize contact sheets; full original case43front additionally opened. Original bytes and hashes bound by original-provenance.json. This is a static visual pass, not a movie/multiplayer/shader/audio pass.",
+  "contact_sheets": [
+    "cases-33-36.png",
+    "cases-37-40.png",
+    "cases-41-44.png",
+    "cases-45-48.png"
+  ],
+  "notes": [
+    {
+      "cases": [
+        33,
+        34,
+        35,
+        37
+      ],
+      "observation": "Young Hero with either Run setting and centered-Run older Hero have coherent blue orb pigmentation. Dark lower/side faces follow ordinary block lighting; no mixed atlas patches were observed."
+    },
+    {
+      "cases": [
+        36,
+        38
+      ],
+      "observation": "At half maturity and maximum Run the Hero orb is purple-gray; at mature baby maximum Run it is pink. Those intentional intermediate/end hues match the independently inspected viewer progression."
+    },
+    {
+      "cases": [
+        39,
+        40,
+        41
+      ],
+      "observation": "Partial alignment shows gray-green marker tint while the fully Hero-weighted states show pink. Mod Hero influence reaches its endpoint at alignment +0.5, so raw +0.5 and +0.75 are expected to resemble full Hero in this prototype."
+    },
+    {
+      "cases": [
+        42,
+        43,
+        44
+      ],
+      "observation": "Ruby, Red shiny and Green mono retain the same developed pink Hero marker pigment despite different body colors. Red shiny shows a pronounced white/silver reflection across orb and body; the existing finish pass is preserved. This reflection is distinct from a texture/UV color patch."
+    },
+    {
+      "cases": [
+        45
+      ],
+      "observation": "Ruby body, rabbit replacements, phoenix wings and glasses remain coherent. Eyelens/frame placement follows the original face in the inspected views; the yellow Neutral orb does not become ruby red. Head additions are hidden by the existing acquired-head-part rule."
+    },
+    {
+      "cases": [
+        46
+      ],
+      "observation": "The skeleton skull covers the head/added features as intended; rabbit hand/foot replacements remain coherent and the Neutral orb stays yellow. The closed skull prevents inspection of the covered native eyes/head surfaces."
+    },
+    {
+      "cases": [
+        47,
+        48
+      ],
+      "observation": "Existing Hero Run first-evolution short stem and mature three-branch crest/halo remain distinct with compact hands/feet and original box head/eyes. No unexpected exposed internal features were observed."
+    }
+  ],
+  "limitations": [
+    "Reported original patchwork/strange-color artifact not independently reproduced. Intended gray/pink development and existing shiny silver reflection are retained.",
+    "Low-angle views partly occlude the orb behind the head; front/side/above angles show its exposed faces.",
+    "Static cameras show sampled states, not the complete motion/transition trajectory.",
+    "Covered head geometry under the skeleton skull cannot be visually assessed."
+  ],
+  "full_original_opened": "/workspace/.setup/neutral056-client-first/screenshots/neutral056-live-43-hero_baby_orb_red_shiny-front-t000-f0016.png"
+}

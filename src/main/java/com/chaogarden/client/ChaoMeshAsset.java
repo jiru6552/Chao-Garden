@@ -39,6 +39,7 @@ final class ChaoMeshAsset {
       float[][][] heroRunLegacyVertices,
       float[][][] pathVertices054,
       BlockyRunBox055 box055,
+      BlockyRunBox055 box056,
       boolean compatibleAxes055,
       List<Face> faces,
       Vector3f[] vertexNormals) {}
@@ -73,6 +74,10 @@ final class ChaoMeshAsset {
   private boolean heroRunActive,heroRunAdult,heroRunNaturalTwoTone,babyRun053;
   private boolean unified054;
   private boolean blocky055;
+  private boolean neutral056;
+  private final float[] pathWeights056={1,0,0,0,0,0,0,0,0,0};
+  private int pathRevision056;
+  private final Map<Mesh,PathFrame054> pathFrames056=new IdentityHashMap<>();
   private final float[] pathWeights055={1,0,0,0,0,0,0};
   private int pathRevision055;
   private final Map<Mesh,PathFrame054> pathFrames055=new IdentityHashMap<>();
@@ -199,6 +204,7 @@ final class ChaoMeshAsset {
                     morphs,
                     heroRun,heroRunLegacy,path054,
                     mesh.has("blocky_box_055")?BlockyRunBox055.parse(mesh.getAsJsonObject("blocky_box_055"),vertices):null,
+                    mesh.has("neutral_box_056")?BlockyRunBox055.parse(mesh.getAsJsonObject("neutral_box_056"),vertices,10):null,
                     name.startsWith("body__")||name.startsWith("arm_")||name.startsWith("foot_")||name.startsWith("wing_")||name.startsWith("tail__"),
                     List.copyOf(faces),
                     mesh.has("shading") && mesh.get("shading").getAsString().equals("flat")
@@ -226,6 +232,7 @@ final class ChaoMeshAsset {
       result.babyRun053=data.has("baby_run_prototype_053");
       result.unified054=data.has("hero_run_prototype_054");
       result.blocky055=data.has("blocky_run_path_055");
+      result.neutral056=data.has("neutral_path_056");
       if(data.has("attachment_extra_bones"))for(var entry:data.getAsJsonObject("attachment_extra_bones").entrySet()) {
         var extra=new ArrayList<String>();
         for(var value:entry.getValue().getAsJsonArray()) {
@@ -332,6 +339,7 @@ final class ChaoMeshAsset {
   }
 
   private float coordinate(Mesh mesh,int vertex,int axis) {
+    if(neutral056)return pathFrame056(mesh).vertices[vertex][axis];
     if(blocky055)return pathFrame055(mesh).vertices[vertex][axis];
     if(unified054&&heroRunActive&&mesh.pathVertices054!=null)
       return pathFrame054(mesh).vertices[vertex][axis];
@@ -417,6 +425,34 @@ final class ChaoMeshAsset {
     frame.revision=pathRevision055;return frame;
   }
 
+  /** Neutral surfaces use the same rigid-box sampling for renderer, grips and accessories. */
+  private PathFrame054 pathFrame056(Mesh mesh) {
+    var frame=pathFrames056.computeIfAbsent(mesh,ignored->new PathFrame054());
+    if(frame.revision==pathRevision056)return frame;
+    if(frame.vertices==null)frame.vertices=new float[mesh.vertices.length][3];
+    if(mesh.box056!=null)mesh.box056.evaluate(pathWeights056,frame.vertices);
+    else for(int i=0;i<mesh.vertices.length;i++)System.arraycopy(mesh.vertices[i],0,frame.vertices[i],0,3);
+    for(Face face:mesh.faces) {
+      var normal=frame.normals.computeIfAbsent(face,ignored->new Vector3f());
+      float[] a=frame.vertices[face.indices[0]];normal.set(0,0,0);
+      for(int edge=1;edge<face.indices.length-1;edge++) {
+        float[] b=frame.vertices[face.indices[edge]],c=frame.vertices[face.indices[edge+1]];
+        float ux=b[0]-a[0],uy=b[1]-a[1],uz=b[2]-a[2],vx=c[0]-a[0],vy=c[1]-a[1],vz=c[2]-a[2];
+        normal.set(uy*vz-uz*vy,uz*vx-ux*vz,ux*vy-uy*vx);
+        if(normal.lengthSquared()>=1e-18f)break;
+      }
+      if(normal.lengthSquared()<1e-18f)normal.set(face.normal);else normal.normalize();
+    }
+    frame.revision=pathRevision056;return frame;
+  }
+
+  void neutralDevelopment(com.chaogarden.core.NeutralMorphology056.Sample sample) {
+    float[] next=com.chaogarden.core.NeutralMorphology056.weights(sample);
+    if(!Arrays.equals(pathWeights056,next)){pathRevision056++;forwardReaches.clear();}
+    System.arraycopy(next,0,pathWeights056,0,next.length);
+  }
+  boolean neutralPrototype056(){return neutral056;}
+
   /** One matched surface/joint sampler serves rendering and every attachment. */
   void heroRunDevelopment(com.chaogarden.core.HeroRunMorphology052.Sample sample,float swimFly,float runPower) {
     float[] next=new float[6];boolean enabled=sample!=null&&sample.enabled();
@@ -465,7 +501,7 @@ final class ChaoMeshAsset {
   }
   void heroRunTwoTone(boolean enabled){heroRunNaturalTwoTone=enabled;}
   boolean heroRunPrototype(){return blocky055||unified054||bones.values().stream().anyMatch(b->b.heroRunPivots!=null);}
-  boolean fixedHeadBox055(){return blocky055;}
+  boolean fixedHeadBox055(){return blocky055||neutral056;}
   private float pivot(Bone bone,int axis){return blocky055?pathJoint055(bone.pivot,bone.pathPivots055,axis):unified054?pathJoint054(bone.pivot,bone.pathPivots054,axis):jointCoordinate(bone.pivot,bone.heroRunPivots,axis);}
   private float pathJoint055(float[] base,float[][] targets,int axis) {
     if(targets==null)return base[axis];float value=0;
@@ -838,7 +874,9 @@ final class ChaoMeshAsset {
         int meshColor=mesh.material.equals("lens")?lensColor:color;
         int meshLight = isLuminous(mesh.material) ? 0x00f000f0 : light;
         for (Face face : mesh.faces) {
-          if(blocky055) {
+          if(neutral056) {
+            matrix.transformNormal(pathFrame056(mesh).normals.get(face),normal);
+          } else if(blocky055) {
             matrix.transformNormal(pathFrame055(mesh).normals.get(face),normal);
           } else if(unified054&&heroRunActive&&mesh.pathVertices054!=null) {
             matrix.transformNormal(pathFrame054(mesh).normals.get(face),normal);
@@ -923,7 +961,7 @@ final class ChaoMeshAsset {
       Vector3f vertex,
       boolean gameplayUv) {
     float[] v = mesh.vertices[face.indices[index]];
-    if (mesh.vertexNormals != null&&!blocky055&&!(unified054&&heroRunActive&&mesh.pathVertices054!=null))
+    if (mesh.vertexNormals != null&&!blocky055&&!neutral056&&!(unified054&&heroRunActive&&mesh.pathVertices054!=null))
       pose.transformNormal(mesh.vertexNormals[face.indices[index]], normal);
     int at=face.indices[index];
     pose.pose().transformPosition(coordinate(mesh,at,0)/16f,coordinate(mesh,at,1)/16f,coordinate(mesh,at,2)/16f,vertex);

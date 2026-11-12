@@ -27,8 +27,7 @@ final class HeroRunRegionPaint055 {
       wing=blend(blend(opaque(input.wing),rgb(244,205,84),h),rgb(142,65,89),d);
       wing=blend(wing,blend(blend(rgb(245,209,66),rgb(242,166,113),h),rgb(142,65,89),d),r);
     }
-    int childMarker=blend(blend(blend(opaque(input.marker),rgb(38,226,127),r),
-        blend(rgb(70,160,230),rgb(240,145,177),r),h),rgb(233,94,109),d);
+    int childMarker=HeroRunMarkerPaint056.child(h,d,r);
     if(!input.twoTone) {
       limb=tone(body,.88f);wing=lighten(body,.08f);
     }
@@ -99,10 +98,10 @@ final class HeroRunRegionPaint055 {
     if(neutralBaseline)return pixel;
     if((flags&MARKER)!=0) {
       if(input.adult)return shaded(pixel,colors.marker,shadeReference);
-      int ordinary=blend(blend(pixel,shaded(pixel,rgb(70,160,230),255),input.hero),
-          shaded(pixel,rgb(233,94,109),255),input.dark);
-      int trained=blend(blend(rgb(38,226,127),rgb(240,145,177),input.hero),rgb(233,94,109),input.dark);
-      return blend(ordinary,shaded(pixel,trained,255),input.run);
+      // Use one semantic pigment for every orb face, not a coat-atlas texel's
+      // hue/shade. This also keeps resource-pack or palette accent edits from
+      // splitting the orb into mismatched patches during alignment changes.
+      return HeroRunMarkerPaint056.paintChild(pixel,input.hero,input.dark,input.run);
     }
     if((flags&WING)!=0) {
       if(!natural)return input.adult?pixel&0xff000000|tone(pixel,maxChannel(colors.wing)/(float)Math.max(1,maxChannel(input.wing)))&0xffffff:pixel;

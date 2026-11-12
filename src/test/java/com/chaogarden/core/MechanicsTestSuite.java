@@ -6,6 +6,9 @@ public final class MechanicsTestSuite {
     ChaoStateTest.main(args);
     AnalyzerStatRulesTest.main(args);
     com.chaogarden.client.AnalyzerAlignmentBar053Test.main(args);
+    com.chaogarden.client.AnalyzerMaturityBar056Test.main(args);
+    System.out.println("Creative edit rules056: "+CreativeEditingRules056Test.run()+" checks passed");
+    System.out.println("Neutral morphology056: "+NeutralMorphology056Test.run()+" checks passed");
     DriveRulesTest.main(args);
     com.chaogarden.toys.ToyInteractionRulesTest.main(args);
     int distribution = com.chaogarden.distribution.EggDistributionRulesTest.run();

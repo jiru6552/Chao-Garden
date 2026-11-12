@@ -155,7 +155,8 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
         pose.ry += age * .012f;
       }
     }
-    var raw=HeroRunAppearance052.sample(state).enabled()?HeroRunCoatMaterial055.textureOverlay(state)
+    var raw=NeutralAppearance056.sample(state).enabled()?NeutralCoatMaterial056.textureOverlay(state)
+        :HeroRunAppearance052.sample(state).enabled()?HeroRunCoatMaterial055.textureOverlay(state)
         :ResourceLocation.fromNamespaceAndPath("chao_garden","textures/entity/chao/"+ChaoRenderer.textureKey(state)+".png");
     var texture = ChaoPaletteMaterial.texture(raw,state,"overlay");
     rig.geometry.render(stack, buffers.getBuffer(RenderType.entityCutoutNoCull(texture)),

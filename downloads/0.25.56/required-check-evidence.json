@@ -1,0 +1,76 @@
+{
+  "scope": "Coordinator-selected literal evidence only; pass/failure claims remain in the report.",
+  "checks": [
+    {
+      "source_log": "neutral056-focused-final.log",
+      "sha256": "731d33188ce4d902e87eea54c41743d88ca7794382f10f6960e269386089f07c",
+      "literal_lines": [
+        "Creative editing056: 361 checks passed",
+        "Neutral morphology056: 1742 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+        "Neutral056: 7443569 checks; 1534 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.074799635 model pixels; maximum20tick edit step=0.17027597; seconds=8.965690042. Fixed original head/face/marker/rig; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "Neutral056/marker material: 68841869 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 Neutral orb samples; maximum1% color step=4. Nine endpoint combinations, fresh/mid/mature, inherited hues, exact original fresh pixels and canonical blue-to-pink Hero orb passed.",
+        "Piano mesh fit: 171558 hand samples; 18306 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+        "Organ mesh fit: 171558 hand samples; 4104 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels",
+        "BUILD SUCCESSFUL in 1m 28s"
+      ]
+    },
+    {
+      "source_log": "neutral056-native-final.log",
+      "sha256": "c66f5e8e120e57800e17e91de6c105df6beaffb40b038d89abbdac829772afae",
+      "literal_lines": [
+        "[08:09:40] [Server thread/INFO] [minecraft/GameTestServer]: All 259 required tests passed :)",
+        "BUILD SUCCESSFUL in 46s"
+      ]
+    },
+    {
+      "source_log": "neutral056-build.log",
+      "sha256": "66c6f6737653345f1cda845a32a0d8263d30e3348c970ede76dfe4f0b01e386d",
+      "literal_lines": [
+        "Triangle transition samples=267696 failures=25 minHandHeadPixels=-0.54432297",
+        "Trumpet transition samples=267696 failures=37 minHandHeadPixels=-0.58569264",
+        "> Task :triangleTransitionRigTest FAILED",
+        "> Task :trumpetTransitionRigTest FAILED",
+        "FAILURE: Build completed with 2 failures.",
+        "BUILD FAILED in 11m 49s"
+      ]
+    },
+    {
+      "source_log": "neutral056-geometry-validation.log",
+      "sha256": "40074eb57b6c97e6f63398879aaae9ee7b69962ed048aefc8b821818406e4c8b",
+      "literal_lines": [
+        "Neutral056: 8 closed positive boxes, 2205 connected age/axis blends, fixed original head/face/rig, anchored soles and forehead clearance passed."
+      ]
+    },
+    {
+      "source_log": "neutral056-journal.log",
+      "sha256": "6daf7986f072781c592b76c24e3a3c6eae426e81cd0eff1958f9feccda3622c8",
+      "literal_lines": [
+        "FAIL: test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens')",
+        "FAILED (failures=1)"
+      ]
+    },
+    {
+      "source_log": "neutral056-client-first.log",
+      "sha256": "3dcbab1aec31259d342f3263a78d2fbf5eb7cea427dd4025e19782afd7317b26",
+      "literal_lines": [
+        "[08:17:38] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_VISUAL_COMPLETE requestedCases=58 renderedCases=58 skippedCases=0 start=0 limit=58 baseline=false captures=413 saved=413 epochMillis=1794471458120 normal20TPS=true audioListening=false output=/workspace/.setup/neutral056-client-first",
+        "BUILD SUCCESSFUL in 5m 59s"
+      ]
+    },
+    {
+      "source_log": "neutral056-client-ui-final.log",
+      "sha256": "a41aee4cf103a3d319122d60c9e0ebb5172a8ae7fe2f9028dc53c79377b5a8b4",
+      "literal_lines": [
+        "[08:26:46] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_VISUAL_COMPLETE requestedCases=3 renderedCases=3 skippedCases=0 start=49 limit=52 baseline=false captures=25 saved=25 epochMillis=1794472006201 normal20TPS=true audioListening=false output=/workspace/.setup/neutral056-client-ui-final",
+        "BUILD SUCCESSFUL in 1m 15s"
+      ]
+    },
+    {
+      "source_log": "neutral056-jar-prepare.log",
+      "sha256": "2c9292128cfb9785e0c4ce1b8b780c125ce21a70c21f6dfe14a9ad973a862350",
+      "literal_lines": [
+        "BUILD SUCCESSFUL in 13s"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "run": {
+    "source": "art/imported_chao/models/chao_run.geo.json",
+    "sha256": "ed491d85c586b08fab313f5cd94e637bb78322e5c1c3fddb67a03b7795d171ed",
+    "bones": 20,
+    "cubes": 42,
+    "rotated_cuboids": [
+      {
+        "bone": "skull",
+        "origin": [
+          -3.5,
+          10,
+          0
+        ],
+        "size": [
+          0,
+          1,
+          3
+        ],
+        "pivot": [
+          -3.5,
+          11,
+          0
+        ],
+        "rotation": [
+          45,
+          -60,
+          0
+        ]
+      },
+      {
+        "bone": "skull",
+        "origin": [
+          3.5,
+          10,
+          0
+        ],
+        "size": [
+          0,
+          1,
+          3
+        ],
+        "pivot": [
+          3.5,
+          11,
+          0
+        ],
+        "rotation": [
+          45,
+          60,
+          0
+        ]
+      },
+      {
+        "bone": "bone",
+        "origin": [
+          -1,
+          10,
+          3
+        ],
+        "size": [
+          2,
+          2,
+          3
+        ],
+        "pivot": [
+          0,
+          12,
+          3
+        ],
+        "rotation": [
+          -15,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "bone2",
+        "origin": [
+          -3.5,
+          9,
+          4.5
+        ],
+        "size": [
+          2,
+          3,
+          4
+        ],
+        "pivot": [
+          -3.5,
+          10,
+          4.5
+        ],
+        "rotation": [
+          0,
+          15,
+          0
+        ]
+      },
+      {
+        "bone": "bone3",
+        "origin": [
+          1.5,
+          9,
+          4.5
+        ],
+        "size": [
+          2,
+          3,
+          4
+        ],
+        "pivot": [
+          3.5,
+          10,
+          4.5
+        ],
+        "rotation": [
+          0,
+          -15,
+          0
+        ]
+      },
+      {
+        "bone": "emotion_heart",
+        "origin": [
+          -4,
+          16,
+          0
+        ],
+        "size": [
+          1,
+          2,
+          1
+        ],
+        "pivot": [
+          -1,
+          16,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ]
+      }
+    ]
+  },
+  "power": {
+    "source": "art/imported_chao/models/chao_power.geo.json",
+    "sha256": "cc26883fad2065227c063a2a2f77b72cc7eff497103e3a83c45247f6103cce79",
+    "bones": 19,
+    "cubes": 40,
+    "rotated_cuboids": [
+      {
+        "bone": "tail",
+        "origin": [
+          -1,
+          2,
+          0
+        ],
+        "size": [
+          2,
+          2,
+          2
+        ],
+        "pivot": [
+          0,
+          2,
+          2
+        ],
+        "rotation": [
+          -45,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "tail",
+        "origin": [
+          -0.5,
+          4,
+          2
+        ],
+        "size": [
+          1,
+          1,
+          1
+        ],
+        "pivot": [
+          0,
+          2,
+          2
+        ],
+        "rotation": [
+          -45,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "crest",
+        "origin": [
+          -3.5,
+          10,
+          0
+        ],
+        "size": [
+          2,
+          2,
+          4
+        ],
+        "pivot": [
+          -3.5,
+          10,
+          0
+        ],
+        "rotation": [
+          30,
+          -30,
+          0
+        ]
+      },
+      {
+        "bone": "crest",
+        "origin": [
+          1.5,
+          10,
+          0
+        ],
+        "size": [
+          2,
+          2,
+          4
+        ],
+        "pivot": [
+          3.5,
+          10,
+          0
+        ],
+        "rotation": [
+          30,
+          30,
+          0
+        ]
+      },
+      {
+        "bone": "bone2",
+        "origin": [
+          -1,
+          8,
+          6
+        ],
+        "size": [
+          2,
+          2,
+          3
+        ],
+        "pivot": [
+          0,
+          8,
+          6
+        ],
+        "rotation": [
+          15,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "crest_top",
+        "origin": [
+          -1.5,
+          10,
+          3
+        ],
+        "size": [
+          3,
+          2,
+          2
+        ],
+        "pivot": [
+          0,
+          12,
+          3
+        ],
+        "rotation": [
+          -10,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "emotion_heart",
+        "origin": [
+          -4,
+          16,
+          0
+        ],
+        "size": [
+          1,
+          2,
+          1
+        ],
+        "pivot": [
+          -1,
+          16,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ]
+      }
+    ]
+  },
+  "fly": {
+    "source": "art/imported_chao/models/chao_fly.geo.json",
+    "sha256": "bd774f7fcbae5d3645085e589922e4114a46763e5167fac42346d5cdf36c2ad2",
+    "bones": 21,
+    "cubes": 38,
+    "rotated_cuboids": [
+      {
+        "bone": "emotion_heart",
+        "origin": [
+          -4,
+          16,
+          0
+        ],
+        "size": [
+          1,
+          2,
+          1
+        ],
+        "pivot": [
+          -1,
+          16,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ]
+      }
+    ]
+  },
+  "swim": {
+    "source": "art/imported_chao/models/chao_swim.geo.json",
+    "sha256": "7bf8fb338a655234971c0315c6bf96f6658dba94e611ed3a468df6af47ac542e",
+    "bones": 17,
+    "cubes": 41,
+    "rotated_cuboids": [
+      {
+        "bone": "tail",
+        "origin": [
+          -1,
+          4,
+          2
+        ],
+        "size": [
+          2,
+          0,
+          2
+        ],
+        "pivot": [
+          0,
+          4,
+          2
+        ],
+        "rotation": [
+          45,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "arm_left",
+        "origin": [
+          -5.5,
+          4.5,
+          -1.5
+        ],
+        "size": [
+          2,
+          2,
+          2
+        ],
+        "pivot": [
+          -4.5,
+          5.5,
+          -0.5
+        ],
+        "rotation": [
+          0,
+          0,
+          -45
+        ]
+      },
+      {
+        "bone": "arm_right",
+        "origin": [
+          3.5,
+          4.5,
+          -1.5
+        ],
+        "size": [
+          2,
+          2,
+          2
+        ],
+        "pivot": [
+          4.5,
+          5.5,
+          -0.5
+        ],
+        "rotation": [
+          0,
+          0,
+          45
+        ]
+      },
+      {
+        "bone": "skull",
+        "origin": [
+          -1,
+          6,
+          -3
+        ],
+        "size": [
+          2,
+          1,
+          2
+        ],
+        "pivot": [
+          0,
+          6,
+          -3
+        ],
+        "rotation": [
+          60,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "skull",
+        "origin": [
+          3.5,
+          8.5,
+          -1
+        ],
+        "size": [
+          1,
+          3,
+          1
+        ],
+        "pivot": [
+          3.5,
+          8.5,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          -15
+        ]
+      },
+      {
+        "bone": "skull",
+        "origin": [
+          -4.5,
+          8.5,
+          -1
+        ],
+        "size": [
+          1,
+          3,
+          1
+        ],
+        "pivot": [
+          -3.5,
+          8.5,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          15
+        ]
+      },
+      {
+        "bone": "crest",
+        "origin": [
+          -2,
+          7,
+          4
+        ],
+        "size": [
+          4,
+          4,
+          5
+        ],
+        "pivot": [
+          -2.5,
+          11,
+          4
+        ],
+        "rotation": [
+          -45,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "emotion_heart",
+        "origin": [
+          -4,
+          16,
+          0
+        ],
+        "size": [
+          1,
+          2,
+          1
+        ],
+        "pivot": [
+          -1,
+          16,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          90
+        ]
+      }
+    ]
+  }
+}

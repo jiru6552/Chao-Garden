@@ -81,7 +81,9 @@ public final class HeroRunCoatMaterial055 {
     }catch(IOException error){if(result!=null)result.close();throw new IllegalStateException("Cannot build blocky Hero Run055 material",error);}
   }
 
-  private static int[] layout()throws IOException {
+  // Shared canonical baby-atlas semantics; the Neutral adult additions keep
+  // this same original UV layout rather than inventing a second mapping.
+  static int[] layout()throws IOException {
     if(layout!=null)return layout;
     var flags=new int[128*64];
     for(String kind:new String[]{"baby","baby_accent","baby_wings"}) {
@@ -127,7 +129,7 @@ public final class HeroRunCoatMaterial055 {
       axisPalettes=result;return result;
     }
   }
-  private static int dominant(NativeImage image,int[] regions,int tag) {
+  static int dominant(NativeImage image,int[] regions,int tag) {
     Map<Integer,Integer> values=new HashMap<>();
     for(int y=0;y<image.getHeight();y++)for(int x=0;x<image.getWidth();x++) {
       int pixel=image.getPixelRGBA(x,y),flags=regions[y*64/image.getHeight()*128+x*128/image.getWidth()];

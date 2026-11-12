@@ -64,7 +64,9 @@ public final class ChaoPreferencesTest {
     }
     s=new ChaoState();s.adult=true;s.happiness=50;s.adultAgeTicks=99;
     check(s.tick(20,100,new Random(1))==ChaoState.Transition.DIED,"Exactly50 is below SA2 reincarnation threshold");
-    s=new ChaoState();s.adult=true;s.swimFly=-.8f;s.runPower=.7f;
+    // Non-Normal first forms retain their saved influence policy. The new
+    // Neutral/Normal current-stat policy has its own nine-combination suite.
+    s=new ChaoState();s.adult=true;s.primaryType=ChaoState.FLY_TYPE;s.swimFly=-.8f;s.runPower=.7f;
     check(s.secondaryFormKey().equals("swim_power")&&s.secondaryTypes().length==2,"Both adult axes form a mixed secondary");
     s.swimFly=.8f;s.runPower=-.8f;check(s.secondaryFormKey().equals("fly_run"),"Adult secondary can reverse without cocoon");
     s.swimFly=s.runPower=0;check(s.secondaryFormKey().equals("normal"),"Balancing adult axes returns Normal secondary");

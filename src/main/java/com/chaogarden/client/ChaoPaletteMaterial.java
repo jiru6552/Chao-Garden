@@ -45,12 +45,14 @@ public final class ChaoPaletteMaterial {
       Map<Integer,Integer> counts=new HashMap<>();
       for(int y=0;y<image.getHeight();y++)for(int x=0;x<image.getWidth();x++) {
         int mx=x*skin.getWidth()/image.getWidth(),my=y*skin.getHeight()/image.getHeight();
+        if(protectedMarker(source.getPath(),uvLayout,state.adult,x,y,image.getWidth(),image.getHeight()))continue;
         int rgba=image.getPixelRGBA(x,y);
         if((skin.getPixelRGBA(mx,my)>>>24)!=0&&(rgba>>>24)!=0)counts.merge(rgba&0xffffff,1,Integer::sum);
       }
       int coat=counts.entrySet().stream().max(Map.Entry.comparingByValue()).map(Map.Entry::getKey).orElse(0xeff09d);
       for(int y=0;y<image.getHeight();y++)for(int x=0;x<image.getWidth();x++) {
         int mx=x*skin.getWidth()/image.getWidth(),my=y*skin.getHeight()/image.getHeight();
+        if(protectedMarker(source.getPath(),uvLayout,state.adult,x,y,image.getWidth(),image.getHeight()))continue;
         int reserved=prototypeReservedKind(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight());
         boolean body=(skin.getPixelRGBA(mx,my)>>>24)!=0||(reserved&1)!=0;
         boolean wing=state.cosmeticWings&&(wings.getPixelRGBA(mx,my)>>>24)!=0;
@@ -79,7 +81,12 @@ public final class ChaoPaletteMaterial {
 
   /** Prototype-only UV additions. Overlay/ordinary materials retain their exact
    * old masks; protected eye texels are outside every listed rectangle. */
+  static boolean protectedMarker(String sourcePath,String layout,boolean adult,int x,int y,int width,int height) {
+    return HeroRunMarkerPaint056.paletteProtected(sourcePath,layout,adult,x,y,width,height);
+  }
   static int prototypeReservedKind(String sourcePath,String layout,int x,int y,int width,int height) {
+    if(sourcePath.startsWith("dynamic/neutral056/")&&layout.equals("baby")&&width>0&&height>0)
+      return HeroRunRegionPaint055.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/hero_run055/")&&layout.equals("baby")&&width>0&&height>0)
       return HeroRunRegionPaint055.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/hero_run054/")&&layout.equals("baby")&&width>0&&height>0)

@@ -1,6 +1,6 @@
-# Chao Garden 0.25.55
+# Chao Garden 0.25.56
 
-Current update **0.25.55** expands the approved blocky baby → Hero Run adult → Hero/Run/Run path. The original baby head box and face stay fixed while attached cuboid features develop. Run training, alignment and biological maturity remain separate; the Creative alignment bar stays under Analyzer **Mind → Profile**, with adult identity locked. See [the implementation and verification](docs/HERO_RUN_BLOCKY_02555.md) and [viewer/source reference limits](docs/HERO_RUN_REFERENCES_02555.md). The paused, unpublished .54 rounded-model experiment is superseded by this blocky path.
+Current update **0.25.56** adds all nine **Neutral / Normal-first-type** adult specialization combinations around the unchanged original blocky head. The approved Hero Run path remains included. Creative Analyzer controls now clearly label locked adult alignment and permit safe same-stage maturity scrubbing; `/chao <name or ~> <alignment> <stat> <level>` provides server-authorized testing edits. See [the update, exact commands and verification](docs/NEUTRAL_FOUNDATION_02556.md). The previous [Hero Run implementation](docs/HERO_RUN_BLOCKY_02555.md) and [reference notes](docs/HERO_RUN_REFERENCES_02555.md) remain relevant.
 
 Earlier Analyzer update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
 

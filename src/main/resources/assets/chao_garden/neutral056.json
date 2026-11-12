@@ -1,0 +1,27 @@
+{
+  "version": "0.25.56",
+  "model": "models/entity/gameplay/chao_neutral_proto056.json",
+  "sha256": "4b523fa78728b62da4c5a5c8a44c0c1d205125f23cc0764128e7b501ad4ae1ad",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "neutral_normal_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "normal",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "canonical_head_and_face_unchanged": true,
+  "shared_animation_attachment_rig": true,
+  "source_geometry_copied": false,
+  "construction_reference_sha256": {
+    "chao_run.geo.json": "ed491d85c586b08fab313f5cd94e637bb78322e5c1c3fddb67a03b7795d171ed",
+    "chao_power.geo.json": "cc26883fad2065227c063a2a2f77b72cc7eff497103e3a83c45247f6103cce79",
+    "chao_fly.geo.json": "bd774f7fcbae5d3645085e589922e4114a46763e5167fac42346d5cdf36c2ad2",
+    "chao_swim.geo.json": "7bf8fb338a655234971c0315c6bf96f6658dba94e611ed3a468df6af47ac542e"
+  }
+}

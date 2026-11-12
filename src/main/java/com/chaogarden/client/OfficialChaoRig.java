@@ -28,6 +28,7 @@ public final class OfficialChaoRig {
   private boolean adultPose, broadWalkHead;
   private float powerSwimWeight;
   private boolean prototypeSelection;
+  private boolean neutralSelection056;
   private String prototypeOwnerKey;
   public enum Motion { CRAWL, WALK, RUN, DASH, FLAIL, PADDLE, SWIM, GLIDE, GRIP, FALL, HELD, SIT, REST,
     PONDER, INSPECT, EAT, TRAIN, REJECT, DELIGHT, PLAY, PET }
@@ -64,7 +65,7 @@ public final class OfficialChaoRig {
   private void select(String model,boolean gameplay) {
     key = model;
     boolean prototype=gameplay&&prototypeSelection&&model.equals(prototypeOwnerKey);
-    String prototypeModel="hero_run_proto055";
+    String prototypeModel=neutralSelection056?"neutral_proto056":"hero_run_proto055";
     String cache=prototype?"gameplay:"+prototypeModel:(gameplay?"gameplay:":"source:")+model;
     current = frames.computeIfAbsent(cache, ignored -> {
       var mesh = assets.apply(prototype?"gameplay/chao_"+prototypeModel:(gameplay?"gameplay/":"official/")+"chao_"+model);
@@ -85,6 +86,7 @@ public final class OfficialChaoRig {
   }
 
   public static ResourceLocation texture(ChaoState state) {
+    if(NeutralAppearance056.sample(state).enabled())return ChaoPaletteMaterial.texture(NeutralCoatMaterial056.texture(state),state,"baby");
     if(HeroRunAppearance052.sample(state).enabled())return ChaoPaletteMaterial.texture(HeroRunCoatMaterial055.texture(state),state,"baby");
     String selected=geometryKey(state),geometry=sourceGeometryKey(selected),old=ChaoRenderer.textureKey(state),path;
     if(selected.equals("omochao"))return OmochaoMaterial.texture(state);
@@ -580,7 +582,8 @@ public final class OfficialChaoRig {
 
   /** Set this entity's geometry before gait fitting samples its current toe reach. */
   void prepareDevelopment(String model,ChaoState state) {
-    prototypeSelection=HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
+    neutralSelection056=NeutralAppearance056.sample(state).enabled();
+    prototypeSelection=neutralSelection056||HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
     select(model,true);meshDevelopment(state);
   }
 
@@ -597,6 +600,7 @@ public final class OfficialChaoRig {
         develop?growth:child?growth*.14f:0);
     current.mesh.heroRunDevelopment(current.mesh.heroRunPrototype()?HeroRunAppearance052.sample(state):null,state.swimFly,state.runPower);
     current.mesh.heroRunTwoTone(state.baseColor()==0&&state.jewel()==0&&state.isTwoTone());
+    current.mesh.neutralDevelopment(current.mesh.neutralPrototype056()?NeutralAppearance056.sample(state):null);
   }
 
   /** Reversible secondary anatomy is blended independently from biological age. */

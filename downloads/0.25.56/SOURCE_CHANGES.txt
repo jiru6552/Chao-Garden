@@ -1,0 +1,52 @@
+Chao Garden 0.25.56 cumulative source overlay onto the complete 0.25.43 source.
+
+Extract at the full project root, review SOURCE_DELETIONS.txt, then run python3 apply-source-deletions.py /path/to/project --verify-only. Run without --verify-only after review. Modified source is refused; Minecraft saves are not touched.
+
+The download branch contains the complete source tree. Java21, NeoForge1.21.1, external Lionfish API3.1; matching client/server0.25.56.
+
+Changed since .55:
+CHANGELOG.md
+MECHANICS.md
+README.md
+TESTING.md
+build.gradle
+docs/NEUTRAL_FOUNDATION_02556.md
+gradle.properties
+scripts/generate_neutral_morph_02556.py
+scripts/validate_neutral_morph_02556.py
+src/lionfishTest/java/com/chaogarden/client/NeutralMaterialTest056.java
+src/lionfishTest/java/com/chaogarden/client/NeutralMorphRigTest056.java
+src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java
+src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java
+src/main/java/com/chaogarden/EditingCommands056.java
+src/main/java/com/chaogarden/GardenCommands.java
+src/main/java/com/chaogarden/care/ChaoCareNetwork.java
+src/main/java/com/chaogarden/client/AnalyzerAlignmentBar053.java
+src/main/java/com/chaogarden/client/AnalyzerMaturityBar056.java
+src/main/java/com/chaogarden/client/BlockyRunBox055.java
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java
+src/main/java/com/chaogarden/client/ChaoModel.java
+src/main/java/com/chaogarden/client/ChaoOverlayLayer.java
+src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java
+src/main/java/com/chaogarden/client/HeroRunCoatMaterial055.java
+src/main/java/com/chaogarden/client/HeroRunMarkerPaint056.java
+src/main/java/com/chaogarden/client/HeroRunRegionPaint055.java
+src/main/java/com/chaogarden/client/NeutralAppearance056.java
+src/main/java/com/chaogarden/client/NeutralCoatMaterial056.java
+src/main/java/com/chaogarden/client/NeutralRegionPaint056.java
+src/main/java/com/chaogarden/client/NeutralVisualSmoke056.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/core/ChaoState.java
+src/main/java/com/chaogarden/core/CreativeChaoEditRules056.java
+src/main/java/com/chaogarden/core/MaturityEditRules056.java
+src/main/java/com/chaogarden/core/NeutralMorphology056.java
+src/main/java/com/chaogarden/test/CreativeEditingGameTests056.java
+src/main/java/com/chaogarden/test/NeutralMorphologyGameTests056.java
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json
+src/main/resources/assets/chao_garden/neutral056.json
+src/test/java/com/chaogarden/client/AnalyzerMaturityBar056Test.java
+src/test/java/com/chaogarden/core/ChaoPreferencesTest.java
+src/test/java/com/chaogarden/core/CreativeEditingRules056Test.java
+src/test/java/com/chaogarden/core/MechanicsTestSuite.java
+src/test/java/com/chaogarden/core/NeutralMorphology056Test.java

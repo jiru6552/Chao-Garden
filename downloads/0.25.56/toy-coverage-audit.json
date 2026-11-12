@@ -1,0 +1,68 @@
+{
+  "scope": "Read-only source coverage audit; no Gradle/native/client execution and no changed test thresholds",
+  "parent_commit": "1d3cadb81fbd822b1d176f024459c60a2e9fb62e",
+  "source_identity": [
+    {
+      "path": "src/lionfishTest/java/com/chaogarden/client/TriangleTransitionRigTest.java",
+      "same_as_delivered055": true,
+      "sha256": "9573f9d3ff4c36319e2d6ad2ee7fab2f2fbc0c9b0c3e30c33f18c4d01b3734e7"
+    },
+    {
+      "path": "src/lionfishTest/java/com/chaogarden/client/TrumpetTransitionRigTest.java",
+      "same_as_delivered055": true,
+      "sha256": "ba282a3123c914f8cb625f40e79271ef7cff2d30d4e8d7e4afdcf252730420c7"
+    },
+    {
+      "path": "src/main/java/com/chaogarden/test/ToyVariantCases02522.java",
+      "same_as_delivered055": true,
+      "sha256": "09467df0939062f27e414147278763ffb8d303d777f591e4708770a5aa213028"
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoTriangleAnimation.java",
+      "same_as_delivered055": true,
+      "sha256": "ca54f7782044a1872d6090d88437577a97619e769f23d129f032fd7194cf39ea"
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoTrumpetAnimation.java",
+      "same_as_delivered055": true,
+      "sha256": "6a5ffd4b83531036e149ee7efdbc65079b5a2f8861bad71f0a1b56cb8d7ba22b"
+    }
+  ],
+  "compiled_pose_class_identity": [
+    {
+      "entry": "com/chaogarden/client/ChaoTriangleAnimation.class",
+      "same_as_delivered055": true,
+      "sha256": "2d2ed668f7bca8f40d80769dbb7127c2d426c560ad9a5c9d03099b0070c3bf79"
+    },
+    {
+      "entry": "com/chaogarden/client/ChaoTrumpetAnimation.class",
+      "same_as_delivered055": true,
+      "sha256": "89ec9fd6a450526d75faf77afc7ebb2e848ef159978a30d108c4f3277865e1ff"
+    },
+    {
+      "entry": "com/chaogarden/client/LionfishTriangleClip.class",
+      "same_as_delivered055": true,
+      "sha256": "95de59cfcc8a2e4d4bea0d0ed1891d4a4c324597d0ee6ef94c87fb2b276ecb4a"
+    },
+    {
+      "entry": "com/chaogarden/client/LionfishTrumpetClip.class",
+      "same_as_delivered055": true,
+      "sha256": "ca409aaf27920b0f9d1b6305b3d2d0a5b33edbfa92e6f215644db48d828ddadf"
+    }
+  ],
+  "neutral056_legacy_raw_model_loops": "TriangleRig, TrumpetRig, GuitarRig, AccordionRig, RockingHorseRig, ActiveToyRig049, QuietToyRig049, ProneToyRig051 and RattleAnimationTest only invoke mesh.development, so new Neutral weights remain fresh unless another explicit Neutral sampler is called. They do not cover all nine mature Neutral variants.",
+  "neutral056_correct_mature_sampling": [
+    "PianoRigTest:27 adult maturity/axis cases",
+    "OrganRigTest:27 adult maturity/axis cases",
+    "NeutralMorphRigTest056:567 production Lionfish motion frames across all9corners,3ages,7motions,3times; matrix/landmark checks rather than toy-contact surfaces"
+  ],
+  "transition_profiles": [
+    "adult_dark_type4",
+    "chaos_2",
+    "tails_adult",
+    "mixed_1_4"
+  ],
+  "transition_neutral056_selected": false,
+  "prone_actual_transition_exception": "State-derived actualTransitions path may select the new mature centered Neutral/Normal adult for normal first-type0 fixtures, but adds no Run/Power/Fly/Swim stat training grid.",
+  "assessment": "A defensible foundational attachment pass combines true all-grid pose/anchor checks, piano/organ actual surface checks and actual representative broom/book client observations. It is not full all-toys/all-forms contact or interruption verification."
+}

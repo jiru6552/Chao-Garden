@@ -1,3 +1,12 @@
+Current focused update: see [the 0.25.56 verification report](docs/NEUTRAL_FOUNDATION_02556.md) for final outcomes, inherited failures and client limits. Coordinated commands use `--no-configuration-cache`, because the existing resource-fixture task accesses `Task.project` during execution.
+
+```sh
+./gradlew --no-configuration-cache coreTest neutralMorphRigTest056 neutralMaterialTest056 blockyRunMorphRigTest055 heroRunMaterialTest055 pianoRigTest organRigTest
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56 -PchaoGameTestDir=/path/to/private/test-world
+```
+
+The installable JAR excludes native test classes and opt-in visual-study helpers. Use matching client/server versions and external Lionfish API3.1. Do not point a development fixture run at a real user world.
+
 # Chao animation and sound previews
 
 Requires Chao Garden 0.25.28 or later, cheats/operator permission level 2, and a nearby Chao on dry solid ground. The normal renderer and external Lionfish API 3.1 are used. No toy item or daycare lesson is required for these temporary previews.

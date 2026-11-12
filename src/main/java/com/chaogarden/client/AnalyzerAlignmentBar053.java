@@ -3,7 +3,9 @@ package com.chaogarden.client;
 /** Shared design-canvas geometry for the Analyzer's alignment display and drag input. */
 public final class AnalyzerAlignmentBar053 {
   public static final int X=398,Y=279,WIDTH=162,HEIGHT=7;
-  public static final int HIT_LEFT=396,HIT_RIGHT=562,HIT_TOP=274,HIT_BOTTOM=290;
+  // Include the caption/end labels so a tap need not land on the seven-pixel track.
+  // The preceding personality row ends at260 and the profile footer starts301.
+  public static final int HIT_LEFT=396,HIT_RIGHT=562,HIT_TOP=264,HIT_BOTTOM=300;
   public static final int MIN=-1000,MAX=1000;
   private AnalyzerAlignmentBar053() {}
 

@@ -1,3 +1,11 @@
+## 0.25.56 — Neutral morphology foundation and Creative editing
+
+- Add the nine Neutral/Normal adult combinations through independent age and opposed current-training axes, with a fixed original head, one blocky central crown, compact limbs and shared Lionfish attachments. Preserve the approved Hero Run path and saved first identities.
+- Keep the viewer-verified Hero baby blue-to-pink orb transition; protect semantic orb pigment from source-atlas patches and cosmetic palette recoloring. The reported original patchwork was not reproduced with current atlases.
+- Clarify read-only adult alignment and widen input targets. Add server-authorized Creative maturity scrubbing within the current stage, without changing life clocks or invoking evolution/death/reincarnation.
+- Add Creative/admin named or nearest Chao alignment/stat editing with exact ranges, safe ambiguous-target rejection and atomic adult-lock feedback.
+- Document references, provisional rates, approximated forms and actual verification in [the .56 report](docs/NEUTRAL_FOUNDATION_02556.md).
+
 ## 0.25.55 — Blocky Hero Run morphology
 
 - Keep the original 7×6×6 baby head, eyes and shared attachment rig fixed; develop the approved stepped cuboid crest, rear spikes and separate front nubs through continuous part transforms.

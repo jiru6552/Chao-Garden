@@ -2,6 +2,7 @@ package com.chaogarden.care;
 
 import com.chaogarden.ChaoGarden;
 import com.chaogarden.core.AlignmentEditRules053;
+import com.chaogarden.core.MaturityEditRules056;
 import com.chaogarden.entity.ChaoEntity;
 import java.util.UUID;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -39,6 +40,13 @@ public final class ChaoCareNetwork {
         ByteBufCodecs.stringUtf8(36),AlignmentEdit::chao,ByteBufCodecs.VAR_INT,AlignmentEdit::value,AlignmentEdit::new);
     @Override public Type<AlignmentEdit> type(){return TYPE;}
   }
+  /** Current-stage fraction, 0..990 for a child and 0..1000 for an adult. */
+  public record MaturityEdit(String chao,int value) implements CustomPacketPayload {
+    public static final Type<MaturityEdit> TYPE=new Type<>(id("analyzer_maturity_edit"));
+    public static final StreamCodec<RegistryFriendlyByteBuf,MaturityEdit> CODEC=StreamCodec.composite(
+        ByteBufCodecs.stringUtf8(36),MaturityEdit::chao,ByteBufCodecs.VAR_INT,MaturityEdit::value,MaturityEdit::new);
+    @Override public Type<MaturityEdit> type(){return TYPE;}
+  }
   /** Shared by the network handler and native authorization tests; always runs on the server thread. */
   public static boolean editStats(ServerPlayer player,StatEdit message){
     if(!player.isCreative()||player.isSpectator())return false;
@@ -74,6 +82,20 @@ public final class ChaoCareNetwork {
   public static void requestAlignment(ChaoEntity chao,int value) {
     if(chao!=null)PacketDistributor.sendToServer(new AlignmentEdit(chao.getUUID().toString(),value));
   }
+  public static boolean editMaturity(ServerPlayer player,MaturityEdit message) {
+    if(player==null||message==null||!player.isCreative()||player.isSpectator()||!hasAnalyzer(player))return false;
+    UUID target;
+    try{target=UUID.fromString(message.chao());}
+    catch(IllegalArgumentException|NullPointerException invalid){return false;}
+    if(!(player.serverLevel().getEntity(target) instanceof ChaoEntity chao)
+        ||!ChaoCareServices.canManage(player,chao)||chao.isCocooned()
+        ||com.chaogarden.activities.ActivityManager.isBusy(chao)
+        ||!MaturityEditRules056.applyMilli(chao.state(),message.value()))return false;
+    chao.sync();com.chaogarden.companion.CompanionContent.itemStateChanged(chao);return true;
+  }
+  public static void requestMaturity(ChaoEntity chao,int value) {
+    if(chao!=null)PacketDistributor.sendToServer(new MaturityEdit(chao.getUUID().toString(),value));
+  }
   public record Open(int entity,int page,int section) implements CustomPacketPayload {
     public static final Type<Open> TYPE=new Type<>(id("care_open"));
     public static final StreamCodec<RegistryFriendlyByteBuf,Open> CODEC=StreamCodec.composite(
@@ -89,6 +111,9 @@ public final class ChaoCareNetwork {
     });
     r.playToServer(AlignmentEdit.TYPE,AlignmentEdit.CODEC,(message,context)->{
       if(context.player() instanceof ServerPlayer player)editAlignment(player,message);
+    });
+    r.playToServer(MaturityEdit.TYPE,MaturityEdit.CODEC,(message,context)->{
+      if(context.player() instanceof ServerPlayer player)editMaturity(player,message);
     });
     r.playToServer(Action.TYPE,Action.CODEC,(message,context)->{
       if(!(context.player() instanceof ServerPlayer player))return;

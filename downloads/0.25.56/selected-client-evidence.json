@@ -1,0 +1,1140 @@
+{
+  "scope": "Latest successful attempt selection from exactly two completed actual .56 client logs; no other UI attempt included; no new game/test execution by preparation script",
+  "version": "0.25.56",
+  "accepted_cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "selected_png_count": 413,
+  "skipped_cases": {},
+  "source_logs": [
+    {
+      "file": "neutral056-client-first.log",
+      "sha256": "3dcbab1aec31259d342f3263a78d2fbf5eb7cea427dd4025e19782afd7317b26"
+    },
+    {
+      "file": "neutral056-client-ui-final.log",
+      "sha256": "a41aee4cf103a3d319122d60c9e0ebb5172a8ae7fe2f9028dc53c79377b5a8b4"
+    }
+  ],
+  "runtime_mode": "development_classpath",
+  "artifact_jar_sha256": "5c14a8c8aae3feff05a926b6ed70368096197c509151ed60327e74ea56cac0bd",
+  "runtime_proof": {
+    "path": "/workspace/.setup/run056-runtime-proof.json",
+    "sha256": "4761200d2112e1f79071124ae1ea0dd9073dcfe6342fca5a29a76683ba56f711"
+  },
+  "case_evidence": [
+    {
+      "case": 0,
+      "name": "neutral_normal_normal_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:16] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 0 name=neutral_normal_normal_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_normal coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,-1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471136615 actualAccessories=false",
+        "[08:12:21] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 0 name=neutral_normal_normal_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,-1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471141743",
+        "[08:12:21] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 0 name=neutral_normal_normal_age0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471141742"
+      ],
+      "selected_success_epochMillis": 1794471141742
+    },
+    {
+      "case": 1,
+      "name": "neutral_normal_normal_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:21] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 1 name=neutral_normal_normal_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_normal coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,-1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471141750 actualAccessories=false",
+        "[08:12:26] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 1 name=neutral_normal_normal_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,-1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471146372",
+        "[08:12:26] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 1 name=neutral_normal_normal_age50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471146372"
+      ],
+      "selected_success_epochMillis": 1794471146372
+    },
+    {
+      "case": 2,
+      "name": "neutral_normal_normal_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:26] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 2 name=neutral_normal_normal_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_normal coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,-1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471146374 actualAccessories=false",
+        "[08:12:31] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 2 name=neutral_normal_normal_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,-1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471151006",
+        "[08:12:31] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 2 name=neutral_normal_normal_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471151005"
+      ],
+      "selected_success_epochMillis": 1794471151005
+    },
+    {
+      "case": 3,
+      "name": "neutral_normal_run_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:31] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 3 name=neutral_normal_run_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_run coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,2,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471151009 actualAccessories=false",
+        "[08:12:35] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 3 name=neutral_normal_run_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,2,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471155674",
+        "[08:12:35] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 3 name=neutral_normal_run_age0 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471155671"
+      ],
+      "selected_success_epochMillis": 1794471155671
+    },
+    {
+      "case": 4,
+      "name": "neutral_normal_run_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:35] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 4 name=neutral_normal_run_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_run coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=0.5, adultGrowth=0.5] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,2,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471155676 actualAccessories=false",
+        "[08:12:40] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 4 name=neutral_normal_run_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,2,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471160423",
+        "[08:12:40] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 4 name=neutral_normal_run_age50 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471160421"
+      ],
+      "selected_success_epochMillis": 1794471160421
+    },
+    {
+      "case": 5,
+      "name": "neutral_normal_run_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:40] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 5 name=neutral_normal_run_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_run coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471160425 actualAccessories=false",
+        "[08:12:45] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 5 name=neutral_normal_run_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471165044",
+        "[08:12:45] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 5 name=neutral_normal_run_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471165044"
+      ],
+      "selected_success_epochMillis": 1794471165044
+    },
+    {
+      "case": 6,
+      "name": "neutral_normal_run_fly_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:45] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 6 name=neutral_normal_run_fly_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_run_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471165046 actualAccessories=false",
+        "[08:12:49] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 6 name=neutral_normal_run_fly_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471169735",
+        "[08:12:49] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 6 name=neutral_normal_run_fly_age0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471169734"
+      ],
+      "selected_success_epochMillis": 1794471169734
+    },
+    {
+      "case": 7,
+      "name": "neutral_normal_run_fly_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:49] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 7 name=neutral_normal_run_fly_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_run_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=0.5, adultGrowth=0.5] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471169737 actualAccessories=false",
+        "[08:12:54] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 7 name=neutral_normal_run_fly_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471174405",
+        "[08:12:54] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 7 name=neutral_normal_run_fly_age50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471174403"
+      ],
+      "selected_success_epochMillis": 1794471174403
+    },
+    {
+      "case": 8,
+      "name": "neutral_normal_run_fly_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:54] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 8 name=neutral_normal_run_fly_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_run_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471174408 actualAccessories=false",
+        "[08:12:59] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 8 name=neutral_normal_run_fly_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471179053",
+        "[08:12:59] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 8 name=neutral_normal_run_fly_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471179053"
+      ],
+      "selected_success_epochMillis": 1794471179053
+    },
+    {
+      "case": 9,
+      "name": "neutral_normal_run_swim_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:12:59] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 9 name=neutral_normal_run_swim_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_run_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,9,0,0;60,0,60,0,0;174,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,0,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471179056 actualAccessories=false",
+        "[08:13:03] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 9 name=neutral_normal_run_swim_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,9,0,0;60,0,60,0,0;174,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,0,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471183681",
+        "[08:13:03] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 9 name=neutral_normal_run_swim_age0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471183680"
+      ],
+      "selected_success_epochMillis": 1794471183680
+    },
+    {
+      "case": 10,
+      "name": "neutral_normal_run_swim_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:03] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 10 name=neutral_normal_run_swim_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_run_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=0.5, adultGrowth=0.5] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,9,0,0;60,0,60,0,0;174,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,0,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471183682 actualAccessories=false",
+        "[08:13:08] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 10 name=neutral_normal_run_swim_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,9,0,0;60,0,60,0,0;174,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,0,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471188349",
+        "[08:13:08] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 10 name=neutral_normal_run_swim_age50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471188349"
+      ],
+      "selected_success_epochMillis": 1794471188349
+    },
+    {
+      "case": 11,
+      "name": "neutral_normal_run_swim_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:08] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 11 name=neutral_normal_run_swim_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_run_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,9,0,0;60,0,60,0,0;174,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471188354 actualAccessories=false",
+        "[08:13:12] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 11 name=neutral_normal_run_swim_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,9,0,0;60,0,60,0,0;174,0,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471192976",
+        "[08:13:12] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 11 name=neutral_normal_run_swim_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471192975"
+      ],
+      "selected_success_epochMillis": 1794471192975
+    },
+    {
+      "case": 12,
+      "name": "neutral_normal_power_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:12] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 12 name=neutral_normal_power_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_power coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,9,0;0,0,0,60,0;0,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,3,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471192977 actualAccessories=false",
+        "[08:13:17] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 12 name=neutral_normal_power_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,9,0;0,0,0,60,0;0,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,3,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471197653",
+        "[08:13:17] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 12 name=neutral_normal_power_age0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471197652"
+      ],
+      "selected_success_epochMillis": 1794471197652
+    },
+    {
+      "case": 13,
+      "name": "neutral_normal_power_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:17] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 13 name=neutral_normal_power_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_power coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,9,0;0,0,0,60,0;0,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,3,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471197655 actualAccessories=false",
+        "[08:13:22] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 13 name=neutral_normal_power_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,9,0;0,0,0,60,0;0,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,3,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471202279",
+        "[08:13:22] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 13 name=neutral_normal_power_age50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471202279"
+      ],
+      "selected_success_epochMillis": 1794471202279
+    },
+    {
+      "case": 14,
+      "name": "neutral_normal_power_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:22] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 14 name=neutral_normal_power_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_power coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,9,0;0,0,0,60,0;0,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471202281 actualAccessories=false",
+        "[08:13:26] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 14 name=neutral_normal_power_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,9,0;0,0,0,60,0;0,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471206904",
+        "[08:13:26] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 14 name=neutral_normal_power_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471206904"
+      ],
+      "selected_success_epochMillis": 1794471206904
+    },
+    {
+      "case": 15,
+      "name": "neutral_normal_power_fly_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:26] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 15 name=neutral_normal_power_fly_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_power_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,9,0;0,60,0,60,0;0,174,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,1,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471206906 actualAccessories=false",
+        "[08:13:31] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 15 name=neutral_normal_power_fly_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,9,0;0,60,0,60,0;0,174,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,1,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471211563",
+        "[08:13:31] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 15 name=neutral_normal_power_fly_age0 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471211562"
+      ],
+      "selected_success_epochMillis": 1794471211562
+    },
+    {
+      "case": 16,
+      "name": "neutral_normal_power_fly_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:31] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 16 name=neutral_normal_power_fly_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_power_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,9,0;0,60,0,60,0;0,174,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,1,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471211565 actualAccessories=false",
+        "[08:13:36] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 16 name=neutral_normal_power_fly_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,9,0;0,60,0,60,0;0,174,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,1,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471216247",
+        "[08:13:36] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 16 name=neutral_normal_power_fly_age50 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471216244"
+      ],
+      "selected_success_epochMillis": 1794471216244
+    },
+    {
+      "case": 17,
+      "name": "neutral_normal_power_fly_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:36] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 17 name=neutral_normal_power_fly_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_power_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,9,0;0,60,0,60,0;0,174,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471216249 actualAccessories=false",
+        "[08:13:40] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 17 name=neutral_normal_power_fly_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,9,0;0,60,0,60,0;0,174,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471220873",
+        "[08:13:40] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 17 name=neutral_normal_power_fly_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471220872"
+      ],
+      "selected_success_epochMillis": 1794471220872
+    },
+    {
+      "case": 18,
+      "name": "neutral_normal_power_swim_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:40] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 18 name=neutral_normal_power_swim_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_power_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471220879 actualAccessories=false",
+        "[08:13:45] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 18 name=neutral_normal_power_swim_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471225548",
+        "[08:13:45] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 18 name=neutral_normal_power_swim_age0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471225543"
+      ],
+      "selected_success_epochMillis": 1794471225543
+    },
+    {
+      "case": 19,
+      "name": "neutral_normal_power_swim_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:45] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 19 name=neutral_normal_power_swim_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_power_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471225554 actualAccessories=false",
+        "[08:13:50] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 19 name=neutral_normal_power_swim_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471230174",
+        "[08:13:50] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 19 name=neutral_normal_power_swim_age50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471230173"
+      ],
+      "selected_success_epochMillis": 1794471230173
+    },
+    {
+      "case": 20,
+      "name": "neutral_normal_power_swim_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:50] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 20 name=neutral_normal_power_swim_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_power_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471230176 actualAccessories=false",
+        "[08:13:54] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 20 name=neutral_normal_power_swim_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471234800",
+        "[08:13:54] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 20 name=neutral_normal_power_swim_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471234800"
+      ],
+      "selected_success_epochMillis": 1794471234800
+    },
+    {
+      "case": 21,
+      "name": "neutral_normal_fly_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:54] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 21 name=neutral_normal_fly_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,0,0;0,60,0,0,0;0,174,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471234805 actualAccessories=false",
+        "[08:13:59] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 21 name=neutral_normal_fly_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,0,0;0,60,0,0,0;0,174,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471239431",
+        "[08:13:59] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 21 name=neutral_normal_fly_age0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471239430"
+      ],
+      "selected_success_epochMillis": 1794471239430
+    },
+    {
+      "case": 22,
+      "name": "neutral_normal_fly_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:13:59] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 22 name=neutral_normal_fly_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,0,0;0,60,0,0,0;0,174,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471239432 actualAccessories=false",
+        "[08:14:04] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 22 name=neutral_normal_fly_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,0,0;0,60,0,0,0;0,174,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471244060",
+        "[08:14:04] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 22 name=neutral_normal_fly_age50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471244059"
+      ],
+      "selected_success_epochMillis": 1794471244059
+    },
+    {
+      "case": 23,
+      "name": "neutral_normal_fly_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:04] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 23 name=neutral_normal_fly_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,0,0;0,60,0,0,0;0,174,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471244062 actualAccessories=false",
+        "[08:14:08] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 23 name=neutral_normal_fly_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,0,0;0,60,0,0,0;0,174,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471248720",
+        "[08:14:08] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 23 name=neutral_normal_fly_age100 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471248720"
+      ],
+      "selected_success_epochMillis": 1794471248720
+    },
+    {
+      "case": 24,
+      "name": "neutral_normal_swim_age0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:08] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 24 name=neutral_normal_swim_age0 baseline=false adult=true percent=100 alignment=0.0 maturity=0.0 action=still_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,0,0;60,0,0,0,0;174,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,-0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,0,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471248722 actualAccessories=false",
+        "[08:14:13] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 24 name=neutral_normal_swim_age0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,0,0;60,0,0,0,0;174,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,-0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,0,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471253419",
+        "[08:14:13] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 24 name=neutral_normal_swim_age0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471253418"
+      ],
+      "selected_success_epochMillis": 1794471253418
+    },
+    {
+      "case": 25,
+      "name": "neutral_normal_swim_age50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:13] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 25 name=neutral_normal_swim_age50 baseline=false adult=true percent=100 alignment=0.0 maturity=0.5 action=still_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,0,0;60,0,0,0,0;174,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,-0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,0,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471253424 actualAccessories=false",
+        "[08:14:18] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 25 name=neutral_normal_swim_age50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,0,0;60,0,0,0,0;174,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,-0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071854387,1073741824,0,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471258083",
+        "[08:14:18] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 25 name=neutral_normal_swim_age50 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471258082"
+      ],
+      "selected_success_epochMillis": 1794471258082
+    },
+    {
+      "case": 26,
+      "name": "neutral_normal_swim_age100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:18] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 26 name=neutral_normal_swim_age100 baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,0,0;60,0,0,0,0;174,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,-0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471258085 actualAccessories=false",
+        "[08:14:22] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 26 name=neutral_normal_swim_age100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,0,0;60,0,0,0,0;174,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,-0x1.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471262778",
+        "[08:14:22] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 26 name=neutral_normal_swim_age100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471262777"
+      ],
+      "selected_success_epochMillis": 1794471262777
+    },
+    {
+      "case": 27,
+      "name": "neutral_normal_run_fly_influence25",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:22] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 27 name=neutral_normal_run_fly_influence25 baseline=false adult=true percent=25 alignment=0.0 maturity=1.0 action=still_run_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.5, specialization=0.25, maturity=1.0, adultGrowth=0.25] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,2,2,0,0;0,40,40,0,0;0,40,40,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471262781 actualAccessories=false",
+        "[08:14:27] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 27 name=neutral_normal_run_fly_influence25 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,2,2,0,0;0,40,40,0,0;0,40,40,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471267409",
+        "[08:14:27] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 27 name=neutral_normal_run_fly_influence25 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471267409"
+      ],
+      "selected_success_epochMillis": 1794471267409
+    },
+    {
+      "case": 28,
+      "name": "neutral_normal_run_fly_influence50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:27] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 28 name=neutral_normal_run_fly_influence50 baseline=false adult=true percent=50 alignment=0.0 maturity=1.0 action=still_run_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=0.5, maturity=1.0, adultGrowth=0.5] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,4,4,0,0;0,80,80,0,0;0,78,78,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471267411 actualAccessories=false",
+        "[08:14:32] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 28 name=neutral_normal_run_fly_influence50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,4,4,0,0;0,80,80,0,0;0,78,78,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471272077",
+        "[08:14:32] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 28 name=neutral_normal_run_fly_influence50 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471272076"
+      ],
+      "selected_success_epochMillis": 1794471272076
+    },
+    {
+      "case": 29,
+      "name": "neutral_normal_run_fly_influence75",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:32] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 29 name=neutral_normal_run_fly_influence75 baseline=false adult=true percent=75 alignment=0.0 maturity=1.0 action=still_run_fly coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=0.75, maturity=1.0, adultGrowth=0.75] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,7,7,0,0;0,20,20,0,0;0,135,135,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471272079 actualAccessories=false",
+        "[08:14:36] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 29 name=neutral_normal_run_fly_influence75 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,7,7,0,0;0,20,20,0,0;0,135,135,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471276709",
+        "[08:14:36] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 29 name=neutral_normal_run_fly_influence75 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471276709"
+      ],
+      "selected_success_epochMillis": 1794471276709
+    },
+    {
+      "case": 30,
+      "name": "neutral_normal_power_swim_influence25",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:36] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 30 name=neutral_normal_power_swim_influence25 baseline=false adult=true percent=25 alignment=0.0 maturity=1.0 action=still_power_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;2,0,0,2,0;40,0,0,40,0;40,0,0,40,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471276713 actualAccessories=false",
+        "[08:14:41] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 30 name=neutral_normal_power_swim_influence25 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;2,0,0,2,0;40,0,0,40,0;40,0,0,40,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471281373",
+        "[08:14:41] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 30 name=neutral_normal_power_swim_influence25 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471281372"
+      ],
+      "selected_success_epochMillis": 1794471281372
+    },
+    {
+      "case": 31,
+      "name": "neutral_normal_power_swim_influence50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:41] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 31 name=neutral_normal_power_swim_influence50 baseline=false adult=true percent=50 alignment=0.0 maturity=1.0 action=still_power_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;4,0,0,4,0;80,0,0,80,0;78,0,0,78,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471281375 actualAccessories=false",
+        "[08:14:45] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 31 name=neutral_normal_power_swim_influence50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;4,0,0,4,0;80,0,0,80,0;78,0,0,78,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471285997",
+        "[08:14:45] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 31 name=neutral_normal_power_swim_influence50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471285997"
+      ],
+      "selected_success_epochMillis": 1794471285997
+    },
+    {
+      "case": 32,
+      "name": "neutral_normal_power_swim_influence75",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:46] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 32 name=neutral_normal_power_swim_influence75 baseline=false adult=true percent=75 alignment=0.0 maturity=1.0 action=still_power_swim coat=natural suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;7,0,0,7,0;20,0,0,20,0;135,0,0,135,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471285999 actualAccessories=false",
+        "[08:14:50] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 32 name=neutral_normal_power_swim_influence75 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;7,0,0,7,0;20,0,0,20,0;135,0,0,135,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471290626",
+        "[08:14:50] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 32 name=neutral_normal_power_swim_influence75 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471290626"
+      ],
+      "selected_success_epochMillis": 1794471290626
+    },
+    {
+      "case": 33,
+      "name": "hero_baby_orb_age0_run0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:50] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 33 name=hero_baby_orb_age0_run0 baseline=false adult=false percent=0 alignment=1.0 maturity=0.0 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=0.0, specialization=0.0, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471290631 actualAccessories=false",
+        "[08:14:55] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 33 name=hero_baby_orb_age0_run0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471295268",
+        "[08:14:55] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 33 name=hero_baby_orb_age0_run0 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471295267"
+      ],
+      "selected_success_epochMillis": 1794471295267
+    },
+    {
+      "case": 34,
+      "name": "hero_baby_orb_age0_run100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:55] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 34 name=hero_baby_orb_age0_run100 baseline=false adult=false percent=100 alignment=1.0 maturity=0.0 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471295269 actualAccessories=false",
+        "[08:14:59] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 34 name=hero_baby_orb_age0_run100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471299970",
+        "[08:14:59] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 34 name=hero_baby_orb_age0_run100 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471299970"
+      ],
+      "selected_success_epochMillis": 1794471299970
+    },
+    {
+      "case": 35,
+      "name": "hero_baby_orb_age50_run0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:14:59] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 35 name=hero_baby_orb_age50_run0 baseline=false adult=false percent=0 alignment=1.0 maturity=0.5 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=0.0, specialization=0.0, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071644672,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471299972 actualAccessories=false",
+        "[08:15:04] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 35 name=hero_baby_orb_age50_run0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071644672,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471304637",
+        "[08:15:04] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 35 name=hero_baby_orb_age50_run0 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471304636"
+      ],
+      "selected_success_epochMillis": 1794471304636
+    },
+    {
+      "case": 36,
+      "name": "hero_baby_orb_age50_run100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:04] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 36 name=hero_baby_orb_age50_run100 baseline=false adult=false percent=100 alignment=1.0 maturity=0.5 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.5, adultGrowth=0.0] babyVisibleGrowth=0.5 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071644672,0,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471304639 actualAccessories=false",
+        "[08:15:09] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 36 name=hero_baby_orb_age50_run100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1071644672,0,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471309266",
+        "[08:15:09] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 36 name=hero_baby_orb_age50_run100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471309264"
+      ],
+      "selected_success_epochMillis": 1794471309264
+    },
+    {
+      "case": 37,
+      "name": "hero_baby_orb_age99_run0",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:09] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 37 name=hero_baby_orb_age99_run0 baseline=false adult=false percent=0 alignment=1.0 maturity=0.99 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=0.0, specialization=0.0, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,-1,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471309268 actualAccessories=false",
+        "[08:15:13] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 37 name=hero_baby_orb_age99_run0 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,-1,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471313922",
+        "[08:15:13] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 37 name=hero_baby_orb_age99_run0 baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471313921"
+      ],
+      "selected_success_epochMillis": 1794471313921
+    },
+    {
+      "case": 38,
+      "name": "hero_baby_orb_age99_run100",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:13] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 38 name=hero_baby_orb_age99_run100 baseline=false adult=false percent=100 alignment=1.0 maturity=0.99 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471313924 actualAccessories=false",
+        "[08:15:18] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 38 name=hero_baby_orb_age99_run100 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471318601",
+        "[08:15:18] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 38 name=hero_baby_orb_age99_run100 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471318601"
+      ],
+      "selected_success_epochMillis": 1794471318601
+    },
+    {
+      "case": 39,
+      "name": "baby_orb_alignment25",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:18] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 39 name=baby_orb_alignment25 baseline=false adult=false percent=100 alignment=0.25 maturity=0.99 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=0.5, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p-2,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471318607 actualAccessories=false",
+        "[08:15:23] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 39 name=baby_orb_alignment25 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p-2,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471323227",
+        "[08:15:23] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 39 name=baby_orb_alignment25 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471323227"
+      ],
+      "selected_success_epochMillis": 1794471323227
+    },
+    {
+      "case": 40,
+      "name": "baby_orb_alignment50",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:23] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 40 name=baby_orb_alignment50 baseline=false adult=false percent=100 alignment=0.5 maturity=0.99 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p-1,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471323229 actualAccessories=false",
+        "[08:15:27] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 40 name=baby_orb_alignment50 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p-1,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471327851",
+        "[08:15:27] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 40 name=baby_orb_alignment50 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471327851"
+      ],
+      "selected_success_epochMillis": 1794471327851
+    },
+    {
+      "case": 41,
+      "name": "baby_orb_alignment75",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:27] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 41 name=baby_orb_alignment75 baseline=false adult=false percent=100 alignment=0.75 maturity=0.99 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.8p-1,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471327853 actualAccessories=false",
+        "[08:15:32] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 41 name=baby_orb_alignment75 baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.8p-1,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471332500",
+        "[08:15:32] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 41 name=baby_orb_alignment75 baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471332500"
+      ],
+      "selected_success_epochMillis": 1794471332500
+    },
+    {
+      "case": 42,
+      "name": "hero_baby_orb_ruby",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:32] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 42 name=hero_baby_orb_ruby baseline=false adult=false percent=100 alignment=1.0 maturity=0.99 action=still coat=ruby suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;0,0;1,1;0,0;3,3;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471332502 actualAccessories=false",
+        "[08:15:37] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 42 name=hero_baby_orb_ruby baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;3,3;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471337181",
+        "[08:15:37] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 42 name=hero_baby_orb_ruby baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471337179"
+      ],
+      "selected_success_epochMillis": 1794471337179
+    },
+    {
+      "case": 43,
+      "name": "hero_baby_orb_red_shiny",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:37] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 43 name=hero_baby_orb_red_shiny baseline=false adult=false percent=100 alignment=1.0 maturity=0.99 action=still coat=red_shiny suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;2,2;1,1;1,1;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;2,0,1,1,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471337183 actualAccessories=false",
+        "[08:15:41] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 43 name=hero_baby_orb_red_shiny baseline=false frozenStatePreserved=true state=6;2,2;1,1;1,1;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;2,0,1,1,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471341813",
+        "[08:15:41] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 43 name=hero_baby_orb_red_shiny baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471341809"
+      ],
+      "selected_success_epochMillis": 1794471341809
+    },
+    {
+      "case": 44,
+      "name": "hero_baby_orb_green_mono",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:41] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 44 name=hero_baby_orb_green_mono baseline=false adult=false percent=100 alignment=1.0 maturity=0.99 action=still coat=green_mono suspendedStatic=true sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;10,10;0,0;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471341815 actualAccessories=false",
+        "[08:15:46] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 44 name=hero_baby_orb_green_mono baseline=false frozenStatePreserved=true state=6;10,10;0,0;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471346470",
+        "[08:15:46] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 44 name=hero_baby_orb_green_mono baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471346468"
+      ],
+      "selected_success_epochMillis": 1794471346468
+    },
+    {
+      "case": 45,
+      "name": "neutral_run_fly_ruby_phoenix_glasses",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:46] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 45 name=neutral_run_fly_ruby_phoenix_glasses baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_run_fly_wings_glasses coat=ruby suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;3,3;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,3,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,131136,131136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;6,6,-1,-1,6,-1,6,17;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471346475 actualAccessories=false",
+        "[08:15:51] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 45 name=neutral_run_fly_ruby_phoenix_glasses baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;3,3;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,3,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,131136,131136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;6,6,-1,-1,6,-1,6,17;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471351135",
+        "[08:15:51] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 45 name=neutral_run_fly_ruby_phoenix_glasses baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471351135"
+      ],
+      "selected_success_epochMillis": 1794471351135
+    },
+    {
+      "case": 46,
+      "name": "neutral_power_swim_red_shiny_skull",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:51] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 46 name=neutral_power_swim_red_shiny_skull baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=still_power_swim coat=red_shiny suspendedStatic=true sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;2,2;1,1;1,1;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;2,0,1,1,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,64,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;6,6,-1,-1,6,-1,6,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471351137 actualAccessories=false",
+        "[08:15:55] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 46 name=neutral_power_swim_red_shiny_skull baseline=false frozenStatePreserved=true state=6;2,2;1,1;1,1;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;2,0,1,1,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,64,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;6,6,-1,-1,6,-1,6,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471355763",
+        "[08:15:55] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 46 name=neutral_power_swim_red_shiny_skull baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471355763"
+      ],
+      "selected_success_epochMillis": 1794471355763
+    },
+    {
+      "case": 47,
+      "name": "hero_run_fresh_regression",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:15:55] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 47 name=hero_run_fresh_regression baseline=false adult=true percent=50 alignment=1.0 maturity=0.0 action=fresh coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,3,2,2;2,2,2,2,2;2,2,3,2,2;0,0,4,0,0;0,0,80,0,0;0,0,79,0,0;0,0,1,0,0,0,0,1000,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,8,0,0,0,10,10,4,0,9999,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,2,-1,-1,-1,-1,1,1065353216,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471355766 actualAccessories=false",
+        "[08:16:00] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 47 name=hero_run_fresh_regression baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,3,2,2;2,2,2,2,2;2,2,3,2,2;0,0,4,0,0;0,0,80,0,0;0,0,79,0,0;0,0,1,0,0,0,0,1000,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,8,0,0,0,10,10,4,0,9999,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,0,0,2,-1,-1,-1,-1,1,1065353216,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471360423",
+        "[08:16:00] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 47 name=hero_run_fresh_regression baseline=false angles=6 worldFrames=138 actorFrames=139 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471360422"
+      ],
+      "selected_success_epochMillis": 1794471360422
+    },
+    {
+      "case": 48,
+      "name": "hero_run_mature_regression",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:16:00] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 48 name=hero_run_mature_regression baseline=false adult=true percent=100 alignment=1.0 maturity=1.0 action=still coat=natural suspendedStatic=true sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,176,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,-1,-1,-1,-1,1,1065353216,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471360427 actualAccessories=false",
+        "[08:16:05] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 48 name=hero_run_mature_regression baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,176,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,-1,-1,-1,-1,1,1065353216,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471365047",
+        "[08:16:05] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 48 name=hero_run_mature_regression baseline=false angles=6 worldFrames=138 actorFrames=138 captures=6 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471365047"
+      ],
+      "selected_success_epochMillis": 1794471365047
+    },
+    {
+      "case": 49,
+      "name": "creative_baby_alignment_maturity_and_reload",
+      "source_log": "neutral056-client-ui-final.log",
+      "proof_lines": [
+        "[08:26:15] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 49 name=creative_baby_alignment_maturity_and_reload baseline=false adult=false percent=100 alignment=0.0 maturity=0.8 action=ui_creative coat=natural suspendedStatic=false sample=Sample[enabled=true, adult=false, babyHero=0.0, babyRun=1.0, specialization=0.5, maturity=0.8, adultGrowth=0.0] babyVisibleGrowth=0.8 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072273817,-1610612736,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471975012 actualAccessories=false",
+        "[08:26:27] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 49 name=creative_baby_alignment_maturity_and_reload baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,190,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.9a9fbep-1,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,72,0,0,0,90,90,36,0,9991,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672519,970344470,2,-1,-1,-1,-1,0,0,0,0,0,190,1,0,0,0;;normal;normal epochMillis=1794471987694",
+        "[08:26:27] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 49 name=creative_baby_alignment_maturity_and_reload baseline=false angles=3 worldFrames=81 actorFrames=82 captures=3 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=91 uiCaptures=6 epochMillis=1794471987690",
+        "[08:26:25] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_UI_NATIVE_VERIFIED case=49 creative=true adult=false alignment=0.802 maturity=0.99011576 saveReloadExact=true stagePreserved=true epochMillis=1794471985374"
+      ],
+      "selected_success_epochMillis": 1794471987690
+    },
+    {
+      "case": 50,
+      "name": "creative_dark_adult_alignment_locked_maturity",
+      "source_log": "neutral056-client-ui-final.log",
+      "proof_lines": [
+        "[08:26:27] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 50 name=creative_dark_adult_alignment_locked_maturity baseline=false adult=true percent=100 alignment=-1.0 maturity=0.8 action=ui_adult coat=natural suspendedStatic=false sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=0.8, adultGrowth=0.8] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,176,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;-0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072609362,0,2,-1,-1,-1,-1,1,-1082130432,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471987698 actualAccessories=false",
+        "[08:26:37] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 50 name=creative_dark_adult_alignment_locked_maturity baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,9,0,0;0,0,60,0,0;0,0,176,0,0;0,0,1,0,0,0,0,149,149,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;-0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,56,0,0,28,70,70,28,0,9993,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,-1,-1,-1,-1,1,-1082130432,3,0,0,149,1,0,0,0;;normal;normal epochMillis=1794471997998",
+        "[08:26:37] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 50 name=creative_dark_adult_alignment_locked_maturity baseline=false angles=3 worldFrames=81 actorFrames=81 captures=3 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=72 uiCaptures=6 epochMillis=1794471997994",
+        "[08:26:35] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_UI_NATIVE_VERIFIED case=50 creative=true adult=true alignment=-1.0 maturity=1.2 saveReloadExact=true stagePreserved=true epochMillis=1794471995674"
+      ],
+      "selected_success_epochMillis": 1794471997994
+    },
+    {
+      "case": 51,
+      "name": "survival_alignment_maturity_readonly",
+      "source_log": "neutral056-client-ui-final.log",
+      "proof_lines": [
+        "[08:26:38] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 51 name=survival_alignment_maturity_readonly baseline=false adult=false percent=100 alignment=0.0 maturity=0.8 action=ui_survival coat=natural suspendedStatic=false sample=Sample[enabled=true, adult=false, babyHero=0.0, babyRun=1.0, specialization=0.5, maturity=0.8, adultGrowth=0.0] babyVisibleGrowth=0.8 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072273817,-1610612736,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471998006 actualAccessories=false",
+        "[08:26:46] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 51 name=survival_alignment_maturity_readonly baseline=false frozenStatePreserved=true state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,109,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,40,0,0,0,50,50,20,0,9995,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072274875,-386387954,2,-1,-1,-1,-1,0,0,0,0,0,109,1,0,0,0;;normal;normal epochMillis=1794472006175",
+        "[08:26:46] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 51 name=survival_alignment_maturity_readonly baseline=false angles=3 worldFrames=81 actorFrames=81 captures=3 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=61 uiCaptures=4 epochMillis=1794472006175",
+        "[08:26:43] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_UI_NATIVE_VERIFIED case=51 creative=false adult=false alignment=0.0 maturity=0.8005046 saveReloadExact=true stagePreserved=true epochMillis=1794472003857"
+      ],
+      "selected_success_epochMillis": 1794472006175
+    },
+    {
+      "case": 52,
+      "name": "neutral_run_fly_training_walk",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:16:35] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 52 name=neutral_run_fly_training_walk baseline=false adult=true percent=0 alignment=0.0 maturity=1.0 action=gain_walk_run_fly coat=natural suspendedStatic=false sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,-1,-1,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471395619 actualAccessories=false",
+        "[08:16:50] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 52 name=neutral_run_fly_training_walk baseline=false elapsed=280 walked=6.784416427692457 sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,178,166,0,0;0,0,1,0,0,0,0,280,280,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,56,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,280,1,0,0,0;;normal;normal epochMillis=1794471410008",
+        "[08:16:50] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 52 name=neutral_run_fly_training_walk baseline=false angles=3 worldFrames=428 actorFrames=429 captures=23 movingFrames=391 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471410022"
+      ],
+      "selected_success_epochMillis": 1794471410022
+    },
+    {
+      "case": 53,
+      "name": "neutral_run_fly_receding_walk",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:16:50] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 53 name=neutral_run_fly_receding_walk baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=loss_walk_run_fly coat=natural suspendedStatic=false sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471410024 actualAccessories=false",
+        "[08:17:04] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 53 name=neutral_run_fly_receding_walk baseline=false elapsed=280 walked=6.009938348955438 sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,0,0,0;0,60,0,0,0;0,174,3,0,0;0,0,1,0,0,0,0,280,280,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,56,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,1,-1,-1,-1,1,0,0,0,0,280,1,0,0,0;;normal;normal epochMillis=1794471424407",
+        "[08:17:04] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 53 name=neutral_run_fly_receding_walk baseline=false angles=3 worldFrames=429 actorFrames=429 captures=23 movingFrames=409 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471424425"
+      ],
+      "selected_success_epochMillis": 1794471424425
+    },
+    {
+      "case": 54,
+      "name": "neutral_run_fly_broom",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:17:04] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 54 name=neutral_run_fly_broom baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=broom_run_fly coat=natural suspendedStatic=false sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471424429 actualAccessories=false",
+        "[08:17:13] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 54 name=neutral_run_fly_broom baseline=false elapsed=180 walked=0.0 sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,20,20,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,8,0,0,4,10,10,4,0,9999,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,20,1,0,0,0;;normal;normal epochMillis=1794471433811",
+        "[08:17:13] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 54 name=neutral_run_fly_broom baseline=false angles=3 worldFrames=277 actorFrames=277 captures=13 movingFrames=0 toyContacts=378 maxToyError=3.588868E-7 uiFrames=0 uiCaptures=0 epochMillis=1794471433828"
+      ],
+      "selected_success_epochMillis": 1794471433828
+    },
+    {
+      "case": 55,
+      "name": "neutral_power_swim_picture_book",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:17:13] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 55 name=neutral_power_swim_picture_book baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=picture_book_power_swim coat=natural suspendedStatic=false sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471433833 actualAccessories=false",
+        "[08:17:23] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 55 name=neutral_power_swim_picture_book baseline=false elapsed=180 walked=0.0 sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=0.0, specialization=0.0, maturity=1.0, adultGrowth=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;174,0,0,174,0;0,0,1,0,0,0,0,20,20,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,8,0,0,4,10,10,4,0,9999,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,0,0,0,20,1,0,0,0;;normal;normal epochMillis=1794471443207",
+        "[08:17:23] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 55 name=neutral_power_swim_picture_book baseline=false angles=3 worldFrames=277 actorFrames=278 captures=14 movingFrames=0 toyContacts=380 maxToyError=3.698371E-7 uiFrames=0 uiCaptures=0 epochMillis=1794471443223"
+      ],
+      "selected_success_epochMillis": 1794471443223
+    },
+    {
+      "case": 56,
+      "name": "neutral_run_fly_equipped_flying",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:17:23] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 56 name=neutral_run_fly_equipped_flying baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=carry_flying_run_fly coat=natural suspendedStatic=false sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471443234 actualAccessories=true",
+        "[08:17:30] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 56 name=neutral_run_fly_equipped_flying baseline=false elapsed=140 walked=0.0 sample=Sample[enabled=false, adult=true, babyHero=0.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,174,174,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471450658",
+        "[08:17:30] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 56 name=neutral_run_fly_equipped_flying baseline=false angles=3 worldFrames=220 actorFrames=220 captures=10 movingFrames=16 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471450665"
+      ],
+      "selected_success_epochMillis": 1794471450665
+    },
+    {
+      "case": 57,
+      "name": "hero_baby_equipped_flying",
+      "source_log": "neutral056-client-first.log",
+      "proof_lines": [
+        "[08:17:30] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_CASE 57 name=hero_baby_equipped_flying baseline=false adult=false percent=100 alignment=1.0 maturity=0.8 action=carry_flying coat=natural suspendedStatic=false sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.8, adultGrowth=0.0] babyVisibleGrowth=0.8 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072273817,-1610612736,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471450668 actualAccessories=true",
+        "[08:17:38] [Server thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_NATIVE_COMPLETE 57 name=hero_baby_equipped_flying baseline=false elapsed=140 walked=0.0 sample=Sample[enabled=true, adult=false, babyHero=1.0, babyRun=1.0, specialization=0.5, maturity=0.8, adultGrowth=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,80,0,0;0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072273817,-1610612736,2,-1,-1,-1,-1,0,0,0,0,0,0,1,0,0,0;;normal;normal epochMillis=1794471458059",
+        "[08:17:38] [Render thread/INFO] [co.ch.cl.NeutralVisualSmoke056/]: NEUTRAL056_RENDER_COMPLETE 57 name=hero_baby_equipped_flying baseline=false angles=3 worldFrames=219 actorFrames=219 captures=11 movingFrames=16 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794471458062"
+      ],
+      "selected_success_epochMillis": 1794471458062
+    }
+  ],
+  "files": {
+    "neutral056-live-00-neutral_normal_normal_age0-front-t000-f0016.png": "cd6b32006ce983418289ed6a47c0081841547817580e8119c6407cac45b92f7c",
+    "neutral056-live-00-neutral_normal_normal_age0-left-t000-f0039.png": "a7c2c4d2a5278e7981286faef6a26fef54c2cb348f6db7537595a7df80634ca7",
+    "neutral056-live-00-neutral_normal_normal_age0-right-t000-f0062.png": "34afed44f4349ac4e330af87f1b4756a907f259e72bacb8ad1b0bdd42b6f51bc",
+    "neutral056-live-00-neutral_normal_normal_age0-back-t000-f0085.png": "dafe3451d95b005a99a6400f3a1df0e112bfe1d9c08dc9014de3f171b1ea85ee",
+    "neutral056-live-00-neutral_normal_normal_age0-above-t000-f0108.png": "ac816ae380743636e2a3b55bce8cbe4b8eedefb21e6596e227a593cc91c97be8",
+    "neutral056-live-00-neutral_normal_normal_age0-below-t000-f0131.png": "261ed1680044e8a6f757b51de180bf8b1e18b27ae9b93223d640d74bf7658f73",
+    "neutral056-live-01-neutral_normal_normal_age50-front-t000-f0016.png": "2e6079fbcc897b8abe2296ee7d8c4fba8a2fb5911d0dc16c6455eb87fa2f6de1",
+    "neutral056-live-01-neutral_normal_normal_age50-left-t000-f0039.png": "754af1d9945c4834f410b7f675de1e6b24c65dbb4f79267202c11bd8b7e1f3ba",
+    "neutral056-live-01-neutral_normal_normal_age50-right-t000-f0062.png": "b3ea08d601ace21d7bd477c0a59821cae1bcca376f444705203d1a23afb7565b",
+    "neutral056-live-01-neutral_normal_normal_age50-back-t000-f0085.png": "90056329b0a318790714bf2f3610d12ccd6d5074037894e7d38ff365b69b7d61",
+    "neutral056-live-01-neutral_normal_normal_age50-above-t000-f0108.png": "0cd6be9bf20dc0b6964b23be9480fc43a32dc6d555343672cf62e8ad9b53948f",
+    "neutral056-live-01-neutral_normal_normal_age50-below-t000-f0131.png": "01d0ccdb263bee2f98bed4ae534498695bfb46a350defa3c278fe40bf00ae7c4",
+    "neutral056-live-02-neutral_normal_normal_age100-front-t000-f0016.png": "412a075f5a496563de12c9a6e240f4700aec13ea5ef31cf9d506d849090f11da",
+    "neutral056-live-02-neutral_normal_normal_age100-left-t000-f0039.png": "8dfd7e58a185247e0e298258c2501f480cdddab722dd156b6c734c4c9e697401",
+    "neutral056-live-02-neutral_normal_normal_age100-right-t000-f0062.png": "2b233e807e493064b621fa767e6742e20604d16f291b948620d5d4458efc9b72",
+    "neutral056-live-02-neutral_normal_normal_age100-back-t000-f0085.png": "308060d29a7e103401a12f01d583311b7a94680e544f498ecadc826d4ca8830d",
+    "neutral056-live-02-neutral_normal_normal_age100-above-t000-f0108.png": "e5afe6480afde389fc7875bbb19cdbda2c059486b9ab906cc79acb6c1a1fdb9d",
+    "neutral056-live-02-neutral_normal_normal_age100-below-t000-f0131.png": "e05c269479b8f5c53f3fc462c08aabc01c3f6299da6498b66567ea8af80212f9",
+    "neutral056-live-03-neutral_normal_run_age0-front-t000-f0016.png": "84149b611049ca011f05f8263edf9f478d29bbb26873f27fe9480fb0ee8fb645",
+    "neutral056-live-03-neutral_normal_run_age0-left-t000-f0039.png": "de0be6d7ac3960fec3ab6d1ec648705faa357f727a72293c50b973330cb8c77b",
+    "neutral056-live-03-neutral_normal_run_age0-right-t000-f0062.png": "cb16f6db78cbe5089e998941a9f7cefcecb53cbd4917582c3652021f34451800",
+    "neutral056-live-03-neutral_normal_run_age0-back-t000-f0085.png": "388508bcf24eada18273ed2eb0ee7ad009b451d7d4c199d5e0c1a94e23be3605",
+    "neutral056-live-03-neutral_normal_run_age0-above-t000-f0108.png": "23cccbdb840a501e33c637435d5537ca8a4e20861a716bb476f4fae0cfd353f9",
+    "neutral056-live-03-neutral_normal_run_age0-below-t000-f0131.png": "94d7804394db29e489694626aaba4ebe0a30de3073585de87f46ec2c81051f65",
+    "neutral056-live-04-neutral_normal_run_age50-front-t000-f0016.png": "7a6740e32a0ac1286c12d496064f8b3102a7477580fa0311f942a0ab5ea490d5",
+    "neutral056-live-04-neutral_normal_run_age50-left-t000-f0039.png": "0e68d7f476a8436937d5746382fc2f1467deebfbff8b3352d1684ca7878011ec",
+    "neutral056-live-04-neutral_normal_run_age50-right-t000-f0062.png": "bc16c779d00a664aacfffb2ae382ead7e160c930e947a333a4a0c076574a7173",
+    "neutral056-live-04-neutral_normal_run_age50-back-t000-f0085.png": "9520a19a8e8b8bc2ac77d0590ff4382540f0dc2aac768a89e41348281639ae52",
+    "neutral056-live-04-neutral_normal_run_age50-above-t000-f0108.png": "d7109fc536c4fbfd1f75f3d33ed49017eaf23e14fd5a154b14c1c51af608f65c",
+    "neutral056-live-04-neutral_normal_run_age50-below-t000-f0131.png": "551ee3aec59e60c88555a743bead3b77716dfc278eb74bc8bd03e78b773cf201",
+    "neutral056-live-05-neutral_normal_run_age100-front-t000-f0016.png": "7fdd4cee9e66785651693602a825b4d141891f3eaa5ce62c60bb2676fb265555",
+    "neutral056-live-05-neutral_normal_run_age100-left-t000-f0039.png": "8e46bdeddd1a8e9df614e4bac133ad87be34f57007028586cd96509235a0b003",
+    "neutral056-live-05-neutral_normal_run_age100-right-t000-f0062.png": "c28bbd80147d90a870473fba6bae936797189939012348710542b0409a3b4c02",
+    "neutral056-live-05-neutral_normal_run_age100-back-t000-f0085.png": "51002db3210cbd31e07c910ef5a022d7ce5255a8a56e6538510a990356ed2232",
+    "neutral056-live-05-neutral_normal_run_age100-above-t000-f0108.png": "289e6e7ce129f4958853d94ced60c845eb0fa20401a442e2e42bfbc61a82516c",
+    "neutral056-live-05-neutral_normal_run_age100-below-t000-f0131.png": "3745c506b4f3ee177a5197649d9c27ddfa05d56011ac420682824d123804325b",
+    "neutral056-live-06-neutral_normal_run_fly_age0-front-t000-f0016.png": "a5c6ffe0333b36a7178821d66bf0a56be6af9182aaf5a916c328fd34098eee7f",
+    "neutral056-live-06-neutral_normal_run_fly_age0-left-t000-f0039.png": "218c07842583da4769c7e3b9a7d85107b2da1b2cfa04ce50d24279a0944bcbca",
+    "neutral056-live-06-neutral_normal_run_fly_age0-right-t000-f0062.png": "d81f5bd8a41bbfca7840b17ef1d863073f8629c4fdec750020cb7e95d7b14cc0",
+    "neutral056-live-06-neutral_normal_run_fly_age0-back-t000-f0085.png": "49d1d0624d68e6c39fe4bb04e4abdd1a7283476da910e7f323d4b7945d6c228a",
+    "neutral056-live-06-neutral_normal_run_fly_age0-above-t000-f0108.png": "63a111f355fbb14c4758ccf1c9a062491d4e0ab36525c0e3a6e0beb0b616a10f",
+    "neutral056-live-06-neutral_normal_run_fly_age0-below-t000-f0131.png": "dbcdb364125e259cf3f4eb054a70be45056974831d154eb3ccb34c6fd025b14b",
+    "neutral056-live-07-neutral_normal_run_fly_age50-front-t000-f0016.png": "e20fd3570ba1cc6b22b25938d18114c7954fce8ecbb0678daad118207981bf86",
+    "neutral056-live-07-neutral_normal_run_fly_age50-left-t000-f0039.png": "c95bd690d43de8ed5f64548ae20260a11d7565a7518b9675282f57eaaf1a254e",
+    "neutral056-live-07-neutral_normal_run_fly_age50-right-t000-f0062.png": "4b98ac43def58ace6ac32285c65a856fbeac259d0b2a44f25b9045b35e3e14d0",
+    "neutral056-live-07-neutral_normal_run_fly_age50-back-t000-f0085.png": "1c320020939a662fdf5022568fa89775c69c4679f65192747c8bc97400647192",
+    "neutral056-live-07-neutral_normal_run_fly_age50-above-t000-f0108.png": "719e2fb741b0a7fc01c39cf51aa6a7854eebeebd2f7e3571719b789ff4dcba37",
+    "neutral056-live-07-neutral_normal_run_fly_age50-below-t000-f0131.png": "225daf923b718a6c3fac59f3d3c8b878592c56791d0fd74f1429b3986765e247",
+    "neutral056-live-08-neutral_normal_run_fly_age100-front-t000-f0016.png": "b2cb11cd853170c7c2289b0fee8e467a1f387bd0230a13e41bf67a3e94870ffd",
+    "neutral056-live-08-neutral_normal_run_fly_age100-left-t000-f0039.png": "0517bbacfae973a10b428aec419e019dc1db595f1adec324fdafa4a8c23ae4f3",
+    "neutral056-live-08-neutral_normal_run_fly_age100-right-t000-f0062.png": "4d37b429c2590416de6dccef15a562a540708c47a7bb6d1b6e034cd7ddd3dab9",
+    "neutral056-live-08-neutral_normal_run_fly_age100-back-t000-f0085.png": "22d9bd55a4edd369b347bdeeb325689b86bc924fae14ed4ad406d04b2364f8fa",
+    "neutral056-live-08-neutral_normal_run_fly_age100-above-t000-f0108.png": "6edf8b1d91cdcc7b76de15a0833ccaf2e77e2b3b7f8851413db8f1304b3af325",
+    "neutral056-live-08-neutral_normal_run_fly_age100-below-t000-f0131.png": "8ba710461a97543b53aef2050e616074f145b17432209c828e7553ccc6188b7a",
+    "neutral056-live-09-neutral_normal_run_swim_age0-front-t000-f0016.png": "36d960931826fd2ac55cfba445d261b712a75c873de16fec3999be419491323d",
+    "neutral056-live-09-neutral_normal_run_swim_age0-left-t000-f0039.png": "fc6e933fbeb9801da6bad6fa47f3ee2d258daf59010caed4339c84026198c492",
+    "neutral056-live-09-neutral_normal_run_swim_age0-right-t000-f0062.png": "6344a71c4015071a3c455fdda03aebef99e88271dd9fc413a108a762134b394e",
+    "neutral056-live-09-neutral_normal_run_swim_age0-back-t000-f0085.png": "584096d4f8b7e86b5d6459851e2f319c489eaea323d939b3fd03324f6b41536f",
+    "neutral056-live-09-neutral_normal_run_swim_age0-above-t000-f0108.png": "86458a206a94e6737f9533cd0b6bf4a8904fb4073d65fdd4d104a9418a642224",
+    "neutral056-live-09-neutral_normal_run_swim_age0-below-t000-f0131.png": "ddb35cd3539b8d6aa95b5bf9c2c2b9e11890300f8afe244adbd3b718ee366d93",
+    "neutral056-live-10-neutral_normal_run_swim_age50-front-t000-f0016.png": "c5d2370f3b37d2684d3f13362f0d8c4b9d72cfce17e823573cba0732e6aae8ef",
+    "neutral056-live-10-neutral_normal_run_swim_age50-left-t000-f0039.png": "f845784ca1ee0d3777b463472477a9591dc5f98fc42132cb22ca19f60411435e",
+    "neutral056-live-10-neutral_normal_run_swim_age50-right-t000-f0062.png": "43da0d1cb6277eff3f0ed748b6b9b512379f5db8580b0677e97e98db17c78f44",
+    "neutral056-live-10-neutral_normal_run_swim_age50-back-t000-f0085.png": "a807f498effcb6bb35c3701d541e4eaae6c5df58deb89a75167e7a6624b94e18",
+    "neutral056-live-10-neutral_normal_run_swim_age50-above-t000-f0108.png": "036e16570e9c57debd911a5facaa7829ec456be03ed304ed9911234ff0d2b928",
+    "neutral056-live-10-neutral_normal_run_swim_age50-below-t000-f0131.png": "34d836c9c00b2a7ec2b7d24c3c42265dc4dc9278dd4b3c063f7efe85f17fdb66",
+    "neutral056-live-11-neutral_normal_run_swim_age100-front-t000-f0016.png": "919162b0a21925052a2cd72dbcc6b19dac56fefa72998cdc0ff28160e4ee58c9",
+    "neutral056-live-11-neutral_normal_run_swim_age100-left-t000-f0039.png": "65df4a589504f9c3de4913e8087acad6e0c4cc6619d97f7dffaa183f8ae4125e",
+    "neutral056-live-11-neutral_normal_run_swim_age100-right-t000-f0062.png": "2555f4d4980ea05934d66a0709f21243bb25d2642154bec2805d09d815570039",
+    "neutral056-live-11-neutral_normal_run_swim_age100-back-t000-f0085.png": "76fdb47996b605135f28bce1a90aa154519977ee4f111e1ad51760ce68a42edf",
+    "neutral056-live-11-neutral_normal_run_swim_age100-above-t000-f0108.png": "7a22bc4970bbd4b7fa4745b537964e8e5df4a5a185e5c7a08729e517166ff6bd",
+    "neutral056-live-11-neutral_normal_run_swim_age100-below-t000-f0131.png": "06526b87959c589525788a2419938b1692821a7f138508d7fa7822e1003a7e90",
+    "neutral056-live-12-neutral_normal_power_age0-front-t000-f0016.png": "c29e39933fe2340f50b43b92da982da2606c85cbb7d8735a81c880dcaa40b5f5",
+    "neutral056-live-12-neutral_normal_power_age0-left-t000-f0039.png": "5a347d59073462e2ba4fdf852490c5be86c5696ed8a3424806ccbd93f7fb6501",
+    "neutral056-live-12-neutral_normal_power_age0-right-t000-f0062.png": "620fc8a0ea99787b477f8436ba5550bf8359b54600311dcbecb08f205cc0243f",
+    "neutral056-live-12-neutral_normal_power_age0-back-t000-f0085.png": "cb0c4d4b00586b5181ab83d97846869333159edc413f942b06bbd73c0823e0c0",
+    "neutral056-live-12-neutral_normal_power_age0-above-t000-f0108.png": "78b53d59d2dfb57a91ccdb3e99fe3545f7724b38ea0b5dc3d262375c995f7449",
+    "neutral056-live-12-neutral_normal_power_age0-below-t000-f0131.png": "900335a98bccf51b9367196e14e13645f0908dbf38ca44a5937d4f19b031ee31",
+    "neutral056-live-13-neutral_normal_power_age50-front-t000-f0016.png": "d30146ad48cdd912fdd173213afbd6e86be008bffc410ddfa0dc31c6cac2c73f",
+    "neutral056-live-13-neutral_normal_power_age50-left-t000-f0039.png": "ceb25bd32daf2876b74b4d24b5d20dc16901008496746209f64914f0dfd232dc",
+    "neutral056-live-13-neutral_normal_power_age50-right-t000-f0062.png": "5a19fc43b7b4b38c16b043a4b2add22b935d3514bf061a7c23df3fe63639fd99",
+    "neutral056-live-13-neutral_normal_power_age50-back-t000-f0085.png": "435e5f6565f0e40e93052ab92cce0f5a7b387b1d8e0712b821acd12675230c88",
+    "neutral056-live-13-neutral_normal_power_age50-above-t000-f0108.png": "3ba1702b603329b7846ef10e5a5e96fce2438b2dd7522eef3e35b320e5e30b1d",
+    "neutral056-live-13-neutral_normal_power_age50-below-t000-f0131.png": "53f18b5f1a768b5f482e14fb26aedfa01c2aa00c2ebfa07fc4d1810486a9a5eb",
+    "neutral056-live-14-neutral_normal_power_age100-front-t000-f0016.png": "ba8f1b84841f986e2abad5e4b8cf3e179cd211185baab07a7f8a59c55a3669bd",
+    "neutral056-live-14-neutral_normal_power_age100-left-t000-f0039.png": "80bd0ff2243177de58e3a1183b0a50155cdc0f1c77d1ceec4c2f9945abf2721f",
+    "neutral056-live-14-neutral_normal_power_age100-right-t000-f0062.png": "d27576fcb1e9c8ced2584ee9748c0d7f3718af205418afd05b3763c38b11b2c8",
+    "neutral056-live-14-neutral_normal_power_age100-back-t000-f0085.png": "6d5a1f02f522765835e048397f66a80919dc94ada3dc25ed5ab2724c2ad88e8f",
+    "neutral056-live-14-neutral_normal_power_age100-above-t000-f0108.png": "cd1519f742c8739e734fea0ef31c10bf9dd1c5a6b5ea8cc7a1ef462636d502d5",
+    "neutral056-live-14-neutral_normal_power_age100-below-t000-f0131.png": "d84f20fca33eae18bb0894d7e08581a706619cd6ab9396954406d91cff8b1c71",
+    "neutral056-live-15-neutral_normal_power_fly_age0-front-t000-f0016.png": "0bc8a09a0e008213142f001e0c2f9a1e7e0ad7b7d5d66fcfb645870ba8893954",
+    "neutral056-live-15-neutral_normal_power_fly_age0-left-t000-f0039.png": "7d3eb66ebf3f02a4b4ac47f78afb34dbe5b48c479b01409698eedaf122a992d5",
+    "neutral056-live-15-neutral_normal_power_fly_age0-right-t000-f0062.png": "baf063d9c7e605d5c5216e3676f5d63762d2f9076bf67328d4a693baf172d216",
+    "neutral056-live-15-neutral_normal_power_fly_age0-back-t000-f0085.png": "114c435f8b16842daa27b049f577e6832714b91bdfa057c6c8b779b89ef36cae",
+    "neutral056-live-15-neutral_normal_power_fly_age0-above-t000-f0108.png": "979e2b9e38580e4e0d3acd1eef913a8f63982ab9173eb95ab87ebef4ae51304b",
+    "neutral056-live-15-neutral_normal_power_fly_age0-below-t000-f0131.png": "60f10605f01d7724c645de9ba52d0abfdfc0b53e6e4a9ee65d94ac38b5366fbf",
+    "neutral056-live-16-neutral_normal_power_fly_age50-front-t000-f0016.png": "d3b3a418344c530cfd7374b35c9a95c53dd05312afdafb30ead71dc39ce4ce69",
+    "neutral056-live-16-neutral_normal_power_fly_age50-left-t000-f0039.png": "99928d90c24a5ae54a0b8afa4efebb4316b76609e59a9c99373f743c790ba46d",
+    "neutral056-live-16-neutral_normal_power_fly_age50-right-t000-f0062.png": "2c8920b71da813d4364a9e9772ec68127ea729f8b3bf75f3f6da8284673a6da1",
+    "neutral056-live-16-neutral_normal_power_fly_age50-back-t000-f0085.png": "1318981183af0cc065570f516412548f4b58ada9ac103cc96bb2eb77c4f776fd",
+    "neutral056-live-16-neutral_normal_power_fly_age50-above-t000-f0108.png": "a385a8cff0e59bf5c13efab19e76d583862a8debe5658828d7bf29c25def6218",
+    "neutral056-live-16-neutral_normal_power_fly_age50-below-t000-f0131.png": "912d63c1e1dc2d8934c3a398a316985a95c6df85c9b2de91bb388a956bd32070",
+    "neutral056-live-17-neutral_normal_power_fly_age100-front-t000-f0016.png": "fe355a908899909de853a9d442578c08bbcd51f1750c79f499af3d3dda498023",
+    "neutral056-live-17-neutral_normal_power_fly_age100-left-t000-f0039.png": "2f5ebadc7fa1283d00355032ecb7b4fb9b7f32fe5710cb72e046fc03f4eb866a",
+    "neutral056-live-17-neutral_normal_power_fly_age100-right-t000-f0062.png": "56bda2150f66cbe75a6b541449f5909eac39c9d6a9c82d0f47b0281a8abb0e2d",
+    "neutral056-live-17-neutral_normal_power_fly_age100-back-t000-f0085.png": "e4bded271f84e99697245ee088b3b5392709ccdd39b846d34e2bc1934bab329f",
+    "neutral056-live-17-neutral_normal_power_fly_age100-above-t000-f0108.png": "3f2e20c29dc218e6792493ff451d1b807f4f2ca969d484b89c45524a3d635bd6",
+    "neutral056-live-17-neutral_normal_power_fly_age100-below-t000-f0131.png": "3e662c8c04992842d3afdb6dcec5c12c4b0a19db6faf0c016422081bfddc7610",
+    "neutral056-live-18-neutral_normal_power_swim_age0-front-t000-f0016.png": "405dac7eb2ac4c00c90bd52985a94a1621755b5d5d234e379748a44862e78382",
+    "neutral056-live-18-neutral_normal_power_swim_age0-left-t000-f0039.png": "6faa0d22d4d10ce19eac4c8f69519248e58a73c814608c82d296950b46a97465",
+    "neutral056-live-18-neutral_normal_power_swim_age0-right-t000-f0062.png": "4148ac9cd21a97103039ad0f5239ea0889b882709a8b02d813836539680db82f",
+    "neutral056-live-18-neutral_normal_power_swim_age0-back-t000-f0085.png": "8317bb249bd04f96625f434027699a2b5eebec048d9bbdd3653d891f7cd82fea",
+    "neutral056-live-18-neutral_normal_power_swim_age0-above-t000-f0108.png": "7bfd3da146e74446f3d810dd864c0ad80e865c0432331f0947350ca1f195250b",
+    "neutral056-live-18-neutral_normal_power_swim_age0-below-t000-f0131.png": "9e18fbe8008486858cfdadf32b3b4eb8d46b781fe4b738292ce1b4b4d2468082",
+    "neutral056-live-19-neutral_normal_power_swim_age50-front-t000-f0016.png": "ae3a382a8aff74893fa5fec1e3c7db4852eb74ee76a393dc6e0c75807e73da64",
+    "neutral056-live-19-neutral_normal_power_swim_age50-left-t000-f0039.png": "b9747aca7ac7e009a952f25f24beb1823b75d5bc9beeb9835498288346440913",
+    "neutral056-live-19-neutral_normal_power_swim_age50-right-t000-f0062.png": "55fa18766bd7d91ea704a073bb5b3e819c940e3102e7bedd695e3659dbb6b582",
+    "neutral056-live-19-neutral_normal_power_swim_age50-back-t000-f0085.png": "c39fe79a62ec44aa3f4624705bddbf6a119ce3e2a3177d130c0f9ad0495b8b73",
+    "neutral056-live-19-neutral_normal_power_swim_age50-above-t000-f0108.png": "174b29fe8122e262067bc38a1a062542905a4eb39290cfcef8f76d2f1cfd0aa3",
+    "neutral056-live-19-neutral_normal_power_swim_age50-below-t000-f0131.png": "a264c31d68371dee706366a7e318822366c2a26c0b3c9055761813c9e853d09a",
+    "neutral056-live-20-neutral_normal_power_swim_age100-front-t000-f0016.png": "f840ddf73d8ed38edcadd19534dcd7df79333c6dce9ad4e0b1f2ce1ef98c9463",
+    "neutral056-live-20-neutral_normal_power_swim_age100-left-t000-f0039.png": "6e2fb5de8e57ea34e9c235624e7556958fe16217e425e7a50dddcd42b08e0462",
+    "neutral056-live-20-neutral_normal_power_swim_age100-right-t000-f0062.png": "b6fcfdf5738bd4c6c1e55af453f1aba33d8930680a48b10a0e592a0941cdc657",
+    "neutral056-live-20-neutral_normal_power_swim_age100-back-t000-f0085.png": "d128841bfa895a3fff5e2bf0a3e71c443af9239e8ee0fe947358d27b39147a06",
+    "neutral056-live-20-neutral_normal_power_swim_age100-above-t000-f0108.png": "3a8a31c4fcfcf0d1e480b8d8afafc2468b9083522841378f4531004e6a77e9e2",
+    "neutral056-live-20-neutral_normal_power_swim_age100-below-t000-f0131.png": "5fe4c2d9ded2d1b777c2c036f5db80ba241e8aa877a7363c3b3af2eba61a3ef1",
+    "neutral056-live-21-neutral_normal_fly_age0-front-t000-f0016.png": "66179c7c662660409cda2477718b52f83312b92ca321d49ef33c81e72f56441c",
+    "neutral056-live-21-neutral_normal_fly_age0-left-t000-f0039.png": "b42330986345e380a7663f1db10362f6401c59f86522bbf808ea5f968751f0c5",
+    "neutral056-live-21-neutral_normal_fly_age0-right-t000-f0062.png": "f95129183196d41e8902479b802a3a57eae01df163ac8b1df32adf605f269622",
+    "neutral056-live-21-neutral_normal_fly_age0-back-t000-f0085.png": "11f75d3fbe70fec3aa076adef482cb23d7bd5ebd28e265f7fcf60caac383640e",
+    "neutral056-live-21-neutral_normal_fly_age0-above-t000-f0108.png": "f89d02803cc45a3b8d22c7ae3b48a163af9bd877093543eca850d7abcfc57b57",
+    "neutral056-live-21-neutral_normal_fly_age0-below-t000-f0131.png": "2c67a2cb9631583bbc0994bb23d2639fecbc12da35f59c8255fb5adb35d64315",
+    "neutral056-live-22-neutral_normal_fly_age50-front-t000-f0016.png": "2d0bb083e5162921bf5496eff9f404beaad7428f3110125a10bab13825e754ed",
+    "neutral056-live-22-neutral_normal_fly_age50-left-t000-f0039.png": "054f1845c40a3faab91c4975278d875b7ff58cd4cd3cb9be2354cd23774de09b",
+    "neutral056-live-22-neutral_normal_fly_age50-right-t000-f0062.png": "a96619b24bc31be4cd05ae1a3586e7fab79db11874c8fbbb3a5755926e863172",
+    "neutral056-live-22-neutral_normal_fly_age50-back-t000-f0085.png": "7fa2298f71c35e3bcf8fd04420e2cd9894c830b03f70624092429390cc4a53cc",
+    "neutral056-live-22-neutral_normal_fly_age50-above-t000-f0108.png": "d9ce329c6cbc1631877cd83c9db5c999f584ea2ceef7c768fad86047a76d5b51",
+    "neutral056-live-22-neutral_normal_fly_age50-below-t000-f0131.png": "fb4d119003049e0e6c2181e845346e82880c727f744d3cef2e8cb37dd6eea59c",
+    "neutral056-live-23-neutral_normal_fly_age100-front-t000-f0016.png": "4e0706e97138981025c7d5d2f3aceaace8609832dfc7b9cd07c5f3f118a7350b",
+    "neutral056-live-23-neutral_normal_fly_age100-left-t000-f0039.png": "42215169958fb67a257ea29007799dba6f3c823887fd29e717f4b841599c73ed",
+    "neutral056-live-23-neutral_normal_fly_age100-right-t000-f0062.png": "e6d2baff6982ca9cce5c7de219ec83b9272ae3cfc1e2c35a7f06e65c66136cf4",
+    "neutral056-live-23-neutral_normal_fly_age100-back-t000-f0085.png": "d922a8120d6b75c8116984ff5a744dc034a2db91c5d8c7ec7986fbc3ff498ea6",
+    "neutral056-live-23-neutral_normal_fly_age100-above-t000-f0108.png": "c5d6176addf23da384cac0a86b1843e8031c0a3e184ae37a4207ed8fa8206e3a",
+    "neutral056-live-23-neutral_normal_fly_age100-below-t000-f0131.png": "77ffec7497511d92c9a24d825b721b201a76eb5d065bea9a0c7efda36b7bfd15",
+    "neutral056-live-24-neutral_normal_swim_age0-front-t000-f0016.png": "067de218f48cd6d011e031766fc97fce6a02e943e77d88f918debd7ddf50e44b",
+    "neutral056-live-24-neutral_normal_swim_age0-left-t000-f0039.png": "ff77ae46996f5db673baa8b577b688e764768156f24d5980acefd59dea8824d7",
+    "neutral056-live-24-neutral_normal_swim_age0-right-t000-f0062.png": "20db8b643444ea0551484353c75e063a7cac35fd0f3d6cb2ef841737993bbcb4",
+    "neutral056-live-24-neutral_normal_swim_age0-back-t000-f0085.png": "233eaf90228b75e881ef7be899e2803e87158b82e3010e9432ada66bbe7edea7",
+    "neutral056-live-24-neutral_normal_swim_age0-above-t000-f0108.png": "55d6afdefa6b4c4400af00fca301ef7631700fd298136a4831638ea15001ffd3",
+    "neutral056-live-24-neutral_normal_swim_age0-below-t000-f0131.png": "42eca29d8a4bf758b5785b3f0e3f38d204175f567264e829c7da55bbaaeadab7",
+    "neutral056-live-25-neutral_normal_swim_age50-front-t000-f0016.png": "1b17d6ed1974ec50c2d48b1eda9a22e44a240bf4b6438821a030ebf0f127f764",
+    "neutral056-live-25-neutral_normal_swim_age50-left-t000-f0039.png": "d922d233e2683e503af1ff2858b978143b4e7ba0240d2457b3ae0a005a7233ab",
+    "neutral056-live-25-neutral_normal_swim_age50-right-t000-f0062.png": "78b5ec447429938dd5d344287fb15b081e2edbc96e7e156cd382dc9fbc2aecd0",
+    "neutral056-live-25-neutral_normal_swim_age50-back-t000-f0085.png": "0583f8fb6ab773cd6032aba7093c3ba9ea4e2be3979c8817428c1e1a23824bf5",
+    "neutral056-live-25-neutral_normal_swim_age50-above-t000-f0108.png": "56d02dddcdf8d74df9b147a50666ba5b848271b648f5d1655ccf75384c8d97db",
+    "neutral056-live-25-neutral_normal_swim_age50-below-t000-f0131.png": "968d375960ce233060edc39b49749a9faf30fd383e61dffc14324724ece550db",
+    "neutral056-live-26-neutral_normal_swim_age100-front-t000-f0016.png": "59b4eb6aec733f95e5cfc50adffd5ecd4840bdbe52b9c4f497d74cd0dc97139d",
+    "neutral056-live-26-neutral_normal_swim_age100-left-t000-f0039.png": "501693e5a1a97c37764efca2051cecf166640dbabead5a6a5812f5af3b5973ad",
+    "neutral056-live-26-neutral_normal_swim_age100-right-t000-f0062.png": "7f03c0c2b7188286d3dd8c7913f72962b630afe5052d7afd071cab19be5c87b1",
+    "neutral056-live-26-neutral_normal_swim_age100-back-t000-f0085.png": "13247c4413a494591d3f72a2967569b99d70d8fc94a5515ce9d3f9bf501ba92a",
+    "neutral056-live-26-neutral_normal_swim_age100-above-t000-f0108.png": "db0402a9ba80728870a9aef58ac2562ce8c1de0d8721f0839cecef1bc68611b3",
+    "neutral056-live-26-neutral_normal_swim_age100-below-t000-f0131.png": "7c12b746810922ac092f4c8b2fa87870ef8608ef3c262062a389749514e87128",
+    "neutral056-live-27-neutral_normal_run_fly_influence25-front-t000-f0016.png": "0c43b1c277413a6eee7dd417838745372b608346c34f0dd1befd2f24fa4025c3",
+    "neutral056-live-27-neutral_normal_run_fly_influence25-left-t000-f0039.png": "ee3391b795c39aed1b4095fc12816cfbd53d3ef564ad22e801c064860d31b9f0",
+    "neutral056-live-27-neutral_normal_run_fly_influence25-right-t000-f0062.png": "1e474223a46ad88323dc44985e319445dfed15a3de91812af0fe58ad713502e3",
+    "neutral056-live-27-neutral_normal_run_fly_influence25-back-t000-f0085.png": "455728d137cf46c558ece02abe5880803991a7da2f7e4db44a79473bc5c23ad2",
+    "neutral056-live-27-neutral_normal_run_fly_influence25-above-t000-f0108.png": "1c4ef1f014887b1b02da79ea15b06275dcf69a1580f05fd11eb095ff24baf564",
+    "neutral056-live-27-neutral_normal_run_fly_influence25-below-t000-f0131.png": "1af0d08f8fe7ea47a830c95519371c1792b20a1360b6b7b2489d15f3d2154a9e",
+    "neutral056-live-28-neutral_normal_run_fly_influence50-front-t000-f0016.png": "6e62652f90ad74d3dddf27258c70293aab090890e58011171562664f5a2347f6",
+    "neutral056-live-28-neutral_normal_run_fly_influence50-left-t000-f0039.png": "4c702e9227437c173da85185239d7152e303437bdbe6870b71a92b8a47cc57bd",
+    "neutral056-live-28-neutral_normal_run_fly_influence50-right-t000-f0062.png": "f54421f3bdcdd373937fd45d99509419b0c696cbac2ff15972c7a4f55fbf8aed",
+    "neutral056-live-28-neutral_normal_run_fly_influence50-back-t000-f0085.png": "d5c30353e0a80bb64b1fbdea8eb1bc6c52b7afbc8b8190de75cc735800e23d4b",
+    "neutral056-live-28-neutral_normal_run_fly_influence50-above-t000-f0108.png": "1ceb71b8d751c4832c089d319b02add9c2ea96487ad4a6efc6c712e750ba409d",
+    "neutral056-live-28-neutral_normal_run_fly_influence50-below-t000-f0131.png": "e8867108121f7c6f9b7839c0062dc28653d0c835653a3ab4238f0d860b49c835",
+    "neutral056-live-29-neutral_normal_run_fly_influence75-front-t000-f0016.png": "f852aceac537b0e994bb2eca8343891bb2e52b1de6589176c375e9a4e99d848e",
+    "neutral056-live-29-neutral_normal_run_fly_influence75-left-t000-f0039.png": "99a2b3d37f022d24b0d6fc5d33b3fd3e65dfaeadcbaa3cbfba00d51a77336bb0",
+    "neutral056-live-29-neutral_normal_run_fly_influence75-right-t000-f0062.png": "a0fbc3f46ddabcb721f10b5cda7626780a91c6688054ab9cd2613aa87493bd91",
+    "neutral056-live-29-neutral_normal_run_fly_influence75-back-t000-f0085.png": "93617add923c508ccef019e11d669bf7d6bf7fac1ae115d4f2abc31e038798a9",
+    "neutral056-live-29-neutral_normal_run_fly_influence75-above-t000-f0108.png": "386a3acfa5c10a7fab06db50a55cbd3044ffac848d5b9e111c5cfa09a0d35995",
+    "neutral056-live-29-neutral_normal_run_fly_influence75-below-t000-f0131.png": "b1352b51749cb8df685d86f1b03809f286eec4180ededaa9dba0ae531a1c0621",
+    "neutral056-live-30-neutral_normal_power_swim_influence25-front-t000-f0016.png": "3ea44e512b8f9581e8bbb50071cb974365a230f8ff5c6a05b87a8c379046b685",
+    "neutral056-live-30-neutral_normal_power_swim_influence25-left-t000-f0039.png": "09831bf54f9c5a738b1f41ed58c2f85fa69d8b4b852b603e2c759221e4b4131d",
+    "neutral056-live-30-neutral_normal_power_swim_influence25-right-t000-f0062.png": "050a22c28c7f42e2c261634504c5db3eb889b09518897e65811c16f4dc4bea0b",
+    "neutral056-live-30-neutral_normal_power_swim_influence25-back-t000-f0085.png": "cd2ffc9bef3e7aea3b5e364e2cac62db357285ea33bd677676d2440d3d680447",
+    "neutral056-live-30-neutral_normal_power_swim_influence25-above-t000-f0108.png": "8d685b335e138c9d9d1c7aea88726c538edff2a6b8fdaca7a6e4c835fd338033",
+    "neutral056-live-30-neutral_normal_power_swim_influence25-below-t000-f0131.png": "ddbbaae8fdee74843a65a96d4850b185afa4bf04ec7f710cd9968baf43831517",
+    "neutral056-live-31-neutral_normal_power_swim_influence50-front-t000-f0016.png": "49b40d35589100d5ca5ede9b74f454a77caacddd594e3f5e07f0689dfcc6c6d4",
+    "neutral056-live-31-neutral_normal_power_swim_influence50-left-t000-f0039.png": "e7ff13428b033b0a7bda4cce595bf9be9614682fc9c65e547c5d03365afd37ff",
+    "neutral056-live-31-neutral_normal_power_swim_influence50-right-t000-f0062.png": "fef50556156113dc7d343d4914c59f07e1b6faa715e89246e5bb2d86a142747e",
+    "neutral056-live-31-neutral_normal_power_swim_influence50-back-t000-f0085.png": "8ae7d4caa9383a904b8491a2c3ce0d526dfe88f3960ecec09bb67c30364c12de",
+    "neutral056-live-31-neutral_normal_power_swim_influence50-above-t000-f0108.png": "bf9f2598eb5c99edc2af935de92ec676e3ced440254126c6ae575447e41bde4f",
+    "neutral056-live-31-neutral_normal_power_swim_influence50-below-t000-f0131.png": "a8e1513995bd19a0116ebbc596b8e43ceae22bb848a8acbc187cf5b4f8cf6fca",
+    "neutral056-live-32-neutral_normal_power_swim_influence75-front-t000-f0016.png": "efbcf9c559f9f8bcc0ff354e715d17bf3ab05c579c2b2c76730ca5477522a151",
+    "neutral056-live-32-neutral_normal_power_swim_influence75-left-t000-f0039.png": "edbaf732452a8628efc5e8346ab76c8e44f9234fe58bbef91ed996ce5147aae1",
+    "neutral056-live-32-neutral_normal_power_swim_influence75-right-t000-f0062.png": "bb11f46aa53456baccd973036802ae457ec5f39ab1e272c8ee17d42d4deb9cae",
+    "neutral056-live-32-neutral_normal_power_swim_influence75-back-t000-f0085.png": "1e960d953c35a6bfea3a1558808ad0bda52e3c4574d2db73130922fef9633260",
+    "neutral056-live-32-neutral_normal_power_swim_influence75-above-t000-f0108.png": "7ac2c832fbf725a1e79e33aa7a06f6b07516cf2235cac654cb512232697a54b4",
+    "neutral056-live-32-neutral_normal_power_swim_influence75-below-t000-f0131.png": "99db5eea8df5970762370cd304f0f1492ba358262cec9e3d1a3fb22ff886dbf1",
+    "neutral056-live-33-hero_baby_orb_age0_run0-front-t000-f0016.png": "c6327c14912665f5128ee95013879ceb991364f3f3acdb7f139f00c2f43927c7",
+    "neutral056-live-33-hero_baby_orb_age0_run0-left-t000-f0039.png": "022a25a74afdfda987fabc9f0a0044f0677462b1a79c3ef064fd62f90e647370",
+    "neutral056-live-33-hero_baby_orb_age0_run0-right-t000-f0062.png": "3d26b7adffd49b0cfcf5fb1a5b03b335fef14d14a596e0300f7736ab698fdbdb",
+    "neutral056-live-33-hero_baby_orb_age0_run0-back-t000-f0085.png": "c7e084045249839e7efb0c553d975a5f1eec5d16adac73c8a4a352a96aba5bcf",
+    "neutral056-live-33-hero_baby_orb_age0_run0-above-t000-f0108.png": "53441e780de1a2c968ac7eb57d24568c47dfa1dab37a5b2c6b69b9bb5a382289",
+    "neutral056-live-33-hero_baby_orb_age0_run0-below-t000-f0131.png": "41af494a997cd3a4917bb089bfb89adc65c9912b5d4a676cf62d525bc4ae09c9",
+    "neutral056-live-34-hero_baby_orb_age0_run100-front-t000-f0016.png": "b93d1643d8b757a5901b2e58e89e373d457d58d997b39df248ecda46779c46b1",
+    "neutral056-live-34-hero_baby_orb_age0_run100-left-t000-f0039.png": "1bf153db8d6f50847563be06171d93e676555353824100e90ccb260884443058",
+    "neutral056-live-34-hero_baby_orb_age0_run100-right-t000-f0062.png": "d28cc7ad69d411b40c4862673640f0b54cd2f2173e4889d7cd33d64fc9f8181f",
+    "neutral056-live-34-hero_baby_orb_age0_run100-back-t000-f0085.png": "8adabb78ae6ebf2a7e6bd10b1ee5ea120fafccf36b316f9226a657cf8f0398d4",
+    "neutral056-live-34-hero_baby_orb_age0_run100-above-t000-f0108.png": "c5b0b7842c9a5c1fc503c73e0c95f46d9154941eb520d7eb59c496b6e460dbd0",
+    "neutral056-live-34-hero_baby_orb_age0_run100-below-t000-f0131.png": "77af65f308f7d1db4a8e25a1ef4f3c5d8458cf0f191d1b99e77bb07605ae8c8d",
+    "neutral056-live-35-hero_baby_orb_age50_run0-front-t000-f0016.png": "f7588d63fe6966172be521e569e6389a003ac01e1170c0f8571858a269f4069c",
+    "neutral056-live-35-hero_baby_orb_age50_run0-left-t000-f0039.png": "0a2c1df9e6f4ec57b37807fffad345a2c48c5328ecfe1a3d4cd9ef9829eea34a",
+    "neutral056-live-35-hero_baby_orb_age50_run0-right-t000-f0062.png": "befe10b14e8fed68d7e52d54127812293dd5b874f2fcc1defdd74ff4c6a2b04f",
+    "neutral056-live-35-hero_baby_orb_age50_run0-back-t000-f0085.png": "cfbb4d46ece1423be60b897f16255f29e737b2008865e630f9abc4bfbde4175f",
+    "neutral056-live-35-hero_baby_orb_age50_run0-above-t000-f0108.png": "a407f14522fd72205fbe9b7e16252c2f9ca49244858badb29e579680c49df0cb",
+    "neutral056-live-35-hero_baby_orb_age50_run0-below-t000-f0131.png": "aad74e6446970dac32f97621add76d28083c3c1c4cb065d8c28645835dd2a923",
+    "neutral056-live-36-hero_baby_orb_age50_run100-front-t000-f0016.png": "218e12a97ec7525add2da37074073c654bc54ce6d8904b485d5f0ba2b73fea5b",
+    "neutral056-live-36-hero_baby_orb_age50_run100-left-t000-f0039.png": "042fdc4350c5ea64d4bfcff2b9d835b01456d00c96d52a5fd1e2e4f3197afcaf",
+    "neutral056-live-36-hero_baby_orb_age50_run100-right-t000-f0062.png": "6ea97faaf9a7a6f9fd5ee4935dee350974d00b6c6b182d55d43d7292e53d08c4",
+    "neutral056-live-36-hero_baby_orb_age50_run100-back-t000-f0085.png": "e7d2a8ceec81f6d190e30314a00572ef0f156b45ef0c09f849de37d2b9cfa50a",
+    "neutral056-live-36-hero_baby_orb_age50_run100-above-t000-f0108.png": "6d950202caec9d214d974361f4664c3c506d9bec3b1f4d0b67f91a7cd8ab3dbe",
+    "neutral056-live-36-hero_baby_orb_age50_run100-below-t000-f0131.png": "4d3ef800388c361e557f26e184478133df6b50b2f90b4aaba0899a6f5ee7ed70",
+    "neutral056-live-37-hero_baby_orb_age99_run0-front-t000-f0016.png": "80abad85377b4a4313669d8514813be2b3822b4af976c3fc5ba7b58d62fae0a9",
+    "neutral056-live-37-hero_baby_orb_age99_run0-left-t000-f0039.png": "141162a127710d5930718ad4a91935d244cf112cfb366a4075d9cf751f46c0d1",
+    "neutral056-live-37-hero_baby_orb_age99_run0-right-t000-f0062.png": "20d0b2be16216aa2363d384f0ffc33513fde1fcfd3d4989957eb90ac752a7e17",
+    "neutral056-live-37-hero_baby_orb_age99_run0-back-t000-f0085.png": "ab2540688b23d22076c7a9c3fc7264259248125246a97b88710713ef2b842bb9",
+    "neutral056-live-37-hero_baby_orb_age99_run0-above-t000-f0108.png": "d6c2fe65c1fffba51506da7c75dd9aa859a36a06ed407c2580ac42425a6b5923",
+    "neutral056-live-37-hero_baby_orb_age99_run0-below-t000-f0131.png": "01806f234162fe6c9fd85ee2968b8a9e14f7cb1af44bd04198b634ae3f2780bf",
+    "neutral056-live-38-hero_baby_orb_age99_run100-front-t000-f0016.png": "836622108b9d5f7beb0abcf2a474dde2a7bf5e239b335571fc817fc3add96d1b",
+    "neutral056-live-38-hero_baby_orb_age99_run100-left-t000-f0039.png": "9fe2dcdaa274cb1937e27e6c1def739f2d22c205c016ef21d7a02a6a8ca83af1",
+    "neutral056-live-38-hero_baby_orb_age99_run100-right-t000-f0062.png": "f0c337fc2cdb5b634132d16f07df452be6eec4a347405e92575879b21a1d7b58",
+    "neutral056-live-38-hero_baby_orb_age99_run100-back-t000-f0085.png": "0c60218775ef70f56b322b13d102415b48c1c0097154bfb0e1431c284dc536aa",
+    "neutral056-live-38-hero_baby_orb_age99_run100-above-t000-f0108.png": "6583023521bf2ab00f6ee951f9d0b28dd3f21557f0085c616daf9e2f954d84bb",
+    "neutral056-live-38-hero_baby_orb_age99_run100-below-t000-f0131.png": "1bde819a25956274631a8f49817ca8bd123b8d06b15d0729d1ddb218a650f0b2",
+    "neutral056-live-39-baby_orb_alignment25-front-t000-f0016.png": "cddb354df554b49d313f9983eb26d0ec841b0245657de19c3fbf7a2e90032abc",
+    "neutral056-live-39-baby_orb_alignment25-left-t000-f0039.png": "0e8369deaa3d60ba774161317e2fb0dbf6b66678260ca72420dccf797ca72348",
+    "neutral056-live-39-baby_orb_alignment25-right-t000-f0062.png": "7e7441b99e3d8b3ee671c0cb524f931335d7e07a0a395623f8b7f82b70078c05",
+    "neutral056-live-39-baby_orb_alignment25-back-t000-f0085.png": "1ef5390781bb993c11355449668a7385a926c26450332bd745600d6521b33232",
+    "neutral056-live-39-baby_orb_alignment25-above-t000-f0108.png": "f79fe518b6ae3cc42d187f3020262f4986d52dc036f6daa703273696c6d50e66",
+    "neutral056-live-39-baby_orb_alignment25-below-t000-f0131.png": "d966e3827dd1294dca61e22a2884fba85cdb5e9124fac8c3cdf3c98cd950e4e9",
+    "neutral056-live-40-baby_orb_alignment50-front-t000-f0016.png": "caae6445121dc51004bde8cd4eb297550b2edbd05ea3c50bead3ba3e0d70aaac",
+    "neutral056-live-40-baby_orb_alignment50-left-t000-f0039.png": "0350aad54c66b14fd1749c8335960c9496faf8923727c574bace413898b8ff0d",
+    "neutral056-live-40-baby_orb_alignment50-right-t000-f0062.png": "c663637f07c6f2d5c77fad180fac7cd68e13f124bb45766911a0decfd3b28e38",
+    "neutral056-live-40-baby_orb_alignment50-back-t000-f0085.png": "44b66a0728e450e3e9ea53a935e0fafb52683e2109b7ca85cb22d48708761e78",
+    "neutral056-live-40-baby_orb_alignment50-above-t000-f0108.png": "56bc6b3e3654f63a672bc6e59fd1311acbebe3f512d6d660dfdd8a8b0f659970",
+    "neutral056-live-40-baby_orb_alignment50-below-t000-f0131.png": "8f8784e9abec5b944d85fc654d6906b21c15bd31caa21c60fc61100711812e3e",
+    "neutral056-live-41-baby_orb_alignment75-front-t000-f0016.png": "47288cf0170e956fc79ade2f703f99c25bd86fa5612ed81feb08f1df9237d7cd",
+    "neutral056-live-41-baby_orb_alignment75-left-t000-f0039.png": "ecacc9335f2fefd59756dc6160688333048a4e24521b047da39899ce3b6dcc8e",
+    "neutral056-live-41-baby_orb_alignment75-right-t000-f0062.png": "f6c7f12ec9ad0964a42f8adddd28f5e7499081cc253f7118ba13b25a3339f052",
+    "neutral056-live-41-baby_orb_alignment75-back-t000-f0085.png": "405aaab4ab5b727deabee2271664407d76aa608f9156e926f229a4630b8341c1",
+    "neutral056-live-41-baby_orb_alignment75-above-t000-f0108.png": "e44cbd81b5091e31cf72911090e76f317edbcdf5d5ac0be58d31ca773d239e18",
+    "neutral056-live-41-baby_orb_alignment75-below-t000-f0131.png": "e72420369f7b95c261b84f604d1a9785079737ad9ead21218929a238dbc165c4",
+    "neutral056-live-42-hero_baby_orb_ruby-front-t000-f0016.png": "eb883b47f31d1dfb2500c59cbbe33915f08315a3809e8a24c9130ea66e25b2bc",
+    "neutral056-live-42-hero_baby_orb_ruby-left-t000-f0039.png": "95323bfe0e056422680474e995d926f4839f1f74ad8caedad4acd5a1f66547e9",
+    "neutral056-live-42-hero_baby_orb_ruby-right-t000-f0062.png": "777c9b3501e45ce90a1c41e69b89f665a082c425aac3fa7921a44bbcfeba11ea",
+    "neutral056-live-42-hero_baby_orb_ruby-back-t000-f0085.png": "2c1b5edcc0d84d7598ca7a8f6fe91c40620e05a8d5069b80aa3f593bdc47a501",
+    "neutral056-live-42-hero_baby_orb_ruby-above-t000-f0108.png": "1b05a6a6c0e14ca873d9d919bb9828e463ad8958b79b35883098fb7e08ade78e",
+    "neutral056-live-42-hero_baby_orb_ruby-below-t000-f0131.png": "aaa53b14757bcf2399211480e938ab37f5ec81e92f93601b34bf4bb17ccaf8b3",
+    "neutral056-live-43-hero_baby_orb_red_shiny-front-t000-f0016.png": "027865d7cf2c1a80a3177e1561d599fb1bf99d1085d5a055b5e6098fbe281894",
+    "neutral056-live-43-hero_baby_orb_red_shiny-left-t000-f0039.png": "de52eeb536a956373375e3997627aeb2185114f11fc7bde6b2c189a9dac206cf",
+    "neutral056-live-43-hero_baby_orb_red_shiny-right-t000-f0062.png": "4708fa65422db876a2190b7e6b4bb8e407ef55cc0223c8e523d382ca700f5ec5",
+    "neutral056-live-43-hero_baby_orb_red_shiny-back-t000-f0085.png": "68f3890a1a24e71bd19cc8c98f1c8a4ce4648094a09ec9ff11655cbdcb307bd8",
+    "neutral056-live-43-hero_baby_orb_red_shiny-above-t000-f0108.png": "5843f845025ab96749247612d4921740d10215e6771e6c6331a0393d1a416f5b",
+    "neutral056-live-43-hero_baby_orb_red_shiny-below-t000-f0131.png": "8b7741255560b98d1b9254ce0ac84883094e650374223bfb5bb7e9f1b56082b1",
+    "neutral056-live-44-hero_baby_orb_green_mono-front-t000-f0016.png": "abf41f8cf489ac65122eb51388318d7cac5d08c7786a58e7a9b100b90d50970d",
+    "neutral056-live-44-hero_baby_orb_green_mono-left-t000-f0039.png": "25fb7f884a3fe66cca64a92df7a12395ae058ac2a18eff1b21b4ac883aff08e4",
+    "neutral056-live-44-hero_baby_orb_green_mono-right-t000-f0062.png": "a24dcce69be7f67d8c09e62274371a461f33b6755c86ee8a8324569637b95813",
+    "neutral056-live-44-hero_baby_orb_green_mono-back-t000-f0085.png": "ff101ce39157fe8369a306dde61acc711e5e710faee9227b46133a0f51053188",
+    "neutral056-live-44-hero_baby_orb_green_mono-above-t000-f0108.png": "66f2092159dbb96239e911d9fd8d3aa8544dad563b77e20fb4531b740c9524c6",
+    "neutral056-live-44-hero_baby_orb_green_mono-below-t000-f0131.png": "72c458542bba34b10f6d832448f813654fad70f5bcc78b063a877be65bbeca86",
+    "neutral056-live-45-neutral_run_fly_ruby_phoenix_glasses-front-t000-f0016.png": "ca5c57e94d63adcc19482f3ba8d2485031a0d8a352c4e2a48a79808d82378dbd",
+    "neutral056-live-45-neutral_run_fly_ruby_phoenix_glasses-left-t000-f0039.png": "3aaf3b4f2bb57989c31f9eafa4a302fb4f3617ca3328493f3bca9babe7368403",
+    "neutral056-live-45-neutral_run_fly_ruby_phoenix_glasses-right-t000-f0062.png": "475d1af189cf5daa0fe235f38a72f94acbc837280e462edffecbc9eb69743bd7",
+    "neutral056-live-45-neutral_run_fly_ruby_phoenix_glasses-back-t000-f0085.png": "349dac279ac7551d28cdc6e7a98bff4422cc558017409de0e31bb9f287c149fd",
+    "neutral056-live-45-neutral_run_fly_ruby_phoenix_glasses-above-t000-f0108.png": "37ca6336a51c0c416f44d5540906e10576142b8fa3353625b54fffffd5de826c",
+    "neutral056-live-45-neutral_run_fly_ruby_phoenix_glasses-below-t000-f0131.png": "faeab86f15f43049f9acdfe13d6778e1fb63256527e75be7fbf0c998adb44238",
+    "neutral056-live-46-neutral_power_swim_red_shiny_skull-front-t000-f0016.png": "c50888376e2dd2dafbf8e856ed757db940cdf58501c2152b4695414ff80d6dbd",
+    "neutral056-live-46-neutral_power_swim_red_shiny_skull-left-t000-f0039.png": "2b2b396b0a0c2bbf646fcadbb06b84eca9aea7a872c0c3ea69f07e8c4cdfea78",
+    "neutral056-live-46-neutral_power_swim_red_shiny_skull-right-t000-f0062.png": "3a4920d37e903d1a62986572ef5fbf30f0bc6b5ab2794557fdbb1ae5169e3e8a",
+    "neutral056-live-46-neutral_power_swim_red_shiny_skull-back-t000-f0085.png": "bf2b92f18573d1f7d98a9923e8c0e9bf6c53af86a66f00ee9b085738c49dae59",
+    "neutral056-live-46-neutral_power_swim_red_shiny_skull-above-t000-f0108.png": "075bea71ab20192d6d8d80ca9ac716694793a95b773051b99966d8ee2b3090bc",
+    "neutral056-live-46-neutral_power_swim_red_shiny_skull-below-t000-f0131.png": "95a8aa03a98d3dc22bad8f432151bea70928e845c7e3ebc8b0401f2530ba59e3",
+    "neutral056-live-47-hero_run_fresh_regression-front-t000-f0016.png": "dd6f0a7e9030c9f01805738f7eceb31b5532bb61f3515d85687015e01ae0bf31",
+    "neutral056-live-47-hero_run_fresh_regression-left-t000-f0039.png": "ec420631e923f041152cfd62609c0d42cc52c416e75ec0bb27a9c54b30c15173",
+    "neutral056-live-47-hero_run_fresh_regression-right-t000-f0062.png": "c2f666bf9f85b914c44812168bf2fbc78dc766ef7744983e6a5233ccac1011a2",
+    "neutral056-live-47-hero_run_fresh_regression-back-t000-f0085.png": "540429e9196c349e57a747946b86f5248c807d29229eb0dab9e6d2668d032e1f",
+    "neutral056-live-47-hero_run_fresh_regression-above-t000-f0108.png": "9d707523564c4a83d08f2823da1c986be2b98bbb6477081289550d88c5900e35",
+    "neutral056-live-47-hero_run_fresh_regression-below-t000-f0131.png": "6b6ccddf0f25c7c05973405c048859a5f99cc7802bf8c0757731a19a56783d55",
+    "neutral056-live-48-hero_run_mature_regression-front-t000-f0016.png": "400fefd9d817cada3d6801baa1c9cc4c09ce9b558ce5a27ec6ed6b5c5c362b2d",
+    "neutral056-live-48-hero_run_mature_regression-left-t000-f0039.png": "e67fe76ff73ebd0addc332223d14b6d50a92c4a81d85b81d4f5bec960eceb8ca",
+    "neutral056-live-48-hero_run_mature_regression-right-t000-f0062.png": "ced85073dee2386db50541edcb32d8387c377840399509b53225d7ae0e9bcc64",
+    "neutral056-live-48-hero_run_mature_regression-back-t000-f0085.png": "14ceb76bc1a6dac2242b15530bfc135b3549fcb601504fd141d9fb974ad7d8b4",
+    "neutral056-live-48-hero_run_mature_regression-above-t000-f0108.png": "dd4cb301dd2760b5a3f277bdd6693eeaa287c6a68e8974a186a29ef1fc1c47f0",
+    "neutral056-live-48-hero_run_mature_regression-below-t000-f0131.png": "929f0a07d039faab7f2499b8616a5062d54f9f20d3ae9c551eb3ba257001f15a",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-ui-baby-alignment.png": "28eb683fdc23c4d32a80d4afa5a4704d2e59421d7e26642ceaf3532a2b2eeebb",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-ui-baby-hero-alignment.png": "e2c85ffdfb22050e44936845200e4f71c599bf7bd9cadba70d4cdf2372a8ca07",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-ui-maturity-before.png": "a02d84e7a6708519e982c788e0311d727724f21df572ff7a099fd806fd096002",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-ui-maturity-drag-intermediate.png": "adb93fd26e86be310f32ec0dfbf4ad51b5ec86a4d9a280daa5ab7d7039e04ce3",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-ui-maturity-young.png": "012015cd2cef42d52e153bdd660c186ead31140b901ef54c282475bfdecce3d5",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-ui-maturity-safe-endpoint.png": "8c7046bb8af200aead26f868f0ff006480cdfe80007ea021d44f8954c9e4021e",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-front-t190-f0028.png": "f0f5fa2e37a91c074fd4da2b8057ef015f2aaaeec33f27ce8d56b283636aae48",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-left-t190-f0051.png": "a97b343c0b34aaca1d106daca5eb619e0abd41d67823cd2c09f0591f9a21d9fd",
+    "neutral056-live-49-creative_baby_alignment_maturity_and_reload-back-t190-f0074.png": "80434d610651fe8676902a79e4cb90981d19869be5ae8054177e7a24bc4941f4",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-ui-adult-alignment-locked.png": "87895fb022e28cdab00c8d04286bf695d5b60db65244a4fd7544cbe2b39fd8de",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-ui-adult-lock-tap-feedback.png": "cd0ebaf7f5aab896502b95e0daee0cb0a180a48d446d0f0bf6e083bf594231ce",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-ui-maturity-before.png": "e181d7cb4e39148181765b8e5a09c006b4c594347b12c54254a7ee271f1fc600",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-ui-maturity-drag-intermediate.png": "ebddc736d7ea7d7c5795b60bb5fe9e067f35a622b68cdfc23af4e9f4cb5c2002",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-ui-maturity-young.png": "161a885a7baa23ded893f0c80b10d7f6e8e77b7ce8b2c84cc243f23854db02e8",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-ui-maturity-safe-endpoint.png": "a8715c3edcb75c212ba53b10ebbaf0cfd7bf8d9fec1749771472c00687c90e50",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-front-t149-f0028.png": "a176732c6886167457bf52d2119cc0a0c207fee520917cd6aeb32f2b8267f214",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-left-t149-f0051.png": "fb61d15f6c9d3761aa933cf39f0e8c3e13ab64f71340ee9b6a9ff8424b647067",
+    "neutral056-live-50-creative_dark_adult_alignment_locked_maturity-back-t149-f0074.png": "6339620be77d696053e13727613b7aff8381d3f7dd1dfba18f879755b48a36a1",
+    "neutral056-live-51-survival_alignment_maturity_readonly-ui-survival-readonly.png": "89a15ee278e9de1bab88f60976e675078e16333780f5671386f312629ffde407",
+    "neutral056-live-51-survival_alignment_maturity_readonly-ui-survival-alignment-tap-feedback.png": "fef057a0546626ebe38d62f1e5913ad7b49ab0f9d05fc132963363f04b92f0b1",
+    "neutral056-live-51-survival_alignment_maturity_readonly-ui-maturity-before.png": "272df45b02551b7f4aa9f65d4d75144e706607cb2ea7e428058a433596f82f5f",
+    "neutral056-live-51-survival_alignment_maturity_readonly-ui-maturity-survival-denied.png": "c3cec83c9c708a926aec8c399866f1ed59e10510b2c3c0f929fd35d8a98543a0",
+    "neutral056-live-51-survival_alignment_maturity_readonly-front-t109-f0028.png": "954c027c88185c23a64690654b360d170a8a03cb3e3cf3ace7c6608a97c30476",
+    "neutral056-live-51-survival_alignment_maturity_readonly-left-t109-f0051.png": "3c5b87443e28726620f36c6fd0a90494d152ab9f95db6025e34f76f6082a1ce1",
+    "neutral056-live-51-survival_alignment_maturity_readonly-back-t109-f0074.png": "c388a0fdb1caaa4e757cd8633081cb9d97c438ba267804d023fda8a177f98e9d",
+    "neutral056-live-52-neutral_run_fly_training_walk-front-t012-f0029.png": "203fd6343f1872017600aead75e9d2cd32205694ea450a1366b932597d807468",
+    "neutral056-live-52-neutral_run_fly_training_walk-front-t024-f0047.png": "1d40513a5caf96a46c8e9863746dc75e08634def1062c6e811bc49c3a3b860fb",
+    "neutral056-live-52-neutral_run_fly_training_walk-front-t036-f0065.png": "898edea1d719846ac1c27f84c6d66ba056a72cffdb3224de3c2f88228fb39ee1",
+    "neutral056-live-52-neutral_run_fly_training_walk-front-t048-f0083.png": "34f5258c9c7a68bac639c2bcfc82596402fcdd7504b5f229c749dcc09e34f2bd",
+    "neutral056-live-52-neutral_run_fly_training_walk-front-t060-f0100.png": "7a5d359e540950ae8c6a642b07c31e4b244f5e61e40212734cf8864a1b9692c2",
+    "neutral056-live-52-neutral_run_fly_training_walk-front-t072-f0118.png": "dec807e5dd55977ec8bd2e2b55b294c44dc72f496c414c96a09f367ad2f1525e",
+    "neutral056-live-52-neutral_run_fly_training_walk-front-t084-f0136.png": "df6549ea406c8f2b6ffa405a2ae06710de273326788f105dc565cce0def3f4c2",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t096-f0154.png": "ad4f3b9b37874b70fc899c47e0214ddb6e0a2d4091f7efc4f03023ea4c569ca4",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t108-f0172.png": "f1ea2707643787fb36f2b9d3c29c05684e722a33b2e861b4cd3b19394115b3e8",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t120-f0190.png": "be0a53ede938bf63f3600b08a76000ed6398bbe2beb2cb26b74476367c2f00e4",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t132-f0208.png": "8040917262b6658b9a976cff8240945678ea5a2b7d5157d7026cdc4d77c95232",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t144-f0226.png": "8411fab471df11a40b19e8519b47adb096fe318907b7f7c373e0290417f52229",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t156-f0244.png": "baa3f41b2d4e19b4e88d5f57e40564ea910824bcaf55ff677e5a53906caff0aa",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t168-f0261.png": "7a553852d499a25cac98a420214bdedf1359fbe60d48862ac35c11e6173724b4",
+    "neutral056-live-52-neutral_run_fly_training_walk-left-t180-f0279.png": "74cd8de3d21c831d0b84cfd59c136ca3b85b9f6685100ee4e410fcfbc5e592e9",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t192-f0297.png": "e55c94fed90dab15b29e3a7b2f5f0d0032dc05b7fb5171596e386d39c50d236a",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t204-f0315.png": "ac536220d11dc183ab9d8d551b8a7fc0323d4e3b79a91d4705d5b5595d1a2e61",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t216-f0333.png": "4db898044244e0c3947819696955215228b8cb7e777885dd4f28a64790a185c0",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t228-f0351.png": "b50cd856cb9d572bcbda54ba564245c98f2898ade56dc6e5d6e3db8fe10ceaf4",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t240-f0368.png": "5b9e7966a4a42b7236ed42ec905ee7e8423ba97329ce979918c0ab0b04db2e2f",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t252-f0386.png": "bf2af383f493b2d685afc3d2a87a36bb950a16a52bb12f7e1e417f413d342197",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t264-f0404.png": "822ae494faf05ea0eae8f45b1e2378fccd2e871ac3e872a64e7760c1b4bb76c1",
+    "neutral056-live-52-neutral_run_fly_training_walk-back-t276-f0422.png": "11fc6b7cb814dbbe2de89224fc44ded2358fe1a95d31bd8a4ae7ca8ad76b5fc9",
+    "neutral056-live-53-neutral_run_fly_receding_walk-front-t012-f0030.png": "5623be06555d4e28e7b5abc0df3282c225a877357302b0efe548eea8eb33ff99",
+    "neutral056-live-53-neutral_run_fly_receding_walk-front-t024-f0048.png": "cbe588f05fa59d044542225e1c8c4b2f5c2a1c343fa6677ec7d65f784ba52380",
+    "neutral056-live-53-neutral_run_fly_receding_walk-front-t036-f0066.png": "4692671bf78c34b0767144cdab7836098815e22b7b635a728de0baa6f29d20a3",
+    "neutral056-live-53-neutral_run_fly_receding_walk-front-t048-f0084.png": "fda9d6aff76e9a453de500110edee7bd123fe0b64594d38f8d3ba83f728ef166",
+    "neutral056-live-53-neutral_run_fly_receding_walk-front-t060-f0101.png": "6bf720727fd00d7d6751c7c14fc7303dc679d2c2527532d6068261ef2d48febb",
+    "neutral056-live-53-neutral_run_fly_receding_walk-front-t072-f0119.png": "976fa356daa155ea11e517963a6287e64af8d88adfed58542b748273b2e11ee5",
+    "neutral056-live-53-neutral_run_fly_receding_walk-front-t084-f0137.png": "307b7aef8d3a49b25452d6a3e4f11de4061b32b05ca607d323facc69da88edfb",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t096-f0155.png": "0dd8f85256d87e9e7cbd61120b95f2fd774c87ff5034091f09d8408d3719ad6a",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t108-f0173.png": "3f5972a51028a85660d9a3b22e7760c6a89e77e4cb360ae884e094152e8604cb",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t120-f0191.png": "b716c042392baeb5cd7cfb6101d27fae74f1d4a7c6226f9b333ade3af8815172",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t132-f0209.png": "87313fccd6614849216e6d07d059c74df5338abe1ee032e3198efd62b561809d",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t144-f0226.png": "76eb8dbd070a209b9deab0bc900c57e54ebbe8c840978e1e43f53007d76344d2",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t156-f0244.png": "3fc71adcfc0f77f9af9e93bfeb46d627462a98f662e73a99c5ab9467df4008e9",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t168-f0262.png": "95e66af86f8faa6dcbb41a0bb4afcde61af41ccac25542cbd87e5338c52db84f",
+    "neutral056-live-53-neutral_run_fly_receding_walk-left-t180-f0280.png": "8677e35c7d34cdee9ebe0e803d699d53c34520f6930f392c6325caef1e4dcdb1",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t192-f0298.png": "d13bb56323f0c0c24ff219b18e6ff4c24902621d70542d62f7ee44b7cc450a75",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t204-f0316.png": "a500df9c11e86e4469bf9c0a2203d2778a367a0a11d7ce9958e9ba61306268b8",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t216-f0334.png": "555fbd120e1f370a41a1e338444d43fa2f66e1d11e2828fa094c4a134e323a31",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t228-f0351.png": "e54d41be87788ff9e6626094c21699cb2be999b7d53bda651c6211466af8b2bf",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t240-f0369.png": "953c3a3892976694e8b33ec6c9425a11b85bfaca7db9fdffc58f8a24634470db",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t252-f0387.png": "5bcdff3ac2846b1de151a3ae5fe56632496a7d13a4e7d6624efac385dc6ff531",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t264-f0405.png": "ea1cd3351e91d678e24fa2dc6bc3dbf77854bd2543f23a50c41d72477e24c8fc",
+    "neutral056-live-53-neutral_run_fly_receding_walk-back-t276-f0423.png": "6c5fec2ff267658e6689d36cb29c2fa80ef4d09fb60e8174028d7cdc0f78c22a",
+    "neutral056-live-54-neutral_run_fly_broom-front-t012-f0029.png": "27d13aa0cfb4e57057df7f598645bfe94118301e32f606b363765cadd7379593",
+    "neutral056-live-54-neutral_run_fly_broom-front-t024-f0046.png": "a45c2d8d739a6826410e015bb6521b6d892d28710fa061db9857b70311a82aba",
+    "neutral056-live-54-neutral_run_fly_broom-front-t036-f0064.png": "775ad15d1f4c1daa446e9985a7b897722e4ee4ba07dc316b20e53fc09eb1a76a",
+    "neutral056-live-54-neutral_run_fly_broom-front-t048-f0082.png": "cdeb52584a5785e038e3812d9198ec85d578824f31ffe82142fae57c0bac7f49",
+    "neutral056-live-54-neutral_run_fly_broom-left-t072-f0118.png": "d95a7a71a85fd8595358074ad0242c7b3cb8a44a83287fbaecff6a6204e7e259",
+    "neutral056-live-54-neutral_run_fly_broom-left-t084-f0136.png": "43a60e9f44b1c016fe274fdff61ef6bedb3d0257cd4c6000aec84fa4dd8c2a4a",
+    "neutral056-live-54-neutral_run_fly_broom-left-t096-f0154.png": "8b83e4f7f11badf1eae8c54cc262e3d3f0bda1d3d9c5dbbe2b6c210ff1f32f87",
+    "neutral056-live-54-neutral_run_fly_broom-left-t108-f0171.png": "443d32e0b747a6b0ec0eee25360f1f8d003787e9dfcaa6a5a9ff9d58d3708f85",
+    "neutral056-live-54-neutral_run_fly_broom-back-t132-f0206.png": "bf002d4fe622e97e80b1d053973387799738551ee41e6444cdd5adfdbc873b73",
+    "neutral056-live-54-neutral_run_fly_broom-back-t144-f0223.png": "5b7d742c36ac5f62fa1d7509fd5e2c311d58176c6cb00b9a18ce631ab966d453",
+    "neutral056-live-54-neutral_run_fly_broom-back-t156-f0242.png": "bb21514907a1a89b998664244c997223b06ac51753243a0cd2d7164a72119856",
+    "neutral056-live-54-neutral_run_fly_broom-back-t168-f0259.png": "4a60f0a0c037c54959071d9ac968ccbaedbbd68457980133c62e3d65ad9ef188",
+    "neutral056-live-54-neutral_run_fly_broom-back-t180-f0277.png": "f888febab2894c34fe74834e6d82157a41e327dbc6e126924f52b3ffa5ef8876",
+    "neutral056-live-55-neutral_power_swim_picture_book-front-t012-f0029.png": "aeab7f77c88cadd6cb6f971bc4c51f0a59b95500050135e99d3c64182db31166",
+    "neutral056-live-55-neutral_power_swim_picture_book-front-t024-f0047.png": "c5d8a9d5fa111e5d785dfefb66c16f5cfa661d85be55c061b7dee6e2187a4411",
+    "neutral056-live-55-neutral_power_swim_picture_book-front-t036-f0065.png": "c834713161caaf899c9e8278bfbfa0ffb3a003660cc212d2f3f947d78f05489e",
+    "neutral056-live-55-neutral_power_swim_picture_book-front-t048-f0083.png": "110e232254fedfe3d4462aa70a84393681ef37ade87cf5b6bca03aaa6c107753",
+    "neutral056-live-55-neutral_power_swim_picture_book-front-t060-f0100.png": "80e39368db84fa7896cf85cb3cf15f9491acc62b668429abd538277bd9b58698",
+    "neutral056-live-55-neutral_power_swim_picture_book-left-t072-f0118.png": "1fe3338ef48805a9a68ca4f57ed690771dea945de772a7c93c4e0077ba02e527",
+    "neutral056-live-55-neutral_power_swim_picture_book-left-t084-f0136.png": "f19fdc825a9935e13f12b9a5e152cb62223b8b3362afea89d5cc488701a77750",
+    "neutral056-live-55-neutral_power_swim_picture_book-left-t096-f0154.png": "964dd7fa6dfe54b5c6f3dcc490e027b4e676fdfb37f77a38e6d958bd038441f2",
+    "neutral056-live-55-neutral_power_swim_picture_book-left-t108-f0171.png": "4bce301aaaae96f35054ef32f7ef77af42b2f3727c63ed57b74cc1ce804f6808",
+    "neutral056-live-55-neutral_power_swim_picture_book-back-t132-f0205.png": "33e4101db18d8f9cb8a6ba0a682931e909900d31f50ee14b7d35308c50d1b2c0",
+    "neutral056-live-55-neutral_power_swim_picture_book-back-t144-f0223.png": "32945fd824231c2ff017365e1a27f0d1ec24b3875294fffa75440aa6571ed552",
+    "neutral056-live-55-neutral_power_swim_picture_book-back-t156-f0241.png": "36358feeb57cf1f77feca113091affd7da35b1ec7338d79e7198cfe4c24ec2b4",
+    "neutral056-live-55-neutral_power_swim_picture_book-back-t168-f0259.png": "dcb1dcc8dd6490d4f4f383dc5aa4ec3e418d0aad05b10c72aa01ef9668ab75f4",
+    "neutral056-live-55-neutral_power_swim_picture_book-back-t180-f0277.png": "b42958deb0daa731f610d0196301cbba431815cac60851e03414d7dab97c38bf",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-front-t012-f0030.png": "0d1bd343a6ff33ee946aca30ab8a24a9e099ac887f153fba94b10c16148a91c2",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-front-t024-f0047.png": "007b006106bf5f271f8768e94bb3f3523e08c312ea39ac31ab7c6b25036aff37",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-front-t036-f0065.png": "cc2da673ea75972d034b035d91485990268f9bc5566741c32d399d602f3873c0",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-left-t060-f0101.png": "130568c90d35a333beaef92ad918c60f642ac46739d46001c8f4d27b627107fc",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-left-t072-f0119.png": "189803a077270e1a15b8587a17dc697a5fd6ac47c954c6dad84bd4e741f89c26",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-left-t084-f0137.png": "1300c6cd8576fb828622c67617d213ae2290a1a559c2e1d598fe8a486e16052a",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-back-t096-f0155.png": "5ab2a4f73a6395f8fd085e99e0954fe1c9ae863632b2bdd08954e0ebd27c1832",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-back-t108-f0173.png": "477ca934c1a985a796099c6b46929ab42f80d900852db179a35f9638e3917e62",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-back-t120-f0190.png": "1ad99a533c5e48e08ed90a771d6328c1cde6ea4dc8f02860097daaff5dc72942",
+    "neutral056-live-56-neutral_run_fly_equipped_flying-back-t132-f0208.png": "548a553e6e239345fa32134bf2d2294d809aca1004fe75f7f609da589f1d8786",
+    "neutral056-live-57-hero_baby_equipped_flying-front-t012-f0029.png": "f58b563cfae249f709185a3e3e4b6c8e9fa1004741fe2c05b841f62e64674248",
+    "neutral056-live-57-hero_baby_equipped_flying-front-t024-f0047.png": "ac73befb4450f951cf4c1c5f06e9b7fcf7e6e6c9116f88f5715fe98775d44823",
+    "neutral056-live-57-hero_baby_equipped_flying-front-t036-f0065.png": "8f29598c863293d9ece9059390538107f973f568bca4d3af7c480e6d511c9c7b",
+    "neutral056-live-57-hero_baby_equipped_flying-left-t048-f0083.png": "1c47c0e9d2e1059e2625e8c70b1954d62a03902976731c1f614491d21510353d",
+    "neutral056-live-57-hero_baby_equipped_flying-left-t060-f0100.png": "308da420af86a417436a4e30ba80fa32c4fc350dabab462ce1e4c1d607d4f40a",
+    "neutral056-live-57-hero_baby_equipped_flying-left-t072-f0118.png": "6a483aaac9f08969bd2e0ef9496e0b21ee78fc2e017a281f1bbe7415d04db78d",
+    "neutral056-live-57-hero_baby_equipped_flying-left-t084-f0136.png": "08ff37dede8d51a8f89e0723781ebcf4364e91db5329169a6309e57a1f6eb889",
+    "neutral056-live-57-hero_baby_equipped_flying-back-t096-f0154.png": "8e439dbe6904a17501b9496ba39b10cce32608a8fd962754734ed399c2e99b34",
+    "neutral056-live-57-hero_baby_equipped_flying-back-t108-f0172.png": "a4ac4c0415a6632bd91fc9b5c196a8b57b3d799721366c19452493315027e989",
+    "neutral056-live-57-hero_baby_equipped_flying-back-t120-f0190.png": "e904e75677eeda69882cabe67afe2c6d0c3c4eec0cce917acb34b0250b31f685",
+    "neutral056-live-57-hero_baby_equipped_flying-back-t132-f0207.png": "5de506e7d50ec5cbf4a328bab148df3d95db333bd70289d8ffe2ab71bd74fa67"
+  }
+}

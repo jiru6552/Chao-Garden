@@ -4,6 +4,8 @@ import com.chaogarden.ChaoGarden;
 import com.chaogarden.GardenConfig;
 import com.chaogarden.core.ChaoState;
 import com.chaogarden.core.HeroRunMorphology052;
+import com.chaogarden.core.NeutralMorphology056;
+import com.chaogarden.core.OmochaoRules;
 import com.chaogarden.core.LocomotionRules;
 import com.chaogarden.core.ChaoPreferences;
 import com.chaogarden.core.ChaoPersonality;
@@ -39,6 +41,11 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   private boolean alignmentDragging;
   private Integer alignmentDragValue,alignmentSentValue;
   private int alignmentSendTick=-100;
+  private boolean maturityDragging,maturityDragAdult;
+  private Integer maturityDragValue,maturitySentValue;
+  private int maturitySendTick=-100;
+  private String editorNotice="";
+  private int editorNoticeUntil;
   private final long doctorVisit;
   private static final LinkedHashMap<UUID,Long> VISITS=new LinkedHashMap<>();
   private final List<AdventureButton> mindButtons=new ArrayList<>(),careButtons=new ArrayList<>(),geneButtons=new ArrayList<>();
@@ -54,10 +61,10 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     doctorVisit=VISITS.merge(chao.getUUID(),1L,Long::sum)-1;
     if(VISITS.size()>256)VISITS.remove(VISITS.keySet().iterator().next());
   }
-  public void showAnimals(int value) {page=2;animalTab=Math.floorMod(value,2);dnaPage=0;}
-  public void showGenes(int value) {page=1;geneTab=Math.floorMod(value,3);}
-  public void showMind(int value) {cancelAlignmentDrag();page=3;mindTab=Math.floorMod(value,4);}
-  public void showCare(int value) {page=4;careTab=Math.floorMod(value,3);}
+  public void showAnimals(int value) {cancelEditorDrags();page=2;animalTab=Math.floorMod(value,2);dnaPage=0;}
+  public void showGenes(int value) {cancelEditorDrags();page=1;geneTab=Math.floorMod(value,3);}
+  public void showMind(int value) {cancelEditorDrags();page=3;mindTab=Math.floorMod(value,4);}
+  public void showCare(int value) {cancelEditorDrags();page=4;careTab=Math.floorMod(value,3);}
 
   @Override
   protected void initAdventure() {
@@ -114,7 +121,8 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   }
 
   void showPage(int value) {
-    cancelAlignmentDrag();
+    cancelEditorDrags();
+    editorNotice="";
     page = Math.floorMod(value, 5);
   }
 
@@ -124,7 +132,15 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     if(alignmentDragging) {
       if(!alignmentProfile()||!alignmentEditable())cancelAlignmentDrag();
       else sendAlignment(false);
-    }
+    } else if(alignmentDragValue!=null&&(!alignmentProfile()||!alignmentEditable()
+        ||AnalyzerAlignmentBar053.milli(chao.state().lockedAlignment())==alignmentDragValue
+        ||liveTicks-alignmentSendTick>20))cancelAlignmentDrag();
+    if(maturityDragging) {
+      if(page!=0||!maturityEditable()||maturityDragAdult!=chao.state().adult)cancelMaturityDrag();
+      else sendMaturity(false);
+    } else if(maturityDragValue!=null&&(page!=0||!maturityEditable()||maturityDragAdult!=chao.state().adult
+        ||AnalyzerMaturityBar056.milli(chao.state().evolutionStrength(),chao.state().adult)==maturityDragValue
+        ||liveTicks-maturitySendTick>20))cancelMaturityDrag();
     if (chao.isRemoved()) onClose();
     if(liveTicks%20==1 && minecraft!=null && minecraft.player!=null) {
       clinicNearby=ChaoCareServices.nearbyStation(minecraft.player,chao,ChaoSchoolBlock.Kind.DOCTOR).isPresent();
@@ -170,6 +186,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     else if(page==2) animals(g,s);
     else if(page==3) mind(g,s);
     else care(g,s);
+    if(liveTicks<editorNoticeUntil&&!editorNotice.isEmpty())text(g,editorNotice,220,313,.56f,0xff815289);
     updateCareButtons();
     end(g, mouseX, mouseY, partial);
     if (page == 0) movementTooltip(g, s, mouseX, mouseY);
@@ -244,23 +261,38 @@ public final class ChaoInspectionScreen extends AdventureScreen {
 
   private boolean creativeEditor(){return minecraft!=null&&minecraft.player!=null&&minecraft.player.isCreative()&&!minecraft.player.isSpectator();}
   @Override public boolean mouseClicked(double x,double y,int button){
+    if(button==0&&page==0&&AnalyzerMaturityBar056.hit(x,y,canvasScale,offsetX,offsetY)) {
+      cancelEditorDrags();
+      if(maturityEditable()) {
+        maturityDragging=true;maturityDragAdult=chao.state().adult;
+        maturityDragValue=AnalyzerMaturityBar056.value(x,canvasScale,offsetX,maturityDragAdult);
+        sendMaturity(true);
+      } else editorNotice("Maturity is read-only: "+editorReadOnlyReason(false));
+      return true;
+    }
     if(page==0&&button==0&&creativeEditor()){
       var edit=com.chaogarden.core.AnalyzerStatRules.clickScaled(x,y,hasShiftDown(),hasControlDown(),canvasScale,offsetX,offsetY);
       if(edit!=null){com.chaogarden.care.ChaoCareNetwork.requestStat(chao,edit);return true;}
     }
-    if(button==0&&alignmentProfile()&&alignmentEditable()
-        &&AnalyzerAlignmentBar053.hit(x,y,canvasScale,offsetX,offsetY)) {
-      alignmentDragging=true;alignmentSentValue=null;
-      alignmentDragValue=AnalyzerAlignmentBar053.value(x,canvasScale,offsetX);sendAlignment(true);return true;
+    if(button==0&&alignmentProfile()&&AnalyzerAlignmentBar053.hit(x,y,canvasScale,offsetX,offsetY)) {
+      cancelEditorDrags();
+      if(alignmentEditable()) {
+        alignmentDragging=true;alignmentSentValue=null;
+        alignmentDragValue=AnalyzerAlignmentBar053.value(x,canvasScale,offsetX);sendAlignment(true);
+      } else editorNotice("Alignment is read-only: "+editorReadOnlyReason(true));
+      return true;
     }
-    cancelAlignmentDrag();
+    cancelEditorDrags();
     return super.mouseClicked(x,y,button);
   }
 
   private boolean alignmentProfile(){return page==3&&mindTab==0;}
   private boolean alignmentEditable(){
+    return !chao.state().adult&&maturityEditable();
+  }
+  private boolean maturityEditable(){
     var s=chao.state();
-    if(!creativeEditor()||s.adult||s.dead||s.immortal||chao.isCocooned()||chao.isRemoved())return false;
+    if(!creativeEditor()||s.dead||s.immortal||OmochaoRules.isOmochao(s)||chao.isCocooned()||chao.isRemoved())return false;
     var player=minecraft.player;
     return player.getMainHandItem().is(ChaoGarden.item("chao_analyzer"))
         ||player.getOffhandItem().is(ChaoGarden.item("chao_analyzer"));
@@ -273,7 +305,30 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     alignmentSentValue=alignmentDragValue;alignmentSendTick=liveTicks;
   }
   private void cancelAlignmentDrag(){alignmentDragging=false;alignmentDragValue=null;alignmentSentValue=null;}
+  private void cancelMaturityDrag(){maturityDragging=false;maturityDragValue=null;maturitySentValue=null;}
+  private void cancelEditorDrags(){cancelAlignmentDrag();cancelMaturityDrag();}
+  private void editorNotice(String message){editorNotice=message;editorNoticeUntil=liveTicks+100;}
+  private String editorReadOnlyReason(boolean alignment){
+    var s=chao.state();
+    if(alignment&&s.adult)return "adult identity locked at first evolution.";
+    if(!creativeEditor())return "Creative mode required.";
+    if(OmochaoRules.isOmochao(s))return "Omochao has a fixed mechanical form.";
+    if(s.dead||s.immortal||chao.isCocooned()||chao.isRemoved())return "unavailable during this life stage or activity.";
+    return "hold a Chao Analyzer and stay nearby.";
+  }
+  private void sendMaturity(boolean finalValue){
+    if(page!=0||!maturityEditable()||maturityDragValue==null)return;
+    if(!finalValue&&(Objects.equals(maturitySentValue,maturityDragValue)||liveTicks-maturitySendTick<2))return;
+    ChaoCareNetwork.requestMaturity(chao,maturityDragValue);
+    maturitySentValue=maturityDragValue;maturitySendTick=liveTicks;
+  }
   @Override public boolean mouseDragged(double x,double y,int button,double dx,double dy){
+    if(button==0&&maturityDragging){
+      if(page!=0||!maturityEditable()||maturityDragAdult!=chao.state().adult){cancelMaturityDrag();return true;}
+      var value=AnalyzerMaturityBar056.value(x,canvasScale,offsetX,maturityDragAdult);
+      if(value!=null)maturityDragValue=value;
+      sendMaturity(false);return true;
+    }
     if(button==0&&alignmentDragging){
       if(!alignmentProfile()||!alignmentEditable()){cancelAlignmentDrag();return true;}
       var value=AnalyzerAlignmentBar053.value(x,canvasScale,offsetX);
@@ -283,18 +338,26 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     return super.mouseDragged(x,y,button,dx,dy);
   }
   @Override public boolean mouseReleased(double x,double y,int button){
+    if(button==0&&maturityDragging){
+      if(page==0&&maturityEditable()&&maturityDragAdult==chao.state().adult){
+        var value=AnalyzerMaturityBar056.value(x,canvasScale,offsetX,maturityDragAdult);
+        if(value!=null)maturityDragValue=value;
+        sendMaturity(true);
+      }
+      maturityDragging=false;return true;
+    }
     if(button==0&&alignmentDragging){
       if(alignmentProfile()&&alignmentEditable()){
         var value=AnalyzerAlignmentBar053.value(x,canvasScale,offsetX);
         if(value!=null)alignmentDragValue=value;
         sendAlignment(true);
       }
-      cancelAlignmentDrag();return true;
+      alignmentDragging=false;return true;
     }
     return super.mouseReleased(x,y,button);
   }
-  @Override public void onClose(){cancelAlignmentDrag();super.onClose();}
-  @Override public void removed(){cancelAlignmentDrag();super.removed();}
+  @Override public void onClose(){cancelEditorDrags();super.onClose();}
+  @Override public void removed(){cancelEditorDrags();super.removed();}
 
   private void status(GuiGraphics g, ChaoState s) {
     chartTitle(g, "ABILITY DATA", "LEVEL / POINTS / GRADE");
@@ -319,11 +382,19 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       float value = (i == 0 ? (s.happiness + 100) / 200f : values[i] / 100f);
       segmented(g, x, 281, 76, 5, value, colors[i], 8);
     }
-    float strength=s.evolutionStrength();
-    float maturityLimit=s.adult?1.2f:1f;
-    String growth=s.immortal ? "FIXED CHARACTER FORM" : "MATURITY "+Math.round(Math.min(1,strength/maturityLimit)*100)+"%";
+    int savedMaturity=AnalyzerMaturityBar056.milli(s.evolutionStrength(),s.adult);
+    int shownMaturity=maturityDragValue!=null?maturityDragValue:savedMaturity;
+    boolean fixedForm=s.immortal||OmochaoRules.isOmochao(s);
+    String growth=fixedForm ? "FIXED CHARACTER FORM" : "MATURITY "+AnalyzerMaturityBar056.percent(shownMaturity);
     text(g,growth,220,292,.65f,MUTED);
-    segmented(g,318,293,244,4,s.immortal?1:Math.min(1,strength/maturityLimit),0xff67bed0,22);
+    segmented(g,318,293,244,5,fixedForm?1:shownMaturity/1000f,0xff67bed0,22);
+    if(!fixedForm){
+      int shown=AnalyzerMaturityBar056.marker(shownMaturity),saved=AnalyzerMaturityBar056.marker(savedMaturity);
+      if(shown!=saved)g.fill(saved,291,saved+1,300,INK);
+      round(g,shown-2,290,5,11,2,maturityEditable()?0xff297f9c:0xff647f90);
+      g.fill(shown-1,292,shown+2,299,0xfff7ffff);
+    }
+    if(creativeEditor()&&!fixedForm)text(g,s.adult?"Drag maturity: current adult stage; lifetime stays unchanged.":"Drag maturity: baby cap 99%; first evolution stays separate.",220,305,.55f,MUTED);
     text(g, creativeEditor()?"Edit: grade / bar / level. Shift: −; Ctrl: ×10":"Hover a skill for garden and companion abilities", 220, 237, .65f, MUTED);
     String action = chao.getItemAction() == ChaoEntity.ItemAction.NONE
         ? chao.getBehavior()!=ChaoEntity.Behavior.NONE ? chao.getBehavior().name().toLowerCase(java.util.Locale.ROOT).replace('_',' ')
@@ -335,12 +406,24 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   private void movementTooltip(GuiGraphics g, ChaoState s, int mouseX, int mouseY) {
     int x=localX(mouseX),y=localY(mouseY);if(x<214||x>571)return;
     var lines=new ArrayList<Component>();
-    if(y>=289&&y<=301) {
+    if(y>=287&&y<=313) {
       lines.add(Component.literal((s.adult?"Biological maturity: ":"First evolution: ")+String.format(Locale.ROOT,s.adult?"%.2f / 1.20":"%.2f / 1.00",s.evolutionStrength())));
+      if(maturityDragValue!=null)lines.add(Component.literal("Requested maturity: "+AnalyzerMaturityBar056.percent(maturityDragValue)+"; server confirms the saved value."));
+      if(maturityEditable()) {
+        lines.add(Component.literal("Creative: tap or drag the maturity bar to test this life stage."));
+        lines.add(Component.literal(s.adult?"Adult strength: 0.00 to 1.20. First type/alignment stay locked.":"Baby strength: 0.00 to 0.99. Stops short of first evolution."));
+        lines.add(Component.literal("Does not edit lifetime or trigger death/reincarnation. Natural aging resumes."));
+      } else lines.add(Component.literal("Read-only: "+editorReadOnlyReason(false)));
       if(!s.adult)lines.add(Component.literal("Ordinary first type now: "+ChaoState.TYPES[s.prospectivePrimaryType()]+" (Stamina excluded)"));
       lines.add(Component.literal("Alignment and first adult type lock at first evolution."));
+      var neutral=NeutralMorphology056.sample(s);
       var morph=HeroRunMorphology052.sample(s);
-      if(morph.enabled()) {
+      if(neutral.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Neutral training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",neutral.runPower()*100,neutral.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Normal form into these targets: "+Math.round(neutral.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(NeutralMorphology056.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Decreases change training influence, not biological maturity or first identity."));
+      } else if(morph.enabled()) {
         if(s.adult) {
           lines.add(Component.literal("Hero Run target: "+Math.round(morph.specialization()*100)+"%; visible specialization: "+Math.round(morph.adultGrowth()*100)+"%"));
           lines.add(Component.literal("Run minus Power training changes the target, not biological age."));
@@ -426,13 +509,16 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     }else{
       text(g,"TRAINING SHAPES YOUR CHAO",220,115,.85f,INK);
       text(g,"These meters show direction, not a chance or a level.",220,133,.8f,MUTED);
-      axis(g,"Swim","Fly",s.swimFly,220,159,340,STAT_COLORS[0],STAT_COLORS[1]);
-      text(g,lean(s.swimFly,"Swim","Fly"),220,175,.8f,INK);
-      axis(g,"Run","Power",s.runPower,220,203,340,STAT_COLORS[2],STAT_COLORS[3]);
-      text(g,lean(s.runPower,"Run","Power"),220,219,.8f,INK);
+      var neutral=NeutralMorphology056.sample(s);
+      float swimFly=neutral.enabled()?neutral.swimFly():s.swimFly;
+      float runPower=neutral.enabled()?neutral.runPower():s.runPower;
+      axis(g,"Swim","Fly",swimFly,220,159,340,STAT_COLORS[0],STAT_COLORS[1]);
+      text(g,lean(swimFly,"Swim","Fly"),220,175,.8f,INK);
+      axis(g,"Run","Power",runPower,220,203,340,STAT_COLORS[2],STAT_COLORS[3]);
+      text(g,lean(runPower,"Run","Power"),220,219,.8f,INK);
       String form=s.immortal?"This special form no longer evolves.":s.adult?"First type: "+ChaoState.TYPES[s.primaryType]+" · Adult form: "+s.typeName():"First evolution if ready now: "+ChaoState.TYPES[s.prospectivePrimaryType()];
       fitText(g,form,220,246,340,.8f,INK);
-      paragraph(g,"First type uses the highest Swim, Fly, Run or Power points; Stamina is excluded. The latest actual increase among tied abilities wins. Hero Run training and biological maturity are separate.",220,267,340,.8f,MUTED);
+      paragraph(g,"First type uses the highest Swim, Fly, Run or Power points; Stamina is excluded. The latest actual increase among tied abilities wins. Training and biological maturity are separate.",220,267,340,.8f,MUTED);
     }
   }
   private static String lean(float value,String left,String right){return Math.abs(value)<.01f?"Balanced between "+left+" and "+right:"Leans "+(value<0?left:right)+" · "+Math.round(Math.min(1,Math.abs(value))*100)+"% from the middle";}
@@ -657,11 +743,10 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   private void alignmentBar(GuiGraphics g,ChaoState s){
     float alignment=s.lockedAlignment();
     int value=AnalyzerAlignmentBar053.milli(alignment);
+    int shownValue=alignmentDragValue!=null?alignmentDragValue:value;
     boolean editable=alignmentEditable();
-    text(g,"ALIGNMENT",398,266,.60f,INK);
-    if(s.adult)text(g,"LOCKED",447,266,.55f,MUTED);
-    else if(!editable)text(g,"VIEW",447,266,.55f,MUTED);
-    String current=AnalyzerAlignmentBar053.category(alignment)+String.format(Locale.ROOT," %+.3f",alignment);
+    text(g,s.adult?"ADULT ALIGNMENT: LOCKED":editable?"ALIGNMENT: DRAG":"ALIGNMENT: VIEW",398,266,.50f,INK);
+    String current=AnalyzerAlignmentBar053.category(shownValue/1000f)+String.format(Locale.ROOT," %+.1f",shownValue/10f);
     text(g,current,560-font.width(current)*.60f,266,.60f,MUTED);
     int x=AnalyzerAlignmentBar053.X,y=AnalyzerAlignmentBar053.Y,w=AnalyzerAlignmentBar053.WIDTH;
     round(g,x-1,y-1,w+2,9,2,0xff53758e);
@@ -672,7 +757,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       int at=AnalyzerAlignmentBar053.marker(mark);g.fill(at,y-1,at+1,y+8,mark==0?0xff456c80:0xff76909d);
     }
     int saved=AnalyzerAlignmentBar053.marker(value);
-    int shown=alignmentDragging&&alignmentDragValue!=null?AnalyzerAlignmentBar053.marker(alignmentDragValue):saved;
+    int shown=AnalyzerAlignmentBar053.marker(shownValue);
     if(shown!=saved)g.fill(saved,y-2,saved+1,y+9,INK);
     round(g,shown-2,y-3,5,13,2,editable?0xff66529a:0xff547185);
     g.fill(shown-1,y-1,shown+2,y+8,0xfff7ffff);
@@ -685,7 +770,8 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     var lines=new ArrayList<Component>();
     float alignment=s.lockedAlignment();
     lines.add(Component.literal("Alignment: "+AnalyzerAlignmentBar053.category(alignment)+String.format(Locale.ROOT," (%+.3f)",alignment)));
-    lines.add(Component.literal("Dark: -1 to -0.5; Neutral: middle; Hero: +0.5 to +1."));
+    lines.add(Component.literal("Testing scale: -100 Dark, 0 Neutral, +100 Hero (internal -1 to +1)."));
+    if(alignmentDragValue!=null)lines.add(Component.literal("Requested: "+String.format(Locale.ROOT,"%+.1f",alignmentDragValue/10f)+"; saved value awaits server confirmation."));
     if(s.adult)lines.add(Component.literal("Locked at first evolution. Adults cannot be realigned."));
     else if(!creativeEditor())lines.add(Component.literal("Read-only. Creative mode is required to edit alignment."));
     else if(s.dead||s.immortal||chao.isCocooned())lines.add(Component.literal("Read-only while this Chao cannot receive care."));
