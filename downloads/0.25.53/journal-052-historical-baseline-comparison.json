@@ -1,0 +1,13 @@
+{
+  "baseline_ref": "codex/download-0.25.51",
+  "baseline_private_source_sha256": "b45ee7075dad3736cefbe1e28046ff9b764b3418fc57e158201d98f9ac7dfb7f",
+  "baseline_private_test_sha256": "11c298ca695b95b720b3a0e22340607fb0b2cfe14bce172e1db843925cfbc6ca",
+  "old_outcome": "9 tests; 2 failures, 1 error",
+  "new_outcome": "9 tests; 1 inherited failure; dynamic-count pages recovered",
+  "identical_remaining_assertion": "AssertionError: '\\n\\n' not found in \"Place a Chao Garden device, open it and press Activate garden. This marks the device's chunk and its eight neighbouring chunks. No enclosure or tree is required. Owned Chao placed inside are detected automatically; Garden registration still manages residents.\"",
+  "production_Your_gardens_edited": false,
+  "logs": [
+    "morph052-journal-051-baseline.log",
+    "morph052-journal-content-final.log"
+  ]
+}

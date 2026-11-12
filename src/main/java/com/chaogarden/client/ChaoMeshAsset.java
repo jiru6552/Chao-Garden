@@ -65,7 +65,7 @@ final class ChaoMeshAsset {
   private final float[] developmentWeights = {0,0,0,0,1,0,0,0,0};
   private float developmentStrength=1;
   private final float[] heroRunWeights={1,0,0,0,0,0};
-  private boolean heroRunActive,heroRunAdult,heroRunNaturalTwoTone;
+  private boolean heroRunActive,heroRunAdult,heroRunNaturalTwoTone,babyRun053;
   private float heroRunMaturity,heroRunSwimFly,heroRunPower;
   private int lensColor,expression;
   private final Map<String,float[]> uvOverrides=new HashMap<>();
@@ -202,6 +202,7 @@ final class ChaoMeshAsset {
         for(float value:landmark)if(!Float.isFinite(value))throw new IllegalStateException("Non-finite attachment landmark");
         result.attachmentLandmarks.put(entry.getKey(),landmark);
       }
+      result.babyRun053=data.has("baby_run_prototype_053");
       if(data.has("attachment_extra_bones"))for(var entry:data.getAsJsonObject("attachment_extra_bones").entrySet()) {
         var extra=new ArrayList<String>();
         for(var value:entry.getValue().getAsJsonArray()) {
@@ -308,7 +309,10 @@ final class ChaoMeshAsset {
       legacy=young+(aged-young)*developmentStrength;
     }
     if(!heroRunActive||mesh.heroRunVertices==null)return legacy;
-    float value=(heroRunAdult?young:legacy)*heroRunWeights[0];
+    // The corrected baby owns canonical index-preserving targets.  Blending
+    // the old donor-based deformation underneath would reintroduce crossed
+    // limbs at intermediate Run values even with a sound maximum endpoint.
+    float value=(heroRunAdult||babyRun053?young:legacy)*heroRunWeights[0];
     for(int i=0;i<5;i++)value+=mesh.heroRunVertices[i][vertex][axis]*heroRunWeights[i+1];
     if(heroRunAdult&&mesh.heroRunLegacyVertices!=null) {
       float inherited=0;
@@ -328,6 +332,12 @@ final class ChaoMeshAsset {
     else if(sample.adult()) {
       float maturity=Math.clamp(sample.maturity(),0,1),growth=Math.clamp(sample.adultGrowth(),0,maturity);
       next[3]=1-maturity;next[4]=maturity-growth;next[5]=growth;
+    } else if(babyRun053) {
+      float hero=Math.clamp(sample.babyHero(),0,1),run=Math.clamp(sample.babyRun(),0,1);
+      // Run anatomy has a complete Neutral endpoint. Alignment is a separate
+      // matched corner, not a multiplier which can suppress Run development.
+      next[0]=(1-hero)*(1-run);next[1]=hero*(1-run);
+      next[2]=(1-hero)*run;next[3]=hero*run;
     } else {
       float hero=Math.clamp(sample.babyHero(),0,1),run=Math.clamp(sample.babyRun(),0,1);
       next[0]=1-hero;next[1]=hero*(1-run);next[3]=hero*run;
@@ -552,6 +562,10 @@ final class ChaoMeshAsset {
     }
     float[] bounds=core==null?null:localBounds(core,joint,poses);
     for(String name:attachmentExtraBones.getOrDefault(anchor,List.of())) {
+      if(babyRun053) {
+        Pose extraPose=poses.get(name);
+        if(extraPose!=null&&!extraPose.visible)continue;
+      }
       float[] extra=localBounds(bones.get(name),joint,poses);if(extra==null)continue;
       if(bounds==null)bounds=extra;
       else for(int axis=0;axis<3;axis++) {
@@ -700,7 +714,7 @@ final class ChaoMeshAsset {
         int meshColor=mesh.material.equals("lens")?lensColor:color;
         int meshLight = isLuminous(mesh.material) ? 0x00f000f0 : light;
         for (Face face : mesh.faces) {
-          if(heroRunActive&&mesh.name.equals("source_informed_rear_point")) {
+          if(heroRunActive&&(mesh.name.equals("source_informed_rear_point")||mesh.name.equals("closed_swept_quill"))) {
             int a=face.indices[0],b=face.indices[1],c=face.indices[2];
             var edge=new Vector3f(coordinate(mesh,b,0)-coordinate(mesh,a,0),coordinate(mesh,b,1)-coordinate(mesh,a,1),coordinate(mesh,b,2)-coordinate(mesh,a,2));
             var next=new Vector3f(coordinate(mesh,c,0)-coordinate(mesh,a,0),coordinate(mesh,c,1)-coordinate(mesh,a,1),coordinate(mesh,c,2)-coordinate(mesh,a,2));

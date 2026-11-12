@@ -28,6 +28,8 @@ public final class HeroRunCoatMaterial052 {
   private static final Map<String,ResourceLocation> CACHE=new LinkedHashMap<>(128,.75f,true);
   private static final Set<ResourceLocation> RETIRED=new HashSet<>();
   private static float[][][] palettes;
+  private static final int[][] BABY_RUN_NEUTRAL_053={{143,229,30},{196,232,61},{71,178,40}};
+  private static final int[][] BABY_RUN_HERO_053={{242,242,237},{101,157,202},{164,155,204}};
   private HeroRunCoatMaterial052(){}
   private static ResourceLocation id(String path){return ResourceLocation.fromNamespaceAndPath(ChaoGarden.MODID,path);}
   private static NativeImage read(String path)throws IOException {
@@ -37,6 +39,12 @@ public final class HeroRunCoatMaterial052 {
   static ResourceLocation texture(ChaoState state) {return texture(state,false);}
   static ResourceLocation textureOverlay(ChaoState state) {return texture(state,true);}
   private static ResourceLocation texture(ChaoState state,boolean overlay) {
+    if(!HeroRunAppearance052.sample(state).adult())return babyTexture053(state,overlay);
+    return adultTexture052(state,overlay);
+  }
+
+  /** The adult prototype keeps its 0.25.52 material path unchanged. */
+  private static ResourceLocation adultTexture052(ChaoState state,boolean overlay) {
     String prefix=overlay?"textures/entity/chao/":"textures/entity/chao/official/coats/baby/";
     String layout=overlay?"overlay":"baby";
     var sample=HeroRunAppearance052.sample(state);
@@ -115,6 +123,76 @@ public final class HeroRunCoatMaterial052 {
       if(CACHE.size()>512){var it=CACHE.entrySet().iterator();RETIRED.add(it.next().getValue());it.remove();}
       return target;
     }catch(IOException error){if(result!=null)result.close();throw new IllegalStateException("Cannot build Hero Run prototype coat",error);}
+  }
+
+  /** Run and alignment are independent baby influences. No limb stripe atlas
+   * is authored here: the compact baby asset retains its original limb UVs. */
+  private static ResourceLocation babyTexture053(ChaoState state,boolean overlay) {
+    String prefix=overlay?"textures/entity/chao/":"textures/entity/chao/official/coats/baby/";
+    String layout=overlay?"overlay":"baby";
+    var sample=HeroRunAppearance052.sample(state);
+    int alignment=Math.round(Math.clamp(HeroRunAppearance052.signedAlignment(state),-1,1)*256);
+    int run=Math.round(unit(sample.babyRun())*128);
+    float h=unit(alignment/256f/.5f),d=unit(-alignment/256f/.5f),r=run/128f;
+    String suffix=(state.isTwoTone()?"_two":"_mono")+(state.isShiny()?"_shiny":"");
+    boolean natural=state.baseColor()==0&&state.jewel()==0;
+    String coat=natural?"normal_neutral_0"+suffix:ChaoRenderer.geneticCoatKey(state);
+    String key="baby053:"+layout+":"+coat+(natural?":"+alignment+":"+run:":inherited");
+    var cached=CACHE.get(key);if(cached!=null)return cached;
+    NativeImage result=null;
+    try(var source=read(prefix+coat+".png");
+        var heroBaby=read(prefix+"normal_hero_0"+suffix+".png");
+        var darkBaby=read(prefix+"normal_dark_0"+suffix+".png");
+        var mask=read("textures/entity/chao/gameplay/masks/"+layout+".png");
+        var accents=read("textures/entity/chao/gameplay/masks/"+layout+"_accent.png");
+        var wings=read("textures/entity/chao/gameplay/masks/"+layout+"_wings.png")) {
+      result=new NativeImage(source.getWidth(),source.getHeight(),false);result.copyFrom(source);
+      float[] baseShades=shades(source,mask,accents,wings,state.isTwoTone());
+      for(int y=0;y<result.getHeight();y++)for(int x=0;x<result.getWidth();x++) {
+        int mx=x*mask.getWidth()/result.getWidth(),my=y*mask.getHeight()/result.getHeight();
+        boolean skin=(mask.getPixelRGBA(mx,my)>>>24)!=0,wing=(wings.getPixelRGBA(mx,my)>>>24)!=0;
+        if(!natural||!skin&&!wing)continue;
+        int pixel=source.getPixelRGBA(x,y);if((pixel>>>24)==0)continue;
+        int kind=state.isTwoTone()&&wing?2:state.isTwoTone()&&(accents.getPixelRGBA(mx,my)>>>24)!=0?1:0;
+        float shade=Math.clamp(maxChannel(pixel)/baseShades[kind],.50f,1.25f);
+        result.setPixelRGBA(x,y,babySkinColor053(pixel,heroBaby.getPixelRGBA(x,y),darkBaby.getPixelRGBA(x,y),shade,h,d,r,kind));
+      }
+      if(!overlay) {
+        int body=result.getPixelRGBA(result.getWidth()*12/128,0);
+        int accent=result.getPixelRGBA(result.getWidth()*48/128,0);
+        int tip=accent;
+        if(natural&&state.isTwoTone()) {
+          int neutralTip=rgb(44,162,27,255),heroTip=rgb(148,190,219,255);
+          int runTip=blend(blend(neutralTip,heroTip,h),accent,d);
+          tip=blend(accent,runTip,r);
+          // This is the sole baby face override. Hands and feet use their
+          // coherent original atlas faces, not the adult band rectangles.
+          int belly=blend(body,rgb(137,116,181,255),h*r);
+          result.setPixelRGBA(result.getWidth()*104/128,result.getHeight()*56/64,belly);
+        }
+        result.setPixelRGBA(result.getWidth()-1,result.getHeight()-1,body|0xff000000);
+        result.setPixelRGBA(result.getWidth()-2,result.getHeight()-1,tip|0xff000000);
+      }
+      var target=id("dynamic/hero_run052/baby053/"+UUID.nameUUIDFromBytes(key.getBytes(StandardCharsets.UTF_8)));
+      Minecraft.getInstance().getTextureManager().register(target,new DynamicTexture(result));result=null;
+      CACHE.put(key,target);RETIRED.remove(target);
+      if(CACHE.size()>512){var it=CACHE.entrySet().iterator();RETIRED.add(it.next().getValue());it.remove();}
+      return target;
+    }catch(IOException error){if(result!=null)result.close();throw new IllegalStateException("Cannot build baby Run prototype coat",error);}
+  }
+
+  /** Pure palette sample used by the actual texture builder and focused checks. */
+  static int babySkinColor053(int neutral,int heroBaby,int darkBaby,float shade,float hero,float dark,float run,int kind) {
+    float h=unit(hero),d=unit(dark),r=unit(run);
+    int[] neutralRun=BABY_RUN_NEUTRAL_053[Math.clamp(kind,0,2)];
+    int[] heroRun=BABY_RUN_HERO_053[Math.clamp(kind,0,2)];
+    int nr=rgb(neutralRun[0]*shade,neutralRun[1]*shade,neutralRun[2]*shade,neutral>>>24);
+    int hr=rgb(heroRun[0]*shade,heroRun[1]*shade,heroRun[2]*shade,heroBaby>>>24);
+    int ordinary=blend(blend(neutral,heroBaby,h),darkBaby,d);
+    // Dark keeps the existing child family's colors while retaining the new
+    // Run silhouette; this is not an adult Dark specialization expansion.
+    int trained=blend(blend(nr,hr,h),darkBaby,d);
+    return blend(ordinary,trained,r);
   }
 
   private static float[] shades(NativeImage image,NativeImage mask,NativeImage accents,NativeImage wings,boolean twoTone) {

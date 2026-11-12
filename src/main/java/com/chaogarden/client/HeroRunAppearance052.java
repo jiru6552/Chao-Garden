@@ -12,25 +12,37 @@ final class HeroRunAppearance052 {
   static final float CHANGE_TICKS=20;
   private static final Map<UUID,Blend> BLENDS=new LinkedHashMap<>(128,.75f,true);
   private static final Map<ChaoState,HeroRunMorphology052.Sample> FRAME=new WeakHashMap<>();
+  private static final Map<ChaoState,Float> FRAME_ALIGNMENT=new WeakHashMap<>();
   private static final class Blend {
     HeroRunMorphology052.Sample from,target,current;
-    float started,last;
+    float started,last,alignmentFrom,alignmentTarget,alignmentCurrent;
   }
   private HeroRunAppearance052(){}
 
   static HeroRunMorphology052.Sample sample(ChaoState state) {
     return FRAME.getOrDefault(state,HeroRunMorphology052.sample(state));
   }
+  /** Signed alignment uses the same display clock, including Neutral-to-Dark edits. */
+  static float signedAlignment(ChaoState state) {
+    return FRAME_ALIGNMENT.getOrDefault(state,state.lockedAlignment());
+  }
   static HeroRunMorphology052.Sample prepare(UUID id,ChaoState state,float age) {
-    var target=HeroRunMorphology052.sample(state);var blend=BLENDS.get(id);
+    var target=HeroRunMorphology052.sample(state);float alignment=state.lockedAlignment();var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.adult()!=blend.target.adult()) {
       blend=new Blend();blend.from=blend.target=blend.current=target;blend.started=blend.last=age;BLENDS.put(id,blend);
+      blend.alignmentFrom=blend.alignmentTarget=blend.alignmentCurrent=alignment;
     } else {
-      blend.current=between(blend.from,blend.target,unit((age-blend.started)/CHANGE_TICKS));
-      if(!near(blend.target,target)) {blend.from=blend.current;blend.target=target;blend.started=age;}
+      float t=unit((age-blend.started)/CHANGE_TICKS),w=t*t*(3-2*t);
+      blend.current=between(blend.from,blend.target,t);
+      blend.alignmentCurrent=lerp(blend.alignmentFrom,blend.alignmentTarget,w);
+      if(!near(blend.target,target)||Math.abs(blend.alignmentTarget-alignment)>.0001f) {
+        blend.from=blend.current;blend.target=target;blend.started=age;
+        blend.alignmentFrom=blend.alignmentCurrent;blend.alignmentTarget=alignment;
+      }
       blend.last=age;
     }
     FRAME.put(state,blend.current);
+    FRAME_ALIGNMENT.put(state,blend.alignmentCurrent);
     while(BLENDS.size()>128)BLENDS.remove(BLENDS.keySet().iterator().next());
     return blend.current;
   }

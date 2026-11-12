@@ -36,6 +36,9 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   private int liveTicks, mindTab, careTab, inventoryPage, animalTab, geneTab, dnaPage;
   private static final int DNA_PER_PAGE=21;
   private boolean missingOnly;
+  private boolean alignmentDragging;
+  private Integer alignmentDragValue,alignmentSentValue;
+  private int alignmentSendTick=-100;
   private final long doctorVisit;
   private static final LinkedHashMap<UUID,Long> VISITS=new LinkedHashMap<>();
   private final List<AdventureButton> mindButtons=new ArrayList<>(),careButtons=new ArrayList<>(),geneButtons=new ArrayList<>();
@@ -53,7 +56,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   }
   public void showAnimals(int value) {page=2;animalTab=Math.floorMod(value,2);dnaPage=0;}
   public void showGenes(int value) {page=1;geneTab=Math.floorMod(value,3);}
-  public void showMind(int value) {page=3;mindTab=Math.floorMod(value,4);}
+  public void showMind(int value) {cancelAlignmentDrag();page=3;mindTab=Math.floorMod(value,4);}
   public void showCare(int value) {page=4;careTab=Math.floorMod(value,3);}
 
   @Override
@@ -111,12 +114,17 @@ public final class ChaoInspectionScreen extends AdventureScreen {
   }
 
   void showPage(int value) {
+    cancelAlignmentDrag();
     page = Math.floorMod(value, 5);
   }
 
   @Override
   public void tick() {
     liveTicks++;
+    if(alignmentDragging) {
+      if(!alignmentProfile()||!alignmentEditable())cancelAlignmentDrag();
+      else sendAlignment(false);
+    }
     if (chao.isRemoved()) onClose();
     if(liveTicks%20==1 && minecraft!=null && minecraft.player!=null) {
       clinicNearby=ChaoCareServices.nearbyStation(minecraft.player,chao,ChaoSchoolBlock.Kind.DOCTOR).isPresent();
@@ -168,6 +176,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     if(page==1&&geneTab==0)geneTooltip(g,s,mouseX,mouseY);
     if(page==3 && mindTab==3)familyTooltip(g,s,mouseX,mouseY);
     if(page==3 && mindTab==1)emotionTooltip(g,s,mouseX,mouseY);
+    if(alignmentProfile())alignmentTooltip(g,s,mouseX,mouseY);
     if(page==4 && careTab==2)inventoryTooltip(g,mouseX,mouseY);
   }
 
@@ -239,8 +248,53 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       var edit=com.chaogarden.core.AnalyzerStatRules.clickScaled(x,y,hasShiftDown(),hasControlDown(),canvasScale,offsetX,offsetY);
       if(edit!=null){com.chaogarden.care.ChaoCareNetwork.requestStat(chao,edit);return true;}
     }
+    if(button==0&&alignmentProfile()&&alignmentEditable()
+        &&AnalyzerAlignmentBar053.hit(x,y,canvasScale,offsetX,offsetY)) {
+      alignmentDragging=true;alignmentSentValue=null;
+      alignmentDragValue=AnalyzerAlignmentBar053.value(x,canvasScale,offsetX);sendAlignment(true);return true;
+    }
+    cancelAlignmentDrag();
     return super.mouseClicked(x,y,button);
   }
+
+  private boolean alignmentProfile(){return page==3&&mindTab==0;}
+  private boolean alignmentEditable(){
+    var s=chao.state();
+    if(!creativeEditor()||s.adult||s.dead||s.immortal||chao.isCocooned()||chao.isRemoved())return false;
+    var player=minecraft.player;
+    return player.getMainHandItem().is(ChaoGarden.item("chao_analyzer"))
+        ||player.getOffhandItem().is(ChaoGarden.item("chao_analyzer"));
+  }
+  private void sendAlignment(boolean finalValue){
+    if(!alignmentProfile()||!alignmentEditable()||alignmentDragValue==null)return;
+    if(!finalValue&&(Objects.equals(alignmentSentValue,alignmentDragValue)||liveTicks-alignmentSendTick<2))return;
+    // Only the preview thumb is local; care, identity and saved alignment await the server.
+    ChaoCareNetwork.requestAlignment(chao,alignmentDragValue);
+    alignmentSentValue=alignmentDragValue;alignmentSendTick=liveTicks;
+  }
+  private void cancelAlignmentDrag(){alignmentDragging=false;alignmentDragValue=null;alignmentSentValue=null;}
+  @Override public boolean mouseDragged(double x,double y,int button,double dx,double dy){
+    if(button==0&&alignmentDragging){
+      if(!alignmentProfile()||!alignmentEditable()){cancelAlignmentDrag();return true;}
+      var value=AnalyzerAlignmentBar053.value(x,canvasScale,offsetX);
+      if(value!=null)alignmentDragValue=value;
+      sendAlignment(false);return true;
+    }
+    return super.mouseDragged(x,y,button,dx,dy);
+  }
+  @Override public boolean mouseReleased(double x,double y,int button){
+    if(button==0&&alignmentDragging){
+      if(alignmentProfile()&&alignmentEditable()){
+        var value=AnalyzerAlignmentBar053.value(x,canvasScale,offsetX);
+        if(value!=null)alignmentDragValue=value;
+        sendAlignment(true);
+      }
+      cancelAlignmentDrag();return true;
+    }
+    return super.mouseReleased(x,y,button);
+  }
+  @Override public void onClose(){cancelAlignmentDrag();super.onClose();}
+  @Override public void removed(){cancelAlignmentDrag();super.removed();}
 
   private void status(GuiGraphics g, ChaoState s) {
     chartTitle(g, "ABILITY DATA", "LEVEL / POINTS / GRADE");
@@ -533,6 +587,7 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       }
       var labels=Arrays.stream(s.personalityProfile()).mapToObj(i->ChaoPreferences.PERSONALITIES[i]).toList();
       text(g,"Profile: "+String.join(" / ",labels),220,301,.61f,MUTED);
+      alignmentBar(g,s);
     } else if(mindTab==1) {
       for(int i=0;i<ChaoEmotion.COUNT;i++) {
         int col=i/9,row=i%9,x=220+col*176,y=111+row*20,value=s.emotion(i),max=ChaoEmotion.maximum(i);
@@ -599,6 +654,50 @@ public final class ChaoInspectionScreen extends AdventureScreen {
     // tracked relative can supply a live name; unloaded unknowns stay honest.
     return observedAncestorNames.getOrDefault(id,id.isEmpty()?"Unknown ancestor":"Name not recorded");
   }
+  private void alignmentBar(GuiGraphics g,ChaoState s){
+    float alignment=s.lockedAlignment();
+    int value=AnalyzerAlignmentBar053.milli(alignment);
+    boolean editable=alignmentEditable();
+    text(g,"ALIGNMENT",398,266,.60f,INK);
+    if(s.adult)text(g,"LOCKED",447,266,.55f,MUTED);
+    else if(!editable)text(g,"VIEW",447,266,.55f,MUTED);
+    String current=AnalyzerAlignmentBar053.category(alignment)+String.format(Locale.ROOT," %+.3f",alignment);
+    text(g,current,560-font.width(current)*.60f,266,.60f,MUTED);
+    int x=AnalyzerAlignmentBar053.X,y=AnalyzerAlignmentBar053.Y,w=AnalyzerAlignmentBar053.WIDTH;
+    round(g,x-1,y-1,w+2,9,2,0xff53758e);
+    g.fill(x,y,x+w/4,y+7,0xff9b88c6);
+    g.fill(x+w/4,y,x+3*w/4,y+7,0xffc8deda);
+    g.fill(x+3*w/4,y,x+w,y+7,0xff79c8e2);
+    for(int mark:new int[]{-500,0,500}){
+      int at=AnalyzerAlignmentBar053.marker(mark);g.fill(at,y-1,at+1,y+8,mark==0?0xff456c80:0xff76909d);
+    }
+    int saved=AnalyzerAlignmentBar053.marker(value);
+    int shown=alignmentDragging&&alignmentDragValue!=null?AnalyzerAlignmentBar053.marker(alignmentDragValue):saved;
+    if(shown!=saved)g.fill(saved,y-2,saved+1,y+9,INK);
+    round(g,shown-2,y-3,5,13,2,editable?0xff66529a:0xff547185);
+    g.fill(shown-1,y-1,shown+2,y+8,0xfff7ffff);
+    text(g,"Dark",398,292,.60f,INK);
+    String middle="Neutral";text(g,middle,x+w/2f-font.width(middle)*.30f,292,.60f,INK);
+    text(g,"Hero",560-font.width("Hero")*.60f,292,.60f,INK);
+  }
+  private void alignmentTooltip(GuiGraphics g,ChaoState s,int mouseX,int mouseY){
+    int x=localX(mouseX),y=localY(mouseY);if(x<396||x>562||y<264||y>299)return;
+    var lines=new ArrayList<Component>();
+    float alignment=s.lockedAlignment();
+    lines.add(Component.literal("Alignment: "+AnalyzerAlignmentBar053.category(alignment)+String.format(Locale.ROOT," (%+.3f)",alignment)));
+    lines.add(Component.literal("Dark: -1 to -0.5; Neutral: middle; Hero: +0.5 to +1."));
+    if(s.adult)lines.add(Component.literal("Locked at first evolution. Adults cannot be realigned."));
+    else if(!creativeEditor())lines.add(Component.literal("Read-only. Creative mode is required to edit alignment."));
+    else if(s.dead||s.immortal||chao.isCocooned())lines.add(Component.literal("Read-only while this Chao cannot receive care."));
+    else if(!alignmentEditable())lines.add(Component.literal("Hold a Chao Analyzer to edit this baby's alignment."));
+    else {
+      lines.add(Component.literal("Drag to edit this baby. The server confirms each change."));
+      lines.add(Component.literal("Stay nearby with the Analyzer; occupied Chao may refuse edits."));
+    }
+    lines.add(Component.literal("Run training is a separate influence from Hero/Dark alignment."));
+    g.renderComponentTooltip(font,lines,mouseX,mouseY);
+  }
+
   private void familyTooltip(GuiGraphics g,ChaoState s,int mouseX,int mouseY) {
     int x=localX(mouseX),y=localY(mouseY);if(x<220 || x>562 || y<111 || y>296)return;
     boolean robot="omochao".equals(s.character);

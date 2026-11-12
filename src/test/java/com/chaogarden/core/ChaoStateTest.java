@@ -33,6 +33,8 @@ public final class ChaoStateTest {
     checks += ChaoFamilyPresentation020Test.run();
     checks += GradualEvolutionRulesTest.run();
     checks += HeroRunMorphology052Test.run();
+    int alignmentChecks=AnalyzerAlignmentRules053Test.run();checks+=alignmentChecks;
+    System.out.println("Analyzer alignment053: "+alignmentChecks+" checks passed; permission inputs, fixed-point bounds, read-only adults and exact persistence");
     checks += OmochaoRulesTest.run();
     checks += LifecycleRules022Test.run();
     checks += ChaoVariantAvailabilityTest.run();

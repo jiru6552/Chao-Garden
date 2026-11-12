@@ -27,7 +27,7 @@ public final class OfficialChaoRig {
   private boolean referenceRendering;
   private boolean adultPose, broadWalkHead;
   private float powerSwimWeight;
-  private boolean prototypeSelection;
+  private boolean prototypeSelection,babyPrototypeSelection;
   private String prototypeOwnerKey;
   public enum Motion { CRAWL, WALK, RUN, DASH, FLAIL, PADDLE, SWIM, GLIDE, GRIP, FALL, HELD, SIT, REST,
     PONDER, INSPECT, EAT, TRAIN, REJECT, DELIGHT, PLAY, PET }
@@ -64,9 +64,10 @@ public final class OfficialChaoRig {
   private void select(String model,boolean gameplay) {
     key = model;
     boolean prototype=gameplay&&prototypeSelection&&model.equals(prototypeOwnerKey);
-    String cache=prototype?"gameplay:hero_run_proto052":(gameplay?"gameplay:":"source:")+model;
+    String prototypeModel=babyPrototypeSelection?"baby_run_proto053":"hero_run_proto052";
+    String cache=prototype?"gameplay:"+prototypeModel:(gameplay?"gameplay:":"source:")+model;
     current = frames.computeIfAbsent(cache, ignored -> {
-      var mesh = assets.apply(prototype?"gameplay/chao_hero_run_proto052":(gameplay?"gameplay/":"official/")+"chao_"+model);
+      var mesh = assets.apply(prototype?"gameplay/chao_"+prototypeModel:(gameplay?"gameplay/":"official/")+"chao_"+model);
       return new Frame(mesh, mesh.createPoses());
     });
   }
@@ -579,7 +580,7 @@ public final class OfficialChaoRig {
 
   /** Set this entity's geometry before gait fitting samples its current toe reach. */
   void prepareDevelopment(String model,ChaoState state) {
-    prototypeSelection=HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
+    prototypeSelection=HeroRunAppearance052.sample(state).enabled();babyPrototypeSelection=!state.adult;prototypeOwnerKey=model;
     select(model,true);meshDevelopment(state);
   }
 

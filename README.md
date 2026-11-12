@@ -1,7 +1,8 @@
-# Chao Garden 0.25.18
+# Chao Garden 0.25.53
 
+Current update **0.25.53** corrects the baby Run silhouette and compact limbs, keeps Run and Hero alignment independent, and adds a Creative alignment bar under Analyzer **Mind → Profile**. Adults retain their locked evolution alignment. See [implementation, actual-client views and verification limits](docs/BABY_RUN_02553.md) and [reference notes](docs/BABY_RUN_REFERENCES_02553.md).
 
-Current update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
+Earlier Analyzer update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
 
 The previous [garden, journal, tooltip and artwork updates](docs/release-0.25.17.md) remain included.
 
@@ -35,10 +36,10 @@ The food collection includes **35 active fruit/food families**: the twelve conso
 ## Install
 
 1. Use **Minecraft Java 1.21.1**, **NeoForge 21.1.219**, and **64-bit Java 21**.
-2. Place `chao_garden-0.25.18.jar` in `mods/`, replacing the previous Chao Garden jar.
+2. Place `chao_garden-0.25.53.jar` in `mods/`, replacing the previous Chao Garden jar.
 3. Install the same version on the server and every connecting client.
 
-The base mod requires no additional model or animation library. Adult equipped companions optionally require **Accessories for NeoForge 1.21.1 and its oωo dependency** on both sides. See [companions](docs/COMPANIONS.md). This build targets NeoForge.
+Install **Lionfish API 3.1** separately on both client and server; the current animation integration requires it. Adult equipped companions optionally require **Accessories for NeoForge 1.21.1 and its oωo dependency** on both sides. See [companions](docs/COMPANIONS.md). This build targets NeoForge.
 
 Existing Chao, eggs and filled carriers retain their saved identities and care data. Legacy empty carriers are removed when their inventory tick runs. Smart Fruit is active again as a Chao Adventure 2 food, including its existing orchard IDs. Old Stamina trees remain usable, while Stamina Fruit and Mint Candy have no new acquisition paths. The 29 retired themes continue to load as ordinary forms with saved data preserved. See [retirement handling](docs/THEME_RETIREMENT_014.md).
 

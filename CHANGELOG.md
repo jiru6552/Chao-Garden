@@ -1,3 +1,10 @@
+## 0.25.53 — Baby Run shape and Creative alignment
+
+- Replace the distorted baby Run target with canonical vertex correspondence, compact hands/feet, a tapered head and five closed swept-back quills.
+- Blend Run anatomy independently from signed alignment, retaining Neutral green and Hero white/blue/violet families, inherited coats and existing attachment joints.
+- Add the Mind → Profile Dark/Neutral/Hero alignment bar; Creative babies are editable with server authority, while Survival and locked adults remain read-only.
+- Preserve the 0.25.52 adult assets and emitted adult morphology; add focused permission, persistence, geometry and actual-client quarter-stage checks. See [verification and limits](docs/BABY_RUN_02553.md).
+
 ## 0.25.52 — Hero Run morphology prototype
 
 - Develop Hero alignment and Run body traits continuously through one baby-to-Hero-Run-to-Hero/Run/Run path, with source-informed crown, feet and natural markings.

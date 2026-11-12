@@ -29,9 +29,8 @@ public final class HeroRunMorphology052 {
     boolean ordinary=!state.dead&&!state.immortal&&"normal".equals(state.character)&&"normal".equals(state.variant);
     // Do not gate babies by a discrete prospective type: crossing an earned-
     // point tie must not switch their continuous developing surface on/off.
-    boolean enabled=ordinary&&(state.adult
-        ?alignment>=.5f&&state.lockedPrimaryType()==ChaoState.RUN_TYPE
-        :alignment>=0);
+    boolean enabled=ordinary&&(!state.adult
+        ||alignment>=.5f&&state.lockedPrimaryType()==ChaoState.RUN_TYPE);
     return new Sample(enabled,state.adult,hero,babyRun,target,maturity,state.adult?target*maturity:0);
   }
 

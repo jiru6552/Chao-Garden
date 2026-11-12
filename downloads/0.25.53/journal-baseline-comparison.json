@@ -1,0 +1,39 @@
+{
+  "classification": "Actual .53 current run compared with isolated delivered .52 sources and tests",
+  "baseline_ref": "codex/download-0.25.52",
+  "baseline_commit": "08fc33c9b0f598b20a7f8a48849b54d35c9cde58",
+  "baseline_exit_code": 1,
+  "current_outcome": "9 tests;8 passed;1 unchanged Your gardens paragraph assertion",
+  "baseline_outcome": "9 tests;8 passed;1 unchanged Your gardens paragraph assertion",
+  "identical_remaining_assertion": "AssertionError: '\\n\\n' not found in \"Place a Chao Garden device, open it and press Activate garden. This marks the device's chunk and its eight neighbouring chunks. No enclosure or tree is required. Owned Chao placed inside are detected automatically; Garden registration still manages residents.\"",
+  "source_sha256": {
+    "scripts/test_journal_content_02518.py": {
+      "baseline_sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "current_sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296"
+    },
+    "src/main/java/com/chaogarden/item/GardenGuideItem.java": {
+      "baseline_sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "current_sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4"
+    },
+    "src/main/java/com/chaogarden/core/ChaoState.java": {
+      "baseline_sha256": "0ce2c8a9cda1293310cb6dc67980fb590fb776815e004086daafebc1d21a8bae",
+      "current_sha256": "0ce2c8a9cda1293310cb6dc67980fb590fb776815e004086daafebc1d21a8bae"
+    },
+    "src/main/java/com/chaogarden/client/AdventureGuideScreen.java": {
+      "baseline_sha256": "7150a5e1b8f0115463199a99d0b2377d3ffd5f428cb9d0a18f5327f2bc7d116d",
+      "current_sha256": "7150a5e1b8f0115463199a99d0b2377d3ffd5f428cb9d0a18f5327f2bc7d116d"
+    },
+    "src/main/java/com/chaogarden/client/KindergartenScreen.java": {
+      "baseline_sha256": "dc82d570e02d740576cb72f4ff4ae1a6d2b372a9733c64a48fe367d4348d7553",
+      "current_sha256": "dc82d570e02d740576cb72f4ff4ae1a6d2b372a9733c64a48fe367d4348d7553"
+    },
+    "src/main/java/com/chaogarden/client/ChaoInspectionScreen.java": {
+      "baseline_sha256": "022e82107c3598f647a33c56e87fd53f3f010e6c3af07bfd8634d8799c73854b",
+      "current_sha256": "ed12b323a05a1a303c6bcba7e3d70e4c1173f49d8ee623c4e256fab71361ee8f"
+    }
+  },
+  "logs": [
+    "baby053-journal-052-baseline.log",
+    "baby053-journal-content-final.log"
+  ]
+}

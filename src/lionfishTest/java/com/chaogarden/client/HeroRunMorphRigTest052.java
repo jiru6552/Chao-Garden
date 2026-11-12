@@ -15,7 +15,7 @@ import java.util.Set;
 import java.util.UUID;
 import org.joml.Vector3f;
 
-/** Samples the actual prototype vertex/joint path, not a duplicate demo mesh. */
+/** Retains the delivered .52 adult asset contract; .53 baby anatomy has its own test. */
 public final class HeroRunMorphRigTest052 {
   private static final Path ROOT=Path.of("src/main/resources/assets/chao_garden");
   private static int checks,frames,vertices;
@@ -86,8 +86,10 @@ public final class HeroRunMorphRigTest052 {
     }
     check(babySignatures.size()==5,"baby quarter stages are not distinct");check(adultSignatures.size()==5,"adult quarter stages are not distinct");
     check(Math.abs(finalFoot/initialFoot-1.397f)<.002f,"source-informed full Run width differs");
-    // The exact same canonical geometry and joints exist on either side of
-    // first evolution. The cocoon hides the unchanged .64/.80 outer age scale.
+    // The retained .52 asset keeps its original young corner for adult
+    // compatibility. Production .53 babies use another matched asset; their
+    // revised endpoint intentionally differs behind the existing cocoon.
+    // BabyRunMorphRigTest053 covers that new path and adult byte fingerprint.
     var baby=state(false,1);sample(mesh,baby);var before=capture(mesh,poses);var eyes=mesh.attachmentEyes(poses);
     var fresh=state(true,1);fresh.setEvolutionStrength(0);sample(mesh,fresh);var after=capture(mesh,poses);
     check(before.size()==after.size(),"first evolution changed topology");for(int i=0;i<before.size();i++)near(before.get(i),after.get(i),.000001f,"first evolution surface jumped");
@@ -188,7 +190,7 @@ public final class HeroRunMorphRigTest052 {
   }
   public static void main(String[] args)throws Exception {
     stages();maturityAndOpposition();temporalSmoothing();separateAttachmentRigs();reservedPaletteEffects();motionAnchors();
-    String report="Hero Run morphology: "+checks+" checks; "+frames+" actual geometry/pose frames; "+vertices+" emitted vertices; max small-progress step="+largestQuarterStep+" model pixels; five baby/adult stages, exact first-evolution surface/joints, eyes, inherited axes, maturity and smoothing passed\n";
+    String report="Hero Run morphology: "+checks+" checks; "+frames+" actual geometry/pose frames; "+vertices+" emitted vertices; max small-progress step="+largestQuarterStep+" model pixels; retained052 stages/young-adult asset boundary, eyes, inherited axes, maturity and smoothing passed; revised production babies are covered by BabyRunMorphRigTest053\n";
     Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/hero-run052-results.txt"),report);System.out.print(report);
   }
 }

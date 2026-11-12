@@ -5,6 +5,7 @@ public final class MechanicsTestSuite {
   public static void main(String[] args) {
     ChaoStateTest.main(args);
     AnalyzerStatRulesTest.main(args);
+    com.chaogarden.client.AnalyzerAlignmentBar053Test.main(args);
     DriveRulesTest.main(args);
     com.chaogarden.toys.ToyInteractionRulesTest.main(args);
     int distribution = com.chaogarden.distribution.EggDistributionRulesTest.run();

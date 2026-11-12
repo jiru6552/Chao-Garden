@@ -1,0 +1,74 @@
+{
+  "classification": "Raw supplied-run outcomes; no overall success or inherited-failure inference",
+  "logs": [
+    {
+      "log": "baby053-compile-core.log",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "baby053-rig-first.log",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "baby053-native-first.log",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [
+        "[01:09:57] [Server thread/INFO] [minecraft/GameTestServer]: ========= 486 GAME TESTS COMPLETE IN 28.42 s ======================",
+        "[01:09:57] [Server thread/INFO] [minecraft/GameTestServer]: All 486 required tests passed :)"
+      ],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "baby053-client-final.log",
+      "build_successful_marker": true,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "baby053-build-final.log",
+      "build_successful_marker": false,
+      "build_failed_marker": true,
+      "failed_gradle_tasks": [
+        "triangleTransitionRigTest",
+        "trumpetTransitionRigTest"
+      ],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "baby053-journal-content-final.log",
+      "build_successful_marker": false,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    },
+    {
+      "log": "baby053-journal-052-baseline.log",
+      "build_successful_marker": false,
+      "build_failed_marker": false,
+      "failed_gradle_tasks": [],
+      "native_summaries": [],
+      "native_failure_lines": [],
+      "journal_failure_lines": []
+    }
+  ]
+}

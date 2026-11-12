@@ -1,0 +1,44 @@
+Chao Garden 0.25.53 cumulative source overlay.
+
+431 changed/new files and 21 explicit coffin-source deletions onto full 0.25.43, including all earlier updates. This ZIP is not a standalone project. The delivery branch contains the full updated source.
+
+Extract at the full project root; then apply SOURCE_DELETIONS.txt manually, or run:
+python3 apply-source-deletions.py /path/to/full/Chao-Garden
+Use --verify-only first to review. The helper refuses edited files and never touches Minecraft saves.
+
+Java 21, Minecraft 1.21.1, NeoForge 21.1.219 and external Lionfish API 3.1. Use matching client/server 0.25.53 JARs.
+Read BABY_RUN_02553.md for prototype rules, actual verification and limitations.
+
+0.25.52 to 0.25.53 paths:
+CHANGELOG.md
+README.md
+TESTING.md
+build.gradle
+docs/BABY_RUN_02553.md
+docs/BABY_RUN_REFERENCES_02553.md
+docs/reference-images/neutral-run-source053.jpg
+docs/research/baby-run-02553-reference-audit.json
+gradle.properties
+scripts/generate_baby_run_morph_02553.py
+src/lionfishTest/java/com/chaogarden/client/AdultMorphSnapshot053.java
+src/lionfishTest/java/com/chaogarden/client/BabyRunMorphRigTest053.java
+src/lionfishTest/java/com/chaogarden/client/HeroRunMorphRigTest052.java
+src/main/java/com/chaogarden/care/ChaoCareNetwork.java
+src/main/java/com/chaogarden/client/AnalyzerAlignmentBar053.java
+src/main/java/com/chaogarden/client/BabyRunVisualSmoke053.java
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java
+src/main/java/com/chaogarden/client/HeroRunAppearance052.java
+src/main/java/com/chaogarden/client/HeroRunCoatMaterial052.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/core/AlignmentEditRules053.java
+src/main/java/com/chaogarden/core/HeroRunMorphology052.java
+src/main/java/com/chaogarden/test/BabyRunAlignmentGameTests053.java
+src/main/resources/assets/chao_garden/baby_run_morphology_053.json
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby_run_proto053.json
+src/main/resources/data/chao_baby53/legacy_states.json
+src/main/resources/data/chao_baby53/structure/activity_test.nbt
+src/test/java/com/chaogarden/client/AnalyzerAlignmentBar053Test.java
+src/test/java/com/chaogarden/core/AnalyzerAlignmentRules053Test.java
+src/test/java/com/chaogarden/core/ChaoStateTest.java
+src/test/java/com/chaogarden/core/MechanicsTestSuite.java

@@ -92,3 +92,18 @@ See [the implementation and results report](docs/HERO_RUN_02552.md) and [referen
 Run the server and client in separate invocations. The development client helper creates a fresh isolated flat world and intentionally stages training/maturity values; it is excluded from the production JAR. Scenes 18–20 require the real Accessories/owo test runtime supplied via the existing `chaoAccessoriesTest`/`chaoAccessoriesDir` properties. The helper's frames and normal-time recording complement, rather than replace, manual checks in a real save and multiplayer.
 
 Production evaluation uses Hero Garden Fruit, Run drives, Creative Analyzer edits and `/chao inspect`; `/chao mature` is the existing first-evolution shortcut. Existing toy once/loop/stop previews remain available. Stage percentages in the galleries are controlled inputs, not a claim of having observed an entire natural lifetime.
+
+
+## Baby Run revision and alignment control (0.25.53)
+
+See [the implementation and results report](docs/BABY_RUN_02553.md) and [reference notes](docs/BABY_RUN_REFERENCES_02553.md). In Creative, hold an Analyzer and open **Mind → Profile** to drag the bottom-right Dark/Neutral/Hero bar for an available baby. Survival is read-only; adult alignment remains locked even in Creative. Verify save/reload and the same baby's world appearance after each edit.
+
+```sh
+./gradlew coreTest babyRunMorphRigTest053
+./gradlew runGameTestServer -PchaoGameTestNamespaces=chao_baby53 -PchaoGameTestDir=run-baby053-tests
+./gradlew runClient -PbabyRun053Study=true -PbabyRun053Start=0 -PbabyRun053Limit=26 -PbabyRun053Dir=run-baby053-visual
+```
+
+Serialize server and client runs. The opt-in helper creates an isolated flat world, uses actual gameplay rendering and stages controlled training values. Its last two equipped scenes need real Accessories/owo supplied through `chaoAccessoriesTest` / `chaoAccessoriesDir`. Development helpers and native fixtures are excluded from the production JAR. The report separates actual client observations from mathematical and dedicated-server checks and identifies inherited build failures.
+
+Compare fixed-alignment normal/max babies and 25/50/75% Run stages from front, side and back. Inspect walking, expressions, compact hands/feet, hats, animal parts, toys and equipped poses. Use the existing `/chao testtoy broom once`, `/chao testtoy picture_book loop` and `/chao testtoy stop` controls to recheck production attachment poses without rewards. Shaders, full modpacks, remote-player views and listening remain manual checks.

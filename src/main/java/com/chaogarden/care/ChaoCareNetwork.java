@@ -1,5 +1,7 @@
 package com.chaogarden.care;
 
+import com.chaogarden.ChaoGarden;
+import com.chaogarden.core.AlignmentEditRules053;
 import com.chaogarden.entity.ChaoEntity;
 import java.util.UUID;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -30,6 +32,13 @@ public final class ChaoCareNetwork {
         ByteBufCodecs.VAR_INT,StatEdit::action,ByteBufCodecs.VAR_INT,StatEdit::value,StatEdit::new);
     @Override public Type<StatEdit> type(){return TYPE;}
   }
+  /** Fixed-point [-1000,1000] values represent the Dark-to-Hero range [-1,1]. */
+  public record AlignmentEdit(String chao,int value) implements CustomPacketPayload {
+    public static final Type<AlignmentEdit> TYPE=new Type<>(id("analyzer_alignment_edit"));
+    public static final StreamCodec<RegistryFriendlyByteBuf,AlignmentEdit> CODEC=StreamCodec.composite(
+        ByteBufCodecs.stringUtf8(36),AlignmentEdit::chao,ByteBufCodecs.VAR_INT,AlignmentEdit::value,AlignmentEdit::new);
+    @Override public Type<AlignmentEdit> type(){return TYPE;}
+  }
   /** Shared by the network handler and native authorization tests; always runs on the server thread. */
   public static boolean editStats(ServerPlayer player,StatEdit message){
     if(!player.isCreative()||player.isSpectator())return false;
@@ -43,6 +52,28 @@ public final class ChaoCareNetwork {
   public static void requestStat(ChaoEntity chao,com.chaogarden.core.AnalyzerStatRules.Edit edit){
     PacketDistributor.sendToServer(new StatEdit(chao.getUUID().toString(),edit.stat(),edit.action(),edit.value()));
   }
+  /** Every drag sample is authorized from current server state, never client screen flags. */
+  public static boolean editAlignment(ServerPlayer player,AlignmentEdit message) {
+    if(player==null||message==null||!player.isCreative()||player.isSpectator()
+        ||!AlignmentEditRules053.validMilli(message.value())||!hasAnalyzer(player))return false;
+    UUID target;
+    try{target=UUID.fromString(message.chao());}
+    catch(IllegalArgumentException|NullPointerException invalid){return false;}
+    // Preserve the same Creative ownership override as other Analyzer/care edits.
+    if(!(player.serverLevel().getEntity(target) instanceof ChaoEntity chao)
+        ||!ChaoCareServices.canManage(player,chao)||chao.isCocooned()
+        ||com.chaogarden.activities.ActivityManager.isBusy(chao)
+        ||!AlignmentEditRules053.canEdit(chao.state(),true,false))return false;
+    if(!AlignmentEditRules053.applyMilli(chao.state(),message.value()))return false;
+    chao.sync();com.chaogarden.companion.CompanionContent.itemStateChanged(chao);return true;
+  }
+  private static boolean hasAnalyzer(ServerPlayer player) {
+    var analyzer=ChaoGarden.item("chao_analyzer");
+    return player.getMainHandItem().is(analyzer)||player.getOffhandItem().is(analyzer);
+  }
+  public static void requestAlignment(ChaoEntity chao,int value) {
+    if(chao!=null)PacketDistributor.sendToServer(new AlignmentEdit(chao.getUUID().toString(),value));
+  }
   public record Open(int entity,int page,int section) implements CustomPacketPayload {
     public static final Type<Open> TYPE=new Type<>(id("care_open"));
     public static final StreamCodec<RegistryFriendlyByteBuf,Open> CODEC=StreamCodec.composite(
@@ -55,6 +86,9 @@ public final class ChaoCareNetwork {
     var r=event.registrar("care_1");
     r.playToServer(StatEdit.TYPE,StatEdit.CODEC,(message,context)->{
       if(context.player() instanceof ServerPlayer player)editStats(player,message);
+    });
+    r.playToServer(AlignmentEdit.TYPE,AlignmentEdit.CODEC,(message,context)->{
+      if(context.player() instanceof ServerPlayer player)editAlignment(player,message);
     });
     r.playToServer(Action.TYPE,Action.CODEC,(message,context)->{
       if(!(context.player() instanceof ServerPlayer player))return;

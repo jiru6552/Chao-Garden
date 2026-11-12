@@ -1,0 +1,44 @@
+{
+  "version": "0.25.53",
+  "user_intent": "Hero-aligned Run baby; use supplied Neutral Run image for shape, not alignment identity",
+  "references": [
+    {
+      "name": "run-young-neutral",
+      "url": "https://chao-island.com/assets/images/gallery/twotone/run/neutralruntwotoneregular.jpg",
+      "http_status": 200,
+      "bytes": 13509,
+      "sha256": "22f6b4d330c9599e60db306964042fc3d2c2bea8eb34255cb8a733b0b97f215e",
+      "size": [
+        109,
+        132
+      ],
+      "included_source_copy": "docs/reference-images/neutral-run-source053.jpg"
+    },
+    {
+      "name": "run-run-neutral",
+      "url": "https://chao-island.com/assets/images/gallery/advanced-evolution/neutral/runrun.jpg",
+      "http_status": 200,
+      "bytes": 9372,
+      "sha256": "7a3687b015ed2dee3f873fd6e4f77f25c797a779cd6a5608e721442317f0f6dc",
+      "size": [
+        109,
+        132
+      ]
+    }
+  ],
+  "screenshot": {
+    "kind": "user-provided Minecraft comparison viewed inline",
+    "local_binary_status": "not exposed in accessible workspace or attachment tool metadata at audit",
+    "approximate_display_dimensions": [
+      2048,
+      1095
+    ],
+    "packaging_requirement": "Use actual supplied PNG when available; do not reconstruct or substitute it"
+  },
+  "public_photo_copy_not_upload_byte_identity": true,
+  "palette_scope": "Independent baby Run and alignment; adult052 material output preserved",
+  "limits": [
+    "Authored RGB approximations; photographs are not original palette tables.",
+    "The pictured Neutral Run first form is intentionally adapted to the requested Hero-capable baby prototype."
+  ]
+}
