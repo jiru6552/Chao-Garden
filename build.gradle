@@ -145,6 +145,7 @@ neoForge {
     runs {
         client {
             if (project.hasProperty('neutralSwim059Dir')) gameDirectory = project.file(project.property('neutralSwim059Dir'))
+            if (project.hasProperty('darkNormal060Dir')) gameDirectory = project.file(project.property('darkNormal060Dir'))
             systemProperty 'chao_garden.heroRun054Study', project.findProperty('heroRun054Study') ?: 'false'
             systemProperty 'chao_garden.heroRun054Baseline', project.findProperty('heroRun054Baseline') ?: 'false'
             systemProperty 'chao_garden.heroRun054Start', project.findProperty('heroRun054Start') ?: '0'
@@ -880,3 +881,19 @@ tasks.register('neutralSwimMaterialTest059', JavaExec) {
     jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
 }
 tasks.named('check') { dependsOn neutralSwimMaterialTest059 }
+
+tasks.register('darkNormalMorphRigTest060', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkNormalMorphRigTest060'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkNormalMorphRigTest060 }
+
+tasks.register('darkNormalMaterialTest060', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkNormalMaterialTest060'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkNormalMaterialTest060 }

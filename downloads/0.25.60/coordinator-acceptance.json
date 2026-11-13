@@ -1,0 +1,18 @@
+{
+  "version": "0.25.60",
+  "coordinator_accepted": true,
+  "scope": "Root acceptance of current full80-scene cohort and explicitly bounded reviewed comparisons; not every motion frame, physical device or remote-client certification.",
+  "production_jar_sha256": "481ef6fc933b11b54a79be372fdb95310fd83d6fd367a695106b3a0ba8b28096",
+  "runtime_proof_sha256": "ce7c352ec0d8c3a40232d2161d9d58ec1e368afc2858c6e3a602a798000e18fd",
+  "canonical_client_log_sha256": "2f93c8539b4dbe2fe2ca8beb0ea1afdcb8096255c0c1bc50ca44381934cc7790",
+  "case_catalog_sha256": "472a73bb5648891d409cc3d5f93ab940f2d22b4c742c46c90066b33ed575aff4",
+  "comparison_manifest_sha256": "db1adff40d5fadda322616aa1fdb1fd2f6d8c971b6207de70052c8a6e6e3992e",
+  "reviewed_static_scope": "All 390 static PNGs: 366 reviewed by the model auditor plus 24 cross-intermediate originals personally reviewed by root, through uniform sheets with selected full-resolution reopens.",
+  "paired_comparison_scope": "All 81 Minecraft/viewer pairs across fresh/half/mature stages plus 27 opposite-side Minecraft sources reviewed by the reference auditor; root also opened all three stage sheets.",
+  "movie_review_scope": "Root inspected 12 decoded frames at 0, 6, ...66s through a uniform sheet and full-resolution reopens at 0s/30s. Silent 69.1s at 20fps; not full interactive playback or listening.",
+  "component_audits_are_scoped": true,
+  "component_audit_note": "Earlier component manifests may record pending/accepted:false because they were reviewed before completion or because acceptance belongs to root. This acceptance follows the successful full 80-scene invocation and binds current hashes without expanding any component visual scope.",
+  "reaction_coverage": "Case 79 changed internal behavioral emotions, but all 20 screenshots retain the normal visible face and spiked marker. Three distinct in-game expressions were not verified. Twelve production-emitter reaction/visibility frames passed numerically against unchanged production bytes.",
+  "source_model_sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+  "accepted_original_png_count": 682
+}

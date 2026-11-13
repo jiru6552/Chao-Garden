@@ -1,0 +1,13 @@
+# Independent final QA — Dark / Neutral-first .60
+
+Read-only checks passed for the current JAR, runtime binding, protected models and current evidence. No build, game test, source edit, Git mutation or publication was performed by this audit. Concrete package verification is pending creation of `/workspace/artifacts/chao-garden-0.25.60`.
+
+- The 31,190,091-byte JAR has expected SHA256 `481ef6fc933b11b54a79be372fdb95310fd83d6fd367a695106b3a0ba8b28096`, 9,012 unique entries and valid CRCs. No GameTest, VisualSmoke, VisualStudy, CaptureStudy, PoseProbe or VisualProbe class is present.
+- New model SHA256 is `36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514`. All five protected models, and all 32 prior gameplay model assets, are byte-identical to delivered .59 in source and JAR.
+- All 8,314 production Chao class/asset entries match the frozen development output, still-current declared build outputs and JAR. Frozen manifest and proof bindings are valid. This establishes byte equality, not direct archive loading by `runClient`.
+- Strict collection validates the reviewed authored helper and all 80 exact fixtures, successful native/render completion, zero skips and 682 intact original PNGs. Independent manifest checking validates 1,683 referenced hashes across 891 unique files, with no missing file or mismatch.
+- Viewer provenance matches 153 originals and 15 sheets. Comparison provenance matches 81 pairs over nine forms, three ages and three views, plus 27 opposite-side sources. Fresh media probing confirms 69.1 seconds at 20 fps, video only. Movie review is explicitly limited to 12 decoded frames and selected full-resolution reopens.
+- Literal logs support the successful broad build in 12m21s, 390 required native tests, 65,722,302 material checks and the later focused 38,173,771 rig checks, including 12 emitter expression/marker frames. Journal remains 8/9 with the inherited Your gardens paragraph assertion; journal source/test bytes match delivered .59.
+- Refreshed `docs/DARK_NORMAL_02560.md` was reviewed against the evidence. It discloses NORMAL-only case79 faces, numerical rather than visual reaction checks, sampled movie review, hidden crest policy, carry occlusion, stationary water, blocky/interpolation approximations and untested touch/remote multiplayer/restart/lifetime/toy breadth. No material mismatch was found in that current draft.
+
+Detailed machine-readable results: `jar-runtime-protected.json`, `evidence-hash-audit.json`, `evidence-hash-checks.json`, `log-journal-audit.json`. `check-package.py` is a read-only verifier for the eventual package's checksums, ZIP/JAR CRCs, source inventory and local Markdown links.

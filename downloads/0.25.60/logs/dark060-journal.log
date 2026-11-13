@@ -1,0 +1,23 @@
+test_analyzer_links_use_real_tabs (__main__.JournalContentTest.test_analyzer_links_use_real_tabs) ... ok
+test_doctor_routes_match_screen_modes (__main__.JournalContentTest.test_doctor_routes_match_screen_modes) ... ok
+test_growth_and_evolution_teach_mechanics (__main__.JournalContentTest.test_growth_and_evolution_teach_mechanics) ... ok
+test_help_is_actionable (__main__.JournalContentTest.test_help_is_actionable) ... ok
+test_navigation_contract_unchanged (__main__.JournalContentTest.test_navigation_contract_unchanged) ... ok
+test_points_and_levels_are_explicit (__main__.JournalContentTest.test_points_and_levels_are_explicit) ... ok
+test_robot_and_breeding_contradictions_removed (__main__.JournalContentTest.test_robot_and_breeding_contradictions_removed) ... ok
+test_section_identity_and_order_preserved (__main__.JournalContentTest.test_section_identity_and_order_preserved) ... ok
+test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) ... 
+  test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens') ... FAIL
+
+======================================================================
+FAIL: test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Chao-Garden/scripts/test_journal_content_02518.py", line 33, in test_sections_are_short_and_paragraphed
+    self.assertIn('\n\n', body)
+AssertionError: '\n\n' not found in "Place a Chao Garden device, open it and press Activate garden. This marks the device's chunk and its eight neighbouring chunks. No enclosure or tree is required. Owned Chao placed inside are detected automatically; Garden registration still manages residents."
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+FAILED (failures=1)

@@ -5,6 +5,13 @@
 - Let Fly counter later Swim growth back to balanced Swim-first; retain independent maturity and reversible current-training influences without new save fields.
 - Document independently operated viewer references, runtime checks and first-pass approximations in [the family report](docs/NEUTRAL_SWIM_02559.md).
 
+## 0.25.60 — Dark / Neutral-first morphology
+
+- Adds all nine Dark/Neutral-first adult combinations using the original fixed head, pixel face and shared animation rig.
+- Uses separately authored blocky rear crests, bat-wing accents, independent spiked markers and compact body/limb targets; retains genetic pigments and existing shine.
+- Keeps maturity separate from reversible current training, both opposing axes, first-evolution recency ties and locked adult identity.
+- Adds dedicated current-bar policy, native authorization/save and geometry/material regressions, plus matched actual viewer/Minecraft comparisons. See [the full report](docs/DARK_NORMAL_02560.md) for measured verification and approximation limits.
+
 ## 0.25.58 — Neutral and Hero morphology refinement
 
 - Correct the Neutral/Normal Swim tip's rising rear direction, broaden Power+Swim into a stepped pointed crown, and strengthen Power's swept-back crest without reshaping the head box.

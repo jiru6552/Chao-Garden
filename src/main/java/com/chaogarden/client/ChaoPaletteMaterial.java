@@ -82,11 +82,14 @@ public final class ChaoPaletteMaterial {
   /** Prototype-only UV additions. Overlay/ordinary materials retain their exact
    * old masks; protected eye texels are outside every listed rectangle. */
   static boolean protectedMarker(String sourcePath,String layout,boolean adult,int x,int y,int width,int height) {
-    return NeutralSwimRegionPaint059.paletteProtected(sourcePath,layout,x,y,width,height)
+    return DarkNormalRegionPaint060.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||NeutralSwimRegionPaint059.paletteProtected(sourcePath,layout,x,y,width,height)
         ||HeroNormalRegionPaint057.paletteProtected(sourcePath,layout,x,y,width,height)
         ||HeroRunMarkerPaint056.paletteProtected(sourcePath,layout,adult,x,y,width,height);
   }
   static int prototypeReservedKind(String sourcePath,String layout,int x,int y,int width,int height) {
+    if(sourcePath.startsWith("dynamic/dark_normal060/")&&layout.equals("baby")&&width>0&&height>0)
+      return DarkNormalRegionPaint060.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/neutral_swim059/")&&layout.equals("baby")&&width>0&&height>0)
       return NeutralSwimRegionPaint059.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/hero_normal057/")&&layout.equals("baby")&&width>0&&height>0)

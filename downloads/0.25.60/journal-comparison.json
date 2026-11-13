@@ -1,0 +1,19 @@
+{
+  "passed": 8,
+  "total": 9,
+  "inherited_failure": "Your gardens paragraph-format assertion",
+  "same_as_delivered059": true,
+  "source_identity": [
+    {
+      "path": "src/main/java/com/chaogarden/item/GardenGuideItem.java",
+      "sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "equals_delivered059": true
+    },
+    {
+      "path": "scripts/test_journal_content_02518.py",
+      "sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "equals_delivered059": true
+    }
+  ],
+  "source_log": "dark060-journal.log"
+}

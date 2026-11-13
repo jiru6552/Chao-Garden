@@ -1,0 +1,216 @@
+{
+  "scope": "Read-only independent JAR, protected assets and production runtime binding QA. No builds, game tests, source edits or Git mutations.",
+  "delivered_parent": "2a908fc28548987a5385b559bc29af971803b08f",
+  "ordinary_head": "fcde2f9d012499b2e2cb1ec1d50a7f58d4dc3ca2",
+  "jar": {
+    "path": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.60.jar",
+    "size_bytes": 31190091,
+    "sha256": "481ef6fc933b11b54a79be372fdb95310fd83d6fd367a695106b3a0ba8b28096",
+    "unique_entries": 9012,
+    "duplicate_entries": 0,
+    "crc_error": null,
+    "forbidden_development_classes": []
+  },
+  "new_model_sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+  "protected_five": [
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_baby.json",
+      "sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+      "sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+      "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+      "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+      "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+      "source_and_jar_equal_delivered_parent": true
+    }
+  ],
+  "all_prior_gameplay_assets": [
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_amy.json",
+      "sha256": "5c26e621b31e6473926d062839a527969316d21c1d7cd7c1312006d055e5f290",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_baby.json",
+      "sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_baby_run_proto053.json",
+      "sha256": "2dde4ce5fd1091fcaf01e6787ae1d04a0965745868039f2fbe6a39220b2d14ba",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_chaos_angel.json",
+      "sha256": "31c837ee8277bde89257569b149ff97fde6c1ecfe33d5460976b5ab80f5e0554",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_chaos_angel_glass.json",
+      "sha256": "e55c1732a2a234aa3a712e565e355a3473ff31fbdeef4790918f29162758916f",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_chaos_devil.json",
+      "sha256": "d740935cc996f1799e8018772dad689faf608fd914dfcaeafdc4cc5cede0a684",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_chaos_devil_glass.json",
+      "sha256": "c86b26b736755060647fa42d1204b2a56f8debe5232760b589790667469ffc38",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_chaos_light.json",
+      "sha256": "770acd2a7d9746330a2380b4c27eea415c0211f88ae26d9161af27b00892de8e",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_chaos_light_glass.json",
+      "sha256": "4b337573df36fa48ceef2243a7b8ca7d47e40d5354538177e7f440ba101de343",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_dark.json",
+      "sha256": "19db752f0e24f4ea2856393f3a5a9db8914d2ba0ad2fa267ccf2e72a8ede6eb5",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_dark_fly.json",
+      "sha256": "69a16ef4b634c63603612288a581de27b77bd7238d34c5dd5b0bd6f1e9c03800",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_dark_power.json",
+      "sha256": "7870cf2c37fe450ee24e855f8b1ee0d15a862bc953829598a4ae4809279bad87",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_dark_run.json",
+      "sha256": "e48a54d3049f454b14e28d3720723518d1687bd8704f4be829ebf5fa4bfa19e7",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_dark_swim.json",
+      "sha256": "65cd1d05ae82348c7ff56112fd50b6c7ad84f9bce423dda179085677b7a53625",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_fly.json",
+      "sha256": "1c5698b7e0185fbaa6cb5c3515da7259442b651562388d9de2842642da2729e8",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero.json",
+      "sha256": "0ac4166dd46a3337192a0db21ee6045751f2d6dbdcbcac7381af0248ad6e2c3e",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_fly.json",
+      "sha256": "8ad750d09d97ae18dd438991665c0dcfb9ffbef5b2ae3f8a11db0f9bbca88f88",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+      "sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_power.json",
+      "sha256": "e44b47baa875c3d86316c23cff2154c133978572fe23c53669fd0dee1f0c1467",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_run.json",
+      "sha256": "504e5682224135c858a5f013a6414b6660ff3bd70df974def3d83a3275719a5a",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto052.json",
+      "sha256": "434b3af9bb47e26796e52d18b56cedce80e7e0048fb7067937d67f5e5bf1d8c6",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto054.json",
+      "sha256": "85c817ac711f0c90f4b3076ce63bce3c691a702abf00e25f9a50946d8fa0b3db",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+      "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_hero_swim.json",
+      "sha256": "de36feefd90c58e62e0093a5935df28be32b4a01e8b8b9c2ed069f86dffc6fcd",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_knuckles.json",
+      "sha256": "bb3b8f9dbb85168411ae69d8edd9a5339ca66bfe4a8dd06ceb4d988606ba4f86",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+      "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+      "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_omochao.json",
+      "sha256": "5ed01e604d74ec8faaa177b880669caf6a0096a8d74d61af2c3c4c992bbb4535",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_power.json",
+      "sha256": "a41c866f60ae209c80e0333aa901c9109fbdd6950f483f5be37b57b6cb26de3d",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_run.json",
+      "sha256": "f11a948abff032968b17f304bda5d1886dc02ad220768cd3387183f15383c35c",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_swim.json",
+      "sha256": "205d56e0539dc4cd0ca616b52dc24301ae9ea6b8bdcb4d52c67a65e7a8879090",
+      "source_and_jar_equal_delivered_parent": true
+    },
+    {
+      "path": "assets/chao_garden/models/entity/gameplay/chao_tails.json",
+      "sha256": "ecdffd5e053dd1c9b38945e18b11b3ce088ab437816b4e22df8e3c7b3131f10d",
+      "source_and_jar_equal_delivered_parent": true
+    }
+  ],
+  "runtime": {
+    "mode": "development_classpath",
+    "claim": "Frozen and still-current declared development output equals delivered JAR; does not establish direct archive loading by runClient.",
+    "proof_sha256": "ce7c352ec0d8c3a40232d2161d9d58ec1e368afc2858c6e3a602a798000e18fd",
+    "snapshot_sha256": "095bda755acbbf869f1739f3c2e290edc93ef8538b8ca3a9ef41286fa55a4b13",
+    "proof_entries": 8314,
+    "actual_production_entries": 8314,
+    "frozen_live_jar_matches": 8314,
+    "snapshot_all_entries": 8716
+  },
+  "errors": [],
+  "pass": true
+}

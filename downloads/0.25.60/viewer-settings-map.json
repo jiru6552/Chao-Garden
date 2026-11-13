@@ -1,0 +1,109 @@
+{
+  "scope": "Dark / Normal first type / nine later specialization combinations",
+  "first_type": "Normal",
+  "alignment": -1,
+  "age_samples": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "fixed_age_training_samples": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "forms": [
+    {
+      "later": "balanced",
+      "viewer_Run_positive": 0,
+      "viewer_SwimFly": 0,
+      "mod_RunPower": 0,
+      "mod_SwimFly": 0
+    },
+    {
+      "later": "run",
+      "viewer_Run_positive": 1,
+      "viewer_SwimFly": 0,
+      "mod_RunPower": -1,
+      "mod_SwimFly": 0
+    },
+    {
+      "later": "power",
+      "viewer_Run_positive": -1,
+      "viewer_SwimFly": 0,
+      "mod_RunPower": 1,
+      "mod_SwimFly": 0
+    },
+    {
+      "later": "fly",
+      "viewer_Run_positive": 0,
+      "viewer_SwimFly": 1,
+      "mod_RunPower": 0,
+      "mod_SwimFly": 1
+    },
+    {
+      "later": "swim",
+      "viewer_Run_positive": 0,
+      "viewer_SwimFly": -1,
+      "mod_RunPower": 0,
+      "mod_SwimFly": -1
+    },
+    {
+      "later": "run-fly",
+      "viewer_Run_positive": 1,
+      "viewer_SwimFly": 1,
+      "mod_RunPower": -1,
+      "mod_SwimFly": 1
+    },
+    {
+      "later": "run-swim",
+      "viewer_Run_positive": 1,
+      "viewer_SwimFly": -1,
+      "mod_RunPower": -1,
+      "mod_SwimFly": -1
+    },
+    {
+      "later": "power-fly",
+      "viewer_Run_positive": -1,
+      "viewer_SwimFly": 1,
+      "mod_RunPower": 1,
+      "mod_SwimFly": 1
+    },
+    {
+      "later": "power-swim",
+      "viewer_Run_positive": -1,
+      "viewer_SwimFly": -1,
+      "mod_RunPower": 1,
+      "mod_SwimFly": -1
+    }
+  ],
+  "view_deltas": {
+    "front": [
+      0,
+      0
+    ],
+    "side": [
+      100,
+      0
+    ],
+    "square-back": [
+      180,
+      0
+    ],
+    "opposite-side": [
+      -100,
+      0
+    ],
+    "above": [
+      0,
+      75
+    ],
+    "below": [
+      0,
+      -65
+    ]
+  },
+  "warning": "approximate normalized viewer track positions and visually assessed mouse orbit, not calibrated game units or exact camera angles"
+}

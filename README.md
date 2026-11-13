@@ -1,6 +1,6 @@
-# Chao Garden 0.25.59
+# Chao Garden 0.25.60
 
-Current update **0.25.59** adds the Neutral/Swim-first family: balanced, Run, Power, Swim, Swim+Run and Swim+Power. Separate blocky crown and side fins develop around the unchanged original head; maturity and current training stay independent. See [the Swim family and verification report](docs/NEUTRAL_SWIM_02559.md). The [Neutral/Hero refinements](docs/MORPH_REFINEMENT_02558.md) and earlier families remain included.
+Current update **0.25.60** adds the Dark / Neutral-first adult family: balanced, Run, Power, Fly, Swim and the four compatible pairs. Three blocky rear-crest sections, bat-wing accents, a spiked marker and a slim tail develop around the unchanged original head. Maturity and current opposing training remain independent. See [the Dark family and verification report](docs/DARK_NORMAL_02560.md). The [Neutral Swim-first family](docs/NEUTRAL_SWIM_02559.md), [Neutral/Hero refinements](docs/MORPH_REFINEMENT_02558.md) and earlier families remain included.
 
 Earlier Analyzer update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
 

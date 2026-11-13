@@ -6,6 +6,7 @@ import com.chaogarden.core.HeroRunMorphology052;
 import com.chaogarden.core.NeutralMorphology056;
 import com.chaogarden.core.HeroNormalMorphology057;
 import com.chaogarden.core.NeutralSwimMorphology059;
+import com.chaogarden.core.DarkNormalMorphology060;
 import com.chaogarden.toys.*;
 import java.nio.file.*;
 import java.util.*;
@@ -15,35 +16,36 @@ public final class PianoRigTest {
  record Hands(float[] right,float[] left,String label){}
  public static void main(String[] args)throws Exception{
   var clip=new LionfishPianoClip();var faces=PropMeshClearance.triangles("chao_piano_idle");
-  int checks=0,clearanceChecks=0,blockyConfigurations=0,neutralConfigurations=0,heroNormalConfigurations=0,neutralSwimConfigurations=0;float error=0,depthError=0,maxReach=0,maxShift=0,minClearance=Float.POSITIVE_INFINITY;
+  int checks=0,clearanceChecks=0,blockyConfigurations=0,neutralConfigurations=0,heroNormalConfigurations=0,neutralSwimConfigurations=0,darkNormalConfigurations=0;float error=0,depthError=0,maxReach=0,maxShift=0,minClearance=Float.POSITIVE_INFINITY;
   // The unshipped rounded .54 experiment is archived, not a current actor.
   // Keep retained .52/.53 fixtures and all existing production blocky paths and the scoped Swim-first family covered.
   try(var files=Files.list(Path.of("src/main/resources/assets/chao_garden/models/entity/gameplay"))){for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")&&!p.getFileName().toString().equals("chao_hero_run_proto054.json")).toList()){
    var mesh=ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path)).getAsJsonObject());var poses=mesh.createPoses();String key=path.getFileName().toString();
-   boolean blocky=key.equals("chao_hero_run_proto055.json"),neutral=key.equals("chao_neutral_proto056.json"),heroNormal=key.equals("chao_hero_normal_proto057.json"),neutralSwim=key.equals("chao_neutral_swim_proto059.json");
-   for(boolean adult:neutral||heroNormal||neutralSwim?new boolean[]{true}:new boolean[]{false,true})for(float swimFly:neutralSwim?new float[]{-1,0}:new float[]{-1,0,1})for(float runPower:new float[]{-1,0,1})for(float growth:blocky||neutral||heroNormal||neutralSwim?new float[]{0,.5f,1}:new float[]{0}){
+   boolean blocky=key.equals("chao_hero_run_proto055.json"),neutral=key.equals("chao_neutral_proto056.json"),heroNormal=key.equals("chao_hero_normal_proto057.json"),neutralSwim=key.equals("chao_neutral_swim_proto059.json"),darkNormal=key.equals("chao_dark_normal_proto060.json");
+   for(boolean adult:neutral||heroNormal||neutralSwim||darkNormal?new boolean[]{true}:new boolean[]{false,true})for(float swimFly:neutralSwim?new float[]{-1,0}:new float[]{-1,0,1})for(float runPower:new float[]{-1,0,1})for(float growth:blocky||neutral||heroNormal||neutralSwim||darkNormal?new float[]{0,.5f,1}:new float[]{0}){
     mesh.development(swimFly,runPower,adult?1:.14f);poses.values().forEach(ChaoMeshAsset.Pose::reset);
     if(blocky){
      var state=new ChaoState();state.adult=adult;state.align=1;state.primaryType=adult?ChaoState.RUN_TYPE:ChaoState.NORMAL;
      int training=Math.round(growth*(adult?960:480));state.levels[ChaoState.RUN]=training/100;state.progress[ChaoState.RUN]=training%100;
      state.setEvolutionStrength(adult?1.2f:1);state.swimFly=swimFly;state.runPower=runPower;
      mesh.heroRunDevelopment(HeroRunMorphology052.sample(state),swimFly,runPower);blockyConfigurations++;
-    }else if(neutral||heroNormal||neutralSwim){
+    }else if(neutral||heroNormal||neutralSwim||darkNormal){
      // Mature corners and the young/half-grown blends must retain the same
      // actual keyboard surface/contact constraints, including mixed axes.
-     var state=new ChaoState();state.adult=true;state.align=heroNormal?1:0;state.primaryType=neutralSwim?ChaoState.SWIM_TYPE:ChaoState.NORMAL;
+     var state=new ChaoState();state.adult=true;state.align=darkNormal?-1:heroNormal?1:0;state.primaryType=neutralSwim?ChaoState.SWIM_TYPE:ChaoState.NORMAL;
      int rp=Math.round(runPower*960),sf=Math.round(swimFly*960);
      if(rp!=0){int stat=rp>0?ChaoState.POWER:ChaoState.RUN,total=Math.abs(rp);state.levels[stat]=total/100;state.progress[stat]=total%100;}
      if(sf!=0){int stat=sf>0?ChaoState.FLY:ChaoState.SWIM,total=Math.abs(sf);state.levels[stat]=total/100;state.progress[stat]=total%100;}
      state.setEvolutionStrength(growth*1.2f);
-     if(neutralSwim){mesh.neutralSwimDevelopment(NeutralSwimMorphology059.sample(state));neutralSwimConfigurations++;}
+     if(darkNormal){mesh.darkNormalDevelopment(DarkNormalMorphology060.sample(state));darkNormalConfigurations++;}
+     else if(neutralSwim){mesh.neutralSwimDevelopment(NeutralSwimMorphology059.sample(state));neutralSwimConfigurations++;}
      else if(heroNormal){mesh.heroNormalDevelopment(HeroNormalMorphology057.sample(state));heroNormalConfigurations++;}
      else{mesh.neutralDevelopment(NeutralMorphology056.sample(state));neutralConfigurations++;}
     }
     var handMesh=key.contains("chaos_")?ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path.resolveSibling(key.replace(".json","_glass.json")))).getAsJsonObject()):mesh;
     var hp=handMesh==mesh?poses:handMesh.createPoses();var hands=new ArrayList<Hands>();hands.add(new Hands(handMesh.visiblePalm(hp,false),handMesh.visiblePalm(hp,true),"skin"));
     if(swimFly==0&&runPower==0&&!key.contains("chaos_")&&!key.contains("omochao"))for(int animal=0;animal<ChaoState.ANIMALS.length;animal++){
-     if((ChaoState.animalSlots(animal)&1)==0)continue;var p=path.getParent().getParent().resolve((animal<21?"overlays/":"cwe_parts/")+(neutralSwim?"chao_baby.json":key));if(!Files.exists(p))continue;
+     if((ChaoState.animalSlots(animal)&1)==0)continue;var p=path.getParent().getParent().resolve((animal<21?"overlays/":"cwe_parts/")+(neutralSwim||darkNormal?"chao_baby.json":key));if(!Files.exists(p))continue;
      var repl=ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(p)).getAsJsonObject());var rp=repl.createPoses();var right=ChaoToyGrip.animalPalm(repl,rp,animal,adult,false);var left=ChaoToyGrip.animalPalm(repl,rp,animal,adult,true);if(right!=null&&left!=null)hands.add(new Hands(right,left,"animal"+animal));
     }
     float scale=key.contains("chaos_")?.86f:adult?.80f:.64f;
@@ -96,6 +98,6 @@ public final class PianoRigTest {
     }
    }
   }}
-  System.out.println("Piano mesh fit: "+checks+" hand samples; "+clearanceChecks+" body/skull/foot surface checks; "+blockyConfigurations+" production055 age/axis/growth configurations; "+neutralConfigurations+" production056 age/axis configurations; "+heroNormalConfigurations+" production057 age/axis configurations; "+neutralSwimConfigurations+" production059 legal age/axis configurations; no crossed hands; max key-height error="+error+" blocks; max key-depth error="+depthError+" blocks; max reach="+maxReach+" pixels; max shoulder shift="+maxShift+" pixels; min actor surface clearance="+minClearance+" pixels");
+  System.out.println("Piano mesh fit: "+checks+" hand samples; "+clearanceChecks+" body/skull/foot surface checks; "+blockyConfigurations+" production055 age/axis/growth configurations; "+neutralConfigurations+" production056 age/axis configurations; "+heroNormalConfigurations+" production057 age/axis configurations; "+neutralSwimConfigurations+" production059 legal age/axis configurations; "+darkNormalConfigurations+" production060 age/axis configurations; no crossed hands; max key-height error="+error+" blocks; max key-depth error="+depthError+" blocks; max reach="+maxReach+" pixels; max shoulder shift="+maxShift+" pixels; min actor surface clearance="+minClearance+" pixels");
  }
 }

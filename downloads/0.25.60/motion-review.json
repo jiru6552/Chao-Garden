@@ -1,0 +1,152 @@
+{
+  "movie_sha256": "13d66bee3979d6f6afd4e2a93e0e63b40f6046dc956998733c0dcbf35eccffa5",
+  "scope": "Root personally inspected12 actual decoded frames at0,6,...66s through uniformcrop/resize sheet, plus full-resolution reopens0s and30s; not full interactive playback or listening.",
+  "reviewed_frames": [
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-01.png",
+      "sha256": "9e7394cb1f4caf84f3feb70e6a21997a8666bef533c1394318b38b0bb74f10cd",
+      "requested_seconds": 0,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-02.png",
+      "sha256": "9745e7743dd354061c408a94594c0311013800c41210d07f4e4c8e05dcaf4763",
+      "requested_seconds": 6,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-03.png",
+      "sha256": "912421c2ec4c77531c58971956b61abaccb18613e3383c03db964fecaff6ed7e",
+      "requested_seconds": 12,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-04.png",
+      "sha256": "b98ad55d4583290f30ca90b6bfff6f4671ab78d310e924090122b001c506ea95",
+      "requested_seconds": 18,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-05.png",
+      "sha256": "84b2344b36c069f37c259cb20e4f86b38d6e9cc389b7c09a6f02cd1a0555ff27",
+      "requested_seconds": 24,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-06.png",
+      "sha256": "8d6093bbfb9415b407953e909a0392d27236b9be06064ff373b953e22f51a38c",
+      "requested_seconds": 30,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-07.png",
+      "sha256": "502cef4d98a48640aa2ddb1710dd57b26991dc4ca4564ae25594ea01e0e81d25",
+      "requested_seconds": 36,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-08.png",
+      "sha256": "01f3db0f329fe9f80c1a9e70499e8b2bced7bccf59cfec702e16d2a487fa4708",
+      "requested_seconds": 42,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-09.png",
+      "sha256": "f9cddc25f2d8c44cb881518617ceee84926f7c2c9bd4cb777eb8da436b5d4d6e",
+      "requested_seconds": 48,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-10.png",
+      "sha256": "6fa4c47835d78213242c08fc5d3deb82dea5fea27649333fb4c4e722266b4721",
+      "requested_seconds": 54,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-11.png",
+      "sha256": "1fcc349cfe059a1289b7e8d69f83f60541fcafd31c4514d3e38a0cb49b9cc480",
+      "requested_seconds": 60,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/dark060-motion-frame-12.png",
+      "sha256": "b82d02407b3015b30d984b6c7c753df450f5bc7ae2b40c312a12843cfbfeb1a7",
+      "requested_seconds": 66,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    }
+  ],
+  "coordinator_reviewed": true,
+  "artifact_jar_sha256": "481ef6fc933b11b54a79be372fdb95310fd83d6fd367a695106b3a0ba8b28096",
+  "full_resolution_reopens_seconds": [
+    0,
+    30
+  ],
+  "full_interactive_playback": false,
+  "audio_listening": false,
+  "observations": [
+    "Head remains the original box while appendage and color regions develop.",
+    "Sampled walking hand/foot/face and torso/head joins remain coherent.",
+    "Four separate accelerated gain/loss fixtures run at ordinary20TPS with a silent20fps recording; no time rescaling.",
+    "Rapid compatible-pair reversal does not hold its completely settled visible peak; static galleries establish the endpoint."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "Coordinator-selected literal evidence only; pass/failure claims remain in the report.",
+  "checks": [
+    {
+      "source_log": "dark060-build.log",
+      "sha256": "9dc0edf559b984356bea740a5b54bc86c192c08223b06715270b85ffb2e0bcad",
+      "literal_lines": [
+        "PASS: 23478 carry checks; 540 form/age/morph cases; back skin gap=0.018437505..0.045000017 blocks; max transition step=0.034974005 blocks",
+        "Hero Normal morphology057: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+        "Dark Normal morphology060: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+        "DarkNormal060 material: 65722302 checks; 172 real canonical coats; 38025072 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 18576 four-swatch samples; maximum 1% RGB step=5. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic crest/crescent/wing regions, .60-only palette protection passed. Pixel checks are not in-game visual verification.",
+        "DarkNormal060: 38148079 checks; 3352 emitted age/axis/edit frames; 14474 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 25620 actual orb/feature separation checks; 3660 connected feature samples; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 852552 actual same-facing head/feature plane-pair checks; 34080 actual WALK head/torso SAT continuity frames; 68160 actual WALK palm/head SAT separation frames; 68160 actual WALK shoulder/wrist continuity frames; maximum hinge drift=3.4614343E-6 model pixels; maximum axis step=0.12144447 model pixels; maximum20tick edit step=0.25018954; maximum1pct maturity step=0.046979185; seconds=9.580990517. Fixed original head/face/orb center/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+        "HeroNormal057 material: 73977182 checks; 172 original coats; 38034360 preserved alpha pixels; 297216 exact face pixels; 445824 halo samples; 6873120 exact body/head pixels; 92880 regional wing samples; 23392 actual wing-edge alpha samples; maximum1% color step=4. Nine independently referenced color corners, white/inherited lower stalks and wing roots, distinct upper caps, regional wing span, cutout-following thickness, shared fresh form, gradual age/axes/reversal, inherited coat contrast and profile-scoped halo protection passed. Pixel policy checks, not a visual/shader/multiplayer claim.",
+        "HeroNormal057: 10717767 checks; 1534 emitted age/axis/edit frames; 11872 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 23440 actual tilted-halo/head-feature separation checks; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; 4258 emitted root/cap depth-plane pairs; 5 production quiet-book surface frames; minimum tip face gap=0.039999485 model pixels; maximum hinge drift=3.819874E-6 model pixels; maximum axis step=0.036648598 model pixels; maximum20tick edit step=0.17294578; seconds=5.805870279. Fixed original head/face/rig; two-section paired features, differentiated closed wings and four-bar halo; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "Hero Run055 material: 23615146 checks; 172 original coats; 12678120 preserved-alpha pixels; 99072 exact protected eye/expression pixels; maximum1% pixel change=4; shared pixel regions, fixed UVs, no baseline pop and compatible-axis accents passed.",
+        "Neutral056: 8073541 checks; 1837 emitted age/axis/edit frames; 4235 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; maximum axis step=0.14285788 model pixels; maximum20tick edit step=0.22264875; maximum1pct maturity step=0.038228665; seconds=5.094882662. Fixed original head/face/marker/rig; rear/up Swim neck and short forward hook, forward/up Power shoulder with short back/up curl and stepped tapered Power+Swim apex; nine distinct mature corners; reversible independent age/axes; current production selection. Geometry validation, not visual/multiplayer verification.",
+        "NeutralSwim059: 18820556 checks; 2471 emitted age/axis/edit frames; 10338 closed rectangular-box samples; 378 production Lionfish motion frames; 4536 separate attachment matrices; 696 coat/shape cases; 5292 actual orb/feature separation checks; 5292 connected feature samples; 1416 emitted closed-wing samples; 1416 original-edge hinge samples; 5 production quiet-book surface frames; 18 actual baseline walking-head guard comparisons; 2900016 actual same-facing head/feature plane-pair checks; 22722 actual WALK head/torso SAT continuity frames; maximum hinge drift=4.249712E-6 model pixels; maximum axis step=0.077871926 model pixels; maximum20tick edit step=0.23891748; maximum1pct maturity step=0.054602757; seconds=5.862608369. Fixed original head/face/orb/59-joint rig; six distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+        "Organ mesh fit: 203634 hand samples; 4680 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels",
+        "Piano mesh fit: 203634 hand samples; 20898 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+        "PASS: 96316 variant checks; 1092 replacement-hand rig/age/animal cases, all four clips, both maracas hands measured against rendered vertices. Visual quality requires the separate client study.",
+        "PASS: 693435 maracas checks, 540 rig/morph/hand cases, 641 subticks, max grip error=1.2287812E-7; visual review separate.",
+        "PASS: 346703 bell checks, 270 rig/morph/hand cases, 641 subticks, max grip error=1.2377834E-7; visual review separate.",
+        "PASS: 521673 tambourine checks, 270 rig/morph cases, 641 subticks, maxGripError=1.2287812E-7 maxContactGap=1.2731557E-7 maxRequestedShoulderShiftPixels=0.3743237; visual review separate.",
+        "PASS: 14742 tambourine replacement checks; 546 two-hand rig/age/animal cases; maxGripError=1.4901161E-8 maxContactGap=1.3265381E-7; visual review separate.",
+        "PASS: 523579 castanets checks, 270 rig/morph cases, 641 subticks, maxGripError=1.1944189E-7 maxContactGap=0.018833859 maxRequestedShoulderShiftPixels=0.70134205; visual review separate.",
+        "PASS: 6012658 cymbal checks; 1629 rig/age/morph/replacement cases, 641 subticks; maxGrip=2.4268772E-7 maxRimGap=0.0040377327 minHeadPixels=0.09137273 maxRequestedShoulderShiftPixels=2.1457672E-6; visual and listening review separate.",
+        "PASS: 14742 castanets replacement checks; 546 two-hand rig/age/animal cases; maxGripError=1.4901161E-8 maxContactGap=0.011859947; visual review separate.",
+        "PASS: 1073726 assertions; 31 hand rigs/ages; 3 material-only glass overlays; 9 morphology endpoints; 641 sub-tick samples each; max grip error=1.8491855E-7 blocks. Real Lionfish 3.1; offline rig checks, not an in-game visual pass.",
+        "PASS: 99572 running pose checks across 132 form/age/speed cases and 31812 real-mesh frames; bounded cadence, retained foot travel and gait-unlock continuity",
+        "PASS: 1845432 sitting checks; 684 form/age/morph cases with two real entry/exit transitions; maxFloorPixels=0.025001526 minHeadPixels=2.5367966 maxHalfTickJointStepPixels=0.045230336 adultTiltDegrees=3.7276623 babyTiltDegrees=7.4598904 maxTransitionPenetrationPixels=0.045000076",
+        "Triangle transition samples=267696 failures=0 minHandHeadPixels=0.2046349",
+        "Trumpet transition samples=267696 failures=0 minHandHeadPixels=0.20083904",
+        "PASS: 360 visible transition checks across 120 form/age/history cases; nearby blending preserved, stale offscreen pose discarded",
+        "BUILD SUCCESSFUL in 12m 21s"
+      ]
+    },
+    {
+      "source_log": "dark060-native.log",
+      "sha256": "1c8b382cdb2ef1eab50ed923b4a15efb637dc1c61052e495efca9e39daf64475",
+      "literal_lines": [
+        "[00:32:35] [Server thread/INFO] [minecraft/GameTestServer]: All 390 required tests passed :)",
+        "BUILD SUCCESSFUL in 45s"
+      ]
+    },
+    {
+      "source_log": "dark060-focused.log",
+      "sha256": "a365f46835194eb28e5ebb01b0ac7e598e86ab06c86eadc2248639f3fa0130a3",
+      "literal_lines": [
+        "DarkNormal060: 38173771 checks; 3352 emitted age/axis/edit frames; 14474 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 25620 actual orb/feature separation checks; 3660 connected feature samples; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 852552 actual same-facing head/feature plane-pair checks; 34080 actual WALK head/torso SAT continuity frames; 68160 actual WALK palm/head SAT separation frames; 68160 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum hinge drift=3.4614343E-6 model pixels; maximum axis step=0.12144447 model pixels; maximum20tick edit step=0.25018954; maximum1pct maturity step=0.046979185; seconds=10.521886518. Fixed original head/face/orb center/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+        "BUILD SUCCESSFUL in 20s"
+      ]
+    },
+    {
+      "source_log": "dark060-geometry.log",
+      "sha256": "a9b794e489e90f4529cc47102239657efd13165eebad6556801eef440b32b31d",
+      "literal_lines": [
+        "DarkNormal060:18positive closed boxes,9261connected fullsigned age/axis blends; exact original7x6x6 head/face/59joints; nine distinct mature silhouettes,6connected same-bone marker protrusions, eye/marker SATclearance,2connected tailparts,anchored soles/heels andwings passed. Marker same-facing plane counts(face pairs,parallel,disjoint coplanar)=(756, 126, 36);0positiveareaoverlaps. Head/feature samefacingplane checks minimumpositivegap=1.006152306px; maximum5%ageaxisvertexstep=0.229366039px; added-headbounds=[[-1.65, 1.65], [-7.526185813, -0.672536516], [1.17873138, 5.832812645]]."
+      ]
+    },
+    {
+      "source_log": "dark060-journal.log",
+      "sha256": "6daf7986f072781c592b76c24e3a3c6eae426e81cd0eff1958f9feccda3622c8",
+      "literal_lines": [
+        "FAIL: test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens')",
+        "FAILED (failures=1)"
+      ]
+    },
+    {
+      "source_log": "dark060-jar-prepare.log",
+      "sha256": "61e5b1073dd51d65f91746e567aa62157f4d0dbe7f159ec9d13d1f6cd367476f",
+      "literal_lines": [
+        "BUILD SUCCESSFUL in 10s"
+      ]
+    },
+    {
+      "source_log": "dark060-client-final.log",
+      "sha256": "2f93c8539b4dbe2fe2ca8beb0ea1afdcb8096255c0c1bc50ca44381934cc7790",
+      "literal_lines": [
+        "[00:43:49] [Render thread/INFO] [co.ch.cl.DarkNormalVisualSmoke060/]: DARK060_VISUAL_COMPLETE requestedCases=80 renderedCases=80 skippedCases=0 start=0 limit=80 baseline=false captures=682 saved=682 epochMillis=1794530629539 normal20TPS=true audioListening=false output=/workspace/.setup/dark060-client-final",
+        "BUILD SUCCESSFUL in 9m"
+      ]
+    }
+  ]
+}

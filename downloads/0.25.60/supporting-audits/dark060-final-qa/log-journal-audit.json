@@ -1,0 +1,42 @@
+{
+  "scope": "Read-only final logs and journal source identity against delivered .59; no test rerun.",
+  "journal_source_identity": [
+    {
+      "path": "src/main/java/com/chaogarden/item/GardenGuideItem.java",
+      "sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "byte_identical_delivered059": true
+    },
+    {
+      "path": "scripts/test_journal_content_02518.py",
+      "sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "byte_identical_delivered059": true
+    }
+  ],
+  "literal_log_lines": {
+    "dark060-build.log": [
+      "DarkNormal060 material: 65722302 checks; 172 real canonical coats; 38025072 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 18576 four-swatch samples; maximum 1% RGB step=5. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic crest/crescent/wing regions, .60-only palette protection passed. Pixel checks are not in-game visual verification.",
+      "DarkNormal060: 38148079 checks; 3352 emitted age/axis/edit frames; 14474 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 25620 actual orb/feature separation checks; 3660 connected feature samples; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 852552 actual same-facing head/feature plane-pair checks; 34080 actual WALK head/torso SAT continuity frames; 68160 actual WALK palm/head SAT separation frames; 68160 actual WALK shoulder/wrist continuity frames; maximum hinge drift=3.4614343E-6 model pixels; maximum axis step=0.12144447 model pixels; maximum20tick edit step=0.25018954; maximum1pct maturity step=0.046979185; seconds=9.580990517. Fixed original head/face/orb center/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+      "BUILD SUCCESSFUL in 12m 21s"
+    ],
+    "dark060-focused.log": [
+      "DarkNormal060: 38173771 checks; 3352 emitted age/axis/edit frames; 14474 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 25620 actual orb/feature separation checks; 3660 connected feature samples; 2344 emitted closed-wing samples; 2344 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 852552 actual same-facing head/feature plane-pair checks; 34080 actual WALK head/torso SAT continuity frames; 68160 actual WALK palm/head SAT separation frames; 68160 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum hinge drift=3.4614343E-6 model pixels; maximum axis step=0.12144447 model pixels; maximum20tick edit step=0.25018954; maximum1pct maturity step=0.046979185; seconds=10.521886518. Fixed original head/face/orb center/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+      "BUILD SUCCESSFUL in 20s"
+    ],
+    "dark060-native.log": [
+      "[00:32:35] [Server thread/INFO] [minecraft/GameTestServer]: All 390 required tests passed :)",
+      "BUILD SUCCESSFUL in 45s"
+    ],
+    "dark060-client-final.log": [
+      "[00:43:49] [Render thread/INFO] [co.ch.cl.DarkNormalVisualSmoke060/]: DARK060_VISUAL_COMPLETE requestedCases=80 renderedCases=80 skippedCases=0 start=0 limit=80 baseline=false captures=682 saved=682 epochMillis=1794530629539 normal20TPS=true audioListening=false output=/workspace/.setup/dark060-client-final",
+      "BUILD SUCCESSFUL in 9m"
+    ],
+    "dark060-journal.log": [
+      "  test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens') ... FAIL",
+      "FAIL: test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens')",
+      "AssertionError: '\\n\\n' not found in \"Place a Chao Garden device, open it and press Activate garden. This marks the device's chunk and its eight neighbouring chunks. No enclosure or tree is required. Owned Chao placed inside are detected automatically; Garden registration still manages residents.\"",
+      "Ran 9 tests in 0.002s",
+      "FAILED (failures=1)"
+    ]
+  },
+  "pass_journal_identity": true
+}

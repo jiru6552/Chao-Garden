@@ -1,0 +1,22 @@
+{
+  "marker_boxes": 7,
+  "quad_face_pairs": 756,
+  "same_facing_parallel_pairs": 126,
+  "same_plane_but_disjoint_pairs": 36,
+  "positive_area_coplanar_pairs": 0,
+  "core_bounds": [
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ]
+  ],
+  "geometry_note": "All marker targets identical for each spur; common bone transform preserves these plane separations. Internal overlapping crossfaces are perpendicular and form raised box edges, not z-fighting."
+}

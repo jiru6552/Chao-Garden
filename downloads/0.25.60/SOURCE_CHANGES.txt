@@ -1,0 +1,37 @@
+Chao Garden 0.25.60 cumulative source overlay onto the complete 0.25.43 source.
+
+Extract at the full project root, review SOURCE_DELETIONS.txt, then run python3 apply-source-deletions.py /path/to/project --verify-only. Run without --verify-only after review. Modified source is refused; Minecraft saves are not touched.
+
+The download branch contains the complete source tree. Java 21, NeoForge 1.21.1, external Lionfish API 3.1; matching client/server 0.25.60.
+
+Changed since .59:
+CHANGELOG.md
+MECHANICS.md
+README.md
+TESTING.md
+build.gradle
+docs/DARK_NORMAL_02560.md
+gradle.properties
+scripts/generate_dark_normal_morph_02560.py
+scripts/validate_dark_normal_morph_02560.py
+src/lionfishTest/java/com/chaogarden/client/DarkNormalMaterialTest060.java
+src/lionfishTest/java/com/chaogarden/client/DarkNormalMorphRigTest060.java
+src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java
+src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java
+src/main/java/com/chaogarden/client/ChaoModel.java
+src/main/java/com/chaogarden/client/ChaoOverlayLayer.java
+src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java
+src/main/java/com/chaogarden/client/DarkNormalAppearance060.java
+src/main/java/com/chaogarden/client/DarkNormalCoatMaterial060.java
+src/main/java/com/chaogarden/client/DarkNormalRegionPaint060.java
+src/main/java/com/chaogarden/client/DarkNormalVisualSmoke060.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/core/ChaoState.java
+src/main/java/com/chaogarden/core/DarkNormalMorphology060.java
+src/main/java/com/chaogarden/test/DarkNormalMorphologyGameTests060.java
+src/main/resources/assets/chao_garden/dark_normal060.json
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json
+src/test/java/com/chaogarden/core/DarkNormalMorphology060Test.java
+src/test/java/com/chaogarden/core/MechanicsTestSuite.java

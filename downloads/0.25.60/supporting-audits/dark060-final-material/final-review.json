@@ -1,0 +1,846 @@
+{
+  "status": "completed_actual_material_visual_review",
+  "whole_cohort_log_summary": {
+    "requested": 80,
+    "rendered": 80,
+    "skipped": 0,
+    "captures": 682,
+    "saved": 682
+  },
+  "jar_sha256": "481ef6fc933b11b54a79be372fdb95310fd83d6fd367a695106b3a0ba8b28096",
+  "runtime_mode": "development_classpath",
+  "runtime_proof": "/workspace/.setup/run060-runtime-proof.json",
+  "runtime_proof_sha256": "ce7c352ec0d8c3a40232d2161d9d58ec1e368afc2858c6e3a602a798000e18fd",
+  "reviewed_unique_native_originals": 134,
+  "reviewed_static_originals": 114,
+  "reviewed_expression_motion_originals": 20,
+  "reviewed_contact_sheets": 23,
+  "crop_policy": "One shared fixed native crop(450,230,990,770); uniform400x400nearest; original unmodified; labels only; no flips/recolor",
+  "source_files": [
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalCoatMaterial060.java",
+      "sha256": "5ab0c600113a2241e4ce45cafa03d597ca3d1dc058eb4f9449c5634cc4723cbf"
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalRegionPaint060.java",
+      "sha256": "c47d21373aa063d04a13e6cd057a0844e0c3ea7bba470107a4aee6d85685161d"
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java",
+      "sha256": "30c64c176c181d317a058f987867fefe5380057ff096a3aceb3794cdaf055471"
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoOverlayLayer.java",
+      "sha256": "11f9a61206c1bd819bb22ac0cd16837e360b787e3fe05339d549f0beb396ddc3"
+    },
+    {
+      "path": "src/lionfishTest/java/com/chaogarden/client/DarkNormalMaterialTest060.java",
+      "sha256": "17eefea9f0ad006940c19ed6d593625ab3a14e7e5cc730c18fd4cee55429a03f"
+    }
+  ],
+  "static_entries": [
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-00-dark_normal_normal_age0-front-t000-f0016.png",
+      "sha256": "b06deff1e2db6d16fb94cae6bf85aac340e26d2d60cb434ee5e03038b2f49c00",
+      "scope": "ages-form-00",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-00-dark_normal_normal_age0-back-t000-f0085.png",
+      "sha256": "d0f490e25df33be15eea3f746b07b37e222d3ada2e891a80a994f8c83ea63d04",
+      "scope": "ages-form-00",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-01-dark_normal_normal_age50-front-t000-f0016.png",
+      "sha256": "3c934406cb43bb2565484baca1c577c5a0a47757bc0e3109a741d37bb3ed4c70",
+      "scope": "ages-form-00",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-01-dark_normal_normal_age50-back-t000-f0085.png",
+      "sha256": "3bcbb8debc65c2132f0ee392269b5313b7a5f443a892d54dcb2c3e6d8be7bea4",
+      "scope": "ages-form-00",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-02-dark_normal_normal_age100-front-t000-f0016.png",
+      "sha256": "51473654f33231b44aa121644ea6b57ee88af7e6785288f206460f473c1b7d44",
+      "scope": "ages-form-00",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-02-dark_normal_normal_age100-back-t000-f0085.png",
+      "sha256": "80db2b2abd52c913b37f0abd2be99e992d78465fcdabfc96ca9d9419e67b0cd5",
+      "scope": "ages-form-00",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-03-dark_normal_run_age0-front-t000-f0016.png",
+      "sha256": "1912d88370e51dbe298fe2a67e474f267de1ffe26d1cf070b02c5c744f37edec",
+      "scope": "ages-form-01",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-03-dark_normal_run_age0-back-t000-f0085.png",
+      "sha256": "8fe7e3fe567fc3693e9632ab251b47978d40abdcc35f075ff04ec3eb8f6019ad",
+      "scope": "ages-form-01",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-04-dark_normal_run_age50-front-t000-f0016.png",
+      "sha256": "35ea8ba0bdd1d77e8416c1ba7568a36e59e396008c90f8ad0fff412649b0ec89",
+      "scope": "ages-form-01",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-04-dark_normal_run_age50-back-t000-f0085.png",
+      "sha256": "b394651cd1e34afb4d8496185887b61a19a079e52ef8a29ad294fa22c91a44b4",
+      "scope": "ages-form-01",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-05-dark_normal_run_age100-front-t000-f0016.png",
+      "sha256": "eccf033d8e9ad5742a9abdaef5a45081efbe8720811519b4a25442fc25446f43",
+      "scope": "ages-form-01",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-05-dark_normal_run_age100-back-t000-f0085.png",
+      "sha256": "87177f0cc62444cf09b8ee1be2aa2df00810eafd7cfee14ace6610a81a0c1b72",
+      "scope": "ages-form-01",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-06-dark_normal_power_age0-front-t000-f0016.png",
+      "sha256": "7d5e1e637df3b8800a63f5432d2af11b400f0e345d4a2b28645c40f0822dc76b",
+      "scope": "ages-form-02",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-06-dark_normal_power_age0-back-t000-f0085.png",
+      "sha256": "c6cbb6c9b80d15e754b8d8ea955639167af7ebac42cbe5cbdf7551ef8c25ceb7",
+      "scope": "ages-form-02",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-07-dark_normal_power_age50-front-t000-f0016.png",
+      "sha256": "e1385744b03e9ea22ca3643efa00c1b5100f091512f3e64b5549bde1e41ddb42",
+      "scope": "ages-form-02",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-07-dark_normal_power_age50-back-t000-f0085.png",
+      "sha256": "e5cc652eecbccf09109bebac3651b8b66614f35dca7a79c32eea55b97ba89c62",
+      "scope": "ages-form-02",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-08-dark_normal_power_age100-front-t000-f0016.png",
+      "sha256": "60a467c0f33436fa42d8ebe9c032ef4c1d8e2f552691c30fb322c9bcf8c1ce29",
+      "scope": "ages-form-02",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-08-dark_normal_power_age100-back-t000-f0085.png",
+      "sha256": "147009e986e5858baf1f54bac912ba536ff823a0cf4972961d3fc6a1bce482f9",
+      "scope": "ages-form-02",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-09-dark_normal_fly_age0-front-t000-f0016.png",
+      "sha256": "47d90ff4936b11fabf02adbd43f39a6a641579e42cda7e919e58dbffc75ab3ed",
+      "scope": "ages-form-03",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-09-dark_normal_fly_age0-back-t000-f0085.png",
+      "sha256": "4d992fa0658055316ee38f52f3c6feed1683d4e86a7310effc529d1196dfce79",
+      "scope": "ages-form-03",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-10-dark_normal_fly_age50-front-t000-f0016.png",
+      "sha256": "150546e837a9875cdcddb9b2773798287f3e6bb848ffc9e8bd4bfd8ee18bc5f2",
+      "scope": "ages-form-03",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-10-dark_normal_fly_age50-back-t000-f0085.png",
+      "sha256": "d34b6af227250f12f19da11d5d4826bfbc2ee86be6a4223f0888b4bd36af03ec",
+      "scope": "ages-form-03",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-11-dark_normal_fly_age100-front-t000-f0016.png",
+      "sha256": "486f039b661c3083b434885fe714a4ed4ac513867d3443c24ee9895cb233385b",
+      "scope": "ages-form-03",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-11-dark_normal_fly_age100-back-t000-f0085.png",
+      "sha256": "8b097e9b454a8cbfc9b47cc5b51504397496ba416be8a980bbe1de6b2777181c",
+      "scope": "ages-form-03",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-12-dark_normal_swim_age0-front-t000-f0016.png",
+      "sha256": "125d55442c7ab5d54837957bd5c12d9166e7fc10613ba7e014019dcc13b5c636",
+      "scope": "ages-form-04",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-12-dark_normal_swim_age0-back-t000-f0085.png",
+      "sha256": "684ab58d8c8fe38b3676ef9eb485fd5e85b6ab6d53eefb5c32ac8db214a2684e",
+      "scope": "ages-form-04",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-13-dark_normal_swim_age50-front-t000-f0016.png",
+      "sha256": "38b621c553489b08a3f454c3c3588211c3e47d9802d8acec0c18241ee418e1d2",
+      "scope": "ages-form-04",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-13-dark_normal_swim_age50-back-t000-f0085.png",
+      "sha256": "f9c5cefd1f548620a7c95f1e41ef29b615bec5c5e27ac1633c2b107a98f90d8e",
+      "scope": "ages-form-04",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-14-dark_normal_swim_age100-front-t000-f0016.png",
+      "sha256": "3c54e23aa5956a8854b323911c94e8dd316f043dcf8002e4cc604d2f899fc085",
+      "scope": "ages-form-04",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-14-dark_normal_swim_age100-back-t000-f0085.png",
+      "sha256": "7b210e3db7cf6f363f78bc37b20a95e0ba93f5ce9a3914577823a4d3cf72de51",
+      "scope": "ages-form-04",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-15-dark_normal_run_fly_age0-front-t000-f0016.png",
+      "sha256": "e49b09329dc01cd780f6e60ea800ddb0b7050837b2faf4f802c41c2fb884b0df",
+      "scope": "ages-form-05",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-15-dark_normal_run_fly_age0-back-t000-f0085.png",
+      "sha256": "ce2bd436270bc9d2282b2b55f32561ab886413fe6452ba2e965f694618fd530b",
+      "scope": "ages-form-05",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-16-dark_normal_run_fly_age50-front-t000-f0016.png",
+      "sha256": "0fa8de8978143e98187d913e04039ff4251a2ea6f44795e7f57de73a8565bc2b",
+      "scope": "ages-form-05",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-16-dark_normal_run_fly_age50-back-t000-f0085.png",
+      "sha256": "9e3c638ba476882705cbec5be9d5aaa997a1251c72771b6ded174c9e2d4f74c9",
+      "scope": "ages-form-05",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-17-dark_normal_run_fly_age100-front-t000-f0016.png",
+      "sha256": "fa890f3db006b53f5518b525bab854ebbdc5df7c37b6f4fc487120cd6ecb53e4",
+      "scope": "ages-form-05",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-17-dark_normal_run_fly_age100-back-t000-f0085.png",
+      "sha256": "3f515556b01fdb3c42b6745a75829e7f076eab0d736d1f07abbd86c64bd374b0",
+      "scope": "ages-form-05",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-18-dark_normal_run_swim_age0-front-t000-f0016.png",
+      "sha256": "70cc7393c27b2e0dbe3a334220361b063a107a031dce9654ebef923747f1e0ed",
+      "scope": "ages-form-06",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-18-dark_normal_run_swim_age0-back-t000-f0085.png",
+      "sha256": "4da7ab1f6cb1afd772e8e45151882a56f07c10afd0b3347a5e72044effd853cc",
+      "scope": "ages-form-06",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-19-dark_normal_run_swim_age50-front-t000-f0016.png",
+      "sha256": "bf54af4c2311927860da54a3818cfd17fd9b380329a837ad4a24f8c7cfb3dca3",
+      "scope": "ages-form-06",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-19-dark_normal_run_swim_age50-back-t000-f0085.png",
+      "sha256": "e226a752c580261bfd5de2f5eac2507cd2030bcae12d11492819a2e93addcde9",
+      "scope": "ages-form-06",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-20-dark_normal_run_swim_age100-front-t000-f0016.png",
+      "sha256": "dbd1541ca68b93c1c93bd161f0183e065e21aa9605994afbe5334ee750a2aae6",
+      "scope": "ages-form-06",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-20-dark_normal_run_swim_age100-back-t000-f0085.png",
+      "sha256": "77d66f4180d539edf67fcff6fa00e4a4c0748291e4093eca0b32036f98782a0d",
+      "scope": "ages-form-06",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-21-dark_normal_power_fly_age0-front-t000-f0016.png",
+      "sha256": "5c985c212a35274ac3fb1d46f5f9e61b0bd104e3808d1d0a9bb8c6deae6b8817",
+      "scope": "ages-form-07",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-21-dark_normal_power_fly_age0-back-t000-f0085.png",
+      "sha256": "11bc1ec15e35304b6559cdaa8ecba07d400ce8152f4b23178c2be6801d33958d",
+      "scope": "ages-form-07",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-22-dark_normal_power_fly_age50-front-t000-f0016.png",
+      "sha256": "d3b8bccf7d1f3554a7f85bd4fde6e4a542e4bcc3f230661a3bf7a4ac86206002",
+      "scope": "ages-form-07",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-22-dark_normal_power_fly_age50-back-t000-f0085.png",
+      "sha256": "fe3e522ebf4e75bc6a37e5c1c6e2ca1a488b2cf903a22f4f5dca2120ce914ae3",
+      "scope": "ages-form-07",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-23-dark_normal_power_fly_age100-front-t000-f0016.png",
+      "sha256": "d0d685bb0f1533199b6a91b1c634d015e80feace6461113d8a7c9d6dc808d9c3",
+      "scope": "ages-form-07",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-23-dark_normal_power_fly_age100-back-t000-f0085.png",
+      "sha256": "332312e5333c92e187ad9d677540ea39e578b233a0b1d58d2656e823dff673df",
+      "scope": "ages-form-07",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-24-dark_normal_power_swim_age0-front-t000-f0016.png",
+      "sha256": "f9e56712d14bc08882b13042af8e609768541ad57def51e1a390242766aceac5",
+      "scope": "ages-form-08",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-24-dark_normal_power_swim_age0-back-t000-f0085.png",
+      "sha256": "5640740180ce6615142163fb08b457c71ca27550e3ef775f9b910db26fa9636d",
+      "scope": "ages-form-08",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-25-dark_normal_power_swim_age50-front-t000-f0016.png",
+      "sha256": "01932bacbb869e7898471d24d60d73546abbe1156879635e305bc21560438fb7",
+      "scope": "ages-form-08",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-25-dark_normal_power_swim_age50-back-t000-f0085.png",
+      "sha256": "05bf725855af192b1dcdeb5a126fcb9f34a1daafbdf56df7226203f2c7cd75a5",
+      "scope": "ages-form-08",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-26-dark_normal_power_swim_age100-front-t000-f0016.png",
+      "sha256": "38efeee591572d9e10e2078d58e1a51bcdc51dcbde057bf80597cccbf6c58f8b",
+      "scope": "ages-form-08",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-26-dark_normal_power_swim_age100-back-t000-f0085.png",
+      "sha256": "b0ebb443f10ef11c614d988c4a472b943017122fb849c442efd1d8d8239500e3",
+      "scope": "ages-form-08",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-49-dark_normal_run_red_twotone-front-t000-f0016.png",
+      "sha256": "a5315a3257370dd2b816820d67536536433ccb93feb505e66fcee3ced4cb6c6e",
+      "scope": "allangles-case-49",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-49-dark_normal_run_red_twotone-left-t000-f0039.png",
+      "sha256": "2c70b49568cbd578310b310bdedb814e119ac20896f9d5a103a6bf296e00c2c5",
+      "scope": "allangles-case-49",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-49-dark_normal_run_red_twotone-right-t000-f0062.png",
+      "sha256": "26188e5becbc8fd77afc6c2cf62dbf64559cf021c287a01a00a0d5cdd812070b",
+      "scope": "allangles-case-49",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-49-dark_normal_run_red_twotone-back-t000-f0085.png",
+      "sha256": "52a9109dd2f05bd1c2de15cbadc6e4b720ddbd7a54ce5cf5d064cc43b73b6fae",
+      "scope": "allangles-case-49",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-49-dark_normal_run_red_twotone-above-t000-f0108.png",
+      "sha256": "37736675409c87d729583b36acc0450588d470ea7d4e0506ef048a0d762717a7",
+      "scope": "allangles-case-49",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-49-dark_normal_run_red_twotone-below-t000-f0131.png",
+      "sha256": "76543f7a6ae07b70724d0b3a2ef6fcaf24e6c330660e56cac22755211c8bf54c",
+      "scope": "allangles-case-49",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-50-dark_normal_power_red_shiny-front-t000-f0016.png",
+      "sha256": "1a5226b9a36915ed65186d3177bcbd1958724b8a6ccf0ee07b3639bdc43e0640",
+      "scope": "allangles-case-50",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-50-dark_normal_power_red_shiny-left-t000-f0039.png",
+      "sha256": "4c15de1eb71787bf42e4144073b6a0d87239627a00567fb8d731d988196e53da",
+      "scope": "allangles-case-50",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-50-dark_normal_power_red_shiny-right-t000-f0062.png",
+      "sha256": "42e382be18b83fdf68865806de6feae7cb62e970a8a865d5d558498df65394b2",
+      "scope": "allangles-case-50",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-50-dark_normal_power_red_shiny-back-t000-f0085.png",
+      "sha256": "7a9d3d24d1fa150da0645a0fc87e8536b95c4d4e238b06d9e94e5ef41fe89a14",
+      "scope": "allangles-case-50",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-50-dark_normal_power_red_shiny-above-t000-f0108.png",
+      "sha256": "05752ae785a9e58f6402f9e137425b13da99db54c077e284e89802985c16124d",
+      "scope": "allangles-case-50",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-50-dark_normal_power_red_shiny-below-t000-f0131.png",
+      "sha256": "302df23a895d2236c09c5140d459f3efdf9edd1a069ef65bed38a10abcad2957",
+      "scope": "allangles-case-50",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-51-dark_normal_swim_green_mono-front-t000-f0016.png",
+      "sha256": "fbacfb8412a7cf55fcaad93e5b9dd68820368153dd795e65acb1a3419f1c389f",
+      "scope": "allangles-case-51",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-51-dark_normal_swim_green_mono-left-t000-f0039.png",
+      "sha256": "783823d479919829ca2cb65040abd51eb34c9774639beabdd80647f30a78b448",
+      "scope": "allangles-case-51",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-51-dark_normal_swim_green_mono-right-t000-f0062.png",
+      "sha256": "5bb0a579fffd9baa7418bad8f56cecb6b3a9fe72b59d9f7e00334dfca8611764",
+      "scope": "allangles-case-51",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-51-dark_normal_swim_green_mono-back-t000-f0085.png",
+      "sha256": "805f78d37d48fec14ee7b792ad3acc3b1af15768561abbe9e47a988f2e92a950",
+      "scope": "allangles-case-51",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-51-dark_normal_swim_green_mono-above-t000-f0108.png",
+      "sha256": "0884023257011aeebb125904641d6a4c800be094532e5563dac3051075d4bb3c",
+      "scope": "allangles-case-51",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-51-dark_normal_swim_green_mono-below-t000-f0131.png",
+      "sha256": "8b2495c76474eb3173cac1e1d23a7adf4e89d6e6c7d241249c1018bf158c3c86",
+      "scope": "allangles-case-51",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-52-dark_normal_run_fly_ruby-front-t000-f0016.png",
+      "sha256": "048880481b0f2ba173a9047ce5e66827a8fa242c5f339b4b12f24937f0ffac13",
+      "scope": "allangles-case-52",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-52-dark_normal_run_fly_ruby-left-t000-f0039.png",
+      "sha256": "78f365bc8313a9666cd8a84ca437e065ccabcdcab89e06e0964d9e461583aaa6",
+      "scope": "allangles-case-52",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-52-dark_normal_run_fly_ruby-right-t000-f0062.png",
+      "sha256": "a28736cd0b7951192711e471a52552445c4e4de476d7874f4dd0cb70a0b249a3",
+      "scope": "allangles-case-52",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-52-dark_normal_run_fly_ruby-back-t000-f0085.png",
+      "sha256": "b53fe67384e8f2931e29f5a2db9a7c2f7a60f1c19d12411dcd0899763adcc079",
+      "scope": "allangles-case-52",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-52-dark_normal_run_fly_ruby-above-t000-f0108.png",
+      "sha256": "fea7bd5156c79f3f74fbb179a591857960efd7c80d8e7d3498db1ab7de0ec53c",
+      "scope": "allangles-case-52",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-52-dark_normal_run_fly_ruby-below-t000-f0131.png",
+      "sha256": "98702673b9dd48543721ee038a8f7bc3b21f39e1c01ab604325cf7fd492e3b3c",
+      "scope": "allangles-case-52",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-53-dark_normal_power_swim_natural_shiny-front-t000-f0016.png",
+      "sha256": "230f189a106bcd2759b2a29ca168f5174f9fa85c4ec1a423774ba84fa865ba9a",
+      "scope": "allangles-case-53",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-53-dark_normal_power_swim_natural_shiny-left-t000-f0039.png",
+      "sha256": "290a1392281da165c7caeca6b0c17d9ba0354a6d4825c43944a9d96604831f72",
+      "scope": "allangles-case-53",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-53-dark_normal_power_swim_natural_shiny-right-t000-f0062.png",
+      "sha256": "fea6ef00b30ec820ed6702048d7a67634fd9e890452913e36bddc4a7181c7ca8",
+      "scope": "allangles-case-53",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-53-dark_normal_power_swim_natural_shiny-back-t000-f0085.png",
+      "sha256": "44f79c5ebda161a4bda748ff85c931dad9f0189b2c7e89acbd809401b100008a",
+      "scope": "allangles-case-53",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-53-dark_normal_power_swim_natural_shiny-above-t000-f0108.png",
+      "sha256": "63e1319c311650ca9f865fc74dad986d8aadb59ecfd523b9a7bfeb4d06e51775",
+      "scope": "allangles-case-53",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-53-dark_normal_power_swim_natural_shiny-below-t000-f0131.png",
+      "sha256": "e76b46e21c665a083d19b5ee450b0ff9ee6d4420815d300488c064cff2706abe",
+      "scope": "allangles-case-53",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-54-hero_run_mature_regression-front-t000-f0016.png",
+      "sha256": "376ee4ef6abd9bc8524e6b8469d545fabdba6a8ea570567a8bc4d32843aa261b",
+      "scope": "allangles-case-54",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-54-hero_run_mature_regression-left-t000-f0039.png",
+      "sha256": "260807f5c96ff8d86a6382cd63121a7f251e51022f1d0089e81ee3a42ab0cae7",
+      "scope": "allangles-case-54",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-54-hero_run_mature_regression-right-t000-f0062.png",
+      "sha256": "06974997fc06a01314cf498061af72edba45d6937ef426410e357c0b1307eeeb",
+      "scope": "allangles-case-54",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-54-hero_run_mature_regression-back-t000-f0085.png",
+      "sha256": "16612bc6f448ee6805b537007e3469c0dd2fab0f036b5c6f94e8e1f0c84fb235",
+      "scope": "allangles-case-54",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-54-hero_run_mature_regression-above-t000-f0108.png",
+      "sha256": "f12a124259e4ad90b33fc0cec6aeeb250b1b96ca30bd495a5b22a58cbc824d4e",
+      "scope": "allangles-case-54",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-54-hero_run_mature_regression-below-t000-f0131.png",
+      "sha256": "2ec996eebdced089d2cf662ab9994bea48dad53efd9a0000f87a17e95bb8a72b",
+      "scope": "allangles-case-54",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-55-hero_normal_power_fly_regression-front-t000-f0016.png",
+      "sha256": "0b0c55e097a9fba6296f033ef3019d0f14e9885c18f9509eb8abf07e1780f851",
+      "scope": "allangles-case-55",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-55-hero_normal_power_fly_regression-left-t000-f0039.png",
+      "sha256": "7069ed470a1953c3eceb03eafe8441f0a1d7104b808b73787ad4fd6cdb221b91",
+      "scope": "allangles-case-55",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-55-hero_normal_power_fly_regression-right-t000-f0062.png",
+      "sha256": "75f4ef112cf202f64487d849a198aa9ea80f51a376226c80a63c628503090877",
+      "scope": "allangles-case-55",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-55-hero_normal_power_fly_regression-back-t000-f0085.png",
+      "sha256": "1b42b073f7f4e8dacb87fa4611bf2a70a46718a5443dfcafab644909eeafe60e",
+      "scope": "allangles-case-55",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-55-hero_normal_power_fly_regression-above-t000-f0108.png",
+      "sha256": "7ccd195cae4037ce8ee3db17ca8e9056b394b82fe7e3987209f6dc689e266a29",
+      "scope": "allangles-case-55",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-55-hero_normal_power_fly_regression-below-t000-f0131.png",
+      "sha256": "7d93133e695de559180b3cdd9736e288975f3bcfb219e6c3005e91e4c79ed50a",
+      "scope": "allangles-case-55",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-56-neutral_normal_power_swim_regression-front-t000-f0016.png",
+      "sha256": "4a370afc8dcff4708281dec5fa1bf8ba3d94db844f96ad03faaf017f22fbe54e",
+      "scope": "allangles-case-56",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-56-neutral_normal_power_swim_regression-left-t000-f0039.png",
+      "sha256": "d452687a88e78ae9e6a16b737b3d18cae6c077900b65423b2f0744e3e6a183e4",
+      "scope": "allangles-case-56",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-56-neutral_normal_power_swim_regression-right-t000-f0062.png",
+      "sha256": "fcd3c08969d7fb0cce5756a162c8ce09ca0d74f1b0873c3b9f0089fd68c9cc5e",
+      "scope": "allangles-case-56",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-56-neutral_normal_power_swim_regression-back-t000-f0085.png",
+      "sha256": "68d4846e32e0cb14c3b92718fde366309eafcf744b8745ae699edc739d905ae8",
+      "scope": "allangles-case-56",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-56-neutral_normal_power_swim_regression-above-t000-f0108.png",
+      "sha256": "fbad997f0e0b9498da6e687c78886106a67e4d110184be2aea70b97ed5aff5b2",
+      "scope": "allangles-case-56",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-56-neutral_normal_power_swim_regression-below-t000-f0131.png",
+      "sha256": "988d6a38630d2012f3b9af62f1dabf0e81ea815b12903e422395e91d9864ea60",
+      "scope": "allangles-case-56",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-57-neutral_swim_run_swim_regression-front-t000-f0016.png",
+      "sha256": "46a5e5244891916a036935c11ec4c65dc851ceff1608e25dc479fed25596904a",
+      "scope": "allangles-case-57",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-57-neutral_swim_run_swim_regression-left-t000-f0039.png",
+      "sha256": "5da86c2082c82a04150517201ba6156b0eb9efa1f960ccc140c52248ae06504e",
+      "scope": "allangles-case-57",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-57-neutral_swim_run_swim_regression-right-t000-f0062.png",
+      "sha256": "d86a613a374c17caf6c07266c89504b13bdbc1c86772e1b3ef8972825a7b3335",
+      "scope": "allangles-case-57",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-57-neutral_swim_run_swim_regression-back-t000-f0085.png",
+      "sha256": "c3f3d6156e67cc9c3270695b42d9c83029417fad82131be87c06bd8320a7b5df",
+      "scope": "allangles-case-57",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-57-neutral_swim_run_swim_regression-above-t000-f0108.png",
+      "sha256": "bc236b65e4818a54f48e16e673031984b72bec7f989bb0482744368ec3c3e06f",
+      "scope": "allangles-case-57",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-57-neutral_swim_run_swim_regression-below-t000-f0131.png",
+      "sha256": "93d2ba70677709ef95e5eedd0b9f94dbecfaf3f28d09373ebb6050d25711d992",
+      "scope": "allangles-case-57",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-60-dark_normal_fly_phoenix_glasses-front-t000-f0016.png",
+      "sha256": "2a27fa3b8ae7c25e60b80855e4600e26916bfeaee4ed7619fffbd6158fe4d4dc",
+      "scope": "allangles-case-60",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-60-dark_normal_fly_phoenix_glasses-left-t000-f0039.png",
+      "sha256": "69287bca9e95a9174053245b76554322fcc90a4eeec453e3368c0793e39a39a7",
+      "scope": "allangles-case-60",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-60-dark_normal_fly_phoenix_glasses-right-t000-f0062.png",
+      "sha256": "540ded638f31056e1821330fcc99e142b668189dcbfb11d48c980d96baa0f48e",
+      "scope": "allangles-case-60",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-60-dark_normal_fly_phoenix_glasses-back-t000-f0085.png",
+      "sha256": "98a7ca062c995a29e984ce6301b7312aebb225c10cd51615f49d94d2cbb69321",
+      "scope": "allangles-case-60",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-60-dark_normal_fly_phoenix_glasses-above-t000-f0108.png",
+      "sha256": "d1aa35e93754ef8b010f50306de375e596cde3906bcb8db5a8f745802f5a7001",
+      "scope": "allangles-case-60",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-60-dark_normal_fly_phoenix_glasses-below-t000-f0131.png",
+      "sha256": "2e756cb088dba5882b4a8ecd389f584c50d2579e784d33205830f705337bad48",
+      "scope": "allangles-case-60",
+      "canonical_capture_log_hash_matches": true
+    }
+  ],
+  "expression_entries": [
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-front-t011-f0028.png",
+      "sha256": "ee3f1611c6449851ca226e3cf8ff0166e521cb7b5bd105e0984148a26e98898b",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-front-t023-f0046.png",
+      "sha256": "ae5c46ad0c268c28b7771648815439a33e138d1228a5b8d97b58667e94ffe7e4",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-front-t035-f0063.png",
+      "sha256": "2872f61236a9d923c1dfc4e3e79ee1482b59b9ab8d47028503e945961aaa33c1",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-front-t047-f0080.png",
+      "sha256": "0f0e597c573152eab919d9c7bb4a1fd071e4126429c2d4cf10323453a43287fd",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-front-t059-f0098.png",
+      "sha256": "acee30af2dd9f71cc81f777475b642318881250ee2257483da0824d545e31290",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-front-t071-f0116.png",
+      "sha256": "5aa29bb528d7f3a097fdaa735a12cd51b7f16bd9dbe339aadcef1941bed37978",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-left-t083-f0134.png",
+      "sha256": "7d5fda5d6596ba92789d97ef0e5b255b4995d93e87dd6fa0f4269cea39d7ed91",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-left-t095-f0151.png",
+      "sha256": "f05fbc5330a897f8a46d6f410eec96d35d3ccb78e4a06276d710421d4a188a52",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-left-t107-f0169.png",
+      "sha256": "d8df4ca890ec5cb89405f6bc1d177f807a0998983da94e131781a69f0dd95353",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-left-t119-f0187.png",
+      "sha256": "138156e5780d25b8a9a04a69104fe11e86d8c2204e84d190dd1ca9566f90ea91",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-left-t131-f0205.png",
+      "sha256": "27c60f7e42ed5db377654505e5b186aeb9bce1df874fcc202b02620ca2bc18c5",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-left-t143-f0223.png",
+      "sha256": "381f1ce4ba8fe88ca0243aaf0024e2174595cb42dfbf7d6e959cd2a0226a1dad",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-left-t155-f0241.png",
+      "sha256": "e912a66d9565da74751ff0326a4b66755b86a95ede42841abc80f4b7d85ddb5d",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-back-t167-f0259.png",
+      "sha256": "3edd7c6394567bf259839ac102a7b985efdd2366eb85dff3cd1c4af579bb654a",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-back-t179-f0277.png",
+      "sha256": "7dfd6196eff307d471792500c0e7ae56e5638bc98cb74f0933f0375669b40afc",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-back-t191-f0294.png",
+      "sha256": "a24727e8c192da4171b9388032cdeac15152aba625d8d4799edcf0487c7955a3",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-back-t203-f0312.png",
+      "sha256": "d47ea5923ba2c3ee684e9e42f5b5358f87e8b42df6b59f91b7eafc69855f0327",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-back-t215-f0330.png",
+      "sha256": "0293ad7fa2066ef374e568568f446d9cf91ac0fc476aef689d60a1c4efc70886",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-back-t227-f0348.png",
+      "sha256": "97e6ac8463138fe52699939554dd23587130f19a960bd2db621ade0fd07a9fda",
+      "canonical_capture_log_hash_matches": true
+    },
+    {
+      "path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-79-dark_normal_fly_expression_walk-back-t239-f0366.png",
+      "sha256": "0a776b2872c9791bc548c61a9ac491b9d30855a7ddee04d028f565abcb212c23",
+      "canonical_capture_log_hash_matches": true
+    }
+  ],
+  "result": "No new material/color/alpha/face/shine/marker corruption found in reviewed images. All9new/intermediate/maturepalettes and5representativeinheritedcoatcases distinguishable; fourpreviousadultfamilies retained.",
+  "expression_coverage_gap": "Case79 logs set JOY/SURPRISE/ANGER internal care states but screenshots retain normal irises/spikeball. ChaoModel visible expressions select actual hurt/pet/delighted/attack states, not those care-emotion values directly. These20images prove face/material integrity during walk, not3distinct visible facial expressions.",
+  "inherited_issue": "Fine round-glasses stippling still visible in case60, documented prior059; accessory/fit production classes unchanged vs059.",
+  "approximations": [
+    "Authored approximate RGBs from rendered viewer screenshots, not extracted material",
+    "Blocky U chestmarking, broad cuffs and simple closed wings instead of exact curved source regions",
+    "Bilinear interior palette and timing approximate: viewer paired training nearing saturation aroundhalfaxis notcopied",
+    "Minecraft directional lighting and shine can strongly darken undersides or temporarily brighten pigment, including marker"
+  ],
+  "not_verified": [
+    "Every color/shine/combined palette in-game (all172atlas alpha/face/hue tested separately)",
+    "Every eye expression or actual reaction icon in-game",
+    "Every accessory/toy/carrying interaction",
+    "Physicalphone/touch input",
+    "Remote networked multiplayer or custom shader/modpack behavior",
+    "Full natural lifecycle/audio listening"
+  ]
+}
