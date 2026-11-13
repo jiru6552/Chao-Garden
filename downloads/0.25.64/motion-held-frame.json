@@ -1,0 +1,15 @@
+{
+  "scope": "Actual decoded full movie frame selected approximately15 wall seconds after case81 ARMED, intended inside settled pair hold aroundtick300. Recorded wall-start/decoder timing is approximate, not an exact game-tick overlay. Personal review separately required.",
+  "movie_sha256": "f00cbdf97b48198e573b5b13827011e7220f032f9ff183156b912a5cbf8d7970",
+  "record_sha256": "07a325fa3706b05e4a9302b184db6226c74d27de2ef9aa6f046214cb1df45683",
+  "source_log_sha256": "357131ba379934d123f60787804dacd200b16b369325e29634ba556844c78abd",
+  "case81_armed_epoch_millis": 1794556634025,
+  "requested_movie_seconds": 57.892704010009766,
+  "frame": "/workspace/.setup/hero064-motion-held-pair.png",
+  "frame_sha256": "dcea124b9d74f5486fee87424f21f2fb3b1dabf5c64377a55419394ab824a803",
+  "raw_hold_ticks": [
+    240,
+    320
+  ],
+  "actual_display_settled_line": "[07:57:28] [Render thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_PAIR_SETTLED case=81 tick=280 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] firstType=1 epochMillis=1794556648028"
+}

@@ -10,6 +10,7 @@ import com.chaogarden.core.DarkNormalMorphology060;
 import com.chaogarden.core.NeutralFlyMorphology061;
 import com.chaogarden.core.NeutralRunMorphology062;
 import com.chaogarden.core.NeutralPowerMorphology063;
+import com.chaogarden.core.HeroSwimMorphology064;
 import com.chaogarden.toys.*;
 import java.nio.file.*;
 import java.util.*;
@@ -19,28 +20,29 @@ public final class OrganRigTest {
  record Hands(float[] right,float[] left,String label){}
  public static void main(String[] args)throws Exception{
   var clip=new LionfishOrganClip();var faces=PropMeshClearance.triangles("chao_organ_idle");
-  int checks=0,clearanceChecks=0,blockyConfigurations=0,neutralConfigurations=0,heroNormalConfigurations=0,neutralSwimConfigurations=0,darkNormalConfigurations=0,neutralFlyConfigurations=0,neutralRunConfigurations=0,neutralPowerConfigurations=0;float error=0,depthError=0,maxReach=0,minClearance=Float.POSITIVE_INFINITY;
+  int checks=0,clearanceChecks=0,blockyConfigurations=0,neutralConfigurations=0,heroNormalConfigurations=0,neutralSwimConfigurations=0,darkNormalConfigurations=0,neutralFlyConfigurations=0,neutralRunConfigurations=0,neutralPowerConfigurations=0,heroSwimConfigurations=0;float error=0,depthError=0,maxReach=0,minClearance=Float.POSITIVE_INFINITY;
   // The unshipped rounded .54 experiment is archived, not a current actor.
   // Keep retained .52/.53 fixtures and all existing production blocky paths and the scoped Swim-first family covered.
   try(var files=Files.list(Path.of("src/main/resources/assets/chao_garden/models/entity/gameplay"))){for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.toString().contains("_glass")&&!p.getFileName().toString().equals("chao_hero_run_proto054.json")).toList()){
    var mesh=ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path)).getAsJsonObject());var poses=mesh.createPoses();String key=path.getFileName().toString();
-   boolean blocky=key.equals("chao_hero_run_proto055.json"),neutral=key.equals("chao_neutral_proto056.json"),heroNormal=key.equals("chao_hero_normal_proto057.json"),neutralSwim=key.equals("chao_neutral_swim_proto059.json"),darkNormal=key.equals("chao_dark_normal_proto060.json"),neutralFly=key.equals("chao_neutral_fly_proto061.json"),neutralRun=key.equals("chao_neutral_run_proto062.json"),neutralPower=key.equals("chao_neutral_power_proto063.json");
-   for(boolean adult:neutral||heroNormal||neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower?new boolean[]{true}:new boolean[]{false,true})for(float swimFly:neutralSwim?new float[]{-1,0}:neutralFly?new float[]{0,1}:new float[]{-1,0,1})for(float runPower:new float[]{-1,0,1})for(float growth:blocky||neutral||heroNormal||neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower?new float[]{0,.5f,1}:new float[]{0}){
+   boolean blocky=key.equals("chao_hero_run_proto055.json"),neutral=key.equals("chao_neutral_proto056.json"),heroNormal=key.equals("chao_hero_normal_proto057.json"),neutralSwim=key.equals("chao_neutral_swim_proto059.json"),darkNormal=key.equals("chao_dark_normal_proto060.json"),neutralFly=key.equals("chao_neutral_fly_proto061.json"),neutralRun=key.equals("chao_neutral_run_proto062.json"),neutralPower=key.equals("chao_neutral_power_proto063.json"),heroSwim=key.equals("chao_hero_swim_proto064.json");
+   for(boolean adult:neutral||heroNormal||neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower||heroSwim?new boolean[]{true}:new boolean[]{false,true})for(float swimFly:neutralSwim?new float[]{-1,0}:neutralFly?new float[]{0,1}:new float[]{-1,0,1})for(float runPower:new float[]{-1,0,1})for(float growth:blocky||neutral||heroNormal||neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower||heroSwim?new float[]{0,.5f,1}:new float[]{0}){
     mesh.development(swimFly,runPower,adult?1:.14f);poses.values().forEach(ChaoMeshAsset.Pose::reset);
     if(blocky){
      var state=new ChaoState();state.adult=adult;state.align=1;state.primaryType=adult?ChaoState.RUN_TYPE:ChaoState.NORMAL;
      int training=Math.round(growth*(adult?960:480));state.levels[ChaoState.RUN]=training/100;state.progress[ChaoState.RUN]=training%100;
      state.setEvolutionStrength(adult?1.2f:1);state.swimFly=swimFly;state.runPower=runPower;
      mesh.heroRunDevelopment(HeroRunMorphology052.sample(state),swimFly,runPower);blockyConfigurations++;
-    }else if(neutral||heroNormal||neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower){
+    }else if(neutral||heroNormal||neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower||heroSwim){
      // Mature corners and the young/half-grown blends must retain the same
      // actual keyboard surface/contact constraints, including mixed axes.
-     var state=new ChaoState();state.adult=true;state.align=darkNormal?-1:heroNormal?1:0;state.primaryType=neutralSwim?ChaoState.SWIM_TYPE:neutralFly?ChaoState.FLY_TYPE:neutralRun?ChaoState.RUN_TYPE:neutralPower?ChaoState.POWER_TYPE:ChaoState.NORMAL;
+     var state=new ChaoState();state.adult=true;state.align=darkNormal?-1:heroNormal||heroSwim?1:0;state.primaryType=neutralSwim||heroSwim?ChaoState.SWIM_TYPE:neutralFly?ChaoState.FLY_TYPE:neutralRun?ChaoState.RUN_TYPE:neutralPower?ChaoState.POWER_TYPE:ChaoState.NORMAL;
      int rp=Math.round(runPower*960),sf=Math.round(swimFly*960);
      if(rp!=0){int stat=rp>0?ChaoState.POWER:ChaoState.RUN,total=Math.abs(rp);state.levels[stat]=total/100;state.progress[stat]=total%100;}
      if(sf!=0){int stat=sf>0?ChaoState.FLY:ChaoState.SWIM,total=Math.abs(sf);state.levels[stat]=total/100;state.progress[stat]=total%100;}
      state.setEvolutionStrength(growth*1.2f);
-     if(neutralPower){mesh.neutralPowerDevelopment(NeutralPowerMorphology063.sample(state));neutralPowerConfigurations++;}
+     if(heroSwim){mesh.heroSwimDevelopment(HeroSwimMorphology064.sample(state));heroSwimConfigurations++;}
+     else if(neutralPower){mesh.neutralPowerDevelopment(NeutralPowerMorphology063.sample(state));neutralPowerConfigurations++;}
      else if(neutralRun){mesh.neutralRunDevelopment(NeutralRunMorphology062.sample(state));neutralRunConfigurations++;}
      else if(neutralFly){mesh.neutralFlyDevelopment(NeutralFlyMorphology061.sample(state));neutralFlyConfigurations++;}
      else if(darkNormal){mesh.darkNormalDevelopment(DarkNormalMorphology060.sample(state));darkNormalConfigurations++;}
@@ -51,7 +53,7 @@ public final class OrganRigTest {
     var handMesh=key.contains("chaos_")?ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(path.resolveSibling(key.replace(".json","_glass.json")))).getAsJsonObject()):mesh;
     var hp=handMesh==mesh?poses:handMesh.createPoses();var hands=new ArrayList<Hands>();hands.add(new Hands(handMesh.visiblePalm(hp,false),handMesh.visiblePalm(hp,true),"skin"));
     if(swimFly==0&&runPower==0&&!key.contains("chaos_")&&!key.contains("omochao"))for(int animal=0;animal<ChaoState.ANIMALS.length;animal++){
-     if((ChaoState.animalSlots(animal)&1)==0)continue;var p=path.getParent().getParent().resolve((animal<21?"overlays/":"cwe_parts/")+(neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower?"chao_baby.json":key));if(!Files.exists(p))continue;
+     if((ChaoState.animalSlots(animal)&1)==0)continue;var p=path.getParent().getParent().resolve((animal<21?"overlays/":"cwe_parts/")+(neutralSwim||darkNormal||neutralFly||neutralRun||neutralPower||heroSwim?"chao_baby.json":key));if(!Files.exists(p))continue;
      var repl=ChaoMeshAsset.parse(JsonParser.parseString(Files.readString(p)).getAsJsonObject());var rp=repl.createPoses();var right=ChaoToyGrip.animalPalm(repl,rp,animal,adult,false);var left=ChaoToyGrip.animalPalm(repl,rp,animal,adult,true);if(right!=null&&left!=null)hands.add(new Hands(right,left,"animal"+animal));
     }
     float scale=key.contains("chaos_")?.86f:adult?.80f:.64f;
@@ -105,6 +107,7 @@ public final class OrganRigTest {
   if(neutralFlyConfigurations!=18)throw new AssertionError("Expected six legal production061 forms at three independent ages, got "+neutralFlyConfigurations);
   if(neutralRunConfigurations!=27)throw new AssertionError("Expected nine production062 signed-axis forms at three independent ages, got "+neutralRunConfigurations);
   if(neutralPowerConfigurations!=27)throw new AssertionError("Expected nine production063 signed-axis forms at three independent ages, got "+neutralPowerConfigurations);
-  System.out.println("Organ mesh fit: "+checks+" hand samples; "+clearanceChecks+" body/skull surface checks; "+blockyConfigurations+" production055 age/axis/growth configurations; "+neutralConfigurations+" production056 age/axis configurations; "+heroNormalConfigurations+" production057 age/axis configurations; "+neutralSwimConfigurations+" production059 legal age/axis configurations; "+darkNormalConfigurations+" production060 age/axis configurations; "+neutralFlyConfigurations+" production061 legal age/axis configurations; "+neutralRunConfigurations+" production062 signed age/axis configurations; "+neutralPowerConfigurations+" production063 signed age/axis configurations; no crossed hands; max key-height error="+error+" blocks; max key-depth error="+depthError+" blocks; max reach="+maxReach+" pixels; min body/skull clearance="+minClearance+" pixels");
+  if(heroSwimConfigurations!=27)throw new AssertionError("Expected nine production064 signed-axis forms at three independent ages, got "+heroSwimConfigurations);
+  System.out.println("Organ mesh fit: "+checks+" hand samples; "+clearanceChecks+" body/skull surface checks; "+blockyConfigurations+" production055 age/axis/growth configurations; "+neutralConfigurations+" production056 age/axis configurations; "+heroNormalConfigurations+" production057 age/axis configurations; "+neutralSwimConfigurations+" production059 legal age/axis configurations; "+darkNormalConfigurations+" production060 age/axis configurations; "+neutralFlyConfigurations+" production061 legal age/axis configurations; "+neutralRunConfigurations+" production062 signed age/axis configurations; "+neutralPowerConfigurations+" production063 signed age/axis configurations; "+heroSwimConfigurations+" production064 signed age/axis configurations; no crossed hands; max key-height error="+error+" blocks; max key-depth error="+depthError+" blocks; max reach="+maxReach+" pixels; min body/skull clearance="+minClearance+" pixels");
  }
 }

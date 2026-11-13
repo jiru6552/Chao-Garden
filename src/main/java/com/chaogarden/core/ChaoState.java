@@ -431,8 +431,9 @@ public final class ChaoState {
     var neutralFly=NeutralFlyMorphology061.sample(this);
     var neutralRun=NeutralRunMorphology062.sample(this);
     var neutralPower=NeutralPowerMorphology063.sample(this);
-    float sfAxis=neutralPower.enabled()?neutralPower.swimFly():neutralRun.enabled()?neutralRun.swimFly():neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():swimFly;
-    float rpAxis=neutralPower.enabled()?neutralPower.runPower():neutralRun.enabled()?neutralRun.runPower():neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():runPower;
+    var heroSwim=HeroSwimMorphology064.sample(this);
+    float sfAxis=heroSwim.enabled()?heroSwim.swimFly():neutralPower.enabled()?neutralPower.swimFly():neutralRun.enabled()?neutralRun.swimFly():neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():swimFly;
+    float rpAxis=heroSwim.enabled()?heroSwim.runPower():neutralPower.enabled()?neutralPower.runPower():neutralRun.enabled()?neutralRun.runPower():neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():runPower;
     int sf=Math.abs(sfAxis)>=.5f ? sfAxis<0 ? SWIM_TYPE : FLY_TYPE : NORMAL;
     int rp=Math.abs(rpAxis)>=.5f ? rpAxis<0 ? RUN_TYPE : POWER_TYPE : NORMAL;
     if(sf!=NORMAL && rp!=NORMAL)return new int[]{sf,rp};

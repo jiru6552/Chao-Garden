@@ -1,0 +1,257 @@
+{
+  "version": "0.25.64",
+  "scope": "Uniform crop/resize of unchanged actual final source PNGs, each checked against its literal HEROSWIM064_CAPTURE hash and complete94-case/JAR proof. Generation is not personal visual acceptance.",
+  "coordinator_visual_reviewed": false,
+  "crop": [
+    420,
+    150,
+    1020,
+    850
+  ],
+  "resized_tile": [
+    360,
+    420
+  ],
+  "sheet": "/workspace/.setup/hero064-tests/motion72-77-review.png",
+  "sheet_sha256": "c659d1d89405a10ddded6d2e2fbd704f8ce39c04b31659ac55b83647113f97fc",
+  "originals": [
+    {
+      "name": "hero064-live-72-hero_swim_balanced_walk-front-t047-f0081.png",
+      "case": 72,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "2ec3e51600ec1947cc755639a3664c7f647871407ad1ce6980903aaecf6f4d1f",
+      "literal_capture_line": "[07:55:24] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-72-hero_swim_balanced_walk-front-t047-f0081.png case=72 angle=front tick=47 sha256=2ec3e51600ec1947cc755639a3664c7f647871407ad1ce6980903aaecf6f4d1f wallNanos=53841983472030 epochMillis=1794556524442",
+      "file": "hero064-live-72-hero_swim_balanced_walk-front-t047-f0081.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-72-hero_swim_balanced_walk-left-t119-f0187.png",
+      "case": 72,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "a664ae67c6230125d767e88ffb50faf4a86862e8c4a48a7a004b8042cf696086",
+      "literal_capture_line": "[07:55:28] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-72-hero_swim_balanced_walk-left-t119-f0187.png case=72 angle=left tick=119 sha256=a664ae67c6230125d767e88ffb50faf4a86862e8c4a48a7a004b8042cf696086 wallNanos=53845613665106 epochMillis=1794556528073",
+      "file": "hero064-live-72-hero_swim_balanced_walk-left-t119-f0187.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-72-hero_swim_balanced_walk-back-t203-f0311.png",
+      "case": 72,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "c31dfe1b0cfbb513fceba3264d842d993d08fdb26883bd9ad8cddd8bbf635e0d",
+      "literal_capture_line": "[07:55:32] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-72-hero_swim_balanced_walk-back-t203-f0311.png case=72 angle=back tick=203 sha256=c31dfe1b0cfbb513fceba3264d842d993d08fdb26883bd9ad8cddd8bbf635e0d wallNanos=53849797399866 epochMillis=1794556532256",
+      "file": "hero064-live-72-hero_swim_balanced_walk-back-t203-f0311.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-73-hero_swim_run_running-front-t047-f0082.png",
+      "case": 73,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "68780a490313543684918c023ecf4b7cd26a602a7028df11a2fb423b28357095",
+      "literal_capture_line": "[07:55:36] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-73-hero_swim_run_running-front-t047-f0082.png case=73 angle=front tick=47 sha256=68780a490313543684918c023ecf4b7cd26a602a7028df11a2fb423b28357095 wallNanos=53854369752782 epochMillis=1794556536829",
+      "file": "hero064-live-73-hero_swim_run_running-front-t047-f0082.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-73-hero_swim_run_running-left-t119-f0189.png",
+      "case": 73,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "a3a209e0afdd81cf3b61b656e0173e1a443bbf7168f9f87c82fbb49029f34d46",
+      "literal_capture_line": "[07:55:40] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-73-hero_swim_run_running-left-t119-f0189.png case=73 angle=left tick=119 sha256=a3a209e0afdd81cf3b61b656e0173e1a443bbf7168f9f87c82fbb49029f34d46 wallNanos=53857983553275 epochMillis=1794556540443",
+      "file": "hero064-live-73-hero_swim_run_running-left-t119-f0189.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-73-hero_swim_run_running-back-t203-f0315.png",
+      "case": 73,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "d62077c017a3c96ca5f0a30f903c61573e139f53b81d6b8805a7a1bfacf70721",
+      "literal_capture_line": "[07:55:44] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-73-hero_swim_run_running-back-t203-f0315.png case=73 angle=back tick=203 sha256=d62077c017a3c96ca5f0a30f903c61573e139f53b81d6b8805a7a1bfacf70721 wallNanos=53862185764853 epochMillis=1794556544645",
+      "file": "hero064-live-73-hero_swim_run_running-back-t203-f0315.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-74-hero_swim_run_swim_water_motion-front-t047-f0081.png",
+      "case": 74,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "f82859094527664a7a0192348bd334890c2ed9a34a55cd2b6600bc719b1f6bbb",
+      "literal_capture_line": "[07:55:49] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-74-hero_swim_run_swim_water_motion-front-t047-f0081.png case=74 angle=front tick=47 sha256=f82859094527664a7a0192348bd334890c2ed9a34a55cd2b6600bc719b1f6bbb wallNanos=53866876670985 epochMillis=1794556549336",
+      "file": "hero064-live-74-hero_swim_run_swim_water_motion-front-t047-f0081.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-74-hero_swim_run_swim_water_motion-left-t119-f0187.png",
+      "case": 74,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "4b85b19d8583a18c0e9f6b15f67ecb8e62ca19bcfe3fd06152c200051fffc1d8",
+      "literal_capture_line": "[07:55:52] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-74-hero_swim_run_swim_water_motion-left-t119-f0187.png case=74 angle=left tick=119 sha256=4b85b19d8583a18c0e9f6b15f67ecb8e62ca19bcfe3fd06152c200051fffc1d8 wallNanos=53870475492483 epochMillis=1794556552934",
+      "file": "hero064-live-74-hero_swim_run_swim_water_motion-left-t119-f0187.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-74-hero_swim_run_swim_water_motion-back-t203-f0313.png",
+      "case": 74,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "281ec76673889595e9cacea7fea3e1d9355d2b0c9aa5395be33027c5b76da39e",
+      "literal_capture_line": "[07:55:57] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-74-hero_swim_run_swim_water_motion-back-t203-f0313.png case=74 angle=back tick=203 sha256=281ec76673889595e9cacea7fea3e1d9355d2b0c9aa5395be33027c5b76da39e wallNanos=53874685590327 epochMillis=1794556557145",
+      "file": "hero064-live-74-hero_swim_run_swim_water_motion-back-t203-f0313.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-75-hero_swim_run_fly_broom-front-t035-f0064.png",
+      "case": 75,
+      "angle": "front",
+      "tick": 35,
+      "sha256": "f36cb41c8be875072cb909de86a74ab251f33750616d9ba6ce7614d5863f7bef",
+      "literal_capture_line": "[07:56:01] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-75-hero_swim_run_fly_broom-front-t035-f0064.png case=75 angle=front tick=35 sha256=f36cb41c8be875072cb909de86a74ab251f33750616d9ba6ce7614d5863f7bef wallNanos=53878689594327 epochMillis=1794556561149",
+      "file": "hero064-live-75-hero_swim_run_fly_broom-front-t035-f0064.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-75-hero_swim_run_fly_broom-left-t095-f0153.png",
+      "case": 75,
+      "angle": "left",
+      "tick": 95,
+      "sha256": "65c63837796cf25c9ce9e9893f3bf5c44c53da35fd4c5108342d3e4dabdd4385",
+      "literal_capture_line": "[07:56:04] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-75-hero_swim_run_fly_broom-left-t095-f0153.png case=75 angle=left tick=95 sha256=65c63837796cf25c9ce9e9893f3bf5c44c53da35fd4c5108342d3e4dabdd4385 wallNanos=53881686861459 epochMillis=1794556564146",
+      "file": "hero064-live-75-hero_swim_run_fly_broom-left-t095-f0153.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-75-hero_swim_run_fly_broom-back-t155-f0243.png",
+      "case": 75,
+      "angle": "back",
+      "tick": 155,
+      "sha256": "4805fad23b5406c08c9262b9c719d28b36eccf26031b39ac9bc96623957c1839",
+      "literal_capture_line": "[07:56:07] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-75-hero_swim_run_fly_broom-back-t155-f0243.png case=75 angle=back tick=155 sha256=4805fad23b5406c08c9262b9c719d28b36eccf26031b39ac9bc96623957c1839 wallNanos=53884702524849 epochMillis=1794556567161",
+      "file": "hero064-live-75-hero_swim_run_fly_broom-back-t155-f0243.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-76-hero_swim_power_swim_book-front-t035-f0063.png",
+      "case": 76,
+      "angle": "front",
+      "tick": 35,
+      "sha256": "9476b4272472ddad14ab450c7f9016bfacd286946d7b948ecae55111ead1d301",
+      "literal_capture_line": "[07:56:10] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-76-hero_swim_power_swim_book-front-t035-f0063.png case=76 angle=front tick=35 sha256=9476b4272472ddad14ab450c7f9016bfacd286946d7b948ecae55111ead1d301 wallNanos=53888091996696 epochMillis=1794556570551",
+      "file": "hero064-live-76-hero_swim_power_swim_book-front-t035-f0063.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-76-hero_swim_power_swim_book-left-t095-f0153.png",
+      "case": 76,
+      "angle": "left",
+      "tick": 95,
+      "sha256": "9b59b3cf9d2089792a4eb629948b964a06541cfe97666d675dc0ece03bad575a",
+      "literal_capture_line": "[07:56:13] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-76-hero_swim_power_swim_book-left-t095-f0153.png case=76 angle=left tick=95 sha256=9b59b3cf9d2089792a4eb629948b964a06541cfe97666d675dc0ece03bad575a wallNanos=53891096479144 epochMillis=1794556573555",
+      "file": "hero064-live-76-hero_swim_power_swim_book-left-t095-f0153.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-76-hero_swim_power_swim_book-back-t155-f0242.png",
+      "case": 76,
+      "angle": "back",
+      "tick": 155,
+      "sha256": "564536814a8017bacbc03621e0f73649d7eef97b5be91d8d1c8065ba80c68b4c",
+      "literal_capture_line": "[07:56:16] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-76-hero_swim_power_swim_book-back-t155-f0242.png case=76 angle=back tick=155 sha256=564536814a8017bacbc03621e0f73649d7eef97b5be91d8d1c8065ba80c68b4c wallNanos=53894089102295 epochMillis=1794556576548",
+      "file": "hero064-live-76-hero_swim_power_swim_book-back-t155-f0242.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-77-hero_swim_run_fly_equipped_flying-front-t047-f0082.png",
+      "case": 77,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "591df6b6a653a2e58873f6de54f8b3b83b8a96158dac4927c8f946884e6a162c",
+      "literal_capture_line": "[07:56:20] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-77-hero_swim_run_fly_equipped_flying-front-t047-f0082.png case=77 angle=front tick=47 sha256=591df6b6a653a2e58873f6de54f8b3b83b8a96158dac4927c8f946884e6a162c wallNanos=53898240300863 epochMillis=1794556580699",
+      "file": "hero064-live-77-hero_swim_run_fly_equipped_flying-front-t047-f0082.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-77-hero_swim_run_fly_equipped_flying-left-t119-f0189.png",
+      "case": 77,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "c2691fdf1a93dda4a4841b235abcc303d7a9b9434179f3b7baa448deff1d080f",
+      "literal_capture_line": "[07:56:24] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-77-hero_swim_run_fly_equipped_flying-left-t119-f0189.png case=77 angle=left tick=119 sha256=c2691fdf1a93dda4a4841b235abcc303d7a9b9434179f3b7baa448deff1d080f wallNanos=53901832222649 epochMillis=1794556584291",
+      "file": "hero064-live-77-hero_swim_run_fly_equipped_flying-left-t119-f0189.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "hero064-live-77-hero_swim_run_fly_equipped_flying-back-t203-f0314.png",
+      "case": 77,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "f6b59229f17097207253ad5ab028577524b94caec3c797455883bc6951c76761",
+      "literal_capture_line": "[07:56:28] [IO-Worker-7/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-77-hero_swim_run_fly_equipped_flying-back-t203-f0314.png case=77 angle=back tick=203 sha256=f6b59229f17097207253ad5ab028577524b94caec3c797455883bc6951c76761 wallNanos=53906051209919 epochMillis=1794556588510",
+      "file": "hero064-live-77-hero_swim_run_fly_equipped_flying-back-t203-f0314.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    }
+  ],
+  "canonical_log_sha256": "357131ba379934d123f60787804dacd200b16b369325e29634ba556844c78abd",
+  "runtime_proof_sha256": "62d324a836fabd28f01160cf674be127bb8354d0fda9530f5108bcc27e2e0e7f",
+  "jar_sha256": "5610d0b144468b5fdb6acdb2f98df39ef78e4c46a7917ca0e038d9d48503ba0a",
+  "model_sha256": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324"
+}

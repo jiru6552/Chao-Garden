@@ -1,0 +1,56 @@
+{
+  "version": "0.25.64",
+  "model": "models/entity/gameplay/chao_hero_swim_proto064.json",
+  "sha256": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "hero_swim_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "canonical_head_face_and_joint_pivots_unchanged": true,
+  "shared_animation_attachment_rig": true,
+  "source_geometry_copied": false,
+  "construction_reference_sha256": {
+    "art/imported_chao/models/chao_hero.geo.json": "9b7f453f56da3a10dcf76a6ba412a6eab4f8c15f58927b0426b221d37ea1def4",
+    "art/imported_chao/models/chao_hero_fly.geo.json": "523b6a4b0d46ae0bfb58e1c8c17a086c928fe72b349aaba2c5677f5e90e4db33",
+    "art/imported_chao/models/chao_hero_power.geo.json": "c2ea111ae902b837658a916d0c5b1b16bfc6353352785e065c758c8d84b6afdb",
+    "art/imported_chao/models/chao_swim.geo.json": "7bf8fb338a655234971c0315c6bf96f6658dba94e611ed3a468df6af47ac542e"
+  },
+  "legal_specializations": [
+    "balanced",
+    "run",
+    "power",
+    "fly",
+    "swim",
+    "run_fly",
+    "run_swim",
+    "power_fly",
+    "power_swim"
+  ],
+  "closed_box_count": 17,
+  "head_feature_count": 4,
+  "wing_ray_count": 4,
+  "halo_bar_count": 4,
+  "head_feature_names": [
+    "hero_swim_crown_left_root",
+    "hero_swim_crown_left_tip",
+    "hero_swim_crown_right_root",
+    "hero_swim_crown_right_tip"
+  ],
+  "wing_mesh_names": [
+    "hero_swim_wing_left_upper",
+    "hero_swim_wing_left_lower",
+    "hero_swim_wing_right_upper",
+    "hero_swim_wing_right_lower"
+  ],
+  "tail_geometry_unchanged": true,
+  "effective_viewer_controls": "Actual first-Swim selection permits signed Fly counter-training beyond balance; opposing axes remain independent and reverse-order pairs share one corner."
+}

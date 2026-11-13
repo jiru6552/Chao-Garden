@@ -1,0 +1,35 @@
+{
+  "baseline": "1d9f630825100ce615573d98e8c4ecc54ca05bf3",
+  "scope": "Source provenance for inherited journal-format failure; actual result is included only when its completed current log exists",
+  "files": [
+    {
+      "path": "scripts/test_journal_content_02518.py",
+      "sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "parent_sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296",
+      "bytes": 6327,
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/item/GardenGuideItem.java",
+      "sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "parent_sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4",
+      "bytes": 32992,
+      "unchanged": true
+    }
+  ],
+  "all_byte_exact": true,
+  "actual_064_result": {
+    "source_log": "/workspace/.setup/hero064-journal.log",
+    "sha256": "6daf7986f072781c592b76c24e3a3c6eae426e81cd0eff1958f9feccda3622c8",
+    "run": 9,
+    "passed": 8,
+    "failed": 1,
+    "failing_test": "test_sections_are_short_and_paragraphed (Your gardens)",
+    "literal_lines": [
+      "  test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens') ... FAIL",
+      "FAIL: test_sections_are_short_and_paragraphed (__main__.JournalContentTest.test_sections_are_short_and_paragraphed) (title='Your gardens')",
+      "Ran 9 tests in 0.002s",
+      "FAILED (failures=1)"
+    ]
+  }
+}

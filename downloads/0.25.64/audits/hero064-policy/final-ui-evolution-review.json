@@ -1,0 +1,334 @@
+{
+  "version": "0.25.64",
+  "timestamp_utc": "2026-11-13T08:03:55.579090+00:00",
+  "scope": "Actual final UI/world/natural-evolution personal policy review, closed after one complete94-case invocation and immutable post-cohort frozen/live/JAR proof. No physical touch, remote clients or full restart claim.",
+  "coordinator_reviewed": true,
+  "personal_visual_reviewed": true,
+  "cohort": {
+    "requested": 94,
+    "rendered": 94,
+    "skipped": 0,
+    "pngs": 802,
+    "groups": {
+      "static": 474,
+      "ui": 16,
+      "post_ui_world": 9,
+      "motion_evolution": 303
+    },
+    "outcome": "BUILD SUCCESSFUL in 10m 29s",
+    "log": "/workspace/.setup/hero064-client-final.log",
+    "log_sha256": "357131ba379934d123f60787804dacd200b16b369325e29634ba556844c78abd"
+  },
+  "literal_hash_and_runtime_audit": {
+    "path": "/workspace/.setup/hero064-policy/final-ui-evolution-hash-runtime-audit.json",
+    "sha256": "56c68653231dbfb761261ed5220931f814d90452d4997c59fef4da094a8c6029",
+    "all_original_hashes_verified": 802,
+    "selected_ui_world_evolution_images": 50,
+    "production_entries": 8358,
+    "all_frozen_live_JAR_bytes_exact": true,
+    "jar_sha256": "5610d0b144468b5fdb6acdb2f98df39ef78e4c46a7917ca0e038d9d48503ba0a",
+    "runtime_proof_sha256": "62d324a836fabd28f01160cf674be127bb8354d0fda9530f5108bcc27e2e0e7f",
+    "runtime_mode": "development_classpath",
+    "loaded_packaged_archive_claim": false
+  },
+  "personal_visual_review": {
+    "full_ui_originals": 16,
+    "full_post_edit_world_originals": 9,
+    "full_natural_evolution_originals": 3,
+    "total_full_originals": 28,
+    "full_originals": [
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-back-t148-f0074.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-back-t148-f0074.png",
+        "case": 69,
+        "kind": "post_ui_world",
+        "sha256": "ee0ae3fab0d8e4c0e44e2dc2b63310a64e96e6e7e613db4176d176ee64aae37f",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-front-t148-f0028.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-front-t148-f0028.png",
+        "case": 69,
+        "kind": "post_ui_world",
+        "sha256": "72e6d0a2935c1ea72e804a35c0934432269d4e28659460d83cb71819ac55bf4e",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-left-t148-f0051.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-left-t148-f0051.png",
+        "case": 69,
+        "kind": "post_ui_world",
+        "sha256": "0f94156722d688b73dc7bcc8d002a1d67a8e8678d4b0529d247464b84a909760",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-alignment-locked.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-alignment-locked.png",
+        "case": 69,
+        "kind": "ui",
+        "sha256": "2a3fed3eaf14675bf06288164dd069b2822cd3d0bf64fe550b8cce3730c49aec",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+        "case": 69,
+        "kind": "ui",
+        "sha256": "12494fcfab17f7b8f3117555ccfa7d38d460aed36a9f580b9be26bd27f8c4613",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-before.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-before.png",
+        "case": 69,
+        "kind": "ui",
+        "sha256": "39ddcbe3e9cfceb991bc343038a26a84d81d0858d4add2b3118cf254b8700a19",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+        "case": 69,
+        "kind": "ui",
+        "sha256": "dad4ddcc0d059678a38b7d493ac24cf26874ed70b16ded93af418d843ff76095",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+        "case": 69,
+        "kind": "ui",
+        "sha256": "5a1cfd368aa6de4133a280e86bb8149b4fbbbaf6e00dfb8f8547d0b8ed027e90",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-young.png",
+        "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-young.png",
+        "case": 69,
+        "kind": "ui",
+        "sha256": "7a63d77fc5239d25d6764eb2c6f3085c080e567a1c489b2bfca62f41097c333a",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-back-t110-f0074.png",
+        "name": "hero064-live-70-survival_hero_swim_adult_readonly-back-t110-f0074.png",
+        "case": 70,
+        "kind": "post_ui_world",
+        "sha256": "43b189229c010e6c1f56f0d5b6558664c630129c9d180f29d5e4d5c483efa52e",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-front-t110-f0028.png",
+        "name": "hero064-live-70-survival_hero_swim_adult_readonly-front-t110-f0028.png",
+        "case": 70,
+        "kind": "post_ui_world",
+        "sha256": "95a53541f19724cb475ee886a95e022e780b160cbada3015d95cfc642e25325c",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-left-t110-f0051.png",
+        "name": "hero064-live-70-survival_hero_swim_adult_readonly-left-t110-f0051.png",
+        "case": 70,
+        "kind": "post_ui_world",
+        "sha256": "931f18ace876932d07f7ba1078b726a50547fd810a362bbb17d1f767aa08361f",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-before.png",
+        "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-before.png",
+        "case": 70,
+        "kind": "ui",
+        "sha256": "dba42387842ada205be58de7711c9eb71d67e8ede4175a81f8ffd9bc88ef6a38",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-survival-denied.png",
+        "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-survival-denied.png",
+        "case": 70,
+        "kind": "ui",
+        "sha256": "280d5437962dcf5547f66c1b4aab7f3c4d6eac5af4e53ebe438a13ca129b592e",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-alignment-tap-feedback.png",
+        "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-alignment-tap-feedback.png",
+        "case": 70,
+        "kind": "ui",
+        "sha256": "51a9cf6e8211724668a8d64e7abdf311e345d368689e7172eaf39b32101f0467",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-readonly.png",
+        "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-readonly.png",
+        "case": 70,
+        "kind": "ui",
+        "sha256": "ac3c1f58f2d0baf117fa42b482d4ee17171fee9f144eb69773bd6f67896aa0e0",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-back-t186-f0074.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-back-t186-f0074.png",
+        "case": 71,
+        "kind": "post_ui_world",
+        "sha256": "876ba2697d94bc9c5d6d09a29c687e374c80f0d30622ee940a2120df3603acc5",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-front-t186-f0028.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-front-t186-f0028.png",
+        "case": 71,
+        "kind": "post_ui_world",
+        "sha256": "d7efc490b3490fae556c128adf01380ca596ab2dc7f6d6f3759136757eab3f63",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-left-t186-f0051.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-left-t186-f0051.png",
+        "case": 71,
+        "kind": "post_ui_world",
+        "sha256": "560f79112a2dd33b2ec46eac70893006bacf0eb1e21e51f2985f3c0fce735da6",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+        "case": 71,
+        "kind": "ui",
+        "sha256": "65d02649f84b842d0cff133e03498e980c27f9177d4e2ed552330a0409f33a57",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+        "case": 71,
+        "kind": "ui",
+        "sha256": "31ff84245641a36702950bcd25f38259368a32f02a47e153132042af11d90c97",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+        "case": 71,
+        "kind": "ui",
+        "sha256": "db9d8fea544add4bcdd9a7920cb0a0cf20ee6e081777d5df1b00ea762de958cc",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+        "case": 71,
+        "kind": "ui",
+        "sha256": "78b147ae523bb641eef885b8b2f703245c3fe952337ddcf8c43e29abbaa65934",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+        "case": 71,
+        "kind": "ui",
+        "sha256": "dfbe405dff76b3d311d21d5bf198cc5ac9a58b22d3995697f21bcb269241e5f5",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+        "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+        "case": 71,
+        "kind": "ui",
+        "sha256": "ea2acd206f6a9dec97bfa3c810304903404012a46e49a0df26e7b560ce210212",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t011-f0029.png",
+        "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t011-f0029.png",
+        "case": 83,
+        "tick": 11,
+        "angle": "front",
+        "sha256": "f5099285e99aa80d90935943ad9ac3129e5c71303aca5bb8be9ef9be9558844b",
+        "opened_full_resolution": true,
+        "source_line": "HEROSWIM064_CAPTURE hero064-live-83-hero_swim_actual_first_evolution-front-t011-f0029.png case=83 angle=front tick=11 sha256=f5099285e99aa80d90935943ad9ac3129e5c71303aca5bb8be9ef9be9558844b"
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t155-f0237.png",
+        "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t155-f0237.png",
+        "case": 83,
+        "tick": 155,
+        "angle": "left",
+        "sha256": "4720140313c8ccec395d99c0ef6a98d6a150a2b004a8a6cbc8b05118ed651f0a",
+        "opened_full_resolution": true,
+        "source_line": "HEROSWIM064_CAPTURE hero064-live-83-hero_swim_actual_first_evolution-left-t155-f0237.png case=83 angle=left tick=155 sha256=4720140313c8ccec395d99c0ef6a98d6a150a2b004a8a6cbc8b05118ed651f0a"
+      },
+      {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t299-f0451.png",
+        "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t299-f0451.png",
+        "case": 83,
+        "tick": 299,
+        "angle": "back",
+        "sha256": "c1103922a5a79e6eace847ab3985fac8445de067423b4dff12b0028ca5113291",
+        "opened_full_resolution": true,
+        "source_line": "HEROSWIM064_CAPTURE hero064-live-83-hero_swim_actual_first_evolution-back-t299-f0451.png case=83 angle=back tick=299 sha256=c1103922a5a79e6eace847ab3985fac8445de067423b4dff12b0028ca5113291"
+      }
+    ],
+    "natural_sheet": {
+      "path": "/workspace/.setup/hero064-policy/natural-evolution-uniform-sheet.png",
+      "sha256": "b8d5184a3ec813a8488863ed354de6283859df924077d7449198e9df293554d5",
+      "personally_opened_complete": true,
+      "cells_personally_reviewed": 25,
+      "processing": {
+        "original_dimensions": [
+          1440,
+          900
+        ],
+        "crop": [
+          420,
+          220,
+          1020,
+          820
+        ],
+        "output_cell": [
+          300,
+          300
+        ],
+        "resampling": "nearest",
+        "flips": false,
+        "recolors": false,
+        "warps": false
+      }
+    },
+    "total_selected_unique_originals": 50,
+    "natural_evolution_source_manifest_sha256": "03330f431ebaad112db1e7e7150d49cc4d93cb4d4d44fd0046b3434b989f6534"
+  },
+  "ui_observations": [
+    "Creative HeroSwim adult header remains Hero and firstSwim; Profile explicitly displays ADULT ALIGNMENT: LOCKED, Hero+100.0 and read-only tap feedback.",
+    "Adult displayed maturity80.0\u219252.5active\u219225.0\u2192100.0; handle and value move, final label becomes Fully Adult; lifespan display remains Life1/0h00m active.",
+    "Survival HeroSwim Power+Swim keeps80.0 before/after and displays Creative mode required/read-only feedback; Hero+100 remainslocked.",
+    "Baby regression changesNeutral+0.0 toHero+80.2, maturity80.0\u219252.5active\u219225.0\u219299.0, staysChild; a blink is visible in the active-midpoint original.",
+    "All nine post-edit world originals keep square skulls, intact rectangular eyes, fitted body/limbs and separate markers/features. Exact side views hide the planar eyes, as expected from the fixed-head face style.",
+    "Selected HeroSwim adults have white shaded skulls/bellies/heels/tails and distinct green/teal or mint/tan accents; yellow and dusty-pink four-bar halos remain connected visually with clear head separation. Baby orb shows a uniform species pigment with directional shading, not mixed patch corruption."
+  ],
+  "actual_native_ui_lines": [
+    "[07:54:58] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_NATIVE_VERIFIED case=69 creative=true adult=true alignment=1.0 maturity=1.2 saveReloadExact=true stagePreserved=true epochMillis=1794556498996",
+    "[07:55:07] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_NATIVE_VERIFIED case=70 creative=false adult=true alignment=1.0 maturity=0.96012735 saveReloadExact=true stagePreserved=true epochMillis=1794556507221",
+    "[07:55:19] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_NATIVE_VERIFIED case=71 creative=true adult=false alignment=0.802 maturity=0.9900278 saveReloadExact=true stagePreserved=true epochMillis=1794556519297"
+  ],
+  "actual_active_pointer_lines": [
+    "[07:54:56] [Render thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_POINTER_RENDER case=69 label=maturity-drag-intermediate actualGuiMouseX=506 actualGuiMouseY=342 requestedGuiMouseX=506.0 requestedGuiMouseY=342.0",
+    "[07:55:16] [Render thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_POINTER_RENDER case=71 label=maturity-drag-intermediate actualGuiMouseX=506 actualGuiMouseY=342 requestedGuiMouseX=506.0 requestedGuiMouseY=342.0"
+  ],
+  "natural_evolution_observations": [
+    "Personally inspected all25 actual natural-evolution cells plus full originals child/front/t11, cocoon/left/t155 and fresh adult/back/t299.",
+    "Before evolution the Chao is a white-skull Hero child with blue species orb/hands and yellow belly; actual cocoon surrounds it during the sampled middle views.",
+    "By back tick227 and through299, a mint/yellow newly evolved Hero Swim adult has two white/mint head flaps and a separate yellow four-bar halo; head, small blue/cream wings, white tail and coherent limbs remain connected in these views.",
+    "The new adult is fresh rather than the mature Swim endpoint: biological maturity stays nearzero with carried Swim training (actual Swim/Fly=-0.5); first identity remains Hero/Swim.",
+    "Fixture is seeded12ticks before the configured threshold and then uses real normal20TPS lifecycle/cocoon code; this is not a whole childhood or lifetime test."
+  ],
+  "natural_evolution_native_completion": "[07:58:29] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_NATIVE_COMPLETE 83 name=hero_swim_actual_first_evolution baseline=false elapsed=300 walked=0.0 sample=Sample[enabled=true, maturity=8.487654E-5, runPower=0.0, swimFly=-0.5] state=6;0,0;1,1;0,0;0,0;3,2,2,2,2;2,2,2,2,2;3,2,2,2,2;4,0,0,0,0;80,0,0,0,0;77,0,0,0,0;0,0,1,0,0,0,0,216088,88,0,1,0,0,1,0,80,0,99,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,40,0,100,16,50,50,20,0,9995,0,9900;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1058714409,2108669886,0,-1,-1,-1,-1,1,1065353216,1,0,0,88,1,0,0,0;;normal;normal epochMillis=1794556709812",
+  "limits": [
+    "Programmatically driven actual screen mouse handlers and real server payloads, not physical mouse/touch-hardware latency testing.",
+    "Entity NBT roundtrip and in-process tracked observer transfer do not establish a dedicated world restart or an independent remote client.",
+    "Selected stills/cells, not continuous motion playback or audio listening.",
+    "The natural sheet uses a uniform crop which clips the top of tall cocoon cells; the full-size t155 original was directly opened and shows the complete intact cocoon.",
+    "No claim of every genetic finish, attachment or visible reaction face in these policy scenes."
+  ],
+  "final_source_model_sha256": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+  "blocking_findings": []
+}

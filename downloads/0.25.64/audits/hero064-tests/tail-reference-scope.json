@@ -1,0 +1,35 @@
+{
+  "version": "0.25.64",
+  "scope": "Two diagnostic test-assumption corrections only; product tail/source unmodified. Actual final rig run still required.",
+  "exact_original_tail_records": [
+    {
+      "bone": "tail",
+      "exact_original_record": true,
+      "canonical_record_sha256": "c8f962a56c488c0b1d3fc53fc119d870119f38060a0f1c8b8fab8a7a7054bae1"
+    },
+    {
+      "bone": "tail__cube_0",
+      "exact_original_record": true,
+      "canonical_record_sha256": "4a9e1dde637833dd4dbe3d4707a607b9918d447215a7cde8db466006cd88e921"
+    },
+    {
+      "bone": "tail__cube_1",
+      "exact_original_record": true,
+      "canonical_record_sha256": "0367643fb33108f7977db2baf394905cd0865077ba020130785b37366ba672e0"
+    }
+  ],
+  "legacy_reference_default_strength": 1,
+  "fixed_box_un_authored_parts_use": "base vertices, ignoring separate legacy morph_vertices",
+  "reference_fix": "Explicit canonical baby development(0,0,0), then same actual copied joint poses; require exact emitted positions and UV and same signed SAT gap.",
+  "observed_diagnostic_values": [
+    21.243397,
+    21.292894
+  ],
+  "canonical_local_z": 2.0,
+  "default_legacy_aged_z": 2.07,
+  "difference_after_original_tail_45deg_rotation": 0.049497474683058214,
+  "first_error": "Strict positive-volume overlap incorrectly assumed for original tail boxes that meet at an edge.",
+  "second_error": "Reference accidentally defaulted to fully aged legacy morph_vertices instead of canonical rest vertices.",
+  "tolerance_widened": false,
+  "product_modified": false
+}

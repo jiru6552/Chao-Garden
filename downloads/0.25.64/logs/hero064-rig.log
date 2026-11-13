@@ -1,0 +1,28 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateModMetadata UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileLionfishTestJava
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses
+
+> Task :heroSwimMorphRigTest064
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+HeroSwim064 unchanged tail baseline: actual signed SAT overlap=0.0 pixels, copied canonical baby rest reference=0.0 pixels; strict positive-volume contact is not an inherited guarantee.
+HeroSwim064: 83439595 checks; 3452 emitted age/axis/edit frames; 35723 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 26040 actual tilted-halo/head/feature separation checks; 5208 connected feature samples; 5168 emitted closed-wing samples; 1297 retained original tail continuity checks; 2067200 actual wing-span UV samples; 5168 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 1450440 actual same-facing head/feature plane-pair checks; 92016 actual WALK head/torso SAT continuity frames; 184032 actual WALK palm/head SAT separation frames; 93312 actual WALK growing-feature/palm SAT separation pairs; 499968 actual crown root/proximal/distal surface UV samples; 184032 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum retained-tail signed-gap deviation=0.0 model pixels; maximum hinge drift=4.3662944E-6 model pixels; maximum axis step=0.13439362 model pixels; maximum30tick edit step=0.37401956; maximum1pct maturity step=0.056476083; seconds=17.63329588. Fixed original head/face/59-joint rig plus three halo mesh children; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 27s
+6 actionable tasks: 2 executed, 4 up-to-date

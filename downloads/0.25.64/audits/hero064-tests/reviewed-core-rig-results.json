@@ -1,0 +1,58 @@
+{
+  "version": "0.25.64",
+  "scope": "Read actual root-executed isolated core and final rig logs; no client visual, continuous playback or remote multiplayer claim. Root owns execution/process exit.",
+  "core_log": "/workspace/.setup/hero064-core.log",
+  "core_log_sha256": "3691a59b8e70c93c588516489c99c105b45fa9cbc805ae7b10fc2552612c7789",
+  "core_checks": 7808,
+  "core_literal_success": "BUILD SUCCESSFUL in 1m 3s",
+  "rig_log": "/workspace/.setup/hero064-rig.log",
+  "rig_log_sha256": "3c56531bdcc8596fa16a58109ef31ae9644239d46cb2af5dd0029afa52c97a75",
+  "rig_source_sha256": "dd8bdace0de1089a768e36d504739c0bab2edc2151f6ae32df61192c3ed76465",
+  "model_sha256": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+  "metadata_sha256": "2b9f454bee926dc7371656b7e153ec1761a472d98a20bb919ac16f8947bf6896",
+  "rig_literal_result": "HeroSwim064: 83439595 checks; 3452 emitted age/axis/edit frames; 35723 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 26040 actual tilted-halo/head/feature separation checks; 5208 connected feature samples; 5168 emitted closed-wing samples; 1297 retained original tail continuity checks; 2067200 actual wing-span UV samples; 5168 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 1450440 actual same-facing head/feature plane-pair checks; 92016 actual WALK head/torso SAT continuity frames; 184032 actual WALK palm/head SAT separation frames; 93312 actual WALK growing-feature/palm SAT separation pairs; 499968 actual crown root/proximal/distal surface UV samples; 184032 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum retained-tail signed-gap deviation=0.0 model pixels; maximum hinge drift=4.3662944E-6 model pixels; maximum axis step=0.13439362 model pixels; maximum30tick edit step=0.37401956; maximum1pct maturity step=0.056476083; seconds=17.63329588. Fixed original head/face/59-joint rig plus three halo mesh children; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+  "rig_literal_success": "BUILD SUCCESSFUL in 27s",
+  "rig_counts": {
+    "checks": 83439595,
+    "emitted_frames": 3452,
+    "closed_boxes": 35723,
+    "lionfish_motion_frames": 567,
+    "attachment_matrices": 6804,
+    "coat_shape_cases": 1044,
+    "halo_skull_feature_pairs": 26040,
+    "connected_features": 5208,
+    "wing_samples": 5168,
+    "retained_tail_baselines": 1297,
+    "wing_span_uv_samples": 2067200,
+    "wing_hinge_samples": 5168,
+    "head_feature_face_pairs": 1450440,
+    "walk_head_torso_contacts": 92016,
+    "walk_palm_head_pairs": 184032,
+    "walk_feature_palm_pairs": 93312,
+    "walk_shoulder_wrist_contacts": 184032,
+    "crown_uv_surface_samples": 499968,
+    "expression_frames": 12
+  },
+  "maximums": {
+    "retained_tail_signed_gap_deviation_px": 0,
+    "wing_hinge_drift_px": 4.3662944e-06,
+    "axis_step_px": 0.13439362,
+    "thirty_tick_edit_step_px": 0.37401956,
+    "one_percent_maturity_step_px": 0.056476083
+  },
+  "early_diagnostic_test_assumptions_corrected": [
+    "Original two-box tail meets at an edge; no positive-volume overlap guarantee. Compare exact canonical rest geometry/UV and signedgap under same copied poses.",
+    "Untrained canonical baby reference explicitly disables unrelated legacy morph_vertices, which otherwise add3.5%taildepth.",
+    "Fourbar halo intentionally translates by shared authoredY in.50..70range; enforce rigid shape/UV, common bounded shift and all original clearance checks instead of false constantposition."
+  ],
+  "geometry_or_tolerances_changed_to_satisfy_these_tests": false,
+  "visual_review_pending": true,
+  "native_server_test_run_pending": false,
+  "separate_dedicated_native_review": {
+    "path": "/workspace/.setup/hero064-tests/reviewed-native-results.json",
+    "sha256": "3decc6eb9cfab9525ca26d22b33edb2104965dbb444afd747637e0be340b8179",
+    "required_passed": 578,
+    "new_required": 52,
+    "retained_required": 526
+  }
+}

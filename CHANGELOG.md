@@ -1,3 +1,9 @@
+## 0.25.64 — Hero Swim-first morphology
+
+- Add a distinct newly evolved Hero/Swim adult and nine mature signed-axis forms: balanced, Run, Power, Fly, Swim and the four compatible pairs.
+- Develop separate blocky head fins, wings, limbs, tail accents and a four-bar halo around the unchanged original head box and shared rig. Preserve inherited coats and shine.
+- Let later Swim/Fly and Run/Power training cross balance without changing locked Hero alignment, first Swim identity or biological maturity. Preserve all completed families, saved data, Creative controls and commands. See [the family report](docs/HERO_SWIM_02564.md) for actual verification and approximations.
+
 ## 0.25.63 — Neutral Power-first morphology
 
 - Add the balanced Neutral/Power-first adult and eight signed-axis specialization targets around the unchanged original blocky head, keeping the distinct newly evolved Power form.

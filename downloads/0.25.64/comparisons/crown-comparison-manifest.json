@@ -1,0 +1,1256 @@
+{
+  "version": "0.25.64",
+  "scope": "Separate mature above-view crown-cap comparison; the main 81-pair/27-left comparison remains unchanged. Generation is not visual acceptance.",
+  "coordinator_visual_reviewed": true,
+  "coordinator_accepted": true,
+  "main_comparison_manifest": "/workspace/.setup/hero064-final-reference-compare/comparison-manifest.json",
+  "main_comparison_manifest_sha256": "3c76afdea3db907f02dffd8c39bc808e192e1eb8f1f412d6b591ff6c2d1ae910",
+  "main_comparison_pair_count": 81,
+  "main_opposite_side_count": 27,
+  "main_contact_sheets": [
+    {
+      "path": "/workspace/.setup/hero064-final-reference-compare/final-matched-age000.png",
+      "file": "final-matched-age000.png",
+      "sha256": "969bf01e4d2b369560f89367fc2539b1a1d263cd0dd45330d1c28cced5b6d7b2"
+    },
+    {
+      "path": "/workspace/.setup/hero064-final-reference-compare/final-matched-age050.png",
+      "file": "final-matched-age050.png",
+      "sha256": "6d4047949e25dedf0efc80876f1b18cb93b97de25786a8d14b30032e226542e6"
+    },
+    {
+      "path": "/workspace/.setup/hero064-final-reference-compare/final-matched-age100.png",
+      "file": "final-matched-age100.png",
+      "sha256": "92851d84bf669565272d7a553cba6e5515b5a471c08969c50d684e377bcbbe74"
+    },
+    {
+      "path": "/workspace/.setup/hero064-final-reference-compare/final-opposite-side-audit.png",
+      "file": "final-opposite-side-audit.png",
+      "sha256": "4bb40b133ec98e3919e34fff38b8ecd0ae224350dd48c13adfeb47360d7e10fc"
+    }
+  ],
+  "canonical_log": "/workspace/.setup/hero064-client-final.log",
+  "canonical_log_sha256": "357131ba379934d123f60787804dacd200b16b369325e29634ba556844c78abd",
+  "case_catalog": "/workspace/.setup/hero064-client-final/case-catalog.json",
+  "case_catalog_sha256": "647fc7e85613e572c8a62c457314728f766529529c38e7c192c4c67e3f454fe3",
+  "authored_case_plan": "/workspace/.setup/hero064-case-plan.json",
+  "authored_case_plan_sha256": "77cbd542495ea745c3e88a7654b266945599ce9df5dff6ee12ca7e096e393dce",
+  "runtime_mode": "development_classpath",
+  "runtime_proof": "/workspace/.setup/hero064-runtime-proof.json",
+  "runtime_proof_sha256": "62d324a836fabd28f01160cf674be127bb8354d0fda9530f5108bcc27e2e0e7f",
+  "runtime_coverage": "All production com/chaogarden/**/*.class and assets/chao_garden/** entries were frozen from the declared Gradle development output roots and compared byte-for-byte with the delivered JAR. Their declared runtime source files still match the frozen bytes at binding. This does not claim the JAR was loaded by runClient.",
+  "frozen_snapshot_manifest": "/workspace/.setup/hero064-runtime-frozen/snapshot.json",
+  "frozen_snapshot_manifest_sha256": "c24ce2272cf237bcae747674d5d88f93226aa8638e6d095601e122541e93b592",
+  "frozen_epoch_millis": 1794556026391,
+  "production_jar_path": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.64.jar",
+  "production_jar_sha256_expected": "5610d0b144468b5fdb6acdb2f98df39ef78e4c46a7917ca0e038d9d48503ba0a",
+  "production_model_entry": "assets/chao_garden/models/entity/gameplay/chao_hero_swim_proto064.json",
+  "production_model_sha256": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+  "viewer_manifest": "/workspace/.setup/hero064-viewer/reference-manifest.json",
+  "viewer_manifest_sha256": "eedb14e87ef538921c4be65b8e0484c4265e75f783186b4b90beda8188e87ec8",
+  "case_count": 94,
+  "accepted_original_png_count": 802,
+  "skipped_cases": 0,
+  "pairs": [
+    {
+      "form": "balanced",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-02-hero_swim_normal_age100-above-t000-f0108.png",
+        "file": "hero064-live-02-hero_swim_normal_age100-above-t000-f0108.png",
+        "sha256": "2aa2fa9f84fcb013abde4eae8ef6a0654fd9f5b685ab0e7b19397ce5a0fa250b",
+        "case_index": 2,
+        "case_name": "hero_swim_normal_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 2,
+          "name": "hero_swim_normal_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": 0,
+          "swim_fly_axis": 0,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:49:41] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-02-hero_swim_normal_age100-above-t000-f0108.png case=2 angle=above tick=0 sha256=2aa2fa9f84fcb013abde4eae8ef6a0654fd9f5b685ab0e7b19397ce5a0fa250b wallNanos=53498684054666 epochMillis=1794556181143"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-balanced-age100-above.png",
+        "file": "hero-swim-balanced-age100-above.png",
+        "sha256": "aaad2d78fa4e482596974464d6987344dd82e11d4a82b155db1a868792a81ddd",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "balanced",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": 0,
+        "swim_fly_axis": 0,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "balanced",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 0,
+          "swim_fly_axis": 0,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 0
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=0; SwimFly axis=0; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 0,
+          "viewer_run": 0,
+          "swim_fly": 0
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+          "approx_observed_viewer_run_axis": 0.0028169014084507044,
+          "approx_observed_swim_fly_axis": -0.0028169014084507044,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "run",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-05-hero_swim_run_age100-above-t000-f0108.png",
+        "file": "hero064-live-05-hero_swim_run_age100-above-t000-f0108.png",
+        "sha256": "ed451f3670b8441284367323054035dfe851727fdcea7a734d56c14645d50e35",
+        "case_index": 5,
+        "case_name": "hero_swim_run_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 5,
+          "name": "hero_swim_run_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": -1,
+          "swim_fly_axis": 0,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:49:55] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-05-hero_swim_run_age100-above-t000-f0108.png case=5 angle=above tick=0 sha256=ed451f3670b8441284367323054035dfe851727fdcea7a734d56c14645d50e35 wallNanos=53512906761936 epochMillis=1794556195366"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-run-age100-above.png",
+        "file": "hero-swim-run-age100-above.png",
+        "sha256": "3518fb27deb09cd90f73eb9d8e835c22d57f35e379a909a2697f7bfa2c945eb4",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "run",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": -1,
+        "swim_fly_axis": 0,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "run",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": -1,
+          "swim_fly_axis": 0,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=1; SwimFly axis=0; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": -1,
+          "viewer_run": 1,
+          "swim_fly": 0
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": -1,
+          "approx_observed_viewer_run_axis": 1,
+          "approx_observed_swim_fly_axis": -0.0028169014084507044,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "power",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-08-hero_swim_power_age100-above-t000-f0108.png",
+        "file": "hero064-live-08-hero_swim_power_age100-above-t000-f0108.png",
+        "sha256": "ec25b4154828c851dc04a29e9d3cdec15e899d48511ff2b96e1226ec68e71779",
+        "case_index": 8,
+        "case_name": "hero_swim_power_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 8,
+          "name": "hero_swim_power_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": 1,
+          "swim_fly_axis": 0,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:50:09] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-08-hero_swim_power_age100-above-t000-f0108.png case=8 angle=above tick=0 sha256=ec25b4154828c851dc04a29e9d3cdec15e899d48511ff2b96e1226ec68e71779 wallNanos=53526942495020 epochMillis=1794556209401"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-power-age100-above.png",
+        "file": "hero-swim-power-age100-above.png",
+        "sha256": "1923fc626357f6ae878cdc8be9a2ea37899b21c26ea2eb28d268bb89daaa1cb6",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "power",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": 1,
+        "swim_fly_axis": 0,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "power",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 1,
+          "swim_fly_axis": 0,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": -1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=-1; SwimFly axis=0; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 1,
+          "viewer_run": -1,
+          "swim_fly": 0
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": 1,
+          "approx_observed_viewer_run_axis": -1,
+          "approx_observed_swim_fly_axis": -0.0028169014084507044,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "fly",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-11-hero_swim_fly_age100-above-t000-f0108.png",
+        "file": "hero064-live-11-hero_swim_fly_age100-above-t000-f0108.png",
+        "sha256": "97e2db495bc3d398a08793e85aa32c4aa630535a13d80e924bc92a2cc44d2c29",
+        "case_index": 11,
+        "case_name": "hero_swim_fly_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 11,
+          "name": "hero_swim_fly_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": 0,
+          "swim_fly_axis": 1,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:50:23] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-11-hero_swim_fly_age100-above-t000-f0108.png case=11 angle=above tick=0 sha256=97e2db495bc3d398a08793e85aa32c4aa630535a13d80e924bc92a2cc44d2c29 wallNanos=53541253248634 epochMillis=1794556223712"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-fly-age100-above.png",
+        "file": "hero-swim-fly-age100-above.png",
+        "sha256": "53cb44b38a040b086ef5a4c95a784a529803401e09811ac8f01adeb034202e22",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "fly",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": 0,
+        "swim_fly_axis": 1,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "fly",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 0,
+          "swim_fly_axis": 1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 0
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=0; SwimFly axis=1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 0,
+          "viewer_run": 0,
+          "swim_fly": 1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+          "approx_observed_viewer_run_axis": 0.0028169014084507044,
+          "approx_observed_swim_fly_axis": 1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "swim",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-14-hero_swim_swim_age100-above-t000-f0108.png",
+        "file": "hero064-live-14-hero_swim_swim_age100-above-t000-f0108.png",
+        "sha256": "9500aa6ffab3e95a78bd264eb9cd5ef4ac80ddd24472b8199c50eb880b43cf32",
+        "case_index": 14,
+        "case_name": "hero_swim_swim_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 14,
+          "name": "hero_swim_swim_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": 0,
+          "swim_fly_axis": -1,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:50:37] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-14-hero_swim_swim_age100-above-t000-f0108.png case=14 angle=above tick=0 sha256=9500aa6ffab3e95a78bd264eb9cd5ef4ac80ddd24472b8199c50eb880b43cf32 wallNanos=53555278743832 epochMillis=1794556237738"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-swim-age100-above.png",
+        "file": "hero-swim-swim-age100-above.png",
+        "sha256": "e63fbb2bed537292cf3bdcae2930d232097df42517e160732ff33ab2536e4830",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "swim",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": 0,
+        "swim_fly_axis": -1,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "swim",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 0,
+          "swim_fly_axis": -1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 0
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=0; SwimFly axis=-1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 0,
+          "viewer_run": 0,
+          "swim_fly": -1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+          "approx_observed_viewer_run_axis": 0.0028169014084507044,
+          "approx_observed_swim_fly_axis": -1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "run-fly",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-17-hero_swim_run_fly_age100-above-t000-f0108.png",
+        "file": "hero064-live-17-hero_swim_run_fly_age100-above-t000-f0108.png",
+        "sha256": "938b9ce2ebb006ebd1a7ef71b6108cb85ebc706bcf370e6d972bf4e3ef30b631",
+        "case_index": 17,
+        "case_name": "hero_swim_run_fly_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 17,
+          "name": "hero_swim_run_fly_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": -1,
+          "swim_fly_axis": 1,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:50:51] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-17-hero_swim_run_fly_age100-above-t000-f0108.png case=17 angle=above tick=0 sha256=938b9ce2ebb006ebd1a7ef71b6108cb85ebc706bcf370e6d972bf4e3ef30b631 wallNanos=53569391908696 epochMillis=1794556251851"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-run-fly-age100-above.png",
+        "file": "hero-swim-run-fly-age100-above.png",
+        "sha256": "10747dedaa59dad4c30c9a42f63c8c5d4a67c45f962ad73e34b1e02373653b34",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "run-fly",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": -1,
+        "swim_fly_axis": 1,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "run-fly",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": -1,
+          "swim_fly_axis": 1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=1; SwimFly axis=1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": -1,
+          "viewer_run": 1,
+          "swim_fly": 1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": -1,
+          "approx_observed_viewer_run_axis": 1,
+          "approx_observed_swim_fly_axis": 1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "run-swim",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-20-hero_swim_run_swim_age100-above-t000-f0108.png",
+        "file": "hero064-live-20-hero_swim_run_swim_age100-above-t000-f0108.png",
+        "sha256": "68e566f46b74449b14d8a799e7eba8c04ab4b4e9cf6c80e27489ca0e5406e0c7",
+        "case_index": 20,
+        "case_name": "hero_swim_run_swim_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 20,
+          "name": "hero_swim_run_swim_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": -1,
+          "swim_fly_axis": -1,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:51:05] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-20-hero_swim_run_swim_age100-above-t000-f0108.png case=20 angle=above tick=0 sha256=68e566f46b74449b14d8a799e7eba8c04ab4b4e9cf6c80e27489ca0e5406e0c7 wallNanos=53583366419040 epochMillis=1794556265825"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-run-swim-age100-above.png",
+        "file": "hero-swim-run-swim-age100-above.png",
+        "sha256": "83d576c7c7ba918ce3d1eabbdbe6041f1d5d300777413ff9c8a73ec8e23fadb6",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "run-swim",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": -1,
+        "swim_fly_axis": -1,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "run-swim",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": -1,
+          "swim_fly_axis": -1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=1; SwimFly axis=-1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": -1,
+          "viewer_run": 1,
+          "swim_fly": -1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": -1,
+          "approx_observed_viewer_run_axis": 1,
+          "approx_observed_swim_fly_axis": -1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "power-fly",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-23-hero_swim_power_fly_age100-above-t000-f0108.png",
+        "file": "hero064-live-23-hero_swim_power_fly_age100-above-t000-f0108.png",
+        "sha256": "92feef03bf65fa846a4dd0ebfa00f51691a71a6e2a906718ec96a8acc232a724",
+        "case_index": 23,
+        "case_name": "hero_swim_power_fly_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 23,
+          "name": "hero_swim_power_fly_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": 1,
+          "swim_fly_axis": 1,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:51:19] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-23-hero_swim_power_fly_age100-above-t000-f0108.png case=23 angle=above tick=0 sha256=92feef03bf65fa846a4dd0ebfa00f51691a71a6e2a906718ec96a8acc232a724 wallNanos=53597296325449 epochMillis=1794556279755"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-power-fly-age100-above.png",
+        "file": "hero-swim-power-fly-age100-above.png",
+        "sha256": "9f8255e7a3f4bd6f56ea8ae3aaec6d80b6143082ad5a23a43e896885cfe8ab97",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "power-fly",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": 1,
+        "swim_fly_axis": 1,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "power-fly",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 1,
+          "swim_fly_axis": 1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": -1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=-1; SwimFly axis=1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 1,
+          "viewer_run": -1,
+          "swim_fly": 1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": 1,
+          "approx_observed_viewer_run_axis": -1,
+          "approx_observed_swim_fly_axis": 1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "power-swim",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-26-hero_swim_power_swim_age100-above-t000-f0108.png",
+        "file": "hero064-live-26-hero_swim_power_swim_age100-above-t000-f0108.png",
+        "sha256": "a1702cc168cf9719fbff861d902519d6cb03f90fb584e7190a0b7b0969e03e22",
+        "case_index": 26,
+        "case_name": "hero_swim_power_swim_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 26,
+          "name": "hero_swim_power_swim_age100",
+          "adult": true,
+          "first_type": 1,
+          "run_power_axis": 1,
+          "swim_fly_axis": -1,
+          "fly_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 1.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[07:51:33] [IO-Worker-4/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_CAPTURE hero064-live-26-hero_swim_power_swim_age100-above-t000-f0108.png case=26 angle=above tick=0 sha256=a1702cc168cf9719fbff861d902519d6cb03f90fb584e7190a0b7b0969e03e22 wallNanos=53611262663893 epochMillis=1794556293722"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/hero064-viewer/hero-swim-power-swim-age100-above.png",
+        "file": "hero-swim-power-swim-age100-above.png",
+        "sha256": "bd2780336253150dec7cfe62dc4e5db20e44c1f5166d842f4831199cf980671b",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "power-swim",
+        "alignment": "Hero",
+        "first_type": "Swim",
+        "run_power_axis": 1,
+        "swim_fly_axis": -1,
+        "source_settings": {
+          "alignment": "Hero",
+          "alignment_value": 1,
+          "first_type": "Swim",
+          "later": "power-swim",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 1,
+          "swim_fly_axis": -1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": -1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=1 Hero; Swim first type selected; Child and Normal unchecked; Run axis=-1; SwimFly axis=-1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 1,
+          "viewer_run": -1,
+          "swim_fly": -1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_alignment_axis": 1,
+          "approx_observed_mod_run_power_axis": 1,
+          "approx_observed_viewer_run_axis": -1,
+          "approx_observed_swim_fly_axis": -1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "authored_placement": "Hero Swim two-section head features retain base-colored roots and variant upper caps; the independent Hero halo is compared above the unchanged original skull.",
+      "comparison_scope": "Same first Swim, Hero alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    }
+  ],
+  "pair_count": 9,
+  "contact_sheet": {
+    "path": "/workspace/.setup/hero064-final-reference-compare/final-mature-crown-caps.png",
+    "file": "final-mature-crown-caps.png",
+    "sha256": "3d06f88a2f3b3707c297589cabb47ae5c85177d5f0994c056231f91826ac2c6c"
+  },
+  "image_processing": {
+    "minecraft_original_size": [
+      1440,
+      900
+    ],
+    "minecraft_crop": [
+      450,
+      230,
+      990,
+      770
+    ],
+    "viewer_original_size": [
+      970,
+      486
+    ],
+    "viewer_crop": [
+      0,
+      0,
+      540,
+      486
+    ],
+    "viewer_padding_top_bottom": 27,
+    "uniform_output_tile": [
+      330,
+      330
+    ],
+    "resampling": "nearest",
+    "flips": false,
+    "per_frame_warp": false,
+    "recolor": false
+  },
+  "authored_placement": "Blocky Hero Swim head features and halo are compared with unmodified viewer above images. The original head box stays unchanged; unrelated Run-family stripe geometry is not reused.",
+  "limitations": [
+    "Above camera pitch, idle phases, colors, lighting and original-game stat units are not calibrated.",
+    "The original head box and block anatomy are retained; matching screenshots do not imply exact source geometry.",
+    "Static above images establish only the sampled visible placement; no motion, alpha or attachment test outcome is inferred.",
+    "Development output/JAR bytes match through the same strict proof; this does not assert runClient loaded that archive.",
+    "No original image, source reference manifest, main comparison manifest or main comparison sheet was edited."
+  ],
+  "coordinator_observations": [
+    "Root personally opened complete corrected nine-pair mature above sheet, after main81/27 sheets acceptance.",
+    "Original head-top surface remains plain and fixed; paired white-root/two-color upper caps, rigid four-bar halo and closed small wings retain coherent placement.",
+    "Crown direction and widths differ visibly across balanced/Run/Power/Fly/Swim and allfourpaircorners, with no blocking visible corruption or exposed internal surface observed.",
+    "Local halo clearance stays visible around upright Fly/Power features; original pixelhead and squarehalo deliberately differ from smooth source."
+  ],
+  "coordinator_limits": [
+    "Static above views only; source/native camera pitch, lighting, proportions and idle pose differ.",
+    "Blunt blocky caps/tapers and simplified source arches, webbedfeet and zigzagedges remain approximations.",
+    "No motion, allgear, continuousplayback, listening, physicaltouch or remote two-client/worldrestart claim is inferred.",
+    "Only private annotation text was shortened before acceptance; sourceimage tilepixels, original captures, viewer/main manifests and runtimeproof remained exact."
+  ]
+}

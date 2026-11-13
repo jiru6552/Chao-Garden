@@ -1,0 +1,1199 @@
+{
+  "version": "0.25.64",
+  "timestamp_utc": "2026-11-13T07:47:12.056072+00:00",
+  "scope": "Independent source registration, actual enabled namespaces, complete actual batch counts and literal all-pass server log review. Root owns execution/process exit. Source-name identities are not presented as separately printed per-name pass messages.",
+  "source_log": "/workspace/.setup/hero064-native.log",
+  "source_log_sha256": "80e838594515dbefa7b9b5398cd4718261b14761268ba92f25e662dde6a0c0c1",
+  "gradle_outcome": "BUILD SUCCESSFUL in 52s",
+  "actionable_tasks": 9,
+  "executed": 4,
+  "up_to_date": 5,
+  "required_passed": 578,
+  "new_hero_swim_required": 52,
+  "retained_required": 526,
+  "game_test_internal_duration_seconds": 23.57,
+  "enabled_namespaces": [
+    "chao_edit56",
+    "chao_swim59",
+    "chao_darknormal60",
+    "chao_heronormal57",
+    "chao_power63",
+    "chao_morph52",
+    "chao_morph55",
+    "chao_morph54",
+    "chao_neutral56",
+    "chao_run62",
+    "chao_baby53",
+    "chao_fly61",
+    "chao_hero_swim64"
+  ],
+  "new_namespace": "chao_hero_swim64",
+  "retained_namespaces": [
+    "chao_baby53",
+    "chao_darknormal60",
+    "chao_edit56",
+    "chao_fly61",
+    "chao_heronormal57",
+    "chao_morph52",
+    "chao_morph54",
+    "chao_morph55",
+    "chao_neutral56",
+    "chao_power63",
+    "chao_run62",
+    "chao_swim59"
+  ],
+  "actual_all_batch_count": 77,
+  "actual_all_batch_test_total": 578,
+  "actual_new_batch_counts": [
+    {
+      "name": "hero_swim064_5:0",
+      "tests": 8,
+      "literal_line": "[07:44:34] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_5:0' (8 tests)..."
+    },
+    {
+      "name": "hero_swim064_4:0",
+      "tests": 8,
+      "literal_line": "[07:44:34] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_4:0' (8 tests)..."
+    },
+    {
+      "name": "hero_swim064_3:0",
+      "tests": 8,
+      "literal_line": "[07:44:35] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_3:0' (8 tests)..."
+    },
+    {
+      "name": "hero_swim064_2:0",
+      "tests": 8,
+      "literal_line": "[07:44:35] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_2:0' (8 tests)..."
+    },
+    {
+      "name": "hero_swim064_1:0",
+      "tests": 8,
+      "literal_line": "[07:44:36] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_1:0' (8 tests)..."
+    },
+    {
+      "name": "hero_swim064_0:0",
+      "tests": 8,
+      "literal_line": "[07:44:36] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_0:0' (8 tests)..."
+    },
+    {
+      "name": "hero_swim064_6:0",
+      "tests": 4,
+      "literal_line": "[07:44:40] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_6:0' (4 tests)..."
+    }
+  ],
+  "all_new_source_cases_accounted_for_by_actual_batches": true,
+  "new_case_execution_basis": "All52 required source-generated identities belong to the seven actual logged batches (six8+one4). All77 actual batches total578 cases and literal completion says all578requiredpassed. No unlogged per-name pass lines are invented.",
+  "retained_prior_native_java_source_count": 165,
+  "all_retained_native_java_sources_exact_delivered063": true,
+  "retained_prior_native_java_source_proofs": {
+    "src/main/java/com/chaogarden/test/ActivityGameTests.java": {
+      "sha256": "a973ed87e1121589391a9e3143942927ff811e56ecb959042d152ad794f65331",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BabyAnimationGameTests025.java": {
+      "sha256": "9c399d9001d51edba180e7fcbe68531014c329c22c1fa86e433e34e8c4cdecdd",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BabyRunAlignmentGameTests053.java": {
+      "sha256": "ce29ed966582aa76c8dda12954cc41d657b7361026438650c4dce91b3b10c6d9",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BehaviorGameTests.java": {
+      "sha256": "6189b2b30a69666e46df017a3355494f86d339bf2e5616b35cc4b1cd80625f54",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BellGameTests02525.java": {
+      "sha256": "e5bf53833aa9dc6037af905d527371aab386bf69a9094d9e8c20d66c1cf3571b",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BellLifecycleGameTests02525.java": {
+      "sha256": "a4c9235c52749adf25e18440b211f87d0e9ab9bfa56c58478b36fad5f85a4d68",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BellVariantGameTests02525.java": {
+      "sha256": "1a3e172f57f00b2578a08f853a2b923ef37d74630c5a283e6257a0ffe94d42ba",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BlockyRunMorphologyGameTests055.java": {
+      "sha256": "e7c024954a5f39e333553cf71c61aec6cf91c25c8346c8e1fecd584bc918068a",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BreedingPublicationGameTests02518.java": {
+      "sha256": "86272325628339a510aae7f6cdd03aac532042cd3752996f5c44f070098e4c26",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BubbleGameTests02521.java": {
+      "sha256": "492f974ca812b199ccdad2762ecdb1c3f61e858b4ef24804c926b4210f84d666",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/BubbleGroundGameTests02523.java": {
+      "sha256": "4b332f9cd36b3a5c0aa98600ed2c96d6310c4a33c9b319618b4221c305fddcac",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CarryRecoveryGameTests.java": {
+      "sha256": "dcb2517a4cfb807fb015f68cb83ac0ee581f50b4ddc0e1a20e66f1c8f6d41fea",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CastanetsLifecycleGameTests02528.java": {
+      "sha256": "e13f70c58ec589e2e08c559c9760ce78ef8f90567bb2f0574c0a65dd1d7d145b",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CastanetsVariantGameTests02528.java": {
+      "sha256": "25d108fbf3d61e0bade6dc291b2b7e5592afa80a226d88469a105e29e02b94b3",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ChaoGameTests.java": {
+      "sha256": "c0fd0c4af39f0d56b14982f363d9ccbcf28d29b2304a484efd200543fc83e281",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ClassicalModelsGameTests0254.java": {
+      "sha256": "05582a055fd4f8e2099105d14955952c29c19bf8ea2d4e1e824d7962e217bc3e",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ClinicRefinementGameTests0254.java": {
+      "sha256": "3b0e643ea2cdb38d83e2424b7c94064c660a8295168bbc3011d75dbef2eb72d9",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CompanionCareUpdateGameTests.java": {
+      "sha256": "3e1ae26877f1f4718054c843ac77b886498525dc398a4086dae65868c00a98d9",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CompanionGameTests.java": {
+      "sha256": "b0d3e0a30ec5ba9bf5639248d887ffebd0d127c02125b8388aff83159ac74816",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CompanionRestartGameTests.java": {
+      "sha256": "a365201f2b1caec1861ceb28a3dddfb219a81fa34e6c2e82fb667e9a224c1146",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CompanionSkillGameTests.java": {
+      "sha256": "f506f5a538fa1b499b976750d4f1821da661b1f3f8b38d6b00c73a979605d00a",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CompanionVariantGameTests.java": {
+      "sha256": "8d3c8384cc42d87a11102d3da21f8255310198fc069779d6684eeedbb50921c1",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CreativeEditingGameTests056.java": {
+      "sha256": "ff0d4c765e4c1766f0851fbb0e8e79e5fe97b3cbb02a233d51c65efe645ecfe4",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CweContentGameTests.java": {
+      "sha256": "4ff4fab657c5070051455ec893b1d82a64ce1aaf611f717f068af8c30a492df1",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CymbalsLifecycleGameTests02529.java": {
+      "sha256": "dd74313eef8a17e6aba6161858ab81b8be1e15351be24fbedf039f2a82d041e9",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/CymbalsVariantGameTests02529.java": {
+      "sha256": "68cf01509793f98bf2506d2c0e883abe425f7178d87e61905102170c2466edf0",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DarkGardenCareGameTests0255.java": {
+      "sha256": "30c1c404e98c6a0a3c997401a113e20022af09ef1e057d98f67a9195d512ec0b",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DarkGardenGameTests0255.java": {
+      "sha256": "592d8d1eccd6ec79c0909eac610a54d36c701751912ca07cd56b9d8a82d69c32",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DarkIntegrationGameTests0255.java": {
+      "sha256": "8df0f019ba82a8646a0246fd1481fdb4524d9cef0bf5f2ecb6ba0bd289d327ca",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DarkNormalMorphologyGameTests060.java": {
+      "sha256": "ca3938b1156f6ca377e6e856978fb240fed67e1d8edc1e374080533fb5b7fe3f",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DnaEligibilityGameTests050.java": {
+      "sha256": "8f7178194dc4ac7a2d2975e93625ec7a8d6e96fdbffcbc852e3457b546463a7c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DriveGameTests043.java": {
+      "sha256": "da09fbe9b3a496c2231440a489caa3a4918e301e46e76836894068969ea44d70",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DriveRestartGameTests043.java": {
+      "sha256": "af860d457764fe51ab975c4cebf4ad4ae5523627fa7f7fe0fc962b42dc524c8c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DrumLifecycleGameTests02531.java": {
+      "sha256": "7f735245fa26153ce1088e198b365cfb42699f120e858368abb1201f9b842b21",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/DrumVariantGameTests02531.java": {
+      "sha256": "d5f7c1fbe460bc1f55505b33529f948d3d0a1b8c64f8f5338772b98554a3f932",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/EggDistributionGameTests.java": {
+      "sha256": "35b4931d8b65dec54571dab4e1da2aa7b18add5c0c82cdf7b8329fea1697ebf4",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/EggInteractionGameTests.java": {
+      "sha256": "11fd6220ef43185fa09c94b74c5b24b0816b429d44bb8b443c91399f0ebc46af",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/EquippedGameTests046.java": {
+      "sha256": "972ae57b2f7fb05a3cc048dc8f18375993bc2ae16d1e52f72d66551e8aef3ec5",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/EquippedRestartGameTests046.java": {
+      "sha256": "d56dbce718c20b7b4ab00654659d3bd83248fdedefdfdf3a574e625619128ebb",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FamilyNameGameTests.java": {
+      "sha256": "17604d0220e11a3ce7a4736ab2ad025834d3f5850478bd91f9c8c46b65151cf0",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FloorToyGameTests049.java": {
+      "sha256": "ae2982401a1ca62694bc0c17fa31c47984f36134d820e0f9aea5051845c1a369",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FluteLifecycleGameTests02532.java": {
+      "sha256": "0022c777b4bd031a92df69b7d6879191b8efcdcfa03ba34b26697aefe0ef9403",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FluteVariantGameTests02532.java": {
+      "sha256": "cc9f2f2e10ecb77532f8181a8a3726711f1360dc9838a1f88bedcfdd78ec88b4",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FocusedGameTests042.java": {
+      "sha256": "63c3a241f85eaf52466b85f4b3e3cc0ac1bf3d075b230e009d0919d259ace78f",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FocusedGameTests046.java": {
+      "sha256": "80c51b3a874828cda5f7b2c88cff707123a6942cfce522fd99ef12b3b3854ae0",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FruitConsolidationGameTests02510.java": {
+      "sha256": "417d2dbff1d9c99845738764da7fff8423404e0c70ac9bf90483f2aa3df09e2e",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/FruitGameTests.java": {
+      "sha256": "0943aeca188275806cff27b3d71aab3e5a5fb1116186935df5cbf9b0eebb330c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GameTestShutdownWatchdog025.java": {
+      "sha256": "8981b8654e1155529538bfbf8d30ab11a14b4fba6e447d484fdd70fa1f1f53a1",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenAdventureGameTests0251.java": {
+      "sha256": "e27460942d1189b4b22bb2934d7800b36414c7e2d79faad78e819d7d5cac4495",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenBankGameTests02511.java": {
+      "sha256": "1e4d2a908586a5dbe7754489eef51bac64d04bb8d7be2d3a7f0da940498abec5",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenCompactGameTests0252.java": {
+      "sha256": "aadd533de017c6e48bbeed816c37c48dd812b2dccea0c3b5adab285921370bfc",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenDetectionGameTests040.java": {
+      "sha256": "52e33eb840774c7727d8edc01260e8116cc1737d01a211117090349b4fe9b498",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenDeviceGameTests0254.java": {
+      "sha256": "0b2ca69c582131fecc895ddb1e0b236518b5b87a7bc8df662550478edd52e5de",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenGeometryGameTests0251.java": {
+      "sha256": "21f39cdcf339c55f870655fd7a0648147d8884c37540e20b99e00beceb0d3d66",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenLandscapeGameTests0254.java": {
+      "sha256": "5cd720d4244b2e75379c4cafd31351fe31dea1110064d25f7ef4125595f623df",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenLandscapeMigrationGameTests0254.java": {
+      "sha256": "18f52b8466869978405a020849ae4597e558485c0b955e5fafb4fe3612eddcc8",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenRefinementGameTests02510.java": {
+      "sha256": "3c860e0a3bce69518e0c77f009a048a7c9c1ab7ced9f3dfc684d8e0a6d84bb03",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenRegistrationGameTests02517.java": {
+      "sha256": "1ce62f84787cccb199b567d0dc96cf5ce3985b5e613069814ddef6629203de96",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenRegistryMigrationGameTests0251.java": {
+      "sha256": "e3282c62c5fcdf246002a92c5f848b4e201d3c852244adad83f0c1e2a9e1af81",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenRestartGameTests042.java": {
+      "sha256": "ca2cdf1998550194d3944b6b0f7b5f8e756dc6f11c4054758769634ea3245427",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenShoulderGameTests02515.java": {
+      "sha256": "a10884eb8b24522d3434546651007a15cc195da8925ea246a873b9a886f8a37d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenToyGameTests049.java": {
+      "sha256": "5116793ba9451f8d9cacc6356cd46ac9cf961a2491fca6ba0dcfc4cff3aa2a1a",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenWaterfallGameTests0253.java": {
+      "sha256": "3204080c4672d15198af2912fec72c413457dc0a915c288b8bf2bf86becf958f",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardenWorldGameTests025.java": {
+      "sha256": "edca372130b0e5b921c3c3aea88c861f0327fc9f57f5ec8be11c152eb73b814c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardeningGameTests02512.java": {
+      "sha256": "c27a22f8fe52472a17ab8cb8afb7bdfd6112b941bcf0f20c22f4fd48f2429fe6",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GardeningGameTests02513.java": {
+      "sha256": "ff99b71591fdc111f2c9c30d1df9ca61472d65ba62f5dad821597eae052b5622",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GemEggGameTests050.java": {
+      "sha256": "88f1f08d7c117ba64c720d765a7edb3bb39a46a0c798edd03415cb5bb3063087",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GeneGameTests.java": {
+      "sha256": "45d9f714335300153c046f775017fc221456acd73889f098f4e2f128204a5dd1",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GradualEvolutionGameTests.java": {
+      "sha256": "cd64db9dceb059115d66be3312e78470a4be5f821ad9b26de10b309f045596fb",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/GuitarGameTests045.java": {
+      "sha256": "0c98413bd9e8a8c8ed875ee776991166bdff57fb6e6b795d9aea7a92c43f7515",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HatGameTests050.java": {
+      "sha256": "895dc50fb999dce722ae8eb41511912004337e107256b3ef24face1aa43ff90c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HeroGardenGeometryGameTests0253.java": {
+      "sha256": "0c3df52d1527fae5346016914275e60ca7a7c2107644646e5fc3abb2eeb6a9bf",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HeroIntegrationGameTests0253.java": {
+      "sha256": "bc13e51c0b7441879ea5c3958355914c162b853ce72be4c90b707364f9ab4911",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HeroNormalMorphologyGameTests057.java": {
+      "sha256": "cebde5889f55373fba6a2ae5d5b9d91860132adf3a744608b77253fd79b4fddf",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HeroRefinementGameTests0259.java": {
+      "sha256": "b5dc1aba4706e961868ca9ea925e5beaf1fd9f931b5699f95a212dd50c3a6e02",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HeroRunJourneyGameTests054.java": {
+      "sha256": "091d638dad85eb53b3e5f8fbff89dcd7b94900518c6fe4aa390d0860186393b4",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HeroRunMorphologyGameTests052.java": {
+      "sha256": "2c867cc9f44a90f3eb88ec87e6774930550c9d4c1fc3939f25ac9563dcc437eb",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HeroTransporterMigrationGameTests0254.java": {
+      "sha256": "4618f3095ac43a14881b86033a74e98cb5c2486affb7dc5d6f9a4df029b92e0d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/HubWorldGameTests.java": {
+      "sha256": "2c5ff9359bdda58c87383730a1c46afd127922ee933793bb7d5d0f1974934a7d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentGameTests048.java": {
+      "sha256": "1460c26dffc934a381dd25443071ece3eee74dc32a3e5b1361d1a7ed21832152",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02525.java": {
+      "sha256": "3cfa0770b492e34a5ea3088974370477832f100146e950095d0fcd525253758d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02526.java": {
+      "sha256": "7417d2de5bd6e5277032ccfd072feb33d8feb3ae41fba50732ed5a69d8a7373f",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02528.java": {
+      "sha256": "b8ee251e373439f9f7db091f301a6856a4b583efa0470ac9fe8cc4b9eaf504b3",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02529.java": {
+      "sha256": "a65f2e6938e2fbf4d1e6e1e418ea1b58bbd45e6fd269a467759a6edabb789f3a",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02531.java": {
+      "sha256": "46332fa2224f3f0c080c38cfffa669ee21b45a7d225fac160bfa0c05f241464a",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02532.java": {
+      "sha256": "1ded1ed8c1c1ea52e05510b243832340b255eefa5aafa26e9f46b0a6e7c353e7",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02533.java": {
+      "sha256": "506bed2ccd811abe4de19c24e11bb46996db8b6e2a201c670779105d6986220c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentPerformanceGameTests02535.java": {
+      "sha256": "8d001ab08ed60bd2fcf36ab79942b3d489d34d4a2c36d4fa534f6d60bfbf685b",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/InstrumentSchoolFixture02525.java": {
+      "sha256": "fa5bf45e517e0270745031335125d792455400c26f1bf5f2b7ddacf9a2a687ab",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ItemDnaRegressionGameTests050.java": {
+      "sha256": "83875fcfb2630a18d7b8e1b0d1bf4f364a6ff0401e66ed72f37980fb735cf770",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ItemHandlingGameTests.java": {
+      "sha256": "e7f08b534eab0ed2d96bfe86d22e850f4f633311894e44cfa9a8d63a5f732ade",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenDecorNavigationGameTests025.java": {
+      "sha256": "3c1256dc7e738336ed3ebf7e70b986c844af4a4dbe84d02aed3210dcd751e8f7",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenGameTests.java": {
+      "sha256": "a4180fa91229a86e1682232e127b915d85cf7e43e7d543f023681682aeb085a3",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenHallGameTests0252.java": {
+      "sha256": "c6cb0cc292c5ca220e6490b5ba8ee9d4cd5685a77570d22fb3e3148e8428e65f",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenLayoutGameTests0255.java": {
+      "sha256": "4b22cf619d30863f7a5de702392e5d3685c812389ea749626e1dcc81d10b297f",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenMarketBuybackGameTests025.java": {
+      "sha256": "287b24c38068e1a2652733721214f34f7701b9b64643ddff25992c0790ee9a92",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenPupilsGameTests0257.java": {
+      "sha256": "8a6f2ef9db97281784f418f8d43e4fe67fefcacf50a0beddc7ffeb47165b2765",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenRefinementGameTests025.java": {
+      "sha256": "7b64cfda9735f7ce82cdd3cf90eb047a1d7095f4504532314933331c1428607b",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenRouteGameTests025.java": {
+      "sha256": "8e1f404fd2db4c49d002fd1345754cf761fe275d309555ab3b82d8dcc0202867",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/KindergartenServicesGameTests.java": {
+      "sha256": "d3540744fd0af762ad723230699d6a2c1737410df06c05c28692850f13f1d1a1",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/LegacyGardenFixture.java": {
+      "sha256": "7f5323081c67d8c3d58e02bf44aafcded777ccc76ffdc5b12d68e2a9c955886d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/LifecycleAuditGameTests.java": {
+      "sha256": "c5ccbf2c1fa4011bc5e54ad6a32812b50b26634842b4781ee882fee5de7e35e4",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/LobbyApproachGameTests0255.java": {
+      "sha256": "55da52a8f252787c2c6d18a77f4c92a6b544c8d7db3c07079cc61cb99890d911",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/LocomotionGameTests.java": {
+      "sha256": "52302862a18bb557ffb74e7c0c7acf30eacdff8f476ca1bbe9fd8425eae97977",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MaracasGameTests02524.java": {
+      "sha256": "64a55c5c393c0cfc23fb3ac4373e92eaa8ca22cc5e8e61024831d524ba10d5b2",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MaracasLifecycleGameTests02524.java": {
+      "sha256": "2e4af086b7e4f80a0447888666302b5907a6950bfd3eda9de9ba114350af5ef6",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MaracasVariantGameTests02524.java": {
+      "sha256": "ee8f85a0e4488e07d33142714b8a4a2d289545e30d056ebcc51db112396ac71f",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MarketGameTests.java": {
+      "sha256": "599b710888f295669c14d82e553f9b76ac7aec179875af1e2e4af4bb0648a840",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MarketMenuGameTests.java": {
+      "sha256": "ff1232616798e490b9eb4251f0d8a593a1fdc81435d5f0b3a62b8bc1bb5b5802",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MarketRotationGameTests050.java": {
+      "sha256": "5c07f025c3ead40cc1ff19453ea2c69f476aa109bbf392bb8d46bab293c992da",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MobileToyGameTests02518.java": {
+      "sha256": "59089d433daecae19159aee25baf7b74d5df1f40725e96b5834fddc25009b855",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/MusicGameTests.java": {
+      "sha256": "2886fb9e6293196c45660418f83e70cb5461b5092b719647db49edfffa863a8c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/NeutralFlyMorphologyGameTests061.java": {
+      "sha256": "fd35552b4a37012493a006f8c32014c25008d629499a228b73da8c8b3b63908c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/NeutralMorphologyGameTests056.java": {
+      "sha256": "94730326502d2b69895f4c3d2c69860840f19eaa01c9eb72d11545ff33e492ce",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/NeutralPowerMorphologyGameTests063.java": {
+      "sha256": "0fd2b2e2f299bb322a5cb25004fc3bfa64dd80dc82e278d1b2718efa9ccef8a6",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/NeutralRunMorphologyGameTests062.java": {
+      "sha256": "6eb392ca5a786b898d51f4a5918075bafbaca76ac9f4da90d67f46e57743d4bc",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/NeutralSwimMorphologyGameTests059.java": {
+      "sha256": "44d320fb870d029218605a33d75281c2044bd26bfc8a8b26e3d358cf805173dd",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/OmochaoLifecycleGameTests.java": {
+      "sha256": "57f308f55ea9de796484bb24548e9fd50263439725b5187385da2c2cd1a5dee8",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/OrganGameTests044.java": {
+      "sha256": "ab278494badf4f851ddad99465672954b29f1e2b192423d97ab1a0a7c399b103",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/PlayableDedicatedSmoke02536.java": {
+      "sha256": "cb148fd42764cb64b92b4758956c36e8b8b670907e355f454b2968d2278f87c5",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/PlayableGameTests02536.java": {
+      "sha256": "3618313e9467f04df0445f200b622e6829b16dbb95b73da129aec57777cd07d0",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RattleGameTests02520.java": {
+      "sha256": "c976cd97efedd0533ab723ad9a79070323055eb6fc2fba800f465b68c9f4bbd9",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RecoveryLifecycleRegression.java": {
+      "sha256": "f04d1dec3372bf65a9f0e7fd73368ef4b9781249f78d028d30f2910992a87638",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RecoveryRestartGameTests.java": {
+      "sha256": "a104db2d851d089471c3ae19125234b603dedff7ed9304d29446ed92aae780dd",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RecoveryStorageGameTests.java": {
+      "sha256": "9e6ccd4acf218ba72330e36e103fc6583a2599efb22fc9879bed519d2b082e24",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RefineGameTests02537.java": {
+      "sha256": "30c905f81241b066135b581b5c47a7cf2a75b8f7f908a7582549bd1264e9e348",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RetiredCoffinGameTests049.java": {
+      "sha256": "b97e5360ff1cc8ed74f6ba72a56100a10fd7930aaa8ae1dbd8ac131bc0b891b0",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RetiredThemeGameTests.java": {
+      "sha256": "c82c3bad1dc74ed505795d8bc36c76ec5419b208ab64206d9550b30236119dec",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/RobotAppearanceGameTests.java": {
+      "sha256": "08cc08d60b656040690c05392f0a4d262444416c24c59671e3bc628655596c15",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolBoundaryGameTests0251.java": {
+      "sha256": "b75bada798b53766b808f5de6a5787a1a9fef3bebb2e7ad583d9326f3cc02a98",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolDecorPlacementGameTests0251.java": {
+      "sha256": "893fa5d0cb6e689f55a8ce7c051b69c75d903446e95d689a0446c11624e0f458",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolDoorCurveGameTests0255.java": {
+      "sha256": "5288464fca80b0bf87ceb396fa5018262d9fd4e79d2d5f141c951309c3b7daf9",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolDoorGameTests0251.java": {
+      "sha256": "2f791b8f8c898d6cbbcd89ac55debc05340d02b59455af6cf8ac49934765abe7",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolDormerGameTests02516.java": {
+      "sha256": "814da024150b33192c207060532ae7ff58991cf94e084b1360ea7863523e4f86",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolInstrumentGameTests02525.java": {
+      "sha256": "23954ea3c7eb1c6a5602e6d71babf2a40ba9eec76e87efd4f6686eb2310059a3",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolInstrumentGameTests02526.java": {
+      "sha256": "d274621f445a48a0369e7885c2ecde1eec981003460dba74beb03e1079dc893c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolInstrumentGameTests02528.java": {
+      "sha256": "85a6d51c8f66b57783ba5339f096bd6a50c2e8c1300a4c8117833c2e5c499d5d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolInstrumentGameTests02529.java": {
+      "sha256": "d9a44f37a7cc49e4862fd2fd5dcbb741b486ebfb30240963cb1823c6750127bf",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolInstrumentGameTests02531.java": {
+      "sha256": "1149e3a0f724d7382e89ac3b537fe6b0febda743ac272140692c371a77ad7d4d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolInstrumentGameTests02532.java": {
+      "sha256": "5cc4743a801608ec49b6dfc66dbd0b95c143229babf7d457392cd0ef874a66f2",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolInstrumentGameTests02533.java": {
+      "sha256": "36e7788b41bbbf4b8fd22b882b88784a4f378d4b9f708d660763c536dbef4255",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/SchoolWindowGameTests0251.java": {
+      "sha256": "17975253e586c7f0fd7ccee95540130265db457935642ecb8abe939934f6f6f2",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/StationaryToyGameTests02518.java": {
+      "sha256": "9f86a710c6bbe168292651e846952a4b2949e668a6b563f564aa273cd7354fcd",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TambourineLifecycleGameTests02526.java": {
+      "sha256": "263ef2f5fc16d7111a27ff98500836abb051436997163aabafc3cc65f489ca52",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TambourineVariantGameTests02526.java": {
+      "sha256": "54e17d4db661396e00150d69b93517bcf1e5f1f7355ddb37cd83344c849282ff",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TatamiAssemblyGameTests02518.java": {
+      "sha256": "c3aded4000dbbf575a77982f69d6a2f171ea4bfb823b76b38b8862094de3d323",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TestConnections.java": {
+      "sha256": "44dd5dbb431ea7eaa17bdea3ab9024327e98397365d98456501f251246dcface",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyApproachGameTests025.java": {
+      "sha256": "4a57eede6f726cde873ee07f946f9e7601e74bfa2be06919630d5adfeb24b8ea",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyGameTests.java": {
+      "sha256": "926aa2f8ad9c1a71c52cc739b88e9b08322dcb0d7a71570d53eacb31a9a3f7f0",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyInteractionGameTests02518.java": {
+      "sha256": "49958349bdde0b14e7d35171d860be2e9ad825093ad23d9e8c055ab0707ef0f3",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyMultiplayerGameTests02521.java": {
+      "sha256": "347c7c10b39262f3a233beabe34a37a9815762bd4c8b50f9113ac13c3fbfc8c8",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyPolishGameTests051.java": {
+      "sha256": "2bb5fae80b8dab6ac68a47fa4b61cd15c525a18d50475d3bc24168e2dfbc0841",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyPresentationGameTests02518.java": {
+      "sha256": "4f315a0be55685b0bcc4440558fe60b9fbe2e1395f953399ec7657417b659b73",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyPreviewGameTests02527.java": {
+      "sha256": "74ea80965ad82f6001d25b6d4da07a1a8b5c9710d144a74638dab853d327517e",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyVariantCases02522.java": {
+      "sha256": "09467df0939062f27e414147278763ffb8d303d777f591e4708770a5aa213028",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/ToyVariantGameTests02522.java": {
+      "sha256": "0cc19b1a9c69916da379981daaa48460170c88793dee9b00ee8288526d53651c",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TrainingSupplyGameTests.java": {
+      "sha256": "1c4b0994ee03a284662e2fdb311431b4217645b8581dca3aada9ee07e882864d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TriangleLifecycleGameTests02535.java": {
+      "sha256": "92374f58ffc9fe72f006106df1e3b58780d303cd8d3674976746104ce2f0babd",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TriangleVariantGameTests02535.java": {
+      "sha256": "673a47710e2f81c7356debce314183846feb3bd892b01b5823eca43a0eae8460",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TrumpetLifecycleGameTests02533.java": {
+      "sha256": "3af92f15aedd000d694d3a978000e5ba339e0fc10970915be474fd6f99c35009",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/TrumpetVariantGameTests02533.java": {
+      "sha256": "6bded9fc6946af113d069e9f8a634cf712bdaa5aa648b60338bdc075533b1137",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/VariantEggRecipeGameTests.java": {
+      "sha256": "8de65caec01b78f89cc14463f4085b1d78669678fe54fabd463b6a8de505b54d",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/VisualBootstrapGameTests.java": {
+      "sha256": "f741190ec989e78a45f6c85fd9d97dfabcb03997fa64c0e51829f80956d900b0",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/WardrobeGameTests.java": {
+      "sha256": "b3a0c24af350607e9c3a7dc9b944a621d0c36bf67301106c4f1c2b8a0c7f3379",
+      "byte_exact_delivered063": true
+    },
+    "src/main/java/com/chaogarden/test/WildFruitServerSmoke.java": {
+      "sha256": "33bc4945acafcc856b43fee8c73ffdae7966f0aff9557389fe2a49aafa97ea70",
+      "byte_exact_delivered063": true
+    }
+  },
+  "retained_prior_actual_log": {
+    "path": "/workspace/.setup/power063-native.log",
+    "sha256": "6e20746f9efb59f1c556c5a41410ebbdf899972b2282c7f8fb8bdd04ff5ba1ec",
+    "required_passed": 526
+  },
+  "new_generator_source": "/workspace/Chao-Garden/src/main/java/com/chaogarden/test/HeroSwimMorphologyGameTests064.java",
+  "new_generator_source_sha256": "d4e32d24fb382badc75a4e5ebdc8d02c286ff961892fcb5c84ef8e98ef1a99af",
+  "new_registered_test_names": [
+    {
+      "source_order_index": 0,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_0_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_0_age_0",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 1,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_0_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_0_age_50",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 2,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_0_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_0_age_100",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 3,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_1_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_1_age_0",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 4,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_1_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_1_age_50",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 5,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_1_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_1_age_100",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 6,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_2_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_2_age_0",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 7,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_2_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_2_age_50",
+      "batch": "hero_swim064_0",
+      "required": true
+    },
+    {
+      "source_order_index": 8,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_0_2_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_0_2_age_100",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 9,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_0_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_0_age_0",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 10,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_0_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_0_age_50",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 11,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_0_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_0_age_100",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 12,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_1_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_1_age_0",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 13,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_1_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_1_age_50",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 14,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_1_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_1_age_100",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 15,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_2_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_2_age_0",
+      "batch": "hero_swim064_1",
+      "required": true
+    },
+    {
+      "source_order_index": 16,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_2_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_2_age_50",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 17,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_1_2_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_1_2_age_100",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 18,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_0_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_0_age_0",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 19,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_0_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_0_age_50",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 20,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_0_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_0_age_100",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 21,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_1_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_1_age_0",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 22,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_1_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_1_age_50",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 23,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_1_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_1_age_100",
+      "batch": "hero_swim064_2",
+      "required": true
+    },
+    {
+      "source_order_index": 24,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_2_age_0",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_2_age_0",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 25,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_2_age_50",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_2_age_50",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 26,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_grid_2_2_age_100",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_grid_2_2_age_100",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 27,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "natural_swim_first_evolution_then_real_drives",
+      "expected_source_identifier": "chao_hero_swim64:natural_swim_first_evolution_then_real_drives",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 28,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "earned_first_type_and_latest_ties_0",
+      "expected_source_identifier": "chao_hero_swim64:earned_first_type_and_latest_ties_0",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 29,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "earned_first_type_and_latest_ties_1",
+      "expected_source_identifier": "chao_hero_swim64:earned_first_type_and_latest_ties_1",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 30,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "earned_first_type_and_latest_ties_2",
+      "expected_source_identifier": "chao_hero_swim64:earned_first_type_and_latest_ties_2",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 31,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "earned_first_type_and_latest_ties_3",
+      "expected_source_identifier": "chao_hero_swim64:earned_first_type_and_latest_ties_3",
+      "batch": "hero_swim064_3",
+      "required": true
+    },
+    {
+      "source_order_index": 32,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "ordinary_combined_and_analyzer_route_0",
+      "expected_source_identifier": "chao_hero_swim64:ordinary_combined_and_analyzer_route_0",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 33,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "ordinary_combined_and_analyzer_route_1",
+      "expected_source_identifier": "chao_hero_swim64:ordinary_combined_and_analyzer_route_1",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 34,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "ordinary_combined_and_analyzer_route_2",
+      "expected_source_identifier": "chao_hero_swim64:ordinary_combined_and_analyzer_route_2",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 35,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "ordinary_combined_and_analyzer_route_3",
+      "expected_source_identifier": "chao_hero_swim64:ordinary_combined_and_analyzer_route_3",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 36,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "combined_balanced_gain_and_real_reversal",
+      "expected_source_identifier": "chao_hero_swim64:combined_balanced_gain_and_real_reversal",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 37,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "compatible_stat_order_is_not_a_new_form",
+      "expected_source_identifier": "chao_hero_swim64:compatible_stat_order_is_not_a_new_form",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 38,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "hero_swim_adult_identity_remains_locked",
+      "expected_source_identifier": "chao_hero_swim64:hero_swim_adult_identity_remains_locked",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 39,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "existing_hero_run_path_is_preserved",
+      "expected_source_identifier": "chao_hero_swim64:existing_hero_run_path_is_preserved",
+      "batch": "hero_swim064_4",
+      "required": true
+    },
+    {
+      "source_order_index": 40,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "existing_neutral_normal_path_remains_separate",
+      "expected_source_identifier": "chao_hero_swim64:existing_neutral_normal_path_remains_separate",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 41,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "completed_neutral_fly_first_policy_is_unchanged",
+      "expected_source_identifier": "chao_hero_swim64:completed_neutral_fly_first_policy_is_unchanged",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 42,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "completed_neutral_run_first_policy_is_unchanged",
+      "expected_source_identifier": "chao_hero_swim64:completed_neutral_run_first_policy_is_unchanged",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 43,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "actual_native_selection_and_invalid_edits_are_readonly",
+      "expected_source_identifier": "chao_hero_swim64:actual_native_selection_and_invalid_edits_are_readonly",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 44,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "actual_native_commands_keep_hero_swim_identity",
+      "expected_source_identifier": "chao_hero_swim64:actual_native_commands_keep_hero_swim_identity",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 45,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "actual_maturity_payload_keeps_adult_identity",
+      "expected_source_identifier": "chao_hero_swim64:actual_maturity_payload_keeps_adult_identity",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 46,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "actual_analyzer_permissions_and_locked_alignment",
+      "expected_source_identifier": "chao_hero_swim64:actual_analyzer_permissions_and_locked_alignment",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 47,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "named_jewel_and_shiny_inputs_do_not_change_form",
+      "expected_source_identifier": "chao_hero_swim64:named_jewel_and_shiny_inputs_do_not_change_form",
+      "batch": "hero_swim064_5",
+      "required": true
+    },
+    {
+      "source_order_index": 48,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "literal_existing_neutral_world_stays_neutral",
+      "expected_source_identifier": "chao_hero_swim64:literal_existing_neutral_world_stays_neutral",
+      "batch": "hero_swim064_6",
+      "required": true
+    },
+    {
+      "source_order_index": 49,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "synthetic_expanded_care21_hero_swim_migration",
+      "expected_source_identifier": "chao_hero_swim64:synthetic_expanded_care21_hero_swim_migration",
+      "batch": "hero_swim064_6",
+      "required": true
+    },
+    {
+      "source_order_index": 50,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "all_actual_combined_drive_tiers_preserve_hero_swim",
+      "expected_source_identifier": "chao_hero_swim64:all_actual_combined_drive_tiers_preserve_hero_swim",
+      "batch": "hero_swim064_6",
+      "required": true
+    },
+    {
+      "source_order_index": 51,
+      "holder_namespace": "chao_hero_swim64",
+      "test_function_name": "completed_neutral_power_first_policy_is_unchanged",
+      "expected_source_identifier": "chao_hero_swim64:completed_neutral_power_first_policy_is_unchanged",
+      "batch": "hero_swim064_6",
+      "required": true
+    }
+  ],
+  "literal_result_lines": [
+    "[07:44:14] [main/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: [chao_edit56, chao_swim59, chao_darknormal60, chao_heronormal57, chao_power63, chao_morph52, chao_morph55, chao_morph54, chao_neutral56, chao_run62, chao_baby53, chao_fly61, chao_hero_swim64]",
+    "[07:44:34] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_5:0' (8 tests)...",
+    "[07:44:34] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_4:0' (8 tests)...",
+    "[07:44:35] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_3:0' (8 tests)...",
+    "[07:44:35] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_2:0' (8 tests)...",
+    "[07:44:36] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_1:0' (8 tests)...",
+    "[07:44:36] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_0:0' (8 tests)...",
+    "[07:44:40] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'hero_swim064_6:0' (4 tests)...",
+    "[07:44:40] [Server thread/INFO] [minecraft/GameTestServer]: ========= 578 GAME TESTS COMPLETE IN 23.57 s ======================",
+    "[07:44:40] [Server thread/INFO] [minecraft/GameTestServer]: All 578 required tests passed :)",
+    "BUILD SUCCESSFUL in 52s",
+    "9 actionable tasks: 4 executed, 5 up-to-date"
+  ],
+  "save_and_sync_scope": "Real Chao entity saveWithoutId/load NBT, identical encoded observer entity-data assignment, authoritative native dispatcher/Creative/Survival/admin and Analyzer payload permission checks. Not a process restart or independent second network client.",
+  "migration_scope": "One genuine literal prior Neutral fixture preserved; an explicitly synthetic supported care21 fixture substitutes Hero alignment+Swimfirst. No claim to have loaded an authentic historical HeroSwim world.",
+  "not_claimed": [
+    "Per-case individual pass log messages",
+    "Historical production-world or dedicated server restart",
+    "Independent remote two-client synchronization",
+    "Client visual verification",
+    "Physical touch controls",
+    "Audio listening"
+  ]
+}

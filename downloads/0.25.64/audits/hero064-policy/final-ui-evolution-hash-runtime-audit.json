@@ -1,0 +1,397 @@
+{
+  "version": "0.25.64",
+  "timestamp_utc": "2026-11-13T08:02:30.565100+00:00",
+  "scope": "Literal final cohort/image hashes and all production frozen/current/JAR bytes; visual review is separate and not inferred.",
+  "cohort_requested": 94,
+  "cohort_rendered": 94,
+  "cohort_skipped": 0,
+  "all_pngs_checked": 802,
+  "actual_image_groups": {
+    "static": 474,
+    "ui": 16,
+    "post_ui_world": 9,
+    "motion_evolution": 303
+  },
+  "whole_completion_line": "[07:59:16] [Render thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_VISUAL_COMPLETE requestedCases=94 renderedCases=94 skippedCases=0 start=0 limit=94 baseline=false captures=802 saved=802 epochMillis=1794556756834 normal20TPS=true audioListening=false output=/workspace/.setup/hero064-client-final",
+  "client_log": "/workspace/.setup/hero064-client-final.log",
+  "client_log_sha256": "357131ba379934d123f60787804dacd200b16b369325e29634ba556844c78abd",
+  "client_build_outcome": "BUILD SUCCESSFUL in 10m 29s",
+  "jar": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.64.jar",
+  "jar_sha256": "5610d0b144468b5fdb6acdb2f98df39ef78e4c46a7917ca0e038d9d48503ba0a",
+  "runtime_mode": "development_classpath",
+  "runtime_production_entries_checked": 8358,
+  "all_frozen_current_and_jar_bytes_match": true,
+  "snapshot_manifest_sha256": "c24ce2272cf237bcae747674d5d88f93226aa8638e6d095601e122541e93b592",
+  "proof_sha256": "62d324a836fabd28f01160cf674be127bb8354d0fda9530f5108bcc27e2e0e7f",
+  "freeze_precedes_case0": true,
+  "ui_images": 16,
+  "post_ui_world_images": 9,
+  "evolution_images": 25,
+  "selected_images": [
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-back-t148-f0074.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-back-t148-f0074.png",
+      "case": 69,
+      "sha256": "ee0ae3fab0d8e4c0e44e2dc2b63310a64e96e6e7e613db4176d176ee64aae37f",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-front-t148-f0028.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-front-t148-f0028.png",
+      "case": 69,
+      "sha256": "72e6d0a2935c1ea72e804a35c0934432269d4e28659460d83cb71819ac55bf4e",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-left-t148-f0051.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-left-t148-f0051.png",
+      "case": 69,
+      "sha256": "0f94156722d688b73dc7bcc8d002a1d67a8e8678d4b0529d247464b84a909760",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "case": 69,
+      "sha256": "2a3fed3eaf14675bf06288164dd069b2822cd3d0bf64fe550b8cce3730c49aec",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "case": 69,
+      "sha256": "12494fcfab17f7b8f3117555ccfa7d38d460aed36a9f580b9be26bd27f8c4613",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-before.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-before.png",
+      "case": 69,
+      "sha256": "39ddcbe3e9cfceb991bc343038a26a84d81d0858d4add2b3118cf254b8700a19",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "case": 69,
+      "sha256": "dad4ddcc0d059678a38b7d493ac24cf26874ed70b16ded93af418d843ff76095",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "case": 69,
+      "sha256": "5a1cfd368aa6de4133a280e86bb8149b4fbbbaf6e00dfb8f8547d0b8ed027e90",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-young.png",
+      "name": "hero064-live-69-creative_hero_swim_adult_lock_maturity-ui-maturity-young.png",
+      "case": 69,
+      "sha256": "7a63d77fc5239d25d6764eb2c6f3085c080e567a1c489b2bfca62f41097c333a",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-back-t110-f0074.png",
+      "name": "hero064-live-70-survival_hero_swim_adult_readonly-back-t110-f0074.png",
+      "case": 70,
+      "sha256": "43b189229c010e6c1f56f0d5b6558664c630129c9d180f29d5e4d5c483efa52e",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-front-t110-f0028.png",
+      "name": "hero064-live-70-survival_hero_swim_adult_readonly-front-t110-f0028.png",
+      "case": 70,
+      "sha256": "95a53541f19724cb475ee886a95e022e780b160cbada3015d95cfc642e25325c",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-left-t110-f0051.png",
+      "name": "hero064-live-70-survival_hero_swim_adult_readonly-left-t110-f0051.png",
+      "case": 70,
+      "sha256": "931f18ace876932d07f7ba1078b726a50547fd810a362bbb17d1f767aa08361f",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-before.png",
+      "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-before.png",
+      "case": 70,
+      "sha256": "dba42387842ada205be58de7711c9eb71d67e8ede4175a81f8ffd9bc88ef6a38",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-survival-denied.png",
+      "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-maturity-survival-denied.png",
+      "case": 70,
+      "sha256": "280d5437962dcf5547f66c1b4aab7f3c4d6eac5af4e53ebe438a13ca129b592e",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "case": 70,
+      "sha256": "51a9cf6e8211724668a8d64e7abdf311e345d368689e7172eaf39b32101f0467",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-readonly.png",
+      "name": "hero064-live-70-survival_hero_swim_adult_readonly-ui-survival-readonly.png",
+      "case": 70,
+      "sha256": "ac3c1f58f2d0baf117fa42b482d4ee17171fee9f144eb69773bd6f67896aa0e0",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-back-t186-f0074.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-back-t186-f0074.png",
+      "case": 71,
+      "sha256": "876ba2697d94bc9c5d6d09a29c687e374c80f0d30622ee940a2120df3603acc5",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-front-t186-f0028.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-front-t186-f0028.png",
+      "case": 71,
+      "sha256": "d7efc490b3490fae556c128adf01380ca596ab2dc7f6d6f3759136757eab3f63",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-left-t186-f0051.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-left-t186-f0051.png",
+      "case": 71,
+      "sha256": "560f79112a2dd33b2ec46eac70893006bacf0eb1e21e51f2985f3c0fce735da6",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "case": 71,
+      "sha256": "65d02649f84b842d0cff133e03498e980c27f9177d4e2ed552330a0409f33a57",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "case": 71,
+      "sha256": "31ff84245641a36702950bcd25f38259368a32f02a47e153132042af11d90c97",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "case": 71,
+      "sha256": "db9d8fea544add4bcdd9a7920cb0a0cf20ee6e081777d5df1b00ea762de958cc",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "case": 71,
+      "sha256": "78b147ae523bb641eef885b8b2f703245c3fe952337ddcf8c43e29abbaa65934",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "case": 71,
+      "sha256": "dfbe405dff76b3d311d21d5bf198cc5ac9a58b22d3995697f21bcb269241e5f5",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "name": "hero064-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "case": 71,
+      "sha256": "ea2acd206f6a9dec97bfa3c810304903404012a46e49a0df26e7b560ce210212",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t203-f0308.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t203-f0308.png",
+      "case": 83,
+      "sha256": "a93bbbe393065f4fdd4bd77959b7034971d4738d4fd373a1d3875fa893c70585",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t215-f0326.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t215-f0326.png",
+      "case": 83,
+      "sha256": "eecc8368e1161874e895f6ac1a05ed5a9faad528b4fff4c6bd17ddbeccc7c290",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t227-f0344.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t227-f0344.png",
+      "case": 83,
+      "sha256": "8ca9682835e49690aebecd66d3dd2376e2f6687754b98b2f61cfda981f09cb4f",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t239-f0362.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t239-f0362.png",
+      "case": 83,
+      "sha256": "d05a288fbe6bb915ceb034abe54b5c5d58057b2947c32b2d922e9944ac989179",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t251-f0380.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t251-f0380.png",
+      "case": 83,
+      "sha256": "9cb3770b2822f16d3b6207d156c8bd1657745308b9925fa2b14849b62ee07fc6",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t263-f0397.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t263-f0397.png",
+      "case": 83,
+      "sha256": "fea345b5d9c1b15793994cbc0aeeae71c208e1a0069c7a86b064e43fc32d8250",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t275-f0415.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t275-f0415.png",
+      "case": 83,
+      "sha256": "1548386ece52e5c102051e2378b1e28dc7d444b238b04137aff8b060c5e17178",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t287-f0433.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t287-f0433.png",
+      "case": 83,
+      "sha256": "7609ffb83530e6ceddf5feaa251d2182ad318f79c72f0338b18b2c2f8c9a40a8",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-back-t299-f0451.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-back-t299-f0451.png",
+      "case": 83,
+      "sha256": "c1103922a5a79e6eace847ab3985fac8445de067423b4dff12b0028ca5113291",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t011-f0029.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t011-f0029.png",
+      "case": 83,
+      "sha256": "f5099285e99aa80d90935943ad9ac3129e5c71303aca5bb8be9ef9be9558844b",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t023-f0047.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t023-f0047.png",
+      "case": 83,
+      "sha256": "0cbd90ef26e78e89baae956b235de2112393105aade9b627429461f928749c4d",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t035-f0064.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t035-f0064.png",
+      "case": 83,
+      "sha256": "2ea13a22e3ed83442f70dfcda0ad6597a5469cdbbc3052a9e19167566b3a87bc",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t047-f0082.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t047-f0082.png",
+      "case": 83,
+      "sha256": "da5d798e71631a62010eb3b2879f4c6dec9de8594ba0e96d51ff62fcb5f11f89",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t059-f0097.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t059-f0097.png",
+      "case": 83,
+      "sha256": "92f278cfc7512c265555336c99f39888b0019edd4c58e20702256e5e759a0f2d",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t071-f0115.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t071-f0115.png",
+      "case": 83,
+      "sha256": "e9c922a54d0005d5d0fb75823ecc56facbd89e804c6d388a0a04295bf7b2e041",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t083-f0133.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t083-f0133.png",
+      "case": 83,
+      "sha256": "a3f8c78757dc8b5ef989ae8249c483311ca45b97a86196f08fe368d62efb6991",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-front-t095-f0149.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-front-t095-f0149.png",
+      "case": 83,
+      "sha256": "339fce0936dadcb857b683daa5b5e6c19863b10d5fd185aeb5135e64d5358af7",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t107-f0167.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t107-f0167.png",
+      "case": 83,
+      "sha256": "e58347dc544700ee08f6c08089f2e8836103e27669a5f36aaa4abd220bdbc52c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t119-f0185.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t119-f0185.png",
+      "case": 83,
+      "sha256": "f60707655d00842b6cf9bcdbe6e0ababed5623023594b85166fcb86f37f86d66",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t131-f0203.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t131-f0203.png",
+      "case": 83,
+      "sha256": "8dbfa2bc64eba5baf93592b84e0778a32525ba8987dcf32d1a3a97bb3be9ef93",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t143-f0219.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t143-f0219.png",
+      "case": 83,
+      "sha256": "bb4a76c275c3550aa65ff6a379a5e75b2ee124dce567762ba8f683af969225c8",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t155-f0237.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t155-f0237.png",
+      "case": 83,
+      "sha256": "4720140313c8ccec395d99c0ef6a98d6a150a2b004a8a6cbc8b05118ed651f0a",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t167-f0255.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t167-f0255.png",
+      "case": 83,
+      "sha256": "475eaae006cd836ba1ba8ecdb6471da379cd3e0153dd0ff22b6dc214287ad21a",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t179-f0272.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t179-f0272.png",
+      "case": 83,
+      "sha256": "e341fb259565bbe883e3a72b20972b804a1aa793c57b4fe8864cea8335b6c89c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/hero064-client-final/screenshots/hero064-live-83-hero_swim_actual_first_evolution-left-t191-f0290.png",
+      "name": "hero064-live-83-hero_swim_actual_first_evolution-left-t191-f0290.png",
+      "case": 83,
+      "sha256": "08963a1a031bb6d3faafd9ca78761ed6d0ceb8b7b320aeb27d6829ca9c131a72",
+      "kind": "evolution"
+    }
+  ],
+  "ui_native_verification_lines": [
+    "[07:54:58] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_NATIVE_VERIFIED case=69 creative=true adult=true alignment=1.0 maturity=1.2 saveReloadExact=true stagePreserved=true epochMillis=1794556498996",
+    "[07:55:07] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_NATIVE_VERIFIED case=70 creative=false adult=true alignment=1.0 maturity=0.96012735 saveReloadExact=true stagePreserved=true epochMillis=1794556507221",
+    "[07:55:19] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_NATIVE_VERIFIED case=71 creative=true adult=false alignment=0.802 maturity=0.9900278 saveReloadExact=true stagePreserved=true epochMillis=1794556519297"
+  ],
+  "active_drag_pointer_lines": [
+    "[07:54:56] [Render thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_POINTER_RENDER case=69 label=maturity-drag-intermediate actualGuiMouseX=506 actualGuiMouseY=342 requestedGuiMouseX=506.0 requestedGuiMouseY=342.0",
+    "[07:55:16] [Render thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_UI_POINTER_RENDER case=71 label=maturity-drag-intermediate actualGuiMouseX=506 actualGuiMouseY=342 requestedGuiMouseX=506.0 requestedGuiMouseY=342.0"
+  ],
+  "native_evolution_completion": "[07:58:29] [Server thread/INFO] [co.ch.cl.HeroSwimVisualSmoke064/]: HEROSWIM064_NATIVE_COMPLETE 83 name=hero_swim_actual_first_evolution baseline=false elapsed=300 walked=0.0 sample=Sample[enabled=true, maturity=8.487654E-5, runPower=0.0, swimFly=-0.5] state=6;0,0;1,1;0,0;0,0;3,2,2,2,2;2,2,2,2,2;3,2,2,2,2;4,0,0,0,0;80,0,0,0,0;77,0,0,0,0;0,0,1,0,0,0,0,216088,88,0,1,0,0,1,0,80,0,99,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x1.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,40,0,100,16,50,50,20,0,9995,0,9900;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1058714409,2108669886,0,-1,-1,-1,-1,1,1065353216,1,0,0,88,1,0,0,0;;normal;normal epochMillis=1794556709812",
+  "final_source_model_sha256": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+  "personal_visual_reviewed": false,
+  "archive_launch_claim": false,
+  "authored_plan_sha256": "77cbd542495ea745c3e88a7654b266945599ce9df5dff6ee12ca7e096e393dce",
+  "helper_sha256": "811ce804d194f5029769febd331b024d0335d2cab80ff16e0632c8fe9b5ad567"
+}

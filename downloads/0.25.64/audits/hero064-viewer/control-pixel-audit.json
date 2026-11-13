@@ -1,0 +1,2259 @@
+{
+  "scope": "Independent unchanged-canvas handle-pixel audit.",
+  "family_canvases": 150,
+  "handle_checks": 600,
+  "tolerance": 0.04,
+  "maximum_absolute_normalized_error": 0.03028169014084503,
+  "rows": [
+    {
+      "file": "hero-swim-balanced-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-fly-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-fly-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-fly-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-fly-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-fly-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-fly-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-swim-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-swim-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-swim-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-swim-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-swim-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-swim-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age100-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age100-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age100-opposite-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age100-above.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age100-below.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 1.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-fly-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-fly-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-fly-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-swim-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-swim-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-swim-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age000-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age000-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age000-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.0
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.0028169014084507044
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-fly-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-fly-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-fly-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-swim-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-swim-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-swim-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age050-front.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age050-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age050-square-back.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.5
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.009859154929577452
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-run-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-power-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-fly-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-swim-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age025-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.25
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.006338028169014076
+      }
+    },
+    {
+      "file": "hero-swim-balanced-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-run-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 0,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-power-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 0,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-fly-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": 1,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-swim-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0,
+        "swim_fly": -1,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": 1,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -1,
+        "swim_fly": -1,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": 1,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-age075-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 1,
+        "swim_fly": -1,
+        "age": 0.75
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0,
+        "swim_fly": 0,
+        "age": 0.013380281690140827
+      }
+    },
+    {
+      "file": "hero-swim-run-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.25,
+        "swim_fly": 0.0,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.011971830985915477,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.5,
+        "swim_fly": 0.0,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.021126760563380254,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.75,
+        "swim_fly": 0.0,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.03028169014084503,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.25,
+        "swim_fly": 0.0,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.006338028169014076,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.5,
+        "swim_fly": 0.0,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.015492957746478853,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.75,
+        "swim_fly": 0.0,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.02464788732394363,
+        "swim_fly": 0.0028169014084507044,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-fly-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.0,
+        "swim_fly": 0.25,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.006338028169014076,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-fly-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.0,
+        "swim_fly": 0.5,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.015492957746478853,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-fly-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.0,
+        "swim_fly": 0.75,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.02464788732394363,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-swim-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.0,
+        "swim_fly": -0.25,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.011971830985915477,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-swim-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.0,
+        "swim_fly": -0.5,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.021126760563380254,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-swim-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.0,
+        "swim_fly": -0.75,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.0028169014084507044,
+        "swim_fly": 0.03028169014084503,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.25,
+        "swim_fly": 0.25,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.011971830985915477,
+        "swim_fly": 0.006338028169014076,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.5,
+        "swim_fly": 0.5,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.021126760563380254,
+        "swim_fly": 0.015492957746478853,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-fly-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.75,
+        "swim_fly": 0.75,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.03028169014084503,
+        "swim_fly": 0.02464788732394363,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.25,
+        "swim_fly": -0.25,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.011971830985915477,
+        "swim_fly": 0.011971830985915477,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.5,
+        "swim_fly": -0.5,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.021126760563380254,
+        "swim_fly": 0.021126760563380254,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-run-swim-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": -0.75,
+        "swim_fly": -0.75,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.03028169014084503,
+        "swim_fly": 0.03028169014084503,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.25,
+        "swim_fly": 0.25,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.006338028169014076,
+        "swim_fly": 0.006338028169014076,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.5,
+        "swim_fly": 0.5,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.015492957746478853,
+        "swim_fly": 0.015492957746478853,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-fly-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.75,
+        "swim_fly": 0.75,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.02464788732394363,
+        "swim_fly": 0.02464788732394363,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-training025-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.25,
+        "swim_fly": -0.25,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.006338028169014076,
+        "swim_fly": 0.011971830985915477,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-training050-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.5,
+        "swim_fly": -0.5,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.015492957746478853,
+        "swim_fly": 0.021126760563380254,
+        "age": 0
+      }
+    },
+    {
+      "file": "hero-swim-power-swim-training075-age100-side.png",
+      "requested": {
+        "alignment": 1,
+        "run_power": 0.75,
+        "swim_fly": -0.75,
+        "age": 1
+      },
+      "absolute_errors": {
+        "alignment": 0,
+        "run_power": 0.02464788732394363,
+        "swim_fly": 0.03028169014084503,
+        "age": 0
+      }
+    }
+  ]
+}

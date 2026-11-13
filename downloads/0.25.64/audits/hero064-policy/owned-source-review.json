@@ -1,0 +1,71 @@
+{
+  "version": "0.25.64",
+  "scope": "Final source inspection and explicitly linked actual completed results; visual coverage remains bounded by the final UI/evolution and peer reviews.",
+  "timestamp_utc": "2026-11-13T08:14:35.742664+00:00",
+  "parent": "1d9f630825100ce615573d98e8c4ecc54ca05bf3",
+  "reviewed_source_files": {
+    "src/main/java/com/chaogarden/core/HeroSwimMorphology064.java": "928a940ec466dc8bd5590dd1ecd492ad30826960db9a873a1859b39084f9c526",
+    "src/test/java/com/chaogarden/core/HeroSwimMorphology064Test.java": "d8a1b768907a1652b5d4870060f0cfa3448a280091fca42e149cce10cf60918b",
+    "src/main/java/com/chaogarden/test/HeroSwimMorphologyGameTests064.java": "d4e32d24fb382badc75a4e5ebdc8d02c286ff961892fcb5c84ef8e98ef1a99af"
+  },
+  "current_native_namespace": "chao_hero_swim64",
+  "authored_native_case_count": 52,
+  "authored_native_grid_cases": 27,
+  "authored_native_individual_cases": 25,
+  "checks": [
+    "Living ordinary mortal adult guard, exact Hero boundary >=.5 and locked Swim_TYPE1",
+    "Read-only current 100*level+progress opposing axes, 960 threshold, finite bounded ten weights",
+    "Independent maturity and both signed axes; no save mutation, entropy use or identity lock mutation",
+    "First evolution highest four earned points and latest-raised tied ability; Stamina/hidden stats excluded",
+    "Real ordinary and combined routes, all seven tiers, reductions and Creative server payload/commands in authored tests",
+    "Named/nearest/ambiguous/missing selection, Survival denial/operator authorization, alignment/maturity safety in authored tests",
+    "Intelligence/Luck commands levels0..99 with separate4000points; no morphology input",
+    "Synthetic Hero Swim old-layout fixture labeled synthetic, real encoded/NBT and in-process observer scope",
+    "Existing model/authority/profile files exact .63; ChaoState exact outside readonlysecondaryTypes",
+    "Shared renderer/UI/material diff is additions for new eligibility/flags/dynamic route; original branches retained"
+  ],
+  "actual_executed_results_present": true,
+  "new_profile_or_shared_source_may_change": false,
+  "actual_completed_evidence": {
+    "hero064-build.log": {
+      "path": "/workspace/.setup/hero064-build.log",
+      "sha256": "b134dc9acae8b22763d7b52e6aee50f898e402ae719f72314a3ffd1580c0c2d2"
+    },
+    "hero064-native.log": {
+      "path": "/workspace/.setup/hero064-native.log",
+      "sha256": "80e838594515dbefa7b9b5398cd4718261b14761268ba92f25e662dde6a0c0c1"
+    },
+    "hero064-client-final.log": {
+      "path": "/workspace/.setup/hero064-client-final.log",
+      "sha256": "357131ba379934d123f60787804dacd200b16b369325e29634ba556844c78abd"
+    },
+    "hero064-jar-prepare.log": {
+      "path": "/workspace/.setup/hero064-jar-prepare.log",
+      "sha256": "61e5b1073dd51d65f91746e567aa62157f4d0dbe7f159ec9d13d1f6cd367476f"
+    },
+    "hero064-journal.log": {
+      "path": "/workspace/.setup/hero064-journal.log",
+      "sha256": "6daf7986f072781c592b76c24e3a3c6eae426e81cd0eff1958f9feccda3622c8"
+    },
+    "hero064-runtime-proof.json": {
+      "path": "/workspace/.setup/hero064-runtime-proof.json",
+      "sha256": "62d324a836fabd28f01160cf674be127bb8354d0fda9530f5108bcc27e2e0e7f"
+    }
+  },
+  "final_ui_evolution_review": {
+    "path": "/workspace/.setup/hero064-policy/final-ui-evolution-review.json",
+    "sha256": "e76a94067eb0c9abe22d093bcec8f4553feab9df2eb1b7fa2c1da94e1655dce1",
+    "personal_full_reopens": 28,
+    "selected_unique_sources": 50,
+    "all_capture_hashes_checked": 802,
+    "all_production_entries_checked": 8358
+  },
+  "owned_document_hashes": {
+    "README.md": "390c7fc8e2e785bb02e71321882b96232c56242204f7caceb9cd911a61668ed6",
+    "CHANGELOG.md": "b246776a7567f7bed2ee4c0be6a44d9ce3afdbe77edcec346ee47f2005afea80",
+    "MECHANICS.md": "c22292af6b51c2326b609b0198563a8f2ff68cac6ff6a8441d67f04df7ad06e9",
+    "TESTING.md": "8422cc77b57207eea2b301148b1e4abca76381e750028200f7aad9a74c6b0e84",
+    "docs/HERO_SWIM_02564.md": "d6dbc30b874d3469a4f370159bffa75b6e1d1f511bf9ddd103215f2fab1d0ec7"
+  },
+  "final_source_compatibility_snapshot_sha256": "9b326262c6c10c789691059df9b7863a79e4e0a4ee7cfd37f6a6467b3ba1b7bd"
+}

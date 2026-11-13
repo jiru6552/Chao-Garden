@@ -197,3 +197,17 @@ CHAO_POWER063_SMOKE=true CHAO_POWER063_OUTPUT=/tmp/chao-power063-visual ./gradle
 ```
 
 Serialize server/client invocations. The equipped native scene needs real optional Accessories/owo through `chaoAccessoriesTest` and `chaoAccessoriesDir`; absence is a skip rather than a visual pass. The smoke helper remains excluded from the production JAR. Its authored case plan is not an executed test result. Compare actual viewer/client sources at fresh, intermediate and mature ages, both signed axes, stat gain/loss, pair hold/reversal and Power-through-balance-to-Run; check the fixed head, caps, wings, tail, eyes, coat/shine, animal parts, hats, toy grips and player attachments. Entity-NBT and tracked-state checks do not establish a complete world restart or independent remote multiplayer; physical touch and listening require their own evidence.
+
+
+## Hero / Swim-first 0.25.64
+
+See [HERO_SWIM_02564.md](docs/HERO_SWIM_02564.md) for actual results, side-by-side viewer/client comparisons and limits. Run with Java 21 and the existing external Lionfish API 3.1:
+
+```sh
+python3 scripts/validate_hero_swim_morph_02564.py
+./gradlew coreTest heroSwimMorphRigTest064 heroSwimMaterialTest064 pianoRigTest organRigTest
+./gradlew runGameTestServer -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56,chao_heronormal57,chao_swim59,chao_darknormal60,chao_fly61,chao_run62,chao_power63,chao_hero_swim64 -PchaoGameTestDir=run-hero-swim064-tests
+CHAO_HEROSWIM064_SMOKE=true CHAO_HEROSWIM064_OUTPUT=/tmp/chao-hero-swim064-visual ./gradlew runClient -PheroSwim064Dir=/tmp/chao-hero-swim064-world
+```
+
+Serialize server/client runs. The equipped scene requires real optional Accessories/owo through `chaoAccessoriesTest` and `chaoAccessoriesDir`; an unavailable runtime is a skip, not a visual pass. The dev-only smoke helper stays excluded from the production JAR. Authored cases are not execution results. Compare newly evolved, intermediate and mature shapes and colors, both signed axes, opposite Fly beyond Swim balance, gain/loss and held-pair reversal. Check the fixed head, fins, halo, wings, tail, eyes, coat/shine, animal parts, hats, toy grips and player attachments. Existing `/chao testtoy list`, `/chao testtoy broom once`, `/chao testtoy picture_book loop` and `/chao testtoy stop` use production previews and cleanup; distinguish actually exercised modes from those only available. Entity NBT/tracked observer checks do not establish a full world restart or independent remote multiplayer. Physical touch and audio listening require separate evidence.

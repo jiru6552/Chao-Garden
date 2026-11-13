@@ -1,0 +1,87 @@
+{
+  "version": "0.25.64",
+  "scope": "Independent JSON geometry/SAT/UV checks, not Minecraft visual acceptance.",
+  "source_files": {
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_swim_proto064.json": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+    "src/main/resources/assets/chao_garden/hero_swim064.json": "2b9f454bee926dc7371656b7e153ec1761a472d98a20bb919ac16f8947bf6896"
+  },
+  "positive_closed_boxes": 17,
+  "dense_and_random_blends": 9773,
+  "head_feature_count": 4,
+  "halo_bar_count": 4,
+  "wing_lobe_count": 4,
+  "original_joint_count": 59,
+  "total_bone_count": 62,
+  "original_head_size": [
+    7,
+    6,
+    6
+  ],
+  "arbitrary_rotation_face_pairs": 3518280,
+  "same_facing_coplanar_disjoint_pairs": 8,
+  "positive_area_coplanar_overlaps": 0,
+  "cap_uv_samples": 1512,
+  "wing_uv_samples": 3024,
+  "maximum_hinge_drift": 7.071068200666695e-10,
+  "minimum_positive_volume": 0.11045840011649324,
+  "minimum_informative_vertical_halo_gap": 0.28233385780239395,
+  "all_nine_previous_models_exact": true,
+  "semantic_head_tip_endpoints": {
+    "hero_swim_young": [
+      3.8217314929999997,
+      -4.538391401,
+      1.6141902545
+    ],
+    "run_swim": [
+      4.0554049,
+      -0.8918908265000001,
+      0.856443465
+    ],
+    "swim": [
+      4.51990853925,
+      -0.8487316335,
+      3.096471279
+    ],
+    "power_swim": [
+      4.4551489935,
+      -5.026625492,
+      2.31249517
+    ],
+    "run": [
+      4.2360476745,
+      -2.006646941,
+      -1.553073162
+    ],
+    "balanced": [
+      4.01659098475,
+      -5.93138653225,
+      1.1609057564999998
+    ],
+    "power": [
+      4.4908120835,
+      -7.6779534510000005,
+      2.3526896930000003
+    ],
+    "run_fly": [
+      4.28526878725,
+      -5.887586014,
+      1.278178356
+    ],
+    "fly": [
+      3.9057147802500003,
+      -8.5297282025,
+      2.275316576
+    ],
+    "power_fly": [
+      4.782735818,
+      -7.665312576,
+      2.301892815
+    ]
+  },
+  "personal_reference_review_sha256": "38c290ac17687564e31d514eba8159c4438f53311e155bedb6aee9fa6fb1687a",
+  "literal_log": {
+    "file": "geometry-final.log",
+    "sha256": "ba38024da134f2ae7127eec125cbc882bad45f2b0b43148c901e5a1ad8da232a"
+  }
+}

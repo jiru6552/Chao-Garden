@@ -1,0 +1,100 @@
+{
+  "version": "0.25.64",
+  "scope": "Review of remaining copied-source reference assumptions before next actual rig execution; no result claim.",
+  "model_sha256": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+  "canonical_head_eye_expression_reference_records": [
+    {
+      "bone": "skull",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    },
+    {
+      "bone": "skull__cube_0",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": true
+    },
+    {
+      "bone": "skull__cube_1",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    },
+    {
+      "bone": "skull__cube_2",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": true
+    },
+    {
+      "bone": "skull__cube_3",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": true
+    },
+    {
+      "bone": "expression_mouth_1",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    },
+    {
+      "bone": "expression_mouth_2",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    },
+    {
+      "bone": "expression_mouth_3",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    },
+    {
+      "bone": "expression_mouth_4",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    },
+    {
+      "bone": "expression_mouth_5",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    },
+    {
+      "bone": "expression_mouth_6",
+      "raw_source_preserved": true,
+      "has_separate_legacy_morph_vertices": false
+    }
+  ],
+  "canonical_reference_rule": "Explicit development(0,0,0) for original head,eyes,expressions andtail comparisons uses their canonical raw restvertices, without unrelated legacy lattice targets. Newfixed-box route explicitly bypasses that legacy lattice.",
+  "original_tail_rest_reference": "Strict emitted positions,UVs,signedgap remain compared against canonical rest under same copiedjointposes.",
+  "halo_source_intent_confirmed_by_model_agent": true,
+  "halo_bones": [
+    "emotion_dot__cube_0",
+    "hero_swim_halo_064_1",
+    "hero_swim_halo_064_2",
+    "hero_swim_halo_064_3"
+  ],
+  "authored_shared_local_Y_heights": [
+    0.65,
+    0.6,
+    0.6,
+    0.55,
+    0.65,
+    0.7,
+    0.55,
+    0.65,
+    0.5,
+    0.55
+  ],
+  "rigid_halo_sizes_rotations_XZ_and_UV_preserved": true,
+  "maximum_local_Y_range": 0.2,
+  "marker_check": "Actual emitted local vertices equal fresh ring plus independently weighted declared sharedY. Four bars must move identically; exactUV and all strictskull/featureSATclearances retained.",
+  "tolerance_widened": false,
+  "product_modified": false,
+  "remaining_checks_reviewed": [
+    "original59jointdefs+3meshchildren",
+    "sourcehinge restcoordinates",
+    "currentemittercapUVendpoint ownership",
+    "physicalwingroot\u2192distalUVmapping",
+    "fullsignedgrid targetordering",
+    "all9oldmodelhashes",
+    "readonlypose-source and label checks",
+    "originalreactionvisibility with4barhalo",
+    "timingusesdeclared30tick appearance interval",
+    "productionwalkingguard and allgaze/stride/bodycontact assertions remain"
+  ]
+}

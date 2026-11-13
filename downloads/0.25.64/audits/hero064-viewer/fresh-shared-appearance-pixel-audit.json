@@ -1,0 +1,137 @@
+{
+  "scope": "Unchanged original age0 reference images, common fixed crop excluding control panel; pixel equality is a bounded image assertion, not a recovered morph formula.",
+  "crop": [
+    0,
+    0,
+    540,
+    486
+  ],
+  "views": [
+    {
+      "view": "front",
+      "unique_actor_view_crop_hashes": 9,
+      "sources": [
+        {
+          "file": "hero-swim-balanced-age000-front.png",
+          "actor_view_crop_rgb_sha256": "4313185a730e22f0127797e0b7e62ae3a44f2ebda37587e8dde76a3ec130e80e"
+        },
+        {
+          "file": "hero-swim-run-age000-front.png",
+          "actor_view_crop_rgb_sha256": "93a3513dcca0d05ad72ccdb8d5676b145d2cc3dd9f242878c7b0dd3502fdb8c8"
+        },
+        {
+          "file": "hero-swim-power-age000-front.png",
+          "actor_view_crop_rgb_sha256": "206dfeae3895397212880fe4820aaf3f21ecd63acf30882bc82f4b74994b9a5a"
+        },
+        {
+          "file": "hero-swim-fly-age000-front.png",
+          "actor_view_crop_rgb_sha256": "2024a0aecebdcc474f5072fadfc98ab7ec8e2462c606f6b59089cd5d0074caae"
+        },
+        {
+          "file": "hero-swim-swim-age000-front.png",
+          "actor_view_crop_rgb_sha256": "86a95b5e48b0fc9f505ef145584af9167a8f5179ad0ab4c8b99fc33cd5e22250"
+        },
+        {
+          "file": "hero-swim-run-fly-age000-front.png",
+          "actor_view_crop_rgb_sha256": "5e4c69331d0ac353c9a619adbc8f02e98a8900b4e93202223ca728f8105f8aec"
+        },
+        {
+          "file": "hero-swim-run-swim-age000-front.png",
+          "actor_view_crop_rgb_sha256": "dc26edb0a9aeb0cbe465d3165056c2a1cddc71e1b607bdb75863fa3e1d78e2ab"
+        },
+        {
+          "file": "hero-swim-power-fly-age000-front.png",
+          "actor_view_crop_rgb_sha256": "1fe187b7d05040ebf5a73bd23fbd8301c160717e3293afb74b232cf7aeb41ebd"
+        },
+        {
+          "file": "hero-swim-power-swim-age000-front.png",
+          "actor_view_crop_rgb_sha256": "fece43444360c3a11108fa2ad85f8ec420d9222a3008b3878226c9a06b2a4095"
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "unique_actor_view_crop_hashes": 9,
+      "sources": [
+        {
+          "file": "hero-swim-balanced-age000-side.png",
+          "actor_view_crop_rgb_sha256": "1558db3db4638d7c711392db018f641910717ab41a2f91d4b7fcb75450be160f"
+        },
+        {
+          "file": "hero-swim-run-age000-side.png",
+          "actor_view_crop_rgb_sha256": "b314a77f94e3f196955ca2da7ed9c5cc3a6e2fd1e47c40f2be34d781a37cc608"
+        },
+        {
+          "file": "hero-swim-power-age000-side.png",
+          "actor_view_crop_rgb_sha256": "6daabd26e56d5898cf68e9f8b514cca48c31398965424fd93bbec55e55a69567"
+        },
+        {
+          "file": "hero-swim-fly-age000-side.png",
+          "actor_view_crop_rgb_sha256": "5b4181e7a87afe92ff8366b8df964723c8215d3aa65c6f1f241ca9edee5b23f1"
+        },
+        {
+          "file": "hero-swim-swim-age000-side.png",
+          "actor_view_crop_rgb_sha256": "d050f9456f085ff9febeb21d57d4549f129734c7851340cbc4c57a5ef4ca889f"
+        },
+        {
+          "file": "hero-swim-run-fly-age000-side.png",
+          "actor_view_crop_rgb_sha256": "05c183f6491f13780c66f744db8a498c3cdf88f2cd62c8362d6099c8a995d52b"
+        },
+        {
+          "file": "hero-swim-run-swim-age000-side.png",
+          "actor_view_crop_rgb_sha256": "be57b0af33bfa459a83051624a160303211c02d234b2451d185a5b46ca42bca3"
+        },
+        {
+          "file": "hero-swim-power-fly-age000-side.png",
+          "actor_view_crop_rgb_sha256": "75c964f54fd9f75b3edee280d1b7c1199f2c8d9f927f9b00a1d6fc9dd0cdcc11"
+        },
+        {
+          "file": "hero-swim-power-swim-age000-side.png",
+          "actor_view_crop_rgb_sha256": "1fc246f9ecd5836f88ef1f4a19f1d5b671f76f65a53cd6c6a4cccb3b6dc79570"
+        }
+      ]
+    },
+    {
+      "view": "square-back",
+      "unique_actor_view_crop_hashes": 9,
+      "sources": [
+        {
+          "file": "hero-swim-balanced-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "fc08d191713f86dba1618f75e74a69701de9f1306f8ad6bfb52a09220cea4eb0"
+        },
+        {
+          "file": "hero-swim-run-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "197a5d5e880f123d5a47173238ae8b7220f26bcc9256d2dd69208f87f92d0107"
+        },
+        {
+          "file": "hero-swim-power-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "ca352b79a7d45fb02d3a6ba506f2b5185dae138ca26ca35e95911ef696276530"
+        },
+        {
+          "file": "hero-swim-fly-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "ccb9f71c8e16d5853e48845fdad3fdec0b6d463caa20e8344bce0303d26b73d9"
+        },
+        {
+          "file": "hero-swim-swim-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "3f9110f4193eef98b7ffe376077c8d5b1c0ddab34c5419c7d2a0b1f79eb0caed"
+        },
+        {
+          "file": "hero-swim-run-fly-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "f52b7c599784cdc079b62e6ee6071095990f24836c22100e9d53004d030415c2"
+        },
+        {
+          "file": "hero-swim-run-swim-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "2fe7129ef111e12db813b55a6ba68d692c169434a1b7c739ac8a9364d73e5cc0"
+        },
+        {
+          "file": "hero-swim-power-fly-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "519a820286557f56fb1b1eed6098e84d408e503db153d7d301953ac82324af88"
+        },
+        {
+          "file": "hero-swim-power-swim-age000-square-back.png",
+          "actor_view_crop_rgb_sha256": "651002d342abab7c4b4ab7a5a5134d25b06d5be6998e860ceee9ada44321de68"
+        }
+      ]
+    }
+  ]
+}

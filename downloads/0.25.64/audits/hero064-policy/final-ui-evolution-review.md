@@ -1,0 +1,11 @@
+# Hero Swim 0.25.64 final UI/evolution policy review
+
+PASS within the stated scope; no blocking policy or visual finding.
+
+The canonical client completed 94/94 cases, zero skips, with 802 unchanged originals. The independent byte audit checks all 802 logged capture hashes and all 8,358 production frozen/live/JAR entries; proof SHA `62d324a836fabd28f01160cf674be127bb8354d0fda9530f5108bcc27e2e0e7f` remains unchanged. The source plan/helper and pre-case-zero freeze are bound in that audit. Development classpath is not presented as a launch of the archive.
+
+I personally opened all 16 UI and 9 post-edit world originals at full resolution. Adult Hero/Swim+100 remains locked while maturity displays 80→52.5 active→25→100%; the final header says Fully Adult. Survival remains 80% with read-only feedback. Baby regression changes alignment to Hero+80.2 and maturity 80→52.5→25→99%, remaining Child. Actual/requested midpoint pointer is (506,342) for both editable cases. Native lines report exact save/reload and preserved stages; raw small passive growth is not acceptance of the denied Survival edit. The selected head/eyes/halo/orb/body/features remain intact.
+
+I personally opened the complete 25-cell natural-evolution sheet and 3 full sources: front child at11, left cocoon at155, back fresh adult at299. These 25 sources plus the 25 UI/world sources are 50 unique originals; 28 were opened full-size. The real lifecycle shows child→cocoon→fresh mint/yellow Hero Swim with two draping head fins and a yellow four-bar halo, beginning at back tick227. First Swim and Hero stay fixed; fresh maturity is nearzero while Swim training carries through. The fixture starts 12 ticks before threshold and does not establish a whole natural childhood. Uniform crops clip some cocoon tops; the directly opened complete original shows the intact cocoon.
+
+No physical touch, arbitrary mouse-hardware latency, second remote client, whole-server world restart, every coat/attachment, full adult life, continuous playback, audio listening or distinct visible reaction-face coverage is claimed. The actual UI path programmatically invokes real screen mouse handlers/server payloads. Full-size source names/hashes, crop policy, native completion lines and exact coverage are recorded in the companion JSON.

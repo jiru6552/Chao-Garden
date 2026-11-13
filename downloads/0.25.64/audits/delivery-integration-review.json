@@ -1,0 +1,285 @@
+{
+  "version": "0.25.64",
+  "timestamp_utc": "2026-11-13T07:45:15.303656+00:00",
+  "parent_commit": "1d9f630825100ce615573d98e8c4ecc54ca05bf3",
+  "passed": true,
+  "checks_passed": 40,
+  "scope": "Read-only bounded source/integration inspection against delivered .63. No build/native/client/JAR/package/visual/publication outcome is inferred. Model/material/tests may still be authored; refresh before final freeze.",
+  "coordinator_reviewed": false,
+  "checks": [
+    "All11 authority/entity/network/command/Creative/config files are byte-exact to delivered .63",
+    "All8 previous core morphology profiles are byte-exact to delivered .63",
+    "All9 previous gameplay model assets are byte-exact to delivered .63",
+    "ChaoState differs only inside readonly secondaryTypes labels; encode/decode/evolution/train/life authority unchanged",
+    "Readonly labels use new current signed axes",
+    "New profile admission and10-target rigid cuboid parser are scoped to new metadata",
+    "Current HeroSwim uses common rigid-box vertex and attachment evaluation",
+    "Fixed original head guard includes only new profile admission",
+    "New per-mesh shape weights invalidate shared surface cache",
+    "Flat normals track morphed closed cuboids and bypass donor smooth normals",
+    "Common rigid-box evaluator itself unchanged: original non-box head/face vertices copied directly",
+    "Production scoped selection reaches new model/cache without changing old profile precedence",
+    "Logical geometry selection remains unchanged: Hero Swim key hero_swim",
+    "New geometry keeps canonical baby UV/attachment family and current morphology sampler",
+    "Prior source naturalHeroCore override disabled only for new painted HeroSwim profile",
+    "New profile opts into existing full-head walking clearance guard; legacy offsets unchanged",
+    "Same display-only sampler prepared before model and material rendering",
+    "Scoped base and overlay materials use same canonical UV family",
+    "Palette routing limits reserved swatches/wing and halo pigment protection to new texture prefix",
+    "New profile admits only ordinary living mortal Hero Swim-first adults using locked identity",
+    "Both current training-bar axes remain full signed; first Swim never overwritten",
+    "Biological maturity and reversible specialization remain separate inputs with shared fresh target",
+    "New display easing is30ticks and saves no state field",
+    "Analyzer native control handler unchanged: public boolean mouseClicked(",
+    "Analyzer native control handler unchanged: public boolean mouseDragged(",
+    "Analyzer native control handler unchanged: public boolean mouseReleased(",
+    "Analyzer explains signed opposite training while first Swim remains locked",
+    "Original59 shared joints/order preserved with only3halo mesh children",
+    "Every original parent/pivot/rotation remains identical",
+    "Original head7x6x6, all faces and tail data remain exactly unchanged",
+    "Only3halo mesh children added under existing emotion_dot attachment",
+    "Current metadata hashes the current new model",
+    "Fresh-plus3x3 target order matches current profile weights",
+    "Current new geometry uses17closed8vertex6face boxes and complete10-target correspondence",
+    "New client directory property scoped to client launch",
+    "New rig/material tasks join required check graph",
+    "Production JAR integrity/exclusions remain byte-identical and wildcard excludes new dev helper/nested classes",
+    "Only project version property changes; no new dependency/library",
+    "Dev fixture assertion corrected to production logical hero_swim key",
+    "All bounded inspected inputs remained unchanged throughout this audit"
+  ],
+  "authority_files": [
+    {
+      "path": "src/main/java/com/chaogarden/EditingCommands056.java",
+      "sha256": "e53f29c8bba50dee4c9ea624b71d4d9f4d41c794696db4ee298a240c181eadd6",
+      "parent_sha256": "e53f29c8bba50dee4c9ea624b71d4d9f4d41c794696db4ee298a240c181eadd6",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/care/ChaoCareNetwork.java",
+      "sha256": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c",
+      "parent_sha256": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/CreativeChaoEditRules056.java",
+      "sha256": "2f3b24ad0c2ac5e5376f981ebdfff0787f04d5f84fbb74c3f31ea186103fd876",
+      "parent_sha256": "2f3b24ad0c2ac5e5376f981ebdfff0787f04d5f84fbb74c3f31ea186103fd876",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/AnalyzerStatRules.java",
+      "sha256": "7233563e38dd293205311537b107bd2b0179da45ada4f023b697b2271e696463",
+      "parent_sha256": "7233563e38dd293205311537b107bd2b0179da45ada4f023b697b2271e696463",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/DriveRules.java",
+      "sha256": "80da6f442ba087ca4494b70556000fee97cd94ba4838bc5cf64b5a28a47d659a",
+      "parent_sha256": "80da6f442ba087ca4494b70556000fee97cd94ba4838bc5cf64b5a28a47d659a",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/GradualEvolutionRules.java",
+      "sha256": "63c036a4a24a3f385635aa347fef2a2a6d4fe64ae54d489a127b79979d2f9dc4",
+      "parent_sha256": "63c036a4a24a3f385635aa347fef2a2a6d4fe64ae54d489a127b79979d2f9dc4",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/entity/ChaoEntity.java",
+      "sha256": "1fa25ce670bf3c8fe18b638dde303bc4686ab4113fbf3af2bf34fe320de87ec9",
+      "parent_sha256": "1fa25ce670bf3c8fe18b638dde303bc4686ab4113fbf3af2bf34fe320de87ec9",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/GardenCommands.java",
+      "sha256": "a08fbf77f2f068434fa631e89cf0507f2c93b1b317dadc1a5174367b1ffe331f",
+      "parent_sha256": "a08fbf77f2f068434fa631e89cf0507f2c93b1b317dadc1a5174367b1ffe331f",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/AlignmentEditRules053.java",
+      "sha256": "9a32d9963bfc74865797c24f18b65d108c97a1ae1113069945520acb40ea4216",
+      "parent_sha256": "9a32d9963bfc74865797c24f18b65d108c97a1ae1113069945520acb40ea4216",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/MaturityEditRules056.java",
+      "sha256": "e6570097f3d4d8897ee5b07fe784c2b202d5162a27c32e3bcf4869b08cdbbb76",
+      "parent_sha256": "e6570097f3d4d8897ee5b07fe784c2b202d5162a27c32e3bcf4869b08cdbbb76",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/GardenConfig.java",
+      "sha256": "9ecd512e7c82b3f3827b0e234202b110fd749be82240a9ae26e571359b442ec8",
+      "parent_sha256": "9ecd512e7c82b3f3827b0e234202b110fd749be82240a9ae26e571359b442ec8",
+      "byte_exact": true
+    }
+  ],
+  "prior_profiles": [
+    {
+      "path": "src/main/java/com/chaogarden/core/HeroRunMorphology052.java",
+      "sha256": "3695fc6e7bce73ac641b96f280448885742d819e4b795212f25fe7c2cd48f672",
+      "parent_sha256": "3695fc6e7bce73ac641b96f280448885742d819e4b795212f25fe7c2cd48f672",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralMorphology056.java",
+      "sha256": "f1c10b10aa091b2bf3dde3f7abaeb7f7ef0f417a09c725233484425f80fe2d61",
+      "parent_sha256": "f1c10b10aa091b2bf3dde3f7abaeb7f7ef0f417a09c725233484425f80fe2d61",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/HeroNormalMorphology057.java",
+      "sha256": "2fd7bc5742c45f46dbe59e56b216185cec203e1d2044165a8f1e4a080d28df4e",
+      "parent_sha256": "2fd7bc5742c45f46dbe59e56b216185cec203e1d2044165a8f1e4a080d28df4e",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java",
+      "sha256": "c16f119a7ec68a62603550838287755e50beb03c4b35aab6b3e6cedcacea8ea6",
+      "parent_sha256": "c16f119a7ec68a62603550838287755e50beb03c4b35aab6b3e6cedcacea8ea6",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/DarkNormalMorphology060.java",
+      "sha256": "7337d69fe835750b284a9e23dc5caea1783912c9bd2c47ce6ac95a571468dba7",
+      "parent_sha256": "7337d69fe835750b284a9e23dc5caea1783912c9bd2c47ce6ac95a571468dba7",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralFlyMorphology061.java",
+      "sha256": "a5758ffcf8b67a7ca17a04c8e4b4f8899894ea7eee7c96815deaee6850d8e5e1",
+      "parent_sha256": "a5758ffcf8b67a7ca17a04c8e4b4f8899894ea7eee7c96815deaee6850d8e5e1",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralRunMorphology062.java",
+      "sha256": "3a9990bb479023c72d58a7e2494ba7225541ac0ac24a355b6fdc3b7e3552ef22",
+      "parent_sha256": "3a9990bb479023c72d58a7e2494ba7225541ac0ac24a355b6fdc3b7e3552ef22",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralPowerMorphology063.java",
+      "sha256": "bbbbc97a5704de815b0c5b019a23f16ff071237cc46b9cdeeba413844b3ca36f",
+      "parent_sha256": "bbbbc97a5704de815b0c5b019a23f16ff071237cc46b9cdeeba413844b3ca36f",
+      "byte_exact": true
+    }
+  ],
+  "protected_models": [
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json",
+      "sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "parent_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+      "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "parent_sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+      "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "parent_sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+      "sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "parent_sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+      "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+      "parent_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json",
+      "sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+      "parent_sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json",
+      "sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+      "parent_sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json",
+      "sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+      "parent_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_power_proto063.json",
+      "sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+      "parent_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+      "byte_exact": true
+    }
+  ],
+  "inspected_current_sha256": {
+    "src/main/java/com/chaogarden/client/ChaoMeshAsset.java": "5e33fd796af551676da5f461a8e818c2de7af05e0741a2e47fa3847046dd75a6",
+    "src/main/java/com/chaogarden/client/OfficialChaoRig.java": "36c0ee35e64eed86f27bda72c3ffbd2afdb510ccdbe0533c7443662148dee25e",
+    "src/main/java/com/chaogarden/client/ChaoModel.java": "ff32696bf78b8eda56186ffac35367434989415096d697cb534b92ded3757609",
+    "src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java": "72c9db52dca5a618908111310f7cde1fa5204ab2e6bcb804729e555a825e1579",
+    "src/main/java/com/chaogarden/client/ChaoOverlayLayer.java": "d483414ee21e124b8c25fc1a2529acc2671db2b86670f97a014d2763becfc989",
+    "src/main/java/com/chaogarden/client/ChaoInspectionScreen.java": "1ff32af6d9ad7eb47da1416b413b5152ef6d53c1618d036ccf06c9228a870ef4",
+    "src/main/java/com/chaogarden/core/ChaoState.java": "22a52e0e82af796948ce048f4f33f2938c687750d8e5050f27236173682e6038",
+    "build.gradle": "62ae8abf514ce04c8503a6d1c3551a2f35a3b771a3f1abbfb8815740cd00d877",
+    "gradle.properties": "0f856b48a2c52fa105ac8b4228a2c2e8469c3db6b716e89b0276dd658f045b8d",
+    "src/main/java/com/chaogarden/client/HeroSwimAppearance064.java": "d6f13be82db3c0fef32353ef6f3b7e19c73dbdaa6ca5a7dd8d40535bb86e0ae9",
+    "src/main/java/com/chaogarden/client/HeroSwimCoatMaterial064.java": "7e07d15c747ca1afce038e68ae933a979fad53670466dd177025584ce9016009",
+    "src/main/java/com/chaogarden/client/HeroSwimRegionPaint064.java": "1b8d964a063cdb6f2fb43c8a0d49ea04bd7c37ba4c28f9ce4733d721c58e42d2",
+    "src/main/java/com/chaogarden/client/HeroSwimVisualSmoke064.java": "811ce804d194f5029769febd331b024d0335d2cab80ff16e0632c8fe9b5ad567",
+    "src/main/java/com/chaogarden/core/HeroSwimMorphology064.java": "928a940ec466dc8bd5590dd1ecd492ad30826960db9a873a1859b39084f9c526",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_swim_proto064.json": "73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324",
+    "src/main/resources/assets/chao_garden/hero_swim064.json": "2b9f454bee926dc7371656b7e153ec1761a472d98a20bb919ac16f8947bf6896",
+    "src/main/java/com/chaogarden/EditingCommands056.java": "e53f29c8bba50dee4c9ea624b71d4d9f4d41c794696db4ee298a240c181eadd6",
+    "src/main/java/com/chaogarden/care/ChaoCareNetwork.java": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c",
+    "src/main/java/com/chaogarden/core/CreativeChaoEditRules056.java": "2f3b24ad0c2ac5e5376f981ebdfff0787f04d5f84fbb74c3f31ea186103fd876",
+    "src/main/java/com/chaogarden/core/AnalyzerStatRules.java": "7233563e38dd293205311537b107bd2b0179da45ada4f023b697b2271e696463",
+    "src/main/java/com/chaogarden/core/DriveRules.java": "80da6f442ba087ca4494b70556000fee97cd94ba4838bc5cf64b5a28a47d659a",
+    "src/main/java/com/chaogarden/core/GradualEvolutionRules.java": "63c036a4a24a3f385635aa347fef2a2a6d4fe64ae54d489a127b79979d2f9dc4",
+    "src/main/java/com/chaogarden/entity/ChaoEntity.java": "1fa25ce670bf3c8fe18b638dde303bc4686ab4113fbf3af2bf34fe320de87ec9",
+    "src/main/java/com/chaogarden/GardenCommands.java": "a08fbf77f2f068434fa631e89cf0507f2c93b1b317dadc1a5174367b1ffe331f",
+    "src/main/java/com/chaogarden/core/AlignmentEditRules053.java": "9a32d9963bfc74865797c24f18b65d108c97a1ae1113069945520acb40ea4216",
+    "src/main/java/com/chaogarden/core/MaturityEditRules056.java": "e6570097f3d4d8897ee5b07fe784c2b202d5162a27c32e3bcf4869b08cdbbb76",
+    "src/main/java/com/chaogarden/GardenConfig.java": "9ecd512e7c82b3f3827b0e234202b110fd749be82240a9ae26e571359b442ec8",
+    "src/main/java/com/chaogarden/core/HeroRunMorphology052.java": "3695fc6e7bce73ac641b96f280448885742d819e4b795212f25fe7c2cd48f672",
+    "src/main/java/com/chaogarden/core/NeutralMorphology056.java": "f1c10b10aa091b2bf3dde3f7abaeb7f7ef0f417a09c725233484425f80fe2d61",
+    "src/main/java/com/chaogarden/core/HeroNormalMorphology057.java": "2fd7bc5742c45f46dbe59e56b216185cec203e1d2044165a8f1e4a080d28df4e",
+    "src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java": "c16f119a7ec68a62603550838287755e50beb03c4b35aab6b3e6cedcacea8ea6",
+    "src/main/java/com/chaogarden/core/DarkNormalMorphology060.java": "7337d69fe835750b284a9e23dc5caea1783912c9bd2c47ce6ac95a571468dba7",
+    "src/main/java/com/chaogarden/core/NeutralFlyMorphology061.java": "a5758ffcf8b67a7ca17a04c8e4b4f8899894ea7eee7c96815deaee6850d8e5e1",
+    "src/main/java/com/chaogarden/core/NeutralRunMorphology062.java": "3a9990bb479023c72d58a7e2494ba7225541ac0ac24a355b6fdc3b7e3552ef22",
+    "src/main/java/com/chaogarden/core/NeutralPowerMorphology063.java": "bbbbc97a5704de815b0c5b019a23f16ff071237cc46b9cdeeba413844b3ca36f",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_power_proto063.json": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0"
+  },
+  "resolved_findings": [
+    {
+      "finding": "New dev helper asserted neutral logical swim while production correctly retains hero_swim.",
+      "resolution": "Only dev helper assertion changed to hero_swim; proposed authored plan refreshed with SHA811ce804d194f5029769febd331b024d0335d2cab80ff16e0632c8fe9b5ad567. Root must reapprove the helper binding before capture.",
+      "production_change_needed": false
+    }
+  ],
+  "runtime_readiness": "Root owns ongoing builds/captures. This audit establishes source connections only; new geometry/material behavior still requires actual suite and client review.",
+  "known_limits": [
+    "No images viewed in this integration audit.",
+    "No claim that UI controls, shader finish, observer transport or saves work from source inspection alone.",
+    "Read current logs only after actual process completion.",
+    "Current model bounds and topology are not a proof of all moving collision/attachment poses."
+  ]
+}

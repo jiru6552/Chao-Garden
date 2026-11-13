@@ -1,6 +1,6 @@
-# Chao Garden 0.25.63
+# Chao Garden 0.25.64
 
-Current update **0.25.63** adds the Neutral/Power-first adult family across both signed training axes: balanced, Run, Power, Fly, Swim and the four compatible pairs. Separate blocky crown and side points, a lower rear crest, compact limbs, wings and tail develop around the unchanged original head box. Later Run can cross balance while the first type stays Power. See [the Power family report](docs/NEUTRAL_POWER_02563.md). The completed [Neutral Run-first](docs/NEUTRAL_RUN_02562.md), [Neutral Fly-first](docs/NEUTRAL_FLY_02561.md), [Dark/Neutral](docs/DARK_NORMAL_02560.md), [Neutral Swim-first](docs/NEUTRAL_SWIM_02559.md) and earlier Neutral/Hero families remain included.
+Current update **0.25.64** adds Hero/Swim-first development across both signed training axes: balanced, Run, Power, Fly, Swim and the four compatible pairs. Separate blocky head fins, regional accents and a four-bar halo develop around the unchanged original head box. Opposing Fly can cross balance while the first type stays Swim and alignment stays Hero. See [the Hero Swim family report](docs/HERO_SWIM_02564.md). The completed [Neutral Power-first](docs/NEUTRAL_POWER_02563.md), [Neutral Run-first](docs/NEUTRAL_RUN_02562.md), [Neutral Fly-first](docs/NEUTRAL_FLY_02561.md), [Dark/Neutral](docs/DARK_NORMAL_02560.md), [Neutral Swim-first](docs/NEUTRAL_SWIM_02559.md) and earlier Neutral/Hero families remain included.
 
 Earlier Analyzer update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
 
@@ -36,7 +36,7 @@ The food collection includes **35 active fruit/food families**: the twelve conso
 ## Install
 
 1. Use **Minecraft Java 1.21.1**, **NeoForge 21.1.219**, and **64-bit Java 21**.
-2. Place `chao_garden-0.25.62.jar` in `mods/`, replacing the previous Chao Garden jar.
+2. Place `chao_garden-0.25.64.jar` in `mods/`, replacing the previous Chao Garden jar.
 3. Install the same version on the server and every connecting client.
 
 Install **Lionfish API 3.1** separately on both client and server; the current animation integration requires it. Adult equipped companions optionally require **Accessories for NeoForge 1.21.1 and its oωo dependency** on both sides. See [companions](docs/COMPANIONS.md). This build targets NeoForge.
