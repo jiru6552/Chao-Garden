@@ -1,0 +1,1959 @@
+{
+  "version": "0.25.62",
+  "scope": "Independent read-only actual motion/evolution and literal encoded-state audit. This is numeric/provenance evidence, not automatic visual acceptance.",
+  "source_log": "/workspace/.setup/run062-client-final.log",
+  "source_log_sha256": "027b6c62cf0b630232f3b1a1e63f3057412874a7b15e29aa394cb35eec9c703c",
+  "authored_plan_sha256": "f8b7fa26425b8d65a1566beb63899a1ca44798bbe1a7bcac313b6385102c91d1",
+  "literal_capture_hashes_checked": 789,
+  "world_png_hashes": 773,
+  "ui_png_hashes": 16,
+  "hash_mismatches": [],
+  "total_original_png_files": 789,
+  "full92_cohort_collector_passed": true,
+  "client_complete_line": "RUN062_VISUAL_COMPLETE requestedCases=92 renderedCases=92 skippedCases=0 start=0 limit=92 baseline=false captures=789 saved=789 epochMillis=1794542305619 normal20TPS=true audioListening=false output=/workspace/.setup/run062-client-final",
+  "motion_cases": 12,
+  "rows": [
+    {
+      "index": 72,
+      "case_epoch_millis": 1794542079536,
+      "name": "neutral_run_balanced_walk",
+      "action": "balanced_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "encoded_sha256": "9dde48f4d1ba0d5569972161e7b6b76e39409d94d40346ce873de8f62e75b0e8",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.0
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:54:39] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 72 name=neutral_run_balanced_walk baseline=false adult=true percent=0 alignment=0.0 maturity=1.0 action=balanced_walk coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,12,12,0;0,0,0,0,0;0,0,231,216,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,2,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542079536 actualAccessories=false",
+      "armed_epoch_millis": 1794542079934,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "2098367134630843567",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542082936,
+          "literal_line": "[03:54:42] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=72 tick=60 shapeSignature=2098367134630843567 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542082936"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "2098367134630843567",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542085927,
+          "literal_line": "[03:54:45] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=72 tick=120 shapeSignature=2098367134630843567 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542085927"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "2098367134630843567",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542088928,
+          "literal_line": "[03:54:48] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=72 tick=180 shapeSignature=2098367134630843567 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542088928"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "2098367134630843567",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542091943,
+          "literal_line": "[03:54:51] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=72 tick=240 shapeSignature=2098367134630843567 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542091943"
+        }
+      ],
+      "native_epoch_millis": 1794542091925,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "encoded_sha256": "bc72dbbcc4c123bad763fff3ea08859806af5001582a16c3236b8d37d9f37129",
+        "ageTicks": 240,
+        "adultAgeTicks": 240,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.0
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 8.357523957569173,
+      "literal_native_complete_line": "[03:54:51] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 72 name=neutral_run_balanced_walk baseline=false elapsed=240 walked=8.357523957569173 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,12,12,0;0,0,0,0,0;0,0,231,216,0;0,0,1,0,0,0,0,240,240,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,96,0,0,48,120,120,48,0,9988,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,2,-1,-1,-1,1,0,3,0,0,240,1,0,0,0;;normal;normal epochMillis=1794542091925",
+      "render_epoch_millis": 1794542091947,
+      "angles": 3,
+      "worldFrames": 365,
+      "actorFrames": 365,
+      "captures": 20,
+      "movingFrames": 345,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:54:51] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 72 name=neutral_run_balanced_walk baseline=false angles=3 worldFrames=365 actorFrames=365 captures=20 movingFrames=345 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542091947",
+      "native_wall_seconds": 11.991,
+      "observed_ticks_per_second": 20.015011258443835,
+      "logged_capture_count": 20,
+      "age_delta_ticks": 240,
+      "adult_age_delta_ticks": 240,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true,
+      "chronology_advanced_normally": true
+    },
+    {
+      "index": 73,
+      "case_epoch_millis": 1794542091950,
+      "name": "neutral_run_run_running",
+      "action": "run_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "encoded_sha256": "ed04eeaf84c7f9fe6f0c83ff08e95f49f9c47e008c6e276da5a10199cc1f6425",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          4960,
+          4000,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 0.0
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:54:51] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 73 name=neutral_run_run_running baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=run_walk coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,49,40,0;0,0,60,0,0;0,0,927,760,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,3,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542091950 actualAccessories=false",
+      "armed_epoch_millis": 1794542092345,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-4462132594637786651",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542095329,
+          "literal_line": "[03:54:55] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=73 tick=60 shapeSignature=-4462132594637786651 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542095329"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-4462132594637786651",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542098349,
+          "literal_line": "[03:54:58] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=73 tick=120 shapeSignature=-4462132594637786651 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542098349"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-4462132594637786651",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542101329,
+          "literal_line": "[03:55:01] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=73 tick=180 shapeSignature=-4462132594637786651 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542101329"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "-4462132594637786651",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542104345,
+          "literal_line": "[03:55:04] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=73 tick=240 shapeSignature=-4462132594637786651 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542104345"
+        }
+      ],
+      "native_epoch_millis": 1794542104326,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "encoded_sha256": "7a7eeef61f811fa396ecdc5dc066429498f52873089587ecf0e2ff85c011f2dc",
+        "ageTicks": 240,
+        "adultAgeTicks": 240,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          4960,
+          4000,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 0.0
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 18.642419881114918,
+      "literal_native_complete_line": "[03:55:04] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 73 name=neutral_run_run_running baseline=false elapsed=240 walked=18.642419881114918 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,49,40,0;0,0,60,0,0;0,0,927,760,0;0,0,1,0,0,0,0,240,240,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,96,0,0,48,120,120,48,0,9988,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,3,-1,-1,-1,1,0,3,0,0,240,1,0,0,0;;normal;normal epochMillis=1794542104326",
+      "render_epoch_millis": 1794542104350,
+      "angles": 3,
+      "worldFrames": 368,
+      "actorFrames": 368,
+      "captures": 20,
+      "movingFrames": 349,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:55:04] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 73 name=neutral_run_run_running baseline=false angles=3 worldFrames=368 actorFrames=368 captures=20 movingFrames=349 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542104350",
+      "native_wall_seconds": 11.981,
+      "observed_ticks_per_second": 20.031716885068025,
+      "logged_capture_count": 20,
+      "age_delta_ticks": 240,
+      "adult_age_delta_ticks": 240,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true,
+      "chronology_advanced_normally": true
+    },
+    {
+      "index": 74,
+      "case_epoch_millis": 1794542104369,
+      "name": "neutral_run_run_swim_water_motion",
+      "action": "water_swim",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": -1.0
+      },
+      "initial_state": {
+        "encoded_sha256": "5faad682cb9865cccbecaceace3eca5a6d9e9a65ce6a9f17b7b04352ac410a5c",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          4960,
+          4000,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": -1
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:55:04] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 74 name=neutral_run_run_swim_water_motion baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=water_swim coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;49,40,9,0,0;60,0,60,0,0;926,772,165,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,2,1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542104369 actualAccessories=false",
+      "armed_epoch_millis": 1794542104838,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-3182990201047557043",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": -1.0
+          },
+          "epoch_millis": 1794542107832,
+          "literal_line": "[03:55:07] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=74 tick=60 shapeSignature=-3182990201047557043 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0] babyVisibleGrowth=0.0 epochMillis=1794542107832"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-3182990201047557043",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": -1.0
+          },
+          "epoch_millis": 1794542110855,
+          "literal_line": "[03:55:10] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=74 tick=120 shapeSignature=-3182990201047557043 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0] babyVisibleGrowth=0.0 epochMillis=1794542110855"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-3182990201047557043",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": -1.0
+          },
+          "epoch_millis": 1794542113831,
+          "literal_line": "[03:55:13] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=74 tick=180 shapeSignature=-3182990201047557043 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0] babyVisibleGrowth=0.0 epochMillis=1794542113831"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "-3182990201047557043",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": -1.0
+          },
+          "epoch_millis": 1794542116848,
+          "literal_line": "[03:55:16] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=74 tick=240 shapeSignature=-3182990201047557043 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0] babyVisibleGrowth=0.0 epochMillis=1794542116848"
+        }
+      ],
+      "native_epoch_millis": 1794542116825,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": -1.0
+      },
+      "final_state": {
+        "encoded_sha256": "1529c882c32dd6deea200f67548e4d376626d86ac6d779ad413c01f70e579f8d",
+        "ageTicks": 240,
+        "adultAgeTicks": 240,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          4960,
+          4000,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": -1
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 0.0,
+      "literal_native_complete_line": "[03:55:16] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 74 name=neutral_run_run_swim_water_motion baseline=false elapsed=240 walked=0.0 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;49,40,9,0,0;60,0,60,0,0;926,772,165,0,0;0,0,1,0,0,0,0,240,240,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;1284491458136945475;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,96,0,0,48,120,120,48,0,9988,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,2,1,-1,-1,1,0,3,0,0,240,1,0,0,0;;normal;normal epochMillis=1794542116825",
+      "render_epoch_millis": 1794542116852,
+      "angles": 3,
+      "worldFrames": 365,
+      "actorFrames": 365,
+      "captures": 20,
+      "movingFrames": 0,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:55:16] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 74 name=neutral_run_run_swim_water_motion baseline=false angles=3 worldFrames=365 actorFrames=365 captures=20 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542116852",
+      "native_wall_seconds": 11.987,
+      "observed_ticks_per_second": 20.021690164344708,
+      "logged_capture_count": 20,
+      "age_delta_ticks": 240,
+      "adult_age_delta_ticks": 240,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true
+    },
+    {
+      "index": 75,
+      "case_epoch_millis": 1794542116862,
+      "name": "neutral_run_run_fly_broom",
+      "action": "broom",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "encoded_sha256": "c6dd999992a8467b2a4298ef82e6e7cada98593af15e85c32905366fb0a95789",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:55:16] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 75 name=neutral_run_run_fly_broom baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=broom coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,175,165,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542116862 actualAccessories=false",
+      "armed_epoch_millis": 1794542117265,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542120236,
+          "literal_line": "[03:55:20] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=75 tick=60 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542120236"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542123255,
+          "literal_line": "[03:55:23] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=75 tick=120 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542123255"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542126252,
+          "literal_line": "[03:55:26] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=75 tick=180 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542126252"
+        }
+      ],
+      "native_epoch_millis": 1794542126228,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "encoded_sha256": "2f5a23c5e471b9e23989ef3d956bd15d67e83b93f1172d81a9cfddedc51c828f",
+        "ageTicks": 20,
+        "adultAgeTicks": 20,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 180,
+      "walked_blocks": 0.0,
+      "literal_native_complete_line": "[03:55:26] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 75 name=neutral_run_run_fly_broom baseline=false elapsed=180 walked=0.0 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,175,165,0,0;0,0,1,0,0,0,0,20,20,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,8,0,0,4,10,10,4,0,9999,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,3,0,0,20,1,0,0,0;;normal;normal epochMillis=1794542126228",
+      "render_epoch_millis": 1794542126257,
+      "angles": 3,
+      "worldFrames": 279,
+      "actorFrames": 279,
+      "captures": 15,
+      "movingFrames": 0,
+      "toyContacts": 380,
+      "maxToyError": 2.5378498e-07,
+      "literal_render_complete_line": "[03:55:26] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 75 name=neutral_run_run_fly_broom baseline=false angles=3 worldFrames=279 actorFrames=279 captures=15 movingFrames=0 toyContacts=380 maxToyError=2.5378498E-7 uiFrames=0 uiCaptures=0 epochMillis=1794542126257",
+      "native_wall_seconds": 8.963,
+      "observed_ticks_per_second": 20.082561642307265,
+      "logged_capture_count": 15,
+      "age_delta_ticks": 20,
+      "adult_age_delta_ticks": 20,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true
+    },
+    {
+      "index": 76,
+      "case_epoch_millis": 1794542126260,
+      "name": "neutral_run_power_swim_book",
+      "action": "picture_book",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": -1.0
+      },
+      "initial_state": {
+        "encoded_sha256": "635c5a38d2486f73a58e86d812446cf0bbab088f5664783f812f35030c17cb31",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          960,
+          0,
+          0,
+          960,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 1,
+          "swimFly": -1
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:55:26] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 76 name=neutral_run_power_swim_book baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=picture_book coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;173,0,0,174,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542126260 actualAccessories=false",
+      "armed_epoch_millis": 1794542126720,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "8092157691154957665",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": -1.0
+          },
+          "epoch_millis": 1794542129701,
+          "literal_line": "[03:55:29] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=76 tick=60 shapeSignature=8092157691154957665 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0] babyVisibleGrowth=0.0 epochMillis=1794542129701"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "8092157691154957665",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": -1.0
+          },
+          "epoch_millis": 1794542132701,
+          "literal_line": "[03:55:32] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=76 tick=120 shapeSignature=8092157691154957665 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0] babyVisibleGrowth=0.0 epochMillis=1794542132701"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "8092157691154957665",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": -1.0
+          },
+          "epoch_millis": 1794542135681,
+          "literal_line": "[03:55:35] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=76 tick=180 shapeSignature=8092157691154957665 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0] babyVisibleGrowth=0.0 epochMillis=1794542135681"
+        }
+      ],
+      "native_epoch_millis": 1794542135674,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": -1.0
+      },
+      "final_state": {
+        "encoded_sha256": "6bc776c81c87ded361be592882baa7295cea9e9a399fbf223cfa9fda54bc0422",
+        "ageTicks": 20,
+        "adultAgeTicks": 20,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          960,
+          0,
+          0,
+          960,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 1,
+          "swimFly": -1
+        }
+      },
+      "elapsed_ticks": 180,
+      "walked_blocks": 0.0,
+      "literal_native_complete_line": "[03:55:35] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 76 name=neutral_run_power_swim_book baseline=false elapsed=180 walked=0.0 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;9,0,0,9,0;60,0,0,60,0;173,0,0,174,0;0,0,1,0,0,0,0,20,20,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,8,0,0,4,10,10,4,0,9999,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,0,3,-1,-1,-1,1,0,3,0,0,20,1,0,0,0;;normal;normal epochMillis=1794542135674",
+      "render_epoch_millis": 1794542135689,
+      "angles": 3,
+      "worldFrames": 275,
+      "actorFrames": 276,
+      "captures": 14,
+      "movingFrames": 0,
+      "toyContacts": 376,
+      "maxToyError": 3.7814908e-07,
+      "literal_render_complete_line": "[03:55:35] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 76 name=neutral_run_power_swim_book baseline=false angles=3 worldFrames=275 actorFrames=276 captures=14 movingFrames=0 toyContacts=376 maxToyError=3.7814908E-7 uiFrames=0 uiCaptures=0 epochMillis=1794542135689",
+      "native_wall_seconds": 8.954,
+      "observed_ticks_per_second": 20.102747375474646,
+      "logged_capture_count": 14,
+      "age_delta_ticks": 20,
+      "adult_age_delta_ticks": 20,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true
+    },
+    {
+      "index": 77,
+      "case_epoch_millis": 1794542135743,
+      "name": "neutral_run_run_fly_equipped_flying",
+      "action": "carry_flying",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "encoded_sha256": "c6dd999992a8467b2a4298ef82e6e7cada98593af15e85c32905366fb0a95789",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": true,
+      "literal_case_line": "[03:55:35] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 77 name=neutral_run_run_fly_equipped_flying baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=carry_flying coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,175,165,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542135743 actualAccessories=true",
+      "armed_epoch_millis": 1794542136191,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542139179,
+          "literal_line": "[03:55:39] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=77 tick=60 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542139179"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542142181,
+          "literal_line": "[03:55:42] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=77 tick=120 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542142181"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542145205,
+          "literal_line": "[03:55:45] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=77 tick=180 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542145205"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542148180,
+          "literal_line": "[03:55:48] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=77 tick=240 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542148180"
+        }
+      ],
+      "native_epoch_millis": 1794542148174,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "encoded_sha256": "c6dd999992a8467b2a4298ef82e6e7cada98593af15e85c32905366fb0a95789",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 0.0,
+      "literal_native_complete_line": "[03:55:48] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 77 name=neutral_run_run_fly_equipped_flying baseline=false elapsed=240 walked=0.0 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,9,0,0;0,60,60,0,0;0,175,165,0,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542148174",
+      "render_epoch_millis": 1794542148185,
+      "angles": 3,
+      "worldFrames": 366,
+      "actorFrames": 366,
+      "captures": 20,
+      "movingFrames": 16,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:55:48] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 77 name=neutral_run_run_fly_equipped_flying baseline=false angles=3 worldFrames=366 actorFrames=366 captures=20 movingFrames=16 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542148185",
+      "native_wall_seconds": 11.983,
+      "observed_ticks_per_second": 20.028373529166316,
+      "logged_capture_count": 20,
+      "age_delta_ticks": 0,
+      "adult_age_delta_ticks": 0,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true
+    },
+    {
+      "index": 78,
+      "case_epoch_millis": 1794542148187,
+      "name": "neutral_run_run_gain_walk",
+      "action": "gain_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "encoded_sha256": "9dde48f4d1ba0d5569972161e7b6b76e39409d94d40346ce873de8f62e75b0e8",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.0
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:55:48] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 78 name=neutral_run_run_gain_walk baseline=false adult=true percent=0 alignment=0.0 maturity=1.0 action=gain_walk coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,12,12,0;0,0,0,0,0;0,0,231,216,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,2,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542148187 actualAccessories=false",
+      "armed_epoch_millis": 1794542148609,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 120,
+          "shapeSignature": "3934100279336030019",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.14691292,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542154585,
+          "literal_line": "[03:55:54] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=78 tick=120 shapeSignature=3934100279336030019 sample=Sample[enabled=true, maturity=1.0, runPower=-0.14691292, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542154585"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-3600628006994339485",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.2993503,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542157595,
+          "literal_line": "[03:55:57] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=78 tick=180 shapeSignature=-3600628006994339485 sample=Sample[enabled=true, maturity=1.0, runPower=-0.2993503, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542157595"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "7670780271953315567",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.48481748,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542160596,
+          "literal_line": "[03:56:00] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=78 tick=240 shapeSignature=7670780271953315567 sample=Sample[enabled=true, maturity=1.0, runPower=-0.48481748, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542160596"
+        }
+      ],
+      "native_epoch_millis": 1794542162574,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "encoded_sha256": "4d1bd1021233ce4d17b4ddb0c567756766855c5f6e8139ff191fa2a18fa33cf7",
+        "ageTicks": 280,
+        "adultAgeTicks": 280,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          2160,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 0.0
+        }
+      },
+      "elapsed_ticks": 280,
+      "walked_blocks": 10.501541776927409,
+      "literal_native_complete_line": "[03:56:02] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 78 name=neutral_run_run_gain_walk baseline=false elapsed=280 walked=10.501541776927409 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,21,12,0;0,0,60,0,0;0,0,403,216,0;0,0,1,0,0,0,0,280,280,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,56,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,3,-1,-1,-1,1,0,3,0,0,280,1,0,0,0;;normal;normal epochMillis=1794542162574",
+      "render_epoch_millis": 1794542162584,
+      "angles": 3,
+      "worldFrames": 418,
+      "actorFrames": 418,
+      "captures": 23,
+      "movingFrames": 399,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:56:02] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 78 name=neutral_run_run_gain_walk baseline=false angles=3 worldFrames=418 actorFrames=418 captures=23 movingFrames=399 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542162584",
+      "native_wall_seconds": 13.965,
+      "observed_ticks_per_second": 20.050125313283207,
+      "logged_capture_count": 23,
+      "age_delta_ticks": 280,
+      "adult_age_delta_ticks": 280,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true,
+      "chronology_advanced_normally": true
+    },
+    {
+      "index": 79,
+      "case_epoch_millis": 1794542162587,
+      "name": "neutral_run_power_fly_gain_walk",
+      "action": "gain_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "encoded_sha256": "9dde48f4d1ba0d5569972161e7b6b76e39409d94d40346ce873de8f62e75b0e8",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.0
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:56:02] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 79 name=neutral_run_power_fly_gain_walk baseline=false adult=true percent=0 alignment=0.0 maturity=1.0 action=gain_walk coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,12,12,0;0,0,0,0,0;0,0,231,216,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,2,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542162587 actualAccessories=false",
+      "armed_epoch_millis": 1794542162984,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 120,
+          "shapeSignature": "-4752545412717013673",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.14687717,
+            "swimFly": 0.14687717
+          },
+          "epoch_millis": 1794542168984,
+          "literal_line": "[03:56:08] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=79 tick=120 shapeSignature=-4752545412717013673 sample=Sample[enabled=true, maturity=1.0, runPower=0.14687717, swimFly=0.14687717] babyVisibleGrowth=0.0 epochMillis=1794542168984"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-2380709443353211193",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.29888177,
+            "swimFly": 0.29888177
+          },
+          "epoch_millis": 1794542171991,
+          "literal_line": "[03:56:11] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=79 tick=180 shapeSignature=-2380709443353211193 sample=Sample[enabled=true, maturity=1.0, runPower=0.29888177, swimFly=0.29888177] babyVisibleGrowth=0.0 epochMillis=1794542171991"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "6913014597366555753",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.48278075,
+            "swimFly": 0.48278075
+          },
+          "epoch_millis": 1794542174991,
+          "literal_line": "[03:56:14] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=79 tick=240 shapeSignature=6913014597366555753 sample=Sample[enabled=true, maturity=1.0, runPower=0.48278075, swimFly=0.48278075] babyVisibleGrowth=0.0 epochMillis=1794542174991"
+        }
+      ],
+      "native_epoch_millis": 1794542176974,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "encoded_sha256": "176bf3980b813d91ffae0531d7df41c54fc144b3d29c7c2752ca2aa830638d24",
+        "ageTicks": 280,
+        "adultAgeTicks": 280,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          1200,
+          2160,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 1,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 280,
+      "walked_blocks": 9.769283629277412,
+      "literal_native_complete_line": "[03:56:16] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 79 name=neutral_run_power_fly_gain_walk baseline=false elapsed=280 walked=9.769283629277412 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,12,21,0;0,60,0,60,0;0,173,231,395,0;0,0,1,0,0,0,0,280,280,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,56,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,3,2,-1,-1,1,0,3,0,0,280,1,0,0,0;;normal;normal epochMillis=1794542176974",
+      "render_epoch_millis": 1794542177004,
+      "angles": 3,
+      "worldFrames": 420,
+      "actorFrames": 420,
+      "captures": 23,
+      "movingFrames": 400,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:56:17] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 79 name=neutral_run_power_fly_gain_walk baseline=false angles=3 worldFrames=420 actorFrames=420 captures=23 movingFrames=400 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542177004",
+      "native_wall_seconds": 13.99,
+      "observed_ticks_per_second": 20.014295925661187,
+      "logged_capture_count": 23,
+      "age_delta_ticks": 280,
+      "adult_age_delta_ticks": 280,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true,
+      "chronology_advanced_normally": true
+    },
+    {
+      "index": 80,
+      "case_epoch_millis": 1794542177010,
+      "name": "neutral_run_fly_loss_walk",
+      "action": "loss_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "encoded_sha256": "be54c133c3a1f6f9a7f30cd45c4adc0c309a8cf879219152e325ec51aec19ee2",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:56:17] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 80 name=neutral_run_fly_loss_walk baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=loss_walk coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=1.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,9,12,12,0;0,60,0,0,0;0,175,231,216,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,3,2,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542177010 actualAccessories=false",
+      "armed_epoch_millis": 1794542177440,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-2038414965981127677",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.9627184
+          },
+          "epoch_millis": 1794542180431,
+          "literal_line": "[03:56:20] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=80 tick=60 shapeSignature=-2038414965981127677 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.9627184] babyVisibleGrowth=0.0 epochMillis=1794542180431"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "1408589046760973763",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.8535272
+          },
+          "epoch_millis": 1794542183429,
+          "literal_line": "[03:56:23] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=80 tick=120 shapeSignature=1408589046760973763 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.8535272] babyVisibleGrowth=0.0 epochMillis=1794542183429"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-9863291870280509",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.6994814
+          },
+          "epoch_millis": 1794542186429,
+          "literal_line": "[03:56:26] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=80 tick=180 shapeSignature=-9863291870280509 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.6994814] babyVisibleGrowth=0.0 epochMillis=1794542186429"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "6095264643759448127",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.5148941
+          },
+          "epoch_millis": 1794542189440,
+          "literal_line": "[03:56:29] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=80 tick=240 shapeSignature=6095264643759448127 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.5148941] babyVisibleGrowth=0.0 epochMillis=1794542189440"
+        }
+      ],
+      "native_epoch_millis": 1794542191424,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "encoded_sha256": "98fe4858a75c4bb461d140b46ef888759b82cab50cf681f8ca8bd68e5e3bb31f",
+        "ageTicks": 280,
+        "adultAgeTicks": 280,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.0
+        }
+      },
+      "elapsed_ticks": 280,
+      "walked_blocks": 9.769283629277412,
+      "literal_native_complete_line": "[03:56:31] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 80 name=neutral_run_fly_loss_walk baseline=false elapsed=280 walked=9.769283629277412 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,12,12,0;0,0,0,0,0;0,4,231,216,0;0,0,1,0,0,0,0,280,280,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,112,0,0,56,140,140,56,0,9986,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,3,2,-1,-1,1,0,3,0,0,280,1,0,0,0;;normal;normal epochMillis=1794542191424",
+      "render_epoch_millis": 1794542191433,
+      "angles": 3,
+      "worldFrames": 422,
+      "actorFrames": 422,
+      "captures": 23,
+      "movingFrames": 403,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:56:31] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 80 name=neutral_run_fly_loss_walk baseline=false angles=3 worldFrames=422 actorFrames=422 captures=23 movingFrames=403 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542191433",
+      "native_wall_seconds": 13.984,
+      "observed_ticks_per_second": 20.022883295194507,
+      "logged_capture_count": 23,
+      "age_delta_ticks": 280,
+      "adult_age_delta_ticks": 280,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true,
+      "chronology_advanced_normally": true
+    },
+    {
+      "index": 81,
+      "case_epoch_millis": 1794542191440,
+      "name": "neutral_run_run_fly_pair_gain_hold_reverse_walk",
+      "action": "pair_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "encoded_sha256": "9dde48f4d1ba0d5569972161e7b6b76e39409d94d40346ce873de8f62e75b0e8",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.0
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:56:31] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 81 name=neutral_run_run_fly_pair_gain_hold_reverse_walk baseline=false adult=true percent=0 alignment=0.0 maturity=1.0 action=pair_walk coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,12,12,0;0,0,0,0,0;0,0,231,216,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,2,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542191440 actualAccessories=false",
+      "armed_epoch_millis": 1794542191841,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "1685746601607497727",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.039105758,
+            "swimFly": 0.039105758
+          },
+          "epoch_millis": 1794542194836,
+          "literal_line": "[03:56:34] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=60 shapeSignature=1685746601607497727 sample=Sample[enabled=true, maturity=1.0, runPower=-0.039105758, swimFly=0.039105758] babyVisibleGrowth=0.0 epochMillis=1794542194836"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-5419874036313558291",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.14481704,
+            "swimFly": 0.14481704
+          },
+          "epoch_millis": 1794542197828,
+          "literal_line": "[03:56:37] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=120 shapeSignature=-5419874036313558291 sample=Sample[enabled=true, maturity=1.0, runPower=-0.14481704, swimFly=0.14481704] babyVisibleGrowth=0.0 epochMillis=1794542197828"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-5915693667466428805",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.30041546,
+            "swimFly": 0.30041546
+          },
+          "epoch_millis": 1794542200829,
+          "literal_line": "[03:56:40] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=180 shapeSignature=-5915693667466428805 sample=Sample[enabled=true, maturity=1.0, runPower=-0.30041546, swimFly=0.30041546] babyVisibleGrowth=0.0 epochMillis=1794542200829"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "4771398593672696571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.48543748,
+            "swimFly": 0.48543748
+          },
+          "epoch_millis": 1794542203848,
+          "literal_line": "[03:56:43] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=240 shapeSignature=4771398593672696571 sample=Sample[enabled=true, maturity=1.0, runPower=-0.48543748, swimFly=0.48543748] babyVisibleGrowth=0.0 epochMillis=1794542203848"
+        },
+        {
+          "tick": 300,
+          "shapeSignature": "-6500587944913523571",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794542206838,
+          "literal_line": "[03:56:46] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=300 shapeSignature=-6500587944913523571 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] babyVisibleGrowth=0.0 epochMillis=1794542206838"
+        },
+        {
+          "tick": 360,
+          "shapeSignature": "8614057700914981147",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.98261344,
+            "swimFly": 0.98261344
+          },
+          "epoch_millis": 1794542209843,
+          "literal_line": "[03:56:49] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=360 shapeSignature=8614057700914981147 sample=Sample[enabled=true, maturity=1.0, runPower=-0.98261344, swimFly=0.98261344] babyVisibleGrowth=0.0 epochMillis=1794542209843"
+        },
+        {
+          "tick": 420,
+          "shapeSignature": "7996754179732835389",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.89537483,
+            "swimFly": 0.89537483
+          },
+          "epoch_millis": 1794542212843,
+          "literal_line": "[03:56:52] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=420 shapeSignature=7996754179732835389 sample=Sample[enabled=true, maturity=1.0, runPower=-0.89537483, swimFly=0.89537483] babyVisibleGrowth=0.0 epochMillis=1794542212843"
+        },
+        {
+          "tick": 480,
+          "shapeSignature": "-8585772518964753433",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.75600606,
+            "swimFly": 0.75600606
+          },
+          "epoch_millis": 1794542215842,
+          "literal_line": "[03:56:55] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=480 shapeSignature=-8585772518964753433 sample=Sample[enabled=true, maturity=1.0, runPower=-0.75600606, swimFly=0.75600606] babyVisibleGrowth=0.0 epochMillis=1794542215842"
+        },
+        {
+          "tick": 540,
+          "shapeSignature": "2553905653256492913",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.5814364,
+            "swimFly": 0.5814364
+          },
+          "epoch_millis": 1794542218827,
+          "literal_line": "[03:56:58] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=540 shapeSignature=2553905653256492913 sample=Sample[enabled=true, maturity=1.0, runPower=-0.5814364, swimFly=0.5814364] babyVisibleGrowth=0.0 epochMillis=1794542218827"
+        },
+        {
+          "tick": 600,
+          "shapeSignature": "2098367134630843567",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542221856,
+          "literal_line": "[03:57:01] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=600 shapeSignature=2098367134630843567 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542221856"
+        }
+      ],
+      "pair_peak_raw": {
+        "tick": 240,
+        "firstType": 3,
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": -1.0,
+          "swimFly": 1.0
+        },
+        "epoch_millis": 1794542203825,
+        "literal_line": "[03:56:43] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_PAIR_PEAK case=81 tick=240 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] firstType=3 epochMillis=1794542203825"
+      },
+      "pair_settled_display": {
+        "tick": 280,
+        "firstType": 3,
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": -1.0,
+          "swimFly": 1.0
+        },
+        "epoch_millis": 1794542205834,
+        "literal_line": "[03:56:45] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_PAIR_SETTLED case=81 tick=280 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] firstType=3 epochMillis=1794542205834"
+      },
+      "native_epoch_millis": 1794542223824,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "encoded_sha256": "4352fb0189c1b0fe6189b9536794869c0f405d50a5ad0119cb635ce890d96abf",
+        "ageTicks": 640,
+        "adultAgeTicks": 640,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.0
+        }
+      },
+      "elapsed_ticks": 640,
+      "walked_blocks": 23.925861394710758,
+      "literal_native_complete_line": "[03:57:03] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 81 name=neutral_run_run_fly_pair_gain_hold_reverse_walk baseline=false elapsed=640 walked=23.925861394710758 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,12,12,0;0,0,0,0,0;0,2,232,216,0;0,0,1,0,0,0,0,640,640,0,1,0,0,3,0,80,0,98,99,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,256,0,200,128,320,320,128,0,9968,0,9900;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,1,2,3,-1,-1,1,0,3,0,0,640,1,0,0,0;;normal;normal epochMillis=1794542223824",
+      "render_epoch_millis": 1794542223829,
+      "angles": 3,
+      "worldFrames": 951,
+      "actorFrames": 951,
+      "captures": 53,
+      "movingFrames": 932,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:57:03] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 81 name=neutral_run_run_fly_pair_gain_hold_reverse_walk baseline=false angles=3 worldFrames=951 actorFrames=951 captures=53 movingFrames=932 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542223829",
+      "native_wall_seconds": 31.983,
+      "observed_ticks_per_second": 20.0106306475315,
+      "logged_capture_count": 53,
+      "age_delta_ticks": 640,
+      "adult_age_delta_ticks": 640,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true,
+      "chronology_advanced_normally": true,
+      "settled_full_pair_actually_rendered_before_reversal": true
+    },
+    {
+      "index": 82,
+      "case_epoch_millis": 1794542223833,
+      "name": "neutral_run_run_to_power_opposition_walk",
+      "action": "opposite_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "encoded_sha256": "a0657e0751d4931e4964b849eb3fd835075e891ce3e9d483e3af59e837513dad",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          2160,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 0.0
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:57:03] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 82 name=neutral_run_run_to_power_opposition_walk baseline=false adult=true percent=100 alignment=0.0 maturity=1.0 action=opposite_walk coat=natural suspendedStatic=false sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0] babyVisibleGrowth=0.0 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,21,12,0;0,0,60,0,0;0,0,396,216,0;0,0,1,0,0,0,0,0,0,0,1,0,0,3,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,2,3,-1,-1,-1,1,0,3,0,0,0,1,0,0,0;;normal;normal epochMillis=1794542223833 actualAccessories=false",
+      "armed_epoch_millis": 1794542224233,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "5469664416167133155",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.9609281,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542227250,
+          "literal_line": "[03:57:07] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=60 shapeSignature=5469664416167133155 sample=Sample[enabled=true, maturity=1.0, runPower=-0.9609281, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542227250"
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-7838636968792477389",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.8544515,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542230250,
+          "literal_line": "[03:57:10] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=120 shapeSignature=-7838636968792477389 sample=Sample[enabled=true, maturity=1.0, runPower=-0.8544515, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542230250"
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-392506274826684535",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.70161945,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542233234,
+          "literal_line": "[03:57:13] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=180 shapeSignature=-392506274826684535 sample=Sample[enabled=true, maturity=1.0, runPower=-0.70161945, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542233234"
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "5694895536862468527",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.51765203,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542236253,
+          "literal_line": "[03:57:16] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=240 shapeSignature=5694895536862468527 sample=Sample[enabled=true, maturity=1.0, runPower=-0.51765203, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542236253"
+        },
+        {
+          "tick": 300,
+          "shapeSignature": "6410841174135850201",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.31346506,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542239245,
+          "literal_line": "[03:57:19] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=300 shapeSignature=6410841174135850201 sample=Sample[enabled=true, maturity=1.0, runPower=-0.31346506, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542239245"
+        },
+        {
+          "tick": 360,
+          "shapeSignature": "-2171036734469095847",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.09309888,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542242237,
+          "literal_line": "[03:57:22] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=360 shapeSignature=-2171036734469095847 sample=Sample[enabled=true, maturity=1.0, runPower=-0.09309888, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542242237"
+        },
+        {
+          "tick": 420,
+          "shapeSignature": "-589070126193692881",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.13556755,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542245234,
+          "literal_line": "[03:57:25] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=420 shapeSignature=-589070126193692881 sample=Sample[enabled=true, maturity=1.0, runPower=0.13556755, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542245234"
+        },
+        {
+          "tick": 480,
+          "shapeSignature": "8524039064777188841",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.37198344,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542248242,
+          "literal_line": "[03:57:28] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=480 shapeSignature=8524039064777188841 sample=Sample[enabled=true, maturity=1.0, runPower=0.37198344, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542248242"
+        },
+        {
+          "tick": 540,
+          "shapeSignature": "-2604956872902795355",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542251226,
+          "literal_line": "[03:57:31] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=540 shapeSignature=-2604956872902795355 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542251226"
+        }
+      ],
+      "opposition_raw": [
+        {
+          "tick": 120,
+          "firstType": 3,
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.5,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542230224,
+          "literal_line": "[03:57:10] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=120 sample=Sample[enabled=true, maturity=1.0, runPower=-0.5, swimFly=0.0] firstType=3 epochMillis=1794542230224"
+        },
+        {
+          "tick": 240,
+          "firstType": 3,
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542236224,
+          "literal_line": "[03:57:16] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=240 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] firstType=3 epochMillis=1794542236224"
+        },
+        {
+          "tick": 360,
+          "firstType": 3,
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.5,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542242224,
+          "literal_line": "[03:57:22] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=360 sample=Sample[enabled=true, maturity=1.0, runPower=0.5, swimFly=0.0] firstType=3 epochMillis=1794542242224"
+        },
+        {
+          "tick": 480,
+          "firstType": 3,
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542248226,
+          "literal_line": "[03:57:28] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=480 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=0.0] firstType=3 epochMillis=1794542248226"
+        }
+      ],
+      "native_epoch_millis": 1794542252224,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "encoded_sha256": "36c5e817476de3c60825e93f2e407b522b59afc9462d41a12933124d5639aa6a",
+        "ageTicks": 560,
+        "adultAgeTicks": 560,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          2160,
+          3120,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 1,
+          "swimFly": 0.0
+        }
+      },
+      "elapsed_ticks": 560,
+      "walked_blocks": 22.175361593251196,
+      "literal_native_complete_line": "[03:57:32] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 82 name=neutral_run_run_to_power_opposition_walk baseline=false elapsed=560 walked=22.175361593251196 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,21,31,0;0,0,60,20,0;0,0,396,570,0;0,0,1,0,0,0,0,560,560,0,1,0,0,3,0,80,0,99,100,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,224,0,100,112,280,280,112,0,9972,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072902963,858993459,3,2,-1,-1,-1,1,0,3,0,0,560,1,0,0,0;;normal;normal epochMillis=1794542252224",
+      "render_epoch_millis": 1794542252236,
+      "angles": 3,
+      "worldFrames": 841,
+      "actorFrames": 841,
+      "captures": 46,
+      "movingFrames": 821,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:57:32] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 82 name=neutral_run_run_to_power_opposition_walk baseline=false angles=3 worldFrames=841 actorFrames=841 captures=46 movingFrames=821 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542252236",
+      "native_wall_seconds": 27.991,
+      "observed_ticks_per_second": 20.00643063841949,
+      "logged_capture_count": 46,
+      "age_delta_ticks": 560,
+      "adult_age_delta_ticks": 560,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axes_match_native": true,
+      "chronology_advanced_normally": true
+    },
+    {
+      "index": 83,
+      "case_epoch_millis": 1794542252241,
+      "name": "neutral_run_actual_first_evolution",
+      "action": "evolution",
+      "initial_sample": null,
+      "initial_state": {
+        "encoded_sha256": "c274cf0875d3d1c2e02d7d60634925917179a6203ea43fee94faf283a8909587",
+        "ageTicks": 215988,
+        "adultAgeTicks": 0,
+        "adult": false,
+        "dead": false,
+        "primaryType": 0,
+        "cocoonTicks": 0,
+        "gradualStrength": 0.9900000095367432,
+        "firstLocked": false,
+        "firstAlignment": 0.0,
+        "firstType": 0,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          480,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -0.5,
+          "swimFly": 0.0
+        }
+      },
+      "actualAccessories": false,
+      "literal_case_line": "[03:57:32] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CASE 83 name=neutral_run_actual_first_evolution baseline=false adult=false percent=100 alignment=0.0 maturity=0.99 action=evolution coat=natural suspendedStatic=false sample=Sample[enabled=true, adult=false, babyHero=0.0, babyRun=1.0, specialization=0.5, maturity=0.99, adultGrowth=0.0] babyVisibleGrowth=0.99 state=6;0,0;1,1;0,0;0,0;2,2,2,2,2;2,2,2,2,2;2,2,2,2,2;0,0,4,0,0;0,0,80,0,0;0,0,76,0,0;0,0,1,0,0,0,0,215988,0,0,0,0,0,0,0,80,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10000,0,10000;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1072672276,-2147483648,2,-1,-1,-1,-1,0,0,0,0,0,215988,1,0,0,0;;normal;normal epochMillis=1794542252241 actualAccessories=false",
+      "armed_epoch_millis": 1794542252638,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 240,
+          "shapeSignature": "8138042013002020455",
+          "sample": {
+            "enabled": true,
+            "maturity": 7.7160485e-06,
+            "runPower": -0.5,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542264631,
+          "literal_line": "[03:57:44] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=83 tick=240 shapeSignature=8138042013002020455 sample=Sample[enabled=true, maturity=7.7160485E-6, runPower=-0.5, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542264631"
+        },
+        {
+          "tick": 300,
+          "shapeSignature": "-416601484890553147",
+          "sample": {
+            "enabled": true,
+            "maturity": 6.558642e-05,
+            "runPower": -0.5,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794542267650,
+          "literal_line": "[03:57:47] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=83 tick=300 shapeSignature=-416601484890553147 sample=Sample[enabled=true, maturity=6.558642E-5, runPower=-0.5, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542267650"
+        }
+      ],
+      "native_epoch_millis": 1794542267624,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 8.487654e-05,
+        "runPower": -0.5,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "encoded_sha256": "732e17f86e979dcde14f2fbed2cda9719e068fc012d222f42b40485dede3c64d",
+        "ageTicks": 216088,
+        "adultAgeTicks": 88,
+        "adult": true,
+        "dead": false,
+        "primaryType": 3,
+        "cocoonTicks": 0,
+        "gradualStrength": 0.00010185185185185208,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 3,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          480,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -0.5,
+          "swimFly": 0.0
+        }
+      },
+      "elapsed_ticks": 300,
+      "walked_blocks": 0.0,
+      "literal_native_complete_line": "[03:57:47] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_NATIVE_COMPLETE 83 name=neutral_run_actual_first_evolution baseline=false elapsed=300 walked=0.0 sample=Sample[enabled=true, maturity=8.487654E-5, runPower=-0.5, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,3,2,2;2,2,2,2,2;2,2,3,2,2;0,0,4,0,0;0,0,80,0,0;0,0,76,0,0;0,0,1,0,0,0,0,216088,88,0,1,0,0,3,0,80,0,99,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,40,0,100,16,50,50,20,0,9995,0,9900;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1058714409,2108669886,2,-1,-1,-1,-1,1,0,3,0,0,88,1,0,0,0;;normal;normal epochMillis=1794542267624",
+      "render_epoch_millis": 1794542267658,
+      "angles": 3,
+      "worldFrames": 455,
+      "actorFrames": 455,
+      "captures": 25,
+      "movingFrames": 0,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "literal_render_complete_line": "[03:57:47] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_RENDER_COMPLETE 83 name=neutral_run_actual_first_evolution baseline=false angles=3 worldFrames=455 actorFrames=455 captures=25 movingFrames=0 toyContacts=0 maxToyError=0.0 uiFrames=0 uiCaptures=0 epochMillis=1794542267658",
+      "native_wall_seconds": 14.986,
+      "observed_ticks_per_second": 20.01868410516482,
+      "logged_capture_count": 25,
+      "age_delta_ticks": 100,
+      "adult_age_delta_ticks": 88,
+      "actual_first_evolution_completed": true
+    }
+  ],
+  "limits": [
+    "Actual water case74 is stationary in-water animation, not autonomous swim travel. No gliding travel is established.",
+    "Cases78..82 use accelerated actual training/edit schedules while animation and navigation use the native20TPS clock. Biological strength and locked identity remain fixed while chronological ages advance.",
+    "Pair81 now holds a raw full endpoint for80ticks and has an actual displayed settled marker before reversal; unlike .61, the visible full pair peak is explicitly checked. Angles still occur sequentially.",
+    "Actual carry77 covers upright Creative flight with real Accessories slots; the player can obscure the Chao in front. Horizontal elytra/swimming carry, takeoff/landing and every player skin/armor are unverified.",
+    "Visible three-way reaction-face coverage, audio/listening, full continuous playback and independent remote multiplayer/latency/reconnect are not established by these sources."
+  ]
+}

@@ -1,0 +1,15 @@
+# Neutral / Run 0.25.62 final static audit
+
+PASS: all 77 static cases (0..68 and 84..91), six angles each, have team visual coverage with no blocking finding. The completed actual final cohort rendered 92/92 cases with 0 skipped, saved 789 PNGs, and ended `BUILD SUCCESSFUL in 10m 21s`. The output contains 789 PNG files.
+
+The prior reviewer personally opened 14 contact sheets covering 414 static views for cases 0..68. That saved record and every corresponding sheet hash are preserved in `final-static-progress.json`; this resumed audit does not claim to have personally repeated those 414 views.
+
+The resumed reviewer personally opened `static-84-88.png` and `static-89-91.png`, inspecting all 48 late static views, then reopened original 85 above, 89 right and 91 back at full resolution. These reopens are subsets of the 48. The late mixed forms remain coherent at age 25/75 and training 50: raised nubs stay attached, the head/face/orb remain intact, and the head top/central-crest stripe lanes are visible with clear forehead and side faces. Case 89 has an idle lean; the full-resolution side confirms coherent attachment. No blocking geometry, open-face, alpha-gap or attachment defect appeared.
+
+All 462 static originals were independently rehashed against their literal `RUN062_CAPTURE` lines, with exactly one capture per case/angle and 1440×900 dimensions. All 16 prepared sheets were rehashed; the prior 14 still match the saved review. Contact sheets use a fixed 540×540 crop and uniform 280×280 nearest-neighbor cells. Originals remain unchanged.
+
+Final JAR SHA-256: `f6d975a540c765f4e89383af9070c748ebb549ff5d00194d3dfda2b09e4a1a15`. Model: `cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881`. Metadata: `20d1602340666c4f87fdf479277cb019308642d3ebad76ef3aae43926c18ced5`. The source model and metadata match their JAR entries. Seven protected older models match their preserved baseline in both source and JAR. Read-only structural checks confirm 59 original joint names/parents/pivots/rotations, exact original skull and emotion/orb meshes, the 7×6×6 skull, and 19 new closed boxes with 8 vertices and 6 faces. Previously executed dense source-validator results are credited separately in the JSON.
+
+The runtime proof was read and left unchanged (SHA-256 `d2e8f96b661ead1e5deed1c645d4e2c2e40bd50c11e6058e0b423ecea690aa5a`). Its 8336 production entries were independently checked against frozen bytes and final JAR entries. Actual runClient used the development classpath; the evidence establishes byte parity with the JAR, without claiming the JAR itself was loaded.
+
+This audit covers static geometry. It does not claim motion playback, UI, listening, multiplayer or new matched-viewer review. The full 789 PNG total is counted, but the non-static images are outside this audit's hash/visual scope. Original skull proportions, cuboid approximations and authored mixed-form interpolation remain known visual limits; top/central-crest markings follow the user's direction. Full source paths, hashes, per-image literal capture evidence and separate 414/48 review attribution are in `final-static-audit.json`.

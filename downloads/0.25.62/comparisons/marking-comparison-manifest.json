@@ -1,0 +1,1245 @@
+{
+  "version": "0.25.62",
+  "scope": "Separate mature above-view marking comparison; the main 81-pair/27-left comparison remains unchanged. Generation is not visual acceptance.",
+  "coordinator_visual_reviewed": true,
+  "coordinator_accepted": true,
+  "main_comparison_manifest": "/workspace/.setup/run062-final-reference-compare/comparison-manifest.json",
+  "main_comparison_manifest_sha256": "fb37dadc9ac223104ffea1329374e3610a487e553317f3a7065668d3632b2f5b",
+  "main_comparison_pair_count": 81,
+  "main_opposite_side_count": 27,
+  "main_contact_sheets": [
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-matched-age000.png",
+      "file": "final-matched-age000.png",
+      "sha256": "a99837d30b395a8915a4f13856825c2a5dcf6f20195b178787966d50304d71ef"
+    },
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-matched-age050.png",
+      "file": "final-matched-age050.png",
+      "sha256": "ac445de7493345e54943c65a2c07b84c0dc9a3f97fcec834df9f705f69cb2dd1"
+    },
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-matched-age100.png",
+      "file": "final-matched-age100.png",
+      "sha256": "a9e7830f99271c5d8e8a8cfd701ed2cfdbc5fe4b20e2ab91d01f0a8ff7ca491b"
+    },
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-opposite-side-audit.png",
+      "file": "final-opposite-side-audit.png",
+      "sha256": "d3b05fefe6d23d8a288587197f4f299452a110d7f63ed53168a8286804e337a9"
+    }
+  ],
+  "canonical_log": "/workspace/.setup/run062-client-final.log",
+  "canonical_log_sha256": "027b6c62cf0b630232f3b1a1e63f3057412874a7b15e29aa394cb35eec9c703c",
+  "case_catalog": "/workspace/.setup/run062-client-final/case-catalog.json",
+  "case_catalog_sha256": "9a84b31f7f996b6dc28ad0d30f7f4d1248e4d6c9db1e28475b7a439841b47ccf",
+  "authored_case_plan": "/workspace/.setup/run062-case-plan.json",
+  "authored_case_plan_sha256": "f8b7fa26425b8d65a1566beb63899a1ca44798bbe1a7bcac313b6385102c91d1",
+  "runtime_mode": "development_classpath",
+  "runtime_proof": "/workspace/.setup/run062-runtime-proof.json",
+  "runtime_proof_sha256": "d2e8f96b661ead1e5deed1c645d4e2c2e40bd50c11e6058e0b423ecea690aa5a",
+  "runtime_coverage": "All production com/chaogarden/**/*.class and assets/chao_garden/** entries were frozen from the declared Gradle development output roots and compared byte-for-byte with the delivered JAR. Their declared runtime source files still match the frozen bytes at binding. This does not claim the JAR was loaded by runClient.",
+  "frozen_snapshot_manifest": "/workspace/.setup/run062-runtime-frozen/snapshot.json",
+  "frozen_snapshot_manifest_sha256": "f6f03bf7c78c8aef0ce8b07856d40f8e91ea049a450f5b2e54f42ec2bc96f416",
+  "frozen_epoch_millis": 1794541663572,
+  "production_jar_path": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.62.jar",
+  "production_jar_sha256_expected": "f6d975a540c765f4e89383af9070c748ebb549ff5d00194d3dfda2b09e4a1a15",
+  "production_model_entry": "assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json",
+  "production_model_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+  "viewer_manifest": "/workspace/.setup/run062-viewer/reference-manifest.json",
+  "viewer_manifest_sha256": "b72cd6f55a0cac6da5513518db19df35f4418f02dfc1d4954e36b3740043780a",
+  "case_count": 92,
+  "accepted_original_png_count": 789,
+  "skipped_cases": 0,
+  "pairs": [
+    {
+      "form": "balanced",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-02-neutral_run_normal_age100-above-t000-f0108.png",
+        "file": "run062-live-02-neutral_run_normal_age100-above-t000-f0108.png",
+        "sha256": "344150ae4b01477ee9460b021d600bf4773b3fdaf7aec2ef456620d8e3ff0b65",
+        "case_index": 2,
+        "case_name": "neutral_run_normal_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 2,
+          "name": "neutral_run_normal_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": 0,
+          "swim_fly_axis": 0,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:48:58] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-02-neutral_run_normal_age100-above-t000-f0108.png case=2 angle=above tick=0 sha256=344150ae4b01477ee9460b021d600bf4773b3fdaf7aec2ef456620d8e3ff0b65 wallNanos=39056405428333 epochMillis=1794541738864"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-balanced-age100-above.png",
+        "file": "neutral-run-balanced-age100-above.png",
+        "sha256": "63923994784ebd08787ebc9ce589c488bb47f1233b20d3d58efdbc94a8781866",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "balanced",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": 0,
+        "swim_fly_axis": 0,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "balanced",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 0,
+          "swim_fly_axis": 0,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 0
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=0; SwimFly axis=0; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 0,
+          "viewer_run": 0,
+          "swim_fly": 0
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+          "approx_observed_viewer_run_axis": 0.0028169014084507044,
+          "approx_observed_swim_fly_axis": -0.0028169014084507044,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "run",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-05-neutral_run_run_age100-above-t000-f0108.png",
+        "file": "run062-live-05-neutral_run_run_age100-above-t000-f0108.png",
+        "sha256": "276ec58fe7c52efd3ca9ba5fc839dfe4ec03e429e7824fb81aa25f3992c115a5",
+        "case_index": 5,
+        "case_name": "neutral_run_run_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 5,
+          "name": "neutral_run_run_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": -1,
+          "swim_fly_axis": 0,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:49:12] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-05-neutral_run_run_age100-above-t000-f0108.png case=5 angle=above tick=0 sha256=276ec58fe7c52efd3ca9ba5fc839dfe4ec03e429e7824fb81aa25f3992c115a5 wallNanos=39070524929926 epochMillis=1794541752984"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-run-age100-above.png",
+        "file": "neutral-run-run-age100-above.png",
+        "sha256": "4baf743604fb0975530b2a78fd871d7b81c4b27f948b6b7fa3796f313d67225b",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "run",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": -1,
+        "swim_fly_axis": 0,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "run",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": -1,
+          "swim_fly_axis": 0,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=1; SwimFly axis=0; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": -1,
+          "viewer_run": 1,
+          "swim_fly": 0
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": -1,
+          "approx_observed_viewer_run_axis": 1,
+          "approx_observed_swim_fly_axis": -0.0028169014084507044,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "power",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-08-neutral_run_power_age100-above-t000-f0108.png",
+        "file": "run062-live-08-neutral_run_power_age100-above-t000-f0108.png",
+        "sha256": "c708907cfdb1d08cde9eb86c81fe5aad622efef426f8461d396eeca5f602544f",
+        "case_index": 8,
+        "case_name": "neutral_run_power_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 8,
+          "name": "neutral_run_power_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": 1,
+          "swim_fly_axis": 0,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:49:26] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-08-neutral_run_power_age100-above-t000-f0108.png case=8 angle=above tick=0 sha256=c708907cfdb1d08cde9eb86c81fe5aad622efef426f8461d396eeca5f602544f wallNanos=39084515747737 epochMillis=1794541766975"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-power-age100-above.png",
+        "file": "neutral-run-power-age100-above.png",
+        "sha256": "d5ee40c890fe3b5cd6e2087db3e113bbe303aab8627424b2dc39fa0ef15e12e3",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "power",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": 1,
+        "swim_fly_axis": 0,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "power",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 1,
+          "swim_fly_axis": 0,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": -1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=-1; SwimFly axis=0; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 1,
+          "viewer_run": -1,
+          "swim_fly": 0
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": 1,
+          "approx_observed_viewer_run_axis": -1,
+          "approx_observed_swim_fly_axis": -0.0028169014084507044,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "fly",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-11-neutral_run_fly_age100-above-t000-f0108.png",
+        "file": "run062-live-11-neutral_run_fly_age100-above-t000-f0108.png",
+        "sha256": "5f24a83350998376024b921b9c600327a2cc1d2b43a8dc55bf04455f80a0e731",
+        "case_index": 11,
+        "case_name": "neutral_run_fly_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 11,
+          "name": "neutral_run_fly_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": 0,
+          "swim_fly_axis": 1,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:49:41] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-11-neutral_run_fly_age100-above-t000-f0108.png case=11 angle=above tick=0 sha256=5f24a83350998376024b921b9c600327a2cc1d2b43a8dc55bf04455f80a0e731 wallNanos=39098588244524 epochMillis=1794541781047"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-fly-age100-above.png",
+        "file": "neutral-run-fly-age100-above.png",
+        "sha256": "105c01ebaea238496a011ba745c72e4cd786f2fc74e4fb62b93f3bab6853ef9d",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "fly",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": 0,
+        "swim_fly_axis": 1,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "fly",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 0,
+          "swim_fly_axis": 1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 0
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=0; SwimFly axis=1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 0,
+          "viewer_run": 0,
+          "swim_fly": 1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+          "approx_observed_viewer_run_axis": 0.0028169014084507044,
+          "approx_observed_swim_fly_axis": 1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "swim",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-14-neutral_run_swim_age100-above-t000-f0108.png",
+        "file": "run062-live-14-neutral_run_swim_age100-above-t000-f0108.png",
+        "sha256": "f866979badf5b39724ec443e1c446029150a8114f36ec1ff70c88735a94573ee",
+        "case_index": 14,
+        "case_name": "neutral_run_swim_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 14,
+          "name": "neutral_run_swim_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": 0,
+          "swim_fly_axis": -1,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:49:54] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-14-neutral_run_swim_age100-above-t000-f0108.png case=14 angle=above tick=0 sha256=f866979badf5b39724ec443e1c446029150a8114f36ec1ff70c88735a94573ee wallNanos=39112506018799 epochMillis=1794541794965"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-swim-age100-above.png",
+        "file": "neutral-run-swim-age100-above.png",
+        "sha256": "9a2849d5aca98100e4cc7d52711f26084f1d6965fbbf89fdfb01742bb5499099",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "swim",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": 0,
+        "swim_fly_axis": -1,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "swim",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 0,
+          "swim_fly_axis": -1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 0
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=0; SwimFly axis=-1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 0,
+          "viewer_run": 0,
+          "swim_fly": -1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+          "approx_observed_viewer_run_axis": 0.0028169014084507044,
+          "approx_observed_swim_fly_axis": -1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "run-fly",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-17-neutral_run_run_fly_age100-above-t000-f0108.png",
+        "file": "run062-live-17-neutral_run_run_fly_age100-above-t000-f0108.png",
+        "sha256": "793ac44d3a3fee6ffee96b9f134de59a061f509305a93ca1c0fc7919dcd4c6e0",
+        "case_index": 17,
+        "case_name": "neutral_run_run_fly_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 17,
+          "name": "neutral_run_run_fly_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": -1,
+          "swim_fly_axis": 1,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:50:08] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-17-neutral_run_run_fly_age100-above-t000-f0108.png case=17 angle=above tick=0 sha256=793ac44d3a3fee6ffee96b9f134de59a061f509305a93ca1c0fc7919dcd4c6e0 wallNanos=39126487867463 epochMillis=1794541808947"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-run-fly-age100-above.png",
+        "file": "neutral-run-run-fly-age100-above.png",
+        "sha256": "4e7b5ff976b2dc5a3ecef5f164508d9300f349265823319ba5691ec5868b9709",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "run-fly",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": -1,
+        "swim_fly_axis": 1,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "run-fly",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": -1,
+          "swim_fly_axis": 1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=1; SwimFly axis=1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": -1,
+          "viewer_run": 1,
+          "swim_fly": 1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": -1,
+          "approx_observed_viewer_run_axis": 1,
+          "approx_observed_swim_fly_axis": 1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "run-swim",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-20-neutral_run_run_swim_age100-above-t000-f0108.png",
+        "file": "run062-live-20-neutral_run_run_swim_age100-above-t000-f0108.png",
+        "sha256": "14022d0d1ac44a2a4dc08dfdf24501868df1e519d7926f81f0980edce07698a0",
+        "case_index": 20,
+        "case_name": "neutral_run_run_swim_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 20,
+          "name": "neutral_run_run_swim_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": -1,
+          "swim_fly_axis": -1,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:50:23] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-20-neutral_run_run_swim_age100-above-t000-f0108.png case=20 angle=above tick=0 sha256=14022d0d1ac44a2a4dc08dfdf24501868df1e519d7926f81f0980edce07698a0 wallNanos=39140547964915 epochMillis=1794541823007"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-run-swim-age100-above.png",
+        "file": "neutral-run-run-swim-age100-above.png",
+        "sha256": "9a810f302ce26e69be0102b6a3e9d6d8051fd9190cfc078bdecb12938b7e5ae2",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "run-swim",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": -1,
+        "swim_fly_axis": -1,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "run-swim",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": -1,
+          "swim_fly_axis": -1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": 1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=1; SwimFly axis=-1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": -1,
+          "viewer_run": 1,
+          "swim_fly": -1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": -1,
+          "approx_observed_viewer_run_axis": 1,
+          "approx_observed_swim_fly_axis": -1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "power-fly",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-23-neutral_run_power_fly_age100-above-t000-f0108.png",
+        "file": "run062-live-23-neutral_run_power_fly_age100-above-t000-f0108.png",
+        "sha256": "9d5e0d7a5559a2326ae374ae1bfa7cfd121877fe59ce09b615227980f8c9750e",
+        "case_index": 23,
+        "case_name": "neutral_run_power_fly_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 23,
+          "name": "neutral_run_power_fly_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": 1,
+          "swim_fly_axis": 1,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:50:37] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-23-neutral_run_power_fly_age100-above-t000-f0108.png case=23 angle=above tick=0 sha256=9d5e0d7a5559a2326ae374ae1bfa7cfd121877fe59ce09b615227980f8c9750e wallNanos=39154600142371 epochMillis=1794541837059"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-power-fly-age100-above.png",
+        "file": "neutral-run-power-fly-age100-above.png",
+        "sha256": "eeb1cc27d463152f3e8338d52113180aeeab8278beb56072a3e71cf9dc1c45ea",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "power-fly",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": 1,
+        "swim_fly_axis": 1,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "power-fly",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 1,
+          "swim_fly_axis": 1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": -1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=-1; SwimFly axis=1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 1,
+          "viewer_run": -1,
+          "swim_fly": 1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": 1,
+          "approx_observed_viewer_run_axis": -1,
+          "approx_observed_swim_fly_axis": 1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    },
+    {
+      "form": "power-swim",
+      "age_percent": 100,
+      "minecraft": {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-26-neutral_run_power_swim_age100-above-t000-f0108.png",
+        "file": "run062-live-26-neutral_run_power_swim_age100-above-t000-f0108.png",
+        "sha256": "6c0b914ccb45dff6056218f9261794b0ad1530a58914602f9253da528705f8f5",
+        "case_index": 26,
+        "case_name": "neutral_run_power_swim_age100",
+        "angle": "above",
+        "tick": 0,
+        "settings": {
+          "index": 26,
+          "name": "neutral_run_power_swim_age100",
+          "adult": true,
+          "first_type": 3,
+          "run_power_axis": 1,
+          "swim_fly_axis": -1,
+          "power_counter_percent": 0,
+          "static_native_epoch": 120,
+          "controlled_motion_training": false,
+          "training_percent": 100,
+          "alignment": 0.0,
+          "maturity": 1.0,
+          "action": "still",
+          "hat": "",
+          "rabbit": false,
+          "coat": "natural",
+          "suspended_static_photo": true,
+          "actual_accessories_required": false,
+          "angles": 6,
+          "motion_ticks": 0
+        },
+        "literal_capture_proofs": [
+          "[03:50:51] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-26-neutral_run_power_swim_age100-above-t000-f0108.png case=26 angle=above tick=0 sha256=6c0b914ccb45dff6056218f9261794b0ad1530a58914602f9253da528705f8f5 wallNanos=39168622322541 epochMillis=1794541851081"
+        ]
+      },
+      "viewer": {
+        "path": "/workspace/.setup/run062-viewer/neutral-run-power-swim-age100-above.png",
+        "file": "neutral-run-power-swim-age100-above.png",
+        "sha256": "b5faebe812bcf761459d22b88ed92364b2d24688acca9c58eb48a87ff8930871",
+        "angle": "above",
+        "age_percent": 100,
+        "form": "power-swim",
+        "alignment": "Neutral",
+        "first_type": "Run",
+        "run_power_axis": 1,
+        "swim_fly_axis": -1,
+        "source_settings": {
+          "alignment": "Neutral",
+          "alignment_value": 0,
+          "first_type": "Run",
+          "later": "power-swim",
+          "age": 1.0,
+          "training_fraction": 1,
+          "mod_run_power_axis": 1,
+          "swim_fly_axis": -1,
+          "view": "above",
+          "canvas_width": 970,
+          "canvas_height": 486,
+          "viewer_run_axis": -1
+        },
+        "source_notes": "above; Actual mouse controls: alignment=0 Neutral; Run first type selected; Child and Normal unchecked; Run axis=-1; SwimFly axis=-1; age=1; approximate normalized tracks; geometry not imported",
+        "actual_orbit_drag_x": 0,
+        "actual_orbit_drag_y": 75,
+        "view_note": "Actual above reference orbit; pitch is approximate and not camera-calibrated to Minecraft.",
+        "requested_control_axes": {
+          "mod_run_power": 1,
+          "viewer_run": -1,
+          "swim_fly": -1
+        },
+        "observed_slider_handles": {
+          "alignment": {
+            "row": 170,
+            "x_min": 743,
+            "x_max": 772,
+            "center_x": 757.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "swim_fly": {
+            "row": 270,
+            "x_min": 566,
+            "x_max": 595,
+            "center_x": 580.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "run_power": {
+            "row": 365,
+            "x_min": 921,
+            "x_max": 950,
+            "center_x": 935.5,
+            "rgb": [
+              0,
+              98,
+              198
+            ]
+          },
+          "age": {
+            "row": 435,
+            "x_min": 926,
+            "x_max": 945,
+            "center_x": 935.5,
+            "rgb": [
+              255,
+              128,
+              0
+            ]
+          },
+          "approx_observed_mod_run_power_axis": 1,
+          "approx_observed_viewer_run_axis": -1,
+          "approx_observed_swim_fly_axis": -1,
+          "approx_observed_age_fraction": 1,
+          "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+        }
+      },
+      "requested_placement": "Minecraft markings are on the original head TOP and separate central crest root/tip. Forehead and side faces remain clear. This intentional user choice differs from source-reference placement.",
+      "comparison_scope": "Same first Run, Neutral alignment, mature development and signed target axes; above camera pitch, source-game units and idle phases are approximate."
+    }
+  ],
+  "pair_count": 9,
+  "contact_sheet": {
+    "path": "/workspace/.setup/run062-final-reference-compare/final-mature-top-markings.png",
+    "file": "final-mature-top-markings.png",
+    "sha256": "be8eb8bf4d87bb481ec198d509f5df59a0b3b22de8f11a0daaa33c5907284e23"
+  },
+  "image_processing": {
+    "minecraft_original_size": [
+      1440,
+      900
+    ],
+    "minecraft_crop": [
+      450,
+      230,
+      990,
+      770
+    ],
+    "viewer_original_size": [
+      970,
+      486
+    ],
+    "viewer_crop": [
+      0,
+      0,
+      540,
+      486
+    ],
+    "viewer_padding_top_bottom": 27,
+    "uniform_output_tile": [
+      330,
+      330
+    ],
+    "resampling": "nearest",
+    "flips": false,
+    "per_frame_warp": false,
+    "recolor": false
+  },
+  "intentional_placement": "Requested Minecraft head-TOP/central-crest strokes with clear forehead/sides are compared with unmodified viewer above images. The viewer does not demonstrate the relocated Minecraft paint.",
+  "limitations": [
+    "Above camera pitch, idle phases, colors, lighting and original-game stat units are not calibrated.",
+    "The original head box and block anatomy are retained; matching screenshots do not imply exact source geometry.",
+    "Static above images establish only the sampled visible placement; no motion, alpha or attachment test outcome is inferred.",
+    "Development output/JAR bytes match through the same strict proof; this does not assert runClient loaded that archive.",
+    "No original image, source reference manifest, main comparison manifest or main comparison sheet was edited."
+  ],
+  "coordinator_observations": [
+    "Personally opened the complete nine-pair above sheet: forehead and head sides remain clear; longitudinal strokes run over the original head TOP and central crest TOP toward its tip in every mature form.",
+    "Original fixed cuboid head and clean eyes remain recognizable. Central and rear separate blocky features distinguish balanced, Run, Power, Fly, Swim and four compatible pairs.",
+    "Viewer above originals retain their original forehead/temple drops; Minecraft markings intentionally follow the user-requested different placement. No source image was retouched."
+  ],
+  "coordinator_limits": [
+    "Different lighting, idle phases and approximate orbit angles; no calibrated geometry equivalence.",
+    "Fly eyes are partly closed by an ordinary blink in this actual frame.",
+    "Tiny wings and broad cuboid features remain simplified approximations."
+  ]
+}

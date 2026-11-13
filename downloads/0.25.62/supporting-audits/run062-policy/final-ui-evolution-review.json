@@ -1,0 +1,126 @@
+{
+  "version": "0.25.62",
+  "timestamp_utc": "2026-11-13T04:04:32.863941+00:00",
+  "scope": "Final policy/UI/natural-evolution closure; image viewing is separated from byte/hash assertions.",
+  "cohort": {
+    "requested": 92,
+    "rendered": 92,
+    "skipped": 0,
+    "pngs": 789,
+    "image_groups": {
+      "static": 462,
+      "ui": 16,
+      "post_ui_world": 9,
+      "motion_evolution": 302
+    },
+    "elapsed": "10m 21s",
+    "all_789_literal_capture_hashes_match": true,
+    "log": "/workspace/.setup/run062-client-final.log",
+    "log_sha256": "027b6c62cf0b630232f3b1a1e63f3057412874a7b15e29aa394cb35eec9c703c"
+  },
+  "hash_runtime_audit": {
+    "path": "/workspace/.setup/run062-policy/final-ui-evolution-hash-runtime-audit.json",
+    "sha256": "c652c60bca1475d56d400185c011ee15fbe7691da5cf6d4799c720285a7d84ed",
+    "selected_images": 50,
+    "ui_images": 16,
+    "post_ui_world_images": 9,
+    "evolution_images": 25,
+    "production_entries": 8336,
+    "all_frozen_current_and_jar_bytes_match": true,
+    "proof_sha256": "d2e8f96b661ead1e5deed1c645d4e2c2e40bd50c11e6058e0b423ecea690aa5a",
+    "runtime_mode": "development_classpath",
+    "packaged_archive_launch_claim": false
+  },
+  "source_compatibility": {
+    "path": "/workspace/.setup/run062-policy/source-compatibility-snapshot.json",
+    "sha256": "65ee38d1d7305296762f9d5ea9f568f983574fba85f57d5fe9464df2d7ec9df1",
+    "baseline": "31551812e0def1a14188b5b7eb1df95852432914",
+    "seven_protected_models_exact": true,
+    "three_additional_models_exact": true,
+    "eleven_authority_sources_exact": true,
+    "ChaoState_only_readonly_secondaryTypes_changed": true,
+    "all_reviewed_current_source_hashes_match": true
+  },
+  "visual_review_credit": {
+    "earlier_in_session": {
+      "record": "/workspace/.setup/run062-policy/ui-stage-personal-review.json",
+      "record_sha256": "70546d86ff468197f0456870f842a0c69767df9606549c86176f1126ea42f305",
+      "actually_opened_ui_originals_full_resolution": 16,
+      "actually_opened_post_ui_world_originals_full_resolution": 9,
+      "natural_evolution_review": "Coordinator handoff records prior policy reviewer opened the all25 sheet plus full originals at baby tick11, cocoon tick95 and fresh-adult tick300."
+    },
+    "closure_personal_reopens": [
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+        "sha256": "9f278dc6938b55f74af618161e9013dfeab7e6b900bc3883751e82025659a211",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-young.png",
+        "sha256": "0faac97bfd936cb4e6620c7fa81a8264635c095a70dd9dbe6097e8150533c0cc",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+        "sha256": "3d0fb0f519f3891fc1f72b16aa9139302d62f938405287cc7bf9ab89c9909ef5",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-ui-maturity-survival-denied.png",
+        "sha256": "5af87926605f4a920ae6e4ab7a363df3a226879691bd0fbb1a31643d9129eccc",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+        "sha256": "5a618e782c8d467580449086042120db57bf149ac311fa25d30ec96d81a668f0",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+        "sha256": "6781074de98c412b8f00d39b198b3603618230ce59241a26308aea766b89727f",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t011-f0028.png",
+        "sha256": "d2f9f945ee7a7d940a4476563dd4ccff452b3f2ee3c08a47dfacfd686d5c3e0c",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t095-f0153.png",
+        "sha256": "75ac99e7575fbfc1958fa28bb0111754ab1f18b82e4303f36a5eda0fdc025f10",
+        "opened_full_resolution": true
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t300-f0455.png",
+        "sha256": "07f616a466da043e2d471656309f5bbeb0a5ecc4dc5a2038b77d8ed210d1010d",
+        "opened_full_resolution": true
+      }
+    ],
+    "closure_sheet_review": {
+      "path": "/workspace/.setup/run062-policy/natural-evolution-all25-uniform-sheet.png",
+      "sha256": "94e5aee3fa6365a6179777f1c8d7e8780170ef9cf7cb1c57e1a65359bdff431a",
+      "all_25_panels_personally_viewed": true,
+      "source_manifest": "/workspace/.setup/run062-policy/natural-evolution-sheet-sources.json",
+      "source_manifest_sha256": "2af143f1fefc9523bc4b7aa3c263071c014e6c7151d14e508dffcf9d75cf0b4e",
+      "operation": "Existing fixed crop/scale contact sheet; unchanged originals retained."
+    },
+    "counting_note": "Earlier and closure reviews overlap and are not added as distinct originals."
+  },
+  "observations": {
+    "adult69": "Neutral adult lock and first Run persist; displayed maturity80.0 before,79.9 in active drag,25.0 young,100.0 endpoint. Young preview is green with a smaller crest; endpoint is blue with a mature crest. The active-drag frame is near the start, not a well-spaced midpoint. Native verification confirms stage preservation and exact entity-NBT save/reload.",
+    "adult69_pointer_capture_limit": "[03:54:13] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_UI_POINTER_RENDER case=69 label=maturity-drag-intermediate actualGuiMouseX=573 actualGuiMouseY=342 requestedGuiMouseX=506.0 requestedGuiMouseY=342.0",
+    "survival70": "Displayed maturity80.0 remains before/after forged250 request. Native maturity0.9601297 includes passive growth, not acceptance of the edit. Forged alignment+1000 is blocked. Feedback footer has inherited low contrast.",
+    "baby71": "Child changes from Neutral to Hero+80.2; displayed maturity80.0 to73.0 active to25.0 to99.0 remains Child. Native stage and NBT roundtrip pass.",
+    "natural83": "All25 panels show a genuine teal child, the opaque first-evolution cocoon, then a lime fresh Run-first adult with the small up/back central crest and separate nubs. Native state locks Neutral/firstRun3; final maturity8.487654e-5 and RP-0.5/SF0 remain fresh rather than displaying mature cobalt hooks.",
+    "post_ui_world": "Prior full-resolution review covers all9 front/left/back persistence views. Labels are approximate/oblique camera names and are not calibrated comparison angles."
+  },
+  "limits": [
+    "No physical touch hardware input",
+    "Active adult drag capture is early; it does not demonstrate synchronized intermediate pointer/server feedback",
+    "NBT roundtrip does not demonstrate a complete world restart",
+    "Single in-process client/server does not demonstrate independent remote multiplayer",
+    "Short natural evolution does not validate lifetime pacing",
+    "No audio listening or distinct real-client reaction-face claim",
+    "No autonomous swim/glide travel claim; attachment/toy visual scope is reported separately"
+  ]
+}

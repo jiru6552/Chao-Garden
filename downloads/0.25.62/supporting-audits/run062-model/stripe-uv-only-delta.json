@@ -1,0 +1,45 @@
+{
+  "scope": "UV-only change after mature-nub geometry correction. All bones, all parameters/vertices, face indexes/corner topology, head/face/orb and original rig are exact to CCD2 input. Only central2 top-faceUVs and descriptive metadata changed.",
+  "geometry_before_sha256": "ccd2aff4d5510f7e6fc928fac50a15bc289ee28740622e47957a2070a8c512af",
+  "model_after_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+  "metadata_after_sha256": "20d1602340666c4f87fdf479277cb019308642d3ebad76ef3aae43926c18ced5",
+  "changed_meshes": [
+    {
+      "mesh": "run_crest_root",
+      "changed_face_indexes": [
+        4
+      ]
+    },
+    {
+      "mesh": "run_crest_tip",
+      "changed_face_indexes": [
+        4
+      ]
+    }
+  ],
+  "unchanged_geometry_and_all_original_head_face_orb_uvs": true,
+  "tile_native_padded_bounds": [
+    112.05,
+    32.05,
+    118.95,
+    33.95
+  ],
+  "tile_asset_uv_padded_bounds": [
+    56.025,
+    16.025,
+    59.475,
+    16.975
+  ],
+  "physical_mapping": "U follows localX width; V follows localZ proximal-to-distal length on local-negativeY face4.",
+  "stripe_lanes": [
+    "body",
+    "marking",
+    "body",
+    "marking",
+    "body",
+    "marking",
+    "body"
+  ],
+  "alpha_and_unused_proof": "/workspace/.setup/run062-material/stripe-tile-unused-proof.json",
+  "placement_source": "Explicit user preference: move forehead markings onto headTOP and centralspine/tip. This deliberately differs from viewer forehead placement."
+}

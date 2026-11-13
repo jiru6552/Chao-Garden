@@ -1,0 +1,37 @@
+Chao Garden 0.25.62 cumulative source overlay onto the complete 0.25.43 source.
+
+Extract at the full project root, review SOURCE_DELETIONS.txt, then run python3 apply-source-deletions.py /path/to/project --verify-only. Run without --verify-only after review. Modified source is refused; Minecraft saves are not touched.
+
+The download branch contains the complete source tree. Java 21, NeoForge 1.21.1, external Lionfish API 3.1; matching client/server 0.25.62.
+
+Changed since .61:
+CHANGELOG.md
+MECHANICS.md
+README.md
+TESTING.md
+build.gradle
+docs/NEUTRAL_RUN_02562.md
+gradle.properties
+scripts/generate_neutral_run_morph_02562.py
+scripts/validate_neutral_run_morph_02562.py
+src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java
+src/lionfishTest/java/com/chaogarden/client/NeutralRunMorphRigTest062.java
+src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java
+src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java
+src/main/java/com/chaogarden/client/ChaoInspectionScreen.java
+src/main/java/com/chaogarden/client/ChaoMeshAsset.java
+src/main/java/com/chaogarden/client/ChaoModel.java
+src/main/java/com/chaogarden/client/ChaoOverlayLayer.java
+src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java
+src/main/java/com/chaogarden/client/NeutralRunAppearance062.java
+src/main/java/com/chaogarden/client/NeutralRunCoatMaterial062.java
+src/main/java/com/chaogarden/client/NeutralRunRegionPaint062.java
+src/main/java/com/chaogarden/client/NeutralRunVisualSmoke062.java
+src/main/java/com/chaogarden/client/OfficialChaoRig.java
+src/main/java/com/chaogarden/core/ChaoState.java
+src/main/java/com/chaogarden/core/NeutralRunMorphology062.java
+src/main/java/com/chaogarden/test/NeutralRunMorphologyGameTests062.java
+src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json
+src/main/resources/assets/chao_garden/neutral_run062.json
+src/test/java/com/chaogarden/core/MechanicsTestSuite.java
+src/test/java/com/chaogarden/core/NeutralRunMorphology062Test.java

@@ -1,0 +1,758 @@
+{
+  "version": "0.25.62",
+  "status": "PASS within stated scope",
+  "created_utc": "2026-11-13T04:08:58.485659+00:00",
+  "scope": "Read-only actual final log/encoded-state/capture/frozen-live-JAR closure plus personal review of current motion sheets and selected full originals. No production/test/build/Git changes.",
+  "source_log_sha256": "027b6c62cf0b630232f3b1a1e63f3057412874a7b15e29aa394cb35eec9c703c",
+  "authored_plan_sha256": "f8b7fa26425b8d65a1566beb63899a1ca44798bbe1a7bcac313b6385102c91d1",
+  "authored_helper_sha256": "49d6f47c7bcd2bdc6bb7fa55b4882d9f904fdc5e51aa4d4a209871d9c880eb75",
+  "runtime_proof_sha256": "d2e8f96b661ead1e5deed1c645d4e2c2e40bd50c11e6058e0b423ecea690aa5a",
+  "jar_sha256": "f6d975a540c765f4e89383af9070c748ebb549ff5d00194d3dfda2b09e4a1a15",
+  "model_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+  "metadata_sha256": "20d1602340666c4f87fdf479277cb019308642d3ebad76ef3aae43926c18ced5",
+  "client_cohort": {
+    "cases": 92,
+    "skipped": 0,
+    "original_pngs": 789,
+    "world_pngs": 773,
+    "ui_pngs": 16,
+    "motion_evolution_pngs": 302,
+    "hash_mismatches": 0
+  },
+  "production_entries_compared": 8336,
+  "production_mismatches": 0,
+  "runtime_mode": "development_classpath; JAR loading is not claimed",
+  "actual_build_logs": {
+    "focused": {
+      "path": "/workspace/.setup/run062-focused.log",
+      "sha256": "e130063f5fc4c537d80c998e9fc61ef46e44a6480981e82de12851cbb33d4bbe",
+      "literal_success": "BUILD SUCCESSFUL in 54s"
+    },
+    "build": {
+      "path": "/workspace/.setup/run062-build.log",
+      "sha256": "d0cf565a394278af0fd8aad152e62ddaf67472fe458166b38d3d3e593a162900",
+      "literal_success": "BUILD SUCCESSFUL in 13m 27s"
+    },
+    "native": {
+      "path": "/workspace/.setup/run062-native.log",
+      "sha256": "66522af357c3911f79541f78a3f1e976e2620dba72cd0cd2edf6192a5e7541be",
+      "literal_success": "BUILD SUCCESSFUL in 48s",
+      "required_tests_passed": 476,
+      "new_run062_tests": 48,
+      "retained_tests": 428,
+      "batches": [
+        {
+          "name": "run062_1:0",
+          "count": 8
+        },
+        {
+          "name": "run062_0:0",
+          "count": 8
+        },
+        {
+          "name": "run062_3:0",
+          "count": 8
+        },
+        {
+          "name": "run062_2:0",
+          "count": 8
+        },
+        {
+          "name": "run062_5:0",
+          "count": 8
+        },
+        {
+          "name": "run062_4:0",
+          "count": 8
+        },
+        {
+          "name": "journey054:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_0:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_1:0",
+          "count": 8
+        },
+        {
+          "name": "swim059_4:0",
+          "count": 6
+        },
+        {
+          "name": "swim059_3:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_8:0",
+          "count": 4
+        },
+        {
+          "name": "morph052_6:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_7:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_4:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_5:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_2:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_3:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_7:0",
+          "count": 5
+        },
+        {
+          "name": "baby053_5:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_6:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_3:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_4:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_1:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_2:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_0:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_1:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_5:0",
+          "count": 2
+        },
+        {
+          "name": "darknormal060_0:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_0:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_1:0",
+          "count": 8
+        },
+        {
+          "name": "morph055_3:0",
+          "count": 2
+        },
+        {
+          "name": "fly061_2:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_3:0",
+          "count": 8
+        },
+        {
+          "name": "morph055_1:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_4:0",
+          "count": 6
+        },
+        {
+          "name": "morph055_2:0",
+          "count": 8
+        },
+        {
+          "name": "morph055_0:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_6:0",
+          "count": 6
+        },
+        {
+          "name": "swim059_0:0",
+          "count": 8
+        },
+        {
+          "name": "swim059_2:0",
+          "count": 8
+        },
+        {
+          "name": "swim059_1:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_2:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_5:0",
+          "count": 7
+        },
+        {
+          "name": "neutral056_1:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_4:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_4:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_3:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_3:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_2:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_0:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_4:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_5:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_5:0",
+          "count": 6
+        },
+        {
+          "name": "editing056_4:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_2:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_3:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_3:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_2:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_0:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_1:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_1:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_0:0",
+          "count": 8
+        }
+      ]
+    },
+    "client-final": {
+      "path": "/workspace/.setup/run062-client-final.log",
+      "sha256": "027b6c62cf0b630232f3b1a1e63f3057412874a7b15e29aa394cb35eec9c703c",
+      "literal_success": "BUILD SUCCESSFUL in 10m 21s"
+    }
+  },
+  "reviewed_test_source_hashes_still_current": {
+    "src/test/java/com/chaogarden/core/NeutralRunMorphology062Test.java": "f9bc5d491603c9a5afbaaf9e67875267844563a6929698e030fb75871240af66",
+    "src/test/java/com/chaogarden/core/MechanicsTestSuite.java": "0587f6441f51c5ae80679bbc629a1b0bb798e1c0a05410b05bf584f170cff7dc",
+    "src/main/java/com/chaogarden/test/NeutralRunMorphologyGameTests062.java": "6eb392ca5a786b898d51f4a5918075bafbaca76ac9f4da90d67f46e57743d4bc",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralRunMorphRigTest062.java": "002902cd60d80a8acbfb3c3e2f6f05270dcf0197ca66409c07a5c2c47c626b6c",
+    "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java": "116338ab770020db0514cbada0ef829e591fde9ffb081df5b0126ca3de6d43e2",
+    "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java": "a7f82cd1e03939d122670b37bb8817709bab6bf1ff4d3a72de2b44a4632f0c22"
+  },
+  "sheets": [
+    {
+      "path": "/workspace/.setup/run062-tests/motion72-77-review.png",
+      "sha256": "ef018052de4bf729375ca9bb387fb45980de119f5abadd4bd8ae503345cf2f85",
+      "source_manifest": "/workspace/.setup/run062-tests/motion72-77-review-sources.json",
+      "source_manifest_sha256": "1a6bfba0b7ddb16f7f12e2b964214049e498553ad379098c37b990f588b6bee2",
+      "source_count": 18,
+      "personally_opened_sheet": true,
+      "scope": "Uniform crop/nearest-neighbor reduction; derivative labels. Sources independently match literal capture hashes."
+    },
+    {
+      "path": "/workspace/.setup/run062-tests/motion78-83-review.png",
+      "sha256": "ba4aa9b913272fb51b8e3212d00b9965f0c7549a8e975b3686bc7010a4906557",
+      "source_manifest": "/workspace/.setup/run062-tests/motion78-83-review-sources.json",
+      "source_manifest_sha256": "648dd94e206ca17df7bcec23071908b8995663b1ad4e9648311d043dfa677221",
+      "source_count": 27,
+      "personally_opened_sheet": true,
+      "scope": "Uniform crop/nearest-neighbor reduction; derivative labels. Sources independently match literal capture hashes."
+    }
+  ],
+  "sheet_source_count": 45,
+  "reopened_full_original_count": 21,
+  "reopened_full_originals": [
+    {
+      "name": "run062-live-77-neutral_run_run_fly_equipped_flying-front-t047-f0081.png",
+      "case": 77,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "59decf9c6883eeb9d9a4aa991be21eda2274cfa74f7f8f0ce55e1355cf055ff8",
+      "literal_capture_line": "[03:55:38] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-77-neutral_run_run_fly_equipped_flying-front-t047-f0081.png case=77 angle=front tick=47 sha256=59decf9c6883eeb9d9a4aa991be21eda2274cfa74f7f8f0ce55e1355cf055ff8 wallNanos=39456185812555 epochMillis=1794542138645",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-77-neutral_run_run_fly_equipped_flying-front-t047-f0081.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-77-neutral_run_run_fly_equipped_flying-left-t119-f0187.png",
+      "case": 77,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "82e97db39fa4925e1260f83f4dbf2b2a7e5f0a0c5dba3e3dae4eadaaa60c1cc5",
+      "literal_capture_line": "[03:55:42] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-77-neutral_run_run_fly_equipped_flying-left-t119-f0187.png case=77 angle=left tick=119 sha256=82e97db39fa4925e1260f83f4dbf2b2a7e5f0a0c5dba3e3dae4eadaaa60c1cc5 wallNanos=39459760305541 epochMillis=1794542142219",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-77-neutral_run_run_fly_equipped_flying-left-t119-f0187.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-74-neutral_run_run_swim_water_motion-left-t119-f0188.png",
+      "case": 74,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "986ae8aff371186b9fc36b217a0abed653e0556cbd529b8bba8f314c4d5aeebb",
+      "literal_capture_line": "[03:55:10] [IO-Worker-3/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-74-neutral_run_run_swim_water_motion-left-t119-f0188.png case=74 angle=left tick=119 sha256=986ae8aff371186b9fc36b217a0abed653e0556cbd529b8bba8f314c4d5aeebb wallNanos=39428410575218 epochMillis=1794542110870",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-74-neutral_run_run_swim_water_motion-left-t119-f0188.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-75-neutral_run_run_fly_broom-left-t095-f0153.png",
+      "case": 75,
+      "angle": "left",
+      "tick": 95,
+      "sha256": "5e1ef28213f76b320a17e4b7861507943b48ff63a4e9972287f05d0eb1bdac06",
+      "literal_capture_line": "[03:55:22] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-75-neutral_run_run_fly_broom-left-t095-f0153.png case=75 angle=left tick=95 sha256=5e1ef28213f76b320a17e4b7861507943b48ff63a4e9972287f05d0eb1bdac06 wallNanos=39439588095722 epochMillis=1794542122047",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-75-neutral_run_run_fly_broom-left-t095-f0153.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-72-neutral_run_balanced_walk-front-t047-f0081.png",
+      "case": 72,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "aab55cb59fb51d4561d57dac16fe90e51fd5b43af62c1900c6696b91bdc8b288",
+      "literal_capture_line": "[03:54:42] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-72-neutral_run_balanced_walk-front-t047-f0081.png case=72 angle=front tick=47 sha256=aab55cb59fb51d4561d57dac16fe90e51fd5b43af62c1900c6696b91bdc8b288 wallNanos=39399912171268 epochMillis=1794542082371",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-72-neutral_run_balanced_walk-front-t047-f0081.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-73-neutral_run_run_running-left-t119-f0189.png",
+      "case": 73,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "4666a1aa9e3168f9963324f396e3a1e3fc2c564f14b86252bd20654755aba386",
+      "literal_capture_line": "[03:54:58] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-73-neutral_run_run_running-left-t119-f0189.png case=73 angle=left tick=119 sha256=4666a1aa9e3168f9963324f396e3a1e3fc2c564f14b86252bd20654755aba386 wallNanos=39415894981798 epochMillis=1794542098354",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-73-neutral_run_run_running-left-t119-f0189.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-76-neutral_run_power_swim_book-front-t036-f0063.png",
+      "case": 76,
+      "angle": "front",
+      "tick": 36,
+      "sha256": "4e1978edd0d2020eb84d54f2b41efe8c667ce16e08531f76143d052c318f3802",
+      "literal_capture_line": "[03:55:28] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-76-neutral_run_power_swim_book-front-t036-f0063.png case=76 angle=front tick=36 sha256=4e1978edd0d2020eb84d54f2b41efe8c667ce16e08531f76143d052c318f3802 wallNanos=39446097613831 epochMillis=1794542128557",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-76-neutral_run_power_swim_book-front-t036-f0063.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-78-neutral_run_run_gain_walk-back-t240-f0359.png",
+      "case": 78,
+      "angle": "back",
+      "tick": 240,
+      "sha256": "6bf5532e6e876914971e58063c60504f5a2735048c28a92e77d58937bef55836",
+      "literal_capture_line": "[03:56:00] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-78-neutral_run_run_gain_walk-back-t240-f0359.png case=78 angle=back tick=240 sha256=6bf5532e6e876914971e58063c60504f5a2735048c28a92e77d58937bef55836 wallNanos=39478216171335 epochMillis=1794542160675",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-78-neutral_run_run_gain_walk-back-t240-f0359.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-79-neutral_run_power_fly_gain_walk-back-t240-f0362.png",
+      "case": 79,
+      "angle": "back",
+      "tick": 240,
+      "sha256": "4d82bfa1c6fc5355d101d2ee4df83f20baa3c4e598431831057bcf9404f6bd9e",
+      "literal_capture_line": "[03:56:15] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-79-neutral_run_power_fly_gain_walk-back-t240-f0362.png case=79 angle=back tick=240 sha256=4d82bfa1c6fc5355d101d2ee4df83f20baa3c4e598431831057bcf9404f6bd9e wallNanos=39492621164531 epochMillis=1794542175080",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-79-neutral_run_power_fly_gain_walk-back-t240-f0362.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-80-neutral_run_fly_loss_walk-back-t240-f0363.png",
+      "case": 80,
+      "angle": "back",
+      "tick": 240,
+      "sha256": "c85074815cd103090a865c00e5ce9d0423b07ec37d312fe8e1b808379c71c8e2",
+      "literal_capture_line": "[03:56:29] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-80-neutral_run_fly_loss_walk-back-t240-f0363.png case=80 angle=back tick=240 sha256=c85074815cd103090a865c00e5ce9d0423b07ec37d312fe8e1b808379c71c8e2 wallNanos=39507057354427 epochMillis=1794542189516",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-80-neutral_run_fly_loss_walk-back-t240-f0363.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t276-f0416.png",
+      "case": 81,
+      "angle": "left",
+      "tick": 276,
+      "sha256": "595751e3d883ed2ea7f3ac549216a65f647d12dd8aa3e4846077393b31e9dbbe",
+      "literal_capture_line": "[03:56:45] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t276-f0416.png case=81 angle=left tick=276 sha256=595751e3d883ed2ea7f3ac549216a65f647d12dd8aa3e4846077393b31e9dbbe wallNanos=39523246821301 epochMillis=1794542205706",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t276-f0416.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-back-t624-f0928.png",
+      "case": 81,
+      "angle": "back",
+      "tick": 624,
+      "sha256": "3bab25305adc53b0d9a77234c64ba77ffe258004f1a1b91388d3765d9a4a4c05",
+      "literal_capture_line": "[03:57:03] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-back-t624-f0928.png case=81 angle=back tick=624 sha256=3bab25305adc53b0d9a77234c64ba77ffe258004f1a1b91388d3765d9a4a4c05 wallNanos=39540665315361 epochMillis=1794542223124",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-back-t624-f0928.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-82-neutral_run_run_to_power_opposition_walk-left-t239-f0367.png",
+      "case": 82,
+      "angle": "left",
+      "tick": 239,
+      "sha256": "90e4a5d6fd9edec9075ce4d137575edbbfc7c338b86096b17cc82cb6be4ba89b",
+      "literal_capture_line": "[03:57:16] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-82-neutral_run_run_to_power_opposition_walk-left-t239-f0367.png case=82 angle=left tick=239 sha256=90e4a5d6fd9edec9075ce4d137575edbbfc7c338b86096b17cc82cb6be4ba89b wallNanos=39553806683698 epochMillis=1794542236266",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-82-neutral_run_run_to_power_opposition_walk-left-t239-f0367.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-82-neutral_run_run_to_power_opposition_walk-back-t551-f0828.png",
+      "case": 82,
+      "angle": "back",
+      "tick": 551,
+      "sha256": "27b7017949f2c1243af900e0ccb5075043da0ece25aba0d80bd5c14a8b15fd97",
+      "literal_capture_line": "[03:57:31] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-82-neutral_run_run_to_power_opposition_walk-back-t551-f0828.png case=82 angle=back tick=551 sha256=27b7017949f2c1243af900e0ccb5075043da0ece25aba0d80bd5c14a8b15fd97 wallNanos=39569414442195 epochMillis=1794542251873",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-82-neutral_run_run_to_power_opposition_walk-back-t551-f0828.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t011-f0028.png",
+      "case": 83,
+      "angle": "front",
+      "tick": 11,
+      "sha256": "d2f9f945ee7a7d940a4476563dd4ccff452b3f2ee3c08a47dfacfd686d5c3e0c",
+      "literal_capture_line": "[03:57:33] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-83-neutral_run_actual_first_evolution-front-t011-f0028.png case=83 angle=front tick=11 sha256=d2f9f945ee7a7d940a4476563dd4ccff452b3f2ee3c08a47dfacfd686d5c3e0c wallNanos=39570788992821 epochMillis=1794542253248",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t011-f0028.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t155-f0240.png",
+      "case": 83,
+      "angle": "left",
+      "tick": 155,
+      "sha256": "58cbc91b0ff738e2d7a63325e0a22ded58e32a15bc5eeb41eacaaa850678d622",
+      "literal_capture_line": "[03:57:40] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-83-neutral_run_actual_first_evolution-left-t155-f0240.png case=83 angle=left tick=155 sha256=58cbc91b0ff738e2d7a63325e0a22ded58e32a15bc5eeb41eacaaa850678d622 wallNanos=39578005320042 epochMillis=1794542260464",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t155-f0240.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t300-f0455.png",
+      "case": 83,
+      "angle": "back",
+      "tick": 300,
+      "sha256": "07f616a466da043e2d471656309f5bbeb0a5ecc4dc5a2038b77d8ed210d1010d",
+      "literal_capture_line": "[03:57:47] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-83-neutral_run_actual_first_evolution-back-t300-f0455.png case=83 angle=back tick=300 sha256=07f616a466da043e2d471656309f5bbeb0a5ecc4dc5a2038b77d8ed210d1010d wallNanos=39585284734131 epochMillis=1794542267744",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t300-f0455.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t288-f0433.png",
+      "case": 81,
+      "angle": "left",
+      "tick": 288,
+      "sha256": "c26eae2b28d4c5d14f2314aadbc17d7074e04c0ee94ca2f10e610ec192f1305a",
+      "literal_capture_line": "[03:56:46] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t288-f0433.png case=81 angle=left tick=288 sha256=c26eae2b28d4c5d14f2314aadbc17d7074e04c0ee94ca2f10e610ec192f1305a wallNanos=39523866846207 epochMillis=1794542206326",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t288-f0433.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t300-f0451.png",
+      "case": 81,
+      "angle": "left",
+      "tick": 300,
+      "sha256": "c3a120ddfa898c4073fc79a8f6896c42b2e0ee1f039b04aaa45f4ac16469b73a",
+      "literal_capture_line": "[03:56:46] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t300-f0451.png case=81 angle=left tick=300 sha256=c3a120ddfa898c4073fc79a8f6896c42b2e0ee1f039b04aaa45f4ac16469b73a wallNanos=39524453657670 epochMillis=1794542206913",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t300-f0451.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t312-f0469.png",
+      "case": 81,
+      "angle": "left",
+      "tick": 312,
+      "sha256": "7a026ec33238444336643b616ea70e972bec452b559b7ce581e04bcf1b54a743",
+      "literal_capture_line": "[03:56:47] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t312-f0469.png case=81 angle=left tick=312 sha256=7a026ec33238444336643b616ea70e972bec452b559b7ce581e04bcf1b54a743 wallNanos=39525068744292 epochMillis=1794542207528",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-81-neutral_run_run_fly_pair_gain_hold_reverse_walk-left-t312-f0469.png",
+      "personally_opened_full_original": true
+    },
+    {
+      "name": "run062-live-77-neutral_run_run_fly_equipped_flying-back-t203-f0311.png",
+      "case": 77,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "b04b779886321756a19edf6657d1a3de2f79b5b8acaff000b70ee43b0c23c97d",
+      "literal_capture_line": "[03:55:46] [IO-Worker-7/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-77-neutral_run_run_fly_equipped_flying-back-t203-f0311.png case=77 angle=back tick=203 sha256=b04b779886321756a19edf6657d1a3de2f79b5b8acaff000b70ee43b0c23c97d wallNanos=39463962642312 epochMillis=1794542146422",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-77-neutral_run_run_fly_equipped_flying-back-t203-f0311.png",
+      "personally_opened_full_original": true
+    }
+  ],
+  "personal_visual_observations": {
+    "72": "Balanced walking keeps the head, orb, hands, feet and crest readable; native navigation walked 8.3575 blocks.",
+    "73": "Run gait has an extended stride with the Run head features attached; native navigation walked 18.6424 blocks and the running-frame assertion passed.",
+    "74": "The submerged, blue-tinted original shows the Run/Swim body and swimming limb pose. The actual SWIM-in-water frame assertion passed; displacement is exactly zero.",
+    "75": "The broom shaft and bristles are visible with the hands meeting the tool. Real native-dispatcher one-shot cleanup and 380 measured palm contacts passed.",
+    "76": "The open picture book, both hands and delighted face are visible. The broad Power/Swim silhouette stays coherent; native-dispatcher cleanup and 376 measured palm contacts passed.",
+    "77": "An upright hovering player carries the actual Accessories body. The front view fully hides the Chao; left/back views expose its body and appendages. Face/orb overlap the player hair/head from some angles, a retained visibility limitation.",
+    "78": "The selected moving sequence progresses toward Run features and a deep-blue palette while maintaining readable head, orb and limbs. Final raw axes are (-1,0).",
+    "79": "Both Power and Fly increase; taller three-prong head features and the lavender body are visible in the selected back view. Final raw axes are (+1,+1).",
+    "80": "The selected sequence changes from Fly toward low balanced features and a cyan body. Final raw axes are (0,0); strength and identity remain unchanged.",
+    "81": "Full originals at ticks 288/300/312 show the held Run+Fly shape with gait changes. Full original 624 shows the balanced shape after reversal. The actual render-thread marker at 280 records (-1,+1) before reverse edits start at 322.",
+    "82": "Selected originals show deep-blue Run, intermediate blue/cyan, then magenta/orange Power. Magenta matches authored Power BODY(233,99,245)/HAND(207,98,32). Raw 0 at 240 differs from eased displayed RP about -.518; display reaches +1 by 540. First type remains Run 3.",
+    "83": "Full originals show baby at 11, real cocoon at 155 and fresh lime Neutral/Run adult at 300. The fixture seeds childhood 12 ticks before the age threshold; native lifecycle ticking completes the transition. This is not a whole-childhood observation."
+  },
+  "visual_scope_accepted": true,
+  "known_carry_occlusion_accepted_as_limitation": true,
+  "pair81": {
+    "raw_peak": {
+      "tick": 240,
+      "firstType": 3,
+      "sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "epoch_millis": 1794542203825,
+      "literal_line": "[03:56:43] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_PAIR_PEAK case=81 tick=240 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] firstType=3 epochMillis=1794542203825"
+    },
+    "displayed_settled_marker": {
+      "tick": 280,
+      "firstType": 3,
+      "sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "epoch_millis": 1794542205834,
+      "literal_line": "[03:56:45] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_PAIR_SETTLED case=81 tick=280 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0] firstType=3 epochMillis=1794542205834"
+    },
+    "raw_endpoint_hold_ticks": 80,
+    "hold_interval": [
+      240,
+      320
+    ],
+    "reverse_edit_interval": [
+      322,
+      560
+    ],
+    "source_schedule_verified": true,
+    "held_frames_personally_opened": [
+      288,
+      300,
+      312
+    ],
+    "final_display_sample": {
+      "tick": 600,
+      "shapeSignature": "2098367134630843567",
+      "sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "epoch_millis": 1794542221856,
+      "literal_line": "[03:57:01] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=81 tick=600 shapeSignature=2098367134630843567 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542221856"
+    }
+  },
+  "opposition82": {
+    "raw_checkpoints": [
+      {
+        "tick": 120,
+        "firstType": 3,
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": -0.5,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542230224,
+        "literal_line": "[03:57:10] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=120 sample=Sample[enabled=true, maturity=1.0, runPower=-0.5, swimFly=0.0] firstType=3 epochMillis=1794542230224"
+      },
+      {
+        "tick": 240,
+        "firstType": 3,
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": 0.0,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542236224,
+        "literal_line": "[03:57:16] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=240 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0] firstType=3 epochMillis=1794542236224"
+      },
+      {
+        "tick": 360,
+        "firstType": 3,
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": 0.5,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542242224,
+        "literal_line": "[03:57:22] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=360 sample=Sample[enabled=true, maturity=1.0, runPower=0.5, swimFly=0.0] firstType=3 epochMillis=1794542242224"
+      },
+      {
+        "tick": 480,
+        "firstType": 3,
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": 1.0,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542248226,
+        "literal_line": "[03:57:28] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_OPPOSITION_RAW case=82 tick=480 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=0.0] firstType=3 epochMillis=1794542248226"
+      }
+    ],
+    "eased_samples_at_raw_checkpoints": [
+      {
+        "tick": 120,
+        "shapeSignature": "-7838636968792477389",
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": -0.8544515,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542230250,
+        "literal_line": "[03:57:10] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=120 shapeSignature=-7838636968792477389 sample=Sample[enabled=true, maturity=1.0, runPower=-0.8544515, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542230250"
+      },
+      {
+        "tick": 240,
+        "shapeSignature": "5694895536862468527",
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": -0.51765203,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542236253,
+        "literal_line": "[03:57:16] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=240 shapeSignature=5694895536862468527 sample=Sample[enabled=true, maturity=1.0, runPower=-0.51765203, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542236253"
+      },
+      {
+        "tick": 360,
+        "shapeSignature": "-2171036734469095847",
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": -0.09309888,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542242237,
+        "literal_line": "[03:57:22] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=360 shapeSignature=-2171036734469095847 sample=Sample[enabled=true, maturity=1.0, runPower=-0.09309888, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542242237"
+      },
+      {
+        "tick": 480,
+        "shapeSignature": "8524039064777188841",
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": 0.37198344,
+          "swimFly": 0.0
+        },
+        "epoch_millis": 1794542248242,
+        "literal_line": "[03:57:28] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=480 shapeSignature=8524039064777188841 sample=Sample[enabled=true, maturity=1.0, runPower=0.37198344, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542248242"
+      }
+    ],
+    "settled_display_sample": {
+      "tick": 540,
+      "shapeSignature": "-2604956872902795355",
+      "sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": 0.0
+      },
+      "epoch_millis": 1794542251226,
+      "literal_line": "[03:57:31] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_MOTION_SAMPLE case=82 tick=540 shapeSignature=-2604956872902795355 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=0.0] babyVisibleGrowth=0.0 epochMillis=1794542251226"
+    },
+    "first_locked_type": 3,
+    "first_locked_alignment": 0,
+    "strength_before_after": [
+      1.2,
+      1.2
+    ],
+    "lineage_before_after": [
+      [
+        1279803727,
+        1195463236
+      ],
+      [
+        1279803727,
+        1195463236
+      ]
+    ],
+    "age_ticks_delta": 560,
+    "adult_age_ticks_delta": 560
+  },
+  "limits": [
+    "Actual water case74 is stationary in-water animation, not autonomous swim travel. No gliding travel is established.",
+    "Cases78..82 use accelerated actual training/edit schedules while animation and navigation use the native20TPS clock. Biological strength and locked identity remain fixed while chronological ages advance.",
+    "Pair81 now holds a raw full endpoint for80ticks and has an actual displayed settled marker before reversal; unlike .61, the visible full pair peak is explicitly checked. Angles still occur sequentially.",
+    "Actual carry77 covers upright Creative flight with real Accessories slots; the player can obscure the Chao in front. Horizontal elytra/swimming carry, takeoff/landing and every player skin/armor are unverified.",
+    "Visible three-way reaction-face coverage, audio/listening, full continuous playback and independent remote multiplayer/latency/reconnect are not established by these sources.",
+    "Only 12 numerical production-emitter expression/marker frames are established by rig tests; there is no actual three-visible-hurt-face scene.",
+    "Personal review covers two sheets and 21 stated full PNGs, not every one of the 302 motion PNGs individually or full continuous movie playback.",
+    "Toy preview chronological age deltas are 20 each; carried state deltas are 0. Only navigation/training scenes advance both ages for their entire elapsed duration.",
+    "The original cube head and 59 joints are preserved. Only the new profile uses 30-tick/1.5s display easing. Head TOP and central-crest markings follow user direction; forehead/sides are clear."
+  ]
+}

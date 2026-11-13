@@ -1,0 +1,53 @@
+{
+  "version": "0.25.62",
+  "scope": "Independent read-only review of actual completed current full build and prior focused run. No native-server/final-client/JAR result is inferred.",
+  "full_build": {
+    "log": "/workspace/.setup/run062-build.log",
+    "sha256": "d0cf565a394278af0fd8aad152e62ddaf67472fe458166b38d3d3e593a162900",
+    "outcome": "SUCCESSFUL",
+    "elapsed": "13m 27s",
+    "exit0_confirmed_by_coordinator": true,
+    "actionable_tasks": 51,
+    "executed_tasks": 45,
+    "up_to_date_tasks": 6,
+    "failed_tasks": [],
+    "core_checks": 7453,
+    "rig_checks": 106370521,
+    "material_checks": 316516118,
+    "piano_hand_samples": 231336,
+    "organ_hand_samples": 231336,
+    "new_Run_profiles_per_keyboard": 27,
+    "retained_older_keyboard_profiles": true,
+    "triangle_transition_failures": 0,
+    "trumpet_transition_failures": 0,
+    "literal_result_lines": [
+      "Neutral Run morphology062: 7453 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+      "Neutral/Run morphology062: 7453 checks passed",
+      "NeutralRun062 material: 316516118 checks; 172 real canonical coats; 37960056 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 3566592 palette-protected orb samples; 83592 prototype alpha-exception samples; 3060396 opaque prototype-face UV samples; 26749440 actual interpolated broad-wing paint samples; 5201280 actual central-crest stripe paint samples; maximum 1% RGB step=7. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic top-head/central-crest/wing regions, clear forehead/cheeks and .62-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all 16 longitudinal faces. Pixel checks are not in-game visual verification.",
+      "NeutralRun062: 106370521 checks; 3452 emitted age/axis/edit frames; 36933 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 10416 actual orb/feature separation checks; 10416 connected feature samples; 5168 emitted closed-wing samples; 2594 actual tail/base continuity checks; 2067200 actual wing-span pigment/opacity samples; 5168 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 5221584 actual same-facing head/feature plane-pair checks; 92016 actual WALK head/torso SAT continuity frames; 184032 actual WALK palm/head SAT separation frames; 186624 actual WALK growing-feature/palm SAT separation pairs; 729120 actual central-spine top pigment/opacity samples; 10752 actual original-head top/front/side paint-placement samples; 184032 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum hinge drift=3.815192E-6 model pixels; maximum axis step=0.17819643 model pixels; maximum30tick edit step=0.81459457; maximum1pct maturity step=0.05533626; seconds=17.491623209. Fixed original head/face/orb/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+      "Organ mesh fit: 231336 hand samples; 5040 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; 18 production061 legal age/axis configurations; 27 production062 signed age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels",
+      "Piano mesh fit: 231336 hand samples; 22518 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; 18 production061 legal age/axis configurations; 27 production062 signed age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+      "Triangle transition samples=267696 failures=0 minHandHeadPixels=0.2046349",
+      "Trumpet transition samples=267696 failures=0 minHandHeadPixels=0.20083904",
+      "BUILD SUCCESSFUL in 13m 27s",
+      "51 actionable tasks: 45 executed, 6 up-to-date"
+    ]
+  },
+  "focused_build": {
+    "log": "/workspace/.setup/run062-focused.log",
+    "sha256": "e130063f5fc4c537d80c998e9fc61ef46e44a6480981e82de12851cbb33d4bbe",
+    "outcome": "SUCCESSFUL",
+    "elapsed": "54s",
+    "separate_actual_invocation": true,
+    "same_current_production_source": true
+  },
+  "counting_note": "The focused and broad invocations repeat the same current new tests. Check totals are reported per suite/invocation, never summed into additional unique coverage.",
+  "source_model_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+  "metadata_sha256": "20d1602340666c4f87fdf479277cb019308642d3ebad76ef3aae43926c18ced5",
+  "separate_inherited_journal_result": "8/9; Your gardens paragraph-format assertion, test and journal source byte-exact .61.",
+  "pending": [
+    "Dedicated 476-case server suite outcome",
+    "Final JAR/runtime freeze",
+    "Complete92-scene native client and motion/comparison review"
+  ]
+}

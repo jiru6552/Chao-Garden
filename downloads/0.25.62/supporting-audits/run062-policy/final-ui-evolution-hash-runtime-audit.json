@@ -1,0 +1,375 @@
+{
+  "timestamp_utc": "2026-11-13T04:02:52.080762+00:00",
+  "scope": "Literal image hashes and full production runtime/JAR identity; visual review recorded separately",
+  "jar": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.62.jar",
+  "jar_sha256": "f6d975a540c765f4e89383af9070c748ebb549ff5d00194d3dfda2b09e4a1a15",
+  "runtime_mode": "development_classpath",
+  "runtime_production_entries_checked": 8336,
+  "all_frozen_current_and_jar_bytes_match": true,
+  "snapshot_manifest_sha256": "f6f03bf7c78c8aef0ce8b07856d40f8e91ea049a450f5b2e54f42ec2bc96f416",
+  "proof_sha256": "d2e8f96b661ead1e5deed1c645d4e2c2e40bd50c11e6058e0b423ecea690aa5a",
+  "ui_images": 16,
+  "post_ui_world_images": 9,
+  "evolution_images_available": 25,
+  "evolution_case_complete": true,
+  "ui_native_verification_lines": [
+    "[03:54:16] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_UI_NATIVE_VERIFIED case=69 creative=true adult=true alignment=0.0 maturity=1.2 saveReloadExact=true stagePreserved=true epochMillis=1794542056641",
+    "[03:54:25] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_UI_NATIVE_VERIFIED case=70 creative=false adult=true alignment=0.0 maturity=0.9601297 saveReloadExact=true stagePreserved=true epochMillis=1794542065113",
+    "[03:54:37] [Server thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_UI_NATIVE_VERIFIED case=71 creative=true adult=false alignment=0.802 maturity=0.99011576 saveReloadExact=true stagePreserved=true epochMillis=1794542077221"
+  ],
+  "images": [
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-back-t150-f0074.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-back-t150-f0074.png",
+      "case": 69,
+      "sha256": "63805a54833dd0f16ed3b788c6a948c125138ee53a8d31ec17d5226b04007c37",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-front-t150-f0028.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-front-t150-f0028.png",
+      "case": 69,
+      "sha256": "c073d367ded76be3663100f0bb3f6927c265f87436e377f50e919e3bdf9c9174",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-left-t150-f0051.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-left-t150-f0051.png",
+      "case": 69,
+      "sha256": "e90520b1e91195d9c58eae692227eaee23bb70ca21808de48db20ccea7c9d60f",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "case": 69,
+      "sha256": "9049ddac467ed927fcc97e7850c010416d0b20fbec8c7f4da65b788cc458bccd",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "case": 69,
+      "sha256": "5734ff0a5cca6636389fa8b33d3f835fb8db805e5ac119513d9d274d39d43e4e",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-before.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-before.png",
+      "case": 69,
+      "sha256": "dc6320d811b461fbea901f2d0856d703f5fc62e4184f5de42420ecc8243ab0a8",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "case": 69,
+      "sha256": "9f278dc6938b55f74af618161e9013dfeab7e6b900bc3883751e82025659a211",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "case": 69,
+      "sha256": "3d0fb0f519f3891fc1f72b16aa9139302d62f938405287cc7bf9ab89c9909ef5",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-young.png",
+      "name": "run062-live-69-creative_neutral_run_adult_lock_maturity-ui-maturity-young.png",
+      "case": 69,
+      "sha256": "0faac97bfd936cb4e6620c7fa81a8264635c095a70dd9dbe6097e8150533c0cc",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-back-t112-f0074.png",
+      "name": "run062-live-70-survival_neutral_run_adult_readonly-back-t112-f0074.png",
+      "case": 70,
+      "sha256": "d591d7a6fd9ad63f0fe54fa2f211d8d001cb02d4664b4738403b924fc836b432",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-front-t112-f0028.png",
+      "name": "run062-live-70-survival_neutral_run_adult_readonly-front-t112-f0028.png",
+      "case": 70,
+      "sha256": "92c8a130f3bb3985d84a604fb55ee751be8eb52eaabc0d7d433c9d4dbc987d65",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-left-t112-f0051.png",
+      "name": "run062-live-70-survival_neutral_run_adult_readonly-left-t112-f0051.png",
+      "case": 70,
+      "sha256": "d4af9b63bd7b065e02f37985e3be0b382285a705f010f5d21f36b5cd819c2b7c",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-ui-maturity-before.png",
+      "name": "run062-live-70-survival_neutral_run_adult_readonly-ui-maturity-before.png",
+      "case": 70,
+      "sha256": "2b2aa456b75d0ab56589f2057fb0804fdc63a7fca0f3dd005bff94fa3b6c41e5",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-ui-maturity-survival-denied.png",
+      "name": "run062-live-70-survival_neutral_run_adult_readonly-ui-maturity-survival-denied.png",
+      "case": 70,
+      "sha256": "5af87926605f4a920ae6e4ab7a363df3a226879691bd0fbb1a31643d9129eccc",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "name": "run062-live-70-survival_neutral_run_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "case": 70,
+      "sha256": "707a2142113789517cac0b02adafff26fbb1e816846faf45a20c4b6e5d1b2be9",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-70-survival_neutral_run_adult_readonly-ui-survival-readonly.png",
+      "name": "run062-live-70-survival_neutral_run_adult_readonly-ui-survival-readonly.png",
+      "case": 70,
+      "sha256": "f4085e160cfed81cf904410dc7dcf7e7860545fb15725e301e356b1c162e1c8d",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-back-t185-f0074.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-back-t185-f0074.png",
+      "case": 71,
+      "sha256": "43f817ba2c4c163b904e27e1704b78e2d4e0c5f73e2ea1c1a65d447ae69a26d6",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-front-t185-f0028.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-front-t185-f0028.png",
+      "case": 71,
+      "sha256": "e32470caa6b98b8b51cafc9eb85f9354448279753c3abee197f6e3804d09a273",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-left-t185-f0051.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-left-t185-f0051.png",
+      "case": 71,
+      "sha256": "c54bdfec3ebbc4c0c4540bca2c636ba2ceee159a1b81bc8c4391066525687580",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "case": 71,
+      "sha256": "ba89fd87a20b34ac84d0b43e2caa63688d17cd764ee478916c9968175bdbb857",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "case": 71,
+      "sha256": "6781074de98c412b8f00d39b198b3603618230ce59241a26308aea766b89727f",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "case": 71,
+      "sha256": "09f5033d4ee1fc2c05d8decae32b395d8e9bb1b8a11a4727b7a558e2bf14b424",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "case": 71,
+      "sha256": "5a618e782c8d467580449086042120db57bf149ac311fa25d30ec96d81a668f0",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "case": 71,
+      "sha256": "34535a6ba44128854fb7d0120bb97cf2a16cbbb06da3b33d9a887c88973aff72",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "name": "run062-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "case": 71,
+      "sha256": "54defad5846cd2bb5c0feb0b7863f072a30c65cbf65b8ff943db67eb31f4cd46",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t204-f0312.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t204-f0312.png",
+      "case": 83,
+      "sha256": "b2108a735c3f6dc7bac9d24659db3a71e5a1df3c1c1f3f7cb9602db1a91b2710",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t216-f0329.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t216-f0329.png",
+      "case": 83,
+      "sha256": "fab91e0f11150f2455df55163712beca5dde0c4f1652dfb44ca89c900a926a09",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t228-f0347.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t228-f0347.png",
+      "case": 83,
+      "sha256": "8b8cf65d37c4193536ff11d479d3aea334631af5df78de801f4b1a536ec903b0",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t240-f0365.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t240-f0365.png",
+      "case": 83,
+      "sha256": "9fd23e4546d90849101c4c8bf19c79797e80f28ecc7c0662e15f4bd929501bdf",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t252-f0383.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t252-f0383.png",
+      "case": 83,
+      "sha256": "05a129b4eb2aa332d8d6a838ec9df2053102d70f29a74d4f31fa7282e52a3abb",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t264-f0401.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t264-f0401.png",
+      "case": 83,
+      "sha256": "af1c042b8b2632697ad40ce2c4ce571cd2d6681f82560e60b6d3bf336ed44218",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t276-f0419.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t276-f0419.png",
+      "case": 83,
+      "sha256": "99cd9ccbeab52cfdb201090779eb3c5ff30f1ad043e0813ebb833754119ad66c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t288-f0437.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t288-f0437.png",
+      "case": 83,
+      "sha256": "9adb3a94913bd4cc749400c41df238d1a4d780cb47e93fc79438620cc4dfb63f",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-back-t300-f0455.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-back-t300-f0455.png",
+      "case": 83,
+      "sha256": "07f616a466da043e2d471656309f5bbeb0a5ecc4dc5a2038b77d8ed210d1010d",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t011-f0028.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t011-f0028.png",
+      "case": 83,
+      "sha256": "d2f9f945ee7a7d940a4476563dd4ccff452b3f2ee3c08a47dfacfd686d5c3e0c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t023-f0046.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t023-f0046.png",
+      "case": 83,
+      "sha256": "a3d384b2079a9f53016818a032dd60f6780fee0e4d661f35f324f98da50f868c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t035-f0064.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t035-f0064.png",
+      "case": 83,
+      "sha256": "e008fa9c536b5b5a31cbb6aa22d9d7133f031a83fc0ee8b7c5af8fe3a62a81f1",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t047-f0082.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t047-f0082.png",
+      "case": 83,
+      "sha256": "42268ccebf2c9a85be8021b5c37222b7ab6022a49f395aedb2a9e3107916201c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t059-f0100.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t059-f0100.png",
+      "case": 83,
+      "sha256": "d433b3ec4bf0556788d99d8711f4fe5a747e3fc4381ff55585e88ec77ae3f045",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t071-f0117.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t071-f0117.png",
+      "case": 83,
+      "sha256": "2917fa7461f2cc32ecf33865c9b17df59a78795a47088881b05eea3473838400",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t083-f0135.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t083-f0135.png",
+      "case": 83,
+      "sha256": "991d1966525e8e350a16efa334e7350450692af5bfc70a0531fbb5172ca9622a",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-front-t095-f0153.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-front-t095-f0153.png",
+      "case": 83,
+      "sha256": "75ac99e7575fbfc1958fa28bb0111754ab1f18b82e4303f36a5eda0fdc025f10",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t107-f0171.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t107-f0171.png",
+      "case": 83,
+      "sha256": "8df93ac76cd73fdadef2445aa166f758966386f8d33eb785c9a1b5e026e8e8d3",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t119-f0189.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t119-f0189.png",
+      "case": 83,
+      "sha256": "1a33e186ce4f16072685671cc055475d9a5ad32f602b29927bef9791e593d705",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t131-f0205.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t131-f0205.png",
+      "case": 83,
+      "sha256": "bb65af8a6d1cbc458360e14a67f66698d7e57da3ccc8fdd04708562ea0026fdd",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t143-f0222.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t143-f0222.png",
+      "case": 83,
+      "sha256": "c9bd529c04045e41c19821891bb8bb86caf0d85cb6af8323cfc22bd926a43e9c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t155-f0240.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t155-f0240.png",
+      "case": 83,
+      "sha256": "58cbc91b0ff738e2d7a63325e0a22ded58e32a15bc5eeb41eacaaa850678d622",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t168-f0258.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t168-f0258.png",
+      "case": 83,
+      "sha256": "eb1ed2c9c7211f9862ca1bd69a7699792e63b795e0aacee4d2fc95cda44a8672",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t180-f0276.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t180-f0276.png",
+      "case": 83,
+      "sha256": "e94da903452e5d27fc5044f6656f711e3cc656940684efaa3276d82b61bbcbc7",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-83-neutral_run_actual_first_evolution-left-t192-f0294.png",
+      "name": "run062-live-83-neutral_run_actual_first_evolution-left-t192-f0294.png",
+      "case": 83,
+      "sha256": "15262434ab39925a44fea09922435303e10f0c3261d87acee975db0899e45124",
+      "kind": "evolution"
+    }
+  ],
+  "client_log_complete": true,
+  "client_log_sha256_at_audit": "027b6c62cf0b630232f3b1a1e63f3057412874a7b15e29aa394cb35eec9c703c",
+  "final_source_model_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881"
+}

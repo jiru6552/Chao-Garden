@@ -1,0 +1,96 @@
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java:147: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java:147: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralRunCoatMaterial062.java:65: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralRunCoatMaterial062.java:65: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+  @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                     ^
+4 warnings
+
+> Task :generateModMetadata UP-TO-DATE
+
+> Task :processResources
+Chao dimension fixture: excluded from normal runtime
+Chao dimension fixture output: /workspace/Chao-Garden/build/resources/main/data/minecraft/worldgen/world_preset/flat.json; exists=false; resource destination=/workspace/Chao-Garden/build/resources/main
+
+> Task :classes
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :coreTest
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+Hero Run morphology052: 1128 checks passed; four-stat ties, simultaneous drives, reversible training, age-conditioned baby growth, independent maturity and saved identity
+Analyzer alignment053: 785 checks passed; permission inputs, fixed-point bounds, read-only adults and exact persistence
+ChaoState: 171480 checks passed
+Analyzer editing: rank cycle, four modifiers, five hit rows, endpoints, caps, invalid requests and round trip passed
+Analyzer alignment bar053: 1835 geometry/input checks passed
+Analyzer maturity bar056: 2824 geometry/input checks passed
+Creative editing056: 361 checks passed
+Creative edit rules056: 361 checks passed
+Neutral morphology056: 1742 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Neutral morphology056: 1742 checks passed
+Hero Normal morphology057: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Hero/Normal morphology057: 1957 checks passed
+Neutral Swim morphology059: 1502 checks passed; six combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Neutral/Swim morphology059: 1502 checks passed
+Dark Normal morphology060: 1957 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Dark/Normal morphology060: 1957 checks passed
+Neutral Fly morphology061: 6899 checks passed; six combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Neutral/Fly morphology061: 6899 checks passed
+Neutral Run morphology062: 7453 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence
+Neutral/Run morphology062: 7453 checks passed
+Drive rules: arithmetic, all 24 permutations, caps, hidden losses, X/rank limits, Perfect no-op, 50,000 persisted rolls; endpoints=263/242, rank=1027, Solid max=2535, middle/edge=18065/2006
+Toy interaction rules: 2491 checks passed
+Egg distribution policy: 243 checks passed
+Training supplies: 248 checks passed
+Wardrobe choices: 6644 checks passed
+Baby animation timing: 26057 checks passed
+Portal geometry: 1233 checks passed
+Lobby geometry0252: 18509 checks passed
+Lobby perimeter approaches0256: 40670 checks passed
+Garden gate geometry0256: 48346 checks passed
+Area music rules0257: 136 checks passed
+School singing rules0258: 2472 checks passed
+Staff face timing0251: 177195 checks passed
+Black Market stock: 922385 checks passed
+Kindergarten buyback: 220052 checks passed
+Activity rules: 101313 checks passed
+Companion rules: 2103 checks passed
+SA2 fruit effects: 4765 checks passed
+Locomotion rules: 1209 checks passed
+
+> Task :compileLionfishTestJava
+> Task :processLionfishTestResources NO-SOURCE
+> Task :lionfishTestClasses
+
+> Task :neutralRunMorphRigTest062
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+NeutralRun062: 106370521 checks; 3452 emitted age/axis/edit frames; 36933 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 10416 actual orb/feature separation checks; 10416 connected feature samples; 5168 emitted closed-wing samples; 2594 actual tail/base continuity checks; 2067200 actual wing-span pigment/opacity samples; 5168 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 5221584 actual same-facing head/feature plane-pair checks; 92016 actual WALK head/torso SAT continuity frames; 184032 actual WALK palm/head SAT separation frames; 186624 actual WALK growing-feature/palm SAT separation pairs; 729120 actual central-spine top pigment/opacity samples; 10752 actual original-head top/front/side paint-placement samples; 184032 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum hinge drift=3.815192E-6 model pixels; maximum axis step=0.17819643 model pixels; maximum30tick edit step=0.81459457; maximum1pct maturity step=0.05533626; seconds=18.488949683. Fixed original head/face/orb/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.
+
+> Task :neutralRunMaterialTest062
+Picked up JAVA_TOOL_OPTIONS:  -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.*|[::1]
+NeutralRun062 material: 316516118 checks; 172 real canonical coats; 37960056 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 3566592 palette-protected orb samples; 83592 prototype alpha-exception samples; 3060396 opaque prototype-face UV samples; 26749440 actual interpolated broad-wing paint samples; 5201280 actual central-crest stripe paint samples; maximum 1% RGB step=7. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic top-head/central-crest/wing regions, clear forehead/cheeks and .62-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all 16 longitudinal faces. Pixel checks are not in-game visual verification.
+
+[Incubating] Problems report is available at: file:///workspace/Chao-Garden/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 54s
+9 actionable tasks: 6 executed, 3 up-to-date

@@ -1,0 +1,218 @@
+{
+  "version": "0.25.62",
+  "scope": "Read-only final material artifact and legacy class preservation verification; native visual audit still pending.",
+  "jar": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.62.jar",
+  "jar_sha256": "f6d975a540c765f4e89383af9070c748ebb549ff5d00194d3dfda2b09e4a1a15",
+  "model_entry": "assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json",
+  "model_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+  "parent_jar": "/workspace/artifacts/chao-garden-0.25.61/chao_garden-0.25.61.jar",
+  "parent_jar_sha256": "2618d3ed5326621d782e3a396fe68edb25b03c8f657206407641c4d840c02060",
+  "retained_material_and_shine_entries": [
+    {
+      "entry": "com/chaogarden/client/ChaoShine$1.class",
+      "sha256": "b063fa3294fbbe4d845ef273a46b21ed4c33549b2d20c3ef65db5b68a13df1ac",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/ChaoShine.class",
+      "sha256": "f21c60b6337bbe8fcdc16debb53f7d92d22dde41a3bb293db25fb59ba86e6026",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/ChaoShineLayer.class",
+      "sha256": "08bdcd2df790bf7ee7717c812a9e41144ac3a0053c79319f5677a799005ffbcc",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalCoatMaterial060$Reload.class",
+      "sha256": "5c2a28caab00410090459b5c6586ccd2332ce20c0411c7cdb6bb38805300c6a0",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalCoatMaterial060.class",
+      "sha256": "ea99ce87747baf1c1b29ee8c48c8c4326a2c40837999a8f0c8ed176bd5e077d4",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060$Colors.class",
+      "sha256": "0f44bfdfa6fb1fb10f0c3f86375784511f76f76bb6bf925c5df3a6b5701f9747",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060$Input.class",
+      "sha256": "82cb4a4c380333c1bda10b0da589d8c1caadad17e533357efc20a67d8083b598",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060.class",
+      "sha256": "d43b68c9753201c67c767d33a9eeed9ce6942f0fbc147477ad097bb150ed238e",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalCoatMaterial057$Reload.class",
+      "sha256": "ca6fb84a9e8e50ba92df75dca57f6c9c7b1d5aeaaa49f81ad84b149e5b9a07fa",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalCoatMaterial057.class",
+      "sha256": "4da0ced38b6d7ce0796e8d446d42c4d4c061a52ff85d7ef2f655978d6b6733ff",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057$Colors.class",
+      "sha256": "c9d32efb792f85f3a6f713c99ab3ba64b6c19a98fdb6d73a4eef707c304fc519",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057$Input.class",
+      "sha256": "5e354f835b5ae19d3520ca6002c356cf3d2751359e236ae3910ce7c3e291bfd0",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057.class",
+      "sha256": "212ba58d7aa63a896ab5952bf1448b2ac76341b3e7c63e259e9e89dd88356a81",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial052$Reload.class",
+      "sha256": "6e2e04ce0b9eed7ad05e211a28468089a87930d4a81a49eaaa755647558ffd00",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial052.class",
+      "sha256": "c66ed09c98e7d69dac4aebe868d99f24410a7879162a801838b148f13faaf8a6",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial054$Reload.class",
+      "sha256": "b18e407888a6377b44d71d91c6b475c2c7d8911b80a2b735fbf538c4c1a84860",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial054.class",
+      "sha256": "2ac2a4ea4ae1799cf1ee127c781d79c0a460b4b366fc6360b8b9835b156d7bc8",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial055$Reload.class",
+      "sha256": "aa8540e271d6d35739f01861ec21868631be182281f4b1e60d01e67da3696952",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial055.class",
+      "sha256": "c09465ed769c7e0adb1daa6cb3fab636755b067fad3a69fb3bbed15ddd3d206c",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunMarkerPaint056.class",
+      "sha256": "197fd49a942fb8a2e0acd86bb52faa4d907367e84d605df22d064ce23647c183",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint054$Colors.class",
+      "sha256": "8c0756785980eb97647bac95a770fe970dab7bcfd2b1bcc64e4ab76ba9364a81",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint054$Input.class",
+      "sha256": "572e34c928cb6e195812b37d88fc3e448324ad3e6582591c15bfdef7143618b2",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint054.class",
+      "sha256": "38ecf4a642a301d11b323430aedd9e66edef151d10edb9b9dd4d8ae52a7a225b",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055$Colors.class",
+      "sha256": "f052f3576ce6d77ecc6f2c0ed4d943a38b0e9248b18e80814340ab3ab3c94474",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055$Input.class",
+      "sha256": "423be209437c48706a1499ec22e57702ad86233538c7050a39302f22b349832e",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055.class",
+      "sha256": "82b10ea59843555b8b39a3dcbbd97f31558c69002f4006a623f90e2fb7fb8fe6",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralCoatMaterial056$Reload.class",
+      "sha256": "62f6d371a9d4b4389faa72d0b93b64ef385aa9f8200107ed99d3253697b1b00b",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralCoatMaterial056.class",
+      "sha256": "ee1ba02e4085e884c63696335df72ad49faa9f661932cb39c1806ad5fda9d060",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyCoatMaterial061$Reload.class",
+      "sha256": "ceee237ccb1d188c5173353e839f13fda3b59b2e160e4e6a504867f137157523",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyCoatMaterial061.class",
+      "sha256": "b489147ac122e7aef69099d6e493742522f8ae63ad696974b9fd96ba48f7fd24",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyRegionPaint061$Colors.class",
+      "sha256": "3a7717939e9eeeccdde7a8157d6c5d2aa4078267eb2d48c54bdab6029b9160ce",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyRegionPaint061$Input.class",
+      "sha256": "f96696ea1bd6736538b001d75aa237b6af086a38f7f2a805bb538886ade14f91",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyRegionPaint061.class",
+      "sha256": "4859efd297e5eff38215be3c9deabe8b98b896c4527313fd8e86c3371afe7bb1",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056$Colors.class",
+      "sha256": "4fd40b9ac2578413ecc33d7dbcc4094f0cac194548f08631234948dc2ee5e498",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056$Input.class",
+      "sha256": "df5098015d1821922fe821a23f09c851ce5453351f401f64b8dfa50d24a0fc25",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056.class",
+      "sha256": "f84013e2086e162dbcfaeb31dd3dfac0463333f97b4b9e7038c239be62fa664e",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimCoatMaterial059$Reload.class",
+      "sha256": "328ff88985d0d0e1dbb8f4aa79d23da296ca13e9bf9cc0c851744cf8f1f7aea5",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimCoatMaterial059.class",
+      "sha256": "fc0fa176c4dc03c9076ac5470c5c911b6ef1ead3782fa0bcc10171ee62be370c",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059$Colors.class",
+      "sha256": "35e40e621b959da6e65d631b750c57e46a286a1e60f7c258f846a32196be9a5b",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059$Input.class",
+      "sha256": "ee3edaa7c13c3a0cd5eb528adcfbf7ea80383342e86b41d72d2d412295443153",
+      "byte_identical_to_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059.class",
+      "sha256": "c762d06a6cbaa0090a76301d632d32c76e2c0b222ee5323cebc75df1cff59694",
+      "byte_identical_to_061": true
+    }
+  ],
+  "retained_entry_count": 41
+}

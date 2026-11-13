@@ -155,7 +155,8 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
         pose.ry += age * .012f;
       }
     }
-    var raw=NeutralFlyAppearance061.sample(state).enabled()?NeutralFlyCoatMaterial061.textureOverlay(state)
+    var raw=NeutralRunAppearance062.sample(state).enabled()?NeutralRunCoatMaterial062.textureOverlay(state)
+        :NeutralFlyAppearance061.sample(state).enabled()?NeutralFlyCoatMaterial061.textureOverlay(state)
         :DarkNormalAppearance060.sample(state).enabled()?DarkNormalCoatMaterial060.textureOverlay(state)
         :NeutralSwimAppearance059.sample(state).enabled()?NeutralSwimCoatMaterial059.textureOverlay(state)
         :HeroNormalAppearance057.sample(state).enabled()?HeroNormalCoatMaterial057.textureOverlay(state)

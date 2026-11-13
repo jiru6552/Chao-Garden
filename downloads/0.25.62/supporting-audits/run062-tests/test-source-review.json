@@ -1,0 +1,52 @@
+{
+  "version": "0.25.62",
+  "scope": "Prepared source assertions plus independently reviewed current focused execution; full build/native/client remain separate root work.",
+  "parent_commit": "31551812e0def1a14188b5b7eb1df95852432914",
+  "native_additional_cases": 48,
+  "retained_native_cases": 428,
+  "expected_total_native": 476,
+  "keyboard_new_profiles_each": 27,
+  "files": [
+    {
+      "file": "src/test/java/com/chaogarden/core/NeutralRunMorphology062Test.java",
+      "sha256": "f9bc5d491603c9a5afbaaf9e67875267844563a6929698e030fb75871240af66",
+      "bytes": 23432,
+      "new": true
+    },
+    {
+      "file": "src/test/java/com/chaogarden/core/MechanicsTestSuite.java",
+      "sha256": "0587f6441f51c5ae80679bbc629a1b0bb798e1c0a05410b05bf584f170cff7dc",
+      "bytes": 2832,
+      "new": false
+    },
+    {
+      "file": "src/main/java/com/chaogarden/test/NeutralRunMorphologyGameTests062.java",
+      "sha256": "6eb392ca5a786b898d51f4a5918075bafbaca76ac9f4da90d67f46e57743d4bc",
+      "bytes": 28159,
+      "new": true
+    },
+    {
+      "file": "src/lionfishTest/java/com/chaogarden/client/NeutralRunMorphRigTest062.java",
+      "sha256": "002902cd60d80a8acbfb3c3e2f6f05270dcf0197ca66409c07a5c2c47c626b6c",
+      "bytes": 72833,
+      "new": true
+    },
+    {
+      "file": "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java",
+      "sha256": "116338ab770020db0514cbada0ef829e591fde9ffb081df5b0126ca3de6d43e2",
+      "bytes": 11104,
+      "new": false
+    },
+    {
+      "file": "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java",
+      "sha256": "a7f82cd1e03939d122670b37bb8817709bab6bf1ff4d3a72de2b44a4632f0c22",
+      "bytes": 10745,
+      "new": false
+    }
+  ],
+  "limits_preserved": true,
+  "source_fixture_changes_to_earlier_suites": false,
+  "new_profile_display_ticks": 30,
+  "full_gaze_feature_palm_pairs_actual_focused": 186624,
+  "user_directed_top_head_crest_markings": true
+}

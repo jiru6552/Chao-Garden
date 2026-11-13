@@ -1,0 +1,3980 @@
+{
+  "version": "0.25.62",
+  "result": "PASS",
+  "blockers": [],
+  "reviewed_utc": "2026-11-13T04:08:12.617328+00:00",
+  "reviewer": "closure_material062",
+  "scope": "Read-only final material closure. Only audit output was written. All selected final source PNGs and prepared sheets were personally inspected in this review; original captures, runtime proof and production/test/Git files were unchanged.",
+  "selection_method": "Nine natural forms x three ages front/back, nine mature above views, cases55..59 all six views, retained family cases60..65 all six views, equipment cases66..68 all six views. This excludes earlier diagnostics.",
+  "coverage": {
+    "natural_nine_forms_three_ages_front_back": 54,
+    "natural_mature_above": 9,
+    "genetic_coats_five_all_six_views": 30,
+    "retained_families_six_all_six_views": 36,
+    "equipment_three_all_six_views": 18
+  },
+  "selected_unique_files": 147,
+  "selected_unique_hashes": 147,
+  "personally_opened_sheets": 23,
+  "personally_reopened_full_final_originals": 14,
+  "selected_originals": [
+    {
+      "case": 0,
+      "name": "neutral_run_normal_age0",
+      "view": "front",
+      "file": "run062-live-00-neutral_run_normal_age0-front-t000-f0016.png",
+      "sha256": "e078e1a1c02700c7b50e6959fa32e1120941b2c16aed39433599401f0b9e43a6",
+      "literal_capture_line": "[03:48:46] [IO-Worker-3/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-00-neutral_run_normal_age0-front-t000-f0016.png case=0 angle=front tick=0 sha256=e078e1a1c02700c7b50e6959fa32e1120941b2c16aed39433599401f0b9e43a6 wallNanos=39044060986899 epochMillis=1794541726520",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-00-neutral_run_normal_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 0,
+      "name": "neutral_run_normal_age0",
+      "view": "back",
+      "file": "run062-live-00-neutral_run_normal_age0-back-t000-f0085.png",
+      "sha256": "6f16e99e657be564be4bb8c5a57fa6bd65ece2367995eaba12c1eb6fc1af53cd",
+      "literal_capture_line": "[03:48:48] [IO-Worker-3/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-00-neutral_run_normal_age0-back-t000-f0085.png case=0 angle=back tick=0 sha256=6f16e99e657be564be4bb8c5a57fa6bd65ece2367995eaba12c1eb6fc1af53cd wallNanos=39046341599718 epochMillis=1794541728801",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-00-neutral_run_normal_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 1,
+      "name": "neutral_run_normal_age50",
+      "view": "front",
+      "file": "run062-live-01-neutral_run_normal_age50-front-t000-f0016.png",
+      "sha256": "35008620978e34600922f3ca8abed8010393057385af317fffe52b17381930cd",
+      "literal_capture_line": "[03:48:51] [IO-Worker-3/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-01-neutral_run_normal_age50-front-t000-f0016.png case=1 angle=front tick=0 sha256=35008620978e34600922f3ca8abed8010393057385af317fffe52b17381930cd wallNanos=39048688851358 epochMillis=1794541731148",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-01-neutral_run_normal_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 1,
+      "name": "neutral_run_normal_age50",
+      "view": "back",
+      "file": "run062-live-01-neutral_run_normal_age50-back-t000-f0085.png",
+      "sha256": "d6b6cad09f1040a089cce6f0ef88410682ce4c29bebfd24826deb6363b6f7ff4",
+      "literal_capture_line": "[03:48:53] [IO-Worker-3/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-01-neutral_run_normal_age50-back-t000-f0085.png case=1 angle=back tick=0 sha256=d6b6cad09f1040a089cce6f0ef88410682ce4c29bebfd24826deb6363b6f7ff4 wallNanos=39051032523407 epochMillis=1794541733491",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-01-neutral_run_normal_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 2,
+      "name": "neutral_run_normal_age100",
+      "view": "front",
+      "file": "run062-live-02-neutral_run_normal_age100-front-t000-f0016.png",
+      "sha256": "5db454ab3c5c84f6f2203c167ad6d84785b379e41587eb0c03739294cd6a4f35",
+      "literal_capture_line": "[03:48:55] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-02-neutral_run_normal_age100-front-t000-f0016.png case=2 angle=front tick=0 sha256=5db454ab3c5c84f6f2203c167ad6d84785b379e41587eb0c03739294cd6a4f35 wallNanos=39053340842345 epochMillis=1794541735800",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-02-neutral_run_normal_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 2,
+      "name": "neutral_run_normal_age100",
+      "view": "back",
+      "file": "run062-live-02-neutral_run_normal_age100-back-t000-f0085.png",
+      "sha256": "aea5322b7d25974f74615c04d1ab75ce1e9660fbb3c90ed337a8e0f7d4a70ab0",
+      "literal_capture_line": "[03:48:58] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-02-neutral_run_normal_age100-back-t000-f0085.png case=2 angle=back tick=0 sha256=aea5322b7d25974f74615c04d1ab75ce1e9660fbb3c90ed337a8e0f7d4a70ab0 wallNanos=39055635443019 epochMillis=1794541738094",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-02-neutral_run_normal_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 2,
+      "name": "neutral_run_normal_age100",
+      "view": "above",
+      "file": "run062-live-02-neutral_run_normal_age100-above-t000-f0108.png",
+      "sha256": "344150ae4b01477ee9460b021d600bf4773b3fdaf7aec2ef456620d8e3ff0b65",
+      "literal_capture_line": "[03:48:58] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-02-neutral_run_normal_age100-above-t000-f0108.png case=2 angle=above tick=0 sha256=344150ae4b01477ee9460b021d600bf4773b3fdaf7aec2ef456620d8e3ff0b65 wallNanos=39056405428333 epochMillis=1794541738864",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-02-neutral_run_normal_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 3,
+      "name": "neutral_run_run_age0",
+      "view": "front",
+      "file": "run062-live-03-neutral_run_run_age0-front-t000-f0016.png",
+      "sha256": "af7b6316e12d13d75ac075041f6ca477e2e49d4245d4f0f84d65c48e9af06ee5",
+      "literal_capture_line": "[03:49:00] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-03-neutral_run_run_age0-front-t000-f0016.png case=3 angle=front tick=0 sha256=af7b6316e12d13d75ac075041f6ca477e2e49d4245d4f0f84d65c48e9af06ee5 wallNanos=39057961880119 epochMillis=1794541740421",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-03-neutral_run_run_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 3,
+      "name": "neutral_run_run_age0",
+      "view": "back",
+      "file": "run062-live-03-neutral_run_run_age0-back-t000-f0085.png",
+      "sha256": "6e132025d8bdda0c9dd64e88414e893ae207a41d4d74775a2581648b07e45a62",
+      "literal_capture_line": "[03:49:02] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-03-neutral_run_run_age0-back-t000-f0085.png case=3 angle=back tick=0 sha256=6e132025d8bdda0c9dd64e88414e893ae207a41d4d74775a2581648b07e45a62 wallNanos=39060310759943 epochMillis=1794541742770",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-03-neutral_run_run_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 4,
+      "name": "neutral_run_run_age50",
+      "view": "front",
+      "file": "run062-live-04-neutral_run_run_age50-front-t000-f0016.png",
+      "sha256": "aa3af16142e0746cd4b4c9fe2504d84b3c72c3ff169b3ee4c8ec768cdff16c14",
+      "literal_capture_line": "[03:49:05] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-04-neutral_run_run_age50-front-t000-f0016.png case=4 angle=front tick=0 sha256=aa3af16142e0746cd4b4c9fe2504d84b3c72c3ff169b3ee4c8ec768cdff16c14 wallNanos=39062680742343 epochMillis=1794541745140",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-04-neutral_run_run_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 4,
+      "name": "neutral_run_run_age50",
+      "view": "back",
+      "file": "run062-live-04-neutral_run_run_age50-back-t000-f0085.png",
+      "sha256": "fc3ef5de74e6fffdd41cd3160b6c738916957d2ee425684a3ec62073ffda1e1f",
+      "literal_capture_line": "[03:49:07] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-04-neutral_run_run_age50-back-t000-f0085.png case=4 angle=back tick=0 sha256=fc3ef5de74e6fffdd41cd3160b6c738916957d2ee425684a3ec62073ffda1e1f wallNanos=39065004259661 epochMillis=1794541747463",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-04-neutral_run_run_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 5,
+      "name": "neutral_run_run_age100",
+      "view": "front",
+      "file": "run062-live-05-neutral_run_run_age100-front-t000-f0016.png",
+      "sha256": "caaed1eb317868dc30bfa575cef1926b8e1c757016a2614def27f63578a660b2",
+      "literal_capture_line": "[03:49:09] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-05-neutral_run_run_age100-front-t000-f0016.png case=5 angle=front tick=0 sha256=caaed1eb317868dc30bfa575cef1926b8e1c757016a2614def27f63578a660b2 wallNanos=39067344973701 epochMillis=1794541749804",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-05-neutral_run_run_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 5,
+      "name": "neutral_run_run_age100",
+      "view": "back",
+      "file": "run062-live-05-neutral_run_run_age100-back-t000-f0085.png",
+      "sha256": "8eb764b05422cd7bb6fe975bcecf196f9fc8dcc45ee8dfe88976e1f9651d85f7",
+      "literal_capture_line": "[03:49:12] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-05-neutral_run_run_age100-back-t000-f0085.png case=5 angle=back tick=0 sha256=8eb764b05422cd7bb6fe975bcecf196f9fc8dcc45ee8dfe88976e1f9651d85f7 wallNanos=39069709770023 epochMillis=1794541752169",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-05-neutral_run_run_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 5,
+      "name": "neutral_run_run_age100",
+      "view": "above",
+      "file": "run062-live-05-neutral_run_run_age100-above-t000-f0108.png",
+      "sha256": "276ec58fe7c52efd3ca9ba5fc839dfe4ec03e429e7824fb81aa25f3992c115a5",
+      "literal_capture_line": "[03:49:12] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-05-neutral_run_run_age100-above-t000-f0108.png case=5 angle=above tick=0 sha256=276ec58fe7c52efd3ca9ba5fc839dfe4ec03e429e7824fb81aa25f3992c115a5 wallNanos=39070524929926 epochMillis=1794541752984",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-05-neutral_run_run_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 6,
+      "name": "neutral_run_power_age0",
+      "view": "front",
+      "file": "run062-live-06-neutral_run_power_age0-front-t000-f0016.png",
+      "sha256": "ade68791c94e8daa49c6413064ea72a7a0e26ea8fe21d996ac5d6a7a8b29dd4b",
+      "literal_capture_line": "[03:49:14] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-06-neutral_run_power_age0-front-t000-f0016.png case=6 angle=front tick=0 sha256=ade68791c94e8daa49c6413064ea72a7a0e26ea8fe21d996ac5d6a7a8b29dd4b wallNanos=39072092413533 epochMillis=1794541754551",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-06-neutral_run_power_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 6,
+      "name": "neutral_run_power_age0",
+      "view": "back",
+      "file": "run062-live-06-neutral_run_power_age0-back-t000-f0085.png",
+      "sha256": "b169b89ff4fe9669806fa8d235364a2ee9c407ebdf6ea7ecbe333cebd9d9be9f",
+      "literal_capture_line": "[03:49:16] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-06-neutral_run_power_age0-back-t000-f0085.png case=6 angle=back tick=0 sha256=b169b89ff4fe9669806fa8d235364a2ee9c407ebdf6ea7ecbe333cebd9d9be9f wallNanos=39074409511237 epochMillis=1794541756868",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-06-neutral_run_power_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 7,
+      "name": "neutral_run_power_age50",
+      "view": "front",
+      "file": "run062-live-07-neutral_run_power_age50-front-t000-f0016.png",
+      "sha256": "5b9c5b8c7da6551c377ee52efb3166f0e0467b6942ddecff7abe7ee07b4bb227",
+      "literal_capture_line": "[03:49:19] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-07-neutral_run_power_age50-front-t000-f0016.png case=7 angle=front tick=0 sha256=5b9c5b8c7da6551c377ee52efb3166f0e0467b6942ddecff7abe7ee07b4bb227 wallNanos=39076743505436 epochMillis=1794541759202",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-07-neutral_run_power_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 7,
+      "name": "neutral_run_power_age50",
+      "view": "back",
+      "file": "run062-live-07-neutral_run_power_age50-back-t000-f0085.png",
+      "sha256": "f6ce457ddf09af1e651dc46cc981e5beb755b871733eecf6e09c7892fb6f917d",
+      "literal_capture_line": "[03:49:21] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-07-neutral_run_power_age50-back-t000-f0085.png case=7 angle=back tick=0 sha256=f6ce457ddf09af1e651dc46cc981e5beb755b871733eecf6e09c7892fb6f917d wallNanos=39079052270301 epochMillis=1794541761511",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-07-neutral_run_power_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 8,
+      "name": "neutral_run_power_age100",
+      "view": "front",
+      "file": "run062-live-08-neutral_run_power_age100-front-t000-f0016.png",
+      "sha256": "f63b0a16471c62d2dc4903da6c0fa7e31d074f0932d31a5a40e51fe4eb6a725f",
+      "literal_capture_line": "[03:49:23] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-08-neutral_run_power_age100-front-t000-f0016.png case=8 angle=front tick=0 sha256=f63b0a16471c62d2dc4903da6c0fa7e31d074f0932d31a5a40e51fe4eb6a725f wallNanos=39081381434937 epochMillis=1794541763840",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-08-neutral_run_power_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 8,
+      "name": "neutral_run_power_age100",
+      "view": "back",
+      "file": "run062-live-08-neutral_run_power_age100-back-t000-f0085.png",
+      "sha256": "ab1e19ff42d42831801023f4cb31a8d0ade0fc3463cb72b5952009569806313c",
+      "literal_capture_line": "[03:49:26] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-08-neutral_run_power_age100-back-t000-f0085.png case=8 angle=back tick=0 sha256=ab1e19ff42d42831801023f4cb31a8d0ade0fc3463cb72b5952009569806313c wallNanos=39083742932964 epochMillis=1794541766202",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-08-neutral_run_power_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 8,
+      "name": "neutral_run_power_age100",
+      "view": "above",
+      "file": "run062-live-08-neutral_run_power_age100-above-t000-f0108.png",
+      "sha256": "c708907cfdb1d08cde9eb86c81fe5aad622efef426f8461d396eeca5f602544f",
+      "literal_capture_line": "[03:49:26] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-08-neutral_run_power_age100-above-t000-f0108.png case=8 angle=above tick=0 sha256=c708907cfdb1d08cde9eb86c81fe5aad622efef426f8461d396eeca5f602544f wallNanos=39084515747737 epochMillis=1794541766975",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-08-neutral_run_power_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 9,
+      "name": "neutral_run_fly_age0",
+      "view": "front",
+      "file": "run062-live-09-neutral_run_fly_age0-front-t000-f0016.png",
+      "sha256": "7d630c88174382777c3f105b1ad03cb3cd3e141aa5d5b874a531038fc6bd9c6c",
+      "literal_capture_line": "[03:49:28] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-09-neutral_run_fly_age0-front-t000-f0016.png case=9 angle=front tick=0 sha256=7d630c88174382777c3f105b1ad03cb3cd3e141aa5d5b874a531038fc6bd9c6c wallNanos=39086094509208 epochMillis=1794541768553",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-09-neutral_run_fly_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 9,
+      "name": "neutral_run_fly_age0",
+      "view": "back",
+      "file": "run062-live-09-neutral_run_fly_age0-back-t000-f0085.png",
+      "sha256": "b8f2012b7a1bc4bc7b126277d1eac8dca9013b63d2e4c06b367060dee6d61c55",
+      "literal_capture_line": "[03:49:30] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-09-neutral_run_fly_age0-back-t000-f0085.png case=9 angle=back tick=0 sha256=b8f2012b7a1bc4bc7b126277d1eac8dca9013b63d2e4c06b367060dee6d61c55 wallNanos=39088395993717 epochMillis=1794541770855",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-09-neutral_run_fly_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 10,
+      "name": "neutral_run_fly_age50",
+      "view": "front",
+      "file": "run062-live-10-neutral_run_fly_age50-front-t000-f0016.png",
+      "sha256": "741fb6bf84cedec11743c7cab5225b8f024f07f03dffd7f60781945c2a97072b",
+      "literal_capture_line": "[03:49:33] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-10-neutral_run_fly_age50-front-t000-f0016.png case=10 angle=front tick=0 sha256=741fb6bf84cedec11743c7cab5225b8f024f07f03dffd7f60781945c2a97072b wallNanos=39090743828628 epochMillis=1794541773203",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-10-neutral_run_fly_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 10,
+      "name": "neutral_run_fly_age50",
+      "view": "back",
+      "file": "run062-live-10-neutral_run_fly_age50-back-t000-f0085.png",
+      "sha256": "54fdcfcd76e9cc9fc073eeed586f9d7cc08191f46fff7fd9dd52fccc4a77b8f5",
+      "literal_capture_line": "[03:49:35] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-10-neutral_run_fly_age50-back-t000-f0085.png case=10 angle=back tick=0 sha256=54fdcfcd76e9cc9fc073eeed586f9d7cc08191f46fff7fd9dd52fccc4a77b8f5 wallNanos=39093160060061 epochMillis=1794541775619",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-10-neutral_run_fly_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 11,
+      "name": "neutral_run_fly_age100",
+      "view": "front",
+      "file": "run062-live-11-neutral_run_fly_age100-front-t000-f0016.png",
+      "sha256": "2d3d679aaba26a29cc250a5ad1d72d8e8f625c2812a2123bfd8e5b682a5efaa2",
+      "literal_capture_line": "[03:49:37] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-11-neutral_run_fly_age100-front-t000-f0016.png case=11 angle=front tick=0 sha256=2d3d679aaba26a29cc250a5ad1d72d8e8f625c2812a2123bfd8e5b682a5efaa2 wallNanos=39095505193988 epochMillis=1794541777964",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-11-neutral_run_fly_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 11,
+      "name": "neutral_run_fly_age100",
+      "view": "back",
+      "file": "run062-live-11-neutral_run_fly_age100-back-t000-f0085.png",
+      "sha256": "55e3d623a8147d2df6f5324d9ef469709e4c4707184cbf477c0d65af70df7287",
+      "literal_capture_line": "[03:49:40] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-11-neutral_run_fly_age100-back-t000-f0085.png case=11 angle=back tick=0 sha256=55e3d623a8147d2df6f5324d9ef469709e4c4707184cbf477c0d65af70df7287 wallNanos=39097811153840 epochMillis=1794541780270",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-11-neutral_run_fly_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 11,
+      "name": "neutral_run_fly_age100",
+      "view": "above",
+      "file": "run062-live-11-neutral_run_fly_age100-above-t000-f0108.png",
+      "sha256": "5f24a83350998376024b921b9c600327a2cc1d2b43a8dc55bf04455f80a0e731",
+      "literal_capture_line": "[03:49:41] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-11-neutral_run_fly_age100-above-t000-f0108.png case=11 angle=above tick=0 sha256=5f24a83350998376024b921b9c600327a2cc1d2b43a8dc55bf04455f80a0e731 wallNanos=39098588244524 epochMillis=1794541781047",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-11-neutral_run_fly_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 12,
+      "name": "neutral_run_swim_age0",
+      "view": "front",
+      "file": "run062-live-12-neutral_run_swim_age0-front-t000-f0016.png",
+      "sha256": "bb31fb50ca841e7a4572ff4fb82682064661f2cd0a17cd58d615a1815bfc524b",
+      "literal_capture_line": "[03:49:42] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-12-neutral_run_swim_age0-front-t000-f0016.png case=12 angle=front tick=0 sha256=bb31fb50ca841e7a4572ff4fb82682064661f2cd0a17cd58d615a1815bfc524b wallNanos=39100135274507 epochMillis=1794541782594",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-12-neutral_run_swim_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 12,
+      "name": "neutral_run_swim_age0",
+      "view": "back",
+      "file": "run062-live-12-neutral_run_swim_age0-back-t000-f0085.png",
+      "sha256": "8cae880cf051c64e479c0127c102758980715032474e5d706ccad181ec27443f",
+      "literal_capture_line": "[03:49:44] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-12-neutral_run_swim_age0-back-t000-f0085.png case=12 angle=back tick=0 sha256=8cae880cf051c64e479c0127c102758980715032474e5d706ccad181ec27443f wallNanos=39102458859900 epochMillis=1794541784918",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-12-neutral_run_swim_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 13,
+      "name": "neutral_run_swim_age50",
+      "view": "front",
+      "file": "run062-live-13-neutral_run_swim_age50-front-t000-f0016.png",
+      "sha256": "79467f146618141f311c2db8d24925383d568c489e98b04c693179339467e24c",
+      "literal_capture_line": "[03:49:47] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-13-neutral_run_swim_age50-front-t000-f0016.png case=13 angle=front tick=0 sha256=79467f146618141f311c2db8d24925383d568c489e98b04c693179339467e24c wallNanos=39104802457239 epochMillis=1794541787261",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-13-neutral_run_swim_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 13,
+      "name": "neutral_run_swim_age50",
+      "view": "back",
+      "file": "run062-live-13-neutral_run_swim_age50-back-t000-f0085.png",
+      "sha256": "3177b055605afa4d5ccf53bcf38484f7aecc64e61ee6618526d88f1750175bdb",
+      "literal_capture_line": "[03:49:49] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-13-neutral_run_swim_age50-back-t000-f0085.png case=13 angle=back tick=0 sha256=3177b055605afa4d5ccf53bcf38484f7aecc64e61ee6618526d88f1750175bdb wallNanos=39107125951365 epochMillis=1794541789585",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-13-neutral_run_swim_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 14,
+      "name": "neutral_run_swim_age100",
+      "view": "front",
+      "file": "run062-live-14-neutral_run_swim_age100-front-t000-f0016.png",
+      "sha256": "e8756bb4a444709337e38bb309c357cf6a2c83b7a2737b3168b683c56952bc6c",
+      "literal_capture_line": "[03:49:51] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-14-neutral_run_swim_age100-front-t000-f0016.png case=14 angle=front tick=0 sha256=e8756bb4a444709337e38bb309c357cf6a2c83b7a2737b3168b683c56952bc6c wallNanos=39109420775435 epochMillis=1794541791880",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-14-neutral_run_swim_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 14,
+      "name": "neutral_run_swim_age100",
+      "view": "back",
+      "file": "run062-live-14-neutral_run_swim_age100-back-t000-f0085.png",
+      "sha256": "a6e0a892d1a62edc836df3707b15f117664104e78035121455c3fe86b3f63f47",
+      "literal_capture_line": "[03:49:54] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-14-neutral_run_swim_age100-back-t000-f0085.png case=14 angle=back tick=0 sha256=a6e0a892d1a62edc836df3707b15f117664104e78035121455c3fe86b3f63f47 wallNanos=39111751040398 epochMillis=1794541794210",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-14-neutral_run_swim_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 14,
+      "name": "neutral_run_swim_age100",
+      "view": "above",
+      "file": "run062-live-14-neutral_run_swim_age100-above-t000-f0108.png",
+      "sha256": "f866979badf5b39724ec443e1c446029150a8114f36ec1ff70c88735a94573ee",
+      "literal_capture_line": "[03:49:54] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-14-neutral_run_swim_age100-above-t000-f0108.png case=14 angle=above tick=0 sha256=f866979badf5b39724ec443e1c446029150a8114f36ec1ff70c88735a94573ee wallNanos=39112506018799 epochMillis=1794541794965",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-14-neutral_run_swim_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 15,
+      "name": "neutral_run_run_fly_age0",
+      "view": "front",
+      "file": "run062-live-15-neutral_run_run_fly_age0-front-t000-f0016.png",
+      "sha256": "00e6f4fa035bbefdb8577c06973d7cf0270ac1c96d58482b165c44f79f4af494",
+      "literal_capture_line": "[03:49:56] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-15-neutral_run_run_fly_age0-front-t000-f0016.png case=15 angle=front tick=0 sha256=00e6f4fa035bbefdb8577c06973d7cf0270ac1c96d58482b165c44f79f4af494 wallNanos=39114060112542 epochMillis=1794541796519",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-15-neutral_run_run_fly_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 15,
+      "name": "neutral_run_run_fly_age0",
+      "view": "back",
+      "file": "run062-live-15-neutral_run_run_fly_age0-back-t000-f0085.png",
+      "sha256": "bb2365339ee37429cd2e14685e7f5d4acc09b9a8f61ed0d43028707c2d2bbffd",
+      "literal_capture_line": "[03:49:58] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-15-neutral_run_run_fly_age0-back-t000-f0085.png case=15 angle=back tick=0 sha256=bb2365339ee37429cd2e14685e7f5d4acc09b9a8f61ed0d43028707c2d2bbffd wallNanos=39116396424964 epochMillis=1794541798855",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-15-neutral_run_run_fly_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 16,
+      "name": "neutral_run_run_fly_age50",
+      "view": "front",
+      "file": "run062-live-16-neutral_run_run_fly_age50-front-t000-f0016.png",
+      "sha256": "eff46c9304da0bcdee517c16d8a5dab83d34a60a2e21958cd2dff64b7bfbe96a",
+      "literal_capture_line": "[03:50:01] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-16-neutral_run_run_fly_age50-front-t000-f0016.png case=16 angle=front tick=0 sha256=eff46c9304da0bcdee517c16d8a5dab83d34a60a2e21958cd2dff64b7bfbe96a wallNanos=39118776294534 epochMillis=1794541801235",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-16-neutral_run_run_fly_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 16,
+      "name": "neutral_run_run_fly_age50",
+      "view": "back",
+      "file": "run062-live-16-neutral_run_run_fly_age50-back-t000-f0085.png",
+      "sha256": "5967ef64f14ba217cabd465350126ec8e7187d4d557d1bb459c5beff149ecd57",
+      "literal_capture_line": "[03:50:03] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-16-neutral_run_run_fly_age50-back-t000-f0085.png case=16 angle=back tick=0 sha256=5967ef64f14ba217cabd465350126ec8e7187d4d557d1bb459c5beff149ecd57 wallNanos=39121079929477 epochMillis=1794541803539",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-16-neutral_run_run_fly_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 17,
+      "name": "neutral_run_run_fly_age100",
+      "view": "front",
+      "file": "run062-live-17-neutral_run_run_fly_age100-front-t000-f0016.png",
+      "sha256": "10a70709534aae9ab4af996edcd65a5bec6d4068dd6ee1b4f63654cc16ba1aea",
+      "literal_capture_line": "[03:50:05] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-17-neutral_run_run_fly_age100-front-t000-f0016.png case=17 angle=front tick=0 sha256=10a70709534aae9ab4af996edcd65a5bec6d4068dd6ee1b4f63654cc16ba1aea wallNanos=39123387436254 epochMillis=1794541805846",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-17-neutral_run_run_fly_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 17,
+      "name": "neutral_run_run_fly_age100",
+      "view": "back",
+      "file": "run062-live-17-neutral_run_run_fly_age100-back-t000-f0085.png",
+      "sha256": "f2602682b33ff7e79c4fac65069a68330ec353ac228a22503e147bc94edf6291",
+      "literal_capture_line": "[03:50:08] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-17-neutral_run_run_fly_age100-back-t000-f0085.png case=17 angle=back tick=0 sha256=f2602682b33ff7e79c4fac65069a68330ec353ac228a22503e147bc94edf6291 wallNanos=39125733596149 epochMillis=1794541808193",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-17-neutral_run_run_fly_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 17,
+      "name": "neutral_run_run_fly_age100",
+      "view": "above",
+      "file": "run062-live-17-neutral_run_run_fly_age100-above-t000-f0108.png",
+      "sha256": "793ac44d3a3fee6ffee96b9f134de59a061f509305a93ca1c0fc7919dcd4c6e0",
+      "literal_capture_line": "[03:50:08] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-17-neutral_run_run_fly_age100-above-t000-f0108.png case=17 angle=above tick=0 sha256=793ac44d3a3fee6ffee96b9f134de59a061f509305a93ca1c0fc7919dcd4c6e0 wallNanos=39126487867463 epochMillis=1794541808947",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-17-neutral_run_run_fly_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 18,
+      "name": "neutral_run_run_swim_age0",
+      "view": "front",
+      "file": "run062-live-18-neutral_run_run_swim_age0-front-t000-f0016.png",
+      "sha256": "e61823489d1fa9ff38686ab1e546bc004087bc7a0e64c1850582b964a6e2019d",
+      "literal_capture_line": "[03:50:10] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-18-neutral_run_run_swim_age0-front-t000-f0016.png case=18 angle=front tick=0 sha256=e61823489d1fa9ff38686ab1e546bc004087bc7a0e64c1850582b964a6e2019d wallNanos=39128035360065 epochMillis=1794541810494",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-18-neutral_run_run_swim_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 18,
+      "name": "neutral_run_run_swim_age0",
+      "view": "back",
+      "file": "run062-live-18-neutral_run_run_swim_age0-back-t000-f0085.png",
+      "sha256": "b3a877516333c307cfb7a064b52ad06de6a2ac9bdf28d748e8894199dae545bf",
+      "literal_capture_line": "[03:50:12] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-18-neutral_run_run_swim_age0-back-t000-f0085.png case=18 angle=back tick=0 sha256=b3a877516333c307cfb7a064b52ad06de6a2ac9bdf28d748e8894199dae545bf wallNanos=39130361276021 epochMillis=1794541812820",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-18-neutral_run_run_swim_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 19,
+      "name": "neutral_run_run_swim_age50",
+      "view": "front",
+      "file": "run062-live-19-neutral_run_run_swim_age50-front-t000-f0016.png",
+      "sha256": "ff988d9b83cd196d7fa74c0f2ac8af65ebe79e141c467da4d7d7907106a49995",
+      "literal_capture_line": "[03:50:15] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-19-neutral_run_run_swim_age50-front-t000-f0016.png case=19 angle=front tick=0 sha256=ff988d9b83cd196d7fa74c0f2ac8af65ebe79e141c467da4d7d7907106a49995 wallNanos=39132746213843 epochMillis=1794541815205",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-19-neutral_run_run_swim_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 19,
+      "name": "neutral_run_run_swim_age50",
+      "view": "back",
+      "file": "run062-live-19-neutral_run_run_swim_age50-back-t000-f0085.png",
+      "sha256": "5794981ebf1d9d6b7d971bdc068ec53762e3754aa8c61d0dc4fd3e95839bab9b",
+      "literal_capture_line": "[03:50:17] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-19-neutral_run_run_swim_age50-back-t000-f0085.png case=19 angle=back tick=0 sha256=5794981ebf1d9d6b7d971bdc068ec53762e3754aa8c61d0dc4fd3e95839bab9b wallNanos=39135152837830 epochMillis=1794541817612",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-19-neutral_run_run_swim_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 20,
+      "name": "neutral_run_run_swim_age100",
+      "view": "front",
+      "file": "run062-live-20-neutral_run_run_swim_age100-front-t000-f0016.png",
+      "sha256": "004525f77a9d79fa5edcf095a3bccd9bd05b8ef02718e49410c91f446d6ecc23",
+      "literal_capture_line": "[03:50:19] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-20-neutral_run_run_swim_age100-front-t000-f0016.png case=20 angle=front tick=0 sha256=004525f77a9d79fa5edcf095a3bccd9bd05b8ef02718e49410c91f446d6ecc23 wallNanos=39137476965802 epochMillis=1794541819936",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-20-neutral_run_run_swim_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 20,
+      "name": "neutral_run_run_swim_age100",
+      "view": "back",
+      "file": "run062-live-20-neutral_run_run_swim_age100-back-t000-f0085.png",
+      "sha256": "30c57974b367456b68e9b257813e42e5d87f4a1c2ae3a0e0cf9fdcd466150082",
+      "literal_capture_line": "[03:50:22] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-20-neutral_run_run_swim_age100-back-t000-f0085.png case=20 angle=back tick=0 sha256=30c57974b367456b68e9b257813e42e5d87f4a1c2ae3a0e0cf9fdcd466150082 wallNanos=39139769709009 epochMillis=1794541822229",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-20-neutral_run_run_swim_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 20,
+      "name": "neutral_run_run_swim_age100",
+      "view": "above",
+      "file": "run062-live-20-neutral_run_run_swim_age100-above-t000-f0108.png",
+      "sha256": "14022d0d1ac44a2a4dc08dfdf24501868df1e519d7926f81f0980edce07698a0",
+      "literal_capture_line": "[03:50:23] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-20-neutral_run_run_swim_age100-above-t000-f0108.png case=20 angle=above tick=0 sha256=14022d0d1ac44a2a4dc08dfdf24501868df1e519d7926f81f0980edce07698a0 wallNanos=39140547964915 epochMillis=1794541823007",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-20-neutral_run_run_swim_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 21,
+      "name": "neutral_run_power_fly_age0",
+      "view": "front",
+      "file": "run062-live-21-neutral_run_power_fly_age0-front-t000-f0016.png",
+      "sha256": "f78920f66c223c88323611c6d83cf390622c2d1f4bf784c90763d361db6e5913",
+      "literal_capture_line": "[03:50:24] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-21-neutral_run_power_fly_age0-front-t000-f0016.png case=21 angle=front tick=0 sha256=f78920f66c223c88323611c6d83cf390622c2d1f4bf784c90763d361db6e5913 wallNanos=39142104833996 epochMillis=1794541824564",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-21-neutral_run_power_fly_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 21,
+      "name": "neutral_run_power_fly_age0",
+      "view": "back",
+      "file": "run062-live-21-neutral_run_power_fly_age0-back-t000-f0085.png",
+      "sha256": "1bee5d00c69f8e25525c5987ad5cbcab4dcd12d57a78d6ce01a5c98e581b9da3",
+      "literal_capture_line": "[03:50:26] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-21-neutral_run_power_fly_age0-back-t000-f0085.png case=21 angle=back tick=0 sha256=1bee5d00c69f8e25525c5987ad5cbcab4dcd12d57a78d6ce01a5c98e581b9da3 wallNanos=39144480716961 epochMillis=1794541826940",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-21-neutral_run_power_fly_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 22,
+      "name": "neutral_run_power_fly_age50",
+      "view": "front",
+      "file": "run062-live-22-neutral_run_power_fly_age50-front-t000-f0016.png",
+      "sha256": "8787a12b256c2118f0d9e53f731e54ea6eb95eb32a9b70cdda8dfc33a067297b",
+      "literal_capture_line": "[03:50:29] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-22-neutral_run_power_fly_age50-front-t000-f0016.png case=22 angle=front tick=0 sha256=8787a12b256c2118f0d9e53f731e54ea6eb95eb32a9b70cdda8dfc33a067297b wallNanos=39146841132037 epochMillis=1794541829300",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-22-neutral_run_power_fly_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 22,
+      "name": "neutral_run_power_fly_age50",
+      "view": "back",
+      "file": "run062-live-22-neutral_run_power_fly_age50-back-t000-f0085.png",
+      "sha256": "930a61e5afa760c1dea1fd987a391300ac001a1a8ec24cac7de0d597ab30c3f9",
+      "literal_capture_line": "[03:50:31] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-22-neutral_run_power_fly_age50-back-t000-f0085.png case=22 angle=back tick=0 sha256=930a61e5afa760c1dea1fd987a391300ac001a1a8ec24cac7de0d597ab30c3f9 wallNanos=39149182718574 epochMillis=1794541831642",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-22-neutral_run_power_fly_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 23,
+      "name": "neutral_run_power_fly_age100",
+      "view": "front",
+      "file": "run062-live-23-neutral_run_power_fly_age100-front-t000-f0016.png",
+      "sha256": "b64375d14654d34143507cc55a4ebcfdaf65b749843edf23e6a8da2a5024bc1f",
+      "literal_capture_line": "[03:50:33] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-23-neutral_run_power_fly_age100-front-t000-f0016.png case=23 angle=front tick=0 sha256=b64375d14654d34143507cc55a4ebcfdaf65b749843edf23e6a8da2a5024bc1f wallNanos=39151493803312 epochMillis=1794541833953",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-23-neutral_run_power_fly_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 23,
+      "name": "neutral_run_power_fly_age100",
+      "view": "back",
+      "file": "run062-live-23-neutral_run_power_fly_age100-back-t000-f0085.png",
+      "sha256": "02cc9a270c2e86660aa7553a77c1240a2ee9b47d1e3d3c76d1c483178f40da47",
+      "literal_capture_line": "[03:50:36] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-23-neutral_run_power_fly_age100-back-t000-f0085.png case=23 angle=back tick=0 sha256=02cc9a270c2e86660aa7553a77c1240a2ee9b47d1e3d3c76d1c483178f40da47 wallNanos=39153815593643 epochMillis=1794541836275",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-23-neutral_run_power_fly_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 23,
+      "name": "neutral_run_power_fly_age100",
+      "view": "above",
+      "file": "run062-live-23-neutral_run_power_fly_age100-above-t000-f0108.png",
+      "sha256": "9d5e0d7a5559a2326ae374ae1bfa7cfd121877fe59ce09b615227980f8c9750e",
+      "literal_capture_line": "[03:50:37] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-23-neutral_run_power_fly_age100-above-t000-f0108.png case=23 angle=above tick=0 sha256=9d5e0d7a5559a2326ae374ae1bfa7cfd121877fe59ce09b615227980f8c9750e wallNanos=39154600142371 epochMillis=1794541837059",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-23-neutral_run_power_fly_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 24,
+      "name": "neutral_run_power_swim_age0",
+      "view": "front",
+      "file": "run062-live-24-neutral_run_power_swim_age0-front-t000-f0016.png",
+      "sha256": "5e12b4b129c9566e22c47598740732fa4d00ed37fbfe8952abe2c98b8d89aa95",
+      "literal_capture_line": "[03:50:38] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-24-neutral_run_power_swim_age0-front-t000-f0016.png case=24 angle=front tick=0 sha256=5e12b4b129c9566e22c47598740732fa4d00ed37fbfe8952abe2c98b8d89aa95 wallNanos=39156137808451 epochMillis=1794541838597",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-24-neutral_run_power_swim_age0-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 24,
+      "name": "neutral_run_power_swim_age0",
+      "view": "back",
+      "file": "run062-live-24-neutral_run_power_swim_age0-back-t000-f0085.png",
+      "sha256": "241cee1bbcd4c95131c11916c0e44e88e667d59868b32ada365e7b129bc090a3",
+      "literal_capture_line": "[03:50:40] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-24-neutral_run_power_swim_age0-back-t000-f0085.png case=24 angle=back tick=0 sha256=241cee1bbcd4c95131c11916c0e44e88e667d59868b32ada365e7b129bc090a3 wallNanos=39158459009082 epochMillis=1794541840918",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-24-neutral_run_power_swim_age0-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 25,
+      "name": "neutral_run_power_swim_age50",
+      "view": "front",
+      "file": "run062-live-25-neutral_run_power_swim_age50-front-t000-f0016.png",
+      "sha256": "0d06a02b5f0a0de8d8068fd6d8bb2be3bbdf83f5d842e34f4bc0f8b4bb6775e4",
+      "literal_capture_line": "[03:50:43] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-25-neutral_run_power_swim_age50-front-t000-f0016.png case=25 angle=front tick=0 sha256=0d06a02b5f0a0de8d8068fd6d8bb2be3bbdf83f5d842e34f4bc0f8b4bb6775e4 wallNanos=39160780090598 epochMillis=1794541843239",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-25-neutral_run_power_swim_age50-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 25,
+      "name": "neutral_run_power_swim_age50",
+      "view": "back",
+      "file": "run062-live-25-neutral_run_power_swim_age50-back-t000-f0085.png",
+      "sha256": "28de979c04674283ccec8738d3e1cb2c682e6631d6a11165133ae66caa2cfe13",
+      "literal_capture_line": "[03:50:45] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-25-neutral_run_power_swim_age50-back-t000-f0085.png case=25 angle=back tick=0 sha256=28de979c04674283ccec8738d3e1cb2c682e6631d6a11165133ae66caa2cfe13 wallNanos=39163143490779 epochMillis=1794541845602",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-25-neutral_run_power_swim_age50-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 26,
+      "name": "neutral_run_power_swim_age100",
+      "view": "front",
+      "file": "run062-live-26-neutral_run_power_swim_age100-front-t000-f0016.png",
+      "sha256": "c58b3d3649dea43e95f71e486b1112d770dd93a930b3b43aeb36444a4db06198",
+      "literal_capture_line": "[03:50:47] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-26-neutral_run_power_swim_age100-front-t000-f0016.png case=26 angle=front tick=0 sha256=c58b3d3649dea43e95f71e486b1112d770dd93a930b3b43aeb36444a4db06198 wallNanos=39165539724333 epochMillis=1794541847999",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-26-neutral_run_power_swim_age100-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 26,
+      "name": "neutral_run_power_swim_age100",
+      "view": "back",
+      "file": "run062-live-26-neutral_run_power_swim_age100-back-t000-f0085.png",
+      "sha256": "128d1839a7705e93acd0299feb21b1e47dae8692ad98d5ab9aff9e1a53b19cd6",
+      "literal_capture_line": "[03:50:50] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-26-neutral_run_power_swim_age100-back-t000-f0085.png case=26 angle=back tick=0 sha256=128d1839a7705e93acd0299feb21b1e47dae8692ad98d5ab9aff9e1a53b19cd6 wallNanos=39167874417660 epochMillis=1794541850333",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-26-neutral_run_power_swim_age100-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 26,
+      "name": "neutral_run_power_swim_age100",
+      "view": "above",
+      "file": "run062-live-26-neutral_run_power_swim_age100-above-t000-f0108.png",
+      "sha256": "6c0b914ccb45dff6056218f9261794b0ad1530a58914602f9253da528705f8f5",
+      "literal_capture_line": "[03:50:51] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-26-neutral_run_power_swim_age100-above-t000-f0108.png case=26 angle=above tick=0 sha256=6c0b914ccb45dff6056218f9261794b0ad1530a58914602f9253da528705f8f5 wallNanos=39168622322541 epochMillis=1794541851081",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-26-neutral_run_power_swim_age100-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 55,
+      "name": "neutral_run_run_red_twotone",
+      "view": "front",
+      "file": "run062-live-55-neutral_run_run_red_twotone-front-t000-f0016.png",
+      "sha256": "d0dd6ca34df8c214c58af70d8eb7bb170b449792f2e853b8abef175964b4ef05",
+      "literal_capture_line": "[03:53:03] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-55-neutral_run_run_red_twotone-front-t000-f0016.png case=55 angle=front tick=0 sha256=d0dd6ca34df8c214c58af70d8eb7bb170b449792f2e853b8abef175964b4ef05 wallNanos=39301213847837 epochMillis=1794541983673",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-55-neutral_run_run_red_twotone-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 55,
+      "name": "neutral_run_run_red_twotone",
+      "view": "left",
+      "file": "run062-live-55-neutral_run_run_red_twotone-left-t000-f0039.png",
+      "sha256": "02e6405e0363b57f69dc2add7121bce74f8ee989b0d0d8523d37ea2986078181",
+      "literal_capture_line": "[03:53:04] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-55-neutral_run_run_red_twotone-left-t000-f0039.png case=55 angle=left tick=0 sha256=02e6405e0363b57f69dc2add7121bce74f8ee989b0d0d8523d37ea2986078181 wallNanos=39301947897185 epochMillis=1794541984407",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-55-neutral_run_run_red_twotone-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 55,
+      "name": "neutral_run_run_red_twotone",
+      "view": "right",
+      "file": "run062-live-55-neutral_run_run_red_twotone-right-t000-f0062.png",
+      "sha256": "afbc17f53ad0dc5e5fe396c67f4df05679a70e229f304ae7f32184e4d21ea38b",
+      "literal_capture_line": "[03:53:05] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-55-neutral_run_run_red_twotone-right-t000-f0062.png case=55 angle=right tick=0 sha256=afbc17f53ad0dc5e5fe396c67f4df05679a70e229f304ae7f32184e4d21ea38b wallNanos=39302731640283 epochMillis=1794541985191",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-55-neutral_run_run_red_twotone-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 55,
+      "name": "neutral_run_run_red_twotone",
+      "view": "back",
+      "file": "run062-live-55-neutral_run_run_red_twotone-back-t000-f0085.png",
+      "sha256": "e1abf1c484ae6531d713d67e41d095c01c3b26b015ee01cefdcbd24711a8bfaf",
+      "literal_capture_line": "[03:53:06] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-55-neutral_run_run_red_twotone-back-t000-f0085.png case=55 angle=back tick=0 sha256=e1abf1c484ae6531d713d67e41d095c01c3b26b015ee01cefdcbd24711a8bfaf wallNanos=39303578465149 epochMillis=1794541986037",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-55-neutral_run_run_red_twotone-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 55,
+      "name": "neutral_run_run_red_twotone",
+      "view": "above",
+      "file": "run062-live-55-neutral_run_run_red_twotone-above-t000-f0108.png",
+      "sha256": "90fe203141d4c2f82e4b1132c3111396a846304d74bf432ccfae7e01a47b5392",
+      "literal_capture_line": "[03:53:06] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-55-neutral_run_run_red_twotone-above-t000-f0108.png case=55 angle=above tick=0 sha256=90fe203141d4c2f82e4b1132c3111396a846304d74bf432ccfae7e01a47b5392 wallNanos=39304340783180 epochMillis=1794541986800",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-55-neutral_run_run_red_twotone-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 55,
+      "name": "neutral_run_run_red_twotone",
+      "view": "below",
+      "file": "run062-live-55-neutral_run_run_red_twotone-below-t000-f0131.png",
+      "sha256": "62aa2f30d05c75443f081b5a409d5206ce0ee4b28a1aadb0694e053b0cb34be5",
+      "literal_capture_line": "[03:53:07] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-55-neutral_run_run_red_twotone-below-t000-f0131.png case=55 angle=below tick=0 sha256=62aa2f30d05c75443f081b5a409d5206ce0ee4b28a1aadb0694e053b0cb34be5 wallNanos=39305126174111 epochMillis=1794541987585",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-55-neutral_run_run_red_twotone-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 56,
+      "name": "neutral_run_power_red_shiny",
+      "view": "front",
+      "file": "run062-live-56-neutral_run_power_red_shiny-front-t000-f0016.png",
+      "sha256": "d68b06c4cd4b778742d5e58111c9116cb3ebc08d575179c5b51999afef6271e0",
+      "literal_capture_line": "[03:53:08] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-56-neutral_run_power_red_shiny-front-t000-f0016.png case=56 angle=front tick=0 sha256=d68b06c4cd4b778742d5e58111c9116cb3ebc08d575179c5b51999afef6271e0 wallNanos=39305952628223 epochMillis=1794541988412",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-56-neutral_run_power_red_shiny-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 56,
+      "name": "neutral_run_power_red_shiny",
+      "view": "left",
+      "file": "run062-live-56-neutral_run_power_red_shiny-left-t000-f0039.png",
+      "sha256": "e56c424fef4d9671aa22e4a5f3a25503560bc926d5ef692975ce4ea0d20a92db",
+      "literal_capture_line": "[03:53:09] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-56-neutral_run_power_red_shiny-left-t000-f0039.png case=56 angle=left tick=0 sha256=e56c424fef4d9671aa22e4a5f3a25503560bc926d5ef692975ce4ea0d20a92db wallNanos=39306728252596 epochMillis=1794541989187",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-56-neutral_run_power_red_shiny-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 56,
+      "name": "neutral_run_power_red_shiny",
+      "view": "right",
+      "file": "run062-live-56-neutral_run_power_red_shiny-right-t000-f0062.png",
+      "sha256": "a4b22e1163ce99e8d4cc473b5628723ea4f8202a2515609e6903fd9020873e47",
+      "literal_capture_line": "[03:53:09] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-56-neutral_run_power_red_shiny-right-t000-f0062.png case=56 angle=right tick=0 sha256=a4b22e1163ce99e8d4cc473b5628723ea4f8202a2515609e6903fd9020873e47 wallNanos=39307513014161 epochMillis=1794541989972",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-56-neutral_run_power_red_shiny-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 56,
+      "name": "neutral_run_power_red_shiny",
+      "view": "back",
+      "file": "run062-live-56-neutral_run_power_red_shiny-back-t000-f0085.png",
+      "sha256": "d03733f72c5979049bd8faea0ad40398301097b9a42248fb3c1293dc5b283785",
+      "literal_capture_line": "[03:53:10] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-56-neutral_run_power_red_shiny-back-t000-f0085.png case=56 angle=back tick=0 sha256=d03733f72c5979049bd8faea0ad40398301097b9a42248fb3c1293dc5b283785 wallNanos=39308286906873 epochMillis=1794541990746",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-56-neutral_run_power_red_shiny-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 56,
+      "name": "neutral_run_power_red_shiny",
+      "view": "above",
+      "file": "run062-live-56-neutral_run_power_red_shiny-above-t000-f0108.png",
+      "sha256": "dec701bc6ce120bf142ad311105b6440183bf16165e0e57a47a698ce978e60f0",
+      "literal_capture_line": "[03:53:11] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-56-neutral_run_power_red_shiny-above-t000-f0108.png case=56 angle=above tick=0 sha256=dec701bc6ce120bf142ad311105b6440183bf16165e0e57a47a698ce978e60f0 wallNanos=39309072940125 epochMillis=1794541991532",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-56-neutral_run_power_red_shiny-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 56,
+      "name": "neutral_run_power_red_shiny",
+      "view": "below",
+      "file": "run062-live-56-neutral_run_power_red_shiny-below-t000-f0131.png",
+      "sha256": "71a038a045840b557fb0291a30991efa2c5500fa343bfd29abb977635d23a583",
+      "literal_capture_line": "[03:53:12] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-56-neutral_run_power_red_shiny-below-t000-f0131.png case=56 angle=below tick=0 sha256=71a038a045840b557fb0291a30991efa2c5500fa343bfd29abb977635d23a583 wallNanos=39309848980626 epochMillis=1794541992308",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-56-neutral_run_power_red_shiny-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 57,
+      "name": "neutral_run_swim_green_mono",
+      "view": "front",
+      "file": "run062-live-57-neutral_run_swim_green_mono-front-t000-f0016.png",
+      "sha256": "0ecd71d36b0c6b7dd1128ce8cc256a422a16a2240509fc6ea7759430916309cf",
+      "literal_capture_line": "[03:53:13] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-57-neutral_run_swim_green_mono-front-t000-f0016.png case=57 angle=front tick=0 sha256=0ecd71d36b0c6b7dd1128ce8cc256a422a16a2240509fc6ea7759430916309cf wallNanos=39310656211885 epochMillis=1794541993115",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-57-neutral_run_swim_green_mono-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 57,
+      "name": "neutral_run_swim_green_mono",
+      "view": "left",
+      "file": "run062-live-57-neutral_run_swim_green_mono-left-t000-f0039.png",
+      "sha256": "5c1996895d76cc18314dc95083f037fb232f3975a87894f0571d8da149617fb8",
+      "literal_capture_line": "[03:53:13] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-57-neutral_run_swim_green_mono-left-t000-f0039.png case=57 angle=left tick=0 sha256=5c1996895d76cc18314dc95083f037fb232f3975a87894f0571d8da149617fb8 wallNanos=39311423162743 epochMillis=1794541993882",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-57-neutral_run_swim_green_mono-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 57,
+      "name": "neutral_run_swim_green_mono",
+      "view": "right",
+      "file": "run062-live-57-neutral_run_swim_green_mono-right-t000-f0062.png",
+      "sha256": "e6503440bdb15e5ad317c38bab81d167692a4b38ef943df3182b0f5eb6326455",
+      "literal_capture_line": "[03:53:14] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-57-neutral_run_swim_green_mono-right-t000-f0062.png case=57 angle=right tick=0 sha256=e6503440bdb15e5ad317c38bab81d167692a4b38ef943df3182b0f5eb6326455 wallNanos=39312196947521 epochMillis=1794541994656",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-57-neutral_run_swim_green_mono-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 57,
+      "name": "neutral_run_swim_green_mono",
+      "view": "back",
+      "file": "run062-live-57-neutral_run_swim_green_mono-back-t000-f0085.png",
+      "sha256": "dd60520872185927fe222c61fbc70e7f24030db14174969fa24e16cf825f6d87",
+      "literal_capture_line": "[03:53:15] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-57-neutral_run_swim_green_mono-back-t000-f0085.png case=57 angle=back tick=0 sha256=dd60520872185927fe222c61fbc70e7f24030db14174969fa24e16cf825f6d87 wallNanos=39312962961802 epochMillis=1794541995422",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-57-neutral_run_swim_green_mono-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 57,
+      "name": "neutral_run_swim_green_mono",
+      "view": "above",
+      "file": "run062-live-57-neutral_run_swim_green_mono-above-t000-f0108.png",
+      "sha256": "f8048aea923963c2c000cedd13e14d1d96732772009186d76680a77bfc758f4c",
+      "literal_capture_line": "[03:53:16] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-57-neutral_run_swim_green_mono-above-t000-f0108.png case=57 angle=above tick=0 sha256=f8048aea923963c2c000cedd13e14d1d96732772009186d76680a77bfc758f4c wallNanos=39313739902396 epochMillis=1794541996199",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-57-neutral_run_swim_green_mono-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 57,
+      "name": "neutral_run_swim_green_mono",
+      "view": "below",
+      "file": "run062-live-57-neutral_run_swim_green_mono-below-t000-f0131.png",
+      "sha256": "c3c7dd3f928548e0826a327051395880a203a8d0378fafe86a9800bcd34459cd",
+      "literal_capture_line": "[03:53:16] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-57-neutral_run_swim_green_mono-below-t000-f0131.png case=57 angle=below tick=0 sha256=c3c7dd3f928548e0826a327051395880a203a8d0378fafe86a9800bcd34459cd wallNanos=39314503390284 epochMillis=1794541996962",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-57-neutral_run_swim_green_mono-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 58,
+      "name": "neutral_run_run_fly_ruby",
+      "view": "front",
+      "file": "run062-live-58-neutral_run_run_fly_ruby-front-t000-f0016.png",
+      "sha256": "ef1eb2166a79f770197af1fc493a502c11668c1a47310b6c2b80eb8820d474b4",
+      "literal_capture_line": "[03:53:17] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-58-neutral_run_run_fly_ruby-front-t000-f0016.png case=58 angle=front tick=0 sha256=ef1eb2166a79f770197af1fc493a502c11668c1a47310b6c2b80eb8820d474b4 wallNanos=39315271666713 epochMillis=1794541997731",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-58-neutral_run_run_fly_ruby-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 58,
+      "name": "neutral_run_run_fly_ruby",
+      "view": "left",
+      "file": "run062-live-58-neutral_run_run_fly_ruby-left-t000-f0039.png",
+      "sha256": "d8211adf9996559a9135f2e67200a55a080b617856d70c16fdbbd138dbdabd30",
+      "literal_capture_line": "[03:53:18] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-58-neutral_run_run_fly_ruby-left-t000-f0039.png case=58 angle=left tick=0 sha256=d8211adf9996559a9135f2e67200a55a080b617856d70c16fdbbd138dbdabd30 wallNanos=39316069890878 epochMillis=1794541998529",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-58-neutral_run_run_fly_ruby-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 58,
+      "name": "neutral_run_run_fly_ruby",
+      "view": "right",
+      "file": "run062-live-58-neutral_run_run_fly_ruby-right-t000-f0062.png",
+      "sha256": "67b17e16512402e6fe074242cb9de50f2bc627d639cab171e57a275001be10ad",
+      "literal_capture_line": "[03:53:19] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-58-neutral_run_run_fly_ruby-right-t000-f0062.png case=58 angle=right tick=0 sha256=67b17e16512402e6fe074242cb9de50f2bc627d639cab171e57a275001be10ad wallNanos=39316874611325 epochMillis=1794541999334",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-58-neutral_run_run_fly_ruby-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 58,
+      "name": "neutral_run_run_fly_ruby",
+      "view": "back",
+      "file": "run062-live-58-neutral_run_run_fly_ruby-back-t000-f0085.png",
+      "sha256": "6fb14d1839bae417cfdc5789467bcc6e065a9a66acc15c4ef434654e5b34417d",
+      "literal_capture_line": "[03:53:20] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-58-neutral_run_run_fly_ruby-back-t000-f0085.png case=58 angle=back tick=0 sha256=6fb14d1839bae417cfdc5789467bcc6e065a9a66acc15c4ef434654e5b34417d wallNanos=39317612068545 epochMillis=1794542000071",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-58-neutral_run_run_fly_ruby-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 58,
+      "name": "neutral_run_run_fly_ruby",
+      "view": "above",
+      "file": "run062-live-58-neutral_run_run_fly_ruby-above-t000-f0108.png",
+      "sha256": "5c8b4facc34456af0603d67b5a778b3edb33bd37afb8ead13b2243d67f3bd18e",
+      "literal_capture_line": "[03:53:20] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-58-neutral_run_run_fly_ruby-above-t000-f0108.png case=58 angle=above tick=0 sha256=5c8b4facc34456af0603d67b5a778b3edb33bd37afb8ead13b2243d67f3bd18e wallNanos=39318377310038 epochMillis=1794542000836",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-58-neutral_run_run_fly_ruby-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 58,
+      "name": "neutral_run_run_fly_ruby",
+      "view": "below",
+      "file": "run062-live-58-neutral_run_run_fly_ruby-below-t000-f0131.png",
+      "sha256": "4c9fb814a872058a5258cb7712a3403bfb8a08d18fdcd9e4f45c3a47ddc187f6",
+      "literal_capture_line": "[03:53:21] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-58-neutral_run_run_fly_ruby-below-t000-f0131.png case=58 angle=below tick=0 sha256=4c9fb814a872058a5258cb7712a3403bfb8a08d18fdcd9e4f45c3a47ddc187f6 wallNanos=39319150073039 epochMillis=1794542001609",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-58-neutral_run_run_fly_ruby-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 59,
+      "name": "neutral_run_power_swim_natural_shiny",
+      "view": "front",
+      "file": "run062-live-59-neutral_run_power_swim_natural_shiny-front-t000-f0016.png",
+      "sha256": "657b1a290bfd0125e50eee6cccb81870555f12bf3e2872f777da1ebb892cebe8",
+      "literal_capture_line": "[03:53:22] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-59-neutral_run_power_swim_natural_shiny-front-t000-f0016.png case=59 angle=front tick=0 sha256=657b1a290bfd0125e50eee6cccb81870555f12bf3e2872f777da1ebb892cebe8 wallNanos=39319991294541 epochMillis=1794542002450",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-59-neutral_run_power_swim_natural_shiny-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 59,
+      "name": "neutral_run_power_swim_natural_shiny",
+      "view": "left",
+      "file": "run062-live-59-neutral_run_power_swim_natural_shiny-left-t000-f0039.png",
+      "sha256": "37e90930491db90bbb1f19f72b6bcfbf76563f2a978124d18d2fe7816d6a9b90",
+      "literal_capture_line": "[03:53:23] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-59-neutral_run_power_swim_natural_shiny-left-t000-f0039.png case=59 angle=left tick=0 sha256=37e90930491db90bbb1f19f72b6bcfbf76563f2a978124d18d2fe7816d6a9b90 wallNanos=39320780230620 epochMillis=1794542003239",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-59-neutral_run_power_swim_natural_shiny-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 59,
+      "name": "neutral_run_power_swim_natural_shiny",
+      "view": "right",
+      "file": "run062-live-59-neutral_run_power_swim_natural_shiny-right-t000-f0062.png",
+      "sha256": "fc6193fee77592a717ee9c517777b93bcd9f41394a2a2191d5a9472a4aa12a6c",
+      "literal_capture_line": "[03:53:24] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-59-neutral_run_power_swim_natural_shiny-right-t000-f0062.png case=59 angle=right tick=0 sha256=fc6193fee77592a717ee9c517777b93bcd9f41394a2a2191d5a9472a4aa12a6c wallNanos=39321552997424 epochMillis=1794542004012",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-59-neutral_run_power_swim_natural_shiny-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 59,
+      "name": "neutral_run_power_swim_natural_shiny",
+      "view": "back",
+      "file": "run062-live-59-neutral_run_power_swim_natural_shiny-back-t000-f0085.png",
+      "sha256": "313cac38cbc55a52dd60ca4eafed949fe02f3c8c4a4679bbe1beee6da05c1d94",
+      "literal_capture_line": "[03:53:24] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-59-neutral_run_power_swim_natural_shiny-back-t000-f0085.png case=59 angle=back tick=0 sha256=313cac38cbc55a52dd60ca4eafed949fe02f3c8c4a4679bbe1beee6da05c1d94 wallNanos=39322309826942 epochMillis=1794542004769",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-59-neutral_run_power_swim_natural_shiny-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 59,
+      "name": "neutral_run_power_swim_natural_shiny",
+      "view": "above",
+      "file": "run062-live-59-neutral_run_power_swim_natural_shiny-above-t000-f0108.png",
+      "sha256": "e2beaa2af07bd7d4f8c496b3a7479eb17b5830404063a5ce4a5c07e52eb08bdf",
+      "literal_capture_line": "[03:53:25] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-59-neutral_run_power_swim_natural_shiny-above-t000-f0108.png case=59 angle=above tick=0 sha256=e2beaa2af07bd7d4f8c496b3a7479eb17b5830404063a5ce4a5c07e52eb08bdf wallNanos=39323087625635 epochMillis=1794542005547",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-59-neutral_run_power_swim_natural_shiny-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 59,
+      "name": "neutral_run_power_swim_natural_shiny",
+      "view": "below",
+      "file": "run062-live-59-neutral_run_power_swim_natural_shiny-below-t000-f0131.png",
+      "sha256": "d7c603f8b6ae713bf936ff93dc3d9891a122f8dff8b9d64bd91cb1d7c7519e01",
+      "literal_capture_line": "[03:53:26] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-59-neutral_run_power_swim_natural_shiny-below-t000-f0131.png case=59 angle=below tick=0 sha256=d7c603f8b6ae713bf936ff93dc3d9891a122f8dff8b9d64bd91cb1d7c7519e01 wallNanos=39323845988663 epochMillis=1794542006305",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-59-neutral_run_power_swim_natural_shiny-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 60,
+      "name": "hero_run_mature_regression",
+      "view": "front",
+      "file": "run062-live-60-hero_run_mature_regression-front-t000-f0016.png",
+      "sha256": "1bd0e615c1918d76d52cc4ba9ad644cd9b2e26f9c708a39b2fb3a4f15add3bc8",
+      "literal_capture_line": "[03:53:27] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-60-hero_run_mature_regression-front-t000-f0016.png case=60 angle=front tick=0 sha256=1bd0e615c1918d76d52cc4ba9ad644cd9b2e26f9c708a39b2fb3a4f15add3bc8 wallNanos=39324653542182 epochMillis=1794542007113",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-60-hero_run_mature_regression-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 60,
+      "name": "hero_run_mature_regression",
+      "view": "left",
+      "file": "run062-live-60-hero_run_mature_regression-left-t000-f0039.png",
+      "sha256": "716ceb6d531a70bf1d28bce6d0c90d24e0a86959fe0e6ebfadd1bdc870c2e233",
+      "literal_capture_line": "[03:53:27] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-60-hero_run_mature_regression-left-t000-f0039.png case=60 angle=left tick=0 sha256=716ceb6d531a70bf1d28bce6d0c90d24e0a86959fe0e6ebfadd1bdc870c2e233 wallNanos=39325411077415 epochMillis=1794542007870",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-60-hero_run_mature_regression-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 60,
+      "name": "hero_run_mature_regression",
+      "view": "right",
+      "file": "run062-live-60-hero_run_mature_regression-right-t000-f0062.png",
+      "sha256": "4a9a4a3052cc1f8c5d976ef5fe3761e556f31a3ead9c0f8f76b6339d64619619",
+      "literal_capture_line": "[03:53:28] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-60-hero_run_mature_regression-right-t000-f0062.png case=60 angle=right tick=0 sha256=4a9a4a3052cc1f8c5d976ef5fe3761e556f31a3ead9c0f8f76b6339d64619619 wallNanos=39326180116548 epochMillis=1794542008639",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-60-hero_run_mature_regression-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 60,
+      "name": "hero_run_mature_regression",
+      "view": "back",
+      "file": "run062-live-60-hero_run_mature_regression-back-t000-f0085.png",
+      "sha256": "83a72ace295333280768e71997af52e0d1d962c7648a54422701f76fa014e18e",
+      "literal_capture_line": "[03:53:29] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-60-hero_run_mature_regression-back-t000-f0085.png case=60 angle=back tick=0 sha256=83a72ace295333280768e71997af52e0d1d962c7648a54422701f76fa014e18e wallNanos=39326993431962 epochMillis=1794542009452",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-60-hero_run_mature_regression-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 60,
+      "name": "hero_run_mature_regression",
+      "view": "above",
+      "file": "run062-live-60-hero_run_mature_regression-above-t000-f0108.png",
+      "sha256": "c095df099b4d35a481e01cead9dc167b8ef14de62b9b832551ff4eba6ee7be07",
+      "literal_capture_line": "[03:53:30] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-60-hero_run_mature_regression-above-t000-f0108.png case=60 angle=above tick=0 sha256=c095df099b4d35a481e01cead9dc167b8ef14de62b9b832551ff4eba6ee7be07 wallNanos=39327748318661 epochMillis=1794542010207",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-60-hero_run_mature_regression-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 60,
+      "name": "hero_run_mature_regression",
+      "view": "below",
+      "file": "run062-live-60-hero_run_mature_regression-below-t000-f0131.png",
+      "sha256": "9056be0439418df62135584286bf5923de694725c872c45fdb6f039fae76179e",
+      "literal_capture_line": "[03:53:30] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-60-hero_run_mature_regression-below-t000-f0131.png case=60 angle=below tick=0 sha256=9056be0439418df62135584286bf5923de694725c872c45fdb6f039fae76179e wallNanos=39328482583127 epochMillis=1794542010942",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-60-hero_run_mature_regression-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 61,
+      "name": "hero_normal_power_fly_regression",
+      "view": "front",
+      "file": "run062-live-61-hero_normal_power_fly_regression-front-t000-f0016.png",
+      "sha256": "7c30f3c88ea40bb3b05adc5fc55544f37cfab898edaa466c4cd163b5189b20f1",
+      "literal_capture_line": "[03:53:31] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-61-hero_normal_power_fly_regression-front-t000-f0016.png case=61 angle=front tick=0 sha256=7c30f3c88ea40bb3b05adc5fc55544f37cfab898edaa466c4cd163b5189b20f1 wallNanos=39329266526075 epochMillis=1794542011725",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-61-hero_normal_power_fly_regression-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 61,
+      "name": "hero_normal_power_fly_regression",
+      "view": "left",
+      "file": "run062-live-61-hero_normal_power_fly_regression-left-t000-f0039.png",
+      "sha256": "f333bb112cef250fa4dee40cdab939f1599940467dd26e6b4179ecdf3f2e38d7",
+      "literal_capture_line": "[03:53:32] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-61-hero_normal_power_fly_regression-left-t000-f0039.png case=61 angle=left tick=0 sha256=f333bb112cef250fa4dee40cdab939f1599940467dd26e6b4179ecdf3f2e38d7 wallNanos=39330077242522 epochMillis=1794542012536",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-61-hero_normal_power_fly_regression-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 61,
+      "name": "hero_normal_power_fly_regression",
+      "view": "right",
+      "file": "run062-live-61-hero_normal_power_fly_regression-right-t000-f0062.png",
+      "sha256": "b8c2ba67e58326b925ca415b120144e0ff7272d8af088cdcd0f3ac7237423bd1",
+      "literal_capture_line": "[03:53:33] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-61-hero_normal_power_fly_regression-right-t000-f0062.png case=61 angle=right tick=0 sha256=b8c2ba67e58326b925ca415b120144e0ff7272d8af088cdcd0f3ac7237423bd1 wallNanos=39330814360729 epochMillis=1794542013273",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-61-hero_normal_power_fly_regression-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 61,
+      "name": "hero_normal_power_fly_regression",
+      "view": "back",
+      "file": "run062-live-61-hero_normal_power_fly_regression-back-t000-f0085.png",
+      "sha256": "774e930116b70bb54ee4115328bfe161718db6c985e2bc526491c90f9350f4dc",
+      "literal_capture_line": "[03:53:34] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-61-hero_normal_power_fly_regression-back-t000-f0085.png case=61 angle=back tick=0 sha256=774e930116b70bb54ee4115328bfe161718db6c985e2bc526491c90f9350f4dc wallNanos=39331594980577 epochMillis=1794542014054",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-61-hero_normal_power_fly_regression-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 61,
+      "name": "hero_normal_power_fly_regression",
+      "view": "above",
+      "file": "run062-live-61-hero_normal_power_fly_regression-above-t000-f0108.png",
+      "sha256": "d63d5a43ba9d577010bdceab9213d704ded836043ef008c3f02320f035f9cac5",
+      "literal_capture_line": "[03:53:34] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-61-hero_normal_power_fly_regression-above-t000-f0108.png case=61 angle=above tick=0 sha256=d63d5a43ba9d577010bdceab9213d704ded836043ef008c3f02320f035f9cac5 wallNanos=39332409951457 epochMillis=1794542014869",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-61-hero_normal_power_fly_regression-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 61,
+      "name": "hero_normal_power_fly_regression",
+      "view": "below",
+      "file": "run062-live-61-hero_normal_power_fly_regression-below-t000-f0131.png",
+      "sha256": "534fe530400a368d29a528fb6a36e6620ffc5eb45f7cab56448bee520582fbbe",
+      "literal_capture_line": "[03:53:35] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-61-hero_normal_power_fly_regression-below-t000-f0131.png case=61 angle=below tick=0 sha256=534fe530400a368d29a528fb6a36e6620ffc5eb45f7cab56448bee520582fbbe wallNanos=39333169390034 epochMillis=1794542015628",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-61-hero_normal_power_fly_regression-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 62,
+      "name": "neutral_normal_power_swim_regression",
+      "view": "front",
+      "file": "run062-live-62-neutral_normal_power_swim_regression-front-t000-f0016.png",
+      "sha256": "da953742dc1538f47a8901b1dd1c506e69b9ecfb6b3229b3e6d968bb6d1229e7",
+      "literal_capture_line": "[03:53:36] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-62-neutral_normal_power_swim_regression-front-t000-f0016.png case=62 angle=front tick=0 sha256=da953742dc1538f47a8901b1dd1c506e69b9ecfb6b3229b3e6d968bb6d1229e7 wallNanos=39333969305741 epochMillis=1794542016428",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-62-neutral_normal_power_swim_regression-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 62,
+      "name": "neutral_normal_power_swim_regression",
+      "view": "left",
+      "file": "run062-live-62-neutral_normal_power_swim_regression-left-t000-f0039.png",
+      "sha256": "f6b5052d9576469727a92cef01fe1b9acce7056282b805d0c7cfa61847aa14ed",
+      "literal_capture_line": "[03:53:37] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-62-neutral_normal_power_swim_regression-left-t000-f0039.png case=62 angle=left tick=0 sha256=f6b5052d9576469727a92cef01fe1b9acce7056282b805d0c7cfa61847aa14ed wallNanos=39334776807660 epochMillis=1794542017236",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-62-neutral_normal_power_swim_regression-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 62,
+      "name": "neutral_normal_power_swim_regression",
+      "view": "right",
+      "file": "run062-live-62-neutral_normal_power_swim_regression-right-t000-f0062.png",
+      "sha256": "8924c0d4aa79c8a2b13515fe7460ef4af73865564eccb3d4573c68314463c481",
+      "literal_capture_line": "[03:53:37] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-62-neutral_normal_power_swim_regression-right-t000-f0062.png case=62 angle=right tick=0 sha256=8924c0d4aa79c8a2b13515fe7460ef4af73865564eccb3d4573c68314463c481 wallNanos=39335535183142 epochMillis=1794542017994",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-62-neutral_normal_power_swim_regression-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 62,
+      "name": "neutral_normal_power_swim_regression",
+      "view": "back",
+      "file": "run062-live-62-neutral_normal_power_swim_regression-back-t000-f0085.png",
+      "sha256": "b5385c5457a4a66675207645c6520bdfafb9395c724cca98049b887facd2f7cd",
+      "literal_capture_line": "[03:53:38] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-62-neutral_normal_power_swim_regression-back-t000-f0085.png case=62 angle=back tick=0 sha256=b5385c5457a4a66675207645c6520bdfafb9395c724cca98049b887facd2f7cd wallNanos=39336315787346 epochMillis=1794542018775",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-62-neutral_normal_power_swim_regression-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 62,
+      "name": "neutral_normal_power_swim_regression",
+      "view": "above",
+      "file": "run062-live-62-neutral_normal_power_swim_regression-above-t000-f0108.png",
+      "sha256": "f9e2ac99f4f67170d9381b5fa3bd0f35d35f316e67f86d1567d4b25a6649d69e",
+      "literal_capture_line": "[03:53:39] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-62-neutral_normal_power_swim_regression-above-t000-f0108.png case=62 angle=above tick=0 sha256=f9e2ac99f4f67170d9381b5fa3bd0f35d35f316e67f86d1567d4b25a6649d69e wallNanos=39337094670586 epochMillis=1794542019554",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-62-neutral_normal_power_swim_regression-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 62,
+      "name": "neutral_normal_power_swim_regression",
+      "view": "below",
+      "file": "run062-live-62-neutral_normal_power_swim_regression-below-t000-f0131.png",
+      "sha256": "a474f0851fcb067b2fc5b094abaad0c1002b59a9149cbbc7f1f8c39f62b5c44a",
+      "literal_capture_line": "[03:53:40] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-62-neutral_normal_power_swim_regression-below-t000-f0131.png case=62 angle=below tick=0 sha256=a474f0851fcb067b2fc5b094abaad0c1002b59a9149cbbc7f1f8c39f62b5c44a wallNanos=39337843221613 epochMillis=1794542020302",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-62-neutral_normal_power_swim_regression-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 63,
+      "name": "neutral_swim_run_swim_regression",
+      "view": "front",
+      "file": "run062-live-63-neutral_swim_run_swim_regression-front-t000-f0016.png",
+      "sha256": "df6df35cb7510c4a52f717192cea775161efa0970e4d4e77e41b0a3e4bc26855",
+      "literal_capture_line": "[03:53:41] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-63-neutral_swim_run_swim_regression-front-t000-f0016.png case=63 angle=front tick=0 sha256=df6df35cb7510c4a52f717192cea775161efa0970e4d4e77e41b0a3e4bc26855 wallNanos=39338706614470 epochMillis=1794542021166",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-63-neutral_swim_run_swim_regression-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 63,
+      "name": "neutral_swim_run_swim_regression",
+      "view": "left",
+      "file": "run062-live-63-neutral_swim_run_swim_regression-left-t000-f0039.png",
+      "sha256": "8777ca0342d0aa849914c0e84e676b4af5ba29d94e19918a14a6cae1fd0e7ff7",
+      "literal_capture_line": "[03:53:41] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-63-neutral_swim_run_swim_regression-left-t000-f0039.png case=63 angle=left tick=0 sha256=8777ca0342d0aa849914c0e84e676b4af5ba29d94e19918a14a6cae1fd0e7ff7 wallNanos=39339454763637 epochMillis=1794542021914",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-63-neutral_swim_run_swim_regression-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 63,
+      "name": "neutral_swim_run_swim_regression",
+      "view": "right",
+      "file": "run062-live-63-neutral_swim_run_swim_regression-right-t000-f0062.png",
+      "sha256": "8942dc88b9710b864719a498c2c69811b7a10a0c14f3cb2257bbba0e53b492a7",
+      "literal_capture_line": "[03:53:42] [IO-Worker-5/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-63-neutral_swim_run_swim_regression-right-t000-f0062.png case=63 angle=right tick=0 sha256=8942dc88b9710b864719a498c2c69811b7a10a0c14f3cb2257bbba0e53b492a7 wallNanos=39340221051004 epochMillis=1794542022680",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-63-neutral_swim_run_swim_regression-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 63,
+      "name": "neutral_swim_run_swim_regression",
+      "view": "back",
+      "file": "run062-live-63-neutral_swim_run_swim_regression-back-t000-f0085.png",
+      "sha256": "07abed431f9e3e622015336ec890c516bd1567c77a4ccf0c71f1d0bda7c80bcc",
+      "literal_capture_line": "[03:53:43] [IO-Worker-3/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-63-neutral_swim_run_swim_regression-back-t000-f0085.png case=63 angle=back tick=0 sha256=07abed431f9e3e622015336ec890c516bd1567c77a4ccf0c71f1d0bda7c80bcc wallNanos=39341009974986 epochMillis=1794542023469",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-63-neutral_swim_run_swim_regression-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 63,
+      "name": "neutral_swim_run_swim_regression",
+      "view": "above",
+      "file": "run062-live-63-neutral_swim_run_swim_regression-above-t000-f0108.png",
+      "sha256": "e71135d8c3611244902e05b58a52c3c4f71dca427ddba66820211683f1390ebb",
+      "literal_capture_line": "[03:53:44] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-63-neutral_swim_run_swim_regression-above-t000-f0108.png case=63 angle=above tick=0 sha256=e71135d8c3611244902e05b58a52c3c4f71dca427ddba66820211683f1390ebb wallNanos=39341760815645 epochMillis=1794542024220",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-63-neutral_swim_run_swim_regression-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 63,
+      "name": "neutral_swim_run_swim_regression",
+      "view": "below",
+      "file": "run062-live-63-neutral_swim_run_swim_regression-below-t000-f0131.png",
+      "sha256": "280c21da5a13fe2f27ce9950559e1f62d035ddd27d389e6cdc2efce5359ff3d7",
+      "literal_capture_line": "[03:53:45] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-63-neutral_swim_run_swim_regression-below-t000-f0131.png case=63 angle=below tick=0 sha256=280c21da5a13fe2f27ce9950559e1f62d035ddd27d389e6cdc2efce5359ff3d7 wallNanos=39342553185719 epochMillis=1794542025012",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-63-neutral_swim_run_swim_regression-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 64,
+      "name": "dark_normal_run_fly_regression",
+      "view": "front",
+      "file": "run062-live-64-dark_normal_run_fly_regression-front-t000-f0016.png",
+      "sha256": "b8aa030ebfa11b90f3cdb7956143901e9efb63a5671ec983a29e15c94d5f5bbc",
+      "literal_capture_line": "[03:53:45] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-64-dark_normal_run_fly_regression-front-t000-f0016.png case=64 angle=front tick=0 sha256=b8aa030ebfa11b90f3cdb7956143901e9efb63a5671ec983a29e15c94d5f5bbc wallNanos=39343352544781 epochMillis=1794542025812",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-64-dark_normal_run_fly_regression-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 64,
+      "name": "dark_normal_run_fly_regression",
+      "view": "left",
+      "file": "run062-live-64-dark_normal_run_fly_regression-left-t000-f0039.png",
+      "sha256": "ad0b8f3e08d85d819cd45c0a3dc91711db1a21aacb8721e03de7e13737d45a17",
+      "literal_capture_line": "[03:53:46] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-64-dark_normal_run_fly_regression-left-t000-f0039.png case=64 angle=left tick=0 sha256=ad0b8f3e08d85d819cd45c0a3dc91711db1a21aacb8721e03de7e13737d45a17 wallNanos=39344110000322 epochMillis=1794542026569",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-64-dark_normal_run_fly_regression-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 64,
+      "name": "dark_normal_run_fly_regression",
+      "view": "right",
+      "file": "run062-live-64-dark_normal_run_fly_regression-right-t000-f0062.png",
+      "sha256": "da981ed4c3dcc09b7b59498013fd82c89426ca17f33bc8ac65b4fe7bebfaf24d",
+      "literal_capture_line": "[03:53:47] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-64-dark_normal_run_fly_regression-right-t000-f0062.png case=64 angle=right tick=0 sha256=da981ed4c3dcc09b7b59498013fd82c89426ca17f33bc8ac65b4fe7bebfaf24d wallNanos=39344939372770 epochMillis=1794542027398",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-64-dark_normal_run_fly_regression-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 64,
+      "name": "dark_normal_run_fly_regression",
+      "view": "back",
+      "file": "run062-live-64-dark_normal_run_fly_regression-back-t000-f0085.png",
+      "sha256": "80cdb320d0f109a6d24d7dfe6043df3c0f4592262aa6e80401028603da2dc502",
+      "literal_capture_line": "[03:53:48] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-64-dark_normal_run_fly_regression-back-t000-f0085.png case=64 angle=back tick=0 sha256=80cdb320d0f109a6d24d7dfe6043df3c0f4592262aa6e80401028603da2dc502 wallNanos=39345716322910 epochMillis=1794542028175",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-64-dark_normal_run_fly_regression-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 64,
+      "name": "dark_normal_run_fly_regression",
+      "view": "above",
+      "file": "run062-live-64-dark_normal_run_fly_regression-above-t000-f0108.png",
+      "sha256": "344d83c4b8c550be90b82c97fa1dc6cc9bd741837053a11fe2cfa81ee93331b4",
+      "literal_capture_line": "[03:53:48] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-64-dark_normal_run_fly_regression-above-t000-f0108.png case=64 angle=above tick=0 sha256=344d83c4b8c550be90b82c97fa1dc6cc9bd741837053a11fe2cfa81ee93331b4 wallNanos=39346465954534 epochMillis=1794542028925",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-64-dark_normal_run_fly_regression-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 64,
+      "name": "dark_normal_run_fly_regression",
+      "view": "below",
+      "file": "run062-live-64-dark_normal_run_fly_regression-below-t000-f0131.png",
+      "sha256": "78f5b018cda82b30a463d6171c0645e7788c17789d0f9c2d19b32c04c974bbf9",
+      "literal_capture_line": "[03:53:49] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-64-dark_normal_run_fly_regression-below-t000-f0131.png case=64 angle=below tick=0 sha256=78f5b018cda82b30a463d6171c0645e7788c17789d0f9c2d19b32c04c974bbf9 wallNanos=39347254785835 epochMillis=1794542029714",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-64-dark_normal_run_fly_regression-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 65,
+      "name": "neutral_fly_power_fly_regression",
+      "view": "front",
+      "file": "run062-live-65-neutral_fly_power_fly_regression-front-t000-f0016.png",
+      "sha256": "e6489c4b35902151204eb8af3f70c891ab2a0ffedc760e64fb6340174c067170",
+      "literal_capture_line": "[03:53:50] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-65-neutral_fly_power_fly_regression-front-t000-f0016.png case=65 angle=front tick=0 sha256=e6489c4b35902151204eb8af3f70c891ab2a0ffedc760e64fb6340174c067170 wallNanos=39348015935160 epochMillis=1794542030475",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-65-neutral_fly_power_fly_regression-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 65,
+      "name": "neutral_fly_power_fly_regression",
+      "view": "left",
+      "file": "run062-live-65-neutral_fly_power_fly_regression-left-t000-f0039.png",
+      "sha256": "507da38e432e849df5c6691d3af7183bd9b48c79761a1262d11d2b1b81838c97",
+      "literal_capture_line": "[03:53:51] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-65-neutral_fly_power_fly_regression-left-t000-f0039.png case=65 angle=left tick=0 sha256=507da38e432e849df5c6691d3af7183bd9b48c79761a1262d11d2b1b81838c97 wallNanos=39348837813288 epochMillis=1794542031297",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-65-neutral_fly_power_fly_regression-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 65,
+      "name": "neutral_fly_power_fly_regression",
+      "view": "right",
+      "file": "run062-live-65-neutral_fly_power_fly_regression-right-t000-f0062.png",
+      "sha256": "4a50b5f6e8be80ca627f2ffed01a76db65947daa533d9c469781a386040f2b8a",
+      "literal_capture_line": "[03:53:52] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-65-neutral_fly_power_fly_regression-right-t000-f0062.png case=65 angle=right tick=0 sha256=4a50b5f6e8be80ca627f2ffed01a76db65947daa533d9c469781a386040f2b8a wallNanos=39349591324210 epochMillis=1794542032050",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-65-neutral_fly_power_fly_regression-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 65,
+      "name": "neutral_fly_power_fly_regression",
+      "view": "back",
+      "file": "run062-live-65-neutral_fly_power_fly_regression-back-t000-f0085.png",
+      "sha256": "51891a7d2a7f55fc47e839cb6492bb0f3b4ce7c8733987e894668d3198ef6612",
+      "literal_capture_line": "[03:53:52] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-65-neutral_fly_power_fly_regression-back-t000-f0085.png case=65 angle=back tick=0 sha256=51891a7d2a7f55fc47e839cb6492bb0f3b4ce7c8733987e894668d3198ef6612 wallNanos=39350412115434 epochMillis=1794542032871",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-65-neutral_fly_power_fly_regression-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 65,
+      "name": "neutral_fly_power_fly_regression",
+      "view": "above",
+      "file": "run062-live-65-neutral_fly_power_fly_regression-above-t000-f0108.png",
+      "sha256": "ca56cd566c80a197260fec01d6e8d4d033640d78bb61aa9d83dccaa2a17959cc",
+      "literal_capture_line": "[03:53:53] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-65-neutral_fly_power_fly_regression-above-t000-f0108.png case=65 angle=above tick=0 sha256=ca56cd566c80a197260fec01d6e8d4d033640d78bb61aa9d83dccaa2a17959cc wallNanos=39351169322321 epochMillis=1794542033628",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-65-neutral_fly_power_fly_regression-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 65,
+      "name": "neutral_fly_power_fly_regression",
+      "view": "below",
+      "file": "run062-live-65-neutral_fly_power_fly_regression-below-t000-f0131.png",
+      "sha256": "47e181175b65ff1d9be2ed995b1de05bfbf7325732d6680848bcafada4ba7c59",
+      "literal_capture_line": "[03:53:54] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-65-neutral_fly_power_fly_regression-below-t000-f0131.png case=65 angle=below tick=0 sha256=47e181175b65ff1d9be2ed995b1de05bfbf7325732d6680848bcafada4ba7c59 wallNanos=39351936250131 epochMillis=1794542034395",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-65-neutral_fly_power_fly_regression-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 66,
+      "name": "neutral_run_power_pumpkin",
+      "view": "front",
+      "file": "run062-live-66-neutral_run_power_pumpkin-front-t000-f0016.png",
+      "sha256": "620e6de8fe6dae59dfe20d2788b4242bbb3d90ae121535ded66b09b9c380b558",
+      "literal_capture_line": "[03:53:55] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-66-neutral_run_power_pumpkin-front-t000-f0016.png case=66 angle=front tick=0 sha256=620e6de8fe6dae59dfe20d2788b4242bbb3d90ae121535ded66b09b9c380b558 wallNanos=39352777619589 epochMillis=1794542035237",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-66-neutral_run_power_pumpkin-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 66,
+      "name": "neutral_run_power_pumpkin",
+      "view": "left",
+      "file": "run062-live-66-neutral_run_power_pumpkin-left-t000-f0039.png",
+      "sha256": "bf67c929d558b3eef340391fbd0301a82f4c26f05f4da72e8083bc4f3216115b",
+      "literal_capture_line": "[03:53:56] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-66-neutral_run_power_pumpkin-left-t000-f0039.png case=66 angle=left tick=0 sha256=bf67c929d558b3eef340391fbd0301a82f4c26f05f4da72e8083bc4f3216115b wallNanos=39353578022954 epochMillis=1794542036037",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-66-neutral_run_power_pumpkin-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 66,
+      "name": "neutral_run_power_pumpkin",
+      "view": "right",
+      "file": "run062-live-66-neutral_run_power_pumpkin-right-t000-f0062.png",
+      "sha256": "40a82fd0d7ff0dee3bfbf1ffbe72a780ce5f754cc9f877381107c7750d929e2a",
+      "literal_capture_line": "[03:53:56] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-66-neutral_run_power_pumpkin-right-t000-f0062.png case=66 angle=right tick=0 sha256=40a82fd0d7ff0dee3bfbf1ffbe72a780ce5f754cc9f877381107c7750d929e2a wallNanos=39354348307701 epochMillis=1794542036807",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-66-neutral_run_power_pumpkin-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 66,
+      "name": "neutral_run_power_pumpkin",
+      "view": "back",
+      "file": "run062-live-66-neutral_run_power_pumpkin-back-t000-f0085.png",
+      "sha256": "1c131f510b6f337f36f4bfc2823fce27aeb5de79ef09ebf4f0cf158bef73412b",
+      "literal_capture_line": "[03:53:57] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-66-neutral_run_power_pumpkin-back-t000-f0085.png case=66 angle=back tick=0 sha256=1c131f510b6f337f36f4bfc2823fce27aeb5de79ef09ebf4f0cf158bef73412b wallNanos=39355117934041 epochMillis=1794542037577",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-66-neutral_run_power_pumpkin-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 66,
+      "name": "neutral_run_power_pumpkin",
+      "view": "above",
+      "file": "run062-live-66-neutral_run_power_pumpkin-above-t000-f0108.png",
+      "sha256": "859898f50759db99404232269c1d6197a6b95196768c854b5b7fc5f12f10382f",
+      "literal_capture_line": "[03:53:58] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-66-neutral_run_power_pumpkin-above-t000-f0108.png case=66 angle=above tick=0 sha256=859898f50759db99404232269c1d6197a6b95196768c854b5b7fc5f12f10382f wallNanos=39355883249924 epochMillis=1794542038342",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-66-neutral_run_power_pumpkin-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 66,
+      "name": "neutral_run_power_pumpkin",
+      "view": "below",
+      "file": "run062-live-66-neutral_run_power_pumpkin-below-t000-f0131.png",
+      "sha256": "334cbebdd0b1367d3558cf912e69f1f01c3ee040444690aa67e47aed0365e842",
+      "literal_capture_line": "[03:53:59] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-66-neutral_run_power_pumpkin-below-t000-f0131.png case=66 angle=below tick=0 sha256=334cbebdd0b1367d3558cf912e69f1f01c3ee040444690aa67e47aed0365e842 wallNanos=39356636847069 epochMillis=1794542039096",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-66-neutral_run_power_pumpkin-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 67,
+      "name": "neutral_run_run_fly_rabbit",
+      "view": "front",
+      "file": "run062-live-67-neutral_run_run_fly_rabbit-front-t000-f0016.png",
+      "sha256": "0b4153a956bdf7f9697fd273efd4a7a9a3de564ec490f39c6ac92ca386345b59",
+      "literal_capture_line": "[03:53:59] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-67-neutral_run_run_fly_rabbit-front-t000-f0016.png case=67 angle=front tick=0 sha256=0b4153a956bdf7f9697fd273efd4a7a9a3de564ec490f39c6ac92ca386345b59 wallNanos=39357422003294 epochMillis=1794542039881",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-67-neutral_run_run_fly_rabbit-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 67,
+      "name": "neutral_run_run_fly_rabbit",
+      "view": "left",
+      "file": "run062-live-67-neutral_run_run_fly_rabbit-left-t000-f0039.png",
+      "sha256": "ffc8c4f300a06b6fa65d625d8c46b3b2bbabb4e53f81f1d3bec13bc1064c77c7",
+      "literal_capture_line": "[03:54:00] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-67-neutral_run_run_fly_rabbit-left-t000-f0039.png case=67 angle=left tick=0 sha256=ffc8c4f300a06b6fa65d625d8c46b3b2bbabb4e53f81f1d3bec13bc1064c77c7 wallNanos=39358193838726 epochMillis=1794542040653",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-67-neutral_run_run_fly_rabbit-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 67,
+      "name": "neutral_run_run_fly_rabbit",
+      "view": "right",
+      "file": "run062-live-67-neutral_run_run_fly_rabbit-right-t000-f0062.png",
+      "sha256": "34d9a977c51fce685f2b25cef8935c3fbf0d64bf9237216a5250eb18e3d4dc14",
+      "literal_capture_line": "[03:54:01] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-67-neutral_run_run_fly_rabbit-right-t000-f0062.png case=67 angle=right tick=0 sha256=34d9a977c51fce685f2b25cef8935c3fbf0d64bf9237216a5250eb18e3d4dc14 wallNanos=39358962693741 epochMillis=1794542041422",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-67-neutral_run_run_fly_rabbit-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 67,
+      "name": "neutral_run_run_fly_rabbit",
+      "view": "back",
+      "file": "run062-live-67-neutral_run_run_fly_rabbit-back-t000-f0085.png",
+      "sha256": "f404c4ae1460d2baa52bb214d81455844ecde533c7aa055c93dc9a3605937d8a",
+      "literal_capture_line": "[03:54:02] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-67-neutral_run_run_fly_rabbit-back-t000-f0085.png case=67 angle=back tick=0 sha256=f404c4ae1460d2baa52bb214d81455844ecde533c7aa055c93dc9a3605937d8a wallNanos=39359748866890 epochMillis=1794542042208",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-67-neutral_run_run_fly_rabbit-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 67,
+      "name": "neutral_run_run_fly_rabbit",
+      "view": "above",
+      "file": "run062-live-67-neutral_run_run_fly_rabbit-above-t000-f0108.png",
+      "sha256": "1087bef1160cebf73da61f1b14692d3cac901d4792db3e4d0a266c98fd021e53",
+      "literal_capture_line": "[03:54:02] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-67-neutral_run_run_fly_rabbit-above-t000-f0108.png case=67 angle=above tick=0 sha256=1087bef1160cebf73da61f1b14692d3cac901d4792db3e4d0a266c98fd021e53 wallNanos=39360495432125 epochMillis=1794542042954",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-67-neutral_run_run_fly_rabbit-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 67,
+      "name": "neutral_run_run_fly_rabbit",
+      "view": "below",
+      "file": "run062-live-67-neutral_run_run_fly_rabbit-below-t000-f0131.png",
+      "sha256": "65dd2a7e01b519b2c44db89b9d0b12fd38f9cf8fd7c494c488d809e795944479",
+      "literal_capture_line": "[03:54:03] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-67-neutral_run_run_fly_rabbit-below-t000-f0131.png case=67 angle=below tick=0 sha256=65dd2a7e01b519b2c44db89b9d0b12fd38f9cf8fd7c494c488d809e795944479 wallNanos=39361261008909 epochMillis=1794542043720",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-67-neutral_run_run_fly_rabbit-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 68,
+      "name": "neutral_run_fly_phoenix_glasses",
+      "view": "front",
+      "file": "run062-live-68-neutral_run_fly_phoenix_glasses-front-t000-f0016.png",
+      "sha256": "15446c72a0f151d380fc7057e24a965d6086de6421e893cef48985e2db804ad9",
+      "literal_capture_line": "[03:54:04] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-68-neutral_run_fly_phoenix_glasses-front-t000-f0016.png case=68 angle=front tick=0 sha256=15446c72a0f151d380fc7057e24a965d6086de6421e893cef48985e2db804ad9 wallNanos=39362058660180 epochMillis=1794542044518",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-68-neutral_run_fly_phoenix_glasses-front-t000-f0016.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 68,
+      "name": "neutral_run_fly_phoenix_glasses",
+      "view": "left",
+      "file": "run062-live-68-neutral_run_fly_phoenix_glasses-left-t000-f0039.png",
+      "sha256": "cb1c0f4e7bdbb11e6c89dfa539b01b99cad322efccb3f08917dba4b1382c17de",
+      "literal_capture_line": "[03:54:05] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-68-neutral_run_fly_phoenix_glasses-left-t000-f0039.png case=68 angle=left tick=0 sha256=cb1c0f4e7bdbb11e6c89dfa539b01b99cad322efccb3f08917dba4b1382c17de wallNanos=39362828628388 epochMillis=1794542045288",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-68-neutral_run_fly_phoenix_glasses-left-t000-f0039.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 68,
+      "name": "neutral_run_fly_phoenix_glasses",
+      "view": "right",
+      "file": "run062-live-68-neutral_run_fly_phoenix_glasses-right-t000-f0062.png",
+      "sha256": "2dc168375a28dca60e284f4f926f3d6f8dca8345261d7b6f110392acdcbf4642",
+      "literal_capture_line": "[03:54:06] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-68-neutral_run_fly_phoenix_glasses-right-t000-f0062.png case=68 angle=right tick=0 sha256=2dc168375a28dca60e284f4f926f3d6f8dca8345261d7b6f110392acdcbf4642 wallNanos=39363608967492 epochMillis=1794542046068",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-68-neutral_run_fly_phoenix_glasses-right-t000-f0062.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": true
+    },
+    {
+      "case": 68,
+      "name": "neutral_run_fly_phoenix_glasses",
+      "view": "back",
+      "file": "run062-live-68-neutral_run_fly_phoenix_glasses-back-t000-f0085.png",
+      "sha256": "77c5f53119a13ee7ca1a10220aa2214f6ce61768afebf257dcd426adb1547196",
+      "literal_capture_line": "[03:54:06] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-68-neutral_run_fly_phoenix_glasses-back-t000-f0085.png case=68 angle=back tick=0 sha256=77c5f53119a13ee7ca1a10220aa2214f6ce61768afebf257dcd426adb1547196 wallNanos=39364402651465 epochMillis=1794542046862",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-68-neutral_run_fly_phoenix_glasses-back-t000-f0085.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 68,
+      "name": "neutral_run_fly_phoenix_glasses",
+      "view": "above",
+      "file": "run062-live-68-neutral_run_fly_phoenix_glasses-above-t000-f0108.png",
+      "sha256": "f00c0d91f5cf725b2c75acabf56c91868eca3ab85aa6c953419745dec889caf9",
+      "literal_capture_line": "[03:54:07] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-68-neutral_run_fly_phoenix_glasses-above-t000-f0108.png case=68 angle=above tick=0 sha256=f00c0d91f5cf725b2c75acabf56c91868eca3ab85aa6c953419745dec889caf9 wallNanos=39365158926754 epochMillis=1794542047618",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-68-neutral_run_fly_phoenix_glasses-above-t000-f0108.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    },
+    {
+      "case": 68,
+      "name": "neutral_run_fly_phoenix_glasses",
+      "view": "below",
+      "file": "run062-live-68-neutral_run_fly_phoenix_glasses-below-t000-f0131.png",
+      "sha256": "cb8673dd676a46f62f68a91f9ad9ff84a0f2f8d3c79c2062d78e402d928a3700",
+      "literal_capture_line": "[03:54:08] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-68-neutral_run_fly_phoenix_glasses-below-t000-f0131.png case=68 angle=below tick=0 sha256=cb8673dd676a46f62f68a91f9ad9ff84a0f2f8d3c79c2062d78e402d928a3700 wallNanos=39365962984665 epochMillis=1794542048422",
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-68-neutral_run_fly_phoenix_glasses-below-t000-f0131.png",
+      "hash_verified_again": true,
+      "personally_reviewed_in_sheet": true,
+      "personally_reopened_full_original": false
+    }
+  ],
+  "sheets": [
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-00.png",
+      "sha256": "d9bb67b08de406172ca66053674f9a6061622341f592d292255668a6e5e1ea9f",
+      "cases_views": [
+        [
+          0,
+          "front"
+        ],
+        [
+          0,
+          "back"
+        ],
+        [
+          1,
+          "front"
+        ],
+        [
+          1,
+          "back"
+        ],
+        [
+          2,
+          "front"
+        ],
+        [
+          2,
+          "back"
+        ],
+        [
+          2,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-01.png",
+      "sha256": "57ee722a94bfc022aeedf8207ffec9c04b623ea4f9028398a632ed376cacbd97",
+      "cases_views": [
+        [
+          3,
+          "front"
+        ],
+        [
+          3,
+          "back"
+        ],
+        [
+          4,
+          "front"
+        ],
+        [
+          4,
+          "back"
+        ],
+        [
+          5,
+          "front"
+        ],
+        [
+          5,
+          "back"
+        ],
+        [
+          5,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-02.png",
+      "sha256": "b5fc9506d6493dae063ad98877bd0940426c2a5c22afbd588113bf367d1cd39b",
+      "cases_views": [
+        [
+          6,
+          "front"
+        ],
+        [
+          6,
+          "back"
+        ],
+        [
+          7,
+          "front"
+        ],
+        [
+          7,
+          "back"
+        ],
+        [
+          8,
+          "front"
+        ],
+        [
+          8,
+          "back"
+        ],
+        [
+          8,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-03.png",
+      "sha256": "52b49d5460cb1a8faaa74ee957155ec5f34fa4e29875ebeb8127c954c3ba03a1",
+      "cases_views": [
+        [
+          9,
+          "front"
+        ],
+        [
+          9,
+          "back"
+        ],
+        [
+          10,
+          "front"
+        ],
+        [
+          10,
+          "back"
+        ],
+        [
+          11,
+          "front"
+        ],
+        [
+          11,
+          "back"
+        ],
+        [
+          11,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-04.png",
+      "sha256": "b7e99907996bc41019cd1f56ebf902cb010213f8f50093780e41790aa7fdee58",
+      "cases_views": [
+        [
+          12,
+          "front"
+        ],
+        [
+          12,
+          "back"
+        ],
+        [
+          13,
+          "front"
+        ],
+        [
+          13,
+          "back"
+        ],
+        [
+          14,
+          "front"
+        ],
+        [
+          14,
+          "back"
+        ],
+        [
+          14,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-05.png",
+      "sha256": "327331e8b9091d933d3a5def1ef88d1e17946ca8aa82c11be6e3fa5d98602510",
+      "cases_views": [
+        [
+          15,
+          "front"
+        ],
+        [
+          15,
+          "back"
+        ],
+        [
+          16,
+          "front"
+        ],
+        [
+          16,
+          "back"
+        ],
+        [
+          17,
+          "front"
+        ],
+        [
+          17,
+          "back"
+        ],
+        [
+          17,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-06.png",
+      "sha256": "7fde8bfeeb3d6c51c9792e039c4c95750f2e2560eb04f7ca2e5ddb970874a51a",
+      "cases_views": [
+        [
+          18,
+          "front"
+        ],
+        [
+          18,
+          "back"
+        ],
+        [
+          19,
+          "front"
+        ],
+        [
+          19,
+          "back"
+        ],
+        [
+          20,
+          "front"
+        ],
+        [
+          20,
+          "back"
+        ],
+        [
+          20,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-07.png",
+      "sha256": "82294dd64e3695277fdde0845422341d43e00d733a4106a6f9277ba77e9319d5",
+      "cases_views": [
+        [
+          21,
+          "front"
+        ],
+        [
+          21,
+          "back"
+        ],
+        [
+          22,
+          "front"
+        ],
+        [
+          22,
+          "back"
+        ],
+        [
+          23,
+          "front"
+        ],
+        [
+          23,
+          "back"
+        ],
+        [
+          23,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-natural-08.png",
+      "sha256": "8b6e8e53591966f43ce0c7e854b320f8f6407473252628900cc44bc2df3a687c",
+      "cases_views": [
+        [
+          24,
+          "front"
+        ],
+        [
+          24,
+          "back"
+        ],
+        [
+          25,
+          "front"
+        ],
+        [
+          25,
+          "back"
+        ],
+        [
+          26,
+          "front"
+        ],
+        [
+          26,
+          "back"
+        ],
+        [
+          26,
+          "above"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-55.png",
+      "sha256": "df741ec1ab8d6656b348d9ec96fef66a50c302c281eb201abf73fbc4efa72f30",
+      "cases_views": [
+        [
+          55,
+          "front"
+        ],
+        [
+          55,
+          "right"
+        ],
+        [
+          55,
+          "back"
+        ],
+        [
+          55,
+          "left"
+        ],
+        [
+          55,
+          "above"
+        ],
+        [
+          55,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-56.png",
+      "sha256": "9f040d6975a3f32d5a15a4a1578ad13a729d1a0c6daa3838e3f0e1055fcddd99",
+      "cases_views": [
+        [
+          56,
+          "front"
+        ],
+        [
+          56,
+          "right"
+        ],
+        [
+          56,
+          "back"
+        ],
+        [
+          56,
+          "left"
+        ],
+        [
+          56,
+          "above"
+        ],
+        [
+          56,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-57.png",
+      "sha256": "93912d4d9875d7424d8a1f167c27ecad604f459bf1fc62eb87b035d010c7e83d",
+      "cases_views": [
+        [
+          57,
+          "front"
+        ],
+        [
+          57,
+          "right"
+        ],
+        [
+          57,
+          "back"
+        ],
+        [
+          57,
+          "left"
+        ],
+        [
+          57,
+          "above"
+        ],
+        [
+          57,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-58.png",
+      "sha256": "2abf3fdaebb199f3b12df017faed8d6b5631cb19b93d5aa6d5ec81b7c26e3370",
+      "cases_views": [
+        [
+          58,
+          "front"
+        ],
+        [
+          58,
+          "right"
+        ],
+        [
+          58,
+          "back"
+        ],
+        [
+          58,
+          "left"
+        ],
+        [
+          58,
+          "above"
+        ],
+        [
+          58,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-59.png",
+      "sha256": "9d9da69ac59f09176724c04990d903b81d2e98602c2c347930331b40db6e2cbc",
+      "cases_views": [
+        [
+          59,
+          "front"
+        ],
+        [
+          59,
+          "right"
+        ],
+        [
+          59,
+          "back"
+        ],
+        [
+          59,
+          "left"
+        ],
+        [
+          59,
+          "above"
+        ],
+        [
+          59,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-60.png",
+      "sha256": "ca66a0c086fdb9d2f7bae9cf50f3b128f1d8eb5b0dcdcfe5bb12abb2ec1bb13f",
+      "cases_views": [
+        [
+          60,
+          "front"
+        ],
+        [
+          60,
+          "right"
+        ],
+        [
+          60,
+          "back"
+        ],
+        [
+          60,
+          "left"
+        ],
+        [
+          60,
+          "above"
+        ],
+        [
+          60,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-61.png",
+      "sha256": "2bd66b58fa4a338f554a704f0a53014666399c1690171f6fd8da5dc2bef88398",
+      "cases_views": [
+        [
+          61,
+          "front"
+        ],
+        [
+          61,
+          "right"
+        ],
+        [
+          61,
+          "back"
+        ],
+        [
+          61,
+          "left"
+        ],
+        [
+          61,
+          "above"
+        ],
+        [
+          61,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-62.png",
+      "sha256": "d09b197e0cc411cc694e6d1969cbdfc99eddb06430cfd25234368104ba105b67",
+      "cases_views": [
+        [
+          62,
+          "front"
+        ],
+        [
+          62,
+          "right"
+        ],
+        [
+          62,
+          "back"
+        ],
+        [
+          62,
+          "left"
+        ],
+        [
+          62,
+          "above"
+        ],
+        [
+          62,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-63.png",
+      "sha256": "f4fcbae3bbae4c5f7eb0332540ea82649dd689c966f0f952165d01bba6ce8e69",
+      "cases_views": [
+        [
+          63,
+          "front"
+        ],
+        [
+          63,
+          "right"
+        ],
+        [
+          63,
+          "back"
+        ],
+        [
+          63,
+          "left"
+        ],
+        [
+          63,
+          "above"
+        ],
+        [
+          63,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-64.png",
+      "sha256": "ba5bac47ed5cf2da1d42f92d6bdebfcd7806cf1598df0dd2f46d6cd75f731015",
+      "cases_views": [
+        [
+          64,
+          "front"
+        ],
+        [
+          64,
+          "right"
+        ],
+        [
+          64,
+          "back"
+        ],
+        [
+          64,
+          "left"
+        ],
+        [
+          64,
+          "above"
+        ],
+        [
+          64,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-65.png",
+      "sha256": "6582cf6dca1ee15fc96a5e8f6de3d876da4ed78226b395e9164159893b4394c5",
+      "cases_views": [
+        [
+          65,
+          "front"
+        ],
+        [
+          65,
+          "right"
+        ],
+        [
+          65,
+          "back"
+        ],
+        [
+          65,
+          "left"
+        ],
+        [
+          65,
+          "above"
+        ],
+        [
+          65,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-66.png",
+      "sha256": "6d37d9cdd1d16dd0032cb4f4422a1207ab2740e14fa63818a6d7fdba2bd301ab",
+      "cases_views": [
+        [
+          66,
+          "front"
+        ],
+        [
+          66,
+          "right"
+        ],
+        [
+          66,
+          "back"
+        ],
+        [
+          66,
+          "left"
+        ],
+        [
+          66,
+          "above"
+        ],
+        [
+          66,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-67.png",
+      "sha256": "4c239ea7eed4e7ca3ae8505294735f6476dfd4686f8ace0be256b96965ef9c58",
+      "cases_views": [
+        [
+          67,
+          "front"
+        ],
+        [
+          67,
+          "right"
+        ],
+        [
+          67,
+          "back"
+        ],
+        [
+          67,
+          "left"
+        ],
+        [
+          67,
+          "above"
+        ],
+        [
+          67,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    },
+    {
+      "path": "/workspace/.setup/run062-material/final-audit/final-material-case-68.png",
+      "sha256": "1127d3ee314e13c36673a226422f65705cd911308f316dae9355954046437401",
+      "cases_views": [
+        [
+          68,
+          "front"
+        ],
+        [
+          68,
+          "right"
+        ],
+        [
+          68,
+          "back"
+        ],
+        [
+          68,
+          "left"
+        ],
+        [
+          68,
+          "above"
+        ],
+        [
+          68,
+          "below"
+        ]
+      ],
+      "crop": [
+        300,
+        100,
+        1140,
+        850
+      ],
+      "uniform_size": [
+        400,
+        357
+      ],
+      "personally_opened_this_review": true
+    }
+  ],
+  "source_log": {
+    "path": "/workspace/.setup/run062-client-final.log",
+    "sha256": "027b6c62cf0b630232f3b1a1e63f3057412874a7b15e29aa394cb35eec9c703c",
+    "literal_complete_line": "[03:58:25] [Render thread/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_VISUAL_COMPLETE requestedCases=92 renderedCases=92 skippedCases=0 start=0 limit=92 baseline=false captures=789 saved=789 epochMillis=1794542305619 normal20TPS=true audioListening=false output=/workspace/.setup/run062-client-final",
+    "failure_markers": [],
+    "actual_png_count": 789,
+    "case_catalog_path": "/workspace/.setup/run062-client-final/case-catalog.json",
+    "case_catalog_sha256": "9a84b31f7f996b6dc28ad0d30f7f4d1248e4d6c9db1e28475b7a439841b47ccf",
+    "build_duration": "10m 21s"
+  },
+  "runtime_binding": {
+    "path": "/workspace/.setup/run062-runtime-proof.json",
+    "sha256": "d2e8f96b661ead1e5deed1c645d4e2c2e40bd50c11e6058e0b423ecea690aa5a",
+    "artifact_jar_path": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.62.jar",
+    "artifact_jar_sha256": "f6d975a540c765f4e89383af9070c748ebb549ff5d00194d3dfda2b09e4a1a15",
+    "production_entries_independently_hash_checked": 8336,
+    "snapshot_manifest_sha256": "f6f03bf7c78c8aef0ce8b07856d40f8e91ea049a450f5b2e54f42ec2bc96f416",
+    "frozen_epoch_millis": 1794541663572,
+    "case0_epoch_millis": 1794541725333,
+    "capture_complete_epoch_millis": 1794542305619,
+    "bound_epoch_millis": 1794542409456,
+    "runtime_sources_still_match": true,
+    "mode": "development_classpath",
+    "limit": "All production com/chaogarden/**/*.class and assets/chao_garden/** entries were frozen from the declared Gradle development output roots and compared byte-for-byte with the delivered JAR. Their declared runtime source files still match the frozen bytes at binding. This does not claim the JAR was loaded by runClient."
+  },
+  "model": {
+    "path": "/workspace/Chao-Garden/src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json",
+    "sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+    "metadata_path": "/workspace/Chao-Garden/src/main/resources/assets/chao_garden/neutral_run062.json",
+    "metadata_sha256": "20d1602340666c4f87fdf479277cb019308642d3ebad76ef3aae43926c18ced5",
+    "closed_boxes": 19,
+    "rig_joints": 59,
+    "all_joint_names_parents_pivots_rotations_equal_canonical_baby": true,
+    "exact_canonical_head_face_orb_bones": [
+      "skull__cube_0",
+      "skull__cube_2",
+      "skull__cube_3",
+      "emotion_dot__cube_0"
+    ]
+  },
+  "preservation": {
+    "parent_commit": "31551812e0def1a14188b5b7eb1df95852432914",
+    "seven_old_models": [
+      {
+        "file": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json",
+        "sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+        "byte_exact_parent": true
+      },
+      {
+        "file": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+        "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+        "byte_exact_parent": true
+      },
+      {
+        "file": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+        "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+        "byte_exact_parent": true
+      },
+      {
+        "file": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+        "sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+        "byte_exact_parent": true
+      },
+      {
+        "file": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+        "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+        "byte_exact_parent": true
+      },
+      {
+        "file": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json",
+        "sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+        "byte_exact_parent": true
+      },
+      {
+        "file": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json",
+        "sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+        "byte_exact_parent": true
+      }
+    ],
+    "seven_old_materials_and_six_region_paints": [
+      {
+        "file": "src/main/java/com/chaogarden/client/GradualCoatMaterial.java",
+        "sha256": "c3c9c3e106789e5530b175219112f33ab9dc7cd8a122d6d0a8bab3feca9e9f02",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/GradualCoatMaterial$Reload.class",
+          "com/chaogarden/client/GradualCoatMaterial.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/HeroRunCoatMaterial055.java",
+        "sha256": "4a059952ea050d5c6f4b2e0558185356f96b0be22879761e74529d442999f7f2",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/HeroRunCoatMaterial055$Reload.class",
+          "com/chaogarden/client/HeroRunCoatMaterial055.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/NeutralCoatMaterial056.java",
+        "sha256": "0463b1c77ac8f03a81027dd1eeb12d5ad446ae08f7e9179accd671774a81dcc7",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/NeutralCoatMaterial056$Reload.class",
+          "com/chaogarden/client/NeutralCoatMaterial056.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/HeroNormalCoatMaterial057.java",
+        "sha256": "15e11ed91bd1a8de0d9431c87d27b16b716f7d211ee13b84dcff2224a4d7f8e8",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/HeroNormalCoatMaterial057$Reload.class",
+          "com/chaogarden/client/HeroNormalCoatMaterial057.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java",
+        "sha256": "7c59a101cbaa2a762d29a56268492f8ef39f4dfcb1776fd5fa2937db0bb047ed",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/NeutralSwimCoatMaterial059$Reload.class",
+          "com/chaogarden/client/NeutralSwimCoatMaterial059.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/DarkNormalCoatMaterial060.java",
+        "sha256": "5ab0c600113a2241e4ce45cafa03d597ca3d1dc058eb4f9449c5634cc4723cbf",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/DarkNormalCoatMaterial060$Reload.class",
+          "com/chaogarden/client/DarkNormalCoatMaterial060.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/NeutralFlyCoatMaterial061.java",
+        "sha256": "6db2cb80104e636f3fe39430957857be5eaaa3e18189406a4c9a9287afdd87e4",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/NeutralFlyCoatMaterial061$Reload.class",
+          "com/chaogarden/client/NeutralFlyCoatMaterial061.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/HeroRunRegionPaint055.java",
+        "sha256": "afb93956bd1bceaf2e54d4e3babd801baf0c551a860c412da57c714b15402f74",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/HeroRunRegionPaint055$Colors.class",
+          "com/chaogarden/client/HeroRunRegionPaint055$Input.class",
+          "com/chaogarden/client/HeroRunRegionPaint055.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/NeutralRegionPaint056.java",
+        "sha256": "cf4c45747096ff7d138a7691b47a2f4a7257520f5af810cc7e49e03626a01466",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/NeutralRegionPaint056$Colors.class",
+          "com/chaogarden/client/NeutralRegionPaint056$Input.class",
+          "com/chaogarden/client/NeutralRegionPaint056.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/HeroNormalRegionPaint057.java",
+        "sha256": "b0471e17f0469ee470569868548766f88ba9fb33aec4597726d98dd865b99d48",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/HeroNormalRegionPaint057$Colors.class",
+          "com/chaogarden/client/HeroNormalRegionPaint057$Input.class",
+          "com/chaogarden/client/HeroNormalRegionPaint057.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/NeutralSwimRegionPaint059.java",
+        "sha256": "22d5ca37f8b15b555150a2a391426b4eac9abcc28340ab63af0f1b10f0704b1b",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/NeutralSwimRegionPaint059$Colors.class",
+          "com/chaogarden/client/NeutralSwimRegionPaint059$Input.class",
+          "com/chaogarden/client/NeutralSwimRegionPaint059.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/DarkNormalRegionPaint060.java",
+        "sha256": "c47d21373aa063d04a13e6cd057a0844e0c3ea7bba470107a4aee6d85685161d",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/DarkNormalRegionPaint060$Colors.class",
+          "com/chaogarden/client/DarkNormalRegionPaint060$Input.class",
+          "com/chaogarden/client/DarkNormalRegionPaint060.class"
+        ]
+      },
+      {
+        "file": "src/main/java/com/chaogarden/client/NeutralFlyRegionPaint061.java",
+        "sha256": "180b69baa4a4ccadd30532ba835329dd851c4006fe874507de61f53b1abe1371",
+        "byte_exact_parent": true,
+        "class_entries_unchanged": [
+          "com/chaogarden/client/NeutralFlyRegionPaint061$Colors.class",
+          "com/chaogarden/client/NeutralFlyRegionPaint061$Input.class",
+          "com/chaogarden/client/NeutralFlyRegionPaint061.class"
+        ]
+      }
+    ],
+    "shared_integration_review": "ChaoPaletteMaterial adds only dynamic/neutral_run062 prefix handling for marker/wing/reserved semantics. ChaoOverlayLayer adds the enabled062 texture branch; earlier branch order/behavior is retained. Inherited effects and accessory classes below are byte-exact .61.",
+    "current_sources": [
+      {
+        "path": "/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralRunCoatMaterial062.java",
+        "sha256": "10e3044a6ddc7785262bc989575e32179c941e8e2015923a9937a397fbd45801"
+      },
+      {
+        "path": "/workspace/Chao-Garden/src/main/java/com/chaogarden/client/NeutralRunRegionPaint062.java",
+        "sha256": "902e297b9f914cc3a5aaef91d8d78b357dc91c7cc1c95556181a7da7b21b59fc"
+      },
+      {
+        "path": "/workspace/Chao-Garden/src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java",
+        "sha256": "66cfe990e0eed645a8f2f2f184245f950392f3c17b753475fa5e726e79811a9c"
+      },
+      {
+        "path": "/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java",
+        "sha256": "383c0a4a5cd05a4bb7d8062800af650b92627fd3440c2ca4ac409ac73da18f09"
+      },
+      {
+        "path": "/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoOverlayLayer.java",
+        "sha256": "f186fb6392befc63898600bc58c4b99737dabe67842d99e14a83bf68e93960ca"
+      }
+    ]
+  },
+  "stripe_tile_recheck": {
+    "native_inclusive_bounds": [
+      112,
+      32,
+      118,
+      33
+    ],
+    "tile_pixels": 14,
+    "rows": 2,
+    "opaque_pattern": "body/mark/body/mark/body/mark/body; both rows equal",
+    "transparent_original_pixel_checks": 2408,
+    "canonical_coats": [
+      {
+        "file": "aqua_mono.png",
+        "sha256": "cc552c59e4198259081f920b952d29d0257dbac48793754f6b2abdda0c155873"
+      },
+      {
+        "file": "aqua_mono_shiny.png",
+        "sha256": "2c78b9990994db453a05b339926fa3f48054a36bb124e4ccabb9d1f805b73755"
+      },
+      {
+        "file": "aqua_two.png",
+        "sha256": "61f0dd48c91d97b19622c00049532165d9480918ca50b19ee30220289c9ed304"
+      },
+      {
+        "file": "aqua_two_shiny.png",
+        "sha256": "588c22107c8646650730032888b033bfe6cb025e8fa0bf17e9a846155ac37ec4"
+      },
+      {
+        "file": "black_mono.png",
+        "sha256": "19dea9f6dd4b48eff2a6dd81f8dbc66ef2c9c83457ab10cd114d2a006116f343"
+      },
+      {
+        "file": "black_mono_shiny.png",
+        "sha256": "0eda82a435d15c8a544425c7cc3f36220765e1ea83d7b84e80ab23c697f8bec4"
+      },
+      {
+        "file": "black_two.png",
+        "sha256": "594833653e6aa14f4eb89b21ec30f925f5892b65bda12769670db803e8f63e25"
+      },
+      {
+        "file": "black_two_shiny.png",
+        "sha256": "aec124acc915a6d5418c2ee31c2bf02a53035b81be7573f52e05cd4475747a17"
+      },
+      {
+        "file": "blue_mono.png",
+        "sha256": "e226902bd1850c528e10f1ab3d2487cfa99c0b1ea26b09f7e6c504f967bf132d"
+      },
+      {
+        "file": "blue_mono_shiny.png",
+        "sha256": "98063a6a9f8958c52100fb75c895f72f3d22403357a64ec06f2dbb2434379aa5"
+      },
+      {
+        "file": "blue_two.png",
+        "sha256": "ed3321892c0de816585e5de7bc762c59fd7060452aef3878f67ad1763396cebf"
+      },
+      {
+        "file": "blue_two_shiny.png",
+        "sha256": "f22d29cf5612cb733ec619477c782d3b283c4d4050970201420c259d2e1ee743"
+      },
+      {
+        "file": "brown_mono.png",
+        "sha256": "e89af53e7fa6d006cd1b537d24e11f1f2f307c48198067b1776682f36ddbf6f9"
+      },
+      {
+        "file": "brown_mono_shiny.png",
+        "sha256": "a3bfb9d1d01f0444942eef234e8935e51c76c21b4e5743d7d010ac8ce8079b1c"
+      },
+      {
+        "file": "brown_two.png",
+        "sha256": "e9a29550c109bd1081b8650394b81c51dc2bbce499df11b21593b3f98544d4f0"
+      },
+      {
+        "file": "brown_two_shiny.png",
+        "sha256": "d7b36631f287ea534755633028b02ab81688352568440dab3226e22faeecd8ef"
+      },
+      {
+        "file": "cyan_mono.png",
+        "sha256": "c075560bb08b7e2c5cb48497722b6a8fa477541bc84b37ee88aa0ec9c3ed3543"
+      },
+      {
+        "file": "cyan_mono_shiny.png",
+        "sha256": "9b5aed8c45261eedd8cb638e591f9fb702fcb67f5aa9949c0a03271cd1843739"
+      },
+      {
+        "file": "cyan_two.png",
+        "sha256": "eec3835f7732e654d12d4ec87ca99d8d1e41a1b7e2eef5ea91b61d52b74e47c6"
+      },
+      {
+        "file": "cyan_two_shiny.png",
+        "sha256": "6043fc217f3da67766f4fcdccd16bfb83eb0d8bce04c35813e1fedb594534c2e"
+      },
+      {
+        "file": "green_mono.png",
+        "sha256": "ee0614949e7897871580ecf4ffe6c746d96f28dfb336ee847bdd0252459641f4"
+      },
+      {
+        "file": "green_mono_shiny.png",
+        "sha256": "3387f51b31362602ee77f00565f682e66b204969b821446567cca23b28fccd51"
+      },
+      {
+        "file": "green_two.png",
+        "sha256": "974bd2528df6cf6eb4020dc85ccd32f745ca5ad6729ddb9cd93e5df22539b6bb"
+      },
+      {
+        "file": "green_two_shiny.png",
+        "sha256": "245387bdcf26b49ac4159d9424b4e3b9bd523eb85ec27e15051bd2eb0e2d8b27"
+      },
+      {
+        "file": "grey_mono.png",
+        "sha256": "299483277bc615d10032a64d57119dc5131dd2d1fb90dd01fadf355a5a7d783f"
+      },
+      {
+        "file": "grey_mono_shiny.png",
+        "sha256": "37656d111653fb561000a782a15dd0e601867c611455456281f2a9435ccbbb87"
+      },
+      {
+        "file": "grey_two.png",
+        "sha256": "6276725749590d4277f3d0bc8040c3e7220316de70f3ab3d179b0e3bb689d0bc"
+      },
+      {
+        "file": "grey_two_shiny.png",
+        "sha256": "7f4fbd99054835ab3fc93b4f8e5721dd0e5bee95fc40e80aec29c4629c103625"
+      },
+      {
+        "file": "jewel_amethyst_mono.png",
+        "sha256": "5ede29c895f474e5d94db44953ba5b69fd3bfd018212c2aba8e063f4930ff08d"
+      },
+      {
+        "file": "jewel_amethyst_mono_shiny.png",
+        "sha256": "02d742d33477d0b6b123f6d67964c3025abfc7785802f3a6fc43a03b1cfd9ca2"
+      },
+      {
+        "file": "jewel_amethyst_two.png",
+        "sha256": "5ede29c895f474e5d94db44953ba5b69fd3bfd018212c2aba8e063f4930ff08d"
+      },
+      {
+        "file": "jewel_amethyst_two_shiny.png",
+        "sha256": "02d742d33477d0b6b123f6d67964c3025abfc7785802f3a6fc43a03b1cfd9ca2"
+      },
+      {
+        "file": "jewel_aquamarine_mono.png",
+        "sha256": "f5a4b11327b92efe67d51c5d011e05384ad05a414c3ac9db322c49bb35f00ea0"
+      },
+      {
+        "file": "jewel_aquamarine_mono_shiny.png",
+        "sha256": "591fd4194c7639136127adac70619e10091ab2d3c62a120c147776725d24c851"
+      },
+      {
+        "file": "jewel_aquamarine_two.png",
+        "sha256": "f5a4b11327b92efe67d51c5d011e05384ad05a414c3ac9db322c49bb35f00ea0"
+      },
+      {
+        "file": "jewel_aquamarine_two_shiny.png",
+        "sha256": "591fd4194c7639136127adac70619e10091ab2d3c62a120c147776725d24c851"
+      },
+      {
+        "file": "jewel_diamond_mono.png",
+        "sha256": "931de510b887d59755d860acdac28c9980f5fd997260291d6cf335e6aa2a8d80"
+      },
+      {
+        "file": "jewel_diamond_mono_shiny.png",
+        "sha256": "1c5cc5b206257a1138052be5f741d14eaa9948abbcdf1785f445a3e7e30e393f"
+      },
+      {
+        "file": "jewel_diamond_two.png",
+        "sha256": "931de510b887d59755d860acdac28c9980f5fd997260291d6cf335e6aa2a8d80"
+      },
+      {
+        "file": "jewel_diamond_two_shiny.png",
+        "sha256": "1c5cc5b206257a1138052be5f741d14eaa9948abbcdf1785f445a3e7e30e393f"
+      },
+      {
+        "file": "jewel_emerald_mono.png",
+        "sha256": "461cb11a68bfd5bc79cdf411a9d15e374447a1e14c52955056639257ba18e5d4"
+      },
+      {
+        "file": "jewel_emerald_mono_shiny.png",
+        "sha256": "cfac4f723c5979d8bb96eccc7e6bb6da143486bb5eb4fb23a5eb139a1e92e8dc"
+      },
+      {
+        "file": "jewel_emerald_two.png",
+        "sha256": "461cb11a68bfd5bc79cdf411a9d15e374447a1e14c52955056639257ba18e5d4"
+      },
+      {
+        "file": "jewel_emerald_two_shiny.png",
+        "sha256": "cfac4f723c5979d8bb96eccc7e6bb6da143486bb5eb4fb23a5eb139a1e92e8dc"
+      },
+      {
+        "file": "jewel_garnet_mono.png",
+        "sha256": "991e43643ef5adb35c8e763e1fb9b7c3cae7f69b675fcb389cddc9acfecf1d4f"
+      },
+      {
+        "file": "jewel_garnet_mono_shiny.png",
+        "sha256": "9ed4c1092389189ebcaa067534c9d90bc9cf0cf0ca18e11c43f5b0f289d5f088"
+      },
+      {
+        "file": "jewel_garnet_two.png",
+        "sha256": "991e43643ef5adb35c8e763e1fb9b7c3cae7f69b675fcb389cddc9acfecf1d4f"
+      },
+      {
+        "file": "jewel_garnet_two_shiny.png",
+        "sha256": "9ed4c1092389189ebcaa067534c9d90bc9cf0cf0ca18e11c43f5b0f289d5f088"
+      },
+      {
+        "file": "jewel_gold_mono.png",
+        "sha256": "c1727db5157cc142afd0951d3974b1e427016d0ec6e138867d966ad3d74bbf3b"
+      },
+      {
+        "file": "jewel_gold_mono_shiny.png",
+        "sha256": "96ce5581804d830bc097aca42481db186a63d699b1fb1fa7ece3daa8afceb50f"
+      },
+      {
+        "file": "jewel_gold_two.png",
+        "sha256": "c1727db5157cc142afd0951d3974b1e427016d0ec6e138867d966ad3d74bbf3b"
+      },
+      {
+        "file": "jewel_gold_two_shiny.png",
+        "sha256": "96ce5581804d830bc097aca42481db186a63d699b1fb1fa7ece3daa8afceb50f"
+      },
+      {
+        "file": "jewel_moon_mono.png",
+        "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+      },
+      {
+        "file": "jewel_moon_mono_shiny.png",
+        "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+      },
+      {
+        "file": "jewel_moon_two.png",
+        "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+      },
+      {
+        "file": "jewel_moon_two_shiny.png",
+        "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+      },
+      {
+        "file": "jewel_onyx_mono.png",
+        "sha256": "7b09f91937492b43d598ca71cc5c7994c2a4a7aa50835cde33707c5274700ea1"
+      },
+      {
+        "file": "jewel_onyx_mono_shiny.png",
+        "sha256": "64bca25cfc627fd1f49f779de6d2900663773d202c264490aa3bb9cb222d04d8"
+      },
+      {
+        "file": "jewel_onyx_two.png",
+        "sha256": "7b09f91937492b43d598ca71cc5c7994c2a4a7aa50835cde33707c5274700ea1"
+      },
+      {
+        "file": "jewel_onyx_two_shiny.png",
+        "sha256": "64bca25cfc627fd1f49f779de6d2900663773d202c264490aa3bb9cb222d04d8"
+      },
+      {
+        "file": "jewel_peridot_mono.png",
+        "sha256": "df03612c7d7d66b897fa7c30368f700497912c85cffba08e084645b62897074a"
+      },
+      {
+        "file": "jewel_peridot_mono_shiny.png",
+        "sha256": "4fd842e02db2e8651723b9feab6a01d68822fcdef0fa82de6cf85e39457158b8"
+      },
+      {
+        "file": "jewel_peridot_two.png",
+        "sha256": "df03612c7d7d66b897fa7c30368f700497912c85cffba08e084645b62897074a"
+      },
+      {
+        "file": "jewel_peridot_two_shiny.png",
+        "sha256": "4fd842e02db2e8651723b9feab6a01d68822fcdef0fa82de6cf85e39457158b8"
+      },
+      {
+        "file": "jewel_ruby_mono.png",
+        "sha256": "72b74cb86e068f0cd04fcc908efdd5786a87cc9f4ca25114fbf670fb53410d67"
+      },
+      {
+        "file": "jewel_ruby_mono_shiny.png",
+        "sha256": "4796b96f57786608b6ed5c2a698275ba75c1ef8bad43638411b197f3d463f767"
+      },
+      {
+        "file": "jewel_ruby_two.png",
+        "sha256": "72b74cb86e068f0cd04fcc908efdd5786a87cc9f4ca25114fbf670fb53410d67"
+      },
+      {
+        "file": "jewel_ruby_two_shiny.png",
+        "sha256": "4796b96f57786608b6ed5c2a698275ba75c1ef8bad43638411b197f3d463f767"
+      },
+      {
+        "file": "jewel_sapphire_mono.png",
+        "sha256": "6b6b62623c4edde967f52f43fc8239ea432594fd08d71c3769e865799d0f54eb"
+      },
+      {
+        "file": "jewel_sapphire_mono_shiny.png",
+        "sha256": "313375d24074e5b5e80d19dde6ea08a96cbffb2228631fa87433d1f1e521d6e4"
+      },
+      {
+        "file": "jewel_sapphire_two.png",
+        "sha256": "6b6b62623c4edde967f52f43fc8239ea432594fd08d71c3769e865799d0f54eb"
+      },
+      {
+        "file": "jewel_sapphire_two_shiny.png",
+        "sha256": "313375d24074e5b5e80d19dde6ea08a96cbffb2228631fa87433d1f1e521d6e4"
+      },
+      {
+        "file": "jewel_silver_mono.png",
+        "sha256": "ccf6547117215d63fe447f45da09e63ea2f3f88ae2b54cd7b1777e9aad207a59"
+      },
+      {
+        "file": "jewel_silver_mono_shiny.png",
+        "sha256": "5d982f4d67af79c29a1050dbfee3864830de8686bfa08057763aca28f760f7f5"
+      },
+      {
+        "file": "jewel_silver_two.png",
+        "sha256": "ccf6547117215d63fe447f45da09e63ea2f3f88ae2b54cd7b1777e9aad207a59"
+      },
+      {
+        "file": "jewel_silver_two_shiny.png",
+        "sha256": "5d982f4d67af79c29a1050dbfee3864830de8686bfa08057763aca28f760f7f5"
+      },
+      {
+        "file": "jewel_topaz_mono.png",
+        "sha256": "358341ccca79652070fe01cad80b7db8569ea7d094a9ae4df0dc78dbd61e49cc"
+      },
+      {
+        "file": "jewel_topaz_mono_shiny.png",
+        "sha256": "b5f46c9ed76179668beba81c5d39dceba82c4f0433e13ae47f2285263726e331"
+      },
+      {
+        "file": "jewel_topaz_two.png",
+        "sha256": "358341ccca79652070fe01cad80b7db8569ea7d094a9ae4df0dc78dbd61e49cc"
+      },
+      {
+        "file": "jewel_topaz_two_shiny.png",
+        "sha256": "b5f46c9ed76179668beba81c5d39dceba82c4f0433e13ae47f2285263726e331"
+      },
+      {
+        "file": "lime_mono.png",
+        "sha256": "e36414b9af468ffa6b74350c56d2d548320ba192ad0954a8b13ab541c67f3116"
+      },
+      {
+        "file": "lime_mono_shiny.png",
+        "sha256": "bc00f32225d3a929f261f774b17ef7eb4a9e7daf62a3856977ccf1040d046564"
+      },
+      {
+        "file": "lime_two.png",
+        "sha256": "4b4aff88b44d09685e6bc71fb8a566e02b42aa15037e4cdd6ecbf0f1c42d73e1"
+      },
+      {
+        "file": "lime_two_shiny.png",
+        "sha256": "446153d11d38ff8c7f8dbfc6d5d07de59fa16d72f7a56d85d65e875b2c14fd00"
+      },
+      {
+        "file": "normal_dark_0_mono.png",
+        "sha256": "c68b3cf662e7944ac883809ff36dd22a287857873de864ea2836ecc2a4d02848"
+      },
+      {
+        "file": "normal_dark_0_mono_shiny.png",
+        "sha256": "c68b3cf662e7944ac883809ff36dd22a287857873de864ea2836ecc2a4d02848"
+      },
+      {
+        "file": "normal_dark_0_two.png",
+        "sha256": "f98d0bb303f860e012f0a294c68c7c2c2999c84e85fbf3c4b823a1fc94c9ac28"
+      },
+      {
+        "file": "normal_dark_0_two_shiny.png",
+        "sha256": "f98d0bb303f860e012f0a294c68c7c2c2999c84e85fbf3c4b823a1fc94c9ac28"
+      },
+      {
+        "file": "normal_dark_1_mono.png",
+        "sha256": "e98af964d9e218827cd2d61c7c301ce1143902ee74da2ef6e6d5a62f50a4199a"
+      },
+      {
+        "file": "normal_dark_1_mono_shiny.png",
+        "sha256": "e98af964d9e218827cd2d61c7c301ce1143902ee74da2ef6e6d5a62f50a4199a"
+      },
+      {
+        "file": "normal_dark_1_two.png",
+        "sha256": "153c81e8a44f4e93da282712f9a432bd09dfbeeb8c16b5881cee759a3d368089"
+      },
+      {
+        "file": "normal_dark_1_two_shiny.png",
+        "sha256": "153c81e8a44f4e93da282712f9a432bd09dfbeeb8c16b5881cee759a3d368089"
+      },
+      {
+        "file": "normal_dark_2_mono.png",
+        "sha256": "7cf31880c5f4ddf6bc948126bd067855d5425c904d364783f283b870b5e1acad"
+      },
+      {
+        "file": "normal_dark_2_mono_shiny.png",
+        "sha256": "7cf31880c5f4ddf6bc948126bd067855d5425c904d364783f283b870b5e1acad"
+      },
+      {
+        "file": "normal_dark_2_two.png",
+        "sha256": "d0706b3b860478cc2a59a6253c32a25829e355c661f553d611f5da4f1b2678cc"
+      },
+      {
+        "file": "normal_dark_2_two_shiny.png",
+        "sha256": "d0706b3b860478cc2a59a6253c32a25829e355c661f553d611f5da4f1b2678cc"
+      },
+      {
+        "file": "normal_dark_3_mono.png",
+        "sha256": "fbe6ac6fd100fc0abf595b552d77b2d296823c792833e2e382f1a6a805269e02"
+      },
+      {
+        "file": "normal_dark_3_mono_shiny.png",
+        "sha256": "fbe6ac6fd100fc0abf595b552d77b2d296823c792833e2e382f1a6a805269e02"
+      },
+      {
+        "file": "normal_dark_3_two.png",
+        "sha256": "891d136da8c81531b27f29c1e1d577ed3fdef862e70fbbf693702bbd68ff6426"
+      },
+      {
+        "file": "normal_dark_3_two_shiny.png",
+        "sha256": "891d136da8c81531b27f29c1e1d577ed3fdef862e70fbbf693702bbd68ff6426"
+      },
+      {
+        "file": "normal_dark_4_mono.png",
+        "sha256": "22c34fc599dfd6330694db8b9d1a1fcd7ee7be1b57193f7d30f0e76eefc72668"
+      },
+      {
+        "file": "normal_dark_4_mono_shiny.png",
+        "sha256": "22c34fc599dfd6330694db8b9d1a1fcd7ee7be1b57193f7d30f0e76eefc72668"
+      },
+      {
+        "file": "normal_dark_4_two.png",
+        "sha256": "21fc4191e246808cd6f60fbbddb95938f6c19a1b84db40353a70c613978ab31b"
+      },
+      {
+        "file": "normal_dark_4_two_shiny.png",
+        "sha256": "21fc4191e246808cd6f60fbbddb95938f6c19a1b84db40353a70c613978ab31b"
+      },
+      {
+        "file": "normal_hero_0_mono.png",
+        "sha256": "d8c0a689a801b59b7cb977f7b87ac455db15a171bb62bd89516ffc19d742eb6b"
+      },
+      {
+        "file": "normal_hero_0_mono_shiny.png",
+        "sha256": "d8c0a689a801b59b7cb977f7b87ac455db15a171bb62bd89516ffc19d742eb6b"
+      },
+      {
+        "file": "normal_hero_0_two.png",
+        "sha256": "aeebbdea468157c6d02bcccd1c4e400874f3c019593eafd145d33d43a2832363"
+      },
+      {
+        "file": "normal_hero_0_two_shiny.png",
+        "sha256": "aeebbdea468157c6d02bcccd1c4e400874f3c019593eafd145d33d43a2832363"
+      },
+      {
+        "file": "normal_hero_1_mono.png",
+        "sha256": "8c30909d4a73063fe5713c183366d12e309510c30634bdbf892509c50d29ec6d"
+      },
+      {
+        "file": "normal_hero_1_mono_shiny.png",
+        "sha256": "8c30909d4a73063fe5713c183366d12e309510c30634bdbf892509c50d29ec6d"
+      },
+      {
+        "file": "normal_hero_1_two.png",
+        "sha256": "8bc293af292dd68059425a48b94f7189e1bcd8e088dd1f3a19714e4a3462c493"
+      },
+      {
+        "file": "normal_hero_1_two_shiny.png",
+        "sha256": "8bc293af292dd68059425a48b94f7189e1bcd8e088dd1f3a19714e4a3462c493"
+      },
+      {
+        "file": "normal_hero_2_mono.png",
+        "sha256": "9c4023dd9255eee8101858f16969265e964b81e4809827ab2f1c1bde8e46ac3b"
+      },
+      {
+        "file": "normal_hero_2_mono_shiny.png",
+        "sha256": "9c4023dd9255eee8101858f16969265e964b81e4809827ab2f1c1bde8e46ac3b"
+      },
+      {
+        "file": "normal_hero_2_two.png",
+        "sha256": "1a2a29dd333e7c9f356ae31a1b30805057ea3328b201fda44a2dd5d4e0785426"
+      },
+      {
+        "file": "normal_hero_2_two_shiny.png",
+        "sha256": "1a2a29dd333e7c9f356ae31a1b30805057ea3328b201fda44a2dd5d4e0785426"
+      },
+      {
+        "file": "normal_hero_3_mono.png",
+        "sha256": "e4279e948b82377adc976d070b7a3fc7045e0420618396c34984900079b7bdd0"
+      },
+      {
+        "file": "normal_hero_3_mono_shiny.png",
+        "sha256": "e4279e948b82377adc976d070b7a3fc7045e0420618396c34984900079b7bdd0"
+      },
+      {
+        "file": "normal_hero_3_two.png",
+        "sha256": "745443364f7ebd5a62ecc7de55ee7e4741251a0e8d596118db54dc14dc1ae289"
+      },
+      {
+        "file": "normal_hero_3_two_shiny.png",
+        "sha256": "745443364f7ebd5a62ecc7de55ee7e4741251a0e8d596118db54dc14dc1ae289"
+      },
+      {
+        "file": "normal_hero_4_mono.png",
+        "sha256": "3a3d549a652e40a5211f6d17938dfdc4eed92e50f83ab49e4cbd98bd99b71085"
+      },
+      {
+        "file": "normal_hero_4_mono_shiny.png",
+        "sha256": "3a3d549a652e40a5211f6d17938dfdc4eed92e50f83ab49e4cbd98bd99b71085"
+      },
+      {
+        "file": "normal_hero_4_two.png",
+        "sha256": "5293b02569b52f35e55cf04d7eacbf9de815e4337904f4cc6e6a23423e0ea9a6"
+      },
+      {
+        "file": "normal_hero_4_two_shiny.png",
+        "sha256": "5293b02569b52f35e55cf04d7eacbf9de815e4337904f4cc6e6a23423e0ea9a6"
+      },
+      {
+        "file": "normal_neutral_0_mono.png",
+        "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+      },
+      {
+        "file": "normal_neutral_0_mono_shiny.png",
+        "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+      },
+      {
+        "file": "normal_neutral_0_two.png",
+        "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+      },
+      {
+        "file": "normal_neutral_0_two_shiny.png",
+        "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+      },
+      {
+        "file": "normal_neutral_1_mono.png",
+        "sha256": "bb656100b127ba3a756dce40cc015689253f07b7c1ea1427e9084c5fc03d703a"
+      },
+      {
+        "file": "normal_neutral_1_mono_shiny.png",
+        "sha256": "bb656100b127ba3a756dce40cc015689253f07b7c1ea1427e9084c5fc03d703a"
+      },
+      {
+        "file": "normal_neutral_1_two.png",
+        "sha256": "eafe2cde6d27e3aeb98a4a92eacd0f16d793bbd5dc0485e332327175b8ae778e"
+      },
+      {
+        "file": "normal_neutral_1_two_shiny.png",
+        "sha256": "eafe2cde6d27e3aeb98a4a92eacd0f16d793bbd5dc0485e332327175b8ae778e"
+      },
+      {
+        "file": "normal_neutral_2_mono.png",
+        "sha256": "aed943edcbf7806e42ffbba2484fa108531d4b0531c5c91a7f9cda5de7458e1e"
+      },
+      {
+        "file": "normal_neutral_2_mono_shiny.png",
+        "sha256": "aed943edcbf7806e42ffbba2484fa108531d4b0531c5c91a7f9cda5de7458e1e"
+      },
+      {
+        "file": "normal_neutral_2_two.png",
+        "sha256": "fe42840921cd094091158d1b83952671eb3eb00db84fc59b18eb7c6dca3ce3bd"
+      },
+      {
+        "file": "normal_neutral_2_two_shiny.png",
+        "sha256": "fe42840921cd094091158d1b83952671eb3eb00db84fc59b18eb7c6dca3ce3bd"
+      },
+      {
+        "file": "normal_neutral_3_mono.png",
+        "sha256": "e0265c788ba47cf7996eb1208a0f471fa196106f32b06f5cdd2a69a909608655"
+      },
+      {
+        "file": "normal_neutral_3_mono_shiny.png",
+        "sha256": "e0265c788ba47cf7996eb1208a0f471fa196106f32b06f5cdd2a69a909608655"
+      },
+      {
+        "file": "normal_neutral_3_two.png",
+        "sha256": "82fbd33573bc4318b5c5bafe48df057d65dd8f541342d7fbfb21180489686cef"
+      },
+      {
+        "file": "normal_neutral_3_two_shiny.png",
+        "sha256": "82fbd33573bc4318b5c5bafe48df057d65dd8f541342d7fbfb21180489686cef"
+      },
+      {
+        "file": "normal_neutral_4_mono.png",
+        "sha256": "53cf4a05b41543db5c8656e56bede58b17a376b77af221fcb3d17f3cf42bdc3d"
+      },
+      {
+        "file": "normal_neutral_4_mono_shiny.png",
+        "sha256": "53cf4a05b41543db5c8656e56bede58b17a376b77af221fcb3d17f3cf42bdc3d"
+      },
+      {
+        "file": "normal_neutral_4_two.png",
+        "sha256": "da660a698b6e8e4e1e57dba5e49a662c76ae5758a04263b58dfb2e6b0c1cff1a"
+      },
+      {
+        "file": "normal_neutral_4_two_shiny.png",
+        "sha256": "da660a698b6e8e4e1e57dba5e49a662c76ae5758a04263b58dfb2e6b0c1cff1a"
+      },
+      {
+        "file": "orange_mono.png",
+        "sha256": "79ff6ae50523da13b875bc2e8a5e356991d2e2ac8cffa84cb6dd965e0ee1f541"
+      },
+      {
+        "file": "orange_mono_shiny.png",
+        "sha256": "5e3064d5fe4d27764e7adf741c749134b0470ae591a905235cf3987139aa2a6c"
+      },
+      {
+        "file": "orange_two.png",
+        "sha256": "0f06b902b97ce98ba183dcf50ba6295418acb94bedbf715e37717cfc7b64e922"
+      },
+      {
+        "file": "orange_two_shiny.png",
+        "sha256": "6c1e672cd9ef0d01a8fc6c1a646a5cc5f99e6af36ba895f7294e8b30f27607dc"
+      },
+      {
+        "file": "pink_mono.png",
+        "sha256": "21e75322f595c47590e54e6577dda5c56ef462ac246d024e6d28792eadf61ddc"
+      },
+      {
+        "file": "pink_mono_shiny.png",
+        "sha256": "16f564885777df1aeeb635732c13857790824145c2403b148e77af38c247df91"
+      },
+      {
+        "file": "pink_two.png",
+        "sha256": "4c0ef4f336abbeb2a6c4dd5a9e9578cf5216ff435c45c9528da3081ffe2f1b20"
+      },
+      {
+        "file": "pink_two_shiny.png",
+        "sha256": "5185f7f129d18f79aba36208a9c0001938a10f2c7190e101f552e0c40a1ef7a4"
+      },
+      {
+        "file": "purple_mono.png",
+        "sha256": "7358fbb8708e44e93bf116e1a365db375693637f042b09a9f2d20ab208d0c2d5"
+      },
+      {
+        "file": "purple_mono_shiny.png",
+        "sha256": "edfca754384fd9a862a11f5cc0384b8c9c79a871b0d6df9aea5f0fdcc5f306e9"
+      },
+      {
+        "file": "purple_two.png",
+        "sha256": "a274785eb75ac94565d89e510a440e016db8c057902cc16ffdbf7f7a33977e18"
+      },
+      {
+        "file": "purple_two_shiny.png",
+        "sha256": "30d982870886e36f50dfd470f04c7a5bcf79b5375c80b48c8ec12db0e1b66b81"
+      },
+      {
+        "file": "red_mono.png",
+        "sha256": "7f304d931d90c0075895709d9b79e1648245a17d57ad4725617737b918c3d8f1"
+      },
+      {
+        "file": "red_mono_shiny.png",
+        "sha256": "a3df432362012a851c899bfc2a92ab3be7efe22abbe5362b1548b43988ca34fc"
+      },
+      {
+        "file": "red_two.png",
+        "sha256": "bdb9e1e1dabecb7e57658bc70410895df0f2c43095abc0cbad7ef7a745e9264d"
+      },
+      {
+        "file": "red_two_shiny.png",
+        "sha256": "4d58d27b3c5a557e88a84b6ff380e96084302be05fe036a615f1b78ad02e9c29"
+      },
+      {
+        "file": "sky_blue_mono.png",
+        "sha256": "b7506ea4b63e7af986112c6c97d9965b561c67206493fe13463b99b951ad954d"
+      },
+      {
+        "file": "sky_blue_mono_shiny.png",
+        "sha256": "31a0f640c83c51364aaed49e609de98e0915cc14f25baeabe45138d63b1d5496"
+      },
+      {
+        "file": "sky_blue_two.png",
+        "sha256": "b5d82b51fb32a23cf07e6e88a3e6a29a91ce17c7b869c4b256ad795c4c3593a4"
+      },
+      {
+        "file": "sky_blue_two_shiny.png",
+        "sha256": "b497c29672bf8ce363557e76d090676361f08b61093366732d00a3d681347b51"
+      },
+      {
+        "file": "white_mono.png",
+        "sha256": "57ad15936e4239dead3b6d781c7b97a671d639b1226c5140a90523e7e4f7b374"
+      },
+      {
+        "file": "white_mono_shiny.png",
+        "sha256": "b60fec800ed81f08a7b18501f94d169d0019d048015467adb9f0779791e62038"
+      },
+      {
+        "file": "white_two.png",
+        "sha256": "5257d5529e2004a9e97388baff99d639d8941f40bd4d52bd37b72f3da4815801"
+      },
+      {
+        "file": "white_two_shiny.png",
+        "sha256": "b4480b13fe6df4a1ace99f6bb231781c2e1ee41680d692c41f280d83bc953a0c"
+      },
+      {
+        "file": "yellow_mono.png",
+        "sha256": "29ed4ebf24f8e28529342e6cba5184b5c30fe641ef748bbec08157783a652241"
+      },
+      {
+        "file": "yellow_mono_shiny.png",
+        "sha256": "60e9e1ae4657fffdb2af769cb1873abd4f49db4562d5f3745afb8ef0e58127fc"
+      },
+      {
+        "file": "yellow_two.png",
+        "sha256": "3c7cbaf7e5b4457c5d16e71e9af29cd01af54bf2643488f9ad01a197e001f45e"
+      },
+      {
+        "file": "yellow_two_shiny.png",
+        "sha256": "0a319a26d8a423805dcdd2979ad33847f0f6ee7c1c92ddb74641b267789f5965"
+      }
+    ],
+    "old_gameplay_uv_models": [
+      {
+        "file": "chao_amy.json",
+        "sha256": "5c26e621b31e6473926d062839a527969316d21c1d7cd7c1312006d055e5f290",
+        "faces_scanned": 442
+      },
+      {
+        "file": "chao_baby.json",
+        "sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+        "faces_scanned": 544
+      },
+      {
+        "file": "chao_baby_run_proto053.json",
+        "sha256": "2dde4ce5fd1091fcaf01e6787ae1d04a0965745868039f2fbe6a39220b2d14ba",
+        "faces_scanned": 612
+      },
+      {
+        "file": "chao_chaos_angel.json",
+        "sha256": "31c837ee8277bde89257569b149ff97fde6c1ecfe33d5460976b5ab80f5e0554",
+        "faces_scanned": 367
+      },
+      {
+        "file": "chao_chaos_angel_glass.json",
+        "sha256": "e55c1732a2a234aa3a712e565e355a3473ff31fbdeef4790918f29162758916f",
+        "faces_scanned": 155
+      },
+      {
+        "file": "chao_chaos_devil.json",
+        "sha256": "d740935cc996f1799e8018772dad689faf608fd914dfcaeafdc4cc5cede0a684",
+        "faces_scanned": 424
+      },
+      {
+        "file": "chao_chaos_devil_glass.json",
+        "sha256": "c86b26b736755060647fa42d1204b2a56f8debe5232760b589790667469ffc38",
+        "faces_scanned": 206
+      },
+      {
+        "file": "chao_chaos_light.json",
+        "sha256": "770acd2a7d9746330a2380b4c27eea415c0211f88ae26d9161af27b00892de8e",
+        "faces_scanned": 333
+      },
+      {
+        "file": "chao_chaos_light_glass.json",
+        "sha256": "4b337573df36fa48ceef2243a7b8ca7d47e40d5354538177e7f440ba101de343",
+        "faces_scanned": 156
+      },
+      {
+        "file": "chao_dark.json",
+        "sha256": "19db752f0e24f4ea2856393f3a5a9db8914d2ba0ad2fa267ccf2e72a8ede6eb5",
+        "faces_scanned": 554
+      },
+      {
+        "file": "chao_dark_fly.json",
+        "sha256": "69a16ef4b634c63603612288a581de27b77bd7238d34c5dd5b0bd6f1e9c03800",
+        "faces_scanned": 540
+      },
+      {
+        "file": "chao_dark_normal_proto060.json",
+        "sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+        "faces_scanned": 396
+      },
+      {
+        "file": "chao_dark_power.json",
+        "sha256": "7870cf2c37fe450ee24e855f8b1ee0d15a862bc953829598a4ae4809279bad87",
+        "faces_scanned": 544
+      },
+      {
+        "file": "chao_dark_run.json",
+        "sha256": "e48a54d3049f454b14e28d3720723518d1687bd8704f4be829ebf5fa4bfa19e7",
+        "faces_scanned": 540
+      },
+      {
+        "file": "chao_dark_swim.json",
+        "sha256": "65cd1d05ae82348c7ff56112fd50b6c7ad84f9bce423dda179085677b7a53625",
+        "faces_scanned": 566
+      },
+      {
+        "file": "chao_fly.json",
+        "sha256": "1c5698b7e0185fbaa6cb5c3515da7259442b651562388d9de2842642da2729e8",
+        "faces_scanned": 540
+      },
+      {
+        "file": "chao_hero.json",
+        "sha256": "0ac4166dd46a3337192a0db21ee6045751f2d6dbdcbcac7381af0248ad6e2c3e",
+        "faces_scanned": 562
+      },
+      {
+        "file": "chao_hero_fly.json",
+        "sha256": "8ad750d09d97ae18dd438991665c0dcfb9ffbef5b2ae3f8a11db0f9bbca88f88",
+        "faces_scanned": 564
+      },
+      {
+        "file": "chao_hero_normal_proto057.json",
+        "sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+        "faces_scanned": 378
+      },
+      {
+        "file": "chao_hero_power.json",
+        "sha256": "e44b47baa875c3d86316c23cff2154c133978572fe23c53669fd0dee1f0c1467",
+        "faces_scanned": 562
+      },
+      {
+        "file": "chao_hero_run.json",
+        "sha256": "504e5682224135c858a5f013a6414b6660ff3bd70df974def3d83a3275719a5a",
+        "faces_scanned": 562
+      },
+      {
+        "file": "chao_hero_run_proto052.json",
+        "sha256": "434b3af9bb47e26796e52d18b56cedce80e7e0048fb7067937d67f5e5bf1d8c6",
+        "faces_scanned": 567
+      },
+      {
+        "file": "chao_hero_run_proto054.json",
+        "sha256": "85c817ac711f0c90f4b3076ce63bce3c691a702abf00e25f9a50946d8fa0b3db",
+        "faces_scanned": 811
+      },
+      {
+        "file": "chao_hero_run_proto055.json",
+        "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+        "faces_scanned": 658
+      },
+      {
+        "file": "chao_hero_swim.json",
+        "sha256": "de36feefd90c58e62e0093a5935df28be32b4a01e8b8b9c2ed069f86dffc6fcd",
+        "faces_scanned": 570
+      },
+      {
+        "file": "chao_knuckles.json",
+        "sha256": "bb3b8f9dbb85168411ae69d8edd9a5339ca66bfe4a8dd06ceb4d988606ba4f86",
+        "faces_scanned": 326
+      },
+      {
+        "file": "chao_neutral_fly_proto061.json",
+        "sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+        "faces_scanned": 390
+      },
+      {
+        "file": "chao_neutral_proto056.json",
+        "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+        "faces_scanned": 346
+      },
+      {
+        "file": "chao_neutral_swim_proto059.json",
+        "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+        "faces_scanned": 378
+      },
+      {
+        "file": "chao_omochao.json",
+        "sha256": "5ed01e604d74ec8faaa177b880669caf6a0096a8d74d61af2c3c4c992bbb4535",
+        "faces_scanned": 528
+      },
+      {
+        "file": "chao_power.json",
+        "sha256": "a41c866f60ae209c80e0333aa901c9109fbdd6950f483f5be37b57b6cb26de3d",
+        "faces_scanned": 544
+      },
+      {
+        "file": "chao_run.json",
+        "sha256": "f11a948abff032968b17f304bda5d1886dc02ad220768cd3387183f15383c35c",
+        "faces_scanned": 544
+      },
+      {
+        "file": "chao_swim.json",
+        "sha256": "205d56e0539dc4cd0ca616b52dc24301ae9ea6b8bdcb4d52c67a65e7a8879090",
+        "faces_scanned": 552
+      },
+      {
+        "file": "chao_tails.json",
+        "sha256": "ecdffd5e053dd1c9b38945e18b11b3ce088ab437816b4e22df8e3c7b3131f10d",
+        "faces_scanned": 322
+      }
+    ],
+    "method": "Rechecked actual PNG alpha and conservative normalized bounding rectangle of every previous model face, with constant UV points occupying at least one pixel. No tile overlap found."
+  },
+  "automated_results": {
+    "material_counts": {
+      "checks": 316516118,
+      "real canonical coats": 172,
+      "preserved alpha pixels": 37960056,
+      "exact facial pixels": 297216,
+      "independent orb samples": 445824,
+      "palette-protected orb samples": 3566592,
+      "prototype alpha-exception samples": 83592,
+      "opaque prototype-face UV samples": 3060396,
+      "actual interpolated broad-wing paint samples": 26749440,
+      "actual central-crest stripe paint samples": 5201280,
+      "maximum_1percent_rgb_step": 7
+    },
+    "material_literal_line": "NeutralRun062 material: 316516118 checks; 172 real canonical coats; 37960056 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 3566592 palette-protected orb samples; 83592 prototype alpha-exception samples; 3060396 opaque prototype-face UV samples; 26749440 actual interpolated broad-wing paint samples; 5201280 actual central-crest stripe paint samples; maximum 1% RGB step=7. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic top-head/central-crest/wing regions, clear forehead/cheeks and .62-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all 16 longitudinal faces. Pixel checks are not in-game visual verification.",
+    "broad_build": {
+      "path": "/workspace/.setup/run062-build.log",
+      "sha256": "d0cf565a394278af0fd8aad152e62ddaf67472fe458166b38d3d3e593a162900",
+      "duration": "13m 27s"
+    },
+    "native": {
+      "path": "/workspace/.setup/run062-native.log",
+      "sha256": "66522af357c3911f79541f78a3f1e976e2620dba72cd0cd2edf6192a5e7541be",
+      "required_passed": 476,
+      "duration": "48s"
+    },
+    "limit": "Existing completed invocation logs inspected; no tests or Gradle commands were run by this closure agent. Focused and broad material counts are separate invocations of the same coverage and are not summed."
+  },
+  "visual_findings": [
+    "PASS: Three opaque longitudinal lanes occupy the original head TOP and both central crest TOP surfaces. Forehead/cheeks and side head faces remain clear of the former stripe pattern in exposed final views. No body-spine paint is added.",
+    "PASS: Nine natural endpoints retain the sampled young/middle/mature hue progression; all fresh forms share lime, with preserved eyes, orb, belly, palms, nubs, wing roots/tips, tail and toe/heel contrasts where visible.",
+    "PASS: Red two-tone, red shiny, green mono, ruby and natural shiny retain their inherited body/finish presentation while the orb follows its independent form palette. Actual tests cover all172 canonical coats and protect orb pixels from gene/cosmetic recoloring.",
+    "PASS: All six retained family regressions render coherently in six views and receive no .62 stripe paint. Seven old model files and seven old material implementations plus six region paints remain byte-exact to .61, including compiled old material classes.",
+    "PASS: Pumpkin covers head/crest intentionally; rabbit animal parts replace/hide the corresponding original parts while skull-top paint remains. Phoenix wings and round glasses stay fitted.",
+    "Known inherited presentation: round glasses show stippled thin frame edges, matching the separately opened .61 original. Nine packaged accessory entries and three shine class entries are byte-identical .61/.62.",
+    "Normal eyelid blinks in Fly middle/mature natural front views are expression animation, not missing facial texels. Shiny highlights are visible in selected static views; no continuous playback or shader-motion claim is made."
+  ],
+  "inherited_context_only": {
+    "prior_original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-front-t000-f0016.png",
+    "sha256": "ae8e743869ae88677b21f8edc7792d7846501c26f317bb22267c9baf249b7e1d",
+    "personally_opened_this_review": true,
+    "counted_as_final_evidence": false,
+    "packaged_accessory_and_shine_entries": [
+      {
+        "entry": "assets/chao_garden/models/cwe02516/round_glasses_accessory.obj",
+        "sha256": "85a18c96ad08ccf8886084dd93731319f8e880ace0d8e31b4e24963c011debf3",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "assets/chao_garden/models/entity/cwe_accessories/round_glasses_accessory.json",
+        "sha256": "7767c89cf5e3e2ff333d03c58398281433c7c96a293f8f1b317725c6b86edfbd",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "assets/chao_garden/models/item/cwe02516/round_glasses_accessory.json",
+        "sha256": "78a2bf8ba19d3b8ce9c06318af32ce068c7f65e8ed67b166dc8b631ea44f0b5f",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "assets/chao_garden/models/item/round_glasses_accessory.json",
+        "sha256": "cbb9bd5ee9621abbbcd1bca692aee87536dd9db1abeee4458f1ed36e0a8f6f20",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "assets/chao_garden/textures/block/cwe02516/round_glasses_accessory/",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "assets/chao_garden/textures/block/cwe02516/round_glasses_accessory/cwe_capmain_0d0d0dff_0.png",
+        "sha256": "8dcd65c1a238d2a7057295c83b3ec73ca591da82330993d806ed475df3eca7df",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "assets/chao_garden/textures/item/round_glasses_accessory.png",
+        "sha256": "165685159ac6b95b3e2e15529fa9e5f90dcb8ad23cd320408c3e3238bf7b45a0",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "com/chaogarden/client/CweAccessoryLayer$Mesh.class",
+        "sha256": "3183b1e106c73759373c4456c08b3754745d1a416f21bef4a4649a028ea7bfe5",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "com/chaogarden/client/CweAccessoryLayer.class",
+        "sha256": "55295ee38fb4a3cbac11c4bd8d3b472b43599709086b8bce7c0595798d8894a6",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "com/chaogarden/client/ChaoShine$1.class",
+        "sha256": "b063fa3294fbbe4d845ef273a46b21ed4c33549b2d20c3ef65db5b68a13df1ac",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "com/chaogarden/client/ChaoShine.class",
+        "sha256": "f21c60b6337bbe8fcdc16debb53f7d92d22dde41a3bb293db25fb59ba86e6026",
+        "byte_exact_061": true
+      },
+      {
+        "entry": "com/chaogarden/client/ChaoShineLayer.class",
+        "sha256": "08bdcd2df790bf7ee7717c812a9e41144ac3a0053c79319f5677a799005ffbcc",
+        "byte_exact_061": true
+      }
+    ]
+  },
+  "limits": [
+    "Visual inspection covers these147 selected final stills through23 contact sheets and14 full-size final sample reopens, not every pixel of all789 final PNGs. The .61 glasses comparator is separate context only.",
+    "This material review establishes static appearance at the selected captures and existing automated alpha/UV/genetic invariants. It does not establish continuous motion, listening, multiplayer behavior or every finish under every lighting condition.",
+    "runClient used the development classpath; the frozen production classes/assets were verified byte-exact to the installable JAR. This does not claim runClient loaded the JAR file."
+  ]
+}

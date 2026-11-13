@@ -9,6 +9,7 @@ import com.chaogarden.core.HeroNormalMorphology057;
 import com.chaogarden.core.NeutralSwimMorphology059;
 import com.chaogarden.core.DarkNormalMorphology060;
 import com.chaogarden.core.NeutralFlyMorphology061;
+import com.chaogarden.core.NeutralRunMorphology062;
 import com.chaogarden.core.OmochaoRules;
 import com.chaogarden.core.LocomotionRules;
 import com.chaogarden.core.ChaoPreferences;
@@ -428,8 +429,15 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       var neutralSwim=NeutralSwimMorphology059.sample(s);
       var darkNormal=DarkNormalMorphology060.sample(s);
       var neutralFly=NeutralFlyMorphology061.sample(s);
+      var neutralRun=NeutralRunMorphology062.sample(s);
       var morph=HeroRunMorphology052.sample(s);
-      if(neutralFly.enabled()) {
+      if(neutralRun.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Neutral Run training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",neutralRun.runPower()*100,neutralRun.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Run form into these targets: "+Math.round(neutralRun.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(NeutralRunMorphology062.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Power can cross balance toward its later form; the first Run type stays locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(neutralFly.enabled()) {
         lines.add(Component.literal(String.format(Locale.ROOT,"Neutral Fly training: Run(-) / Power(+) %+.0f%%; later Fly %.0f%%.",neutralFly.runPower()*100,neutralFly.swimFly()*100)));
         lines.add(Component.literal("Maturity blends the fresh Fly form into these targets: "+Math.round(neutralFly.maturity()*100)+"%."));
         lines.add(Component.literal("Provisional full axis: "+Math.round(NeutralFlyMorphology061.SPECIALIZATION_PROGRESS)+" net training progress; earlier baby training counts."));
@@ -546,9 +554,10 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       var neutralSwim=NeutralSwimMorphology059.sample(s);
       var darkNormal=DarkNormalMorphology060.sample(s);
       var neutralFly=NeutralFlyMorphology061.sample(s);
-      text(g,neutralFly.enabled()?"Swim counters later Fly; the first type stays Fly.":neutralSwim.enabled()?"Fly counters later Swim; the first type stays Swim.":"These meters show direction, not a chance or a level.",220,133,.8f,MUTED);
-      float swimFly=neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():s.swimFly;
-      float runPower=neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():s.runPower;
+      var neutralRun=NeutralRunMorphology062.sample(s);
+      text(g,neutralRun.enabled()?"Power can cross balance; the first type stays Run.":neutralFly.enabled()?"Swim counters later Fly; the first type stays Fly.":neutralSwim.enabled()?"Fly counters later Swim; the first type stays Swim.":"These meters show direction, not a chance or a level.",220,133,.8f,MUTED);
+      float swimFly=neutralRun.enabled()?neutralRun.swimFly():neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():s.swimFly;
+      float runPower=neutralRun.enabled()?neutralRun.runPower():neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():s.runPower;
       axis(g,"Swim","Fly",swimFly,220,159,340,STAT_COLORS[0],STAT_COLORS[1]);
       text(g,lean(swimFly,"Swim","Fly"),220,175,.8f,INK);
       axis(g,"Run","Power",runPower,220,203,340,STAT_COLORS[2],STAT_COLORS[3]);

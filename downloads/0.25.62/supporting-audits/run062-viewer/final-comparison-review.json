@@ -1,0 +1,232 @@
+{
+  "scope": "Independent actual live-viewer / final Minecraft comparison closure, .62 Neutral Run-first",
+  "reviewer": "closure_viewer062",
+  "reviewed_at_utc": "2026-11-13T04:11:51.827461+00:00",
+  "independent_main_review_complete": true,
+  "acceptable_first_pass_with_declared_approximations": true,
+  "blocking_visual_defects_observed": [],
+  "coordinator_acceptance_owned_by_root": true,
+  "main_comparison_manifest_path": "/workspace/.setup/run062-final-reference-compare/comparison-manifest.json",
+  "main_comparison_manifest_observed_sha256": "7a0dda620802675e333570677ba4603cfb24b196cff12dc96ad9d1d25e3956a6",
+  "contact_sheets_personally_opened": [
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-matched-age000.png",
+      "file": "final-matched-age000.png",
+      "sha256": "a99837d30b395a8915a4f13856825c2a5dcf6f20195b178787966d50304d71ef"
+    },
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-matched-age050.png",
+      "file": "final-matched-age050.png",
+      "sha256": "ac445de7493345e54943c65a2c07b84c0dc9a3f97fcec834df9f705f69cb2dd1"
+    },
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-matched-age100.png",
+      "file": "final-matched-age100.png",
+      "sha256": "a9e7830f99271c5d8e8a8cfd701ed2cfdbc5fe4b20e2ab91d01f0a8ff7ca491b"
+    },
+    {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-opposite-side-audit.png",
+      "file": "final-opposite-side-audit.png",
+      "sha256": "d3b05fefe6d23d8a288587197f4f299452a110d7f63ed53168a8286804e337a9"
+    }
+  ],
+  "matched_pairs_personally_reviewed": 81,
+  "opposite_side_minecraft_views_personally_reviewed": 27,
+  "ages_percent": [
+    0,
+    50,
+    100
+  ],
+  "forms": [
+    "balanced",
+    "run",
+    "power",
+    "fly",
+    "swim",
+    "run-fly",
+    "run-swim",
+    "power-fly",
+    "power-swim"
+  ],
+  "all_source_paths_and_hashes_verified": true,
+  "hashed_comparison_source_and_sheet_paths": 193,
+  "all_159_viewer_original_hashes_verified": true,
+  "all_19_viewer_contact_hashes_verified": true,
+  "viewer_control_action_count_verified": 485,
+  "viewer_first_type_observed": "Run checkbox selected; Child and Normal unchecked",
+  "viewer_alignment_observed": "Neutral",
+  "minecraft_first_type_verified": 3,
+  "minecraft_alignment_verified": 0,
+  "all_stage_axes_ages_and_actual_photo_angles_verified": true,
+  "viewer_manifest_sha256": "b72cd6f55a0cac6da5513518db19df35f4418f02dfc1d4954e36b3740043780a",
+  "model_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+  "production_jar_sha256": "f6d975a540c765f4e89383af9070c748ebb549ff5d00194d3dfda2b09e4a1a15",
+  "canonical_final_case_count": 92,
+  "canonical_final_png_count": 789,
+  "final_minecraft_originals_additionally_opened": [
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-02-neutral_run_normal_age100-front-t000-f0016.png",
+      "sha256": "5db454ab3c5c84f6f2203c167ad6d84785b379e41587eb0c03739294cd6a4f35"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-05-neutral_run_run_age100-right-t000-f0062.png",
+      "sha256": "7339339de8fa0c6b4bd20da20bb9a0350de4b60480d01be38a828a9d2aaed733"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-08-neutral_run_power_age100-front-t000-f0016.png",
+      "sha256": "f63b0a16471c62d2dc4903da6c0fa7e31d074f0932d31a5a40e51fe4eb6a725f"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-11-neutral_run_fly_age100-back-t000-f0085.png",
+      "sha256": "55e3d623a8147d2df6f5324d9ef469709e4c4707184cbf477c0d65af70df7287"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-14-neutral_run_swim_age100-right-t000-f0062.png",
+      "sha256": "e2afe6f3bc2bdd2c6c182d3fe1bae1d9d8a8ac85f52bcff23eafe06ac211edd1"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-17-neutral_run_run_fly_age100-right-t000-f0062.png",
+      "sha256": "2e9868cecc955646235b7563f2f2531818e8d5f3428c75a97576f383dbe0e5a9"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-20-neutral_run_run_swim_age100-right-t000-f0062.png",
+      "sha256": "723e5b2483ce64a402c098c60188479f3afcb36675d364b84c1ae539672b8b6f"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-23-neutral_run_power_fly_age100-back-t000-f0085.png",
+      "sha256": "02cc9a270c2e86660aa7553a77c1240a2ee9b47d1e3d3c76d1c483178f40da47"
+    },
+    {
+      "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-26-neutral_run_power_swim_age100-right-t000-f0062.png",
+      "sha256": "ca804734733a3b5c71040d37af373db3ff48602f8dec77030b4f764905db22fd"
+    }
+  ],
+  "viewer_full_canvas_originals_additionally_opened": [
+    "control-proof-run-first-power-age100-side.png",
+    "neutral-run-run-fly-age100-front.png"
+  ],
+  "nine_form_findings": [
+    {
+      "form": "balanced",
+      "mature_observation": "Blue/cyan body and orb, green hands/belly/nub tips/heels; short back-swept central crest, moderate side spikes, compact wings and short lifted tail.",
+      "approximation": "Rectangular head makes the short crest and corner nubs more subdued in straight front view than the smooth viewer."
+    },
+    {
+      "form": "run",
+      "mature_observation": "Deep blue body and orb with near-black/navy palms/belly/nub tips; long central and side hooks bend backward/down; pointed tail and wing profile.",
+      "approximation": "Two-box bends replace the smooth curved hooks; the central rear outline is angular and the large side hooks are broader rectangular blades."
+    },
+    {
+      "form": "power",
+      "mature_observation": "Magenta/pink body and orb with orange/rust belly/hands/nub tips; central and side crests rise strongly upward/back, distinguishable from Run.",
+      "approximation": "Three-prong smooth crown becomes stepped cuboids; pixel colors are flatter/darker under Minecraft lighting."
+    },
+    {
+      "form": "fly",
+      "mature_observation": "Pale lavender/periwinkle body and orb with olive/yellow belly/hands/nub tips and purple toe regions; tall central and side blades give the strongest upright silhouette.",
+      "approximation": "Upright blades are blunt stepped columns rather than tapered smooth fins. Captured front blink differs from the viewer open-eye idle frame."
+    },
+    {
+      "form": "swim",
+      "mature_observation": "Cyan/turquoise body and orb with bright green hands/belly/nub tips and blue toes; head hooks shorten; tail visibly lengthens into a flatter broad paddle.",
+      "approximation": "The viewer rear-body rounding/paddle merges smoothly; Minecraft keeps the compact inherited torso and uses a separate block tail."
+    },
+    {
+      "form": "run-fly",
+      "mature_observation": "Periwinkle/cobalt body with olive/dark hands/belly/nub tips and purple toes; backward/down hooks are shorter than pure Run; compact wing/tail outline.",
+      "approximation": "The paired endpoint is a broad stepped rear outline. It reads as the same family but cannot duplicate smooth joined lobes."
+    },
+    {
+      "form": "run-swim",
+      "mature_observation": "Medium blue body/orb with green hands/belly/nub tips; rear/down hooks moderate pure Run and tail enlarges beyond Run/Fly.",
+      "approximation": "Head and paddle changes remain separate block parts; smooth source fullness and taper are approximate."
+    },
+    {
+      "form": "power-fly",
+      "mature_observation": "Warm lavender/purple body/orb, ochre/orange palms/belly/nub tips and heel accents; three upward crown blades with compact raised wings/tail.",
+      "approximation": "Tall cuboid crown and small closed wing plates approximate the smooth prongs and lobes."
+    },
+    {
+      "form": "power-swim",
+      "mature_observation": "Pale blue/lavender body/orb with yellow-green/olive palms/belly/nub tips and purple toes; upward/back crown moderated from Power; longer flatter tail.",
+      "approximation": "The source rounded blue crown and flowing back line become stepped blocks; tail/body join remains visibly articulated."
+    }
+  ],
+  "limitations": [
+    "Original 7x6x6 rectangular head, pixel eyes and compact block anatomy are retained. The smooth source narrows/rounds, its taper and continuous lobes cannot be reproduced exactly by the 19 closed parts.",
+    "The latest user instruction deliberately relocates source forehead/side teardrop markings to head TOP and the central head crest toward its tip. Clear forehead/sides are the requested style change, not a failed match to those source marks.",
+    "Mature front-side nubs are visible above/outside the eye corners and distinct from rear-side spikes; they are much less prominent in some straight front frames than the smooth viewer fins. They read more clearly in side/above views.",
+    "Minecraft body remains compact and head-dominant with square feet and articulated arms, rather than the source rounded belly/limbs. Small closed wing plates approximate the joined smooth wing lobes. Swim expresses extra rear fullness mainly through the paddle tail.",
+    "Independent lighting makes Minecraft colors flatter and often darker. Palette family/region placement is supported; exact source RGB is not recoverable from lit screenshots.",
+    "Viewer age and later-training sliders are normalized mouse targets, not calibrated shared stat units. Side +100px and rear +180px are actual orbit drags, not calibrated camera degrees. The fixed crop/scale comparison applies no flips, recolor or per-frame warp.",
+    "Static Minecraft stage photos use a suspended native photo setup after settling; idle head tilt, blink, limb pose and orb tilt differ from viewer idle and are not synchronized. For example Fly front shows a blink and fresh Run+Swim has head tilt.",
+    "Age 0 is an evolved adult with Run first type, not Child. All nine fresh forms converge green, and 50% ages develop intermediate pigments and silhouette; the static stage sheets do not establish every transition frame or matching source timing.",
+    "All four compatible viewer pairs retain both full requested control endpoints. The temporary normalization concern was disproved by actual opaque RGB handle pixel spans. Pair silhouettes appearing nearly saturated around 50% is a visual observation only; authored bilinear interior and 30-tick mod easing remain explicit approximations.",
+    "Final runtime evidence binds the frozen development classpath production entries byte-for-byte to the final JAR; it does not claim runClient loaded the archive itself. No browser geometry or morph code was imported."
+  ],
+  "top_markings_extra_review": {
+    "status": "Complete; independently personally opened all nine mature ABOVE pairs in the separate final sheet and three Minecraft ABOVE originals.",
+    "independent_review_complete": true,
+    "acceptable_first_pass_with_declared_approximations": true,
+    "blocking_visual_defects_observed": [],
+    "manifest_path": "/workspace/.setup/run062-final-reference-compare/marking-comparison-manifest.json",
+    "manifest_final_accepted_sha256": "b1c31706cee332ae5334cd0080585273b1e13d2340a3bf239d905fc17a817be3",
+    "coordinator_review_and_acceptance_verified": true,
+    "bound_main_comparison_manifest_sha256": "fb37dadc9ac223104ffea1329374e3610a487e553317f3a7065668d3632b2f5b",
+    "contact_sheet_personally_opened": {
+      "path": "/workspace/.setup/run062-final-reference-compare/final-mature-top-markings.png",
+      "file": "final-mature-top-markings.png",
+      "sha256": "be8eb8bf4d87bb481ec198d509f5df59a0b3b22de8f11a0daaa33c5907284e23"
+    },
+    "matched_above_pairs_personally_reviewed": 9,
+    "all_18_original_source_hashes_verified": true,
+    "same_final_92_case_789_png_cohort_verified": true,
+    "settings": "All mature age1 adult firstRun3/Neutral, natural coat, settled still, full declared signed target axes. Minecraft above angle and viewer +75px vertical orbit; pitch is not calibrated.",
+    "findings": "All nine retain three longitudinal lanes on the head TOP and stripe-bearing exposed portions of the central head crest toward its tip. Forehead and side faces remain clear in the main comparisons. Separate raised front-side nubs are visible at the outer eye corners and distinguishable from the rear-side blades. Palette shifts follow each mature form, including subtle cyan/turquoise lanes for Swim and high contrast blue lanes for Power/PowerFly. No marking bleed into pixel eyes, nubs, torso, wings or tail was observed in the reviewed images.",
+    "interpretation": "This is the intentional user-requested relocation of source forehead/side marks to head TOP and central head crest, not evidence the viewer originally puts every mark there. Block joints and camera-dependent exposure interrupt the visible stripe segments; static above photographs establish sampled visible placement rather than every UV face or transition.",
+    "additional_minecraft_originals_personally_opened": [
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-05-neutral_run_run_age100-above-t000-f0108.png",
+        "sha256": "276ec58fe7c52efd3ca9ba5fc839dfe4ec03e429e7824fb81aa25f3992c115a5"
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-08-neutral_run_power_age100-above-t000-f0108.png",
+        "sha256": "c708907cfdb1d08cde9eb86c81fe5aad622efef426f8461d396eeca5f602544f"
+      },
+      {
+        "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-11-neutral_run_fly_age100-above-t000-f0108.png",
+        "sha256": "5f24a83350998376024b921b9c600327a2cc1d2b43a8dc55bf04455f80a0e731"
+      }
+    ],
+    "main_comparison_manifest_unchanged_by_extra": true,
+    "reference_manifest_unchanged": true
+  },
+  "read_only_inputs_preserved": true,
+  "production_or_original_files_edited": false,
+  "independent_original_canvas_control_pixel_check": {
+    "family_canvases": 150,
+    "selected_run_checkbox_patch_identical_to_personally_opened_control": true,
+    "actual_slider_handle_spans_match_recorded_metadata": true,
+    "slider_handles_measured": 600,
+    "approximate_track_target_tolerance": 0.03,
+    "max_normalized_target_error": 0.029661016949152574,
+    "age_handle_colors_accepted": [
+      [
+        245,
+        123,
+        0
+      ],
+      [
+        255,
+        128,
+        0
+      ]
+    ],
+    "method": "Opaque handle row pixels measured independently from unchanged original PNGs; actual observed center and left/right endpoint spans define approximate normalized tracks. Run checkbox patch compared with the personally opened Power control original. This does not calibrate source-game stat units."
+  },
+  "main_comparison_manifest_final_accepted_sha256": "fb37dadc9ac223104ffea1329374e3610a487e553317f3a7065668d3632b2f5b",
+  "final_main_manifest_coordinator_accepted_verified": true,
+  "total_final_comparison_sheets_personally_opened": 5,
+  "total_final_minecraft_viewer_pairs_personally_reviewed": 90,
+  "total_final_opposite_side_minecraft_views_personally_reviewed": 27
+}

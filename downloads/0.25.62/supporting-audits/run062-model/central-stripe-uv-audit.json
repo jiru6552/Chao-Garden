@@ -1,0 +1,19 @@
+{
+  "scope": "Actual emitted closed top-face UVs checked against physical localX width/localZ length for all10targets, with25 physicalwidth and9 longitudinalsamples perface. This is texture-coordinate validation, not native visual acceptance.",
+  "results": [
+    {
+      "mesh": "run_crest_root",
+      "physical_uv_samples": 2250,
+      "body_samples": 1440,
+      "marking_samples": 810
+    },
+    {
+      "mesh": "run_crest_tip",
+      "physical_uv_samples": 2250,
+      "body_samples": 1440,
+      "marking_samples": 810
+    }
+  ],
+  "three_continuous_longitudinal_marking_lanes": true,
+  "total_samples": 4500
+}

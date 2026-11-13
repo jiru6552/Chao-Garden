@@ -1,0 +1,19 @@
+{
+  "baseline": "31551812e0def1a14188b5b7eb1df95852432914",
+  "current_result": "8/9; inherited Your gardens paragraph-format assertion",
+  "current_log": "/workspace/.setup/run062-journal.log",
+  "current_log_sha256": "6daf7986f072781c592b76c24e3a3c6eae426e81cd0eff1958f9feccda3622c8",
+  "sources": [
+    {
+      "path": "scripts/test_journal_content_02518.py",
+      "byte_exact_delivered61": true,
+      "sha256": "bfbf2cf47a8752417e0aadb14fb71813ab91beda5c1e05352afc2a80781fe296"
+    },
+    {
+      "path": "src/main/java/com/chaogarden/item/GardenGuideItem.java",
+      "byte_exact_delivered61": true,
+      "sha256": "b746c1572470784f015667a88254604689dc06ac2edb59de4a29bc2fc48a06f4"
+    }
+  ],
+  "new_failure": false
+}

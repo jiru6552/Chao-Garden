@@ -1,3 +1,13 @@
+Current focused update: [0.25.62 Neutral/Run-first verification](docs/NEUTRAL_RUN_02562.md). Use Java 21 and isolated test worlds.
+
+```sh
+python3 scripts/validate_neutral_run_morph_02562.py
+./gradlew --no-configuration-cache --continue build
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56,chao_heronormal57,chao_swim59,chao_darknormal60,chao_fly61,chao_run62 -PchaoGameTestDir=/path/to/private/test-world
+```
+
+Read the family report for actual outcomes and bounded visual coverage. The complete build includes new core, production-emitter rig/material and retained checks; it is one invocation when it also supplies focused results.
+
 Current focused update: [0.25.59 Neutral/Swim-first verification](docs/NEUTRAL_SWIM_02559.md). Use Java 21 and a private test world:
 
 ```sh

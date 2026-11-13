@@ -1,0 +1,71 @@
+{
+  "model_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+  "metadata_sha256": "20d1602340666c4f87fdf479277cb019308642d3ebad76ef3aae43926c18ced5",
+  "closed_boxes": 19,
+  "head_features": [
+    "run_crest_root",
+    "run_crest_tip",
+    "run_rear_left_root",
+    "run_rear_left_tip",
+    "run_rear_right_root",
+    "run_rear_right_tip",
+    "run_front_nub_left",
+    "run_front_nub_right"
+  ],
+  "wing_features": [
+    "run_wing_left_upper",
+    "run_wing_left_lower",
+    "run_wing_right_upper",
+    "run_wing_right_lower"
+  ],
+  "tail_features": [
+    "run_tail_root",
+    "run_tail_tip"
+  ],
+  "target_names": [
+    "neutral_run_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "independent_source_validator": {
+    "path": "scripts/validate_neutral_run_morph_02562.py",
+    "sha256": "8e40f6d9d02d8e91c99cd138f5545c83bebc0cd479f2805124c0c5aec54c492d",
+    "outcome": "PASS after mature-nub raise and user-directed central top/spine UV-only stripe relocation",
+    "dense_random_signed_blends": 9773,
+    "arbitrary_rotation_head_face_pairs": 12665808,
+    "positive_area_coplanar_overlap": 0,
+    "wing_actual_uv_samples": 3024,
+    "root125_samples": 1368,
+    "distal124_samples": 1368,
+    "minimum_positive_volume": 0.14364,
+    "maximum_5percent_age_vertex_step": 0.255352842,
+    "central_top_spine_uv_samples": 4500,
+    "central_top_spine_body_samples": 2880,
+    "central_top_spine_marking_samples": 1620
+  },
+  "original_skull_face_orb_59joint_transforms_unchanged": true,
+  "old_gameplay_models_preserved": 7,
+  "production_native_rig_material_visual_results": "Not claimed by this source audit; coordinator runs them separately.",
+  "known_approximations": [
+    "Two cuboids per central/rear point replace smooth taper and curled profiles.",
+    "The original fixed skull proportions remain.",
+    "Two fixed-direction small wing lobes vary spans/heights instead of changing angles, keeping canonical exact hinges under parameter interpolation.",
+    "Compatible mixed endpoints follow observed moderated silhouettes; bilinear interiors remain authored approximation.",
+    "Top-head/spine stripe placement follows explicit user direction rather than the viewer forehead/side placement."
+  ],
+  "diagnostics_resolved": [
+    "Variable-angle wing centers drifted under interpolation; fixed lobe directions restore exact hinge without tolerance change.",
+    "Equal tail root/tip widths created positive-area coplanar faces at some forms; all narrower tips maintain overlap but separate outer planes.",
+    "Mature front nubs were visually buried by original full head box; only their mature Y anchors move-.75 while fresh pose stays exact."
+  ],
+  "user_directed_marking_placement": "Original headTOP and existing central crest root/tip top faces. Forehead and side markings cleared by material062; exact existing skull/face/eye UVs stay unchanged.",
+  "stripe_delta_proof": "stripe-uv-only-delta.json",
+  "nub_raise_proof": "nub-raise-source-delta.json"
+}
