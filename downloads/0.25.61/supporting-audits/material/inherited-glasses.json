@@ -1,0 +1,48 @@
+{
+  "kind": "Inherited glasses stippling comparison only; not final cohort evidence",
+  "old_path": "/workspace/.setup/dark060-client-final/screenshots/dark060-live-60-dark_normal_fly_phoenix_glasses-front-t000-f0016.png",
+  "old_sha256": "2a27fa3b8ae7c25e60b80855e4600e26916bfeaee4ed7619fffbd6158fe4d4dc",
+  "final_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-front-t000-f0016.png",
+  "final_sha256": "ae8e743869ae88677b21f8edc7792d7846501c26f317bb22267c9baf249b7e1d",
+  "observation": "Thin round frame outlines show the same dotted/stippled edge presentation in the retained .60 original and the final .61 original; face pigment/shape differs by phenotype.",
+  "old_literal_capture_line": "[00:40:09] [IO-Worker-4/INFO] [co.ch.cl.DarkNormalVisualSmoke060/]: DARK060_CAPTURE dark060-live-60-dark_normal_fly_phoenix_glasses-front-t000-f0016.png case=60 angle=front tick=0 sha256=2a27fa3b8ae7c25e60b80855e4600e26916bfeaee4ed7619fffbd6158fe4d4dc wallNanos=27727478852940 epochMillis=1794530409938",
+  "unchanged_packaged_glasses_accessory_entries": [
+    {
+      "entry": "assets/chao_garden/models/cwe02516/round_glasses_accessory.obj",
+      "sha256": "85a18c96ad08ccf8886084dd93731319f8e880ace0d8e31b4e24963c011debf3"
+    },
+    {
+      "entry": "assets/chao_garden/models/entity/cwe_accessories/round_glasses_accessory.json",
+      "sha256": "7767c89cf5e3e2ff333d03c58398281433c7c96a293f8f1b317725c6b86edfbd"
+    },
+    {
+      "entry": "assets/chao_garden/models/item/cwe02516/round_glasses_accessory.json",
+      "sha256": "78a2bf8ba19d3b8ce9c06318af32ce068c7f65e8ed67b166dc8b631ea44f0b5f"
+    },
+    {
+      "entry": "assets/chao_garden/models/item/round_glasses_accessory.json",
+      "sha256": "cbb9bd5ee9621abbbcd1bca692aee87536dd9db1abeee4458f1ed36e0a8f6f20"
+    },
+    {
+      "entry": "assets/chao_garden/textures/block/cwe02516/round_glasses_accessory/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "entry": "assets/chao_garden/textures/block/cwe02516/round_glasses_accessory/cwe_capmain_0d0d0dff_0.png",
+      "sha256": "8dcd65c1a238d2a7057295c83b3ec73ca591da82330993d806ed475df3eca7df"
+    },
+    {
+      "entry": "assets/chao_garden/textures/item/round_glasses_accessory.png",
+      "sha256": "165685159ac6b95b3e2e15529fa9e5f90dcb8ad23cd320408c3e3238bf7b45a0"
+    },
+    {
+      "entry": "com/chaogarden/client/CweAccessoryLayer$Mesh.class",
+      "sha256": "3183b1e106c73759373c4456c08b3754745d1a416f21bef4a4649a028ea7bfe5"
+    },
+    {
+      "entry": "com/chaogarden/client/CweAccessoryLayer.class",
+      "sha256": "55295ee38fb4a3cbac11c4bd8d3b472b43599709086b8bce7c0595798d8894a6"
+    }
+  ],
+  "changed_packaged_glasses_accessory_entries": []
+}

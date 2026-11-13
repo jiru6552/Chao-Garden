@@ -1,0 +1,487 @@
+{
+  "final_only": true,
+  "crop": [
+    450,
+    200,
+    990,
+    800
+  ],
+  "uniform_scale": 0.5,
+  "reviewed_originals": [
+    {
+      "case": 41,
+      "name": "hero_run_mature_regression",
+      "angle": "front",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-41-hero_run_mature_regression-front-t000-f0016.png",
+      "sha256": "e20c320b6c6f00ef2be1eebe850ae618b5cba8cf341d8599e728e2d7a80e65b6",
+      "literal_capture_line": "[02:06:46] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-41-hero_run_mature_regression-front-t000-f0016.png case=41 angle=front tick=0 sha256=e20c320b6c6f00ef2be1eebe850ae618b5cba8cf341d8599e728e2d7a80e65b6 wallNanos=32924175897083 epochMillis=1794535606635",
+      "literal_render_model_line": "[02:06:46] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 41 shapeSignature=3300156327228263427 geometry=baby gameplay=hero_run texture=chao_garden:dynamic/hero_run055/85509f35-369c-39aa-ad69-0392b030bfd4 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png"
+    },
+    {
+      "case": 41,
+      "name": "hero_run_mature_regression",
+      "angle": "left",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-41-hero_run_mature_regression-left-t000-f0039.png",
+      "sha256": "835238163a3097de5a64d550dd9d721a39289ab3dc31516e0d126fd3073de62e",
+      "literal_capture_line": "[02:06:47] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-41-hero_run_mature_regression-left-t000-f0039.png case=41 angle=left tick=0 sha256=835238163a3097de5a64d550dd9d721a39289ab3dc31516e0d126fd3073de62e wallNanos=32924966941280 epochMillis=1794535607426",
+      "literal_render_model_line": "[02:06:46] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 41 shapeSignature=3300156327228263427 geometry=baby gameplay=hero_run texture=chao_garden:dynamic/hero_run055/85509f35-369c-39aa-ad69-0392b030bfd4 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png"
+    },
+    {
+      "case": 41,
+      "name": "hero_run_mature_regression",
+      "angle": "right",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-41-hero_run_mature_regression-right-t000-f0062.png",
+      "sha256": "ba1203d3246e5cda177fc7920864d4478976db279921b9ec49dab89173c719a3",
+      "literal_capture_line": "[02:06:48] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-41-hero_run_mature_regression-right-t000-f0062.png case=41 angle=right tick=0 sha256=ba1203d3246e5cda177fc7920864d4478976db279921b9ec49dab89173c719a3 wallNanos=32925713479392 epochMillis=1794535608172",
+      "literal_render_model_line": "[02:06:46] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 41 shapeSignature=3300156327228263427 geometry=baby gameplay=hero_run texture=chao_garden:dynamic/hero_run055/85509f35-369c-39aa-ad69-0392b030bfd4 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png"
+    },
+    {
+      "case": 41,
+      "name": "hero_run_mature_regression",
+      "angle": "back",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-41-hero_run_mature_regression-back-t000-f0085.png",
+      "sha256": "e648f60d61f8ba6e3213ccf269ae068cb531b7febe364ff68bc9674fe6c083b2",
+      "literal_capture_line": "[02:06:48] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-41-hero_run_mature_regression-back-t000-f0085.png case=41 angle=back tick=0 sha256=e648f60d61f8ba6e3213ccf269ae068cb531b7febe364ff68bc9674fe6c083b2 wallNanos=32926489948188 epochMillis=1794535608949",
+      "literal_render_model_line": "[02:06:46] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 41 shapeSignature=3300156327228263427 geometry=baby gameplay=hero_run texture=chao_garden:dynamic/hero_run055/85509f35-369c-39aa-ad69-0392b030bfd4 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png"
+    },
+    {
+      "case": 41,
+      "name": "hero_run_mature_regression",
+      "angle": "above",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-41-hero_run_mature_regression-above-t000-f0108.png",
+      "sha256": "68adba2413c497aaa02715c5f63169acc0e5e5779b577eba62f6083618869706",
+      "literal_capture_line": "[02:06:49] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-41-hero_run_mature_regression-above-t000-f0108.png case=41 angle=above tick=0 sha256=68adba2413c497aaa02715c5f63169acc0e5e5779b577eba62f6083618869706 wallNanos=32927268160775 epochMillis=1794535609727",
+      "literal_render_model_line": "[02:06:46] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 41 shapeSignature=3300156327228263427 geometry=baby gameplay=hero_run texture=chao_garden:dynamic/hero_run055/85509f35-369c-39aa-ad69-0392b030bfd4 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png"
+    },
+    {
+      "case": 41,
+      "name": "hero_run_mature_regression",
+      "angle": "below",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-41-hero_run_mature_regression-below-t000-f0131.png",
+      "sha256": "d7a816eb1458d04c9314da9055956676f37803b2c6f68f964301297a3116de24",
+      "literal_capture_line": "[02:06:50] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-41-hero_run_mature_regression-below-t000-f0131.png case=41 angle=below tick=0 sha256=d7a816eb1458d04c9314da9055956676f37803b2c6f68f964301297a3116de24 wallNanos=32928021575465 epochMillis=1794535610481",
+      "literal_render_model_line": "[02:06:46] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 41 shapeSignature=3300156327228263427 geometry=baby gameplay=hero_run texture=chao_garden:dynamic/hero_run055/85509f35-369c-39aa-ad69-0392b030bfd4 sample=Sample[enabled=true, adult=true, babyHero=1.0, babyRun=1.0, specialization=1.0, maturity=1.0, adultGrowth=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png"
+    },
+    {
+      "case": 42,
+      "name": "hero_normal_power_fly_regression",
+      "angle": "front",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-42-hero_normal_power_fly_regression-front-t000-f0016.png",
+      "sha256": "248b85dc1a6ed1579e8dc05efbbc3896b38680f8c3f40538a83590b28326e8d0",
+      "literal_capture_line": "[02:06:51] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-42-hero_normal_power_fly_regression-front-t000-f0016.png case=42 angle=front tick=0 sha256=248b85dc1a6ed1579e8dc05efbbc3896b38680f8c3f40538a83590b28326e8d0 wallNanos=32928827461279 epochMillis=1794535611286",
+      "literal_render_model_line": "[02:06:50] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 42 shapeSignature=-68259697788747063 geometry=baby gameplay=hero texture=chao_garden:dynamic/hero_normal057/62e38704-7627-376e-941d-38252e16c36d sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png"
+    },
+    {
+      "case": 42,
+      "name": "hero_normal_power_fly_regression",
+      "angle": "left",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-42-hero_normal_power_fly_regression-left-t000-f0039.png",
+      "sha256": "70a5f7bc6595ae598f32a89c73009368858f5e81a4d8f51e2dae81f76d199365",
+      "literal_capture_line": "[02:06:52] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-42-hero_normal_power_fly_regression-left-t000-f0039.png case=42 angle=left tick=0 sha256=70a5f7bc6595ae598f32a89c73009368858f5e81a4d8f51e2dae81f76d199365 wallNanos=32929610941181 epochMillis=1794535612070",
+      "literal_render_model_line": "[02:06:50] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 42 shapeSignature=-68259697788747063 geometry=baby gameplay=hero texture=chao_garden:dynamic/hero_normal057/62e38704-7627-376e-941d-38252e16c36d sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png"
+    },
+    {
+      "case": 42,
+      "name": "hero_normal_power_fly_regression",
+      "angle": "right",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-42-hero_normal_power_fly_regression-right-t000-f0062.png",
+      "sha256": "3ae7a66fc4d113ff6b0b5dea6b1cac17f5580255c308ac2ae97e5956546ee85f",
+      "literal_capture_line": "[02:06:52] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-42-hero_normal_power_fly_regression-right-t000-f0062.png case=42 angle=right tick=0 sha256=3ae7a66fc4d113ff6b0b5dea6b1cac17f5580255c308ac2ae97e5956546ee85f wallNanos=32930341581600 epochMillis=1794535612801",
+      "literal_render_model_line": "[02:06:50] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 42 shapeSignature=-68259697788747063 geometry=baby gameplay=hero texture=chao_garden:dynamic/hero_normal057/62e38704-7627-376e-941d-38252e16c36d sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png"
+    },
+    {
+      "case": 42,
+      "name": "hero_normal_power_fly_regression",
+      "angle": "back",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-42-hero_normal_power_fly_regression-back-t000-f0085.png",
+      "sha256": "e8fbc5f5f9369c97fb457204d6092d404ead225685193c804be825d1b4abf272",
+      "literal_capture_line": "[02:06:53] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-42-hero_normal_power_fly_regression-back-t000-f0085.png case=42 angle=back tick=0 sha256=e8fbc5f5f9369c97fb457204d6092d404ead225685193c804be825d1b4abf272 wallNanos=32931110931643 epochMillis=1794535613570",
+      "literal_render_model_line": "[02:06:50] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 42 shapeSignature=-68259697788747063 geometry=baby gameplay=hero texture=chao_garden:dynamic/hero_normal057/62e38704-7627-376e-941d-38252e16c36d sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png"
+    },
+    {
+      "case": 42,
+      "name": "hero_normal_power_fly_regression",
+      "angle": "above",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-42-hero_normal_power_fly_regression-above-t000-f0108.png",
+      "sha256": "b8768c9bbb5ae842ab26406f996409d3a99e2146ec071f7d10fd3f187e517a85",
+      "literal_capture_line": "[02:06:54] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-42-hero_normal_power_fly_regression-above-t000-f0108.png case=42 angle=above tick=0 sha256=b8768c9bbb5ae842ab26406f996409d3a99e2146ec071f7d10fd3f187e517a85 wallNanos=32931876557258 epochMillis=1794535614336",
+      "literal_render_model_line": "[02:06:50] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 42 shapeSignature=-68259697788747063 geometry=baby gameplay=hero texture=chao_garden:dynamic/hero_normal057/62e38704-7627-376e-941d-38252e16c36d sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png"
+    },
+    {
+      "case": 42,
+      "name": "hero_normal_power_fly_regression",
+      "angle": "below",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-42-hero_normal_power_fly_regression-below-t000-f0131.png",
+      "sha256": "2f6e7ac5524e8e736c22ccc3b4e643809e84193d0dee1f5bad056aceb30ce723",
+      "literal_capture_line": "[02:06:55] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-42-hero_normal_power_fly_regression-below-t000-f0131.png case=42 angle=below tick=0 sha256=2f6e7ac5524e8e736c22ccc3b4e643809e84193d0dee1f5bad056aceb30ce723 wallNanos=32932640069365 epochMillis=1794535615099",
+      "literal_render_model_line": "[02:06:50] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 42 shapeSignature=-68259697788747063 geometry=baby gameplay=hero texture=chao_garden:dynamic/hero_normal057/62e38704-7627-376e-941d-38252e16c36d sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png"
+    },
+    {
+      "case": 43,
+      "name": "neutral_normal_power_swim_regression",
+      "angle": "front",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-43-neutral_normal_power_swim_regression-front-t000-f0016.png",
+      "sha256": "7a8826b4e6ddbe50ba3dfdb6044d3d5c76d20064d419284852f43000dcbda3f8",
+      "literal_capture_line": "[02:06:55] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-43-neutral_normal_power_swim_regression-front-t000-f0016.png case=43 angle=front tick=0 sha256=7a8826b4e6ddbe50ba3dfdb6044d3d5c76d20064d419284852f43000dcbda3f8 wallNanos=32933530282751 epochMillis=1794535615989",
+      "literal_render_model_line": "[02:06:55] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 43 shapeSignature=-3512188580550263033 geometry=baby gameplay=baby texture=chao_garden:dynamic/neutral056/acbceb10-b60e-35b0-a252-c58f7c290350 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png"
+    },
+    {
+      "case": 43,
+      "name": "neutral_normal_power_swim_regression",
+      "angle": "left",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-43-neutral_normal_power_swim_regression-left-t000-f0039.png",
+      "sha256": "bd341b2f3ba6bb295b91ebb35e5fc49fb1b9528741b8867563578e39c3efa07f",
+      "literal_capture_line": "[02:06:56] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-43-neutral_normal_power_swim_regression-left-t000-f0039.png case=43 angle=left tick=0 sha256=bd341b2f3ba6bb295b91ebb35e5fc49fb1b9528741b8867563578e39c3efa07f wallNanos=32934296474555 epochMillis=1794535616755",
+      "literal_render_model_line": "[02:06:55] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 43 shapeSignature=-3512188580550263033 geometry=baby gameplay=baby texture=chao_garden:dynamic/neutral056/acbceb10-b60e-35b0-a252-c58f7c290350 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png"
+    },
+    {
+      "case": 43,
+      "name": "neutral_normal_power_swim_regression",
+      "angle": "right",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-43-neutral_normal_power_swim_regression-right-t000-f0062.png",
+      "sha256": "87a20f47b35ff923e16a15a6a39b1b1d087a8b4ca46f1962a6217b71a59be983",
+      "literal_capture_line": "[02:06:57] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-43-neutral_normal_power_swim_regression-right-t000-f0062.png case=43 angle=right tick=0 sha256=87a20f47b35ff923e16a15a6a39b1b1d087a8b4ca46f1962a6217b71a59be983 wallNanos=32935072751231 epochMillis=1794535617532",
+      "literal_render_model_line": "[02:06:55] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 43 shapeSignature=-3512188580550263033 geometry=baby gameplay=baby texture=chao_garden:dynamic/neutral056/acbceb10-b60e-35b0-a252-c58f7c290350 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png"
+    },
+    {
+      "case": 43,
+      "name": "neutral_normal_power_swim_regression",
+      "angle": "back",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-43-neutral_normal_power_swim_regression-back-t000-f0085.png",
+      "sha256": "105eddea853748b516608aa5ace7dcede3dd6ace0b4a29b942f6790754f619b6",
+      "literal_capture_line": "[02:06:58] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-43-neutral_normal_power_swim_regression-back-t000-f0085.png case=43 angle=back tick=0 sha256=105eddea853748b516608aa5ace7dcede3dd6ace0b4a29b942f6790754f619b6 wallNanos=32935834528630 epochMillis=1794535618293",
+      "literal_render_model_line": "[02:06:55] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 43 shapeSignature=-3512188580550263033 geometry=baby gameplay=baby texture=chao_garden:dynamic/neutral056/acbceb10-b60e-35b0-a252-c58f7c290350 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png"
+    },
+    {
+      "case": 43,
+      "name": "neutral_normal_power_swim_regression",
+      "angle": "above",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-43-neutral_normal_power_swim_regression-above-t000-f0108.png",
+      "sha256": "5e32fa8196498f4c0c614bffee043d8b1a77dafa36d2a0a471c11c631477fa13",
+      "literal_capture_line": "[02:06:59] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-43-neutral_normal_power_swim_regression-above-t000-f0108.png case=43 angle=above tick=0 sha256=5e32fa8196498f4c0c614bffee043d8b1a77dafa36d2a0a471c11c631477fa13 wallNanos=32936602064752 epochMillis=1794535619061",
+      "literal_render_model_line": "[02:06:55] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 43 shapeSignature=-3512188580550263033 geometry=baby gameplay=baby texture=chao_garden:dynamic/neutral056/acbceb10-b60e-35b0-a252-c58f7c290350 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png"
+    },
+    {
+      "case": 43,
+      "name": "neutral_normal_power_swim_regression",
+      "angle": "below",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-43-neutral_normal_power_swim_regression-below-t000-f0131.png",
+      "sha256": "67a9fb52b76a789aa93526baad4eeed9cbb4724b9187d0968dfbbe64dd0bdc11",
+      "literal_capture_line": "[02:06:59] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-43-neutral_normal_power_swim_regression-below-t000-f0131.png case=43 angle=below tick=0 sha256=67a9fb52b76a789aa93526baad4eeed9cbb4724b9187d0968dfbbe64dd0bdc11 wallNanos=32937474094651 epochMillis=1794535619933",
+      "literal_render_model_line": "[02:06:55] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 43 shapeSignature=-3512188580550263033 geometry=baby gameplay=baby texture=chao_garden:dynamic/neutral056/acbceb10-b60e-35b0-a252-c58f7c290350 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png"
+    },
+    {
+      "case": 44,
+      "name": "neutral_swim_run_swim_regression",
+      "angle": "front",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-44-neutral_swim_run_swim_regression-front-t000-f0016.png",
+      "sha256": "b6e167b01eb43eafc0506579e4934c4472b5399e686050e13bc2e527346c43f7",
+      "literal_capture_line": "[02:07:00] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-44-neutral_swim_run_swim_regression-front-t000-f0016.png case=44 angle=front tick=0 sha256=b6e167b01eb43eafc0506579e4934c4472b5399e686050e13bc2e527346c43f7 wallNanos=32938244908605 epochMillis=1794535620704",
+      "literal_render_model_line": "[02:07:00] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 44 shapeSignature=8926021269260745705 geometry=baby gameplay=swim texture=chao_garden:dynamic/neutral_swim059/594c8774-03f1-35cd-aaf6-5014d7652c73 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png"
+    },
+    {
+      "case": 44,
+      "name": "neutral_swim_run_swim_regression",
+      "angle": "left",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-44-neutral_swim_run_swim_regression-left-t000-f0039.png",
+      "sha256": "df7a0c3efc743451c9924e215d114c0c824a1cb7685ad07cb372e23621e00d18",
+      "literal_capture_line": "[02:07:01] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-44-neutral_swim_run_swim_regression-left-t000-f0039.png case=44 angle=left tick=0 sha256=df7a0c3efc743451c9924e215d114c0c824a1cb7685ad07cb372e23621e00d18 wallNanos=32939026222533 epochMillis=1794535621485",
+      "literal_render_model_line": "[02:07:00] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 44 shapeSignature=8926021269260745705 geometry=baby gameplay=swim texture=chao_garden:dynamic/neutral_swim059/594c8774-03f1-35cd-aaf6-5014d7652c73 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png"
+    },
+    {
+      "case": 44,
+      "name": "neutral_swim_run_swim_regression",
+      "angle": "right",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-44-neutral_swim_run_swim_regression-right-t000-f0062.png",
+      "sha256": "186827db04c5af41871436cf949848ad164f89aaf2328d4fca6ab3af1f99c772",
+      "literal_capture_line": "[02:07:02] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-44-neutral_swim_run_swim_regression-right-t000-f0062.png case=44 angle=right tick=0 sha256=186827db04c5af41871436cf949848ad164f89aaf2328d4fca6ab3af1f99c772 wallNanos=32939832306774 epochMillis=1794535622291",
+      "literal_render_model_line": "[02:07:00] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 44 shapeSignature=8926021269260745705 geometry=baby gameplay=swim texture=chao_garden:dynamic/neutral_swim059/594c8774-03f1-35cd-aaf6-5014d7652c73 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png"
+    },
+    {
+      "case": 44,
+      "name": "neutral_swim_run_swim_regression",
+      "angle": "back",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-44-neutral_swim_run_swim_regression-back-t000-f0085.png",
+      "sha256": "765b91c671d28b92165e2b283bdb3b340de27339ccf5eeb145644a7a8cf1d687",
+      "literal_capture_line": "[02:07:03] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-44-neutral_swim_run_swim_regression-back-t000-f0085.png case=44 angle=back tick=0 sha256=765b91c671d28b92165e2b283bdb3b340de27339ccf5eeb145644a7a8cf1d687 wallNanos=32940589405061 epochMillis=1794535623048",
+      "literal_render_model_line": "[02:07:00] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 44 shapeSignature=8926021269260745705 geometry=baby gameplay=swim texture=chao_garden:dynamic/neutral_swim059/594c8774-03f1-35cd-aaf6-5014d7652c73 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png"
+    },
+    {
+      "case": 44,
+      "name": "neutral_swim_run_swim_regression",
+      "angle": "above",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-44-neutral_swim_run_swim_regression-above-t000-f0108.png",
+      "sha256": "d918a599d00f46d8ddc98fbdb946af29ff496a68a1c28130bd2829d8b43f8e83",
+      "literal_capture_line": "[02:07:03] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-44-neutral_swim_run_swim_regression-above-t000-f0108.png case=44 angle=above tick=0 sha256=d918a599d00f46d8ddc98fbdb946af29ff496a68a1c28130bd2829d8b43f8e83 wallNanos=32941362884758 epochMillis=1794535623822",
+      "literal_render_model_line": "[02:07:00] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 44 shapeSignature=8926021269260745705 geometry=baby gameplay=swim texture=chao_garden:dynamic/neutral_swim059/594c8774-03f1-35cd-aaf6-5014d7652c73 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png"
+    },
+    {
+      "case": 44,
+      "name": "neutral_swim_run_swim_regression",
+      "angle": "below",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-44-neutral_swim_run_swim_regression-below-t000-f0131.png",
+      "sha256": "7c423bfeb492bc0f6ef0fb2bb29e63e05f6f044dc30ff15cb12d571fde2e95c8",
+      "literal_capture_line": "[02:07:04] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-44-neutral_swim_run_swim_regression-below-t000-f0131.png case=44 angle=below tick=0 sha256=7c423bfeb492bc0f6ef0fb2bb29e63e05f6f044dc30ff15cb12d571fde2e95c8 wallNanos=32942144502206 epochMillis=1794535624603",
+      "literal_render_model_line": "[02:07:00] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 44 shapeSignature=8926021269260745705 geometry=baby gameplay=swim texture=chao_garden:dynamic/neutral_swim059/594c8774-03f1-35cd-aaf6-5014d7652c73 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=-1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png"
+    },
+    {
+      "case": 45,
+      "name": "dark_normal_run_fly_regression",
+      "angle": "front",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-45-dark_normal_run_fly_regression-front-t000-f0016.png",
+      "sha256": "2130d01aeeddd0fc71b559cded50b1fb427c029eee8a67211bec48ee83f67f77",
+      "literal_capture_line": "[02:07:05] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-45-dark_normal_run_fly_regression-front-t000-f0016.png case=45 angle=front tick=0 sha256=2130d01aeeddd0fc71b559cded50b1fb427c029eee8a67211bec48ee83f67f77 wallNanos=32942944738644 epochMillis=1794535625404",
+      "literal_render_model_line": "[02:07:04] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 45 shapeSignature=6153868512782668493 geometry=baby gameplay=dark texture=chao_garden:dynamic/dark_normal060/3a19c285-0c34-3d4d-abc4-0cdd4a30e848 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png"
+    },
+    {
+      "case": 45,
+      "name": "dark_normal_run_fly_regression",
+      "angle": "left",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-45-dark_normal_run_fly_regression-left-t000-f0039.png",
+      "sha256": "e07b642ba9f2ac5de4792f65aa94b52834600d343d0086c84b45f162fdac6d37",
+      "literal_capture_line": "[02:07:06] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-45-dark_normal_run_fly_regression-left-t000-f0039.png case=45 angle=left tick=0 sha256=e07b642ba9f2ac5de4792f65aa94b52834600d343d0086c84b45f162fdac6d37 wallNanos=32943699019171 epochMillis=1794535626158",
+      "literal_render_model_line": "[02:07:04] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 45 shapeSignature=6153868512782668493 geometry=baby gameplay=dark texture=chao_garden:dynamic/dark_normal060/3a19c285-0c34-3d4d-abc4-0cdd4a30e848 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png"
+    },
+    {
+      "case": 45,
+      "name": "dark_normal_run_fly_regression",
+      "angle": "right",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-45-dark_normal_run_fly_regression-right-t000-f0062.png",
+      "sha256": "dcef00f81dc38c9bf0b19c3bb7de1a09fe98aa3b5a171ea799670382f2e97ca6",
+      "literal_capture_line": "[02:07:06] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-45-dark_normal_run_fly_regression-right-t000-f0062.png case=45 angle=right tick=0 sha256=dcef00f81dc38c9bf0b19c3bb7de1a09fe98aa3b5a171ea799670382f2e97ca6 wallNanos=32944463566204 epochMillis=1794535626923",
+      "literal_render_model_line": "[02:07:04] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 45 shapeSignature=6153868512782668493 geometry=baby gameplay=dark texture=chao_garden:dynamic/dark_normal060/3a19c285-0c34-3d4d-abc4-0cdd4a30e848 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png"
+    },
+    {
+      "case": 45,
+      "name": "dark_normal_run_fly_regression",
+      "angle": "back",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-45-dark_normal_run_fly_regression-back-t000-f0085.png",
+      "sha256": "da97ec028b842a08a3e6760c08c88f510fa253116b49a243f5f0ed40c7f41aaf",
+      "literal_capture_line": "[02:07:07] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-45-dark_normal_run_fly_regression-back-t000-f0085.png case=45 angle=back tick=0 sha256=da97ec028b842a08a3e6760c08c88f510fa253116b49a243f5f0ed40c7f41aaf wallNanos=32945220998999 epochMillis=1794535627680",
+      "literal_render_model_line": "[02:07:04] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 45 shapeSignature=6153868512782668493 geometry=baby gameplay=dark texture=chao_garden:dynamic/dark_normal060/3a19c285-0c34-3d4d-abc4-0cdd4a30e848 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png"
+    },
+    {
+      "case": 45,
+      "name": "dark_normal_run_fly_regression",
+      "angle": "above",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-45-dark_normal_run_fly_regression-above-t000-f0108.png",
+      "sha256": "1b12d7298f0826d33900c1b155d8ad886ca8f0378e25228c59ff1b6511e84333",
+      "literal_capture_line": "[02:07:08] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-45-dark_normal_run_fly_regression-above-t000-f0108.png case=45 angle=above tick=0 sha256=1b12d7298f0826d33900c1b155d8ad886ca8f0378e25228c59ff1b6511e84333 wallNanos=32946020902403 epochMillis=1794535628480",
+      "literal_render_model_line": "[02:07:04] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 45 shapeSignature=6153868512782668493 geometry=baby gameplay=dark texture=chao_garden:dynamic/dark_normal060/3a19c285-0c34-3d4d-abc4-0cdd4a30e848 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png"
+    },
+    {
+      "case": 45,
+      "name": "dark_normal_run_fly_regression",
+      "angle": "below",
+      "original_path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-45-dark_normal_run_fly_regression-below-t000-f0131.png",
+      "sha256": "2df61c0a37bf66e726977d1e640c31bce266a3e98d35e8475f2273d0b428cfe1",
+      "literal_capture_line": "[02:07:09] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-45-dark_normal_run_fly_regression-below-t000-f0131.png case=45 angle=below tick=0 sha256=2df61c0a37bf66e726977d1e640c31bce266a3e98d35e8475f2273d0b428cfe1 wallNanos=32946786648953 epochMillis=1794535629246",
+      "literal_render_model_line": "[02:07:04] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 45 shapeSignature=6153868512782668493 geometry=baby gameplay=dark texture=chao_garden:dynamic/dark_normal060/3a19c285-0c34-3d4d-abc4-0cdd4a30e848 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+      "sheet": "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png"
+    }
+  ],
+  "sheets_prepared": [
+    "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png",
+    "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png",
+    "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png",
+    "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png",
+    "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png"
+  ],
+  "legacy_class_checks": [
+    {
+      "entry": "com/chaogarden/client/DarkNormalCoatMaterial060$Reload.class",
+      "sha256": "5c2a28caab00410090459b5c6586ccd2332ce20c0411c7cdb6bb38805300c6a0",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalCoatMaterial060.class",
+      "sha256": "ea99ce87747baf1c1b29ee8c48c8c4326a2c40837999a8f0c8ed176bd5e077d4",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060$Colors.class",
+      "sha256": "0f44bfdfa6fb1fb10f0c3f86375784511f76f76bb6bf925c5df3a6b5701f9747",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060$Input.class",
+      "sha256": "82cb4a4c380333c1bda10b0da589d8c1caadad17e533357efc20a67d8083b598",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060.class",
+      "sha256": "d43b68c9753201c67c767d33a9eeed9ce6942f0fbc147477ad097bb150ed238e",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalCoatMaterial057$Reload.class",
+      "sha256": "ca6fb84a9e8e50ba92df75dca57f6c9c7b1d5aeaaa49f81ad84b149e5b9a07fa",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalCoatMaterial057.class",
+      "sha256": "4da0ced38b6d7ce0796e8d446d42c4d4c061a52ff85d7ef2f655978d6b6733ff",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057$Colors.class",
+      "sha256": "c9d32efb792f85f3a6f713c99ab3ba64b6c19a98fdb6d73a4eef707c304fc519",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057$Input.class",
+      "sha256": "5e354f835b5ae19d3520ca6002c356cf3d2751359e236ae3910ce7c3e291bfd0",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057.class",
+      "sha256": "212ba58d7aa63a896ab5952bf1448b2ac76341b3e7c63e259e9e89dd88356a81",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial055$Reload.class",
+      "sha256": "aa8540e271d6d35739f01861ec21868631be182281f4b1e60d01e67da3696952",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial055.class",
+      "sha256": "c09465ed769c7e0adb1daa6cb3fab636755b067fad3a69fb3bbed15ddd3d206c",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055$Colors.class",
+      "sha256": "f052f3576ce6d77ecc6f2c0ed4d943a38b0e9248b18e80814340ab3ab3c94474",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055$Input.class",
+      "sha256": "423be209437c48706a1499ec22e57702ad86233538c7050a39302f22b349832e",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055.class",
+      "sha256": "82b10ea59843555b8b39a3dcbbd97f31558c69002f4006a623f90e2fb7fb8fe6",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralCoatMaterial056$Reload.class",
+      "sha256": "62f6d371a9d4b4389faa72d0b93b64ef385aa9f8200107ed99d3253697b1b00b",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralCoatMaterial056.class",
+      "sha256": "ee1ba02e4085e884c63696335df72ad49faa9f661932cb39c1806ad5fda9d060",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056$Colors.class",
+      "sha256": "4fd40b9ac2578413ecc33d7dbcc4094f0cac194548f08631234948dc2ee5e498",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056$Input.class",
+      "sha256": "df5098015d1821922fe821a23f09c851ce5453351f401f64b8dfa50d24a0fc25",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056.class",
+      "sha256": "f84013e2086e162dbcfaeb31dd3dfac0463333f97b4b9e7038c239be62fa664e",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimCoatMaterial059$Reload.class",
+      "sha256": "328ff88985d0d0e1dbb8f4aa79d23da296ca13e9bf9cc0c851744cf8f1f7aea5",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimCoatMaterial059.class",
+      "sha256": "fc0fa176c4dc03c9076ac5470c5c911b6ef1ead3782fa0bcc10171ee62be370c",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059$Colors.class",
+      "sha256": "35e40e621b959da6e65d631b750c57e46a286a1e60f7c258f846a32196be9a5b",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059$Input.class",
+      "sha256": "ee3edaa7c13c3a0cd5eb528adcfbf7ea80383342e86b41d72d2d412295443153",
+      "identical_060_061": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059.class",
+      "sha256": "c762d06a6cbaa0090a76301d632d32c76e2c0b222ee5323cebc75df1cff59694",
+      "identical_060_061": true
+    }
+  ],
+  "final_jar_sha256": "2618d3ed5326621d782e3a396fe68edb25b03c8f657206407641c4d840c02060",
+  "status": "personally_visually_reviewed_all_five_sheets_no_material_regression_found",
+  "personal_review": {
+    "method": "Five final-only six-angle contact sheets personally opened; all 30 original captures represented at identical crop and uniform scale. One original case41 above image also opened directly.",
+    "direct_originals_opened": [
+      "/workspace/.setup/fly061-client-final/screenshots/fly061-live-41-hero_run_mature_regression-above-t000-f0108.png"
+    ],
+    "sheets": [
+      {
+        "path": "/workspace/.setup/fly061-material/final-old-review/case-41-six-angles.png",
+        "sha256": "82f53f8d6e516f3198904d72fa20f69d10b5b5cdf9f18acbe1e31b4309f4d63e"
+      },
+      {
+        "path": "/workspace/.setup/fly061-material/final-old-review/case-42-six-angles.png",
+        "sha256": "1d6f2e69eab4b381e6238021e5d362fd0e03034877859de2c7351dd49a201d70"
+      },
+      {
+        "path": "/workspace/.setup/fly061-material/final-old-review/case-43-six-angles.png",
+        "sha256": "e845e29baa9d050a91dd9bc305e6dd6bae4ed5230de5a8580a2a4e02e71a2a5f"
+      },
+      {
+        "path": "/workspace/.setup/fly061-material/final-old-review/case-44-six-angles.png",
+        "sha256": "540154a361c50666fc58928c829058d85cbb1b751992c7e6333fe0ea6a9d9f6f"
+      },
+      {
+        "path": "/workspace/.setup/fly061-material/final-old-review/case-45-six-angles.png",
+        "sha256": "13522860fcbdde02cbac52582bc3d0ead4a52a572380d65996a2156edcf699a7"
+      }
+    ]
+  },
+  "findings": {
+    "41": "Expected Hero/Run ivory skull/body, turquoise/blue cuffs and feet, yellow chest and hollow yellow halo. Eyes/white borders intact; no new Fly swatch or wing fan appears.",
+    "42": "Expected Hero/Normal Power+Fly ivory skull/body, violet cuffs, gold wing details/chest and pink hollow halo. Original eyes and alpha silhouettes remain intact across all angles.",
+    "43": "Expected Neutral/Normal Power+Swim cyan skull and green body/limbs with yellow orb. Original face/iris pixels visibly intact. No Fly palette route.",
+    "44": "Expected Neutral/Swim Run+Swim green skull with cyan lower face, cyan forehead V, yellow limbs/feet and pale cyan orb. Front/side/below face and wing silhouettes intact.",
+    "45": "Expected Dark/Normal Run+Fly dark plum body, violet/lavender cuffs/feet and independent peach spiked marker, with subdued olive wings. Original eyes/alpha silhouettes intact; no new Fly material route."
+  },
+  "limitations": [
+    "Static final-run material inspection only; motion/listening/multiplayer are outside this sub-review.",
+    "This visual review finds no new visible material regression. The 25 legacy material/region class entries are separately byte-identical to the .60 JAR."
+  ]
+}

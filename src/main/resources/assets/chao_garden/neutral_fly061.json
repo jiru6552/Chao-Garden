@@ -1,0 +1,39 @@
+{
+  "version": "0.25.61",
+  "model": "models/entity/gameplay/chao_neutral_fly_proto061.json",
+  "sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "neutral_fly_young",
+    "run_guard",
+    "balanced_guard",
+    "power_guard",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "canonical_head_face_orb_and_joint_pivots_unchanged": true,
+  "shared_animation_attachment_rig": true,
+  "source_geometry_copied": false,
+  "construction_reference_sha256": {
+    "art/imported_chao/models/chao_fly.geo.json": "bd774f7fcbae5d3645085e589922e4114a46763e5167fac42346d5cdf36c2ad2",
+    "art/imported_chao/textures/fly.png": "691d87c70ef8e08a150b10552e3d82fc321762a12f119a381f0bb68aa9120c50",
+    "src/main/resources/assets/chao_garden/models/entity/official/chao_fly.json": "72ab349d9e88b1ff560621983d9977e58a13fa394388ff04b11c81bc935e148d"
+  },
+  "legal_specializations": [
+    "balanced",
+    "run",
+    "power",
+    "fly",
+    "run_fly",
+    "power_fly"
+  ],
+  "guard_row": "Negative Swim targets exactly duplicate center; runtime net Swim/Fly clamps [0,1]",
+  "closed_box_count": 17,
+  "head_feature_count": 4,
+  "wing_ray_count": 6,
+  "tail_part_count": 2
+}

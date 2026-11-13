@@ -1,0 +1,40 @@
+{
+  "scope": "Accepted full broad invocation and required native-server results after prefix and final wing-UV correction; final JAR/client cohort pending",
+  "broad_log": "/workspace/.setup/fly061-build.log",
+  "same_single_broad_invocation_supplies": [
+    "core",
+    "rig",
+    "material",
+    "piano",
+    "organ",
+    "retained_regressions"
+  ],
+  "no_separate_final_focused_claim": true,
+  "broad_wall": "12m 54s",
+  "native_log": "/workspace/.setup/fly061-native.log",
+  "native_wall": "49s",
+  "checks": {
+    "core": 6899,
+    "rig": 56961691,
+    "material": 288539007,
+    "required_native_total": 428,
+    "required_native_retained": 390,
+    "required_native_new": 38,
+    "piano_hand_samples": 216756,
+    "organ_hand_samples": 216756,
+    "new_keyboard_states_each": 18,
+    "real_canonical_coats": 172,
+    "actual_wing_span_rig_samples": 1699200,
+    "actual_interpolated_wing_paint_material_samples": 26749440
+  },
+  "sha256": {
+    "/workspace/.setup/fly061-build.log": "13051cdf479e49c2bc26967ce7aeefd0891959fe8ab09ea7be6db9a4e4e4cca6",
+    "/workspace/.setup/fly061-native.log": "9e676e969183e108de68f6f43c2950474c489761996b1c665f96c9dc2d797cfb",
+    "/workspace/Chao-Garden/build/reports/lionfish/neutral-fly061-results.txt": "0d90bad2d6e10a4b5985b321bd2e31094b8ee77d42c22a5a189f2af821164b90",
+    "/workspace/Chao-Garden/build/reports/lionfish/neutral-fly061-material-results.txt": "f9c9b8d27e60a8aea7e3cba1424bedc711006166f2e2b0bef72afef379ecbf05",
+    "/workspace/Chao-Garden/src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+    "/workspace/.setup/fly061-model/geometry-band.log": "6360372f52c1b18955fdb6c447594b623f8a448a353929fe7624f15041729a24"
+  },
+  "source_snapshot": "source-compatibility-snapshot.json",
+  "jar_and_final_client_cohort_pending": true
+}

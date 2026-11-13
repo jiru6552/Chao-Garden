@@ -1,0 +1,55 @@
+{
+  "timestamp_utc": "2026-11-13T02:14:18.596112+00:00",
+  "reviewer": "policy061",
+  "source_hash_runtime_audit": "final-ui-evolution-hash-runtime-audit.json",
+  "jar_sha256": "2618d3ed5326621d782e3a396fe68edb25b03c8f657206407641c4d840c02060",
+  "literal_image_hashes_verified": 50,
+  "ui_originals_opened_full_resolution": 16,
+  "post_ui_world_originals_opened_full_resolution": 9,
+  "natural_evolution_originals_reviewed_via_uniform_sheet": 25,
+  "natural_evolution_full_originals_opened": [
+    "front-t011-f0028",
+    "front-t095-f0153",
+    "back-t299-f0421"
+  ],
+  "natural_evolution_sheet_sha256": "a8d9670faf68f9d78b3438a28025d7119304685b02f72fe15d0ff3f55f202300",
+  "actual_observations": {
+    "creative_adult49": "HeaderNeutral/YoungAdult/Fly/Fly+Run; MIND adult alignment LOCKED Neutral+0.0; STATS80.0->66.4 active intermediate->25.0->100.0 and FullyAdult; firstFly preserved; model preview responds.",
+    "survival_adult50": "Neutral/YoungAdult/Fly/Fly+Power; adultalignmentLOCKED+0.0; maturity80.0before andafter denied request; no Creative edit instruction; denial footer visible but lowcontrast.",
+    "creative_baby51": "NeutralChild becomesHeroChild at+80.2; maturity80.0->73.0 active intermediate->25.0->99.0, stayingChild; previewcolors/developmentrespond.",
+    "post_ui_world": "All9 front/left/back-labelled views opened. Adult Run+Fly/Power+Fly and HeroChild persist into world after NBT reload. Rear views are oblique and player enters left edge; they establish post-edit persistence, not calibrated comparison angles.",
+    "natural62": "First recorded frame011isordinarytealChild; frames023..215showgenuinecocoon;227..299showfreshpink/lilacFly adult withsmallpairedblue-endedcrestsandgreen/cyanwings. It differs frommaturewhite/yellowFly andretains originalface/orb. Completedstate firstFly,Neutral,maturity8.487654e-5,SFtarget.5carryforward."
+  },
+  "native_verification": {
+    "ui_verified_cases": [
+      49,
+      50,
+      51
+    ],
+    "saveReloadExact": true,
+    "stagePreserved": true,
+    "forged_alignment_requests": [
+      "[02:07:25] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_UI_FORGED_ALIGNMENT case=49 creative=true adult=true from=0.0 requestedMilli=1000",
+      "[02:07:35] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_UI_FORGED_ALIGNMENT case=50 creative=false adult=true from=0.0 requestedMilli=1000"
+    ],
+    "survival_requested_maturity": 250,
+    "adult_first_type_preserved": "Existing helper asserts firstTypeFLY and primaryTypeFLY after edits/reload",
+    "natural_complete_line": "[02:10:28] [Server thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_NATIVE_COMPLETE 62 name=neutral_fly_actual_first_evolution baseline=false elapsed=300 walked=0.0 sample=Sample[enabled=true, maturity=8.487654E-5, runPower=0.0, swimFly=0.5] state=6;0,0;1,1;0,0;0,0;2,3,2,2,2;2,2,2,2,2;2,3,2,2,2;0,4,0,0,0;0,80,0,0,0;0,78,0,0,0;0,0,1,0,0,0,0,216088,88,0,1,0,0,2,0,80,0,99,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,40,0,100,16,50,50,20,0,9995,0,9900;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1058714409,2108669886,1,-1,-1,-1,-1,1,0,2,0,0,88,1,0,0,0;;normal;normal epochMillis=1794535828024"
+  },
+  "limits": [
+    "No physicalphone/touch hardware test",
+    "No fullserverrestart/arbitraryoldworldclaim",
+    "No three distinct actual visible reaction-faceproof;12formal emitterchecksseparate",
+    "No independentremote multiplayer/latency claim",
+    "No autonomousglide/swimtravel/fullcarryposture claim",
+    "Fullmotion playback/listening notclaimed"
+  ],
+  "result": "PASS within stated UI/first-evolution/save/runtime scope; no blocker found",
+  "latest_hash_runtime_audit_sha256": "87b9547999edeadbca1574d7cbfa0a73c74abc14e21f366f6853edc6ae4d9fdb",
+  "final_ui_evolution_review_markdown_sha256": "9f2cf045ac6605d302a3f16bd8490afadbc9eeced8e3482639058ce062ba5630",
+  "complete_client_callback": {
+    "cases": 67,
+    "skipped": 0,
+    "original_pngs": 590
+  }
+}

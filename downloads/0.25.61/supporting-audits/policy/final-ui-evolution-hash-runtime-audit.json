@@ -1,0 +1,375 @@
+{
+  "timestamp_utc": "2026-11-13T02:17:02.562179+00:00",
+  "scope": "Literal image hashes and full production runtime/JAR identity; visual review recorded separately",
+  "jar": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.61.jar",
+  "jar_sha256": "2618d3ed5326621d782e3a396fe68edb25b03c8f657206407641c4d840c02060",
+  "runtime_mode": "development_classpath",
+  "runtime_production_entries_checked": 8325,
+  "all_frozen_current_and_jar_bytes_match": true,
+  "snapshot_manifest_sha256": "5b1c2701b30fae40742cb47499a669076116014c06f600e94a5387ba229cac2c",
+  "proof_sha256": "c91b88e4d68bee04114b81e79a9bc20643c13c6f059f7c4c4f94191f0968c3c9",
+  "ui_images": 16,
+  "post_ui_world_images": 9,
+  "evolution_images_available": 25,
+  "evolution_case_complete": true,
+  "ui_native_verification_lines": [
+    "[02:07:31] [Server thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_UI_NATIVE_VERIFIED case=49 creative=true adult=true alignment=0.0 maturity=1.2 saveReloadExact=true stagePreserved=true epochMillis=1794535651649",
+    "[02:07:39] [Server thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_UI_NATIVE_VERIFIED case=50 creative=false adult=true alignment=0.0 maturity=0.96012735 saveReloadExact=true stagePreserved=true epochMillis=1794535659904",
+    "[02:07:52] [Server thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_UI_NATIVE_VERIFIED case=51 creative=true adult=false alignment=0.802 maturity=0.99012035 saveReloadExact=true stagePreserved=true epochMillis=1794535672036"
+  ],
+  "images": [
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-back-t151-f0074.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-back-t151-f0074.png",
+      "case": 49,
+      "sha256": "7e14ea7d0fbe120858dfa19493d7190df90fd74220ab05ce2f438af9ec049277",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-front-t151-f0028.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-front-t151-f0028.png",
+      "case": 49,
+      "sha256": "bcc08963af11e38de25359c09b517f416a3f38be41ac984d301fb263af8dc5ed",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-left-t151-f0051.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-left-t151-f0051.png",
+      "case": 49,
+      "sha256": "33d153539616f41fbc428b7bb091516b92b23a5b4ff71a289b5ea1b32f96d168",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "case": 49,
+      "sha256": "a3701890566c1f080a087de70a60044b6a42ee834e4fc875db954bdef884f92a",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "case": 49,
+      "sha256": "cf22324239393547038bf08ea6d65439d67f4febb00dd2ed87378d97a43fcf42",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-before.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-before.png",
+      "case": 49,
+      "sha256": "3ae25d2bd9b09ff7c36def41b06a0e31481ff0edafe3e253270462984ce3032d",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "case": 49,
+      "sha256": "7ec6c055491e795eff1cdd82f055ae074260b51b5234cd18e8ee61cccc99f668",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "case": 49,
+      "sha256": "89dfdf543e36f27c791021c9e5269944bf978855fdd61b0593717184935b330a",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-young.png",
+      "name": "fly061-live-49-creative_neutral_fly_adult_lock_maturity-ui-maturity-young.png",
+      "case": 49,
+      "sha256": "65db8af349ea29508150a193e1085e22e9eccf90d2ed80cf3356d1997d1e1c50",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-50-survival_neutral_fly_adult_readonly-back-t110-f0074.png",
+      "name": "fly061-live-50-survival_neutral_fly_adult_readonly-back-t110-f0074.png",
+      "case": 50,
+      "sha256": "8fe25b93cf4e673c4a9d1928d48172770832f8817fcea5b37ef45d8967b27b03",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-50-survival_neutral_fly_adult_readonly-front-t110-f0028.png",
+      "name": "fly061-live-50-survival_neutral_fly_adult_readonly-front-t110-f0028.png",
+      "case": 50,
+      "sha256": "eee04a3202e5d856bdde9669a0c926cbd41c1e91c526fbb87cf0b0702d6ff3ce",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-50-survival_neutral_fly_adult_readonly-left-t110-f0051.png",
+      "name": "fly061-live-50-survival_neutral_fly_adult_readonly-left-t110-f0051.png",
+      "case": 50,
+      "sha256": "e85d963fd4cb8c4c65bc372be23e6fd3f81b37cded0e74b01f6a7d2262523b0d",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-50-survival_neutral_fly_adult_readonly-ui-maturity-before.png",
+      "name": "fly061-live-50-survival_neutral_fly_adult_readonly-ui-maturity-before.png",
+      "case": 50,
+      "sha256": "e984490b9510556393297e09bd3cc7335fe673109d04d747ac0d587d3ce3a96b",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-50-survival_neutral_fly_adult_readonly-ui-maturity-survival-denied.png",
+      "name": "fly061-live-50-survival_neutral_fly_adult_readonly-ui-maturity-survival-denied.png",
+      "case": 50,
+      "sha256": "334f2c6d5a61618120248e05ac03c66bb5eb38ab31806276045a6e77bd41914f",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-50-survival_neutral_fly_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "name": "fly061-live-50-survival_neutral_fly_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "case": 50,
+      "sha256": "b2c904f7c76f545a1845d0a325d73fd2c1cf54f6cf72db1173a7618851661a77",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-50-survival_neutral_fly_adult_readonly-ui-survival-readonly.png",
+      "name": "fly061-live-50-survival_neutral_fly_adult_readonly-ui-survival-readonly.png",
+      "case": 50,
+      "sha256": "d40ce8a5952ec0ec6782485888e68b3d45f33dec92068524b6ff6d51b882c98d",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-back-t187-f0074.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-back-t187-f0074.png",
+      "case": 51,
+      "sha256": "41b380cf75384fe41b2315cf9e5d461ccf38090d14f9b47f08ba3c85ec1de989",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-front-t187-f0028.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-front-t187-f0028.png",
+      "case": 51,
+      "sha256": "a6a391ddb0029ace5dc76da9581ca82bc776a6fafd8b2fb872621aac71800a91",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-left-t187-f0051.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-left-t187-f0051.png",
+      "case": 51,
+      "sha256": "5fda7b463fb1b6d1abcb26a6fc8712e17ddcb7635209b831ba97a722300408bc",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "case": 51,
+      "sha256": "56d3055611c10f42b8b8fb56544810b0fccbfc5c1c71a742d20a1aeced8cd4a9",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "case": 51,
+      "sha256": "49c791f3cea6c1aa1e7056cd5cacf72409c5e00744268e1c4fc3eece0aa4e79a",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "case": 51,
+      "sha256": "29d1351e016e11ed504e973721683e8ece157892f1abace716729cba0e4fe6ef",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "case": 51,
+      "sha256": "08df13e2951af696ec4cf18e23fb15b5a69f8b3173e354aef1054db242257c52",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "case": 51,
+      "sha256": "3519bbc723438b57e0ccd4217085cd4232b0db27cda27353a30c4a83e03e8dd7",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "name": "fly061-live-51-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "case": 51,
+      "sha256": "f87e7c35177a65b9762c24c4ab9aa971c7e8157292502e85d5b9df70dc03ab22",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t203-f0305.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t203-f0305.png",
+      "case": 62,
+      "sha256": "e3f292042c4f66431a06d5b185d0081ab3f31be0a4045b75bb5bbd22d5d0ee8e",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t215-f0323.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t215-f0323.png",
+      "case": 62,
+      "sha256": "796c39322398041c836efad43795a2cff8a369183c1a17a5598bc2f6c54510f4",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t227-f0339.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t227-f0339.png",
+      "case": 62,
+      "sha256": "5bf075cb501a1ec9f00c0eb1437d18079b7ead5d7c813e2ca820a6611a1e2b95",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t239-f0352.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t239-f0352.png",
+      "case": 62,
+      "sha256": "9bf6f257bcce4d55fec2aaf675f7f8aa505f3feb849a21716c17c47b06f0a21e",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t251-f0366.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t251-f0366.png",
+      "case": 62,
+      "sha256": "24483b12e4c40535e926fe76a8fe05988d10778613a5f048d7066d2515a24870",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t263-f0378.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t263-f0378.png",
+      "case": 62,
+      "sha256": "efe3f1e5a94f4526d29b2ac0c43df91eba8bba97af8676297c9ae1e698dc2e51",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t275-f0393.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t275-f0393.png",
+      "case": 62,
+      "sha256": "ce8cd2115a5dfced49f78e4315dd7e60349c0998efdb08ebdc14534c54906d88",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t287-f0407.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t287-f0407.png",
+      "case": 62,
+      "sha256": "1647394776c3165ee851d97c2abca1882310d3f206a84147b4b6ccfbc63f0804",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-back-t299-f0421.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-back-t299-f0421.png",
+      "case": 62,
+      "sha256": "a464226e92e5ff5a4cc65e566c248a8cf91e1d74a1d5f11fee5a19c7ab30638b",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t011-f0028.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t011-f0028.png",
+      "case": 62,
+      "sha256": "87869d13cf23062fc1a8e72f1dbf264cd1273d311920cc58b9b03b78cf820589",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t023-f0046.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t023-f0046.png",
+      "case": 62,
+      "sha256": "abb4e9b0f3f0416160f1ab9c13490b216887564bed8118e37cc0d9a7d13aa96d",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t035-f0064.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t035-f0064.png",
+      "case": 62,
+      "sha256": "7e1e4070ae72fdbb514008c88ebac97fa0907b19c8332607a6863b67bb5fa112",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t047-f0082.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t047-f0082.png",
+      "case": 62,
+      "sha256": "4cdb502019265cb7981de8b0b2bdeba10b14edec2ac17d2d85f51f656d0d89e2",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t059-f0100.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t059-f0100.png",
+      "case": 62,
+      "sha256": "f57ded361027ff43d3bf69241d124475b31c4229dc5eb2ea80d9ec23a8a8347e",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t071-f0117.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t071-f0117.png",
+      "case": 62,
+      "sha256": "dd87256babbeacea6cb049627cc2e79c72b8f1dfa89104348dc6c1cb57249dde",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t083-f0135.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t083-f0135.png",
+      "case": 62,
+      "sha256": "3d6837f94a7424f064dc73b46ceeb3744e5d6295f45f78d0ccabed469735d801",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-front-t095-f0153.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-front-t095-f0153.png",
+      "case": 62,
+      "sha256": "974877adff9e9723c6cf6b1b7cc048d95733e52a53f9424745829c695c76f84e",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t107-f0168.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t107-f0168.png",
+      "case": 62,
+      "sha256": "7b4b94808475deb8a966d6c48008d3bf61e88c777e735a7b88c382e836c1eb94",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t119-f0185.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t119-f0185.png",
+      "case": 62,
+      "sha256": "9629b3a1544799b4597880823affc6120e4469c7d2df5c592eb00c72ec6e7bcd",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t131-f0202.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t131-f0202.png",
+      "case": 62,
+      "sha256": "6088f278a12cf137c382e726f71f4e8803288992216f5683a351325a7c1b680e",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t143-f0220.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t143-f0220.png",
+      "case": 62,
+      "sha256": "d67e463185ae2bd5ab68ba0c64b4900ca572ef04f334369d035e7175574a3bfe",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t155-f0238.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t155-f0238.png",
+      "case": 62,
+      "sha256": "deba34d4687f050e04c1082c826914f2df7905780b0cf72ea65153fb2fe62026",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t167-f0256.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t167-f0256.png",
+      "case": 62,
+      "sha256": "9bf6296ca5a836eed2f8340fda7dcd7461282f733e4135fb97bd56e7fb9ed870",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t179-f0273.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t179-f0273.png",
+      "case": 62,
+      "sha256": "47552491c0e5fa8c9917cd38e2be12e18814579ab67f310f10e80710c55d2c11",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-62-neutral_fly_actual_first_evolution-left-t191-f0288.png",
+      "name": "fly061-live-62-neutral_fly_actual_first_evolution-left-t191-f0288.png",
+      "case": 62,
+      "sha256": "e7fb971bec35f2ccc84814d320d1aedbeb6e087f244fd9c952d57614a6b0dc71",
+      "kind": "evolution"
+    }
+  ],
+  "client_log_complete": true,
+  "client_log_sha256_at_audit": "6e9265dbedc2fe814d8b49d241b50dda2b47118ff479635185f5a91d6711c723",
+  "final_source_model_sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885"
+}

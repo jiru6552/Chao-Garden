@@ -28,7 +28,7 @@ public final class OfficialChaoRig {
   private boolean adultPose, broadWalkHead;
   private float powerSwimWeight;
   private boolean prototypeSelection;
-  private boolean neutralSelection056,heroNormalSelection057,neutralSwimSelection059,darkNormalSelection060;
+  private boolean neutralSelection056,heroNormalSelection057,neutralSwimSelection059,darkNormalSelection060,neutralFlySelection061;
   private String prototypeOwnerKey;
   public enum Motion { CRAWL, WALK, RUN, DASH, FLAIL, PADDLE, SWIM, GLIDE, GRIP, FALL, HELD, SIT, REST,
     PONDER, INSPECT, EAT, TRAIN, REJECT, DELIGHT, PLAY, PET }
@@ -65,7 +65,7 @@ public final class OfficialChaoRig {
   private void select(String model,boolean gameplay) {
     key = model;
     boolean prototype=gameplay&&prototypeSelection&&model.equals(prototypeOwnerKey);
-    String prototypeModel=darkNormalSelection060?"dark_normal_proto060":neutralSwimSelection059?"neutral_swim_proto059":heroNormalSelection057?"hero_normal_proto057":neutralSelection056?"neutral_proto056":"hero_run_proto055";
+    String prototypeModel=neutralFlySelection061?"neutral_fly_proto061":darkNormalSelection060?"dark_normal_proto060":neutralSwimSelection059?"neutral_swim_proto059":heroNormalSelection057?"hero_normal_proto057":neutralSelection056?"neutral_proto056":"hero_run_proto055";
     String cache=prototype?"gameplay:"+prototypeModel:(gameplay?"gameplay:":"source:")+model;
     current = frames.computeIfAbsent(cache, ignored -> {
       var mesh = assets.apply(prototype?"gameplay/chao_"+prototypeModel:(gameplay?"gameplay/":"official/")+"chao_"+model);
@@ -86,6 +86,7 @@ public final class OfficialChaoRig {
   }
 
   public static ResourceLocation texture(ChaoState state) {
+    if(NeutralFlyAppearance061.sample(state).enabled())return ChaoPaletteMaterial.texture(NeutralFlyCoatMaterial061.texture(state),state,"baby");
     if(DarkNormalAppearance060.sample(state).enabled())return ChaoPaletteMaterial.texture(DarkNormalCoatMaterial060.texture(state),state,"baby");
     if(NeutralSwimAppearance059.sample(state).enabled())return ChaoPaletteMaterial.texture(NeutralSwimCoatMaterial059.texture(state),state,"baby");
     if(HeroNormalAppearance057.sample(state).enabled())return ChaoPaletteMaterial.texture(HeroNormalCoatMaterial057.texture(state),state,"baby");
@@ -137,7 +138,7 @@ public final class OfficialChaoRig {
   public String sourceGeometryKey() {
     // These scoped gameplay paths retain the original baby UV and attachment
     // family while their saved/logical alignment and first type remain locked.
-    return current.mesh.heroRunPrototype()||current.mesh.neutralPrototype056()||current.mesh.heroNormalPrototype057()||current.mesh.neutralSwimPrototype059()||current.mesh.darkNormalPrototype060()
+    return current.mesh.heroRunPrototype()||current.mesh.neutralPrototype056()||current.mesh.heroNormalPrototype057()||current.mesh.neutralSwimPrototype059()||current.mesh.darkNormalPrototype060()||current.mesh.neutralFlyPrototype061()
         ?"baby":sourceGeometryKey(key);
   }
   public String geometryKey() { return key; }
@@ -266,12 +267,12 @@ public final class OfficialChaoRig {
       float steady=1-.9f*walk*anatomy;
       skull.x*=steady;skull.rz*=steady;skull.y-=.35f*walk*anatomy;
       if(body!=null){body.x*=steady;body.y*=steady;body.rz*=steady;}
-      // Keep the new Dark Normal shoulders on the original torso sides.
+      // Keep these scoped full-head shoulders on the original torso sides.
       // A small downward walking offset puts swinging palms below the full
       // skull's look arc while their upper roots remain within the torso.
       // This preserves the original gaze range and avoids an outward root gap.
-      if(current.mesh.darkNormalPrototype060())for(boolean left:new boolean[]{false,true}){var arm=pose(left?"arm_left":"arm_right");if(arm!=null)arm.y+=.60f*walk;}
-      if(powerSwimWeight>0&&!current.mesh.darkNormalPrototype060())for(boolean left:new boolean[]{false,true}){var arm=pose(left?"arm_left":"arm_right");if(arm!=null)arm.x+=(left?.75f:-.75f)*walk*powerSwimWeight;}
+      if(current.mesh.darkNormalPrototype060()||current.mesh.neutralFlyPrototype061())for(boolean left:new boolean[]{false,true}){var arm=pose(left?"arm_left":"arm_right");if(arm!=null)arm.y+=.60f*walk;}
+      if(powerSwimWeight>0&&!current.mesh.darkNormalPrototype060()&&!current.mesh.neutralFlyPrototype061())for(boolean left:new boolean[]{false,true}){var arm=pose(left?"arm_left":"arm_right");if(arm!=null)arm.x+=(left?.75f:-.75f)*walk*powerSwimWeight;}
     }
     if (body != null) { body.y += breath * .035f; body.sy += breath * .004f; }
     if (skull != null) { skull.y += breath * .02f; skull.rx += breath * .006f; }
@@ -599,7 +600,8 @@ public final class OfficialChaoRig {
     heroNormalSelection057=HeroNormalAppearance057.sample(state).enabled();
     neutralSwimSelection059=NeutralSwimAppearance059.sample(state).enabled();
     darkNormalSelection060=DarkNormalAppearance060.sample(state).enabled();
-    prototypeSelection=darkNormalSelection060||neutralSwimSelection059||heroNormalSelection057||neutralSelection056||HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
+    neutralFlySelection061=NeutralFlyAppearance061.sample(state).enabled();
+    prototypeSelection=neutralFlySelection061||darkNormalSelection060||neutralSwimSelection059||heroNormalSelection057||neutralSelection056||HeroRunAppearance052.sample(state).enabled();prototypeOwnerKey=model;
     select(model,true);meshDevelopment(state);
   }
 
@@ -607,14 +609,16 @@ public final class OfficialChaoRig {
     adultPose=state.adult;
     var neutralSwim=NeutralSwimAppearance059.sample(state);
     var darkNormal=DarkNormalAppearance060.sample(state);
+    var neutralFly=NeutralFlyAppearance061.sample(state);
     // Scoped full-head profiles follow their actual current-bar Power anatomy,
     // including reductions; legacy paths keep their existing gait input.
-    powerSwimWeight=darkNormal.enabled()?Math.max(0,darkNormal.runPower())*darkNormal.maturity()
+    powerSwimWeight=neutralFly.enabled()?Math.max(0,neutralFly.runPower())*neutralFly.maturity()
+        :darkNormal.enabled()?Math.max(0,darkNormal.runPower())*darkNormal.maturity()
         :neutralSwim.enabled()?Math.max(0,neutralSwim.runPower())*neutralSwim.maturity()
         :state.adult&&"normal".equals(state.character)&&state.primaryType==ChaoState.SWIM_TYPE?Mth.clamp(state.runPower,0,1)*state.gradualVisualStrength():0;
-    // These scoped Swim/Dark Normal profiles retain the full original head even at zero Power.
+    // These scoped first-type profiles retain the full original head even at zero Power.
     // Keep its walking palms clear independently of reversible specialization.
-    broadWalkHead=darkNormal.enabled()||neutralSwim.enabled()||state.immortal||"tails".equals(state.character)||state.adult&&"normal".equals(state.character)&&state.align<=-.5f&&state.primaryType==ChaoState.POWER_TYPE;
+    broadWalkHead=neutralFly.enabled()||darkNormal.enabled()||neutralSwim.enabled()||state.immortal||"tails".equals(state.character)||state.adult&&"normal".equals(state.character)&&state.align<=-.5f&&state.primaryType==ChaoState.POWER_TYPE;
     boolean develop=state.adult && !state.immortal
         && (state.character==null||state.character.equals("normal"));
     boolean child=!state.adult && !state.immortal && (state.character==null||state.character.equals("normal"));
@@ -628,6 +632,7 @@ public final class OfficialChaoRig {
     if(current.mesh.heroNormalPrototype057())current.mesh.heroNormalDevelopment(HeroNormalAppearance057.sample(state));
     if(current.mesh.neutralSwimPrototype059())current.mesh.neutralSwimDevelopment(neutralSwim);
     if(current.mesh.darkNormalPrototype060())current.mesh.darkNormalDevelopment(darkNormal);
+    if(current.mesh.neutralFlyPrototype061())current.mesh.neutralFlyDevelopment(neutralFly);
   }
 
   /** Reversible secondary anatomy is blended independently from biological age. */

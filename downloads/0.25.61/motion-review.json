@@ -1,0 +1,174 @@
+{
+  "movie_sha256": "508f91b74ac153f1d3dc5d180c6f52aa41d58b562af152cd18ada6206770ef35",
+  "scope": "Twelve actual decoded frames at0,6,...66s; uniformcrop/resize, nofullinteractiveplaybackclaim",
+  "reviewed_frames": [
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-01.png",
+      "sha256": "9c7d40eaa530829cf574ddc2435758af49b0315c5991228b8fe5af6983792fee",
+      "requested_seconds": 0,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-02.png",
+      "sha256": "4ab4f010b43ae231834bf1439514e72160f106ac00a00d092dd2292166fbdbd3",
+      "requested_seconds": 6,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-03.png",
+      "sha256": "c3f4fea9d54328eb6fa12580d7787377d0c30076e8bc0158b9635e941a493f3b",
+      "requested_seconds": 12,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-04.png",
+      "sha256": "13ee5746308e993517f5b652b330a5387a393d2f962f23568b0f80751472dbc1",
+      "requested_seconds": 18,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-05.png",
+      "sha256": "2e80d48d92ab62ab8fec6c19a8768ea0e4fcd1bed9bb31d609514a91664bf6a0",
+      "requested_seconds": 24,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-06.png",
+      "sha256": "03ceca0737cc26093698da9b20ee8747daf3ce3fe76a8f0a9f83bdfe4554cced",
+      "requested_seconds": 30,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-07.png",
+      "sha256": "e6fd45786a8bc7f72fcbeb8473407456a532589d1da42b5bb054fdad75355e2b",
+      "requested_seconds": 36,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-08.png",
+      "sha256": "c2509091121f77d00cfe31653c8e9141489d42f2e9aad1c54a1871669df9bdc8",
+      "requested_seconds": 42,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-09.png",
+      "sha256": "b99363ecd18cffc9f08497720c384f839615866c09ef0def5eb8179676b5018a",
+      "requested_seconds": 48,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-10.png",
+      "sha256": "3cb0365bd948d6c2b28d36eb94f7b697fca0ed0f15a94887fe70f4fdf1359927",
+      "requested_seconds": 54,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-11.png",
+      "sha256": "50fd2c3c15d6eb34609d3a33e3ccdd55b422f89e409bd79215eb073efdef48cd",
+      "requested_seconds": 60,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-12.png",
+      "sha256": "41bfd65e2eba2374c0c68cdc1284e65083dc46ae9f50babadc5cf7d2a5581892",
+      "requested_seconds": 66,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    }
+  ],
+  "coordinator_reviewed": true,
+  "review_method": "Personally opened all twelve decoded frames in fly061-motion-review.png and full original decoded frames at0 and30seconds. No continuous/full interactive playback or listening claim.",
+  "observations": [
+    "Original head remains cubic while crest and wing shapes change during gains and reductions.",
+    "Sampled walk poses retain hands, feet, face, orb, three-ray wings and tail without visible detached geometry.",
+    "Normal20TPS capture with accelerated training fixture inputs; views occur in sequential camera phases.",
+    "Pair reversal begins two server ticks after raw endpoint, so the movie does not show a fully settled held endpoint. Separate static endpoint captures provide that view."
+  ],
+  "sheet": {
+    "path": "/workspace/.setup/fly061-motion-review.png",
+    "sha256": "035e6f4c944481f639d3ca812f28af940c86c505735999b5b7f2ff1eda27787d"
+  },
+  "full_resolution_reopens": [
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-01.png",
+      "sha256": "9c7d40eaa530829cf574ddc2435758af49b0315c5991228b8fe5af6983792fee",
+      "requested_seconds": 0,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    },
+    {
+      "path": "/workspace/.setup/fly061-motion-frame-06.png",
+      "sha256": "03ceca0737cc26093698da9b20ee8747daf3ce3fe76a8f0a9f83bdfe4554cced",
+      "requested_seconds": 30,
+      "crop": [
+        420,
+        220,
+        1020,
+        820
+      ]
+    }
+  ]
+}

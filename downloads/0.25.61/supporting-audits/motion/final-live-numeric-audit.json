@@ -1,0 +1,1537 @@
+{
+  "scope": "Read-only final .61 client motion and literal encoded-state audit. Production files and images unchanged. Numeric state and logs do not replace visual review.",
+  "source_log": "/workspace/.setup/fly061-client-final.log",
+  "source_log_sha256": "6e9265dbedc2fe814d8b49d241b50dda2b47118ff479635185f5a91d6711c723",
+  "literal_capture_hashes_checked": 590,
+  "world_png_hashes": 574,
+  "ui_png_hashes": 16,
+  "hash_mismatches": [],
+  "total_original_png_files": 590,
+  "client_complete_line": "FLY061_VISUAL_COMPLETE requestedCases=67 renderedCases=67 skippedCases=0 start=0 limit=67 baseline=false captures=590 saved=590 epochMillis=1794535848037 normal20TPS=true audioListening=false output=/workspace/.setup/fly061-client-final",
+  "rows": [
+    {
+      "index": 52,
+      "case_epoch_millis": 1794535674385,
+      "name": "neutral_fly_balanced_walk",
+      "action": "balanced_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "sha256": "3b727f260dd569ca853873ec570da6c31d4222aa6b7c4321950a9a04038d2193",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535674816,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "6656172560625934123",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535677796
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "6656172560625934123",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535680792
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "6656172560625934123",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535683777
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "6656172560625934123",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535686799
+        }
+      ],
+      "native_epoch_millis": 1794535686773,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "sha256": "1e48f5d672dd9528f60fb1919c61a91673b5d666bd8e7fc5df9903c37048ada6",
+        "ageTicks": 240,
+        "adultAgeTicks": 240,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 8.357523957569173,
+      "render_epoch_millis": 1794535686802,
+      "angles": 3,
+      "worldFrames": 369,
+      "actorFrames": 370,
+      "captures": 20,
+      "movingFrames": 350,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 11.957,
+      "observed_ticks_per_second": 20.07192439575144,
+      "logged_capture_count": 20,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true
+    },
+    {
+      "index": 53,
+      "case_epoch_millis": 1794535686804,
+      "name": "neutral_fly_run_running",
+      "action": "run_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "sha256": "57367a30da83649593cfda320a3c28e294cf6f9ade5fe9de5ee9d47555724684",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          4960,
+          4000,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 0
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535687200,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-1452980277862078011",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535690184
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-1452980277862078011",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535693185
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-1452980277862078011",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535696201
+        }
+      ],
+      "native_epoch_millis": 1794535699172,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "sha256": "75a4a653de50e719296d2d70ee5a0cafeaf61766b7d20db0d27c59d46e21201d",
+        "ageTicks": 240,
+        "adultAgeTicks": 240,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          4960,
+          4000,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 0
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 18.642419881114918,
+      "render_epoch_millis": 1794535699181,
+      "angles": 3,
+      "worldFrames": 367,
+      "actorFrames": 367,
+      "captures": 20,
+      "movingFrames": 349,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 11.972,
+      "observed_ticks_per_second": 20.046775810223856,
+      "logged_capture_count": 20,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true
+    },
+    {
+      "index": 54,
+      "case_epoch_millis": 1794535699212,
+      "name": "neutral_fly_fly_water_motion",
+      "action": "water_swim",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "sha256": "0fab41c8821e5aadf7360621a00aebaf0659edf73b7e766cccd61d5a22ef2813",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          4000,
+          4960,
+          0,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535699692,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "3978443869047083557",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535702692
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "3978443869047083557",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535705674
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "3978443869047083557",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535708688
+        }
+      ],
+      "native_epoch_millis": 1794535711673,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "sha256": "c2171413c9fe1eb87c8476772c9ff839e6a76c4d25a9b40195a8e8594bf0e60f",
+        "ageTicks": 240,
+        "adultAgeTicks": 240,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          4000,
+          4960,
+          0,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 0.0,
+      "render_epoch_millis": 1794535711675,
+      "angles": 3,
+      "worldFrames": 366,
+      "actorFrames": 366,
+      "captures": 20,
+      "movingFrames": 0,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 11.981,
+      "observed_ticks_per_second": 20.031716885068025,
+      "logged_capture_count": 20,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true
+    },
+    {
+      "index": 55,
+      "case_epoch_millis": 1794535711686,
+      "name": "neutral_fly_run_fly_broom",
+      "action": "broom",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "sha256": "d2bad974354e1545dbd9497881d4f3e2b388c4a1992baae5081038570f908ed5",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535712118,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "4799404220117352779",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535715089
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "4799404220117352779",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535718086
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "4799404220117352779",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535721076
+        }
+      ],
+      "native_epoch_millis": 1794535721072,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "sha256": "6974b8512881261352001bff721cdf8443669954c2f818c466ee125311dce73a",
+        "ageTicks": 20,
+        "adultAgeTicks": 20,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 180,
+      "walked_blocks": 0.0,
+      "render_epoch_millis": 1794535721082,
+      "angles": 3,
+      "worldFrames": 279,
+      "actorFrames": 280,
+      "captures": 15,
+      "movingFrames": 0,
+      "toyContacts": 382,
+      "maxToyError": 2.556103e-07,
+      "native_wall_seconds": 8.954,
+      "observed_ticks_per_second": 20.102747375474646,
+      "logged_capture_count": 15,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true
+    },
+    {
+      "index": 56,
+      "case_epoch_millis": 1794535721087,
+      "name": "neutral_fly_power_fly_book",
+      "action": "picture_book",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "sha256": "a7002764e5930012591d7fda5d5e7e5430cea8e0c51a3b1a0f81025fa5eb0afb",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          0,
+          960,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 1,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535721483,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "6175038245057896545",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535724497
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "6175038245057896545",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535727477
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "6175038245057896545",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535730483
+        }
+      ],
+      "native_epoch_millis": 1794535730472,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "sha256": "323c4cc0beff941d842a52ef98f2a991b7fbf81038af48f9d183481c5e773c37",
+        "ageTicks": 20,
+        "adultAgeTicks": 20,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          0,
+          960,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 1,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 180,
+      "walked_blocks": 0.0,
+      "render_epoch_millis": 1794535730490,
+      "angles": 3,
+      "worldFrames": 279,
+      "actorFrames": 279,
+      "captures": 15,
+      "movingFrames": 0,
+      "toyContacts": 380,
+      "maxToyError": 3.625609e-07,
+      "native_wall_seconds": 8.989,
+      "observed_ticks_per_second": 20.02447435754811,
+      "logged_capture_count": 15,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true
+    },
+    {
+      "index": 57,
+      "case_epoch_millis": 1794535730501,
+      "name": "neutral_fly_run_fly_equipped_flying",
+      "action": "carry_flying",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "sha256": "d2bad974354e1545dbd9497881d4f3e2b388c4a1992baae5081038570f908ed5",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": true,
+      "armed_epoch_millis": 1794535730960,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "4799404220117352779",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535733947
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "4799404220117352779",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535736944
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "4799404220117352779",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535739936
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "4799404220117352779",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -1.0,
+            "swimFly": 1.0
+          },
+          "epoch_millis": 1794535742935
+        }
+      ],
+      "native_epoch_millis": 1794535742922,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "sha256": "d2bad974354e1545dbd9497881d4f3e2b388c4a1992baae5081038570f908ed5",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          960,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 240,
+      "walked_blocks": 0.0,
+      "render_epoch_millis": 1794535742943,
+      "angles": 3,
+      "worldFrames": 364,
+      "actorFrames": 364,
+      "captures": 20,
+      "movingFrames": 16,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 11.962,
+      "observed_ticks_per_second": 20.063534525998996,
+      "logged_capture_count": 20,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true
+    },
+    {
+      "index": 58,
+      "case_epoch_millis": 1794535742946,
+      "name": "neutral_fly_run_gain_walk",
+      "action": "gain_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "sha256": "3b727f260dd569ca853873ec570da6c31d4222aa6b7c4321950a9a04038d2193",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535743345,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "2115889011091796257",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.076140344,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535746344
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "6140323164487749305",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.25235787,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535749335
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-829643869991753597",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.46900547,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535752326
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "7691545664961403395",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.70548546,
+            "swimFly": 0.0
+          },
+          "epoch_millis": 1794535755323
+        }
+      ],
+      "native_epoch_millis": 1794535757323,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": -1.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "sha256": "3872bcb02af04ffe6806591a37874eb3bb03e0faa727db6476667ab1192446b0",
+        "ageTicks": 280,
+        "adultAgeTicks": 280,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          2160,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": -1,
+          "swimFly": 0
+        }
+      },
+      "elapsed_ticks": 280,
+      "walked_blocks": 10.501541776927409,
+      "render_epoch_millis": 1794535757354,
+      "angles": 3,
+      "worldFrames": 419,
+      "actorFrames": 419,
+      "captures": 23,
+      "movingFrames": 399,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 13.978,
+      "observed_ticks_per_second": 20.031478036915153,
+      "logged_capture_count": 23,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axis_matches_native": true
+    },
+    {
+      "index": 59,
+      "case_epoch_millis": 1794535757360,
+      "name": "neutral_fly_power_fly_gain_walk",
+      "action": "gain_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "sha256": "3b727f260dd569ca853873ec570da6c31d4222aa6b7c4321950a9a04038d2193",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535757758,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-754728968318884645",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.07739455,
+            "swimFly": 0.07739455
+          },
+          "epoch_millis": 1794535760747
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "8163408007007498087",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.25278065,
+            "swimFly": 0.25278065
+          },
+          "epoch_millis": 1794535763741
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "2723429337336110485",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.47150138,
+            "swimFly": 0.47150138
+          },
+          "epoch_millis": 1794535766743
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "7898121864273257413",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.70990515,
+            "swimFly": 0.70990515
+          },
+          "epoch_millis": 1794535769754
+        }
+      ],
+      "native_epoch_millis": 1794535771722,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 1.0,
+        "swimFly": 1.0
+      },
+      "final_state": {
+        "sha256": "e35bc86b0692013dadc534d8245d3a70b85003777b7c3d56e76714c3acf7ef85",
+        "ageTicks": 280,
+        "adultAgeTicks": 280,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          1200,
+          2160,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 1,
+          "swimFly": 1
+        }
+      },
+      "elapsed_ticks": 280,
+      "walked_blocks": 9.769283629277412,
+      "render_epoch_millis": 1794535771742,
+      "angles": 3,
+      "worldFrames": 419,
+      "actorFrames": 419,
+      "captures": 23,
+      "movingFrames": 401,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 13.964,
+      "observed_ticks_per_second": 20.051561157261528,
+      "logged_capture_count": 23,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axis_matches_native": true
+    },
+    {
+      "index": 60,
+      "case_epoch_millis": 1794535771748,
+      "name": "neutral_fly_fly_loss_walk",
+      "action": "loss_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 1.0
+      },
+      "initial_state": {
+        "sha256": "4992e4c85d70c134bec7cda52deb406d4f7740b21f3a622523b570b539eed30e",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          960,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 1
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535772156,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "2410807263372461447",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.9235502
+          },
+          "epoch_millis": 1794535775135
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "6821346771433911423",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.7435765
+          },
+          "epoch_millis": 1794535778140
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "1451687792544253007",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.5279102
+          },
+          "epoch_millis": 1794535781140
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "-5357750939174929899",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": 0.0,
+            "swimFly": 0.29187453
+          },
+          "epoch_millis": 1794535784143
+        }
+      ],
+      "native_epoch_millis": 1794535786122,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "sha256": "e8aebce4f3f92ff5d6eca6a94c5ace679bdd0f67f27626afe43457f87ceb12a6",
+        "ageTicks": 280,
+        "adultAgeTicks": 280,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0
+        }
+      },
+      "elapsed_ticks": 280,
+      "walked_blocks": 9.769283629277412,
+      "render_epoch_millis": 1794535786144,
+      "angles": 3,
+      "worldFrames": 415,
+      "actorFrames": 415,
+      "captures": 23,
+      "movingFrames": 397,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 13.966,
+      "observed_ticks_per_second": 20.04868967492482,
+      "logged_capture_count": 23,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axis_matches_native": true
+    },
+    {
+      "index": 61,
+      "case_epoch_millis": 1794535786155,
+      "name": "neutral_fly_run_fly_pair_gain_reverse_walk",
+      "action": "pair_walk",
+      "initial_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "initial_state": {
+        "sha256": "3b727f260dd569ca853873ec570da6c31d4222aa6b7c4321950a9a04038d2193",
+        "ageTicks": 0,
+        "adultAgeTicks": 0,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535786583,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": true,
+      "render_samples": [
+        {
+          "tick": 60,
+          "shapeSignature": "-4861392417710472461",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.0850463,
+            "swimFly": 0.0850463
+          },
+          "epoch_millis": 1794535789612
+        },
+        {
+          "tick": 120,
+          "shapeSignature": "-5716356908206166931",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.26213807,
+            "swimFly": 0.26213807
+          },
+          "epoch_millis": 1794535792581
+        },
+        {
+          "tick": 180,
+          "shapeSignature": "-2623353560721677809",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.4751742,
+            "swimFly": 0.4751742
+          },
+          "epoch_millis": 1794535795578
+        },
+        {
+          "tick": 240,
+          "shapeSignature": "1275472180151963681",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.7099597,
+            "swimFly": 0.7099597
+          },
+          "epoch_millis": 1794535798602
+        },
+        {
+          "tick": 300,
+          "shapeSignature": "-3443767393520032891",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.8015211,
+            "swimFly": 0.8015211
+          },
+          "epoch_millis": 1794535801579
+        },
+        {
+          "tick": 360,
+          "shapeSignature": "-3610192258211718177",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.6941646,
+            "swimFly": 0.6941646
+          },
+          "epoch_millis": 1794535804603
+        },
+        {
+          "tick": 420,
+          "shapeSignature": "6775712223944164567",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.5010752,
+            "swimFly": 0.5010752
+          },
+          "epoch_millis": 1794535807604
+        },
+        {
+          "tick": 480,
+          "shapeSignature": "-4752707263865635737",
+          "sample": {
+            "enabled": true,
+            "maturity": 1.0,
+            "runPower": -0.2712957,
+            "swimFly": 0.2712957
+          },
+          "epoch_millis": 1794535810603
+        }
+      ],
+      "pair_peak_raw": {
+        "tick": 240,
+        "firstType": 2,
+        "sample": {
+          "enabled": true,
+          "maturity": 1.0,
+          "runPower": -1.0,
+          "swimFly": 1.0
+        },
+        "epoch_millis": 1794535798573
+      },
+      "native_epoch_millis": 1794535812572,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 1.0,
+        "runPower": 0.0,
+        "swimFly": 0.0
+      },
+      "final_state": {
+        "sha256": "90d4e4117772fea64c6daac27b5b7778ce0c7bc066780fb07f94c98f7ebc006d",
+        "ageTicks": 520,
+        "adultAgeTicks": 520,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 1.2,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          0,
+          1200,
+          1200,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0
+        }
+      },
+      "elapsed_ticks": 520,
+      "walked_blocks": 19.30716160326768,
+      "render_epoch_millis": 1794535812593,
+      "angles": 3,
+      "worldFrames": 744,
+      "actorFrames": 744,
+      "captures": 43,
+      "movingFrames": 726,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 25.989,
+      "observed_ticks_per_second": 20.0084651198584,
+      "logged_capture_count": 43,
+      "biological_maturity_unchanged": true,
+      "locked_identity_unchanged": true,
+      "final_raw_axis_matches_native": true
+    },
+    {
+      "index": 62,
+      "case_epoch_millis": 1794535812601,
+      "name": "neutral_fly_actual_first_evolution",
+      "action": "evolution",
+      "initial_sample": null,
+      "initial_state": {
+        "sha256": "12a3ea525ed4d5bbb91735bfcb114ec2587cbe8572a3e356e5a6f52a7b97abe0",
+        "ageTicks": 215988,
+        "adultAgeTicks": 0,
+        "adult": false,
+        "dead": false,
+        "primaryType": 0,
+        "cocoonTicks": 0,
+        "gradualStrength": 0.9900000095367432,
+        "firstLocked": false,
+        "firstAlignment": 0.0,
+        "firstType": 0,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          480,
+          0,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.5
+        }
+      },
+      "actualAccessories": false,
+      "armed_epoch_millis": 1794535813048,
+      "normal20TPS": true,
+      "fixtureTrainingAccelerated": false,
+      "native_epoch_millis": 1794535828024,
+      "native_sample": {
+        "enabled": true,
+        "maturity": 8.487654e-05,
+        "runPower": 0.0,
+        "swimFly": 0.5
+      },
+      "final_state": {
+        "sha256": "7709b30e9d7bdfcb1813611e217778ef33aae1b6ea43c59cf4a350bc9b6ee680",
+        "ageTicks": 216088,
+        "adultAgeTicks": 88,
+        "adult": true,
+        "dead": false,
+        "primaryType": 2,
+        "cocoonTicks": 0,
+        "gradualStrength": 0.00010185185185185208,
+        "firstLocked": true,
+        "firstAlignment": 0.0,
+        "firstType": 2,
+        "lineage_halves": [
+          1279803727,
+          1195463236
+        ],
+        "currentBars": [
+          0,
+          480,
+          0,
+          0,
+          0
+        ],
+        "rawAxis": {
+          "runPower": 0.0,
+          "swimFly": 0.5
+        }
+      },
+      "elapsed_ticks": 300,
+      "walked_blocks": 0.0,
+      "render_samples": [
+        {
+          "tick": 300,
+          "shapeSignature": "4101552122920175775",
+          "sample": {
+            "enabled": true,
+            "maturity": 7.7160485e-06,
+            "runPower": 0.0,
+            "swimFly": 0.5
+          },
+          "epoch_millis": 1794535828025
+        }
+      ],
+      "render_epoch_millis": 1794535828060,
+      "angles": 3,
+      "worldFrames": 422,
+      "actorFrames": 422,
+      "captures": 25,
+      "movingFrames": 0,
+      "toyContacts": 0,
+      "maxToyError": 0.0,
+      "native_wall_seconds": 14.976,
+      "observed_ticks_per_second": 20.03205128205128,
+      "logged_capture_count": 25,
+      "actual_first_evolution_completed": true
+    }
+  ],
+  "limits": [
+    "Case54 has actual stationary in-water SWIM animation, walked=0; no autonomous swimming travel or gliding claim.",
+    "Cases58..61 accelerate training/edit schedules while native movement and animation retain20TPS. Biological visual maturity and locked first identity stay fixed; chronological age still advances normally.",
+    "Raw pair endpoint(-1,+1) is logged at240; rendered sample then is approximately(-.710,+.710), and reversal starts immediately. This does not show a settled visible full pair peak.",
+    "Gains/loss end with40ticks after input schedule stops; last dedicated60tick render traces are240/480. Final PNGs and successful render completion provide visual evidence, but no extra final rendered-axis trace was logged.",
+    "Visible reaction faces are not established by this motion audit; the12 dedicated production-emitter frames are separate numerical evidence.",
+    "Actual carrying is upright Creative flight; player occlusion limits the front view. No broad skin/armor/elytra coverage."
+  ]
+}

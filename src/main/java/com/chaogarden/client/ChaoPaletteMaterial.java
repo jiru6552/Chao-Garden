@@ -55,7 +55,8 @@ public final class ChaoPaletteMaterial {
         if(protectedMarker(source.getPath(),uvLayout,state.adult,x,y,image.getWidth(),image.getHeight()))continue;
         int reserved=prototypeReservedKind(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight());
         boolean body=(skin.getPixelRGBA(mx,my)>>>24)!=0||(reserved&1)!=0;
-        boolean wing=state.cosmeticWings&&(wings.getPixelRGBA(mx,my)>>>24)!=0;
+        boolean wing=state.cosmeticWings&&((wings.getPixelRGBA(mx,my)>>>24)!=0
+            ||NeutralFlyRegionPaint061.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight()));
         boolean accent=brush!=0&&((accents.getPixelRGBA(mx,my)>>>24)!=0||(reserved&2)!=0);
         int rgba=image.getPixelRGBA(x,y);if((rgba>>>24)==0||!body&&!wing&&!accent)continue;
         int red=rgba&255,green=(rgba>>>8)&255,blue=(rgba>>>16)&255;
@@ -82,12 +83,15 @@ public final class ChaoPaletteMaterial {
   /** Prototype-only UV additions. Overlay/ordinary materials retain their exact
    * old masks; protected eye texels are outside every listed rectangle. */
   static boolean protectedMarker(String sourcePath,String layout,boolean adult,int x,int y,int width,int height) {
-    return DarkNormalRegionPaint060.paletteProtected(sourcePath,layout,x,y,width,height)
+    return NeutralFlyRegionPaint061.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||DarkNormalRegionPaint060.paletteProtected(sourcePath,layout,x,y,width,height)
         ||NeutralSwimRegionPaint059.paletteProtected(sourcePath,layout,x,y,width,height)
         ||HeroNormalRegionPaint057.paletteProtected(sourcePath,layout,x,y,width,height)
         ||HeroRunMarkerPaint056.paletteProtected(sourcePath,layout,adult,x,y,width,height);
   }
   static int prototypeReservedKind(String sourcePath,String layout,int x,int y,int width,int height) {
+    if(sourcePath.startsWith("dynamic/neutral_fly061/")&&layout.equals("baby")&&width>0&&height>0)
+      return NeutralFlyRegionPaint061.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/dark_normal060/")&&layout.equals("baby")&&width>0&&height>0)
       return DarkNormalRegionPaint060.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/neutral_swim059/")&&layout.equals("baby")&&width>0&&height>0)

@@ -5,6 +5,12 @@
 - Let Fly counter later Swim growth back to balanced Swim-first; retain independent maturity and reversible current-training influences without new save fields.
 - Document independently operated viewer references, runtime checks and first-pass approximations in [the family report](docs/NEUTRAL_SWIM_02559.md).
 
+## 0.25.61 — Neutral / Fly-first morphology
+
+- Adds six compatible Fly-first adult forms using separate blocky crests and broad wing rays around the original fixed head and shared rig.
+- Keeps locked alignment/first type and independent maturity/current opposing training; preserves previous Neutral, Hero and Dark models and saved data.
+- Includes live viewer comparisons, dedicated policy/geometry/material/server checks and actual client captures. See [the full report](docs/NEUTRAL_FLY_02561.md) for verified scope and approximations.
+
 ## 0.25.60 — Dark / Neutral-first morphology
 
 - Adds all nine Dark/Neutral-first adult combinations using the original fixed head, pixel face and shared animation rig.

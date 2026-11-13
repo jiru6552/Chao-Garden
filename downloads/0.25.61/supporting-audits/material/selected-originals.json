@@ -1,0 +1,586 @@
+{
+  "kind": "Read-only final material audit; originals from final cohort only",
+  "jar_path": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.61.jar",
+  "jar_sha256": "2618d3ed5326621d782e3a396fe68edb25b03c8f657206407641c4d840c02060",
+  "packaged_model_sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+  "log_path": "/workspace/.setup/fly061-client-final.log",
+  "selected_originals": [
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-00-neutral_fly_normal_age0-front-t000-f0016.png",
+      "sha256": "aa206d87546473a6514e552a9e77a238ab6e04d2c93312962ba8dff264271733",
+      "case": 0,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:03:33] [IO-Worker-2/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-00-neutral_fly_normal_age0-front-t000-f0016.png case=0 angle=front tick=0 sha256=aa206d87546473a6514e552a9e77a238ab6e04d2c93312962ba8dff264271733 wallNanos=32731217040095 epochMillis=1794535413676"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-00-neutral_fly_normal_age0-back-t000-f0085.png",
+      "sha256": "ae8b58460b37b375a61cbdfef74e1265a4996c8468aa76f694cea46df4b08207",
+      "case": 0,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:03:35] [IO-Worker-2/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-00-neutral_fly_normal_age0-back-t000-f0085.png case=0 angle=back tick=0 sha256=ae8b58460b37b375a61cbdfef74e1265a4996c8468aa76f694cea46df4b08207 wallNanos=32733516815617 epochMillis=1794535415976"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-01-neutral_fly_normal_age50-front-t000-f0016.png",
+      "sha256": "42baa17f173cb3a0be4529d55e8e741894be81279e6304668c9c12b0b73bc478",
+      "case": 1,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:03:38] [IO-Worker-2/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-01-neutral_fly_normal_age50-front-t000-f0016.png case=1 angle=front tick=0 sha256=42baa17f173cb3a0be4529d55e8e741894be81279e6304668c9c12b0b73bc478 wallNanos=32735868645793 epochMillis=1794535418328"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-01-neutral_fly_normal_age50-back-t000-f0085.png",
+      "sha256": "b7e53685a8384e713dfe74d63925acf58b8dd63444ae97bebbdb51f0a5d52f39",
+      "case": 1,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:03:40] [IO-Worker-2/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-01-neutral_fly_normal_age50-back-t000-f0085.png case=1 angle=back tick=0 sha256=b7e53685a8384e713dfe74d63925acf58b8dd63444ae97bebbdb51f0a5d52f39 wallNanos=32738239184357 epochMillis=1794535420698"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-02-neutral_fly_normal_age100-front-t000-f0016.png",
+      "sha256": "18bef285ff7e279ce9469f5fec0ace5114b30d2650068d50cb24e7f3bd38bb79",
+      "case": 2,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:03:43] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-02-neutral_fly_normal_age100-front-t000-f0016.png case=2 angle=front tick=0 sha256=18bef285ff7e279ce9469f5fec0ace5114b30d2650068d50cb24e7f3bd38bb79 wallNanos=32740646263294 epochMillis=1794535423105"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-02-neutral_fly_normal_age100-back-t000-f0085.png",
+      "sha256": "d23d47a77355c985cb3ef3992a9ed22eeb3a0914cc5b79065e30bd51f7dd174e",
+      "case": 2,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:03:45] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-02-neutral_fly_normal_age100-back-t000-f0085.png case=2 angle=back tick=0 sha256=d23d47a77355c985cb3ef3992a9ed22eeb3a0914cc5b79065e30bd51f7dd174e wallNanos=32743042632596 epochMillis=1794535425502"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-03-neutral_fly_run_age0-front-t000-f0016.png",
+      "sha256": "675fb9a124cc8609f097e68e76aed4772ba89b1409c68edc8752c8476898b373",
+      "case": 3,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:03:47] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-03-neutral_fly_run_age0-front-t000-f0016.png case=3 angle=front tick=0 sha256=675fb9a124cc8609f097e68e76aed4772ba89b1409c68edc8752c8476898b373 wallNanos=32745364391750 epochMillis=1794535427823"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-03-neutral_fly_run_age0-back-t000-f0085.png",
+      "sha256": "fa4af4134ebed26e43ae46da56ad06ecf1e8a8e5a6a7fde694d9a5018b781550",
+      "case": 3,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:03:50] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-03-neutral_fly_run_age0-back-t000-f0085.png case=3 angle=back tick=0 sha256=fa4af4134ebed26e43ae46da56ad06ecf1e8a8e5a6a7fde694d9a5018b781550 wallNanos=32747685767839 epochMillis=1794535430145"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-04-neutral_fly_run_age50-front-t000-f0016.png",
+      "sha256": "c799b6ed33e50f3250e7f61f370b0f1acb711356f2f2c1f73a992eeee4ab3ca1",
+      "case": 4,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:03:52] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-04-neutral_fly_run_age50-front-t000-f0016.png case=4 angle=front tick=0 sha256=c799b6ed33e50f3250e7f61f370b0f1acb711356f2f2c1f73a992eeee4ab3ca1 wallNanos=32750027453712 epochMillis=1794535432486"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-04-neutral_fly_run_age50-back-t000-f0085.png",
+      "sha256": "2490cfbc1ed94b5958b6ebb17ea31f0f5dd16aa89d694e00916b228de6ddd83e",
+      "case": 4,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:03:55] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-04-neutral_fly_run_age50-back-t000-f0085.png case=4 angle=back tick=0 sha256=2490cfbc1ed94b5958b6ebb17ea31f0f5dd16aa89d694e00916b228de6ddd83e wallNanos=32752624156294 epochMillis=1794535435083"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-05-neutral_fly_run_age100-front-t000-f0016.png",
+      "sha256": "984506be0a7b2011a4098ebd8c03274d6c559bd3d9763ff01ef84d474c754017",
+      "case": 5,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:03:57] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-05-neutral_fly_run_age100-front-t000-f0016.png case=5 angle=front tick=0 sha256=984506be0a7b2011a4098ebd8c03274d6c559bd3d9763ff01ef84d474c754017 wallNanos=32754937456611 epochMillis=1794535437396"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-05-neutral_fly_run_age100-back-t000-f0085.png",
+      "sha256": "948f5a10bd0797304a9a06845af9fd9363cb7ca1ae4b0bd5216c578993c0e5e0",
+      "case": 5,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:03:59] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-05-neutral_fly_run_age100-back-t000-f0085.png case=5 angle=back tick=0 sha256=948f5a10bd0797304a9a06845af9fd9363cb7ca1ae4b0bd5216c578993c0e5e0 wallNanos=32757392114260 epochMillis=1794535439851"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-06-neutral_fly_power_age0-front-t000-f0016.png",
+      "sha256": "b30b653fb1d7b2eac3f50c4ef0acd25fa916fb8a88293d43f10b48f5dcbbc90c",
+      "case": 6,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:02] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-06-neutral_fly_power_age0-front-t000-f0016.png case=6 angle=front tick=0 sha256=b30b653fb1d7b2eac3f50c4ef0acd25fa916fb8a88293d43f10b48f5dcbbc90c wallNanos=32759838885861 epochMillis=1794535442298"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-06-neutral_fly_power_age0-back-t000-f0085.png",
+      "sha256": "3fec2d42bf53e522dff28c55c268ed3b6610e7b1fefdae64f06f1ecd1f951486",
+      "case": 6,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:04] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-06-neutral_fly_power_age0-back-t000-f0085.png case=6 angle=back tick=0 sha256=3fec2d42bf53e522dff28c55c268ed3b6610e7b1fefdae64f06f1ecd1f951486 wallNanos=32762161884021 epochMillis=1794535444621"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-07-neutral_fly_power_age50-front-t000-f0016.png",
+      "sha256": "9285ec6b592dfc5ccb7f8eb983e0582b5890d01f4b5a256c3a9b4f78a1eb1081",
+      "case": 7,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:06] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-07-neutral_fly_power_age50-front-t000-f0016.png case=7 angle=front tick=0 sha256=9285ec6b592dfc5ccb7f8eb983e0582b5890d01f4b5a256c3a9b4f78a1eb1081 wallNanos=32764499758287 epochMillis=1794535446959"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-07-neutral_fly_power_age50-back-t000-f0085.png",
+      "sha256": "6cf7aff9bb6cf8e60527f981929bb62d6103c8932e3ee5aa7be4bf8f254dfa15",
+      "case": 7,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:09] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-07-neutral_fly_power_age50-back-t000-f0085.png case=7 angle=back tick=0 sha256=6cf7aff9bb6cf8e60527f981929bb62d6103c8932e3ee5aa7be4bf8f254dfa15 wallNanos=32766811503086 epochMillis=1794535449270"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-08-neutral_fly_power_age100-front-t000-f0016.png",
+      "sha256": "b38e1105101186cd193d93421c69cdcc8e899a3b1e1b8dc3661f46d3bb8c509f",
+      "case": 8,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:11] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-08-neutral_fly_power_age100-front-t000-f0016.png case=8 angle=front tick=0 sha256=b38e1105101186cd193d93421c69cdcc8e899a3b1e1b8dc3661f46d3bb8c509f wallNanos=32769275844277 epochMillis=1794535451735"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-08-neutral_fly_power_age100-back-t000-f0085.png",
+      "sha256": "8eed7fb428b296f51d76d2b035dc63ca64be9252bf35fd5918516778dfc9eb94",
+      "case": 8,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:14] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-08-neutral_fly_power_age100-back-t000-f0085.png case=8 angle=back tick=0 sha256=8eed7fb428b296f51d76d2b035dc63ca64be9252bf35fd5918516778dfc9eb94 wallNanos=32771563946840 epochMillis=1794535454023"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-09-neutral_fly_fly_age0-front-t000-f0016.png",
+      "sha256": "e9ca50b491beb27af0fd83eba2385ec49f2f39deebd3659156052a9a09a06d2d",
+      "case": 9,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:16] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-09-neutral_fly_fly_age0-front-t000-f0016.png case=9 angle=front tick=0 sha256=e9ca50b491beb27af0fd83eba2385ec49f2f39deebd3659156052a9a09a06d2d wallNanos=32773944429707 epochMillis=1794535456403"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-09-neutral_fly_fly_age0-back-t000-f0085.png",
+      "sha256": "bc2f3197ee9fefe30134bf2efd000039435ca0b46cda44f89a84cb9ae1af6cd4",
+      "case": 9,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:18] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-09-neutral_fly_fly_age0-back-t000-f0085.png case=9 angle=back tick=0 sha256=bc2f3197ee9fefe30134bf2efd000039435ca0b46cda44f89a84cb9ae1af6cd4 wallNanos=32776317235969 epochMillis=1794535458776"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-10-neutral_fly_fly_age50-front-t000-f0016.png",
+      "sha256": "1afb442b8765cc5cb4e8a393e44b2882b3a411d3ba38ce21267ec4d920483d62",
+      "case": 10,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:21] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-10-neutral_fly_fly_age50-front-t000-f0016.png case=10 angle=front tick=0 sha256=1afb442b8765cc5cb4e8a393e44b2882b3a411d3ba38ce21267ec4d920483d62 wallNanos=32778715139695 epochMillis=1794535461174"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-10-neutral_fly_fly_age50-back-t000-f0085.png",
+      "sha256": "fbfb0ca6d7c2f42dffe603c9707982bf7419ebebabf3eb46434911ac1fc92e44",
+      "case": 10,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:23] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-10-neutral_fly_fly_age50-back-t000-f0085.png case=10 angle=back tick=0 sha256=fbfb0ca6d7c2f42dffe603c9707982bf7419ebebabf3eb46434911ac1fc92e44 wallNanos=32781030479030 epochMillis=1794535463489"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-11-neutral_fly_fly_age100-front-t000-f0016.png",
+      "sha256": "9df93ab81de2309833426fa1b080c5eca60fdda6b4c4f11c89b737fa31074449",
+      "case": 11,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:25] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-11-neutral_fly_fly_age100-front-t000-f0016.png case=11 angle=front tick=0 sha256=9df93ab81de2309833426fa1b080c5eca60fdda6b4c4f11c89b737fa31074449 wallNanos=32783345721646 epochMillis=1794535465805"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-11-neutral_fly_fly_age100-back-t000-f0085.png",
+      "sha256": "7cd39fa3f6ca1cc6085e076bec0185ddc968b51c3c3ddc0bd56a7189a131e788",
+      "case": 11,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:28] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-11-neutral_fly_fly_age100-back-t000-f0085.png case=11 angle=back tick=0 sha256=7cd39fa3f6ca1cc6085e076bec0185ddc968b51c3c3ddc0bd56a7189a131e788 wallNanos=32785669687400 epochMillis=1794535468129"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-12-neutral_fly_run_fly_age0-front-t000-f0016.png",
+      "sha256": "5e86dab8d9d3f852a048fb0632959d1d75f07757f7355ef5befba7fa5e5f6432",
+      "case": 12,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:30] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-12-neutral_fly_run_fly_age0-front-t000-f0016.png case=12 angle=front tick=0 sha256=5e86dab8d9d3f852a048fb0632959d1d75f07757f7355ef5befba7fa5e5f6432 wallNanos=32788008750424 epochMillis=1794535470468"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-12-neutral_fly_run_fly_age0-back-t000-f0085.png",
+      "sha256": "240ed8b41256e2d9400853c76e5908c6b2f3c45cc8027018dd1bc4197e4ec421",
+      "case": 12,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:32] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-12-neutral_fly_run_fly_age0-back-t000-f0085.png case=12 angle=back tick=0 sha256=240ed8b41256e2d9400853c76e5908c6b2f3c45cc8027018dd1bc4197e4ec421 wallNanos=32790327798650 epochMillis=1794535472787"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-13-neutral_fly_run_fly_age50-front-t000-f0016.png",
+      "sha256": "b4f25bcbb55df74f65a1ca24fd53bbdda24ea095f7bda075aacd8e2f7cd046cc",
+      "case": 13,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:35] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-13-neutral_fly_run_fly_age50-front-t000-f0016.png case=13 angle=front tick=0 sha256=b4f25bcbb55df74f65a1ca24fd53bbdda24ea095f7bda075aacd8e2f7cd046cc wallNanos=32792651812585 epochMillis=1794535475111"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-13-neutral_fly_run_fly_age50-back-t000-f0085.png",
+      "sha256": "97e8ab35ba70d7fc1e27448b395b660c453b4674dc88aa6dd23129b34f072833",
+      "case": 13,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:37] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-13-neutral_fly_run_fly_age50-back-t000-f0085.png case=13 angle=back tick=0 sha256=97e8ab35ba70d7fc1e27448b395b660c453b4674dc88aa6dd23129b34f072833 wallNanos=32794956399951 epochMillis=1794535477415"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-14-neutral_fly_run_fly_age100-front-t000-f0016.png",
+      "sha256": "872163f82e05791efbf92a675cb422467f8f903e48784315aff13c847ec7fe49",
+      "case": 14,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:39] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-14-neutral_fly_run_fly_age100-front-t000-f0016.png case=14 angle=front tick=0 sha256=872163f82e05791efbf92a675cb422467f8f903e48784315aff13c847ec7fe49 wallNanos=32797297904355 epochMillis=1794535479757"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-14-neutral_fly_run_fly_age100-back-t000-f0085.png",
+      "sha256": "04b65683c0935e014749beebfafe49e0395a6a061b4d6b9cd46c0f5b7e4d2067",
+      "case": 14,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:42] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-14-neutral_fly_run_fly_age100-back-t000-f0085.png case=14 angle=back tick=0 sha256=04b65683c0935e014749beebfafe49e0395a6a061b4d6b9cd46c0f5b7e4d2067 wallNanos=32799623511202 epochMillis=1794535482082"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-15-neutral_fly_power_fly_age0-front-t000-f0016.png",
+      "sha256": "76859a3cae80a2a9155a93222cdf8e69c50335a0f2ee07bae40bd1c4c1dc30b4",
+      "case": 15,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:44] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-15-neutral_fly_power_fly_age0-front-t000-f0016.png case=15 angle=front tick=0 sha256=76859a3cae80a2a9155a93222cdf8e69c50335a0f2ee07bae40bd1c4c1dc30b4 wallNanos=32801963717773 epochMillis=1794535484423"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-15-neutral_fly_power_fly_age0-back-t000-f0085.png",
+      "sha256": "84cf107a8fc90b7a580341a2129883e452838ab9383a2f65376d8f21ae951a60",
+      "case": 15,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:46] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-15-neutral_fly_power_fly_age0-back-t000-f0085.png case=15 angle=back tick=0 sha256=84cf107a8fc90b7a580341a2129883e452838ab9383a2f65376d8f21ae951a60 wallNanos=32804382970720 epochMillis=1794535486842"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-16-neutral_fly_power_fly_age50-front-t000-f0016.png",
+      "sha256": "a6f42456d3762d811cca34b0ff0752b8a0c2e54de3546c897ca27c7a67527dfc",
+      "case": 16,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:49] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-16-neutral_fly_power_fly_age50-front-t000-f0016.png case=16 angle=front tick=0 sha256=a6f42456d3762d811cca34b0ff0752b8a0c2e54de3546c897ca27c7a67527dfc wallNanos=32806689055891 epochMillis=1794535489148"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-16-neutral_fly_power_fly_age50-back-t000-f0085.png",
+      "sha256": "b50ebb17a08fdab7b6ae58fe914ef285f7f06d7efd1026af3e39997aa2e38e5b",
+      "case": 16,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:51] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-16-neutral_fly_power_fly_age50-back-t000-f0085.png case=16 angle=back tick=0 sha256=b50ebb17a08fdab7b6ae58fe914ef285f7f06d7efd1026af3e39997aa2e38e5b wallNanos=32809044855899 epochMillis=1794535491504"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-17-neutral_fly_power_fly_age100-front-t000-f0016.png",
+      "sha256": "ac9378b127cbce2d7a744d4df07630c73efecbba56839c9dff0a80af345bec99",
+      "case": 17,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:04:53] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-17-neutral_fly_power_fly_age100-front-t000-f0016.png case=17 angle=front tick=0 sha256=ac9378b127cbce2d7a744d4df07630c73efecbba56839c9dff0a80af345bec99 wallNanos=32811381319444 epochMillis=1794535493840"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-17-neutral_fly_power_fly_age100-back-t000-f0085.png",
+      "sha256": "05b93e294b4a3b8e76f493a0c0fc2bb038a456b4c644d7f5ac68282fe1715d3c",
+      "case": 17,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:04:56] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-17-neutral_fly_power_fly_age100-back-t000-f0085.png case=17 angle=back tick=0 sha256=05b93e294b4a3b8e76f493a0c0fc2bb038a456b4c644d7f5ac68282fe1715d3c wallNanos=32813674321685 epochMillis=1794535496133"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-front-t000-f0016.png",
+      "sha256": "b8d33e45d4b1dc5b5ef9e54ac469b45457f4f3de4147d71c1ca0afcb0d48c3be",
+      "case": 46,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:07:10] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-46-neutral_fly_power_pumpkin-front-t000-f0016.png case=46 angle=front tick=0 sha256=b8d33e45d4b1dc5b5ef9e54ac469b45457f4f3de4147d71c1ca0afcb0d48c3be wallNanos=32947659115966 epochMillis=1794535630118"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-left-t000-f0039.png",
+      "sha256": "398a64dd101c58f7b9909af95bb048c9d9db5d41bf65173f1bb94402c2734807",
+      "case": 46,
+      "angle": "left",
+      "tick": 0,
+      "literal_capture_line": "[02:07:10] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-46-neutral_fly_power_pumpkin-left-t000-f0039.png case=46 angle=left tick=0 sha256=398a64dd101c58f7b9909af95bb048c9d9db5d41bf65173f1bb94402c2734807 wallNanos=32948421630924 epochMillis=1794535630881"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-right-t000-f0062.png",
+      "sha256": "47fda957256015bdac4fb509ff841298c97bc66799c518992c23adc86a0d633c",
+      "case": 46,
+      "angle": "right",
+      "tick": 0,
+      "literal_capture_line": "[02:07:11] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-46-neutral_fly_power_pumpkin-right-t000-f0062.png case=46 angle=right tick=0 sha256=47fda957256015bdac4fb509ff841298c97bc66799c518992c23adc86a0d633c wallNanos=32949192341249 epochMillis=1794535631651"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-back-t000-f0085.png",
+      "sha256": "c2275ac105121dd70d9e137f8f5e078f5477d89b3d4f68fd73de8dc858b977b5",
+      "case": 46,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:07:12] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-46-neutral_fly_power_pumpkin-back-t000-f0085.png case=46 angle=back tick=0 sha256=c2275ac105121dd70d9e137f8f5e078f5477d89b3d4f68fd73de8dc858b977b5 wallNanos=32949969448116 epochMillis=1794535632428"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-above-t000-f0108.png",
+      "sha256": "485d009065988ce18de69a9fd6c1a3833d1e54e07b64fa957ff4bad7d57b1ecd",
+      "case": 46,
+      "angle": "above",
+      "tick": 0,
+      "literal_capture_line": "[02:07:13] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-46-neutral_fly_power_pumpkin-above-t000-f0108.png case=46 angle=above tick=0 sha256=485d009065988ce18de69a9fd6c1a3833d1e54e07b64fa957ff4bad7d57b1ecd wallNanos=32950727297297 epochMillis=1794535633186"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-below-t000-f0131.png",
+      "sha256": "66a6ec488c81db5eff48c046a53567f47d9bdda832e4ef192b185df122da52c7",
+      "case": 46,
+      "angle": "below",
+      "tick": 0,
+      "literal_capture_line": "[02:07:13] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-46-neutral_fly_power_pumpkin-below-t000-f0131.png case=46 angle=below tick=0 sha256=66a6ec488c81db5eff48c046a53567f47d9bdda832e4ef192b185df122da52c7 wallNanos=32951492716821 epochMillis=1794535633952"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-front-t000-f0016.png",
+      "sha256": "558a57726c7599ee4397d3f77394105fd92333aaddf389b8b12a4f9551cb50f1",
+      "case": 47,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:07:14] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-47-neutral_fly_run_fly_rabbit-front-t000-f0016.png case=47 angle=front tick=0 sha256=558a57726c7599ee4397d3f77394105fd92333aaddf389b8b12a4f9551cb50f1 wallNanos=32952351924889 epochMillis=1794535634811"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-left-t000-f0039.png",
+      "sha256": "593f69cd356903d36c5514d1944696c2e2559867083cda2e8712fd0b9ff349be",
+      "case": 47,
+      "angle": "left",
+      "tick": 0,
+      "literal_capture_line": "[02:07:15] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-47-neutral_fly_run_fly_rabbit-left-t000-f0039.png case=47 angle=left tick=0 sha256=593f69cd356903d36c5514d1944696c2e2559867083cda2e8712fd0b9ff349be wallNanos=32953082988457 epochMillis=1794535635542"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-right-t000-f0062.png",
+      "sha256": "59252bae1aaebe7cd502945a093f083123913fa625776ad2df9acfff446d41a8",
+      "case": 47,
+      "angle": "right",
+      "tick": 0,
+      "literal_capture_line": "[02:07:16] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-47-neutral_fly_run_fly_rabbit-right-t000-f0062.png case=47 angle=right tick=0 sha256=59252bae1aaebe7cd502945a093f083123913fa625776ad2df9acfff446d41a8 wallNanos=32953868403550 epochMillis=1794535636327"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-back-t000-f0085.png",
+      "sha256": "6682e4cf9c973fa38d170b828a00be5bd8407bc74abc882e63a2004d3d838471",
+      "case": 47,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:07:17] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-47-neutral_fly_run_fly_rabbit-back-t000-f0085.png case=47 angle=back tick=0 sha256=6682e4cf9c973fa38d170b828a00be5bd8407bc74abc882e63a2004d3d838471 wallNanos=32954628183813 epochMillis=1794535637087"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-above-t000-f0108.png",
+      "sha256": "0b7f6429b00fb7557d147e512a305c6b57d9ba4d40a837ca3f28bdb542f132d0",
+      "case": 47,
+      "angle": "above",
+      "tick": 0,
+      "literal_capture_line": "[02:07:17] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-47-neutral_fly_run_fly_rabbit-above-t000-f0108.png case=47 angle=above tick=0 sha256=0b7f6429b00fb7557d147e512a305c6b57d9ba4d40a837ca3f28bdb542f132d0 wallNanos=32955394708191 epochMillis=1794535637854"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-below-t000-f0131.png",
+      "sha256": "51b9a133d67b2d51a109f44ea448960ce070d1f4132a70ba44cf0b412b041d50",
+      "case": 47,
+      "angle": "below",
+      "tick": 0,
+      "literal_capture_line": "[02:07:18] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-47-neutral_fly_run_fly_rabbit-below-t000-f0131.png case=47 angle=below tick=0 sha256=51b9a133d67b2d51a109f44ea448960ce070d1f4132a70ba44cf0b412b041d50 wallNanos=32956173336119 epochMillis=1794535638632"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-front-t000-f0016.png",
+      "sha256": "ae8e743869ae88677b21f8edc7792d7846501c26f317bb22267c9baf249b7e1d",
+      "case": 48,
+      "angle": "front",
+      "tick": 0,
+      "literal_capture_line": "[02:07:19] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-48-neutral_fly_fly_phoenix_glasses-front-t000-f0016.png case=48 angle=front tick=0 sha256=ae8e743869ae88677b21f8edc7792d7846501c26f317bb22267c9baf249b7e1d wallNanos=32957011747729 epochMillis=1794535639471"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-left-t000-f0039.png",
+      "sha256": "b41df649645099943bbf0b27db3142f72b72b46c71fdd81ebb2fe19fb23da13c",
+      "case": 48,
+      "angle": "left",
+      "tick": 0,
+      "literal_capture_line": "[02:07:20] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-48-neutral_fly_fly_phoenix_glasses-left-t000-f0039.png case=48 angle=left tick=0 sha256=b41df649645099943bbf0b27db3142f72b72b46c71fdd81ebb2fe19fb23da13c wallNanos=32957717309576 epochMillis=1794535640176"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-right-t000-f0062.png",
+      "sha256": "c233b03ecd4e6bea44d7c384616b934a8d53473414c9979ed2b91b4ffed95103",
+      "case": 48,
+      "angle": "right",
+      "tick": 0,
+      "literal_capture_line": "[02:07:20] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-48-neutral_fly_fly_phoenix_glasses-right-t000-f0062.png case=48 angle=right tick=0 sha256=c233b03ecd4e6bea44d7c384616b934a8d53473414c9979ed2b91b4ffed95103 wallNanos=32958540100424 epochMillis=1794535640999"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-back-t000-f0085.png",
+      "sha256": "9abb0e51219cb6974aab61a496ee765ea7748dd85a0981986b69baeea10cbfee",
+      "case": 48,
+      "angle": "back",
+      "tick": 0,
+      "literal_capture_line": "[02:07:21] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-48-neutral_fly_fly_phoenix_glasses-back-t000-f0085.png case=48 angle=back tick=0 sha256=9abb0e51219cb6974aab61a496ee765ea7748dd85a0981986b69baeea10cbfee wallNanos=32959309991732 epochMillis=1794535641769"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-above-t000-f0108.png",
+      "sha256": "c9781e57f818f49c1b6377abb9509bc17d49c0acde7c8737b1ea8ba3a1609ee2",
+      "case": 48,
+      "angle": "above",
+      "tick": 0,
+      "literal_capture_line": "[02:07:22] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-48-neutral_fly_fly_phoenix_glasses-above-t000-f0108.png case=48 angle=above tick=0 sha256=c9781e57f818f49c1b6377abb9509bc17d49c0acde7c8737b1ea8ba3a1609ee2 wallNanos=32960073419683 epochMillis=1794535642532"
+    },
+    {
+      "path": "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-below-t000-f0131.png",
+      "sha256": "9694d342368e6b12810ec1ec79ba637de4f6a6f51e84496d49a8434e4bfd99ab",
+      "case": 48,
+      "angle": "below",
+      "tick": 0,
+      "literal_capture_line": "[02:07:23] [IO-Worker-5/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_CAPTURE fly061-live-48-neutral_fly_fly_phoenix_glasses-below-t000-f0131.png case=48 angle=below tick=0 sha256=9694d342368e6b12810ec1ec79ba637de4f6a6f51e84496d49a8434e4bfd99ab wallNanos=32960885012677 epochMillis=1794535643344"
+    }
+  ],
+  "literal_render_routes": {
+    "0": "[02:03:33] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 0 shapeSignature=5845856983562032479 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/702468f2-aaeb-30c5-92ee-3e17782f2eb1 sample=Sample[enabled=true, maturity=0.0, runPower=0.0, swimFly=0.0]",
+    "1": "[02:03:37] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 1 shapeSignature=6966089612527598633 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/2ff77320-8c4e-35ad-9d40-e01b80f0dba8 sample=Sample[enabled=true, maturity=0.5, runPower=0.0, swimFly=0.0]",
+    "2": "[02:03:42] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 2 shapeSignature=6656172560625934123 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/8b880995-9997-389e-85c8-4012c3509b56 sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=0.0]",
+    "3": "[02:03:47] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 3 shapeSignature=5845856983562032479 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/264f64ef-8017-37bf-8548-142f868d0fb3 sample=Sample[enabled=true, maturity=0.0, runPower=-1.0, swimFly=0.0]",
+    "4": "[02:03:51] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 4 shapeSignature=-5420214953030591341 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/b7dacef9-4ff4-30c3-a403-031354ad8d57 sample=Sample[enabled=true, maturity=0.5, runPower=-1.0, swimFly=0.0]",
+    "5": "[02:03:56] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 5 shapeSignature=-1452980277862078011 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/e139e967-03f5-3e0e-9188-99fb34f9e61b sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=0.0]",
+    "6": "[02:04:01] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 6 shapeSignature=5845856983562032479 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/12555ee5-dcf3-3446-8084-25409e8713c1 sample=Sample[enabled=true, maturity=0.0, runPower=1.0, swimFly=0.0]",
+    "7": "[02:04:06] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 7 shapeSignature=5530697314782403491 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/6da80633-0281-3a20-9d78-6d3dda1af702 sample=Sample[enabled=true, maturity=0.5, runPower=1.0, swimFly=0.0]",
+    "8": "[02:04:11] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 8 shapeSignature=5191355446130145605 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/9be265a6-15b0-300c-bc06-61262867a8e8 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=0.0]",
+    "9": "[02:04:15] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 9 shapeSignature=5845856983562032479 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/9234d0a2-b5e0-3144-b6e2-3580ec3e4acd sample=Sample[enabled=true, maturity=0.0, runPower=0.0, swimFly=1.0]",
+    "10": "[02:04:20] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 10 shapeSignature=5310871791239540109 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/df966cce-b24c-37b1-a412-480c16d9dcce sample=Sample[enabled=true, maturity=0.5, runPower=0.0, swimFly=1.0]",
+    "11": "[02:04:25] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 11 shapeSignature=3978443869047083557 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/cbe028d6-6208-3629-9a94-76ad65f6231c sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=1.0]",
+    "12": "[02:04:29] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 12 shapeSignature=5845856983562032479 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/855f3e98-5216-3fc6-976c-cb6984221e6e sample=Sample[enabled=true, maturity=0.0, runPower=-1.0, swimFly=1.0]",
+    "13": "[02:04:34] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 13 shapeSignature=3018165649986487599 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/6feecf1c-7643-39ad-9052-ee4002cd672f sample=Sample[enabled=true, maturity=0.5, runPower=-1.0, swimFly=1.0]",
+    "14": "[02:04:39] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 14 shapeSignature=4799404220117352779 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/c0071453-d223-3a85-8ebb-d89b3688a1d2 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+    "15": "[02:04:43] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 15 shapeSignature=5845856983562032479 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/0520a099-73f2-3d26-859b-3f73d805e8fa sample=Sample[enabled=true, maturity=0.0, runPower=1.0, swimFly=1.0]",
+    "16": "[02:04:48] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 16 shapeSignature=6531631106878737459 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/6e745b4a-5d62-3dd8-b8c5-20d78a3e6705 sample=Sample[enabled=true, maturity=0.5, runPower=1.0, swimFly=1.0]",
+    "17": "[02:04:53] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 17 shapeSignature=6175038245057896545 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/6b238ced-e550-366c-b5e7-5475a5064f34 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=1.0]",
+    "46": "[02:07:09] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 46 shapeSignature=5191355446130145605 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/9be265a6-15b0-300c-bc06-61262867a8e8 sample=Sample[enabled=true, maturity=1.0, runPower=1.0, swimFly=0.0]",
+    "47": "[02:07:14] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 47 shapeSignature=4799404220117352779 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/c0071453-d223-3a85-8ebb-d89b3688a1d2 sample=Sample[enabled=true, maturity=1.0, runPower=-1.0, swimFly=1.0]",
+    "48": "[02:07:18] [Render thread/INFO] [co.ch.cl.NeutralFlyVisualSmoke061/]: FLY061_RENDER_MODEL 48 shapeSignature=3978443869047083557 geometry=baby gameplay=fly texture=chao_garden:dynamic/neutral_fly061/cbe028d6-6208-3629-9a94-76ad65f6231c sample=Sample[enabled=true, maturity=1.0, runPower=0.0, swimFly=1.0]"
+  },
+  "sources_verified": 54,
+  "preflight_reused": false,
+  "review_sheets": [
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-natural-balanced.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-00-neutral_fly_normal_age0-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-01-neutral_fly_normal_age50-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-02-neutral_fly_normal_age100-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-00-neutral_fly_normal_age0-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-01-neutral_fly_normal_age50-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-02-neutral_fly_normal_age100-back-t000-f0085.png"
+      ],
+      "sha256": "f830d45d859fe4b66615ed5b8f7a581850484db9afef4908acf5ad18eac9ce12"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-natural-run.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-03-neutral_fly_run_age0-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-04-neutral_fly_run_age50-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-05-neutral_fly_run_age100-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-03-neutral_fly_run_age0-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-04-neutral_fly_run_age50-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-05-neutral_fly_run_age100-back-t000-f0085.png"
+      ],
+      "sha256": "281243daaf81ca13d46de4ff6e335c5b4bacc11ee12c02cd97acbc6efad07b1d"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-natural-power.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-06-neutral_fly_power_age0-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-07-neutral_fly_power_age50-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-08-neutral_fly_power_age100-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-06-neutral_fly_power_age0-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-07-neutral_fly_power_age50-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-08-neutral_fly_power_age100-back-t000-f0085.png"
+      ],
+      "sha256": "d6b38957e6792464fcc3cc06463a699f2ffdfce33c74f9311e4f53d9a600d340"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-natural-fly.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-09-neutral_fly_fly_age0-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-10-neutral_fly_fly_age50-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-11-neutral_fly_fly_age100-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-09-neutral_fly_fly_age0-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-10-neutral_fly_fly_age50-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-11-neutral_fly_fly_age100-back-t000-f0085.png"
+      ],
+      "sha256": "c6ec236d1739247b604a00b58926e92afd06ebd71b37f549f35065e7910765ed"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-natural-run_fly.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-12-neutral_fly_run_fly_age0-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-13-neutral_fly_run_fly_age50-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-14-neutral_fly_run_fly_age100-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-12-neutral_fly_run_fly_age0-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-13-neutral_fly_run_fly_age50-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-14-neutral_fly_run_fly_age100-back-t000-f0085.png"
+      ],
+      "sha256": "93bf5b7e8ccde2129e6c39db2714747e6fa0b8e1bfb9fa23db8d2d700edafaa9"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-natural-power_fly.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-15-neutral_fly_power_fly_age0-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-16-neutral_fly_power_fly_age50-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-17-neutral_fly_power_fly_age100-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-15-neutral_fly_power_fly_age0-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-16-neutral_fly_power_fly_age50-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-17-neutral_fly_power_fly_age100-back-t000-f0085.png"
+      ],
+      "sha256": "87d81627bd1ebc24182e02977b733176d3833ea25d189ef27cf88b7670e9ca84"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-equipment-pumpkin.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-left-t000-f0039.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-right-t000-f0062.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-above-t000-f0108.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-46-neutral_fly_power_pumpkin-below-t000-f0131.png"
+      ],
+      "sha256": "40913266e72ac69291fcd673f9380df57453f9b8a72600f540a1eb438da141a4"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-equipment-rabbit.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-left-t000-f0039.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-right-t000-f0062.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-above-t000-f0108.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-47-neutral_fly_run_fly_rabbit-below-t000-f0131.png"
+      ],
+      "sha256": "e3189b68955792a493aa58d085c942ba181998bdf4439777567689449e11a2d6"
+    },
+    {
+      "path": "/workspace/.setup/fly061-material/final-audit/final-equipment-phoenix-glasses.png",
+      "source_paths": [
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-front-t000-f0016.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-left-t000-f0039.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-right-t000-f0062.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-back-t000-f0085.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-above-t000-f0108.png",
+        "/workspace/.setup/fly061-client-final/screenshots/fly061-live-48-neutral_fly_fly_phoenix_glasses-below-t000-f0131.png"
+      ],
+      "sha256": "5203e0c3b1831b179f1bf0ce64432daa0866c57eff27d4e39b6a9faeb875bfec"
+    }
+  ],
+  "review_sheet_transform": {
+    "crop_box": [
+      430,
+      190,
+      1010,
+      840
+    ],
+    "scale": 0.56,
+    "description": "identical rectangular crop, uniform resize, external labels only; originals retained byte-exact"
+  }
+}

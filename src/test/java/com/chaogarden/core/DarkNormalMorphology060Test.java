@@ -128,7 +128,8 @@ public final class DarkNormalMorphology060Test {
       for(int stat=0;stat<4;stat++)DriveRules.setTotal(s,stat,0,new Random(60));
       check(s.typeName().equals("Normal/Normal")&&s.secondaryFormKey().equals("normal"),"Actual stat loss clears both current labels, independent of stale trained axes");
     }
-    var legacy=new ChaoState();legacy.adult=true;legacy.primaryType=ChaoState.FLY_TYPE;legacy.align=0;legacy.swimFly=1;legacy.runPower=-1;legacy=ChaoState.decode(legacy.encode());
+    // Hero Fly stays outside both the Dark/Normal060 and new Neutral/Fly061 current-bar policies.
+    var legacy=new ChaoState();legacy.adult=true;legacy.primaryType=ChaoState.FLY_TYPE;legacy.align=1;legacy.swimFly=1;legacy.runPower=-1;legacy=ChaoState.decode(legacy.encode());
     DriveRules.setTotal(legacy,ChaoState.POWER,960,new Random(60));legacy.swimFly=1;legacy.runPower=-1;
     check(legacy.typeName().equals("Fly/Fly+Run")&&legacy.secondaryFormKey().equals("fly_run"),"Other first-evolution types retain their previous influence labels instead of adopting the Dark/Normal policy");
   }

@@ -169,3 +169,7 @@ Use the final report to distinguish actual build/native/client passes, skips and
 ## Dark / Neutral-first 0.25.60
 
 The family and its current verification are documented in [DARK_NORMAL_02560.md](docs/DARK_NORMAL_02560.md). New checks are `coreTest`, `darkNormalMorphRigTest060`, `darkNormalMaterialTest060`, the `chao_darknormal60` dedicated-server namespace and the opt-in excluded-from-JAR `DarkNormalVisualSmoke060` helper. Existing family, toy/transition and keyboard assertions remain enabled. Original full canvas/PNG hashes, actual case settings and development-classpath/JAR binding accompany delivery. A pixel/geometry assertion is not a visual inspection; physical touch, listening and independent remote-client latency need separate checks.
+
+## Neutral / Fly-first 0.25.61
+
+See [NEUTRAL_FLY_02561.md](docs/NEUTRAL_FLY_02561.md) for final verification and limits. New checks are `coreTest`, `neutralFlyMorphRigTest061`, `neutralFlyMaterialTest061`, dedicated namespace `chao_fly61` and excluded-from-JAR `NeutralFlyVisualSmoke061`. Previous family and toy/keyboard limits stay enabled. Screenshot/motion, actual live viewer settings and development-classpath/JAR byte bindings accompany delivery; geometric assertions do not constitute visual inspection or listening.

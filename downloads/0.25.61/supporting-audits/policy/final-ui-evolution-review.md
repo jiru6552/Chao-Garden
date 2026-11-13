@@ -1,0 +1,15 @@
+# Final Neutral Fly061 UI and evolution audit
+
+PASS within the stated scope. All sixteen actual Analyzer originals and nine post-edit world originals were opened at full resolution. All twenty-five natural-evolution originals were inspected through a uniform sheet; baby tick 011, cocoon tick 095 and fresh-adult tick 299 were also opened directly. All fifty source PNGs match the literal SHA256 values logged by their actual screenshot callbacks. No diagnostic/preflight original is substituted.
+
+Creative adult case 49 visibly remains Neutral +0.0 with ADULT ALIGNMENT: LOCKED. It keeps Fly/Fly+Run while maturity moves 80.0% → 66.4% during an active drag → 25.0% → 100.0% and Fully Adult. The preview responds. A forged +1000 alignment request leaves Neutral unchanged.
+
+Survival adult case 50 keeps Neutral +0.0 LOCKED and displays 80.0% maturity before and after the denied 250 request. Its forged +1000 alignment request is blocked. Read-only/lock feedback appears, with inherited low-contrast footer text. The main LOCKED label is readable. Ordinary passive maturity growth continues slightly underneath the rounded percentage; the rejected edit does not replace the saved value.
+
+Creative baby case 51 visibly changes Neutral Child to Hero Child +80.2. Maturity moves 80.0% → 73.0% during an active drag → 25.0% → 99.0%, stays Child, and changes preview development/colors. All three native verification lines confirm exact entity NBT reload and preserved life stage. The running helper also asserts both adults retain first type FLY. Nine post-world images show the states persisting. Their rear-labelled angles are oblique, with the player entering the left edge; these are persistence views rather than calibrated comparison angles.
+
+Natural case 62 starts as an actual trained Fly baby, enters the genuine cocoon, and emerges as a fresh Fly-first adult. Images show small paired crests and green/cyan wing fans, distinct from the mature later-Fly white/yellow fans. The running fixture asserts locked first Fly and Neutral alignment; completed server state has maturity 0.00008487654 and a later Fly target of 0.5 carried from baby training. It does not jump to a mature specialization endpoint.
+
+Independently rehashed all 8,325 production Chao class/asset entries across declared current outputs, frozen runtime files and the installable JAR: all exact. JAR SHA256 `2618d3ed5326621d782e3a396fe68edb25b03c8f657206407641c4d840c02060` matches the bound proof. The client uses the matched development classpath. The literal image/runtime audit JSON and visual-review JSON bind the evidence. Final callback completion records 67/67 cases, zero skips and 590 original PNGs.
+
+No production or Gradle code changed during this audit. Physical touch hardware, independent multiplayer, arbitrary older worlds, full server restart, autonomous gliding/swim travel, every carrying posture and three distinct actual reaction faces remain outside these checks. Formal emitter reaction coverage and the silent sampled-frame movie review are separate evidence.

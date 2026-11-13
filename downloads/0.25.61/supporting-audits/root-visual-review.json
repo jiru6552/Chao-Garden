@@ -1,0 +1,61 @@
+{
+  "version": "0.25.61",
+  "coordinator_reviewed": true,
+  "visual_observations": [
+    "The viewer rendered with healthy WebGL 2. Its actual Fly first-type, alignment, age and training controls and mouse rotation worked. The fresh reference set contains 103 unchanged originals covering six forms and intermediate age/training settings.",
+    "The coordinator personally opened all 54 paired viewer/Minecraft front, side and back comparisons and 18 Minecraft opposite-side cells at fresh, half and mature development. Four sheets and their originals are hash-bound to the final 67-scene, 590-image cohort and frozen JAR.",
+    "An independent geometry reviewer personally inspected all 318 static originals from 53 cases across six angles. The original head box, eyes, orb and 59-joint hierarchy remain unchanged. Crests, wings and tail remain connected in these sampled views.",
+    "An independent material review covered 114 selected final originals: 36 natural form/age front/back views, 30 coat views, 30 previous-family regression views and 18 equipment views. Broad wing pigments, faces, independent orbs and exposed attachments remain intact.",
+    "The final UI review opened all 16 Analyzer originals and nine post-edit world views. Adult Neutral alignment remained read-only, maturity dragging was responsive, Survival forged edits were blocked, and baby Hero alignment/maturity edits preserved the life stage and exact entity NBT save/load.",
+    "Final motion/evolution cases cover walking, running, stationary water animation, broom, book, real Accessories carrying during upright Creative flight, live training gains/reductions/reversal and natural Fly first evolution. The coordinator personally opened twelve decoded movie frames from 0 to 66 seconds plus full-resolution frames at 0 and 30 seconds; continuous playback is not claimed."
+  ],
+  "approximations": [
+    "Two cuboids per crest approximate rounded horns, and three closed cuboids per wing approximate curved lobes. Balanced crests remain shorter and blunter than the viewer taper; Run curls use two hard steps; the pure Fly fan is narrower and more separated.",
+    "Bilinear training weights and separate linear maturity blending approximate viewer progression, especially mixed forms that look nearly fully developed by half training in the viewer.",
+    "The preserved Minecraft head/body proportions, pixel pigments and renderer lighting differ from the viewer. Angles, source-game units and idle animation phases are not calibrated. Static Minecraft actors are suspended for framing; fresh Power and Power+Fly show unsynchronized idle poses.",
+    "Coarse pixel bands replace smooth color gradients. No viewer geometry, normals or morph code was imported.",
+    "Later Fly is clamped to 0..1. Swim cancels it toward balanced Fly-first without adding a secondary Swim family. Run/Power remains signed; opposing training recedes independently of age.",
+    "The 960-net-bar-progress full-influence threshold is the inherited provisional mod rate. The adult visual clock still needs 14.4 passive hours against the ordinary 12-hour adult life; existing care boosts or Creative maturity allow endpoint testing."
+  ],
+  "explicit_limits": [
+    "Development-classpath production bytes match all 8,325 final JAR production entries; runClient is not claimed to have loaded that archive.",
+    "Independent remote two-client multiplayer, a full server/world restart, arbitrary historical Fly-world migration, physical touch input and full natural-lifetime testing were not performed. Dedicated-server authority, encoded/tracked-state synchronization and actual entity NBT save/load passed.",
+    "Autonomous gliding, autonomous swim travel, horizontal elytra/swimming carrying, takeoff/landing, every accessory/toy combination and audio/listening were not verified.",
+    "Distinct visible in-game reaction faces were not exercised. Twelve production-emitter reaction/marker visibility frames pass numerically; normal faces and blinks are visible in captures.",
+    "The 69.100-second movie is silent at 20 fps and normal 20 TPS, with accelerated training inputs. Camera phases occur sequentially. The raw pair endpoint at tick 240 reverses at tick 242 before the twenty-tick display interpolation settles; separate static captures show the settled endpoint.",
+    "Inherited glasses-edge stippling and lower-head blue/purple shading remain. Hats and animal replacements intentionally hide corresponding features. The player head/hair obscures the carried Chao face and orb in front views."
+  ],
+  "inherited_failures": [
+    {
+      "check": "scripts/test_journal_content_02518.py",
+      "result": "8/9; Your gardens paragraph-format assertion",
+      "new": false,
+      "evidence": "fly061-journal.log and journal-baseline.json; test and journal source are byte-identical to delivered 0.25.60."
+    }
+  ],
+  "comparison_review": {
+    "path": "/workspace/.setup/fly061-final-reference-compare/comparison-manifest.json",
+    "sha256": "99edbba247369ac7d77090ee64b9688ef2719ad9e5b2c543c3a1d029dc63a0bb",
+    "review": {
+      "sheets_personally_opened": [
+        "final-matched-age000.png",
+        "final-matched-age050.png",
+        "final-matched-age100.png",
+        "final-opposite-side-audit.png"
+      ],
+      "review_scope": "All54 paired front/side/back comparisons and18 Minecraft opposite-side cells personally opened in the four sheets. Fresh/mid/mature settings and rotations were operated independently in the viewer. Selected native/viewer originals reopened separately; all source hashes retained.",
+      "observations": [
+        "Fresh forms share small paired blue-tipped crests, green/cyan wings and pink/lilac body.",
+        "Balanced crests rise rearward as wings become smaller/orange; Run develops downward stepped curls; Power adds tall near-vertical paired crests and magenta/red accents.",
+        "Fly develops downward tipped crests and widest white/yellow three-ray wings; compatible pairs develop compact/moderated crests and distinct wings.",
+        "Original head cube and pixel eyes remain unchanged, visible closed wings/tail/limbs remain attached in sampled static views."
+      ],
+      "approximations": [
+        "Two cuboids per crest approximate rounded horns; three closed cuboids per wing approximate the curved three-lobe surface.",
+        "Bilinear current-training and separate linear maturity blending approximate viewer progression, especially mixed forms that appear near endpoint by half training in the viewer.",
+        "Fixed Minecraft head/body proportions, pixel pigments and lighting differ from the viewer. Angles, source-game stat units and idle phases are not calibrated. Static actors are suspended for framing.",
+        "Color regions use coarse pixel bands instead of smooth gradients; no geometry, normals or morph code was imported."
+      ]
+    }
+  }
+}

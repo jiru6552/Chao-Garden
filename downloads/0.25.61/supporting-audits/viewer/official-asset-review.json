@@ -1,0 +1,40 @@
+{
+  "scope": "Read-only project construction-reference inspection, not live viewer evidence",
+  "geometry_or_texture_copied_to_production": false,
+  "texture_dimensions": [
+    128,
+    64
+  ],
+  "logical_uv_dimensions": [
+    64,
+    32
+  ],
+  "files": [
+    {
+      "file": "art/imported_chao/models/chao_fly.geo.json",
+      "sha256": "bd774f7fcbae5d3645085e589922e4114a46763e5167fac42346d5cdf36c2ad2"
+    },
+    {
+      "file": "art/imported_chao/textures/fly.png",
+      "sha256": "691d87c70ef8e08a150b10552e3d82fc321762a12f119a381f0bb68aa9120c50"
+    },
+    {
+      "file": "src/main/resources/assets/chao_garden/models/entity/official/chao_fly.json",
+      "sha256": "72ab349d9e88b1ff560621983d9977e58a13fa394388ff04b11c81bc935e148d"
+    },
+    {
+      "file": "src/main/resources/assets/chao_garden/textures/entity/chao/official/fly.png",
+      "sha256": "691d87c70ef8e08a150b10552e3d82fc321762a12f119a381f0bb68aa9120c50"
+    },
+    {
+      "file": "art/sa2_02515/previous-models/hats/chao_fly.json",
+      "sha256": "1ae06b38bedc296f26f1c56de1e19462d872bc9cedd78d6e28f91f959369fac8"
+    }
+  ],
+  "inspection_image": {
+    "file": "official-fly-texture-inspection.png",
+    "source": "art/imported_chao/textures/fly.png",
+    "operation": "nearest-neighbor enlargement only; original unchanged",
+    "sha256": "e3c782338dd0b69ad1716cafa1196e251029504b553c3a75d14eb393c0005518"
+  }
+}
