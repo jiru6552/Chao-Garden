@@ -1,0 +1,479 @@
+{
+  "version": "0.25.63",
+  "timestamp_utc": "2026-11-13T05:35:33.999844+00:00",
+  "parent_commit": "3faa3742cab917d2aa3122667e46b669c674409c",
+  "passed": true,
+  "scope": "Independent read-only source/integration review and provisional source-selection audit. No build, game, JAR, final-client, visual acceptance, packaging, source finalization or publication claim.",
+  "source_proposal": "/workspace/.setup/power063-source-inventory.proposed.json",
+  "source_proposal_sha256": "61af9beea6a10b56b0da3827bfed2430c03ee59b0a34c8f56e0c0e30d7df0a15",
+  "source_proposal_coordinator_reviewed": false,
+  "source_files": 575,
+  "new_files": [
+    "docs/NEUTRAL_POWER_02563.md",
+    "scripts/generate_neutral_power_morph_02563.py",
+    "scripts/validate_neutral_power_morph_02563.py",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralPowerMaterialTest063.java",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralPowerMorphRigTest063.java",
+    "src/main/java/com/chaogarden/client/NeutralPowerAppearance063.java",
+    "src/main/java/com/chaogarden/client/NeutralPowerCoatMaterial063.java",
+    "src/main/java/com/chaogarden/client/NeutralPowerRegionPaint063.java",
+    "src/main/java/com/chaogarden/client/NeutralPowerVisualSmoke063.java",
+    "src/main/java/com/chaogarden/core/NeutralPowerMorphology063.java",
+    "src/main/java/com/chaogarden/test/NeutralPowerMorphologyGameTests063.java",
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_power_proto063.json",
+    "src/main/resources/assets/chao_garden/neutral_power063.json",
+    "src/test/java/com/chaogarden/core/NeutralPowerMorphology063Test.java"
+  ],
+  "updated_existing_files": [
+    "CHANGELOG.md",
+    "MECHANICS.md",
+    "README.md",
+    "TESTING.md",
+    "build.gradle",
+    "gradle.properties",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java",
+    "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java",
+    "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java",
+    "src/main/java/com/chaogarden/client/ChaoInspectionScreen.java",
+    "src/main/java/com/chaogarden/client/ChaoMeshAsset.java",
+    "src/main/java/com/chaogarden/client/ChaoModel.java",
+    "src/main/java/com/chaogarden/client/ChaoOverlayLayer.java",
+    "src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java",
+    "src/main/java/com/chaogarden/client/OfficialChaoRig.java",
+    "src/main/java/com/chaogarden/core/ChaoState.java",
+    "src/test/java/com/chaogarden/core/MechanicsTestSuite.java"
+  ],
+  "updates_since_parent": 31,
+  "inherited_source_only_deletions": 21,
+  "deletion_history_matches_delivered62": true,
+  "protected_models": [
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json",
+      "sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "parent_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+      "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "parent_sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+      "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "parent_sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+      "sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "parent_sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+      "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+      "parent_sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json",
+      "sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+      "parent_sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json",
+      "sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+      "parent_sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json",
+      "sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+      "parent_sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+      "byte_exact": true
+    }
+  ],
+  "authority_files": [
+    {
+      "path": "src/main/java/com/chaogarden/EditingCommands056.java",
+      "sha256": "e53f29c8bba50dee4c9ea624b71d4d9f4d41c794696db4ee298a240c181eadd6",
+      "parent_sha256": "e53f29c8bba50dee4c9ea624b71d4d9f4d41c794696db4ee298a240c181eadd6",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/care/ChaoCareNetwork.java",
+      "sha256": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c",
+      "parent_sha256": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/CreativeChaoEditRules056.java",
+      "sha256": "2f3b24ad0c2ac5e5376f981ebdfff0787f04d5f84fbb74c3f31ea186103fd876",
+      "parent_sha256": "2f3b24ad0c2ac5e5376f981ebdfff0787f04d5f84fbb74c3f31ea186103fd876",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/AnalyzerStatRules.java",
+      "sha256": "7233563e38dd293205311537b107bd2b0179da45ada4f023b697b2271e696463",
+      "parent_sha256": "7233563e38dd293205311537b107bd2b0179da45ada4f023b697b2271e696463",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/DriveRules.java",
+      "sha256": "80da6f442ba087ca4494b70556000fee97cd94ba4838bc5cf64b5a28a47d659a",
+      "parent_sha256": "80da6f442ba087ca4494b70556000fee97cd94ba4838bc5cf64b5a28a47d659a",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/GradualEvolutionRules.java",
+      "sha256": "63c036a4a24a3f385635aa347fef2a2a6d4fe64ae54d489a127b79979d2f9dc4",
+      "parent_sha256": "63c036a4a24a3f385635aa347fef2a2a6d4fe64ae54d489a127b79979d2f9dc4",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/entity/ChaoEntity.java",
+      "sha256": "1fa25ce670bf3c8fe18b638dde303bc4686ab4113fbf3af2bf34fe320de87ec9",
+      "parent_sha256": "1fa25ce670bf3c8fe18b638dde303bc4686ab4113fbf3af2bf34fe320de87ec9",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/GardenCommands.java",
+      "sha256": "a08fbf77f2f068434fa631e89cf0507f2c93b1b317dadc1a5174367b1ffe331f",
+      "parent_sha256": "a08fbf77f2f068434fa631e89cf0507f2c93b1b317dadc1a5174367b1ffe331f",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/AlignmentEditRules053.java",
+      "sha256": "9a32d9963bfc74865797c24f18b65d108c97a1ae1113069945520acb40ea4216",
+      "parent_sha256": "9a32d9963bfc74865797c24f18b65d108c97a1ae1113069945520acb40ea4216",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/MaturityEditRules056.java",
+      "sha256": "e6570097f3d4d8897ee5b07fe784c2b202d5162a27c32e3bcf4869b08cdbbb76",
+      "parent_sha256": "e6570097f3d4d8897ee5b07fe784c2b202d5162a27c32e3bcf4869b08cdbbb76",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/GardenConfig.java",
+      "sha256": "9ecd512e7c82b3f3827b0e234202b110fd749be82240a9ae26e571359b442ec8",
+      "parent_sha256": "9ecd512e7c82b3f3827b0e234202b110fd749be82240a9ae26e571359b442ec8",
+      "byte_exact": true
+    }
+  ],
+  "prior_policies": [
+    {
+      "path": "src/main/java/com/chaogarden/core/HeroRunMorphology052.java",
+      "sha256": "3695fc6e7bce73ac641b96f280448885742d819e4b795212f25fe7c2cd48f672",
+      "parent_sha256": "3695fc6e7bce73ac641b96f280448885742d819e4b795212f25fe7c2cd48f672",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralMorphology056.java",
+      "sha256": "f1c10b10aa091b2bf3dde3f7abaeb7f7ef0f417a09c725233484425f80fe2d61",
+      "parent_sha256": "f1c10b10aa091b2bf3dde3f7abaeb7f7ef0f417a09c725233484425f80fe2d61",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/HeroNormalMorphology057.java",
+      "sha256": "2fd7bc5742c45f46dbe59e56b216185cec203e1d2044165a8f1e4a080d28df4e",
+      "parent_sha256": "2fd7bc5742c45f46dbe59e56b216185cec203e1d2044165a8f1e4a080d28df4e",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralSwimMorphology059.java",
+      "sha256": "c16f119a7ec68a62603550838287755e50beb03c4b35aab6b3e6cedcacea8ea6",
+      "parent_sha256": "c16f119a7ec68a62603550838287755e50beb03c4b35aab6b3e6cedcacea8ea6",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/DarkNormalMorphology060.java",
+      "sha256": "7337d69fe835750b284a9e23dc5caea1783912c9bd2c47ce6ac95a571468dba7",
+      "parent_sha256": "7337d69fe835750b284a9e23dc5caea1783912c9bd2c47ce6ac95a571468dba7",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralFlyMorphology061.java",
+      "sha256": "a5758ffcf8b67a7ca17a04c8e4b4f8899894ea7eee7c96815deaee6850d8e5e1",
+      "parent_sha256": "a5758ffcf8b67a7ca17a04c8e4b4f8899894ea7eee7c96815deaee6850d8e5e1",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/NeutralRunMorphology062.java",
+      "sha256": "3a9990bb479023c72d58a7e2494ba7225541ac0ac24a355b6fdc3b7e3552ef22",
+      "parent_sha256": "3a9990bb479023c72d58a7e2494ba7225541ac0ac24a355b6fdc3b7e3552ef22",
+      "byte_exact": true
+    }
+  ],
+  "retained_material_animation_attachment_sources": [
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoHeadwear.java",
+      "sha256": "cdb198965e716d725b950cc17fc4c52f455d2edaf9c7ccb74aa5155831024f4c",
+      "parent_sha256": "cdb198965e716d725b950cc17fc4c52f455d2edaf9c7ccb74aa5155831024f4c",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoShine.java",
+      "sha256": "aa32c6f7c51671c0f3490985fd037652e42d86c73b907cc133a49300cd38319c",
+      "parent_sha256": "aa32c6f7c51671c0f3490985fd037652e42d86c73b907cc133a49300cd38319c",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoShineLayer.java",
+      "sha256": "47c76036701816c38bcc483a3ae1e4c2098a6c982ca460ea5941c9e96d2a3e89",
+      "parent_sha256": "47c76036701816c38bcc483a3ae1e4c2098a6c982ca460ea5941c9e96d2a3e89",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoToyGrip.java",
+      "sha256": "2a50057d70305952ffb1266e839b800012de187bf5694e52e8537da18d4b2ca2",
+      "parent_sha256": "2a50057d70305952ffb1266e839b800012de187bf5694e52e8537da18d4b2ca2",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalAppearance060.java",
+      "sha256": "c273ab72a52c60ce3b315c6b88d51d81ef483ab20e44a2c1b2f064a02cb8127e",
+      "parent_sha256": "c273ab72a52c60ce3b315c6b88d51d81ef483ab20e44a2c1b2f064a02cb8127e",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalCoatMaterial060.java",
+      "sha256": "5ab0c600113a2241e4ce45cafa03d597ca3d1dc058eb4f9449c5634cc4723cbf",
+      "parent_sha256": "5ab0c600113a2241e4ce45cafa03d597ca3d1dc058eb4f9449c5634cc4723cbf",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalRegionPaint060.java",
+      "sha256": "c47d21373aa063d04a13e6cd057a0844e0c3ea7bba470107a4aee6d85685161d",
+      "parent_sha256": "c47d21373aa063d04a13e6cd057a0844e0c3ea7bba470107a4aee6d85685161d",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/GradualCoatMaterial.java",
+      "sha256": "c3c9c3e106789e5530b175219112f33ab9dc7cd8a122d6d0a8bab3feca9e9f02",
+      "parent_sha256": "c3c9c3e106789e5530b175219112f33ab9dc7cd8a122d6d0a8bab3feca9e9f02",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroNormalAppearance057.java",
+      "sha256": "9a494f73cbcd6c5f378e1497b40423d733168f09a6e0ca03fba105f498fe16cc",
+      "parent_sha256": "9a494f73cbcd6c5f378e1497b40423d733168f09a6e0ca03fba105f498fe16cc",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroNormalCoatMaterial057.java",
+      "sha256": "15e11ed91bd1a8de0d9431c87d27b16b716f7d211ee13b84dcff2224a4d7f8e8",
+      "parent_sha256": "15e11ed91bd1a8de0d9431c87d27b16b716f7d211ee13b84dcff2224a4d7f8e8",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroNormalRegionPaint057.java",
+      "sha256": "b0471e17f0469ee470569868548766f88ba9fb33aec4597726d98dd865b99d48",
+      "parent_sha256": "b0471e17f0469ee470569868548766f88ba9fb33aec4597726d98dd865b99d48",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunAppearance052.java",
+      "sha256": "0c9a8fef92eaa542703e5726b7e401cb8c565989142353c62ea0570829f90f5a",
+      "parent_sha256": "0c9a8fef92eaa542703e5726b7e401cb8c565989142353c62ea0570829f90f5a",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunCoatMaterial052.java",
+      "sha256": "a311c81147719f53b652dcf1fd6f590b561e21a10f310dff48ddb0d1f5b3de6a",
+      "parent_sha256": "a311c81147719f53b652dcf1fd6f590b561e21a10f310dff48ddb0d1f5b3de6a",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunCoatMaterial054.java",
+      "sha256": "f2ddbd10ac3effebac40b26d8072da281217704b5d1e8d87298c0a238dd9f9b7",
+      "parent_sha256": "f2ddbd10ac3effebac40b26d8072da281217704b5d1e8d87298c0a238dd9f9b7",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunCoatMaterial055.java",
+      "sha256": "4a059952ea050d5c6f4b2e0558185356f96b0be22879761e74529d442999f7f2",
+      "parent_sha256": "4a059952ea050d5c6f4b2e0558185356f96b0be22879761e74529d442999f7f2",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunRegionPaint054.java",
+      "sha256": "ba20d081f2ce5c8f74544c7fdbf2db1cc906e84082c3543ef3ed287d1615d2cb",
+      "parent_sha256": "ba20d081f2ce5c8f74544c7fdbf2db1cc906e84082c3543ef3ed287d1615d2cb",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunRegionPaint055.java",
+      "sha256": "afb93956bd1bceaf2e54d4e3babd801baf0c551a860c412da57c714b15402f74",
+      "parent_sha256": "afb93956bd1bceaf2e54d4e3babd801baf0c551a860c412da57c714b15402f74",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralAppearance056.java",
+      "sha256": "413b6d610dab1b1738f526de1bc77facadebcdc239742e17b8cea5439c44b4a7",
+      "parent_sha256": "413b6d610dab1b1738f526de1bc77facadebcdc239742e17b8cea5439c44b4a7",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralCoatMaterial056.java",
+      "sha256": "0463b1c77ac8f03a81027dd1eeb12d5ad446ae08f7e9179accd671774a81dcc7",
+      "parent_sha256": "0463b1c77ac8f03a81027dd1eeb12d5ad446ae08f7e9179accd671774a81dcc7",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralFlyAppearance061.java",
+      "sha256": "c574b7f58039c354e491e99460601a3ace942d5b6dd3dba36e56e152e038c43a",
+      "parent_sha256": "c574b7f58039c354e491e99460601a3ace942d5b6dd3dba36e56e152e038c43a",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralFlyCoatMaterial061.java",
+      "sha256": "6db2cb80104e636f3fe39430957857be5eaaa3e18189406a4c9a9287afdd87e4",
+      "parent_sha256": "6db2cb80104e636f3fe39430957857be5eaaa3e18189406a4c9a9287afdd87e4",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralFlyRegionPaint061.java",
+      "sha256": "180b69baa4a4ccadd30532ba835329dd851c4006fe874507de61f53b1abe1371",
+      "parent_sha256": "180b69baa4a4ccadd30532ba835329dd851c4006fe874507de61f53b1abe1371",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRegionPaint056.java",
+      "sha256": "cf4c45747096ff7d138a7691b47a2f4a7257520f5af810cc7e49e03626a01466",
+      "parent_sha256": "cf4c45747096ff7d138a7691b47a2f4a7257520f5af810cc7e49e03626a01466",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRunAppearance062.java",
+      "sha256": "c2e4a1aae4a45bf95309ce58b42704893d0ff9107e08b748968a687e72b6fa60",
+      "parent_sha256": "c2e4a1aae4a45bf95309ce58b42704893d0ff9107e08b748968a687e72b6fa60",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRunCoatMaterial062.java",
+      "sha256": "10e3044a6ddc7785262bc989575e32179c941e8e2015923a9937a397fbd45801",
+      "parent_sha256": "10e3044a6ddc7785262bc989575e32179c941e8e2015923a9937a397fbd45801",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRunRegionPaint062.java",
+      "sha256": "902e297b9f914cc3a5aaef91d8d78b357dc91c7cc1c95556181a7da7b21b59fc",
+      "parent_sha256": "902e297b9f914cc3a5aaef91d8d78b357dc91c7cc1c95556181a7da7b21b59fc",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java",
+      "sha256": "b045be175b451c0a2f05f86c98ccef5eec4367f5405654f5d829e8d7c9d4cbe2",
+      "parent_sha256": "b045be175b451c0a2f05f86c98ccef5eec4367f5405654f5d829e8d7c9d4cbe2",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java",
+      "sha256": "7c59a101cbaa2a762d29a56268492f8ef39f4dfcb1776fd5fa2937db0bb047ed",
+      "parent_sha256": "7c59a101cbaa2a762d29a56268492f8ef39f4dfcb1776fd5fa2937db0bb047ed",
+      "byte_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralSwimRegionPaint059.java",
+      "sha256": "22d5ca37f8b15b555150a2a391426b4eac9abcc28340ab63af0f1b10f0704b1b",
+      "parent_sha256": "22d5ca37f8b15b555150a2a391426b4eac9abcc28340ab63af0f1b10f0704b1b",
+      "byte_exact": true
+    }
+  ],
+  "ChaoState_exact_outside_readonly_secondaryTypes": true,
+  "shared_integration_review": [
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoMeshAsset.java",
+      "sha256": "ea13235fd125d28495a6a538bf0fbe646fbf5a721ac0234a7620f938c18a3b49",
+      "parent_sha256": "aee8cbb5f0601fa21222569f95594f08fb537f3eaccd66d53dcb339cff19bbfb",
+      "reviewed": true,
+      "finding": "Adds only new asset flags, 10-target parsing/weights and the shared existing path renderer/normal sampler. All earlier booleans and branch order are retained; new flag false gives previous behavior."
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/OfficialChaoRig.java",
+      "sha256": "9abf73349e6fa831f791aa4f25bee313bedd99003d8c071f0868e00ab39084c1",
+      "parent_sha256": "1506e4ce6afbd55ce002e798b0f3bddd78661e98bbd9732fd7086c761c011189",
+      "reviewed": true,
+      "finding": "New disjoint Power-first selection/material precedes old fallbacks. Logical power uses canonical baby UV/attachment alias; only this new profile joins established full-head walking clearance. Prior arithmetic/limits and gaze remain."
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoModel.java",
+      "sha256": "8b9e908d181c1dd1e4c574d6acf7c04db8b288159b55ee2b50acdc0d68387233",
+      "parent_sha256": "81038b1c0fca216980272eedf984e826a626ebc0847cbf6c27c4f2091ae94ea0",
+      "reviewed": true,
+      "finding": "One call prepares the new display-only cache; existing preparation order/animation pipeline stays intact."
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoOverlayLayer.java",
+      "sha256": "1a393600030de4d436326041ec96bb0c06586b2c76784aec4d31ab87f705d463",
+      "parent_sha256": "f186fb6392befc63898600bc58c4b99737dabe67842d99e14a83bf68e93960ca",
+      "reviewed": true,
+      "finding": "New scoped coat overlay precedes existing texture fallbacks; previous routes are textually retained."
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java",
+      "sha256": "4a5d279b4b2bfdce48b0064e8bd3bc19af6af9cfab33257c67102a7a60b9455f",
+      "parent_sha256": "383c0a4a5cd05a4bb7d8062800af650b92627fd3440c2ca4ac409ac73da18f09",
+      "reviewed": true,
+      "finding": "New exact dynamic/neutral_power063 namespace guards marker protection, semantic swatches and wing pixels. Existing route masks are retained; new functions reject other layouts/paths."
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoInspectionScreen.java",
+      "sha256": "30548a7d06b4a9de38d726a8078aebb8713b77c84adb872d3d5a1e80534dadb6",
+      "parent_sha256": "63327bb48aefb9da142a82c7277c1136702460e87266779fe5eddb01b48c46f1",
+      "reviewed": true,
+      "finding": "New conditional labels/current-bar meters describe first-Power identity. Existing edit handlers, request paths and lock/permission behavior are unchanged."
+    },
+    {
+      "path": "src/main/java/com/chaogarden/core/ChaoState.java",
+      "sha256": "333dd8130c1cfb375da5c8e4ce98b9d0979c15f1b1d8c2e8011ee9493b943f0d",
+      "parent_sha256": "e1dc0f77625f9258dcdabef76e03938beb9cf3a8001f3d93cb930c601a69fb15",
+      "reviewed": true,
+      "finding": "Only read-only secondaryTypes labels add the new current-bar profile. All fields, encoding/decoding, evolution/lifecycle/train/recency/locking operations are byte-exact outside that method."
+    }
+  ],
+  "Power_model_UV_faces_checked": 402,
+  "Power_model_Run_stripe_tile_conservative_overlaps": [],
+  "model_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+  "metadata_sha256": "cc0c9f6edc0b888e8cd8bd4f0cf313bc2b3ac4f01b8500b77f8c729fe78863e4",
+  "paint_sha256": "489eac42af99e30a3c40918fb7960a29e720280416b6489aede781fcca3cac43",
+  "review_findings": [
+    "New profile gate is mutually exclusive with completed first-type/alignment families: living mortal ordinary normal adult, locked first Power, locked alignment strictly between -.5 and+.5. Color/shine genes do not gate the shape.",
+    "Existing Run/Power and Swim/Fly policies are preserved; only the new Power profile reads both complete current-bar signed axes. New shape weights do not save biological/stat fields.",
+    "Native controls/authority/network/entity sources are byte-exact; no schema, payload, migration, dependency or renderer replacement was introduced.",
+    "Piano/Organ changes add27actual-currentbarPower profiles at3ages and canonical baby overlays, keeping previous counts and clearance bounds. New task registrations retain prior check dependencies.",
+    "The retained Run material test excludes only the newly added Power model from its historical34-layout inventory. New Power tests separately reject Run stripe reservations; original34 assertions/bounds remain. Its stale shared-tile comment has now been corrected by the exact independently verified comment-only patch; there was no behavioral change.",
+    "Fresh/current helper93case plan is authored and separately root-reviewed. No final client, JAR binding or broad-build outcome is inferred by this source audit."
+  ],
+  "blocking_findings": [],
+  "nonblocking_followup": [
+    {
+      "item": "Final source report and source selection are provisional",
+      "action": "Refresh the UNREVIEWED source proposal after final report edits. Its earlier test-comment hash intentionally predates this verified cleanup; do not finalize that stale proposal."
+    }
+  ],
+  "comment_cleanup_verified": {
+    "timestamp_utc": "2026-11-13T05:43:44.049876+00:00",
+    "path": "src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java",
+    "before_sha256": "38f69fd8fca77dd5240eaa192079461333528255569cb52fb0ad4b42913affbc",
+    "after_sha256": "30c7c5bb4e664197e4d4dc99e6bbf527d5b7752960e9e0c69bae9a726694ce83",
+    "exact_suggested_three_line_comment_patch": true,
+    "test_logic_unchanged": true,
+    "line_count_unchanged": true,
+    "production_runtime_source_unchanged_by_this_patch": true,
+    "additional_build_or_test_inferred": false
+  },
+  "nonblocking_resolved": [
+    {
+      "item": "Retained Run test incorrectly described Power sharing its stripe tile",
+      "resolution": "Root applied only the exact suggested three-line comment patch after the broad build. Independently reconstructed old bytes match the earlier proposal; test logic and line count are unchanged."
+    }
+  ],
+  "proposal_snapshot_note": "The original proposal/hash in this audit describes the earlier unreviewed source snapshot. Current test-comment bytes now differ by the verified cleanup only; final report changes also require a later full proposal refresh.",
+  "all_proposed_snapshot_file_hashes_matched_at_initial_review": true,
+  "current_proposal_hash_refresh_required": true
+}

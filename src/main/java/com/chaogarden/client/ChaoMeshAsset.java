@@ -74,7 +74,7 @@ final class ChaoMeshAsset {
   private boolean heroRunActive,heroRunAdult,heroRunNaturalTwoTone,babyRun053;
   private boolean unified054;
   private boolean blocky055;
-  private boolean neutral056,heroNormal057,neutralSwim059,darkNormal060,neutralFly061,neutralRun062;
+  private boolean neutral056,heroNormal057,neutralSwim059,darkNormal060,neutralFly061,neutralRun062,neutralPower063;
   private final float[] pathWeights056={1,0,0,0,0,0,0,0,0,0};
   private int pathRevision056;
   private final Map<Mesh,PathFrame054> pathFrames056=new IdentityHashMap<>();
@@ -209,7 +209,8 @@ final class ChaoMeshAsset {
                         :mesh.has("neutral_swim_box_059")?BlockyRunBox055.parse(mesh.getAsJsonObject("neutral_swim_box_059"),vertices,10)
                         :mesh.has("dark_normal_box_060")?BlockyRunBox055.parse(mesh.getAsJsonObject("dark_normal_box_060"),vertices,10)
                         :mesh.has("neutral_fly_box_061")?BlockyRunBox055.parse(mesh.getAsJsonObject("neutral_fly_box_061"),vertices,10)
-                        :mesh.has("neutral_run_box_062")?BlockyRunBox055.parse(mesh.getAsJsonObject("neutral_run_box_062"),vertices,10):null,
+                        :mesh.has("neutral_run_box_062")?BlockyRunBox055.parse(mesh.getAsJsonObject("neutral_run_box_062"),vertices,10)
+                        :mesh.has("neutral_power_box_063")?BlockyRunBox055.parse(mesh.getAsJsonObject("neutral_power_box_063"),vertices,10):null,
                     name.startsWith("body__")||name.startsWith("arm_")||name.startsWith("foot_")||name.startsWith("wing_")||name.startsWith("tail__"),
                     List.copyOf(faces),
                     mesh.has("shading") && mesh.get("shading").getAsString().equals("flat")
@@ -243,6 +244,7 @@ final class ChaoMeshAsset {
       result.darkNormal060=data.has("dark_normal_path_060");
       result.neutralFly061=data.has("neutral_fly_path_061");
       result.neutralRun062=data.has("neutral_run_path_062");
+      result.neutralPower063=data.has("neutral_power_path_063");
       if(data.has("attachment_extra_bones"))for(var entry:data.getAsJsonObject("attachment_extra_bones").entrySet()) {
         var extra=new ArrayList<String>();
         for(var value:entry.getValue().getAsJsonArray()) {
@@ -349,7 +351,7 @@ final class ChaoMeshAsset {
   }
 
   private float coordinate(Mesh mesh,int vertex,int axis) {
-    if(neutral056||heroNormal057||neutralSwim059||darkNormal060||neutralFly061||neutralRun062)return pathFrame056(mesh).vertices[vertex][axis];
+    if(neutral056||heroNormal057||neutralSwim059||darkNormal060||neutralFly061||neutralRun062||neutralPower063)return pathFrame056(mesh).vertices[vertex][axis];
     if(blocky055)return pathFrame055(mesh).vertices[vertex][axis];
     if(unified054&&heroRunActive&&mesh.pathVertices054!=null)
       return pathFrame054(mesh).vertices[vertex][axis];
@@ -499,6 +501,13 @@ final class ChaoMeshAsset {
   }
   boolean neutralRunPrototype062(){return neutralRun062;}
 
+  void neutralPowerDevelopment(com.chaogarden.core.NeutralPowerMorphology063.Sample sample) {
+    float[] next=com.chaogarden.core.NeutralPowerMorphology063.weights(sample);
+    if(!Arrays.equals(pathWeights056,next)){pathRevision056++;forwardReaches.clear();}
+    System.arraycopy(next,0,pathWeights056,0,next.length);
+  }
+  boolean neutralPowerPrototype063(){return neutralPower063;}
+
   /** One matched surface/joint sampler serves rendering and every attachment. */
   void heroRunDevelopment(com.chaogarden.core.HeroRunMorphology052.Sample sample,float swimFly,float runPower) {
     float[] next=new float[6];boolean enabled=sample!=null&&sample.enabled();
@@ -547,7 +556,7 @@ final class ChaoMeshAsset {
   }
   void heroRunTwoTone(boolean enabled){heroRunNaturalTwoTone=enabled;}
   boolean heroRunPrototype(){return blocky055||unified054||bones.values().stream().anyMatch(b->b.heroRunPivots!=null);}
-  boolean fixedHeadBox055(){return blocky055||neutral056||heroNormal057||neutralSwim059||darkNormal060||neutralFly061||neutralRun062;}
+  boolean fixedHeadBox055(){return blocky055||neutral056||heroNormal057||neutralSwim059||darkNormal060||neutralFly061||neutralRun062||neutralPower063;}
   private float pivot(Bone bone,int axis){return blocky055?pathJoint055(bone.pivot,bone.pathPivots055,axis):unified054?pathJoint054(bone.pivot,bone.pathPivots054,axis):jointCoordinate(bone.pivot,bone.heroRunPivots,axis);}
   private float pathJoint055(float[] base,float[][] targets,int axis) {
     if(targets==null)return base[axis];float value=0;
@@ -920,7 +929,7 @@ final class ChaoMeshAsset {
         int meshColor=mesh.material.equals("lens")?lensColor:color;
         int meshLight = isLuminous(mesh.material) ? 0x00f000f0 : light;
         for (Face face : mesh.faces) {
-          if(neutral056||heroNormal057||neutralSwim059||darkNormal060||neutralFly061||neutralRun062) {
+          if(neutral056||heroNormal057||neutralSwim059||darkNormal060||neutralFly061||neutralRun062||neutralPower063) {
             matrix.transformNormal(pathFrame056(mesh).normals.get(face),normal);
           } else if(blocky055) {
             matrix.transformNormal(pathFrame055(mesh).normals.get(face),normal);
@@ -1007,7 +1016,7 @@ final class ChaoMeshAsset {
       Vector3f vertex,
       boolean gameplayUv) {
     float[] v = mesh.vertices[face.indices[index]];
-    if (mesh.vertexNormals != null&&!blocky055&&!neutral056&&!heroNormal057&&!neutralSwim059&&!darkNormal060&&!neutralFly061&&!neutralRun062&&!(unified054&&heroRunActive&&mesh.pathVertices054!=null))
+    if (mesh.vertexNormals != null&&!blocky055&&!neutral056&&!heroNormal057&&!neutralSwim059&&!darkNormal060&&!neutralFly061&&!neutralRun062&&!neutralPower063&&!(unified054&&heroRunActive&&mesh.pathVertices054!=null))
       pose.transformNormal(mesh.vertexNormals[face.indices[index]], normal);
     int at=face.indices[index];
     pose.pose().transformPosition(coordinate(mesh,at,0)/16f,coordinate(mesh,at,1)/16f,coordinate(mesh,at,2)/16f,vertex);

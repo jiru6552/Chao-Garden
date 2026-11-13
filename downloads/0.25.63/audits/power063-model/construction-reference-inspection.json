@@ -1,0 +1,16 @@
+{
+  "scope": "Original official-addon Power raw/converted JSON inspected as a blocky construction reference. The 64x32 texture was personally opened. No source viewer geometry/code is imported. No .63 shape authored yet.",
+  "assets": {
+    "art/imported_chao/models/chao_power.geo.json": "cc26883fad2065227c063a2a2f77b72cc7eff497103e3a83c45247f6103cce79",
+    "art/imported_chao/textures/power.png": "9087916ecfe4b8f9c002e1226333e20348414454cdcbe0f33686dc2a9676cda7",
+    "src/main/resources/assets/chao_garden/models/entity/official/chao_power.json": "02189a7c07a28ca649dd9c56e4dac7303c0a85660579a9d89e36f0f1b1b07ecd"
+  },
+  "observed_construction": [
+    "Original7x6x6headbox, two2x2x1frontfaceeyeoverlayboxes in donor only; project keeps its canonical pixel face instead.",
+    "Broad central4x3x6 angled crown root plus3x2x2tip.",
+    "Two mirrored2x2x4 outer swept cuboids.",
+    "Broad lower rear4x4x3 and2x2x3sections.",
+    "Simple4x4x4body,2x2x2hands and2x2x4feet.",
+    "Planar sourcewings will be translated into positive-thickness closed simpleboxes only after live reference inspection."
+  ]
+}

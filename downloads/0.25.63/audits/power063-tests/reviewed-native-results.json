@@ -1,0 +1,475 @@
+{
+  "version": "0.25.63",
+  "timestamp_utc": "2026-11-13T05:48:52.183161+00:00",
+  "scope": "Independent source/namespace and literal log review of actual root-run dedicated GameTest suite. Root confirmed exit0. Counts/names below are registry/source identities plus aggregate passed-all evidence, not separate per-name pass logs or remote multiplayer verification.",
+  "source_log": "/workspace/.setup/power063-native.log",
+  "source_log_sha256": "6e20746f9efb59f1c556c5a41410ebbdf899972b2282c7f8fb8bdd04ff5ba1ec",
+  "gradle_outcome": "BUILD SUCCESSFUL in51s",
+  "actionable_tasks": 9,
+  "executed": 4,
+  "up_to_date": 5,
+  "required_passed": 526,
+  "new_power_required": 50,
+  "retained_required": 476,
+  "game_test_internal_duration_seconds": 21.66,
+  "enabled_namespaces": [
+    "chao_morph52",
+    "chao_swim59",
+    "chao_fly61",
+    "chao_run62",
+    "chao_darknormal60",
+    "chao_heronormal57",
+    "chao_baby53",
+    "chao_edit56",
+    "chao_power63",
+    "chao_neutral56",
+    "chao_morph55",
+    "chao_morph54"
+  ],
+  "new_namespace": "chao_power63",
+  "retained_namespaces": [
+    "chao_run62",
+    "chao_darknormal60",
+    "chao_baby53",
+    "chao_swim59",
+    "chao_neutral56",
+    "chao_heronormal57",
+    "chao_morph55",
+    "chao_fly61",
+    "chao_morph54",
+    "chao_morph52",
+    "chao_edit56"
+  ],
+  "retained_namespace_source_proofs": {
+    "chao_morph54": {
+      "source": "src/main/java/com/chaogarden/test/HeroRunJourneyGameTests054.java",
+      "sha256": "091d638dad85eb53b3e5f8fbff89dcd7b94900518c6fe4aa390d0860186393b4",
+      "byte_exact_delivered062": true
+    },
+    "chao_morph55": {
+      "source": "src/main/java/com/chaogarden/test/BlockyRunMorphologyGameTests055.java",
+      "sha256": "e7c024954a5f39e333553cf71c61aec6cf91c25c8346c8e1fecd584bc918068a",
+      "byte_exact_delivered062": true
+    },
+    "chao_swim59": {
+      "source": "src/main/java/com/chaogarden/test/NeutralSwimMorphologyGameTests059.java",
+      "sha256": "44d320fb870d029218605a33d75281c2044bd26bfc8a8b26e3d358cf805173dd",
+      "byte_exact_delivered062": true
+    },
+    "chao_baby53": {
+      "source": "src/main/java/com/chaogarden/test/BabyRunAlignmentGameTests053.java",
+      "sha256": "ce29ed966582aa76c8dda12954cc41d657b7361026438650c4dce91b3b10c6d9",
+      "byte_exact_delivered062": true
+    },
+    "chao_edit56": {
+      "source": "src/main/java/com/chaogarden/test/CreativeEditingGameTests056.java",
+      "sha256": "ff0d4c765e4c1766f0851fbb0e8e79e5fe97b3cbb02a233d51c65efe645ecfe4",
+      "byte_exact_delivered062": true
+    },
+    "chao_run62": {
+      "source": "src/main/java/com/chaogarden/test/NeutralRunMorphologyGameTests062.java",
+      "sha256": "6eb392ca5a786b898d51f4a5918075bafbaca76ac9f4da90d67f46e57743d4bc",
+      "byte_exact_delivered062": true
+    },
+    "chao_fly61": {
+      "source": "src/main/java/com/chaogarden/test/NeutralFlyMorphologyGameTests061.java",
+      "sha256": "fd35552b4a37012493a006f8c32014c25008d629499a228b73da8c8b3b63908c",
+      "byte_exact_delivered062": true
+    },
+    "chao_neutral56": {
+      "source": "src/main/java/com/chaogarden/test/NeutralMorphologyGameTests056.java",
+      "sha256": "94730326502d2b69895f4c3d2c69860840f19eaa01c9eb72d11545ff33e492ce",
+      "byte_exact_delivered062": true
+    },
+    "chao_heronormal57": {
+      "source": "src/main/java/com/chaogarden/test/HeroNormalMorphologyGameTests057.java",
+      "sha256": "cebde5889f55373fba6a2ae5d5b9d91860132adf3a744608b77253fd79b4fddf",
+      "byte_exact_delivered062": true
+    },
+    "chao_darknormal60": {
+      "source": "src/main/java/com/chaogarden/test/DarkNormalMorphologyGameTests060.java",
+      "sha256": "ca3938b1156f6ca377e6e856978fb240fed67e1d8edc1e374080533fb5b7fe3f",
+      "byte_exact_delivered062": true
+    },
+    "chao_morph52": {
+      "source": "src/main/java/com/chaogarden/test/HeroRunMorphologyGameTests052.java",
+      "sha256": "2c867cc9f44a90f3eb88ec87e6774930550c9d4c1fc3939f25ac9563dcc437eb",
+      "byte_exact_delivered062": true
+    }
+  },
+  "retained_prior_actual_log": {
+    "path": "/workspace/.setup/run062-native.log",
+    "sha256": "66522af357c3911f79541f78a3f1e976e2620dba72cd0cd2edf6192a5e7541be",
+    "required_passed": 476
+  },
+  "new_generator_source": "/workspace/Chao-Garden/src/main/java/com/chaogarden/test/NeutralPowerMorphologyGameTests063.java",
+  "new_generator_source_sha256": "0fd2b2e2f299bb322a5cb25004fc3bfa64dd80dc82e278d1b2718efa9ccef8a6",
+  "new_registered_test_names": [
+    {
+      "source_order_index": 0,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_0_age_0",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 1,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_0_age_50",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 2,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_0_age_100",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 3,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_1_age_0",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 4,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_1_age_50",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 5,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_1_age_100",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 6,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_2_age_0",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 7,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_2_age_50",
+      "batch": "power063_0",
+      "required": true
+    },
+    {
+      "source_order_index": 8,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_0_2_age_100",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 9,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_0_age_0",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 10,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_0_age_50",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 11,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_0_age_100",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 12,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_1_age_0",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 13,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_1_age_50",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 14,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_1_age_100",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 15,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_2_age_0",
+      "batch": "power063_1",
+      "required": true
+    },
+    {
+      "source_order_index": 16,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_2_age_50",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 17,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_1_2_age_100",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 18,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_0_age_0",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 19,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_0_age_50",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 20,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_0_age_100",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 21,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_1_age_0",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 22,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_1_age_50",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 23,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_1_age_100",
+      "batch": "power063_2",
+      "required": true
+    },
+    {
+      "source_order_index": 24,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_2_age_0",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 25,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_2_age_50",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 26,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_grid_2_2_age_100",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 27,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "natural_power_first_evolution_then_real_drives",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 28,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "earned_first_type_and_latest_ties_0",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 29,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "earned_first_type_and_latest_ties_1",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 30,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "earned_first_type_and_latest_ties_2",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 31,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "earned_first_type_and_latest_ties_3",
+      "batch": "power063_3",
+      "required": true
+    },
+    {
+      "source_order_index": 32,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "ordinary_combined_and_analyzer_route_0",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 33,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "ordinary_combined_and_analyzer_route_1",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 34,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "ordinary_combined_and_analyzer_route_2",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 35,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "ordinary_combined_and_analyzer_route_3",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 36,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "combined_balanced_gain_and_real_reversal",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 37,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "compatible_stat_order_is_not_a_new_form",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 38,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "neutral_power_adult_identity_remains_locked",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 39,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "existing_hero_run_path_is_preserved",
+      "batch": "power063_4",
+      "required": true
+    },
+    {
+      "source_order_index": 40,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "existing_neutral_normal_path_remains_separate",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 41,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "completed_neutral_fly_first_policy_is_unchanged",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 42,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "completed_neutral_run_first_policy_is_unchanged",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 43,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "actual_native_selection_and_invalid_edits_are_readonly",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 44,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "actual_native_commands_keep_neutral_power_identity",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 45,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "actual_maturity_payload_keeps_adult_identity",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 46,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "actual_analyzer_permissions_and_locked_alignment",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 47,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "named_jewel_and_shiny_inputs_do_not_change_form",
+      "batch": "power063_5",
+      "required": true
+    },
+    {
+      "source_order_index": 48,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "literal_existing_neutral_world_stays_neutral",
+      "batch": "power063_6",
+      "required": true
+    },
+    {
+      "source_order_index": 49,
+      "holder_namespace": "chao_power63",
+      "test_function_name": "synthetic_expanded_care21_neutral_power_migration",
+      "batch": "power063_6",
+      "required": true
+    }
+  ],
+  "literal_result_lines": [
+    "[05:42:58] [main/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: [chao_morph52, chao_swim59, chao_fly61, chao_run62, chao_darknormal60, chao_heronormal57, chao_baby53, chao_edit56, chao_power63, chao_neutral56, chao_morph55, chao_morph54]",
+    "[05:43:01] [Server thread/INFO] [minecraft/GameTestServer]: 526 tests are now running at position 9463949, -59, 2356540!",
+    "[05:43:23] [Server thread/INFO] [minecraft/GameTestServer]: ========= 526 GAME TESTS COMPLETE IN 21.66 s ======================",
+    "[05:43:23] [Server thread/INFO] [minecraft/GameTestServer]: All 526 required tests passed :)",
+    "BUILD SUCCESSFUL in 51s",
+    "9 actionable tasks: 4 executed, 5 up-to-date"
+  ],
+  "save_and_sync_scope": "Real entity NBT roundtrips, encoded state and in-process tracked data assignment are exercised; no full saved-world restart, independent remote clients, latency/reconnect or arbitrary historical-world migration is inferred.",
+  "migration_scope": "Literal existing Neutral fixture remains distinct from synthetic expanded-care21 Power record; synthetic migration is labeled as such.",
+  "not_claimed": [
+    "Final93-case client completion or visual acceptance",
+    "Full continuous playback/audio listening",
+    "Independent remote multiplayer",
+    "Production JAR loaded by runClient"
+  ]
+}

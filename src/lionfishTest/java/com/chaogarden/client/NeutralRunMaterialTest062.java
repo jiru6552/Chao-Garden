@@ -171,10 +171,13 @@ public final class NeutralRunMaterialTest062 {
   }
   /** Independently retain all existing model UV footprints, not just seven
    * protected family JSONs, before permitting fourteen new alpha pixels. */
+  // .63 has a separately scoped dynamic material and its own UV validation.
+  // Retain the exact original34 historical footprint checks here; the new
+  // Power asset does not use Run's stripe tile and is tested independently.
   private static void unusedTileFootprints()throws Exception {
     int models=0;
     try(var files=Files.list(ROOT.resolve("models/entity/gameplay"))) {
-      for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.getFileName().toString().equals("chao_neutral_run_proto062.json")).sorted().toList()) {
+      for(var path:files.filter(p->p.toString().endsWith(".json")&&!p.getFileName().toString().equals("chao_neutral_run_proto062.json")&&!p.getFileName().toString().equals("chao_neutral_power_proto063.json")).sorted().toList()) {
         var asset=JsonParser.parseString(Files.readString(path)).getAsJsonObject();models++;
         float sx=128f/asset.get("texture_width").getAsFloat(),sy=64f/asset.get("texture_height").getAsFloat();
         for(var b:asset.getAsJsonArray("bones"))for(var m:b.getAsJsonObject().getAsJsonArray("meshes"))

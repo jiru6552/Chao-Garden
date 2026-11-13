@@ -1,0 +1,64 @@
+{
+  "version": "0.25.63",
+  "scope": "Actual independent source-validator rerun completed through exec session19265 with exit0 after the fresh-only horn correction. Literal stdout is captured in geometry-final.log. This is not Minecraft visual/motion verification.",
+  "source_files": {
+    "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_power_proto063.json": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+    "src/main/resources/assets/chao_garden/neutral_power063.json": "cc0c9f6edc0b888e8cd8bd4f0cf313bc2b3ac4f01b8500b77f8c729fe78863e4",
+    "scripts/generate_neutral_power_morph_02563.py": "4f3b27ac1996ad41e35ceb723e4fff99fe4beebbf36a667539e7c91231acfceb",
+    "scripts/validate_neutral_power_morph_02563.py": "68d6341875d317343acef4ffe4a8ce9115be1d2e6523513f57e5721b40224e22"
+  },
+  "positive_closed_boxes": 19,
+  "dense_and_random_blends": 9773,
+  "head_feature_count": 8,
+  "shared_joint_count": 59,
+  "original_head_size": [
+    7,
+    6,
+    6
+  ],
+  "arbitrary_rotation_face_pairs": 12665808,
+  "same_facing_coplanar_disjoint_pairs": 18,
+  "positive_area_coplanar_overlaps": 0,
+  "head_cap_root_uv_samples": 38880,
+  "body_uv_samples": 19440,
+  "cap_uv_samples": 19440,
+  "wing_uv_samples": 3024,
+  "wing_uv_root_samples": 1368,
+  "wing_uv_distal_samples": 1368,
+  "minimum_positive_volume": 0.035,
+  "maximum_five_percent_age_vertex_step": 0.200972455,
+  "added_head_bounds": [
+    [
+      -4.878234007,
+      4.878234007
+    ],
+    [
+      -9.867873689,
+      -0.259295666
+    ],
+    [
+      -1.915019782,
+      6.391366589
+    ]
+  ],
+  "checked": [
+    "Originalskull/face/orb/joints unchanged",
+    "8previousfamilymodels exact",
+    "9distinctmatureheadtargets",
+    "Fullsignedspecializationaxes",
+    "Allheadfeatures SATconnected to originalskull",
+    "Eye and tilted-staticorb clearance",
+    "Allpositiveclosedvolumes",
+    "Anchored soles/heels",
+    "Exactwingproximalhinges and closed2lobefans",
+    "Tailsections connected to eachother and retainedoriginaltailbase",
+    "Four full colored cap cuboids, not hidden/zeroarea paint",
+    "No centralstripe tile or foreheadgeometry"
+  ],
+  "visual_reference_review_sha256": "bf5ef06b965184dd6f179932687dfe8e9aacc80f144fe1b019556a71ddc3561d",
+  "literal_log": {
+    "path": "/workspace/.setup/power063-model/geometry-final.log",
+    "sha256": "4ff50b0371d704713fd5a7907d1ca742b028662a380b46d43624fbc901ccbb29"
+  },
+  "fresh_only_correction_delta_sha256": "032e4a44192bf95160e43d53a630693e330eac0029e667044ab38cb533ca4b9d"
+}

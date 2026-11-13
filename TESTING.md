@@ -183,3 +183,17 @@ The family and its current verification are documented in [DARK_NORMAL_02560.md]
 ## Neutral / Fly-first 0.25.61
 
 See [NEUTRAL_FLY_02561.md](docs/NEUTRAL_FLY_02561.md) for final verification and limits. New checks are `coreTest`, `neutralFlyMorphRigTest061`, `neutralFlyMaterialTest061`, dedicated namespace `chao_fly61` and excluded-from-JAR `NeutralFlyVisualSmoke061`. Previous family and toy/keyboard limits stay enabled. Screenshot/motion, actual live viewer settings and development-classpath/JAR byte bindings accompany delivery; geometric assertions do not constitute visual inspection or listening.
+
+
+## Neutral / Power-first 0.25.63
+
+See [NEUTRAL_POWER_02563.md](docs/NEUTRAL_POWER_02563.md) for actual outcomes and visual limits. Run with Java 21 and the existing external Lionfish API 3.1:
+
+```sh
+python3 scripts/validate_neutral_power_morph_02563.py
+./gradlew coreTest neutralPowerMorphRigTest063 neutralPowerMaterialTest063 pianoRigTest organRigTest
+./gradlew runGameTestServer -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56,chao_heronormal57,chao_swim59,chao_darknormal60,chao_fly61,chao_run62,chao_power63 -PchaoGameTestDir=run-power063-tests
+CHAO_POWER063_SMOKE=true CHAO_POWER063_OUTPUT=/tmp/chao-power063-visual ./gradlew runClient -PneutralPower063Dir=/tmp/chao-power063-world
+```
+
+Serialize server/client invocations. The equipped native scene needs real optional Accessories/owo through `chaoAccessoriesTest` and `chaoAccessoriesDir`; absence is a skip rather than a visual pass. The smoke helper remains excluded from the production JAR. Its authored case plan is not an executed test result. Compare actual viewer/client sources at fresh, intermediate and mature ages, both signed axes, stat gain/loss, pair hold/reversal and Power-through-balance-to-Run; check the fixed head, caps, wings, tail, eyes, coat/shine, animal parts, hats, toy grips and player attachments. Entity-NBT and tracked-state checks do not establish a complete world restart or independent remote multiplayer; physical touch and listening require their own evidence.

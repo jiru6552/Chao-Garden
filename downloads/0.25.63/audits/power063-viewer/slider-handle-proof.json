@@ -1,0 +1,564 @@
+{
+  "scope": "Exact original-canvas slider-handle and selected Power checkbox measurement.",
+  "control_coupling_or_normalization_established": false,
+  "finding": "All paired endpoint captures retain both independently requested full slider ends while Power first type stays selected. Any nonlinear shape appearance is an observation, not proof of source morph formulas.",
+  "handle_rgb": [
+    0,
+    98,
+    198
+  ],
+  "swim_fly_row": 270,
+  "run_power_row": 365,
+  "selected_power_checkbox_patch": {
+    "bbox": [
+      850,
+      60,
+      880,
+      90
+    ],
+    "rgb_patch_sha256": "2fecd2114d51308b8d36fec4fa477a4766f83a02fc255ddb686a56476ae67f60",
+    "actual_family_frames_matched": 150
+  },
+  "rows": [
+    {
+      "file": "neutral-power-balanced-age100-front.png",
+      "sha256": "a8d091b814526ae617f5ff1af1e5080d669ac0981e2aeaeb426d833a1a5a257f",
+      "later": "balanced",
+      "requested_axes": {
+        "mod_run_power": 0,
+        "swim_fly": 0
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+        "approx_observed_viewer_run_axis": 0.0028169014084507044,
+        "approx_observed_swim_fly_axis": -0.0028169014084507044,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-run-age100-front.png",
+      "sha256": "c71e5eda45e1e5f412f612cd8049aad68128cbc90f136eac5b08155e8a2db7a3",
+      "later": "run",
+      "requested_axes": {
+        "mod_run_power": -1,
+        "swim_fly": 0
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 566,
+          "x_max": 595,
+          "center_x": 580.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": -1,
+        "approx_observed_viewer_run_axis": 1,
+        "approx_observed_swim_fly_axis": -0.0028169014084507044,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-power-age100-front.png",
+      "sha256": "416fb01df686ff4ee4f84323002271d46ba4840fb7dfe089f85575ce7aa31df6",
+      "later": "power",
+      "requested_axes": {
+        "mod_run_power": 1,
+        "swim_fly": 0
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 921,
+          "x_max": 950,
+          "center_x": 935.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": 1,
+        "approx_observed_viewer_run_axis": -1,
+        "approx_observed_swim_fly_axis": -0.0028169014084507044,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-fly-age100-front.png",
+      "sha256": "0ad2683411ced8ff345f98c3511dab4ecc31206cf6e491dd60c11ceedbea9499",
+      "later": "fly",
+      "requested_axes": {
+        "mod_run_power": 0,
+        "swim_fly": 1
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 921,
+          "x_max": 950,
+          "center_x": 935.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+        "approx_observed_viewer_run_axis": 0.0028169014084507044,
+        "approx_observed_swim_fly_axis": 1,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-swim-age100-front.png",
+      "sha256": "0303f425c4b00bb6976b5a36772e13b5eadf5c625b4b0169a7610553ce1ed0f6",
+      "later": "swim",
+      "requested_axes": {
+        "mod_run_power": 0,
+        "swim_fly": -1
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 566,
+          "x_max": 595,
+          "center_x": 580.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": -0.0028169014084507044,
+        "approx_observed_viewer_run_axis": 0.0028169014084507044,
+        "approx_observed_swim_fly_axis": -1,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-run-fly-age100-front.png",
+      "sha256": "42e6216bb09c1d83d356909a51f75e0417e0f244f695be29f70a1ecbddee4196",
+      "later": "run-fly",
+      "requested_axes": {
+        "mod_run_power": -1,
+        "swim_fly": 1
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 921,
+          "x_max": 950,
+          "center_x": 935.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 566,
+          "x_max": 595,
+          "center_x": 580.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": -1,
+        "approx_observed_viewer_run_axis": 1,
+        "approx_observed_swim_fly_axis": 1,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-run-swim-age100-front.png",
+      "sha256": "d4857b7738ea1ea17125a8633bba64e9747fcf69f05166ad78e36dbe8c24a8ff",
+      "later": "run-swim",
+      "requested_axes": {
+        "mod_run_power": -1,
+        "swim_fly": -1
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 566,
+          "x_max": 595,
+          "center_x": 580.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 566,
+          "x_max": 595,
+          "center_x": 580.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": -1,
+        "approx_observed_viewer_run_axis": 1,
+        "approx_observed_swim_fly_axis": -1,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-power-fly-age100-front.png",
+      "sha256": "f401b288c6a83c0cc1a8e60ffd24658aecc9aa553c17bb6c7eea5886f3d28de3",
+      "later": "power-fly",
+      "requested_axes": {
+        "mod_run_power": 1,
+        "swim_fly": 1
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 921,
+          "x_max": 950,
+          "center_x": 935.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 921,
+          "x_max": 950,
+          "center_x": 935.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": 1,
+        "approx_observed_viewer_run_axis": -1,
+        "approx_observed_swim_fly_axis": 1,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    },
+    {
+      "file": "neutral-power-power-swim-age100-front.png",
+      "sha256": "67d554153baa3dfa10d7f5abec068896511e18f9b2ecdbb2dc0ae6869bbff4f6",
+      "later": "power-swim",
+      "requested_axes": {
+        "mod_run_power": 1,
+        "swim_fly": -1
+      },
+      "observed_slider_handles": {
+        "alignment": {
+          "row": 170,
+          "x_min": 743,
+          "x_max": 772,
+          "center_x": 757.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "swim_fly": {
+          "row": 270,
+          "x_min": 566,
+          "x_max": 595,
+          "center_x": 580.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "run_power": {
+          "row": 365,
+          "x_min": 921,
+          "x_max": 950,
+          "center_x": 935.5,
+          "rgb": [
+            0,
+            98,
+            198
+          ]
+        },
+        "age": {
+          "row": 435,
+          "x_min": 926,
+          "x_max": 945,
+          "center_x": 935.5,
+          "rgb": [
+            245,
+            123,
+            0
+          ]
+        },
+        "approx_observed_mod_run_power_axis": 1,
+        "approx_observed_viewer_run_axis": -1,
+        "approx_observed_swim_fly_axis": -1,
+        "approx_observed_age_fraction": 1,
+        "method": "Exact opaque handle pixels measured from unchanged original canvas. Normalized estimates use observed endpoint/center positions; these are not script variables or imported game units."
+      }
+    }
+  ]
+}

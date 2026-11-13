@@ -1,0 +1,257 @@
+{
+  "version": "0.25.63",
+  "scope": "Uniform crop/resize of unchanged actual final source PNGs, each checked against its literal POWER063_CAPTURE hash and complete93-case/JAR proof. Generation is not personal visual acceptance.",
+  "coordinator_visual_reviewed": false,
+  "crop": [
+    420,
+    150,
+    1020,
+    850
+  ],
+  "resized_tile": [
+    360,
+    420
+  ],
+  "sheet": "/workspace/.setup/power063-tests/motion72-77-review.png",
+  "sheet_sha256": "c605483018d1469512f7763e9f7739702760b723677f7d58d94cacaae6f6cd64",
+  "originals": [
+    {
+      "name": "power063-live-72-neutral_power_balanced_walk-front-t047-f0081.png",
+      "case": 72,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "f2eca641b3f353251366dcdbb5c0101a133d6f16928edbb2eb859d28ebea52fc",
+      "literal_capture_line": "[05:52:58] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-72-neutral_power_balanced_walk-front-t047-f0081.png case=72 angle=front tick=47 sha256=f2eca641b3f353251366dcdbb5c0101a133d6f16928edbb2eb859d28ebea52fc wallNanos=46496197643859 epochMillis=1794549178657",
+      "file": "power063-live-72-neutral_power_balanced_walk-front-t047-f0081.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-72-neutral_power_balanced_walk-left-t119-f0188.png",
+      "case": 72,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "52c286e5070aec6bb63ab4a90105d52246be050aa7af761b44673e7b8c05c695",
+      "literal_capture_line": "[05:53:02] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-72-neutral_power_balanced_walk-left-t119-f0188.png case=72 angle=left tick=119 sha256=52c286e5070aec6bb63ab4a90105d52246be050aa7af761b44673e7b8c05c695 wallNanos=46499756690328 epochMillis=1794549182216",
+      "file": "power063-live-72-neutral_power_balanced_walk-left-t119-f0188.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-72-neutral_power_balanced_walk-back-t203-f0313.png",
+      "case": 72,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "4ca6e2622a8c419ccc8351aeb475facd0915b2d083bad26ca963247753172e87",
+      "literal_capture_line": "[05:53:06] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-72-neutral_power_balanced_walk-back-t203-f0313.png case=72 angle=back tick=203 sha256=4ca6e2622a8c419ccc8351aeb475facd0915b2d083bad26ca963247753172e87 wallNanos=46503948389944 epochMillis=1794549186407",
+      "file": "power063-live-72-neutral_power_balanced_walk-back-t203-f0313.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-73-neutral_power_run_running-front-t047-f0081.png",
+      "case": 73,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "f3942a4aa92b96ee00f1e929053399a559f1eddc2364065063baf87e3dbfad6e",
+      "literal_capture_line": "[05:53:10] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-73-neutral_power_run_running-front-t047-f0081.png case=73 angle=front tick=47 sha256=f3942a4aa92b96ee00f1e929053399a559f1eddc2364065063baf87e3dbfad6e wallNanos=46508540176204 epochMillis=1794549190999",
+      "file": "power063-live-73-neutral_power_run_running-front-t047-f0081.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-73-neutral_power_run_running-left-t119-f0189.png",
+      "case": 73,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "041fe2d0b95133e1ee25cc29795b83b8d456a07c4f27dbc4cc54ec24ad924b13",
+      "literal_capture_line": "[05:53:14] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-73-neutral_power_run_running-left-t119-f0189.png case=73 angle=left tick=119 sha256=041fe2d0b95133e1ee25cc29795b83b8d456a07c4f27dbc4cc54ec24ad924b13 wallNanos=46512172380771 epochMillis=1794549194631",
+      "file": "power063-live-73-neutral_power_run_running-left-t119-f0189.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-73-neutral_power_run_running-back-t203-f0314.png",
+      "case": 73,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "beae2eb678eeb11720e09932f1bd4afd3031675845bf45b2226f013ebd25d68d",
+      "literal_capture_line": "[05:53:18] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-73-neutral_power_run_running-back-t203-f0314.png case=73 angle=back tick=203 sha256=beae2eb678eeb11720e09932f1bd4afd3031675845bf45b2226f013ebd25d68d wallNanos=46516358454510 epochMillis=1794549198817",
+      "file": "power063-live-73-neutral_power_run_running-back-t203-f0314.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-74-neutral_power_run_swim_water_motion-front-t047-f0080.png",
+      "case": 74,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "0565c389bb1fef773f6076f0a9d65da38025b0bd2f36639dfbab4d7b2dc6c72b",
+      "literal_capture_line": "[05:53:23] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-74-neutral_power_run_swim_water_motion-front-t047-f0080.png case=74 angle=front tick=47 sha256=0565c389bb1fef773f6076f0a9d65da38025b0bd2f36639dfbab4d7b2dc6c72b wallNanos=46521023318299 epochMillis=1794549203482",
+      "file": "power063-live-74-neutral_power_run_swim_water_motion-front-t047-f0080.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-74-neutral_power_run_swim_water_motion-left-t119-f0187.png",
+      "case": 74,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "c69d14e83300e03d63c49095f4d8c4ce2dfa88f2c0a8d5169ed850776b66b2c1",
+      "literal_capture_line": "[05:53:27] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-74-neutral_power_run_swim_water_motion-left-t119-f0187.png case=74 angle=left tick=119 sha256=c69d14e83300e03d63c49095f4d8c4ce2dfa88f2c0a8d5169ed850776b66b2c1 wallNanos=46524644101476 epochMillis=1794549207103",
+      "file": "power063-live-74-neutral_power_run_swim_water_motion-left-t119-f0187.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-74-neutral_power_run_swim_water_motion-back-t203-f0311.png",
+      "case": 74,
+      "angle": "back",
+      "tick": 203,
+      "sha256": "dc6077eb893031e44ea3bfbcae72b8ef4c5e0544d8ccfdcfecc9f68704dca509",
+      "literal_capture_line": "[05:53:31] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-74-neutral_power_run_swim_water_motion-back-t203-f0311.png case=74 angle=back tick=203 sha256=dc6077eb893031e44ea3bfbcae72b8ef4c5e0544d8ccfdcfecc9f68704dca509 wallNanos=46528821812524 epochMillis=1794549211281",
+      "file": "power063-live-74-neutral_power_run_swim_water_motion-back-t203-f0311.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-75-neutral_power_run_fly_broom-front-t035-f0064.png",
+      "case": 75,
+      "angle": "front",
+      "tick": 35,
+      "sha256": "4368df8a27f882ee47611e1dd381420833abaf6730549b06ba0ea9e4af0b44ba",
+      "literal_capture_line": "[05:53:35] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-75-neutral_power_run_fly_broom-front-t035-f0064.png case=75 angle=front tick=35 sha256=4368df8a27f882ee47611e1dd381420833abaf6730549b06ba0ea9e4af0b44ba wallNanos=46532802884790 epochMillis=1794549215262",
+      "file": "power063-live-75-neutral_power_run_fly_broom-front-t035-f0064.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-75-neutral_power_run_fly_broom-left-t095-f0154.png",
+      "case": 75,
+      "angle": "left",
+      "tick": 95,
+      "sha256": "8a94c1721e961148747cbfbd6dce816ea2b7ecad010dd9a18f978ed912f22db8",
+      "literal_capture_line": "[05:53:38] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-75-neutral_power_run_fly_broom-left-t095-f0154.png case=75 angle=left tick=95 sha256=8a94c1721e961148747cbfbd6dce816ea2b7ecad010dd9a18f978ed912f22db8 wallNanos=46535838125607 epochMillis=1794549218297",
+      "file": "power063-live-75-neutral_power_run_fly_broom-left-t095-f0154.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-75-neutral_power_run_fly_broom-back-t155-f0243.png",
+      "case": 75,
+      "angle": "back",
+      "tick": 155,
+      "sha256": "2cb0afe70deb63ddb9e369412d5def9a438368af003cdab9ff3ab516202b5e21",
+      "literal_capture_line": "[05:53:41] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-75-neutral_power_run_fly_broom-back-t155-f0243.png case=75 angle=back tick=155 sha256=2cb0afe70deb63ddb9e369412d5def9a438368af003cdab9ff3ab516202b5e21 wallNanos=46538819600050 epochMillis=1794549221279",
+      "file": "power063-live-75-neutral_power_run_fly_broom-back-t155-f0243.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-76-neutral_power_power_swim_book-front-t035-f0063.png",
+      "case": 76,
+      "angle": "front",
+      "tick": 35,
+      "sha256": "7f9da58cfe109d77f04871eb52e61f7762cd3e1be2537a56caa3d15672a94820",
+      "literal_capture_line": "[05:53:44] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-76-neutral_power_power_swim_book-front-t035-f0063.png case=76 angle=front tick=35 sha256=7f9da58cfe109d77f04871eb52e61f7762cd3e1be2537a56caa3d15672a94820 wallNanos=46542199682151 epochMillis=1794549224659",
+      "file": "power063-live-76-neutral_power_power_swim_book-front-t035-f0063.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-76-neutral_power_power_swim_book-left-t095-f0152.png",
+      "case": 76,
+      "angle": "left",
+      "tick": 95,
+      "sha256": "61735d733564e9ea168fab9dd3ac4cb6cbae83e8699e6788a50a960b6b727269",
+      "literal_capture_line": "[05:53:47] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-76-neutral_power_power_swim_book-left-t095-f0152.png case=76 angle=left tick=95 sha256=61735d733564e9ea168fab9dd3ac4cb6cbae83e8699e6788a50a960b6b727269 wallNanos=46545200901360 epochMillis=1794549227660",
+      "file": "power063-live-76-neutral_power_power_swim_book-left-t095-f0152.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-76-neutral_power_power_swim_book-back-t155-f0240.png",
+      "case": 76,
+      "angle": "back",
+      "tick": 155,
+      "sha256": "f229a7b578b563928ba218b1c6288f22c9d2db6d99b1b738f20c936f3b5fd855",
+      "literal_capture_line": "[05:53:50] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-76-neutral_power_power_swim_book-back-t155-f0240.png case=76 angle=back tick=155 sha256=f229a7b578b563928ba218b1c6288f22c9d2db6d99b1b738f20c936f3b5fd855 wallNanos=46548228238990 epochMillis=1794549230687",
+      "file": "power063-live-76-neutral_power_power_swim_book-back-t155-f0240.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-77-neutral_power_run_fly_equipped_flying-front-t047-f0081.png",
+      "case": 77,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "9cfd9c0fecb5c892d6b5cdd2e78b7b3cbb7d3eddd1d3b6c22571b0f96d1dfb14",
+      "literal_capture_line": "[05:53:54] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-77-neutral_power_run_fly_equipped_flying-front-t047-f0081.png case=77 angle=front tick=47 sha256=9cfd9c0fecb5c892d6b5cdd2e78b7b3cbb7d3eddd1d3b6c22571b0f96d1dfb14 wallNanos=46552339641668 epochMillis=1794549234799",
+      "file": "power063-live-77-neutral_power_run_fly_equipped_flying-front-t047-f0081.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-77-neutral_power_run_fly_equipped_flying-left-t119-f0188.png",
+      "case": 77,
+      "angle": "left",
+      "tick": 119,
+      "sha256": "04bbe3511caebf457d7868626eddf8d9a896cd032deed68dd2da0fe656f79c2f",
+      "literal_capture_line": "[05:53:58] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-77-neutral_power_run_fly_equipped_flying-left-t119-f0188.png case=77 angle=left tick=119 sha256=04bbe3511caebf457d7868626eddf8d9a896cd032deed68dd2da0fe656f79c2f wallNanos=46555908044065 epochMillis=1794549238367",
+      "file": "power063-live-77-neutral_power_run_fly_equipped_flying-left-t119-f0188.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-77-neutral_power_run_fly_equipped_flying-back-t204-f0313.png",
+      "case": 77,
+      "angle": "back",
+      "tick": 204,
+      "sha256": "c4361bd49c032637b2ad325846d719f8c5dc29c7ec5968061ea01e8ceec70cb9",
+      "literal_capture_line": "[05:54:02] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-77-neutral_power_run_fly_equipped_flying-back-t204-f0313.png case=77 angle=back tick=204 sha256=c4361bd49c032637b2ad325846d719f8c5dc29c7ec5968061ea01e8ceec70cb9 wallNanos=46560184846780 epochMillis=1794549242644",
+      "file": "power063-live-77-neutral_power_run_fly_equipped_flying-back-t204-f0313.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    }
+  ],
+  "canonical_log_sha256": "7a16d37732b042e540c79d24e99a29d88c903793c885dd87db0a64f137555d29",
+  "runtime_proof_sha256": "7dc1d9846f36226432c800688398782c9a4f7a50b7e44c98eb56f3b54d82bd28",
+  "jar_sha256": "791156dad7d275a7ba44fe047f453cf020d55bae34d46cc68b9262002f0d3a3f",
+  "model_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0"
+}

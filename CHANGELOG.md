@@ -1,10 +1,16 @@
-## 0.25.59 — Neutral Swim-first morphology foundation
+## 0.25.63 — Neutral Power-first morphology
+
+- Add the balanced Neutral/Power-first adult and eight signed-axis specialization targets around the unchanged original blocky head, keeping the distinct newly evolved Power form.
+- Keep later Run/Power and Swim/Fly reversible across balance while adult first type and alignment remain locked. Compatible pair order is identical.
+- Preserve completed families, genetic coats and shine, shared animation/attachment rig, saves, Creative controls and commands. See [the family report](docs/NEUTRAL_POWER_02563.md) for actual checks and approximations.
 
 ## 0.25.62 — Neutral Run-first morphology
 
 - Add nine Neutral/Run-first adult targets and gradual age/training development using separate blocky features around the unchanged head box.
 - Preserve signed Run/Power and Swim/Fly opposition, including continuing past balance into opposite-side forms without changing locked first evolution identity or biological maturity.
 - Keep previous families, coat/shine rules, shared animation/attachment rig, saved data, Creative controls and commands. See [the family report](docs/NEUTRAL_RUN_02562.md) for actual visual checks, test outcomes and approximations.
+
+## 0.25.59 — Neutral Swim-first morphology foundation
 
 - Add fresh Neutral/Swim and six later forms: balanced, Run, Power, Swim, Swim+Run and Swim+Power, on the existing rigid-box sampler and shared animation rig.
 - Keep the original head box, facial geometry, locked first identity, inherited coats and shine; develop a separate broad crown, rear crest, paired side fins, wings and compact limbs.

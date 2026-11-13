@@ -14,6 +14,7 @@ public final class MechanicsTestSuite {
     System.out.println("Dark/Normal morphology060: "+DarkNormalMorphology060Test.run()+" checks passed");
     System.out.println("Neutral/Fly morphology061: "+NeutralFlyMorphology061Test.run()+" checks passed");
     System.out.println("Neutral/Run morphology062: "+NeutralRunMorphology062Test.run()+" checks passed");
+    System.out.println("Neutral/Power morphology063: "+NeutralPowerMorphology063Test.run()+" checks passed");
     DriveRulesTest.main(args);
     com.chaogarden.toys.ToyInteractionRulesTest.main(args);
     int distribution = com.chaogarden.distribution.EggDistributionRulesTest.run();

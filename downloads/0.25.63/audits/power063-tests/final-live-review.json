@@ -1,0 +1,740 @@
+{
+  "version": "0.25.63",
+  "status": "PASS within stated scope",
+  "reviewer": "/root/power063_tests",
+  "created_utc": "2026-11-13T06:12:13.814053+00:00",
+  "scope": "Read-only actual final log/encoded-state/all-original-hash/frozen-live-JAR audit plus completed personal review of two motion sheets and21 full originals. No source, build, game, proof, original-image or Git changes.",
+  "source_log_sha256": "7a16d37732b042e540c79d24e99a29d88c903793c885dd87db0a64f137555d29",
+  "authored_plan_sha256": "a4bbe223002c53132bfea47d53851b4f304a4be365f8c3af82c5ccefaad324a8",
+  "authored_helper_sha256": "08b9e80feaa3f60e42c53fab275d927db38f8c69c3a973473bf17d0ec2d64853",
+  "runtime_proof_sha256": "7dc1d9846f36226432c800688398782c9a4f7a50b7e44c98eb56f3b54d82bd28",
+  "jar_sha256": "791156dad7d275a7ba44fe047f453cf020d55bae34d46cc68b9262002f0d3a3f",
+  "model_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+  "metadata_sha256": "cc0c9f6edc0b888e8cd8bd4f0cf313bc2b3ac4f01b8500b77f8c729fe78863e4",
+  "client_cohort": {
+    "cases": 93,
+    "skipped": 0,
+    "original_pngs": 796,
+    "world_pngs": 780,
+    "ui_pngs": 16,
+    "static_pngs": 468,
+    "post_ui_world_pngs": 9,
+    "motion_evolution_pngs": 303,
+    "hash_mismatches": 0
+  },
+  "production_entries_compared": 8347,
+  "production_mismatches": 0,
+  "runtime_mode": "development_classpath; JAR loading is not claimed",
+  "actual_build_logs": {
+    "focused": {
+      "path": "/workspace/.setup/power063-focused.log",
+      "sha256": "83d1389f8de581c0a8b58ae5c5726c0f3ba858ea5063b4170bbf8fdeed7f3d9a",
+      "literal_outcome": "BUILD SUCCESSFUL in 1m 2s"
+    },
+    "build": {
+      "path": "/workspace/.setup/power063-build.log",
+      "sha256": "2e4476a6b6bbcbce6a670f392fd70edc4476d81de6addea7ded0a312d628393e",
+      "literal_outcome": "BUILD SUCCESSFUL in 14m 1s"
+    },
+    "native": {
+      "path": "/workspace/.setup/power063-native.log",
+      "sha256": "6e20746f9efb59f1c556c5a41410ebbdf899972b2282c7f8fb8bdd04ff5ba1ec",
+      "literal_outcome": "BUILD SUCCESSFUL in 51s",
+      "required_passed": 526,
+      "new_power063": 50,
+      "retained": 476,
+      "actual_batches": [
+        {
+          "name": "run062_1:0",
+          "count": 8
+        },
+        {
+          "name": "run062_0:0",
+          "count": 8
+        },
+        {
+          "name": "run062_3:0",
+          "count": 8
+        },
+        {
+          "name": "run062_2:0",
+          "count": 8
+        },
+        {
+          "name": "run062_5:0",
+          "count": 8
+        },
+        {
+          "name": "run062_4:0",
+          "count": 8
+        },
+        {
+          "name": "journey054:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_0:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_1:0",
+          "count": 8
+        },
+        {
+          "name": "swim059_4:0",
+          "count": 6
+        },
+        {
+          "name": "swim059_3:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_8:0",
+          "count": 4
+        },
+        {
+          "name": "morph052_6:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_7:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_4:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_5:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_2:0",
+          "count": 8
+        },
+        {
+          "name": "morph052_3:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_7:0",
+          "count": 5
+        },
+        {
+          "name": "baby053_5:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_6:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_3:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_4:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_1:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_2:0",
+          "count": 8
+        },
+        {
+          "name": "baby053_0:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_1:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_5:0",
+          "count": 2
+        },
+        {
+          "name": "darknormal060_0:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_0:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_1:0",
+          "count": 8
+        },
+        {
+          "name": "morph055_3:0",
+          "count": 2
+        },
+        {
+          "name": "fly061_2:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_3:0",
+          "count": 8
+        },
+        {
+          "name": "morph055_1:0",
+          "count": 8
+        },
+        {
+          "name": "fly061_4:0",
+          "count": 6
+        },
+        {
+          "name": "morph055_2:0",
+          "count": 8
+        },
+        {
+          "name": "morph055_0:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_6:0",
+          "count": 6
+        },
+        {
+          "name": "power063_4:0",
+          "count": 8
+        },
+        {
+          "name": "swim059_0:0",
+          "count": 8
+        },
+        {
+          "name": "power063_3:0",
+          "count": 8
+        },
+        {
+          "name": "power063_6:0",
+          "count": 2
+        },
+        {
+          "name": "swim059_2:0",
+          "count": 8
+        },
+        {
+          "name": "power063_5:0",
+          "count": 8
+        },
+        {
+          "name": "swim059_1:0",
+          "count": 8
+        },
+        {
+          "name": "power063_0:0",
+          "count": 8
+        },
+        {
+          "name": "power063_2:0",
+          "count": 8
+        },
+        {
+          "name": "power063_1:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_2:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_5:0",
+          "count": 7
+        },
+        {
+          "name": "neutral056_1:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_4:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_4:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_3:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_3:0",
+          "count": 8
+        },
+        {
+          "name": "darknormal060_2:0",
+          "count": 8
+        },
+        {
+          "name": "neutral056_0:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_4:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_5:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_5:0",
+          "count": 6
+        },
+        {
+          "name": "editing056_4:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_2:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_3:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_3:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_2:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_0:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_1:0",
+          "count": 8
+        },
+        {
+          "name": "heronormal057_1:0",
+          "count": 8
+        },
+        {
+          "name": "editing056_0:0",
+          "count": 8
+        }
+      ]
+    },
+    "jar-prepare": {
+      "path": "/workspace/.setup/power063-jar-prepare.log",
+      "sha256": "61e5b1073dd51d65f91746e567aa62157f4d0dbe7f159ec9d13d1f6cd367476f",
+      "literal_outcome": "BUILD SUCCESSFUL in 10s"
+    }
+  },
+  "personal_visual_review": {
+    "completed": true,
+    "sheets": [
+      {
+        "path": "/workspace/.setup/power063-tests/motion72-77-review.png",
+        "sha256": "c605483018d1469512f7763e9f7739702760b723677f7d58d94cacaae6f6cd64",
+        "source_manifest": "/workspace/.setup/power063-tests/motion72-77-review-sources.json",
+        "source_manifest_sha256": "5a5e4a82706f4ae16220e424b4f90790dea88aafb33761a116fb7b3c11b24e26",
+        "source_count": 18,
+        "personally_opened": true
+      },
+      {
+        "path": "/workspace/.setup/power063-tests/motion78-83-review.png",
+        "sha256": "dd52663d77d13b74d47a9d7a885b1956f4661076d4c8ffb4b363b7005d753b28",
+        "source_manifest": "/workspace/.setup/power063-tests/motion78-83-review-sources.json",
+        "source_manifest_sha256": "4052510b7f7b85950ae4457ab9c97a7c9a3a594e1a243410cf514fe0f42ba75e",
+        "source_count": 27,
+        "personally_opened": true
+      }
+    ],
+    "sheet_unique_originals": 45,
+    "full_native_originals": [
+      {
+        "name": "power063-live-72-neutral_power_balanced_walk-front-t047-f0081.png",
+        "case": 72,
+        "angle": "front",
+        "tick": 47,
+        "sha256": "f2eca641b3f353251366dcdbb5c0101a133d6f16928edbb2eb859d28ebea52fc",
+        "literal_capture_line": "[05:52:58] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-72-neutral_power_balanced_walk-front-t047-f0081.png case=72 angle=front tick=47 sha256=f2eca641b3f353251366dcdbb5c0101a133d6f16928edbb2eb859d28ebea52fc wallNanos=46496197643859 epochMillis=1794549178657",
+        "file": "power063-live-72-neutral_power_balanced_walk-front-t047-f0081.png",
+        "requested_tick": null,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-72-neutral_power_balanced_walk-front-t047-f0081.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-73-neutral_power_run_running-left-t119-f0189.png",
+        "case": 73,
+        "angle": "left",
+        "tick": 119,
+        "sha256": "041fe2d0b95133e1ee25cc29795b83b8d456a07c4f27dbc4cc54ec24ad924b13",
+        "literal_capture_line": "[05:53:14] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-73-neutral_power_run_running-left-t119-f0189.png case=73 angle=left tick=119 sha256=041fe2d0b95133e1ee25cc29795b83b8d456a07c4f27dbc4cc54ec24ad924b13 wallNanos=46512172380771 epochMillis=1794549194631",
+        "file": "power063-live-73-neutral_power_run_running-left-t119-f0189.png",
+        "requested_tick": null,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-73-neutral_power_run_running-left-t119-f0189.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-74-neutral_power_run_swim_water_motion-left-t119-f0187.png",
+        "case": 74,
+        "angle": "left",
+        "tick": 119,
+        "sha256": "c69d14e83300e03d63c49095f4d8c4ce2dfa88f2c0a8d5169ed850776b66b2c1",
+        "literal_capture_line": "[05:53:27] [IO-Worker-7/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-74-neutral_power_run_swim_water_motion-left-t119-f0187.png case=74 angle=left tick=119 sha256=c69d14e83300e03d63c49095f4d8c4ce2dfa88f2c0a8d5169ed850776b66b2c1 wallNanos=46524644101476 epochMillis=1794549207103",
+        "file": "power063-live-74-neutral_power_run_swim_water_motion-left-t119-f0187.png",
+        "requested_tick": null,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-74-neutral_power_run_swim_water_motion-left-t119-f0187.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-75-neutral_power_run_fly_broom-left-t095-f0154.png",
+        "case": 75,
+        "angle": "left",
+        "tick": 95,
+        "sha256": "8a94c1721e961148747cbfbd6dce816ea2b7ecad010dd9a18f978ed912f22db8",
+        "literal_capture_line": "[05:53:38] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-75-neutral_power_run_fly_broom-left-t095-f0154.png case=75 angle=left tick=95 sha256=8a94c1721e961148747cbfbd6dce816ea2b7ecad010dd9a18f978ed912f22db8 wallNanos=46535838125607 epochMillis=1794549218297",
+        "file": "power063-live-75-neutral_power_run_fly_broom-left-t095-f0154.png",
+        "requested_tick": 100,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-75-neutral_power_run_fly_broom-left-t095-f0154.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-76-neutral_power_power_swim_book-left-t095-f0152.png",
+        "case": 76,
+        "angle": "left",
+        "tick": 95,
+        "sha256": "61735d733564e9ea168fab9dd3ac4cb6cbae83e8699e6788a50a960b6b727269",
+        "literal_capture_line": "[05:53:47] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-76-neutral_power_power_swim_book-left-t095-f0152.png case=76 angle=left tick=95 sha256=61735d733564e9ea168fab9dd3ac4cb6cbae83e8699e6788a50a960b6b727269 wallNanos=46545200901360 epochMillis=1794549227660",
+        "file": "power063-live-76-neutral_power_power_swim_book-left-t095-f0152.png",
+        "requested_tick": 100,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-76-neutral_power_power_swim_book-left-t095-f0152.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-77-neutral_power_run_fly_equipped_flying-front-t047-f0081.png",
+        "case": 77,
+        "angle": "front",
+        "tick": 47,
+        "sha256": "9cfd9c0fecb5c892d6b5cdd2e78b7b3cbb7d3eddd1d3b6c22571b0f96d1dfb14",
+        "literal_capture_line": "[05:53:54] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-77-neutral_power_run_fly_equipped_flying-front-t047-f0081.png case=77 angle=front tick=47 sha256=9cfd9c0fecb5c892d6b5cdd2e78b7b3cbb7d3eddd1d3b6c22571b0f96d1dfb14 wallNanos=46552339641668 epochMillis=1794549234799",
+        "file": "power063-live-77-neutral_power_run_fly_equipped_flying-front-t047-f0081.png",
+        "requested_tick": null,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-77-neutral_power_run_fly_equipped_flying-front-t047-f0081.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-77-neutral_power_run_fly_equipped_flying-left-t119-f0188.png",
+        "case": 77,
+        "angle": "left",
+        "tick": 119,
+        "sha256": "04bbe3511caebf457d7868626eddf8d9a896cd032deed68dd2da0fe656f79c2f",
+        "literal_capture_line": "[05:53:58] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-77-neutral_power_run_fly_equipped_flying-left-t119-f0188.png case=77 angle=left tick=119 sha256=04bbe3511caebf457d7868626eddf8d9a896cd032deed68dd2da0fe656f79c2f wallNanos=46555908044065 epochMillis=1794549238367",
+        "file": "power063-live-77-neutral_power_run_fly_equipped_flying-left-t119-f0188.png",
+        "requested_tick": null,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-77-neutral_power_run_fly_equipped_flying-left-t119-f0188.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-77-neutral_power_run_fly_equipped_flying-back-t204-f0313.png",
+        "case": 77,
+        "angle": "back",
+        "tick": 204,
+        "sha256": "c4361bd49c032637b2ad325846d719f8c5dc29c7ec5968061ea01e8ceec70cb9",
+        "literal_capture_line": "[05:54:02] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-77-neutral_power_run_fly_equipped_flying-back-t204-f0313.png case=77 angle=back tick=204 sha256=c4361bd49c032637b2ad325846d719f8c5dc29c7ec5968061ea01e8ceec70cb9 wallNanos=46560184846780 epochMillis=1794549242644",
+        "file": "power063-live-77-neutral_power_run_fly_equipped_flying-back-t204-f0313.png",
+        "requested_tick": null,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-77-neutral_power_run_fly_equipped_flying-back-t204-f0313.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-78-neutral_power_run_gain_walk-left-t181-f0272.png",
+        "case": 78,
+        "angle": "left",
+        "tick": 181,
+        "sha256": "9e3097ad84046b07e725591b05b5542c0bb53b580765de0085e26f9406851421",
+        "literal_capture_line": "[05:54:13] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-78-neutral_power_run_gain_walk-left-t181-f0272.png case=78 angle=left tick=181 sha256=9e3097ad84046b07e725591b05b5542c0bb53b580765de0085e26f9406851421 wallNanos=46571399479414 epochMillis=1794549253858",
+        "file": "power063-live-78-neutral_power_run_gain_walk-left-t181-f0272.png",
+        "requested_tick": 180,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-78-neutral_power_run_gain_walk-left-t181-f0272.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-79-neutral_power_power_fly_gain_walk-left-t180-f0275.png",
+        "case": 79,
+        "angle": "left",
+        "tick": 180,
+        "sha256": "67ac63be233c40072cdd2deaf19ee786e3909b36700c7f1756eb12e1dfaa23e7",
+        "literal_capture_line": "[05:54:28] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-79-neutral_power_power_fly_gain_walk-left-t180-f0275.png case=79 angle=left tick=180 sha256=67ac63be233c40072cdd2deaf19ee786e3909b36700c7f1756eb12e1dfaa23e7 wallNanos=46585784755012 epochMillis=1794549268244",
+        "file": "power063-live-79-neutral_power_power_fly_gain_walk-left-t180-f0275.png",
+        "requested_tick": 180,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-79-neutral_power_power_fly_gain_walk-left-t180-f0275.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-80-neutral_power_fly_loss_walk-back-t255-f0376.png",
+        "case": 80,
+        "angle": "back",
+        "tick": 255,
+        "sha256": "f8b59c800f6924d620a34f847b00b6c768e2363572474f0132e838f81b2b9713",
+        "literal_capture_line": "[05:54:46] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-80-neutral_power_fly_loss_walk-back-t255-f0376.png case=80 angle=back tick=255 sha256=f8b59c800f6924d620a34f847b00b6c768e2363572474f0132e838f81b2b9713 wallNanos=46603948626779 epochMillis=1794549286408",
+        "file": "power063-live-80-neutral_power_fly_loss_walk-back-t255-f0376.png",
+        "requested_tick": 260,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-80-neutral_power_fly_loss_walk-back-t255-f0376.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t288-f0430.png",
+        "case": 81,
+        "angle": "left",
+        "tick": 288,
+        "sha256": "8a1e2ef535c9ce9398344c66c4a0129ce52e4854605ee70c581fb1e962259a6a",
+        "literal_capture_line": "[05:55:02] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t288-f0430.png case=81 angle=left tick=288 sha256=8a1e2ef535c9ce9398344c66c4a0129ce52e4854605ee70c581fb1e962259a6a wallNanos=46620000903638 epochMillis=1794549302460",
+        "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t288-f0430.png",
+        "requested_tick": 288,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t288-f0430.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t300-f0448.png",
+        "case": 81,
+        "angle": "left",
+        "tick": 300,
+        "sha256": "3cb258aeb7478bda928276fcab979a753877d3848004f8c9fa753a5924da99c2",
+        "literal_capture_line": "[05:55:03] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t300-f0448.png case=81 angle=left tick=300 sha256=3cb258aeb7478bda928276fcab979a753877d3848004f8c9fa753a5924da99c2 wallNanos=46620602647553 epochMillis=1794549303062",
+        "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t300-f0448.png",
+        "requested_tick": 300,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t300-f0448.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t312-f0466.png",
+        "case": 81,
+        "angle": "left",
+        "tick": 312,
+        "sha256": "234db5b0c143c700b2d5635a40777a93241285632451240f83a7454e24f101a1",
+        "literal_capture_line": "[05:55:03] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t312-f0466.png case=81 angle=left tick=312 sha256=234db5b0c143c700b2d5635a40777a93241285632451240f83a7454e24f101a1 wallNanos=46621218728434 epochMillis=1794549303678",
+        "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t312-f0466.png",
+        "requested_tick": 312,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t312-f0466.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t625-f0925.png",
+        "case": 81,
+        "angle": "back",
+        "tick": 625,
+        "sha256": "80d75d8dcf1d8d1e968dbf09ac903ea99963bbf3dc0e1a21664fae09d1978276",
+        "literal_capture_line": "[05:55:19] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t625-f0925.png case=81 angle=back tick=625 sha256=80d75d8dcf1d8d1e968dbf09ac903ea99963bbf3dc0e1a21664fae09d1978276 wallNanos=46636871293279 epochMillis=1794549319330",
+        "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t625-f0925.png",
+        "requested_tick": 624,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t625-f0925.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t240-f0358.png",
+        "case": 82,
+        "angle": "left",
+        "tick": 240,
+        "sha256": "0e0779cb59afd132b9bb715f77a6815105019e934c799c0b28e4cc5f3f3cbf07",
+        "literal_capture_line": "[05:55:32] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-left-t240-f0358.png case=82 angle=left tick=240 sha256=0e0779cb59afd132b9bb715f77a6815105019e934c799c0b28e4cc5f3f3cbf07 wallNanos=46650009198308 epochMillis=1794549332468",
+        "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t240-f0358.png",
+        "requested_tick": 240,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-82-neutral_power_power_to_run_opposition_walk-left-t240-f0358.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t360-f0536.png",
+        "case": 82,
+        "angle": "left",
+        "tick": 360,
+        "sha256": "3cfb9819d1d5e8093fcbe71d5b59df49ed22106367105f2e80a5f1b3df5c4063",
+        "literal_capture_line": "[05:55:38] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-left-t360-f0536.png case=82 angle=left tick=360 sha256=3cfb9819d1d5e8093fcbe71d5b59df49ed22106367105f2e80a5f1b3df5c4063 wallNanos=46656026157462 epochMillis=1794549338485",
+        "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t360-f0536.png",
+        "requested_tick": 360,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-82-neutral_power_power_to_run_opposition_walk-left-t360-f0536.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t552-f0821.png",
+        "case": 82,
+        "angle": "back",
+        "tick": 552,
+        "sha256": "fcf559780100238e9664e4f49e72705afc0b63d1da0a2788fbc15b356bcc906c",
+        "literal_capture_line": "[05:55:48] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-back-t552-f0821.png case=82 angle=back tick=552 sha256=fcf559780100238e9664e4f49e72705afc0b63d1da0a2788fbc15b356bcc906c wallNanos=46665607874238 epochMillis=1794549348067",
+        "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t552-f0821.png",
+        "requested_tick": 551,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-82-neutral_power_power_to_run_opposition_walk-back-t552-f0821.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png",
+        "case": 83,
+        "angle": "front",
+        "tick": 11,
+        "sha256": "5fdcb690b5bb849635fb44fa6a8c49b0a040f17b9ad40becf1bb62dc25f1581e",
+        "literal_capture_line": "[05:55:49] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png case=83 angle=front tick=11 sha256=5fdcb690b5bb849635fb44fa6a8c49b0a040f17b9ad40becf1bb62dc25f1581e wallNanos=46666948259938 epochMillis=1794549349407",
+        "file": "power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png",
+        "requested_tick": 11,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png",
+        "case": 83,
+        "angle": "left",
+        "tick": 155,
+        "sha256": "cb994249b34a95440561bc82b13480ba92aaed474b6f111b305169cc8c88f226",
+        "literal_capture_line": "[05:55:56] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png case=83 angle=left tick=155 sha256=cb994249b34a95440561bc82b13480ba92aaed474b6f111b305169cc8c88f226 wallNanos=46674155350073 epochMillis=1794549356614",
+        "file": "power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png",
+        "requested_tick": 155,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png",
+        "case": 83,
+        "angle": "back",
+        "tick": 299,
+        "sha256": "10f516d756da5dadfb0ed252348dbd49b9d1f309bea036a167d6f6a388737663",
+        "literal_capture_line": "[05:56:03] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png case=83 angle=back tick=299 sha256=10f516d756da5dadfb0ed252348dbd49b9d1f309bea036a167d6f6a388737663 wallNanos=46681366985022 epochMillis=1794549363826",
+        "file": "power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png",
+        "requested_tick": 299,
+        "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png",
+        "personally_opened": true,
+        "inspection_resolution": [
+          1440,
+          900
+        ]
+      }
+    ],
+    "full_native_count": 21,
+    "sheet_full_overlap": 15,
+    "overall_unique_originals": 51,
+    "all_motion_cases_covered": [
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ]
+  },
+  "case_observations": {
+    "72": "Balanced actual walking keeps the original cube head, eyes, marker, crown, limbs and feet readable; native navigation walked8.35752 blocks.",
+    "73": "The opposite Run specialization has a rearward/downward upper crown and one lower axial rear point with yellow caps. The genuine running gait retains attached compact palms/feet; native navigation walked18.64242 blocks.",
+    "74": "Actual blue-tinted underwater views show the in-water swimming pose and compressed Run+Swim points. No navigation was requested; the side framing partly cuts the lowest foot. The walk accumulator is not updated here and does not measure displacement.",
+    "75": "The broom shaft/bristles and both hands meet in the actual one-shot pose. Full side95 shows connected compact palms and unbroken crown/tail; native dispatcher cleanup and380 palm contacts passed.",
+    "76": "The open picture book and hands are visible with the original delighted/closed-eye face in front sheet view. Full side95 preserves the Power+Swim silhouette and small caps. Native dispatcher cleanup and380 palm contacts passed.",
+    "77": "Real Accessories carries the Chao in an upright fixed-position Creative flying pose. The front sample is fully obscured by the player; side/back show the mounted body, points and tail. Face/orb partly overlap or hide behind player hair/head. No flight traversal or horizontal carry is established.",
+    "78": "Selected actual gain frames develop the Run point direction and gold accents while walking; the authoritative endpoint is RP\u22121/SF0. Continuous edits visibly lag their raw bars and settle after the target stops changing.",
+    "79": "Selected actual Power+Fly gain frames retain an orange/red body with taller crown/horns and pink accents; the authoritative endpoint is RP+1/SF+1. No original-head deformation or exposed internal surface was observed.",
+    "80": "Fly influence recedes toward the balanced crown/caps while walking; biological strength and first identity remain fixed. The selected back255 frame is transitional, not falsely labeled a settled endpoint.",
+    "81": "Raw Run+Fly reaches(\u22121,+1) at240 and holds through320. Actual display first logs settled at280; full images288/300/312 show that held form under different stride phases. Reversal starts322, displayed600 is balanced, and full back625 shows the recovered balanced surface.",
+    "82": "Actual raw Power\u2192Run values are+.5/0/\u2212.5/\u22121 at120/240/360/480 while firstPower4 remains locked. At240 the display is still+.51197803; at360 it is+.09102323, and at480 it is\u2212.37222666. It reaches displayed\u22121 by540; full back552 shows the gold-capped Run specialization with the orange Power-first identity.",
+    "83": "Full front11 is the original teal child, full left155 is the genuine opaque cocoon, and full back299 is a newly evolved gold/orange Power-first adult with pale caps and substantial outward horns. The authoritative endpoint locks Neutral0/firstPower4 with maturity8.487654e\u22125 and RP+.5/SF0. This is a real threshold/cocoon transition seeded12ticks before evolution, not a whole childhood."
+  },
+  "limits": [
+    "Personal review covers two sheets/45 unique selected originals plus21 full native originals, overlapping15 for51 unique inspected sources. It does not mean every796 PNG was individually viewed or every intervening animation frame was played.",
+    "Only snapshots and the literal actual render/native callbacks were reviewed here. Root owns the separate movie sampled-frame review; this audit claims no movie playback, continuous playback or audio listening.",
+    "Water is an actual in-water pose without navigation; the walk counter does not establish zero displacement. No autonomous swimming/gliding was verified.",
+    "Carry is an upright fixed-position Creative flying pose with real Accessories. Player occlusion and face/orb hair overlap remain; no horizontal elytra/swim carry, takeoff/landing or flight traversal was verified.",
+    "Walking/drivetrain chronological ages advance exactly elapsed ticks while biological strength stays1.2. Broom/book operator preview restores most care aging (20tick delta over180tick animation); managed carrying preserves it completely (0over240). Natural evolution separately pauses most age during cocoon.",
+    "No three-visible-hurt-face, visible question/dizzy client, physical touch, independent remote multiplayer/latency/reconnect, full saved-world restart or arbitrary historical migration pass is claimed.",
+    "Development classpath production bytes match the archive exactly; this does not mean runClient loaded the packaged JAR.",
+    "Power crown/horns/back point and broad caps are deliberately cuboid approximations. Lighting, sequential camera angles and gait/breathing phases differ from viewer comparisons. Head skin has no Run stripes; matching shade at the original tail base and separate distal accent is visible in selected back/side views."
+  ],
+  "blocking_visual_defect_observed": false,
+  "actual_numeric_audit_path": "/workspace/.setup/power063-tests/final-live-numeric-audit.json",
+  "actual_capture_hash_audit_path": "/workspace/.setup/power063-tests/final-capture-hashes.json",
+  "actual_production_hash_audit_path": "/workspace/.setup/power063-tests/final-production-hash-audit.json"
+}

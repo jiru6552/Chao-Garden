@@ -1,0 +1,11 @@
+{
+  "path": "src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java",
+  "executed_source_sha256": "38f69fd8fca77dd5240eaa192079461333528255569cb52fb0ad4b42913affbc",
+  "current_source_sha256": "30c7c5bb4e664197e4d4dc99e6bbf527d5b7752960e9e0c69bae9a726694ce83",
+  "changed_comment_lines": 3,
+  "line_count_unchanged": true,
+  "all_other_bytes_equal_to_executed_version": true,
+  "old_comment_block": "  // .63 has a separately scoped dynamic material and intentionally shares this\n  // semantic tile. Retain the exact original34 historical footprint checks here;\n  // NeutralPowerMaterialTest063 validates that explicit sharing independently.\n",
+  "new_comment_block": "  // .63 has a separately scoped dynamic material and its own UV validation.\n  // Retain the exact original34 historical footprint checks here; the new\n  // Power asset does not use Run's stripe tile and is tested independently.\n",
+  "scope": "Root corrected only the inaccurate wording after successful broad build. The new Power asset does not share Run stripe UVs. Every assertion, filter and executable statement is byte-identical outside these3comments; no rerun was done solely for wording."
+}

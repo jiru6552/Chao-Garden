@@ -1,0 +1,37 @@
+{
+  "version": "0.25.63",
+  "scope": "Read-only source/path proof explaining the tail overlap-test inventory scope; no new test execution or visual certification.",
+  "production_mesh_source": "/workspace/Chao-Garden/src/main/java/com/chaogarden/client/ChaoMeshAsset.java",
+  "production_mesh_source_sha256": "ea13235fd125d28495a6a538bf0fbe646fbf5a721ac0234a7620f938c18a3b49",
+  "inherited_gameplay_reaction_remap_unchanged_from_delivered062": true,
+  "literal_remap": "float[][] gameplayUv=uv;\n              if(name.startsWith(\"emotion_question__\")||name.startsWith(\"emotion_dizzy__\")) {\n                gameplayUv=new float[uv.length][2];\n                for(float[] point:gameplayUv){point[0]=60.5f;point[1]=1.5f;}\n              }",
+  "model_uv": [
+    60.5,
+    1.5
+  ],
+  "native_skin_uv": [
+    121,
+    3
+  ],
+  "tail_base_native_region": {
+    "x_inclusive_min": 52,
+    "x_exclusive_max": 68,
+    "y_inclusive_min": 30,
+    "y_exclusive_max": 38
+  },
+  "remapped_reaction_point_outside_tail_base": true,
+  "emit_vertex_uses_gameplayUv": true,
+  "raw_inventory_correction": "Inherited raw question/dizzy source UV coordinates are not a skin-atlas bounds contract. New non-tail disjoint inventory reads raw coordinates rather than using wing-only atlas assertions. Actual base/newroot/newtip and all pre-existing wing/new-part atlas bounds remain strict.",
+  "paint_scope": "Only existing TAIL-flagged retained base coordinates choose body pigment. The newroot keeps BODY127; distal50,32 stays tail pigment. Alpha/protected-face early-outs and all previous family sources remain.",
+  "independent_current_focused_assertions": {
+    "exact_facial_pixels": 297216,
+    "preserved_source_alpha_pixels": 38025072,
+    "independent_orb_samples": 445824,
+    "palette_protected_orb_samples": 3566592,
+    "production_reaction_marker_frames": 12,
+    "actual_base_body_pigment_interior_samples": 1783296,
+    "distinct_tail_tip_samples": 4644,
+    "body_root_samples": 4644
+  },
+  "reaction_check_scope": "The production-emitter suite compares original head/eyes/mouth geometry and UVs, expected heart/exclamation hierarchy and hidden unrequested question/dizzy. It does not prove actual visible question/dizzy appearances in a native client."
+}

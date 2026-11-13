@@ -1,0 +1,18 @@
+{
+  "version": "0.25.63",
+  "scope": "Static owned source inspection only; no build/test success inferred",
+  "authored_native_count": 50,
+  "native_namespace": "chao_power63",
+  "profile_first_type": "POWER_TYPE=4",
+  "signed_axes": {
+    "runPower": "(Power-Run)/960, full[-1,+1]",
+    "swimFly": "(Fly-Swim)/960, full[-1,+1]"
+  },
+  "no_shared_files_owned": true,
+  "no_gradle_or_client_run_by_agent": true,
+  "source_sha256": {
+    "src/main/java/com/chaogarden/core/NeutralPowerMorphology063.java": "bbbbc97a5704de815b0c5b019a23f16ff071237cc46b9cdeeba413844b3ca36f",
+    "src/test/java/com/chaogarden/core/NeutralPowerMorphology063Test.java": "33f69e102b90dfb3a5ea13661566d89e0f12ccbb39b53ad99e671637df412aa0",
+    "src/main/java/com/chaogarden/test/NeutralPowerMorphologyGameTests063.java": "0fd2b2e2f299bb322a5cb25004fc3bfa64dd80dc82e278d1b2718efa9ccef8a6"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "version": "0.25.63",
+  "scope": "Fresh-only horn correction after actual first60-PNG diagnostic review. Original assets and all nine mature parameter targets stay exact; no finalcohort capture yet.",
+  "before_model_sha256": "88832a5b6e61a419729d15fd3bb0d5edf923c3ce58654ed7af3ae1649c32d961",
+  "after_model_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+  "after_metadata_sha256": "cc0c9f6edc0b888e8cd8bd4f0cf313bc2b3ac4f01b8500b77f8c729fe78863e4",
+  "changed_meshes": [
+    "power_horn_left_root",
+    "power_horn_left_tip",
+    "power_horn_right_root",
+    "power_horn_right_tip"
+  ],
+  "changed_target_indices": [
+    0
+  ],
+  "mature_parameter_target_values_preserved": 108,
+  "mature_emitted_head_vertices_equal": 576,
+  "all_other_bones_meshes_vertices_uvs_exact": true,
+  "original59_joint_hierarchy_exact": true,
+  "metadata_only_model_hash_changed": true,
+  "fresh_horn_bounds": [
+    {
+      "part": "power_horn_left_root",
+      "old_bounds": [
+        [
+          -4.045206532,
+          -2.169548976
+        ],
+        [
+          -6.416327931,
+          -4.218279775
+        ],
+        [
+          -1.752142063,
+          0.324947835
+        ]
+      ],
+      "new_bounds": [
+        [
+          -4.810327514,
+          -2.406316924
+        ],
+        [
+          -6.850831409,
+          -4.225081669
+        ],
+        [
+          -1.843589459,
+          0.661238559
+        ]
+      ]
+    },
+    {
+      "part": "power_horn_left_tip",
+      "old_bounds": [
+        [
+          -3.956386216,
+          -2.95464423
+        ],
+        [
+          -6.504748835,
+          -5.215623903
+        ],
+        [
+          -0.877170141,
+          0.293237453
+        ]
+      ],
+      "new_bounds": [
+        [
+          -4.878234007,
+          -3.594779845
+        ],
+        [
+          -7.008416516,
+          -5.511895382
+        ],
+        [
+          -0.70080135,
+          0.678897094
+        ]
+      ]
+    },
+    {
+      "part": "power_horn_right_root",
+      "old_bounds": [
+        [
+          2.169548976,
+          4.045206532
+        ],
+        [
+          -6.416327931,
+          -4.218279775
+        ],
+        [
+          -1.752142063,
+          0.324947835
+        ]
+      ],
+      "new_bounds": [
+        [
+          2.406316924,
+          4.810327514
+        ],
+        [
+          -6.850831409,
+          -4.225081669
+        ],
+        [
+          -1.843589459,
+          0.661238559
+        ]
+      ]
+    },
+    {
+      "part": "power_horn_right_tip",
+      "old_bounds": [
+        [
+          2.95464423,
+          3.956386216
+        ],
+        [
+          -6.504748835,
+          -5.215623903
+        ],
+        [
+          -0.877170141,
+          0.293237453
+        ]
+      ],
+      "new_bounds": [
+        [
+          3.594779845,
+          4.878234007
+        ],
+        [
+          -7.008416516,
+          -5.511895382
+        ],
+        [
+          -0.70080135,
+          0.678897094
+        ]
+      ]
+    }
+  ],
+  "original_head_unchanged": true
+}

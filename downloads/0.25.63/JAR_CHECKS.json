@@ -1,0 +1,26 @@
+{
+  "jar": "chao_garden-0.25.63.jar",
+  "sha256": "791156dad7d275a7ba44fe047f453cf020d55bae34d46cc68b9262002f0d3a3f",
+  "entries": 9045,
+  "unique_names_and_crc_valid": true,
+  "required_runtime_entries": [
+    "com/chaogarden/client/OfficialChaoRig.class",
+    "com/chaogarden/client/ChaoMeshAsset.class",
+    "com/chaogarden/core/NeutralPowerMorphology063.class",
+    "com/chaogarden/client/NeutralPowerAppearance063.class",
+    "com/chaogarden/client/NeutralPowerCoatMaterial063.class",
+    "com/chaogarden/client/NeutralPowerRegionPaint063.class",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_power_proto063.json",
+    "assets/chao_garden/neutral_power063.json"
+  ],
+  "preserved_parent_entries": [
+    "assets/chao_garden/models/entity/gameplay/chao_baby.json",
+    "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+    "assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+    "assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json",
+    "assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json"
+  ]
+}

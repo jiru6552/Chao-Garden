@@ -1,0 +1,79 @@
+{
+  "version": "0.25.63",
+  "model": "models/entity/gameplay/chao_neutral_power_proto063.json",
+  "sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "neutral_power_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "canonical_head_face_orb_and_joint_pivots_unchanged": true,
+  "shared_animation_attachment_rig": true,
+  "source_geometry_copied": false,
+  "construction_reference_sha256": {
+    "art/imported_chao/models/chao_power.geo.json": "cc26883fad2065227c063a2a2f77b72cc7eff497103e3a83c45247f6103cce79",
+    "art/imported_chao/textures/power.png": "9087916ecfe4b8f9c002e1226333e20348414454cdcbe0f33686dc2a9676cda7",
+    "src/main/resources/assets/chao_garden/models/entity/official/chao_power.json": "02189a7c07a28ca649dd9c56e4dac7303c0a85660579a9d89e36f0f1b1b07ecd"
+  },
+  "legal_specializations": [
+    "balanced",
+    "run",
+    "power",
+    "fly",
+    "swim",
+    "run_fly",
+    "run_swim",
+    "power_fly",
+    "power_swim"
+  ],
+  "closed_box_count": 19,
+  "head_feature_count": 8,
+  "wing_ray_count": 4,
+  "tail_part_count": 2,
+  "head_feature_names": [
+    "power_crown_root",
+    "power_crown_tip",
+    "power_rear_root",
+    "power_rear_tip",
+    "power_horn_left_root",
+    "power_horn_left_tip",
+    "power_horn_right_root",
+    "power_horn_right_tip"
+  ],
+  "wing_mesh_names": [
+    "power_wing_left_upper",
+    "power_wing_left_lower",
+    "power_wing_right_upper",
+    "power_wing_right_lower"
+  ],
+  "tail_mesh_names": [
+    "power_tail_root",
+    "power_tail_tip"
+  ],
+  "head_feature_roles": {
+    "central": [
+      "power_crown_root",
+      "power_crown_tip"
+    ],
+    "rear": [
+      "power_rear_root",
+      "power_rear_tip"
+    ],
+    "horns": [
+      "power_horn_left_root",
+      "power_horn_left_tip",
+      "power_horn_right_root",
+      "power_horn_right_tip"
+    ]
+  },
+  "head_caps_policy": "Allfourdistaltipboxes use CAP126 throughout; lowerrootsBODY127. No forehead/top/centralstripes. Fixedoriginalskull preserved.",
+  "effective_viewer_pair_controls": "Observed full signed controls remain valid with firstPowerselected; mixed silhouettes moderate rather than stack singles. Bilinear interiors and linear age development remain authored approximations."
+}

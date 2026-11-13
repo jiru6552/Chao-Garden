@@ -1,0 +1,374 @@
+{
+  "version": "0.25.63",
+  "scope": "Uniform crop/resize of unchanged actual final source PNGs, each checked against its literal POWER063_CAPTURE hash and complete93-case/JAR proof. Generation is not personal visual acceptance.",
+  "coordinator_visual_reviewed": false,
+  "crop": [
+    420,
+    150,
+    1020,
+    850
+  ],
+  "resized_tile": [
+    360,
+    420
+  ],
+  "sheet": "/workspace/.setup/power063-tests/motion78-83-review.png",
+  "sheet_sha256": "dd52663d77d13b74d47a9d7a885b1956f4661076d4c8ffb4b363b7005d753b28",
+  "originals": [
+    {
+      "name": "power063-live-78-neutral_power_run_gain_walk-front-t047-f0081.png",
+      "case": 78,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "b43b41959a43a6523feb4c365994824da8ebe30addd0b00a31e680d500a36336",
+      "literal_capture_line": "[05:54:07] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-78-neutral_power_run_gain_walk-front-t047-f0081.png case=78 angle=front tick=47 sha256=b43b41959a43a6523feb4c365994824da8ebe30addd0b00a31e680d500a36336 wallNanos=46564700866194 epochMillis=1794549247160",
+      "file": "power063-live-78-neutral_power_run_gain_walk-front-t047-f0081.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-78-neutral_power_run_gain_walk-left-t145-f0219.png",
+      "case": 78,
+      "angle": "left",
+      "tick": 145,
+      "sha256": "84220b64ff8cb30951909abe75f5bc2383df36bee3bfa5cd9198cb65ceda86c1",
+      "literal_capture_line": "[05:54:12] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-78-neutral_power_run_gain_walk-left-t145-f0219.png case=78 angle=left tick=145 sha256=84220b64ff8cb30951909abe75f5bc2383df36bee3bfa5cd9198cb65ceda86c1 wallNanos=46569646875527 epochMillis=1794549252106",
+      "file": "power063-live-78-neutral_power_run_gain_walk-left-t145-f0219.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-78-neutral_power_run_gain_walk-back-t241-f0362.png",
+      "case": 78,
+      "angle": "back",
+      "tick": 241,
+      "sha256": "5ff9a920cd86d1ee59dcce5922677003a9bf64e5b75bdc9266b0da5ac902f51c",
+      "literal_capture_line": "[05:54:16] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-78-neutral_power_run_gain_walk-back-t241-f0362.png case=78 angle=back tick=241 sha256=5ff9a920cd86d1ee59dcce5922677003a9bf64e5b75bdc9266b0da5ac902f51c wallNanos=46574417574484 epochMillis=1794549256877",
+      "file": "power063-live-78-neutral_power_run_gain_walk-back-t241-f0362.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-79-neutral_power_power_fly_gain_walk-front-t048-f0081.png",
+      "case": 79,
+      "angle": "front",
+      "tick": 48,
+      "sha256": "86b6ae157c63059cb5e580265888074350d283ada16de0e9811b724388766215",
+      "literal_capture_line": "[05:54:21] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-79-neutral_power_power_fly_gain_walk-front-t048-f0081.png case=79 angle=front tick=48 sha256=86b6ae157c63059cb5e580265888074350d283ada16de0e9811b724388766215 wallNanos=46579209479147 epochMillis=1794549261668",
+      "file": "power063-live-79-neutral_power_power_fly_gain_walk-front-t048-f0081.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-79-neutral_power_power_fly_gain_walk-left-t144-f0223.png",
+      "case": 79,
+      "angle": "left",
+      "tick": 144,
+      "sha256": "2c95d07bf271c843dc2264d75f5f406cc8662b9c66f186b605d59f132cd8e1a0",
+      "literal_capture_line": "[05:54:26] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-79-neutral_power_power_fly_gain_walk-left-t144-f0223.png case=79 angle=left tick=144 sha256=2c95d07bf271c843dc2264d75f5f406cc8662b9c66f186b605d59f132cd8e1a0 wallNanos=46583942607088 epochMillis=1794549266402",
+      "file": "power063-live-79-neutral_power_power_fly_gain_walk-left-t144-f0223.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-79-neutral_power_power_fly_gain_walk-back-t240-f0364.png",
+      "case": 79,
+      "angle": "back",
+      "tick": 240,
+      "sha256": "e3ce88dd4a99369bf65883c5f8179d8c04d8f68929bcbb08b71d3f2149a7996a",
+      "literal_capture_line": "[05:54:31] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-79-neutral_power_power_fly_gain_walk-back-t240-f0364.png case=79 angle=back tick=240 sha256=e3ce88dd4a99369bf65883c5f8179d8c04d8f68929bcbb08b71d3f2149a7996a wallNanos=46588762310033 epochMillis=1794549271221",
+      "file": "power063-live-79-neutral_power_power_fly_gain_walk-back-t240-f0364.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-80-neutral_power_fly_loss_walk-front-t047-f0077.png",
+      "case": 80,
+      "angle": "front",
+      "tick": 47,
+      "sha256": "75459e04d4811c6baaf4f392d7683d7bd5fad24598092647594054dade2af026",
+      "literal_capture_line": "[05:54:35] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-80-neutral_power_fly_loss_walk-front-t047-f0077.png case=80 angle=front tick=47 sha256=75459e04d4811c6baaf4f392d7683d7bd5fad24598092647594054dade2af026 wallNanos=46593514587172 epochMillis=1794549275974",
+      "file": "power063-live-80-neutral_power_fly_loss_walk-front-t047-f0077.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-80-neutral_power_fly_loss_walk-left-t144-f0220.png",
+      "case": 80,
+      "angle": "left",
+      "tick": 144,
+      "sha256": "5834a133a218208dc4e6f4b6caab398f87d31aa39e67fd00caf28cf1e117dfeb",
+      "literal_capture_line": "[05:54:40] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-80-neutral_power_fly_loss_walk-left-t144-f0220.png case=80 angle=left tick=144 sha256=5834a133a218208dc4e6f4b6caab398f87d31aa39e67fd00caf28cf1e117dfeb wallNanos=46598387732481 epochMillis=1794549280847",
+      "file": "power063-live-80-neutral_power_fly_loss_walk-left-t144-f0220.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-80-neutral_power_fly_loss_walk-back-t243-f0361.png",
+      "case": 80,
+      "angle": "back",
+      "tick": 243,
+      "sha256": "ab50af6d1852842731b71d94b40788cc64a00833656a298d0eac2ae1fce06c05",
+      "literal_capture_line": "[05:54:45] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-80-neutral_power_fly_loss_walk-back-t243-f0361.png case=80 angle=back tick=243 sha256=ab50af6d1852842731b71d94b40788cc64a00833656a298d0eac2ae1fce06c05 wallNanos=46603314514094 epochMillis=1794549285773",
+      "file": "power063-live-80-neutral_power_fly_loss_walk-back-t243-f0361.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-front-t107-f0165.png",
+      "case": 81,
+      "angle": "front",
+      "tick": 107,
+      "sha256": "357463d578962e772b07dadd79c51f00d94c776b48d2dc0570de4b411a8953e9",
+      "literal_capture_line": "[05:54:53] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-front-t107-f0165.png case=81 angle=front tick=107 sha256=357463d578962e772b07dadd79c51f00d94c776b48d2dc0570de4b411a8953e9 wallNanos=46610983696212 epochMillis=1794549293443",
+      "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-front-t107-f0165.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t324-f0484.png",
+      "case": 81,
+      "angle": "left",
+      "tick": 324,
+      "sha256": "bb43a2665b98fd35a98ee01f3ed5a1ae106293abb2af992087efb27ccd0afb8c",
+      "literal_capture_line": "[05:55:04] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t324-f0484.png case=81 angle=left tick=324 sha256=bb43a2665b98fd35a98ee01f3ed5a1ae106293abb2af992087efb27ccd0afb8c wallNanos=46621811606834 epochMillis=1794549304271",
+      "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t324-f0484.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t541-f0802.png",
+      "case": 81,
+      "angle": "back",
+      "tick": 541,
+      "sha256": "a875f81d2a0f845e5cf760f32e53d7f4b7d420bf424dbf7098ffcd888204059d",
+      "literal_capture_line": "[05:55:15] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t541-f0802.png case=81 angle=back tick=541 sha256=a875f81d2a0f845e5cf760f32e53d7f4b7d420bf424dbf7098ffcd888204059d wallNanos=46632687353848 epochMillis=1794549315146",
+      "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t541-f0802.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-front-t096-f0153.png",
+      "case": 82,
+      "angle": "front",
+      "tick": 96,
+      "sha256": "ac246b619027617a7eeb94deda55c9434b21c97ffc9545ff2610a4170417371a",
+      "literal_capture_line": "[05:55:25] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-front-t096-f0153.png case=82 angle=front tick=96 sha256=ac246b619027617a7eeb94deda55c9434b21c97ffc9545ff2610a4170417371a wallNanos=46642823048151 epochMillis=1794549325282",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-front-t096-f0153.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t288-f0429.png",
+      "case": 82,
+      "angle": "left",
+      "tick": 288,
+      "sha256": "be1e41411247525aecfd414d9b1e7663bda94316ebcec96c369e176ebf725210",
+      "literal_capture_line": "[05:55:34] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-left-t288-f0429.png case=82 angle=left tick=288 sha256=be1e41411247525aecfd414d9b1e7663bda94316ebcec96c369e176ebf725210 wallNanos=46652432925759 epochMillis=1794549334892",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t288-f0429.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t468-f0696.png",
+      "case": 82,
+      "angle": "back",
+      "tick": 468,
+      "sha256": "9afff707f5bae5a7fc370c4d5346b45e896a266ef5a92f3de787c3cf52e28451",
+      "literal_capture_line": "[05:55:43] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-back-t468-f0696.png case=82 angle=back tick=468 sha256=9afff707f5bae5a7fc370c4d5346b45e896a266ef5a92f3de787c3cf52e28451 wallNanos=46661416655870 epochMillis=1794549343876",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t468-f0696.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t059-f0100.png",
+      "case": 83,
+      "angle": "front",
+      "tick": 59,
+      "sha256": "22f5b873ec6d3c1cfef9ba68cea0d25ed0a2129418f83b0111d6af653255682c",
+      "literal_capture_line": "[05:55:51] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-front-t059-f0100.png case=83 angle=front tick=59 sha256=22f5b873ec6d3c1cfef9ba68cea0d25ed0a2129418f83b0111d6af653255682c wallNanos=46669351744505 epochMillis=1794549351811",
+      "file": "power063-live-83-neutral_power_actual_first_evolution-front-t059-f0100.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png",
+      "case": 83,
+      "angle": "left",
+      "tick": 155,
+      "sha256": "cb994249b34a95440561bc82b13480ba92aaed474b6f111b305169cc8c88f226",
+      "literal_capture_line": "[05:55:56] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png case=83 angle=left tick=155 sha256=cb994249b34a95440561bc82b13480ba92aaed474b6f111b305169cc8c88f226 wallNanos=46674155350073 epochMillis=1794549356614",
+      "file": "power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t251-f0386.png",
+      "case": 83,
+      "angle": "back",
+      "tick": 251,
+      "sha256": "590ce732573b3acb842cce9bee44826154cba1cfadd76f60e602ebd346597d28",
+      "literal_capture_line": "[05:56:01] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-back-t251-f0386.png case=83 angle=back tick=251 sha256=590ce732573b3acb842cce9bee44826154cba1cfadd76f60e602ebd346597d28 wallNanos=46678962245923 epochMillis=1794549361421",
+      "file": "power063-live-83-neutral_power_actual_first_evolution-back-t251-f0386.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t276-f0412.png",
+      "case": 81,
+      "angle": "left",
+      "tick": 276,
+      "sha256": "bdc9eece28e1b87ee35c13c0018243e457f2d7c21d7ad852ea258123d1980bd9",
+      "literal_capture_line": "[05:55:01] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t276-f0412.png case=81 angle=left tick=276 sha256=bdc9eece28e1b87ee35c13c0018243e457f2d7c21d7ad852ea258123d1980bd9 wallNanos=46619409161507 epochMillis=1794549301868",
+      "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-left-t276-f0412.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t625-f0925.png",
+      "case": 81,
+      "angle": "back",
+      "tick": 625,
+      "sha256": "80d75d8dcf1d8d1e968dbf09ac903ea99963bbf3dc0e1a21664fae09d1978276",
+      "literal_capture_line": "[05:55:19] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t625-f0925.png case=81 angle=back tick=625 sha256=80d75d8dcf1d8d1e968dbf09ac903ea99963bbf3dc0e1a21664fae09d1978276 wallNanos=46636871293279 epochMillis=1794549319330",
+      "file": "power063-live-81-neutral_power_run_fly_pair_gain_hold_reverse_walk-back-t625-f0925.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-front-t120-f0186.png",
+      "case": 82,
+      "angle": "front",
+      "tick": 120,
+      "sha256": "92c36624b92e864f4517c094877f28c66e3b021b86a34d9f5ca89d161d84f7af",
+      "literal_capture_line": "[05:55:26] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-front-t120-f0186.png case=82 angle=front tick=120 sha256=92c36624b92e864f4517c094877f28c66e3b021b86a34d9f5ca89d161d84f7af wallNanos=46644035371744 epochMillis=1794549326494",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-front-t120-f0186.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t240-f0358.png",
+      "case": 82,
+      "angle": "left",
+      "tick": 240,
+      "sha256": "0e0779cb59afd132b9bb715f77a6815105019e934c799c0b28e4cc5f3f3cbf07",
+      "literal_capture_line": "[05:55:32] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-left-t240-f0358.png case=82 angle=left tick=240 sha256=0e0779cb59afd132b9bb715f77a6815105019e934c799c0b28e4cc5f3f3cbf07 wallNanos=46650009198308 epochMillis=1794549332468",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t240-f0358.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t360-f0536.png",
+      "case": 82,
+      "angle": "left",
+      "tick": 360,
+      "sha256": "3cfb9819d1d5e8093fcbe71d5b59df49ed22106367105f2e80a5f1b3df5c4063",
+      "literal_capture_line": "[05:55:38] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-left-t360-f0536.png case=82 angle=left tick=360 sha256=3cfb9819d1d5e8093fcbe71d5b59df49ed22106367105f2e80a5f1b3df5c4063 wallNanos=46656026157462 epochMillis=1794549338485",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-left-t360-f0536.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t480-f0714.png",
+      "case": 82,
+      "angle": "back",
+      "tick": 480,
+      "sha256": "66aa0445f93d77ef7a88071af43b902cbf8da35d06bebab4b44196868b47880c",
+      "literal_capture_line": "[05:55:44] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-back-t480-f0714.png case=82 angle=back tick=480 sha256=66aa0445f93d77ef7a88071af43b902cbf8da35d06bebab4b44196868b47880c wallNanos=46662009934938 epochMillis=1794549344469",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t480-f0714.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t552-f0821.png",
+      "case": 82,
+      "angle": "back",
+      "tick": 552,
+      "sha256": "fcf559780100238e9664e4f49e72705afc0b63d1da0a2788fbc15b356bcc906c",
+      "literal_capture_line": "[05:55:48] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-82-neutral_power_power_to_run_opposition_walk-back-t552-f0821.png case=82 angle=back tick=552 sha256=fcf559780100238e9664e4f49e72705afc0b63d1da0a2788fbc15b356bcc906c wallNanos=46665607874238 epochMillis=1794549348067",
+      "file": "power063-live-82-neutral_power_power_to_run_opposition_walk-back-t552-f0821.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png",
+      "case": 83,
+      "angle": "front",
+      "tick": 11,
+      "sha256": "5fdcb690b5bb849635fb44fa6a8c49b0a040f17b9ad40becf1bb62dc25f1581e",
+      "literal_capture_line": "[05:55:49] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png case=83 angle=front tick=11 sha256=5fdcb690b5bb849635fb44fa6a8c49b0a040f17b9ad40becf1bb62dc25f1581e wallNanos=46666948259938 epochMillis=1794549349407",
+      "file": "power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png",
+      "case": 83,
+      "angle": "back",
+      "tick": 299,
+      "sha256": "10f516d756da5dadfb0ed252348dbd49b9d1f309bea036a167d6f6a388737663",
+      "literal_capture_line": "[05:56:03] [IO-Worker-8/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_CAPTURE power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png case=83 angle=back tick=299 sha256=10f516d756da5dadfb0ed252348dbd49b9d1f309bea036a167d6f6a388737663 wallNanos=46681366985022 epochMillis=1794549363826",
+      "file": "power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png",
+      "original_size": [
+        1440,
+        900
+      ]
+    }
+  ],
+  "canonical_log_sha256": "7a16d37732b042e540c79d24e99a29d88c903793c885dd87db0a64f137555d29",
+  "runtime_proof_sha256": "7dc1d9846f36226432c800688398782c9a4f7a50b7e44c98eb56f3b54d82bd28",
+  "jar_sha256": "791156dad7d275a7ba44fe047f453cf020d55bae34d46cc68b9262002f0d3a3f",
+  "model_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0"
+}

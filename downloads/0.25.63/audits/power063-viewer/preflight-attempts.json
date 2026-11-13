@@ -1,0 +1,24 @@
+{
+  "sandbox_attempt": {
+    "result": "Failed before page load",
+    "error": "net::ERR_CERT_AUTHORITY_INVALID",
+    "tls_verification": true,
+    "log": "preflight-sandbox.log"
+  },
+  "outer_executor_preflight": {
+    "result": "HTTP200, visible rendered Chao and healthy WebGL2 context personally inspected",
+    "tls_verification": true,
+    "files": [
+      {
+        "file": "preflight-canvas.png",
+        "sha256": "cf01d87cfe39477303ca369a1feed8d6ff5b78f5526a66f82e105536f9bcfb6c"
+      },
+      {
+        "file": "preflight-page.png",
+        "sha256": "afc4a139449b573b2a90f48fd5be82f13ed975abb4bfc9f8461d8a66e92f54a6"
+      }
+    ],
+    "log": "preflight-outer.log"
+  },
+  "primary_session": "Separate fresh browser session via capture.py; actual originals in reference-manifest.json. No earlier .62 image reused."
+}

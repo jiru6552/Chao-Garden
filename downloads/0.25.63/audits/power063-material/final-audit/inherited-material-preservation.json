@@ -1,0 +1,1204 @@
+{
+  "version": "0.25.63",
+  "scope": "Read-only current-source/JAR preservation and original alpha proof, not an additional game run. Prior glasses image was personally opened only as inherited context, excluded from final153/15counts.",
+  "parent_commit": "3faa3742cab917d2aa3122667e46b669c674409c",
+  "current_jar_sha256": "791156dad7d275a7ba44fe047f453cf020d55bae34d46cc68b9262002f0d3a3f",
+  "eight_models": [
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_baby.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_baby.json",
+      "sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+      "parent062_source_and_jar_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_hero_run_proto055.json",
+      "sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+      "parent062_source_and_jar_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_neutral_proto056.json",
+      "sha256": "a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db",
+      "parent062_source_and_jar_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_hero_normal_proto057.json",
+      "sha256": "d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d",
+      "parent062_source_and_jar_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_neutral_swim_proto059.json",
+      "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+      "parent062_source_and_jar_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_dark_normal_proto060.json",
+      "sha256": "36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514",
+      "parent062_source_and_jar_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_neutral_fly_proto061.json",
+      "sha256": "2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885",
+      "parent062_source_and_jar_exact": true
+    },
+    {
+      "path": "src/main/resources/assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json",
+      "entry": "assets/chao_garden/models/entity/gameplay/chao_neutral_run_proto062.json",
+      "sha256": "cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881",
+      "parent062_source_and_jar_exact": true
+    }
+  ],
+  "retained_sources": [
+    {
+      "path": "src/main/java/com/chaogarden/client/GradualCoatMaterial.java",
+      "sha256": "c3c9c3e106789e5530b175219112f33ab9dc7cd8a122d6d0a8bab3feca9e9f02",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunCoatMaterial055.java",
+      "sha256": "4a059952ea050d5c6f4b2e0558185356f96b0be22879761e74529d442999f7f2",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralCoatMaterial056.java",
+      "sha256": "0463b1c77ac8f03a81027dd1eeb12d5ad446ae08f7e9179accd671774a81dcc7",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroNormalCoatMaterial057.java",
+      "sha256": "15e11ed91bd1a8de0d9431c87d27b16b716f7d211ee13b84dcff2224a4d7f8e8",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralSwimCoatMaterial059.java",
+      "sha256": "7c59a101cbaa2a762d29a56268492f8ef39f4dfcb1776fd5fa2937db0bb047ed",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalCoatMaterial060.java",
+      "sha256": "5ab0c600113a2241e4ce45cafa03d597ca3d1dc058eb4f9449c5634cc4723cbf",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralFlyCoatMaterial061.java",
+      "sha256": "6db2cb80104e636f3fe39430957857be5eaaa3e18189406a4c9a9287afdd87e4",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRunCoatMaterial062.java",
+      "sha256": "10e3044a6ddc7785262bc989575e32179c941e8e2015923a9937a397fbd45801",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunRegionPaint055.java",
+      "sha256": "afb93956bd1bceaf2e54d4e3babd801baf0c551a860c412da57c714b15402f74",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRegionPaint056.java",
+      "sha256": "cf4c45747096ff7d138a7691b47a2f4a7257520f5af810cc7e49e03626a01466",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroNormalRegionPaint057.java",
+      "sha256": "b0471e17f0469ee470569868548766f88ba9fb33aec4597726d98dd865b99d48",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralSwimRegionPaint059.java",
+      "sha256": "22d5ca37f8b15b555150a2a391426b4eac9abcc28340ab63af0f1b10f0704b1b",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalRegionPaint060.java",
+      "sha256": "c47d21373aa063d04a13e6cd057a0844e0c3ea7bba470107a4aee6d85685161d",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralFlyRegionPaint061.java",
+      "sha256": "180b69baa4a4ccadd30532ba835329dd851c4006fe874507de61f53b1abe1371",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRunRegionPaint062.java",
+      "sha256": "902e297b9f914cc3a5aaef91d8d78b357dc91c7cc1c95556181a7da7b21b59fc",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroRunAppearance052.java",
+      "sha256": "0c9a8fef92eaa542703e5726b7e401cb8c565989142353c62ea0570829f90f5a",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralAppearance056.java",
+      "sha256": "413b6d610dab1b1738f526de1bc77facadebcdc239742e17b8cea5439c44b4a7",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/HeroNormalAppearance057.java",
+      "sha256": "9a494f73cbcd6c5f378e1497b40423d733168f09a6e0ca03fba105f498fe16cc",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralSwimAppearance059.java",
+      "sha256": "b045be175b451c0a2f05f86c98ccef5eec4367f5405654f5d829e8d7c9d4cbe2",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/DarkNormalAppearance060.java",
+      "sha256": "c273ab72a52c60ce3b315c6b88d51d81ef483ab20e44a2c1b2f064a02cb8127e",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralFlyAppearance061.java",
+      "sha256": "c574b7f58039c354e491e99460601a3ace942d5b6dd3dba36e56e152e038c43a",
+      "parent062_exact": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/NeutralRunAppearance062.java",
+      "sha256": "c2e4a1aae4a45bf95309ce58b42704893d0ff9107e08b748968a687e72b6fa60",
+      "parent062_exact": true
+    }
+  ],
+  "retained_class_entries": [
+    {
+      "entry": "com/chaogarden/client/GradualCoatMaterial$Reload.class",
+      "sha256": "876ec316e53fea94aa5ff4c92d71fadd96cf6a66de318f542377daf6b7530977",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/GradualCoatMaterial.class",
+      "sha256": "5d0e714f712165348e7132a080a132cef50936d951b9cd672c5b8f9168291c57",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial055$Reload.class",
+      "sha256": "aa8540e271d6d35739f01861ec21868631be182281f4b1e60d01e67da3696952",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunCoatMaterial055.class",
+      "sha256": "c09465ed769c7e0adb1daa6cb3fab636755b067fad3a69fb3bbed15ddd3d206c",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralCoatMaterial056$Reload.class",
+      "sha256": "62f6d371a9d4b4389faa72d0b93b64ef385aa9f8200107ed99d3253697b1b00b",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralCoatMaterial056.class",
+      "sha256": "ee1ba02e4085e884c63696335df72ad49faa9f661932cb39c1806ad5fda9d060",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalCoatMaterial057$Reload.class",
+      "sha256": "ca6fb84a9e8e50ba92df75dca57f6c9c7b1d5aeaaa49f81ad84b149e5b9a07fa",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalCoatMaterial057.class",
+      "sha256": "4da0ced38b6d7ce0796e8d446d42c4d4c061a52ff85d7ef2f655978d6b6733ff",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimCoatMaterial059$Reload.class",
+      "sha256": "328ff88985d0d0e1dbb8f4aa79d23da296ca13e9bf9cc0c851744cf8f1f7aea5",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimCoatMaterial059.class",
+      "sha256": "fc0fa176c4dc03c9076ac5470c5c911b6ef1ead3782fa0bcc10171ee62be370c",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalCoatMaterial060$Reload.class",
+      "sha256": "5c2a28caab00410090459b5c6586ccd2332ce20c0411c7cdb6bb38805300c6a0",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalCoatMaterial060.class",
+      "sha256": "ea99ce87747baf1c1b29ee8c48c8c4326a2c40837999a8f0c8ed176bd5e077d4",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyCoatMaterial061$Reload.class",
+      "sha256": "ceee237ccb1d188c5173353e839f13fda3b59b2e160e4e6a504867f137157523",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyCoatMaterial061.class",
+      "sha256": "b489147ac122e7aef69099d6e493742522f8ae63ad696974b9fd96ba48f7fd24",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRunCoatMaterial062$Reload.class",
+      "sha256": "35f1025a14a1247d326314fb6be6354faa0fb590d0cac3489ef88cafd3261bd2",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRunCoatMaterial062.class",
+      "sha256": "38d8692e2a65497ba9be26cdab1d32f92646bf9b497a848b23b09eaf5453830f",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055$Colors.class",
+      "sha256": "f052f3576ce6d77ecc6f2c0ed4d943a38b0e9248b18e80814340ab3ab3c94474",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055$Input.class",
+      "sha256": "423be209437c48706a1499ec22e57702ad86233538c7050a39302f22b349832e",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunRegionPaint055.class",
+      "sha256": "82b10ea59843555b8b39a3dcbbd97f31558c69002f4006a623f90e2fb7fb8fe6",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056$Colors.class",
+      "sha256": "4fd40b9ac2578413ecc33d7dbcc4094f0cac194548f08631234948dc2ee5e498",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056$Input.class",
+      "sha256": "df5098015d1821922fe821a23f09c851ce5453351f401f64b8dfa50d24a0fc25",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRegionPaint056.class",
+      "sha256": "f84013e2086e162dbcfaeb31dd3dfac0463333f97b4b9e7038c239be62fa664e",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057$Colors.class",
+      "sha256": "c9d32efb792f85f3a6f713c99ab3ba64b6c19a98fdb6d73a4eef707c304fc519",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057$Input.class",
+      "sha256": "5e354f835b5ae19d3520ca6002c356cf3d2751359e236ae3910ce7c3e291bfd0",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalRegionPaint057.class",
+      "sha256": "212ba58d7aa63a896ab5952bf1448b2ac76341b3e7c63e259e9e89dd88356a81",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059$Colors.class",
+      "sha256": "35e40e621b959da6e65d631b750c57e46a286a1e60f7c258f846a32196be9a5b",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059$Input.class",
+      "sha256": "ee3edaa7c13c3a0cd5eb528adcfbf7ea80383342e86b41d72d2d412295443153",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimRegionPaint059.class",
+      "sha256": "c762d06a6cbaa0090a76301d632d32c76e2c0b222ee5323cebc75df1cff59694",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060$Colors.class",
+      "sha256": "0f44bfdfa6fb1fb10f0c3f86375784511f76f76bb6bf925c5df3a6b5701f9747",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060$Input.class",
+      "sha256": "82cb4a4c380333c1bda10b0da589d8c1caadad17e533357efc20a67d8083b598",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalRegionPaint060.class",
+      "sha256": "d43b68c9753201c67c767d33a9eeed9ce6942f0fbc147477ad097bb150ed238e",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyRegionPaint061$Colors.class",
+      "sha256": "3a7717939e9eeeccdde7a8157d6c5d2aa4078267eb2d48c54bdab6029b9160ce",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyRegionPaint061$Input.class",
+      "sha256": "f96696ea1bd6736538b001d75aa237b6af086a38f7f2a805bb538886ade14f91",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyRegionPaint061.class",
+      "sha256": "4859efd297e5eff38215be3c9deabe8b98b896c4527313fd8e86c3371afe7bb1",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRunRegionPaint062$Colors.class",
+      "sha256": "9708a4c15752373bc4e93352a481ae5c972c6841036a3b924eec114945485b70",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRunRegionPaint062$Input.class",
+      "sha256": "f34e09445b1d97170821c7b70d004216d4e8546e541213412c65400c14527a4d",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRunRegionPaint062.class",
+      "sha256": "1c2ddf6a12a896a5cc83a455dfbf3b00b2b3d19385a1d2f342e9b341b330bf73",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunAppearance052$Blend.class",
+      "sha256": "019a5b67f9fd7a4ddd16364d7191164455ce4a0720bd8d469bb0f0df770a0d55",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroRunAppearance052.class",
+      "sha256": "2e0eee27632d8a7b646b89125cf249b452d9b175b9fc04eb489fa3b42978b9f3",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralAppearance056$Blend.class",
+      "sha256": "b1ff97250654b491dcaa23051ba2c01c24cf6492d2942bb5f10da8bf67b71bdb",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralAppearance056.class",
+      "sha256": "72728848157a4a988683d625e7b825aa958c40cf50932754c83af83549592410",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalAppearance057$Blend.class",
+      "sha256": "ac12ff059191aa85ac0a2ca8b35eb6851efeae355218982451756588ba39640a",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/HeroNormalAppearance057.class",
+      "sha256": "ba2a371bad273f6648416d39a51c0c351466b9001b7cce27eea48248caf5bbe0",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimAppearance059$Blend.class",
+      "sha256": "3a81304b88c81200a31035ca14897317fd79dcb670e47875148d330262e77e68",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralSwimAppearance059.class",
+      "sha256": "c635e9ed464615ca4a72a9cfee5c8d6e4a9ad3085b528af016d196401d9bbca3",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalAppearance060$Blend.class",
+      "sha256": "eefe29f35aa6e491935e57aea5e9a809fbb0b9e78735819a4f07af041503cdd4",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/DarkNormalAppearance060.class",
+      "sha256": "f1797d37a6a5d88e753d0d01bb193b566bccd775935e65c62a7ebfc9e026f966",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyAppearance061$Blend.class",
+      "sha256": "03eaebbf049ca3a3a8475fd5c3c2b4bc1abb333aa2f11472a8de2ae035cca418",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralFlyAppearance061.class",
+      "sha256": "db2e3e2fc9db25cbfa16bd302fc6221a7a48b14ac1978587016856cde590d603",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRunAppearance062$Blend.class",
+      "sha256": "6253051a82bee341a8a61aa5ca8bbbb3b144f4da952dadbff570213c5a31adde",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/NeutralRunAppearance062.class",
+      "sha256": "254af2260f20baa7ebf881be311167e3c1bdd2d18665d258b87df2106e93adda",
+      "parent062_exact": true
+    }
+  ],
+  "glasses_and_shine_entries": [
+    {
+      "entry": "assets/chao_garden/models/cwe02516/round_glasses_accessory.obj",
+      "sha256": "85a18c96ad08ccf8886084dd93731319f8e880ace0d8e31b4e24963c011debf3",
+      "parent062_exact": true
+    },
+    {
+      "entry": "assets/chao_garden/models/entity/cwe_accessories/round_glasses_accessory.json",
+      "sha256": "7767c89cf5e3e2ff333d03c58398281433c7c96a293f8f1b317725c6b86edfbd",
+      "parent062_exact": true
+    },
+    {
+      "entry": "assets/chao_garden/models/item/cwe02516/round_glasses_accessory.json",
+      "sha256": "78a2bf8ba19d3b8ce9c06318af32ce068c7f65e8ed67b166dc8b631ea44f0b5f",
+      "parent062_exact": true
+    },
+    {
+      "entry": "assets/chao_garden/models/item/round_glasses_accessory.json",
+      "sha256": "cbb9bd5ee9621abbbcd1bca692aee87536dd9db1abeee4458f1ed36e0a8f6f20",
+      "parent062_exact": true
+    },
+    {
+      "entry": "assets/chao_garden/textures/block/cwe02516/round_glasses_accessory/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "parent062_exact": true
+    },
+    {
+      "entry": "assets/chao_garden/textures/block/cwe02516/round_glasses_accessory/cwe_capmain_0d0d0dff_0.png",
+      "sha256": "8dcd65c1a238d2a7057295c83b3ec73ca591da82330993d806ed475df3eca7df",
+      "parent062_exact": true
+    },
+    {
+      "entry": "assets/chao_garden/textures/item/round_glasses_accessory.png",
+      "sha256": "165685159ac6b95b3e2e15529fa9e5f90dcb8ad23cd320408c3e3238bf7b45a0",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/CweAccessoryLayer$Mesh.class",
+      "sha256": "3183b1e106c73759373c4456c08b3754745d1a416f21bef4a4649a028ea7bfe5",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/CweAccessoryLayer.class",
+      "sha256": "55295ee38fb4a3cbac11c4bd8d3b472b43599709086b8bce7c0595798d8894a6",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/ChaoShine$1.class",
+      "sha256": "b063fa3294fbbe4d845ef273a46b21ed4c33549b2d20c3ef65db5b68a13df1ac",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/ChaoShine.class",
+      "sha256": "f21c60b6337bbe8fcdc16debb53f7d92d22dde41a3bb293db25fb59ba86e6026",
+      "parent062_exact": true
+    },
+    {
+      "entry": "com/chaogarden/client/ChaoShineLayer.class",
+      "sha256": "08bdcd2df790bf7ee7717c812a9e41144ac3a0053c79319f5677a799005ffbcc",
+      "parent062_exact": true
+    }
+  ],
+  "canonical_coats": [
+    {
+      "file": "aqua_mono.png",
+      "sha256": "cc552c59e4198259081f920b952d29d0257dbac48793754f6b2abdda0c155873"
+    },
+    {
+      "file": "aqua_mono_shiny.png",
+      "sha256": "2c78b9990994db453a05b339926fa3f48054a36bb124e4ccabb9d1f805b73755"
+    },
+    {
+      "file": "aqua_two.png",
+      "sha256": "61f0dd48c91d97b19622c00049532165d9480918ca50b19ee30220289c9ed304"
+    },
+    {
+      "file": "aqua_two_shiny.png",
+      "sha256": "588c22107c8646650730032888b033bfe6cb025e8fa0bf17e9a846155ac37ec4"
+    },
+    {
+      "file": "black_mono.png",
+      "sha256": "19dea9f6dd4b48eff2a6dd81f8dbc66ef2c9c83457ab10cd114d2a006116f343"
+    },
+    {
+      "file": "black_mono_shiny.png",
+      "sha256": "0eda82a435d15c8a544425c7cc3f36220765e1ea83d7b84e80ab23c697f8bec4"
+    },
+    {
+      "file": "black_two.png",
+      "sha256": "594833653e6aa14f4eb89b21ec30f925f5892b65bda12769670db803e8f63e25"
+    },
+    {
+      "file": "black_two_shiny.png",
+      "sha256": "aec124acc915a6d5418c2ee31c2bf02a53035b81be7573f52e05cd4475747a17"
+    },
+    {
+      "file": "blue_mono.png",
+      "sha256": "e226902bd1850c528e10f1ab3d2487cfa99c0b1ea26b09f7e6c504f967bf132d"
+    },
+    {
+      "file": "blue_mono_shiny.png",
+      "sha256": "98063a6a9f8958c52100fb75c895f72f3d22403357a64ec06f2dbb2434379aa5"
+    },
+    {
+      "file": "blue_two.png",
+      "sha256": "ed3321892c0de816585e5de7bc762c59fd7060452aef3878f67ad1763396cebf"
+    },
+    {
+      "file": "blue_two_shiny.png",
+      "sha256": "f22d29cf5612cb733ec619477c782d3b283c4d4050970201420c259d2e1ee743"
+    },
+    {
+      "file": "brown_mono.png",
+      "sha256": "e89af53e7fa6d006cd1b537d24e11f1f2f307c48198067b1776682f36ddbf6f9"
+    },
+    {
+      "file": "brown_mono_shiny.png",
+      "sha256": "a3bfb9d1d01f0444942eef234e8935e51c76c21b4e5743d7d010ac8ce8079b1c"
+    },
+    {
+      "file": "brown_two.png",
+      "sha256": "e9a29550c109bd1081b8650394b81c51dc2bbce499df11b21593b3f98544d4f0"
+    },
+    {
+      "file": "brown_two_shiny.png",
+      "sha256": "d7b36631f287ea534755633028b02ab81688352568440dab3226e22faeecd8ef"
+    },
+    {
+      "file": "cyan_mono.png",
+      "sha256": "c075560bb08b7e2c5cb48497722b6a8fa477541bc84b37ee88aa0ec9c3ed3543"
+    },
+    {
+      "file": "cyan_mono_shiny.png",
+      "sha256": "9b5aed8c45261eedd8cb638e591f9fb702fcb67f5aa9949c0a03271cd1843739"
+    },
+    {
+      "file": "cyan_two.png",
+      "sha256": "eec3835f7732e654d12d4ec87ca99d8d1e41a1b7e2eef5ea91b61d52b74e47c6"
+    },
+    {
+      "file": "cyan_two_shiny.png",
+      "sha256": "6043fc217f3da67766f4fcdccd16bfb83eb0d8bce04c35813e1fedb594534c2e"
+    },
+    {
+      "file": "green_mono.png",
+      "sha256": "ee0614949e7897871580ecf4ffe6c746d96f28dfb336ee847bdd0252459641f4"
+    },
+    {
+      "file": "green_mono_shiny.png",
+      "sha256": "3387f51b31362602ee77f00565f682e66b204969b821446567cca23b28fccd51"
+    },
+    {
+      "file": "green_two.png",
+      "sha256": "974bd2528df6cf6eb4020dc85ccd32f745ca5ad6729ddb9cd93e5df22539b6bb"
+    },
+    {
+      "file": "green_two_shiny.png",
+      "sha256": "245387bdcf26b49ac4159d9424b4e3b9bd523eb85ec27e15051bd2eb0e2d8b27"
+    },
+    {
+      "file": "grey_mono.png",
+      "sha256": "299483277bc615d10032a64d57119dc5131dd2d1fb90dd01fadf355a5a7d783f"
+    },
+    {
+      "file": "grey_mono_shiny.png",
+      "sha256": "37656d111653fb561000a782a15dd0e601867c611455456281f2a9435ccbbb87"
+    },
+    {
+      "file": "grey_two.png",
+      "sha256": "6276725749590d4277f3d0bc8040c3e7220316de70f3ab3d179b0e3bb689d0bc"
+    },
+    {
+      "file": "grey_two_shiny.png",
+      "sha256": "7f4fbd99054835ab3fc93b4f8e5721dd0e5bee95fc40e80aec29c4629c103625"
+    },
+    {
+      "file": "jewel_amethyst_mono.png",
+      "sha256": "5ede29c895f474e5d94db44953ba5b69fd3bfd018212c2aba8e063f4930ff08d"
+    },
+    {
+      "file": "jewel_amethyst_mono_shiny.png",
+      "sha256": "02d742d33477d0b6b123f6d67964c3025abfc7785802f3a6fc43a03b1cfd9ca2"
+    },
+    {
+      "file": "jewel_amethyst_two.png",
+      "sha256": "5ede29c895f474e5d94db44953ba5b69fd3bfd018212c2aba8e063f4930ff08d"
+    },
+    {
+      "file": "jewel_amethyst_two_shiny.png",
+      "sha256": "02d742d33477d0b6b123f6d67964c3025abfc7785802f3a6fc43a03b1cfd9ca2"
+    },
+    {
+      "file": "jewel_aquamarine_mono.png",
+      "sha256": "f5a4b11327b92efe67d51c5d011e05384ad05a414c3ac9db322c49bb35f00ea0"
+    },
+    {
+      "file": "jewel_aquamarine_mono_shiny.png",
+      "sha256": "591fd4194c7639136127adac70619e10091ab2d3c62a120c147776725d24c851"
+    },
+    {
+      "file": "jewel_aquamarine_two.png",
+      "sha256": "f5a4b11327b92efe67d51c5d011e05384ad05a414c3ac9db322c49bb35f00ea0"
+    },
+    {
+      "file": "jewel_aquamarine_two_shiny.png",
+      "sha256": "591fd4194c7639136127adac70619e10091ab2d3c62a120c147776725d24c851"
+    },
+    {
+      "file": "jewel_diamond_mono.png",
+      "sha256": "931de510b887d59755d860acdac28c9980f5fd997260291d6cf335e6aa2a8d80"
+    },
+    {
+      "file": "jewel_diamond_mono_shiny.png",
+      "sha256": "1c5cc5b206257a1138052be5f741d14eaa9948abbcdf1785f445a3e7e30e393f"
+    },
+    {
+      "file": "jewel_diamond_two.png",
+      "sha256": "931de510b887d59755d860acdac28c9980f5fd997260291d6cf335e6aa2a8d80"
+    },
+    {
+      "file": "jewel_diamond_two_shiny.png",
+      "sha256": "1c5cc5b206257a1138052be5f741d14eaa9948abbcdf1785f445a3e7e30e393f"
+    },
+    {
+      "file": "jewel_emerald_mono.png",
+      "sha256": "461cb11a68bfd5bc79cdf411a9d15e374447a1e14c52955056639257ba18e5d4"
+    },
+    {
+      "file": "jewel_emerald_mono_shiny.png",
+      "sha256": "cfac4f723c5979d8bb96eccc7e6bb6da143486bb5eb4fb23a5eb139a1e92e8dc"
+    },
+    {
+      "file": "jewel_emerald_two.png",
+      "sha256": "461cb11a68bfd5bc79cdf411a9d15e374447a1e14c52955056639257ba18e5d4"
+    },
+    {
+      "file": "jewel_emerald_two_shiny.png",
+      "sha256": "cfac4f723c5979d8bb96eccc7e6bb6da143486bb5eb4fb23a5eb139a1e92e8dc"
+    },
+    {
+      "file": "jewel_garnet_mono.png",
+      "sha256": "991e43643ef5adb35c8e763e1fb9b7c3cae7f69b675fcb389cddc9acfecf1d4f"
+    },
+    {
+      "file": "jewel_garnet_mono_shiny.png",
+      "sha256": "9ed4c1092389189ebcaa067534c9d90bc9cf0cf0ca18e11c43f5b0f289d5f088"
+    },
+    {
+      "file": "jewel_garnet_two.png",
+      "sha256": "991e43643ef5adb35c8e763e1fb9b7c3cae7f69b675fcb389cddc9acfecf1d4f"
+    },
+    {
+      "file": "jewel_garnet_two_shiny.png",
+      "sha256": "9ed4c1092389189ebcaa067534c9d90bc9cf0cf0ca18e11c43f5b0f289d5f088"
+    },
+    {
+      "file": "jewel_gold_mono.png",
+      "sha256": "c1727db5157cc142afd0951d3974b1e427016d0ec6e138867d966ad3d74bbf3b"
+    },
+    {
+      "file": "jewel_gold_mono_shiny.png",
+      "sha256": "96ce5581804d830bc097aca42481db186a63d699b1fb1fa7ece3daa8afceb50f"
+    },
+    {
+      "file": "jewel_gold_two.png",
+      "sha256": "c1727db5157cc142afd0951d3974b1e427016d0ec6e138867d966ad3d74bbf3b"
+    },
+    {
+      "file": "jewel_gold_two_shiny.png",
+      "sha256": "96ce5581804d830bc097aca42481db186a63d699b1fb1fa7ece3daa8afceb50f"
+    },
+    {
+      "file": "jewel_moon_mono.png",
+      "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+    },
+    {
+      "file": "jewel_moon_mono_shiny.png",
+      "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+    },
+    {
+      "file": "jewel_moon_two.png",
+      "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+    },
+    {
+      "file": "jewel_moon_two_shiny.png",
+      "sha256": "aa31c475836f71accd1532104f79010cfa98090bdb34acf0c18780d2f60fd19b"
+    },
+    {
+      "file": "jewel_onyx_mono.png",
+      "sha256": "7b09f91937492b43d598ca71cc5c7994c2a4a7aa50835cde33707c5274700ea1"
+    },
+    {
+      "file": "jewel_onyx_mono_shiny.png",
+      "sha256": "64bca25cfc627fd1f49f779de6d2900663773d202c264490aa3bb9cb222d04d8"
+    },
+    {
+      "file": "jewel_onyx_two.png",
+      "sha256": "7b09f91937492b43d598ca71cc5c7994c2a4a7aa50835cde33707c5274700ea1"
+    },
+    {
+      "file": "jewel_onyx_two_shiny.png",
+      "sha256": "64bca25cfc627fd1f49f779de6d2900663773d202c264490aa3bb9cb222d04d8"
+    },
+    {
+      "file": "jewel_peridot_mono.png",
+      "sha256": "df03612c7d7d66b897fa7c30368f700497912c85cffba08e084645b62897074a"
+    },
+    {
+      "file": "jewel_peridot_mono_shiny.png",
+      "sha256": "4fd842e02db2e8651723b9feab6a01d68822fcdef0fa82de6cf85e39457158b8"
+    },
+    {
+      "file": "jewel_peridot_two.png",
+      "sha256": "df03612c7d7d66b897fa7c30368f700497912c85cffba08e084645b62897074a"
+    },
+    {
+      "file": "jewel_peridot_two_shiny.png",
+      "sha256": "4fd842e02db2e8651723b9feab6a01d68822fcdef0fa82de6cf85e39457158b8"
+    },
+    {
+      "file": "jewel_ruby_mono.png",
+      "sha256": "72b74cb86e068f0cd04fcc908efdd5786a87cc9f4ca25114fbf670fb53410d67"
+    },
+    {
+      "file": "jewel_ruby_mono_shiny.png",
+      "sha256": "4796b96f57786608b6ed5c2a698275ba75c1ef8bad43638411b197f3d463f767"
+    },
+    {
+      "file": "jewel_ruby_two.png",
+      "sha256": "72b74cb86e068f0cd04fcc908efdd5786a87cc9f4ca25114fbf670fb53410d67"
+    },
+    {
+      "file": "jewel_ruby_two_shiny.png",
+      "sha256": "4796b96f57786608b6ed5c2a698275ba75c1ef8bad43638411b197f3d463f767"
+    },
+    {
+      "file": "jewel_sapphire_mono.png",
+      "sha256": "6b6b62623c4edde967f52f43fc8239ea432594fd08d71c3769e865799d0f54eb"
+    },
+    {
+      "file": "jewel_sapphire_mono_shiny.png",
+      "sha256": "313375d24074e5b5e80d19dde6ea08a96cbffb2228631fa87433d1f1e521d6e4"
+    },
+    {
+      "file": "jewel_sapphire_two.png",
+      "sha256": "6b6b62623c4edde967f52f43fc8239ea432594fd08d71c3769e865799d0f54eb"
+    },
+    {
+      "file": "jewel_sapphire_two_shiny.png",
+      "sha256": "313375d24074e5b5e80d19dde6ea08a96cbffb2228631fa87433d1f1e521d6e4"
+    },
+    {
+      "file": "jewel_silver_mono.png",
+      "sha256": "ccf6547117215d63fe447f45da09e63ea2f3f88ae2b54cd7b1777e9aad207a59"
+    },
+    {
+      "file": "jewel_silver_mono_shiny.png",
+      "sha256": "5d982f4d67af79c29a1050dbfee3864830de8686bfa08057763aca28f760f7f5"
+    },
+    {
+      "file": "jewel_silver_two.png",
+      "sha256": "ccf6547117215d63fe447f45da09e63ea2f3f88ae2b54cd7b1777e9aad207a59"
+    },
+    {
+      "file": "jewel_silver_two_shiny.png",
+      "sha256": "5d982f4d67af79c29a1050dbfee3864830de8686bfa08057763aca28f760f7f5"
+    },
+    {
+      "file": "jewel_topaz_mono.png",
+      "sha256": "358341ccca79652070fe01cad80b7db8569ea7d094a9ae4df0dc78dbd61e49cc"
+    },
+    {
+      "file": "jewel_topaz_mono_shiny.png",
+      "sha256": "b5f46c9ed76179668beba81c5d39dceba82c4f0433e13ae47f2285263726e331"
+    },
+    {
+      "file": "jewel_topaz_two.png",
+      "sha256": "358341ccca79652070fe01cad80b7db8569ea7d094a9ae4df0dc78dbd61e49cc"
+    },
+    {
+      "file": "jewel_topaz_two_shiny.png",
+      "sha256": "b5f46c9ed76179668beba81c5d39dceba82c4f0433e13ae47f2285263726e331"
+    },
+    {
+      "file": "lime_mono.png",
+      "sha256": "e36414b9af468ffa6b74350c56d2d548320ba192ad0954a8b13ab541c67f3116"
+    },
+    {
+      "file": "lime_mono_shiny.png",
+      "sha256": "bc00f32225d3a929f261f774b17ef7eb4a9e7daf62a3856977ccf1040d046564"
+    },
+    {
+      "file": "lime_two.png",
+      "sha256": "4b4aff88b44d09685e6bc71fb8a566e02b42aa15037e4cdd6ecbf0f1c42d73e1"
+    },
+    {
+      "file": "lime_two_shiny.png",
+      "sha256": "446153d11d38ff8c7f8dbfc6d5d07de59fa16d72f7a56d85d65e875b2c14fd00"
+    },
+    {
+      "file": "normal_dark_0_mono.png",
+      "sha256": "c68b3cf662e7944ac883809ff36dd22a287857873de864ea2836ecc2a4d02848"
+    },
+    {
+      "file": "normal_dark_0_mono_shiny.png",
+      "sha256": "c68b3cf662e7944ac883809ff36dd22a287857873de864ea2836ecc2a4d02848"
+    },
+    {
+      "file": "normal_dark_0_two.png",
+      "sha256": "f98d0bb303f860e012f0a294c68c7c2c2999c84e85fbf3c4b823a1fc94c9ac28"
+    },
+    {
+      "file": "normal_dark_0_two_shiny.png",
+      "sha256": "f98d0bb303f860e012f0a294c68c7c2c2999c84e85fbf3c4b823a1fc94c9ac28"
+    },
+    {
+      "file": "normal_dark_1_mono.png",
+      "sha256": "e98af964d9e218827cd2d61c7c301ce1143902ee74da2ef6e6d5a62f50a4199a"
+    },
+    {
+      "file": "normal_dark_1_mono_shiny.png",
+      "sha256": "e98af964d9e218827cd2d61c7c301ce1143902ee74da2ef6e6d5a62f50a4199a"
+    },
+    {
+      "file": "normal_dark_1_two.png",
+      "sha256": "153c81e8a44f4e93da282712f9a432bd09dfbeeb8c16b5881cee759a3d368089"
+    },
+    {
+      "file": "normal_dark_1_two_shiny.png",
+      "sha256": "153c81e8a44f4e93da282712f9a432bd09dfbeeb8c16b5881cee759a3d368089"
+    },
+    {
+      "file": "normal_dark_2_mono.png",
+      "sha256": "7cf31880c5f4ddf6bc948126bd067855d5425c904d364783f283b870b5e1acad"
+    },
+    {
+      "file": "normal_dark_2_mono_shiny.png",
+      "sha256": "7cf31880c5f4ddf6bc948126bd067855d5425c904d364783f283b870b5e1acad"
+    },
+    {
+      "file": "normal_dark_2_two.png",
+      "sha256": "d0706b3b860478cc2a59a6253c32a25829e355c661f553d611f5da4f1b2678cc"
+    },
+    {
+      "file": "normal_dark_2_two_shiny.png",
+      "sha256": "d0706b3b860478cc2a59a6253c32a25829e355c661f553d611f5da4f1b2678cc"
+    },
+    {
+      "file": "normal_dark_3_mono.png",
+      "sha256": "fbe6ac6fd100fc0abf595b552d77b2d296823c792833e2e382f1a6a805269e02"
+    },
+    {
+      "file": "normal_dark_3_mono_shiny.png",
+      "sha256": "fbe6ac6fd100fc0abf595b552d77b2d296823c792833e2e382f1a6a805269e02"
+    },
+    {
+      "file": "normal_dark_3_two.png",
+      "sha256": "891d136da8c81531b27f29c1e1d577ed3fdef862e70fbbf693702bbd68ff6426"
+    },
+    {
+      "file": "normal_dark_3_two_shiny.png",
+      "sha256": "891d136da8c81531b27f29c1e1d577ed3fdef862e70fbbf693702bbd68ff6426"
+    },
+    {
+      "file": "normal_dark_4_mono.png",
+      "sha256": "22c34fc599dfd6330694db8b9d1a1fcd7ee7be1b57193f7d30f0e76eefc72668"
+    },
+    {
+      "file": "normal_dark_4_mono_shiny.png",
+      "sha256": "22c34fc599dfd6330694db8b9d1a1fcd7ee7be1b57193f7d30f0e76eefc72668"
+    },
+    {
+      "file": "normal_dark_4_two.png",
+      "sha256": "21fc4191e246808cd6f60fbbddb95938f6c19a1b84db40353a70c613978ab31b"
+    },
+    {
+      "file": "normal_dark_4_two_shiny.png",
+      "sha256": "21fc4191e246808cd6f60fbbddb95938f6c19a1b84db40353a70c613978ab31b"
+    },
+    {
+      "file": "normal_hero_0_mono.png",
+      "sha256": "d8c0a689a801b59b7cb977f7b87ac455db15a171bb62bd89516ffc19d742eb6b"
+    },
+    {
+      "file": "normal_hero_0_mono_shiny.png",
+      "sha256": "d8c0a689a801b59b7cb977f7b87ac455db15a171bb62bd89516ffc19d742eb6b"
+    },
+    {
+      "file": "normal_hero_0_two.png",
+      "sha256": "aeebbdea468157c6d02bcccd1c4e400874f3c019593eafd145d33d43a2832363"
+    },
+    {
+      "file": "normal_hero_0_two_shiny.png",
+      "sha256": "aeebbdea468157c6d02bcccd1c4e400874f3c019593eafd145d33d43a2832363"
+    },
+    {
+      "file": "normal_hero_1_mono.png",
+      "sha256": "8c30909d4a73063fe5713c183366d12e309510c30634bdbf892509c50d29ec6d"
+    },
+    {
+      "file": "normal_hero_1_mono_shiny.png",
+      "sha256": "8c30909d4a73063fe5713c183366d12e309510c30634bdbf892509c50d29ec6d"
+    },
+    {
+      "file": "normal_hero_1_two.png",
+      "sha256": "8bc293af292dd68059425a48b94f7189e1bcd8e088dd1f3a19714e4a3462c493"
+    },
+    {
+      "file": "normal_hero_1_two_shiny.png",
+      "sha256": "8bc293af292dd68059425a48b94f7189e1bcd8e088dd1f3a19714e4a3462c493"
+    },
+    {
+      "file": "normal_hero_2_mono.png",
+      "sha256": "9c4023dd9255eee8101858f16969265e964b81e4809827ab2f1c1bde8e46ac3b"
+    },
+    {
+      "file": "normal_hero_2_mono_shiny.png",
+      "sha256": "9c4023dd9255eee8101858f16969265e964b81e4809827ab2f1c1bde8e46ac3b"
+    },
+    {
+      "file": "normal_hero_2_two.png",
+      "sha256": "1a2a29dd333e7c9f356ae31a1b30805057ea3328b201fda44a2dd5d4e0785426"
+    },
+    {
+      "file": "normal_hero_2_two_shiny.png",
+      "sha256": "1a2a29dd333e7c9f356ae31a1b30805057ea3328b201fda44a2dd5d4e0785426"
+    },
+    {
+      "file": "normal_hero_3_mono.png",
+      "sha256": "e4279e948b82377adc976d070b7a3fc7045e0420618396c34984900079b7bdd0"
+    },
+    {
+      "file": "normal_hero_3_mono_shiny.png",
+      "sha256": "e4279e948b82377adc976d070b7a3fc7045e0420618396c34984900079b7bdd0"
+    },
+    {
+      "file": "normal_hero_3_two.png",
+      "sha256": "745443364f7ebd5a62ecc7de55ee7e4741251a0e8d596118db54dc14dc1ae289"
+    },
+    {
+      "file": "normal_hero_3_two_shiny.png",
+      "sha256": "745443364f7ebd5a62ecc7de55ee7e4741251a0e8d596118db54dc14dc1ae289"
+    },
+    {
+      "file": "normal_hero_4_mono.png",
+      "sha256": "3a3d549a652e40a5211f6d17938dfdc4eed92e50f83ab49e4cbd98bd99b71085"
+    },
+    {
+      "file": "normal_hero_4_mono_shiny.png",
+      "sha256": "3a3d549a652e40a5211f6d17938dfdc4eed92e50f83ab49e4cbd98bd99b71085"
+    },
+    {
+      "file": "normal_hero_4_two.png",
+      "sha256": "5293b02569b52f35e55cf04d7eacbf9de815e4337904f4cc6e6a23423e0ea9a6"
+    },
+    {
+      "file": "normal_hero_4_two_shiny.png",
+      "sha256": "5293b02569b52f35e55cf04d7eacbf9de815e4337904f4cc6e6a23423e0ea9a6"
+    },
+    {
+      "file": "normal_neutral_0_mono.png",
+      "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+    },
+    {
+      "file": "normal_neutral_0_mono_shiny.png",
+      "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+    },
+    {
+      "file": "normal_neutral_0_two.png",
+      "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+    },
+    {
+      "file": "normal_neutral_0_two_shiny.png",
+      "sha256": "a54414f86de9f97c1217804587a220858b35da23d2b548e3061f521475eb5441"
+    },
+    {
+      "file": "normal_neutral_1_mono.png",
+      "sha256": "bb656100b127ba3a756dce40cc015689253f07b7c1ea1427e9084c5fc03d703a"
+    },
+    {
+      "file": "normal_neutral_1_mono_shiny.png",
+      "sha256": "bb656100b127ba3a756dce40cc015689253f07b7c1ea1427e9084c5fc03d703a"
+    },
+    {
+      "file": "normal_neutral_1_two.png",
+      "sha256": "eafe2cde6d27e3aeb98a4a92eacd0f16d793bbd5dc0485e332327175b8ae778e"
+    },
+    {
+      "file": "normal_neutral_1_two_shiny.png",
+      "sha256": "eafe2cde6d27e3aeb98a4a92eacd0f16d793bbd5dc0485e332327175b8ae778e"
+    },
+    {
+      "file": "normal_neutral_2_mono.png",
+      "sha256": "aed943edcbf7806e42ffbba2484fa108531d4b0531c5c91a7f9cda5de7458e1e"
+    },
+    {
+      "file": "normal_neutral_2_mono_shiny.png",
+      "sha256": "aed943edcbf7806e42ffbba2484fa108531d4b0531c5c91a7f9cda5de7458e1e"
+    },
+    {
+      "file": "normal_neutral_2_two.png",
+      "sha256": "fe42840921cd094091158d1b83952671eb3eb00db84fc59b18eb7c6dca3ce3bd"
+    },
+    {
+      "file": "normal_neutral_2_two_shiny.png",
+      "sha256": "fe42840921cd094091158d1b83952671eb3eb00db84fc59b18eb7c6dca3ce3bd"
+    },
+    {
+      "file": "normal_neutral_3_mono.png",
+      "sha256": "e0265c788ba47cf7996eb1208a0f471fa196106f32b06f5cdd2a69a909608655"
+    },
+    {
+      "file": "normal_neutral_3_mono_shiny.png",
+      "sha256": "e0265c788ba47cf7996eb1208a0f471fa196106f32b06f5cdd2a69a909608655"
+    },
+    {
+      "file": "normal_neutral_3_two.png",
+      "sha256": "82fbd33573bc4318b5c5bafe48df057d65dd8f541342d7fbfb21180489686cef"
+    },
+    {
+      "file": "normal_neutral_3_two_shiny.png",
+      "sha256": "82fbd33573bc4318b5c5bafe48df057d65dd8f541342d7fbfb21180489686cef"
+    },
+    {
+      "file": "normal_neutral_4_mono.png",
+      "sha256": "53cf4a05b41543db5c8656e56bede58b17a376b77af221fcb3d17f3cf42bdc3d"
+    },
+    {
+      "file": "normal_neutral_4_mono_shiny.png",
+      "sha256": "53cf4a05b41543db5c8656e56bede58b17a376b77af221fcb3d17f3cf42bdc3d"
+    },
+    {
+      "file": "normal_neutral_4_two.png",
+      "sha256": "da660a698b6e8e4e1e57dba5e49a662c76ae5758a04263b58dfb2e6b0c1cff1a"
+    },
+    {
+      "file": "normal_neutral_4_two_shiny.png",
+      "sha256": "da660a698b6e8e4e1e57dba5e49a662c76ae5758a04263b58dfb2e6b0c1cff1a"
+    },
+    {
+      "file": "orange_mono.png",
+      "sha256": "79ff6ae50523da13b875bc2e8a5e356991d2e2ac8cffa84cb6dd965e0ee1f541"
+    },
+    {
+      "file": "orange_mono_shiny.png",
+      "sha256": "5e3064d5fe4d27764e7adf741c749134b0470ae591a905235cf3987139aa2a6c"
+    },
+    {
+      "file": "orange_two.png",
+      "sha256": "0f06b902b97ce98ba183dcf50ba6295418acb94bedbf715e37717cfc7b64e922"
+    },
+    {
+      "file": "orange_two_shiny.png",
+      "sha256": "6c1e672cd9ef0d01a8fc6c1a646a5cc5f99e6af36ba895f7294e8b30f27607dc"
+    },
+    {
+      "file": "pink_mono.png",
+      "sha256": "21e75322f595c47590e54e6577dda5c56ef462ac246d024e6d28792eadf61ddc"
+    },
+    {
+      "file": "pink_mono_shiny.png",
+      "sha256": "16f564885777df1aeeb635732c13857790824145c2403b148e77af38c247df91"
+    },
+    {
+      "file": "pink_two.png",
+      "sha256": "4c0ef4f336abbeb2a6c4dd5a9e9578cf5216ff435c45c9528da3081ffe2f1b20"
+    },
+    {
+      "file": "pink_two_shiny.png",
+      "sha256": "5185f7f129d18f79aba36208a9c0001938a10f2c7190e101f552e0c40a1ef7a4"
+    },
+    {
+      "file": "purple_mono.png",
+      "sha256": "7358fbb8708e44e93bf116e1a365db375693637f042b09a9f2d20ab208d0c2d5"
+    },
+    {
+      "file": "purple_mono_shiny.png",
+      "sha256": "edfca754384fd9a862a11f5cc0384b8c9c79a871b0d6df9aea5f0fdcc5f306e9"
+    },
+    {
+      "file": "purple_two.png",
+      "sha256": "a274785eb75ac94565d89e510a440e016db8c057902cc16ffdbf7f7a33977e18"
+    },
+    {
+      "file": "purple_two_shiny.png",
+      "sha256": "30d982870886e36f50dfd470f04c7a5bcf79b5375c80b48c8ec12db0e1b66b81"
+    },
+    {
+      "file": "red_mono.png",
+      "sha256": "7f304d931d90c0075895709d9b79e1648245a17d57ad4725617737b918c3d8f1"
+    },
+    {
+      "file": "red_mono_shiny.png",
+      "sha256": "a3df432362012a851c899bfc2a92ab3be7efe22abbe5362b1548b43988ca34fc"
+    },
+    {
+      "file": "red_two.png",
+      "sha256": "bdb9e1e1dabecb7e57658bc70410895df0f2c43095abc0cbad7ef7a745e9264d"
+    },
+    {
+      "file": "red_two_shiny.png",
+      "sha256": "4d58d27b3c5a557e88a84b6ff380e96084302be05fe036a615f1b78ad02e9c29"
+    },
+    {
+      "file": "sky_blue_mono.png",
+      "sha256": "b7506ea4b63e7af986112c6c97d9965b561c67206493fe13463b99b951ad954d"
+    },
+    {
+      "file": "sky_blue_mono_shiny.png",
+      "sha256": "31a0f640c83c51364aaed49e609de98e0915cc14f25baeabe45138d63b1d5496"
+    },
+    {
+      "file": "sky_blue_two.png",
+      "sha256": "b5d82b51fb32a23cf07e6e88a3e6a29a91ce17c7b869c4b256ad795c4c3593a4"
+    },
+    {
+      "file": "sky_blue_two_shiny.png",
+      "sha256": "b497c29672bf8ce363557e76d090676361f08b61093366732d00a3d681347b51"
+    },
+    {
+      "file": "white_mono.png",
+      "sha256": "57ad15936e4239dead3b6d781c7b97a671d639b1226c5140a90523e7e4f7b374"
+    },
+    {
+      "file": "white_mono_shiny.png",
+      "sha256": "b60fec800ed81f08a7b18501f94d169d0019d048015467adb9f0779791e62038"
+    },
+    {
+      "file": "white_two.png",
+      "sha256": "5257d5529e2004a9e97388baff99d639d8941f40bd4d52bd37b72f3da4815801"
+    },
+    {
+      "file": "white_two_shiny.png",
+      "sha256": "b4480b13fe6df4a1ace99f6bb231781c2e1ee41680d692c41f280d83bc953a0c"
+    },
+    {
+      "file": "yellow_mono.png",
+      "sha256": "29ed4ebf24f8e28529342e6cba5184b5c30fe641ef748bbec08157783a652241"
+    },
+    {
+      "file": "yellow_mono_shiny.png",
+      "sha256": "60e9e1ae4657fffdb2af769cb1873abd4f49db4562d5f3745afb8ef0e58127fc"
+    },
+    {
+      "file": "yellow_two.png",
+      "sha256": "3c7cbaf7e5b4457c5d16e71e9af29cd01af54bf2643488f9ad01a197e001f45e"
+    },
+    {
+      "file": "yellow_two_shiny.png",
+      "sha256": "0a319a26d8a423805dcdd2979ad33847f0f6ee7c1c92ddb74641b267789f5965"
+    }
+  ],
+  "alpha_exception_source_samples": 688,
+  "reserved_native_texels": [
+    [
+      124,
+      63
+    ],
+    [
+      125,
+      63
+    ],
+    [
+      126,
+      63
+    ],
+    [
+      127,
+      63
+    ]
+  ],
+  "prior_glasses_context": {
+    "path": "/workspace/.setup/run062-client-final/screenshots/run062-live-68-neutral_run_fly_phoenix_glasses-front-t000-f0016.png",
+    "sha256": "15446c72a0f151d380fc7057e24a965d6086de6421e893cef48985e2db804ad9",
+    "literal_capture_line": "[03:54:04] [IO-Worker-6/INFO] [co.ch.cl.NeutralRunVisualSmoke062/]: RUN062_CAPTURE run062-live-68-neutral_run_fly_phoenix_glasses-front-t000-f0016.png case=68 angle=front tick=0 sha256=15446c72a0f151d380fc7057e24a965d6086de6421e893cef48985e2db804ad9 wallNanos=39362058660180 epochMillis=1794542044518",
+    "personally_opened": true,
+    "counted_as_final_evidence": false,
+    "observation": "Thin dotted/stippled frame edges match the current final Power glasses front. The body phenotype differs; this prior image is context only."
+  }
+}

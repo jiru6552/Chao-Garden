@@ -1,6 +1,6 @@
-# Chao Garden 0.25.62
+# Chao Garden 0.25.63
 
-Current update **0.25.62** adds the Neutral/Run-first adult family across both signed training axes: balanced, Run, Power, Fly, Swim and the four compatible pairs. Separate blocky crests, front-side nubs, wings and tail develop around the unchanged original head box. Opposing Power can carry Run through balance toward Power while the first type stays Run. See [the Run family and verification report](docs/NEUTRAL_RUN_02562.md). The [Neutral Fly-first](docs/NEUTRAL_FLY_02561.md), [Dark/Neutral](docs/DARK_NORMAL_02560.md), [Neutral Swim-first](docs/NEUTRAL_SWIM_02559.md) and earlier Neutral/Hero families remain included.
+Current update **0.25.63** adds the Neutral/Power-first adult family across both signed training axes: balanced, Run, Power, Fly, Swim and the four compatible pairs. Separate blocky crown and side points, a lower rear crest, compact limbs, wings and tail develop around the unchanged original head box. Later Run can cross balance while the first type stays Power. See [the Power family report](docs/NEUTRAL_POWER_02563.md). The completed [Neutral Run-first](docs/NEUTRAL_RUN_02562.md), [Neutral Fly-first](docs/NEUTRAL_FLY_02561.md), [Dark/Neutral](docs/DARK_NORMAL_02560.md), [Neutral Swim-first](docs/NEUTRAL_SWIM_02559.md) and earlier Neutral/Hero families remain included.
 
 Earlier Analyzer update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
 

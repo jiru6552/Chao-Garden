@@ -353,3 +353,10 @@ This is an authored blocky approximation, including the interior interpolation: 
 ## Neutral / Fly-first morphology (0.25.61)
 
 Ordinary living Neutral adults with locked Fly first type select six later forms: balanced, Run, Power, Fly, Run+Fly and Power+Fly. The current Run/Power axis is `(Power - Run) / 960`, clamped to -1..1; the later Fly axis is `(Fly - Swim) / 960`, clamped to 0..1. Training means `100 * level + progress`. Swim counters later Fly toward balanced Fly-first; excess Swim does not add another secondary path in this pass. Compatible pair order is identical. Maturity blends a shared fresh target into those authored endpoints, independently of reversible training; large changes retain twenty-tick display easing. The threshold remains provisional mod timing, not a viewer-derived rate. No save fields, evolution selection, life timing, Creative authority or command rules change.
+
+
+## Neutral / Power-first morphology (0.25.63)
+
+Ordinary living Neutral adults with locked Power first type use a common fresh Power surface and nine later targets: balanced, Run, Power, Fly, Swim and the four compatible pairs. The original head box, face and shared skeleton remain unchanged; separate closed cuboids develop the central crown, upper-side horns and axial lower rear crest. This profile preserves both full signed axes: `(Power - Run) / 960` and `(Fly - Swim) / 960`, clamped to -1..1, using current `100 * level + progress`. Opposing training cancels and can cross balance without changing the locked first Power identity. Compatible pairs share one target regardless of order.
+
+Biological maturity gates development independently of reversible training. The current profile uses thirty-tick display easing for large edits; this changes no saved field, life stage, first-evolution selection, adult alignment, network payload, Creative authority or command rules. Source-game timing is not inferred from viewer sliders. Existing passive maturity/lifetime timing and all previously completed profiles remain unchanged. See the family report for measured verification and first-pass geometry/palette/interior limits.

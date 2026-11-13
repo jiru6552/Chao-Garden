@@ -1,0 +1,395 @@
+{
+  "version": "0.25.63",
+  "timestamp_utc": "2026-11-13T06:00:03.971319+00:00",
+  "scope": "Literal final cohort/image hashes and all production frozen/current/JAR bytes; visual review is separate and not inferred.",
+  "cohort_requested": 93,
+  "cohort_rendered": 93,
+  "cohort_skipped": 0,
+  "all_pngs_checked": 796,
+  "actual_image_groups": {
+    "static": 468,
+    "ui": 16,
+    "post_ui_world": 9,
+    "motion_evolution": 303
+  },
+  "whole_completion_line": "[05:56:46] [Render thread/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_VISUAL_COMPLETE requestedCases=93 renderedCases=93 skippedCases=0 start=0 limit=93 baseline=false captures=796 saved=796 epochMillis=1794549406189 normal20TPS=true audioListening=false output=/workspace/.setup/power063-client-final",
+  "client_log": "/workspace/.setup/power063-client-final.log",
+  "client_log_sha256": "7a16d37732b042e540c79d24e99a29d88c903793c885dd87db0a64f137555d29",
+  "client_build_outcome": "BUILD SUCCESSFUL in 10m 25s",
+  "jar": "/workspace/Chao-Garden/build/libs/chao_garden-0.25.63.jar",
+  "jar_sha256": "791156dad7d275a7ba44fe047f453cf020d55bae34d46cc68b9262002f0d3a3f",
+  "runtime_mode": "development_classpath",
+  "runtime_production_entries_checked": 8347,
+  "all_frozen_current_and_jar_bytes_match": true,
+  "snapshot_manifest_sha256": "834d9a77994ff3b802cc9735fa0993bc96dd71fdff32761223026324e148f127",
+  "proof_sha256": "7dc1d9846f36226432c800688398782c9a4f7a50b7e44c98eb56f3b54d82bd28",
+  "freeze_precedes_case0": true,
+  "ui_images": 16,
+  "post_ui_world_images": 9,
+  "evolution_images": 25,
+  "selected_images": [
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-back-t151-f0074.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-back-t151-f0074.png",
+      "case": 69,
+      "sha256": "9743d1bab4573459607b051e25fa80ec3733a9f5527a10fd49ba9cbaa724f571",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-front-t151-f0028.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-front-t151-f0028.png",
+      "case": 69,
+      "sha256": "ece83d211069668de6042ee402c3659937f266253582338a4b004b2438fe7862",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-left-t151-f0051.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-left-t151-f0051.png",
+      "case": 69,
+      "sha256": "f1dcf3cbffaa99b3a4a1f7887fc2f9504d4325f33ca76a1729b8da2fa09230c2",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-ui-adult-alignment-locked.png",
+      "case": 69,
+      "sha256": "50acf5f7ef9f0ed4d9208f5234b82aaf9583ab23c54abc631de9b783eec2c93b",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-ui-adult-lock-tap-feedback.png",
+      "case": 69,
+      "sha256": "a486c3214212da8abace12326f7ed7032b969b4c6187d6633197a242077bbc1b",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-before.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-before.png",
+      "case": 69,
+      "sha256": "55747ef9535713d8cbcca6193cd16d65ac8e748df80d3d77e8efb6db7def5443",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-drag-intermediate.png",
+      "case": 69,
+      "sha256": "e873f3d3aabe8b84bd5e2053cf5d09ea22b15484954a87d09b554fd168ec6beb",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-safe-endpoint.png",
+      "case": 69,
+      "sha256": "e1b41f1aa415cd5da6c337e54be29ca2b53ea825e39f087e1b4f278f919035a2",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-young.png",
+      "name": "power063-live-69-creative_neutral_power_adult_lock_maturity-ui-maturity-young.png",
+      "case": 69,
+      "sha256": "401ea33aff7f473090166e670eccd963aa46305e9f78880426d74aa78ce75bdb",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-70-survival_neutral_power_adult_readonly-back-t109-f0074.png",
+      "name": "power063-live-70-survival_neutral_power_adult_readonly-back-t109-f0074.png",
+      "case": 70,
+      "sha256": "fdd3ed43bdea34af9d4373a0c6b250d3b37357f213d453188e6f4befa12e0038",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-70-survival_neutral_power_adult_readonly-front-t109-f0028.png",
+      "name": "power063-live-70-survival_neutral_power_adult_readonly-front-t109-f0028.png",
+      "case": 70,
+      "sha256": "f0a23a1dc19bec40443db1ca8b802bccc8d821045b2fb7582a1745b7ec144af6",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-70-survival_neutral_power_adult_readonly-left-t109-f0051.png",
+      "name": "power063-live-70-survival_neutral_power_adult_readonly-left-t109-f0051.png",
+      "case": 70,
+      "sha256": "cd87fcf9cfe75624811cc987de2c6f52450fdb73629c7bafee9bb03788748234",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-70-survival_neutral_power_adult_readonly-ui-maturity-before.png",
+      "name": "power063-live-70-survival_neutral_power_adult_readonly-ui-maturity-before.png",
+      "case": 70,
+      "sha256": "fc646e385f814e526a4f2cfd6c9126352d109daf83bca38d6ec0f5d1c204670c",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-70-survival_neutral_power_adult_readonly-ui-maturity-survival-denied.png",
+      "name": "power063-live-70-survival_neutral_power_adult_readonly-ui-maturity-survival-denied.png",
+      "case": 70,
+      "sha256": "9827900aee4ebc0c0fe5c6b14d767486d8581ef6a10fae15e1a1bdc25a7cdb37",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-70-survival_neutral_power_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "name": "power063-live-70-survival_neutral_power_adult_readonly-ui-survival-alignment-tap-feedback.png",
+      "case": 70,
+      "sha256": "c825b069459ab6a399b4a526bfb1dd1fbc357ad9742110fd47c1178ac9066666",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-70-survival_neutral_power_adult_readonly-ui-survival-readonly.png",
+      "name": "power063-live-70-survival_neutral_power_adult_readonly-ui-survival-readonly.png",
+      "case": 70,
+      "sha256": "5bb091a4f5e3ac0f6e6eae68b7e7f927c26656727b240a8fbb3f3d9d818e9816",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-back-t187-f0074.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-back-t187-f0074.png",
+      "case": 71,
+      "sha256": "c471763cf0f129d5db8fdbe229e4806148395c710c915e701bbba12526011b98",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-front-t187-f0028.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-front-t187-f0028.png",
+      "case": 71,
+      "sha256": "8d6c918575f464813d9a07c86909b7002f1690fca4e2acb776ee2fabad6d08c1",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-left-t187-f0051.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-left-t187-f0051.png",
+      "case": 71,
+      "sha256": "c50b787a9c0082f2151eb60a43d242cf9e46a98fabd0082a3b280612c3529806",
+      "kind": "post_ui_world"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-ui-baby-alignment.png",
+      "case": 71,
+      "sha256": "aea772083324a1bf2495954b0a58fcaaf00cddc6ba6f752d401a44f8aec24218",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-ui-baby-hero-alignment.png",
+      "case": 71,
+      "sha256": "649534ff2ca768c2e41d2457f5504448a973826ca9081ede1eb941cb69ad75ac",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-before.png",
+      "case": 71,
+      "sha256": "43dfcfd0010f125f8500ef118af1116657f8d8c3306582277162e9113e542758",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-drag-intermediate.png",
+      "case": 71,
+      "sha256": "e636097120d0c8f42922d48f33fa406c8daee78b19743b4462f06aae4bb29422",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-safe-endpoint.png",
+      "case": 71,
+      "sha256": "3e3ff1d9edc5b989bcd294466481c1cac9cee1b55863cfbfb7d5ec6ecf628cde",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "name": "power063-live-71-creative_baby_alignment_maturity_regression-ui-maturity-young.png",
+      "case": 71,
+      "sha256": "70ffdebf3f517951809966bb415084fbe41eec5c9df08a0dfe6aa566078a8370",
+      "kind": "ui"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t203-f0315.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t203-f0315.png",
+      "case": 83,
+      "sha256": "e7b084a36499f3d6e72a8c890f306497b38a4cba2129204d325d910b8442d987",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t215-f0333.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t215-f0333.png",
+      "case": 83,
+      "sha256": "c5424793d19ab9aacfcb80f34aeb95aeda83b1f07f0c00f72d5c80061fcdcbde",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t227-f0351.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t227-f0351.png",
+      "case": 83,
+      "sha256": "037dcac760aece42e56be6d49c53c76e0077fd09be050b5d90db1c39dc191e35",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t239-f0368.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t239-f0368.png",
+      "case": 83,
+      "sha256": "3d619925f07de8a9915dc4a3194c38094a121788159ef572dde266a6b7504d71",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t251-f0386.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t251-f0386.png",
+      "case": 83,
+      "sha256": "590ce732573b3acb842cce9bee44826154cba1cfadd76f60e602ebd346597d28",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t263-f0404.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t263-f0404.png",
+      "case": 83,
+      "sha256": "7e856d0459adadca4a6c30eee7064ea4e65cfa29cf475786d5722267bb82fb92",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t275-f0419.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t275-f0419.png",
+      "case": 83,
+      "sha256": "757cea1a1e4a36dc6adff06df8625a08a1a44cb93f42fe9bf909f465295d04ec",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t287-f0437.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t287-f0437.png",
+      "case": 83,
+      "sha256": "808d56a64096f0b61491d8aff52ece7abd03e8fd7aceddfd8cbd7c133e6adc70",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-back-t299-f0455.png",
+      "case": 83,
+      "sha256": "10f516d756da5dadfb0ed252348dbd49b9d1f309bea036a167d6f6a388737663",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t011-f0028.png",
+      "case": 83,
+      "sha256": "5fdcb690b5bb849635fb44fa6a8c49b0a040f17b9ad40becf1bb62dc25f1581e",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t023-f0046.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t023-f0046.png",
+      "case": 83,
+      "sha256": "2c5e6fa09f4501fda21cd98c21dca4188b069addc972dbad642668c236af04b6",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t035-f0064.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t035-f0064.png",
+      "case": 83,
+      "sha256": "86d8b07e4769179160700987d63a1d2bc4ab68d97ff76bac985c13d171b84301",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t047-f0082.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t047-f0082.png",
+      "case": 83,
+      "sha256": "665ed2a7f0266e7f3fa47818abc282ca76d0e6f5994a703510ee2f2beee9579a",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t059-f0100.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t059-f0100.png",
+      "case": 83,
+      "sha256": "22f5b873ec6d3c1cfef9ba68cea0d25ed0a2129418f83b0111d6af653255682c",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t071-f0118.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t071-f0118.png",
+      "case": 83,
+      "sha256": "30c67136215b00de91124a5b958c27c0a502f246f2a32ed56c45978120986395",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t083-f0136.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t083-f0136.png",
+      "case": 83,
+      "sha256": "0334ec1b4ca7252009a623408aaba42e5bf06f5ef5090120755bc17ae11d5491",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-front-t095-f0154.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-front-t095-f0154.png",
+      "case": 83,
+      "sha256": "58af4dd20b3e374b22633349e830265622bcd8c96880e613073d66b95e4f6b1e",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t107-f0172.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t107-f0172.png",
+      "case": 83,
+      "sha256": "eb76913b6e111e07cbdc51cbdd28322ca965ea07e22c36ab3e9437141adbd658",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t119-f0189.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t119-f0189.png",
+      "case": 83,
+      "sha256": "671730b4027f111e5a46c74233a1a56382f132aeb43b8b97f61308c9df51e825",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t131-f0207.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t131-f0207.png",
+      "case": 83,
+      "sha256": "d132790363d1a10fdf9d12a954a118b470dc41a1ae1446ad007771588c9e1fe1",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t143-f0225.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t143-f0225.png",
+      "case": 83,
+      "sha256": "100d812b64a78bb0a2aee6e2e75cdbca7bd8de54079e7f2a15dd5e28b9b41acf",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t155-f0243.png",
+      "case": 83,
+      "sha256": "cb994249b34a95440561bc82b13480ba92aaed474b6f111b305169cc8c88f226",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t167-f0261.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t167-f0261.png",
+      "case": 83,
+      "sha256": "84f1e7689e35790bd8476392ff386bc7fbc828841401a05b8e6f63b1b38410dc",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t179-f0279.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t179-f0279.png",
+      "case": 83,
+      "sha256": "dd852d3ecaa946f18c282e94e7c101e77e7a6992c93b793ec95121736ba16ff7",
+      "kind": "evolution"
+    },
+    {
+      "path": "/workspace/.setup/power063-client-final/screenshots/power063-live-83-neutral_power_actual_first_evolution-left-t191-f0297.png",
+      "name": "power063-live-83-neutral_power_actual_first_evolution-left-t191-f0297.png",
+      "case": 83,
+      "sha256": "fa1e20b650f3cf8033b19016fadf1e75f676cf07ac19da5785ad011d66bcf6a9",
+      "kind": "evolution"
+    }
+  ],
+  "ui_native_verification_lines": [
+    "[05:52:33] [Server thread/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_UI_NATIVE_VERIFIED case=69 creative=true adult=true alignment=0.0 maturity=1.2 saveReloadExact=true stagePreserved=true epochMillis=1794549153021",
+    "[05:52:41] [Server thread/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_UI_NATIVE_VERIFIED case=70 creative=false adult=true alignment=0.0 maturity=0.9601262 saveReloadExact=true stagePreserved=true epochMillis=1794549161262",
+    "[05:52:53] [Server thread/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_UI_NATIVE_VERIFIED case=71 creative=true adult=false alignment=0.802 maturity=0.99003243 saveReloadExact=true stagePreserved=true epochMillis=1794549173469"
+  ],
+  "active_drag_pointer_lines": [
+    "[05:52:30] [Render thread/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_UI_POINTER_RENDER case=69 label=maturity-drag-intermediate actualGuiMouseX=506 actualGuiMouseY=342 requestedGuiMouseX=506.0 requestedGuiMouseY=342.0",
+    "[05:52:50] [Render thread/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_UI_POINTER_RENDER case=71 label=maturity-drag-intermediate actualGuiMouseX=506 actualGuiMouseY=342 requestedGuiMouseX=506.0 requestedGuiMouseY=342.0"
+  ],
+  "native_evolution_completion": "[05:56:03] [Server thread/INFO] [co.ch.cl.NeutralPowerVisualSmoke063/]: POWER063_NATIVE_COMPLETE 83 name=neutral_power_actual_first_evolution baseline=false elapsed=300 walked=0.0 sample=Sample[enabled=true, maturity=8.487654E-5, runPower=0.5, swimFly=0.0] state=6;0,0;1,1;0,0;0,0;2,2,2,3,2;2,2,2,2,2;2,2,2,3,2;0,0,0,4,0;0,0,0,80,0;0,0,0,79,0;0,0,1,0,0,0,0,216088,88,0,1,0,0,4,0,80,0,99,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;-1,-1,-1,-1,-1,-1,-1,-1;0x0.0p0,0x0.0p0,0x0.0p0;5496715153959375428;0,0,0,0,0,0,0,0,0,0,0,0,0;2,2,2,2,2,2,2,2,2,2,2,2,2;2,2,2,2,2,2,2,2,2,2,2,2,2;0,0,0,0,0,0,0,40,0,100,16,50,50,20,0,9995,0,9900;0,0,0,0,0,0;0,0,0,0,0,0;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279803727,1195463236,0,0,1058714409,2108669886,3,-1,-1,-1,-1,1,0,4,0,0,88,1,0,0,0;;normal;normal epochMillis=1794549363783",
+  "final_source_model_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+  "personal_visual_reviewed": false,
+  "archive_launch_claim": false
+}

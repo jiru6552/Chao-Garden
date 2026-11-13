@@ -1,0 +1,109 @@
+{
+  "version": "0.25.63",
+  "scope": "Independent read-only literal log/source review. Root executed both invocations and confirmed exit0. Broad and focused repeat the same suites; do not add their counts as unique coverage. No dedicated-server/final-client/visual/audio/remote result is inferred.",
+  "timestamp_utc": "2026-11-13T05:45:01.555784+00:00",
+  "broad_build": {
+    "source_log": "/workspace/.setup/power063-build.log",
+    "sha256": "2e4476a6b6bbcbce6a670f392fd70edc4476d81de6addea7ded0a312d628393e",
+    "outcome": "BUILD SUCCESSFUL in14m1s",
+    "actionable_tasks": 53,
+    "executed": 47,
+    "up_to_date": 6,
+    "failed_tasks": [],
+    "literal_result_lines": [
+      "Neutral Power morphology063: 7750 checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence",
+      "Neutral/Power morphology063: 7750 checks passed",
+      "NeutralPower063 material: 320389960 checks; 172 real canonical coats; 38025072 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 3566592 palette-protected orb samples; 18576 prototype alpha-exception samples; 2995380 opaque prototype-face UV samples; 26749440 actual interpolated broad-wing paint samples; 1783296 actual retained tail-base body-pigment interior samples; 4644 separate distal-tail pigment samples; 4644 new tail-root body-swatch samples; maximum 1% RGB step=4. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic complete Power caps/back/chest/wing regions, unchanged plain head skin and .63-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all 16 longitudinal faces. Pixel checks are not in-game visual verification.",
+      "NeutralPower063: 101282852 checks; 3452 emitted age/axis/edit frames; 36933 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 10416 actual orb/feature separation checks; 10416 connected feature samples; 5168 emitted closed-wing samples; 2594 actual tail/base continuity checks; 2067200 actual wing-span pigment/opacity samples; 5168 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 5221584 actual same-facing head/feature plane-pair checks; 92016 actual WALK head/torso SAT continuity frames; 184032 actual WALK palm/head SAT separation frames; 186624 actual WALK growing-feature/palm SAT separation pairs; 999936 actual complete head body/cap surface pigment/opacity samples; 184032 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum hinge drift=3.9669358E-6 model pixels; maximum axis step=0.097357824 model pixels; maximum30tick edit step=0.40486756; maximum1pct maturity step=0.04413415; seconds=16.936855881. Fixed original head/face/orb/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+      "NeutralRun062 material: 316516118 checks; 172 real canonical coats; 37960056 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 3566592 palette-protected orb samples; 83592 prototype alpha-exception samples; 3060396 opaque prototype-face UV samples; 26749440 actual interpolated broad-wing paint samples; 5201280 actual central-crest stripe paint samples; maximum 1% RGB step=7. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic top-head/central-crest/wing regions, clear forehead/cheeks and .62-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all 16 longitudinal faces. Pixel checks are not in-game visual verification.",
+      "Organ mesh fit: 245916 hand samples; 5256 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; 18 production061 legal age/axis configurations; 27 production062 signed age/axis configurations; 27 production063 signed age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels",
+      "Piano mesh fit: 245916 hand samples; 23490 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; 18 production061 legal age/axis configurations; 27 production062 signed age/axis configurations; 27 production063 signed age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+      "Triangle transition samples=267696 failures=0 minHandHeadPixels=0.2046349",
+      "Trumpet transition samples=267696 failures=0 minHandHeadPixels=0.20083904"
+    ]
+  },
+  "focused_build": {
+    "source_log": "/workspace/.setup/power063-focused.log",
+    "sha256": "83d1389f8de581c0a8b58ae5c5726c0f3ba858ea5063b4170bbf8fdeed7f3d9a",
+    "outcome": "BUILD SUCCESSFUL in1m2s",
+    "separate_invocation": true,
+    "literal_result_lines": [
+      "NeutralPower063: 101282852 checks; 3452 emitted age/axis/edit frames; 36933 closed rectangular-box samples; 567 production Lionfish motion frames; 6804 separate attachment matrices; 1044 coat/shape cases; 10416 actual orb/feature separation checks; 10416 connected feature samples; 5168 emitted closed-wing samples; 2594 actual tail/base continuity checks; 2067200 actual wing-span pigment/opacity samples; 5168 original-edge hinge samples; 5 production quiet-book surface frames; 27 actual baseline walking-head guard comparisons; 5221584 actual same-facing head/feature plane-pair checks; 92016 actual WALK head/torso SAT continuity frames; 184032 actual WALK palm/head SAT separation frames; 186624 actual WALK growing-feature/palm SAT separation pairs; 999936 actual complete head body/cap surface pigment/opacity samples; 184032 actual WALK shoulder/wrist continuity frames; 12 production-emitter expression/marker visibility frames; maximum hinge drift=3.9669358E-6 model pixels; maximum axis step=0.097357824 model pixels; maximum30tick edit step=0.40486756; maximum1pct maturity step=0.04413415; seconds=16.741411508. Fixed original head/face/orb/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.",
+      "NeutralPower063 material: 320389960 checks; 172 real canonical coats; 38025072 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 3566592 palette-protected orb samples; 18576 prototype alpha-exception samples; 2995380 opaque prototype-face UV samples; 26749440 actual interpolated broad-wing paint samples; 1783296 actual retained tail-base body-pigment interior samples; 4644 separate distal-tail pigment samples; 4644 new tail-root body-swatch samples; maximum 1% RGB step=4. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic complete Power caps/back/chest/wing regions, unchanged plain head skin and .63-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all 16 longitudinal faces. Pixel checks are not in-game visual verification.",
+      "NeutralRun062 material: 316516118 checks; 172 real canonical coats; 37960056 preserved alpha pixels; 297216 exact facial pixels; 445824 independent orb samples; 3566592 palette-protected orb samples; 83592 prototype alpha-exception samples; 3060396 opaque prototype-face UV samples; 26749440 actual interpolated broad-wing paint samples; 5201280 actual central-crest stripe paint samples; maximum 1% RGB step=7. Nine mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic top-head/central-crest/wing regions, clear forehead/cheeks and .62-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all 16 longitudinal faces. Pixel checks are not in-game visual verification.",
+      "Piano mesh fit: 245916 hand samples; 23490 body/skull/foot surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; 18 production061 legal age/axis configurations; 27 production062 signed age/axis configurations; 27 production063 signed age/axis configurations; no crossed hands; max key-height error=0.0052932203 blocks; max key-depth error=0.010499477 blocks; max reach=2.0 pixels; max shoulder shift=0.9000001 pixels; min actor surface clearance=0.19824028 pixels",
+      "Organ mesh fit: 245916 hand samples; 5256 body/skull surface checks; 54 production055 age/axis/growth configurations; 27 production056 age/axis configurations; 27 production057 age/axis configurations; 18 production059 legal age/axis configurations; 27 production060 age/axis configurations; 18 production061 legal age/axis configurations; 27 production062 signed age/axis configurations; 27 production063 signed age/axis configurations; no crossed hands; max key-height error=0.003143847 blocks; max key-depth error=0.01054588 blocks; max reach=2.0 pixels; min body/skull clearance=0.23536634 pixels"
+    ]
+  },
+  "repeated_suite_counts_not_added": true,
+  "production_source_hashes_unchanged_from_accepted_focused": {
+    "src/main/java/com/chaogarden/client/NeutralPowerRegionPaint063.java": "489eac42af99e30a3c40918fb7960a29e720280416b6489aede781fcca3cac43",
+    "src/main/java/com/chaogarden/client/NeutralPowerCoatMaterial063.java": "5d1e6a7fa775a88fc4d3ca04b69f658920396475e803c0b52c85fda0c2ef2150",
+    "src/main/java/com/chaogarden/client/NeutralPowerAppearance063.java": "cfa3ffe0a1c794447eda797832110950e2067a72cecf305441c18a87aa9136a1",
+    "src/main/java/com/chaogarden/core/NeutralPowerMorphology063.java": "bbbbc97a5704de815b0c5b019a23f16ff071237cc46b9cdeeba413844b3ca36f",
+    "src/main/java/com/chaogarden/client/ChaoMeshAsset.java": "ea13235fd125d28495a6a538bf0fbe646fbf5a721ac0234a7620f938c18a3b49",
+    "src/main/java/com/chaogarden/client/OfficialChaoRig.java": "9abf73349e6fa831f791aa4f25bee313bedd99003d8c071f0868e00ab39084c1",
+    "src/main/java/com/chaogarden/client/ChaoPaletteMaterial.java": "4a5d279b4b2bfdce48b0064e8bd3bc19af6af9cfab33257c67102a7a60b9455f"
+  },
+  "test_source_hashes_at_execution": {
+    "src/lionfishTest/java/com/chaogarden/client/NeutralPowerMorphRigTest063.java": "6bf4ae2e04e3db721150ea805528ba2bb042c234b3ff7cb11068380ee77896f6",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralPowerMaterialTest063.java": "8933f1c09583beb2c7e369499835894969eacf259796316f138d4a982f14caf7",
+    "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java": "197dbaf1412a3dc8da9c01464e1bf806472453f41c5ae847bae91b9e1ae3f47a",
+    "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java": "f3865ff5361bb9e4167b4bbbbc418236f2f60e918d2848426b4f07948acb0e8b",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java": "38f69fd8fca77dd5240eaa192079461333528255569cb52fb0ad4b42913affbc"
+  },
+  "current_test_source_hashes": {
+    "src/lionfishTest/java/com/chaogarden/client/NeutralPowerMorphRigTest063.java": "6bf4ae2e04e3db721150ea805528ba2bb042c234b3ff7cb11068380ee77896f6",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralPowerMaterialTest063.java": "8933f1c09583beb2c7e369499835894969eacf259796316f138d4a982f14caf7",
+    "src/lionfishTest/java/com/chaogarden/client/PianoRigTest.java": "197dbaf1412a3dc8da9c01464e1bf806472453f41c5ae847bae91b9e1ae3f47a",
+    "src/lionfishTest/java/com/chaogarden/client/OrganRigTest.java": "f3865ff5361bb9e4167b4bbbbc418236f2f60e918d2848426b4f07948acb0e8b",
+    "src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java": "30c7c5bb4e664197e4d4dc99e6bbf527d5b7752960e9e0c69bae9a726694ce83"
+  },
+  "comment_only_followup": {
+    "path": "src/lionfishTest/java/com/chaogarden/client/NeutralRunMaterialTest062.java",
+    "executed_source_sha256": "38f69fd8fca77dd5240eaa192079461333528255569cb52fb0ad4b42913affbc",
+    "current_source_sha256": "30c7c5bb4e664197e4d4dc99e6bbf527d5b7752960e9e0c69bae9a726694ce83",
+    "changed_comment_lines": 3,
+    "line_count_unchanged": true,
+    "all_other_bytes_equal_to_executed_version": true,
+    "old_comment_block": "  // .63 has a separately scoped dynamic material and intentionally shares this\n  // semantic tile. Retain the exact original34 historical footprint checks here;\n  // NeutralPowerMaterialTest063 validates that explicit sharing independently.\n",
+    "new_comment_block": "  // .63 has a separately scoped dynamic material and its own UV validation.\n  // Retain the exact original34 historical footprint checks here; the new\n  // Power asset does not use Run's stripe tile and is tested independently.\n",
+    "scope": "Root corrected only the inaccurate wording after successful broad build. The new Power asset does not share Run stripe UVs. Every assertion, filter and executable statement is byte-identical outside these3comments; no rerun was done solely for wording."
+  },
+  "model_sha256": "c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0",
+  "metadata_sha256": "cc0c9f6edc0b888e8cd8bd4f0cf313bc2b3ac4f01b8500b77f8c729fe78863e4",
+  "known_new_suite_counts": {
+    "rig": 101282852,
+    "material": 320389960,
+    "retained_run_material": 316516118,
+    "piano_hand_samples": 245916,
+    "organ_hand_samples": 245916,
+    "tail_base_interiors": 1783296,
+    "distal_tail_samples": 4644,
+    "root_tail_samples": 4644
+  },
+  "numeric_vs_visual_limits_retained": true,
+  "pending": [],
+  "inherited_manual_journal_result": "Separate inherited Your gardens formatting check remains8/9; not a failed Gradle build task.",
+  "dedicated_native": {
+    "path": "/workspace/.setup/power063-tests/reviewed-native-results.json",
+    "sha256": "95e37158980b4d9f8f7b3907c38e61b460c336709fd939a820729a566cbb7091",
+    "source_log_sha256": "6e20746f9efb59f1c556c5a41410ebbdf899972b2282c7f8fb8bdd04ff5ba1ec",
+    "required_passed": 526,
+    "new_power": 50,
+    "retained": 476,
+    "outcome": "BUILD SUCCESSFUL in51s"
+  },
+  "separate_completed_final_live_audit": {
+    "path": "/workspace/.setup/power063-tests/final-live-review.json",
+    "sha256": "d21110dd70c7627aec6ef917a2b53e5b59ba029678f4477d3b59532c688f40f2",
+    "scope": "Separate actual final93-case numeric/runtime audit and completed personal motion review; not inferred from unit/build/native checks.",
+    "cases": 93,
+    "PNG_originals": 796,
+    "motion_PNG_originals": 303,
+    "production_entries": 8347,
+    "personally_viewed_sheet_sources": 45,
+    "full_original_inspections": 21,
+    "unique_overall_inspected_sources": 51
+  }
+}

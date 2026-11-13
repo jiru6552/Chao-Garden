@@ -1,0 +1,8 @@
+{
+  "runtime_mode": "development_classpath",
+  "frozen_epoch_millis": 1794548746268,
+  "artifact_jar_sha256": "791156dad7d275a7ba44fe047f453cf020d55bae34d46cc68b9262002f0d3a3f",
+  "compared_entries": 8347,
+  "coverage": "All production com/chaogarden/**/*.class and assets/chao_garden/** entries were frozen from the declared Gradle development output roots and compared byte-for-byte with the delivered JAR. Their declared runtime source files still match the frozen bytes at binding. This does not claim the JAR was loaded by runClient.",
+  "note": "Declared development-classpath bytes compared with the JAR. This does not assert that runClient loaded the packaged JAR."
+}
