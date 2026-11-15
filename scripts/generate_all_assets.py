@@ -88,8 +88,11 @@ STEPS = (
     'scripts/generate_refinement_02517.py',
     'scripts/generate_analyzer_02518.py',
     'scripts/validate_fruit_models_02512.py',
+    # The current ball replaces the older generic toy writer, without touching other toys.
+    'art/build_ball_074.py',
     # Final pruning follows every writer, before any runtime-domain validator.
     'art/prune_unused_resources_022.py',
+    'scripts/test_ball_assets_074.py',
     # Validate the final pipeline output, including forbidden seed acquisition.
     'art/validate_ca2_fruit_018.py',
     'art/validate_forms_019.py',

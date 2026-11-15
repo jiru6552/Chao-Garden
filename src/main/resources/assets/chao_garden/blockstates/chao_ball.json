@@ -1,131 +1,259 @@
 {
   "variants": {
-    "facing=north,frame=0,playing=false": {
+    "facing=north,frame=0,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 0
     },
-    "facing=north,frame=1,playing=false": {
+    "facing=north,frame=1,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 0
     },
-    "facing=north,frame=2,playing=false": {
+    "facing=north,frame=2,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 0
     },
-    "facing=north,frame=3,playing=false": {
+    "facing=north,frame=3,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 0
     },
-    "facing=north,frame=0,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_0",
+    "facing=north,frame=0,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 0
     },
-    "facing=north,frame=1,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_1",
+    "facing=north,frame=1,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 0
     },
-    "facing=north,frame=2,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_2",
+    "facing=north,frame=2,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 0
     },
-    "facing=north,frame=3,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_3",
+    "facing=north,frame=3,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 0
     },
-    "facing=east,frame=0,playing=false": {
+    "facing=north,frame=0,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=north,frame=1,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=north,frame=2,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=north,frame=3,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=north,frame=0,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=north,frame=1,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=north,frame=2,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=north,frame=3,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 0
+    },
+    "facing=east,frame=0,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 90
     },
-    "facing=east,frame=1,playing=false": {
+    "facing=east,frame=1,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 90
     },
-    "facing=east,frame=2,playing=false": {
+    "facing=east,frame=2,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 90
     },
-    "facing=east,frame=3,playing=false": {
+    "facing=east,frame=3,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 90
     },
-    "facing=east,frame=0,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_0",
+    "facing=east,frame=0,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 90
     },
-    "facing=east,frame=1,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_1",
+    "facing=east,frame=1,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 90
     },
-    "facing=east,frame=2,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_2",
+    "facing=east,frame=2,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 90
     },
-    "facing=east,frame=3,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_3",
+    "facing=east,frame=3,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 90
     },
-    "facing=south,frame=0,playing=false": {
+    "facing=east,frame=0,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=east,frame=1,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=east,frame=2,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=east,frame=3,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=east,frame=0,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=east,frame=1,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=east,frame=2,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=east,frame=3,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 90
+    },
+    "facing=south,frame=0,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 180
     },
-    "facing=south,frame=1,playing=false": {
+    "facing=south,frame=1,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 180
     },
-    "facing=south,frame=2,playing=false": {
+    "facing=south,frame=2,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 180
     },
-    "facing=south,frame=3,playing=false": {
+    "facing=south,frame=3,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 180
     },
-    "facing=south,frame=0,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_0",
+    "facing=south,frame=0,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 180
     },
-    "facing=south,frame=1,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_1",
+    "facing=south,frame=1,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 180
     },
-    "facing=south,frame=2,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_2",
+    "facing=south,frame=2,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 180
     },
-    "facing=south,frame=3,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_3",
+    "facing=south,frame=3,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 180
     },
-    "facing=west,frame=0,playing=false": {
+    "facing=south,frame=0,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=south,frame=1,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=south,frame=2,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=south,frame=3,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=south,frame=0,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=south,frame=1,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=south,frame=2,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=south,frame=3,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 180
+    },
+    "facing=west,frame=0,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 270
     },
-    "facing=west,frame=1,playing=false": {
+    "facing=west,frame=1,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 270
     },
-    "facing=west,frame=2,playing=false": {
+    "facing=west,frame=2,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 270
     },
-    "facing=west,frame=3,playing=false": {
+    "facing=west,frame=3,playing=false,rolling=false": {
       "model": "chao_garden:block/chao_ball_idle",
       "y": 270
     },
-    "facing=west,frame=0,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_0",
+    "facing=west,frame=0,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 270
     },
-    "facing=west,frame=1,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_1",
+    "facing=west,frame=1,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 270
     },
-    "facing=west,frame=2,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_2",
+    "facing=west,frame=2,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 270
     },
-    "facing=west,frame=3,playing=true": {
-      "model": "chao_garden:block/chao_ball_play_3",
+    "facing=west,frame=3,playing=false,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=0,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=1,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=2,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=3,playing=true,rolling=false": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=0,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=1,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=2,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
+      "y": 270
+    },
+    "facing=west,frame=3,playing=true,rolling=true": {
+      "model": "chao_garden:block/chao_ball_active_empty",
       "y": 270
     }
   }

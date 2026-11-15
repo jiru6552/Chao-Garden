@@ -1,0 +1,154 @@
+{
+  "version": "0.25.67",
+  "model": "models/entity/gameplay/chao_hero_power_proto067.json",
+  "sha256": "37d01b59876860b7ae11f895169a8a0a59f1b32dd716481a996d1a3d52e9d467",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "hero_power_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "original_joint_count": 59,
+  "bone_count": 62,
+  "original_head_box": [
+    7,
+    6,
+    6
+  ],
+  "feature_count": 6,
+  "positive_closed_cuboid_target_count": 21,
+  "reserved_pixels": {
+    "feature_body": [
+      127,
+      63
+    ],
+    "cap_proximal": [
+      125,
+      63
+    ],
+    "cap_distal": [
+      126,
+      63
+    ],
+    "wing_root": [
+      124,
+      63
+    ],
+    "wing_distal": [
+      123,
+      63
+    ],
+    "patch_0_0": [
+      116,
+      60
+    ],
+    "patch_1_0": [
+      117,
+      60
+    ],
+    "patch_2_0": [
+      118,
+      60
+    ],
+    "patch_3_0": [
+      119,
+      60
+    ],
+    "patch_0_1": [
+      116,
+      61
+    ],
+    "patch_1_1": [
+      117,
+      61
+    ],
+    "patch_2_1": [
+      118,
+      61
+    ],
+    "patch_3_1": [
+      119,
+      61
+    ],
+    "patch_0_2": [
+      116,
+      62
+    ],
+    "patch_1_2": [
+      117,
+      62
+    ],
+    "patch_2_2": [
+      118,
+      62
+    ],
+    "patch_3_2": [
+      119,
+      62
+    ],
+    "patch_0_3": [
+      116,
+      63
+    ],
+    "patch_1_3": [
+      117,
+      63
+    ],
+    "patch_2_3": [
+      118,
+      63
+    ],
+    "patch_3_3": [
+      119,
+      63
+    ]
+  },
+  "canonical_head_face_and_joint_pivots_unchanged": true,
+  "shared_animation_attachment_rig": true,
+  "source_geometry_copied": false,
+  "construction_reference_sha256": {
+    "art/imported_chao/models/chao_hero_power.geo.json": "c2ea111ae902b837658a916d0c5b1b16bfc6353352785e065c758c8d84b6afdb",
+    "art/imported_chao/textures/hero_power.png": "17e89327f02d84647c09256694f7a550159cf23efe94853fb789bb4468d769ec",
+    "src/main/resources/assets/chao_garden/models/entity/official/chao_hero_power.json": "2829f88df4ce935381205f9ba50f5b288d60a3ccb3687369d593e04d19ca34d8"
+  },
+  "legal_specializations": [
+    "balanced",
+    "run",
+    "power",
+    "fly",
+    "swim",
+    "run_fly",
+    "run_swim",
+    "power_fly",
+    "power_swim"
+  ],
+  "closed_box_count": 21,
+  "head_feature_count": 6,
+  "wing_ray_count": 6,
+  "halo_bar_count": 4,
+  "head_feature_names": [
+    "hero_power_crown_center_root",
+    "hero_power_crown_center_tip",
+    "hero_power_crown_left_root",
+    "hero_power_crown_left_tip",
+    "hero_power_crown_right_root",
+    "hero_power_crown_right_tip"
+  ],
+  "wing_mesh_names": [
+    "hero_power_wing_left_upper",
+    "hero_power_wing_left_middle",
+    "hero_power_wing_left_lower",
+    "hero_power_wing_right_upper",
+    "hero_power_wing_right_middle",
+    "hero_power_wing_right_lower"
+  ],
+  "tail_geometry_unchanged": true,
+  "effective_viewer_controls": "Actual first-Power selection permits signed Run counter-training beyond balance; opposing axes remain independent and reverse-order pairs share one corner."
+}

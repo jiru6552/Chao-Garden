@@ -26,7 +26,7 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 @GameTestHolder(ChaoGarden.MODID)
 @PrefixGameTestTemplate(false)
 public final class LobbyApproachGameTests0255 {
-  private static ServerLevel hub(GameTestHelper h){var level=h.getLevel().getServer().getLevel(HubContent.HUB);h.assertTrue(level!=null&&HubContent.ensure(level),"Authored lobby unavailable");return level;}
+  private static ServerLevel hub(GameTestHelper h){GardenAccessFixtures081.both(h);var level=h.getLevel().getServer().getLevel(HubContent.HUB);h.assertTrue(level!=null&&HubContent.ensure(level),"Authored lobby unavailable");return level;}
   private static void rails(GameTestHelper h,ServerLevel level,boolean hero,boolean upper){
     for(var rail:LobbyApproachGeometry0255.rails(hero,upper)){
       var a=rail.edge().a();var b=rail.edge().b();double dx=b.x()-a.x(),dz=b.z()-a.z(),length=Math.hypot(dx,dz);

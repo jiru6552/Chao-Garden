@@ -4,7 +4,7 @@ from pathlib import Path
 import json,hashlib,sys,math
 from PIL import Image,ImageOps
 ROOT=Path(__file__).resolve().parents[1];A=ROOT/'src/main/resources/assets/chao_garden';D=ROOT/'art/sa2_02515';sys.path.insert(0,str(ROOT/'scripts'))
-from generate_sa2_assets_02515 import TOYS,HATS,adapt,toy_mesh,toy_item_mesh,fit,render,icon,LIMITS,source,normal,RIGID_TOYS,rigid_toy_pose
+from generate_sa2_assets_02515 import TOYS,HATS,adapt,toy_mesh,toy_item_mesh,fit,render,icon,LIMITS,source,normal,RIGID_TOYS,rigid_toy_pose,hat_item_mesh
 checks=0
 def check(value,msg):
  global checks
@@ -51,7 +51,7 @@ def main():
   if 'school0252/' in path:expected=ImageOps.pad(expected,(128,128),method=Image.Resampling.NEAREST,color=(223,211,183,255))
   with Image.open(A/'textures'/(path+'.png')) as actual:check(actual.tobytes()==expected.tobytes(),'Original artwork changed '+path)
  for n in [*TOYS,*HATS]:
-  m,mats=toy_item_mesh(n) if n in TOYS else adapt(HATS[n]);expected=icon(fit(m,(1,1,1,15,15,15)),n,mats)
+  m,mats=toy_item_mesh(n) if n in TOYS else hat_item_mesh(n);expected=icon(fit(m,(1,1,1,15,15,15)),n,mats)
   with Image.open(A/'textures/item'/(n+'.png')) as actual:check(actual.tobytes()==expected.tobytes(),'Icon/model mismatch '+n)
   data=json.loads((A/'models/item/sa2_02515'/(n+'.json')).read_text());ps,used=obj(A/data['model'].split(':')[1]);check(used<=data['textures'].keys(),'Unbound item material '+n)
  for n in TOYS:
@@ -78,7 +78,11 @@ def main():
    check(before['name']==after['name'] and before.get('parent')==after.get('parent') and before.get('pivot')==after.get('pivot'),'Hat anchor changed')
    if before['name'] in HATS:
     a=[v for m in before['meshes'] for v in m['vertices']];b=[v for m in after['meshes'] for v in m['vertices']]
-    check(all(abs(fn(p[i] for p in a)-fn(p[i] for p in b))<.0001 for i in range(3) for fn in (min,max)),'Hat fitting envelope changed')
+    if new.get('authored_metadata',{}).get('headwear_contract')=='canonical_skull079':
+     check(new['authored_metadata']['reference_head']==[-3.5,-6,-3,3.5,0,3],'Canonical hat reference changed')
+     check(min(p[1] for p in b)<-6 and max(p[1] for p in b)>0,'Head cover no longer surrounds skull')
+    else:
+     check(all(abs(fn(p[i] for p in a)-fn(p[i] for p in b))<.0001 for i in range(3) for fn in (min,max)),'Hat fitting envelope changed')
     check(all(0<=v<=1024 for m in after['meshes'] for f in m['faces'] for pair in f['uv'] for v in pair),'Hat UV outside atlas')
  for n in ('blue_hoodie_accessory','pink_hoodie_accessory','hoodie_sleeve_left','hoodie_sleeve_right'):
   old=json.loads((D/'previous-models/cwe_accessories'/(n+'.json')).read_text());new=json.loads((A/'models/entity/cwe_accessories'/(n+'.json')).read_text());a=old['bones'][0]['meshes'][0]['vertices'];b=new['bones'][0]['meshes'][0]['vertices'];check(len(b)==16,'Missing garment bevel')

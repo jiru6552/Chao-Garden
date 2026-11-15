@@ -199,6 +199,7 @@ public final class ChaoState {
   // A signed direction is not an age/maturity magnitude. These values must
   // persist outside the bounded feature map, just like lineageIdentity.
   private double gradualStrength=0;
+  private double gardenAlignmentRemainder081=0;
   private int evolutionAgeCheckpoint=0;
   private boolean evolutionClockInitialized=true,firstEvolutionLocked=false;
   private float firstEvolutionAlignment=0,monsterSwimFly=0,monsterRunPower=0;
@@ -222,6 +223,8 @@ public final class ChaoState {
   int[] illnessValues=new int[ChaoIllness.COUNT], illnessCooldown=new int[ChaoIllness.COUNT];
   private int lastFullness=80,lastEnergy=100,lastBoredom=0;
   public int eyeColor=0,heroBrushType=0;
+  private int baselineEyes076=ChaoFaceIdentity076.NORMAL,baselineMouth076=ChaoFaceIdentity076.NONE;
+  private boolean faceBaselineInitialized076=false;
   public String character="normal";
   public boolean cosmeticWings=false,negativePalette=false,brightCoat=false;
   private final TreeMap<String,String> traits=new TreeMap<>();
@@ -252,6 +255,7 @@ public final class ChaoState {
     result.luckGenes=new int[]{result.luckGrade,result.luckGrade};
     result.intelligenceGenes=new int[]{result.intelligenceGrade,result.intelligenceGrade};
     result.selectNewbornEyes(newbornEyeChance,random);
+    result.assignFaceBaseline076();
     return result;
   }
 
@@ -313,6 +317,8 @@ public final class ChaoState {
             ? firstVariant
             : random.nextBoolean() ? firstVariant : secondVariant;
     child.selectNewbornEyes(newbornEyeChance,random);
+    // random() supplied a temporary profile; use the child's final inherited personality.
+    child.assignFaceBaseline076();
     return child;
   }
 
@@ -391,17 +397,28 @@ public final class ChaoState {
   private void normalizeEvolutionState(){
     swimFly=GradualEvolutionRules.ordinaryAxis(swimFly);runPower=GradualEvolutionRules.ordinaryAxis(runPower);
     if(adult){
+      gardenAlignmentRemainder081=0;
       if(!firstEvolutionLocked){firstEvolutionAlignment=clamp(align,-1,1);firstEvolutionType=clamp(primaryType,0,4);firstEvolutionLocked=true;}
       align=firstEvolutionAlignment;primaryType=firstEvolutionType;
     }else firstEvolutionLocked=false;
   }
-  private void advanceEvolutionClock(int childDuration){
+  private void initializeEvolutionClock(int childDuration){
     int age=adult?adultAgeTicks:ageTicks;double divisor=GradualEvolutionRules.durationTicks(childDuration)*(adult?4.0:1.0);
     if(!evolutionClockInitialized){gradualStrength=GradualEvolutionRules.strength(gradualStrength+age/divisor,adult);evolutionAgeCheckpoint=age;evolutionClockInitialized=true;}
-    else {
-      gradualStrength=GradualEvolutionRules.strength(gradualStrength+Math.max(0L,(long)age-evolutionAgeCheckpoint)/divisor,adult);
-      evolutionAgeCheckpoint=age;
-    }
+  }
+  private void advanceEvolutionClock(int childDuration,GardenProgressionRules081.Garden garden){
+    initializeEvolutionClock(childDuration);
+    int age=adult?adultAgeTicks:ageTicks;double divisor=GradualEvolutionRules.durationTicks(childDuration)*(adult?4.0:1.0);
+    double multiplier=adult?GardenProgressionRules081.adultMultiplier(garden):1;
+    gradualStrength=GradualEvolutionRules.strength(gradualStrength+Math.max(0L,(long)age-evolutionAgeCheckpoint)*multiplier/divisor,adult);
+    evolutionAgeCheckpoint=age;
+  }
+  private void nudgeGardenAlignment081(int childDuration,GardenProgressionRules081.Garden garden){
+    if(adult||OmochaoRules.isOmochao(this)){gardenAlignmentRemainder081=0;return;}
+    double delta=GardenProgressionRules081.childAlignmentDelta(garden,childDuration);if(delta==0)return;
+    double current=Float.isFinite(align)?Math.max(-1,Math.min(1,align)):0;
+    double next=Math.max(-1,Math.min(1,current+GardenProgressionRules081.residue(gardenAlignmentRemainder081)+delta));
+    align=(float)next;gardenAlignmentRemainder081=next-align;
   }
 
   public String typeName() {
@@ -432,8 +449,15 @@ public final class ChaoState {
     var neutralRun=NeutralRunMorphology062.sample(this);
     var neutralPower=NeutralPowerMorphology063.sample(this);
     var heroSwim=HeroSwimMorphology064.sample(this);
-    float sfAxis=heroSwim.enabled()?heroSwim.swimFly():neutralPower.enabled()?neutralPower.swimFly():neutralRun.enabled()?neutralRun.swimFly():neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():swimFly;
-    float rpAxis=heroSwim.enabled()?heroSwim.runPower():neutralPower.enabled()?neutralPower.runPower():neutralRun.enabled()?neutralRun.runPower():neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():runPower;
+    var heroFly=HeroFlyMorphology065.sample(this);
+    var heroRun=HeroRunMorphology066.sample(this);
+    var heroPower=HeroPowerMorphology067.sample(this);
+    var darkSwim=DarkSwimMorphology068.sample(this);
+    var darkFly=DarkFlyMorphology069.sample(this);
+    var darkRun=DarkRunMorphology070.sample(this);
+    var darkPower=DarkPowerMorphology071.sample(this);
+    float sfAxis=darkPower.enabled()?darkPower.swimFly():darkRun.enabled()?darkRun.swimFly():darkFly.enabled()?darkFly.swimFly():darkSwim.enabled()?darkSwim.swimFly():heroPower.enabled()?heroPower.swimFly():heroRun.enabled()?heroRun.swimFly():heroFly.enabled()?heroFly.swimFly():heroSwim.enabled()?heroSwim.swimFly():neutralPower.enabled()?neutralPower.swimFly():neutralRun.enabled()?neutralRun.swimFly():neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():swimFly;
+    float rpAxis=darkPower.enabled()?darkPower.runPower():darkRun.enabled()?darkRun.runPower():darkFly.enabled()?darkFly.runPower():darkSwim.enabled()?darkSwim.runPower():heroPower.enabled()?heroPower.runPower():heroRun.enabled()?heroRun.runPower():heroFly.enabled()?heroFly.runPower():heroSwim.enabled()?heroSwim.runPower():neutralPower.enabled()?neutralPower.runPower():neutralRun.enabled()?neutralRun.runPower():neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():runPower;
     int sf=Math.abs(sfAxis)>=.5f ? sfAxis<0 ? SWIM_TYPE : FLY_TYPE : NORMAL;
     int rp=Math.abs(rpAxis)>=.5f ? rpAxis<0 ? RUN_TYPE : POWER_TYPE : NORMAL;
     if(sf!=NORMAL && rp!=NORMAL)return new int[]{sf,rp};
@@ -478,10 +502,16 @@ public final class ChaoState {
 
   /** Only the live equipped Chao runs this clock. Its lifespan and birthdays stay paused. */
   public void tickEquippedCare(int careTick, int childDuration) {
+    tickEquippedCare(careTick,childDuration,GardenProgressionRules081.Garden.NORMAL);
+  }
+  public void tickEquippedCare(int careTick,int childDuration,GardenProgressionRules081.Garden garden) {
     if (dead || cocoonTicks > 0) return;
+    normalizeEvolutionState();nudgeGardenAlignment081(childDuration,garden);
     if (adult) {
-    advanceEvolutionClock(childDuration); // Initialize old saves from their last real garden age.
-    double delta = 1.0 / (4.0 * GradualEvolutionRules.durationTicks(childDuration));
+    // Saved, unobserved age belongs to the previous ordinary clock. A newly
+    // selected garden never multiplies historical time retroactively.
+    advanceEvolutionClock(childDuration,GardenProgressionRules081.Garden.NORMAL);
+    double delta = GardenProgressionRules081.adultMultiplier(garden) / (4.0 * GradualEvolutionRules.durationTicks(childDuration));
     gradualStrength = GradualEvolutionRules.strength(gradualStrength + delta, true);
     } // Babies retain their paused childhood clock while being carried.
     if (careTick % ChaoPreferences.FULLNESS_DECAY_TICKS == 0) hunger = Math.max(0, hunger - 1);
@@ -494,12 +524,17 @@ public final class ChaoState {
 
   /** A tick is one loaded Minecraft tick; offline time intentionally does not count. */
   public Transition tick(int childDuration, int adultDuration, RandomGenerator random) {
+    return tick(childDuration,adultDuration,random,GardenProgressionRules081.Garden.NORMAL);
+  }
+  public Transition tick(int childDuration,int adultDuration,RandomGenerator random,GardenProgressionRules081.Garden garden) {
     OmochaoRules.normalize(this);normalizeEvolutionState();
     if (dead) return Transition.NONE;
     if (cocoonTicks > 0) {
       cocoonTicks--;
       return Transition.NONE;
     }
+    initializeEvolutionClock(childDuration);
+    nudgeGardenAlignment081(childDuration,garden);
     if (ageTicks < Integer.MAX_VALUE - 1) ageTicks++;
     if (ageTicks % ChaoPreferences.FULLNESS_DECAY_TICKS == 0) hunger = Math.max(0, hunger - 1);
     ChaoEmotion.tick(this);
@@ -507,16 +542,16 @@ public final class ChaoState {
     if (!sleeping && ageTicks % 600 == 0) energy = Math.max(0, energy - 1);
     if (ageTicks % 6000 == 0 && hunger < 10) happiness = Math.max(-100, happiness - 2);
     if(OmochaoRules.isOmochao(this)){
-      Transition transition=OmochaoRules.tickRobot(this,adultDuration);advanceEvolutionClock(childDuration);return transition;
+      Transition transition=OmochaoRules.tickRobot(this,adultDuration);advanceEvolutionClock(childDuration,garden);return transition;
     }
     if (immortal) {
       // Adult calendar time also drives birthdays. Immortality suppresses the
       // lifespan transition, not this loaded-time counter or its persistence.
       if(adult&&adultAgeTicks<Integer.MAX_VALUE-1)adultAgeTicks++;
-      advanceEvolutionClock(childDuration);
+      advanceEvolutionClock(childDuration,garden);
       return Transition.NONE;
     }
-    if(!adult)advanceEvolutionClock(childDuration);
+    if(!adult)advanceEvolutionClock(childDuration,garden);
     if (!adult && (ageTicks >= GradualEvolutionRules.durationTicks(childDuration)||gradualStrength>=1)) {
       boolean chaosNormal=chaosNormalCandidate();
       primaryType = prospectivePrimaryType();
@@ -531,7 +566,7 @@ public final class ChaoState {
       }
       adult = true;
       adultAgeTicks = 0;
-      gradualStrength=0;evolutionAgeCheckpoint=0;evolutionClockInitialized=true;
+      gradualStrength=0;evolutionAgeCheckpoint=0;evolutionClockInitialized=true;gardenAlignmentRemainder081=0;
       firstEvolutionLocked=false;normalizeEvolutionState();
       secondaryType = NORMAL;
       int stat = typeStat(primaryType);
@@ -551,7 +586,7 @@ public final class ChaoState {
     }
     if (adult) {
       if (adultAgeTicks < Integer.MAX_VALUE - 1) adultAgeTicks++;
-      advanceEvolutionClock(childDuration);
+      advanceEvolutionClock(childDuration,garden);
       // Adult tendencies remain reversible as drives/genes move either axis.
       // Their visual magnitude is continuous; there is no additional cocoon.
       secondaryType = tendencyType();
@@ -569,11 +604,12 @@ public final class ChaoState {
 
   public void reincarnate() {
     if(OmochaoRules.isOmochao(this)){OmochaoRules.normalize(this);return;}
+    ensureFaceBaseline076();
     float rebornAlignment=align>=.5f?1:align<=-.5f?-1:0;
     reincarnations=Math.min(9999,clamp(reincarnations,0,9999)+1);
     adult = immortal = dead = sleeping = false;
     ageTicks = adultAgeTicks = 0;
-    gradualStrength=0;evolutionAgeCheckpoint=0;evolutionClockInitialized=true;firstEvolutionLocked=false;
+    gradualStrength=0;evolutionAgeCheckpoint=0;evolutionClockInitialized=true;firstEvolutionLocked=false;gardenAlignmentRemainder081=0;
     trainingRecency=new int[]{-1,-1,-1,-1,-1};monsterSwimFly=monsterRunPower=0;
     primaryType = secondaryType = NORMAL;
     swimFly = runPower = 0;
@@ -804,6 +840,7 @@ public final class ChaoState {
   public String encode() {
     retireRemovedCharacters();OmochaoRules.normalize(this);normalizeEvolutionState();
     syncLegacyMeters();syncPersonalityGeneAliases();
+    ensureFaceBaseline076();
     StringBuilder result = new StringBuilder("6");
     append(result, colorGenes);
     append(result, toneGenes);
@@ -875,7 +912,9 @@ public final class ChaoState {
       trainingRecency[0],trainingRecency[1],trainingRecency[2],trainingRecency[3],trainingRecency[4],
       firstEvolutionLocked?1:0,Float.floatToIntBits(firstEvolutionAlignment),firstEvolutionType,
       Float.floatToIntBits(monsterSwimFly),Float.floatToIntBits(monsterRunPower),
-      evolutionAgeCheckpoint,evolutionClockInitialized?1:0,robotLifeInitialized?1:0,robotPendingOutcome,robotOutputCommitted?1:0});
+      evolutionAgeCheckpoint,evolutionClockInitialized?1:0,robotLifeInitialized?1:0,robotPendingOutcome,robotOutputCommitted?1:0,
+      baselineEyes076,baselineMouth076,faceBaselineInitialized076?1:0,
+      (int)(Double.doubleToLongBits(gardenAlignmentRemainder081)>>>32),(int)Double.doubleToLongBits(gardenAlignmentRemainder081)});
     result.append(';').append(encodeTraits());
     result.append(';').append(normalizeCharacter(character));
     result.append(';').append(normalizeVariant(variant));
@@ -964,7 +1003,7 @@ public final class ChaoState {
         result.illnessValues=readArray(fields[19],ChaoIllness.COUNT,-100,100);
         result.illnessCooldown=readArray(fields[20],ChaoIllness.COUNT,0,ChaoIllness.IMMUNITY_TICKS);
         int extraCount=fields[21].split(",",-1).length;
-        if(extraCount!=17&&extraCount!=19&&extraCount!=21&&extraCount!=36&&extraCount!=37&&extraCount!=38)throw new IllegalArgumentException("Invalid expanded care length");
+        if(extraCount!=17&&extraCount!=19&&extraCount!=21&&extraCount!=36&&extraCount!=37&&extraCount!=38&&extraCount!=41&&extraCount!=43)throw new IllegalArgumentException("Invalid expanded care length");
         int[] extra=readArray(fields[21],extraCount,Integer.MIN_VALUE,Integer.MAX_VALUE);
         if(extraCount>=19)result.lineageIdentity=((long)extra[17]<<32)|(extra[18]&0xffffffffL);
         if(extraCount>=21){result.monsterEnabled=extra[19]!=0;result.monsterTransparencyFix=extra[20]!=0;}
@@ -993,6 +1032,8 @@ public final class ChaoState {
         result.personalityProfileInitialized=extra[10]!=0;result.eyeColor=clamp(extra[11],0,12);
         result.cosmeticWings=extra[12]!=0;result.negativePalette=extra[13]!=0;result.brightCoat=extra[14]!=0;
         result.heroBrushType=clamp(extra[15],0,4);result.legacyProfileLabel=clamp(extra[16],0,15)-1;
+        if(extraCount>=41&&extra[40]!=0)result.setBaselineFace076(extra[38],extra[39]);
+        if(extraCount>=43&&!result.adult)result.gardenAlignmentRemainder081=GardenProgressionRules081.residue(Double.longBitsToDouble(((long)extra[41]<<32)|(extra[42]&0xffffffffL)));
         for(int i=0;i<ChaoPersonality.COUNT;i++){
           int value=result.personalitySliders[i];
           switch(i){case ChaoPersonality.CURIOUS->result.curiosityTendency=value;
@@ -1010,6 +1051,7 @@ public final class ChaoState {
         if(priorVersion||currentVersion)result.variant=normalizeVariant(fields[15]);
       }
       result.syncPersonalityGeneAliases();
+      result.ensureFaceBaseline076();
       OmochaoRules.normalize(result);result.normalizeEvolutionState();
       if (result.immortal&&!result.allowsAnimalParts()) result.clearParts();
       return result;
@@ -1019,6 +1061,20 @@ public final class ChaoState {
   }
 
   public int personalitySlider(int index){return ChaoPersonality.get(this,index);}
+  /** Fixed current-creature identity; temporary expressions never write these saved shapes. */
+  public int baselineEyes(){ensureFaceBaseline076();return baselineEyes076;}
+  public int baselineMouth(){ensureFaceBaseline076();return baselineMouth076;}
+  public boolean faceBaselineInitialized(){return faceBaselineInitialized076;}
+  /** Operator/fixture override. Only the bounded face IDs change, never personality or genes. */
+  public void setBaselineFace076(int eyes,int mouth){
+    baselineEyes076=ChaoFaceIdentity076.boundEyes(eyes);
+    baselineMouth076=ChaoFaceIdentity076.boundMouth(mouth);
+    faceBaselineInitialized076=true;
+  }
+  private void ensureFaceBaseline076(){if(!faceBaselineInitialized076)assignFaceBaseline076();}
+  private void assignFaceBaseline076(){
+    syncPersonalityGeneAliases();ChaoFaceIdentity076.initialize(this,lineageIdentity);
+  }
   public void setPersonalitySlider(int index,int value){legacyProfileLabel=-1;ChaoPersonality.set(this,index,value);ChaoPersonality.refreshLegacy(this);}
   public int[] personalityProfile(){return ChaoPersonality.profile(this);}
   public String doctorPersonality(long visitIndex){return ChaoPersonality.doctor(this,visitIndex);}

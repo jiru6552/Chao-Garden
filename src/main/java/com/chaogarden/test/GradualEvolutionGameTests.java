@@ -65,6 +65,10 @@ public final class GradualEvolutionGameTests {
   @GameTest(template="empty",timeoutTicks=180)
   public static void realSwimDriveCanOpposeFlyPrimaryWithoutAnotherCocoon(GameTestHelper h){
     var p=keeper(h);var s=new ChaoState();s.adult=true;s.primaryType=ChaoState.FLY_TYPE;s.align=.75f;s.swimFly=-.49f;s.hunger=70;
+    // Hero Fly065 reads current bars: 470/960 is below the .5 threshold,
+    // and the one actual held drive adds 24 progress to cross it.
+    com.chaogarden.core.DriveRules.setTotal(s,ChaoState.SWIM,470,new java.util.Random(65));
+    s.swimFly=-.49f; // Preserve the original legacy-axis starting condition too.
     s.setEvolutionStrength(.9f);var c=spawn(h,p,s);var drive=new ItemStack(ChaoGarden.item("swim_drive"));
     p.setItemInHand(InteractionHand.MAIN_HAND,drive);c.mobInteract(p,InteractionHand.MAIN_HAND);
     h.assertTrue(drive.isEmpty()&&s.driveCount==0,"A held drive applied its benefits immediately");

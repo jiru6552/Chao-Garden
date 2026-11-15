@@ -32,7 +32,7 @@ public final class AdventureGuideScreen extends AdventureScreen {
       case "Meet the staff","Doctor care","Grade care","Classroom","Learned skills" -> "Kindergarten";
       case "Building a race","Races and karate","Garden friends","Contest awards","Birthday parties" -> "Toys & activities";
       case "Wardrobe" -> "Wardrobe";
-      case "Your gardens","Garden registration","Garden boundaries","Safe transport","Kindergarten travel" -> "Gardens & travel";
+      case "Your gardens","Garden registration","Garden boundaries","Lobby gardens","Garden growth","Safe transport","Kindergarten travel" -> "Gardens & travel";
       case "Black Market","Special eggs","Rare egg discovery","Gem eggs","Other market gifts","Expanded garden gifts" -> "Black Market";
       case "Chao companions","Companion flight and water","Nether companions","End companions","Companion recovery" -> "Companions";
       case "Robot legacy","A robot's next life" -> "Omochao";

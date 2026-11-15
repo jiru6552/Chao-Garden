@@ -64,9 +64,21 @@ public final class ChaoPreferencesTest {
     }
     s=new ChaoState();s.adult=true;s.happiness=50;s.adultAgeTicks=99;
     check(s.tick(20,100,new Random(1))==ChaoState.Transition.DIED,"Exactly50 is below SA2 reincarnation threshold");
-    // Hero Fly retains its saved influence policy outside the scoped
-    // Neutral/Fly061 current-bar policy and the Normal-first family policies.
-    s=new ChaoState();s.adult=true;s.primaryType=ChaoState.FLY_TYPE;s.align=1;s.swimFly=-.8f;s.runPower=.7f;
+    // All ordinary adult families now use current bars. Keep the legacy
+    // saved-axis mixed/reversal/balance checks on the supported standalone
+    // Nether theme, which deliberately stays outside those scoped families.
+    s=new ChaoState();s.adult=true;s.primaryType=ChaoState.POWER_TYPE;s.align=-1;s.variant="nether";s.swimFly=-.8f;s.runPower=.7f;
+    s=ChaoState.decode(s.encode());
+    check(s.variant.equals("nether")&&com.chaogarden.ChaoVariants.available(s.variant,mod->false),"Standalone Nether fallback fixture survives save normalization without an optional mod");
+    check(!HeroRunMorphology052.sample(s).enabled()&&!NeutralMorphology056.sample(s).enabled()
+        &&!HeroNormalMorphology057.sample(s).enabled()&&!NeutralSwimMorphology059.sample(s).enabled()
+        &&!DarkNormalMorphology060.sample(s).enabled()&&!NeutralFlyMorphology061.sample(s).enabled()
+        &&!NeutralRunMorphology062.sample(s).enabled()&&!NeutralPowerMorphology063.sample(s).enabled()
+        &&!HeroSwimMorphology064.sample(s).enabled()&&!HeroFlyMorphology065.sample(s).enabled()
+        &&!HeroRunMorphology066.sample(s).enabled()&&!HeroPowerMorphology067.sample(s).enabled()
+        &&!DarkSwimMorphology068.sample(s).enabled()&&!DarkFlyMorphology069.sample(s).enabled()
+        &&!DarkRunMorphology070.sample(s).enabled()&&!DarkPowerMorphology071.sample(s).enabled(),
+        "The themed saved-axis fixture stays outside every ordinary morphology sampler");
     check(s.secondaryFormKey().equals("swim_power")&&s.secondaryTypes().length==2,"Both adult axes form a mixed secondary");
     s.swimFly=.8f;s.runPower=-.8f;check(s.secondaryFormKey().equals("fly_run"),"Adult secondary can reverse without cocoon");
     s.swimFly=s.runPower=0;check(s.secondaryFormKey().equals("normal"),"Balancing adult axes returns Normal secondary");

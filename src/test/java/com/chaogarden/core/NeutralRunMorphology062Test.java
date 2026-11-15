@@ -189,7 +189,7 @@ public final class NeutralRunMorphology062Test {
     for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}){
       var s=new ChaoState();s.adult=true;s.align=0;s.primaryType=ChaoState.FLY_TYPE;s.setEvolutionStrength(.6f);s=ChaoState.decode(s.encode());setAxis(s,Math.round(rp*960),Math.round(sf*960));
       check(!NeutralRunMorphology062.sample(s).enabled(),"Completed Neutral Fly-first family stays outside new Run-first selection");
-      var p=NeutralFlyMorphology061.sample(s);check(p.enabled(),"Completed Neutral Fly-first family remains selected");near(p.maturity(),.5f,"Existing Fly age remains separate");near(p.runPower(),rp,"Existing Fly Run/Power policy remains unchanged");near(p.swimFly(),Math.max(0,sf),"Existing Fly-first Swim clamp is preserved exactly");
+      var p=NeutralFlyMorphology061.sample(s);check(p.enabled(),"Completed Neutral Fly-first family remains selected");near(p.maturity(),.5f,"Existing Fly age remains separate");near(p.runPower(),rp,"Existing Fly Run/Power policy remains unchanged");near(p.swimFly(),sf,"Neutral Fly-first retains its complete signed Swim/Fly coordinate");
       var swim=new ChaoState();swim.adult=true;swim.align=0;swim.primaryType=ChaoState.SWIM_TYPE;swim.setEvolutionStrength(.6f);swim=ChaoState.decode(swim.encode());setAxis(swim,Math.round(rp*960),Math.round(sf*960));
       check(!NeutralRunMorphology062.sample(swim).enabled()&&NeutralSwimMorphology059.sample(swim).enabled(),"Completed Neutral Swim-first path remains independently selected");
       var dark=new ChaoState();dark.adult=true;dark.align=-1;dark.primaryType=ChaoState.NORMAL;dark.setEvolutionStrength(.6f);dark=ChaoState.decode(dark.encode());setAxis(dark,Math.round(rp*960),Math.round(sf*960));

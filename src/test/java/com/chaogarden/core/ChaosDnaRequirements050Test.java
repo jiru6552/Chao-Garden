@@ -87,7 +87,29 @@ public final class ChaosDnaRequirements050Test {
 
   private static void legacySaves() {
     var old = ChaoState.decode(LEGACY049);
-    check(old.encode().equals(LEGACY049), "Literal 0.25.49 save remains byte-identical after roundtrip");
+    String upgraded = old.encode();
+    String[] legacyFields = LEGACY049.split(";", -1), upgradedFields = upgraded.split(";", -1);
+    check(legacyFields.length == 25 && upgradedFields.length == 25,
+        "Literal 0.25.49 migration preserves all 25 save sections");
+    String[] legacyExtras = legacyFields[21].split(",", -1), upgradedExtras = upgradedFields[21].split(",", -1);
+    check(legacyExtras.length == 38 && upgradedExtras.length == 43,
+        "Face migration retains three fields after old38 values, then two garden rounding fields");
+    check(upgradedExtras[41].equals("0")&&upgradedExtras[42].equals("0"),
+        "Historical saves receive zero garden-alignment rounding residue");
+    int eyes = Integer.parseInt(upgradedExtras[38]), mouth = Integer.parseInt(upgradedExtras[39]);
+    check(eyes >= 0 && eyes < 5 && mouth >= 0 && mouth < 5 && upgradedExtras[40].equals("1")
+        && old.faceBaselineInitialized() && old.baselineEyes() == eyes && old.baselineMouth() == mouth,
+        "Migrated face fields are bounded, initialized and match the persisted identity");
+    upgradedFields[21] = String.join(",", Arrays.copyOf(upgradedExtras, 38));
+    check(String.join(";", upgradedFields).equals(LEGACY049),
+        "Literal 0.25.49 save retains every old byte after projecting away only the three face and two garden fields");
+    String repeated = upgraded;
+    for (int reload = 0; reload < 3; reload++) {
+      var copy = ChaoState.decode(repeated);
+      check(copy.encode().equals(upgraded) && copy.baselineEyes() == eyes && copy.baselineMouth() == mouth,
+          "Upgraded literal save and its fixed face remain byte-identical on repeated reloads");
+      repeated = copy.encode();
+    }
     check(old.animalMask == 1092616191 && old.animalPartsMask == 1090519040,
         "Original and additional acquired DNA bits are preserved without auto-completion");
     check(old.animalParts[0] == 24 && old.animalParts[7] == 30 && old.trait("foreign.unrelated").equals("kept"),

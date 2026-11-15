@@ -1,0 +1,85 @@
+{
+  "alignment": {
+    "adult_effect": "None: both public alignment and locked evolved identity/first type preserved",
+    "display_range": [
+      -100,
+      100
+    ],
+    "hero_dimension": "+1 per 1200 actual equipped server ticks in End when aether absent; aether:the_aether instead when aether mod installed",
+    "hostile_kill_default": 1,
+    "internal_range": [
+      -1,
+      1
+    ],
+    "nether": "-1 per 1200 actual equipped server ticks",
+    "peaceful_villager_other_player_kill_default": -1,
+    "server_config": "equippedBabyAlignment.hostileKillPoints / peacefulKillPoints, 0..100 point magnitudes"
+  },
+  "artifacts": {
+    "EQUIPPED_BABY_ALIGNMENT_02582_DEV.md": {
+      "bytes": 14476,
+      "sha256": "9dd32560e5c51856d1b41787cafaf97f2f48586d4d913685dfd5a2631b65f270"
+    },
+    "chao-garden-0.25.82-source-changes.zip": {
+      "bytes": 6661238,
+      "sha256": "5a13dda2e3c5333a9b9e40cdcc8ee75fd8514054e99965497b92cf2efe077120"
+    },
+    "chao-garden-0.25.82-verification.zip": {
+      "bytes": 1928472,
+      "sha256": "7ad1d30bdd7cef629bae9c9fe5bbf6707e124ed58fb1a5d6ce8262c7ae8b1939"
+    },
+    "chao_garden-0.25.82.jar": {
+      "bytes": 30687849,
+      "sha256": "233efbc642c6e40c46542c0a11f76c17d9322d7ebb851771167f6b162d6c7132"
+    },
+    "client-comparison.png": {
+      "bytes": 290718,
+      "sha256": "83f1c50ce40d1f283d93bb742d00985e78122048378abd02ec8fccc699b0f617"
+    },
+    "final-aether-view.png": {
+      "bytes": 120196,
+      "sha256": "6bf81af1721bd4913812902edd103ec22f7be7d3b85477f2c1f8d49263f47096"
+    }
+  },
+  "base_version": "0.25.81",
+  "classification": "Players/villagers explicit Dark; reviewed passive entity IDs and optional Aether passive IDs; conservative Enemy/MONSTER hostility after neutral/tamable/NPC exclusions; explicit hostile/peaceful/ignored entity tags. Unknown modded animals are not guessed peaceful.",
+  "known_limits": [
+    "One inherited Nether companion extinguishing regression failure remains",
+    "Nine inherited morphology SHA preflight checks stale before .82; no full Gradle check pass claimed",
+    "Actual-client passive test seeded 1199 ticks; native Nether test observed full unaccelerated minute",
+    "Dependency binaries and saved test worlds excluded"
+  ],
+  "loader": "NeoForge",
+  "minecraft": "1.21.1",
+  "publication": "Local delivery only; no Git-history mutation or remote publication",
+  "purpose": "Equipped baby Chao alignment influences; preserves accepted garden unlocks/effects and completed gameplay.",
+  "remaining_checks": [
+    "Manual phone/mouse combat and PvP in the intended modpack",
+    "Fresh-process restart of a partly elapsed new .82 minute; native player-file logout/login and serialized reload already tested",
+    "Custom modded neutral/predator/NPC tag policies",
+    "Actual hardware/shaderpack/public-latency playthrough"
+  ],
+  "source_application": {
+    "base_commit": "fcde2f9d012499b2e2cb1ec1d50a7f58d4dc3ca2",
+    "complete_base_version": "0.25.43",
+    "instructions": "Read included source archive application controls and preserve exact deletion guards.",
+    "type": "Cumulative source overlay, not a standalone checkout"
+  },
+  "verification": {
+    "actual_tcp_clients": "Two actual peers and ten captures; replicated kills/adult lock and seeded Aether minute boundary pass",
+    "core": "All core pass, including 1320 new checks",
+    "focused_with_aether": "14/14 native pass with actual official Aether 1.5.10",
+    "focused_without_aether": "14/14 native pass",
+    "full_native": {
+      "failed": 1,
+      "inherited_failure": "actualnetherslotprotectsfireandlavabutnotordinarydamage: Tired living Nether companion did not extinguish keeper and body",
+      "new_failure_identities": [],
+      "passed": 4875,
+      "process_exit_code": 1,
+      "total": 4876
+    },
+    "source_runtime_freeze": "18819 source/class/resource paths unchanged through final runtime checks; 9007 production JAR entries bound to tested runtime",
+    "source_zip": "1008 source paths +4 controls, 996 accepted parent paths retained and21 exact deletion guards"
+  },
+  "version": "0.25.82"
+}

@@ -18,11 +18,11 @@ MODEL = ASSETS / 'models/entity/gameplay/chao_neutral_swim_proto059.json'
 SOURCE = ASSETS / 'models/entity/gameplay/chao_baby.json'
 FIELD = 'neutral_swim_box_059'
 TARGETS = ['neutral_swim_young', 'run_swim', 'swim', 'power_swim',
-           'run', 'balanced', 'power', 'run_guard', 'balanced_guard', 'power_guard']
+           'run', 'balanced', 'power', 'run_fly', 'fly', 'power_fly']
 
 
 def weights(age, rp, sf):
-    sf = min(0, max(-1, sf))
+    sf = min(1, max(-1, sf))
     rp = min(1, max(-1, rp))
     return [1 - age] + [age * max(0, 1 - abs(rp - x)) * max(0, 1 - abs(sf - y))
                         for y in (-1, 0, 1) for x in (-1, 0, 1)]
@@ -122,9 +122,13 @@ def semantic_endpoints(features):
     channel = fin[FIELD]
     assert channel['sizes'][6][1] > channel['sizes'][4][1] * 2, 'Power fin should be stockier than Run'
     signatures = []
-    for target in (1, 2, 3, 4, 5, 6):
+    fly, rf, pf = [rear_center(i) for i in (8, 7, 9)]
+    assert fly[1] < balanced[1] - 3, 'Opposite Fly rear fin did not rise above the balanced hood'
+    assert rf[2] > fly[2] + .5, 'Run+Fly should extend farther rearward than pure Fly'
+    assert pf[1] > fly[1] + .5 and pf[2] < rf[2] - .5, 'Power+Fly should remain shorter/stockier than the pure and Run Fly fins'
+    for target in range(1, 10):
         signatures.append(tuple(round(x, 7) for m in features for p in endpoint(m, target) for x in p))
-    assert len(set(signatures)) == 6, 'Two requested mature forms are identical'
+    assert len(set(signatures)) == 9, 'Two requested mature forms are identical'
 
 
 def main():
@@ -164,8 +168,6 @@ def main():
                 values = mesh[FIELD][field]
                 assert len(values) == 10 and all(len(v) == 3 for v in values)
                 assert all(math.isfinite(x) for v in values for x in v)
-                for guard, center in ((7, 4), (8, 5), (9, 6)):
-                    assert values[guard] == values[center], (mesh['name'], field, 'Fly guard differs')
             assert all(x >= .01 for v in mesh[FIELD]['sizes'] for x in v)
             actual = endpoint(mesh, 0)
             assert max(abs(a - b) for va, vb in zip(actual, mesh['vertices'])
@@ -198,7 +200,7 @@ def main():
     all_bounds = [[999, -999] for _ in range(3)]
     for ai in range(21):
         age = ai / 20
-        for yi in range(11):
+        for yi in range(21):
             sf = yi / 10 - 1
             for xi in range(21):
                 rp = xi / 10 - 1
@@ -254,7 +256,7 @@ def main():
     for path, expected in manifest['construction_reference_sha256'].items():
         assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected
     assert minimum_head_plane_gap >= .024999, minimum_head_plane_gap
-    print(f'NeutralSwim059: 14 positive closed boxes, {frames} connected age/axis blends; exact original 7x6x6 head, face, emotion and59-joint rig; six distinct mature silhouettes, duplicate Fly guard row, eye/orb clearance, anchored soles/heels and wings passed. No overlapping same-facing head/feature coplanarity at all10targets andall4851blends; minimum positive matching-plane gap={minimum_head_plane_gap:.9f}. Minimum tilted-orb gap={minimum_marker_gap:.9f}; added-head bounds={all_bounds}.')
+    print(f'NeutralSwim059: 14 positive closed boxes, {frames} connected age/axis blends; exact original 7x6x6 head, face, emotion and59-joint rig; nine distinct mature silhouettes, full reciprocal Fly row, eye/orb clearance, anchored soles/heels and wings passed. No overlapping same-facing head/feature coplanarity at all10targets andall{frames}blends; minimum positive matching-plane gap={minimum_head_plane_gap:.9f}. Minimum tilted-orb gap={minimum_marker_gap:.9f}; added-head bounds={all_bounds}.')
 
 
 if __name__ == '__main__':

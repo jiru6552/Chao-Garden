@@ -5,11 +5,10 @@
   "shade_quads": true,
   "flip_v": true,
   "textures": {
-    "sa2_alo_mask_stump01_52": "chao_garden:block/sa2_02515/stump_hat/sa2_alo_mask_stump01_52",
-    "sa2_alo_mask_apple01_52": "chao_garden:block/sa2_02515/stump_hat/sa2_alo_mask_apple01_52",
-    "sa2_alo_mask_stump00_52": "chao_garden:block/sa2_02515/stump_hat/sa2_alo_mask_stump00_52",
-    "sa2_alo_mask_stump01_20": "chao_garden:block/sa2_02515/stump_hat/sa2_alo_mask_stump01_20",
-    "particle": "chao_garden:block/sa2_02515/stump_hat/sa2_alo_mask_stump01_52"
+    "alo_mask_stump01": "chao_garden:block/sa2_02515/stump_hat/alo_mask_stump01",
+    "alo_mask_stump00": "chao_garden:block/sa2_02515/stump_hat/alo_mask_stump00",
+    "alo_mask_apple01": "chao_garden:block/sa2_02515/stump_hat/alo_mask_apple01",
+    "particle": "chao_garden:block/sa2_02515/stump_hat/alo_mask_stump01"
   },
   "render_type": "minecraft:cutout",
   "display": {

@@ -60,7 +60,7 @@ def native(mesh,name,textures):
   lines+=['usemtl '+mat]+['v '+' '.join(f'{v:.9f}' for v in p) for p in ps]+[f'vt {u:.9f} {1-v:.9f}' for u,v in uv]+['vn '+' '.join(f'{v:.9f}' for v in nn)]*len(ps)
   lines+=['f '+' '.join(f'{k}/{k}/{k}' for k in range(i,i+len(ps)))];i+=len(ps)
  write(OUT/(name+'.obj'),'\n'.join(lines)+'\n')
- return {'loader':'neoforge:obj','model':'chao_garden:models/active02549/'+name+'.obj','automatic_culling':False,'shade_quads':True,'flip_v':True,'textures':textures,'render_type':'minecraft:cutout'}
+ return {'loader':'neoforge:obj','model':'chao_garden:models/active02549/'+name+'.obj','automatic_culling':False,'shade_quads':True,'flip_v':True,'emissive_ambient':False,'textures':textures,'render_type':'minecraft:cutout'}
 def shadow(mats,source_faces):
  for name,im in list(mats.items()):
   if 'soni03_' in name:
@@ -81,6 +81,37 @@ def shadow(mats,source_faces):
      pix[x,y]=(190,25,40,a) if x>im.width*.72 else (25,25,31,a)
     elif 'soni01_' in name and r>g*.9 and g>b*1.1:pix[x,y]=(235,236,232,a)
   mats[name]=im
+def shadow_head080(mesh,mats,source_faces):
+ # The existing donor keeps all124 emitted triangles/vertices/contacts. Only
+ # the nine crown triangles and four double-sided ear source faces get charts.
+ # This is an authored block-compatible Shadow palette adaptation, not a claim
+ # of recovered Shadow geometry. Approved mirrored face/nose UVs stay intact.
+ dark=(25,25,31,255);red=(190,25,40,255)
+ top=Image.new('RGBA',(32,32),dark);ImageDraw.Draw(top).rectangle((13,0,18,31),fill=red)
+ ear=Image.new('RGBA',(32,32),dark)
+ cream=IMAGES['sh_doll01'].getpixel((17,27))
+ ImageDraw.Draw(ear).polygon([(16,5),(9,14),(23,14)],fill=cream)
+ mats['shadow_crown080']=top;mats['shadow_ears080']=ear
+ cursor=0
+ for index,source_face in enumerate(source_faces):
+  count=2 if source_face.get('double_sided') else 1
+  if 88<=index<=96:
+   chart=[((p[0]+.6)/1.2,(.45-p[2])/1.4) for p in source_face['points']]
+   for back in range(count):
+    ps,_,_=mesh.faces[cursor+back]
+    mesh.faces[cursor+back]=(ps,list(reversed(chart)) if back else chart,'shadow_crown080')
+  if 116<=index<=119:
+   chart=[]
+   for point in source_face['points']:
+    ax=abs(point[0]);height=point[1]
+    chart.append((.5,1/64) if height>1.25 else (.5,63/64) if height<.9 else (63/64,.5) if ax>.5 else (1/64,.5))
+   for back in range(count):
+    ps,_,_=mesh.faces[cursor+back]
+    # The reverse side of the source's flat ears remains black cloth.
+    mesh.faces[cursor+back]=(ps,[(1/64,1/64)]*len(ps) if back else chart,'shadow_ears080')
+  cursor+=count
+ assert cursor==len(mesh.faces)==124,'Shadow donor topology changed; inspect semantic UV targets'
+
 ONLY=next((set(arg.split('=',1)[1].split(',')) for arg in sys.argv[1:] if arg.startswith('--only=')),None)
 if ONLY and not ONLY<=SOURCES.keys():raise ValueError('Unknown active toy selection')
 reports=json.loads((OUT/'manifest.json').read_text()) if ONLY else {}
@@ -98,7 +129,9 @@ for ident,address in SOURCES.items():
     face['uv']=[(1/64,1/64)]*len(face['uv']);nose+=1
   assert nose==4,'Expected four original donor nose triangles'
  m,mats=old.adapt(info)
- if ident=='chao_shadow_doll':shadow(mats,info['faces'])
+ if ident=='chao_shadow_doll':
+  shadow(mats,info['faces'])
+  shadow_head080(m,mats,info['faces'])
  if ident=='chao_toy_car':m=point(m,lambda p:(-p[2],p[1],p[0]))
  # A common upright source frame is used for hand models and all measurements.
  held=old.fit(m,(0,0,0,1,1,1));textures={}
@@ -141,8 +174,12 @@ reports['shadow_face_02551']={'reference':'Primary supplied SA2 Battle al_toy.pr
  'material148_wrap':'Two32px source tiles; right tile mirrors U, rather than stretching one tile across both repeats',
  'nose_uv':'Four donor nose triangles remapped from Sonic black-pupil UV(.5,.5), which is red on Shadow, to black source pixel centre(1/64,1/64)',
  'geometry':'Existing Sonic-doll adaptation; all vertices/contact geometry unchanged, no independently recovered Shadow mesh claimed'}
+if not ONLY or 'chao_shadow_doll' in ONLY:
+ reports['shadow_head_02580']={'source':'Supplied SA2B Shadow face palette; authored crown/ear charts on existing Sonic donor geometry',
+  'unchanged_geometry':True,'crown_source_faces':list(range(88,97)),'ear_source_faces':list(range(116,120)),
+  'face148_and_nose_unchanged':True,'reverse_ear':'black cloth','front_ear':'tan inset sampled from sh_doll01 pixel17,27'}
 reports['car_scale_02551']={'factor':.70,'pivot_pixels':[8,0,8],'held_source_unchanged':True}
-write(OUT/'materials.mtl' ,'\n'.join('newmtl '+m+'\nKd 1 1 1\nKa 1 1 1\nmap_Kd #'+m for m in sorted(materials))+'\n')
+write(OUT/'materials.mtl' ,'\n'.join('newmtl '+m+'\nKd 1 1 1\nKa 0 0 0\nmap_Kd #'+m for m in sorted(materials))+'\n')
 reports['inputs']={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'art/sa2_02514/original/ChaoMain.prs',ROOT/'art/sa2_02514/original/al_toy.prs']}
 write(OUT/'manifest.json',reports)
 # Original, short mechanical/cloth sounds; never copies character voice recordings.

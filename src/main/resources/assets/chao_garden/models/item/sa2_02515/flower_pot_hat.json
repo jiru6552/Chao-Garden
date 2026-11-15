@@ -5,10 +5,9 @@
   "shade_quads": true,
   "flip_v": true,
   "textures": {
-    "sa2_alo_mask_flowerpot01_20": "chao_garden:block/sa2_02515/flower_pot_hat/sa2_alo_mask_flowerpot01_20",
-    "sa2_alo_mask_flowerpot00_4": "chao_garden:block/sa2_02515/flower_pot_hat/sa2_alo_mask_flowerpot00_4",
-    "sa2_alo_mask_flowerpot00_20": "chao_garden:block/sa2_02515/flower_pot_hat/sa2_alo_mask_flowerpot00_20",
-    "particle": "chao_garden:block/sa2_02515/flower_pot_hat/sa2_alo_mask_flowerpot01_20"
+    "alo_mask_flowerpot00": "chao_garden:block/sa2_02515/flower_pot_hat/alo_mask_flowerpot00",
+    "alo_mask_flowerpot01": "chao_garden:block/sa2_02515/flower_pot_hat/alo_mask_flowerpot01",
+    "particle": "chao_garden:block/sa2_02515/flower_pot_hat/alo_mask_flowerpot00"
   },
   "render_type": "minecraft:cutout",
   "display": {

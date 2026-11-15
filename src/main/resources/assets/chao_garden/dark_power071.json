@@ -1,0 +1,46 @@
+{
+  "version": "0.25.71",
+  "model": "models/entity/gameplay/chao_dark_power_proto071.json",
+  "sha256": "883c1fddda55444fa3c6f8afe9687b0e6712b5d8a6472af9940ce0b14c1a5e4b",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "dark_power_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "canonical_head_face_emotion_and_59_joint_transforms_unchanged": true,
+  "shared_animation_attachment_rig": true,
+  "source_geometry_copied": false,
+  "head_parts": [
+    "dark_power_horn_root",
+    "dark_power_horn_middle",
+    "dark_power_horn_tip",
+    "dark_power_fork_left",
+    "dark_power_fork_right"
+  ],
+  "construction_reference_sha256": {
+    "art/imported_chao/models/chao_power.geo.json": "cc26883fad2065227c063a2a2f77b72cc7eff497103e3a83c45247f6103cce79",
+    "art/imported_chao/textures/power.png": "9087916ecfe4b8f9c002e1226333e20348414454cdcbe0f33686dc2a9676cda7",
+    "src/main/resources/assets/chao_garden/models/entity/official/chao_power.json": "02189a7c07a28ca649dd9c56e4dac7303c0a85660579a9d89e36f0f1b1b07ecd",
+    "art/imported_chao/models/chao_dark.geo.json": "15b73a6aa1ff798ead9edb47fa863ce553ebe22d9af8ea726493d77d4365391a",
+    "art/imported_chao/textures/dark.png": "c98cbb17c956eb3d40f269d3934fdaff1241d1aeafe6a5a830f4340a46597d2a"
+  },
+  "legal_specializations": [
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ]
+}

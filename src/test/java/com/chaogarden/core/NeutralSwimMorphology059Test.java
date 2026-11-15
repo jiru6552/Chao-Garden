@@ -10,9 +10,27 @@ public final class NeutralSwimMorphology059Test {
   private static void check(boolean value,String why){checks++;if(!value)throw new AssertionError(why);}
   private static void near(float actual,float expected,String why){check(Float.isFinite(actual)&&Math.abs(actual-expected)<.000004f,why+": "+actual+" vs "+expected);}
   public static int run(){
-    checks=0;untouchedFirstEvolution();sixCombinations();realMutationRoutes();creativeCommandAndMaturity();currentLabels();oppositionAndAge();identityAndPersistence();neutralRegression();scopeAndReadOnly();
-    System.out.println("Neutral Swim morphology059: "+checks+" checks passed; six combinations, real training, independent age/opposed axes, immutable first identity and exact persistence");
+    checks=0;blendScopeGuards();untouchedFirstEvolution();nineCombinations();realMutationRoutes();creativeCommandAndMaturity();currentLabels();oppositionAndAge();bidirectionalMixedReversals();identityAndPersistence();neutralRegression();scopeAndReadOnly();
+    System.out.println("Neutral Swim morphology059: "+checks+" checks passed; nine combinations, real training, independent age/opposed axes, immutable first identity and exact persistence");
     return checks;
+  }
+  private static void blendScopeGuards(){
+    near(NeutralSwimMorphology059.SPECIALIZATION_PROGRESS,960,"Declared provisional threshold remains 960 actual bar progress");
+    for(var sample:new NeutralSwimMorphology059.Sample[]{null,new NeutralSwimMorphology059.Sample(false,1,1,1)}){
+      var weights=NeutralSwimMorphology059.weights(sample);near(weights[0],1,"Disabled input retains fresh surface");
+      for(int i=1;i<10;i++)near(weights[i],0,"Disabled input emits no mature corner");
+    }
+    for(float rp:new float[]{-3,-1,0,.375f,1,3,Float.NaN,Float.POSITIVE_INFINITY})for(float sf:new float[]{-3,-1,0,.375f,1,3,Float.NaN,Float.NEGATIVE_INFINITY})for(float age:new float[]{-1,0,.375f,1,2,Float.NaN}){
+      var weights=NeutralSwimMorphology059.weights(new NeutralSwimMorphology059.Sample(true,age,rp,sf));
+      float total=0,actualRp=0,actualSf=0;for(int i=0;i<weights.length;i++){
+        float w=weights[i];check(Float.isFinite(w)&&w>=0&&w<=1,"Explicit blend inputs stay finite and convex");total+=w;
+        if(i>0){actualRp+=w*((i-1)%3-1);actualSf+=w*((i-1)/3-1);}
+      }
+      float a=Float.isFinite(age)?Math.clamp(age,0,1):0;
+      near(total,1,"Explicit blend inputs conserve total mass");
+      near(actualRp,a*(Float.isFinite(rp)?Math.clamp(rp,-1,1):0),"Mature target mass reproduces the full signed Run/Power coordinate");
+      near(actualSf,a*(Float.isFinite(sf)?Math.clamp(sf,-1,1):0),"Mature target mass reproduces both Fly and Swim coordinates");
+    }
   }
   private static ChaoState adult(){
     var s=new ChaoState();s.adult=true;s.primaryType=ChaoState.SWIM_TYPE;s.align=0;s.ageTicks=400;s.adultAgeTicks=90;
@@ -48,10 +66,10 @@ public final class NeutralSwimMorphology059Test {
     var untouched=new ChaoState();untouched.ageTicks=19;untouched.tick(20,100000,new Random(59));
     check(untouched.lockedPrimaryType()==ChaoState.NORMAL&&!NeutralSwimMorphology059.sample(untouched).enabled(),"Untouched Normal first evolution remains outside the new path");
   }
-  private static void sixCombinations(){
-    for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=0;sf++)for(int quarter=0;quarter<=4;quarter++){
+  private static void nineCombinations(){
+    for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=1;sf++)for(int quarter=0;quarter<=4;quarter++){
       var s=adult();setAxis(s,rp*960,sf*960);s.setEvolutionStrength(quarter*.3f);String encoded=s.encode();
-      var p=NeutralSwimMorphology059.sample(s);check(p.enabled(),"All six requested axis combinations remain on Neutral/Swim");
+      var p=NeutralSwimMorphology059.sample(s);check(p.enabled(),"All nine requested axis combinations remain on Neutral/Swim");
       near(p.runPower(),rp,"Current Run/Power bars select the intended signed axis");near(p.swimFly(),sf,"Current Swim/Fly bars select the other signed axis");
       near(p.maturity(),quarter*.25f,"The same training state has independent young/intermediate/mature development");
       var weights=NeutralSwimMorphology059.weights(p);check(weights.length==10,"Ten target storage slots retain shared grid layout");
@@ -65,7 +83,7 @@ public final class NeutralSwimMorphology059Test {
     for(int rp=-4;rp<=4;rp++)for(int sf=-4;sf<=4;sf++){
       var s=adult();setAxis(s,rp*120,sf*120);s.setEvolutionStrength(.6f);var p=NeutralSwimMorphology059.sample(s);var w=NeutralSwimMorphology059.weights(p);
       float sum=0;int used=0;for(float f:w){sum+=f;if(f>0)used++;}
-      near(p.runPower(),rp*.125f,"Intermediate Run/Power input remains continuous");near(p.swimFly(),Math.min(0,sf*.125f),"Intermediate Swim/Fly input remains continuous");
+      near(p.runPower(),rp*.125f,"Intermediate Run/Power input remains continuous");near(p.swimFly(),sf*.125f,"Intermediate Swim/Fly input remains continuous");
       near(sum,1,"Interior combinations remain convex");check(used<=5,"At most four mature neighbors plus the fresh corner blend together");
     }
   }
@@ -76,14 +94,14 @@ public final class NeutralSwimMorphology059Test {
       DriveRules.apply(combined,DriveRules.Tier.SOLID,stat,new Random(59));DriveRules.change(combined,stat,140,new Random(59));
       AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.LEVEL,1);AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.LEVEL,1);AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.PROGRESS,40);
       for(var s:new ChaoState[]{direct,ordinary,combined,analyzer}){
-        var p=NeutralSwimMorphology059.sample(s);near(stat<2?p.swimFly():p.runPower(),stat==ChaoState.FLY?0:stat==ChaoState.POWER?.25f:-.25f,"Equal actual training totals agree across ordinary, typed combined, direct and Analyzer changes");
+        var p=NeutralSwimMorphology059.sample(s);near(stat<2?p.swimFly():p.runPower(),stat==ChaoState.FLY||stat==ChaoState.POWER?.25f:-.25f,"Equal actual training totals agree across ordinary, typed combined, direct and Analyzer changes");
         near(p.maturity(),1,"None of the ordinary training routes fabricates biological youth or age");
         check(s.lockedPrimaryType()==ChaoState.SWIM_TYPE&&s.lockedAlignment()==0,"Every route preserves the first evolution identity");
       }
       AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.PROGRESS,0);
-      near(Math.abs(stat<2?NeutralSwimMorphology059.sample(analyzer).swimFly():NeutralSwimMorphology059.sample(analyzer).runPower()),(stat==ChaoState.FLY?0:200f/960),"Partial-bar Analyzer reductions recede the correct axis");
+      near(Math.abs(stat<2?NeutralSwimMorphology059.sample(analyzer).swimFly():NeutralSwimMorphology059.sample(analyzer).runPower()),200f/960,"Partial-bar Analyzer reductions recede the correct axis");
       AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.LEVEL,-1);
-      near(Math.abs(stat<2?NeutralSwimMorphology059.sample(analyzer).swimFly():NeutralSwimMorphology059.sample(analyzer).runPower()),(stat==ChaoState.FLY?0:100f/960),"Level reductions recede the correct axis");
+      near(Math.abs(stat<2?NeutralSwimMorphology059.sample(analyzer).swimFly():NeutralSwimMorphology059.sample(analyzer).runPower()),100f/960,"Level reductions recede the correct axis");
     }
     var balanced=adult();DriveRules.apply(balanced,DriveRules.Tier.CHAOTIC,-1,new Random(59));
     near(NeutralSwimMorphology059.sample(balanced).runPower(),0,"A balanced multi-stat transaction invents no Run/Power advantage");near(NeutralSwimMorphology059.sample(balanced).swimFly(),0,"A balanced multi-stat transaction invents no Swim/Fly advantage");
@@ -91,7 +109,7 @@ public final class NeutralSwimMorphology059Test {
     near(NeutralSwimMorphology059.sample(perfect).runPower(),0,"Equally capped opponents remain balanced after a Perfect drive");near(NeutralSwimMorphology059.sample(perfect).swimFly(),0,"Perfect drive preserves the other independent balance");
   }
   private static void creativeCommandAndMaturity(){
-    for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=0;sf++){
+    for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=1;sf++){
       var s=adult();int age=s.ageTicks,adultAge=s.adultAgeTicks;
       for(int stat:new int[]{rp<0?ChaoState.RUN:rp>0?ChaoState.POWER:-1,sf<0?ChaoState.SWIM:sf>0?ChaoState.FLY:-1})if(stat>=0)
         check(CreativeChaoEditRules056.apply(s,0,stat,10),"Actual absolute Creative edit accepts each compatible selected stat");
@@ -113,24 +131,45 @@ public final class NeutralSwimMorphology059Test {
     for(int i=0;i<40;i++)s.giveDrive(ChaoState.FLY);
     near(NeutralSwimMorphology059.sample(s).swimFly(),0,"Opposing Fly cancels later Swim specialization without changing first Swim identity");
     for(int i=0;i<40;i++)s.giveDrive(ChaoState.FLY);
-    near(NeutralSwimMorphology059.sample(s).swimFly(),0,"Excess Fly remains on the balanced Swim-first surface, not an unrequested Fly secondary");
+    near(NeutralSwimMorphology059.sample(s).swimFly(),1,"Excess Fly develops the opposite later Fly tendency while first Swim remains locked");
     DriveRules.change(s,ChaoState.RUN,-960,new Random(59));DriveRules.change(s,ChaoState.FLY,-1920,new Random(59));
     near(NeutralSwimMorphology059.sample(s).runPower(),1,"Run reduction exposes stored opposing Power");near(NeutralSwimMorphology059.sample(s).swimFly(),-1,"Fly reduction restores independent later Swim");
     check(s.ageTicks==age&&s.adultAgeTicks==adultAge&&s.evolutionStrength()==strength&&s.lockedPrimaryType()==ChaoState.SWIM_TYPE,"Reversals change neither chronology, biological maturity nor first identity");
     near(NeutralSwimMorphology059.weights(NeutralSwimMorphology059.sample(s))[3],.5f,"Half-mature Power/Swim retains correct mature corner mass");
-    for(int stat:new int[]{ChaoState.RUN,ChaoState.POWER}){var a=adult();var b=adult();for(int i=0;i<40;i++)a.giveDrive(stat);for(int i=0;i<40;i++)a.giveDrive(ChaoState.SWIM);for(int i=0;i<40;i++)b.giveDrive(ChaoState.SWIM);for(int i=0;i<40;i++)b.giveDrive(stat);check(NeutralSwimMorphology059.sample(a).equals(NeutralSwimMorphology059.sample(b)),"Compatible pair order is one form");}
+    for(int stat:new int[]{ChaoState.RUN,ChaoState.POWER})for(int other:new int[]{ChaoState.SWIM,ChaoState.FLY}){var a=adult();var b=adult();for(int i=0;i<40;i++)a.giveDrive(stat);for(int i=0;i<40;i++)a.giveDrive(other);for(int i=0;i<40;i++)b.giveDrive(other);for(int i=0;i<40;i++)b.giveDrive(stat);check(NeutralSwimMorphology059.sample(a).equals(NeutralSwimMorphology059.sample(b)),"Compatible pair order is one form on either Swim/Fly side");}
+  }
+  private static void bidirectionalMixedReversals(){
+    for(int rp=-1;rp<=1;rp++)for(int direction:new int[]{-1,1}){
+      var s=adult();setAxis(s,rp*960,direction*960);s.setEvolutionStrength(.6f);
+      int age=s.ageTicks,adultAge=s.adultAgeTicks;float strength=s.evolutionStrength();
+      int counter=direction<0?ChaoState.FLY:ChaoState.SWIM;
+      for(int step=0;step<=4;step++){
+        if(step>0)for(int i=0;i<20;i++)s.giveDrive(counter);
+        var a=NeutralSwimMorphology059.sample(s);near(a.runPower(),rp,"Swim/Fly reversal preserves the independent Run/Power tendency");
+        near(a.swimFly(),direction*(1-step*.5f),"Ordinary drives cross both directions through balance in half-axis steps");
+        near(a.maturity(),.5f,"Crossing an opposite tendency does not fabricate biological youth");
+        check(s.ageTicks==age&&s.adultAgeTicks==adultAge&&s.evolutionStrength()==strength&&s.lockedPrimaryType()==ChaoState.SWIM_TYPE&&s.lockedAlignment()==0,"Every mixed reversal step preserves chronology and the saved first identity");
+        var copy=ChaoState.decode(s.encode());check(copy.encode().equals(s.encode())&&NeutralSwimMorphology059.sample(copy).equals(a),"Opposite and mixed steps survive exact save/reload");
+        if(step==0||step==2||step==4){int sf=direction*(1-step/2);near(NeutralSwimMorphology059.weights(a)[1+(sf+1)*3+(rp+1)],.5f,"The appropriate authored old, balanced or new mature corner contributes at half age");}
+      }
+      for(int step=1;step<=4;step++){
+        DriveRules.change(s,counter,-480,new Random(59));
+        near(NeutralSwimMorphology059.sample(s).swimFly(),direction*(-1+step*.5f),"Reductions traverse the same mixed path back across balance");
+      }
+      check(s.ageTicks==age&&s.adultAgeTicks==adultAge&&s.evolutionStrength()==strength,"Reductions preserve both age inputs");
+    }
   }
   private static void currentLabels(){
     String[] rpNames={"Run","Normal","Power"};
-    for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=0;sf++){
-      var s=adult();s.runPower=-rp;s.swimFly=1;
-      for(int stat:new int[]{rp<0?ChaoState.RUN:rp>0?ChaoState.POWER:-1,sf<0?ChaoState.SWIM:-1})if(stat>=0){AnalyzerStatRules.apply(s,stat,AnalyzerStatRules.LEVEL,10);AnalyzerStatRules.apply(s,stat,AnalyzerStatRules.LEVEL,-1);AnalyzerStatRules.apply(s,stat,AnalyzerStatRules.PROGRESS,60);}
-      String label=sf==0?rpNames[rp+1]:rp==0?"Swim":"Swim+"+rpNames[rp+1];
+    for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=1;sf++){
+      var s=adult();s.runPower=-rp;s.swimFly=sf>=0?-1:1;
+      for(int stat:new int[]{rp<0?ChaoState.RUN:rp>0?ChaoState.POWER:-1,sf<0?ChaoState.SWIM:sf>0?ChaoState.FLY:-1})if(stat>=0){AnalyzerStatRules.apply(s,stat,AnalyzerStatRules.LEVEL,10);AnalyzerStatRules.apply(s,stat,AnalyzerStatRules.LEVEL,-1);AnalyzerStatRules.apply(s,stat,AnalyzerStatRules.PROGRESS,60);}
+      String other=sf<0?"Swim":"Fly";String label=sf==0?rpNames[rp+1]:rp==0?other:other+"+"+rpNames[rp+1];
       check(s.typeName().equals("Swim/"+label),"Analyzer labels describe current-bar Swim-first combination despite stale legacy axes");
       check(s.secondaryFormKey().equals(label.toLowerCase(java.util.Locale.ROOT).replace('+','_')),"Combination key matches display and is independent of train order");
       var copy=ChaoState.decode(s.encode());check(copy.typeName().equals(s.typeName())&&copy.secondaryFormKey().equals(s.secondaryFormKey()),"Current labels persist without rewriting old axes");
       for(int stat=0;stat<4;stat++)DriveRules.setTotal(s,stat,0,new Random(59));DriveRules.setTotal(s,ChaoState.FLY,960,new Random(59));
-      check(s.typeName().equals("Swim/Normal")&&s.secondaryFormKey().equals("normal"),"Excess Fly reports balanced later Swim-first form");
+      check(s.typeName().equals("Swim/Fly")&&s.secondaryFormKey().equals("fly"),"Excess Fly reports the new opposite tendency without changing first Swim");
     }
   }
   private static void identityAndPersistence(){

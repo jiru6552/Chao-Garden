@@ -130,7 +130,7 @@ public final class HeroRunJourneyGameTests054 {
     for(var source:records) {
       try{h.assertTrue(HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(source.encoded().getBytes(StandardCharsets.UTF_8))).equals(source.sha256()),"Prior accepted state matches its literal source SHA: "+source.role());}
       catch(java.security.NoSuchAlgorithmException impossible){throw new IllegalStateException(impossible);}
-      var state=ChaoState.decode(source.encoded());h.assertTrue(state.encode().equals(source.encoded()),"Accepted .53 source roundtrips byte-exactly: "+source.role());
+      var state=ChaoState.decode(source.encoded());FaceLegacyAssertions076.assertAppendOnly(h,source.encoded(),state,"Accepted .53 source roundtrips byte-exactly: "+source.role());
       var c=actor(h,p,state);assertSyncAndNbt(h,c);c.discard();
     }
     h.succeed();

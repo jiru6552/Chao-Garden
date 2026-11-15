@@ -42,6 +42,7 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 public final class DarkGardenCareGameTests0255 {
   @GameTest(template="empty",batch="dark0255_care",timeoutTicks=600)
   public static void darkAdventureCareUsesItsOwnRealmAndEveryTerminalPartKeepsOneOwnedProvider(GameTestHelper h){
+    GardenAccessFixtures081.dark(h);
     var p=GardenWorldGameTests025.player(h,GameType.SURVIVAL);
     var source=ChaoGarden.CHAO.get().create(p.serverLevel());source.owner=p.getUUID();source.setNoAi(true);source.setNoGravity(true);
     var healthy=ChaoState.egg(3,true,false,0,new Random(255));

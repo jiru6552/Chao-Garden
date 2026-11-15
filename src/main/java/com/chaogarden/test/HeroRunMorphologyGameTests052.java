@@ -376,7 +376,7 @@ public final class HeroRunMorphologyGameTests052 {
         "Original saved-state fixture bytes must match their extracted source hash");}
     catch(java.security.NoSuchAlgorithmException impossible){throw new IllegalStateException(impossible);}
     var state=ChaoState.decode(old.encoded());
-    h.assertTrue(state.encode().equals(old.encoded()),"This actual schema6 older-save record must roundtrip byte-for-byte: "+old.source());
+    FaceLegacyAssertions076.assertAppendOnly(h,old.encoded(),state,"This actual schema6 older-save record must roundtrip byte-for-byte: "+old.source());
     var c=actor(h,state,null);assertSyncAndNbt(h,c);h.succeed();
   }
 }

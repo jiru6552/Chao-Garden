@@ -111,7 +111,7 @@ public final class GardenWaterfallGameTests0253 {
       for(var at:new ArrayList<>(data.gardens.keySet()))if(keeper.getUUID().equals(data.gardens.get(at).owner())){data.removeGarden(at);if(!at.block().equals(GardenRooms025.TRANSPORTER))relocated.add(at.block());}
       for(var at:BlockPos.betweenClosed(-39,79,-22,24,94,18))if(level.getBlockState(at).equals(tv)||level.getBlockState(at).equals(duck))relocated.add(at.immutable());
       var authored=GardenRooms025.plan();for(var at:relocated)put(level,at,authored.blocks.getOrDefault(at,Blocks.AIR.defaultBlockState()));
-      saved.forEach((at,state)->put(level,at,state));data.setDirty();server.overworld().getDataStorage().set("chao_hub_visits",originalRoomData);
+      saved.forEach((at,state)->put(level,at,state));data.setDirty();GardenAccessFixtures081.restoreRoomData(server,originalRoomData);
       for(var chunk:forced)level.setChunkForced(chunk.x,chunk.z,false);keeper.server.getPlayerList().remove(keeper);
     };h.runAtTickTime(399,cleanup);
     h.assertTrue(level.addFreshEntity(child)&&level.addFreshEntity(item),"Could not publish real revision-27 owned bodies");

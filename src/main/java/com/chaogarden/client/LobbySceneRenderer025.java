@@ -48,13 +48,19 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
   private static final ResourceLocation QUARTZ=ResourceLocation.fromNamespaceAndPath("minecraft","textures/block/quartz_block_side.png"),STONE=ResourceLocation.fromNamespaceAndPath("minecraft","textures/block/stone_bricks.png");
   private static ShaderInstance shader;
   private static final Mesh SKY=sky(),STARS=panels(false),REFLECTED_STARS=panels(true),WOOD=wood(false),REFLECTED_WOOD=wood(true),FLOOR=floor(),GRID=grid(),ARCHITECTURE=architecture(),GARDEN_STONES=gardenStones(),GARDEN_QUARTZ=gardenQuartz(),GARDEN_LEAVES=gardenLeaves(),SIGN=sign(),PALM=palm(),GLAZING=glazing(),PAD=pad(.04,2.68,96),UPPER_PAD=pad(5.30,3.34,32),EXIT=exitSign(),APPROACH_GLASS=approachGlass(),APPROACH_STARS=approachStars(),APPROACH_TRIM=approachTrim(),APPROACH_GATES=approachGates(false),APPROACH_GATE_MASONRY=approachGates(true);
+  private static final Mesh[] FLOORS081={floor(false),FLOOR},GRIDS081={grid(false),GRID};
+  private static final Mesh[] GLASS081={approachGlass(0),approachGlass(1),approachGlass(2),APPROACH_GLASS};
+  private static final Mesh[] STARS081={approachStars(0),approachStars(1),approachStars(2),APPROACH_STARS};
+  private static final Mesh[] TRIM081={approachTrim(0),approachTrim(1),approachTrim(2),APPROACH_TRIM};
+  private static final Mesh[] GATES081={approachGates(false,0),approachGates(false,1),approachGates(false,2),APPROACH_GATES};
+  private static final Mesh[] MASONRY081={approachGates(true,0),approachGates(true,1),approachGates(true,2),APPROACH_GATE_MASONRY};
   private static final List<Vector3f> PALM_NORMALS = palmNormals();
   private static final Mesh[] PORTAL_FRAMES={portalFrame(0),portalFrame(1),portalFrame(2),portalFrame(3),portalFrame(4),portalFrame(5)};
   private static final List<List<PortalGeometry0251.Point>> PORTAL_OPENINGS=List.of(PortalGeometry0251.aperture(0),PortalGeometry0251.aperture(1),PortalGeometry0251.aperture(2),PortalGeometry0251.aperture(3),PortalGeometry0251.aperture(4),PortalGeometry0251.aperture(5));
   // lobby_glass.png is a uniform texel (21,37,68,59). Vertex tint lets all
   // clear scene surfaces share a single back-to-front sorted material.
   private static final int GLASS_COLOR=0x3b152544,GOLD=0xffffce49,CREAM=0xfff3e9ca,CYAN=0xff68e1df;
-  private record AlphaScene(Matrix4f pose,Matrix3f normal,float phase){
+  private record AlphaScene(Matrix4f pose,Matrix3f normal,float phase,int access){
     PoseStack stack(){
       var stack=new PoseStack();
       stack.last().pose().set(pose);stack.last().normal().set(normal);
@@ -117,6 +123,12 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
       if(shaderPack && SceneShaderPack.shadows())return;
       buffers=SceneBuffers.SOURCE;ownsBuffers=true;
       if(entity.getBlockState().getValue(LobbyDecor025.SceneAnchor.PORTAL)){
+        if(entity.getLevel()!=null&&entity.getLevel().dimension().equals(HubContent.HUB)){
+          int style=entity.getBlockState().getValue(LobbyDecor025.SceneAnchor.STYLE);
+          int bit=style==PortalScenes0251.HERO?1:style==PortalScenes0251.DARK?2:0;
+          var main=entity.getLevel().getBlockState(HubRooms.SCENE_ANCHOR081);
+          if(bit!=0&&(!main.is(LobbyDecor025.SCENE_ANCHOR.get())||(LobbyDecor025.sceneAccess081(main)&bit)==0))return;
+        }
         if(renderedPortals.add(entity.getBlockPos()))portal(entity,poses,buffers);return;
       }
       // Native global BER registration happens only after its owning section
@@ -125,22 +137,23 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
       if(mainSceneSubmitted)return;
       mainSceneSubmitted=true;
       poses.translate(.5,2.002,.5);
-      APPROACH_TRIM.draw(poses,buffers,WHITE,1);APPROACH_GATES.draw(poses,buffers,WHITE,1);
-      APPROACH_GATE_MASONRY.draw(poses,buffers,STONE,1);
-      GRID.draw(poses,buffers,WHITE,1);STARS.draw(poses,buffers,STAR_TEX,1);WOOD.draw(poses,buffers,WOOD_TEX,1);ARCHITECTURE.draw(poses,buffers,WHITE,1);
+      int access=LobbyDecor025.sceneAccess081(entity.getBlockState());
+      TRIM081[access].draw(poses,buffers,WHITE,1);GATES081[access].draw(poses,buffers,WHITE,1);
+      MASONRY081[access].draw(poses,buffers,STONE,1);
+      GRIDS081[(access&2)>>1].draw(poses,buffers,WHITE,1);STARS.draw(poses,buffers,STAR_TEX,1);WOOD.draw(poses,buffers,WOOD_TEX,1);ARCHITECTURE.draw(poses,buffers,WHITE,1);
       GARDEN_STONES.draw(poses,buffers,STONE,1);GARDEN_QUARTZ.draw(poses,buffers,QUARTZ,1);GARDEN_LEAVES.draw(poses,buffers,WHITE,1);
       // Both physical energy faces establish depth before transparent tubes. A
       // ribbon behind a disc must fail the depth test at every camera angle.
       PAD.draw(poses,buffers,PAD_TEX,1);UPPER_PAD.draw(poses,buffers,PAD_TEX,1);
       flush(buffers,Material.get(WHITE,1));flush(buffers,Material.get(STAR_TEX,1));flush(buffers,Material.get(WOOD_TEX,1));
       flush(buffers,Material.get(STONE,1));flush(buffers,Material.get(QUARTZ,1));flush(buffers,Material.get(PAD_TEX,1));
-      darkFire(poses,buffers,entity.getLevel()==null?partial:entity.getLevel().getGameTime()+partial);
+      if((access&2)!=0)darkFire(poses,buffers,entity.getLevel()==null?partial:entity.getLevel().getGameTime()+partial);
       SIGN.draw(poses,buffers,SIGN_TEX,0);flush(buffers,Material.get(SIGN_TEX,0));EXIT.draw(poses,buffers,EXIT_TEX,2);flush(buffers,Material.get(EXIT_TEX,2));
       // End-portal block entities may render after this anchor. Their opaque
       // shader would replace these color-only tubes even when farther away.
       // Preserve this frame's camera-relative transform for the final alpha pass.
       long time=entity.getLevel()==null?0:entity.getLevel().getGameTime();
-      ALPHA_SCENES.add(new AlphaScene(new Matrix4f(poses.last().pose()),new Matrix3f(poses.last().normal()),(time+partial)*.09f));
+      ALPHA_SCENES.add(new AlphaScene(new Matrix4f(poses.last().pose()),new Matrix3f(poses.last().normal()),(time+partial)*.09f,access));
     }finally{try{if(ownsBuffers)SceneBuffers.SOURCE.endBatch();}finally{poses.popPose();}}
   }
   @EventBusSubscriber(modid="chao_garden",value=Dist.CLIENT)
@@ -186,11 +199,11 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     }
   }
   private static void alphaGeometry(MultiBufferSource buffers,int mode){
-    for(var scene:ALPHA_SCENES)APPROACH_STARS.draw(scene.stack(),buffers,STAR_TEX,mode);
+    for(var scene:ALPHA_SCENES)STARS081[scene.access()].draw(scene.stack(),buffers,STAR_TEX,mode);
     flush(buffers,Material.get(STAR_TEX,mode));
     for(var scene:ALPHA_SCENES){
       var poses=scene.stack();
-      FLOOR.draw(poses,buffers,WHITE,mode);APPROACH_GLASS.draw(poses,buffers,WHITE,mode);
+      FLOORS081[(scene.access()&2)>>1].draw(poses,buffers,WHITE,mode);GLASS081[scene.access()].draw(poses,buffers,WHITE,mode);
       GLAZING.draw(poses,buffers,WHITE,mode);energy(poses,buffers,scene.phase(),mode);
     }
     flush(buffers,Material.get(WHITE,mode));
@@ -293,10 +306,14 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
   private record V(float x,float y,float z,float u,float v,int color){}
   private static final class Mesh {
     final List<V> vertices=new ArrayList<>();
+    private final boolean clipFloor;
+    Mesh(){this(true);}
+    Mesh(boolean clipFloor){this.clipFloor=clipFloor;}
     void vertex(double x,double y,double z,float u,float v,int color){vertices.add(new V((float)x,(float)y,(float)z,u,v,color));}
     void quad(double[] a,double[] b,double[] c,double[] d,int color){quad(a,b,c,d,color,0,0,1,1);}
     void quad(double[] a,double[] b,double[] c,double[] d,int color,float u0,float v0,float u1,float v1){vertex(a[0],a[1],a[2],u0,v0,color);vertex(b[0],b[1],b[2],u1,v0,color);vertex(c[0],c[1],c[2],u1,v1,color);vertex(d[0],d[1],d[2],u0,v1,color);}
     void floorQuad(double[] a,double[] b,double[] c,double[] d,int color){
+      if(!clipFloor){quad(a,b,c,d,color);return;}
       var polygon=List.of(new LobbyApproachGeometry0255.Point(a[0],a[1],a[2]),new LobbyApproachGeometry0255.Point(b[0],b[1],b[2]),
           new LobbyApproachGeometry0255.Point(c[0],c[1],c[2]),new LobbyApproachGeometry0255.Point(d[0],d[1],d[2]));
       for(var piece:LobbyApproachGeometry0255.floorPieces(polygon))for(int i=1;i+1<piece.size();i++){
@@ -402,7 +419,8 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     double r=3.8*Math.cos(Math.PI/16)/Math.cos(local);
     return p(r*Math.cos(a),0,r*Math.sin(a));
   }
-  private static Mesh floor(){var m=new Mesh();for(int i=0;i<192;i++){double a=i*Math.PI/96,b=(i+1)*Math.PI/96;
+  private static Mesh floor(){return floor(true);}
+  private static Mesh floor(boolean darkOpen){var m=new Mesh(darkOpen);for(int i=0;i<192;i++){double a=i*Math.PI/96,b=(i+1)*Math.PI/96;
     // Short radial spans keep translucent sorting accurate beside the tubes
     // and curved stairs, including views up through the floor.
     m.floorQuad(padEdge(i),p(Math.cos(a)*4,0,Math.sin(a)*4),p(Math.cos(b)*4,0,Math.sin(b)*4),padEdge(i+1),GLASS_COLOR);
@@ -412,15 +430,18 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
           p(Math.cos(b)*outer,0,Math.sin(b)*outer),p(Math.cos(b)*r,0,Math.sin(b)*r),GLASS_COLOR);
     }
   }return m;}
-  private static Mesh grid(){var m=new Mesh();for(int r=4;r<=24;r+=4)m.floorRing(r,.026,.007,0xffa2bfdc);
+  private static Mesh grid(){return grid(true);}
+  private static Mesh grid(boolean darkOpen){var m=new Mesh(darkOpen);for(int r=4;r<=24;r+=4)m.floorRing(r,.026,.007,0xffa2bfdc);
     for(int i=0;i<24;i++){double a=i*Math.PI/12,dx=Math.cos(a),dz=Math.sin(a),nx=-dz*.015,nz=dx*.015;m.floorQuad(p(dx*3.5+nx,.008,dz*3.5+nz),p(dx*24.7+nx,.008,dz*24.7+nz),p(dx*24.7-nx,.008,dz*24.7-nz),p(dx*3.5-nx,.008,dz*3.5-nz),0xff9db7d4);}
     m.floorRing(7,.24,.013,GOLD);m.floorRing(19,.3,.013,GOLD);m.floorRing(24.2,.25,.013,GOLD);return m;}
-  private static Mesh approachGlass(){var m=new Mesh();
+  private static Mesh approachGlass(){return approachGlass(3);}
+  private static Mesh approachGlass(int access){var m=new Mesh();
     for(boolean hero:new boolean[]{true,false}){
+      if((access&(hero?1:2))==0)continue;
       for(var face:LobbyApproachGeometry0255.stairFaces(hero))approachFace(m,face,0,GLASS_COLOR);
       for(var rail:LobbyApproachGeometry0255.rails(hero,false))approachRail(m,rail,false);
     }
-    for(var rail:LobbyApproachGeometry0255.rails(false,true))approachRail(m,rail,false);
+    if((access&2)!=0)for(var rail:LobbyApproachGeometry0255.rails(false,true))approachRail(m,rail,false);
     return m;
   }
   private static void approachFace(Mesh m,LobbyApproachGeometry0255.Face f,double dy,int color){
@@ -428,8 +449,9 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     // opposite convention. Keep shader normals outward on tops AND undersides.
     m.quad(p(f.a().x(),f.a().y()+dy,f.a().z()),p(f.d().x(),f.d().y()+dy,f.d().z()),p(f.c().x(),f.c().y()+dy,f.c().z()),p(f.b().x(),f.b().y()+dy,f.b().z()),color);
   }
-  private static Mesh approachStars(){var m=new Mesh();
-    for(boolean hero:new boolean[]{true,false})for(var f:LobbyApproachGeometry0255.stairFaces(hero))
+  private static Mesh approachStars(){return approachStars(3);}
+  private static Mesh approachStars(int access){var m=new Mesh();
+    for(boolean hero:new boolean[]{true,false})if((access&(hero?1:2))!=0)for(var f:LobbyApproachGeometry0255.stairFaces(hero))
       if(f.a().y()==f.b().y()&&f.a().y()==f.c().y()&&f.a().y()==f.d().y()&&Math.abs(f.a().y()*2-Math.rint(f.a().y()*2))<1e-8){
         // Every thin native tread shares the lobby's star-and-glass material.
         double y=f.a().y()-.018;
@@ -449,8 +471,10 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     if(cap){m.cylinder(a.x(),y0,a.z(),.081,height,8,color);m.cylinder(b.x(),y1,b.z(),.081,height,8,color);}
     else {m.cylinder(a.x(),y0,a.z(),.07,height,8,color);m.cylinder(b.x(),y1,b.z(),.07,height,8,color);}
   }
-  private static Mesh approachTrim(){var m=new Mesh();
+  private static Mesh approachTrim(){return approachTrim(3);}
+  private static Mesh approachTrim(int access){var m=new Mesh();
     for(boolean hero:new boolean[]{true,false}){
+      if((access&(hero?1:2))==0)continue;
       for(var rail:LobbyApproachGeometry0255.rails(hero,false))approachRail(m,rail,true);
       for(int i=0;i<LobbyApproachGeometry0255.STEPS;i++){
         double a=LobbyApproachGeometry0255.angle(i),y=LobbyApproachGeometry0255.treadTop(hero,i)-80+.006,sign=hero?1:-1;
@@ -459,7 +483,7 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
         m.quad(p(x0+nx,y,z0+nz),p(x1+nx,y,z1+nz),p(x1-nx,y,z1-nz),p(x0-nx,y,z0-nz),GOLD);
       }
     }
-    for(var rail:LobbyApproachGeometry0255.rails(false,true))approachRail(m,rail,true);
+    if((access&2)!=0)for(var rail:LobbyApproachGeometry0255.rails(false,true))approachRail(m,rail,true);
     return m;
   }
   /** Minecraft's atlas updates the soul-fire frames; the crossed sheets are transparent fire, not rigid tongues. */
@@ -484,8 +508,10 @@ public final class LobbySceneRenderer025 implements BlockEntityRenderer<LobbyDec
     }
     flush(buffers,Material.get(TextureAtlas.LOCATION_BLOCKS,0));
   }
-  private static Mesh approachGates(boolean masonry){var result=new Mesh();
+  private static Mesh approachGates(boolean masonry){return approachGates(masonry,3);}
+  private static Mesh approachGates(boolean masonry,int access){var result=new Mesh();
     for(boolean hero:new boolean[]{true,false}){
+      if((access&(hero?1:2))==0)continue;
       var anchor=hero?HubRooms.HERO_DOOR:HubRooms.DARK_DOOR;
       var facing=hero?HubRooms.HERO_FACING:HubRooms.DARK_FACING;
       for(var face:GardenGateGeometry0256.gate(hero)){

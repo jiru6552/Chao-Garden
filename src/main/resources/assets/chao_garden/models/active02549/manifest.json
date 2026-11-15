@@ -215,5 +215,29 @@
       8
     ],
     "held_source_unchanged": true
+  },
+  "shadow_head_02580": {
+    "source": "Supplied SA2B Shadow face palette; authored crown/ear charts on existing Sonic donor geometry",
+    "unchanged_geometry": true,
+    "crown_source_faces": [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+    ],
+    "ear_source_faces": [
+      116,
+      117,
+      118,
+      119
+    ],
+    "face148_and_nose_unchanged": true,
+    "reverse_ear": "black cloth",
+    "front_ear": "tan inset sampled from sh_doll01 pixel17,27"
   }
 }

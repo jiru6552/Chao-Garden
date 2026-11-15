@@ -1,0 +1,228 @@
+{
+  "schema": "wear079-independent-freeze02-review-v1",
+  "review_utc": "2026-11-15T06:54:24.377144+00:00",
+  "result": "NO_BLOCKER_FOUND; PRESERVATION_MATCHES_FROZEN02; NONBLOCKING_RAY_CLAIM_ADVISORY",
+  "scope": "Read-only delta/code/final-asset review. No public/source edits, generation, build, Gradle, game, or test execution. Existing inventory/before/evidence tools preserved.",
+  "freeze": {
+    "path": "/workspace/.setup/wear079-runtime-source-freeze02.json",
+    "sha256": "ecc49951e871b46cc3f1c127cf618a9d2b9d6df9ec38db241e3c449e65f901ba",
+    "expected_sha256": "ecc49951e871b46cc3f1c127cf618a9d2b9d6df9ec38db241e3c449e65f901ba",
+    "file_count": 9414,
+    "bytes": 84323965,
+    "missing": [],
+    "mismatches": []
+  },
+  "delta_vs_freeze01": {
+    "file_count": 8,
+    "changed_or_added": [
+      {
+        "path": "build.gradle",
+        "freeze01_sha256": "6470551caf74bddd001f030caecd6375c496f4dd50d7540848b5c17852bb2b76",
+        "freeze02_sha256": "b383542673bd514b93d03a3e5b22b7a7b6ed7599ed02974e4ed25cf58ff36c01"
+      },
+      {
+        "path": "scripts/accessory079.py",
+        "freeze01_sha256": "26f8f97ae5d75edb404d8251b607bef86c0cce0b2e62a7cb6494d91a20e18529",
+        "freeze02_sha256": "40f4d6e152ba56d870587b7b4794e6121d08cf9f9223096e3be87d5f36f2eddf"
+      },
+      {
+        "path": "src/lionfishTest/java/com/chaogarden/client/PumpkinPortsUvTest079.java",
+        "freeze01_sha256": null,
+        "freeze02_sha256": "4abc2adb12a3077e0476ca8379684dfe937aa49a3b0dd878c2e89168e7cfa23e"
+      },
+      {
+        "path": "src/lionfishTest/java/com/chaogarden/client/WearableRigTest079.java",
+        "freeze01_sha256": "40214eb4d4ce3ac0af6e28427efdc60e8a3781733884d664e7f7dbb28da863ed",
+        "freeze02_sha256": "6613089eb4451e8f61ce3e73b0020df6f34cf1f8695b48648229bcf9aada0a08"
+      },
+      {
+        "path": "src/main/java/com/chaogarden/client/VanillaHatRenderer050.java",
+        "freeze01_sha256": "92ed36e03702d68959a46df6825a3dfe68f719da4e463efd6c3ac3e17873d366",
+        "freeze02_sha256": "61831c0de620799641f2deb887fcef248bf0650d8de60b987ebe8dded4948103"
+      },
+      {
+        "path": "src/main/resources/assets/chao_garden/models/cwe02516/press_hat_accessory.obj",
+        "freeze01_sha256": "beba3e5d219490677655179663313fe816687d8a0d0abafd232e50796694f3fd",
+        "freeze02_sha256": "55b9704ba0aaf1737d47309345c458af0a411192172816367c707f5f3b052f33"
+      },
+      {
+        "path": "src/main/resources/assets/chao_garden/models/entity/cwe_accessories/press_hat_accessory.json",
+        "freeze01_sha256": "ef867fe4a0617910fdd6e758a1cad47bbe77161cbef3b62f374d186c16e7b164",
+        "freeze02_sha256": "49fe833b7bf533bc8d0ad12df2adec9f966f7f8b42c7fb5ba7dbe3fdaa07f0f3"
+      },
+      {
+        "path": "src/main/resources/assets/chao_garden/textures/item/press_hat_accessory.png",
+        "freeze01_sha256": "dc586cc263d8c3ca80531879c7dbb8ee985dc8b4d2dfbbcbb5187c7a0317a550",
+        "freeze02_sha256": "bf6d1c0ce5642206c74b9cecc027f3f952e67500a66c397d027583b4dac64d87"
+      }
+    ],
+    "removed": [],
+    "unchanged_files": 9406
+  },
+  "press_crown": {
+    "script": {
+      "path": "scripts/accessory079.py",
+      "line": 93,
+      "search": "The crown surrounds"
+    },
+    "geometry": "Lower wall fronts are atZ=-3.25..-3.07 and backZ3.07..3.25; lower side inner planesX\u00b13.52, outerX\u00b13.7. Small upper tier and shoulder finish atY=-6.12 above unchanged head topY=-6.0. Paper panel moved to frontZ=-3.34..-3.25. Brim remains the explicit y=-3.47..-3.23 design, not part of the crown-wall ray samples.",
+    "canonical_head": [
+      -3.5,
+      -6,
+      -3,
+      3.5,
+      0,
+      3
+    ],
+    "inner_side_clearance_px": 0.02,
+    "inner_forehead_clearance_px": 0.07,
+    "upper_tier_clearance_px": 0.12,
+    "asset_consistency": {
+      "worn_entity_vertices": 288,
+      "worn_entity_faces": 72,
+      "obj_vertices": 288,
+      "item_uniform_scale": 1.842105263157895,
+      "worn_to_item_vertex_order_max_error_px": 7.578947371911227e-07,
+      "interpretation": "Worn press entity and base item OBJ match under the independently recomputed uniform fit and coordinate flip, within decimal OBJ serialization precision. Icon exists and is pinned as a changed output; reviewer did not regenerate or visually approve it."
+    },
+    "paths_changed": [
+      "scripts/accessory079.py",
+      "src/main/resources/assets/chao_garden/models/entity/cwe_accessories/press_hat_accessory.json",
+      "src/main/resources/assets/chao_garden/models/cwe02516/press_hat_accessory.obj",
+      "src/main/resources/assets/chao_garden/textures/item/press_hat_accessory.png"
+    ],
+    "conclusion": "New lower crown walls surround the unchanged head instead of being buried. No new production blocker found."
+  },
+  "pumpkin_uv": {
+    "production": {
+      "path": "src/main/java/com/chaogarden/client/VanillaHatRenderer050.java",
+      "line": 64,
+      "search": "static float[] frontUv"
+    },
+    "conclusion": "Piecewise sprite-local U maps side/bridge panels away from native eye columns; upper V0..2/16 ends above painted rows2..7, middle V2..8/16 maps native eye rows entirely into absent front-port rectangles, and lower V8..16/16 retains full mouth rows8..15. Port geometry, shell bounds, skull path, side/back/top texture mapping and actual skin are unchanged.",
+    "new_test": {
+      "path": "src/lionfishTest/java/com/chaogarden/client/PumpkinPortsUvTest079.java",
+      "meaningful_checks": [
+        "Reads Minecraft native carved_pumpkin texture from runtime classpath or generated Minecraft-resource JAR; does not copy it into mod assets.",
+        "Rasterizes five production panel ranges through production frontUv, leaves real port regions unrendered, tests finite in-range UVs.",
+        "Asserts no sampled native dark painted-eye texel survives on emitted panels for4head/eye profiles.",
+        "Asserts every native dark mouth texel remains sampled and old linear UV mapping exposes the original painted-eye artifact.",
+        "Asserts skull frontUv false branch retains old coordinate equations.",
+        "Gradle check depends on pumpkinPortsUvTest079."
+      ],
+      "limits": [
+        "Reviewer did not execute this test. It samples native texture/panel UVs, not arbitrary resource-pack art, actual shader filtering or final client appearance.",
+        "This is a meaningful regression check for four-eye artwork but does not independently prove all wearer shapes or all shell iris geometry."
+      ]
+    },
+    "real_ports": "Existing five front panels still physically omit each eye rectangle; UV remapping does not paint over a solid front."
+  },
+  "crown_ray_advisory": {
+    "severity": "nonblocking coverage/wording limitation",
+    "location": {
+      "path": "src/lionfishTest/java/com/chaogarden/client/WearableRigTest079.java",
+      "line": 67,
+      "search": "private static float outerRay"
+    },
+    "evidence": "outerRay intentionally selects minimum/maximum outermost cardinal crossing. It catches missing/buried exterior wall coverage at forehead heights instead of trusting aggregate roof/brim bounds. It does not measure nearest inner-shell clearance: press side inner face clears by0.02px while outer face clears by0.20px and the test requires0.05px for its chosen hit.",
+    "recommended_claim": "emitted exterior crown-wall coverage outside the unchanged head at sampled forehead/side rays",
+    "avoid_claim": "every inner crown surface is at least0.05px from the skin",
+    "public_source_change_requested": false
+  },
+  "preservation": [
+    {
+      "path": "src/main/java/com/chaogarden/market/MarketContent.java",
+      "baseline_sha256": "ca05a33739403bf8fb477a3eaf68622e4adb23791308363000370c7d1a4b8368",
+      "frozen02_sha256": "ca05a33739403bf8fb477a3eaf68622e4adb23791308363000370c7d1a4b8368",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/market/MarketStock.java",
+      "baseline_sha256": "02b883057b22d4fdac8173a2f098fe91484f310b6984580121b68a8202ee650c",
+      "frozen02_sha256": "02b883057b22d4fdac8173a2f098fe91484f310b6984580121b68a8202ee650c",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/market/ChaoHats.java",
+      "baseline_sha256": "bcf1f2b9e6d099f06f59a15f7a315e733e00354d5861841cf46b494803640ddf",
+      "frozen02_sha256": "bcf1f2b9e6d099f06f59a15f7a315e733e00354d5861841cf46b494803640ddf",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/cwe/CweCatalog.java",
+      "baseline_sha256": "aa834bdd965afe98ebb6f44013d76a94568b4e8890bf8b5f52cb6292f8bead5d",
+      "frozen02_sha256": "aa834bdd965afe98ebb6f44013d76a94568b4e8890bf8b5f52cb6292f8bead5d",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/cwe/CweContent.java",
+      "baseline_sha256": "d64696392172daef79baac72abfa55d5b4a7c14747c981aa5303e6437671e053",
+      "frozen02_sha256": "d64696392172daef79baac72abfa55d5b4a7c14747c981aa5303e6437671e053",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/care/ChaoCareServices.java",
+      "baseline_sha256": "28ddef34a2ff6fe17244ae130deb71931062ed44b90ae7f0a5cd66d5e4a264da",
+      "frozen02_sha256": "28ddef34a2ff6fe17244ae130deb71931062ed44b90ae7f0a5cd66d5e4a264da",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/care/ChaoCareNetwork.java",
+      "baseline_sha256": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c",
+      "frozen02_sha256": "fb2a0a20b7294c8ead7d3f4881e1d04b563db14b4757cbd7489b7fa02f726d9c",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/entity/ChaoEntity.java",
+      "baseline_sha256": "d5a89899e16a37396e88bae0e983d65344b0d11d6f5067d5aa05267d24038370",
+      "frozen02_sha256": "d5a89899e16a37396e88bae0e983d65344b0d11d6f5067d5aa05267d24038370",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/entity/ChaoEggEntity.java",
+      "baseline_sha256": "50d4fe96cce950e75bf84da7d79e998ead497ce06d4e6a12ee55e5c714b8cef1",
+      "frozen02_sha256": "50d4fe96cce950e75bf84da7d79e998ead497ce06d4e6a12ee55e5c714b8cef1",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoPartyLayer.java",
+      "baseline_sha256": "bd731963dc2d6674a7ca1384ad999465b53821a18a26708b9eb102e8ee0c63c2",
+      "frozen02_sha256": "bd731963dc2d6674a7ca1384ad999465b53821a18a26708b9eb102e8ee0c63c2",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoOverlayLayer.java",
+      "baseline_sha256": "d024498be447847858ccd2de5143ead935b361679d09a82bbc2c7ba2ca72d2b7",
+      "frozen02_sha256": "d024498be447847858ccd2de5143ead935b361679d09a82bbc2c7ba2ca72d2b7",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/com/chaogarden/client/ChaoModel.java",
+      "baseline_sha256": "7f49be658461a15f3154e61d2ec36a30a26ac23e544b64d4deb25f30268bf1d9",
+      "frozen02_sha256": "7f49be658461a15f3154e61d2ec36a30a26ac23e544b64d4deb25f30268bf1d9",
+      "unchanged": true
+    }
+  ],
+  "native_fixture_update_since_previous_review": {
+    "returned_component_assertion_added": true,
+    "location": {
+      "path": "src/main/java/com/chaogarden/test/WearableGameTests079.java",
+      "line": 101,
+      "search": "int exactReturned=0"
+    },
+    "conclusion": "The previously noted post-removal quantity-only gap is now closed: every returned/retained stack of the item must match expected components and exact total2. Valid -1/0/+1 alignment remains. No newauth/save/slot behavior changed."
+  },
+  "known_animal_part_limit": {
+    "public_ready_text": "Tall animal ears may still protrude through the solid portions of full head covers, as seen in the stump-hat case. Existing animal-part visibility is retained; this update does not add a blanket animal-part hiding rule. Saved genes and appearance data remain intact.",
+    "status": "root-reported actual-client stump-case observation; unchanged source policy corroborated by hashes",
+    "policy": "First-type crest/head-decoration concealment remains established. Full source headcovers retain animal overlays, while existing vanilla pumpkin/skull closed-mask animal hiding remains as before. This review does not authorize a broader hiding change."
+  },
+  "capture_status": {
+    "after02": "Root reports all125actualviews reviewed. This reviewer audited code/assets and freeze, not a new independent visual acceptance.",
+    "after03_f02": "planned by root; not claimed complete here",
+    "world_items": "planned by root; not claimed complete here",
+    "motion": "planned by root; not claimed complete here",
+    "multiplayer": "No new independent remote-player evidence reviewed."
+  },
+  "unresolved_blockers": []
+}

@@ -258,27 +258,27 @@ public final class NeutralSwimMorphRigTest059 {
       var part=me.getAsJsonObject();if(!part.has("neutral_swim_box_059"))continue;
       check(part.getAsJsonArray("vertices").size()==8&&part.getAsJsonArray("faces").size()==6,"Authored morph part is not one closed cuboid");
       boxes++;var target=part.getAsJsonObject("neutral_swim_box_059");
-      for(var field:target.entrySet()){var values=field.getValue().getAsJsonArray();check(values.size()==10,"Part lost ten-target correspondence");for(int x=0;x<3;x++)check(values.get(7+x).equals(values.get(4+x)),"Unused positive Fly target differs from balanced guard row");}
+      for(var field:target.entrySet()){var values=field.getValue().getAsJsonArray();check(values.size()==10,"Part lost ten-target correspondence");}
     }
     check(boxes==14,"Swim-first box budget/topology changed");
   }
   private static void development(){
     var m=asset(MODEL);var original=asset("gameplay/chao_baby");var p=poses(m);var head=solid(original,"skull__cube_0");var eyeL=solid(original,"skull__cube_2");var eyeR=solid(original,"skull__cube_3");var orb=solid(original,"emotion_dot__cube_0");
     var endpoints=new HashSet<Long>();
-    for(float age:new float[]{0,.25f,.5f,.75f,1})for(int yi=0;yi<=5;yi++)for(int xi=0;xi<=10;xi++){
+    for(float age:new float[]{0,.25f,.5f,.75f,1})for(int yi=0;yi<=10;yi++)for(int xi=0;xi<=10;xi++){
       var state=state(xi/5f-1,yi/5f-1,age);String saved=state.encode();sample(m,state);frames++;
       equal(head,solid(m,"skull__cube_0"),.00004f,"Original 7x6x6 head resized");equal(eyeL,solid(m,"skull__cube_2"),.00004f,"Left eye moved/distorted");equal(eyeR,solid(m,"skull__cube_3"),.00004f,"Right eye moved/distorted");equal(orb,solid(m,"emotion_dot__cube_0"),.00004f,"Original Neutral orb changed");
       cuboids(solid(m,"gradual_head_021"));mirrored(solid(m,"gradual_head_021"),solid(m,"gradual_head_021"),"Paired Swim fins/cap");compact(m);featureContact(m,p);wings(m,p,true);check(saved.equals(state.encode()),"Rendering changed saved data");
       if(age==1&&xi%5==0&&yi%5==0)endpoints.add(m.shapeSignature());
     }
-    check(endpoints.size()==6,"Requested six mature combinations collapsed into duplicate forms");
+    check(endpoints.size()==9,"Requested nine mature combinations collapsed into duplicate forms");
     for(float age:new float[]{0,.5f,1}){
-      for(float sf:new float[]{-1,0}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(i/50f-1,sf,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Run/Power change popped geometry"));before=now;frames++;}}
-      for(float rp:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(rp,i/100f-1,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Swim/Fly change popped geometry"));before=now;frames++;}}
+      for(float sf:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(i/50f-1,sf,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Run/Power change popped geometry"));before=now;frames++;}}
+      for(float rp:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(rp,i/50f-1,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Swim/Fly change popped geometry"));before=now;frames++;}}
     }
-    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(rp,sf,i/100f));var now=capture(m,p);surfacePlanes(m,p);maxMaturity=Math.max(maxMaturity,step(before,now,.15f,"One-percent maturity change popped geometry"));before=now;frames++;}}
+    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(rp,sf,i/100f));var now=capture(m,p);surfacePlanes(m,p);maxMaturity=Math.max(maxMaturity,step(before,now,.15f,"One-percent maturity change popped geometry"));before=now;frames++;}}
     sample(m,state(-1,-1,0));long fresh=m.shapeSignature();sample(m,state(1,0,0));check(fresh==m.shapeSignature(),"Training overrides independent fresh-adult age");
-    for(float rp:new float[]{-1,0,1}){sample(m,state(rp,0,1));long balanced=m.shapeSignature();sample(m,state(rp,1,1));check(balanced==m.shapeSignature(),"Positive Fly silently creates an unsupported secondary shape");}
+    for(float rp:new float[]{-1,0,1}){sample(m,state(rp,0,1));long balanced=m.shapeSignature();sample(m,state(rp,1,1));check(balanced!=m.shapeSignature(),"Opposite Fly still selects a duplicate balanced guard instead of its authored form");}
     var state=state(-1,-1,1);sample(m,state);long before=m.shapeSignature();float maturity=state.evolutionStrength();DriveRules.setTotal(state,ChaoState.RUN,0,new Random(59));sample(m,state);check(before!=m.shapeSignature()&&maturity==state.evolutionStrength(),"Run loss does not reverse independently from age");
     var copy=ChaoState.decode(state.encode());sample(m,copy);long loaded=m.shapeSignature();sample(m,state);check(loaded==m.shapeSignature(),"Save/reload changed sampled geometry");m.hideHeadDecorations(p);check(!p.get("gradual_head_021").visible,"Hat does not hide new head features");
   }
@@ -304,6 +304,15 @@ public final class NeutralSwimMorphRigTest059 {
     check((runFin[1]+runFin[4])*.5f<(freshFin[1]+freshFin[4])*.5f-.4f,"Run side fins do not rise above the fresh temple fins");
     check((swimFin[1]+swimFin[4])*.5f>(freshFin[1]+freshFin[4])*.5f+1.5f,"Swim side fins do not develop into hanging flippers");
     check(boxEdges(power,96)[0].length()>boxEdges(run,96)[0].length()*1.4f,"Power side fins are not intrinsically thicker and blunter than Run");
+    sample(mesh,state(0,1,1));var fly=inJointFrame(mesh,poses,"gradual_head_021",solid(mesh,"gradual_head_021"));var flyRear=boxEdges(fly,48)[2];
+    sample(mesh,state(-1,1,1));var runFly=inJointFrame(mesh,poses,"gradual_head_021",solid(mesh,"gradual_head_021"));var runFlyRear=boxEdges(runFly,48)[2];
+    sample(mesh,state(1,1,1));var powerFly=inJointFrame(mesh,poses,"gradual_head_021",solid(mesh,"gradual_head_021"));var powerFlyRear=boxEdges(powerFly,48)[2];
+    check(flyRear.y< -2.5f&&flyRear.z>1.5f,"Opposite Fly must raise the rear hood into its own fin");
+    check(runFlyRear.z>flyRear.z+.5f&&runFlyRear.length()>flyRear.length(),"Run+Fly should extend farther back than the upright pure Fly fin");
+    check(powerFlyRear.length()<runFlyRear.length()*.8f&&boxEdges(powerFly,48)[1].length()>boxEdges(runFly,48)[1].length(),"Power+Fly should be shorter and broader than Run+Fly");
+    sample(mesh,state(0,0,1));var balancedWing=select(mesh,poses,"wing_right__cube_0");
+    sample(mesh,state(0,1,1));var flyWing=select(mesh,poses,"wing_right__cube_0");
+    check(boxEdges(flyWing,0)[0].length()>boxEdges(balancedWing,0)[0].length()*1.3f&&boxEdges(flyWing,0)[1].length()>boxEdges(balancedWing,0)[1].length()*1.3f,"Opposite Fly wings must develop beyond the compact balanced pair");
   }
   private static void temporal(){
     var m=asset(MODEL);var p=poses(m);var s=state(0,0,1);UUID id=new UUID(59,590059);m.neutralSwimDevelopment(NeutralSwimAppearance059.prepare(id,s,0));var original=capture(m,p);featureContact(m,p);DriveRules.setTotal(s,ChaoState.RUN,960,new Random(59));DriveRules.setTotal(s,ChaoState.SWIM,960,new Random(59));
@@ -313,9 +322,31 @@ public final class NeutralSwimMorphRigTest059 {
     DriveRules.setTotal(s,ChaoState.RUN,0,new Random(59));DriveRules.setTotal(s,ChaoState.SWIM,0,new Random(59));m.neutralSwimDevelopment(NeutralSwimAppearance059.prepare(id,s,22));equal(before,capture(m,p),.00004f,"Reversal used a stale display frame");featureContact(m,p);
     for(int t=23;t<=42;t++){m.neutralSwimDevelopment(NeutralSwimAppearance059.prepare(id,s,t));featureContact(m,p);}equal(original,capture(m,p),.00004f,"Reversal failed to recover centered form");
   }
+  /** Both directions traverse the full signed coordinate under the same
+   * existing twenty-tick presentation easing, without resetting age/type. */
+  private static void reciprocalTemporal(){
+    for(float rp:new float[]{-1,0,1}){
+      var mesh=asset(MODEL);var poses=poses(mesh);var state=state(rp,-1,1);var id=new UUID(59,590720+Math.round(rp));
+      mesh.neutralSwimDevelopment(NeutralSwimAppearance059.prepare(id,state,0));var origin=capture(mesh,poses);Capture before=origin;
+      for(int direction:new int[]{1,-1}){
+        int start=direction==1?1:22;
+        DriveRules.setTotal(state,direction==1?ChaoState.SWIM:ChaoState.FLY,0,new Random(59));
+        DriveRules.setTotal(state,direction==1?ChaoState.FLY:ChaoState.SWIM,960,new Random(59));
+        mesh.neutralSwimDevelopment(NeutralSwimAppearance059.prepare(id,state,start));equal(before,capture(mesh,poses),.00004f,"Reciprocal edit snapped its first displayed frame");
+        for(int tick=start+1;tick<=start+20;tick++){
+          mesh.neutralSwimDevelopment(NeutralSwimAppearance059.prepare(id,state,tick));var now=capture(mesh,poses);
+          maxEdit=Math.max(maxEdit,step(before,now,1,"Reciprocal edit interpolation jumped a model pixel"));featureContact(mesh,poses);wings(mesh,poses,true);before=now;frames++;
+        }
+        sample(mesh,state);equal(before,capture(mesh,poses),.00004f,"Reciprocal edit did not reach its authoritative endpoint");
+        near(NeutralSwimMorphology059.sample(state).swimFly(),direction,.000001f,"Reciprocal edit still clamps opposing training");
+        check(state.lockedPrimaryType()==ChaoState.SWIM_TYPE&&state.lockedAlignment()==0,"Reciprocal edit changed first identity/alignment");
+      }
+      equal(origin,before,.00004f,"Full Fly-to-Swim reversal failed to recover the original geometry");
+    }
+  }
   private static void motion()throws Exception{
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");var rig=new OfficialChaoRig(clips,NeutralSwimMorphRigTest059::asset);var expected=asset(MODEL);int serial=0;
-    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0})for(float rp:new float[]{-1,0,1})for(var mode:List.of(OfficialChaoRig.Motion.CRAWL,OfficialChaoRig.Motion.WALK,OfficialChaoRig.Motion.RUN,OfficialChaoRig.Motion.SIT,OfficialChaoRig.Motion.SWIM,OfficialChaoRig.Motion.GLIDE,OfficialChaoRig.Motion.HELD))for(int tick:new int[]{0,10,20}){
+    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1})for(var mode:List.of(OfficialChaoRig.Motion.CRAWL,OfficialChaoRig.Motion.WALK,OfficialChaoRig.Motion.RUN,OfficialChaoRig.Motion.SIT,OfficialChaoRig.Motion.SWIM,OfficialChaoRig.Motion.GLIDE,OfficialChaoRig.Motion.HELD))for(int tick:new int[]{0,10,20}){
       var s=state(rp,sf,age);String saved=s.encode();String key=OfficialChaoRig.geometryKey(s);rig.prepareDevelopment(key,s);rig.animateGameplay(key,new UUID(59,++serial),mode,tick,1,.05f,0,0,0,0,false);rig.development(s);sample(expected,s);check(rig.finite(),"Lionfish pose nonfinite");check(rig.sampledMesh().shapeSignature()==expected.shapeSignature(),"Production selection skipped NeutralSwim059");check(rig.sourceGeometryKey().equals("baby"),"UV/attachment family changed");check(saved.equals(s.encode()),"Motion changed saved state");featureContact(rig.sampledMesh(),rig.poses());
       try{wings(rig.sampledMesh(),rig.poses(),false);}catch(AssertionError failure){var wingMatrix=new PoseStack();rig.sampledMesh().transformBone("wing_left",wingMatrix,rig.poses());var body=rig.poses().get("body");throw new AssertionError("Wing frame age="+age+" rp="+rp+" sf="+sf+" mode="+mode+" tick="+tick+" bodyScale="+body.sx+","+body.sy+","+body.sz+" leftWingMatrix="+Arrays.toString(wingMatrix.last().pose().get(new float[16]))+"; "+failure.getMessage(),failure);}
       motionFrames++;
@@ -330,8 +361,8 @@ public final class NeutralSwimMorphRigTest059 {
   private static void bookTipSurfaces()throws Exception{
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
     var quiet=new LionfishQuietToyClip049();
-    for(int tick:new int[]{12,36,72,132,156}){
-      var s=state(1,-1,1);var rig=new OfficialChaoRig(clips,NeutralSwimMorphRigTest059::asset);String key=OfficialChaoRig.geometryKey(s);
+    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1})for(int tick:new int[]{12,36,72,132,156}){
+      var s=state(rp,sf,1);var rig=new OfficialChaoRig(clips,NeutralSwimMorphRigTest059::asset);String key=OfficialChaoRig.geometryKey(s);
       rig.prepareDevelopment(key,s);rig.animateGameplay(key,new UUID(59,590059+tick),OfficialChaoRig.Motion.PLAY,tick,0,0,0,0,0,0,false);rig.development(s);
       float weight=com.chaogarden.toys.QuietToyPlayRules049.presence(tick);
       ChaoQuietToyAnimation049.pose(rig.poses(),rig::transformBone,rig.toyPalm(false),rig.toyPalm(true),
@@ -355,7 +386,7 @@ public final class NeutralSwimMorphRigTest059 {
   private static void baselineHeadGuard()throws Exception{
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
     var guard=OfficialChaoRig.class.getDeclaredField("broadWalkHead");guard.setAccessible(true);var power=OfficialChaoRig.class.getDeclaredField("powerSwimWeight");power.setAccessible(true);
-    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0})for(float rp:new float[]{-1,0,1}){
+    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1}){
       var state=state(rp,sf,age);String saved=state.encode(),key=OfficialChaoRig.geometryKey(state);var id=new UUID(59,599059);
       var actual=new OfficialChaoRig(clips,NeutralSwimMorphRigTest059::asset);actual.prepareDevelopment(key,state);
       check(guard.getBoolean(actual),"Every Swim-first corner retains baseline full-head walking clearance");near(power.getFloat(actual),Math.max(0,rp)*age,.000001f,"Reversible Power arm spread remains independent of baseline head clearance");
@@ -374,7 +405,7 @@ public final class NeutralSwimMorphRigTest059 {
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
     var clocks=OfficialChaoRig.class.getDeclaredField("gaitClocks");clocks.setAccessible(true);var phase=com.chaogarden.core.ChaoGaitClock.class.getDeclaredField("phase");phase.setAccessible(true);
     var guard=OfficialChaoRig.class.getDeclaredField("broadWalkHead");guard.setAccessible(true);
-    for(int target=0;target<7;target++){
+    for(int target=0;target<10;target++){
       float rp=target==0?0:(target-1)%3-1,sf=target==0?0:(target-1)/3-1,age=target==0?0:1;var state=state(rp,sf,age);String saved=state.encode(),key=OfficialChaoRig.geometryKey(state);var id=new UUID(59,599100+target);
       var rig=new OfficialChaoRig(clips,NeutralSwimMorphRigTest059::asset);rig.prepareDevelopment(key,state);check(guard.getBoolean(rig),"Fixed head needs its guard at every body-growth corner");
       for(int breathing:new int[]{-1,0,1}){
@@ -399,9 +430,9 @@ public final class NeutralSwimMorphRigTest059 {
   }
   private static void coats(){
     var m=asset(MODEL);var p=poses(m);
-    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0}){var s=state(rp,sf,1);sample(m,s);var reference=capture(m,p);for(int color=0;color<ChaoState.COLORS.length;color++)for(int jewel=0;jewel<ChaoState.JEWELS.length;jewel++)if(color==0||jewel==0)for(boolean shiny:new boolean[]{false,true})for(boolean twoTone:new boolean[]{false,true}){s.expressedColor=color;s.expressedJewel=jewel;s.shiny=shiny;s.twoTone=twoTone;sample(m,s);equal(reference,capture(m,p),0,"Color/shine changed form/UV");coatCases++;}}
+    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}){var s=state(rp,sf,1);sample(m,s);var reference=capture(m,p);for(int color=0;color<ChaoState.COLORS.length;color++)for(int jewel=0;jewel<ChaoState.JEWELS.length;jewel++)if(color==0||jewel==0)for(boolean shiny:new boolean[]{false,true})for(boolean twoTone:new boolean[]{false,true}){s.expressedColor=color;s.expressedJewel=jewel;s.shiny=shiny;s.twoTone=twoTone;sample(m,s);equal(reference,capture(m,p),0,"Color/shine changed form/UV");coatCases++;}}
   }
   public static void main(String[] args)throws Exception{
-    long start=System.nanoTime();topology();development();silhouettes();temporal();motion();bookTipSurfaces();stableCache();baselineHeadGuard();headTorsoContinuity();coats();String report="NeutralSwim059: "+checks+" checks; "+frames+" emitted age/axis/edit frames; "+solids+" closed rectangular-box samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coatCases+" coat/shape cases; "+orbPairs+" actual orb/feature separation checks; "+connectedFeatures+" connected feature samples; "+wingSamples+" emitted closed-wing samples; "+hingeSamples+" original-edge hinge samples; "+bookSurfaceFrames+" production quiet-book surface frames; "+baselineGuardFrames+" actual baseline walking-head guard comparisons; "+surfacePairs+" actual same-facing head/feature plane-pair checks; "+headTorsoFrames+" actual WALK head/torso SAT continuity frames; maximum hinge drift="+maxHinge+" model pixels; maximum axis step="+maxStep+" model pixels; maximum20tick edit step="+maxEdit+"; maximum1pct maturity step="+maxMaturity+"; seconds="+(System.nanoTime()-start)/1e9+". Fixed original head/face/orb/59-joint rig; six distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.\n";Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral-swim059-results.txt"),report);System.out.print(report);
+    long start=System.nanoTime();topology();development();silhouettes();temporal();reciprocalTemporal();motion();bookTipSurfaces();stableCache();baselineHeadGuard();headTorsoContinuity();coats();String report="NeutralSwim059: "+checks+" checks; "+frames+" emitted age/axis/edit frames; "+solids+" closed rectangular-box samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coatCases+" coat/shape cases; "+orbPairs+" actual orb/feature separation checks; "+connectedFeatures+" connected feature samples; "+wingSamples+" emitted closed-wing samples; "+hingeSamples+" original-edge hinge samples; "+bookSurfaceFrames+" production quiet-book surface frames; "+baselineGuardFrames+" actual baseline walking-head guard comparisons; "+surfacePairs+" actual same-facing head/feature plane-pair checks; "+headTorsoFrames+" actual WALK head/torso SAT continuity frames; maximum hinge drift="+maxHinge+" model pixels; maximum axis step="+maxStep+" model pixels; maximum20tick edit step="+maxEdit+"; maximum1pct maturity step="+maxMaturity+"; seconds="+(System.nanoTime()-start)/1e9+". Fixed original head/face/orb/59-joint rig; nine distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.\n";Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral-swim059-results.txt"),report);System.out.print(report);
   }
 }

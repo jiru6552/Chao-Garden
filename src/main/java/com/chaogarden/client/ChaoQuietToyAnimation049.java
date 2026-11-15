@@ -103,7 +103,9 @@ final class ChaoQuietToyAnimation049 {
   }
   static void pose(Map<String,ChaoMeshAsset.Pose> poses,BiConsumer<String,PoseStack> anchor,float[] right,float[] left,String kind,float weight,float sweep,float page,float stroke,float pen,float tick,float scale,Function<String,float[]> bounds){
     ChaoInstrumentFocus.apply(poses,weight);poses.get("skull").rx+=.025f*weight;
-    if(kind.equals(QuietToyPlayRules049.CRAYONS))ChaoProneToyPose051.apply(poses,anchor,bounds,weight,.25f,.6f);
+    // A flatter head angle brings the neck down while keeping the chin clear
+    // of the supporting paw; the original head box and paper grips stay fixed.
+    if(kind.equals(QuietToyPlayRules049.CRAYONS))ChaoProneToyPose051.apply(poses,anchor,bounds,weight,.20f,0);
     for(boolean side:new boolean[]{false,true}){var arm=poses.get(side?"arm_left":"arm_right");arm.x*=1-weight;arm.y=arm.y*(1-weight)-(kind.equals(QuietToyPlayRules049.CRAYONS)?.4f:0)*weight;arm.z=arm.z*(1-weight)-(kind.equals(QuietToyPlayRules049.BROOM)?1.6f:kind.equals(QuietToyPlayRules049.BOOK)?2.0f:.2f)*weight;}
     float ease=weight*weight*(3-2*weight);Vector3f a,b;
     if(kind.equals(QuietToyPlayRules049.BROOM)){var matrix=broomMatrix(weight,sweep,scale);a=broomTarget(matrix,false);b=broomTarget(matrix,true);}

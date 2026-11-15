@@ -9,6 +9,7 @@ public final class GardenConfig {
   public static final ModConfigSpec.BooleanValue NATURAL_DEATH, EXPANDED_RARE_ACTIONS, BULLY_CHAO, CWE_FRUIT_REBALANCE, MONSTER_EVOLUTION, MONSTER_TRANSPARENCY_FIX;
 
   public static final ModConfigSpec.ConfigValue<java.util.List<? extends String>> SPACE_MOD_IDS, MOON_DIMENSION_IDS;
+  public static final ModConfigSpec.IntValue BABY_HOSTILE_KILL_ALIGNMENT_POINTS, BABY_PEACEFUL_KILL_ALIGNMENT_POINTS;
 
   static {
     var b = new ModConfigSpec.Builder();
@@ -28,6 +29,13 @@ public final class GardenConfig {
     NATURAL_DEATH =
         b.comment("When false, unhappy Chao also reincarnate instead of dying of old age.")
             .define("naturalDeath", true);
+    b.pop();
+    b.comment("Alignment for an actual baby Chao accessory. Displayed points use -100 Dark to +100 Hero; adults are unchanged.")
+        .push("equippedBabyAlignment");
+    BABY_HOSTILE_KILL_ALIGNMENT_POINTS = b.comment("Hero points per credited hostile death while a baby is equipped. Zero disables this kill influence. Ambiguous neutral creatures are excluded unless explicitly classified by datapack tags.")
+        .defineInRange("hostileKillPoints",1,0,100);
+    BABY_PEACEFUL_KILL_ALIGNMENT_POINTS = b.comment("Dark points per credited peaceful mob, villager or other-player death while a baby is equipped. Zero disables this kill influence.")
+        .defineInRange("peacefulKillPoints",1,0,100);
     b.pop();
     b.comment("Original-game rules remain the default for rare Chao; selected CWE behavior can be enabled here.")
         .push("gardenBehavior");

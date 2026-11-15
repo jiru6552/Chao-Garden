@@ -11,40 +11,24 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import org.joml.Vector3f;
 
-/** Tiny skull-local eyelid strokes fitted to the actual native eye landmarks. */
+/** Pixel face glyphs fitted to the actual native skull landmarks. */
 final class ChaoExpressionLayer025 extends RenderLayer<ChaoEntity,ChaoModel> {
+  static final float MOUTH_DROP076=.25f;
   private static final ResourceLocation WHITE=ResourceLocation.fromNamespaceAndPath(
       "chao_garden","textures/entity/chao/expression_stroke025.png");
   ChaoExpressionLayer025(RenderLayerParent<ChaoEntity,ChaoModel> parent){super(parent);}
 
   @Override public void render(PoseStack stack,MultiBufferSource buffers,int light,ChaoEntity chao,
       float swing,float amount,float partial,float age,float yaw,float pitch) {
-    var model=getParentModel();int expression=model.eyeExpression();
-    if(expression==0||chao.officialComparison()||!model.officialActive()||chao.isInvisible())return;
+    var model=getParentModel();var face=model.resolvedFace076();
+    if(face==null||face.nativeExcluded()||chao.officialComparison()||!model.officialActive()||chao.isInvisible())return;
     float[] eyes=model.accessoryEyes();if(eyes==null||eyes[3]<=0)return;
     stack.pushPose();model.transformAccessoryAnchor("skull",stack);
-    var vertices=buffers.getBuffer(RenderType.entityCutoutNoCull(WHITE));
-    float width=Math.min(1,eyes[3]*.48f),z=eyes[2]-.025f;
-    for(int side:new int[]{-1,1}) {
-      float x=eyes[0]+side*eyes[3],y=eyes[1];
-      if(expression==2) {
-        // > <, the distinctive squeezed-eye water distress in the supplied clip.
-        float tip=x-side*width*.10f,outer=x+side*width*.85f;
-        stroke(stack,vertices,light,outer,y-width*.55f,tip,y,z,.20f);
-        stroke(stack,vertices,light,tip,y,outer,y+width*.55f,z,.20f);
-      } else if(expression==1) {
-        stroke(stack,vertices,light,x-width*.85f,y+width*.20f,x-width*.40f,y-width*.30f,z,.19f);
-        stroke(stack,vertices,light,x-width*.40f,y-width*.30f,x+width*.40f,y-width*.30f,z,.19f);
-        stroke(stack,vertices,light,x+width*.40f,y-width*.30f,x+width*.85f,y+width*.20f,z,.19f);
-      } else {
-        // A quiet sleep arc; a blink uses a smaller nearly horizontal line.
-        float bend=expression==3?width*.18f:width*.04f;
-        stroke(stack,vertices,light,x-width*.83f,y-bend*.5f,x,y+bend,z,.18f);
-        stroke(stack,vertices,light,x,y+bend,x+width*.83f,y-bend*.5f,z,.18f);
-      }
-    }
+    float alpha=chao.state().monsterAlpha();
+    var vertices=buffers.getBuffer(alpha<1?RenderType.entityTranslucent(WHITE):RenderType.entityCutoutNoCull(WHITE));
+    emitFace076(stack,vertices,light,face,eyes,model.toyMouth(),alpha);
     stack.popPose();
-    if(expression==3&&chao.isResting()) {
+    if(face.eyes()==com.chaogarden.core.ChaoFaceRules076.Eyes.SLEEP) {
       // SA2's sleeping indicator is a golden spiral, not an alert/question orb.
       stack.pushPose();model.transformAccessoryAnchor("emotion_dots",stack);
       var skull=model.officialPoses().get("skull");
@@ -61,9 +45,47 @@ final class ChaoExpressionLayer025 extends RenderLayer<ChaoEntity,ChaoModel> {
     }
   }
 
-  private static void stroke(PoseStack stack,VertexConsumer vertices,int light,
-      float x1,float y1,float x2,float y2,float z,float thickness) {
-    stroke(stack,vertices,light,x1,y1,x2,y2,z,thickness,0xff17232b);
+  /** Shared production emitter for numerical checks using the actual rig's skull-local anchors. */
+  static void emitFace076(PoseStack stack,VertexConsumer vertices,int light,
+      com.chaogarden.core.ChaoFaceRules076.Resolved face,float[] eyes,float[] mouth,float alpha) {
+    if(face==null||face.nativeExcluded()||!finiteAnchor(eyes,4)||eyes[3]<=0||!Float.isFinite(alpha))return;
+    alpha=Math.max(0,Math.min(1,alpha));
+    var glyphPose=stack.last();var glyphNormal=glyphPose.transformNormal(new Vector3f(0,0,-1),new Vector3f());
+    var glyphVertex=new Vector3f();
+    float scale=Math.min(1,eyes[3]*.5f),z=eyes[2]-.025f;
+    for(int side:new int[]{-1,1}) {
+      float x=eyes[0]+side*eyes[3];
+      for(var pixel:ChaoFaceGlyphs076.eye(face,side))
+        pixel(glyphPose,glyphNormal,glyphVertex,vertices,light,x+pixel.x()*scale,eyes[1]+pixel.y()*scale,z+pixel.depth(),
+            pixel.width()*scale,pixel.height()*scale,fade(pixel.color(),alpha));
+    }
+    if(finiteAnchor(mouth,3))for(var pixel:ChaoFaceGlyphs076.mouth(face.mouth()))
+      pixel(glyphPose,glyphNormal,glyphVertex,vertices,light,mouth[0]+pixel.x(),mouth[1]+MOUTH_DROP076+pixel.y(),mouth[2]-.02f+pixel.depth(),
+          pixel.width(),pixel.height(),fade(pixel.color(),alpha));
+  }
+
+  private static boolean finiteAnchor(float[] anchor,int count) {
+    if(anchor==null||anchor.length<count)return false;
+    for(int i=0;i<count;i++)if(!Float.isFinite(anchor[i]))return false;
+    return true;
+  }
+
+  private static int fade(int color,float alpha) {
+    return color&0x00ffffff|Math.round((color>>>24)*alpha)<<24;
+  }
+
+  private static void pixel(PoseStack.Pose pose,Vector3f normal,Vector3f vertex,VertexConsumer vertices,int light,
+      float x,float y,float z,float width,float height,int color) {
+    pixelVertex(pose,normal,vertex,vertices,light,x,y,z,0,0,color);
+    pixelVertex(pose,normal,vertex,vertices,light,x+width,y,z,1,0,color);
+    pixelVertex(pose,normal,vertex,vertices,light,x+width,y+height,z,1,1,color);
+    pixelVertex(pose,normal,vertex,vertices,light,x,y+height,z,0,1,color);
+  }
+
+  private static void pixelVertex(PoseStack.Pose pose,Vector3f normal,Vector3f vertex,VertexConsumer vertices,
+      int light,float x,float y,float z,float u,float v,int color) {
+    pose.pose().transformPosition(x/16f,y/16f,z/16f,vertex);
+    vertices.addVertex(vertex.x,vertex.y,vertex.z,color,u,v,OverlayTexture.NO_OVERLAY,light,normal.x,normal.y,normal.z);
   }
   private static void stroke(PoseStack stack,VertexConsumer vertices,int light,
       float x1,float y1,float x2,float y2,float z,float thickness,int color) {

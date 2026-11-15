@@ -145,7 +145,7 @@ def clothing_source(name,info,entity=False,node=None,local=False):
  if entity:m=mapped(m,lambda p:(p[0],-p[1],-p[2]))
  return m,mat
 
-def make_clothing():
+def make_clothing_02516():
  meshes={};materials={};items=[]
  for name,key in MAP.items():
   info=ACCESS[key];m,mat=clothing_source(name,info)
@@ -190,6 +190,12 @@ def make_clothing():
   data['authored_metadata']={'source':'Supplied CWE 9.6.2.2','release':'0.25.16','fit':'source surfaces adapted to existing semantic anchors'};write(A/'models/entity/cwe_accessories'/(name+'.json'),data)
  return items
 
+def make_clothing():
+ # All registered wardrobe representations share the 0.25.79 block translation.
+ # Kept separate from toys/fruit so a focused wardrobe rebuild is reversible.
+ from accessory079 import make_clothing079
+ return make_clothing079(sys.modules[__name__])
+
 def make_objects():
  rows=[]
  for name,info in OBJECTS.items():
@@ -216,4 +222,12 @@ def main():
  from lobby_material_manifest0255 import render_textures
  p=ROOT/'art/lobby_garden_manifest_025.json';data=json.loads(p.read_text());data['render_textures']=render_textures(ROOT,data['block_atlas_textures']);write(p,data)
  write(D/'generated.json',{'release':'0.25.16','items':items,'wearables':list(MAP),'source_objects':list(OBJECTS),'source_clothing_parts':13});print('CWE source assets:',len(items),'items,13 articulated wearable parts,2 toys and5fruit crops')
-if __name__=='__main__':main()
+if __name__=='__main__':
+ if '--clothing-only' in sys.argv:
+  names=make_clothing()
+  # Preserve other source objects' existing MTL bindings during focused runs.
+  path=A/'models/cwe02516/materials.mtl'
+  existing=set(re.findall(r'^newmtl (\S+)',path.read_text(),re.MULTILINE)) if path.exists() else set()
+  write(path,'\n'.join(f'newmtl {k}\nKd 1.0 1.0 1.0\nmap_Kd #{k}\n' for k in sorted(existing|MATERIALS)))
+  print('0.25.79 wardrobe:',len(names),'items; no toy/fruit assets regenerated')
+ else:main()

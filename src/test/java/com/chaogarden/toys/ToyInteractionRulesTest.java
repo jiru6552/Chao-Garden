@@ -21,7 +21,7 @@ public final class ToyInteractionRulesTest {
       check(!ToyInteractionRules.ballWithinReach(1.7*1.7,0,width),"No remote ball kicks");
       check(!ToyInteractionRules.ballWithinReach(contact*contact,.5,width),"No kicking a ball on another level");
     }
-    check(ToyInteractionRules.ballKickSwing(0)==0&&ToyInteractionRules.ballKickSwing(8)==0,"Kick has quiet endpoints");
+    check(ToyInteractionRules.ballKickSwing(0)==0&&ToyInteractionRules.ballKickSwing(ToyInteractionRules.BALL_KICK_TICKS)==0,"Kick has quiet endpoints");
     check(Math.abs(ToyInteractionRules.ballKickSwing(ToyInteractionRules.BALL_CONTACT_TICK)-1)<1e-9,"Contact at maximum foot extension");
     check(ToyInteractionRules.movingBallPlayer("chao_ball",-1),"Ball pursuit retains gait");
     check(!ToyInteractionRules.movingBallPlayer("chao_ball",4),"Kick pauses locomotion");

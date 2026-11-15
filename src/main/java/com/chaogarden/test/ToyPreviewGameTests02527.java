@@ -5,6 +5,7 @@ import com.chaogarden.core.ChaoState;
 import com.chaogarden.entity.ChaoEntity;
 import com.chaogarden.toys.*;
 import java.util.*;
+import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.*;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
@@ -22,14 +23,14 @@ public final class ToyPreviewGameTests02527 {
     if(e.getLevel().isClientSide||e.getSound()==null)return;
     SOUNDS.forEach((c,events)->{if(c.level()==e.getLevel()&&e.getPosition().distanceToSqr(c.position())<4)events.add(e.getSound().value().getLocation()+"@"+e.getLevel().getGameTime());});
   }
-  private record Fixture(ChaoEntity c,ServerPlayer p){}
+  private record Fixture(ChaoEntity c,ServerPlayer p,BlockPos toySite){}
   private static Fixture fixture(GameTestHelper h,boolean adult){
     var pos=RattleGameTests02520.floor(h);h.getLevel().setBlock(pos,Blocks.AIR.defaultBlockState(),3);
     var c=RattleGameTests02520.actor(h,pos,adult,ChaoState.NORMAL,false);c.goalSelector.removeAllGoals(g->true);c.setOnGround(true);
     var p=TestConnections.makeServerPlayer(h);p.getInventory().clearContent();p.teleportTo(c.getX()+2,c.getY(),c.getZ());c.owner=p.getUUID();
     SOUNDS.put(c,new ArrayList<>());
     h.testInfo.addListener(new GameTestListener(){public void testStructureLoaded(GameTestInfo i){}public void testAddedForRerun(GameTestInfo a,GameTestInfo b,GameTestRunner r){}public void testPassed(GameTestInfo i,GameTestRunner r){clean();}public void testFailed(GameTestInfo i,GameTestRunner r){clean();}private void clean(){ToyPreview.stop(c);SOUNDS.remove(c);c.discard();if(p.server.getPlayerList().getPlayer(p.getUUID())!=null)p.server.getPlayerList().remove(p);}});
-    return new Fixture(c,p);
+    return new Fixture(c,p,pos);
   }
   private static int command(ServerPlayer p,String text,int permission){
     try{return p.server.getCommands().getDispatcher().execute(text,p.createCommandSourceStack().withPermission(permission));}
@@ -37,8 +38,57 @@ public final class ToyPreviewGameTests02527 {
   }
   private static int command(ServerPlayer p,String text){return command(p,text,2);}
   private static String preview(String id){return "chao "+(id.equals("sit")?"testpose ":"testtoy ")+id;}
-  private static int cues(String id){return switch(id){case "sit"->0;case "rattle"->29;case "bubble_wand"->3;case "maracas"->31;case "castanets"->15;case "cymbals"->4;case "drum","guitar"->16;default->8;};}
-  private static String event(String id){return id.equals("triangle")?"minecraft:block.note_block.bell":id.equals("trumpet")?"minecraft:block.note_block.didgeridoo":id.equals("flute")?"minecraft:block.note_block.flute":id.equals("drum")?"minecraft:block.note_block.basedrum":id.equals("bubble_wand")?"minecraft:block.bubble_column.bubble_pop":"chao_garden:toy."+(id.equals("bell")?"hand_bell":id);}
+  // Independent authored expectations, not calls to the production sound predicates.
+  private static int cues(String id){return switch(id){
+    case "sit","sonic_doll","shadow_doll","picture_book","crayons"->0;
+    case "toy_car","cymbals"->4;case "rattle"->29;case "bubble_wand"->3;
+    case "maracas"->31;case "castanets"->15;case "drum","guitar"->16;default->8;
+  };}
+  private static String event(String id){return switch(id){
+    case "rocking_horse"->"minecraft:block.wood.step";
+    case "pogo_stick"->"chao_garden:toy.pogo";
+    case "toy_car"->"chao_garden:toy.car";
+    case "sonic_doll","shadow_doll"->"chao_garden:toy.doll";
+    case "picture_book"->"chao_garden:toy.book_page";
+    case "crayons"->"chao_garden:toy.crayon";
+    case "triangle"->"minecraft:block.note_block.bell";
+    case "trumpet"->"minecraft:block.note_block.didgeridoo";
+    case "flute"->"minecraft:block.note_block.flute";
+    case "drum"->"minecraft:block.note_block.basedrum";
+    case "bubble_wand"->"minecraft:block.bubble_column.bubble_pop";
+    default->"chao_garden:toy."+(id.equals("bell")?"hand_bell":id);
+  };}
+  private static boolean physicalMount(String id){return id.equals("rocking_horse")||id.equals("pogo_stick");}
+  private static int physicalSources(GameTestHelper h,Fixture f,String id){
+    int count=0;
+    for(var at:BlockPos.betweenClosed(f.toySite.offset(-4,-1,-4),f.toySite.offset(4,3,4)))
+      if(h.getLevel().getBlockState(at).is(ToyContent.block("chao_"+id)))count++;
+    return count;
+  }
+  /** Hand previews stay source-free. Mounted previews reserve one real prop. */
+  private static void prepareMount(GameTestHelper h,Fixture f,String id){
+    if(!physicalMount(id))return;
+    // The old generic fixture put its keeper at this former toy center. Move
+    // the keeper behind the Chao so it cannot block the real mounting sweep.
+    f.p.teleportTo(f.c.getX()-2,f.c.getY(),f.c.getZ());
+    h.getLevel().setBlock(f.toySite,ToyContent.block("chao_"+id).defaultBlockState(),3);
+    h.assertTrue(h.getLevel().getBlockState(f.toySite).is(ToyContent.block("chao_"+id))
+        &&!h.getLevel().getBlockState(f.toySite).getValue(ChaoToyBlock.PLAYING)
+        &&physicalSources(h,f,id)==1,"exactly one idle physical mount is supplied");
+  }
+  /** These fixed times describe the seven revised garden-toy clips only. */
+  private static List<String> expectedGardenCues(String id,long start,int cycles){
+    int[] times=switch(id){
+      case "rocking_horse","pogo_stick"->new int[]{24,40,56,72,88,104,120,136};
+      case "toy_car"->new int[]{32,64,96,128};
+      case "sonic_doll","shadow_doll","picture_book","crayons"->new int[0];
+      default->null;
+    };
+    if(times==null)return null;
+    var result=new ArrayList<String>();
+    for(int cycle=0;cycle<cycles;cycle++)for(int tick:times)result.add(event(id)+"@"+(start+cycle*160+tick));
+    return result;
+  }
   private static List<String> sounds(ChaoEntity c,String id){return SOUNDS.get(c).stream().filter(s->s.startsWith(event(id)+"@")).toList();}
   @GameTestGenerator public static Collection<TestFunction> previews(){
     var tests=new ArrayList<TestFunction>();int[] n={0};
@@ -55,11 +105,13 @@ public final class ToyPreviewGameTests02527 {
     return tests;
   }
   private static void play(GameTestHelper h,String id,boolean adult,boolean loop){
-    var f=fixture(h,adult);var c=f.c;String state=c.state().encode();boolean stay=c.isStaying();
+    var f=fixture(h,adult);var c=f.c;prepareMount(h,f,id);String state=c.state().encode();boolean stay=c.isStaying();
     h.assertTrue(command(f.p,preview(id)+(loop?" loop":" once"))==1,"real command starts "+id);
+    if(physicalMount(id))h.assertTrue(f.toySite.equals(c.toyTarget())
+        &&h.getLevel().getBlockState(f.toySite).getValue(ChaoToyBlock.PLAYING),"preview claims the supplied physical mount");
     h.assertTrue(c.isNoAi()&&c.toyPlayingKind().equals(id.equals("sit")?ToyPreview.SITTING_KIND:"chao_"+id),"normal synced clock is active");
     long start=h.getLevel().getGameTime();
-    h.onEachTick(()->{if(ToyPreview.active(c)){ToyPreview.tick(c);ToyPreview.tick(c);h.assertTrue(c.state().encode().equals(state),"preview freezes saved care/genetics/age/lessons");h.assertTrue(c.getHeldChaoItem().isEmpty(),"no real prop minted");}});
+    h.onEachTick(()->{if(ToyPreview.active(c)){ToyPreview.tick(c);ToyPreview.tick(c);h.assertTrue(c.state().encode().equals(state),"preview freezes saved care/genetics/age/lessons");h.assertTrue(c.getHeldChaoItem().isEmpty()&&c.getMainHandItem().isEmpty(),"no real prop minted");}});
     h.runAtTickTime(loop?325:160,()->{
       if(loop){h.assertTrue(ToyPreview.active(c),"loop remains active after two full cycles");h.assertTrue(command(f.p,preview(id)+" stop")==1,"per-toy stop works");}
       else ToyPreview.tick(c);
@@ -67,6 +119,20 @@ public final class ToyPreviewGameTests02527 {
       h.assertTrue(c.state().encode().equals(state),"no lesson, reward, age or care mutation");
       var events=sounds(c,id);h.assertTrue(events.size()==cues(id)*(loop?2:1),"exact real sound counts: "+id+" "+events);
       h.assertTrue(events.stream().distinct().count()==events.size(),"double ticks cannot duplicate cues");
+      var expected=expectedGardenCues(id,start,loop?2:1);
+      if(expected!=null){
+        h.assertTrue(events.equals(expected),"independently authored garden-toy cue timestamps: "+events+" expected "+expected);
+        var activity=SOUNDS.get(c).stream().filter(e->e.startsWith("chao_garden:toy.")||e.startsWith("minecraft:block.wood.step@")).toList();
+        h.assertTrue(activity.equals(expected),"no unexpected generic or duplicated garden-toy sound: "+activity);
+      }
+      if(physicalMount(id)){
+        var source=h.getLevel().getBlockState(f.toySite);
+        h.assertTrue(source.is(ToyContent.block("chao_"+id))&&!source.getValue(ChaoToyBlock.PLAYING)
+            &&source.getValue(ChaoToyBlock.FRAME)==0&&source.getRenderShape()==net.minecraft.world.level.block.RenderShape.MODEL,
+            "the same physical mount becomes visible and idle after playback");
+        h.assertTrue(physicalSources(h,f,id)==1,"preview never duplicates the supplied physical source");
+        h.assertTrue(!c.isNoGravity()&&c.toyTarget()==null&&!ToyContent.isPlaying(c),"physical mount releases gravity and synchronized ownership");
+      }
       for(var item:h.getLevel().getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,c.getBoundingBox().inflate(4)))h.assertTrue(false,"preview created a dropped item");
       h.succeed();
     });

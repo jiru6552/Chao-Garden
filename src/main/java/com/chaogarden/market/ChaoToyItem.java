@@ -22,6 +22,21 @@ public final class ChaoToyItem extends BlockItem {
   }
 
   @Override
+  public net.minecraft.world.InteractionResultHolder<ItemStack> use(net.minecraft.world.level.Level level,Player player,InteractionHand hand){
+    if(!com.chaogarden.toys.FloatToyContent080.kind(toy))return super.use(level,player,hand);
+    var stack=player.getItemInHand(hand);
+    var hit=getPlayerPOVHitResult(level,player,net.minecraft.world.level.ClipContext.Fluid.ANY);
+    if(hit.getType()!=net.minecraft.world.phys.HitResult.Type.BLOCK)return net.minecraft.world.InteractionResultHolder.pass(stack);
+    var result=com.chaogarden.toys.FloatToyContent080.place(level,player,hand,stack,toy,hit.getLocation(),hit.getBlockPos(),hit.getDirection());
+    return new net.minecraft.world.InteractionResultHolder<>(result,stack);
+  }
+  @Override public InteractionResult useOn(net.minecraft.world.item.context.UseOnContext context){
+    if(!com.chaogarden.toys.FloatToyContent080.kind(toy))return super.useOn(context);
+    return com.chaogarden.toys.FloatToyContent080.place(context.getLevel(),context.getPlayer(),context.getHand(),context.getItemInHand(),toy,
+        context.getClickLocation(),context.getClickedPos(),context.getClickedFace());
+  }
+
+  @Override
   public InteractionResult interactLivingEntity(ItemStack stack, Player player,
                                                LivingEntity target, InteractionHand hand) {
     return target instanceof ChaoEntity chao
@@ -47,8 +62,7 @@ public final class ChaoToyItem extends BlockItem {
       case "chao_picture_book" -> "A picture book for quiet reading and page turning";
       case "chao_pogo_stick" -> "A spring toy for hopping; leave clear ground and room overhead";
       case "chao_crayons" -> "A box of crayons for a Chao drawing session";
-      case "chao_lifesaver" -> "Place in shallow water beside a clear shore; a Chao can float in it";
-      case "chao_rubber_duck" -> "A floating rubber duck to splash with from the shore";
+      case "chao_lifesaver", "chao_rubber_duck" -> "Place on water as a flotation aid; Chao can also push it from a clear bank";
       case "chao_piano", "chao_organ" -> "A garden keyboard for a voluntary music session";
       case "chao_shovel" -> "Give to a Chao to teach planting (50 Run points); place on sand for sandcastles";
       case "chao_bubble_wand" -> "A little bubble wand for a Chao play session";

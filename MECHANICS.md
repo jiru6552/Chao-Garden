@@ -1,4 +1,6 @@
-Current morphology update: [0.25.59 Neutral/Swim-first family](docs/NEUTRAL_SWIM_02559.md). Only ordinary living Neutral adults locked to Swim first evolution use this new six-form profile. Run/Power uses the existing opposing current-progress difference; Swim/Fly develops only toward Swim, with excess Fly clamped to balanced Swim-first for this scope. Both axes use the provisional 960-net-progress threshold. Maturity gates development independently, baby training carries forward, and reductions can recede specialization without lowering age. First selection, adult identity, save format and Creative edit authority remain unchanged.
+Current morphology update: [0.25.71 Dark Power and retained Dark Run](docs/DARK_POWER_02571.md). Adult alignment and first type remain locked while later training axes can cross balance.
+
+Previous morphology update: [0.25.59 Neutral/Swim-first family](docs/NEUTRAL_SWIM_02559.md). Only ordinary living Neutral adults locked to Swim first evolution use this new six-form profile. Run/Power uses the existing opposing current-progress difference; Swim/Fly develops only toward Swim, with excess Fly clamped to balanced Swim-first for this scope. Both axes use the provisional 960-net-progress threshold. Maturity gates development independently, baby training carries forward, and reductions can recede specialization without lowering age. First selection, adult identity, save format and Creative edit authority remain unchanged.
 
 ## Neutral Run-first development (0.25.62)
 
@@ -162,6 +164,10 @@ Plant on dirt/farmland with seven blocks of height and a clear five-by-five cano
 
 Child alignment runs from −1 to +1. At least +0.5 is **Hero**; at most −0.5 is **Dark**; the middle is **Neutral**. Hero Garden and Dark Garden Fruit explicitly control it. Their +40 Stamina and ±0.15 child-affinity effects apply once per completed meal in both food profiles. Old separate Hero/Dark Fruit, seeds and orchard blocks resolve to the corresponding garden variant when loaded. Empty-hand petting is alignment-neutral. Alignment locks at adulthood. Reincarnation retains its category at Hero +1, Dark −1 or Neutral 0, after which child care can affect it again.
 
+The actual Hero/Dark garden dimensions also nudge a living child's alignment by +1/`childTicks` or −1/`childTicks` per eligible loaded care tick. They do not accelerate childhood or change an adult's locked alignment. Adult visual evolution strength keeps its existing independent clock: the ordinary passive increment is 1/(4 × configured `childTicks`), multiplied by 2 in Hero and 0.5 in Dark. The Neutral Garden and other dimensions use the ordinary rate. Whole-fruit strength remains +0.005 for adults or +0.02 for children, independently of that multiplier. Stats, training axes and lifespan retain their existing rules. Stored Chao pause; equipped live bodies use their current dimension during existing care, with their existing paused life counters.
+
+A baby in the actual Chao accessory slot also receives alignment from credited player kills: +1 displayed Hero point for hostile creatures, or −1 Dark point for known peaceful creatures, villagers and other players, by default. The existing server config's `equippedBabyAlignment.hostileKillPoints` and `peacefulKillPoints` accept 0…100-point magnitudes (zero disables that kill source). One displayed point is 0.01 internally. Ambiguous neutral mobs are excluded; explicit `baby_alignment_hostile`, `baby_alignment_peaceful` and `baby_alignment_ignored` entity-type tags support reviewed modpack classifications. Ordinary loot and XP remain unchanged. Each 1,200 actually equipped server ticks in the Nether adds one Dark point; the End adds one Hero point unless classic Aether is installed, in which case only `aether:the_aether` supplies that Hero minute. Separate saved partial counters pause elsewhere/when unequipped, without offline catch-up. Adults receive neither effect and retain their evolved identity. These sources are independent of garden care; see [equipped baby alignment details](docs/EQUIPPED_BABY_ALIGNMENT_02582_DEV.md).
+
 Shape uses two separate axes, clamped to −1…+1:
 
 - **Swim ↔ Fly:** Swim is negative, Fly positive.
@@ -274,6 +280,8 @@ The Analyzer CARE / WARDROBE tab uses actual inventory stacks. Hat, additional h
 
 ## Gardens, races and karate
 
+Hero and Dark lobby access starts locked and unlocks independently for the entire server when a player obtains a qualifying owned Chao, including an aligned child. The existing server SavedData retains the flags permanently. Locked sides have solid floor and no stairs or portal. Updates change only the guarded authored gate footprint; edited blocks, stored items and occupied supports defer the whole update. Portal entry is checked on the server against both the unlock and installed access. Existing owned registry records and accessible loaded/player storage provide migration evidence; inaccessible offline storage is checked when it becomes accessible. Operators can use `/chao gardens status`, `/chao gardens rescan`, or `/chao gardens unlock hero|dark|all`; unknown older lobby layouts require manual recovery instead of a destructive automatic rebuild.
+
 The PC-inspired Chao Garden Transporter detects owned Chao inside its saved active area and offers six registration slots. Automatic entries follow live placement and pickup. Manual carrier reservations and existing registrations persist across upgrades. The existing containment and ownership rules still govern residents. See [garden registration and boundaries](docs/mechanics/GARDENS_AND_ACTIVITIES.md).
 
 Race courses use straight rows of 2–8 start/finish sections and linked red triangular pennants, with at most 32 blocks per link and 64 links per course. A route must total at least eight blocks and cannot loop. Chao actually navigate it. Run governs land speed, Swim water speed, Power climbing and Fly descent; Stamina supplies virtual race endurance. A five-minute limit returns blocked entrants. Completion and active timed-out participation grant training; winners gain a bonus.
@@ -367,3 +375,57 @@ Biological maturity gates development independently of reversible training. The 
 Ordinary living Hero adults with locked Swim first type use a common fresh Swim-first surface and nine later targets: balanced, Run, Power, Fly, Swim and Run+Fly, Run+Swim, Power+Fly, Power+Swim. Separate blocky paired head fins develop around the original head box, face and shared skeleton; the Hero marker remains a four-bar halo. Current training is `100 * level + progress`, with independent `(Power - Run) / 960` and `(Fly - Swim) / 960` axes clamped to -1..1. Opposing training cancels and can cross balance into the other later influence without changing the first Swim type. Compatible pairs share one target regardless of order. This scoped Hero profile does not change the earlier Neutral Swim059 or Fly061 restrictions.
 
 Biological maturity blends the common fresh surface into the mature grid independently of reversible current training. Display easing is cosmetic and changes no saved age, life stage, adult alignment or first type. The 960-net threshold and interior blending are authored mod pacing, not formulas recovered from the viewer. No save field, migration, network payload, Creative authority, command rule or first-evolution selection changes. Existing passive maturity/lifetime pacing remains intact. See [the family report](docs/HERO_SWIM_02564.md) for actual reference inspection, measured tests and visual limitations.
+
+
+## Hero / Fly-first morphology (0.25.65)
+
+Ordinary living Hero adults locked to Fly first evolution use a common fresh Hero Fly target and nine mature signed-axis targets: balanced, Run, Power, Fly, Swim, Run+Fly, Run+Swim, Power+Fly and Power+Swim. Reversing the order of a pair selects the same target. Current training uses `100 * level + progress`; `(Power - Run) / 960` and `(Fly - Swim) / 960` are independently clamped to -1..1. Opposite training cancels and can cross balance without replacing the first Fly identity. Earlier Neutral Fly061 restrictions remain unchanged.
+
+Biological maturity blends the newly evolved target toward these training targets. Training changes can develop or recede without reducing age; display-only thirty-tick easing smooths large edits. Alignment and first type remain locked at first evolution. First selection still uses the highest earned Swim/Fly/Run/Power points, with the most recent actual increase winning ties. Genetics and shiny finishes do not enter morphology coordinates. This update adds no saved fields, migrations, network payloads or dependencies. See [the Hero Fly report](docs/HERO_FLY_02565.md) for reference observations, approximations and verification limits.
+
+## Complete Hero / Run-first morphology (0.25.66)
+
+The approved Run baby surface remains on its existing continuous policy. Ordinary living Hero adults locked to Run first evolution use a fresh adult target and nine later-development targets: balanced, Run, Power, Fly, Swim, Run+Fly, Run+Swim, Power+Fly and Power+Swim. Current bars use `100 * level + progress`; the net `(Power - Run) / 960` and `(Fly - Swim) / 960` axes each clamp to -1..1. Opposing training cancels and can cross balance; it does not replace the locked first Run identity, change alignment, or reduce biological maturity.
+
+Normalized adult development separately blends the fresh form toward those targets. Display easing smooths large stat packets without writing back to age or training. The adult Analyzer's existing 100% development endpoint is raw evolution strength 1.2; this does not reset calendar age or lifespan. Separate closed cuboids form the stalk, fan, bulb or cup around the original head box, with texture-painted stripes. The source's adult shapes differ from its developing baby nubs. No new save field, migration, network authority or dependency is introduced. See [the Hero Run report](docs/HERO_RUN_02566.md) for actual reference observations and verification limits.
+
+
+## Hero / Power-first morphology (0.25.67)
+
+Ordinary living Hero adults locked to Power first evolution use a common newly evolved shape and nine mature targets: balanced, Run, Power, Fly, Swim, Run+Fly, Run+Swim, Power+Fly and Power+Swim. Reversing a compatible pair's order does not create another form. Current bars use `100 * level + progress`; `(Power - Run) / 960` and `(Fly - Swim) / 960` independently clamp to -1..1. Training across balance may develop later Run without replacing first Power or adult alignment.
+
+Biological maturity independently blends fresh and developed anatomy; thirty-tick display easing smooths edits without writing back to stats or age. The existing adult maturity control maps 0–100% to raw evolution strength 0–1.2. First evolution retains highest earned main-stat points and most-recent-increase tie rules. Genetics and finishes do not enter morphology coordinates. No new save field, authority, payload, migration or dependency is added. The original head box and established baby path remain intact; crown, wing and compact body/limb features use the shared cuboid renderer. See [the Hero Power report](docs/HERO_POWER_02567.md) for references and actual verification limits.
+
+
+## Dark / Swim-first morphology (0.25.68)
+
+Ordinary living Dark adults locked to Swim first evolution use a common newly evolved target and nine later targets: balanced, Run, Power, Fly, Swim, Run+Fly, Run+Swim, Power+Fly and Power+Swim. Current bars use `100 * level + progress`; `(Power - Run) / 960` and `(Fly - Swim) / 960` each clamp independently to -1..1. Opposing training can cross balance into later Fly while first type remains Swim and alignment stays Dark. Reverse-order compatible pairs share one target. Earlier completed family policies are unchanged.
+
+Biological maturity separately gates the fresh-to-mature geometry blend. Thirty-tick display easing changes no saved age, stats, first type or alignment. The original head box, facial layout and shared skeleton remain fixed; separate closed cuboids carry the developing features. The existing maturity control maps 0–100% adult development to raw strength 0–1.2, without resetting lifespan. First evolution retains highest earned main-stat points and most-recent-increase tie rules. Genetics and finishes do not enter morphology coordinates. No new save field, migration, payload, authority rule or dependency is introduced. See [the Dark Swim report](docs/DARK_SWIM_02568.md) for actual reference observations, verification and remaining approximations.
+
+## Dark / Fly-first morphology (0.25.69)
+
+Ordinary living Dark adults locked to Fly first evolution use a common newly evolved target and nine later targets: balanced, Run, Power, Fly, Swim, Run+Fly, Run+Swim, Power+Fly and Power+Swim. Current bars use `100 * level + progress`; `(Power - Run) / 960` and `(Fly - Swim) / 960` each clamp independently to -1..1. Opposing training may cross balance into later Swim while first type stays Fly and adult alignment stays Dark. Reversing a compatible pair does not select another form. Earlier completed family policies are unchanged.
+
+Biological maturity separately gates the fresh-to-developed shape blend; thirty-tick display easing changes no saved age, stats or identity. The original head box, facial layout and shared animation skeleton remain fixed. Separate closed cuboids form the developing features. The existing adult maturity control maps 0–100% to raw strength 0–1.2 without resetting lifespan. First evolution retains highest main-stat points and most-recent-increase tie rules. Genetics and finishes do not enter morphology coordinates. No saved field, migration, network payload or dependency is added. See [the Dark Fly report](docs/DARK_FLY_02569.md) for reference observations and actual verification limits.
+
+
+## Dark / Run-first morphology (0.25.70)
+
+Only ordinary living Dark adults locked to Run first evolution use this family. The common newly evolved form develops toward balanced, Run, Power, Fly, Swim and the four compatible cross-axis pairs. Reverse-order pairs share one target.
+
+Later specialization reads current training bars (`100 × level + progress`), with Run/Power equal to `(Power − Run) / 960` and Swim/Fly equal to `(Fly − Swim) / 960`, each clamped to −1…+1. Later Power or Swim can cross balance without changing the locked first Run identity or Dark alignment. Reductions and absolute Creative edits can recede specialization without reducing chronological age.
+
+Existing adult development strength independently controls the new-to-mature blend, and the established presentation easing changes no saved age, stats or identity. The original 7×6×6 head box, facial layout and 59 animation joints stay fixed. Separate closed cuboids develop the crest, spikes, side features and wings. No saved field, migration, network payload or dependency is added. First evolution retains highest main-stat points with the most recently raised winning ties. Genetics and finishes do not enter morphology coordinates. See [the Dark Run report](docs/DARK_RUN_02570.md) for actual reference observations and verification scope.
+
+
+## Dark / Power-first morphology (0.25.71)
+
+Ordinary living Dark adults whose locked first type is Power use a common newly evolved shape and a nine-corner adult lattice: balanced, Run, Power, Fly, Swim and the four compatible pairs. Current level bars (`100 × level + progress`) determine `(Power − Run) / 960` and `(Fly − Swim) / 960`, each clamped to −1…+1. An opposite Run specialization does not change the locked first Power identity. Maturity separately controls development, and the existing presentation easing changes no saved age or lifespan. Reverse ordering of a compatible pair names the same corner.
+
+The original 7×6×6 head, face and shared animation/attachment rig remain fixed. Separate authored cuboids supply head features, wings and accent surfaces. Colors and finish do not select another form. New development follows the existing scoped renderer/material approach; no saved field, network payload or new dependency is introduced. Completed Dark/Run and earlier branches remain in place. Exact reference differences and actual test coverage are documented in the report.
+
+
+### Reciprocal Neutral Swim/Fly adult forms (0.25.72)
+
+Ordinary Neutral adults with first Swim or first Fly now use the complete signed Run–Power and Swim–Fly grid. First Swim can later develop Fly, Run+Fly or Power+Fly; first Fly can later develop Swim, Run+Swim or Power+Swim. Opposing influences cancel at balance and can continue to the other side. Pair order names the same shape. Current level/progress determines later influences, independently of biological maturity; first evolution identity and adult alignment stay locked. This update adds no saved field or packet and keeps the original head and attachment joints.

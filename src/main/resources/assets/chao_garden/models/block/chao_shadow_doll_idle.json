@@ -4,6 +4,7 @@
   "automatic_culling": false,
   "shade_quads": true,
   "flip_v": true,
+  "emissive_ambient": false,
   "textures": {
     "sa2_soni01_52": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni01_52",
     "sa2_soni01_36": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni01_36",
@@ -11,6 +12,8 @@
     "sa2_soni03_52": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni03_52",
     "sa2_soni03_148": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni03_148",
     "sa2_soni02_148": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni02_148",
+    "shadow_crown080": "chao_garden:block/active02549/chao_shadow_doll/shadow_crown080",
+    "shadow_ears080": "chao_garden:block/active02549/chao_shadow_doll/shadow_ears080",
     "particle": "chao_garden:block/active02549/chao_shadow_doll/sa2_soni01_52"
   },
   "render_type": "minecraft:cutout"

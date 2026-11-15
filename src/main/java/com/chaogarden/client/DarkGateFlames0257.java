@@ -4,6 +4,8 @@ import com.chaogarden.ChaoGarden;
 import com.chaogarden.core.GardenGateGeometry0256;
 import com.chaogarden.hub.HubContent;
 import com.chaogarden.hub.HubRooms;
+import com.chaogarden.hub.LobbyDecor025;
+import com.chaogarden.hub.PortalScenes0251;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleTypes;
 import net.neoforged.api.distmarker.Dist;
@@ -18,6 +20,11 @@ public final class DarkGateFlames0257 {
   @SubscribeEvent public static void tick(ClientTickEvent.Post event){
     var mc=Minecraft.getInstance();var level=mc.level;
     if(level==null||mc.player==null||mc.isPaused()||!level.dimension().equals(HubContent.HUB))return;
+    // Use the committed scene state, as the portal renderer does. Acquisition
+    // can be saved while a keeper's obstruction leaves this gate uninstalled.
+    var anchor=level.getBlockState(HubRooms.SCENE_ANCHOR081);
+    if(!anchor.is(LobbyDecor025.SCENE_ANCHOR.get())||(LobbyDecor025.sceneAccess081(anchor)&2)==0
+        ||!level.getBlockState(HubRooms.DARK_DOOR).equals(PortalScenes0251.state(HubRooms.DARK_FACING,PortalScenes0251.DARK)))return;
     for(var local:GardenGateGeometry0256.darkFlames()){
       var at=HubRooms.gateWorldPoint(HubRooms.DARK_DOOR,HubRooms.DARK_FACING,local);
       if(mc.player.distanceToSqr(at.x,at.y,at.z)>48*48)continue;

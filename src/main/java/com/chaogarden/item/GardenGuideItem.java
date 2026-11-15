@@ -192,6 +192,18 @@ public final class GardenGuideItem extends WrittenBookItem {
                                 + "Older saved enclosures keep their boundaries until you use Recheck garden. Breaking the device "
                                 + "releases its assignments.\n\nThe Neutral, Hero and Dark garden dimensions still cover their whole garden."),
                         page(
+                            "Lobby gardens\n\nThe Hero and Dark Gardens begin locked. Claim or obtain a Hero Chao to "
+                                + "open the Hero stairs and portal for everyone on the server; a Dark Chao opens the Dark "
+                                + "side independently. Unlocks are permanent. The Neutral Garden is always available. "
+                                + "Existing owned Chao and accessible stored Chao can also unlock their side."),
+                        page(
+                            "Garden growth\n\nAdult visual development has its own strength value. Its passive rate is "
+                                + "normal in the Neutral Garden, twice as fast in the Hero Garden and half as fast in the Dark "
+                                + "Garden. Fruit keeps its usual separate effect. Stats and lifespan keep their ordinary rates.\n\n"
+                                + "Children gradually favour the garden's alignment. Adult alignment and first type stay locked; "
+                                + "later training can still change specialization. Stored Chao pause; equipped Chao use their "
+                                + "keeper's location for existing active care."),
+                        page(
                             "Building a race\n\nBuild a straight row of Start Line posts and place a Finish Line. Use a "
                                 + "Race Marker on the start or last flag, then place the next flag.\n\nFollow the visible "
                                 + "connection and keep each leg no longer than 32 blocks. End the route at the Finish Line. "

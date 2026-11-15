@@ -150,6 +150,13 @@ neoForge {
             if (project.hasProperty('neutralRun062Dir')) gameDirectory = project.file(project.property('neutralRun062Dir'))
             if (project.hasProperty('neutralPower063Dir')) gameDirectory = project.file(project.property('neutralPower063Dir'))
             if (project.hasProperty('heroSwim064Dir')) gameDirectory = project.file(project.property('heroSwim064Dir'))
+            if (project.hasProperty('heroFly065Dir')) gameDirectory = project.file(project.property('heroFly065Dir'))
+            if (project.hasProperty('heroRun066Dir')) gameDirectory = project.file(project.property('heroRun066Dir'))
+            if (project.hasProperty('heroPower067Dir')) gameDirectory = project.file(project.property('heroPower067Dir'))
+            if (project.hasProperty('darkSwim068Dir')) gameDirectory = project.file(project.property('darkSwim068Dir'))
+            if (project.hasProperty('darkFly069Dir')) gameDirectory = project.file(project.property('darkFly069Dir'))
+            if (project.hasProperty('darkRun070Dir')) gameDirectory = project.file(project.property('darkRun070Dir'))
+            if (project.hasProperty('darkPower071Dir')) gameDirectory = project.file(project.property('darkPower071Dir'))
             systemProperty 'chao_garden.heroRun054Study', project.findProperty('heroRun054Study') ?: 'false'
             systemProperty 'chao_garden.heroRun054Baseline', project.findProperty('heroRun054Baseline') ?: 'false'
             systemProperty 'chao_garden.heroRun054Start', project.findProperty('heroRun054Start') ?: '0'
@@ -542,6 +549,19 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_guitar45/**'
     exclude 'data/chao_instruments48/**'
     exclude 'data/chao_toys49/**'
+    exclude 'data/chao_tv73/**'
+    exclude 'data/chao_ball74/**'
+    exclude 'data/chao_radio75/**'
+    exclude 'data/chao_faces76/**'
+    exclude 'data/chao_idle78/**'
+    exclude 'data/chao_jack80/**'
+    exclude 'data/chao_float80/**'
+    exclude 'data/chao_bonus80/**'
+    exclude 'data/chao_garden_effect81/**'
+    exclude 'data/chao_unlock81/**'
+    exclude 'data/chao_unlock_fresh81/**'
+    exclude 'data/chao_lobby81/**'
+    exclude 'data/chao_baby_align82/**'
     exclude 'data/chao_floor49/**'
     exclude 'data/chao_retired49/**'
     exclude 'data/chao_hats50/**'
@@ -578,6 +598,56 @@ tasks.register('rattleAnimationTest', JavaExec) {
 }
 
 tasks.named('check') { dependsOn rattleAnimationTest }
+
+tasks.register('idleRigTest078', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.IdleRigTest078'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+    enableAssertions = true
+    workingDir = projectDir
+}
+tasks.named('check') { dependsOn idleRigTest078 }
+
+// Measured worn meshes, actual rig anchors and eye-port clearance.
+tasks.register('wearableRigTest079', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.WearableRigTest079'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+    enableAssertions = true
+    workingDir = projectDir
+}
+tasks.named('check') { dependsOn wearableRigTest079 }
+
+tasks.register('pumpkinPortsUvTest079', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.PumpkinPortsUvTest079'
+    enableAssertions = true
+    workingDir = projectDir
+}
+tasks.named('check') { dependsOn pumpkinPortsUvTest079 }
+
+tasks.register('jackToyRigTest080', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.JackToyRigTest080'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+    enableAssertions = true
+    workingDir = projectDir
+}
+tasks.named('check') { dependsOn jackToyRigTest080 }
+
+tasks.register('toyLightingRigTest080', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.ToyLightingRigTest080'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+    enableAssertions = true
+    workingDir = projectDir
+}
+tasks.named('check') { dependsOn toyLightingRigTest080 }
 
 tasks.register('postureRigTest', JavaExec) {
     dependsOn lionfishTestClasses
@@ -786,6 +856,38 @@ tasks.register('proneToyRigTest051', JavaExec) {
 }
 tasks.named('check') { dependsOn proneToyRigTest051 }
 
+tasks.register('tvWatchRigTest073', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.TvWatchRigTest073'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn tvWatchRigTest073 }
+
+tasks.register('ballToyRigTest074', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.BallToyRigTest074'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn ballToyRigTest074 }
+
+tasks.register('radioToyRigTest075', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.RadioToyRigTest075'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn radioToyRigTest075 }
+
+tasks.register('faceGlyphRigTest076', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.FaceGlyphRigTest076'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn faceGlyphRigTest076 }
+
 tasks.register('heroRunMorphRigTest052', JavaExec) {
     dependsOn lionfishTestClasses
     classpath = sourceSets.lionfishTest.runtimeClasspath
@@ -967,3 +1069,117 @@ tasks.register('heroSwimMaterialTest064', JavaExec) {
     jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
 }
 tasks.named('check') { dependsOn heroSwimMaterialTest064 }
+
+
+tasks.register('heroFlyMorphRigTest065', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroFlyMorphRigTest065'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroFlyMorphRigTest065 }
+
+tasks.register('heroFlyMaterialTest065', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroFlyMaterialTest065'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroFlyMaterialTest065 }
+
+tasks.register('heroRunMorphRigTest066', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroRunMorphRigTest066'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroRunMorphRigTest066 }
+
+tasks.register('heroRunMaterialTest066', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroRunMaterialTest066'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroRunMaterialTest066 }
+
+tasks.register('heroPowerMorphRigTest067', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroPowerMorphRigTest067'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroPowerMorphRigTest067 }
+
+tasks.register('heroPowerMaterialTest067', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.HeroPowerMaterialTest067'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn heroPowerMaterialTest067 }
+
+tasks.register('darkSwimMorphRigTest068', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkSwimMorphRigTest068'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkSwimMorphRigTest068 }
+
+tasks.register('darkSwimMaterialTest068', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkSwimMaterialTest068'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkSwimMaterialTest068 }
+
+tasks.register('darkFlyMorphRigTest069', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkFlyMorphRigTest069'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkFlyMorphRigTest069 }
+
+tasks.register('darkFlyMaterialTest069', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkFlyMaterialTest069'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkFlyMaterialTest069 }
+
+
+tasks.register('darkRunMorphRigTest070', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkRunMorphRigTest070'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkRunMorphRigTest070 }
+
+tasks.register('darkRunMaterialTest070', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkRunMaterialTest070'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkRunMaterialTest070 }
+
+tasks.register('darkPowerMorphRigTest071', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkPowerMorphRigTest071'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkPowerMorphRigTest071 }
+
+tasks.register('darkPowerMaterialTest071', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.DarkPowerMaterialTest071'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+}
+tasks.named('check') { dependsOn darkPowerMaterialTest071 }

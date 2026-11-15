@@ -29,6 +29,7 @@ public final class DarkIntegrationGameTests0255 {
   }
   @GameTest(template="empty",batch="dark0255_origin",timeoutTicks=180)
   public static void darkAdmissionDeniedTravelAndRoundTripKeepEveryOriginalModeAndInventory(GameTestHelper h){
+    GardenAccessFixtures081.dark(h);
     for(var original:GameType.values()){
       var p=GardenWorldGameTests025.player(h,original);var home=p.serverLevel();var origin=p.position();
       var keepsake=new ItemStack(Items.EMERALD,7);p.getInventory().setItem(8,keepsake.copy());
@@ -61,6 +62,7 @@ public final class DarkIntegrationGameTests0255 {
   }
   @GameTest(template="empty",batch="dark0255_walking",timeoutTicks=200)
   public static void eastFacingLowerGateAndGardenReturnUseRealMovementAndCooldown(GameTestHelper h){
+    GardenAccessFixtures081.dark(h);
     var p=GardenWorldGameTests025.player(h,GameType.SURVIVAL);var home=p.serverLevel();var origin=p.position();
     boolean[] done={false};Runnable cleanup=()->{if(!done[0]){done[0]=true;GardenWorldGameTests025.finish(p);}};h.runAtTickTime(199,cleanup);
     try{

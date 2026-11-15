@@ -6,7 +6,12 @@
   "mixins": [
     "CompanionPlayerFlightMixin",
     "CompanionLivingFlightMixin",
-    "ChestTableFillMixin"
+    "ChestTableFillMixin",
+    "EquippedPlayerAttackMixin080",
+    "EquippedHurtKnockbackMixin080",
+    "EquippedTrackerMotionMixin080",
+    "EquippedMovementValidationMixin080",
+    "BabyAlignmentDeathMixin082"
   ],
   "client": [
     "CompanionLocalPlayerFlightMixin"

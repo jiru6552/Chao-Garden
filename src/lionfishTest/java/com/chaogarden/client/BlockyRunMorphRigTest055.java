@@ -194,10 +194,20 @@ public final class BlockyRunMorphRigTest055 {
 
   private static void motionAndAttachments()throws Exception{
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
-    var rig=new OfficialChaoRig(clips,BlockyRunMorphRigTest055::asset);var expected=asset(MODEL);int serial=0;
+    // Pin this historical fixture through the rig's existing injectable
+    // resource loader. Logical "hero_run" now resolves to the full066 family;
+    // production has no override and the new066 test loads that real resource.
+    var rig=new OfficialChaoRig(clips,key->asset(key.equals("gameplay/chao_hero_run_proto066")?MODEL:key));var expected=asset(MODEL);int serial=0;
     for(boolean adult:new boolean[]{false,true})for(float run:QUARTERS)for(var motion:List.of(OfficialChaoRig.Motion.CRAWL,OfficialChaoRig.Motion.WALK,OfficialChaoRig.Motion.RUN,OfficialChaoRig.Motion.SIT,OfficialChaoRig.Motion.SWIM,OfficialChaoRig.Motion.GLIDE,OfficialChaoRig.Motion.HELD))for(int tick=0;tick<=20;tick+=5){
-      var s=state(adult,run,adult?run:1,1);String geometry=OfficialChaoRig.geometryKey(s);String saved=s.encode();rig.prepareDevelopment(geometry,s);rig.animateGameplay(geometry,new UUID(55,++serial),motion,tick,1,.05f,0,0,0,0,false);rig.development(s);sample(expected,s);motionFrames++;
-      check(rig.finite(),"Actual Lionfish motion became nonfinite");check(rig.sampledMesh().shapeSignature()==expected.shapeSignature(),"Production selection did not use the approved055 asset");check(rig.sourceGeometryKey().equals("baby"),"Production UV/attachment family changed");check(saved.equals(s.encode()),"Motion sampling changed saved state");
+      var s=state(adult,run,adult?run:1,1);
+      // The .66 adult family supersedes this prototype's live selection.
+      // Keep every historical055 shape/UV/rig assertion on its exact asset;
+      // the new066 suite checks the current adult route independently.
+      String geometry=OfficialChaoRig.geometryKey(s);
+      if(!adult)check(geometry.equals("baby"),"Current baby keeps its original logical family");
+      String saved=s.encode();rig.prepareDevelopment(geometry,s);rig.animateGameplay(geometry,new UUID(55,++serial),motion,tick,1,.05f,0,0,0,0,false);rig.development(s);sample(expected,s);motionFrames++;
+      check(rig.sampledMesh().heroRunPrototype()&&!rig.sampledMesh().heroRunPrototype066(),"Historical055 pin or current baby route selected another profile");
+      check(rig.finite(),"Actual Lionfish motion became nonfinite");check(rig.sampledMesh().shapeSignature()==expected.shapeSignature(),"Explicit historical055 sampler or current baby route lost the approved055 asset");check(rig.sourceGeometryKey().equals("baby"),"Production UV/attachment family changed");check(saved.equals(s.encode()),"Motion sampling changed saved state");
       for(boolean left:new boolean[]{false,true}){float[] palm=rig.toyPalm(left);check(palm!=null&&palm.length==3,"Toy palm disappeared");for(float v:palm)check(Float.isFinite(v),"Toy grip became nonfinite");}
       for(String anchor:List.of("body","skull","arm_left","arm_right","foot_left","foot_right","tail","wing_left","wing_right")){var matrix=new PoseStack();rig.transformBone(anchor,matrix);check(matrix.last().pose().isFinite(),"Sampled animation anchor nonfinite");check(rig.attachmentBounds(anchor)!=null,"Sampled attachment bounds missing");}
       if(tick==0)for(String family:List.of("overlays/chao_baby","cwe_parts/chao_baby","hats/chao_baby","market_accessories")){
@@ -220,7 +230,7 @@ public final class BlockyRunMorphRigTest055 {
   public static void main(String[] args)throws Exception{
     long started=System.nanoTime();topology();development();mutationRoutes();temporalEdits();motionAndAttachments();coats();
     check(AdultMorphSnapshot053.snapshot().equals("da472d55f399960b560f03b95b6df96f3de76b26bd6af78f01c60a0492dc8782"),"Historical delivered052 adult asset/sampler changed");
-    String report="Blocky Run055: "+checks+" checks; "+frames+" emitted development frames; "+boxSolids+" closed rectangular box samples; "+limbSolids+" compact limb samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coats+" coat/shape cases; max1% step="+maximumStep+" model pixels; max20-tick-edit step="+maximumEditStep+" model pixels; seconds="+(System.nanoTime()-started)/1e9+". Original head/face/UVs and hat/eye/mouth anchors fixed; continuous rigid boxes; age/training reversal; current production selection; compatible axes; historical052 fingerprint passed. This is geometry/rig validation, not visual or multiplayer verification.\n";
+    String report="Blocky Run055: "+checks+" checks; "+frames+" emitted development frames; "+boxSolids+" closed rectangular box samples; "+limbSolids+" compact limb samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coats+" coat/shape cases; max1% step="+maximumStep+" model pixels; max20-tick-edit step="+maximumEditStep+" model pixels; seconds="+(System.nanoTime()-started)/1e9+". Original head/face/UVs and hat/eye/mouth anchors fixed; continuous rigid boxes; age/training reversal; current baby route and retained explicit055 adult sampler; compatible axes; historical052 fingerprint passed. This is geometry/rig validation, not visual or multiplayer verification.\n";
     Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/blocky-run055-results.txt"),report);System.out.print(report);
   }
 }

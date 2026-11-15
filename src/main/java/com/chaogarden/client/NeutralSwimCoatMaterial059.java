@@ -20,7 +20,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.neoforge.client.event.RenderFrameEvent;
 
-/** Canonical-atlas material for the six Neutral/Swim-first combinations only. */
+/** Canonical-atlas material for the nine Neutral/Swim-first combinations only. */
 @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT)
 public final class NeutralSwimCoatMaterial059 {
   private static final Map<String,ResourceLocation> CACHE=new LinkedHashMap<>(128,.75f,true);

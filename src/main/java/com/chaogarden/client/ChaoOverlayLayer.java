@@ -155,7 +155,14 @@ public final class ChaoOverlayLayer extends RenderLayer<ChaoEntity, ChaoModel> {
         pose.ry += age * .012f;
       }
     }
-    var raw=HeroSwimAppearance064.sample(state).enabled()?HeroSwimCoatMaterial064.textureOverlay(state)
+    var raw=DarkPowerAppearance071.sample(state).enabled()?DarkPowerCoatMaterial071.textureOverlay(state)
+        :DarkRunAppearance070.sample(state).enabled()?DarkRunCoatMaterial070.textureOverlay(state)
+        :DarkFlyAppearance069.sample(state).enabled()?DarkFlyCoatMaterial069.textureOverlay(state)
+        :DarkSwimAppearance068.sample(state).enabled()?DarkSwimCoatMaterial068.textureOverlay(state)
+        :HeroPowerAppearance067.sample(state).enabled()?HeroPowerCoatMaterial067.textureOverlay(state)
+        :HeroRunAppearance066.sample(state).enabled()?HeroRunCoatMaterial066.textureOverlay(state)
+        :HeroFlyAppearance065.sample(state).enabled()?HeroFlyCoatMaterial065.textureOverlay(state)
+        :HeroSwimAppearance064.sample(state).enabled()?HeroSwimCoatMaterial064.textureOverlay(state)
         :NeutralPowerAppearance063.sample(state).enabled()?NeutralPowerCoatMaterial063.textureOverlay(state)
         :NeutralRunAppearance062.sample(state).enabled()?NeutralRunCoatMaterial062.textureOverlay(state)
         :NeutralFlyAppearance061.sample(state).enabled()?NeutralFlyCoatMaterial061.textureOverlay(state)

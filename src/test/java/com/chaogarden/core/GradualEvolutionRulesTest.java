@@ -60,7 +60,12 @@ public final class GradualEvolutionRulesTest {
     check(Arrays.equals(s.secondaryTypes(),new int[]{ChaoState.SWIM_TYPE,ChaoState.POWER_TYPE}),"Valid cross-axis secondary combination is expressed");
     int samples=0;
     for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1}){
-      s.swimFly=sf;s.runPower=rp;s.tick(100,10000,new Random(samples++));int[] t=s.secondaryTypes();
+      // Hero Fly065 labels follow actual bars. Exercise each intended corner
+      // while retaining contradictory legacy fields as a read-only fallback.
+      for(int stat=0;stat<4;stat++)DriveRules.setTotal(s,stat,0,new Random(65));
+      if(sf!=0)DriveRules.setTotal(s,sf<0?ChaoState.SWIM:ChaoState.FLY,960,new Random(65));
+      if(rp!=0)DriveRules.setTotal(s,rp<0?ChaoState.RUN:ChaoState.POWER,960,new Random(65));
+      s.swimFly=-sf;s.runPower=-rp;s.tick(100,10000,new Random(samples++));int[] t=s.secondaryTypes();
       boolean swim=false,fly=false,run=false,power=false;for(int v:t){swim|=v==1;fly|=v==2;run|=v==3;power|=v==4;}
       check(!(swim&&fly)&&!(run&&power)&&t.length<=2,"Opposing secondary types never coexist at any corner or axis center");
       check(s.primaryType==ChaoState.FLY_TYPE&&s.align==.8f&&s.cocoonTicks==0,"Secondary drift does not unlock alignment, change the primary, or create another cocoon");

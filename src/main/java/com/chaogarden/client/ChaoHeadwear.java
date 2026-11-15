@@ -50,6 +50,6 @@ public final class ChaoHeadwear {
     String key = model.officialGeometryKey();
     if (!key.startsWith("chao_")) key = "chao_" + key;
     render("hats/" + key, hat, model.officialPoses(),model::copyAccessoryPoseTo,
-        ChaoAccessoryFit.legacyHead(model.accessoryBounds("skull"),key),stack, vertices, light, overlay);
+        ChaoAccessoryFit.canonicalHead(model.accessoryBounds("skull")),stack, vertices, light, overlay);
   }
 }

@@ -20,7 +20,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.neoforge.client.event.RenderFrameEvent;
 
-/** Canonical-atlas material for the six Neutral/Fly-first combinations only. */
+/** Canonical-atlas material for the nine Neutral/Fly-first combinations only. */
 @EventBusSubscriber(modid=ChaoGarden.MODID,value=Dist.CLIENT)
 public final class NeutralFlyCoatMaterial061 {
   private static final Map<String,ResourceLocation> CACHE=new LinkedHashMap<>(128,.75f,true);

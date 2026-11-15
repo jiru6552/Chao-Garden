@@ -65,10 +65,15 @@ public final class ToyGameTests {
     int index=0;
     for(String id:ToyContent.ids()) {
       var ground=helper.absolutePos(new BlockPos(2+(index%6)*3,0,2+(index/6)*4));
+      // Exercise server-authorized use at a real reachable placement distance.
+      keeper.setPos(ground.getX()+.5,ground.getY()+1,ground.getZ()+1.5);
       keeper.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(ChaoGarden.item(id),2));
       var hit=new BlockHitResult(Vec3.atCenterOf(ground).add(0,.5,0),Direction.UP,ground,false);
       helper.assertTrue(keeper.getMainHandItem().getItem().useOn(new UseOnContext(keeper,InteractionHand.MAIN_HAND,hit)).consumesAction(),
           "Real BlockItem places "+id);
+      if(com.chaogarden.toys.FloatToyContent080.kind(id)){
+        LegacyFloatToyFixtures080.placed(helper,keeper,ground,id);index++;continue;
+      }
       var at=ground.above();var state=world.getBlockState(at);
       helper.assertTrue(state.is(ToyContent.block(id))&&state.getValue(ChaoToyBlock.FACING)==Direction.EAST,
           "Placed toy faces its keeper "+id);
@@ -190,17 +195,5 @@ public final class ToyGameTests {
     });
   }
   @GameTest(template="activity_test",timeoutTicks=1200)
-  public static void lifesaverFloatsInWaterAndRestoresNormalGravityAfterPlay(GameTestHelper h) {
-    floor(h);var c=chao(h,2,5);var pos=h.absolutePos(new BlockPos(3,0,5));
-    h.getLevel().setBlock(pos,ToyContent.block("chao_lifesaver").defaultBlockState().setValue(ChaoToyBlock.WATERLOGGED,true),3);
-    var floated=new AtomicBoolean();h.onEachTick(()->{
-      if(ToyContent.isPlaying(c)&&c.isNoGravity()&&c.isInWater())floated.set(true);
-    });
-    h.succeedWhen(()->{
-      h.assertTrue(floated.get(),"Chao really enters the floating lifesaver in water");
-      h.assertTrue(!ToyContent.isPlaying(c)&&!c.isNoGravity()&&c.state().happiness>20,
-          "A completed float releases the Chao and grants one play reward");
-      h.assertTrue(h.getLevel().getBlockState(pos).getValue(ChaoToyBlock.WATERLOGGED),"The placed ring retains its water");
-    });
-  }
+  public static void lifesaverFloatsInWaterAndRestoresNormalGravityAfterPlay(GameTestHelper h) {LegacyFloatToyFixtures080.ring(h,false);}
 }

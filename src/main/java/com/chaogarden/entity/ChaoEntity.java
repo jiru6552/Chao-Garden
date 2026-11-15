@@ -73,7 +73,7 @@ public class ChaoEntity extends Animal {
   public enum Behavior { NONE, GREET, NUZZLE, CHEER, CRY, COWER, TANTRUM, DIZZY, GROGGY,
     COUGH, SNEEZE, SCRATCH, HICCUP, STOMACH_ACHE, RUNNY_NOSE, TALK, GOSSIP, HUG,
     HOLD_HANDS, SHAKE_TREE, SANDCASTLE, DANCE, LEARN, FLEE, BULLY, INTERVENE,
-    BREAK_DANCE, DRAW, SING, INSTRUMENT, RELAX, BIRTHDAY, PARTY, HATCH, WATER }
+    BREAK_DANCE, DRAW, SING, INSTRUMENT, RELAX, BIRTHDAY, PARTY, HATCH, WATER, IDLE }
   private static final Set<String> REFERENCE_RIGS = Set.of("baby","swim","fly","run","power",
       "hero","hero_fly","hero_power","dark","dark_run","dark_swim","golden","baghead",
       "dad","dragon","ender","tails","knuckles","emerald","creeper");
@@ -99,6 +99,7 @@ public class ChaoEntity extends Animal {
 
   public ChaoEntity(EntityType<? extends ChaoEntity> type, Level level) {
     super(type, level);
+    moveControl=new BallContactMoveControl074(this);
     state =
         level.isClientSide
             ? ChaoState.decode(entityData.get(STATE))
@@ -169,7 +170,10 @@ public class ChaoEntity extends Animal {
   public void sync() {
     if (state != null) {
       entityData.set(STATE, state.encode());
-      if (!level().isClientSide) updateMovementSpeed();
+      if (!level().isClientSide) {
+        updateMovementSpeed();
+        com.chaogarden.hub.GardenUnlocks081.observe(this);
+      }
     }
   }
 
@@ -234,9 +238,14 @@ public class ChaoEntity extends Animal {
         ||elapsed>=com.chaogarden.toys.ToyInteractionRules.BALL_KICK_TICKS?-1:(int)elapsed;
   }
   public void startToyKick(){entityData.set(TOY_KICK_STARTED,level().getGameTime());}
+  /** Renew operator ball playback without cutting an in-flight physical contact action. */
+  public void renewBallToyPlaying(int remainingTicks){
+    if(entityData.get(TOY_KIND).equals(com.chaogarden.toys.BallPlayRules074.KIND)&&remainingTicks>0)entityData.set(TOY_UNTIL,level().getGameTime()+remainingTicks);
+  }
   public void setToyPlaying(String kind,int remainingTicks) {
     entityData.set(TOY_KICK_STARTED,-1L);
     boolean active=remainingTicks>0&&!kind.isEmpty();
+    if(active&&storedBehavior()==Behavior.IDLE)clearBehavior();
     entityData.set(TOY_KIND,active ? kind : "");
     if(!active)setToyTarget(null);
     // An empty session has no deadline. Clients can be a tick behind server game time.
@@ -244,7 +253,8 @@ public class ChaoEntity extends Animal {
   }
 
   private Behavior storedBehavior() {
-    return Behavior.values()[Math.max(0,Math.min(Behavior.values().length-1,entityData.get(BEHAVIOR)))];
+    int value=entityData.get(BEHAVIOR);
+    return value>=0&&value<Behavior.values().length?Behavior.values()[value]:Behavior.NONE;
   }
   public Behavior getBehavior() { return getBehaviorTicks()>0 ? storedBehavior() : Behavior.NONE; }
   public int getBehaviorTicks() {
@@ -362,8 +372,8 @@ public class ChaoEntity extends Animal {
     return b==Behavior.TALK||b==Behavior.GOSSIP||b==Behavior.HUG||b==Behavior.HOLD_HANDS;
   }
   public boolean canBeginSocial() {
-    return isAlive()&&!isRemoved()&&!state.dead&&!state.sleeping&&!state.isIll()
-        &&state.hunger>=25&&state.energy>=20&&!isHandlingItem()&&!isBehaving()
+    return isAlive()&&!isRemoved()&&!state.dead&&!state.sleeping&&!state.isIll()&&!com.chaogarden.toys.FloatToyContent080.supported(this)
+        &&state.hunger>=25&&state.energy>=20&&!isHandlingItem()&&(!isBehaving()||getBehavior()==Behavior.IDLE)
         &&!isCocooned()&&!stay&&toyPlayingTicks()==0&&getAffectionTicks()==0
         &&!com.chaogarden.activities.ActivityManager.isBusy(this)
         &&!com.chaogarden.companion.CompanionContent.isManaged(this)
@@ -387,6 +397,13 @@ public class ChaoEntity extends Animal {
   private void tickBehavior() {
     Behavior action=storedBehavior();if(action==Behavior.NONE)return;
     if(lifecyclePending()||isCocooned()||isHandlingItem()||state.dead||state.sleeping){clearBehavior();return;}
+    // Optional gestures never commit an emotion/care reward or defer real needs.
+    if(action==Behavior.IDLE) {
+      if(getBehaviorTicks()<=0||!com.chaogarden.core.ChaoIdleRules078.allowed(state,behaviorDetail(),true)
+          ||toyPlayingTicks()>0||getAffectionTicks()>0||isInWater()||!onGround()
+          ||!getNavigation().isDone()||getDeltaMovement().horizontalDistanceSqr()>.0004)clearBehavior();
+      return;
+    }
     if(getBehaviorTicks()>0)return;
     if(isSocialBehavior(action)&&level() instanceof ServerLevel world) {
       UUID partner=behaviorPartner();
@@ -536,13 +553,20 @@ public class ChaoEntity extends Animal {
     return s.getItem() instanceof CareItem c && c.kind == CareItem.Kind.FRUIT;
   }
 
+  /** A launching Chao stays on its proven floor while pushing or walking
+   * around its low ring. Derived ownership ends with the launch/claim; ordinary
+   * step attributes stay intact. */
+  @Override public float maxUpStep(){
+    return com.chaogarden.toys.FloatToyContent080.pushing(this)?0:super.maxUpStep();
+  }
+
   @Override
   protected void registerGoals() {
     goalSelector.addGoal(0, com.chaogarden.activities.ActivityManager.goalFor(this));
     goalSelector.addGoal(0, new com.chaogarden.companion.CompanionGoal(this));
     goalSelector.addGoal(1, new FloatGoal(this) {
       @Override public boolean canUse() {
-        return !toyPlayingKind().equals("chao_lifesaver")&&super.canUse();
+        return !com.chaogarden.toys.FloatToyContent080.supported(ChaoEntity.this)&&!toyPlayingKind().equals("chao_lifesaver")&&super.canUse();
       }
       @Override public void tick() {
         // Untrained Chao retain the emergency flail/escape behavior. Trained
@@ -624,6 +648,7 @@ public class ChaoEntity extends Animal {
         });
     goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, .65));
     goalSelector.addGoal(5, new com.chaogarden.interaction.ChaoPickupItemGoal(this));
+    goalSelector.addGoal(7, com.chaogarden.interaction.ChaoBehaviorGoal.idle(this));
     goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, 6));
     goalSelector.addGoal(8, new RandomLookAroundGoal(this));
   }
@@ -681,14 +706,16 @@ public class ChaoEntity extends Animal {
     // The untrained baby's water reaction is distress and kicking, not damage.
     // These small splashes accompany its actual FloatGoal escape attempts.
     if(isInWater()&&!LocomotionRules.canSwim(state)&&!isCocooned()
-        &&!com.chaogarden.toys.ToyInteractionRules.supportedFloat(toyPlayingKind())&&tickCount%8==0
+        &&!com.chaogarden.toys.FloatToyContent080.supported(this)&&!com.chaogarden.toys.ToyInteractionRules.supportedFloat(toyPlayingKind())&&tickCount%8==0
         &&level() instanceof ServerLevel water) {
       water.sendParticles(ParticleTypes.SPLASH,getX(),getY()+getBbHeight()*.62,getZ(),
           2,.12,.04,.12,.015);
     }
     var change =
         state.tick(
-            GardenConfig.CHILD_TICKS.get(), GardenConfig.ADULT_TICKS.get(), simulationRandom);
+            GardenConfig.CHILD_TICKS.get(), GardenConfig.ADULT_TICKS.get(), simulationRandom,
+            com.chaogarden.hub.GardenCare081.garden(level()));
+    com.chaogarden.hub.GardenUnlocks081.observe(this);
     state.onGardenMotion(getDeltaMovement().horizontalDistanceSqr()>.002);
     if("omochao".equals(state.character)
         && (change==ChaoState.Transition.DIED||change==ChaoState.Transition.REINCARNATED)) {
@@ -923,7 +950,8 @@ public class ChaoEntity extends Animal {
   }
 
   private boolean canBeginItemHandling() {
-    return !lifecyclePending() && isAlive() && !isRemoved() && !state.dead && !isHandlingItem() && !isBehaving() && getMainHandItem().isEmpty()
+    return !lifecyclePending() && isAlive() && !isRemoved() && !state.dead && !isHandlingItem()
+        && (!isBehaving()||getBehavior()==Behavior.IDLE) && getMainHandItem().isEmpty()
         && !isCocooned() && !isResting() && toyPlayingTicks()==0
         && !com.chaogarden.care.ChaoCareServices.hasLesson(this)
         && !com.chaogarden.activities.ActivityManager.isBusy(this);
@@ -1426,11 +1454,14 @@ public class ChaoEntity extends Animal {
     nextItemPickup=level().getGameTime()+Math.max(0,Math.min(1200,t.getLong("NextItemPickup")));
     restoreRelationships(t.contains("ChaoRelationships")?t.getCompound("ChaoRelationships"):t);
     nextBehavior=level().getGameTime()+Math.max(0,Math.min(24000,t.getLong("NextBehavior")));
-    int behavior=Math.max(0,Math.min(Behavior.values().length-1,t.getInt("Behavior")));
-    var resumedBehavior=Behavior.values()[behavior];
+    int behavior=t.getInt("Behavior");
+    var resumedBehavior=behavior>=0&&behavior<Behavior.values().length?Behavior.values()[behavior]:Behavior.NONE;
     // A saved partner may be absent or separately loaded. Cancel shared actions
     // without committing them; completed friendship counters are already saved.
-    if(isSocialBehavior(resumedBehavior)||resumedBehavior==Behavior.LEARN||resumedBehavior==Behavior.PARTY||resumedBehavior==Behavior.WATER)resumedBehavior=Behavior.NONE;
+    // An idle has no gameplay result to resume; a fresh quiet gap avoids a
+    // mid-gesture jump when loading its remaining duration without an old clock.
+    if(isSocialBehavior(resumedBehavior)||resumedBehavior==Behavior.LEARN||resumedBehavior==Behavior.PARTY
+        ||resumedBehavior==Behavior.WATER||resumedBehavior==Behavior.IDLE)resumedBehavior=Behavior.NONE;
     startBehavior(resumedBehavior,Math.max(0,Math.min(24000,t.getInt("BehaviorRemaining"))));
     if(resumedBehavior!=Behavior.NONE)setBehaviorDetail(t.getString("BehaviorDetail"));
     if(resumedBehavior==Behavior.INSTRUMENT&&com.chaogarden.toys.InstrumentPerformance.supports(behaviorDetail())) {

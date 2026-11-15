@@ -83,6 +83,7 @@ public class ChaoCarrierItem extends Item {
     snapshot(stack, chao);
     stack.set(DataComponents.CUSTOM_NAME, chao.getName().copy());
     CompanionContent.token(stack, true);
+    com.chaogarden.hub.GardenUnlocks081.observe(chao);
     com.chaogarden.recovery.ChaoRecovery.captured(chao);
     chao.discard();
     return true;

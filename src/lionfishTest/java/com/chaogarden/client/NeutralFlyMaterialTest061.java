@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
  * native context is created, and these checks are not a visual inspection. */
 public final class NeutralFlyMaterialTest061 {
   private static final Path ROOT=Path.of("src/main/resources/assets/chao_garden");
-  private static final float[][] ENDPOINTS={{0,0},{-1,0},{1,0},{0,1},{-1,1},{1,1}};
+  private static final float[][] ENDPOINTS={{0,0},{-1,0},{1,0},{0,1},{-1,1},{1,1},{0,-1},{-1,-1},{1,-1}};
   private static long checks,alpha,eyes,orb,swatches,paletteOrb,featureUv,wingInterior;
   private record WingSample(String face,int pixel,boolean root) {}
   private static final List<WingSample> WING_SAMPLES=new ArrayList<>();
@@ -211,8 +211,8 @@ public final class NeutralFlyMaterialTest061 {
       }
     }
     check(coats==172,"canonical coat inventory changed: "+coats);
-    check(swatches==172L*3*6*4,"not exactly four .61-only reserved texels");
-    check(wingInterior==172L*3*6*24*40*9,"not every actual coat/age/corner sampled all broad wing interiors");
+    check(swatches==172L*3*ENDPOINTS.length*4,"not exactly four .61-only reserved texels");
+    check(wingInterior==172L*3*ENDPOINTS.length*24*40*9,"not every actual coat/age/corner sampled all broad wing interiors");
   }
   private static void regions()throws Exception {
     int[] flags=layout();var image=ImageIO.read(ROOT.resolve("textures/entity/chao/official/coats/baby/normal_neutral_0_two.png").toFile());
@@ -233,9 +233,31 @@ public final class NeutralFlyMaterialTest061 {
       int[][] probes={{12,0,c.body()},{12,37,c.belly()},{28,32,c.hand()},{54,24,c.foot()}};
       for(int[] p:probes)check(NeutralFlyRegionPaint061.pixel(in,c,p[0],p[1],rgba(image,p[0],p[1]),flags[p[1]*128+p[0]])==p[2],"actual body/chest/hand/foot UV pigment differs");
     }
+    var swim=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,0,-1));
+    var runSwim=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,-1,-1));
+    var powerSwim=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,1,-1));
     var opposing=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,.35f,-.9f));
-    var clamped=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,.35f,0));
-    check(opposing.equals(clamped),"Swim endpoint entered the Fly-first material");
+    var center=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,.35f,0));
+    check(!opposing.equals(center),"opposite Swim training still collapsed to balanced paint");
+    check(red(swim.body())>240&&green(swim.body())>160&&blue(swim.body())<170,"opposite Swim body lost peach");
+    check(red(swim.wing())>200&&green(swim.wing())>200&&blue(swim.wing())<100
+        &&red(swim.wingTip())>240&&green(swim.wingTip())>210,"opposite Swim wings lost yellow");
+    check(red(swim.hand())<100&&green(swim.hand())>130&&blue(swim.hand())>140,"opposite Swim ends lost teal");
+    check(red(runSwim.body())>240&&blue(runSwim.body())>150,"Run+Swim body lost salmon/pink");
+    check(red(runSwim.wing())<130&&green(runSwim.wing())>200&&blue(runSwim.wing())>140
+        &&green(runSwim.wingTip())>210,"Run+Swim wings lost mint/green");
+    check(red(powerSwim.body())>230&&blue(powerSwim.body())>130&&green(powerSwim.body())<120,"Power+Swim lost hot pink");
+    check(red(powerSwim.wing())>220&&green(powerSwim.wing())>160&&blue(powerSwim.wingTip())<80,"Power+Swim wings lost gold/orange");
+    for(float rp:new float[]{-1,0,1}) {
+      var half=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,.5f,rp,-1));
+      var end=NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,rp,-1));
+      check(green(half.wing())>200&&blue(half.wing())>120,"opposite half-age wings lost their mint/green stage");
+      check(blue(half.body())>180,"opposite half-age body prematurely received peach mature pigment");
+      check(!half.equals(end),"opposite form prematurely received its mature palette");
+    }
+    var unique=new java.util.HashSet<NeutralFlyRegionPaint061.Colors>();
+    for(float[] e:ENDPOINTS)unique.add(NeutralFlyRegionPaint061.colors(input(image,flags,true,true,1,e[0],e[1])));
+    check(unique.size()==9,"mature Fly-first paint still contains a duplicate guard row");
     for(float[] e:ENDPOINTS) {
       var in=input(image,flags,true,true,1,e[0],e[1]);
       var end=NeutralFlyRegionPaint061.colors(in);
@@ -299,13 +321,18 @@ public final class NeutralFlyMaterialTest061 {
       var image=ImageIO.read(ROOT.resolve("textures/entity/chao/official/coats/baby/"+coat+".png").toFile());
       boolean natural=coat.startsWith("normal_neutral_0_"),two=coat.contains("_two");
       // Age, both training axes, four diagonals, and reversed specialization.
-      for(int path=0;path<9;path++) {
+      for(int path=0;path<20;path++) {
         int[] previous=null;
         for(int i=0;i<=100;i++) {
           float t=i/100f;
-          float age=path==0?t:1;
-          float rp=switch(path){case 1->2*t-1;case 3,4->-t;case 5,6->t;case 7->1-t;case 8->t-1;default->0;};
-          float sf=switch(path){case 2,3,5,8->t;case 4,6,7->1-t;default->0;};
+          // The original nine positive-half paths remain exact. Extra paths
+          // cross through balance, reverse mixed Swim corners, and age the
+          // opposite row through its independently viewed green-wing stage.
+          float age=path==0||path>=15&&path<=17?t:1;
+          float rp=path<9?switch(path){case 1->2*t-1;case 3,4->-t;case 5,6->t;case 7->1-t;case 8->t-1;default->0;}
+              :switch(path){case 11->2*t-1;case 12->-t;case 13->t;case 14->1-t;case 16->-1;case 17->1;case 19->t-1;default->0;};
+          float sf=path<9?switch(path){case 2,3,5,8->t;case 4,6,7->1-t;default->0;}
+              :switch(path){case 9->1-2*t;case 10->2*t-1;case 12,13,18->-t;case 14,19->t-1;default->-1;};
           var in=input(image,flags,natural,two,age,rp,sf);
           var c=NeutralFlyRegionPaint061.colors(in);int[] now=new int[8192];
           for(int y=0;y<64;y++)for(int x=0;x<128;x++) {
@@ -326,7 +353,7 @@ public final class NeutralFlyMaterialTest061 {
   private static int blue(int p){return p>>>16&255;}
   public static void main(String[] args)throws Exception {
     atlas();regions();continuous();
-    String report="NeutralFly061 material: "+checks+" checks; "+coats+" real canonical coats; "+alpha+" preserved alpha pixels; "+eyes+" exact facial pixels; "+orb+" independent orb samples; "+paletteOrb+" palette-protected orb samples; "+swatches+" four-swatch samples; "+featureUv+" opaque prototype-face UV samples; "+wingInterior+" actual interpolated broad-wing paint samples; maximum 1% RGB step="+maxStep+". Six mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic crown/wing regions, .61-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all24 longitudinal faces. Pixel checks are not in-game visual verification.\n";
+    String report="NeutralFly061 material: "+checks+" checks; "+coats+" real canonical coats; "+alpha+" preserved alpha pixels; "+eyes+" exact facial pixels; "+orb+" independent orb samples; "+paletteOrb+" palette-protected orb samples; "+swatches+" four-swatch samples; "+featureUv+" opaque prototype-face UV samples; "+wingInterior+" actual interpolated broad-wing paint samples; maximum 1% RGB step="+maxStep+". Nine mature endpoints with the unchanged fresh palette, original six retained, opposite crossings, half-age keys and intermediate/receding training, inherited hue/alpha, semantic crown/wing regions, .61-only palette protection passed. Actual quad interiors carry root/distal pigments over each half of all24 longitudinal faces. Pixel checks are not in-game visual verification.\n";
     Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral-fly061-material-results.txt"),report);System.out.print(report);
   }
 }

@@ -11,48 +11,67 @@ final class NeutralFlyRegionPaint061 {
                 int tail,int marker,int featureBody,int featureTip,int fin,int underside) {}
   private NeutralFlyRegionPaint061() {}
 
-  // Run/balanced/Power across; balanced/additional Fly down. All six remain
-  // Fly FIRST type. Opposing Swim training recedes to balanced, never Swim.
+  // Full signed grid: Run/balanced/Power across; Swim/balanced/Fly down.
+  // First identity remains Fly when later training develops toward Swim.
+  // The original center/Fly rows and their arithmetic remain exact.
   private static final int[] BODY={
+      rgb(255,187,178),rgb(255,189,137),rgb(253,76,174),
       rgb(247,177,208),rgb(236,167,239),rgb(249,57,198),
       rgb(227,167,236),rgb(170,150,232),rgb(239,109,218)};
   private static final int[] CUFF={
+      rgb(239,150,185),rgb(235,144,174),rgb(237,79,157),
       rgb(150,87,216),rgb(139,88,217),rgb(125,53,178),
       rgb(154,101,227),rgb(146,135,224),rgb(147,88,213)};
   private static final int[] HAND={
+      rgb(73,151,167),rgb(44,151,166),rgb(92,76,157),
       rgb(82,124,243),rgb(101,116,232),rgb(93,108,228),
       rgb(78,123,233),rgb(64,94,212),rgb(80,106,231)};
   private static final int[] FOOT={
+      rgb(255,183,105),rgb(255,177,63),rgb(255,111,23),
       rgb(241,183,71),rgb(249,173,68),rgb(243,61,22),
       rgb(249,179,68),rgb(247,187,37),rgb(252,118,37)};
   private static final int[] CHEST={
+      rgb(250,192,116),rgb(248,180,64),rgb(254,142,70),
       rgb(244,184,81),rgb(247,174,80),rgb(246,63,37),
       rgb(244,176,92),rgb(246,184,63),rgb(240,139,56)};
   private static final int[] WING_ROOT={
+      rgb(70,222,183),rgb(213,225,40),rgb(249,197,40),
       rgb(29,232,211),rgb(250,197,205),rgb(252,148,82),
       rgb(45,229,219),rgb(250,248,215),rgb(247,223,165)};
   private static final int[] WING_TIP={
+      rgb(104,226,50),rgb(255,233,34),rgb(255,168,21),
       rgb(48,237,39),rgb(249,171,28),rgb(255,125,14),
       rgb(199,223,93),rgb(248,229,39),rgb(251,183,71)};
   private static final int[] ORB={
+      rgb(255,170,147),rgb(255,174,93),rgb(255,132,111),
       rgb(251,172,171),rgb(255,167,110),rgb(255,134,113),
       rgb(255,176,92),rgb(255,233,52),rgb(249,172,91)};
+  // Opposite-Swim half-age keys remain pink with blue ends and green/lime
+  // wings before the mature peach/yellow or magenta/gold endpoints. They do
+  // not alter the original six palettes, even at fractional age/training.
+  private static final int[] MID_BODY={rgb(246,166,200),rgb(238,159,197),rgb(245,103,202)};
+  private static final int[] MID_CUFF={rgb(178,122,211),rgb(177,129,209),rgb(188,88,194)};
+  private static final int[] MID_HAND={rgb(77,136,202),rgb(84,138,199),rgb(96,104,194)};
+  private static final int[] MID_FOOT={rgb(251,176,80),rgb(248,172,66),rgb(250,141,41)};
+  private static final int[] MID_CHEST={rgb(249,183,94),rgb(247,177,79),rgb(247,151,65)};
+  private static final int[] MID_WING_ROOT={rgb(40,225,197),rgb(60,223,171),rgb(128,216,148)};
+  private static final int[] MID_WING_TIP={rgb(101,234,45),rgb(157,237,43),rgb(183,217,53)};
   private static final int YOUNG_BODY=rgb(230,164,234),YOUNG_CUFF=rgb(146,77,224),
       YOUNG_TIP=rgb(91,125,236),YOUNG_FOOT=rgb(241,170,61),
       YOUNG_CHEST=rgb(248,176,71),YOUNG_WING=rgb(26,223,211),
       YOUNG_WING_TIP=rgb(53,239,36),YOUNG_ORB=rgb(255,173,142);
 
   static Colors colors(Input in) {
-    float age=unit(in.maturity),rp=axis(in.runPower),fly=unit(in.swimFly);
+    float age=unit(in.maturity),rp=axis(in.runPower),sf=axis(in.swimFly);
     int body=in.body,limb,hand,foot,belly,wing,wingTip;
     if(in.natural&&in.twoTone) {
-      body=blend(YOUNG_BODY,corner(BODY,rp,fly),age);
-      limb=blend(YOUNG_CUFF,corner(CUFF,rp,fly),age);
-      hand=blend(YOUNG_TIP,corner(HAND,rp,fly),age);
-      foot=blend(YOUNG_FOOT,corner(FOOT,rp,fly),age);
-      belly=blend(YOUNG_CHEST,corner(CHEST,rp,fly),age);
-      wing=blend(YOUNG_WING,corner(WING_ROOT,rp,fly),age);
-      wingTip=blend(YOUNG_WING_TIP,corner(WING_TIP,rp,fly),age);
+      body=develop(YOUNG_BODY,BODY,MID_BODY,age,rp,sf);
+      limb=develop(YOUNG_CUFF,CUFF,MID_CUFF,age,rp,sf);
+      hand=develop(YOUNG_TIP,HAND,MID_HAND,age,rp,sf);
+      foot=develop(YOUNG_FOOT,FOOT,MID_FOOT,age,rp,sf);
+      belly=develop(YOUNG_CHEST,CHEST,MID_CHEST,age,rp,sf);
+      wing=develop(YOUNG_WING,WING_ROOT,MID_WING_ROOT,age,rp,sf);
+      wingTip=develop(YOUNG_WING_TIP,WING_TIP,MID_WING_TIP,age,rp,sf);
     } else {
       // Named/mono/jewel bodies keep their source pigment. Existing inherited
       // accents or bounded value contrast describe the SAME semantic regions.
@@ -66,7 +85,7 @@ final class NeutralFlyRegionPaint061 {
     }
     // Smooth original orb, with a species pigment independent of all inherited
     // body/wing colors and shiny genes, including intermediate/receding axes.
-    int marker=marker(age,rp,fly);
+    int marker=marker(age,rp,sf);
     return new Colors(body,limb,hand,foot,belly,wing,wingTip,body,marker,
         body,hand,wing,wingTip);
   }
@@ -113,15 +132,35 @@ final class NeutralFlyRegionPaint061 {
     return v==63&&(u==124||u==125);
   }
   static int marker(float maturity,float rp,float sf){return blend(YOUNG_ORB,corner(ORB,rp,sf),maturity);}
-  private static int corner(int[] values,float rp,float fly) {
-    rp=axis(rp);fly=unit(fly);int result=0xff000000;
+  /** Keep the old center/Fly two-row operation order exact. The new Swim
+   * row is selected only for a negative later coordinate, not a new first type. */
+  private static int corner(int[] values,float rp,float sf) {
+    rp=axis(rp);sf=axis(sf);float amount=sf<0?-sf:sf;
+    int offset=sf<0?0:3,result=0xff000000;
     for(int c=0;c<3;c++) {
       float v=0;
-      for(int row=0;row<2;row++)for(int x=0;x<3;x++)
-        v+=(values[row*3+x]>>>(c*8)&255)*Math.max(0,1-Math.abs(rp-(x-1)))*(row==0?1-fly:fly);
+      for(int row=0;row<2;row++)for(int x=0;x<3;x++) {
+        float weight=sf<0?(row==0?amount:1-amount):(row==0?1-amount:amount);
+        v+=(values[offset+row*3+x]>>>(c*8)&255)*Math.max(0,1-Math.abs(rp-(x-1)))*weight;
+      }
       result|=Math.clamp(Math.round(v),0,255)<<(c*8);
     }
     return result;
+  }
+  private static int middle(int[] values,float rp) {
+    rp=axis(rp);int result=0xff000000;
+    for(int c=0;c<3;c++) {
+      float v=0;
+      for(int x=0;x<3;x++)v+=(values[x]>>>(c*8)&255)*Math.max(0,1-Math.abs(rp-(x-1)));
+      result|=Math.clamp(Math.round(v),0,255)<<(c*8);
+    }
+    return result;
+  }
+  private static int develop(int young,int[] values,int[] mid,float age,float rp,float sf) {
+    if(sf>=0)return blend(young,corner(values,rp,sf),age);
+    int center=blend(young,corner(values,rp,0),age),half=middle(mid,rp);
+    int opposite=age<=.5f?blend(young,half,age*2):blend(half,corner(values,rp,-1),(age-.5f)*2);
+    return blend(center,opposite,-sf);
   }
   /** Per-channel ratios preserve the source atlas's light/dark pixel detail. */
   private static int tint(int source,int target,int reference) {

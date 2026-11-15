@@ -171,10 +171,10 @@ public final class NeutralRunMaterialTest062 {
   }
   /** Independently retain all existing model UV footprints, not just seven
    * protected family JSONs, before permitting fourteen new alpha pixels. */
-  // .63 and .64 have scoped dynamic materials and their own UV validation.
-  // Retain the exact original34 historical footprint checks here; the new
-  // Power and Hero Swim assets have solid caps, use no Run stripe tile, and
-  // are tested independently.
+  // .63 and .64 retain their scoped dynamic materials and own UV validation.
+  // Keep all 34 historical footprint scans plus the completed .65–.69 and
+  // new .71 family in this same strict Run-stripe exclusion scan: 41 models.
+  // None of these models is added to the exclusions below.
   private static void unusedTileFootprints()throws Exception {
     int models=0;
     try(var files=Files.list(ROOT.resolve("models/entity/gameplay"))) {
@@ -195,7 +195,7 @@ public final class NeutralRunMaterialTest062 {
           }
       }
     }
-    check(models==34,"retained gameplay model inventory changed: "+models);
+    check(models==41,"retained plus completed Hero/Dark families and Dark Run070/Power071 gameplay model inventory changed: "+models);
   }
   private static void originalSkullStripePlacement()throws Exception {
     var asset=JsonParser.parseString(Files.readString(ROOT.resolve("models/entity/gameplay/chao_neutral_run_proto062.json"))).getAsJsonObject();

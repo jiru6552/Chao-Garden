@@ -28,7 +28,7 @@ import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.entity.Mob;
 
 /** A recoverable physical toy. Its short animation is driven by a real nearby play session. */
-public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock {
+public class ChaoToyBlock extends Block implements SimpleWaterloggedBlock {
   public static final DirectionProperty FACING=BlockStateProperties.HORIZONTAL_FACING;
   public static final BooleanProperty PLAYING=BooleanProperty.create("playing");
   public static final IntegerProperty FRAME=IntegerProperty.create("frame",0,3);
@@ -71,7 +71,7 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
     switch(toy) {
       case "chao_trumpet" -> {minX=1;maxX=15;minZ=4;maxZ=12;height=7;}
       case "chao_tv" -> {minX=2;maxX=14;minZ=3;maxZ=13;height=16;}
-      case "chao_ball" -> {minX=4;maxX=12;minZ=4;maxZ=12;height=state.getValue(PLAYING)?10:8;}
+      case "chao_ball" -> {minX=5;maxX=11;minZ=5;maxZ=11;height=6;}
       case "chao_maracas" -> height=state.getValue(PLAYING)?6:4;
       case "chao_rocking_horse" -> {minX=5.3;maxX=10.7;minZ=.9;maxZ=15.1;height=14;}
       case "chao_piano" -> {minX=1;maxX=15;minZ=1.9;maxZ=14.1;height=9.6;}
@@ -119,8 +119,8 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
     // baby cannot reliably step down across it on its way to the rear contact.
     // The path cache also asks without a Mob, so this classification must not
     // depend on an entity being supplied. Keep the real collision for everyone.
-    boolean carRoute=toy.equals("chao_toy_car");
-    return carRoute||ToyInteractionRules.keyboard(toy)||state.getCollisionShape(level,pos).max(Direction.Axis.Y)>.6?PathType.FENCE:null;
+    boolean carRoute=toy.equals("chao_toy_car"),radioRoute=toy.equals(RadioPlayRules075.KIND);
+    return carRoute||radioRoute||ToyInteractionRules.keyboard(toy)||state.getCollisionShape(level,pos).max(Direction.Axis.Y)>.6?PathType.FENCE:null;
   }
   @Override protected net.minecraft.world.level.block.RenderShape getRenderShape(BlockState state) {
     // FRAME=1 is hand presentation of the one reserved physical toy.
@@ -158,6 +158,26 @@ public final class ChaoToyBlock extends Block implements SimpleWaterloggedBlock 
     if(toy.equals("chao_rocking_horse")||toy.equals("chao_lifesaver")) {
       int frame=ToyInteractionRules.mountedFrame(ToyContent.sessionElapsed(level,pos));
       if(frame!=state.getValue(FRAME))level.setBlock(pos,state.setValue(FRAME,frame),3);
+      level.scheduleTick(pos,this,1);return;
+    }
+    if(toy.equals(TvWatchRules073.KIND)) {
+      int elapsed=ToyContent.sessionElapsed(level,pos),frame=TvWatchRules073.screenFrame(elapsed);
+      if(frame!=state.getValue(FRAME)) {
+        level.setBlock(pos,state.setValue(FRAME,frame),3);
+        if(TvWatchRules073.startCue(state.getValue(FRAME),frame,elapsed))ToyContent.playPulse(level,pos,toy);
+      }
+      level.scheduleTick(pos,this,1);return;
+    }
+    if(toy.equals(RadioPlayRules075.KIND)) {
+      int elapsed=ToyContent.sessionElapsed(level,pos),frame=RadioPlayRules075.frame(elapsed);
+      if(frame!=state.getValue(FRAME))level.setBlock(pos,state.setValue(FRAME,frame),3);
+      ToyContent.radioCue(level,pos,elapsed);
+      level.scheduleTick(pos,this,1);return;
+    }
+    if(toy.equals(BallPlayRules074.KIND)){
+      // The real contact controller owns the sole quiet movement cue. The
+      // ball-only block entity presents its committed transfer continuously.
+      if(state.getValue(FRAME)!=0)level.setBlock(pos,state.setValue(FRAME,0),3);
       level.scheduleTick(pos,this,1);return;
     }
     if(toy.equals("chao_jack_in_box")) {

@@ -198,7 +198,7 @@ public final class BlockyRunMorphologyGameTests055 {
     try{h.assertTrue(HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(source.encoded().getBytes(StandardCharsets.UTF_8))).equals(source.sha()),
         "Literal accepted .53 fixture matches its original hash");}
     catch(java.security.NoSuchAlgorithmException impossible){throw new IllegalStateException(impossible);}
-    var s=ChaoState.decode(source.encoded());h.assertTrue(s.encode().equals(source.encoded()),"New derived visibility adds no migration or persistent-field rewrite");
+    var s=ChaoState.decode(source.encoded());FaceLegacyAssertions076.assertAppendOnly(h,source.encoded(),s,"New derived visibility adds no migration or persistent-field rewrite");
     var sample=HeroRunMorphology052.sample(s);
     if(s.adult)near(h,sample.babyGrowth(),0,"Accepted adults never render baby-only growth");
     else near(h,sample.babyGrowth(),sample.babyRun()*sample.maturity(),"Older babies derive age-conditioned appearance from retained values");
@@ -224,6 +224,9 @@ public final class BlockyRunMorphologyGameTests055 {
   }
   private static void compatible(GameTestHelper h,int axis) {
     var p=keeper(h,true);var s=adult();s.swimFly=.75f*axis;s.runPower=-.75f;var c=actor(h,p,s);
+    // Match the existing .75 legacy SF fixture with the current bars read by Hero Run066.
+    com.chaogarden.core.DriveRules.setTotal(s,axis<0?ChaoState.SWIM:ChaoState.FLY,720,new Random(66));
+    s.swimFly=.75f*axis;s.runPower=-.75f;c.sync();
     int secondary=axis<0?ChaoState.SWIM_TYPE:ChaoState.FLY_TYPE;
     h.assertTrue(Arrays.stream(s.secondaryTypes()).anyMatch(v->v==secondary)&&Arrays.stream(s.secondaryTypes()).anyMatch(v->v==ChaoState.RUN_TYPE),
         "Existing independent secondary axes retain a compatible Swim/Run or Fly/Run pair");

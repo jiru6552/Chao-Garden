@@ -110,6 +110,28 @@ public final class HubContent {
     var data=HubWorldData.get(level.getServer());String dimension=level.dimension().location().toString();
     if(BUILDING.contains(level))return false;
     var probe=roomProbe(level.dimension());
+    if(level.dimension().equals(HUB)&&(data.revisions.getOrDefault(dimension,0)>0
+        ||level.getBlockState(new BlockPos(0,78,0)).is(LobbyDecor025.SCENE_ANCHOR.get()))){
+      // Existing lobbies are never rebuilt because an anchor/probe was edited.
+      // The finite compare-and-swap access patch owns only its authored cells.
+      if(data.revisions.getOrDefault(dimension,0)==0){data.revisions.put(dimension,1);data.setDirty();}
+      try{HubRooms.refreshUnlocks081(level);}
+      catch(RuntimeException failure){com.mojang.logging.LogUtils.getLogger().error("Chao lobby access update deferred; existing builds are unchanged",failure);}
+      return safeLobby081(level);
+    }
+    if(level.dimension().equals(HUB)){
+      // No marker does not prove an empty dimension: a damaged save can lose
+      // both metadata and its anchor while retaining a keeper's construction.
+      var area=HubRooms.HUB_BOUNDS;
+      for(var at:BlockPos.betweenClosed((int)area.minX,(int)area.minY,(int)area.minZ,
+          (int)area.maxX-1,(int)area.maxY-1,(int)area.maxZ-1)){
+        if(!level.getBlockState(at).isAir()){
+          com.mojang.logging.LogUtils.getLogger().warn("Chao lobby generation refused: unmarked existing block at {}. Back up and restore a compatible lobby with its saved revision and scene anchor; no blocks were changed.",at.immutable());
+          return false;
+        }
+      }
+      if(!level.getEntities((net.minecraft.world.entity.Entity)null,area,e->!e.isRemoved()&&!e.isSpectator()).isEmpty())return false;
+    }
     if(data.revisions.getOrDefault(dimension,0)<ROOM_REVISION
         ||!level.getBlockState(probe).isFaceSturdy(level,probe,Direction.UP)){
       BUILDING.add(level);
@@ -130,7 +152,20 @@ public final class HubContent {
       KindergartenContent.ensureServices(level);
     }}
     catch(RuntimeException failure){com.mojang.logging.LogUtils.getLogger().error("Could not prepare Kindergarten services",failure);return false;}
+    if(level.dimension().equals(HUB)){
+      try{HubRooms.refreshUnlocks081(level);}
+      catch(RuntimeException failure){com.mojang.logging.LogUtils.getLogger().error("Chao lobby access remains pending",failure);}
+      return safeLobby081(level);
+    }
     return true;
+  }
+
+  private static boolean safeLobby081(ServerLevel level){
+    var floor=new BlockPos(0,79,0);
+    return level.getBlockState(new BlockPos(0,78,0)).is(LobbyDecor025.SCENE_ANCHOR.get())
+        &&level.getBlockState(floor).isFaceSturdy(level,floor,Direction.UP)
+        &&level.getBlockState(floor.above()).getCollisionShape(level,floor.above()).isEmpty()
+        &&level.getBlockState(floor.above(2)).getCollisionShape(level,floor.above(2)).isEmpty();
   }
 
   private static long now(ServerPlayer player){return player.server.overworld().getGameTime();}
@@ -211,6 +246,8 @@ public final class HubContent {
     // during a gate crossing stalls the server while the client still predicts
     // movement through the aperture and beyond the lobby's physical edge.
     for(var key:java.util.List.of(KINDERGARTEN,GARDEN,HERO_GARDEN,DARK_GARDEN)){
+      if(key.equals(HERO_GARDEN)&&!GardenUnlocks081.isUnlocked(player.server,true)
+          ||key.equals(DARK_GARDEN)&&!GardenUnlocks081.isUnlocked(player.server,false))continue;
       var scenic=player.server.getLevel(key);if(scenic!=null&&!ensure(scenic))return false;
     }
     var origin=captureOrigin(player);storeVisit(player,origin);
@@ -233,12 +270,14 @@ public final class HubContent {
     arrived(player);return true;
   }
   public static boolean visitHeroGarden(ServerPlayer player){
+    if(!GardenUnlocks081.canUsePortal(player.server,true))return false;
     if(!player.isAlive()||!player.containerMenu.getCarried().isEmpty()||!player.level().dimension().equals(HUB)||visit(player)==null)return false;
     var destination=player.server.getLevel(HERO_GARDEN);if(destination==null||!ensure(destination)||!modeFor(player,HERO_GARDEN))return false;
     if(!transfer(player,destination,HeroGardenRooms0253.SPAWN,HeroGardenRooms0253.SPAWN_YAW,0)){adventure(player);return false;}
     arrived(player);return true;
   }
   public static boolean visitDarkGarden(ServerPlayer player){
+    if(!GardenUnlocks081.canUsePortal(player.server,false))return false;
     if(!player.isAlive()||!player.containerMenu.getCarried().isEmpty()||!player.level().dimension().equals(HUB)||visit(player)==null)return false;
     var destination=player.server.getLevel(DARK_GARDEN);if(destination==null||!ensure(destination)||!modeFor(player,DARK_GARDEN))return false;
     if(!transfer(player,destination,DarkGardenRooms0255.SPAWN,DarkGardenRooms0255.SPAWN_YAW,0)){adventure(player);return false;}
@@ -248,7 +287,9 @@ public final class HubContent {
     var realm=player.level().dimension();boolean garden=isGardenDimension(realm),hero=realm.equals(HERO_GARDEN),dark=realm.equals(DARK_GARDEN);
     if(!player.isAlive()||!player.containerMenu.getCarried().isEmpty()||!(garden||player.level().dimension().equals(KINDERGARTEN))||visit(player)==null)return false;
     var destination=player.server.getLevel(HUB);if(destination==null||!ensure(destination)||!adventure(player))return false;
-    var target=hero?HubRooms.HERO_RETURN_LANDING:dark?HubRooms.DARK_RETURN_LANDING:garden?new Vec3(.5,80.1,18.5):new Vec3(.5,80.1,-18.5);
+    var target=hero?(HubRooms.accessInstalled081(destination,true)?HubRooms.HERO_RETURN_LANDING:HUB_SPAWN)
+        :dark?(HubRooms.accessInstalled081(destination,false)?HubRooms.DARK_RETURN_LANDING:HUB_SPAWN)
+        :garden?new Vec3(.5,80.1,18.5):new Vec3(.5,80.1,-18.5);
     if(!transfer(player,destination,target,hero?HubRooms.HERO_FACING.toYRot():dark?-90:garden?180:0,0)){modeFor(player,realm);return false;}
     arrived(player);return true;
   }

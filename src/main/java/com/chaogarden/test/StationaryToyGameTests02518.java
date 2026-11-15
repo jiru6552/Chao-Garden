@@ -49,7 +49,13 @@ public final class StationaryToyGameTests02518 {
       Vec3 anchor=ToyContent.stationaryAnchor(c,pos,pos.relative(side));
       h.assertTrue(c.distanceToSqr(anchor)<.007,"Stationary session begins/continues at precise anchor");
       h.assertTrue(h.getLevel().noCollision(c,c.getBoundingBox()),"Actor stays outside physical prop");
-      if(ToyInteractionRules.viewing(kind))h.assertTrue(c.position().subtract(Vec3.atBottomCenterOf(pos)).horizontalDistanceSqr()>.9,"Viewing does not collapse into instrument contact");
+      if(kind.equals("chao_radio")) {
+        h.assertTrue(c.distanceToSqr(ToyContent.radioAnchor(c,pos))<.015*.015,"Radio uses its measured close front seat");
+        var delta=c.position().subtract(Vec3.atBottomCenterOf(pos));var front=h.getLevel().getBlockState(pos).getValue(ChaoToyBlock.FACING);
+        h.assertTrue(Math.abs(delta.horizontalDistance()-.60)<.015&&Math.abs(delta.y)<.015&&delta.x*front.getStepX()+delta.z*front.getStepZ()>.585,"Radio stays close, supported and on the real front side");
+        var speaker=ToyContent.radioSpeaker(c,pos).subtract(c.position());var forward=Vec3.directionFromRotation(0,c.getYRot());
+        h.assertTrue((forward.x*speaker.x+forward.z*speaker.z)/Math.hypot(speaker.x,speaker.z)>.995,"Radio listener faces its actual front speaker");
+      } else if(ToyInteractionRules.viewing(kind))h.assertTrue(c.position().subtract(Vec3.atBottomCenterOf(pos)).horizontalDistanceSqr()>.9,"Viewing does not collapse into instrument contact");
       if(ToyInteractionRules.frontOnly(kind))h.assertTrue(side==Direction.NORTH,"Directional prop remains front-only");
     });
     h.succeedWhen(()->{
@@ -62,7 +68,7 @@ public final class StationaryToyGameTests02518 {
   @GameTest(template="activity_test",timeoutTicks=1600) public static void jackInBoxAnchor(GameTestHelper h){complete(h,"chao_jack_in_box");}
   @GameTest(template="activity_test",timeoutTicks=1600) public static void radioAnchor(GameTestHelper h){complete(h,"chao_radio");}
   @GameTest(template="activity_test",timeoutTicks=1600) public static void tvAnchor(GameTestHelper h){complete(h,"chao_tv");}
-  @GameTest(template="activity_test",timeoutTicks=1600) public static void rubberDuckAnchor(GameTestHelper h){complete(h,"chao_rubber_duck");}
+  @GameTest(template="activity_test",timeoutTicks=1600) public static void rubberDuckAnchor(GameTestHelper h){LegacyFloatToyFixtures080.duck(h);}
   @GameTest(template="activity_test",timeoutTicks=1600) public static void triangleAnchor(GameTestHelper h){complete(h,"chao_triangle");}
   @GameTest(template="activity_test",timeoutTicks=1600) public static void guitarAnchor(GameTestHelper h){complete(h,"chao_guitar");}
   @GameTest(template="activity_test",timeoutTicks=1600) public static void accordionAnchor(GameTestHelper h){complete(h,"chao_accordion");}
@@ -97,7 +103,7 @@ public final class StationaryToyGameTests02518 {
   @GameTest(template="activity_test",timeoutTicks=1400) public static void displacedRadioListenerCancels(GameTestHelper h){interrupted(h,"chao_radio","move");}
   @GameTest(template="activity_test",timeoutTicks=1400) public static void displacedTrumpetPlayerCancels(GameTestHelper h){interrupted(h,"chao_trumpet","move");}
   @GameTest(template="activity_test",timeoutTicks=1400) public static void shovelRequiresSandThroughoutPlay(GameTestHelper h){interrupted(h,"chao_shovel","sand");}
-  @GameTest(template="activity_test",timeoutTicks=1400) public static void drainedDuckEndsShoreSession(GameTestHelper h){interrupted(h,"chao_rubber_duck","drain");}
+  @GameTest(template="activity_test",timeoutTicks=1400) public static void drainedDuckEndsShoreSession(GameTestHelper h){LegacyFloatToyFixtures080.drain(h,"chao_rubber_duck");}
   @GameTest(template="activity_test",timeoutTicks=1400) public static void rotatedTvCancelsOldViewingSide(GameTestHelper h){interrupted(h,"chao_tv","rotate");}
   @GameTest(template="activity_test",timeoutTicks=1400) public static void lostFloorCancelsDrumming(GameTestHelper h){interrupted(h,"chao_drum","floor");}
   @GameTest(template="activity_test",timeoutTicks=1400) public static void obstructedAnchorCancelsBell(GameTestHelper h){interrupted(h,"chao_bell","obstruct");}

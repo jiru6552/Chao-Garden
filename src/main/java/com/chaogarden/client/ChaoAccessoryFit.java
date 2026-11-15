@@ -3,6 +3,11 @@ package com.chaogarden.client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import java.util.HashMap;
 import java.util.Map;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import java.util.ArrayList;
+import java.util.List;
+import org.joml.Vector3f;
 
 /** Fit clothing to skin landmarks in joint-local pixels, before the sampled joint pose. */
 final class ChaoAccessoryFit {
@@ -26,8 +31,73 @@ final class ChaoAccessoryFit {
   private static final float[] BODY={-2,-3.5f,-2,2,.5f,2};
   private static final float[] ARM_LEFT={0,0,-.5f,2,1,.5f};
   private static final float[] ARM_RIGHT={-2,0,-.5f,0,1,.5f};
+  private static final float[] COVERED_HEAD={-3.75f,-6.30f,-3.30f,3.75f,.20f,3.30f};
+  private static final float[] HOODED_HEAD={-3.86f,-6.38f,-3.53f,3.86f,.15f,3.38f};
+  private static final float[] CLOTHED_BODY={-2.14f,-3.60f,-2.20f,2.14f,.60f,2.14f};
   private static final Map<String,float[]> REFERENCE_HEADS=new HashMap<>();
   private static final Map<String,float[]> REFERENCE_BODIES=new HashMap<>();
+  static final float FACE_CLEARANCE=.18f,TEMPLE_CLEARANCE=.08f;
+
+  /** Landmarks are measured on one coherent source assembly, in rendered local pixels.
+   * Source triangles stay together; this transform never fits lens fragments separately. */
+  record Source(String kind,float[] eyes,float frontBack,List<Temple> temples) {
+    static Source read(JsonObject data) {
+      if(!data.has("accessory_fit"))return null;
+      var fit=data.getAsJsonObject("accessory_fit");
+      if(fit.has("kind")&&!fit.get("kind").getAsString().equals("spectacles")) {
+        String kind=fit.get("kind").getAsString();
+        return new Source(kind,kind.equals("mouth")?values(fit.getAsJsonArray("mouth")):null,0,List.of());
+      }
+      if(!fit.has("eyes")||!fit.has("front_back"))return null;
+      var temples=new ArrayList<Temple>();
+      for(String side:List.of("left","right")) {
+        var info=fit.getAsJsonObject(side);if(info==null)continue;
+        String bone=info.has("bone")?info.get("bone").getAsString():"temple_"+side;
+        String hinge=info.has("hinge")?info.get("hinge").getAsString():"hinge_"+side;
+        String strip=info.get("strip").getAsString();float[] join=values(info.getAsJsonArray("join"));
+        float[] inner=values(info.getAsJsonArray("inner"));
+        var vertices=new ArrayList<Vector3f>();
+        for(var element:data.getAsJsonArray("bones")) {
+          var part=element.getAsJsonObject();if(!part.get("name").getAsString().equals(bone))continue;
+          float[] pivot=values(part.getAsJsonArray("pivot"));
+          for(int a=0;a<3;a++)if(Math.abs(pivot[a]-join[a])>.0001f)
+            throw new IllegalArgumentException("Source temple must start at its measured rear join: "+bone);
+          for(var meshElement:part.getAsJsonArray("meshes")) {
+            var mesh=meshElement.getAsJsonObject();
+            for(var vertex:mesh.getAsJsonArray("vertices")){float[] p=values(vertex.getAsJsonArray());vertices.add(new Vector3f(p[0],p[1],p[2]));}
+          }
+        }
+        if(vertices.isEmpty())throw new IllegalArgumentException("Missing source temple geometry: "+bone);
+        temples.add(new Temple(bone,hinge,strip,side.equals("left")?-1:1,inner,join,vertices));
+      }
+      return new Source("spectacles",values(fit.getAsJsonArray("eyes")),fit.get("front_back").getAsFloat(),temples);
+    }
+  }
+  private static float[] values(JsonArray a){float[] v=new float[a.size()];for(int n=0;n<v.length;n++)v[n]=a.get(n).getAsFloat();return v;}
+
+  /** A short source connector stays in front of the worn surface, then the
+   * complete rear temple follows its side. Its positive affine transform keeps
+   * both cut cross-sections joined, without widening or reflecting the head. */
+  record Temple(String bone,String hinge,String strip,int side,float[] inner,float[] join,List<Vector3f> vertices) {
+    void apply(float[] h,Fit fit,Map<String,ChaoMeshAsset.Pose> poses) {
+      var arm=poses.get(bone);var root=poses.get(hinge);var connector=poses.get(strip);
+      if(arm==null||root==null||connector==null)throw new IllegalArgumentException("Missing source spectacle arm: "+bone);
+      float inside=side<0?Float.NEGATIVE_INFINITY:Float.POSITIVE_INFINITY;
+      for(var p:vertices)inside=side<0?Math.max(inside,p.x):Math.min(inside,p.x);
+      float targetX=((side<0?h[0]:h[3])-fit.x+side*TEMPLE_CLEARANCE)/fit.sx-inside;
+      float targetZ=(h[2]-.04f-fit.z)/fit.sz;
+      float length=join[2]-inner[2],shear=(targetX-inner[0])/length,depth=(targetZ-inner[2])/length;
+      if(!(length>0&&depth>0))throw new IllegalArgumentException("Spectacle connector must remain in front of the face: "+bone);
+      // [[1,shear],[0,depth]]=U*positiveScale*V. These are the
+      // renderer's ordinary two-joint Y rotations and X/Z scales.
+      double a=1+shear*shear,d=depth*depth,b=shear*depth;
+      double u=.5*Math.atan2(2*b,a-d),c=Math.cos(u),s=Math.sin(u);
+      double sigma=Math.sqrt((a+d+Math.sqrt((a-d)*(a-d)+4*b*b))*.5);
+      root.ry=(float)-u;root.sx=(float)sigma;root.sz=(float)(depth/sigma);
+      connector.ry=(float)Math.atan2(shear*c+depth*s,c);
+      arm.x=targetX-join[0];arm.z=targetZ-join[2];
+    }
+  }
   private ChaoAccessoryFit() {}
   static boolean coversHead(String id){return id.equals("baseball_cap_accessory")||id.equals("press_hat_accessory");}
   static boolean hoodVisible(com.chaogarden.entity.ChaoEntity entity) {
@@ -49,6 +119,49 @@ final class ChaoAccessoryFit {
         model.accessoryBounds("body"),model.accessoryBounds(anchor));
   }
 
+  static Fit accessory(String id,String anchor,ChaoModel model,Source source) {
+    return accessory(id,anchor,model,source,model.accessoryBounds("skull"));
+  }
+
+  static Fit accessory(String id,String anchor,ChaoModel model,Source source,float[] headSurface) {
+    return accessory(id,anchor,model,source,headSurface,model.accessoryBounds("body"));
+  }
+
+  static Fit accessory(String id,String anchor,ChaoModel model,Source source,float[] headSurface,float[] bodySurface) {
+    float[] mouth=model.toyMouth();
+    if(mouth!=null&&model.resolvedFace076()!=null&&!model.resolvedFace076().nativeExcluded()) {
+      mouth=mouth.clone();mouth[1]+=ChaoExpressionLayer025.MOUTH_DROP076;
+    }
+    return accessory(id,id.equals("hoodie_hood")?model.accessoryBounds("skull"):headSurface,model.accessoryEyes(),
+        id.endsWith("hoodie_accessory")||id.equals("hoodie_hood_folded")?model.accessoryBounds("body"):bodySurface,
+        model.accessoryBounds(anchor),mouth,source);
+  }
+
+  static Fit accessory(String id,float[] actualHead,float[] actualEyes,float[] actualBody,float[] arm,float[] mouth,Source source) {
+    float[] h=actualHead==null?HEAD:actualHead;
+    float[] eyes=actualEyes==null?new float[]{(h[0]+h[3])*.5f,h[1]+(h[4]-h[1])*2/3,h[2]-.06f,(h[3]-h[0])*2/7}:actualEyes;
+    if(source!=null) {
+      if(source.kind.equals("head"))return between(h,HEAD);
+      if(source.kind.equals("body"))return between(actualBody==null?BODY:actualBody,BODY);
+      if(source.kind.equals("arm_left"))return between(arm==null?ARM_LEFT:arm,ARM_LEFT);
+      if(source.kind.equals("arm_right"))return between(arm==null?ARM_RIGHT:arm,ARM_RIGHT);
+      if(source.kind.equals("mouth")&&mouth!=null) {
+        float scale=(h[3]-h[0])/7;
+        return new Fit(mouth[0]-source.eyes[0]*scale,mouth[1]-source.eyes[1]*scale,
+            Math.min(h[2],mouth[2])+.08f-source.eyes[2]*scale,scale,scale,scale);
+      }
+    }
+    if(source!=null&&source.eyes!=null&&(id.contains("glasses")||id.contains("aviators"))) {
+      float scale=eyes[3]/source.eyes[3];
+      return new Fit(eyes[0]-source.eyes[0]*scale,eyes[1]-source.eyes[1]*scale,
+          Math.min(h[2],eyes[2])-FACE_CLEARANCE-source.frontBack*scale,scale,scale,scale);
+    }
+    var fit=accessory(id,actualHead,actualEyes,actualBody,arm);
+    if(id.contains("pacifier")&&mouth!=null)
+      return new Fit(mouth[0],mouth[1]-1.9f,Math.min(h[2],mouth[2])-FACE_CLEARANCE+3.05f*fit.sz,fit.sx,fit.sy,fit.sz);
+    return fit;
+  }
+
   static Fit accessory(String id,float[] actualHead,float[] actualEyes,float[] actualBody,float[] arm) {
     float[] h=actualHead==null?HEAD:actualHead,b=actualBody==null?BODY:actualBody;
     float hw=h[3]-h[0],hh=h[4]-h[1],hd=h[5]-h[2];
@@ -68,7 +181,7 @@ final class ChaoAccessoryFit {
     }
     if(id.contains("headphones")) {
       float sx=hw/7,sy=hh/6,sz=hd/6;
-      return new Fit(hx,h[1]-.08f+3.4f*sy,hz,sx,sy,sz);
+      return new Fit(hx,h[1]-.08f+3.1f*sy,hz,sx,sy,sz);
     }
     if(id.equals("eggshell_hat")) {
       float sx=hw/6.2f,sy=hh/6,sz=hd/5.6f;
@@ -85,6 +198,7 @@ final class ChaoAccessoryFit {
     if(id.equals("hoodie_hood")) {
       return between(new float[]{h[0]-.4f,h[1]-.4f,h[2]-.4f,h[3]+.4f,h[4]+.12f,h[5]+.4f},HEAD);
     }
+    if(id.equals("hoodie_hood_folded"))return between(b,BODY);
     if(id.startsWith("hoodie_sleeve_")) {
       return between(arm==null?(id.endsWith("left")?ARM_LEFT:ARM_RIGHT):arm,
           id.endsWith("left")?ARM_LEFT:ARM_RIGHT);
@@ -110,6 +224,22 @@ final class ChaoAccessoryFit {
       return bounds;
     });
     return between(actual,reference);
+  }
+
+  static Fit canonicalHead(float[] actual){return actual==null?IDENTITY:between(actual,HEAD);}
+  static float[] coveredHead(float[] actual){return headEnvelope(actual,COVERED_HEAD);}
+  static float[] hoodedHead(float[] actual){return headEnvelope(actual,HOODED_HEAD);}
+  static float[] hoodedHead(float[] actual,float[] authored){return headEnvelope(actual,authored);}
+  static float[] clothedBody(float[] actual){
+    return clothedBody(actual,CLOTHED_BODY);
+  }
+  static float[] clothedBody(float[] actual,float[] authored){
+    var fit=actual==null?IDENTITY:between(actual,BODY);var min=fit.point(authored);var max=fit.point(new float[]{authored[3],authored[4],authored[5]});
+    return new float[]{min[0],min[1],min[2],max[0],max[1],max[2]};
+  }
+  private static float[] headEnvelope(float[] actual,float[] envelope) {
+    var fit=canonicalHead(actual);var min=fit.point(envelope);var max=fit.point(new float[]{envelope[3],envelope[4],envelope[5]});
+    return new float[]{min[0],min[1],min[2],max[0],max[1],max[2]};
   }
 
   static Fit legacyBody(float[] actual,String sourceKey) {
@@ -152,5 +282,12 @@ final class ChaoAccessoryFit {
     var r=poses.get("temple_right");if(r!=null)r.x=right-2.85f;
     var lh=poses.get("hinge_left");if(lh!=null)lh.sx=(-2.45f-left)/.35f;
     var rh=poses.get("hinge_right");if(rh!=null)rh.sx=(right-2.35f)/.35f;
+  }
+
+  static void parts(String id,float[] actualHead,Fit fit,Map<String,ChaoMeshAsset.Pose> poses,Source source) {
+    if(source==null){parts(id,actualHead,fit,poses);return;}
+    poses.values().forEach(ChaoMeshAsset.Pose::reset);
+    float[] h=actualHead==null?HEAD:actualHead;
+    for(var temple:source.temples)temple.apply(h,fit,poses);
   }
 }

@@ -104,16 +104,10 @@ public final class MobileToyGameTests02518 {
     });
     h.succeedWhen(()->h.assertTrue(seen.get()&&Integer.bitCount(frames.get())==4&&!ToyContent.isPlaying(c)&&!c.isNoGravity()&&c.state().happiness>20,"Supported float completes for either swim skill"));
   }
-  @GameTest(template="activity_test",timeoutTicks=1600) public static void lifesaverSupportsNonSwimmer(GameTestHelper h){ring(h,false);}
-  @GameTest(template="activity_test",timeoutTicks=1600) public static void lifesaverSupportsSwimmer(GameTestHelper h){ring(h,true);}
+  @GameTest(template="activity_test",timeoutTicks=1600) public static void lifesaverSupportsNonSwimmer(GameTestHelper h){LegacyFloatToyFixtures080.ring(h,false);}
+  @GameTest(template="activity_test",timeoutTicks=1600) public static void lifesaverSupportsSwimmer(GameTestHelper h){LegacyFloatToyFixtures080.ring(h,true);}
   @GameTest(template="activity_test",timeoutTicks=1400)
-  public static void drainedLifesaverCancelsAndRestoresGravity(GameTestHelper h) {
-    floor(h);var pos=h.absolutePos(new BlockPos(9,0,9));h.getLevel().setBlock(pos,ToyContent.block("chao_lifesaver").defaultBlockState().setValue(ChaoToyBlock.WATERLOGGED,true),3);
-    var c=actor(h,pos.north(2).above(),false,false);var done=new AtomicBoolean();
-    h.onEachTick(()->{if(done.get()||!ToyContent.isPlaying(c)||ToyContent.sessionElapsed(h.getLevel(),pos)<40)return;done.set(true);
-      h.getLevel().setBlock(pos,h.getLevel().getBlockState(pos).setValue(ChaoToyBlock.WATERLOGGED,false),3);
-      h.runAfterDelay(8,()->{h.assertTrue(!ToyContent.isPlaying(c)&&!c.isNoGravity()&&c.state().happiness==20,"Drain interrupts supported float without reward");h.assertTrue(c.onGround()&&h.getLevel().noCollision(c,c.getBoundingBox()),"Drain returns actor to supported clear shore");h.succeed();});});
-  }
+  public static void drainedLifesaverCancelsAndRestoresGravity(GameTestHelper h) {LegacyFloatToyFixtures080.drain(h,"chao_lifesaver");}
 
   @GameTest(template="activity_test",timeoutTicks=1600)
   public static void ballNeverRollsIntoAnotherActor(GameTestHelper h) {
@@ -150,7 +144,7 @@ public final class MobileToyGameTests02518 {
     if(!during)h.runAfterDelay(450,h::succeed);
   }
   @GameTest(template="activity_test",timeoutTicks=500) public static void horseRejectsLowRoof(GameTestHelper h){mountedObstruction(h,"chao_rocking_horse",false);}
-  @GameTest(template="activity_test",timeoutTicks=500) public static void ringRejectsLowRoof(GameTestHelper h){mountedObstruction(h,"chao_lifesaver",false);}
+  @GameTest(template="activity_test",timeoutTicks=500) public static void ringRejectsLowRoof(GameTestHelper h){LegacyFloatToyFixtures080.lowRoof(h);}
   @GameTest(template="activity_test",timeoutTicks=1400) public static void horseCancelsNewRoof(GameTestHelper h){mountedObstruction(h,"chao_rocking_horse",true);}
-  @GameTest(template="activity_test",timeoutTicks=1400) public static void ringCancelsNewRoof(GameTestHelper h){mountedObstruction(h,"chao_lifesaver",true);}
+  @GameTest(template="activity_test",timeoutTicks=1400) public static void ringCancelsNewRoof(GameTestHelper h){LegacyFloatToyFixtures080.newRoof(h);}
 }

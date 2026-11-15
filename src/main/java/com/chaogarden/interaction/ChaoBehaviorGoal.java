@@ -6,6 +6,7 @@ import com.chaogarden.care.ChaoCareServices;
 import com.chaogarden.companion.CompanionContent;
 import com.chaogarden.core.ChaoEmotion;
 import com.chaogarden.core.ChaoIllness;
+import com.chaogarden.core.ChaoIdleRules078;
 import com.chaogarden.core.ChaoPersonality;
 import com.chaogarden.core.ChaoPreferences;
 import com.chaogarden.entity.ChaoEntity;
@@ -28,17 +29,25 @@ import net.minecraft.world.phys.Vec3;
  */
 public final class ChaoBehaviorGoal extends Goal {
   private final ChaoEntity chao;
+  private final boolean idleOnly;
   private Behavior selected=Behavior.NONE;
   private Entity target;
   private Vec3 walkTarget;
   private long nextCheck,approachUntil;
+  private long nextIdle;
+  private java.util.Random idleRandom;
   private int duration;
   private boolean approaching,effectApplied;
   private String detail="";
 
   public ChaoBehaviorGoal(ChaoEntity chao) {
-    this.chao=chao;setFlags(EnumSet.of(Flag.MOVE,Flag.LOOK,Flag.JUMP));
+    this(chao,false);
   }
+  private ChaoBehaviorGoal(ChaoEntity chao,boolean idleOnly) {
+    this.chao=chao;this.idleOnly=idleOnly;setFlags(EnumSet.of(Flag.MOVE,Flag.LOOK,Flag.JUMP));
+  }
+  /** Lower than locomotion, items and needs; above unauthored random head looks. */
+  public static ChaoBehaviorGoal idle(ChaoEntity chao){return new ChaoBehaviorGoal(chao,true);}
   private boolean eligible() {
     return chao.isAlive()&&!chao.isNoAi()&&!chao.isCocooned()&&!chao.isResting()
         &&!chao.isHandlingItem()&&!chao.isEating()&&!chao.isStaying()&&!chao.isInWater()
@@ -47,8 +56,9 @@ public final class ChaoBehaviorGoal extends Goal {
   }
   @Override public boolean canUse() {
     if(!eligible())return false;
+    if(idleOnly)return canUseIdle();
     if(chao.getBehavior()==Behavior.SHAKE_TREE||chao.getBehavior()==Behavior.LEARN)return false;
-    if(chao.isBehaving()) {selected=chao.getBehavior();return true;}
+    if(chao.isBehaving()&&chao.getBehavior()!=Behavior.IDLE) {selected=chao.getBehavior();return true;}
     long now=chao.level().getGameTime();
     if(now<nextCheck||now<chao.nextBehaviorTime())return false;
     nextCheck=now+20+chao.getRandom().nextInt(41);
@@ -150,12 +160,30 @@ public final class ChaoBehaviorGoal extends Goal {
     }
     return false;
   }
+  private java.util.Random idleRandom() {
+    if(idleRandom==null)idleRandom=new java.util.Random(chao.getRandom().nextLong());
+    return idleRandom;
+  }
+  private boolean idleMoment() {
+    return ChaoIdleRules078.eligible(chao.state())&&!ChaoCareServices.hasLesson(chao)
+        &&chao.onGround()&&chao.getNavigation().isDone()&&chao.getDeltaMovement().horizontalDistanceSqr()<=.0004;
+  }
+  private boolean canUseIdle() {
+    if(chao.isBehaving()||!idleMoment())return false;
+    long now=chao.level().getGameTime();
+    if(nextIdle==0)nextIdle=now+ChaoIdleRules078.nextGap(idleRandom());
+    if(now<nextIdle||now<chao.nextBehaviorTime())return false;
+    detail=ChaoIdleRules078.choose(chao.state(),idleRandom(),true);
+    if(detail.isEmpty())return false;
+    selected=Behavior.IDLE;duration=ChaoIdleRules078.duration(detail);target=null;walkTarget=null;
+    return true;
+  }
   private List<ChaoEntity> nearbyChao() {
     return chao.level().getEntitiesOfClass(ChaoEntity.class,chao.getBoundingBox().inflate(7),c->c.isAlive()&&!c.isRemoved());
   }
   @Override public void start() {
     effectApplied=false;approaching=false;
-    if(chao.isBehaving()) {
+    if(chao.isBehaving()&&(idleOnly||chao.getBehavior()!=Behavior.IDLE)) {
       selected=chao.getBehavior();effectApplied=chao.getBehaviorProgress(0)>.5f;
       var partner=chao.behaviorPartner();target=partner==null?null:((ServerLevel)chao.level()).getEntity(partner);
       return;
@@ -179,6 +207,7 @@ public final class ChaoBehaviorGoal extends Goal {
       duration=leader.getBehaviorTicks();
     }
     chao.startBehavior(selected,duration);chao.setBehaviorDetail(detail);
+    if(selected==Behavior.IDLE)nextIdle=chao.level().getGameTime()+duration+ChaoIdleRules078.nextGap(idleRandom());
     if(target!=null)chao.setBehaviorPartner(target.getUUID());
     approaching=false;
   }
@@ -187,6 +216,8 @@ public final class ChaoBehaviorGoal extends Goal {
   }
   @Override public boolean canContinueToUse() {
     if(!eligible())return false;
+    if(idleOnly)return chao.getBehavior()==Behavior.IDLE&&idleMoment()
+        &&ChaoIdleRules078.allowed(chao.state(),chao.behaviorDetail(),true);
     if(approaching)return target!=null&&target.isAlive()&&chao.distanceToSqr(target)<100
         &&chao.level().getGameTime()<approachUntil
         &&(!(target instanceof ChaoEntity other)||!ChaoEntity.isSocialBehavior(selected)||other.canBeginSocial());
@@ -204,6 +235,11 @@ public final class ChaoBehaviorGoal extends Goal {
       return;
     }
     Behavior action=chao.getBehavior();if(action==Behavior.NONE)return;
+    if(idleOnly) {
+      if(action!=Behavior.IDLE)return;
+      if(!idleMoment()||!ChaoIdleRules078.allowed(chao.state(),chao.behaviorDetail(),true)){chao.clearBehavior();return;}
+      chao.getNavigation().stop();return;
+    }
     if(action==Behavior.INSTRUMENT&&com.chaogarden.toys.InstrumentPerformance.supports(chao.behaviorDetail())) {
       if(target instanceof ChaoEntity leader&&leader.getBehavior()!=Behavior.INSTRUMENT){chao.clearBehavior();return;}
       com.chaogarden.toys.InstrumentPerformance.tick(chao);
@@ -280,6 +316,11 @@ public final class ChaoBehaviorGoal extends Goal {
   }
   @Override public void stop() {
     chao.getNavigation().stop();
+    if(idleOnly) {
+      if(chao.getBehavior()==Behavior.IDLE)chao.clearBehavior();
+      nextIdle=chao.level().getGameTime()+ChaoIdleRules078.nextGap(idleRandom());
+      target=null;walkTarget=null;return;
+    }
     if(approaching){chao.deferBehavior(80);approaching=false;}
     // Timed completion is committed by the entity after AI processing, so the
     // order in which two partners tick cannot drop or double a social reward.

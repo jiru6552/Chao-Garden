@@ -57,16 +57,20 @@ public final class LobbyDecor025 {
   }
   public static final class SceneAnchor extends BaseEntityBlock {
     public static final BooleanProperty PORTAL=BooleanProperty.create("portal");
+    public static final BooleanProperty GARDEN_LAYOUT81=BooleanProperty.create("garden_layout81");
+    public static final IntegerProperty GARDEN_ACCESS81=IntegerProperty.create("garden_access81",0,3);
     public static final DirectionProperty FACING=net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
     public static final IntegerProperty STYLE=IntegerProperty.create("portal_style",0,5);
     private static final MapCodec<SceneAnchor> CODEC=simpleCodec(SceneAnchor::new);
-    public SceneAnchor(Properties p){super(p);registerDefaultState(stateDefinition.any().setValue(PORTAL,false).setValue(FACING,Direction.SOUTH).setValue(STYLE,0));}
-    @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){builder.add(PORTAL,FACING,STYLE);}
+    public SceneAnchor(Properties p){super(p);registerDefaultState(stateDefinition.any().setValue(PORTAL,false).setValue(FACING,Direction.SOUTH).setValue(STYLE,0).setValue(GARDEN_LAYOUT81,false).setValue(GARDEN_ACCESS81,0));}
+    @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){builder.add(PORTAL,FACING,STYLE,GARDEN_LAYOUT81,GARDEN_ACCESS81);}
     @Override protected MapCodec<? extends BaseEntityBlock> codec(){return CODEC;}
     @Override protected RenderShape getRenderShape(BlockState state){return RenderShape.INVISIBLE;}
     @Override public BlockEntity newBlockEntity(BlockPos pos,BlockState state){return new SceneEntity(pos,state);}
     @Override protected VoxelShape getShape(BlockState s,BlockGetter l,BlockPos p,CollisionContext c){return Shapes.empty();}
   }
+  /** Old anchors retain their old visible geometry until a guarded migration commits. */
+  public static int sceneAccess081(BlockState state){return state.getValue(SceneAnchor.GARDEN_LAYOUT81)?state.getValue(SceneAnchor.GARDEN_ACCESS81):3;}
   public static final class SceneEntity extends BlockEntity {
     public SceneEntity(BlockPos p,BlockState s){super(SCENE.get(),p,s);}
     public AABB sceneBounds(){return getBlockState().is(PALM_CROWN.get())?new AABB(worldPosition).inflate(6,4,6):getBlockState().getValue(SceneAnchor.PORTAL)?new AABB(worldPosition).inflate(5,8,5):new AABB(worldPosition).inflate(140);}

@@ -42,7 +42,7 @@ public final class NeutralFlyMorphologyGameTests061 {
 
   @GameTestGenerator public static Collection<TestFunction> cases(){
     var tests=new ArrayList<TestFunction>();
-    for(int rp=-1;rp<=1;rp++)for(int sf=0;sf<=1;sf++)for(int age=0;age<=2;age++){
+    for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=1;sf++)for(int age=0;age<=2;age++){
       int r=rp,f=sf,a=age;add(tests,"neutral_fly_grid_"+(rp+1)+"_"+(sf+1)+"_age_"+(age*50),h->grid(h,r,f,a));
     }
     add(tests,"natural_fly_first_evolution_then_real_drives",NeutralFlyMorphologyGameTests061::firstEvolution);
@@ -59,6 +59,9 @@ public final class NeutralFlyMorphologyGameTests061 {
     add(tests,"named_jewel_and_shiny_inputs_do_not_change_form",NeutralFlyMorphologyGameTests061::colors);
     add(tests,"literal_existing_neutral_world_stays_neutral",h->legacy(h,false));
     add(tests,"synthetic_expanded_care21_neutral_fly_migration",h->legacy(h,true));
+    for(int rp=-1;rp<=1;rp++)for(int direction:new int[]{-1,1}){
+      int r=rp,d=direction;add(tests,"reciprocal_full_axis_"+(rp+1)+"_from_"+(direction<0?"swim":"fly"),h->reciprocal(h,r,d));
+    }
     return tests;
   }
   private static void add(List<TestFunction> tests,String name,java.util.function.Consumer<GameTestHelper> body){
@@ -102,7 +105,7 @@ public final class NeutralFlyMorphologyGameTests061 {
   }
   private static void grid(GameTestHelper h,int rp,int sf,int age){
     var s=adult();axis(s,rp*960,sf*960);s.setEvolutionStrength(age*.6f);var c=actor(h,s);String encoded=s.encode();
-    var p=NeutralFlyMorphology061.sample(s);h.assertTrue(p.enabled(),"Each of the six requested Neutral Fly combinations uses the new path");
+    var p=NeutralFlyMorphology061.sample(s);h.assertTrue(p.enabled(),"Each of the nine requested Neutral Fly combinations uses the new path");
     near(h,p.runPower(),rp,"Run/Power influence reads current opposing bar totals");near(h,p.swimFly(),sf,"Swim/Fly remains a separate compatible axis");near(h,p.maturity(),age*.5f,"Young/intermediate/mature states share independent biological age");
     var weights=NeutralFlyMorphology061.weights(p);float sum=0;for(float w:weights){h.assertTrue(Float.isFinite(w)&&w>=0&&w<=1,"Shape weights stay finite and convex");sum+=w;}
     near(h,sum,1,"The complete corner mix has unit mass");near(h,weights[0],1-age*.5f,"A trained young adult cannot jump directly to the mature form");
@@ -131,10 +134,10 @@ public final class NeutralFlyMorphologyGameTests061 {
     AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.LEVEL,1);AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.LEVEL,1);AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.PROGRESS,40);
     var expected=NeutralFlyMorphology061.sample(direct);
     h.assertTrue(expected.equals(NeutralFlyMorphology061.sample(ordinary))&&expected.equals(NeutralFlyMorphology061.sample(combined))&&expected.equals(NeutralFlyMorphology061.sample(analyzer)),"Ordinary, typed combined, direct and Creative training all derive identical morphology from equal current totals");
-    near(h,stat<2?expected.swimFly():expected.runPower(),stat==ChaoState.SWIM?0:stat==ChaoState.RUN?-.25f:.25f,"Correct independent axis expresses the actual training");
+    near(h,stat<2?expected.swimFly():expected.runPower(),stat==ChaoState.SWIM||stat==ChaoState.RUN?-.25f:.25f,"Correct independent axis expresses the actual training");
     int age=analyzer.ageTicks,adultAge=analyzer.adultAgeTicks;float maturity=analyzer.evolutionStrength();
     AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.PROGRESS,0);AnalyzerStatRules.apply(analyzer,stat,AnalyzerStatRules.LEVEL,-1);
-    var reduced=NeutralFlyMorphology061.sample(analyzer);near(h,Math.abs(stat<2?reduced.swimFly():reduced.runPower()),(stat==ChaoState.SWIM?0:100f/960),"Creative level/progress decreases recede this same current-state input");
+    var reduced=NeutralFlyMorphology061.sample(analyzer);near(h,Math.abs(stat<2?reduced.swimFly():reduced.runPower()),100f/960,"Creative level/progress decreases recede this same current-state input");
     h.assertTrue(analyzer.ageTicks==age&&analyzer.adultAgeTicks==adultAge&&analyzer.evolutionStrength()==maturity,"Stat editing does not rewrite chronological age/maturity");
     syncAndNbt(h,actor(h,analyzer));h.succeed();
   }
@@ -142,13 +145,32 @@ public final class NeutralFlyMorphologyGameTests061 {
     var s=adult();axis(s,-960,960);s.setEvolutionStrength(.6f);int age=s.ageTicks,adultAge=s.adultAgeTicks;float maturity=s.evolutionStrength();
     h.assertTrue(DriveRules.apply(s,DriveRules.Tier.CHAOTIC,-1,new Random(61)),"Balanced four-stat drive applies");near(h,NeutralFlyMorphology061.sample(s).runPower(),-1,"Balanced combined drive preserves Run advantage");near(h,NeutralFlyMorphology061.sample(s).swimFly(),1,"Balanced combined drive preserves Fly advantage");
     for(int i=0;i<40;i++)s.giveDrive(ChaoState.POWER);near(h,NeutralFlyMorphology061.sample(s).runPower(),0,"Opposing Power cancels Run");near(h,NeutralFlyMorphology061.sample(s).swimFly(),1,"Independent Fly remains");
-    for(int i=0;i<80;i++)s.giveDrive(ChaoState.SWIM);near(h,NeutralFlyMorphology061.sample(s).swimFly(),0,"Opposing and then excess Swim cancel later Fly without introducing Swim specialization");
+    for(int i=0;i<80;i++)s.giveDrive(ChaoState.SWIM);near(h,NeutralFlyMorphology061.sample(s).swimFly(),-1,"Opposing and then excess Swim cross balance into later Swim while first Fly stays locked");
     DriveRules.change(s,ChaoState.RUN,-480,new Random(61));DriveRules.change(s,ChaoState.SWIM,-1200,new Random(61));
     near(h,NeutralFlyMorphology061.sample(s).runPower(),.5f,"Run reductions expose stored opposing Power");near(h,NeutralFlyMorphology061.sample(s).swimFly(),.25f,"Swim decreases restore later Fly independently");
     h.assertTrue(s.ageTicks==age&&s.adultAgeTicks==adultAge&&s.evolutionStrength()==maturity&&s.lockedPrimaryType()==ChaoState.FLY_TYPE,"Reversal preserves both age inputs and first identity");syncAndNbt(h,actor(h,s));h.succeed();
   }
+  private static void reciprocal(GameTestHelper h,int rp,int direction){
+    var s=adult();axis(s,rp*960,direction*960);s.setEvolutionStrength(.6f);
+    int calendar=s.ageTicks,life=s.adultAgeTicks;float maturity=s.evolutionStrength();
+    int counter=direction<0?ChaoState.FLY:ChaoState.SWIM;var c=actor(h,s);
+    for(int step=0;step<=4;step++){
+      if(step>0)for(int i=0;i<20;i++)s.giveDrive(counter);
+      var a=NeutralFlyMorphology061.sample(s);near(h,a.runPower(),rp,"Both reversal directions preserve the independent Run/Power axis");
+      near(h,a.swimFly(),direction*(1-step*.5f),"Real ordinary drives cross through balance into either later Swim/Fly endpoint");
+      near(h,a.maturity(),.5f,"Opposite training does not reduce biological maturity");
+      h.assertTrue(s.ageTicks==calendar&&s.adultAgeTicks==life&&s.evolutionStrength()==maturity&&s.lockedPrimaryType()==ChaoState.FLY_TYPE&&s.lockedAlignment()==0,"Every reciprocal step preserves chronology and locked first identity");
+      if(step==0||step==2||step==4){int sf=direction*(1-step/2);near(h,NeutralFlyMorphology061.weights(a)[1+(sf+1)*3+(rp+1)],.5f,"Old, balanced and new mature corners each receive the correct half-age contribution");}
+      syncAndNbt(h,c);
+    }
+    for(int step=1;step<=4;step++){
+      DriveRules.change(s,counter,-480,new Random(61));near(h,NeutralFlyMorphology061.sample(s).swimFly(),direction*(-1+step*.5f),"Real stat reductions traverse the same mixed path back across balance");
+    }
+    h.assertTrue(s.ageTicks==calendar&&s.adultAgeTicks==life&&s.evolutionStrength()==maturity&&s.lockedPrimaryType()==ChaoState.FLY_TYPE,"Reverse reductions retain age and first identity");
+    syncAndNbt(h,c);h.succeed();
+  }
   private static void commutative(GameTestHelper h){
-    for(int a:new int[]{ChaoState.RUN,ChaoState.POWER})for(int b:new int[]{ChaoState.FLY}){
+    for(int a:new int[]{ChaoState.RUN,ChaoState.POWER})for(int b:new int[]{ChaoState.SWIM,ChaoState.FLY}){
       var first=adult();var reverse=adult();for(int i=0;i<40;i++)first.giveDrive(a);for(int i=0;i<40;i++)first.giveDrive(b);
       for(int i=0;i<40;i++)reverse.giveDrive(b);for(int i=0;i<40;i++)reverse.giveDrive(a);
       h.assertTrue(NeutralFlyMorphology061.sample(first).equals(NeutralFlyMorphology061.sample(reverse)),"Compatible pair order does not create a separate form");
@@ -192,8 +214,8 @@ public final class NeutralFlyMorphologyGameTests061 {
       h.assertTrue(p.server.getCommands().getDispatcher().execute("chao ~ 0 Power 10",p.createCommandSourceStack().withPermission(0))==1,"Nearest selector accepts the actual nearby Fly-first adult");
       h.assertTrue(p.server.getCommands().getDispatcher().execute("chao ~ 0 Swim 20",p.createCommandSourceStack().withPermission(0))==1,"Native excess opposing Swim command applies to current bars");
     }catch(com.mojang.brigadier.exceptions.CommandSyntaxException invalid){throw new IllegalStateException(invalid);}
-    near(h,NeutralFlyMorphology061.sample(s).runPower(),1,"Nearest native edit develops Power independently");near(h,NeutralFlyMorphology061.sample(s).swimFly(),0,"Excess Swim returns only the secondary Fly axis to balanced");
-    h.assertTrue(s.lockedPrimaryType()==ChaoState.FLY_TYPE&&s.typeName().equals("Fly/Power")&&decoy.state().encode().equals(untouched),"Opposing nearest edit preserves first Fly identity and the other loaded Chao");
+    near(h,NeutralFlyMorphology061.sample(s).runPower(),1,"Nearest native edit develops Power independently");near(h,NeutralFlyMorphology061.sample(s).swimFly(),-1,"Excess Swim develops the opposite secondary Swim axis while first Fly remains locked");
+    h.assertTrue(s.lockedPrimaryType()==ChaoState.FLY_TYPE&&s.typeName().equals("Fly/Swim+Power")&&decoy.state().encode().equals(untouched),"Opposing nearest edit preserves first Fly identity and the other loaded Chao");
     String before=s.encode();p.setGameMode(GameType.SURVIVAL);boolean denied=false;try{int result=p.server.getCommands().getDispatcher().execute("chao \""+c.getName().getString()+"\" 0 Power 99",p.createCommandSourceStack().withPermission(0));denied=result==0;}catch(com.mojang.brigadier.exceptions.CommandSyntaxException expected){denied=true;}
     h.assertTrue(denied&&s.encode().equals(before),"Survival without admin permission cannot mutate through command dispatcher");
     h.assertTrue(s.adultAgeTicks==chronological&&s.evolutionStrength()==1.2f,"Command never changes chronology or biological growth");syncAndNbt(h,c);h.succeed();

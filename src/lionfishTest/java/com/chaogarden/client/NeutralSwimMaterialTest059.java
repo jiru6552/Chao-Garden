@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
  * native context is created, and these checks are not a visual inspection. */
 public final class NeutralSwimMaterialTest059 {
   private static final Path ROOT=Path.of("src/main/resources/assets/chao_garden");
-  private static final float[][] ENDPOINTS={{0,0},{-1,0},{1,0},{0,-1},{-1,-1},{1,-1}};
+  private static final float[][] ENDPOINTS={{0,0},{-1,0},{1,0},{0,-1},{-1,-1},{1,-1},{0,1},{-1,1},{1,1}};
   private static long checks,alpha,eyes,orb,swatches;
   private static int coats,maxStep;
   private static void check(boolean pass,String why){checks++;if(!pass)throw new AssertionError(why);}
@@ -85,7 +85,7 @@ public final class NeutralSwimMaterialTest059 {
       }
     }
     check(coats==172,"canonical coat inventory changed: "+coats);
-    check(swatches==172L*3*6*4,"not exactly four .59-only reserved texels");
+    check(swatches==172L*3*ENDPOINTS.length*4,"not exactly four .59-only reserved texels");
   }
   private static void regions()throws Exception {
     int[] flags=layout();var image=ImageIO.read(ROOT.resolve("textures/entity/chao/official/coats/baby/normal_neutral_0_two.png").toFile());
@@ -101,9 +101,28 @@ public final class NeutralSwimMaterialTest059 {
     check(red(power.foot())>240&&green(power.foot())<170&&blue(power.foot())<70,"Power secondary feet no longer orange");
     check(green(swim.face())>225&&blue(swim.face())>220,"additional Swim lower face no longer pale cyan");
     check(run.marker()!=power.marker()&&swim.marker()!=balanced.marker(),"specializations lost independent orb pigments");
+    var fly=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,0,1));
+    var runFly=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,-1,1));
+    var powerFly=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,1,1));
     var opposing=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,.35f,.9f));
-    var clamped=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,.35f,0));
-    check(opposing.equals(clamped),"unrequested Fly endpoint entered Swim-first material");
+    var center=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,.35f,0));
+    check(!opposing.equals(center),"opposite Fly training still collapsed to balanced paint");
+    check(red(fly.face())>210&&blue(fly.face())>170&&green(fly.face())<210,"opposite Fly underside lost pink");
+    check(green(runFly.body())>220&&blue(runFly.face())>200&&red(runFly.face())<190,"Run+Fly lost green/cyan colors");
+    check(red(powerFly.face())>220&&green(powerFly.face())>190&&blue(powerFly.face())<170,"Power+Fly underside lost warm gold");
+    for(var c:new NeutralSwimRegionPaint059.Colors[]{fly,runFly,powerFly})
+      check(blue(c.wing())>170&&red(c.wing())>110&&green(c.wing())<180,"opposite mature wings lost lavender/purple");
+    for(float rp:new float[]{-1,0,1}) {
+      var half=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,.5f,rp,1));
+      var end=NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,rp,1));
+      check(green(half.body())>225&&blue(half.body())<60,"opposite half-age upper body matured before its lime stage");
+      check(blue(half.wing())>170&&red(half.wing())<100,"opposite half-age wings lost their blue stage");
+      check(red(half.wing())<red(end.wing()),"opposite wing stage keys no longer develop toward lavender");
+      check(!half.equals(end),"opposite form prematurely received its mature palette");
+    }
+    var unique=new java.util.HashSet<NeutralSwimRegionPaint059.Colors>();
+    for(float[] e:ENDPOINTS)unique.add(NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,e[0],e[1])));
+    check(unique.size()==9,"mature Swim-first paint still contains a duplicate guard row");
     for(boolean natural:new boolean[]{true,false})for(boolean two:new boolean[]{true,false})for(float[] e:ENDPOINTS) {
       var in=input(image,flags,natural,two,1,e[0],e[1]);var c=NeutralSwimRegionPaint059.colors(in);
       check(c.marker()==NeutralSwimRegionPaint059.colors(input(image,flags,true,true,1,e[0],e[1])).marker(),"orb changed with inherited coat policy");
@@ -125,11 +144,18 @@ public final class NeutralSwimMaterialTest059 {
   }
   private static void continuous()throws Exception {
     int[] flags=layout();var image=ImageIO.read(ROOT.resolve("textures/entity/chao/official/coats/baby/normal_neutral_0_two.png").toFile());
-    for(int path=0;path<5;path++) {
+    for(int path=0;path<16;path++) {
       int[] previous=null;
       for(int i=0;i<=100;i++) {
         float t=i/100f;
-        var in=input(image,flags,true,true,path==0?t:1,path==1?2*t-1:path==4?1-t:-1,path==2?-t:path==3?t-1:0);
+        // Preserve all five old paths; append actual opposite crossings,
+        // mixed corners, reversed paths and the new half-age color keys.
+        float age=path==0||path>=11&&path<=13?t:1;
+        float rp=path<5?(path==1?2*t-1:path==4?1-t:-1):switch(path){
+          case 7->2*t-1;case 8->-t;case 9->t;case 10->1-t;case 12->-1;case 13->1;case 15->t-1;default->0;};
+        float sf=path<5?(path==2?-t:path==3?t-1:0):switch(path){
+          case 5->2*t-1;case 6->1-2*t;case 8,9,14->t;case 10,15->1-t;default->1;};
+        var in=input(image,flags,true,true,age,rp,sf);
         var c=NeutralSwimRegionPaint059.colors(in);int[] now=new int[8192];
         for(int y=0;y<64;y++)for(int x=0;x<128;x++) {
           int at=y*128+x;now[at]=NeutralSwimRegionPaint059.pixel(in,c,x,y,rgba(image,x,y),flags[at]);
@@ -147,7 +173,7 @@ public final class NeutralSwimMaterialTest059 {
   private static int blue(int p){return p>>>16&255;}
   public static void main(String[] args)throws Exception {
     atlas();regions();continuous();
-    String report="NeutralSwim059 material: "+checks+" checks; "+coats+" real canonical coats; "+alpha+" preserved alpha pixels; "+eyes+" exact facial pixels; "+orb+" independent orb samples; "+swatches+" four-swatch samples; maximum 1% RGB step="+maxStep+". Six mature endpoints with identical fresh palette, intermediate/receding training, inherited hue/alpha, semantic head/fin regions, .59-only palette protection passed. Pixel checks are not in-game visual verification.\n";
+    String report="NeutralSwim059 material: "+checks+" checks; "+coats+" real canonical coats; "+alpha+" preserved alpha pixels; "+eyes+" exact facial pixels; "+orb+" independent orb samples; "+swatches+" four-swatch samples; maximum 1% RGB step="+maxStep+". Nine mature endpoints with the unchanged fresh palette, original six retained, opposite crossings, half-age keys and intermediate/receding training, inherited hue/alpha, semantic head/fin regions, .59-only palette protection passed. Pixel checks are not in-game visual verification.\n";
     Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral-swim059-material-results.txt"),report);System.out.print(report);
   }
 }

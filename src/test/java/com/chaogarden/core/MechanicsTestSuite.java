@@ -4,6 +4,13 @@ package com.chaogarden.core;
 public final class MechanicsTestSuite {
   public static void main(String[] args) {
     ChaoStateTest.main(args);
+    EquippedAbility080Test.run();
+    EquippedMovement080Test.run();
+    System.out.println("Garden progression081: "+GardenProgression081Test.run()+" checks passed");
+    System.out.println("Equipped baby alignment082: "+EquippedBabyAlignment082Test.run()+" checks passed");
+    ChaoFace076Test.main(args);
+    System.out.println("Idle selection078: "+ChaoIdle078Test.run()+" checks passed");
+    System.out.println("Idle faces078: "+ChaoIdleFace078Test.run()+" checks passed");
     AnalyzerStatRulesTest.main(args);
     com.chaogarden.client.AnalyzerAlignmentBar053Test.main(args);
     com.chaogarden.client.AnalyzerMaturityBar056Test.main(args);
@@ -16,8 +23,18 @@ public final class MechanicsTestSuite {
     System.out.println("Neutral/Run morphology062: "+NeutralRunMorphology062Test.run()+" checks passed");
     System.out.println("Neutral/Power morphology063: "+NeutralPowerMorphology063Test.run()+" checks passed");
     System.out.println("Hero/Swim morphology064: "+HeroSwimMorphology064Test.run()+" checks passed");
+    System.out.println("Hero/Fly morphology065: "+HeroFlyMorphology065Test.run()+" checks passed");
+    System.out.println("Hero/Run morphology066: "+HeroRunMorphology066Test.run()+" checks passed");
+    System.out.println("Hero/Power morphology067: "+HeroPowerMorphology067Test.run()+" checks passed");
+    System.out.println("Dark/Swim morphology068: "+DarkSwimMorphology068Test.run()+" checks passed");
+    System.out.println("Dark/Fly morphology069: "+DarkFlyMorphology069Test.run()+" checks passed");
+    System.out.println("Dark/Run morphology070: "+DarkRunMorphology070Test.run()+" checks passed");
+    System.out.println("Dark/Power morphology071: "+DarkPowerMorphology071Test.run()+" checks passed");
+    System.out.println("Cross-family morphology coverage072: "+MorphologyCoverageTest072.run()+" checks passed");
     DriveRulesTest.main(args);
     com.chaogarden.toys.ToyInteractionRulesTest.main(args);
+    com.chaogarden.toys.TvWatchRules073Test.main(args);
+    com.chaogarden.toys.JackPlayRules080Test.main(args);
     int distribution = com.chaogarden.distribution.EggDistributionRulesTest.run();
     System.out.println("Egg distribution policy: " + distribution + " checks passed");
     System.out.println("Training supplies: "+com.chaogarden.genes.TrainingSupplyRulesTest.run()+" checks passed");

@@ -1,3 +1,123 @@
+## 0.25.82 — Equipped baby alignment
+
+- Add configurable credited-kill Hero/Dark influence for actual baby accessories, with conservative mob classification and modpack tags.
+- Save separate equipped-time Nether and End/Aether alignment counters, without offline catch-up or changing adult identity.
+- Preserve ordinary kill rewards, garden care and companion ownership while rejecting duplicate deaths and duplicate same-tick care.
+
+## 0.25.81 — Garden unlocks and visual growth
+
+- Unlock Hero and Dark lobby access independently for the server, saving acquisition history and guarding real portal use.
+- Update only the authored access footprint, preserving player edits and providing operator status/rescan/unlock recovery.
+- Apply normal, double and half passive adult visual-strength rates in Neutral, Hero and Dark Gardens; fruit, stats and lifespan stay independent.
+- Nudge child alignment through the existing care clocks while preserving adult identity and reversible specialization.
+
+## 0.25.78 — Expressive idle variety
+
+## 0.25.79 — Headwear and accessories
+
+- Fit all full-head covers around the unchanged head with real eye openings, including the three wool masks and Chao-worn pumpkin/skull adapters.
+- Repair complete stepped glasses and their depth/temples, press crown placement, headphone band UVs, pacifier seating, white outfit trim and folded hoods.
+- Keep item identities and equipment/save paths; provide matched actual-client comparisons, inventory, native lifecycle tests and a NeoForge 1.21.1 JAR. See `docs/HEADWEAR_ACCESSORIES_02579.md` for exact results and unresolved combinations.
+
+
+- Add short looking, thoughtful, bashful, chuckling, tired and seated ground-play gestures on the production Lionfish rig.
+- Select occasional idles using existing personality and mood data, with individual quiet gaps and priority for movement, care, toys, sleep and illness.
+- Replace overlapping ambient torso/arm loops while preserving the separate rash symptom; coordinate temporary faces without rerolling inherited traits.
+- Add reward-free `/chao testidle <id> once|loop|stop` previews, selection/geometry/face tests and native server checks.
+
+## 0.25.77 — Prone toy head position
+
+- Lower the head slightly during toy-car and crayon play, retaining the original head geometry, facial expressions and toy grips.
+- Tighten the existing visible head-to-body connection checks while retaining floor, hand and attachment clearance checks.
+
+## 0.25.76 — Chao personality, mood, illness and faces
+
+- Save stable baseline eye and mouth choices informed by the existing personality genes, without rerolling old Chao or consuming extra birth/breeding randomness.
+- Resolve baseline, moods, illness symptoms, sleep and activity expressions with explicit precedence and independent eye/mouth channels.
+- Give ordinary Neutral, Hero and Dark faces distinct pixel-art eyes while preserving the original head and native special-character artwork.
+- Add reward-free operator facial presentation previews using the production resolver and existing once/loop/stop lifecycle.
+- Extend migration, inheritance, expression, actual-render and save/synchronization verification.
+
+## 0.25.75 — Chao radio listening
+
+- Refine radio approach, front-facing placement and relaxed listening using the existing model and shared toy clock.
+- Replace the repeating loud radio pulse with a finite quiet sequence and nearby-radio cue limits.
+- Add operator radio previews with once, loop and stop controls while preserving traits, items and temporary AI state.
+- Extend radio route, interruption, audio, pose and retained-toy regression coverage.
+
+## 0.25.74 — Chao ball model and play
+
+- Remake the ball in cyan and yellow with a closed, stepped Minecraft model and fitted item presentation.
+- Coordinate close contact, rolling and pursuit using the real placed ball and production play clock.
+- Add operator ball previews with once, loop and stop controls while preserving saved traits and items.
+- Extend ball approach, ownership, interruption and animation regression checks.
+
+## 0.25.73 — TV watching and stomach-lying head connection
+
+- Give the placed TV a quiet seated watching performance, aim at its actual screen and keep the existing physical approach/navigation rules.
+- Add reward-free operator TV previews with once, loop and stop controls using the same production clock and real placed TV.
+- Reduce the extra car/crayon head lift while preserving the original head geometry and strict hand, prop and floor clearances.
+- Extend real four-side TV navigation, preview cleanup and all-family prone transition regression coverage.
+
+## 0.25.72
+
+- Fill the six opposite-axis mature targets for Neutral/Swim and Neutral/Fly, including their compatible Run and Power pairs.
+- Add corresponding palettes and gradual stage colors; preserve the original head, shared rig and existing target data.
+- Keep both adult training axes reversible while alignment and first evolution type remain locked.
+- Add a 135-endpoint coverage guard and expand rig, material, native and keyboard-grip regression checks.
+
+## 0.25.71 — Dark Power-first morphology and Dark Run continuation
+
+- Add the ordinary Dark/Power-first newly evolved form and nine mature signed-axis targets, using separate blocky features around the unchanged original head and shared rig.
+- Keep adult alignment and first Power locked while later Run/Power and Swim/Fly training can cross balance independently of maturity. Preserve completed Dark/Run and all earlier families.
+- Compare both families with independently operated viewer references and actual client captures. See [the report](docs/DARK_POWER_02571.md) for actual verification results and geometric approximations.
+
+## 0.25.70 — Dark Run-first morphology
+
+- Add a common newly evolved Dark/Run form and nine signed-axis adult targets, including later Power and all four compatible pairs.
+- Develop separate blocky crest, rear spikes, smaller side features, wings and pigment regions around the unchanged original head box and shared rig.
+- Preserve locked first alignment/type, independent maturity and reversible current-stat training on both opposing axes.
+- Retain completed families, saves, Creative controls, commands, synchronization and existing production preview controls.
+- See [the report](docs/DARK_RUN_02570.md) for actual viewer/game comparisons, verification and approximations.
+
+## 0.25.69 — Dark Fly-first morphology
+
+- Add a common newly evolved Dark/Fly form and nine later signed-axis targets, including later Swim and all four compatible pairs.
+- Develop separate blocky paired head features, wings, tail and pigment regions while retaining the original head box, face and shared rig.
+- Keep adult alignment and first type locked, maturity independent, and current-stat specialization reversible.
+- Fold this family's wings through crawl and belly-down car/crayon play on the existing animation clock, with direct mixed-form and idle-return regression coverage.
+- Preserve completed families, saves, commands, Creative controls and synchronization; reuse existing production pose/toy preview controls.
+- See [the report](docs/DARK_FLY_02569.md) for fresh viewer comparisons, actual verification and approximations.
+
+## 0.25.68 — Dark Swim-first morphology
+
+- Add a common newly evolved Dark/Swim form and nine later signed-axis targets, including opposite Fly and all four compatible pairs.
+- Keep the original head box, shared rig, facial layout and previous families; develop separate closed blocky features and source-guided pigment regions.
+- Retain locked adult alignment/type, independent biological maturity and reversible current-stat training.
+- Add operator once/loop/stop previews for the existing crawl, paddle, swim, glide and flail poses, using production clocks and temporary-session cleanup.
+- Preserve saves, Creative controls, commands and synchronization; see [the report](docs/DARK_SWIM_02568.md) for actual comparisons, verification and approximations.
+
+## 0.25.67 — Hero Power-first morphology
+
+- Add a common fresh adult and nine signed-axis Hero/Power targets, including later Run and all four compatible pairs.
+- Keep the original head box, shared rig and approved babies; grow separate closed crown lobes and wings with Power-specific bib, glove, shoe and tip regions.
+- Retain locked first alignment/type, independent biological maturity and reversible current-stat training.
+- Preserve earlier families, saves, authority, Creative controls and commands; see [the report](docs/HERO_POWER_02567.md) for actual comparisons, tests and remaining approximations.
+
+## 0.25.66 — Complete Hero Run-first morphology
+
+- Extend the approved Hero Run prototype to a distinct fresh adult and nine signed-axis adult targets, including later Power and all four compatible pairs.
+- Keep the original head box and baby Run construction; develop separate cuboid stalks, fans, bulbs, cups and wings with painted Run stripes.
+- Preserve locked adult alignment and first evolution type while reversible training and independent maturity shape later development.
+- Retain completed families, save/network authority and existing Creative controls; see [the report](docs/HERO_RUN_02566.md) for actual comparisons, checks and limitations.
+
+## 0.25.65 — Hero Fly-first morphology
+
+- Add the full nine-target Hero/Fly-first adult family, including both signed opposing axes and the four compatible pairs.
+- Develop separate blocky crown branches, fan wings and Fly-specific pigment regions while retaining the original head box, animation rig and attachment joints.
+- Keep training reversible and independent of biological maturity, with adult alignment and first evolution type locked.
+- Preserve completed families and existing save/network/Creative behavior; include matched reference/client views and verification in [the report](docs/HERO_FLY_02565.md).
+
 ## 0.25.64 — Hero Swim-first morphology
 
 - Add a distinct newly evolved Hero/Swim adult and nine mature signed-axis forms: balanced, Run, Power, Fly, Swim and the four compatible pairs.

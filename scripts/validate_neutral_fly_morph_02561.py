@@ -21,14 +21,16 @@ MODEL = MODELS / 'chao_neutral_fly_proto061.json'
 SOURCE = MODELS / 'chao_baby.json'
 FIELD = 'neutral_fly_box_061'
 REGION = 'neutral_fly_region_061'
-TARGETS = ['neutral_fly_young', 'run_guard', 'balanced_guard', 'power_guard',
+TARGETS = ['neutral_fly_young', 'run_swim', 'swim', 'power_swim',
            'run', 'balanced', 'power', 'run_fly', 'fly', 'power_fly']
 PROTECTED = {
     'chao_baby.json': 'ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b',
     'chao_hero_run_proto055.json': '77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08',
     'chao_neutral_proto056.json': 'a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db',
     'chao_hero_normal_proto057.json': 'd0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d',
-    'chao_neutral_swim_proto059.json': '06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8',
+    # Intentional paired 0.25.72 reciprocal-row update; its original targets
+    # 0..6 are independently protected by the Swim regression suite/audit.
+    'chao_neutral_swim_proto059.json': 'de2972ea6780a4252a98bbbdd84d674dd25a9ea4f3c1ea04be7124e3283593b1',
     'chao_dark_normal_proto060.json': '36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514',
 }
 
@@ -36,7 +38,7 @@ PROTECTED = {
 def weights(age, rp, sf):
     age = min(1, max(0, age))
     rp = min(1, max(-1, rp))
-    sf = min(1, max(0, sf))
+    sf = min(1, max(-1, sf))
     return [1 - age] + [age * max(0, 1 - abs(rp - x)) * max(0, 1 - abs(sf - y))
                         for y in (-1, 0, 1) for x in (-1, 0, 1)]
 
@@ -127,13 +129,20 @@ def semantic_endpoints(features, wings):
     assert fly[1] > balanced[1] + 2, 'Fly must form downward terminal points'
     assert run_fly[1] < run[1] - .5, 'Run+Fly curled points must remain more compact than Run'
     assert power_fly[1] > power[1] + 1.5, 'Power+Fly crests must stay shorter than pure Power'
+    swim, run_swim, power_swim = [terminal(tip, i) for i in (2, 1, 3)]
+    assert swim[1] < fresh[1] - 1 and swim[2] > fresh[2] + 1.5, 'Swim must develop broad rear/up ears'
+    assert run_swim[1] > swim[1] + 1, 'Run+Swim must curl downward relative to broad Swim ears'
+    assert power_swim[1] < swim[1] - 1, 'Power+Swim must develop distinctly taller peaks'
+    assert root[FIELD]['sizes'][2][1] > root[FIELD]['sizes'][5][1], 'Swim ears must be broader than balanced Fly points'
     signatures = [tuple(round(x, 7) for m in features for p in endpoint(m, t) for x in p)
-                  for t in (4, 5, 6, 7, 8, 9)]
-    assert len(set(signatures)) == 6, 'Six mature silhouettes must be distinct'
+                  for t in range(1, 10)]
+    assert len(set(signatures)) == 9, 'Nine mature silhouettes must be distinct'
     for _, wing in wings:
         span = wing[FIELD]['sizes']
         assert span[8][0] > span[5][0] + .5, 'Fly specialization must enlarge wings'
         assert span[4][0] > span[6][0], 'Run wing must be longer than compact Power wing'
+        assert span[2][0] > span[5][0], 'Reciprocal Swim wing fan must broaden from balanced'
+        assert span[1][0] > span[3][0], 'Run+Swim wing fan must be longer than Power+Swim'
 
 
 def wing_uv_coverage(name, mesh):
@@ -232,8 +241,6 @@ def main():
                 values = mesh[FIELD][field]
                 assert len(values) == 10 and all(len(v) == 3 for v in values)
                 assert all(math.isfinite(x) for v in values for x in v)
-                for guard, center in ((1, 4), (2, 5), (3, 6)):
-                    assert values[guard] == values[center], (mesh['name'], field, 'Negative Swim guard differs')
             assert all(x >= .01 for v in mesh[FIELD]['sizes'] for x in v)
             actual = endpoint(mesh, 0)
             assert max(abs(a - b) for va, vb in zip(actual, mesh['vertices'])
@@ -256,10 +263,10 @@ def main():
     # animation and expression replacement checks belong to the native suite.
     orb = [[p[0], p[1] - 11, p[2]] for p in
            [rotate(v, [-22.5, 0, 0]) for v in old['emotion_dot__cube_0']['meshes'][0]['vertices']]]
-    samples = [(a / 20, x / 10 - 1, y / 10)
-               for a in range(21) for x in range(21) for y in range(11)]
+    samples = [(a / 20, x / 10 - 1, y / 10 - 1)
+               for a in range(21) for x in range(21) for y in range(21)]
     rng = random.Random(25061)
-    samples += [(rng.random(), rng.uniform(-1, 1), rng.random()) for _ in range(512)]
+    samples += [(rng.random(), rng.uniform(-1, 1), rng.uniform(-1, 1)) for _ in range(512)]
     maximum_step = 0
     minimum_volume = math.inf
     all_bounds = [[math.inf, -math.inf] for _ in range(3)]
@@ -267,7 +274,9 @@ def main():
     for age, rp, sf in samples:
         w = weights(age, rp, sf)
         assert abs(sum(w) - 1) < 1e-9 and min(w) >= 0
-        assert weights(age, rp, -1) == weights(age, rp, 0)
+        assert weights(0, rp, sf) == [1] + [0] * 9
+        if age > 0:
+            assert weights(age, rp, -1) != weights(age, rp, 0), 'Opposite Swim specialization must remain reachable'
         points = [vertices(m, w) for m in features]
         assert connected(points, head), (age, rp, sf, 'Disconnected head feature')
         examined, coincident = no_same_facing_coplanar([(head_mesh, head)] + list(zip(features, points)))
@@ -323,7 +332,7 @@ def main():
         assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected
     print(f'NeutralFly061: {len(boxes)} positive closed boxes; {len(samples)} dense/random age/axis blends; '
           f'{len(features)} SAT-connected head features; exact original 7x6x6 head/face/orb/59joints; '
-          f'6 distinct mature silhouettes; negative-SF duplicate guard; eye/tilted-orb clearance; '
+          f'9 distinct mature silhouettes across full signed axes; eye/tilted-orb clearance; '
           f'anchored soles/heels and connected3raywing fans; opaque semantic wingUVs; {face_pairs} arbitrary-rotation face pairs, '
           f'{same_plane_pairs} disjoint same-facing coplanar pairs and ZERO positive-area overlaps. '
           f'Wing actual-face UV samples={uv_samples} (root125={root_samples},distal124={distal_samples}), '

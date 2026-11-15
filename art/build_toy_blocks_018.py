@@ -59,17 +59,31 @@ def model(toy,active=False,frame=0):
             h=8.9+(2 if active and (frame+i)%2 else 0)
             add((5+i*4,h,4,5.7+i*4,h+.6,12),'wood',rotation={'origin':[8,h,8],'axis':'y','angle':45 if i else -45})
     elif toy=='chao_jack_in_box':
-        add((4,.8,4,12,8,12),'red');add((3.8,0,3.8,12.2,.8,12.2),'brass')
+        # A real cavity leaves the spring visibly inside the collectible box.
+        # All five stages retain the previously reviewed stable envelope.
+        add((3.8,0,3.8,12.2,.8,12.2),'brass')
+        add((4,.8,4,4.6,8,12),'red');add((11.4,.8,4,12,8,12),'red')
+        add((4.6,.8,4,11.4,8,4.6),'red');add((4.6,.8,11.4,11.4,8,12),'red')
         for x in (5,8,11):add((x,1,3.9,x+.6,7,4.1),'yellow')
         add((12,3,7,13,4,8),'metal');add((12.8,3,7,13.4,5.3,7.6),'metal');add((13,5,7,14,5.7,7.7),'wood')
         if active and frame in (1,2,3):
-            # Author the raised lid directly so it cannot intersect the spring
-            # character at an intermediate element rotation.
-            add((4,8,11.5,12,16,12.5),'brass')
+            # The intentional quick pop opens the hinged lid once. It stays
+            # behind the character while the four stored stages reveal/retract.
+            add((3.8,7.6,11.5,12.2,16,12.5),'brass')
+            add((4,7.5,11.4,5,8.1,12.2),'brass_dark');add((11,7.5,11.4,12,8.1,12.2),'brass_dark')
+            add((6,.8,6,10,1.2,10),'brass_dark')
+            add((7.65,1.2,7.4,8.35,7.45,7.8),'metal')
             top=15 if frame==2 else 12
-            for y in range(8,top-3):add((6.5+(y%2),y,7,8.5+(y%2),y+.5,9),'metal')
-            add((6,top-3,6,10,top,10),'cyan');add((7,top,7,9,top+.7,9),'yellow')
+            base=top-3;turns=4 if frame==2 else 2;rise=(base-7.2)/turns
+            for i in range(turns):
+                y=7.2+i*rise
+                add((6.5,y,7.3,9.5,y+.25,7.7),'metal')
+                x=9.25 if i%2==0 else 6.5
+                add((x,y+.25,7.3,x+.25,base if i==turns-1 else y+rise+.25,7.7),'metal')
+            add((6,base,6,10,top,10),'cyan');add((7,top,7,9,top+.7,9),'yellow')
             add((6.8,top-2,5.9,7.4,top-1,6.1),'black');add((8.6,top-2,5.9,9.2,top-1,6.1),'black')
+            add((7.7,top-1.5,5.65,8.3,top-.9,6),'red')
+            add((7.2,top-.65,5.9,8.8,top-.4,6.1),'red')
         else:add((3.8,8,3.8,12.2,9,12.2),'brass')
     elif toy=='chao_radio':
         add((2,0,4,14,8,12),'wood');add((3,1,3.8,8.2,7,4.1),'black')

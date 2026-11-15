@@ -271,6 +271,7 @@ public final class NeutralFlyMorphRigTest061 {
     }
     check(d.get("head_decorations").equals(original.get("head_decorations")),"Hat hiding family changed");
     var profile=d.getAsJsonObject("neutral_fly_path_061");check(profile.getAsJsonArray("targets").size()==10,"Wrong fresh-plus-grid target count");
+    String[] targetNames={"neutral_fly_young","run_swim","swim","power_swim","run","balanced","power","run_fly","fly","power_fly"};for(int i=0;i<targetNames.length;i++)check(profile.getAsJsonArray("targets").get(i).getAsString().equals(targetNames[i]),"Full signed Fly-first target ownership/order changed");
     var crown=d.getAsJsonArray("bones").asList().stream().map(v->v.getAsJsonObject()).filter(v->v.get("name").getAsString().equals("gradual_head_021")).findFirst().orElseThrow().getAsJsonArray("meshes");
     featureBoxes=crown.size();check(featureBoxes==4,"Fly-first head must retain two paired two-part crest cuboids");
     String[] featureNames={"fly_crest_left_root","fly_crest_left_tip","fly_crest_right_root","fly_crest_right_tip"};for(int i=0;i<featureNames.length;i++)check(crown.get(i).getAsJsonObject().get("name").getAsString().equals(featureNames[i]),"Paired crest ownership/order changed");
@@ -279,27 +280,28 @@ public final class NeutralFlyMorphRigTest061 {
       var part=me.getAsJsonObject();if(!part.has("neutral_fly_box_061"))continue;
       check(part.getAsJsonArray("vertices").size()==8&&part.getAsJsonArray("faces").size()==6,"Authored morph part is not one closed cuboid");
       boxes++;MORPH_BONES.add(be.getAsJsonObject().get("name").getAsString());var target=part.getAsJsonObject("neutral_fly_box_061");
-      for(var field:target.entrySet()){var values=field.getValue().getAsJsonArray();check(values.size()==10,"Part lost ten-target correspondence");for(int x=0;x<3;x++)check(values.get(1+x).equals(values.get(4+x)),"Unused negative Swim target differs from balanced guard row");}
+      for(var field:target.entrySet()){var values=field.getValue().getAsJsonArray();check(values.size()==10,"Part lost ten-target correspondence");}
     }
     check(boxes==17,"Neutral/Fly must keep its 17 closed morph cuboids");
   }
   private static void development(){
     var m=asset(MODEL);var original=asset("gameplay/chao_baby");var p=poses(m);var head=solid(original,"skull__cube_0");var eyeL=solid(original,"skull__cube_2");var eyeR=solid(original,"skull__cube_3");var orb=solid(original,"emotion_dot__cube_0");
     var endpoints=new HashSet<Long>();
-    for(float age:new float[]{0,.25f,.5f,.75f,1})for(int yi=0;yi<=5;yi++)for(int xi=0;xi<=10;xi++){
-      var state=state(xi/5f-1,yi/5f,age);String saved=state.encode();sample(m,state);frames++;for(String bone:MORPH_BONES)cuboids(solid(m,bone));
+    for(float age:new float[]{0,.25f,.5f,.75f,1})for(int yi=0;yi<=10;yi++)for(int xi=0;xi<=10;xi++){
+      var state=state(xi/5f-1,yi/5f-1,age);String saved=state.encode();sample(m,state);frames++;for(String bone:MORPH_BONES)cuboids(solid(m,bone));
       equal(head,solid(m,"skull__cube_0"),.00004f,"Original 7x6x6 head resized");equal(eyeL,solid(m,"skull__cube_2"),.00004f,"Left eye moved/distorted");equal(eyeR,solid(m,"skull__cube_3"),.00004f,"Right eye moved/distorted");marker(m,orb);
       cuboids(solid(m,"gradual_head_021"));mirrored(solid(m,"gradual_head_021"),solid(m,"gradual_head_021"),"Paired Fly head features");compact(m);featureContact(m,p);wings(m,p,true);check(saved.equals(state.encode()),"Rendering changed saved data");
       if(age==1&&xi%5==0&&yi%5==0)endpoints.add(m.shapeSignature());
     }
-    check(endpoints.size()==6,"Requested six mature combinations collapsed into duplicate forms");
+    check(endpoints.size()==9,"Requested nine mature combinations collapsed into duplicate forms");
     for(float age:new float[]{0,.5f,1}){
-      for(float sf:new float[]{0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(i/50f-1,sf,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Run/Power change popped geometry"));before=now;frames++;}}
-      for(float rp:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(rp,i/100f,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Swim/Fly change popped geometry"));before=now;frames++;}}
+      for(float sf:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(i/50f-1,sf,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Run/Power change popped geometry"));before=now;frames++;}}
+      for(float rp:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=200;i++){sample(m,state(rp,i/100f-1,age));var now=capture(m,p);surfacePlanes(m,p);maxStep=Math.max(maxStep,step(before,now,.3f,"Small Swim/Fly change popped geometry"));before=now;frames++;}}
     }
-    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(rp,sf,i/100f));var now=capture(m,p);surfacePlanes(m,p);maxMaturity=Math.max(maxMaturity,step(before,now,.15f,"One-percent maturity change popped geometry"));before=now;frames++;}}
+    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}){Capture before=null;for(int i=0;i<=100;i++){sample(m,state(rp,sf,i/100f));var now=capture(m,p);surfacePlanes(m,p);maxMaturity=Math.max(maxMaturity,step(before,now,.15f,"One-percent maturity change popped geometry"));before=now;frames++;}}
     sample(m,state(-1,1,0));long fresh=m.shapeSignature();sample(m,state(1,0,0));check(fresh==m.shapeSignature(),"Training overrides independent fresh-adult age");
-    for(float rp:new float[]{-1,0,1}){sample(m,state(rp,0,1));long balanced=m.shapeSignature();sample(m,state(rp,-1,1));check(balanced==m.shapeSignature(),"Excess Swim must select the balanced Fly-first surface");sample(m,state(rp,1,1));check(balanced!=m.shapeSignature(),"Later Fly must develop a distinct authored surface");}
+    sample(m,state(1,-1,0));check(fresh==m.shapeSignature(),"Opposite training overrides independent fresh-adult age");
+    for(float rp:new float[]{-1,0,1}){sample(m,state(rp,0,1));long balanced=m.shapeSignature();sample(m,state(rp,-1,1));long swim=m.shapeSignature();check(balanced!=swim,"Opposite Swim must select its distinct Fly-first surface");sample(m,state(rp,1,1));check(balanced!=m.shapeSignature()&&swim!=m.shapeSignature(),"Later Fly, Swim and balanced must retain distinct authored surfaces");}
     var state=state(-1,1,1);sample(m,state);long before=m.shapeSignature();float maturity=state.evolutionStrength();DriveRules.setTotal(state,ChaoState.RUN,0,new Random(61));sample(m,state);check(before!=m.shapeSignature()&&maturity==state.evolutionStrength(),"Run loss does not reverse independently from age");
     var copy=ChaoState.decode(state.encode());sample(m,copy);long loaded=m.shapeSignature();sample(m,state);check(loaded==m.shapeSignature(),"Save/reload changed sampled geometry");m.hideHeadDecorations(p);check(!p.get("gradual_head_021").visible,"Hat does not hide new head features");
   }
@@ -318,7 +320,7 @@ public final class NeutralFlyMorphRigTest061 {
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
     var clocks=OfficialChaoRig.class.getDeclaredField("gaitClocks");clocks.setAccessible(true);var phase=com.chaogarden.core.ChaoGaitClock.class.getDeclaredField("phase");phase.setAccessible(true);
     int contacts=0,samples=0,shoulderMisses=0;float worst=0,worstShoulder=0;String detail="none",shoulderDetail="none";var shoulders=new StringBuilder("age,rp,sf,breathing,phase,yaw,pitch,hand,gap_px\n");var out=new StringBuilder("age,rp,sf,breathing,phase,yaw,pitch,hand,overlap_px\n");
-    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{0,1})for(float rp:new float[]{-1,0,1}){
+    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1}){
       var s=state(rp,sf,age);String key=OfficialChaoRig.geometryKey(s);var id=new UUID(61,600100);var rig=new OfficialChaoRig(clips,NeutralFlyMorphRigTest061::asset);rig.prepareDevelopment(key,s);
       for(int breathing:new int[]{-1,0,1}){
         long seed=id.getMostSignificantBits()^id.getLeastSignificantBits();double wanted=breathing<0?Math.PI*1.5:breathing>0?Math.PI*.5:0;float at=(float)((wanted-(seed&1023)*.01+Math.PI*8)/.055);
@@ -358,7 +360,7 @@ public final class NeutralFlyMorphRigTest061 {
   private static Capture localShape(ChaoMeshAsset mesh,Map<String,ChaoMeshAsset.Pose> poses,String joint,String bone,float rp,float sf,float age){sample(mesh,state(rp,sf,age));return inJointFrame(mesh,poses,joint,solid(mesh,bone));}
   private static void silhouettes(){
     var mesh=asset(MODEL);var poses=poses(mesh);var shapes=new HashSet<Long>();
-    for(int sf=0;sf<=1;sf++)for(int rp=-1;rp<=1;rp++){
+    for(int sf=-1;sf<=1;sf++)for(int rp=-1;rp<=1;rp++){
       sample(mesh,state(rp,sf,1));shapes.add(mesh.shapeSignature());var feature=solid(mesh,"gradual_head_021");
       check(feature.count()==96,"Fly-first crest must retain two paired root/tip chains");mirrored(feature,feature,"Paired Fly crest chains");
       var left=inJointFrame(mesh,poses,"wing_left",solid(mesh,"wing_left__cube_0"));
@@ -366,7 +368,7 @@ public final class NeutralFlyMorphRigTest061 {
       var upper=center(left,0);var middle=center(left,1);var lower=center(left,2);
       check(upper.y<middle.y&&middle.y<lower.y,"Actual upper/middle/lower wing rays no longer form an anatomical fan");
     }
-    check(shapes.size()==6,"All six legal mature Fly-first silhouettes must be distinct");
+    check(shapes.size()==9,"All nine legal mature Fly-first silhouettes must be distinct");
     var fresh=localShape(mesh,poses,"skull","gradual_head_021",0,0,0);var balanced=crest(mesh,poses,0,0);var run=crest(mesh,poses,-1,0);var power=crest(mesh,poses,1,0);var fly=crest(mesh,poses,0,1);var runFly=crest(mesh,poses,-1,1);var powerFly=crest(mesh,poses,1,1);
     check(center(balanced,1).y<center(fresh,1).y-.5f,"Mature balanced crest must rise above its short fresh downward ear");
     check(center(run,0).y>center(balanced,0).y+.6f&&center(run,1).y>center(balanced,1).y+1,"Run must develop a lower squared hook than the rear/up balanced point");
@@ -374,9 +376,15 @@ public final class NeutralFlyMorphRigTest061 {
     check(center(fly,1).y>center(balanced,1).y+1.5f,"Fly must retain the downward terminal ear seen in the reference");
     check(longestEdge(runFly,0)<longestEdge(run,0)*.8f&&longestEdge(runFly,0)<longestEdge(fly,0)*.9f&&longestEdge(runFly,1)<longestEdge(run,1)*.8f&&longestEdge(runFly,1)<longestEdge(fly,1)*.8f,"Run+Fly must form the short curved crest rather than adding both full single-stat ears");
     check(longestEdge(powerFly,0)<longestEdge(power,0)*.8f&&bounds(powerFly,0,24)[1]>bounds(power,0,24)[1]+.5f,"Power+Fly must retain a shorter and less tall root than Power");
+    var swim=crest(mesh,poses,0,-1);var runSwim=crest(mesh,poses,-1,-1);var powerSwim=crest(mesh,poses,1,-1);
+    check(center(swim,1).y<center(fresh,1).y-.5f&&center(swim,1).z>center(fresh,1).z+1,"Swim must develop broad rear/up ears");
+    check(center(runSwim,1).y>center(swim,1).y+.5f,"Run+Swim must develop compact downward-curled ends");
+    check(bounds(powerSwim,0,24)[1]<bounds(swim,0,24)[1]-1,"Power+Swim must develop taller upright peaks than Swim");
     var balancedWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",0,0,1);var runWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",-1,0,1);var powerWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",1,0,1);var flyWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",0,1,1);var runFlyWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",-1,1,1);var powerFlyWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",1,1,1);
     check(longestEdge(flyWing,0)>longestEdge(balancedWing,0)*1.5f&&longestEdge(runWing,0)>longestEdge(balancedWing,0)*1.2f&&longestEdge(powerWing,0)<longestEdge(balancedWing,0)*.8f,"Fly, Run and Power must preserve the reference fan span ordering");
     check(longestEdge(runFlyWing,0)>longestEdge(runWing,0)&&longestEdge(runFlyWing,0)<longestEdge(flyWing,0)&&longestEdge(powerFlyWing,0)>longestEdge(powerWing,0)&&longestEdge(powerFlyWing,0)<longestEdge(flyWing,0),"Compatible wing fans must retain their independent intermediate authored spans");
+    var swimWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",0,-1,1);var runSwimWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",-1,-1,1);var powerSwimWing=localShape(mesh,poses,"wing_left","wing_left__cube_0",1,-1,1);
+    check(longestEdge(swimWing,0)>longestEdge(balancedWing,0)&&longestEdge(runSwimWing,0)>longestEdge(powerSwimWing,0),"Reciprocal Swim fans must broaden from balance and retain Run/Power span differences");
     var balancedTail=localShape(mesh,poses,"tail","tail__cube_0",0,0,1);var runTail=localShape(mesh,poses,"tail","tail__cube_0",-1,0,1);var powerTail=localShape(mesh,poses,"tail","tail__cube_0",1,0,1);var flyTail=localShape(mesh,poses,"tail","tail__cube_0",0,1,1);var runFlyTail=localShape(mesh,poses,"tail","tail__cube_0",-1,1,1);var powerFlyTail=localShape(mesh,poses,"tail","tail__cube_0",1,1,1);
     check(longestEdge(flyTail,0)>longestEdge(balancedTail,0)*1.4f&&longestEdge(runTail,0)<longestEdge(balancedTail,0)*.8f&&longestEdge(powerTail,0)<longestEdge(balancedTail,0)*.8f,"Fly must lengthen its curl while Run and Power keep short tails");
     check(longestEdge(runFlyTail,0)>longestEdge(runTail,0)&&longestEdge(runFlyTail,0)<longestEdge(flyTail,0)&&longestEdge(powerFlyTail,0)>longestEdge(powerTail,0)&&longestEdge(powerFlyTail,0)<longestEdge(flyTail,0),"Compatible tails must retain moderated curl lengths");
@@ -388,10 +396,21 @@ public final class NeutralFlyMorphRigTest061 {
     sample(m,s);equal(before,capture(m,p),.00004f,"Client edit failed to reach authoritative geometry");
     DriveRules.setTotal(s,ChaoState.RUN,0,new Random(61));DriveRules.setTotal(s,ChaoState.FLY,0,new Random(61));m.neutralFlyDevelopment(NeutralFlyAppearance061.prepare(id,s,22));equal(before,capture(m,p),.00004f,"Reversal used a stale display frame");featureContact(m,p);
     for(int t=23;t<=42;t++){m.neutralFlyDevelopment(NeutralFlyAppearance061.prepare(id,s,t));featureContact(m,p);}equal(original,capture(m,p),.00004f,"Reversal failed to recover centered form");
+    // Preserve the earlier edit regression, then traverse both opposing axes
+    // through mixed corners on the same client identity and display clock.
+    int tick=43;
+    for(int[] totals:new int[][]{{960,0,960,0},{0,960,0,960},{0,960,960,0},{0,0,0,0}}){
+      float age=s.evolutionStrength();
+      DriveRules.setTotal(s,ChaoState.RUN,totals[0],new Random(61));DriveRules.setTotal(s,ChaoState.POWER,totals[1],new Random(61));DriveRules.setTotal(s,ChaoState.SWIM,totals[2],new Random(61));DriveRules.setTotal(s,ChaoState.FLY,totals[3],new Random(61));
+      before=capture(m,p);m.neutralFlyDevelopment(NeutralFlyAppearance061.prepare(id,s,tick));equal(before,capture(m,p),.00004f,"Opposite edit snapped its first displayed frame");
+      for(int t=tick+1;t<=tick+20;t++){m.neutralFlyDevelopment(NeutralFlyAppearance061.prepare(id,s,t));var now=capture(m,p);featureContact(m,p);maxEdit=Math.max(maxEdit,step(before,now,1,"Opposite edit interpolation jumped a model pixel"));before=now;frames++;}
+      sample(m,s);equal(before,capture(m,p),.00004f,"Opposite edit failed to reach its authoritative endpoint");check(age==s.evolutionStrength()&&s.lockedPrimaryType()==ChaoState.FLY_TYPE&&s.lockedAlignment()==0,"Opposite edit changed independent maturity or locked first identity");tick+=21;
+    }
+    equal(original,capture(m,p),.00004f,"Full opposite-axis reversal failed to recover centered form");
   }
   private static void motion()throws Exception{
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");var rig=new OfficialChaoRig(clips,NeutralFlyMorphRigTest061::asset);var expected=asset(MODEL);int serial=0;
-    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{0,1})for(float rp:new float[]{-1,0,1})for(var mode:List.of(OfficialChaoRig.Motion.CRAWL,OfficialChaoRig.Motion.WALK,OfficialChaoRig.Motion.RUN,OfficialChaoRig.Motion.SIT,OfficialChaoRig.Motion.SWIM,OfficialChaoRig.Motion.GLIDE,OfficialChaoRig.Motion.HELD))for(int tick:new int[]{0,10,20}){
+    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1})for(var mode:List.of(OfficialChaoRig.Motion.CRAWL,OfficialChaoRig.Motion.WALK,OfficialChaoRig.Motion.RUN,OfficialChaoRig.Motion.SIT,OfficialChaoRig.Motion.SWIM,OfficialChaoRig.Motion.GLIDE,OfficialChaoRig.Motion.HELD))for(int tick:new int[]{0,10,20}){
       var s=state(rp,sf,age);String saved=s.encode();String key=OfficialChaoRig.geometryKey(s);rig.prepareDevelopment(key,s);rig.animateGameplay(key,new UUID(61,++serial),mode,tick,1,.05f,0,0,0,0,false);rig.development(s);sample(expected,s);check(rig.finite(),"Lionfish pose nonfinite");check(rig.sampledMesh().shapeSignature()==expected.shapeSignature(),"Production selection skipped NeutralFly061");check(rig.sourceGeometryKey().equals("baby"),"UV/attachment family changed");check(saved.equals(s.encode()),"Motion changed saved state");featureContact(rig.sampledMesh(),rig.poses());
       try{wings(rig.sampledMesh(),rig.poses(),false);}catch(AssertionError failure){var wingMatrix=new PoseStack();rig.sampledMesh().transformBone("wing_left",wingMatrix,rig.poses());var body=rig.poses().get("body");throw new AssertionError("Wing frame age="+age+" rp="+rp+" sf="+sf+" mode="+mode+" tick="+tick+" bodyScale="+body.sx+","+body.sy+","+body.sz+" leftWingMatrix="+Arrays.toString(wingMatrix.last().pose().get(new float[16]))+"; "+failure.getMessage(),failure);}
       motionFrames++;
@@ -406,8 +425,8 @@ public final class NeutralFlyMorphRigTest061 {
   private static void bookTipSurfaces()throws Exception{
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
     var quiet=new LionfishQuietToyClip049();
-    for(int tick:new int[]{12,36,72,132,156}){
-      var s=state(1,1,1);var rig=new OfficialChaoRig(clips,NeutralFlyMorphRigTest061::asset);String key=OfficialChaoRig.geometryKey(s);
+    for(float sf:new float[]{-1,1})for(float rp:new float[]{-1,0,1})for(int tick:new int[]{12,36,72,132,156}){
+      var s=state(rp,sf,1);var rig=new OfficialChaoRig(clips,NeutralFlyMorphRigTest061::asset);String key=OfficialChaoRig.geometryKey(s);
       rig.prepareDevelopment(key,s);rig.animateGameplay(key,new UUID(61,600060+tick),OfficialChaoRig.Motion.PLAY,tick,0,0,0,0,0,0,false);rig.development(s);
       float weight=com.chaogarden.toys.QuietToyPlayRules049.presence(tick);
       ChaoQuietToyAnimation049.pose(rig.poses(),rig::transformBone,rig.toyPalm(false),rig.toyPalm(true),
@@ -432,7 +451,7 @@ public final class NeutralFlyMorphRigTest061 {
   private static void baselineHeadGuard()throws Exception{
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
     var guard=OfficialChaoRig.class.getDeclaredField("broadWalkHead");guard.setAccessible(true);var power=OfficialChaoRig.class.getDeclaredField("powerSwimWeight");power.setAccessible(true);
-    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{0,1})for(float rp:new float[]{-1,0,1}){
+    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1}){
       var state=state(rp,sf,age);String saved=state.encode(),key=OfficialChaoRig.geometryKey(state);var id=new UUID(61,600060);
       var actual=new OfficialChaoRig(clips,NeutralFlyMorphRigTest061::asset);actual.prepareDevelopment(key,state);
       check(guard.getBoolean(actual),"Every Neutral/Fly-first corner retains baseline full-head walking clearance");
@@ -451,8 +470,8 @@ public final class NeutralFlyMorphRigTest061 {
     var clips=JsonParser.parseString(Files.readString(ROOT.resolve("animations/official/chao.animation.json"))).getAsJsonObject().getAsJsonObject("animations");
     var clocks=OfficialChaoRig.class.getDeclaredField("gaitClocks");clocks.setAccessible(true);var phase=com.chaogarden.core.ChaoGaitClock.class.getDeclaredField("phase");phase.setAccessible(true);
     var guard=OfficialChaoRig.class.getDeclaredField("broadWalkHead");guard.setAccessible(true);
-    for(int target=0;target<18;target++){
-      float rp=target%3-1,sf=(target%6)/3,age=(target/6)*.5f;var state=state(rp,sf,age);String saved=state.encode(),key=OfficialChaoRig.geometryKey(state);var id=new UUID(61,600100+target);
+    for(int target=0;target<27;target++){
+      float rp=target%3-1,sf=(target%9)/3-1,age=(target/9)*.5f;var state=state(rp,sf,age);String saved=state.encode(),key=OfficialChaoRig.geometryKey(state);var id=new UUID(61,600100+target);
       var rig=new OfficialChaoRig(clips,NeutralFlyMorphRigTest061::asset);rig.prepareDevelopment(key,state);check(guard.getBoolean(rig),"Fixed head needs its guard at every body-growth corner");
       for(int breathing:new int[]{-1,0,1}){
         long seed=id.getMostSignificantBits()^id.getLeastSignificantBits();double wanted=breathing<0?Math.PI*1.5:breathing>0?Math.PI*.5:0;float at=(float)((wanted-(seed&1023)*.01+Math.PI*8)/.055);
@@ -500,7 +519,7 @@ public final class NeutralFlyMorphRigTest061 {
     }
     var face=new HashSet<String>(List.of("skull__cube_0","skull__cube_2","skull__cube_3"));var mouths=new HashSet<String>();for(int i=1;i<=6;i++){face.add("expression_mouth_"+i);mouths.add("expression_mouth_"+i);}
     int serial=0;
-    for(float[] profile:new float[][]{{0,0,0},{-1,1,.5f},{1,1,1}})for(int emotion:new int[]{0,1,2,3}){
+    for(float[] profile:new float[][]{{0,0,0},{-1,1,.5f},{1,1,1},{-1,-1,.5f},{0,-1,1},{1,-1,1}})for(int emotion:new int[]{0,1,2,3}){
       var state=state(profile[0],profile[1],profile[2]);String saved=state.encode(),key=OfficialChaoRig.geometryKey(state);var rig=new OfficialChaoRig(clips,NeutralFlyMorphRigTest061::asset);
       rig.prepareDevelopment(key,state);rig.animateGameplay(key,new UUID(61,601200+serial++),OfficialChaoRig.Motion.WALK,120,0,0,emotion,.6f,12,-10,false,false);rig.development(state);
       int expression=emotion==1?2:emotion==2?3:emotion==3?1:0;rig.expression(expression);rig.sampledMesh().lens(0xff101820);
@@ -519,7 +538,7 @@ public final class NeutralFlyMorphRigTest061 {
   }
   private static void shapeDna(){
     var mesh=asset(MODEL);var poses=poses(mesh);
-    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{0,1})for(float rp:new float[]{-1,0,1}){
+    for(float age:new float[]{0,.5f,1})for(float sf:new float[]{-1,0,1})for(float rp:new float[]{-1,0,1}){
       var state=state(rp,sf,age);sample(mesh,state);var reference=capture(mesh,poses);
       for(int gene=0;gene<ChaoState.ANIMALS.length;gene++){
         state.animalMask=1<<gene;state.colorGenes=new int[]{gene%ChaoState.COLORS.length,(gene+1)%ChaoState.COLORS.length};state.toneGenes=new int[]{gene%2,(gene+1)%2};state.shinyGenes=new int[]{1,0};state.jewelGenes=new int[]{gene%ChaoState.JEWELS.length,(gene+1)%ChaoState.JEWELS.length};state.setTrait("fly61.foreign.dna","retained "+gene);
@@ -529,10 +548,10 @@ public final class NeutralFlyMorphRigTest061 {
   }
   private static void coats(){
     var m=asset(MODEL);var p=poses(m);
-    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{0,1}){var s=state(rp,sf,1);sample(m,s);var reference=capture(m,p);for(int color=0;color<ChaoState.COLORS.length;color++)for(int jewel=0;jewel<ChaoState.JEWELS.length;jewel++)if(color==0||jewel==0)for(boolean shiny:new boolean[]{false,true})for(boolean twoTone:new boolean[]{false,true}){s.expressedColor=color;s.expressedJewel=jewel;s.shiny=shiny;s.twoTone=twoTone;sample(m,s);equal(reference,capture(m,p),0,"Color/shine changed form/UV");coatCases++;}}
+    for(float rp:new float[]{-1,0,1})for(float sf:new float[]{-1,0,1}){var s=state(rp,sf,1);sample(m,s);var reference=capture(m,p);for(int color=0;color<ChaoState.COLORS.length;color++)for(int jewel=0;jewel<ChaoState.JEWELS.length;jewel++)if(color==0||jewel==0)for(boolean shiny:new boolean[]{false,true})for(boolean twoTone:new boolean[]{false,true}){s.expressedColor=color;s.expressedJewel=jewel;s.shiny=shiny;s.twoTone=twoTone;sample(m,s);equal(reference,capture(m,p),0,"Color/shine changed form/UV");coatCases++;}}
   }
   public static void main(String[] args)throws Exception{
     if("true".equalsIgnoreCase(System.getenv("CHAO_FLY061_WALK_DIAGNOSTIC"))){topology();diagnoseWalk();return;}
-    long start=System.nanoTime();topology();development();silhouettes();temporal();motion();bookTipSurfaces();stableCache();baselineHeadGuard();headTorsoContinuity();expressionVisibility();shapeDna();coats();String report="NeutralFly061: "+checks+" checks; "+frames+" emitted age/axis/edit frames; "+solids+" closed rectangular-box samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coatCases+" coat/shape cases; "+orbPairs+" actual orb/feature separation checks; "+connectedFeatures+" connected feature samples; "+wingSamples+" emitted closed-wing samples; "+wingUvSamples+" actual wing-span pigment/opacity samples; "+hingeSamples+" original-edge hinge samples; "+bookSurfaceFrames+" production quiet-book surface frames; "+baselineGuardFrames+" actual baseline walking-head guard comparisons; "+surfacePairs+" actual same-facing head/feature plane-pair checks; "+headTorsoFrames+" actual WALK head/torso SAT continuity frames; "+palmHeadFrames+" actual WALK palm/head SAT separation frames; "+shoulderFrames+" actual WALK shoulder/wrist continuity frames; "+expressionFrames+" production-emitter expression/marker visibility frames; maximum hinge drift="+maxHinge+" model pixels; maximum axis step="+maxStep+" model pixels; maximum20tick edit step="+maxEdit+"; maximum1pct maturity step="+maxMaturity+"; seconds="+(System.nanoTime()-start)/1e9+". Fixed original head/face/orb/59-joint rig; six distinct mature corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.\n";Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral-fly061-results.txt"),report);System.out.print(report);
+    long start=System.nanoTime();topology();development();silhouettes();temporal();motion();bookTipSurfaces();stableCache();baselineHeadGuard();headTorsoContinuity();expressionVisibility();shapeDna();coats();String report="NeutralFly061: "+checks+" checks; "+frames+" emitted age/axis/edit frames; "+solids+" closed rectangular-box samples; "+motionFrames+" production Lionfish motion frames; "+attachments+" separate attachment matrices; "+coatCases+" coat/shape cases; "+orbPairs+" actual orb/feature separation checks; "+connectedFeatures+" connected feature samples; "+wingSamples+" emitted closed-wing samples; "+wingUvSamples+" actual wing-span pigment/opacity samples; "+hingeSamples+" original-edge hinge samples; "+bookSurfaceFrames+" production quiet-book surface frames; "+baselineGuardFrames+" actual baseline walking-head guard comparisons; "+surfacePairs+" actual same-facing head/feature plane-pair checks; "+headTorsoFrames+" actual WALK head/torso SAT continuity frames; "+palmHeadFrames+" actual WALK palm/head SAT separation frames; "+shoulderFrames+" actual WALK shoulder/wrist continuity frames; "+expressionFrames+" production-emitter expression/marker visibility frames; maximum hinge drift="+maxHinge+" model pixels; maximum axis step="+maxStep+" model pixels; maximum20tick edit step="+maxEdit+"; maximum1pct maturity step="+maxMaturity+"; seconds="+(System.nanoTime()-start)/1e9+". Fixed original head/face/orb/59-joint rig; nine distinct mature signed-axis corners; reversible independent age/axes; canonical baby UV/attachment alias and current production selection. Geometry validation, not visual/multiplayer verification.\n";Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/neutral-fly061-results.txt"),report);System.out.print(report);
   }
 }

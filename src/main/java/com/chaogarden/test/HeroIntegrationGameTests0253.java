@@ -77,6 +77,7 @@ public final class HeroIntegrationGameTests0253 {
 
   @GameTest(template="empty",batch="hero0253_origin",timeoutTicks=160)
   public static void heroRoundTripAndDeniedTravelPreserveEveryOriginalModeAndHomeJournal(GameTestHelper h){
+    GardenAccessFixtures081.hero(h);
     for(var original:GameType.values()){
       var p=GardenWorldGameTests025.player(h,original);var home=p.serverLevel();var origin=p.position();
       var keepsake=new ItemStack(Items.DIAMOND,7);p.getInventory().setItem(8,keepsake.copy());
@@ -108,6 +109,7 @@ public final class HeroIntegrationGameTests0253 {
 
   @GameTest(template="empty",batch="hero0253_walking",timeoutTicks=180)
   public static void westFacingHeroGateUsesRealCrossingAndRearmsForItsReturn(GameTestHelper h){
+    GardenAccessFixtures081.hero(h);
     var p=GardenWorldGameTests025.player(h,GameType.SURVIVAL);var home=p.serverLevel();var origin=p.position();
     boolean[] done={false};Runnable cleanup=()->{if(done[0])return;done[0]=true;GardenWorldGameTests025.finish(p);};h.runAtTickTime(179,cleanup);
     try{
@@ -135,6 +137,7 @@ public final class HeroIntegrationGameTests0253 {
 
   @GameTest(template="empty",batch="hero0253_care",timeoutTicks=240)
   public static void nativeHeroCareKeepsEggChaoProviderAndPurchasesThroughRepeatedEnsure(GameTestHelper h){
+    GardenAccessFixtures081.hero(h);
     var p=GardenWorldGameTests025.player(h,GameType.ADVENTURE);var source=ChaoGarden.CHAO.get().create(p.serverLevel());
     source.owner=p.getUUID();source.setNoAi(true);source.setNoGravity(true);source.setState(ChaoState.egg(3,true,false,0,new Random(253)));
     var carrier=new ItemStack(ChaoGarden.item("chao_carrier"));h.assertTrue(ChaoCarrierItem.capture(carrier,source,p),"Could not prepare actual held Chao");var identity=ChaoCarrierItem.storedUUID(carrier);
@@ -189,6 +192,7 @@ public final class HeroIntegrationGameTests0253 {
 
   @GameTest(template="empty",batch="hero0253_cancel",timeoutTicks=120)
   public static void nativeHeroItemAndPlacementCancellationCannotConsumeGoodsOrLeakBuildAbility(GameTestHelper h){
+    GardenAccessFixtures081.hero(h);
     var p=GardenWorldGameTests025.player(h,GameType.SURVIVAL);
     try{
       h.assertTrue(HubContent.enterHub(p)&&HubContent.visitHeroGarden(p),"Hero unavailable for native cancellation checks");p.hasChangedDimension();p.teleportTo(5.5,80.1,3.5);
@@ -220,6 +224,7 @@ public final class HeroIntegrationGameTests0253 {
 
   @GameTest(template="empty",batch="hero0253_rescue",timeoutTicks=240)
   public static void actualHeroTicksRescueKeeperChaoEggAndGoodsWithoutReplacingIdentity(GameTestHelper h){
+    GardenAccessFixtures081.hero(h);
     var level=hero(h);var p=GardenWorldGameTests025.player(h,GameType.SURVIVAL);var registry=GardenRegistry.get(p.server);
     var child=ChaoGarden.CHAO.get().create(level);child.owner=p.getUUID();child.setNoAi(true);child.setNoGravity(true);child.setState(ChaoState.egg(4,true,false,0,new Random(2531)));child.moveTo(9.5,80,2.5,0,0);
     var egg=ChaoGarden.CHAO_EGG.get().create(level);egg.owner=p.getUUID();egg.setNoGravity(true);egg.setState(ChaoState.egg(5,false,true,0,new Random(2532)));egg.moveTo(12.5,80,2.5,0,0);

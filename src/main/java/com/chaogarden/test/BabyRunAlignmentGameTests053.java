@@ -278,7 +278,7 @@ public final class BabyRunAlignmentGameTests053 {
     var old=legacyStates().get(index);
     try {h.assertTrue(HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(old.encoded().getBytes(StandardCharsets.UTF_8))).equals(old.sha256()),"Actual saved fixture retains its extracted source hash");}
     catch(java.security.NoSuchAlgorithmException impossible){throw new IllegalStateException(impossible);}
-    var state=ChaoState.decode(old.encoded());h.assertTrue(state.encode().equals(old.encoded()),"Older state is byte-exact before any intentional Creative edit: "+old.source());
+    var state=ChaoState.decode(old.encoded());FaceLegacyAssertions076.assertAppendOnly(h,old.encoded(),state,"Older state is byte-exact before any intentional Creative edit: "+old.source());
     var p=keeper(h,GameType.CREATIVE);var c=actor(h,state,p);String before=state.encode();
     if(state.adult||state.immortal||state.dead) {
       h.assertFalse(edit(p,c,375),"Existing adult/Chaos/dead records cannot be unlocked by the Creative bar");

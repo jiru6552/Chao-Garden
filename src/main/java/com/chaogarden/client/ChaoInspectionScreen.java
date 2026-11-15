@@ -12,6 +12,13 @@ import com.chaogarden.core.NeutralFlyMorphology061;
 import com.chaogarden.core.NeutralRunMorphology062;
 import com.chaogarden.core.NeutralPowerMorphology063;
 import com.chaogarden.core.HeroSwimMorphology064;
+import com.chaogarden.core.HeroFlyMorphology065;
+import com.chaogarden.core.HeroRunMorphology066;
+import com.chaogarden.core.HeroPowerMorphology067;
+import com.chaogarden.core.DarkSwimMorphology068;
+import com.chaogarden.core.DarkFlyMorphology069;
+import com.chaogarden.core.DarkRunMorphology070;
+import com.chaogarden.core.DarkPowerMorphology071;
 import com.chaogarden.core.OmochaoRules;
 import com.chaogarden.core.LocomotionRules;
 import com.chaogarden.core.ChaoPreferences;
@@ -434,8 +441,57 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       var neutralRun=NeutralRunMorphology062.sample(s);
       var neutralPower=NeutralPowerMorphology063.sample(s);
       var heroSwim=HeroSwimMorphology064.sample(s);
+      var heroFly=HeroFlyMorphology065.sample(s);
+      var heroRun=HeroRunMorphology066.sample(s);
+      var heroPower=HeroPowerMorphology067.sample(s);
+      var darkSwim=DarkSwimMorphology068.sample(s);
+      var darkFly=DarkFlyMorphology069.sample(s);
+      var darkRun=DarkRunMorphology070.sample(s);
+      var darkPower=DarkPowerMorphology071.sample(s);
       var morph=HeroRunMorphology052.sample(s);
-      if(heroSwim.enabled()) {
+      if(darkPower.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Dark Power training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",darkPower.runPower()*100,darkPower.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Dark Power form into these targets: "+Math.round(darkPower.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(DarkPowerMorphology071.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Run can cross balance toward its later form; the first Power type and Dark alignment stay locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(darkRun.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Dark Run training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",darkRun.runPower()*100,darkRun.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Dark Run form into these targets: "+Math.round(darkRun.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(DarkRunMorphology070.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Power can cross balance toward its later form; the first Run type and Dark alignment stay locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(darkFly.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Dark Fly training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",darkFly.runPower()*100,darkFly.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Dark Fly form into these targets: "+Math.round(darkFly.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(DarkFlyMorphology069.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Swim can cross balance toward its later form; the first Fly type and Dark alignment stay locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(darkSwim.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Dark Swim training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",darkSwim.runPower()*100,darkSwim.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Dark Swim form into these targets: "+Math.round(darkSwim.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(DarkSwimMorphology068.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Fly can cross balance toward its later form; the first Swim type and Dark alignment stay locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(heroPower.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Hero Power training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",heroPower.runPower()*100,heroPower.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Hero Power form into these targets: "+Math.round(heroPower.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(HeroPowerMorphology067.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Run can cross balance toward its later form; the first Power type and Hero alignment stay locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(heroRun.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Hero Run training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",heroRun.runPower()*100,heroRun.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Hero Run form into these targets: "+Math.round(heroRun.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(HeroRunMorphology066.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Power can cross balance toward its later form; the first Run type and Hero alignment stay locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(heroFly.enabled()) {
+        lines.add(Component.literal(String.format(Locale.ROOT,"Hero Fly training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",heroFly.runPower()*100,heroFly.swimFly()*100)));
+        lines.add(Component.literal("Maturity blends the fresh Hero Fly form into these targets: "+Math.round(heroFly.maturity()*100)+"%."));
+        lines.add(Component.literal("Provisional full axis: "+Math.round(HeroFlyMorphology065.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
+        lines.add(Component.literal("Swim can cross balance toward its later form; the first Fly type and Hero alignment stay locked."));
+        lines.add(Component.literal("Reductions change specialization, not biological maturity or first identity."));
+      } else if(heroSwim.enabled()) {
         lines.add(Component.literal(String.format(Locale.ROOT,"Hero Swim training: Run(-) / Power(+) %+.0f%%; Swim(-) / Fly(+) %+.0f%%.",heroSwim.runPower()*100,heroSwim.swimFly()*100)));
         lines.add(Component.literal("Maturity blends the fresh Hero Swim form into these targets: "+Math.round(heroSwim.maturity()*100)+"%."));
         lines.add(Component.literal("Provisional full axis: "+Math.round(HeroSwimMorphology064.SPECIALIZATION_PROGRESS)+" net training progress; compatible axes combine."));
@@ -573,9 +629,16 @@ public final class ChaoInspectionScreen extends AdventureScreen {
       var neutralRun=NeutralRunMorphology062.sample(s);
       var neutralPower=NeutralPowerMorphology063.sample(s);
       var heroSwim=HeroSwimMorphology064.sample(s);
-      text(g,heroSwim.enabled()?"Fly can cross balance; the first type stays Swim.":neutralPower.enabled()?"Run can cross balance; the first type stays Power.":neutralRun.enabled()?"Power can cross balance; the first type stays Run.":neutralFly.enabled()?"Swim counters later Fly; the first type stays Fly.":neutralSwim.enabled()?"Fly counters later Swim; the first type stays Swim.":"These meters show direction, not a chance or a level.",220,133,.8f,MUTED);
-      float swimFly=heroSwim.enabled()?heroSwim.swimFly():neutralPower.enabled()?neutralPower.swimFly():neutralRun.enabled()?neutralRun.swimFly():neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():s.swimFly;
-      float runPower=heroSwim.enabled()?heroSwim.runPower():neutralPower.enabled()?neutralPower.runPower():neutralRun.enabled()?neutralRun.runPower():neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():s.runPower;
+      var heroFly=HeroFlyMorphology065.sample(s);
+      var heroRun=HeroRunMorphology066.sample(s);
+      var heroPower=HeroPowerMorphology067.sample(s);
+      var darkSwim=DarkSwimMorphology068.sample(s);
+      var darkFly=DarkFlyMorphology069.sample(s);
+      var darkRun=DarkRunMorphology070.sample(s);
+      var darkPower=DarkPowerMorphology071.sample(s);
+      text(g,darkPower.enabled()?"Run can cross balance; the first type stays Power.":darkRun.enabled()?"Power can cross balance; the first type stays Run.":darkFly.enabled()?"Swim can cross balance; the first type stays Fly.":darkSwim.enabled()?"Fly can cross balance; the first type stays Swim.":heroPower.enabled()?"Run can cross balance; the first type stays Power.":heroRun.enabled()?"Power can cross balance; the first type stays Run.":heroFly.enabled()?"Swim can cross balance; the first type stays Fly.":heroSwim.enabled()?"Fly can cross balance; the first type stays Swim.":neutralPower.enabled()?"Run can cross balance; the first type stays Power.":neutralRun.enabled()?"Power can cross balance; the first type stays Run.":neutralFly.enabled()?"Swim counters later Fly; the first type stays Fly.":neutralSwim.enabled()?"Fly counters later Swim; the first type stays Swim.":"These meters show direction, not a chance or a level.",220,133,.8f,MUTED);
+      float swimFly=darkPower.enabled()?darkPower.swimFly():darkRun.enabled()?darkRun.swimFly():darkFly.enabled()?darkFly.swimFly():darkSwim.enabled()?darkSwim.swimFly():heroPower.enabled()?heroPower.swimFly():heroRun.enabled()?heroRun.swimFly():heroFly.enabled()?heroFly.swimFly():heroSwim.enabled()?heroSwim.swimFly():neutralPower.enabled()?neutralPower.swimFly():neutralRun.enabled()?neutralRun.swimFly():neutralFly.enabled()?neutralFly.swimFly():darkNormal.enabled()?darkNormal.swimFly():neutralSwim.enabled()?neutralSwim.swimFly():neutral.enabled()?neutral.swimFly():heroNormal.enabled()?heroNormal.swimFly():s.swimFly;
+      float runPower=darkPower.enabled()?darkPower.runPower():darkRun.enabled()?darkRun.runPower():darkFly.enabled()?darkFly.runPower():darkSwim.enabled()?darkSwim.runPower():heroPower.enabled()?heroPower.runPower():heroRun.enabled()?heroRun.runPower():heroFly.enabled()?heroFly.runPower():heroSwim.enabled()?heroSwim.runPower():neutralPower.enabled()?neutralPower.runPower():neutralRun.enabled()?neutralRun.runPower():neutralFly.enabled()?neutralFly.runPower():darkNormal.enabled()?darkNormal.runPower():neutralSwim.enabled()?neutralSwim.runPower():neutral.enabled()?neutral.runPower():heroNormal.enabled()?heroNormal.runPower():s.runPower;
       axis(g,"Swim","Fly",swimFly,220,159,340,STAT_COLORS[0],STAT_COLORS[1]);
       text(g,lean(swimFly,"Swim","Fly"),220,175,.8f,INK);
       axis(g,"Run","Power",runPower,220,203,340,STAT_COLORS[2],STAT_COLORS[3]);

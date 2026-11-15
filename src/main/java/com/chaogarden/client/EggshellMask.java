@@ -23,6 +23,7 @@ import org.joml.Vector3f;
 /** A broken upper shell surrounds the whole skull, with two real eye openings.
  * Shell UVs sample the top half of the same continuous placed-egg atlas. */
 final class EggshellMask {
+  private static final EggshellMask ATTACHMENT_SURFACE=new EggshellMask();
   private final IdentityHashMap<CustomData,ChaoState> coats=new IdentityHashMap<>();
   private final ArrayDeque<CustomData> order=new ArrayDeque<>();
   private final Vector3f normal=new Vector3f(),point=new Vector3f();
@@ -73,6 +74,17 @@ final class EggshellMask {
   float[] inspectGeometry(float[] h,float[] eyes) {
     Shape key=new Shape(h[0],h[1],h[2],h[3],h[4],h[5],eyes[0],eyes[1],eyes[2],eyes[3]);
     return geometry.computeIfAbsent(key,unused->build(h,eyes));
+  }
+
+  /** The real generated shell, including its crown and broken rim, bounds attachments. */
+  static float[] fittedBounds(float[] head,float[] eyes) {
+    float[] h=head==null?new float[]{-3.5f,-6,-3,3.5f,0,3}:head;
+    float[] e=eyes==null?new float[]{(h[0]+h[3])*.5f,h[1]+(h[4]-h[1])*2/3,h[2]-.06f,1.55f}:eyes;
+    float[] data=ATTACHMENT_SURFACE.inspectGeometry(h,e);
+    float[] bounds={Float.POSITIVE_INFINITY,Float.POSITIVE_INFINITY,Float.POSITIVE_INFINITY,
+        Float.NEGATIVE_INFINITY,Float.NEGATIVE_INFINITY,Float.NEGATIVE_INFINITY};
+    for(int n=0;n<data.length;n+=8)for(int a=0;a<3;a++){bounds[a]=Math.min(bounds[a],data[n+a]);bounds[a+3]=Math.max(bounds[a+3],data[n+a]);}
+    return bounds;
   }
 
   private float[] build(float[] h,float[] eyes) {

@@ -1,6 +1,42 @@
-# Chao Garden 0.25.64
+# Chao Garden 0.25.82
 
-Current update **0.25.64** adds Hero/Swim-first development across both signed training axes: balanced, Run, Power, Fly, Swim and the four compatible pairs. Separate blocky head fins, regional accents and a four-bar halo develop around the unchanged original head box. Opposing Fly can cross balance while the first type stays Swim and alignment stays Hero. See [the Hero Swim family report](docs/HERO_SWIM_02564.md). The completed [Neutral Power-first](docs/NEUTRAL_POWER_02563.md), [Neutral Run-first](docs/NEUTRAL_RUN_02562.md), [Neutral Fly-first](docs/NEUTRAL_FLY_02561.md), [Dark/Neutral](docs/DARK_NORMAL_02560.md), [Neutral Swim-first](docs/NEUTRAL_SWIM_02559.md) and earlier Neutral/Hero families remain included.
+[**Download 0.25.82 JAR — Minecraft 1.21.1 / NeoForge**](downloads/0.25.82/chao_garden-0.25.82.jar?raw=true) · [Download files and verification](downloads/0.25.82/)
+
+This update adds server-side alignment influences for equipped baby Chao: configurable hostile/peaceful kill changes and saved Nether/End (or optional Aether) equipped-time counters. Adult alignment and first evolution remain locked. The preceding garden unlocks/effects, morphology, toys, faces and accessories are included. See the [development report](docs/EQUIPPED_BABY_ALIGNMENT_02582_DEV.md).
+
+Verification: all core checks passed, including 1,320 new checks; the new native cases passed 14/14 both with and without official Aether, and two actual clients verified replication. The complete native regression passed 4,875/4,876; the one inherited Nether companion extinguishing failure remains. Manual phone/PvP/modpack checks and a fresh-process partial-minute restart remain; see the report.
+
+Install the same 0.25.82 JAR on server and clients, replacing the older Chao Garden JAR. Use Java 21 and the project's external Lionfish API dependency; equipped companions additionally use Accessories and its owo dependency. Aether remains optional.
+
+Completed update **0.25.79** reviews all registered Chao headwear and accessories, repairs glasses and fitted masks, and gives full-head covers real eye openings. Existing item IDs and equipment rules remain intact. See [the headwear report](docs/HEADWEAR_ACCESSORIES_02579.md).
+
+Completed update **0.25.78** adds seven occasional, interruptible garden idles using the existing behavior, personality, emotion and Lionfish systems. Operator previews use `/chao testidle <id> once|loop|stop`; tiredness and illness retain their own priorities. See [the idle report](docs/IDLE_ANIMATIONS_02578.md).
+
+Completed update **0.25.77** lowers the head slightly during toy-car and crayon stomach-lying play, bringing it closer to the torso while retaining the existing head box and toy grips. See [the pose correction report](docs/PRONE_HEAD_02577.md).
+
+Completed update **0.25.76** adds fixed personality-informed baseline eye/mouth combinations and layered mood, illness, sleep and activity expressions. Ordinary Hero and Dark eyes use their distinct styles around the unchanged blocky head. Operator presentation previews use `/chao testface <expression> once|loop|stop`. See [the faces report](docs/FACES_02576.md) for reference boundaries, migration and actual verification.
+
+Completed update **0.25.75** refines radio listening with a close front seat, gentle seated animation and a quiet, finite note sequence shared by ordinary play and `/chao testtoy radio once|loop|stop`. Nearby radios limit competing cues. See [the radio toy report](docs/RADIO_TOY_02575.md) for verification and reference limits.
+
+Completed update **0.25.74** remakes the Chao ball and its contact, rolling and chase interaction while retaining the existing toy ID and acquisition. Operator previews use `/chao testtoy ball once|loop|stop`. See [the ball toy report](docs/BALL_TOY_02574.md) for actual verification and reference limits.
+
+Completed update **0.25.73** refines the placed TV interaction with a seated watch, measured screen gaze, a quiet finite program and `/chao testtoy tv once|loop|stop` previews. Car and crayon stomach-lying poses bring the original head closer to the torso while preserving hand clearance. Completed morphology families remain included. See [the TV and prone-pose report](docs/TV_AND_PRONE_02573.md).
+
+Completed update **0.25.72** completes the reciprocal Neutral/Swim and Neutral/Fly adult rows: Swim-first can develop Fly, Run+Fly and Power+Fly; Fly-first can develop Swim, Run+Swim and Power+Swim. Both axes cross balance while first type and alignment remain locked. The original head and attachment rig are unchanged. See [the reciprocal-form report](docs/RECIPROCAL_NEUTRAL_02572.md).
+
+Completed update **0.25.71** adds the Dark/Power-first family and preserves completed Dark/Run. Both later training axes can cross balance while adult alignment and first type remain locked. The original head box stays fixed. See [the combined continuation and Dark Power report](docs/DARK_POWER_02571.md), and [the completed Dark Run report](docs/DARK_RUN_02570.md).
+
+Completed update **0.25.69** adds the Dark/Fly-first family, using paired blocky head features and distinct adult targets around the unchanged original head box. Later Swim may cross balance without replacing first Fly or locked Dark alignment. See [the Dark Fly report](docs/DARK_FLY_02569.md).
+
+Completed update **0.25.68** adds the Dark/Swim-first family: a distinct newly evolved form and nine later targets across both signed training axes. Separate blocky features develop around the unchanged original head box. Later Fly can cross balance while first type stays Swim and alignment stays Dark. See [the Dark Swim family report](docs/DARK_SWIM_02568.md).
+
+Operators can inspect the existing crawl, paddle, swim, glide and flail poses with `/chao testpose <pose> once|loop|stop`. These temporary previews reuse production animation and preserve care, age and real items; `/chao testpose list` lists the controls.
+
+The completed **0.25.67** update adds the Hero/Power-first family: a distinct newly evolved form and nine later specializations across both signed training axes. Three separate blocky crown branches, compact fists and spotted regional accents develop around the unchanged original head box. Later Run can cross balance while first type stays Power and alignment stays Hero. See [the Hero Power family report](docs/HERO_POWER_02567.md).
+
+The completed **0.25.66** update completes the Hero/Run-first adult family around the unchanged original blocky head: balanced development, Run, Power, Fly, Swim and the four compatible pairs. Later Power can cross balance without replacing the locked first Run identity. Separate hooked, fan, bulb and cup features retain the approved cuboid construction, while the existing baby Run features remain included. See [the Hero Run family report](docs/HERO_RUN_02566.md).
+
+The completed **0.25.65** Hero/Fly-first family remains included across both signed training axes: balanced, Run, Power, Fly, Swim and the four compatible pairs. Separate blocky crown branches and fan wings develop around the unchanged original head box, with Fly-specific regional colors and a four-bar halo. Swim can cross balance while the first type stays Fly and alignment stays Hero. See [the Hero Fly family report](docs/HERO_FLY_02565.md). The completed [Hero Swim-first](docs/HERO_SWIM_02564.md), [Neutral Power-first](docs/NEUTRAL_POWER_02563.md), [Neutral Run-first](docs/NEUTRAL_RUN_02562.md), [Neutral Fly-first](docs/NEUTRAL_FLY_02561.md), [Dark/Neutral](docs/DARK_NORMAL_02560.md), [Neutral Swim-first](docs/NEUTRAL_SWIM_02559.md) and earlier families remain included.
 
 Earlier Analyzer update: the Chao Analyzer is a blue and yellow tablet, with a larger mouse-tracking preview, letter-colored skill grades, clearer Genes pages, and a body-part diagram with a clickable Chaos DNA checklist. Lessons are now daycare-only. See [release notes](docs/release-0.25.18.md) and [verification](TESTING.md).
 
@@ -36,7 +72,7 @@ The food collection includes **35 active fruit/food families**: the twelve conso
 ## Install
 
 1. Use **Minecraft Java 1.21.1**, **NeoForge 21.1.219**, and **64-bit Java 21**.
-2. Place `chao_garden-0.25.64.jar` in `mods/`, replacing the previous Chao Garden jar.
+2. Place `chao_garden-0.25.78.jar` in `mods/`, replacing the previous Chao Garden jar.
 3. Install the same version on the server and every connecting client.
 
 Install **Lionfish API 3.1** separately on both client and server; the current animation integration requires it. Adult equipped companions optionally require **Accessories for NeoForge 1.21.1 and its oωo dependency** on both sides. See [companions](docs/COMPANIONS.md). This build targets NeoForge.
@@ -191,7 +227,7 @@ Open `source/` as a Gradle project with Java 21:
 ./gradlew runClient
 ```
 
-Use `gradlew.bat` on Windows. The output is `build/libs/chao_garden-0.25.8.jar`. [TESTING.md](TESTING.md) records completed checks.
+Use `gradlew.bat` on Windows. The output is `build/libs/chao_garden-0.25.78.jar`. [TESTING.md](TESTING.md) records completed checks.
 
 The editable official model/texture/animation inputs are in `art/imported_chao`. Eight retained Blockbench projects author custom additions and the egg; they are not replacements for the imported form JSON. See [asset editing](art/blockbench/README.md).
 

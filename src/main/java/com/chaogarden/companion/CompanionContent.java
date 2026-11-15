@@ -3,6 +3,8 @@ package com.chaogarden.companion;
 import com.chaogarden.ChaoGarden;
 import com.chaogarden.activities.ActivityManager;
 import com.chaogarden.core.ChaoState;
+import com.chaogarden.core.EquippedAbilityRules080;
+import com.chaogarden.core.EquippedBabyAlignmentRules082;
 import com.chaogarden.entity.ChaoEntity;
 import com.chaogarden.item.ChaoCarrierItem;
 import java.util.ArrayList;
@@ -65,12 +67,21 @@ public final class CompanionContent {
   public static final String AIR_USED = "ChaoCompanionGlideUsed";
   public static final String AIR_STARTED = "ChaoCompanionGlideStarted";
   private static final String CHEST_OPEN_UNTIL = "ChaoCompanionEnderChestUntil";
+  private static final String CARE_LAST_TICK082="ChaoEquippedCareLastTick082";
+  private static final String BABY_LAST_TICK082="ChaoBabyAlignmentLastTick082";
+  private static final String ALIGNMENT_CLOCK_SESSION082="ChaoAlignmentClockSession082";
+  private static final String BABY_DARK_TICKS082="ChaoBabyAlignmentNetherTicks082",BABY_HERO_TICKS082="ChaoBabyAlignmentHeroTicks082";
+  private static final String BABY_DEATH_COMMITTED082="ChaoBabyAlignmentDeathCommitted082";
   public static final ResourceLocation RUN_SPEED=ResourceLocation.fromNamespaceAndPath("chao_garden","companion_run");
   public static final ResourceLocation SWIM_SPEED=ResourceLocation.fromNamespaceAndPath("chao_garden","companion_swim");
   private static final String OWN_VISION="ChaoCompanionWaterVision",OWN_BREATH="ChaoCompanionWaterBreath";
   private static MobEffectInstance writingWaterEffect;
   private static final Map<UUID, Active> ACTIVE = new HashMap<>();
   private static final List<PendingSnapshot> PENDING = new ArrayList<>();
+  private static final Map<UUID,SecretInput080> SECRET_INPUT080=new HashMap<>();
+  private static final Map<MinecraftServer,UUID> ALIGNMENT_CLOCK_SESSIONS082=new java.util.WeakHashMap<>();
+  private static final class SecretInput080 {int lastSequence;long nextAllowed;}
+
 
   private static final class Active {
     final UUID keeper, token;
@@ -179,13 +190,7 @@ public final class CompanionContent {
     UUID token = token(stack, true);
     // Once the same creature is equipped again, its current item/body owns the
     // state. An earlier removal snapshot must never overwrite newer training.
-    PENDING.removeIf(pending -> {
-      if (!pending.keeper().equals(player.getUUID()) || !pending.token().equals(token)) return false;
-      // A defeat that followed a slot split still belongs to this item, even
-      // if it was equipped again before the normal pending-destination pass.
-      if (pending.disabledUntil() > 0) restorePending(stack, pending);
-      return true;
-    });
+    claimPending082(player,stack,token);
     Active active = ACTIVE.get(player.getUUID());
     if (active != null && !active.token.equals(token)) { recall(player, active); ACTIVE.remove(player.getUUID()); active = null; }
     if (active == null) {
@@ -196,8 +201,18 @@ public final class CompanionContent {
     if (active.body != null && (active.body.isRemoved() || active.body.level() != player.level())) {
       recall(player, active); active.body = null;
     }
-    if (remaining(stack, player.server) > 0) return;
-    if (active.body == null) summon(player, active);
+    if (remaining(stack, player.server) == 0 && active.body == null) summon(player, active);
+    tickBabyAlignment082(player);
+  }
+
+  private static void claimPending082(ServerPlayer player,ItemStack stack,UUID token){
+    PENDING.removeIf(pending -> {
+      if (!pending.keeper().equals(player.getUUID()) || !pending.token().equals(token)) return false;
+      // A defeat that followed a slot split still belongs to this item, even
+      // if it was equipped again before the normal pending-destination pass.
+      if (pending.disabledUntil() > 0) restorePending(stack, pending);
+      return true;
+    });
   }
 
   private static void summon(ServerPlayer player, Active active) {
@@ -235,17 +250,131 @@ public final class CompanionContent {
   /** Only the summoned body runs care. Its independent clock travels in the carrier snapshot. */
   public static boolean tickChao(ChaoEntity chao) {
     if (!isManaged(chao)) return false;
+    if(!(chao.level() instanceof ServerLevel))return true;
     Active active = active(chao);
     if (active == null) { chao.discard(); return true; }
     if(CarryPreview.active(chao))return true;
     var data = chao.getPersistentData();
+    // A recalled/recreated body can cross a dimension within one server tick.
+    // Persist only the last observed tick, never an offline elapsed duration.
+    long time=alignmentTick082(((ServerLevel)chao.level()).getServer(),data);
+    if(data.contains(CARE_LAST_TICK082)&&data.getLong(CARE_LAST_TICK082)==time)return true;
+    data.putLong(CARE_LAST_TICK082,time);
     int careTick = Math.clamp(data.getInt("ChaoEquippedCareTicks"), 0, 5999) + 1;
-    chao.state().tickEquippedCare(careTick, com.chaogarden.GardenConfig.CHILD_TICKS.get());
+    chao.state().tickEquippedCare(careTick, com.chaogarden.GardenConfig.CHILD_TICKS.get(),
+        com.chaogarden.hub.GardenCare081.garden(chao.level()));
+    com.chaogarden.hub.GardenUnlocks081.observe(chao);
     data.putInt("ChaoEquippedCareTicks", careTick % 6000);
     if (chao.tickCount % 20 == 0) {
       chao.sync(); ChaoCarrierItem.snapshot(active.stack, chao); AccessoriesBridge.changed(active.slotReference);
     }
     return true;
+  }
+
+  /** One actual slot owns its live projection or its unsummoned saved body,
+   * never both. A stale baby item cannot override a live evolved adult. */
+  private static final class BabyTarget082 {
+    final ItemStack stack;final ChaoEntity body;final ChaoState state;final CompoundTag entity,data;final Runnable changed;
+    BabyTarget082(ItemStack stack,ChaoEntity body,CompoundTag entity,Runnable changed){
+      this.stack=stack;this.body=body;this.entity=entity;this.changed=changed;
+      state=body!=null?body.state():ChaoState.decode(entity.getString("Chao"));
+      data=body!=null?body.getPersistentData():entity.contains("NeoForgeData")?entity.getCompound("NeoForgeData")
+          :entity.getCompound("ForgeData").copy();
+    }
+    void commit(boolean alignmentChanged,boolean notify){
+      if(body!=null){if(alignmentChanged)body.sync();if(notify)itemStateChanged(body);}
+      else{
+        if(alignmentChanged)entity.putString("Chao",state.encode());
+        entity.put("NeoForgeData",data);ChaoCarrierItem.storeEntity(stack,entity);
+      }
+      if(notify)changed.run();
+    }
+  }
+
+  private static BabyTarget082 equippedBaby082(ServerPlayer player){
+    if(!player.isAlive()||!player.server.isSameThread()
+        ||player.server.getPlayerList().getPlayer(player.getUUID())!=player)return null;
+    ItemStack selected=null;
+    for(var stack:AccessoriesBridge.equipped(player))if(ChaoCarrierItem.filled(stack)){
+      // Multiple distinct carriers violate the established one-companion rule.
+      // Reject ambiguity rather than choosing a copied/older item snapshot.
+      if(selected!=null&&selected!=stack)return null;selected=stack;
+    }
+    if(selected==null||!ChaoCarrierItem.canRelease(selected,player)||ChaoCarrierItem.storedUUID(selected)==null)return null;
+    var stack=selected;var id=ChaoCarrierItem.storedUUID(stack);var active=ACTIVE.get(player.getUUID());
+    var existing=findEntity(player.server,id);ChaoEntity live=null;
+    if(active!=null&&active.body!=null&&!active.body.isRemoved()&&id.equals(active.body.getUUID())){
+      // A projected body can temporarily occupy a hidden/non-ticking chunk.
+      // Its Active reference remains authoritative even while the world's
+      // accessible entity lookup has not exposed it. Never edit an older item.
+      if(existing!=null&&existing!=active.body||!current(player,active)||CarryPreview.active(active.body))return null;
+      live=active.body;
+    }else{
+      if(existing!=null)return null;
+      claimPending082(player,stack,token(stack,true));
+      // Resolving a real removal/defeat uses the existing pending transaction;
+      // only then is the saved item authoritative for unsummoned care.
+    }
+    Runnable changed=()->{for(var slot:AccessoriesBridge.storageAccessories(player))if(slot.stack()==stack)slot.changed().run();};
+    var target=new BabyTarget082(stack,live,live==null?ChaoCarrierItem.entityData(stack):null,changed);
+    return EquippedBabyAlignmentRules082.eligible(target.state)?target:null;
+  }
+
+  private static void tickBabyAlignment082(ServerPlayer player){
+    var target=equippedBaby082(player);if(target==null)return;
+    var data=target.data;long time=alignmentTick082(player.server,data);
+    if(data.contains(BABY_LAST_TICK082)&&data.getLong(BABY_LAST_TICK082)==time)return;
+    data.putLong(BABY_LAST_TICK082,time);
+    var clock=new EquippedBabyAlignmentRules082.Clock(data.getInt(BABY_DARK_TICKS082),data.getInt(BABY_HERO_TICKS082));
+    var influence=EquippedBabyAlignmentRules082.passiveInfluence(player.level().dimension().location().toString(),
+        net.neoforged.fml.ModList.get().isLoaded("aether"));
+    var result=EquippedBabyAlignmentRules082.tickPassive(target.state,clock,influence,true);
+    if(influence!=EquippedBabyAlignmentRules082.Influence.NONE){
+      data.putInt(BABY_DARK_TICKS082,result.clock().darkTicks());data.putInt(BABY_HERO_TICKS082,result.clock().heroTicks());
+    }
+    boolean minute=influence==EquippedBabyAlignmentRules082.Influence.DARK&&result.clock().darkTicks()==0
+        ||influence==EquippedBabyAlignmentRules082.Influence.HERO&&result.clock().heroTicks()==0;
+    target.commit(result.alignmentChanged(),result.alignmentChanged()||minute||time%20==0);
+  }
+
+  /** Server tick count is stable across Pre/Post and all dimensions; world
+   * gameTime changes during a tick. Session identity scopes that dedupe value
+   * across a restart without resetting either earned partial-minute counter. */
+  private static long alignmentTick082(MinecraftServer server,CompoundTag data){
+    UUID session=ALIGNMENT_CLOCK_SESSIONS082.computeIfAbsent(server,key->UUID.randomUUID());
+    if(!data.hasUUID(ALIGNMENT_CLOCK_SESSION082)||!session.equals(data.getUUID(ALIGNMENT_CLOCK_SESSION082))){
+      data.putUUID(ALIGNMENT_CLOCK_SESSION082,session);data.remove(CARE_LAST_TICK082);data.remove(BABY_LAST_TICK082);
+    }
+    return server.getTickCount();
+  }
+
+  /** Called only after CommonHooks has obtained the final accepted-death
+   * result. The real slot and existing vanilla kill credit are read now. */
+  public static void acceptedBabyAlignmentDeath082(LivingEntity victim){
+    if(!(victim.level() instanceof ServerLevel level)||!level.getServer().isSameThread())return;
+    var data=victim.getPersistentData();
+    if(data.getBoolean(BABY_DEATH_COMMITTED082))return;
+    // Also consume deaths without a qualifying accessory: equipping one later
+    // cannot claim a repeated callback or a reloaded old death sequence.
+    data.putBoolean(BABY_DEATH_COMMITTED082,true);
+    var credit=com.chaogarden.genes.EnemyDriveDrops.credited(victim);
+    if(!(credit instanceof ServerPlayer player)||player.getUUID().equals(victim.getUUID()))return;
+    var target=equippedBaby082(player);if(target==null)return;
+    int points=switch(BabyKillAlignment082.classify(victim)){
+      case HOSTILE->com.chaogarden.GardenConfig.BABY_HOSTILE_KILL_ALIGNMENT_POINTS.get();
+      case PEACEFUL->-com.chaogarden.GardenConfig.BABY_PEACEFUL_KILL_ALIGNMENT_POINTS.get();
+      default->0;
+    };
+    if(EquippedBabyAlignmentRules082.applyPoints(target.state,points))target.commit(true,true);
+  }
+
+  /** A genuinely revived creature starts a new life. Ordinary repeated calls
+   * on its dead body keep the commit; canceled deaths never create one. */
+  @SubscribeEvent(priority=EventPriority.HIGHEST)
+  public static void babyAlignmentNewLife082(LivingIncomingDamageEvent event){
+    var victim=event.getEntity();
+    if(!victim.level().isClientSide&&victim.isAlive()&&victim.getHealth()>0)
+      victim.getPersistentData().remove(BABY_DEATH_COMMITTED082);
   }
 
   private static Active active(ChaoEntity chao) {
@@ -394,6 +523,8 @@ public final class CompanionContent {
 
   @SubscribeEvent
   public static void staleBody(EntityJoinLevelEvent event) {
+    if(!event.getLevel().isClientSide&&event.getEntity() instanceof LivingEntity living&&living.isAlive()&&living.getHealth()>0)
+      living.getPersistentData().remove(BABY_DEATH_COMMITTED082);
     if (!event.getLevel().isClientSide && event.loadedFromDisk()
         && event.getEntity() instanceof ChaoEntity chao && isManaged(chao)) event.setCanceled(true);
   }
@@ -458,6 +589,53 @@ public final class CompanionContent {
       active.stack=stack;return remaining(stack,player.server)==0;
     }
     return false;
+  }
+
+  /** An input expresses intent only. Rank, locked type, current specialization,
+   * actual slot ownership and saved setting all remain authoritative here. */
+  public static boolean requestAbilityCycle080(ServerPlayer player,int sequence,ResourceLocation dimension,UUID expectedChao) {
+    if(sequence<=0||dimension==null||expectedChao==null||!player.server.isSameThread())return false;
+    var gate=SECRET_INPUT080.computeIfAbsent(player.getUUID(),key->new SecretInput080());
+    if(sequence<=gate.lastSequence)return false;
+    gate.lastSequence=sequence;long time=now(player.server);
+    if(time<gate.nextAllowed)return false;
+    gate.nextAllowed=time+4;
+    if(!player.isAlive()||player.isSpectator()||!player.isShiftKeyDown()||player.isUsingItem()
+        ||!player.getMainHandItem().isEmpty()||!player.getOffhandItem().isEmpty()
+        ||player.containerMenu!=player.inventoryMenu)return false;
+    Active active=ACTIVE.get(player.getUUID());
+    if(!dimension.equals(player.level().dimension().location())||!current(player,active)
+        ||!expectedChao.equals(active.body.getUUID())||CarryPreview.active(active.body))return false;
+    var state=active.body.state();int stat=EquippedAbilityRules080.eligibleStat(state);
+    if(stat<0||!emptyAir080(player))return false;
+    if(!EquippedAbilityRules080.cycle(state,stat))return false;
+    active.body.sync();ChaoCarrierItem.snapshot(active.stack,active.body);
+    AccessoriesBridge.changed(active.slotReference);
+    if(stat==ChaoState.RUN)modifier(player,Attributes.MOVEMENT_SPEED,RUN_SPEED,EquippedAbilityRules080.bonus(state,stat));
+    return true;
+  }
+
+  private static boolean emptyAir080(ServerPlayer player) {
+    // Mirror the client's separate block/entity reach filtering, including
+    // outline shapes. A forged MISS cannot bypass an actual block or entity.
+    double block=player.blockInteractionRange(),entity=player.entityInteractionRange(),range=Math.max(block,entity);
+    Vec3 from=player.getEyePosition(),direction=player.getViewVector(1);
+    boolean loaded=net.minecraft.world.level.BlockGetter.traverseBlocks(from,from.add(direction.scale(range)),player.serverLevel(),
+        (world,pos)->world.hasChunkAt(pos)?null:Boolean.FALSE,world->Boolean.TRUE);
+    if(!loaded)return false;
+    var hit=player.pick(range,1,false);double limit=from.distanceToSqr(hit.getLocation());
+    double ray=hit.getType()==net.minecraft.world.phys.HitResult.Type.MISS?range:Math.sqrt(limit);
+    var target=net.minecraft.world.entity.projectile.ProjectileUtil.getEntityHitResult(player,from,from.add(direction.scale(ray)),
+        player.getBoundingBox().expandTowards(direction.scale(ray)).inflate(1),candidate->!candidate.isSpectator()&&candidate.isPickable(),limit);
+    if(target!=null&&from.distanceToSqr(target.getLocation())<limit)
+      return !target.getLocation().closerThan(from,entity);
+    return hit.getType()==net.minecraft.world.phys.HitResult.Type.MISS||!hit.getLocation().closerThan(from,block);
+  }
+
+  /** Called only by the narrow melee hooks; low energy is not an extra secret eligibility gate. */
+  public static double secretPowerBonus080(ServerPlayer player) {
+    var active=ACTIVE.get(player.getUUID());
+    return current(player,active)&&!CarryPreview.active(active.body)?EquippedAbilityRules080.bonus(active.body.state(),ChaoState.POWER):0;
   }
 
   /** Special traits come only from the current authenticated Accessories body. */
@@ -581,6 +759,8 @@ public final class CompanionContent {
     int carrying=CarryPreview.position(active.body,player,carryPosition(player,state));
     if (CarryPreview.active(active.body) || !state.adult || state.energy<=5) {
       clearBenefits(player,active);
+      if(!CarryPreview.active(active.body)&&EquippedAbilityRules080.eligible(state,ChaoState.RUN))
+        modifier(player,Attributes.MOVEMENT_SPEED,RUN_SPEED,EquippedAbilityRules080.bonus(state,ChaoState.RUN));
       active.body.setCompanionCarry(player,carrying);
       return;
     }
@@ -588,7 +768,9 @@ public final class CompanionContent {
     if("end".equals(state.variant)&&player.hasEffect(MobEffects.LEVITATION))player.removeEffect(MobEffects.LEVITATION);
     boolean water=player.isInWater();
     boolean swimming=water&&com.chaogarden.core.LocomotionRules.canSwim(state);
-    modifier(player,Attributes.MOVEMENT_SPEED,RUN_SPEED,water||player.isFallFlying()||!com.chaogarden.core.LocomotionRules.canRun(state)?0:CompanionRules.runSpeedBonus(state.levels[ChaoState.RUN]));
+    modifier(player,Attributes.MOVEMENT_SPEED,RUN_SPEED,EquippedAbilityRules080.eligible(state,ChaoState.RUN)
+        ?EquippedAbilityRules080.bonus(state,ChaoState.RUN)
+        :water||player.isFallFlying()||!com.chaogarden.core.LocomotionRules.canRun(state)?0:CompanionRules.runSpeedBonus(state.levels[ChaoState.RUN]));
     modifier(player,NeoForgeMod.SWIM_SPEED,SWIM_SPEED,swimming?CompanionRules.swimSpeedBonus(state.levels[ChaoState.SWIM]):0);
     active.vision=waterEffect(player,active.vision,MobEffects.NIGHT_VISION,OWN_VISION,swimming&&CompanionRules.waterNightVision(state.levels[ChaoState.SWIM]));
     active.breath=waterEffect(player,active.breath,MobEffects.WATER_BREATHING,OWN_BREATH,swimming&&CompanionRules.waterBreathing(state.levels[ChaoState.SWIM]));
@@ -690,6 +872,7 @@ public final class CompanionContent {
   @SubscribeEvent
   public static void logout(PlayerEvent.PlayerLoggedOutEvent event) {
     if (event.getEntity() instanceof ServerPlayer player) {
+      SECRET_INPUT080.remove(player.getUUID());
       Active active = ACTIVE.remove(player.getUUID()); if (active != null) recall(player, active);
       // PlayerList.save is protected; saveAll also writes the Accessories
       // inventory after the final item-owned snapshot has been taken.
@@ -710,6 +893,6 @@ public final class CompanionContent {
       ServerPlayer player = event.getServer().getPlayerList().getPlayer(active.keeper);
       if (player != null) recall(player, active); else if (active.body != null) active.body.discard();
     }
-    ACTIVE.clear(); PENDING.clear(); event.getServer().getPlayerList().saveAll();
+    ACTIVE.clear(); PENDING.clear(); SECRET_INPUT080.clear(); ALIGNMENT_CLOCK_SESSIONS082.remove(event.getServer());event.getServer().getPlayerList().saveAll();
   }
 }

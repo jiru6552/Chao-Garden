@@ -85,7 +85,9 @@ final class ChaoActiveToyAnimation049 {
   static void pose(Map<String,ChaoMeshAsset.Pose> poses,BiConsumer<String,PoseStack> anchor,float[] right,float[] left,String kind,float t,float w,LionfishActiveToyClip049 clip,Function<String,float[]> bounds){
     ChaoInstrumentFocus.apply(poses,w);
     var head=poses.get("skull");head.rx+=w*(kind.equals(ActiveToyPlayRules049.CAR)?.07f*clip.push(t):.015f);
-    if(kind.equals(ActiveToyPlayRules049.CAR))ChaoProneToyPose051.apply(poses,anchor,bounds,w,.20f,.80f);
+    // Set the back of the head closer to the prone torso. The flatter head
+    // angle retains chin room above the gripping hand without changing either.
+    if(kind.equals(ActiveToyPlayRules049.CAR))ChaoProneToyPose051.apply(poses,anchor,bounds,w,.10f,.10f);
     if(kind.equals(ActiveToyPlayRules049.POGO)){var body=poses.get("body");body.y+=.55f*clip.flex(t)*w;head.y+=.55f*clip.flex(t)*w;}
     var prop=propMatrix(anchor,kind,t,w,clip);float grip=ActiveToyPlayRules049.doll(kind)?Math.clamp(w/.45f,0,1):kind.equals(ActiveToyPlayRules049.CAR)?Math.clamp(w/.80f,0,1):w;float ease=grip*grip*(3-2*grip);
     fit(poses,anchor,right,false,ease,gripTarget(new Matrix4f(prop),kind,false),kind.equals(ActiveToyPlayRules049.CAR)?CAR_REACH:MAX_REACH);

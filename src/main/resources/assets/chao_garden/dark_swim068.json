@@ -1,0 +1,45 @@
+{
+  "version": "0.25.68",
+  "model": "models/entity/gameplay/chao_dark_swim_proto068.json",
+  "sha256": "815857229b825c097a0245806ba9362bc0970d61b5f304f0eb042b4f2c27241e",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "target_names": [
+    "dark_swim_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "canonical_head_face_emotion_and_59_joint_transforms_unchanged": true,
+  "shared_animation_attachment_rig": true,
+  "source_geometry_copied": false,
+  "head_parts": [
+    "dark_swim_upper_root",
+    "dark_swim_upper_tip",
+    "dark_swim_lower_root",
+    "dark_swim_lower_tip",
+    "dark_swim_side_left_spur",
+    "dark_swim_side_right_spur"
+  ],
+  "construction_reference_sha256": {
+    "art/imported_chao/models/chao_dark_swim.geo.json": "39211848fb992fb486e185f5158fd89a4287366140f3f2f503ed577cd78e1c19",
+    "art/imported_chao/textures/dark_swim.png": "3339c0726967828705e2180fb9b1f15c281d6e50d7f587b8c4ef5f63346ca136",
+    "src/main/resources/assets/chao_garden/models/entity/official/chao_dark_swim.json": "514190e8a38e8b655be6a6d866acf6a7ca30702c13e616094a8d3077033152b6"
+  },
+  "legal_specializations": [
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ]
+}

@@ -217,25 +217,46 @@ def entity_mesh(mesh,tiles,atlas_size):
   start=len(out['vertices']);out['vertices'].extend(pts);x,y,w,h=tiles[k];out['faces'].append({'v':list(range(start,start+len(pts))),'uv':[[x+u*w,y+v*h] for u,v in uv]})
  return out
 
-def hats():
- atlas=Image.new('RGBA',(1024,1024));atlas.paste(Image.open(D/'market_accessories.png'),(0,0));tiles={};allmats={};meshes={};report=[]
+def hat_item_mesh(n):
+ from headwear079 import mesh as head_cover
+ canonical=head_cover(n);m=Mesh()
+ for ps,uv,k in canonical.faces:m.face([(x,-y,-z) for x,y,z in ps],k,uv)
+ return m,{k:source('al_body',k) for _,_,k in m.faces}
+
+def hats(wearables_only=False):
+ # Keep the merchant palette. Matching custom worn/item meshes use the
+ # unused lower 384px of this atlas for direct source texture tiles.
+ from headwear079 import mesh as head_cover
+ atlas=Image.new('RGBA',(1024,1024));atlas.paste(Image.open(D/'market_accessories.png'),(0,0));tiles={};allmats={};report=[]
  for n in HATS:
-  m,mat=adapt(HATS[n],lambda p:(p[0],-p[1],-p[2]));meshes[n]=m;allmats.update(mat)
+  _,mat=adapt(HATS[n],lambda p:(p[0],-p[1],-p[2]));allmats.update(mat)
  for i,(k,im) in enumerate(sorted(allmats.items())):
-  x=i%8*128;y=(i//8+1)*128;assert y+128<=1024;atlas.paste(im.resize((128,128),Image.Resampling.NEAREST),(x,y));tiles[k]=(x,y,128,128)
+  x=i%8*128;y=(i//8+1)*128;assert y+128<=640;atlas.paste(im.resize((128,128),Image.Resampling.NEAREST),(x,y))
+ names=sorted({f['texture'] for info in HATS.values() for f in info['faces']})
+ for i,n in enumerate(names):
+  x=i%8*128;y=640+i//8*128;assert y+128<=1024
+  atlas.paste(source('al_body',n).resize((128,128),Image.Resampling.NEAREST),(x,y))
+  # Half a texel of inset prevents UV endpoints sampling a neighboring tile.
+  tiles[n]=(x+.5,y+.5,127,127)
  atlas.save(A/'textures/entity/chao/market_accessories.png')
- # The merchant uses the unchanged palette in the top-left of the enlarged atlas.
  merchant=json.loads((A/'models/entity/market_accessories.json').read_text());merchant.update(texture_width=1024,texture_height=1024);write(A/'models/entity/market_accessories.json',merchant)
  for p in (D/'previous-models/hats').glob('*.json'):
   data=json.loads(p.read_text());data.update(texture_width=1024,texture_height=1024)
   for bone in data['bones']:
-   n=bone['name']
-   if n not in meshes:continue
-   old=[v for m in bone['meshes'] for v in m['vertices']];box=[min(v[a] for v in old) for a in range(3)]+[max(v[a] for v in old) for a in range(3)]
-   adapted=fit(meshes[n],box,True);bone['meshes']=[entity_mesh(adapted,tiles,1024)]
+   if bone['name'] in HATS:bone['meshes']=[entity_mesh(head_cover(bone['name']),tiles,1024)]
+  data['authored_metadata']={'source':'Supplied SA2 ChaoMain head-cover objects / al_body textures','release':'0.25.79','headwear_contract':'canonical_skull079','reference_head':[-3.5,-6,-3,3.5,0,3],
+    'fit':'Cuboid shell panels surround the unchanged skull; no legacy crown-envelope stretch. All twelve are full head covers with an open neck.',
+    'eye_ports':'All twelve full head covers have real rectangular ports exposing the Chao irises, per the requested adaptation. Raw provider meshes remain unchanged.',
+    'source_objects':{n:HATS[n]['object_offset'] for n in HATS}}
   write(A/'models/entity/hats'/p.name,data)
  for n in HATS:
-  m,mats=adapt(HATS[n]);m=fit(m,(1,1,1,15,15,15));tex=bindings(n,mats);item(m,n,mats,tex);report.append({'id':n,'source':HATS[n]['object_offset'],'faces':len(m.faces)})
+  if not wearables_only:
+   # The custom inventory/held shape is the same shell and ports as worn.
+   # Vanilla melon/pumpkin/skull inventory rendering remains Minecraft-owned.
+   m,mats=hat_item_mesh(n)
+   for k in mats:MATERIALS.add(k)
+   m=fit(m,(1,1,1,15,15,15));tex=bindings(n,mats);item(m,n,mats,tex)
+  report.append({'id':n,'source':HATS[n]['object_offset'],'faces':len(HATS[n]['faces']),'head_cover_panels':len(head_cover(n).faces)})
  return report
 
 def bevel_mesh(part):
@@ -285,7 +306,12 @@ def main():
  write(ROOT/'docs/validation-0.25.15/source-assets.json',{'release':'0.25.15','toys':tr,'hats':hr,'restored_textures':json.loads((D/'rollback.json').read_text()),'artwork':json.loads((D/'artwork.json').read_text()),'hoodies':'original-wool material adaptation and chamfered body/sleeves; custom garment, not a vanilla SA2 model'})
  print('0.25.15: eight texture reversions, filtered grass, ten original school pictures, 17 toys/85 poses, twelve hats, two hoodie colors and sleeves.')
 if __name__=='__main__':
- if sys.argv[1:]==['--mounted-toy-poses']:mounted_toy_poses_only()
+ if sys.argv[1:]==['--hats-only']:
+  hats();
+  mtl=A/'models/sa2_02515/materials.mtl';existing=mtl.read_text();missing=[k for k in sorted(MATERIALS) if 'newmtl '+k+'\n' not in existing]
+  if missing:write(mtl,existing+'\n'+''.join(f'newmtl {k}\nKd 1.0 1.0 1.0\nmap_Kd #{k}\n' for k in missing))
+  print('Regenerated twelve canonical head covers, matching custom item models/icons, and real eye ports.')
+ elif sys.argv[1:]==['--mounted-toy-poses']:mounted_toy_poses_only()
  elif sys.argv[1:]==['--rigid-toy-poses']:rigid_toy_poses_only()
  elif not sys.argv[1:]:main()
- else:raise SystemExit('Usage: generate_sa2_assets_02515.py [--mounted-toy-poses | --rigid-toy-poses]')
+ else:raise SystemExit('Usage: generate_sa2_assets_02515.py [--hats-only | --mounted-toy-poses | --rigid-toy-poses]')

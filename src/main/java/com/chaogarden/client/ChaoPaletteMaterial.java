@@ -59,7 +59,14 @@ public final class ChaoPaletteMaterial {
             ||NeutralFlyRegionPaint061.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
             ||NeutralRunRegionPaint062.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
             ||NeutralPowerRegionPaint063.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
-            ||HeroSwimRegionPaint064.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight()));
+            ||HeroSwimRegionPaint064.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
+            ||HeroFlyRegionPaint065.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
+            ||HeroRunRegionPaint066.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
+            ||HeroPowerRegionPaint067.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
+            ||DarkSwimRegionPaint068.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
+            ||DarkFlyRegionPaint069.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
+            ||DarkRunRegionPaint070.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight())
+            ||DarkPowerRegionPaint071.paletteWing(source.getPath(),uvLayout,x,y,image.getWidth(),image.getHeight()));
         boolean accent=brush!=0&&((accents.getPixelRGBA(mx,my)>>>24)!=0||(reserved&2)!=0);
         int rgba=image.getPixelRGBA(x,y);if((rgba>>>24)==0||!body&&!wing&&!accent)continue;
         int red=rgba&255,green=(rgba>>>8)&255,blue=(rgba>>>16)&255;
@@ -86,7 +93,14 @@ public final class ChaoPaletteMaterial {
   /** Prototype-only UV additions. Overlay/ordinary materials retain their exact
    * old masks; protected eye texels are outside every listed rectangle. */
   static boolean protectedMarker(String sourcePath,String layout,boolean adult,int x,int y,int width,int height) {
-    return HeroSwimRegionPaint064.paletteProtected(sourcePath,layout,x,y,width,height)
+    return DarkPowerRegionPaint071.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||DarkRunRegionPaint070.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||DarkFlyRegionPaint069.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||DarkSwimRegionPaint068.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||HeroPowerRegionPaint067.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||HeroRunRegionPaint066.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||HeroFlyRegionPaint065.paletteProtected(sourcePath,layout,x,y,width,height)
+        ||HeroSwimRegionPaint064.paletteProtected(sourcePath,layout,x,y,width,height)
         ||NeutralPowerRegionPaint063.paletteProtected(sourcePath,layout,x,y,width,height)
         ||NeutralRunRegionPaint062.paletteProtected(sourcePath,layout,x,y,width,height)
         ||NeutralFlyRegionPaint061.paletteProtected(sourcePath,layout,x,y,width,height)
@@ -96,6 +110,20 @@ public final class ChaoPaletteMaterial {
         ||HeroRunMarkerPaint056.paletteProtected(sourcePath,layout,adult,x,y,width,height);
   }
   static int prototypeReservedKind(String sourcePath,String layout,int x,int y,int width,int height) {
+    if(sourcePath.startsWith("dynamic/dark_power071/")&&layout.equals("baby")&&width>0&&height>0)
+      return DarkPowerRegionPaint071.reservedKind(x*128/width,y*64/height);
+    if(sourcePath.startsWith("dynamic/dark_run070/")&&layout.equals("baby")&&width>0&&height>0)
+      return DarkRunRegionPaint070.reservedKind(x*128/width,y*64/height);
+    if(sourcePath.startsWith("dynamic/dark_fly069/")&&layout.equals("baby")&&width>0&&height>0)
+      return DarkFlyRegionPaint069.reservedKind(x*128/width,y*64/height);
+    if(sourcePath.startsWith("dynamic/dark_swim068/")&&layout.equals("baby")&&width>0&&height>0)
+      return DarkSwimRegionPaint068.reservedKind(x*128/width,y*64/height);
+    if(sourcePath.startsWith("dynamic/hero_power067/")&&layout.equals("baby")&&width>0&&height>0)
+      return HeroPowerRegionPaint067.reservedKind(x*128/width,y*64/height);
+    if(sourcePath.startsWith("dynamic/hero_run066/")&&layout.equals("baby")&&width>0&&height>0)
+      return HeroRunRegionPaint066.reservedKind(x*128/width,y*64/height);
+    if(sourcePath.startsWith("dynamic/hero_fly065/")&&layout.equals("baby")&&width>0&&height>0)
+      return HeroFlyRegionPaint065.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/hero_swim064/")&&layout.equals("baby")&&width>0&&height>0)
       return HeroSwimRegionPaint064.reservedKind(x*128/width,y*64/height);
     if(sourcePath.startsWith("dynamic/neutral_power063/")&&layout.equals("baby")&&width>0&&height>0)

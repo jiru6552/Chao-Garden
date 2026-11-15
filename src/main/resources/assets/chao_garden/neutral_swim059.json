@@ -1,7 +1,8 @@
 {
   "version": "0.25.59",
+  "extended_in": "0.25.72",
   "model": "models/entity/gameplay/chao_neutral_swim_proto059.json",
-  "sha256": "06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8",
+  "sha256": "de2972ea6780a4252a98bbbdd84d674dd25a9ea4f3c1ea04be7124e3283593b1",
   "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
   "target_names": [
     "neutral_swim_young",
@@ -11,9 +12,9 @@
     "run",
     "balanced",
     "power",
-    "run_guard",
-    "balanced_guard",
-    "power_guard"
+    "run_fly",
+    "fly",
+    "power_fly"
   ],
   "canonical_head_face_emotion_and_joint_pivots_unchanged": true,
   "shared_animation_attachment_rig": true,
@@ -27,9 +28,21 @@
     "balanced",
     "run",
     "power",
+    "fly",
     "swim",
+    "run_fly",
     "run_swim",
+    "power_fly",
     "power_swim"
   ],
-  "guard_row": "positive Fly targets exactly duplicate center; runtime net Swim/Fly clamps [-1,0]"
+  "preserved_original_targets": [
+    "neutral_swim_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power"
+  ],
+  "reciprocal_row": "positive Fly row has three authored targets; both current training axes span [-1,1]"
 }

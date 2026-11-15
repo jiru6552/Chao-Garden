@@ -15,7 +15,7 @@ ASSETS = ROOT / 'src/main/resources/assets/chao_garden'
 MODELS = ASSETS / 'models/entity/gameplay'
 OUT = MODELS / 'chao_neutral_swim_proto059.json'
 TARGETS = ['neutral_swim_young', 'run_swim', 'swim', 'power_swim',
-           'run', 'balanced', 'power', 'run_guard', 'balanced_guard', 'power_guard']
+           'run', 'balanced', 'power', 'run_fly', 'fly', 'power_fly']
 BODY_UV = [63.75, 31.75]
 TIP_UV = [63.25, 31.75]
 FIN_UV = [62.75, 31.75]
@@ -39,12 +39,12 @@ def targets(mesh, poses):
 
 
 def lattice(profiles):
-    # Positive Fly is deliberately a duplicate of the balanced-Swim row. The
-    # policy clamps net Swim/Fly to [-1,0], and this authored guard is safe if
-    # a future caller accidentally supplies the unused positive coordinate.
+    # Full signed adult grid: later Fly remains a specialization of the
+    # locked first-Swim identity. The original young and six authored slots
+    # keep their exact parameters; only the old positive-row guards grow.
     return [copy.deepcopy(profiles[name]) for name in
             ('young', 'run_swim', 'swim', 'power_swim', 'run', 'balanced',
-             'power', 'run', 'balanced', 'power')]
+             'power', 'run_fly', 'fly', 'power_fly')]
 
 
 def feature(template, name, poses, region, uv=BODY_UV, underside=False):
@@ -91,6 +91,18 @@ def cap_features(template):
         'power_swim': ((6.7, 1.2, 5.45, -6.10, .20, 0),
                        (5.0, 1.1, 3.9, -6.8, .10, 0),
                        (5.95, 1.45, 4.4, -3.3, 3.45, -45)),
+        # Reciprocal Fly row: the same rear hood rises into a stepped fin.
+        # Fly is tall/upright, Run+Fly extends rearward and Power+Fly stays
+        # short and broad. The fixed skull itself is never a target.
+        'run_fly': ((6.3, .95, 5.45, -6.0, .25, 0),
+                    (4.6, .8, 3.8, -6.6, .2, 0),
+                    (4.35, 1.2, 5.7, -6.4, 3.55, 35)),
+        'fly': ((6.55, 1.05, 5.4, -6.05, .20, 0),
+                (4.75, .90, 3.85, -6.70, .15, 0),
+                (4.65, 1.3, 4.8, -6.65, 3.3, 55)),
+        'power_fly': ((6.7, 1.12, 5.25, -6.085, .10, 0),
+                      (5.0, .95, 3.8, -6.75, .05, 0),
+                      (5.15, 1.45, 3.9, -6.25, 3.15, 40)),
     }
     result = []
     for index, name in enumerate(('swim_cap_roof', 'swim_cap_upper', 'swim_cap_rear')):
@@ -118,6 +130,9 @@ def side_fins(template):
         'swim': (2.5, 1.15, 1.55, -30, 55, 3.4, .90, 1.4, -35, 75),
         'run_swim': (1.9, .95, 1.3, -35, 45, 2.6, .70, 1.15, -45, 65),
         'power_swim': (2.0, 1.25, 1.6, -30, 45, 2.8, .90, 1.35, -45, 65),
+        'run_fly': (1.55, .70, 1.25, -40, -15, 1.85, .50, .95, -60, -20),
+        'fly': (1.40, .75, 1.45, -45, 0, 1.75, .62, 1.12, -65, -12),
+        'power_fly': (1.35, 1.15, 1.70, -35, -4, 1.20, .95, 1.35, -55, 3),
     }
     roots, tips = {}, {}
     for key, values in profiles.items():
@@ -172,7 +187,8 @@ def limbs(data):
             profiles = {}
             for key, rp, sf in [('young', 0, 0), ('balanced', 0, 0), ('run', -1, 0),
                                 ('power', 1, 0), ('swim', 0, -1),
-                                ('run_swim', -1, -1), ('power_swim', 1, -1)]:
+                                ('run_swim', -1, -1), ('power_swim', 1, -1),
+                                ('run_fly', -1, 1), ('fly', 0, 1), ('power_fly', 1, 1)]:
                 run = max(0, -rp)
                 power = max(0, rp)
                 swim = max(0, -sf)
@@ -213,7 +229,8 @@ def wings(data):
     # front artwork; thin closing edges follow its per-vertex alpha cutout.
     profiles = {'young': (3, 2), 'balanced': (3.3, 2.05), 'run': (3.65, 1.75),
                 'power': (2.8, 2.1), 'swim': (3.2, 1.8),
-                'run_swim': (3.6, 1.8), 'power_swim': (2.9, 2.0)}
+                'run_swim': (3.6, 1.8), 'power_swim': (2.9, 2.0),
+                'run_fly': (4.4, 2.90), 'fly': (4.60, 3.35), 'power_fly': (4.0, 2.80)}
     for bone in data['bones']:
         if bone['name'] not in ('wing_left__cube_0', 'wing_right__cube_0'):
             continue
@@ -255,16 +272,16 @@ def author():
         'targets': TARGETS,
         'canonical_uv_layout': 'baby',
         'original_head_box': [7, 6, 6],
-        'weights': 'fresh=1-maturity; mature age*triangle(runPower,x)*triangle(clamp(swimFly,-1,0),y); positive Fly guard row duplicates center',
+        'weights': 'fresh=1-maturity; mature age*triangle(clamp(runPower,-1,1),x)*triangle(clamp(swimFly,-1,1),y); full signed adult grid',
         'feature_parameter_order': 'center_xyz,size_xyz_positive,rotation_xyz_degrees; compose Rz*Ry*Rx',
         'feature_body_uv': BODY_UV, 'feature_tip_uv': TIP_UV,
         'feature_fin_uv': FIN_UV, 'feature_underside_uv': UNDER_UV,
         'reserved_pixels': {'feature_body': [127, 63], 'feature_tip': [126, 63],
                             'feature_fin': [125, 63], 'feature_underside': [124, 63]},
-        'scope': 'Ordinary living Neutral adult with locked Swim FIRST evolution. Six balanced/Run/Power/Swim/Run+Swim/Power+Swim specialization targets. No positive Fly specialization.',
-        'reference': 'Independently operated Chao Island viewer first-Swim checkbox: all six mature front, both sides and back, above and below, shared fresh form and intermediate age comparisons. Original official Swim cuboids/fins supply block construction vocabulary only.',
+        'scope': 'Ordinary living Neutral adult with locked Swim FIRST evolution. Nine balanced/Run/Power/Fly/Swim and compatible mixed specialization targets. Later opposite Fly does not change first Swim.',
+        'reference': 'Independently operated Chao Island viewer first-Swim checkbox: all original six mature views, extended reciprocal Fly/Run+Fly/Power+Fly fronts, sides and backs, shared fresh form and intermediate age comparisons. Original official Swim cuboids/fins supply block construction vocabulary only.',
         'source_geometry_copied': False,
-        'approximation': 'Unchanged square head with a broad three-box stepped cap/rear hood and two closed cuboids per temple fin. The fresh posterior cap is already substantial. Run raises its fins and rear cap, Power has short thick fins and a blunt hood, Swim has a long dropped hood and hanging flippers; mixed endpoints are intermediate forms. Curved hems, tapered leaves and zigzag bands are simplified into closed angled boxes and flat per-face color regions.',
+        'approximation': 'Unchanged square head with a broad three-box stepped cap/rear hood and two closed cuboids per temple fin. The fresh posterior cap is already substantial. Run raises its fins and rear cap, Power has short thick fins and a blunt hood, Swim has a long dropped hood and hanging flippers; mixed endpoints are intermediate forms. Opposite Fly raises the rear cap, develops compact leaf fins and enlarges the existing anchored wings; its Run/Power combinations have their own silhouettes. Curved hems, tapered leaves and zigzag bands are simplified into closed angled boxes and flat per-face color regions.',
         'wing_policy': 'Thin closed original UV wings, visible front mirrored onto back, alpha-consistent closing edges, exact local root-edge midpoint [0,.25,0], original parent yaw/pivots/animations.',
         'provisional_rates': '960 current level-bar progress per opposing axis; independent adult age. No original-game timing claim.'}
     actual = {b['name']: b for b in data['bones']}
@@ -281,15 +298,16 @@ def author():
             'art/imported_chao/textures/swim.png',
             'src/main/resources/assets/chao_garden/models/entity/official/chao_swim.json']
     manifest = {
-        'version': '0.25.59', 'model': str(OUT.relative_to(ASSETS)), 'sha256': sha(OUT),
+        'version': '0.25.59', 'extended_in': '0.25.72', 'model': str(OUT.relative_to(ASSETS)), 'sha256': sha(OUT),
         'source_model_sha256': sha(source), 'target_names': TARGETS,
         'canonical_head_face_emotion_and_joint_pivots_unchanged': True,
         'shared_animation_attachment_rig': True, 'source_geometry_copied': False,
         'construction_reference_sha256': {name: sha(ROOT / name) for name in refs},
-        'legal_specializations': ['balanced', 'run', 'power', 'swim', 'run_swim', 'power_swim'],
-        'guard_row': 'positive Fly targets exactly duplicate center; runtime net Swim/Fly clamps [-1,0]'}
+        'legal_specializations': ['balanced', 'run', 'power', 'fly', 'swim', 'run_fly', 'run_swim', 'power_fly', 'power_swim'],
+        'preserved_original_targets': TARGETS[:7],
+        'reciprocal_row': 'positive Fly row has three authored targets; both current training axes span [-1,1]'}
     (ASSETS / 'neutral_swim059.json').write_text(json.dumps(manifest, indent=2) + '\n')
-    print('NeutralSwim059 generated: exact original 7x6x6 head/face/59 joints; 7 head features, 5 compact body/limb boxes, 2 closed anchored wings; 10 targets and 6 legal mature forms.')
+    print('NeutralSwim059 generated: exact original 7x6x6 head/face/59 joints; 7 head features, 5 compact body/limb boxes, 2 closed anchored wings; 10 targets and 9 legal mature forms.')
 
 
 if __name__ == '__main__':

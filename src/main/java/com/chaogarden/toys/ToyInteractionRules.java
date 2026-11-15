@@ -39,7 +39,8 @@ public final class ToyInteractionRules {
   }
   public static double stationaryLookHeight(String kind) {
     return switch(kind) {
-      case "chao_tv","chao_jack_in_box"->.65;
+      case "chao_tv"->TvWatchRules073.SCREEN_HEIGHT;
+      case "chao_jack_in_box"->.65;
       case "chao_rubber_duck","chao_triangle"->.45;
       case "chao_accordion"->.35;
       case "chao_drum","chao_bell","chao_castanets","chao_tambourine"->.30;
@@ -100,14 +101,14 @@ public final class ToyInteractionRules {
     return Math.sin(Math.PI*(elapsed-JACK_POP_TICK)/24);
   }
   public static boolean jackReactionDue(int elapsed) { return elapsed>=JACK_REACTION_TICK; }
-  public static final int BALL_KICK_TICKS=10, BALL_CONTACT_TICK=4;
+  public static final int BALL_KICK_TICKS=BallPlayRules074.ACTION_TICKS, BALL_CONTACT_TICK=BallPlayRules074.CONTACT_TICK;
   public static double ballContactDistance(double actorWidth){return .25+actorWidth*.5+.06;}
   public static boolean ballWithinReach(double horizontalSquared,double verticalDelta,double actorWidth) {
     double reach=ballContactDistance(actorWidth)+.08;
     return horizontalSquared<=reach*reach&&Math.abs(verticalDelta)<.25;
   }
   public static double ballKickSwing(double elapsed) {
-    return elapsed<0||elapsed>=8?0:Math.sin(elapsed*Math.PI/8);
+    return elapsed<0||elapsed>=BALL_KICK_TICKS?0:Math.sin(elapsed*Math.PI/BALL_KICK_TICKS);
   }
   public static boolean movingBallPlayer(String kind,int kickElapsed) {
     return kind.equals("chao_ball")&&kickElapsed<0;

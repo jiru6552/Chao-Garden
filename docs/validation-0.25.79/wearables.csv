@@ -1,0 +1,27 @@
+id,display_name,category,slot,dyable_via_wardrobe,hidden_compatibility,canonical_item,merchant_stock,renderer,anchor,source_mesh
+chao_garden:apple_hat,Apple Hat,legacy_hat,HEAD,False,False,chao_garden:apple_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#apple_hat
+chao_garden:cardboard_box_hat,Cardboard Box Hat,legacy_hat,HEAD,False,False,chao_garden:cardboard_box_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#cardboard_box_hat
+chao_garden:pan_hat,Pan Hat,legacy_hat,HEAD,False,False,chao_garden:pan_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#pan_hat
+chao_garden:paper_bag_hat,Paper Bag Hat,legacy_hat,HEAD,False,False,chao_garden:paper_bag_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#paper_bag_hat
+chao_garden:empty_can_hat,Empty Can Hat,legacy_hat,HEAD,False,False,chao_garden:empty_can_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#empty_can_hat
+chao_garden:stump_hat,Stump Hat,legacy_hat,HEAD,False,False,chao_garden:stump_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#stump_hat
+chao_garden:flower_pot_hat,Flower Pot Hat,legacy_hat,HEAD,False,False,chao_garden:flower_pot_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#flower_pot_hat
+chao_garden:bucket_hat,Bucket Hat,legacy_hat,HEAD,False,False,chao_garden:bucket_hat,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#bucket_hat
+chao_garden:red_wool_beanie,Red Wool Beanie,legacy_hat,HEAD,False,False,chao_garden:red_wool_beanie,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#red_wool_beanie
+chao_garden:blue_wool_beanie,Blue Wool Beanie,legacy_hat,HEAD,False,False,chao_garden:blue_wool_beanie,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#blue_wool_beanie
+chao_garden:black_white_wool_beanie,Black and White Wool Beanie,legacy_hat,HEAD,False,False,chao_garden:black_white_wool_beanie,True,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#black_white_wool_beanie
+chao_garden:eggshell_hat,Eggshell Hat,eggshell_mask,HEAD,False,False,chao_garden:eggshell_hat,False,EggshellMask via ChaoHatLayer,skull,
+chao_garden:watermelon_hat,Watermelon Hat,legacy_hat,HEAD,False,True,minecraft:melon,False,ChaoHeadwear via ChaoHatLayer,skull copied current pose,art/sa2_02515/hats.json#watermelon_hat
+chao_garden:baseball_cap_accessory,Baseball Cap,head_accessory,FEET,True,False,chao_garden:baseball_cap_accessory,True,CweAccessoryLayer,skull,art/cwe02516/accessories.json#0_baseballcap
+chao_garden:bowtie_accessory,Bowtie,neck_accessory,LEGS,True,False,chao_garden:bowtie_accessory,True,CweAccessoryLayer,body,art/cwe02516/accessories.json#1_bowtie
+chao_garden:round_glasses_accessory,Round Glasses,face_accessory,OFFHAND,False,False,chao_garden:round_glasses_accessory,True,CweAccessoryLayer,skull,art/cwe02516/accessories.json#2_roundglasses
+chao_garden:aviators_accessory,Aviators,face_accessory,OFFHAND,False,False,chao_garden:aviators_accessory,True,CweAccessoryLayer,skull,art/cwe02516/accessories.json#3_aviators
+chao_garden:headphones_accessory,Headphones,head_accessory,FEET,True,False,chao_garden:headphones_accessory,True,CweAccessoryLayer,skull,art/cwe02516/accessories.json#4_headphones
+chao_garden:pacifier_accessory,Pacifier,face_accessory,OFFHAND,True,False,chao_garden:pacifier_accessory,True,CweAccessoryLayer,skull,art/cwe02516/accessories.json#5_pacifier
+chao_garden:press_hat_accessory,Press Hat,head_accessory,FEET,True,False,chao_garden:press_hat_accessory,True,CweAccessoryLayer,skull,art/cwe02516/accessories.json#6_presshat
+chao_garden:blue_hoodie_accessory,Blue Hoodie,outfit,CHEST,True,False,chao_garden:blue_hoodie_accessory,True,CweAccessoryLayer,body,art/cwe02516/accessories.json#7_hoodie
+chao_garden:pink_hoodie_accessory,Pink Hoodie,outfit,CHEST,True,False,chao_garden:pink_hoodie_accessory,True,CweAccessoryLayer,body,art/cwe02516/accessories.json#7_hoodie
+chao_garden:cheese_bowtie_accessory,Cheese Bowtie,neck_accessory,LEGS,True,False,chao_garden:cheese_bowtie_accessory,True,CweAccessoryLayer,body,art/cwe02516/accessories.json#8_neck_bowtie
+minecraft:carved_pumpkin,Carved Pumpkin,vanilla_hat_adapter,HEAD,False,False,minecraft:carved_pumpkin,False,VanillaHatRenderer050,skull,
+minecraft:melon,Melon,vanilla_hat_adapter,HEAD,False,False,minecraft:melon,False,ChaoHeadwear,skull,
+minecraft:skeleton_skull,Skeleton Skull,vanilla_hat_adapter,HEAD,False,False,minecraft:skeleton_skull,False,VanillaHatRenderer050,skull,

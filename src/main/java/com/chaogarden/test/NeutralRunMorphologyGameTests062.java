@@ -183,7 +183,7 @@ public final class NeutralRunMorphologyGameTests062 {
   private static void flyRegression(GameTestHelper h){
     for(int rp=-1;rp<=1;rp++)for(int sf=-1;sf<=1;sf++){
       var s=new ChaoState();s.adult=true;s.align=0;s.primaryType=ChaoState.FLY_TYPE;s.setEvolutionStrength(.6f);s=ChaoState.decode(s.encode());axis(s,rp*960,sf*960);
-      var p=com.chaogarden.core.NeutralFlyMorphology061.sample(s);h.assertTrue(p.enabled()&&!NeutralRunMorphology062.sample(s).enabled(),"Completed Neutral Fly-first stays on its own renderer policy");near(h,p.maturity(),.5f,"Existing Fly-first age unchanged");near(h,p.runPower(),rp,"Existing signed Fly-first Run/Power unchanged");near(h,p.swimFly(),Math.max(0,sf),"Existing Fly-first Swim clamp remains unchanged rather than inheriting newRun axes");syncAndNbt(h,actor(h,s));
+      var p=com.chaogarden.core.NeutralFlyMorphology061.sample(s);h.assertTrue(p.enabled()&&!NeutralRunMorphology062.sample(s).enabled(),"Completed Neutral Fly-first stays on its own renderer policy");near(h,p.maturity(),.5f,"Existing Fly-first age unchanged");near(h,p.runPower(),rp,"Existing signed Fly-first Run/Power unchanged");near(h,p.swimFly(),sf,"Neutral Fly-first retains its complete signed Swim/Fly coordinate");syncAndNbt(h,actor(h,s));
     }h.succeed();
   }
   private static ServerPlayer creative(GameTestHelper h,ChaoEntity c){

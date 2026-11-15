@@ -1,0 +1,67 @@
+{
+  "version": "0.25.66",
+  "model": "models/entity/gameplay/chao_hero_run_proto066.json",
+  "sha256": "6ee8f47a220d769fa1e66a60cade8b7e8d211b16bafeca78dcd77074a8ae0e17",
+  "source_model_sha256": "ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b",
+  "approved055_model_sha256": "77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08",
+  "target_names": [
+    "hero_run_young",
+    "run_swim",
+    "swim",
+    "power_swim",
+    "run",
+    "balanced",
+    "power",
+    "run_fly",
+    "fly",
+    "power_fly"
+  ],
+  "canonical_original_head_unchanged": true,
+  "original_joint_count": 59,
+  "bone_count": 62,
+  "feature_count": 6,
+  "wing_ray_count": 6,
+  "halo_bar_count": 4,
+  "positive_closed_cuboid_target_count": 21,
+  "reserved_pixels": {
+    "feature_body": [
+      127,
+      63
+    ],
+    "cap_proximal": [
+      125,
+      63
+    ],
+    "cap_distal": [
+      126,
+      63
+    ],
+    "wing_root": [
+      124,
+      63
+    ],
+    "wing_distal": [
+      123,
+      63
+    ],
+    "stripe_white_a": [
+      120,
+      60
+    ],
+    "stripe_primary": [
+      121,
+      60
+    ],
+    "stripe_white_b": [
+      122,
+      60
+    ],
+    "stripe_secondary": [
+      123,
+      60
+    ]
+  },
+  "adult_nubs": "Fresh and all nine mature independently inspected Hero/Run-first front views do not show separate brow nubs; do not invent persistent baby nubs on the adult.",
+  "geometry_source_imported": false,
+  "geometry_copied": false
+}

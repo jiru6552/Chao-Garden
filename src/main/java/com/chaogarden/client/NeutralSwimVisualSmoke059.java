@@ -75,9 +75,12 @@ public final class NeutralSwimVisualSmoke059 {
     boolean toy(){return action.startsWith("broom")||action.startsWith("picture_book");}
     boolean swim(){return action.equals("water_swim");}
     boolean walk(){return action.contains("walk");}
-    boolean gain(){return action.equals("gain_walk")||action.equals("pair_walk");}
+    boolean gain(){return action.equals("gain_walk")||pair();}
     boolean loss(){return action.equals("loss_walk");}
-    boolean pair(){return action.equals("pair_walk");}
+    boolean heldPair(){return action.equals("pair_hold_walk");}
+    boolean pair(){return action.equals("pair_walk")||heldPair();}
+    int pairFallStart(){return heldPair()?320:240;}
+    boolean opposite(){return action.equals("opposite_sf_walk");}
     int[] trainedStats(){
       if(runAxis!=0&&flyAxis!=0)return new int[]{runStat(),flyStat()};
       if(runAxis!=0)return new int[]{runStat()};
@@ -85,7 +88,7 @@ public final class NeutralSwimVisualSmoke059 {
       return new int[0];
     }
     int angleCount(){return photo()?6:3;}
-    int duration(){return pair()?520:toy()?180:carry()?240:action.equals("evolution")?300:gain()||loss()?280:240;}
+    int duration(){return opposite()?560:heldPair()?640:pair()?520:toy()?180:carry()?240:action.equals("evolution")?300:gain()||loss()?280:240;}
   }
   private static Case scene(String name,String form,boolean adult,int firstType,float alignment,float maturity,
                             int percent,String action,String hat,boolean rabbit,String coat,int counterPercent){
@@ -142,6 +145,7 @@ public final class NeutralSwimVisualSmoke059 {
     for(String form:new String[]{"run_swim","power_swim"})for(float age:new float[]{.25f,.75f})
       result.add(swimScene("neutral_swim_"+form+"_age"+Math.round(age*100)+"_influence50",form,age,50,"still"));
     require(result.size()==65,"unexpected scene catalog size");
+    if("true".equalsIgnoreCase(System.getenv("CHAO_RECIPROCAL072_EXTENDED")))extendReciprocal072(result);
     String selection=System.getenv("CHAO_SWIM059_CASES");
     if(selection!=null&&!selection.isBlank()) {
       var chosen=new ArrayList<Case>();var used=new HashSet<Integer>();
@@ -149,6 +153,53 @@ public final class NeutralSwimVisualSmoke059 {
       return List.copyOf(chosen);
     }
     return List.copyOf(result);
+  }
+  /** Appended opt-in072 fixtures. Original scene indices remain unchanged. */
+  private static void extendReciprocal072(List<Case> result){
+    final int before=result.size();
+    result.add(scene("neutral_swim_fly_age0_r72","fly",true,ChaoState.SWIM_TYPE,0,0f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_fly_age50_r72","fly",true,ChaoState.SWIM_TYPE,0,0.5f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_fly_age100_r72","fly",true,ChaoState.SWIM_TYPE,0,1f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_fly_age25_r72","fly",true,ChaoState.SWIM_TYPE,0,0.25f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_fly_age75_r72","fly",true,ChaoState.SWIM_TYPE,0,0.75f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_run_fly_age0_r72","run_fly",true,ChaoState.SWIM_TYPE,0,0f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_run_fly_age50_r72","run_fly",true,ChaoState.SWIM_TYPE,0,0.5f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_run_fly_age100_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_run_fly_age25_r72","run_fly",true,ChaoState.SWIM_TYPE,0,0.25f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_run_fly_age75_r72","run_fly",true,ChaoState.SWIM_TYPE,0,0.75f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_power_fly_age0_r72","power_fly",true,ChaoState.SWIM_TYPE,0,0f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_power_fly_age50_r72","power_fly",true,ChaoState.SWIM_TYPE,0,0.5f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_power_fly_age100_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_power_fly_age25_r72","power_fly",true,ChaoState.SWIM_TYPE,0,0.25f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_power_fly_age75_r72","power_fly",true,ChaoState.SWIM_TYPE,0,0.75f,100,"still","",false,"natural",0));
+    result.add(scene("neutral_swim_fly_axis25_r72","fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-75));
+    result.add(scene("neutral_swim_fly_axis50_r72","fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-50));
+    result.add(scene("neutral_swim_fly_axis75_r72","fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-25));
+    result.add(scene("neutral_swim_run_fly_axis25_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-75));
+    result.add(scene("neutral_swim_run_fly_axis50_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-50));
+    result.add(scene("neutral_swim_run_fly_axis75_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-25));
+    result.add(scene("neutral_swim_power_fly_axis25_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-75));
+    result.add(scene("neutral_swim_power_fly_axis50_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-50));
+    result.add(scene("neutral_swim_power_fly_axis75_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural",-25));
+    result.add(scene("neutral_swim_fly_red_twotone_r72","fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"red_twotone",0));
+    result.add(scene("neutral_swim_run_fly_red_shiny_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"red_shiny",0));
+    result.add(scene("neutral_swim_power_fly_green_mono_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"green_mono",0));
+    result.add(scene("neutral_swim_run_fly_ruby_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"ruby",0));
+    result.add(scene("neutral_swim_power_fly_natural_shiny_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",false,"natural_shiny",0));
+    result.add(scene("neutral_swim_new_pumpkin_r72","fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","pumpkin",false,"natural",0));
+    result.add(scene("neutral_swim_new_rabbit_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still","",true,"natural",0));
+    result.add(scene("neutral_swim_new_phoenix_glasses_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1,100,"still_wings_glasses","",false,"natural",0));
+    result.add(scene("neutral_swim_new_creative_r72","run_fly",true,ChaoState.SWIM_TYPE,0,.8f,100,"ui_adult","",false,"natural",0));
+    result.add(scene("neutral_swim_new_survival_r72","power_fly",true,ChaoState.SWIM_TYPE,0,.8f,100,"ui_survival","",false,"natural",0));
+    result.add(scene("neutral_swim_native_to_opposite_r72","swim",true,ChaoState.SWIM_TYPE,0,1,100,"opposite_sf_walk","",false,"natural",0));
+    result.add(scene("neutral_swim_opposite_to_native_r72","fly",true,ChaoState.SWIM_TYPE,0,1,100,"opposite_sf_walk","",false,"natural",0));
+    result.add(scene("neutral_swim_new_pair_hold_reverse_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,0,"pair_hold_walk","",false,"natural",0));
+    result.add(scene("neutral_swim_new_gain_r72","fly",true,ChaoState.SWIM_TYPE,0,1,0,"gain_walk","",false,"natural",0));
+    result.add(scene("neutral_swim_new_loss_r72","fly",true,ChaoState.SWIM_TYPE,0,1,100,"loss_walk","",false,"natural",0));
+    result.add(scene("neutral_swim_new_broom_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"broom","",false,"natural",0));
+    result.add(scene("neutral_swim_new_book_r72","power_fly",true,ChaoState.SWIM_TYPE,0,1,100,"picture_book","",false,"natural",0));
+    result.add(scene("neutral_swim_new_equipped_r72","run_fly",true,ChaoState.SWIM_TYPE,0,1,100,"carry_flying","",false,"natural",0));
+    require(result.size()==before+42,"reciprocal072 extension catalog changed");
   }
   private static final List<Case> CASES=cases();
   private static final int[][] SHOTS=new int[CASES.size()][6];
@@ -158,6 +209,7 @@ public final class NeutralSwimVisualSmoke059 {
   private static final int[] SWIMMING=new int[CASES.size()],RUNNING=new int[CASES.size()];
   private static final int[] UI_FRAMES=new int[CASES.size()],UI_SHOTS=new int[CASES.size()];
   private static final boolean[] UI_VERIFIED=new boolean[CASES.size()];
+  private static final boolean[] PAIR_DISPLAY_SETTLED=new boolean[CASES.size()];
   private static final AtomicInteger SAVED=new AtomicInteger();
   private static final LionfishQuietToyClip049 QUIET=new LionfishQuietToyClip049();
   private static boolean enabled(){return "true".equalsIgnoreCase(System.getenv("CHAO_SWIM059_SMOKE"));}
@@ -222,7 +274,10 @@ public final class NeutralSwimVisualSmoke059 {
       state.train(ChaoState.FLY,4000,new Random(5960));
     }
     for(int stat:entry.trainedStats())state.train(stat,total,new Random(5956+stat));
-    if(entry.counterPercent()>0)state.train(ChaoState.FLY,Math.round(NeutralSwimMorphology059.SPECIALIZATION_PROGRESS*entry.counterPercent()/100f),new Random(5961));
+    if(entry.counterPercent()!=0){
+      int counterStat=entry.counterPercent()>0?ChaoState.FLY:ChaoState.SWIM;
+      state.train(counterStat,Math.round(NeutralSwimMorphology059.SPECIALIZATION_PROGRESS*Math.abs(entry.counterPercent())/100f),new Random(5961));
+    }
     if(entry.action().equals("evolution")){
       state.ageTicks=GardenConfig.CHILD_TICKS.get()-12;state.setEvolutionStrength(.99f);
       require(state.prospectivePrimaryType()==ChaoState.SWIM_TYPE,"Swim evolution fixture has the wrong trained first type");
@@ -315,7 +370,7 @@ public final class NeutralSwimVisualSmoke059 {
     began=lastTick=serverTime=server.overworld().getGameTime();elapsed=0;playbackWall=System.nanoTime();armed=true;
     require(Math.abs(server.tickRateManager().tickrate()-20)<.00001,"study must retain normal 20 TPS");
     if(!entry.still()||entry.ui())server.tickRateManager().setFrozen(false);
-    LogUtils.getLogger().info("SWIM059_ARMED {} epochMillis={} normal20TPS=true fixtureTrainingAccelerated={}",phase,System.currentTimeMillis(),entry.gain()||entry.loss());
+    LogUtils.getLogger().info("SWIM059_ARMED {} epochMillis={} normal20TPS=true fixtureTrainingAccelerated={}",phase,System.currentTimeMillis(),entry.gain()||entry.loss()||entry.opposite());
   }
   @SubscribeEvent public static void server(ServerTickEvent.Post event){
     if(!enabled()||phase<0||phase>=limit())return;
@@ -341,8 +396,8 @@ public final class NeutralSwimVisualSmoke059 {
       }actor.sync();
       require(Math.abs(actor.state().lockedAlignment()-entry.alignment())<.0001,"training changed independent alignment");
     }
-    if((entry.loss()&&elapsed<=240||entry.pair()&&elapsed>240&&elapsed<=480)&&elapsed%2==0){
-      long since=entry.pair()?elapsed-240:elapsed;
+    if((entry.loss()&&elapsed<=240||entry.pair()&&elapsed>entry.pairFallStart()&&elapsed<=entry.pairFallStart()+240)&&elapsed%2==0){
+      long since=entry.pair()?elapsed-entry.pairFallStart():elapsed;
       int remaining=Math.max(0,960-(int)(since/2)*8);
       for(int stat:entry.trainedStats()){
         int target=remaining+(stat==ChaoState.RUN||stat==ChaoState.POWER?entry.mobilityBaseline():0);
@@ -351,8 +406,19 @@ public final class NeutralSwimVisualSmoke059 {
     }
     if(entry.pair()&&elapsed==240){
       var peak=NeutralSwimMorphology059.sample(actor.state());
-      require(peak.enabled()&&peak.runPower()<-.99f&&peak.swimFly()<-.99f,"compatible pair did not reach its true peak before reversal");
+      require(peak.enabled()&&peak.runPower()*entry.runAxis()>.99f&&peak.swimFly()*entry.flyAxis()>.99f,"compatible pair did not reach its true peak before reversal");
       LogUtils.getLogger().info("SWIM059_PAIR_PEAK case={} tick={} sample={} firstType={} epochMillis={}",phase,elapsed,peak,actor.state().lockedPrimaryType(),System.currentTimeMillis());
+    }
+    if(entry.opposite()&&elapsed<=480&&elapsed%2==0){
+      int changed=entry.flyAxis()<0?ChaoState.FLY:ChaoState.SWIM;
+      actor.state().train(changed,8,new Random(7200+elapsed));
+      controlledTotals[changed]=HeroRunMorphology052.totalTraining(actor.state(),changed);actor.sync();
+      if(elapsed==120||elapsed==240||elapsed==360||elapsed==480){
+        var raw=NeutralSwimMorphology059.sample(actor.state());float wanted=entry.flyAxis()*(1-elapsed/240f);
+        require(Math.abs(raw.swimFly()-wanted)<.00001f&&Math.abs(raw.runPower()-entry.runAxis())<.00001f&&raw.maturity()>=initialMaturity,"opposition did not cross the correct axis independently");
+        require(actor.state().lockedPrimaryType()==entry.firstType()&&Math.abs(actor.state().lockedAlignment()-entry.alignment())<.0001f,"opposition changed locked identity");
+        LogUtils.getLogger().info("SWIM059_OPPOSITION_RAW case={} tick={} expected={} sample={} firstType={} epochMillis={}",phase,elapsed,wanted,raw,actor.state().lockedPrimaryType(),System.currentTimeMillis());
+      }
     }
     if(entry.action().equals("expression_walk")&&(elapsed==1||elapsed==80||elapsed==160)){
       for(int emotion:new int[]{com.chaogarden.core.ChaoEmotion.JOY,com.chaogarden.core.ChaoEmotion.ANGER,com.chaogarden.core.ChaoEmotion.SURPRISE})actor.state().setEmotion(emotion,0);
@@ -372,6 +438,7 @@ public final class NeutralSwimVisualSmoke059 {
       if(!entry.action().equals("evolution"))require(actor.state().lockedPrimaryType()==entry.firstType()&&Math.abs(actor.state().lockedAlignment()-entry.alignment())<.0001f,"live scene changed locked identity");
       if(entry.gain()&&!entry.pair())require(sample.enabled()&&(entry.runAxis()==0||sample.runPower()*entry.runAxis()>.99f)&&(entry.flyAxis()==0||sample.swimFly()*entry.flyAxis()>.99f),"accelerated training did not reach its independent endpoints");
       if(entry.loss()||entry.pair())require(sample.enabled()&&Math.abs(sample.runPower())<.001f&&Math.abs(sample.swimFly())<.001f&&sample.maturity()>=initialMaturity,"decrease left specialized traits or reduced biological maturity");
+      if(entry.opposite())require(sample.enabled()&&Math.abs(sample.swimFly()+entry.flyAxis())<.00001f&&Math.abs(sample.runPower()-entry.runAxis())<.00001f&&sample.maturity()>=initialMaturity,"opposition did not finish at the opposite endpoint with maturity intact");
       if(entry.swim())require(actor.isInWater(),"native swimming fixture left actual water");
       if(entry.action().equals("evolution"))require(actor.state().adult&&actor.state().lockedPrimaryType()==ChaoState.SWIM_TYPE&&Math.abs(actor.state().lockedAlignment())<.0001f&&!actor.isCocooned(),"actual first evolution did not finish as locked Neutral Swim");
       complete=true;server.tickRateManager().setFrozen(true);
@@ -567,6 +634,10 @@ public final class NeutralSwimVisualSmoke059 {
         row.addProperty("index",i);row.addProperty("name",c.name());row.addProperty("adult",c.adult());
         row.addProperty("first_type",c.firstType());row.addProperty("run_power_axis",c.runAxis());row.addProperty("swim_fly_axis",c.flyAxis());row.addProperty("fly_counter_percent",c.counterPercent());
         row.addProperty("static_native_epoch",c.photo()?STATIC_EPOCH:-1);row.addProperty("controlled_motion_training",!c.still()&&!c.action().equals("evolution"));
+        row.addProperty("reciprocal072_extension",c.name().endsWith("_r72"));
+        row.addProperty("initial_raw_run_power",c.runAxis()*c.percent()/100f);
+        row.addProperty("initial_raw_swim_fly",c.flyAxis()*c.percent()/100f+c.counterPercent()/100f);
+        row.addProperty("held_pair",c.heldPair());row.addProperty("opposite_swim_fly",c.opposite());
         row.addProperty("training_percent",c.percent());row.addProperty("alignment",c.alignment());row.addProperty("maturity",c.maturity());
         row.addProperty("action",c.action());row.addProperty("hat",c.hat());row.addProperty("rabbit",c.rabbit());row.addProperty("coat",c.coat());
         row.addProperty("suspended_static_photo",c.photo());row.addProperty("actual_accessories_required",c.carry());
@@ -646,6 +717,13 @@ public final class NeutralSwimVisualSmoke059 {
       long current=signature(model);
       if(NeutralSwimMorphology059.sample(c.state()).enabled()||HeroNormalMorphology057.sample(c.state()).enabled()||NeutralMorphology056.sample(c.state()).enabled()||HeroRunMorphology052.sample(c.state()).enabled())
         require(current==expectedSignature(c.state()),"production renderer did not sample the expected first-type-specific blocky asset");
+      if(entry.heldPair()&&elapsed>=280&&elapsed<=320&&!PAIR_DISPLAY_SETTLED[phase]){
+        var displayed=NeutralSwimAppearance059.sample(c.state());
+        if(displayed.enabled()&&displayed.runPower()*entry.runAxis()>.98f&&displayed.swimFly()*entry.flyAxis()>.98f){
+          PAIR_DISPLAY_SETTLED[phase]=true;
+          LogUtils.getLogger().info("SWIM059_PAIR_SETTLED case={} tick={} sample={} firstType={} epochMillis={}",phase,elapsed,displayed,c.state().lockedPrimaryType(),System.currentTimeMillis());
+        }
+      }
       if(!entry.still()&&elapsed!=LAST_TRACE[phase]&&elapsed%60==0){LAST_TRACE[phase]=elapsed;LogUtils.getLogger().info("SWIM059_MOTION_SAMPLE case={} tick={} shapeSignature={} sample={} babyVisibleGrowth={} epochMillis={}",phase,elapsed,current,sample(c.state()),HeroRunAppearance052.sample(c.state()).babyGrowth(),System.currentTimeMillis());}
       if(SIGNATURES[phase]==0){SIGNATURES[phase]=current;LogUtils.getLogger().info("SWIM059_RENDER_MODEL {} shapeSignature={} geometry={} gameplay={} texture={} sample={}",phase,current,model.officialGeometryKey(),model.gameplayFormKey(),OfficialChaoRig.texture(c.state()),sample(c.state()));}
       if(c.walkAnimation.speed()>.01f)MOVING[phase]++;
@@ -674,6 +752,7 @@ public final class NeutralSwimVisualSmoke059 {
   private static void finishCase(Minecraft mc){
     var entry=CASES.get(phase);require(RENDERED[phase]>25&&WORLD[phase]>25,"case lacked actual world/actor rendering");
     for(int i=0;i<entry.angleCount();i++)require(SHOTS[phase][i]>=(entry.still()?1:3),"case missed a camera angle");
+    if(entry.heldPair())require(PAIR_DISPLAY_SETTLED[phase],"mixed endpoint was not actually rendered settled before reversal");
     if(entry.walk())require(MOVING[phase]>20,"production walk animation was not observed");
     if(entry.action().equals("run_walk"))require(RUNNING[phase]>20,"actual running gait was not observed");
     if(entry.swim())require(SWIMMING[phase]>20,"production advanced swimming was not observed in actual water");

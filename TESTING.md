@@ -1,4 +1,49 @@
-Current focused update: [0.25.62 Neutral/Run-first verification](docs/NEUTRAL_RUN_02562.md). Use Java 21 and isolated test worlds.
+Current focused update: [0.25.78 idle variety](docs/IDLE_ANIMATIONS_02578.md). Use Java 21 and private test worlds.
+
+```sh
+./gradlew --no-configuration-cache coreTest idleRigTest078 assemble
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_idle78,chao_faces76 -PchaoGameTestDir=/path/to/private/idle-test-world
+```
+
+Operator previews: `/chao testidle list`, `/chao testidle <look_around|look_up|think|bashful|chuckle|tired|ground_play> once|loop|stop`, and `/chao testidle stop`. The same short production action plays inside the existing 160-tick preview session; the remainder is calm. A forced tired preview changes no real fatigue. Check babies/adults, entry/exit, natural selection, high-priority interruption and a second player's view. The report distinguishes authored cases, numerical checks and actual visual inspection.
+
+Previous focused update: [0.25.77 prone head correction](docs/PRONE_HEAD_02577.md).
+
+```sh
+./gradlew --no-configuration-cache activeToyRigTest049 quietToyRigTest049 proneToyRigTest051 assemble
+```
+
+Use `/chao testtoy toy_car once|loop|stop` and `/chao testtoy crayons once|loop|stop` with operator permissions. Check side views, entry, interruption and return to idle on babies and adults. These are the existing production previews and retain their normal cleanup and save protection.
+
+Previous focused update: [0.25.76 facial-expression verification](docs/FACES_02576.md). Use Java 21 and private test worlds. Read the report for actual outcomes and visual limits.
+
+```sh
+./gradlew --no-configuration-cache coreTest faceGlyphRigTest076 assemble
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_faces76 -PchaoGameTestDir=/path/to/private/face-test-world
+```
+
+Operators can use `/chao testface list` and `/chao testface happy once`, `/chao testface sleep loop`, `/chao testface stop`. Facial previews reuse the production resolver and existing 160-tick preview lifecycle, without changing actual mood, illness, personality, genes or care. Test real illness onset/recovery and natural toy interactions separately. Native Chaos and character artwork is preserved.
+
+Previous focused update: [0.25.75 radio toy verification](docs/RADIO_TOY_02575.md). Use Java 21 and private test worlds.
+
+```sh
+./gradlew --no-configuration-cache coreTest radioToyRigTest075 assemble
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_radio75 -PchaoGameTestDir=/path/to/private/radio-test-world
+```
+
+Radio previews require operator permission level 2, a real placed radio and a Chao already within 0.4 blocks of its clear front listening seat. Use `/chao testtoy radio once`, `/chao testtoy radio loop` and `/chao testtoy radio stop`. They share the natural interaction's pose, clock and cues; they grant no care rewards and restore temporary AI state. Natural approaches must be tested separately, including from behind.
+
+The focused radio catalogue passed 71/71. The broad catalogue passed 4,461/4,490, with the same 29 inherited failures as 0.25.74. Radio notes use the Blocks sound category, so enable Master and Blocks volume when listening. See the report for actual client views, sound limits and remaining multiplayer checks; automated assertions are not a physical listening pass.
+
+Previous focused update: [0.25.71 Dark Power and Dark Run verification](docs/DARK_POWER_02571.md). Use Java 21 and private test worlds.
+
+Previous focused update: [0.25.69 Dark/Fly-first verification](docs/DARK_FLY_02569.md). Use Java 21 and private test worlds.
+
+Previous focused update: [0.25.68 Dark/Swim-first verification](docs/DARK_SWIM_02568.md). Use Java 21 and isolated test worlds; the current-family commands and coverage are in the 0.25.68 section below.
+
+Previous focused update: [0.25.67 Hero/Power-first verification](docs/HERO_POWER_02567.md).
+
+Previous focused update: [0.25.62 Neutral/Run-first verification](docs/NEUTRAL_RUN_02562.md).
 
 ```sh
 python3 scripts/validate_neutral_run_morph_02562.py
@@ -8,7 +53,7 @@ python3 scripts/validate_neutral_run_morph_02562.py
 
 Read the family report for actual outcomes and bounded visual coverage. The complete build includes new core, production-emitter rig/material and retained checks; it is one invocation when it also supplies focused results.
 
-Current focused update: [0.25.59 Neutral/Swim-first verification](docs/NEUTRAL_SWIM_02559.md). Use Java 21 and a private test world:
+Previous focused update: [0.25.59 Neutral/Swim-first verification](docs/NEUTRAL_SWIM_02559.md). Use Java 21 and a private test world:
 
 ```sh
 python3 scripts/validate_neutral_swim_morph_02559.py
@@ -211,3 +256,90 @@ CHAO_HEROSWIM064_SMOKE=true CHAO_HEROSWIM064_OUTPUT=/tmp/chao-hero-swim064-visua
 ```
 
 Serialize server/client runs. The equipped scene requires real optional Accessories/owo through `chaoAccessoriesTest` and `chaoAccessoriesDir`; an unavailable runtime is a skip, not a visual pass. The dev-only smoke helper stays excluded from the production JAR. Authored cases are not execution results. Compare newly evolved, intermediate and mature shapes and colors, both signed axes, opposite Fly beyond Swim balance, gain/loss and held-pair reversal. Check the fixed head, fins, halo, wings, tail, eyes, coat/shine, animal parts, hats, toy grips and player attachments. Existing `/chao testtoy list`, `/chao testtoy broom once`, `/chao testtoy picture_book loop` and `/chao testtoy stop` use production previews and cleanup; distinguish actually exercised modes from those only available. Entity NBT/tracked observer checks do not establish a full world restart or independent remote multiplayer. Physical touch and audio listening require separate evidence.
+
+
+## Hero / Fly-first 0.25.65
+
+Use Java 21 and a private test world. New focused tasks are `coreTest`, `heroFlyMorphRigTest065` and `heroFlyMaterialTest065`; `build` retains all completed family and toy checks. The dedicated namespace `chao_hero_fly65` adds real command, Creative-payload, ordinary/combined drive, locked-identity, reduction, NBT and tracked-data tests. Run it together with the retained morphology/edit namespaces for regression coverage. The rig suite also checks complete posed wing/head separation and wing-root/torso contact through movement, gaze and half-tick posture transitions; its tolerances remain fixed.
+
+The current opt-in development helper `CHAO_HEROFLY065V2_SMOKE=true` uses `-PheroFly065Dir=<private directory>` and saves literal client captures to `CHAO_HEROFLY065V2_OUTPUT`. Use `CHAO_HEROFLY065V2_START=0` and `CHAO_HEROFLY065V2_LIMIT=97` for the complete reviewed plan; the older helper must remain disabled. Both helpers are excluded from the installable JAR. The current 97-case plan includes the largest Fly fan and Phoenix replacement wings in actual water animation, in addition to nine directions at fresh/intermediate/mature ages, independent training quarters, opposite Fly-to-Swim crossing, mixed age/training, color/shine, hats/animal parts/glasses, UI and Survival rejection, production toy grips, equipped carrying, natural first evolution and earlier-family regressions. Actual Accessories checks require `-PchaoAccessoriesTest=true -PchaoAccessoriesDir=<local Accessories/owo directory>`.
+
+Available operator previews remain `/chao testtoy list`, `/chao testtoy broom once`, `/chao testtoy picture_book loop` and `/chao testtoy stop`. They share production clocks and cleanup and do not grant gameplay rewards. Available commands alone do not prove actual playback, listening or multiplayer behavior. See [the Hero Fly report](docs/HERO_FLY_02565.md) for completed results, visual comparisons, inherited failures and remaining verification limits.
+
+## Complete Hero / Run-first 0.25.66
+
+Use Java 21 and a private test world. `coreTest`, `heroRunMorphRigTest066` and `heroRunMaterialTest066` cover the signed Hero/Run policy and actual rigid-box/atlas implementation; `build` retains previous family and toy checks. The new native namespace `chao_hero_run66` must run alongside the earlier morphology/edit namespaces. Test both independent axis crossings, including later Power while first type remains Run, plus mixed targets, maturity, tie recency, ordinary/combined drives, reductions, commands, permissions, NBT and tracked-data transfer.
+
+The opt-in development helper `CHAO_HERORUN066_SMOKE=true` uses `-PheroRun066Dir=<private directory>` and `CHAO_HERORUN066_OUTPUT` for actual captures. Review its complete authored plan and helper hash before running the final cohort. Keep static comparisons, runtime animation views and numerical tests distinct. Test largest wings and replacement wings in water, the retained normal/Run babies, colors/finish, face, halo, hats, animal parts, toy grips, equipment and the completed Hero/Fly family. Real optional Accessories requires `-PchaoAccessoriesTest=true -PchaoAccessoriesDir=<local Accessories/owo directory>`.
+
+Historical055 adult geometry tests explicitly pin the old asset through the existing test loader after the production adult route advances to066; every old geometry/UV/attachment assertion is retained. Current baby selection must still use055, and new066 tests must independently verify the actual production adult route. No production asset override is supplied. Existing operator previews and cleanup remain available through `/chao testtoy list`, `/chao testtoy broom once`, `/chao testtoy picture_book loop`, `/chao testtoy stop` and `/chao testcarry loop|stop`. Actual client review, audio listening, physical touch and independent remote multiplayer each require separate evidence.
+
+
+## Hero / Power-first 0.25.67
+
+Use Java 21 and a private test world. Focused tasks are `coreTest`, `heroPowerMorphRigTest067` and `heroPowerMaterialTest067`; the full `build` retains completed family and shared toy/animation checks. Native namespace `chao_hero_power67` runs alongside all prior morphology/edit namespaces. Check signed Power→Run and Fly→Swim crossings, actual mixed hold/reversal, independent maturity, first-evolution ties, ordinary/combined/held drives, reductions, command/Creative permissions, NBT and tracked-data transfer.
+
+The development-only client helper uses `CHAO_HEROPOWER067_SMOKE=true`, `-PheroPower067Dir=<private directory>` and `CHAO_HEROPOWER067_OUTPUT=<capture directory>`. Review its complete authored fixture definitions, regression first types and helper hash before the final whole run. Keep preflights separate from the final cohort. Compare all nine forms at fresh/intermediate/mature ages, independent training blends, biggest wings/replacement wings in water, five coats/finishes, eyes/halo, hats/animal parts, toy grips, equipped companions, retained babies and completed Hero/Run066. Real optional equipment checks use `-PchaoAccessoriesTest=true -PchaoAccessoriesDir=<Accessories/owo directory>`.
+
+Existing `/chao testtoy list`, one-shot/loop/stop toy previews and `/chao testcarry loop|stop` retain production clocks and cleanup. They do not grant gameplay rewards. Actual visual review, audio listening, physical touch and independent remote multiplayer remain distinct checks. Report video metadata from actual ffprobe output, never duration multiplied by nominal frame rate. See [the Hero Power report](docs/HERO_POWER_02567.md) for completed results and limitations.
+
+
+## Dark / Swim-first 0.25.68
+
+Use Java 21 and private test worlds. Focused tasks are `coreTest`, `darkSwimMorphRigTest068` and `darkSwimMaterialTest068`; `build` retains completed family, shared animation, toy and attachment checks. New namespace `chao_dark_swim68` runs with all earlier morphology/edit namespaces. Verify both signed-axis crossings, including later Fly with first Swim preserved, compatible pairs, held/reversed blends, independent maturity, first-evolution ties, ordinary/combined/held drives, reductions, command/Creative permissions, NBT and tracked-data transfer.
+
+Include `chao_morph54` in the enabled GameTest namespaces: NeoForge filters generated `TestFunction` entries by the structure template namespace, and these factories share `chao_morph54:activity_test`. Selecting only `chao_dark_swim68` executes no tests. Require the actual registered test count and `All … required tests passed` line as well as a successful process exit; a server startup failure can still leave Gradle reporting success.
+
+The development-only client helper uses `CHAO_DARKSWIM068_SMOKE=true`, `-PdarkSwim068Dir=<private directory>` and `CHAO_DARKSWIM068_OUTPUT=<capture directory>`. Review the actual full authored plan, every regression first type and helper hash before the final run. Keep preflights and old captures separate. Compare fresh/intermediate/mature states, independent training quarters, both opposite crossings, source-appropriate Dark marker and wings, inherited colors/finishes, eyes, hats/animal parts, toy grips, equipped rendering, babies and completed Hero/Power067. Real optional equipment requires `-PchaoAccessoriesTest=true -PchaoAccessoriesDir=<Accessories/owo directory>`.
+
+Operator `/chao testpose list` includes `crawl`, `paddle`, `swim`, `glide` and `flail`, plus the retained `sit` pose. Each supports `once`, `loop` and `stop`; `/chao testpose stop` ends the nearest active preview. These dry-ground testing adapters reuse production rig poses and the existing synced 160-tick session clock. They freeze care/age during playback, create no props or rewards, restore the original AI flag and stop on interaction, damage, unload or keeper disconnect. Native cases exercise both original AI states, exact state/items, real collision support, permissions, suggestions and save/reload; actual client scenes must separately prove once, loop wrap, stop and rendered poses from three angles.
+
+Existing `/chao testtoy list`, toy one-shot/loop/stop previews and `/chao testcarry loop|stop` retain their production clocks and cleanup. Numerical tests, actual views, audio, touch and independent remote clients are distinct checks. Report video metadata from actual ffprobe output; never infer frame count from duration times nominal FPS. See [the Dark Swim report](docs/DARK_SWIM_02568.md) for completed outcomes and limitations.
+
+## Dark / Fly-first 0.25.69
+
+Focused tasks are `coreTest`, `darkFlyMorphRigTest069` and `darkFlyMaterialTest069`; `build` retains the completed family, shared animation, toy and attachment checks. Add native namespace `chao_dark_fly69` to the previous morphology/edit namespaces, including the shared generated-fixture namespace `chao_morph54`. Require an actual nonzero required-test count and final pass marker, not just Gradle exit status. Verify both signed-axis crossings, later Swim with first Fly preserved, mixed targets, independent maturity, first-evolution ties, ordinary/combined/held drives, reductions, command/Creative permissions, entity NBT and tracked-data transfer.
+
+The rig task includes 116 proper Dark/Fly car/crayon profiles across the nine targets, three maturity levels, natural completion, cancellation and actual idle returns. It checks the late production pose order, connected closed geometry, unchanged non-wing poses, held palm targets and the existing 0.8-pixel half-tick movement limit.
+
+The development-only capture helper uses `CHAO_DARKFLY069_SMOKE=true`, `-PdarkFly069Dir=<private directory>` and `CHAO_DARKFLY069_OUTPUT=<capture directory>`. Before the full cohort, review its complete source fixtures, regression first types, action schedules and source hashes. Keep preflight/failed attempts separate. Compare fresh/intermediate/mature and independent training stages, both opposing axes, colors/finishes, face/spiked marker, hats/animal parts, toy grips, equipped companions, retained babies and completed Dark/Swim068. The two floor scenes use the real 160-tick toy preview with a 180-tick observation window and verify active playback, fitted props, per-angle held views and exact cleanup. Real optional equipment uses `-PchaoAccessoriesTest=true -PchaoAccessoriesDir=<existing Accessories/owo directory>`.
+
+Existing `/chao testpose <crawl|paddle|swim|glide|flail|sit> once|loop|stop`, `/chao testpose stop`, `/chao testtoy list`, toy once/loop/stop and `/chao testcarry loop|stop` reuse production clocks and cleanup. No new preview API is needed for this family. Keep actual visual inspection, numeric collision tests, audio listening, physical touch, independent remote multiplayer and full old-world restart checks distinct. Record actual video frame counts from the encoded streams. Read [the family report](docs/DARK_FLY_02569.md) for final outcomes, approximations and unverified aspects.
+
+
+## Dark / Run-first 0.25.70
+
+```sh
+python3 scripts/validate_dark_run_morph_02570.py
+./gradlew --no-configuration-cache coreTest darkRunMorphRigTest070 darkRunMaterialTest070 pianoRigTest organRigTest
+./gradlew --no-configuration-cache build
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestDir=/path/to/private/test-world -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56,chao_heronormal57,chao_swim59,chao_darknormal60,chao_fly61,chao_run62,chao_power63,chao_hero_swim64,chao_hero_fly65,chao_hero_run66,chao_hero_power67,chao_dark_swim68,chao_dark_fly69,chao_dark_run70
+```
+
+The new tests cover the actual production emitter, all nine signed corners, independent ages, fixed head/face/joints, both opposite-axis crossings, direct ordinary and combined stat paths, current-bar edits, retained family regression, material/attachment behavior and the late car/crayon floor-pose hook. Keep the original geometric and continuity limits intact. Add 27 real Dark/Run age/axis configurations to each keyboard-contact test while retaining all prior fixtures. Existing operator previews use the production clock: `/chao testpose crawl once|loop|stop`, `/chao testtoy toy_car once|loop|stop`, `/chao testtoy crayons once|loop|stop` and `/chao testcarry loop|stop`. See the report for exact executed outcomes and bounded visual coverage; prepared commands are not claimed as completed results.
+
+
+## Dark / Power-first 0.25.71 and retained Dark / Run
+
+```sh
+./gradlew --no-configuration-cache coreTest darkPowerMorphRigTest071 darkPowerMaterialTest071 darkRunMorphRigTest070 darkRunMaterialTest070 pianoRigTest organRigTest
+./gradlew --no-configuration-cache build
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestDir=/path/to/private/test-world -PchaoGameTestNamespaces=chao_morph52,chao_baby53,chao_morph54,chao_morph55,chao_edit56,chao_neutral56,chao_heronormal57,chao_swim59,chao_darknormal60,chao_fly61,chao_run62,chao_power63,chao_hero_swim64,chao_hero_fly65,chao_hero_run66,chao_hero_power67,chao_dark_swim68,chao_dark_fly69,chao_dark_run70,chao_dark_power71
+```
+
+Run the dedicated GameTest server separately from the ordinary client. If exercising the existing optional Accessories integration, use the established test flags and your own existing optional jars; those libraries are not bundled. Restore ordinary runtime resources with a normal `prepareClientRun jar` before freezing the actual client runtime. The installable JAR must exclude native fixtures, capture helpers and nested optional jars.
+
+Exercise young, half-developed and mature forms, fixed-age partial training, both opposite-axis crossings, all compatible mixed corners, gains/reductions/absolute Creative edits, first-evolution ties, immutable adult alignment/type, entity/tag reload and tracked updates. Capture matched viewer/client settings and multiple angles for Dark Power and retained Dark Run. Include representative coats, shiny finishes, eyes/marker, hats/animal parts, quiet toys, equipped-player carriage and production pose/floor previews. Numeric clearance checks do not replace scoped personal visual review.
+
+Existing operator previews retain production clocks and cleanup: `/chao testpose crawl loop`, `/chao testpose swim once`, `/chao testpose stop`, `/chao testtoy broom once`, `/chao testtoy picture_book loop`, `/chao testtoy toy_car once`, `/chao testtoy crayons loop`, `/chao testtoy stop`, and `/chao testcarry loop|stop`. Test once/loop/stop through the native dispatcher and actual client where possible; preserve saved care, genetics, age and real items and report listening, phone/touch, independent multiplayer and old-world restart limitations explicitly. The separate inherited journal-format result is not a morphology pass.
+
+
+## Headwear and accessories 0.25.79
+
+```sh
+python3 scripts/validate_headwear079.py
+./gradlew --no-configuration-cache coreTest wearableRigTest079 pumpkinPortsUvTest079 faceGlyphRigTest076 companionCarryRigTest idleRigTest078 proneToyRigTest051 quietToyRigTest049 activeToyRigTest049 assemble
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestDir=/path/to/private/test-world -PchaoGameTestNamespaces=chao_wear79,chao_hats50,chao_garden
+```
+
+The wearable geometry tests exercise actual skin landmarks and emitted accessory meshes; the dedicated-server lifecycle cases cover all 25 canonical wearable items as babies and adults through consent, exact item components, entity/carrier reload, keeper authorization and removal. Use existing `/chao testidle <id> once|loop|stop`, `/chao testtoy <id> once|loop|stop`, `/chao testpose <pose> once|loop|stop` and `/chao testcarry loop|stop` previews for actual moving attachments. Keep emitted geometry, client screenshots, item models, sound listening and independent remote multiplayer checks distinct. See [the headwear report](docs/HEADWEAR_ACCESSORIES_02579.md) for the exact executed results and supported combination limits.

@@ -128,10 +128,14 @@ public final class HeroNormalMorphology057Test {
       for(int stat=0;stat<4;stat++)DriveRules.setTotal(s,stat,0,new Random(57));
       check(s.typeName().equals("Normal/Normal")&&s.secondaryFormKey().equals("normal"),"Actual stat loss clears both current labels, independent of stale trained axes");
     }
-    // Hero Fly retains the legacy policy outside the new Neutral/Fly061 scope.
-    var legacy=new ChaoState();legacy.adult=true;legacy.primaryType=ChaoState.FLY_TYPE;legacy.align=1;legacy.swimFly=1;legacy.runPower=-1;legacy=ChaoState.decode(legacy.encode());
+    // All ordinary families now read current bars. The standalone Nether
+    // theme retains saved-axis fallback labels despite conflicting current bars.
+    var legacy=new ChaoState();legacy.adult=true;legacy.primaryType=ChaoState.POWER_TYPE;legacy.align=-1;legacy.variant="nether";legacy.swimFly=1;legacy.runPower=-1;legacy=ChaoState.decode(legacy.encode());
     DriveRules.setTotal(legacy,ChaoState.POWER,960,new Random(57));legacy.swimFly=1;legacy.runPower=-1;
-    check(legacy.typeName().equals("Fly/Fly+Run")&&legacy.secondaryFormKey().equals("fly_run"),"Other first-evolution types retain their previous influence labels instead of adopting the Hero/Normal policy");
+    check(legacy.variant.equals("nether")&&com.chaogarden.ChaoVariants.available(legacy.variant,mod->false)
+        &&!HeroNormalMorphology057.sample(legacy).enabled()&&!DarkPowerMorphology071.sample(legacy).enabled(),
+        "Supported standalone Nether fixture retains the nonordinary saved-axis fallback after reload");
+    check(legacy.typeName().equals("Power/Fly+Run")&&legacy.secondaryFormKey().equals("fly_run"),"Other first-evolution types retain their previous influence labels instead of adopting the Hero/Normal policy");
   }
   private static void identityAndPersistence(){
     var s=adult();setAxis(s,-480,720);s.setTrait("heronormal57.foreign","unrelated earned data");s.expressedColor=2;s.shiny=true;s.expressedJewel=3;

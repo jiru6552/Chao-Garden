@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'src/main/resources/assets/chao_garden'
 MODELS = ASSETS / 'models/entity/gameplay'
 OUT = MODELS / 'chao_neutral_fly_proto061.json'
-TARGETS = ['neutral_fly_young', 'run_guard', 'balanced_guard', 'power_guard',
+TARGETS = ['neutral_fly_young', 'run_swim', 'swim', 'power_swim',
            'run', 'balanced', 'power', 'run_fly', 'fly', 'power_fly']
 BODY_UV = [63.75, 31.75]
 TIP_UV = [63.25, 31.75]
@@ -42,10 +42,9 @@ def targets(mesh, poses, region):
 
 
 def lattice(profiles):
-    # Unused negative Swim targets duplicate the balanced-Fly row exactly.
-    # Runtime net Swim/Fly is clamped to [0,1], retaining full signed RP.
+    # First type stays Fly while later training traverses both signed axes.
     return [copy.deepcopy(profiles[name]) for name in
-            ('young', 'run', 'balanced', 'power', 'run', 'balanced', 'power',
+            ('young', 'run_swim', 'swim', 'power_swim', 'run', 'balanced', 'power',
              'run_fly', 'fly', 'power_fly')]
 
 
@@ -67,6 +66,12 @@ def crests(template):
     # Positive local X is outward. Negative yaw sweeps a right crest rearward.
     profiles = {
         'young': (2.2, 1.35, 1.65, -35, 5, 1.35, .90, 1.10, 5, 30),
+        # Reciprocal Swim row: broad rear/up ears, a compact Run curl, and
+        # narrower upright Power peaks. Two closed sections approximate the
+        # source's rounded/rolled terminals without altering the fixed skull.
+        'swim': (2.9, 1.90, 2.10, -55, -28, 1.40, 1.25, 1.25, -60, -65),
+        'run_swim': (2.5, 1.90, 2.00, -50, -15, 1.55, 1.30, 1.50, -45, 110),
+        'power_swim': (3.4, 1.70, 1.70, -45, -65, 1.20, 1.05, 1.20, -40, -50),
         'balanced': (2.8, 1.30, 1.55, -50, -28, 2.0, .80, 1.05, -65, -25),
         'run': (3.0, 1.85, 1.95, -40, 35, 1.85, 1.10, 1.30, 45, 40),
         'power': (3.6, 1.60, 1.80, -30, -70, 1.5, .85, 1.15, 45, -20),
@@ -118,7 +123,9 @@ def limbs(data):
             profiles = {}
             for key, rp, sf in [('young', 0, 0), ('balanced', 0, 0), ('run', -1, 0),
                                 ('power', 1, 0), ('fly', 0, 1),
-                                ('run_fly', -1, 1), ('power_fly', 1, 1)]:
+                                ('run_fly', -1, 1), ('power_fly', 1, 1),
+                                ('run_swim', -1, -1), ('swim', 0, -1),
+                                ('power_swim', 1, -1)]:
                 run, power, fly = max(0, -rp), max(0, rp), max(0, sf)
                 p = copy.deepcopy(base)
                 if key == 'young':
@@ -157,6 +164,9 @@ def wings(data, template):
     # Fly opens a long fan, and the two compatible pairs are moderated.
     profiles = {
         'young': (4.70, 3.55, 2.75, 1.10),
+        'swim': (4.90, 3.60, 2.40, 1.45),
+        'run_swim': (5.20, 3.80, 2.60, 1.35),
+        'power_swim': (3.50, 2.60, 1.85, 1.25),
         'balanced': (3.80, 2.85, 2.15, 1.00),
         'run': (4.95, 3.65, 2.70, 1.00),
         'power': (2.70, 2.10, 1.65, 1.05),
@@ -196,10 +206,15 @@ def wings(data, template):
 def tail(data, template):
     bone = next(b for b in data['bones'] if b['name'] == 'tail__cube_0')
     lengths = {'young': 2.65, 'balanced': 2.65, 'run': 1.95, 'power': 1.85,
-               'fly': 3.85, 'run_fly': 2.50, 'power_fly': 2.35}
+               'fly': 3.85, 'run_fly': 2.50, 'power_fly': 2.35,
+               'swim': 2.80, 'run_swim': 1.90, 'power_swim': 2.10}
     roots, tips = {}, {}
     for key, length in lengths.items():
         anchor, r, tr = [0, .5, 1.85], [-35, 0, 0], [-2, 0, 0]
+        if key in ('swim', 'run_swim', 'power_swim'):
+            # The opposite row has a flatter tail than Fly's rising curl.
+            r = [-10 if key == 'swim' else -5, 0, 0]
+            tr = [-5, 0, 0]
         roots[key] = pose([a + b for a, b in zip(anchor, rotate([0, 0, length / 2], r))],
                           [.60, .60, length], r)
         end = [a + b for a, b in zip(anchor, rotate([0, 0, length], r))]
@@ -220,24 +235,24 @@ def author():
     wings(data, template)
     tail(data, template)
     data['authored_gameplay_form'] = 'neutral_fly_proto061'
-    data['evolution_revision'] = '0.25.61'
+    data['evolution_revision'] = '0.25.72'
     data['gradual_evolution'] = {
         'strength_range': [0, 1.2], 'vertices': 'fresh adult target0',
-        'targets': 'fresh +9 mature closed cuboid parameter profiles including negative-SF guard row',
+        'targets': 'fresh +9 distinct mature signed-axis closed cuboid parameter profiles',
         'axis_order': 'Swim/Fly then Run/Power', 'head_family': 'neutral/fly',
         'reference_page': 'https://chao-island.com/viewer/'}
     data['neutral_fly_path_061'] = {
         'targets': TARGETS, 'canonical_uv_layout': 'baby', 'original_head_box': [7, 6, 6],
-        'weights': 'fresh=1-maturity; mature age*triangle(clamp(runPower,-1,1),x)*triangle(clamp(swimFly,0,1),y), x/y=-1,0,1; negative-SF guard row duplicates balanced row',
+        'weights': 'fresh=1-maturity; mature age*triangle(clamp(runPower,-1,1),x)*triangle(clamp(swimFly,-1,1),y), x/y=-1,0,1; first evolution remains Fly across balance',
         'feature_parameter_order': 'center_xyz,size_xyz_positive,rotation_xyz_degrees; compose Rz*Ry*Rx',
         'feature_body_uv': BODY_UV, 'feature_tip_uv': TIP_UV,
         'feature_fin_uv': FIN_UV, 'feature_underside_uv': UNDER_UV,
         'reserved_pixels': {'feature_body': [127, 63], 'feature_tip': [126, 63],
                             'feature_fin': [125, 63], 'feature_underside': [124, 63]},
-        'scope': 'Ordinary living Neutral adult with locked Fly FIRST evolution only. Six balanced/Run/Power/Fly/Run+Fly/Power+Fly mature specializations; no negative Swim specialization.',
-        'reference': 'Fresh live Chao Island first-Fly checkbox, Neutral alignment: shared fresh front/side and independently captured all six mature front/side/back silhouettes. Original official Fly geometry and texture inspected as closed-block construction vocabulary only.',
+        'scope': 'Ordinary living Neutral adult with locked Fly FIRST evolution only. Full nine-corner Run/Power and Swim/Fly adult lattice: balanced, Run, Power, Swim, Fly and four compatible pairs.',
+        'reference': 'Live Chao Island first-Fly checkbox, Neutral alignment: fresh and existing six mature references plus independently captured reciprocal Swim/Run+Swim/Power+Swim front/side/back and intermediate development. Original official Fly geometry and texture are construction vocabulary only.',
         'source_geometry_copied': False,
-        'approximation': 'Exact original square head and pixel face. Two closed boxes per upper-lateral crest: fresh short downward ears; mature balanced rear/up points; Run downward squared ram hooks; Power tall upright roots with forward tips; Fly downward pointed ears; short curved Run+Fly and shorter upright Power+Fly. Six opaque closed wing rays simplify smooth tapered three-lobe fans; two-color half-length wing bands replace smooth gradients. Two slim tail boxes simplify its upward blue-tipped curl. No central stem, halo or spikeball was added.',
+        'approximation': 'Exact original square head and pixel face. Existing young and six mature targets are preserved. Two closed boxes per upper-lateral crest approximate reciprocal Swim broad rear/up ears, Run+Swim compact inward/down curls, and Power+Swim narrower upright peaks; smooth rolled ends and small source side-fin lobes are simplified into the existing paired crests. Six opaque closed wing rays simplify smooth three-lobe fans; two-color half-length bands replace smooth gradients. Reciprocal Swim tails flatten relative to the original rising Fly curl. No new joints, central stem, halo or spikeball.',
         'wing_policy': 'Three opaque closed cuboid rays per original wing bone, all root-face midpoints fixed local [0,.25,0]; distinct .30/.25/.20 thicknesses avoid coincident parallel planes. Per-vertex FIN125 at each root-X edge and UNDER124 at each distal-X edge produce a clean half-length root/distal band on all four long faces; end faces use their matching constant swatch. All original wing parents/pivots/animations unchanged; no alpha closing-edge frame.',
         'body_contact_policy': 'New family torso top extends .45 model pixels on every target; bottom, original59bone transforms, originalhead and attachment rig unchanged. Supports scoped .35pixel WALK head-clearance lift.',
         'marker_policy': 'Entire original orb, marker and expression bones/meshes byte-exact; live reference uses a smooth sphere, so no added marker geometry.',
@@ -255,17 +270,17 @@ def author():
             'art/imported_chao/textures/fly.png',
             'src/main/resources/assets/chao_garden/models/entity/official/chao_fly.json']
     manifest = {
-        'version': '0.25.61', 'model': str(OUT.relative_to(ASSETS)), 'sha256': sha(OUT),
+        'version': '0.25.72', 'model': str(OUT.relative_to(ASSETS)), 'sha256': sha(OUT),
         'source_model_sha256': sha(source), 'target_names': TARGETS,
         'canonical_head_face_orb_and_joint_pivots_unchanged': True,
         'shared_animation_attachment_rig': True, 'source_geometry_copied': False,
         'construction_reference_sha256': {name: sha(ROOT / name) for name in refs},
-        'legal_specializations': ['balanced', 'run', 'power', 'fly', 'run_fly', 'power_fly'],
-        'guard_row': 'Negative Swim targets exactly duplicate center; runtime net Swim/Fly clamps [0,1]',
+        'legal_specializations': ['balanced', 'run', 'power', 'swim', 'fly', 'run_swim', 'power_swim', 'run_fly', 'power_fly'],
+        'reciprocal_row': 'Distinct negative-Swim targets; full signed Swim/Fly axis with locked first Fly identity',
         'closed_box_count': 17, 'head_feature_count': 4, 'wing_ray_count': 6,
         'tail_part_count': 2}
     (ASSETS / 'neutral_fly061.json').write_text(json.dumps(manifest, indent=2) + '\n')
-    print('NeutralFly061 generated: exact original7x6x6 head/face/orb/59joints;4headfeatures,5compactbodylimbs,6opaqueanchoredwingrays,2tailparts;17closedboxes,10targets/6matureforms.')
+    print('NeutralFly061 generated: exact original7x6x6 head/face/orb/59joints;4headfeatures,5compactbodylimbs,6opaqueanchoredwingrays,2tailparts;17closedboxes,10targets/9matureforms.')
 
 
 if __name__ == '__main__':

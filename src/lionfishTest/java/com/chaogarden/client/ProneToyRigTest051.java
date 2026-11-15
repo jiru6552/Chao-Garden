@@ -20,7 +20,7 @@ public final class ProneToyRigTest051 {
   private static final Path ROOT=Path.of("src/main/resources/assets/chao_garden/models/entity");
   private record Profile(String name,float headAngle,float headLiftPixels,int transition){}
   private static final List<Profile> PROFILES=List.of(
-      new Profile("car",.20f,.80f,17),new Profile("crayons",.25f,.60f,27));
+      new Profile("car",.10f,.10f,17),new Profile("crayons",.20f,0,27));
   private static int checks,frames,cases,footCases;
   private static float maxStep,minHeadFloor=Float.POSITIVE_INFINITY,minSeparation=Float.POSITIVE_INFINITY;
   private static float maxFootY,maxBodyY;
@@ -209,6 +209,7 @@ public final class ProneToyRigTest051 {
     }
     heroRunStages(all,contacts);
     actualTransitions();
+    ProneHeadConnectionTest073.run();
     StringBuilder out=new StringBuilder("Prone support: "+checks+" checks; "+cases+" source form/age/morph/head cases; "+frames+" quarter/contact frames; "+footCases+" actual replacement-foot cases; maxQuarterJointPixels="+maxStep+" minHeadFloor="+minHeadFloor+" minHeadBody="+minSeparation+" maxBellyY="+maxBodyY+" maxFootY="+maxFootY+" actualExitFrames="+exitFrames+" maxExitJointPixels="+maxExitStep+" maxExitRootLiftPixels="+maxExitLift+" failures="+failures+"\n");
     for(String kind:List.of("car","crayons"))out.append(kind).append(" model XZ[minX,minZ,maxX,maxZ]=").append(Arrays.toString(FOOTPRINTS.get(kind))).append(" world XZ=").append(Arrays.toString(WORLD_FOOTPRINTS.get(kind))).append('\n');
     Files.createDirectories(Path.of("build/reports/lionfish"));Files.writeString(Path.of("build/reports/lionfish/prone-toys051-results.txt"),out.toString());

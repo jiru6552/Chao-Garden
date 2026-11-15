@@ -5,10 +5,9 @@
   "shade_quads": true,
   "flip_v": true,
   "textures": {
-    "sa2_alo_mask_bucket00_20": "chao_garden:block/sa2_02515/bucket_hat/sa2_alo_mask_bucket00_20",
-    "sa2_alo_mask_bucket01_20": "chao_garden:block/sa2_02515/bucket_hat/sa2_alo_mask_bucket01_20",
-    "sa2_alo_mask_bucket00_52": "chao_garden:block/sa2_02515/bucket_hat/sa2_alo_mask_bucket00_52",
-    "particle": "chao_garden:block/sa2_02515/bucket_hat/sa2_alo_mask_bucket00_20"
+    "alo_mask_bucket01": "chao_garden:block/sa2_02515/bucket_hat/alo_mask_bucket01",
+    "alo_mask_bucket00": "chao_garden:block/sa2_02515/bucket_hat/alo_mask_bucket00",
+    "particle": "chao_garden:block/sa2_02515/bucket_hat/alo_mask_bucket01"
   },
   "render_type": "minecraft:cutout",
   "display": {
