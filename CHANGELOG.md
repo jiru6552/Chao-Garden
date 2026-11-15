@@ -1,3 +1,13 @@
+## 0.25.83 — maintenance
+
+- Keep adult Nether/End innate fire/levitation cleanup working when the companion is exhausted; trained benefits still respect energy.
+- Use an ephemeral server-tick care request throttle; old future timestamps no longer deny care after clock changes.
+- Interrupt displaced tree shaking before harvesting; deduplicate shared-root stand/path probes and guard unloaded chunks.
+- Reuse prepared morphology samples and resolved optional Accessories method metadata; skip inactive lesson searches.
+- Clear resource-derived accessory landmarks on resource reload, retaining the current head and equipment rig.
+- Advance only the two intentional .72 reciprocal model pins in older morphology validators, retaining their geometry assertions. Repair journal paragraph breaks and current section expectations.
+- Add portable resource-link/structure auditing. Preserve all registered IDs, saved data, assets and dependencies; uncertain duplicate/reference content is retained.
+
 ## 0.25.82 — Equipped baby alignment
 
 - Add configurable credited-kill Hero/Dark influence for actual baby accessories, with conservative mob classification and modpack tags.

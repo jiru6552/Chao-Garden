@@ -10,7 +10,10 @@ import copy
 import hashlib
 import json
 import math
-from validate_blocky_run_02555 import vertices, connected, volume, overlaps
+if __package__:
+    from .validate_blocky_run_02555 import vertices, connected, volume, overlaps
+else:
+    from validate_blocky_run_02555 import vertices, connected, volume, overlaps
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'src/main/resources/assets/chao_garden'

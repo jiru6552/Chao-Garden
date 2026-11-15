@@ -17,7 +17,8 @@ final class HeroNormalAppearance057 {
     float started,last;
   }
   private HeroNormalAppearance057(){}
-  static HeroNormalMorphology057.Sample sample(ChaoState state){return FRAME.getOrDefault(state,HeroNormalMorphology057.sample(state));}
+  static HeroNormalMorphology057.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:HeroNormalMorphology057.sample(state);}
   static HeroNormalMorphology057.Sample prepare(UUID id,ChaoState state,float age) {
     var target=HeroNormalMorphology057.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

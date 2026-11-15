@@ -11,6 +11,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -46,6 +47,9 @@ public final class ChaoCareServices {
       EquipmentSlot.OFFHAND,EquipmentSlot.LEGS,EquipmentSlot.CHEST};
   public static final List<String> MEDALS=List.of("race_bronze","race_silver","race_gold","race_champion",
       "karate_bronze","karate_silver","karate_gold","karate_champion");
+  // Ephemeral request throttles belong to a live connection, not to saved care
+  // or a dimension clock that can move backwards during travel/restoration.
+  private static final Map<ServerPlayer,Integer> LAST_ACTION_TICKS=new WeakHashMap<>();
   private ChaoCareServices() {}
   public static Lesson lesson(String id) {return LESSONS.stream().filter(l->l.id().equals(id)).findFirst().orElse(null);}
   public static String currentLesson(long gameTime) {
@@ -71,7 +75,9 @@ public final class ChaoCareServices {
     }
   }
   public static boolean hasLesson(ChaoEntity chao) {
-    return lesson(chao.state().trait("lesson.active"))!=null && chao.state().traitInt("lesson.remaining",0)>0;
+    String active=chao.state().trait("lesson.active");
+    return !active.isEmpty() && chao.state().traitInt("lesson.remaining",0)>0
+        && lesson(active)!=null;
   }
   public static boolean isLearning(ChaoEntity chao) {return hasLesson(chao) && chao.state().traitInt("lesson.paused",0)==0;}
   public static boolean canManage(Player keeper,ChaoEntity chao) {
@@ -192,10 +198,12 @@ public final class ChaoCareServices {
     if(remaining>0)throw new IllegalStateException("Validated wallet changed during server action");
   }
   public static void handle(Player keeper,ChaoEntity chao,String action,String value) {
-    if(!canManage(keeper,chao))return;
-    var data=keeper.getPersistentData();long now=keeper.level().getGameTime();
-    if(data.contains("ChaoCareLastAction") && now-data.getLong("ChaoCareLastAction")<4)return;
-    data.putLong("ChaoCareLastAction",now);boolean done=false;
+    if(!(keeper instanceof ServerPlayer player)||!canManage(keeper,chao))return;
+    int now=player.server.getTickCount();Integer previous=LAST_ACTION_TICKS.get(player);
+    // Int subtraction also handles the server tick counter wrapping at MAX_VALUE.
+    // A negative delta is a reset/old entry, never a multi-year denial of care.
+    if(previous!=null){int elapsed=now-previous;if(elapsed>=0&&elapsed<4)return;}
+    LAST_ACTION_TICKS.put(player,now);boolean done=false;
     switch(action) {
       case "cure" -> done=cure(keeper,chao);
       case "learn" -> done=beginLesson(keeper,chao,value);

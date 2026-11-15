@@ -151,6 +151,30 @@ public final class CompanionVariantGameTests {
     });
   }
 
+  @GameTest(template="empty",timeoutTicks=100)
+  public static void tiredEndSlotClearsPreexistingLevitation(GameTestHelper helper){
+    if(!AccessoriesBridge.available()){helper.succeed();return;}
+    var e=equip(helper,"end");var p=e.keeper();
+    // Save a tired adult before the real Accessories callback summons it.
+    // The effect already exists, so the Applicable-event rejection alone
+    // cannot satisfy this regression: the ordinary tick must remove it.
+    var carrier=e.inventory().getItem(0);var entity=ChaoCarrierItem.entityData(carrier);
+    var state=ChaoState.decode(entity.getString("Chao"));state.energy=0;
+    entity.putString("Chao",state.encode());ChaoCarrierItem.storeEntity(carrier,entity);
+    helper.assertTrue(p.addEffect(new MobEffectInstance(MobEffects.LEVITATION,400,0)),"Pre-equip levitation fixture was rejected");
+    helper.assertTrue(p.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,400,0)),"Unrelated fixture effect was rejected");
+    helper.runAfterDelay(12,()->{
+      var c=body(helper,e);
+      helper.assertTrue(c.state().adult&&c.state().energy<=5&&CompanionContent.hasVariantCompanion(p,"end"),"Tired living End fixture lost authorization");
+      helper.assertTrue(!p.hasEffect(MobEffects.LEVITATION),"Tired End companion did not clear pre-existing levitation");
+      helper.assertTrue(p.hasEffect(MobEffects.SLOW_FALLING),"Innate cleanup removed an unrelated effect");
+      helper.assertTrue(!p.addEffect(new MobEffectInstance(MobEffects.LEVITATION,400,0)),"Tired End companion accepted new levitation");
+      CompanionContent.unequip(p,e.inventory().getItem(0));e.inventory().setItem(0,ItemStack.EMPTY);
+      helper.assertTrue(p.addEffect(new MobEffectInstance(MobEffects.LEVITATION,400,0)),"Removed tired End companion retained immunity");
+      finish(helper,e);
+    });
+  }
+
   @GameTest(template="empty",timeoutTicks=130)
   public static void endChestPayloadUsesOwnVanillaInventoryAndRevokesWithSlot(GameTestHelper helper){
     if(!AccessoriesBridge.available()){helper.succeed();return;}

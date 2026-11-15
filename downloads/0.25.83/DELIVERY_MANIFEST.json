@@ -1,0 +1,68 @@
+{
+  "files": {
+    "MAINTENANCE_02583_DEV.md": {
+      "bytes": 13638,
+      "sha256": "c47248cd7621281052f3dfff7bd8f6c45eb99858c0d485ddb0415e16b51f24c1"
+    },
+    "chao-garden-0.25.83-source-changes.zip": {
+      "bytes": 6696818,
+      "sha256": "5a60a872d54fd99fd74fc4eb752345ece631f4b7f1f19ef0f18630c04539c330"
+    },
+    "chao-garden-0.25.83-verification.zip": {
+      "bytes": 5722857,
+      "sha256": "3bd15106c50d30b4288a6720daf9be755109ad5fbfaf9a6c53f286f30f34649a"
+    },
+    "chao_garden-0.25.83.jar": {
+      "bytes": 30688961,
+      "sha256": "1032b086242deba5c5babc346ad9286247d83f644935d1dc370a51fd33d6492e"
+    },
+    "maintenance-lighting-final.png": {
+      "bytes": 987153,
+      "sha256": "ebc0ab70a7280efecee4e8a674fdf50f1a01e5ab4c1081d74138a956554a4357"
+    },
+    "maintenance-network-world-final.png": {
+      "bytes": 811723,
+      "sha256": "68e18280d4adb6b0f9d48b063c96de484bbe8c4831329d5757d1f82a793697c0"
+    },
+    "maintenance-visuals-final.png": {
+      "bytes": 1049053,
+      "sha256": "7c83df0838b69ee01cfdb5399920d7bee4c4218ad834c8ce16f4228b8e71bd23"
+    }
+  },
+  "kind": "maintenance delivery",
+  "limits": [
+    "Representative development clients, not installed-JAR testing on a phone.",
+    "No shader/custom-resource-pack hardware pass, listening session or public-latency/manual combat session.",
+    "Copied controlled prior world, not an authentic user-world upgrade; partial equipped-minute fresh-process restart untested.",
+    "No exhaustive visual review of every morphology/accessory combination; no FPS/TPS percentage claim."
+  ],
+  "loader": "NeoForge 21.1.219",
+  "minecraft": "1.21.1",
+  "runtime_requirement": "Java 21; external Lionfish API 3.1; matching client/server versions. Optional integrations are not bundled.",
+  "source": {
+    "base_commit": "fcde2f9d012499b2e2cb1ec1d50a7f58d4dc3ca2",
+    "kind": "cumulative overlay onto complete 0.25.43 source",
+    "new_deletions": 0,
+    "retained_082_paths": 1008,
+    "source_inventory_sha256": "c2e81bf9de42a7950702c9b623d54b2f769c8712b3ec64fb5a965a23a8e292ae",
+    "source_paths": 1020,
+    "unchanged_inherited_deletion_guards": 21
+  },
+  "verification": {
+    "actual_connected_clients": 2,
+    "clean_build_executed_tasks": 80,
+    "failed_and_superseded_attempts": "Retained and distinguished in report and evidence bundle.",
+    "frozen_runtime_sha256": "f02edffb0d9e3070a5365b7c5089e67ac76f01cbb0cc88883aa42df817a1802b",
+    "independent_review_sha256": "908a6e3be1062bd581808f6db48257ef163efac1a8a903a73059a20e64df42ed",
+    "inherited_resource_files_preserved": 8335,
+    "journal_tests": "10/10",
+    "minimal_runtime_tests": "7/7",
+    "native_server_tests": "4884/4884",
+    "production_resource_mutations_or_deletions": 0,
+    "real_aether_runtime_tests": "14/14",
+    "recorded_final_client_pngs": 76,
+    "resource_fixture_tests": "8/8",
+    "validator_output_tests": "5/5"
+  },
+  "version": "0.25.83"
+}

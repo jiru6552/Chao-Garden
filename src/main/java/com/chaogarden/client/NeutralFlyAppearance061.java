@@ -17,7 +17,8 @@ final class NeutralFlyAppearance061 {
     float started,last;
   }
   private NeutralFlyAppearance061(){}
-  static NeutralFlyMorphology061.Sample sample(ChaoState state){return FRAME.getOrDefault(state,NeutralFlyMorphology061.sample(state));}
+  static NeutralFlyMorphology061.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:NeutralFlyMorphology061.sample(state);}
   static NeutralFlyMorphology061.Sample prepare(UUID id,ChaoState state,float age) {
     var target=NeutralFlyMorphology061.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

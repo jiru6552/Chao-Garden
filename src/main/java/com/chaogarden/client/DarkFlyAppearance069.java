@@ -17,7 +17,8 @@ final class DarkFlyAppearance069 {
     float started,last;
   }
   private DarkFlyAppearance069(){}
-  static DarkFlyMorphology069.Sample sample(ChaoState state){return FRAME.getOrDefault(state,DarkFlyMorphology069.sample(state));}
+  static DarkFlyMorphology069.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:DarkFlyMorphology069.sample(state);}
   static DarkFlyMorphology069.Sample prepare(UUID id,ChaoState state,float age) {
     var target=DarkFlyMorphology069.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

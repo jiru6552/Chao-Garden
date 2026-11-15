@@ -20,7 +20,8 @@ final class HeroRunAppearance052 {
   private HeroRunAppearance052(){}
 
   static HeroRunMorphology052.Sample sample(ChaoState state) {
-    return FRAME.getOrDefault(state,HeroRunMorphology052.sample(state));
+    var prepared=FRAME.get(state);
+    return prepared!=null?prepared:HeroRunMorphology052.sample(state);
   }
   /** Signed alignment uses the same display clock, including Neutral-to-Dark edits. */
   static float signedAlignment(ChaoState state) {

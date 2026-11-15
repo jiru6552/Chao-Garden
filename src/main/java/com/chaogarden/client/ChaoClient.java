@@ -5,9 +5,18 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
+import net.minecraft.client.Minecraft;
+import net.minecraft.server.packs.resources.ResourceManagerReloadListener;
 
 @EventBusSubscriber(modid = "chao_garden", bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public final class ChaoClient {
+  @SubscribeEvent
+  public static void reload(RegisterClientReloadListenersEvent event) {
+    event.registerReloadListener((ResourceManagerReloadListener) manager ->
+        Minecraft.getInstance().execute(ChaoAccessoryFit::clearReferenceCache));
+  }
+
   @SubscribeEvent
   public static void layers(EntityRenderersEvent.RegisterLayerDefinitions event) {
     event.registerLayerDefinition(ChaoModel.LAYER, ChaoModel::createBodyLayer);

@@ -18,13 +18,13 @@ PAGE = re.compile(r'page\(\s*((?:"(?:[^"\\]|\\.)*"\s*(?:\+\s*)?)+)\)', re.S)
 PAGES = [''.join(json.loads(s) for s in re.findall(r'"(?:[^"\\]|\\.)*"', m.group(1)))
          for m in PAGE.finditer(PAGE_SOURCE)]
 SECTIONS = dict(p.split('\n\n', 1) for p in PAGES)
-EXPECTED_TITLES = '''A Keeper's Journal|First care|Care supplies|The Analyzer|Training|Learning to move|Learning to swim|Learning to fly|Growth and alignment|Evolution|Adult forms|Breeding|Inheritance|Special eggs|Animal Genes|Reincarnation|Chaos Chao|Safe transport|Minecraft adaptations|Pack makers|Fruit orchards|Learning gardening|Watering trees|Planted-tree life|Black Market|Rare egg discovery|Gem eggs|Other market gifts|Your gardens|Garden registration|Garden boundaries|Building a race|Races and karate|Chao companions|Companion flight and water|Nether companions|End companions|Robot legacy|A robot's next life|Companion recovery|Choosing a gift|Curious hands|Personalities|Portable adventure fruit|Kindergarten travel|Meet the staff|Doctor care|Grade care|Classroom|Learned skills|Wardrobe|Handling eggs|Garden friends|Contest awards|Expanded garden gifts|Birthday parties|Optional garden rules|Official comparison (OP)'''.split('|')
+EXPECTED_TITLES = '''A Keeper's Journal|First care|Care supplies|The Analyzer|Training|Learning to move|Learning to swim|Learning to fly|Growth and alignment|Evolution|Adult forms|Breeding|Inheritance|Special eggs|Animal Genes|Reincarnation|Chaos Chao|Safe transport|Minecraft adaptations|Pack makers|Fruit orchards|Learning gardening|Watering trees|Planted-tree life|Black Market|Rare egg discovery|Gem eggs|Other market gifts|Your gardens|Garden registration|Garden boundaries|Lobby gardens|Garden growth|Building a race|Races and karate|Chao companions|Companion flight and water|Nether companions|End companions|Robot legacy|A robot's next life|Companion recovery|Choosing a gift|Curious hands|Personalities|Portable adventure fruit|Kindergarten travel|Meet the staff|Doctor care|Grade care|Classroom|Learned skills|Wardrobe|Handling eggs|Garden friends|Contest awards|Expanded garden gifts|Birthday parties|Optional garden rules|Official comparison (OP)'''.split('|')
 
 
 class JournalContentTest(unittest.TestCase):
     def test_section_identity_and_order_preserved(self):
         self.assertEqual([p.split('\n\n', 1)[0] for p in PAGES], EXPECTED_TITLES)
-        self.assertEqual(len(SECTIONS), 58)
+        self.assertEqual(len(SECTIONS), 60)
 
     def test_sections_are_short_and_paragraphed(self):
         for title, body in SECTIONS.items():
@@ -86,6 +86,15 @@ class JournalContentTest(unittest.TestCase):
         self.assertIn('from the list and choose SEE THE DOCTOR on the main menu', SECTIONS['Doctor care'])
         self.assertIn('open MEDICAL CHART, then STATS', SECTIONS['Grade care'])
         self.assertLess(SECTIONS['Grade care'].index('MEDICAL CHART'), SECTIONS['Grade care'].index('UP'))
+
+    def test_garden_unlock_and_strength_sections_match_existing_rules(self):
+        self.assertIn('Hero and Dark Gardens begin locked', SECTIONS['Lobby gardens'])
+        self.assertIn('Dark side independently', SECTIONS['Lobby gardens'])
+        self.assertIn('Unlocks are permanent', SECTIONS['Lobby gardens'])
+        self.assertIn('twice as fast in the Hero Garden', SECTIONS['Garden growth'])
+        self.assertIn('half as fast in the Dark Garden', SECTIONS['Garden growth'])
+        self.assertIn('Fruit keeps its usual separate effect', SECTIONS['Garden growth'])
+        self.assertIn('Adult alignment and first type stay locked', SECTIONS['Garden growth'])
 
     def test_analyzer_links_use_real_tabs(self):
         inspection = (JAVA / 'client/ChaoInspectionScreen.java').read_text()

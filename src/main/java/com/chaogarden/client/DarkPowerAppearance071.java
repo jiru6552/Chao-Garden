@@ -17,7 +17,8 @@ final class DarkPowerAppearance071 {
     float started,last;
   }
   private DarkPowerAppearance071(){}
-  static DarkPowerMorphology071.Sample sample(ChaoState state){return FRAME.getOrDefault(state,DarkPowerMorphology071.sample(state));}
+  static DarkPowerMorphology071.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:DarkPowerMorphology071.sample(state);}
   static DarkPowerMorphology071.Sample prepare(UUID id,ChaoState state,float age) {
     var target=DarkPowerMorphology071.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

@@ -17,7 +17,8 @@ final class DarkRunAppearance070 {
     float started,last;
   }
   private DarkRunAppearance070(){}
-  static DarkRunMorphology070.Sample sample(ChaoState state){return FRAME.getOrDefault(state,DarkRunMorphology070.sample(state));}
+  static DarkRunMorphology070.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:DarkRunMorphology070.sample(state);}
   static DarkRunMorphology070.Sample prepare(UUID id,ChaoState state,float age) {
     var target=DarkRunMorphology070.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

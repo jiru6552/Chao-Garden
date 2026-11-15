@@ -272,14 +272,16 @@ public final class NeutralPowerMorphRigTest063 {
   /** Byte-exact protected assets from delivered0.25.62, independent of the
    * generator and new profile's metadata. These are portable source checks. */
   private static void protectedAssets()throws Exception{
+    // .72 deliberately added reciprocal Swim/Fly rows; only those two pins
+    // advance. Historical rig/head/retained-target preservation was audited.
     var expected=Map.ofEntries(
         Map.entry("chao_baby.json","ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b"),
         Map.entry("chao_hero_run_proto055.json","77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08"),
         Map.entry("chao_neutral_proto056.json","a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db"),
         Map.entry("chao_hero_normal_proto057.json","d0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d"),
-        Map.entry("chao_neutral_swim_proto059.json","06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8"),
+        Map.entry("chao_neutral_swim_proto059.json","de2972ea6780a4252a98bbbdd84d674dd25a9ea4f3c1ea04be7124e3283593b1"),
         Map.entry("chao_dark_normal_proto060.json","36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514"),
-        Map.entry("chao_neutral_fly_proto061.json","2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885"),
+        Map.entry("chao_neutral_fly_proto061.json","05ce4c9211bee32d055575864e27e7e1a925ca68a838481810a57df7e507e203"),
         Map.entry("chao_neutral_run_proto062.json","cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881"));
     for(var entry:expected.entrySet()){
       byte[] bytes=Files.readAllBytes(ROOT.resolve("models/entity/gameplay/"+entry.getKey()));

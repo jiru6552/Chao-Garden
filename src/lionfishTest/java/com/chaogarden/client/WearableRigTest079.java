@@ -218,7 +218,38 @@ public final class WearableRigTest079 {
       check(state.encode().equals(saved),"Equipment presentation preserves saved care/genetics/items "+context);
     }
   }
+  /** A reload must discard both old source landmark sets before a changed pack is fitted.
+   * Injected resource snapshots keep this lifecycle test independent of a Minecraft singleton. */
+  @SuppressWarnings("unchecked")
+  private static void reloadReferences(){
+    try {
+      var headField=ChaoAccessoryFit.class.getDeclaredField("REFERENCE_HEADS");headField.setAccessible(true);
+      var bodyField=ChaoAccessoryFit.class.getDeclaredField("REFERENCE_BODIES");bodyField.setAccessible(true);
+      var heads=(Map<String,float[]>)headField.get(null);var bodies=(Map<String,float[]>)bodyField.get(null);
+      var previousHeads=new HashMap<>(heads);var previousBodies=new HashMap<>(bodies);
+      String key="chao_maintenance083";
+      float[] oldHead={-3.5f,-6,-3,3.5f,0,3},newHead={-4,-7,-3.5f,4,0,3.5f};
+      float[] oldBody={-2,-3.5f,-2,2,.5f,2},newBody={-2.5f,-4,-2.5f,2.5f,.5f,2.5f};
+      try {
+        heads.put(key,oldHead);bodies.put(key,oldBody);
+        check(ChaoAccessoryFit.legacyHead(newHead,key).sx()!=1,"Changed pack would otherwise retain stale skull scale");
+        check(ChaoAccessoryFit.legacyBody(newBody,key).sx()!=1,"Changed pack would otherwise retain stale torso scale");
+        ChaoAccessoryFit.clearReferenceCache();
+        check(heads.isEmpty()&&bodies.isEmpty(),"Client resource reload discards both source landmark caches");
+        // These values stand in for the next lazy ResourceManager reads after reload.
+        heads.put(key,newHead);bodies.put(key,newBody);
+        var expected=new ChaoAccessoryFit.Fit(0,0,0,1,1,1);
+        check(ChaoAccessoryFit.legacyHead(newHead,key).equals(expected),"Reloaded skull fits the replacement pack without stale scale");
+        check(ChaoAccessoryFit.legacyBody(newBody,key).equals(expected),"Reloaded torso fits the replacement pack without stale scale");
+        var marker=ChaoAccessoryFit.legacyMarker(newHead,key);
+        check(marker.equals(expected),"Marker reference follows the same replacement skull");
+      } finally {
+        ChaoAccessoryFit.clearReferenceCache();heads.putAll(previousHeads);bodies.putAll(previousBodies);
+      }
+    }catch(ReflectiveOperationException error){throw new AssertionError("Cannot exercise source landmark reload lifecycle",error);}
+  }
   public static void main(String[] args){
+    reloadReferences();
     var clips=json(ROOT.resolve("animations/official/chao.animation.json")).getAsJsonObject("animations");int serial=0;
     for(boolean adult:new boolean[]{false,true})for(int alignment=-1;alignment<=1;alignment++)for(int first=0;first<=(adult?4:0);first++)
       for(float strength:new float[]{0,.5f,1})for(int sf=-1;sf<=1;sf++)for(int rp=-1;rp<=1;rp++)inspect(clips,state(adult,alignment,first,rp,sf,strength),serial++);

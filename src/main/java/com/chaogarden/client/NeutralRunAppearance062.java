@@ -20,7 +20,8 @@ final class NeutralRunAppearance062 {
     float started,last;
   }
   private NeutralRunAppearance062(){}
-  static NeutralRunMorphology062.Sample sample(ChaoState state){return FRAME.getOrDefault(state,NeutralRunMorphology062.sample(state));}
+  static NeutralRunMorphology062.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:NeutralRunMorphology062.sample(state);}
   static NeutralRunMorphology062.Sample prepare(UUID id,ChaoState state,float age) {
     var target=NeutralRunMorphology062.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

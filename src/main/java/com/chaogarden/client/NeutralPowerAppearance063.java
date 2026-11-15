@@ -20,7 +20,8 @@ final class NeutralPowerAppearance063 {
     float started,last;
   }
   private NeutralPowerAppearance063(){}
-  static NeutralPowerMorphology063.Sample sample(ChaoState state){return FRAME.getOrDefault(state,NeutralPowerMorphology063.sample(state));}
+  static NeutralPowerMorphology063.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:NeutralPowerMorphology063.sample(state);}
   static NeutralPowerMorphology063.Sample prepare(UUID id,ChaoState state,float age) {
     var target=NeutralPowerMorphology063.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

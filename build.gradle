@@ -562,6 +562,7 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_unlock_fresh81/**'
     exclude 'data/chao_lobby81/**'
     exclude 'data/chao_baby_align82/**'
+    exclude 'data/chao_maintenance83/**'
     exclude 'data/chao_floor49/**'
     exclude 'data/chao_retired49/**'
     exclude 'data/chao_hats50/**'

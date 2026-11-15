@@ -21,14 +21,16 @@ MODEL, SOURCE = MODELS / 'chao_dark_power_proto071.json', MODELS / 'chao_baby.js
 FIELD, REGION = 'dark_power_box_071', 'dark_power_region_071'
 TARGETS = ['dark_power_young', 'run_swim', 'swim', 'power_swim', 'run', 'balanced',
            'power', 'run_fly', 'fly', 'power_fly']
+# .72 deliberately added reciprocal Swim/Fly rows; only those two pins
+# advance. Historical rig/head/retained-target preservation was audited.
 PROTECTED = {
     'chao_baby.json': 'ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b',
     'chao_hero_run_proto055.json': '77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08',
     'chao_neutral_proto056.json': 'a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db',
     'chao_hero_normal_proto057.json': 'd0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d',
-    'chao_neutral_swim_proto059.json': '06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8',
+    'chao_neutral_swim_proto059.json': 'de2972ea6780a4252a98bbbdd84d674dd25a9ea4f3c1ea04be7124e3283593b1',
     'chao_dark_normal_proto060.json': '36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514',
-    'chao_neutral_fly_proto061.json': '2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885',
+    'chao_neutral_fly_proto061.json': '05ce4c9211bee32d055575864e27e7e1a925ca68a838481810a57df7e507e203',
     'chao_neutral_run_proto062.json': 'cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881',
     'chao_neutral_power_proto063.json': 'c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0',
     'chao_hero_swim_proto064.json': '73a773cf29df2b8aa2e8e6d471428d8b3a7412a4ba1eab3809dace7f00a0b324',

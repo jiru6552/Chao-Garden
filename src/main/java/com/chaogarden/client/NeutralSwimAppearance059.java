@@ -17,7 +17,8 @@ final class NeutralSwimAppearance059 {
     float started,last;
   }
   private NeutralSwimAppearance059(){}
-  static NeutralSwimMorphology059.Sample sample(ChaoState state){return FRAME.getOrDefault(state,NeutralSwimMorphology059.sample(state));}
+  static NeutralSwimMorphology059.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:NeutralSwimMorphology059.sample(state);}
   static NeutralSwimMorphology059.Sample prepare(UUID id,ChaoState state,float age) {
     var target=NeutralSwimMorphology059.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

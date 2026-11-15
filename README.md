@@ -1,12 +1,10 @@
-# Chao Garden 0.25.82
+# Chao Garden 0.25.83
 
-[**Download 0.25.82 JAR — Minecraft 1.21.1 / NeoForge**](downloads/0.25.82/chao_garden-0.25.82.jar?raw=true) · [Download files and verification](downloads/0.25.82/)
+[**Download 0.25.83 JAR — Minecraft 1.21.1 / NeoForge**](downloads/0.25.83/chao_garden-0.25.83.jar?raw=true) · [Download files, report and screenshots](downloads/0.25.83/)
 
-This update adds server-side alignment influences for equipped baby Chao: configurable hostile/peaceful kill changes and saved Nether/End (or optional Aether) equipped-time counters. Adult alignment and first evolution remain locked. The preceding garden unlocks/effects, morphology, toys, faces and accessories are included. See the [development report](docs/EQUIPPED_BABY_ALIGNMENT_02582_DEV.md).
+Maintenance update **0.25.83** fixes exhausted Nether/End companion cleanup, stale care-action throttles, displaced tree harvesting and resource-reload accessory references. Morphology frame caches and optional Accessories metadata avoid repeated work. Registered content, saved Chao, the fixed head geometry and all prior families remain intact. See the [maintenance report](docs/MAINTENANCE_02583_DEV.md) for the audit, verification results and limits.
 
-Verification: all core checks passed, including 1,320 new checks; the new native cases passed 14/14 both with and without official Aether, and two actual clients verified replication. The complete native regression passed 4,875/4,876; the one inherited Nether companion extinguishing failure remains. Manual phone/PvP/modpack checks and a fresh-process partial-minute restart remain; see the report.
-
-Install the same 0.25.82 JAR on server and clients, replacing the older Chao Garden JAR. Use Java 21 and the project's external Lionfish API dependency; equipped companions additionally use Accessories and its owo dependency. Aether remains optional.
+The **0.25.82 equipped-baby alignment** and **0.25.81 garden unlock/effects** updates remain included. See [baby alignment](docs/EQUIPPED_BABY_ALIGNMENT_02582_DEV.md) and [gardens](docs/GARDEN_UNLOCK_EFFECTS_02581_DEV.md).
 
 Completed update **0.25.79** reviews all registered Chao headwear and accessories, repairs glasses and fitted masks, and gives full-head covers real eye openings. Existing item IDs and equipment rules remain intact. See [the headwear report](docs/HEADWEAR_ACCESSORIES_02579.md).
 
@@ -72,7 +70,7 @@ The food collection includes **35 active fruit/food families**: the twelve conso
 ## Install
 
 1. Use **Minecraft Java 1.21.1**, **NeoForge 21.1.219**, and **64-bit Java 21**.
-2. Place `chao_garden-0.25.78.jar` in `mods/`, replacing the previous Chao Garden jar.
+2. Place `chao_garden-0.25.83.jar` in `mods/`, replacing the previous Chao Garden jar.
 3. Install the same version on the server and every connecting client.
 
 Install **Lionfish API 3.1** separately on both client and server; the current animation integration requires it. Adult equipped companions optionally require **Accessories for NeoForge 1.21.1 and its oωo dependency** on both sides. See [companions](docs/COMPANIONS.md). This build targets NeoForge.
@@ -227,7 +225,7 @@ Open `source/` as a Gradle project with Java 21:
 ./gradlew runClient
 ```
 
-Use `gradlew.bat` on Windows. The output is `build/libs/chao_garden-0.25.78.jar`. [TESTING.md](TESTING.md) records completed checks.
+Use `gradlew.bat` on Windows. The output is `build/libs/chao_garden-0.25.83.jar`. [TESTING.md](TESTING.md) records completed checks.
 
 The editable official model/texture/animation inputs are in `art/imported_chao`. Eight retained Blockbench projects author custom additions and the egg; they are not replacements for the imported form JSON. See [asset editing](art/blockbench/README.md).
 

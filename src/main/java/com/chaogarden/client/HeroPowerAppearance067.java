@@ -20,7 +20,8 @@ final class HeroPowerAppearance067 {
     float started,last;
   }
   private HeroPowerAppearance067(){}
-  static HeroPowerMorphology067.Sample sample(ChaoState state){return FRAME.getOrDefault(state,HeroPowerMorphology067.sample(state));}
+  static HeroPowerMorphology067.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:HeroPowerMorphology067.sample(state);}
   static HeroPowerMorphology067.Sample prepare(UUID id,ChaoState state,float age) {
     var target=HeroPowerMorphology067.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

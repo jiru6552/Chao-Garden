@@ -99,6 +99,10 @@ final class ChaoAccessoryFit {
     }
   }
   private ChaoAccessoryFit() {}
+  /** Source landmarks belong to the current resource pack, just like the meshes. */
+  static void clearReferenceCache() {
+    REFERENCE_HEADS.clear();REFERENCE_BODIES.clear();
+  }
   static boolean coversHead(String id){return id.equals("baseball_cap_accessory")||id.equals("press_hat_accessory");}
   static boolean hoodVisible(com.chaogarden.entity.ChaoEntity entity) {
     var chest=entity.getItemBySlot(net.minecraft.world.entity.EquipmentSlot.CHEST);

@@ -757,15 +757,21 @@ public final class CompanionContent {
     if(!current(player,active)){clearBenefits(player,active);return;}
     ChaoState state=active.body.state();
     int carrying=CarryPreview.position(active.body,player,carryPosition(player,state));
-    if (CarryPreview.active(active.body) || !state.adult || state.energy<=5) {
+    boolean preview=CarryPreview.active(active.body);
+    // Variant traits, like their damage/effect guards below, remain innate
+    // while a living adult is tired. Remove existing fire/effects before the
+    // energy gate that disables trained movement and flight benefits.
+    if(!preview&&state.adult){
+      if("nether".equals(state.variant)){player.clearFire();active.body.clearFire();}
+      if("end".equals(state.variant)&&player.hasEffect(MobEffects.LEVITATION))player.removeEffect(MobEffects.LEVITATION);
+    }
+    if (preview || !state.adult || state.energy<=5) {
       clearBenefits(player,active);
-      if(!CarryPreview.active(active.body)&&EquippedAbilityRules080.eligible(state,ChaoState.RUN))
+      if(!preview&&EquippedAbilityRules080.eligible(state,ChaoState.RUN))
         modifier(player,Attributes.MOVEMENT_SPEED,RUN_SPEED,EquippedAbilityRules080.bonus(state,ChaoState.RUN));
       active.body.setCompanionCarry(player,carrying);
       return;
     }
-    if("nether".equals(state.variant)){player.clearFire();active.body.clearFire();}
-    if("end".equals(state.variant)&&player.hasEffect(MobEffects.LEVITATION))player.removeEffect(MobEffects.LEVITATION);
     boolean water=player.isInWater();
     boolean swimming=water&&com.chaogarden.core.LocomotionRules.canSwim(state);
     modifier(player,Attributes.MOVEMENT_SPEED,RUN_SPEED,EquippedAbilityRules080.eligible(state,ChaoState.RUN)

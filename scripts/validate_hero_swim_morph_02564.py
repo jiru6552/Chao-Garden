@@ -11,9 +11,16 @@ import hashlib
 import json
 import math
 import random
-from validate_blocky_run_02555 import vertices, connected, volume, overlaps, rotate, dot, sub
-from validate_neutral_swim_morph_02559 import bounds, closed
-from validate_neutral_power_morph_02563 import no_same_facing_coplanar
+if __package__:
+ from .validate_blocky_run_02555 import vertices, connected, volume, overlaps, rotate, dot, sub
+ from .validate_neutral_swim_morph_02559 import bounds, closed
+ from .validate_neutral_power_morph_02563 import no_same_facing_coplanar
+ from .validator_output import parse_output, write_result
+else:
+ from validate_blocky_run_02555 import vertices, connected, volume, overlaps, rotate, dot, sub
+ from validate_neutral_swim_morph_02559 import bounds, closed
+ from validate_neutral_power_morph_02563 import no_same_facing_coplanar
+ from validator_output import parse_output, write_result
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'src/main/resources/assets/chao_garden'
@@ -24,14 +31,16 @@ FIELD = 'hero_swim_box_064'
 REGION = 'hero_swim_region_064'
 TARGETS = ['hero_swim_young', 'run_swim', 'swim', 'power_swim',
            'run', 'balanced', 'power', 'run_fly', 'fly', 'power_fly']
+# .72 deliberately added reciprocal Swim/Fly rows; only those two pins
+# advance. Historical rig/head/retained-target preservation was audited.
 PROTECTED = {
  'chao_baby.json': 'ae3d4da88b84905f8726b863bdb072e3a26eb404f38e565d0781b92b01e2cf9b',
  'chao_hero_run_proto055.json': '77b41d4501cba585b83be91b4052e8c56e03bff02e47db2b209f146d36390f08',
  'chao_neutral_proto056.json': 'a354458cae5605b873464614b57f9f9bd04d4a4e01d1ed793cf949194c4d14db',
  'chao_hero_normal_proto057.json': 'd0052db7f401ecc545e7a3db2992933b5671387520c82429d4a8aa336f28232d',
- 'chao_neutral_swim_proto059.json': '06c6c2372669adb2fcf0fb4d529cbf9d0866b20e4b0d23b002e84c9fc8a9a1a8',
+ 'chao_neutral_swim_proto059.json': 'de2972ea6780a4252a98bbbdd84d674dd25a9ea4f3c1ea04be7124e3283593b1',
  'chao_dark_normal_proto060.json': '36ae27aed51674ea31310ab4af602e3e7127e1507c736ee9b6f75f3728acb514',
- 'chao_neutral_fly_proto061.json': '2524c85c7c121531233b03eee36cdb3df6c8a39d568fbe9b0faea09ba887a885',
+ 'chao_neutral_fly_proto061.json': '05ce4c9211bee32d055575864e27e7e1a925ca68a838481810a57df7e507e203',
  'chao_neutral_run_proto062.json': 'cfed60309de43bc854272a4869d455d9ec76281a37a1787ff223f69b7ed85881',
  'chao_neutral_power_proto063.json': 'c3bfcbb2fb1730bbd23b8799e35d9a2edf33b3f4fab06c11a4638bacd1db07f0'}
 
@@ -108,6 +117,7 @@ def lengthwise_uv(mesh, kind):
 
 
 def main():
+ out=parse_output()
  data=json.loads(MODEL.read_text());source=json.loads(SOURCE.read_text())
  bones={b['name']:b for b in data['bones']};old={b['name']:b for b in source['bones']}
  assert len(bones)==62 and list(bones)[:59]==list(old)
@@ -175,7 +185,7 @@ def main():
  meta=json.loads((ASSETS/'hero_swim064.json').read_text());assert meta['sha256']==hashlib.sha256(MODEL.read_bytes()).hexdigest()
  for n,h in PROTECTED.items():assert hashlib.sha256((MODELS/n).read_bytes()).hexdigest()==h,n+' changed'
  result={'version':'0.25.64','scope':'Independent JSON geometry/SAT/UV checks, not Minecraft visual acceptance.','source_files':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()for p in [MODEL,SOURCE,ASSETS/'hero_swim064.json']},'positive_closed_boxes':len(boxes),'dense_and_random_blends':len(samples),'head_feature_count':4,'halo_bar_count':4,'wing_lobe_count':4,'original_joint_count':59,'total_bone_count':62,'original_head_size':[7,6,6],'arbitrary_rotation_face_pairs':face_pairs,'same_facing_coplanar_disjoint_pairs':coincident,'positive_area_coplanar_overlaps':0,'cap_uv_samples':sum(v[0]for v in cap_uv),'wing_uv_samples':sum(v[0]for v in wing_uv),'maximum_hinge_drift':max_hinge,'minimum_positive_volume':minimum_volume,'minimum_informative_vertical_halo_gap':minimum_vertical_gap,'all_nine_previous_models_exact':True,'semantic_head_tip_endpoints':facts}
- out=Path('/workspace/.setup/hero064-model');out.mkdir(exist_ok=True);(out/'source-geometry-audit.json').write_text(json.dumps(result,indent=2)+'\n')
+ write_result(out,result)
  print('HeroSwim064:',len(boxes),'positive closed boxes;',len(samples),'dense/random blends;',face_pairs,'arbitrary-rotation face pairs, zero positive-area coplanar overlaps; connected paired flaps/tilted halo, five-swatch cap/wing UVs, fixed original head/face/59 joints and nine prior models passed.')
 
 

@@ -7,6 +7,7 @@ import com.chaogarden.entity.ChaoEntity.Behavior;
 import com.chaogarden.fruit.FruitContent;
 import com.chaogarden.fruit.HangingFruitBlock;
 import java.util.EnumSet;
+import java.util.HashSet;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.BlockParticleOption;
@@ -39,14 +40,18 @@ public final class ChaoFruitSeekingGoal extends Goal {
     if(!(chao.level() instanceof ServerLevel world)||!eligible()||world.getGameTime()<nextCheck)return false;
     nextCheck=world.getGameTime()+100+chao.getRandom().nextInt(101);tree=stand=null;
     double best=Double.MAX_VALUE;var center=chao.blockPosition();
+    // One orchard has several ripe pods, but its stand positions and paths are
+    // identical within this synchronous search. In particular, do not retry
+    // each unreachable side once for every pod on the same tree.
+    var consideredTrunks=new HashSet<BlockPos>();
     for(var mutable:BlockPos.betweenClosed(center.offset(-7,0,-7),center.offset(7,8,7))) {
       if(!world.hasChunkAt(mutable))continue;
       var state=world.getBlockState(mutable);
       if(!(state.getBlock() instanceof HangingFruitBlock)||state.getValue(HangingFruitBlock.AGE)!=3)continue;
-      BlockPos trunk=trunkFor(world,mutable);if(trunk==null)continue;
+      BlockPos trunk=trunkFor(world,mutable);if(trunk==null||!consideredTrunks.add(trunk))continue;
       for(var side:Direction.Plane.HORIZONTAL) {
         var at=trunk.relative(side);
-        if(!world.getBlockState(at.below()).isFaceSturdy(world,at.below(),Direction.UP)
+        if(!world.hasChunkAt(at)||!world.getBlockState(at.below()).isFaceSturdy(world,at.below(),Direction.UP)
             ||!world.getBlockState(at).getCollisionShape(world,at).isEmpty()
             ||!world.getFluidState(at).isEmpty())continue;
         double distance=chao.distanceToSqr(Vec3.atBottomCenterOf(at));if(distance>=best)continue;
@@ -74,9 +79,13 @@ public final class ChaoFruitSeekingGoal extends Goal {
     if(path!=null&&path.canReach())chao.getNavigation().moveTo(path,.85);
   }
   @Override public boolean canContinueToUse() {
-    return tree!=null&&eligible()&&FruitContent.isTrunk(chao.level().getBlockState(tree))
-        &&chao.level().getGameTime()<expires&&(!shaking||chao.getBehavior()==Behavior.SHAKE_TREE);
+    return tree!=null&&eligible()&&chao.level().getGameTime()<expires
+        &&(!shaking||chao.getBehavior()==Behavior.SHAKE_TREE&&withinWorkRange())
+        &&chao.level().hasChunkAt(tree)&&FruitContent.isTrunk(chao.level().getBlockState(tree));
   }
+  // Match the existing gardening transaction's three-block work limit. A
+  // shove/teleport during the gesture cannot harvest a now-remote orchard.
+  private boolean withinWorkRange(){return tree!=null&&chao.distanceToSqr(Vec3.atBottomCenterOf(tree))<=9;}
   @Override public void tick() {
     if(tree==null)return;long now=chao.level().getGameTime();
     chao.getLookControl().setLookAt(tree.getX()+.5,tree.getY()+1.5,tree.getZ()+.5,30,25);
@@ -86,7 +95,9 @@ public final class ChaoFruitSeekingGoal extends Goal {
       } else if(chao.getNavigation().isDone())navigate();
       return;
     }
-    chao.getNavigation().stop();var world=(ServerLevel)chao.level();
+    chao.getNavigation().stop();
+    if(!withinWorkRange()){chao.clearBehavior();expires=now;return;}
+    var world=(ServerLevel)chao.level();
     if(!harvested&&now-shakeStarted>=40) {
       harvested=true;
       for(var p:BlockPos.betweenClosed(tree.offset(-4,1,-4),tree.offset(4,8,4))) {

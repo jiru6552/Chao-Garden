@@ -180,7 +180,7 @@ public final class GardenGuideItem extends WrittenBookItem {
                                 + "affects acceptance. Shears remove hats. Place toys on the ground for Chao to discover."),
                         page(
                             "Your gardens\n\nPlace a Chao Garden device, open it and press Activate garden. This marks "
-                                + "the device's chunk and its eight neighbouring chunks. No enclosure or tree is required. "
+                                + "the device's chunk and its eight neighbouring chunks. No enclosure or tree is required.\n\n"
                                 + "Owned Chao placed inside are detected automatically; Garden registration still manages residents."),
                         page(
                             "Garden registration\n\nCarry a Chao you own, then open your Chao Garden. Drag the carried "
@@ -194,7 +194,7 @@ public final class GardenGuideItem extends WrittenBookItem {
                         page(
                             "Lobby gardens\n\nThe Hero and Dark Gardens begin locked. Claim or obtain a Hero Chao to "
                                 + "open the Hero stairs and portal for everyone on the server; a Dark Chao opens the Dark "
-                                + "side independently. Unlocks are permanent. The Neutral Garden is always available. "
+                                + "side independently. Unlocks are permanent.\n\nThe Neutral Garden is always available. "
                                 + "Existing owned Chao and accessible stored Chao can also unlock their side."),
                         page(
                             "Garden growth\n\nAdult visual development has its own strength value. Its passive rate is "

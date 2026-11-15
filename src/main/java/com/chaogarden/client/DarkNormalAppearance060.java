@@ -17,7 +17,8 @@ final class DarkNormalAppearance060 {
     float started,last;
   }
   private DarkNormalAppearance060(){}
-  static DarkNormalMorphology060.Sample sample(ChaoState state){return FRAME.getOrDefault(state,DarkNormalMorphology060.sample(state));}
+  static DarkNormalMorphology060.Sample sample(ChaoState state){var prepared=FRAME.get(state);
+    return prepared!=null?prepared:DarkNormalMorphology060.sample(state);}
   static DarkNormalMorphology060.Sample prepare(UUID id,ChaoState state,float age) {
     var target=DarkNormalMorphology060.sample(state);var blend=BLENDS.get(id);
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.enabled()!=blend.target.enabled()) {

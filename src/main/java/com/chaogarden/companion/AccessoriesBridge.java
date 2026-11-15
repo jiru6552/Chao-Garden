@@ -21,6 +21,11 @@ import net.neoforged.fml.ModList;
  */
 public final class AccessoriesBridge {
   private static Class<?> slotType, capabilityType, containerType, entryType;
+  // Resolve API metadata once, while the optional mod is present. Values such
+  // as capabilities, real slot stacks and containers are still read live.
+  private static Method slotEntity, slotStack, slotContainer, capabilityGet,
+      capabilityEquipped, capabilityContainers, containerAccessories,
+      containerChanged, entryStack;
   private static boolean ready;
   private static final String API = "io.wispforest.accessories.api.";
 
@@ -37,6 +42,15 @@ public final class AccessoriesBridge {
       capabilityType = Class.forName(API + "AccessoriesCapability");
       containerType = Class.forName(API + "AccessoriesContainer");
       entryType = Class.forName(API + "slot.SlotEntryReference");
+      slotEntity = slotType.getMethod("entity");
+      slotStack = slotType.getMethod("getStack");
+      slotContainer = slotType.getMethod("slotContainer");
+      capabilityGet = capabilityType.getMethod("get", LivingEntity.class);
+      capabilityEquipped = capabilityType.getMethod("getEquipped", Item.class);
+      capabilityContainers = capabilityType.getMethod("getContainers");
+      containerAccessories = containerType.getMethod("getAccessories");
+      containerChanged = containerType.getMethod("markChanged", boolean.class);
+      entryStack = entryType.getMethod("stack");
       Object implementation = Proxy.newProxyInstance(accessoryType.getClassLoader(),
           new Class<?>[] {accessoryType}, AccessoriesBridge::callback);
       accessories.getMethod("registerAccessory", Item.class, accessoryType)
@@ -58,7 +72,7 @@ public final class AccessoriesBridge {
     };
     ItemStack stack = args.length > 0 && args[0] instanceof ItemStack s ? s : ItemStack.EMPTY;
     LivingEntity entity = args.length > 1 && slotType.isInstance(args[1])
-        ? (LivingEntity) slotType.getMethod("entity").invoke(args[1]) : null;
+        ? (LivingEntity) slotEntity.invoke(args[1]) : null;
     return switch (method.getName()) {
       case "canEquip" -> entity instanceof Player player && CompanionContent.canEquip(stack, player);
       case "canEquipFromUse" -> !stack.isEmpty() && CompanionContent.isEquippable(stack);
@@ -71,7 +85,7 @@ public final class AccessoriesBridge {
         yield null;
       }
       case "onUnequip" -> {
-        Object current = slotType.getMethod("getStack").invoke(args[1]);
+        Object current = slotStack.invoke(args[1]);
         // Accessories may report a component refresh as equipment changing.
         // Updating the saved Chao in its existing slot must not recall it.
         boolean sameChao = current instanceof ItemStack held
@@ -94,8 +108,8 @@ public final class AccessoriesBridge {
   public static void changed(Object reference) {
     if (!ready || reference == null) return;
     try {
-      Object container = slotType.getMethod("slotContainer").invoke(reference);
-      if (container != null) containerType.getMethod("markChanged", boolean.class).invoke(container, false);
+      Object container = slotContainer.invoke(reference);
+      if (container != null) containerChanged.invoke(container, false);
     } catch (ReflectiveOperationException exception) {
       throw new IllegalStateException("Cannot sync a Chao companion accessory", exception);
     }
@@ -105,11 +119,10 @@ public final class AccessoriesBridge {
     List<ItemStack> out = new ArrayList<>();
     if (!ready) return out;
     try {
-      Object capability = capabilityType.getMethod("get", LivingEntity.class).invoke(null, player);
+      Object capability = capabilityGet.invoke(null, player);
       if (capability == null) return out;
-      var entries = (List<?>) capabilityType.getMethod("getEquipped", Item.class)
-          .invoke(capability, ChaoGarden.item("chao_carrier"));
-      for (Object entry : entries) out.add((ItemStack) entryType.getMethod("stack").invoke(entry));
+      var entries = (List<?>) capabilityEquipped.invoke(capability, ChaoGarden.item("chao_carrier"));
+      for (Object entry : entries) out.add((ItemStack) entryStack.invoke(entry));
       return out;
     } catch (ReflectiveOperationException exception) {
       throw new IllegalStateException("Cannot inspect equipped Chao companions", exception);
@@ -121,14 +134,14 @@ public final class AccessoriesBridge {
   public static List<StoredAccessory> storageAccessories(Player player) {
     List<StoredAccessory> out=new ArrayList<>();if(!ready)return out;
     try {
-      Object cap=capabilityType.getMethod("get",LivingEntity.class).invoke(null,player);if(cap==null)return out;
-      var containers=(java.util.Map<?,?>)capabilityType.getMethod("getContainers").invoke(cap);
+      Object cap=capabilityGet.invoke(null,player);if(cap==null)return out;
+      var containers=(java.util.Map<?,?>)capabilityContainers.invoke(cap);
       for(Object container:containers.values()){
-        var inventory=(net.minecraft.world.Container)containerType.getMethod("getAccessories").invoke(container);
+        var inventory=(net.minecraft.world.Container)containerAccessories.invoke(container);
         for(int i=0;i<inventory.getContainerSize();i++){
           var stack=inventory.getItem(i);if(stack.isEmpty())continue;
           out.add(new StoredAccessory(stack,()->{
-            try{containerType.getMethod("markChanged",boolean.class).invoke(container,false);}
+            try{containerChanged.invoke(container,false);}
             catch(ReflectiveOperationException error){throw new IllegalStateException("Cannot sync recovered accessory storage",error);}
           }));
         }

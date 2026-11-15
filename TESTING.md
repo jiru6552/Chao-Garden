@@ -1,4 +1,19 @@
-Current focused update: [0.25.78 idle variety](docs/IDLE_ANIMATIONS_02578.md). Use Java 21 and private test worlds.
+Current maintenance pass: [0.25.83 report](docs/MAINTENANCE_02583_DEV.md). Use Java 21 and disposable worlds. The report records actual outcomes; commands alone are not evidence of a pass.
+
+```sh
+python3 -B scripts/audit_resource_links_083.py --json /path/to/resource-audit.json
+python3 -B scripts/test_resource_audit_083.py
+python3 -B scripts/test_journal_content_02518.py
+python3 -B scripts/test_validator_output_083.py
+./gradlew --no-configuration-cache --continue clean build
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_garden,chao_maintenance83 -PchaoGameTestDir=/path/to/private/maintenance-test-world
+```
+
+The complete regression uses the retained prior toy, morphology, equipment, garden and baby-alignment namespaces as well. Actual Accessories checks require the optional test runtime (`-PchaoAccessoriesTest=true` with a directory containing Accessories/owo). Test fixtures and visual-study helpers stay outside the release JAR. Ordinary clients use normal dimension datapacks; the isolated GameTest preset must never be installed in a user world.
+
+No gameplay preview commands changed. Existing `/chao testidle ...` and `/chao testtoy ...` commands reuse production poses; use their once/loop/stop controls for manual visual, audio and interruption checks. Custom shader packs, resource packs and third-party modpacks need their own checks.
+
+Previous focused update: [0.25.78 idle variety](docs/IDLE_ANIMATIONS_02578.md). Use Java 21 and private test worlds.
 
 ```sh
 ./gradlew --no-configuration-cache coreTest idleRigTest078 assemble
