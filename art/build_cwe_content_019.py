@@ -138,7 +138,10 @@ def toy_model(ident,active=False,frame=0):
    for i,x in enumerate((2,4,6,8,10,12)):b((x,11,11,x+1.2,15+(3-abs(i-2)),12.2),'metal')
   else:b((1,11,4,15,12,14),'black')
  elif ident=='chao_rubber_duck':
-  b((3,1+bounce,3,13,5+bounce,13),'yellow');b((9,5+bounce,5,14,10+bounce,11),'yellow');b((13,6+bounce,6,16,7.4+bounce,10),'red');b((12.5,8+bounce,4.9,13.2,8.8+bounce,5.1),'black');b((1,3+bounce,6,4,7+bounce,10),'yellow')
+  b((3,1+bounce,3,13,5+bounce,13),'yellow');b((9,5+bounce,5,14,10+bounce,11),'yellow');b((13,6+bounce,6,16,7.4+bounce,10),'red')
+  # Source bill points+X; eyes occupy both opposite head sides, not one decal.
+  for z0,z1 in ((4.9,5.1),(10.9,11.1)):b((12.5,8+bounce,z0,13.2,8.8+bounce,z1),'black')
+  b((1,3+bounce,6,4,7+bounce,10),'yellow')
  elif ident=='chao_lifesaver':
   for q in ((2,0,4,5,3,12),(11,0,4,14,3,12),(5,0,2,11,3,5),(5,0,11,11,3,14)):b(q,'white')
   for q in ((2,-.05,7,5,3.05,9),(11,-.05,7,14,3.05,9),(7,-.05,2,9,3.05,5),(7,-.05,11,9,3.05,14)):b(q,'red')
@@ -251,4 +254,14 @@ def main():
  write(ROOT/'docs/cwe_content_019.json',{'fruits':FRUITS,'genes':EXTRA_GENES,'accessories':ACCESSORIES,'gifts':GIFTS,'toys':NEW_TOYS,'equipment_slots':{'head':'feet','face':'offhand','neck':'legs','body':'chest','hat':'head'},'animal_mobs_added':False,'dna_attraction':'one whole fruit consumed for one weighted DNA sample after600ticks; collectible unowned dropped fruit only'})
  contact_sheet()
  print('CWE019:13fruit orchards,10DNA samples,10real accessories,21specialgifts,16physicaltoys,eggshell hat')
-if __name__=='__main__':main()
+def duck_models_only():
+ # Targeted repair; no registries, items, textures, other toy models or old-world data.
+ for frame in (-1,0,1,2,3):
+  stage='idle' if frame<0 else 'play_'+str(frame)
+  write(A/'models/block'/('chao_rubber_duck_'+stage+'.json'),toy_model('chao_rubber_duck',frame>=0,max(0,frame)))
+ print('Regenerated only five duck block models with paired head-side eyes.')
+
+if __name__=='__main__':
+ if sys.argv[1:]==['--duck-models']:duck_models_only()
+ elif not sys.argv[1:]:main()
+ else:raise SystemExit('Usage: build_cwe_content_019.py [--duck-models]')

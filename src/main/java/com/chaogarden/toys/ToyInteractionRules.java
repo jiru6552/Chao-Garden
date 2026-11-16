@@ -70,6 +70,7 @@ public final class ToyInteractionRules {
       case "chao_accordion"->new double[]{3.9,0,3.82,12.1,2.25,12.18};
       case "chao_bubble_wand"->new double[]{6.67,0,3.04,9.33,.51,12.96};
       case "chao_castanets"->new double[]{4.05,0,4.56,11.95,3.1,11.44};
+      case "chao_tambourine"->new double[]{3.37,0,3,12.63,3.38,13};
       case "chao_triangle"->new double[]{2,0,2,12.9,1,14};
       case "chao_rubber_duck"->new double[]{1,0,3,16,11,13};
       case "chao_jack_in_box"->new double[]{3.8,0,3.8,14,16,12.5};

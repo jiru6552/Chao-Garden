@@ -35,6 +35,22 @@ final class BlockyRunBox055 {
     return new BlockyRunBox055(centers,sizes,rotations,corners);
   }
 
+  /** Add explicit poses while retaining the original corner indices and UVs. */
+  BlockyRunBox055 append(JsonObject data,int count) {
+    float[][] extraCenters=targets(data.getAsJsonArray("centers"),count);
+    float[][] extraSizes=targets(data.getAsJsonArray("sizes"),count);
+    float[][] extraRotations=targets(data.getAsJsonArray("rotations"),count);
+    for(var size:extraSizes)for(float value:size)if(value<.01f)
+      throw new IllegalStateException("Baby Power morphology requires positive box sizes");
+    return new BlockyRunBox055(join(centers,extraCenters),join(sizes,extraSizes),
+        join(rotations,extraRotations),corners);
+  }
+
+  private static float[][] join(float[][] original,float[][] extra) {
+    float[][] result=java.util.Arrays.copyOf(original,original.length+extra.length);
+    System.arraycopy(extra,0,result,original.length,extra.length);return result;
+  }
+
   private static float[][] targets(JsonArray array,int count) {
     if(array==null||array.size()!=count)throw new IllegalStateException("Unexpected blocky morphology pose count");
     float[][] values=new float[count][3];

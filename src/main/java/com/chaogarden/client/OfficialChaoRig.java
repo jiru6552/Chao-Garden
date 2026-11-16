@@ -986,6 +986,7 @@ public final class OfficialChaoRig {
     current.mesh.development(develop||child?state.swimFly:0,develop||child?state.runPower:0,
         develop?growth:child?growth*.14f:0);
     current.mesh.heroRunDevelopment(current.mesh.heroRunPrototype()?HeroRunAppearance052.sample(state):null,state.swimFly,state.runPower);
+    current.mesh.babyPowerDevelopment084(HeroRunAppearance052.babyPowerGrowth084(state),HeroRunAppearance052.signedAlignment(state));
     current.mesh.heroRunTwoTone(state.baseColor()==0&&state.jewel()==0&&state.isTwoTone());
     if(current.mesh.neutralPrototype056())current.mesh.neutralDevelopment(NeutralAppearance056.sample(state));
     if(current.mesh.heroNormalPrototype057())current.mesh.heroNormalDevelopment(HeroNormalAppearance057.sample(state));

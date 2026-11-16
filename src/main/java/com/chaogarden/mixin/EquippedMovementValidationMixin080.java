@@ -22,6 +22,7 @@ public abstract class EquippedMovementValidationMixin080 {
     // The native count increments immediately after this term is computed.
     // Its >5 overflow rule resets to1; do not turn packet floods into a budget.
     int burst=EquippedMovementRules080.nativeBurst(receivedMovePacketCount-knownMovePacketCount+1);
-    return EquippedKnockback080.movementExpected080(player,velocity,original.call(velocity),burst);
+    double expected=EquippedKnockback080.movementExpected080(player,velocity,original.call(velocity),burst);
+    return com.chaogarden.companion.EquippedRun084.movementExpected(player,velocity,expected,burst);
   }
 }

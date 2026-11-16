@@ -1,6 +1,8 @@
-# Chao Garden 0.25.83
+# Chao Garden 0.25.84
 
-[**Download 0.25.83 JAR — Minecraft 1.21.1 / NeoForge**](downloads/0.25.83/chao_garden-0.25.83.jar?raw=true) · [Download files, report and screenshots](downloads/0.25.83/)
+[**Download 0.25.84 JAR — Minecraft 1.21.1 / NeoForge**](downloads/0.25.84/chao_garden-0.25.84.jar?raw=true) · [Files, report and comparisons](downloads/0.25.84/)
+
+Update **0.25.84** fixes the duck's missing eye, enables player contact pushes for duck/lifesaver floats, and lays the placed tambourine flat. Baby Power Chao now develop gradual features around the original fixed head. Operators can use `/chao refresh ~`, `/chao refresh "Name"` or `/chao refresh held` to clear old reference-model overrides while preserving saved creature data. See the [development report](docs/FIXES_02584_DEV.md) for verification and limitations.
 
 Maintenance update **0.25.83** fixes exhausted Nether/End companion cleanup, stale care-action throttles, displaced tree harvesting and resource-reload accessory references. Morphology frame caches and optional Accessories metadata avoid repeated work. Registered content, saved Chao, the fixed head geometry and all prior families remain intact. See the [maintenance report](docs/MAINTENANCE_02583_DEV.md) for the audit, verification results and limits.
 
@@ -70,7 +72,7 @@ The food collection includes **35 active fruit/food families**: the twelve conso
 ## Install
 
 1. Use **Minecraft Java 1.21.1**, **NeoForge 21.1.219**, and **64-bit Java 21**.
-2. Place `chao_garden-0.25.83.jar` in `mods/`, replacing the previous Chao Garden jar.
+2. Place `chao_garden-0.25.84.jar` in `mods/`, replacing the previous Chao Garden jar.
 3. Install the same version on the server and every connecting client.
 
 Install **Lionfish API 3.1** separately on both client and server; the current animation integration requires it. Adult equipped companions optionally require **Accessories for NeoForge 1.21.1 and its oωo dependency** on both sides. See [companions](docs/COMPANIONS.md). This build targets NeoForge.
@@ -225,7 +227,7 @@ Open `source/` as a Gradle project with Java 21:
 ./gradlew runClient
 ```
 
-Use `gradlew.bat` on Windows. The output is `build/libs/chao_garden-0.25.83.jar`. [TESTING.md](TESTING.md) records completed checks.
+Use `gradlew.bat` on Windows. The output is `build/libs/chao_garden-0.25.84.jar`. [TESTING.md](TESTING.md) records completed checks.
 
 The editable official model/texture/animation inputs are in `art/imported_chao`. Eight retained Blockbench projects author custom additions and the egg; they are not replacements for the imported form JSON. See [asset editing](art/blockbench/README.md).
 

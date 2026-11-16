@@ -51,7 +51,8 @@ public final class EditingCommands056 {
   private static boolean actual(ChaoEntity chao) {
     return chao.isAlive()&&!chao.state().dead&&!(chao instanceof com.chaogarden.kindergarten.KindergartenPupil0257);
   }
-  private static List<String> loadedNames(CommandSourceStack source) {
+  /** Quoted loaded-name suggestions shared by maintenance/testing commands. */
+  public static List<String> loadedNames(CommandSourceStack source) {
     var names=new java.util.TreeSet<String>();names.add("~");
     for(var entity:source.getLevel().getAllEntities())if(entity instanceof ChaoEntity chao&&actual(chao)) {
       String name=chao.getName().getString();

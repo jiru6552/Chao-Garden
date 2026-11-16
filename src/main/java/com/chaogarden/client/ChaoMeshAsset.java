@@ -81,6 +81,10 @@ final class ChaoMeshAsset {
   private final float[] pathWeights055={1,0,0,0,0,0,0};
   private int pathRevision055;
   private final Map<Mesh,PathFrame054> pathFrames055=new IdentityHashMap<>();
+  private final Map<Mesh,BlockyRunBox055> babyPowerBoxes084=new IdentityHashMap<>();
+  private final float[] babyPowerWeights084={1,0,0,0,0,0,0,0,0,0};
+  private float babyPowerGrowth084;
+  private float babyPowerTuftRetraction084;
   private final float[] pathWeights054={1,0,0,0,0,0,0};
   private int pathRevision054;
   private static final class PathFrame054 {
@@ -130,10 +134,35 @@ final class ChaoMeshAsset {
     var id =
         ResourceLocation.fromNamespaceAndPath("chao_garden", "models/entity/" + file + ".json");
     try (var reader = Minecraft.getInstance().getResourceManager().openAsReader(id)) {
-      return parse(JsonParser.parseReader(reader).getAsJsonObject());
+      var result=parse(JsonParser.parseReader(reader).getAsJsonObject());
+      if(result.blocky055) {
+        var powerId=ResourceLocation.fromNamespaceAndPath("chao_garden","baby_power084.json");
+        try(var powerReader=Minecraft.getInstance().getResourceManager().openAsReader(powerId)) {
+          result.babyPowerTargets084(JsonParser.parseReader(powerReader).getAsJsonObject());
+        }
+      }
+      return result;
     } catch (IOException | RuntimeException error) {
       throw new IllegalStateException("Cannot load Chao mesh " + id, error);
     }
+  }
+
+  /** A small authored sidecar extends separate baby features, never the skull. */
+  void babyPowerTargets084(JsonObject sidecar) {
+    if(!blocky055)throw new IllegalStateException("Baby Power targets require the approved fixed-head baby rig");
+    var featureBone=bones.get("gradual_head_021");
+    if(featureBone==null)throw new IllegalStateException("Missing baby feature attachment");
+    for(var entry:sidecar.getAsJsonObject("features").entrySet()) {
+      Mesh found=null;
+      for(var mesh:featureBone.meshes)if(mesh.name.equals(entry.getKey())){found=mesh;break;}
+      if(found==null||found.box055==null)throw new IllegalStateException("Unknown separate baby Power feature: "+entry.getKey());
+      babyPowerBoxes084.put(found,found.box055.append(entry.getValue().getAsJsonObject(),3));
+    }
+    if(babyPowerBoxes084.isEmpty())throw new IllegalStateException("Empty baby Power sidecar");
+    babyPowerTuftRetraction084=sidecar.get("legacy_tuft_retraction_y").getAsFloat();
+    if(!Float.isFinite(babyPowerTuftRetraction084)||babyPowerTuftRetraction084<0||babyPowerTuftRetraction084>4)
+      throw new IllegalStateException("Invalid baby Power decoration retraction");
+    pathRevision055++;forwardReaches.clear();
   }
 
   static ChaoMeshAsset parse(JsonObject data) {
@@ -424,7 +453,9 @@ final class ChaoMeshAsset {
     var frame=pathFrames055.computeIfAbsent(mesh,ignored->new PathFrame054());
     if(frame.revision==pathRevision055)return frame;
     if(frame.vertices==null)frame.vertices=new float[mesh.vertices.length][3];
-    if(mesh.box055!=null)mesh.box055.evaluate(pathWeights055,frame.vertices);
+    var powerBox=babyPowerGrowth084>0?babyPowerBoxes084.get(mesh):null;
+    if(powerBox!=null)powerBox.evaluate(babyPowerWeights084,frame.vertices);
+    else if(mesh.box055!=null)mesh.box055.evaluate(pathWeights055,frame.vertices);
     else for(int i=0;i<mesh.vertices.length;i++)System.arraycopy(mesh.vertices[i],0,frame.vertices[i],0,3);
     // Preserve compatible Swim/Fly and opposing Power details on the existing
     // body/limb rig only. Bounded deltas keep the approved simple proportions.
@@ -634,9 +665,33 @@ final class ChaoMeshAsset {
     System.arraycopy(boxNext,0,pathWeights055,0,7);
   }
   void heroRunTwoTone(boolean enabled){heroRunNaturalTwoTone=enabled;}
+  /** Both emitters and all attachment samplers use these same rigid transforms. */
+  void babyPowerDevelopment084(float growth,float alignment) {
+    if(!blocky055)return;
+    float power=heroRunActive&&!heroRunAdult&&!babyPowerBoxes084.isEmpty()
+        &&Float.isFinite(growth)?Math.clamp(growth,0,1):0;
+    float signed=Float.isFinite(alignment)?Math.clamp(alignment,-1,1):0;
+    float hero=Math.clamp(signed/.5f,0,1),dark=Math.clamp(-signed/.5f,0,1);
+    boolean changed=babyPowerGrowth084!=power;
+    for(int i=0;i<7;i++) {
+      float value=pathWeights055[i]*(1-power);
+      changed|=babyPowerWeights084[i]!=value;babyPowerWeights084[i]=value;
+    }
+    float[] extra={power*(1-hero-dark),power*hero,power*dark};
+    for(int i=0;i<3;i++){changed|=babyPowerWeights084[7+i]!=extra[i];babyPowerWeights084[7+i]=extra[i];}
+    babyPowerGrowth084=power;
+    if(changed){pathRevision055++;forwardReaches.clear();}
+  }
   boolean heroRunPrototype(){return blocky055||unified054||bones.values().stream().anyMatch(b->b.heroRunPivots!=null);}
   boolean fixedHeadBox055(){return blocky055||neutral056||heroNormal057||neutralSwim059||darkNormal060||neutralFly061||neutralRun062||neutralPower063||heroSwim064||heroFly065||heroRun066||heroPower067||darkSwim068||darkFly069||darkRun070||darkPower071;}
-  private float pivot(Bone bone,int axis){return blocky055?pathJoint055(bone.pivot,bone.pathPivots055,axis):unified054?pathJoint054(bone.pivot,bone.pathPivots054,axis):jointCoordinate(bone.pivot,bone.heroRunPivots,axis);}
+  private float pivot(Bone bone,int axis){
+    float value=blocky055?pathJoint055(bone.pivot,bone.pathPivots055,axis):unified054?pathJoint054(bone.pivot,bone.pathPivots054,axis):jointCoordinate(bone.pivot,bone.heroRunPivots,axis);
+    // This mesh-only decoration already retracts for approved Hero/Run. The
+    // Power feature surface uses the same continuous hiding mechanism.
+    if(blocky055&&axis==1&&bone.name.equals("blocky_legacy_tuft_055")&&babyPowerGrowth084>0)
+      value+=(babyPowerTuftRetraction084-value)*babyPowerGrowth084;
+    return value;
+  }
   private float pathJoint055(float[] base,float[][] targets,int axis) {
     if(targets==null)return base[axis];float value=0;
     for(int i=0;i<7;i++)value+=targets[i][axis]*pathWeights055[i];return value;

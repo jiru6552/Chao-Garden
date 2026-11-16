@@ -1,0 +1,77 @@
+# Chao Garden 0.25.84 — fixes and verification
+
+The production JAR passed a clean build. This development report records implementation, actual tests and remaining limits. The natural companion-AI fixture and smooth non-owner extreme-speed revocation remain unresolved; they are not counted as passes. Secret abilities are described here for development review only; they remain absent from the README, guide, tooltips and other in-game explanations.
+
+## Toys: duck eyes, physical floats and the ground tambourine
+
+The rubber duck now has two exposed, mirrored eye cuboids on opposite sides of its head. All five block poses and the authoring generator agree. Its identity, bounding envelope, flotation and acquisition are retained.
+
+Players can physically bump both rubber ducks and lifesavers on land or water, including a stable occupied ride. Server contact uses a narrow rim around the hull, ordinary collision movement and horizontal velocity. Each player contributes at most one 0.04 impulse per server tick; contact-driven horizontal speed is capped at 0.08 blocks/tick, followed by the existing 0.65 drag. The engine callback and the toy's contact scan share deduplication. This is not a teleport, a replacement item or a new movement controller.
+
+Claimed approaches, Chao-controlled pushing/repositioning, boarding and exit arcs, previews and pending removal remain protected. Spectators, passengers and invalid/remote callbacks cannot push. Existing occupancy, buoyancy, swept passenger clearance, pickup, serialization and synchronization continue through the previous systems. Forty new native cases cover both models, four directions, land/water contact, actual low-ring auto-step, baby/adult riders, protected phases, repeated callbacks, walls and component-preserving recovery.
+
+The placed tambourine now rests flat with its decorated face upward and a small floor clearance. All ground animation poses rotate rigidly within the measured collision envelope. The held item keeps its previous tilt, geometry and grip path. Four asset checks passed, including generator replay, mirrored eyes, ground normals/support and held-model conservation. Existing tambourine and replacement-hand rig checks also passed. The completed client study shows both duck eyes from opposite sides, the decorated tambourine face upward near the floor, three held-preview views and the recovered idle. Null audio/software graphics do not verify listening or shader packs.
+
+## Hidden Run ability: clarified bonus and complete movement paths
+
+The clarified maximum is **+100,000% bonus**, giving **1,001× the ordinary total**, not 100,000× normal. Eligibility remains an actual equipped adult of any alignment with locked Run first type, exact current Run specialization, expressed X rank and Run level 99. Ordinary trained Run bonuses remain separate.
+
+The movement attribute supports the normal player base 0.1 multiplied by 1,001: 100.1 is below Minecraft's 1,024 attribute maximum. No global cap was changed. Creative flight needs separate handling because it reads flying speed rather than the land attribute. Stateless wrappers now scale horizontal and vertical flight reads while preserving the player's underlying custom `flySpeed`, saved abilities and flight permissions. Unequipping therefore requires no guessed default restoration.
+
+Companion/native elytra flight scales its final physical displacement once while leaving aerodynamic velocity, steering and drag unscaled. This avoids multiplying stored velocity exponentially on successive ticks. Native collision and landing handling remain active. Server movement validation derives a bounded allowance from the current authenticated slot and real movement mode; requested destinations do not grant authority. Coordinate, collision, teleport and bounded packet-burst protections remain.
+
+Controlled native tests passed for the 1,001 attribute/flight factor, custom stored flight speed, non-compounding glide, authority loss and accepted/rejected movement requests. The final actual single-client study passed ten cases and ten native PNGs. Maximum/zero one-tick distance ratios were ground 1000.999970, horizontal Creative 1000.999970, vertical Creative 1000.999920 and companion glide 1001.000000. Raw flySpeed stayed 0.05. Actual unequip preserved momentum while fresh forward acceleration returned to approximately 0.049. This integrated owner is exempt from the native excessive-speed check.
+
+A separate TCP peer had authenticated server-accepted movement of +98.098 blocks along the runway and +150.149994 vertically at raw flySpeed 0.05. **After unequip, residual movement caused native corrections**, with excessive deltas approximately 15.9675 horizontally and 32.4324 vertically. Smooth non-owner settling is not verified. The Creative revoke fixture pressed Jump again within vanilla's double-tap window and toggled flight off; it does not establish an unequip permission bug. No broad validation exemption hides these outcomes.
+
+## Hidden Power ability: the Chao is the attacker
+
+Power now belongs to the actual authorized equipped Chao's own direct `MOB_ATTACK`, not the keeper's attacks. Eligibility still requires locked Power first type, exact Power specialization, expressed X rank and Power level 99, without an alignment restriction. Exact managed-body, keeper, slot, damage-source and victim identities are checked server-side. Wild or copied bodies, previews, projectiles, thorns and unrelated callbacks cannot borrow the effect.
+
+The Chao keeps its current level-dependent damage, reaching **11 damage points at level 99**. This is not a player damage increase or a new damage formula. Existing targeting, attack cadence, energy, allied exclusions and Mob-only autonomous AI remain intact. Controlled damage tests against player victims exercise networking boundaries; they do not introduce natural Chao PvP targeting.
+
+Maximum +100,000% knockback scales the ordinary 0.4 horizontal hurt impulse to 400.4 before the existing resistance behavior, with the vanilla vertical cap retained. The original call scales once. Scoped hurt handling uses `try/finally`, preserves cancellation and nested calls, and cannot leave a stale armed hit after rejection or an exception. Keeper attacks, enchantment requests and sweeps remain ordinary. The established full-vector/tracker correction path is retained because normal short velocity packets cannot represent this maximum reliably; a controlled actual TCP test confirmed the active horizontal vector 400.399994 on both clients. Owner control remained ordinary (1 damage, approximately 0.4 force), while zero-tier Chao damage stayed 11 with ordinary 0.4 force. Only the boosted Chao hit created new full-vector correction sequences. Direct Chao-to-player dispatch tests packet delivery; it does not add natural PvP targeting.
+
+Both abilities preserve the eleven legacy saved control tiers `1000, 900, …, 0`. Those raw traits are not rewritten: they now represent +100,000%, +90,000%, …, 0%, so each existing crouch/empty-hand air activation changes the bonus by **10,000 percentage points**, wrapping zero back to maximum. Duplicate/off-hand protection, save-local settings and eligibility revocation remain. No new save schema or permanent stacking modifier is introduced.
+
+## Baby Power morphology
+
+Power99 edits were saving and synchronizing correctly. The missing behavior was anatomical coverage: the approved baby renderer only developed the positive Run half-axis, so Power-dominant babies stayed at their untrained surface regardless of visual age.
+
+A baby-only sidecar adds eight separate cuboids to the existing rig. Neutral develops a short broad rear lip, front crest and two high blunt nubs; Hero develops two flaring top caps and a small center lobe; Dark develops a bent upright stem. The original 7×6×6 head, eyes, body, hands, feet and shared attachment joints are unchanged. The old separate tuft retracts continuously through its existing mesh-only mechanism. Approved .55 and adult-family model JSONs remain byte-identical.
+
+Current Power-minus-Run level bars determine the reversible training target, using the existing provisional 480-progress baby range. Visible growth is training multiplied by child evolution strength. Power99 therefore reaches the training target without inventing age; opposing Run can cancel/reverse it without making the Chao younger. The existing twenty-tick presentation clock smooths edits and reversals. Colors develop toward the observed alignment-specific accents while preserving inherited/mono hues, facial alpha, shiny policies and the baby sphere.
+
+The live Chao Island viewer rendered with trusted TLS and working settings/rotation. Thirty-four actual captures were inspected, including young/developed Neutral, Hero and Dark front/side/back, plus nine additional full-Power midpoint views. Midpoint viewer age was approximately 48.7%; the mod uses 50% visual strength. These control curves are not proven to map exactly. They confirm that maximum Power at the young endpoint is not the mature phenotype. Cuboid dimensions, gradients and timing remain authored Minecraft approximations. Core checks passed 431 assertions; the new emitted-geometry/rig suite passed 5,786,851 checks over 378 shape cases and 108 Lionfish poses, including head/eye/orb clearance, connected boxes, compact limbs, exact anchors and reversals. Numerical checks are not visual certification. The completed native client collected 50 PNGs across 15 cases: toys and N/H/D babies at zero, half and late strength, plus late untrained controls. Hero-mid wears glasses and a bowtie; Dark-late is SHINY. Eight labeled sheets retain whole frames, with one supplemental detail-crop sheet and precise provenance. The fixed head and attached features look intact at the shown angles; smooth reference gradients and proportions remain blocky approximations.
+
+## Safe appearance refresh
+
+Operator level 2 can use:
+
+```text
+/chao refresh ~
+/chao refresh "My Chao"
+/chao refresh held
+```
+
+Nearest uses the existing spherical 12-block range; names select loaded Chao in the current dimension and reject ambiguity. `held` means the filled item in the operator's main hand; use quoted `"held"` for a Chao with that name. An equipped Chao uses its actual loaded body's name or nearest selection. Creative mode alone is insufficient.
+
+Refresh clears saved official/reference presentation overrides and republishes current tracked state through the existing managed carrier transaction. It does not replace the creature, reroll data, guess missing maturity from stats, change locked identity, age a baby or force a global save. Held mode retains the raw encoded state, UUID, ownership, counters, unknown NBT and item components. Live/managed duplicate identities reject stale held copies. Cocoons, construction, activities and previews wait until safe. There is no offline scan, forced chunk loading or `all` operation. Matching updated client assets are still required.
+
+## Actual results, retained failures and limits
+
+The full native catalogue passed **4,938/4,938**, with all 41 requested namespaces confirmed in the actual loader list and 659 executed batches totaling 4,938. Focused native rerun passed **100/100**. The actual official-Aether runtime passed **114/114**; the minimal installation without Accessories/owo/Aether passed **54/54**. These overlapping cohorts are not summed into a larger independent total. Publisher hashes, dependency selection and saved dimension registries were audited. The historical generated nine-dimension file was not retained; strict construction logs and the saved nine-definition world supply that evidence instead.
+
+Early attempts remain visible: a nonexistent tambourine task failed before tests ran; the first focused native run passed 96/100 with three float timing/teardown fixtures and a zero-displacement Creative reference fixture failing; corrected fixtures retained their assertions and passed. The first minimal run passed 54/55 because an actual-Accessories case was selected without Accessories. Its registration moved to the existing optional template/namespace, retaining the strict runtime assertion; no production logic or skip was substituted.
+
+The first actual fixes client collected 14 images, then stalled in excluded-helper completion after preview recovery and was stopped with SIGTERM, exit 143. Only that helper guard was repaired. The second run completed all 15 cases/50 images; a separate metadata audit checked all 19,159 frozen paths, PNGs, exact state/gear/head bounds, native preview recovery and an actual operator refresh before capture.
+
+Run client02 reached four cases before a paused-server attribute-sync deadlock in the unequip fixture. Run client03 passed ground/horizontal movement and unequip, then maximum vertical capture timed out because paused interpolation left the camera away from the current avatar. Both remain incomplete despite Java exit zero. Run client04 passed ten cases. Only excluded helper fixes resumed normal synchronization and aligned six render-history fields after measurement; current position, bounding box and velocity stayed exact. A preparation attempt also failed to compile an excluded diagnostic's unavailable GoalSelector accessor; the existing project API repaired it before final compilation. These new helper failures are separate from production build results.
+
+Power pair02 timed out before readiness because the living camera lacked head-yaw initialization. Pair03 rendered and passed both readiness snapshots but timed out waiting for natural companion AI to hit the cow. Neither recorded a Power impulse or passed multiplayer. Pair04 explicitly selected five other contexts: owner control, controlled Chao-to-remote max/zero and remote Run ground/Creative. Both clients completed, with the physical results above. Natural-AI contexts 0/1 are explicitly not run in that selected cohort. Earlier preparation put the observer outside the narrow runway; the final finite platform supplies real footing. This does not explain away the distinct natural-AI blocker. Existing autonomous Mob-only targeting is preserved, but a natural companion strike was not verified in these client fixtures.
+
+The clean source-copy build passed `clean build` without a build cache: 81 actionable tasks, 80 executed and one up-to-date, in 36m20s. All 9,020 non-directory JAR payloads exactly match the production bytes used by the clients. Only archive metadata/empty directories differ. Final excluded helpers compiled afterward and remain outside the JAR. This is runtime-byte binding, not a separately installed-JAR playthrough.
+
+The resource audit reported zero errors and 60 context warnings. There are no new schema, registry-ID, protocol or deletion changes. All 1,020 accepted parent overlay paths and 21 inherited exact deletion guards remain; this update removes no source resources. The source ZIP is a cumulative overlay onto complete 0.25.43, as its manifest explains. Original Git HEAD/index and existing worlds were preserved.
+
+Phone controls, shader packs, listening, continuous high-speed travel/chunk loading, smooth non-owner deceleration after unequip, every attachment and broad modpacks remain outside the verified scope. Native dedicated-server tests passed. The visual network topology was one integrated local host plus one independent TCP client, not a dedicated server or two TCP peers.

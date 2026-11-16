@@ -13,9 +13,11 @@ final class HeroRunAppearance052 {
   private static final Map<UUID,Blend> BLENDS=new LinkedHashMap<>(128,.75f,true);
   private static final Map<ChaoState,HeroRunMorphology052.Sample> FRAME=new WeakHashMap<>();
   private static final Map<ChaoState,Float> FRAME_ALIGNMENT=new WeakHashMap<>();
+  private static final Map<ChaoState,Float> FRAME_BABY_POWER084=new WeakHashMap<>();
   private static final class Blend {
     HeroRunMorphology052.Sample from,target,current;
     float started,last,alignmentFrom,alignmentTarget,alignmentCurrent;
+    float powerFrom084,powerTarget084,powerCurrent084;
   }
   private HeroRunAppearance052(){}
 
@@ -27,23 +29,34 @@ final class HeroRunAppearance052 {
   static float signedAlignment(ChaoState state) {
     return FRAME_ALIGNMENT.getOrDefault(state,state.lockedAlignment());
   }
+  /** Power uses this same bounded presentation clock; it never edits real age. */
+  static float babyPowerGrowth084(ChaoState state) {
+    Float prepared=FRAME_BABY_POWER084.get(state);
+    return prepared!=null?prepared:com.chaogarden.core.BabyPowerMorphology084.sample(state).growth();
+  }
   static HeroRunMorphology052.Sample prepare(UUID id,ChaoState state,float age) {
     var target=HeroRunMorphology052.sample(state);float alignment=state.lockedAlignment();var blend=BLENDS.get(id);
+    float power084=com.chaogarden.core.BabyPowerMorphology084.sample(state).growth();
     if(blend==null||!Float.isFinite(age)||age<blend.last||age-blend.last>80||target.adult()!=blend.target.adult()) {
       blend=new Blend();blend.from=blend.target=blend.current=target;blend.started=blend.last=age;BLENDS.put(id,blend);
       blend.alignmentFrom=blend.alignmentTarget=blend.alignmentCurrent=alignment;
+      blend.powerFrom084=blend.powerTarget084=blend.powerCurrent084=power084;
     } else {
       float t=unit((age-blend.started)/CHANGE_TICKS),w=t*t*(3-2*t);
       blend.current=between(blend.from,blend.target,t);
       blend.alignmentCurrent=lerp(blend.alignmentFrom,blend.alignmentTarget,w);
-      if(!near(blend.target,target)||Math.abs(blend.alignmentTarget-alignment)>.0001f) {
+      blend.powerCurrent084=lerp(blend.powerFrom084,blend.powerTarget084,w);
+      if(!near(blend.target,target)||Math.abs(blend.alignmentTarget-alignment)>.0001f
+          ||Math.abs(blend.powerTarget084-power084)>.0001f) {
         blend.from=blend.current;blend.target=target;blend.started=age;
         blend.alignmentFrom=blend.alignmentCurrent;blend.alignmentTarget=alignment;
+        blend.powerFrom084=blend.powerCurrent084;blend.powerTarget084=power084;
       }
       blend.last=age;
     }
     FRAME.put(state,blend.current);
     FRAME_ALIGNMENT.put(state,blend.alignmentCurrent);
+    FRAME_BABY_POWER084.put(state,blend.powerCurrent084);
     while(BLENDS.size()>128)BLENDS.remove(BLENDS.keySet().iterator().next());
     return blend.current;
   }

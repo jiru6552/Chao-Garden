@@ -1,0 +1,14 @@
+Chao Garden 0.25.84 — Minecraft 1.21.1 / NeoForge / Java 21
+
+Install chao_garden-0.25.84.jar on client and server using the existing required dependencies. Existing saves and completed forms are retained.
+
+Operator appearance refresh:
+/chao refresh ~
+/chao refresh "My Chao"
+/chao refresh held
+
+Operator permission level 2 is required. Nearest means a loaded Chao within 12blocks; names select current-dimension loaded Chao and reject ambiguity. Held explicitly selects the filled item in the main hand. Refresh clears old reference-model overrides and synchronizes current appearance; it preserves identity, age, genes, training and equipment and never forces evolution.
+
+The source-changes ZIP is a cumulative overlay onto the complete 0.25.43 source commit identified in SOURCE_CHANGES.txt; it is not a standalone checkout. All accepted 0.25.83 source paths and 21 inherited exact deletion guards remain.
+
+See FIXES_02584_REPORT.md for actual test results, approximations and remaining natural-AI/maximum-speed revocation limitations. The PNGs are actual viewer/game comparisons, with settings and native-frame provenance in the verification archive.

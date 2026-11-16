@@ -1,8 +1,10 @@
 package com.chaogarden.toys;
 
 import com.chaogarden.entity.ChaoEntity;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.UUID;
 import net.minecraft.core.Rotations;
 import net.minecraft.nbt.CompoundTag;
@@ -15,12 +17,14 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
 /** One persistent, physical float. The stored stack is the sole recoverable toy.
@@ -42,6 +46,10 @@ public final class FloatToyEntity080 extends Entity {
   private FloatToyRoutes080.Plan plan;
   private int waypoint;
   private double lerpX,lerpY,lerpZ;private float lerpYaw,lerpPitch;private int lerpSteps;
+  private static final double PLAYER_CONTACT084=.04,PLAYER_IMPULSE084=.04,MAX_PLAYER_SPEED084=.08;
+  private final Set<UUID> bumpedPlayers084=new HashSet<>();
+  private long playerBumpTick084=Long.MIN_VALUE;
+  private double playerPushX084,playerPushZ084;
 
   public FloatToyEntity080(EntityType<? extends FloatToyEntity080> type,net.minecraft.world.level.Level level){super(type,level);blocksBuilding=true;refreshDimensions();}
   @Override public net.minecraft.world.entity.EntityDimensions getDimensions(net.minecraft.world.entity.Pose pose){
@@ -192,6 +200,7 @@ public final class FloatToyEntity080 extends Entity {
       entityData.set(CLAIM,Optional.empty());entityData.set(PHASE,(byte)IDLE);setDeltaMovement(0,getDeltaMovement().y,0);
     }
     if(phase()==BOARD||phase()==EXIT||previewHeld)setDeltaMovement(0,getDeltaMovement().y,0);
+    applyPlayerBumps084();
     tickPhysics(c);
     if(pendingRemoval&&rider()==null&&level().getGameTime()>=nextRemoval)remove(RemovalReason.KILLED);
   }
@@ -253,6 +262,43 @@ public final class FloatToyEntity080 extends Entity {
     }else {plan=null;nextPlan=now+40;setDeltaMovement(Vec3.ZERO);}
   }
   private void face(Vec3 delta){if(delta.horizontalDistanceSqr()>.000001)setYRot((float)(Math.atan2(-delta.x,delta.z)*180/Math.PI));}
+  private boolean acceptsPlayerBump084(){
+    if(!committed()||isRemoved()||transferring||payload.isEmpty()||pendingRemoval||restorePendingRemoval||previewHeld)return false;
+    // Short entry/exit arcs and Chao-controlled land transport keep their
+    // validated anchors. An ordinary stable rider may be moved safely below.
+    return (phase()==IDLE&&rider()==null&&claimant().isEmpty())||(phase()==RIDE&&rider()!=null);
+  }
+  private AABB playerContact084(){return getBoundingBox().expandTowards(0,.02,0).inflate(PLAYER_CONTACT084,0,PLAYER_CONTACT084);}
+  @Override public void push(Entity other){
+    if(!(level() instanceof ServerLevel server)||!(other instanceof Player player)||!acceptsPlayerBump084()
+        ||!player.isAlive()||player.isSpectator()||player.isPassenger()||player.noPhysics||noPhysics
+        ||player.level()!=level()||isPassengerOfSameVehicle(player)
+        ||!EntitySelector.pushableBy(this).test(player)
+        ||!playerContact084().intersects(player.getBoundingBox()))return;
+    double x=getX()-player.getX(),z=getZ()-player.getZ(),length=Math.sqrt(x*x+z*z);
+    if(length<.0001)return;
+    long now=server.getServer().getTickCount();
+    if(playerBumpTick084!=now){playerBumpTick084=now;bumpedPlayers084.clear();}
+    if(!bumpedPlayers084.add(player.getUUID()))return;
+    // Queue the real collision impulse until after route decisions, otherwise
+    // an occupied float's controller would overwrite a player's same-tick push.
+    playerPushX084+=x/length*PLAYER_IMPULSE084;playerPushZ084+=z/length*PLAYER_IMPULSE084;
+  }
+  private void applyPlayerBumps084(){
+    if(!acceptsPlayerBump084()){playerPushX084=playerPushZ084=0;return;}
+    // Hard entity collision normally stops the player's box just short of
+    // overlap. Like a vanilla boat, inspect a narrow contact rim ourselves;
+    // A two-centimeter top tolerance includes genuine foot contact when the
+    // player auto-steps onto the low ring; actors floating above do not qualify.
+    for(var player:level().getEntitiesOfClass(Player.class,playerContact084()))push(player);
+    if(playerPushX084!=0||playerPushZ084!=0){
+      var old=getDeltaMovement();var horizontal=new Vec3(old.x+playerPushX084,0,old.z+playerPushZ084);
+      double speed=horizontal.horizontalDistance();
+      if(speed>MAX_PLAYER_SPEED084)horizontal=horizontal.scale(MAX_PLAYER_SPEED084/speed);
+      setDeltaMovement(horizontal.x,old.y,horizontal.z);hasImpulse=true;
+    }
+    playerPushX084=playerPushZ084=0;
+  }
   private void tickPhysics(ChaoEntity c){
     // Entry/exit endpoints are tied to this real vehicle position. Holding it
     // still for the short transition prevents a settling waterline from moving
@@ -271,7 +317,7 @@ public final class FloatToyEntity080 extends Entity {
   @Override protected net.minecraft.network.chat.Component getTypeName(){return net.minecraft.network.chat.Component.translatable("item.chao_garden."+kind());}
   @Override public ItemStack getPickResult(){return committed()?payload.isEmpty()?new ItemStack(com.chaogarden.ChaoGarden.item(kind())):payload.copy():ItemStack.EMPTY;}
   @Override public boolean isPickable(){return committed()&&!isRemoved();}
-  @Override public boolean isPushable(){return false;}
+  @Override public boolean isPushable(){return acceptsPlayerBump084();}
   @Override public boolean canBeCollidedWith(){return committed()&&!isRemoved();}
   @Override public boolean hurt(DamageSource source,float amount){
     if(level().isClientSide||!committed()||transferring)return false;

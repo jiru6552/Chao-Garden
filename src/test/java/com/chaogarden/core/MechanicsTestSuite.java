@@ -8,6 +8,7 @@ public final class MechanicsTestSuite {
     EquippedMovement080Test.run();
     System.out.println("Garden progression081: "+GardenProgression081Test.run()+" checks passed");
     System.out.println("Equipped baby alignment082: "+EquippedBabyAlignment082Test.run()+" checks passed");
+    System.out.println("Baby Power morphology084: "+BabyPowerMorphology084Test.run()+" checks passed");
     ChaoFace076Test.main(args);
     System.out.println("Idle selection078: "+ChaoIdle078Test.run()+" checks passed");
     System.out.println("Idle faces078: "+ChaoIdleFace078Test.run()+" checks passed");

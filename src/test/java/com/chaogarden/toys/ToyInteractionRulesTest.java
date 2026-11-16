@@ -15,6 +15,13 @@ public final class ToyInteractionRulesTest {
     }
     check(ToyInteractionRules.frontOnly("chao_tv"),"TV remains directional");
     check(!ToyInteractionRules.frontOnly("chao_ball"),"Ball may be approached from any side");
+    double[] tambourine=ToyInteractionRules.collisionEnvelope("chao_tambourine");
+    check(tambourine!=null&&tambourine[1]==0&&tambourine[4]<3.4,
+        "Ground tambourine has a low supported collision box rather than an invisible half-block pedestal");
+    for(int turn=0;turn<4;turn++){
+      var rotated=ToyInteractionRules.rotateEnvelope(tambourine,turn);
+      check(rotated[1]==0&&rotated[4]==tambourine[4],"Each placed facing preserves floor contact and the active-pose union height");
+    }
     for(double width:new double[]{.35,.44,.55,.8}) {
       double contact=ToyInteractionRules.ballContactDistance(width);
       check(ToyInteractionRules.ballWithinReach(contact*contact,0,width),"Contact anchor is kickable");

@@ -35,7 +35,9 @@ public final class EquippedAbilityRules080 {
     int next=nextPercent(percent(s,stat));
     return s.setTrait(key(stat),next==MAX_PERCENT?"":Integer.toString(next));
   }
-  public static double bonus(ChaoState s,int stat) {return eligible(s,stat)?percent(s,stat)/100.0:0;}
+  /** The saved 0..1000 values remain eleven control tiers. In .84 the maximum
+   * is +100,000% (bonus1000, total1001), rather than rewriting existing traits. */
+  public static double bonus(ChaoState s,int stat) {return eligible(s,stat)?percent(s,stat):0;}
   public static double strength(double original,double bonus) {
     if(!(original>0)||!Double.isFinite(original)||!Double.isFinite(bonus)||!(bonus>0))return original;
     return original*(1+bonus);

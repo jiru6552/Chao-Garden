@@ -2,6 +2,7 @@ package com.chaogarden.companion;
 
 import com.chaogarden.ChaoGarden;
 import com.chaogarden.core.EquippedMovementRules080;
+import com.chaogarden.entity.ChaoEntity;
 import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -43,9 +44,11 @@ public final class EquippedKnockback080 {
   private static final Map<UUID,ClientSeen> CLIENT_SEEN=new HashMap<>();
   private static long sequence;
   public static final class Scope {
-    final ServerPlayer attacker;
+    final ChaoEntity attacker;
+    final LivingEntity target;
+    final DamageSource source;
     final Map<UUID,Impact> victims=new LinkedHashMap<>();
-    Scope(ServerPlayer player){attacker=player;}
+    Scope(ChaoEntity chao,LivingEntity victim,DamageSource damage){attacker=chao;target=victim;source=damage;}
   }
   private static final class Impact {
     final LivingEntity victim;
@@ -62,9 +65,19 @@ public final class EquippedKnockback080 {
   private static Scope scope(){return SCOPES.get().peekLast();}
   public static int scopeDepth(){return SCOPES.get().size();}
 
+  /** Retained hook compatibility: this ability never augments player melee. */
   public static Scope begin(Player player) {
-    if(!(player instanceof ServerPlayer server)||CompanionContent.secretPowerBonus080(server)<=0)return null;
-    var scope=new Scope(server);SCOPES.get().addLast(scope);return scope;
+    return null;
+  }
+  /** Open only around an actual authorized companion's own direct mob hurt call.
+   * Neither an owner, a saved marker, a projectile nor an unrelated nested
+   * damage callback can borrow that companion's Power. */
+  public static Scope beginMob(LivingEntity victim,DamageSource source) {
+    if(!(victim.level() instanceof ServerLevel)||!source.is(DamageTypes.MOB_ATTACK)
+        ||!(source.getEntity() instanceof ChaoEntity chao)||source.getDirectEntity()!=chao
+        ||chao==victim||chao.level()!=victim.level()||!chao.isAlive()||chao.isRemoved()
+        ||CompanionContent.secretPowerBonus084(chao)<=0)return null;
+    var scope=new Scope(chao,victim,source);SCOPES.get().addLast(scope);return scope;
   }
   public static void finish(Scope scope,boolean completed) {
     if(scope==null)return;
@@ -80,9 +93,8 @@ public final class EquippedKnockback080 {
       }
       impact.armed=true;
       if(impact.victim instanceof ServerPlayer) {
-        // Player.attack restores its old server velocity after constructing
-        // the vanilla short-vector packet. Restore the real, already-computed
-        // impulse, both for the client and native movement validation.
+        // Preserve the real already-computed native impulse for the victim,
+        // its full-vector correction and native movement validation.
         impact.victim.setDeltaMovement(impact.vector);
         impact.victim.hasImpulse=true;
         var player=(ServerPlayer)impact.victim;var previous=MOVEMENT.get(player.getUUID());
@@ -95,15 +107,16 @@ public final class EquippedKnockback080 {
 
   public static double hurtStrength(LivingEntity victim,DamageSource source,double strength) {
     var scope=scope();
-    if(scope==null||source.getEntity()!=scope.attacker||source.getDirectEntity()!=scope.attacker
-        ||!source.is(DamageTypes.PLAYER_ATTACK)||victim==scope.attacker)return strength;
+    if(scope==null||scope.source!=source||scope.target!=victim
+        ||source.getEntity()!=scope.attacker||source.getDirectEntity()!=scope.attacker
+        ||!source.is(DamageTypes.MOB_ATTACK)||victim==scope.attacker)return strength;
     return scaled(scope,strength);
   }
   public static double attackStrength(Player attacker,LivingEntity victim,double strength) {
-    var scope=scope();return scope!=null&&scope.attacker==attacker&&victim!=attacker?scaled(scope,strength):strength;
+    return strength;
   }
   private static double scaled(Scope scope,double strength) {
-    return com.chaogarden.core.EquippedAbilityRules080.strength(strength,CompanionContent.secretPowerBonus080(scope.attacker));
+    return com.chaogarden.core.EquippedAbilityRules080.strength(strength,CompanionContent.secretPowerBonus084(scope.attacker));
   }
   public static void afterKnockback(LivingEntity victim,Vec3 before,boolean boosted) {
     var scope=scope();if(!boosted||scope==null||victim.level().isClientSide||victim.isRemoved())return;

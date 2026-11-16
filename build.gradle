@@ -563,6 +563,8 @@ tasks.named('jar', Jar) {
     exclude 'data/chao_lobby81/**'
     exclude 'data/chao_baby_align82/**'
     exclude 'data/chao_maintenance83/**'
+    exclude 'data/chao_fixes84/**'
+    exclude 'data/chao_run84/**'
     exclude 'data/chao_floor49/**'
     exclude 'data/chao_retired49/**'
     exclude 'data/chao_hats50/**'
@@ -590,6 +592,15 @@ sourceSets.create('lionfishTest') {
 }
 configurations.lionfishTestImplementation.extendsFrom configurations.implementation
 neoForge.addModdingDependenciesTo(sourceSets.lionfishTest)
+tasks.register('babyPowerRigTest084', JavaExec) {
+    dependsOn lionfishTestClasses
+    classpath = sourceSets.lionfishTest.runtimeClasspath
+    mainClass = 'com.chaogarden.client.BabyPowerRigTest084'
+    jvmArgs '-Xmx1G', '-XX:ActiveProcessorCount=3'
+    enableAssertions = true
+    workingDir = projectDir
+}
+tasks.named('check') { dependsOn babyPowerRigTest084 }
 tasks.register('rattleAnimationTest', JavaExec) {
     dependsOn lionfishTestClasses
     classpath = sourceSets.lionfishTest.runtimeClasspath

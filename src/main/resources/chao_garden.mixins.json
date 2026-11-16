@@ -6,6 +6,8 @@
   "mixins": [
     "CompanionPlayerFlightMixin",
     "CompanionLivingFlightMixin",
+    "EquippedRunFlightMixin084",
+    "EquippedRunGlideMixin084",
     "ChestTableFillMixin",
     "EquippedPlayerAttackMixin080",
     "EquippedHurtKnockbackMixin080",
@@ -14,7 +16,8 @@
     "BabyAlignmentDeathMixin082"
   ],
   "client": [
-    "CompanionLocalPlayerFlightMixin"
+    "CompanionLocalPlayerFlightMixin",
+    "EquippedRunLocalFlightMixin084"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,3 +1,12 @@
+## 0.25.84 — toy, baby morphology and refresh fixes
+
+- Add the rubber duck's missing opposite-side eye and keep both eyes in the source generator.
+- Allow players to physically bump idle duck/lifesaver floats and stable occupied rides, preserving safe boarding, exits and Chao transport.
+- Lay the placed tambourine flat on the ground with a matching low collision envelope; retain the existing held model and animation.
+- Add gradual Neutral/Hero/Dark baby Power features around the unchanged original head, with reversible training and independent visual maturity.
+- Add operator `/chao refresh <name or ~>` and `/chao refresh held` to clear old reference-model overrides and resend current appearance without resetting saved creature data.
+- Refine equipped movement and companion combat handling. The development report records verification and technical details.
+
 ## 0.25.83 — maintenance
 
 - Keep adult Nether/End innate fire/levitation cleanup working when the companion is exhausted; trained benefits still respect energy.

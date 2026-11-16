@@ -17,7 +17,7 @@ public final class EquippedAbility080Test {
         var s=state(stat,alignment,strength);String before=s.encode();
         check(EquippedAbilityRules080.eligible(s,stat),"Every alignment/age strength has matching exact eligible form");
         check(EquippedAbilityRules080.percent(s,stat)==1000,"Absent settings have a stable maximum default");
-        near(EquippedAbilityRules080.bonus(s,stat),10,"1000% is additive bonus10, total11");
+        near(EquippedAbilityRules080.bonus(s,stat),1000,"Maximum .84 tier is +100000%, total1001");
         check(s.encode().equals(before),"Eligibility/default reads preserve established Chao data");
         s.energy=0;check(EquippedAbilityRules080.eligible(s,stat),"Fatigue is not a new secret eligibility requirement");
         for(int setting=900;setting>=0;setting-=100){
@@ -25,7 +25,7 @@ public final class EquippedAbility080Test {
           check(EquippedAbilityRules080.percent(s,stat)==setting,"Exactly one100point step");
           var reloaded=ChaoState.decode(s.encode());
           check(EquippedAbilityRules080.percent(reloaded,stat)==setting,"Selected setting survives actual Chao codec");
-          near(EquippedAbilityRules080.bonus(reloaded,stat),setting/100.0,"Codec preserves bonus units including zero");
+          near(EquippedAbilityRules080.bonus(reloaded,stat),setting,"Codec preserves legacy tiers with .84 bonus units including zero");
         }
         check(EquippedAbilityRules080.cycle(s,stat)&&EquippedAbilityRules080.percent(s,stat)==1000,"Zero wraps to1000");
         check(!s.traitEntries().containsKey(stat==ChaoState.RUN?EquippedAbilityRules080.RUN_SETTING:EquippedAbilityRules080.POWER_SETTING),"Default wrap releases its optional trait slot");
@@ -65,7 +65,8 @@ public final class EquippedAbility080Test {
     double old=.6,base=.4,extra=.5;
     double normal=(old/2+base)/2+extra,boosted=(old/2+EquippedAbilityRules080.strength(base,10))/2+EquippedAbilityRules080.strength(extra,10);
     near(boosted-old/4,(normal-old/4)*11,"Distinct base/sprint calls scale impulses once; preexisting velocity is not multiplied");
-    return checks;
+    near(EquippedAbilityRules080.strength(.4,1000),400.4,"Maximum .84 bonus means1001 times the normal impulse");
+    return checks+EquippedRun084Test.run();
   }
   public static void main(String[] args){System.out.println("Hidden equipped080: "+run()+" checks passed");}
 }

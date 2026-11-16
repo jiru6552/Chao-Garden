@@ -44,8 +44,10 @@ public final class HeroRunCoatMaterial055 {
     var sample=HeroRunAppearance052.sample(state);
     int alignment=Math.round(Math.clamp(HeroRunAppearance052.signedAlignment(state),-1,1)*256);
     int heroWeight=Math.round(sample.babyHero()*128),run=Math.round(sample.babyGrowth()*128),maturity=Math.round(sample.maturity()*128),growth=Math.round(sample.adultGrowth()*128);
+    int babyPower084=Math.round(HeroRunAppearance052.babyPowerGrowth084(state)*128);
     int sf=Math.round(Math.clamp(state.swimFly,-1,1)*32),power=Math.round(Math.clamp(state.runPower,-1,1)*32);
-    String key=coat(state)+":"+sample.adult()+":"+alignment+":"+heroWeight+":"+run+":"+maturity+":"+growth+":"+sf+":"+power;
+    String key=coat(state)+":"+sample.adult()+":"+alignment+":"+heroWeight+":"+run+":"+maturity+":"+growth+":"+sf+":"+power
+        +(babyPower084==0?"":":babyPower084="+babyPower084);
     var cached=CACHE.get(key);if(cached!=null)return cached;
     NativeImage result=null;
     try(var source=read("textures/entity/chao/official/coats/baby/"+coat(state)+".png");
@@ -59,6 +61,7 @@ public final class HeroRunCoatMaterial055 {
           sample(hero,12,0),sample(hero,48,0),sample(dark,12,0),sample(dark,48,0));
       var colors=HeroRunRegionPaint055.colors(input);
       if(sample.adult())colors=HeroRunRegionPaint055.axisColors(colors,axisPalettes(),sf/32f,power/32f,maturity/128f,!input.natural()||!input.twoTone());
+      var powerColors084=babyPower084>0?BabyPowerRegionPaint084.colors(input,colors):null;
       int bodyReference=body,accentReference=accent;
       if(input.natural()&&!input.adult()) {
         bodyReference=HeroRunRegionPaint055.blend(HeroRunRegionPaint055.blend(body,input.heroBody(),input.hero()),input.darkBody(),input.dark());
@@ -69,8 +72,10 @@ public final class HeroRunCoatMaterial055 {
         int u=x*128/source.getWidth(),v=y*64/source.getHeight(),flags=regions[v*128+u];
         int reference=(flags&(HeroRunRegionPaint055.WING|HeroRunRegionPaint055.MARKER))!=0?255
             :HeroRunRegionPaint055.maxChannel((flags&HeroRunRegionPaint055.ACCENT)!=0?accentReference:bodyReference);
-        result.setPixelRGBA(x,y,HeroRunRegionPaint055.pixel(input,colors,u,v,source.getPixelRGBA(x,y),
-            sample(hero,u,v),sample(dark,u,v),flags,reference));
+        int pixel=HeroRunRegionPaint055.pixel(input,colors,u,v,source.getPixelRGBA(x,y),
+            sample(hero,u,v),sample(dark,u,v),flags,reference);
+        if(powerColors084!=null)pixel=BabyPowerRegionPaint084.pixel(input,powerColors084,babyPower084/128f,u,v,pixel,flags,reference);
+        result.setPixelRGBA(x,y,pixel);
       }
       var target=id("dynamic/hero_run055/"+UUID.nameUUIDFromBytes(key.getBytes(StandardCharsets.UTF_8)));
       var dynamic=new DynamicTexture(result);dynamic.setFilter(false,false);

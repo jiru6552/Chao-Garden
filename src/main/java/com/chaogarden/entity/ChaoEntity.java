@@ -225,6 +225,17 @@ public class ChaoEntity extends Animal {
       throw new IllegalArgumentException("Unknown official Chao reference rig: "+value);
     entityData.set(SOURCE_REFERENCE_RIG,value);
   }
+  /** Operator maintenance only: use the current gameplay renderer without
+   * replacing the creature or rebuilding any care/evolution state. */
+  public void refreshGardenAppearance084() {
+    if(level().isClientSide)return;
+    entityData.set(OFFICIAL_COMPARISON,false,true);
+    entityData.set(SOURCE_REFERENCE_RIG,"",true);
+    sync();
+    // A valid already-garden Chao still republishes its exact current state.
+    // The client owns resource/model caches; this does not reload resource packs.
+    entityData.set(STATE,state.encode(),true);
+  }
   public net.minecraft.core.BlockPos toyTarget(){return entityData.get(TOY_TARGET).orElse(null);}
   public void setToyTarget(net.minecraft.core.BlockPos pos){entityData.set(TOY_TARGET,Optional.ofNullable(pos==null?null:pos.immutable()));}
   public String toyPlayingKind() { return toyPlayingTicks()>0 ? entityData.get(TOY_KIND) : ""; }

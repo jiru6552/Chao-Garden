@@ -1,4 +1,14 @@
-Current maintenance pass: [0.25.83 report](docs/MAINTENANCE_02583_DEV.md). Use Java 21 and disposable worlds. The report records actual outcomes; commands alone are not evidence of a pass.
+Current focused update: [0.25.84 development report](docs/FIXES_02584_DEV.md). Use Java 21 and disposable worlds; the report records actual results and separates fixture checks from client inspection.
+
+```sh
+python3 -B scripts/test_duck_tambourine_assets_02584.py
+./gradlew --no-configuration-cache coreTest babyPowerRigTest084 blockyRunMorphRigTest055 heroRunMaterialTest055 rattleAnimationTest
+./gradlew --no-configuration-cache runGameTestServer -PchaoGameTestNamespaces=chao_fixes84,chao_run84,chao_bonus80,chao_maintenance83 -PchaoGameTestDir=/path/to/private/fixes84-world -PchaoAccessoriesTest=true -PchaoAccessoriesDir=/path/to/actual/optional-mods
+```
+
+The two tambourine rig checks are part of `rattleAnimationTest`, not standalone Gradle tasks. The complete catalogue also retains prior morphology, toys, care, garden and companion namespaces. Ordinary client studies must use the normal dimension datapacks. Operator examples: `/chao refresh ~`, `/chao refresh "My Chao"`, `/chao refresh held`, and existing `/chao testtoy tambourine once|loop|stop`. Refresh never fills visual maturity or triggers evolution.
+
+Previous maintenance pass: [0.25.83 report](docs/MAINTENANCE_02583_DEV.md). Use Java 21 and disposable worlds. The report records actual outcomes; commands alone are not evidence of a pass.
 
 ```sh
 python3 -B scripts/audit_resource_links_083.py --json /path/to/resource-audit.json

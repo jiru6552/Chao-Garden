@@ -22,6 +22,7 @@ public final class GardenCommands {
 
   private static void commands(RegisterCommandsEvent event) {
     EditingCommands056.register(event.getDispatcher());
+    ChaoRefreshCommands084.register(event.getDispatcher());
     event
         .getDispatcher()
         .register(

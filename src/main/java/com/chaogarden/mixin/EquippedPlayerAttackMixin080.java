@@ -18,8 +18,8 @@ public abstract class EquippedPlayerAttackMixin080 {
     try{original.call(target);completed=true;}
     finally{EquippedKnockback080.finish(scope,completed);}
   }
-  // Both the main sprint/enchantment call and the actual sweep call are
-  // included. They are distinct vanilla calls, not repeated scaling of one call.
+  // Retain the established hook/registration without augmenting player melee.
+  // Both ordinary sprint/enchantment and sweep strengths remain vanilla.
   @WrapOperation(method="attack",at=@At(value="INVOKE",target="Lnet/minecraft/world/entity/LivingEntity;knockback(DDD)V"))
   private void chaoGarden$attackKnockback080(LivingEntity victim,double strength,double x,double z,Operation<Void> original){
     var before=victim.getDeltaMovement();double adjusted=EquippedKnockback080.attackStrength((Player)(Object)this,victim,strength);

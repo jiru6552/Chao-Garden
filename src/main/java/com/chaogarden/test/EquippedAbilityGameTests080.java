@@ -40,7 +40,6 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingKnockBackEvent;
-import net.neoforged.neoforge.event.entity.player.AttackEntityEvent;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 
@@ -117,6 +116,15 @@ public final class EquippedAbilityGameTests080 {
     p.setItemInHand(InteractionHand.MAIN_HAND,weapon);p.setSprinting(sprint);p.setShiftKeyDown(false);p.setYRot(-90);p.setOnGround(true);charged(p);
     p.attack(target);return target.getDeltaMovement();
   }
+  private static Vec3 chaoHit(GameTestHelper h,CompanionSkillGameTests.Equipped e,LivingEntity target,Vec3 before){
+    var actor=CompanionSkillGameTests.body(h,e);var keeper=e.keeper();
+    actor.setPos(keeper.getX(),keeper.getY(),keeper.getZ());actor.setDeltaMovement(Vec3.ZERO);
+    if(target instanceof ServerPlayer player)damageReady(player);
+    target.invulnerableTime=0;target.hurtTime=0;target.setHealth(target.getMaxHealth());target.setDeltaMovement(before);target.setOnGround(true);
+    float damage=CompanionRules.powerDamage(actor.state().levels[ChaoState.POWER]);
+    h.assertTrue(target.hurt(actor.damageSources().mobAttack(actor),damage),"Actual companion direct mob attack is accepted");
+    return target.getDeltaMovement();
+  }
   @GameTestGenerator public static Collection<TestFunction> cases(){
     var out=new ArrayList<TestFunction>();
     for(int align=-1;align<=1;align++){
@@ -141,6 +149,7 @@ public final class EquippedAbilityGameTests080 {
     return out;
   }
   private static ServerPlayer validationVictim(GameTestHelper h,CompanionSkillGameTests.Equipped e){
+    h.assertTrue(CompanionSkillGameTests.body(h,e).state().setTrait(EquippedAbilityRules080.POWER_SETTING,100),"Bounded native movement fixture selects persisted100 tier");
     var other=TestConnections.makeSurvivalServerPlayer(h);other.setNoGravity(true);
     other.getAttribute(Attributes.MAX_HEALTH).setBaseValue(1000);other.setHealth(1000);
     other.teleportTo(e.keeper().getX()+1.5,e.keeper().getY(),e.keeper().getZ());acknowledgeTeleport(other);
@@ -153,23 +162,23 @@ public final class EquippedAbilityGameTests080 {
       // collision remains enabled and is explicitly checked for the full path.
       var attacker=e.keeper();attacker.teleportTo(attacker.getX(),h.getLevel().getMaxBuildHeight()-8,attacker.getZ());acknowledgeTeleport(attacker);
       var victim=validationVictim(h,e);var base=victim.position();
-      for(int x=-1;x<=24;x++)for(int z=-1;z<=1;z++)h.getLevel().getChunkAt(BlockPos.containing(base).offset(x,0,z));
-      var corridor=victim.getBoundingBox().expandTowards(22,1,0);
+      for(int x=-1;x<=96;x++)for(int z=-1;z<=1;z++)h.getLevel().getChunkAt(BlockPos.containing(base).offset(x,0,z));
+      var corridor=victim.getBoundingBox().expandTowards(90,1,0);
       h.assertTrue(h.getLevel().noCollision(victim,corridor),"Validation fixture requires a loaded collision-free swept corridor for its whole intended native movement");
-      var impulse=hit(e.keeper(),victim,true,2,Vec3.ZERO);
-      h.assertTrue(victim.getHealth()<victim.getMaxHealth(),"Validation fixture uses an accepted real native player attack");
-      near(h,impulse.x,18.7,.0001,"Validation fixture has the requested actual impulse before server physics");
+      var impulse=chaoHit(h,e,victim,Vec3.ZERO);
+      h.assertTrue(victim.getHealth()<victim.getMaxHealth(),"Validation fixture uses an accepted real companion mob attack");
+      near(h,impulse.x,40.4,.0001,"Validation fixture has the requested actual impulse before server physics");
       // The real connection step runs living physics then resets its position
       // to firstGood, exactly reproducing the client/server friction race.
       victim.connection.tick();
       h.assertTrue(victim.getDeltaMovement().x<impulse.x,"Real server physics decays the impulse before the inbound move");
       if(burst){
-        victim.connection.handleMovePlayer(new ServerboundMovePlayerPacket.Pos(base.x+10.619156876498293,base.y+.2,base.z,false));
-        victim.connection.handleMovePlayer(new ServerboundMovePlayerPacket.Pos(base.x+20.282589912610206,base.y+.1,base.z,false));
-        near(h,victim.getX(),base.x+20.282589912610206,.00001,"Two real native position packets are accepted in one server tick without a rollback");
+        victim.connection.handleMovePlayer(new ServerboundMovePlayerPacket.Pos(base.x+impulse.x*.568,base.y+.2,base.z,false));
+        victim.connection.handleMovePlayer(new ServerboundMovePlayerPacket.Pos(base.x+impulse.x*1.085,base.y+.1,base.z,false));
+        near(h,victim.getX(),base.x+impulse.x*1.085,.00001,"Two real native position packets are accepted in one server tick without a rollback");
       }else{
         victim.connection.handleMovePlayer(new ServerboundMovePlayerPacket.Pos(base.x+impulse.x,base.y+impulse.y,base.z+impulse.z,false));
-        near(h,victim.getX(),base.x+impulse.x,.00001,"The real native movement handler accepts the full initial18.7 step after server friction");
+        near(h,victim.getX(),base.x+impulse.x,.00001,"The real native movement handler accepts the full initial40.4 companion step after server friction");
       }
       var check=EquippedKnockback080.movementCheck080(victim);
       h.assertTrue(check!=null&&check.burst()==(burst?2:1)&&check.authorizedExpectedSquared()>check.nativeExpectedSquared(),"Actual native expected-motion hook records the bounded real packet burst");
@@ -183,7 +192,7 @@ public final class EquippedAbilityGameTests080 {
     var e=equipped(h,ChaoState.POWER,0);pvpFixture(h,e.keeper().server);h.runAfterDelay(12,()->{
       var victim=validationVictim(h,e);victim.setDeltaMovement(Vec3.ZERO);
       near(h,expectedMovement(victim,5),0,.000001,"An ordinary unmarked player receives no extra movement allowance");
-      hit(e.keeper(),victim,true,2,Vec3.ZERO);victim.connection.tick();
+      chaoHit(h,e,victim,Vec3.ZERO);victim.connection.tick();
       h.assertTrue(expectedMovement(victim,1)>victim.getDeltaMovement().lengthSqr(),"An accepted server-authored hit creates the short native allowance");
       victim.setDeltaMovement(Vec3.ZERO);h.runAfterDelay(21,()->{
         near(h,expectedMovement(victim,5),0,.000001,"Expired authorization cannot permit extra displacement");
@@ -193,7 +202,7 @@ public final class EquippedAbilityGameTests080 {
   }
   private static void validationDimension(GameTestHelper h){
     var e=equipped(h,ChaoState.POWER,0);pvpFixture(h,e.keeper().server);h.runAfterDelay(12,()->{
-      var victim=validationVictim(h,e);hit(e.keeper(),victim,true,2,Vec3.ZERO);
+      var victim=validationVictim(h,e);chaoHit(h,e,victim,Vec3.ZERO);
       var away=victim.server.getLevel(Level.NETHER);h.assertTrue(away!=null,"Other native level exists for movement identity guard");
       h.assertTrue(victim.changeDimension(new DimensionTransition(away,new Vec3(13.5,160,13.5),Vec3.ZERO,0,0,DimensionTransition.DO_NOTHING))==victim,"Real victim dimension transition completes");
       acknowledgeTeleport(victim);victim.setDeltaMovement(Vec3.ZERO);
@@ -204,8 +213,8 @@ public final class EquippedAbilityGameTests080 {
   private static void trackerCleanup(GameTestHelper h){
     var e=equipped(h,ChaoState.POWER,0);pvpFixture(h,e.keeper().server);h.runAfterDelay(12,()->{
       var victim=validationVictim(h,e);var tracker=new ServerEntity(h.getLevel(),victim,1,false,packet->{});
-      hit(e.keeper(),victim,true,2,Vec3.ZERO);tracker.sendChanges();
-      near(h,tracker.getLastSentMovement().x,18.7,.0001,"A marked native player tracker initially records its full authorized velocity");
+      chaoHit(h,e,victim,Vec3.ZERO);tracker.sendChanges();
+      near(h,tracker.getLastSentMovement().x,40.4,.0001,"A marked native player tracker initially records its full authorized velocity");
       var below=new Vec3(3.2,.1,0);victim.setDeltaMovement(below);tracker.sendChanges();
       h.assertTrue(victim.getDeltaMovement().equals(below),"Under-packet-range observer cleanup never changes the authoritative victim velocity");
       h.assertTrue(tracker.getLastSentMovement().equals(below),"Marked player tracker cache follows actual current velocity below the packet limit");
@@ -217,7 +226,7 @@ public final class EquippedAbilityGameTests080 {
       // The marked watcher is now gone. A subsequent ordinary zero-bonus hit
       // must follow vanilla and must not receive custom tracker cache changes.
       h.assertTrue(CompanionSkillGameTests.body(h,e).state().setTrait(EquippedAbilityRules080.POWER_SETTING,0),"Persist ordinary zero-bonus control");
-      hit(e.keeper(),victim,false,0,Vec3.ZERO);victim.hasImpulse=false;victim.hurtMarked=false;
+      chaoHit(h,e,victim,Vec3.ZERO);victim.hasImpulse=false;victim.hurtMarked=false;
       var ordinary=new Vec3(.25,0,0);victim.setDeltaMovement(ordinary);tracker.sendChanges();
       h.assertTrue(tracker.getLastSentMovement().equals(stopped),"Unmarked ordinary PvP does not inherit a global tracker override");
       h.assertTrue(victim.getDeltaMovement().equals(ordinary),"Ordinary unmarked victim physics is unchanged");h.succeed();
@@ -226,13 +235,13 @@ public final class EquippedAbilityGameTests080 {
   private static void run(GameTestHelper h,int alignment){
     var e=equipped(h,ChaoState.RUN,alignment);h.runAfterDelay(12,()->{
       var c=CompanionSkillGameTests.body(h,e);var p=e.keeper();
-      near(h,amount(p),10,.000001,"Maximum Run installs exactly +1000% as one modifier");
-      near(h,p.getAttributeValue(Attributes.MOVEMENT_SPEED)/p.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue(),11,.00001,"Actual unclamped movement attribute is11x base");
+      near(h,amount(p),1000,.000001,"Maximum Run installs exactly +100000% as one modifier");
+      near(h,p.getAttributeValue(Attributes.MOVEMENT_SPEED)/p.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue(),1001,.00001,"Actual unclamped movement attribute is1001x base");
       c.state().energy=0;c.sync();
       h.runAfterDelay(2,()->{
-        near(h,amount(p),10,.000001,"Low energy does not silently add a new secret gate");
+        near(h,amount(p),1000,.000001,"Low energy does not silently add a new secret gate");
         air(p);h.assertTrue(cycle(e,1),"Valid empty-air activation changes setting");
-        near(h,amount(p),9,.000001,"1000 to900 applies immediately");
+        near(h,amount(p),900,.000001,"1000 to900 applies immediately");
         h.assertTrue(EquippedAbilityRules080.percent(ChaoCarrierItem.state(e.inventory().getItem(0)),ChaoState.RUN)==900,"Actual carrier snapshot is updated immediately");
         h.assertFalse(cycle(e,1),"Duplicate packet sequence cannot step twice");
         h.runAfterDelay(5,()->{
@@ -255,34 +264,37 @@ public final class EquippedAbilityGameTests080 {
       else target=cow(h,p,1.5,0);
       if(target instanceof ServerPlayer other)h.assertTrue(p.server.isPvpAllowed()&&p.canHarmPlayer(other)&&other.canHarmPlayer(p),"Controlled native PvP fixture policy and teams really permit the attack");
       c.state().grades[ChaoState.POWER]=5;var before=new Vec3(.6,0,0);
-      var ordinary=hit(p,target,enchanted,enchanted?2:0,before);
-      h.assertTrue(target.getHealth()<target.getMaxHealth(),"Reference native attack must actually lower target health before comparing force");
-      h.assertTrue(c.state().useHyperFruit(ChaoState.POWER),"Live expressed rank restored via real X-rank action");c.state().energy=0;
-      var boosted=hit(p,target,enchanted,enchanted?2:0,before);
-      h.assertTrue(target.getHealth()<target.getMaxHealth(),"Eligible native attack must actually lower target health before checking boosted force");
-      // A PvP vanilla attack resets its server delta after queuing its short packet.
-      // The corrected server value is authoritative only in the boosted case.
-      double ordinaryImpulse=enchanted?1.7:.4;
-      double oldContribution=enchanted?before.x/4:before.x/2;
-      if(!playerTarget)near(h,ordinary.x-oldContribution,ordinaryImpulse,.00001,"Reference native unboosted melee impulse");
-      near(h,boosted.x-oldContribution,ordinaryImpulse*11,.0001,"Actual native base plus sprint/enchantment impulses scale exactly once");
-      h.assertTrue(boosted.y<=.400001,"Vanilla vertical cap is retained");
-      near(h,p.getAttributeValue(Attributes.ATTACK_KNOCKBACK),0,.000001,"No ineffective/clamped giant attack-knockback attribute is installed");
+      var ordinary=chaoHit(h,e,target,before);
+      near(h,ordinary.x-before.x/2,.4,.00001,"Ineligible companion uses ordinary native mob knockback");
+      near(h,target.getMaxHealth()-target.getHealth(),11,.00001,"Existing level99 companion damage is11 before hidden eligibility");
+      h.assertTrue(c.state().useHyperFruit(ChaoState.POWER),"Live expressed rank restored through existing X action");c.state().energy=0;
+      // Keeper weapons/sprint do not add enchantment or extra damage to the Chao's own hurt call.
+      p.setSprinting(enchanted);p.setItemInHand(InteractionHand.MAIN_HAND,enchanted?new ItemStack(Items.NETHERITE_SWORD):ItemStack.EMPTY);
+      var boosted=chaoHit(h,e,target,before);
+      near(h,target.getMaxHealth()-target.getHealth(),11,.00001,"Hidden Power preserves current companion damage11");
+      near(h,boosted.x-before.x/2,.4*1001,.0001,"Chao's own native horizontal impulse receives exactly +100000% bonus once");
+      h.assertTrue(boosted.y<=.400001,"Vanilla vertical cap remains");
+      near(h,p.getAttributeValue(Attributes.ATTACK_KNOCKBACK),0,.000001,"No giant player attack-knockback attribute is installed");
       var capped=new ClientboundSetEntityMotionPacket(target.getId(),boosted);
-      near(h,capped.getXa(),3.9,.000001,"Native short packet demonstrably caps the requested larger impulse");
-      h.assertTrue(EquippedKnockback080.scopeDepth()==0,"Successful attack leaves no thread-local context");
+      near(h,capped.getXa(),3.9,.000001,"Native short packet caps the full companion impulse, requiring existing full-vector corrections");
+      h.assertTrue(EquippedKnockback080.scopeDepth()==0,"Successful companion hurt clears thread-local scope");
+      var requests=new ArrayList<Double>();Consumer<LivingKnockBackEvent> playerForce=event->{if(event.getEntity()==target)requests.add((double)event.getStrength());};
+      NeoForge.EVENT_BUS.addListener(playerForce);
+      try{hit(p,target,enchanted,enchanted?2:0,Vec3.ZERO);}finally{NeoForge.EVENT_BUS.unregister(playerForce);}
+      h.assertTrue(!requests.isEmpty()&&requests.stream().allMatch(value->value<=1.500001),"Equipped keeper's actual player attack remains ordinary, including sprint/enchantment calls");
       if(!playerTarget){
         target.getAttribute(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(1);
-        near(h,hit(p,target,enchanted,enchanted?2:0,Vec3.ZERO).lengthSqr(),0,.000001,"Full native knockback resistance remains effective");
+        near(h,chaoHit(h,e,target,Vec3.ZERO).lengthSqr(),0,.000001,"Full native resistance remains effective");
         target.getAttribute(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(.5);
-        near(h,hit(p,target,enchanted,enchanted?2:0,Vec3.ZERO).x,ordinaryImpulse*5.5,.0001,"Half resistance still halves the enlarged horizontal impulse");
+        near(h,chaoHit(h,e,target,Vec3.ZERO).x,.4*1001*.5,.0001,"Half resistance halves the enlarged companion impulse");
         target.getAttribute(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(0);
         h.assertTrue(c.state().setTrait(EquippedAbilityRules080.POWER_SETTING,0),"Persist zero Power setting");
-        near(h,hit(p,target,enchanted,enchanted?2:0,Vec3.ZERO).x,ordinaryImpulse,.0001,"Zero Power preserves normal attacks instead of suppressing base knockback");
+        near(h,chaoHit(h,e,target,Vec3.ZERO).x,.4,.0001,"Zero selected Power preserves ordinary companion knockback");
       }
       h.succeed();
     });
   }
+
   private static void reject(GameTestHelper h,String reason){
     var e=equipped(h,ChaoState.RUN,0);h.runAfterDelay(12,()->{
       var c=CompanionSkillGameTests.body(h,e);var p=e.keeper();air(p);int sequence=1;
@@ -322,7 +334,7 @@ public final class EquippedAbilityGameTests080 {
     h.runAfterDelay(1,()->{
       int expected=seq<=10?1000-seq*100:1000;
       var c=CompanionSkillGameTests.body(h,e);h.assertTrue(EquippedAbilityRules080.percent(c.state(),stat)==expected,"Registered packet applies one exact percentage step");
-      near(h,stat==ChaoState.RUN?amount(p):CompanionContent.secretPowerBonus080(p),expected/100.0,.000001,"Every setting supplies the requested bonus, including zero");
+      near(h,stat==ChaoState.RUN?amount(p):CompanionContent.secretPowerBonus080(p),expected,.000001,"Every setting supplies the requested bonus, including zero");
       h.assertTrue(EquippedAbilityRules080.percent(ChaoCarrierItem.state(e.inventory().getItem(0)),stat)==expected,"Each step snapshots exact carrier state");
       for(int i=0;i<5;i++)p.connection.handleCustomPayload(new ServerboundCustomPayloadPacket(new CompanionNetwork.AbilityCycle080(seq,p.level().dimension().location(),e.chao())));
       if(seq==11){h.succeed();return;}
@@ -332,14 +344,24 @@ public final class EquippedAbilityGameTests080 {
   private static void travel(GameTestHelper h){
     var e=equipped(h,ChaoState.RUN,0);h.runAfterDelay(12,()->{
       var p=e.keeper();var control=TestConnections.makeSurvivalServerPlayer(h);control.setNoGravity(true);
-      control.teleportTo(p.getX()+5,p.getY(),p.getZ());cleanup(h,()->control.server.getPlayerList().remove(control));
+      // The1001x first step needs a real collision-free stone runway, rather
+      // than silently truncating at the old12-block fixture floor or a neighbor.
+      var origin=BlockPos.containing(p.getX(),h.getLevel().getMaxBuildHeight()-8,p.getZ());
+      var prior=new java.util.LinkedHashMap<BlockPos,net.minecraft.world.level.block.state.BlockState>();
+      for(int x=-1;x<=7;x++)for(int z=-2;z<=132;z++)for(int y=-1;y<=2;y++){
+        var at=origin.offset(x,y,z);prior.put(at,h.getLevel().getBlockState(at));
+        h.getLevel().setBlock(at,y==-1?Blocks.STONE.defaultBlockState():Blocks.AIR.defaultBlockState(),3);
+      }
+      cleanup(h,()->prior.forEach((at,state)->h.getLevel().setBlock(at,state,3)));
+      p.teleportTo(origin.getX()+.5,origin.getY(),origin.getZ()+.5);acknowledgeTeleport(p);
+      control.teleportTo(p.getX()+5,p.getY(),p.getZ());acknowledgeTeleport(control);cleanup(h,()->control.server.getPlayerList().remove(control));
       p.setShiftKeyDown(false);control.setShiftKeyDown(false);p.setSprinting(false);control.setSprinting(false);
       p.setYRot(0);control.setYRot(0);p.setDeltaMovement(Vec3.ZERO);control.setDeltaMovement(Vec3.ZERO);p.setOnGround(true);control.setOnGround(true);
       Vec3 from=p.position(),base=control.position();
       p.travel(new Vec3(0,0,1));control.travel(new Vec3(0,0,1));
       double actual=p.position().subtract(from).horizontalDistance(),ordinary=control.position().subtract(base).horizontalDistance();
       h.assertTrue(ordinary>.01,"Native control really moved on the common stone floor");
-      near(h,actual/ordinary,11,.001,"Actual first native ground acceleration is11x ordinary player, not just a displayed attribute");h.succeed();
+      near(h,actual/ordinary,1001,.001,"Actual first native ground acceleration is1001x ordinary player, not just a displayed attribute");h.succeed();
     });
   }
   private static void sweep(GameTestHelper h){
@@ -349,44 +371,56 @@ public final class EquippedAbilityGameTests080 {
         if(pass==0)c.state().grades[ChaoState.POWER]=5;else h.assertTrue(c.state().useHyperFruit(ChaoState.POWER),"Restore native expressed X");
         for(var target:List.of(main,neighbor)){target.setHealth(1000);target.invulnerableTime=0;target.hurtTime=0;target.setDeltaMovement(Vec3.ZERO);target.setOnGround(true);}
         p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(Items.IRON_SWORD));p.setSprinting(false);p.setShiftKeyDown(false);p.setYRot(-90);p.setOnGround(true);p.fallDistance=0;charged(p);
-        p.attack(main);h.assertTrue(neighbor.getHealth()<1000,"Native sword sweep actually struck its secondary target");
+        p.attack(main);h.assertTrue(neighbor.getHealth()<1000,"Native keeper sword sweep actually hits its secondary target");
         if(pass==0)ordinary=neighbor.getDeltaMovement();
-        else{near(h,neighbor.getDeltaMovement().x,ordinary.x*11,.0001,"Sweep horizontal X scales its separate native calls once");near(h,neighbor.getDeltaMovement().z,ordinary.z*11,.0001,"Sweep horizontal Z scales its separate native calls once");}
+        else{near(h,neighbor.getDeltaMovement().x,ordinary.x,.0001,"Player sweep X gains no companion Power");near(h,neighbor.getDeltaMovement().z,ordinary.z,.0001,"Player sweep Z gains no companion Power");}
       }
-      h.assertTrue(EquippedKnockback080.scopeDepth()==0,"Sweep leaves no context");h.succeed();
+      h.assertTrue(EquippedKnockback080.scopeDepth()==0,"Player sweep leaves no companion scope");h.succeed();
     });
   }
+
   private static void scope(GameTestHelper h){
     var e=equipped(h,ChaoState.POWER,0);h.runAfterDelay(12,()->{
-      var p=e.keeper();var main=cow(h,p,1.5,0);var other=cow(h,p,0,2);
-      other.knockback(.4,1,0);near(h,other.getDeltaMovement().x,-.4,.000001,"Direct unrelated knockback outside melee scope stays ordinary");
+      var p=e.keeper();var c=CompanionSkillGameTests.body(h,e);var main=cow(h,p,1.5,0);var other=cow(h,p,0,2);
+      h.assertTrue(EquippedKnockback080.begin(p)==null,"Player never opens a hidden companion attack scope");
+      var garden=ChaoGarden.CHAO.get().create(h.getLevel());garden.owner=p.getUUID();garden.setState(state(ChaoState.POWER,0));
+      garden.moveTo(p.getX()-2,p.getY(),p.getZ());h.getLevel().addFreshEntity(garden);cleanup(h,garden::discard);
+      h.assertTrue(EquippedKnockback080.beginMob(main,garden.damageSources().mobAttack(garden))==null,"An eligible owned garden Chao is not the equipped attack actor");
+      garden.getPersistentData().merge(c.getPersistentData().copy());
+      h.assertTrue(CompanionContent.isManaged(garden)&&CompanionContent.secretPowerBonus084(garden)==0,"A copied managed marker cannot impersonate the exact active body");
+      h.assertTrue(EquippedKnockback080.beginMob(main,garden.damageSources().mobAttack(garden))==null,"A stale/manual marker cannot open a Power scope");
+      h.assertTrue(EquippedKnockback080.beginMob(main,p.damageSources().mobAttack(p))==null,"A player-caused mob damage type cannot borrow its companion");
+      h.assertTrue(EquippedKnockback080.beginMob(main,c.damageSources().thorns(c))==null,"Chao thorns is not direct melee Power");
+      var indirect=new net.minecraft.world.damagesource.DamageSource(c.damageSources().mobAttack(c).typeHolder(),other,c);
+      h.assertTrue(EquippedKnockback080.beginMob(main,indirect)==null,"A different direct entity cannot borrow Chao-caused damage");
+      other.knockback(.4,1,0);near(h,other.getDeltaMovement().x,-.4,.000001,"Unrelated knockback outside companion hurt remains ordinary");
       other.setDeltaMovement(Vec3.ZERO);
-      Consumer<LivingKnockBackEvent> cancel=event->{if(event.getEntity()==main)event.setCanceled(true);};
-      NeoForge.EVENT_BUS.addListener(cancel);
-      try{var result=hit(p,main,false,0,Vec3.ZERO);near(h,result.lengthSqr(),0,.000001,"Canceled native knockback remains canceled");}
-      finally{NeoForge.EVENT_BUS.unregister(cancel);}
+      Consumer<LivingKnockBackEvent> cancel=event->{if(event.getEntity()==main)event.setCanceled(true);};NeoForge.EVENT_BUS.addListener(cancel);
+      try{near(h,chaoHit(h,e,main,Vec3.ZERO).lengthSqr(),0,.000001,"Cancelled native companion knockback stays cancelled");}finally{NeoForge.EVENT_BUS.unregister(cancel);}
       boolean[] retaliationAccepted={false};var retaliationStrengths=new ArrayList<Double>();
-      Consumer<LivingIncomingDamageEvent> thorns=event->{if(event.getEntity()==main){other.knockback(.4,1,0);retaliationAccepted[0]=p.hurt(p.damageSources().thorns(main),1);}};
-      Consumer<LivingKnockBackEvent> retaliation=event->{if(event.getEntity()==p)retaliationStrengths.add((double)event.getStrength());};
-      NeoForge.EVENT_BUS.addListener(thorns);
-      NeoForge.EVENT_BUS.addListener(retaliation);
+      Consumer<LivingIncomingDamageEvent> thorns=event->{if(event.getEntity()==main){other.knockback(.4,1,0);c.invulnerableTime=0;c.hurtTime=0;retaliationAccepted[0]=c.hurt(c.damageSources().thorns(main),1);}};
+      Consumer<LivingKnockBackEvent> retaliation=event->{if(event.getEntity()==c)retaliationStrengths.add((double)event.getStrength());};
+      NeoForge.EVENT_BUS.addListener(thorns);NeoForge.EVENT_BUS.addListener(retaliation);
       try{
-        p.setDeltaMovement(Vec3.ZERO);float health=p.getHealth();hit(p,main,false,0,Vec3.ZERO);
-        near(h,other.getDeltaMovement().x,-.4,.000001,"Unrelated callback push is not boosted inside player attack");
-        h.assertTrue(retaliationAccepted[0]&&p.getHealth()<health,"Actual Thorns retaliation passes native damage protection and lowers attacker health");
-        h.assertTrue(retaliationStrengths.size()==1,"Native Thorns retaliation really requests exactly one knockback");
-        near(h,retaliationStrengths.getFirst(),.4,.000001,"Thorns requests ordinary native strength inside the eligible attack scope");
-        near(h,p.getDeltaMovement().x,-.4,.000001,"Actual Thorns horizontal impulse remains ordinary instead of inheriting the attacking Chao's power");
-      }
-      finally{NeoForge.EVENT_BUS.unregister(thorns);NeoForge.EVENT_BUS.unregister(retaliation);}
+        c.setDeltaMovement(Vec3.ZERO);float health=c.getHealth();chaoHit(h,e,main,Vec3.ZERO);
+        near(h,other.getDeltaMovement().x,-.4,.000001,"Unrelated callback push cannot borrow active companion Power");
+        h.assertTrue(retaliationAccepted[0]&&c.getHealth()<health,"Actual thorns retaliation damages the Chao attacker");
+        h.assertTrue(retaliationStrengths.size()==1,"Actual thorns requests one native knockback");
+        near(h,retaliationStrengths.getFirst(),.4,.000001,"Retaliation strength remains ordinary during companion scope");
+        near(h,c.getDeltaMovement().x,-.4,.000001,"Chao attacker receives ordinary retaliation impulse");
+      }finally{NeoForge.EVENT_BUS.unregister(thorns);NeoForge.EVENT_BUS.unregister(retaliation);}
+      int[] nested={0};Consumer<LivingIncomingDamageEvent> nest=event->{if(event.getEntity()==main){chaoHit(h,e,other,Vec3.ZERO);nested[0]++;h.assertTrue(EquippedKnockback080.scopeDepth()==1,"Nested legitimate companion hurt restores outer scope");}};
+      NeoForge.EVENT_BUS.addListener(nest);
+      try{chaoHit(h,e,main,Vec3.ZERO);h.assertTrue(nested[0]==1,"One nested actual companion attack executes");near(h,other.getDeltaMovement().horizontalDistance(),.4*1001,.0001,"Nested actual companion attack scales exactly once");}
+      finally{NeoForge.EVENT_BUS.unregister(nest);}
       final class Expected extends RuntimeException {}
-      Consumer<AttackEntityEvent> throwsEvent=event->{if(event.getEntity()==p&&event.getTarget()==main)throw new Expected();};
-      NeoForge.EVENT_BUS.addListener(throwsEvent);
-      try{try{p.attack(main);h.fail("Expected event exception missing");}catch(Expected correct){h.assertTrue(EquippedKnockback080.scopeDepth()==0,"Throwing attack always clears scoped context");}}
+      Consumer<LivingIncomingDamageEvent> throwsEvent=event->{if(event.getEntity()==main)throw new Expected();};NeoForge.EVENT_BUS.addListener(throwsEvent);
+      try{try{chaoHit(h,e,main,Vec3.ZERO);h.fail("Expected damage callback exception missing");}catch(Expected correct){h.assertTrue(EquippedKnockback080.scopeDepth()==0,"Throwing hurt always clears companion scope");}}
       finally{NeoForge.EVENT_BUS.unregister(throwsEvent);}
-      h.assertTrue(EquippedKnockback080.scopeDepth()==0,"No permanent attack scope");h.succeed();
+      h.assertTrue(EquippedKnockback080.scopeDepth()==0,"No permanent companion scope");h.succeed();
     });
   }
+
   private static void reload(GameTestHelper h){
     var e=equipped(h,ChaoState.RUN,0);h.runAfterDelay(12,()->{
       air(e.keeper());h.assertTrue(cycle(e,1),"Initial selected setting persisted");
@@ -395,7 +429,7 @@ public final class EquippedAbilityGameTests080 {
       near(h,amount(e.keeper()),0,.000001,"Unequip removes transient modifier immediately");
       e.inventory().setItem(0,saved);h.runAfterDelay(8,()->{
         var c=CompanionSkillGameTests.body(h,e);h.assertTrue(EquippedAbilityRules080.percent(c.state(),ChaoState.RUN)==900,"Actual reloaded slot/body retains selected setting");
-        near(h,amount(e.keeper()),9,.000001,"Reequip does not stack or reset the selected boost");
+        near(h,amount(e.keeper()),900,.000001,"Reequip does not stack or reset the selected boost");
         h.assertFalse(cycle(e,1),"Slot copy cannot replay the old input sequence");h.succeed();
       });
     });
@@ -448,7 +482,7 @@ public final class EquippedAbilityGameTests080 {
       cleanup(h,()->prior.forEach((at,state)->away.setBlock(at,state,3)));
       var oldBody=CompanionSkillGameTests.body(h,e);var savedToken=CompanionContent.token(e.inventory().getItem(0),false);air(p);
       h.assertTrue(cycle(e,1),"Select900 through authenticated input before native dimension travel");
-      near(h,amount(p),9,.000001,"Selected900 applies before dimension transfer");
+      near(h,amount(p),900,.000001,"Selected900 applies before dimension transfer");
       h.assertTrue(p.changeDimension(new DimensionTransition(away,Vec3.atBottomCenterOf(launch),Vec3.ZERO,0,0,DimensionTransition.DO_NOTHING))==p,
           "Native ServerPlayer dimension transition actually completes");
       h.assertTrue(p.serverLevel()==away,"Keeper actually enters the other server level");
@@ -461,19 +495,19 @@ public final class EquippedAbilityGameTests080 {
       awaitDimensionBody(h,e,away,"outbound",p.server.getTickCount()+80,body->{
         h.assertTrue(body!=oldBody&&p.getUUID().equals(body.owner)&&CompanionContent.isManaged(body),"Destination projection belongs to this keeper without reusing the old body");
         h.assertTrue(e.chao().equals(body.getUUID())&&savedToken.equals(CompanionContent.token(e.inventory().getItem(0),false)),"Destination retains the exact stored Chao UUID and authenticated carrier token");
-        near(h,amount(p),9,.000001,"Native destination restores exactly the saved900 bonus without stacking");
-        near(h,p.getAttributeValue(Attributes.MOVEMENT_SPEED)/p.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue(),10,.00001,"Actual destination speed is base times10 for +900%");
+        near(h,amount(p),900,.000001,"Native destination restores exactly the saved900 bonus without stacking");
+        near(h,p.getAttributeValue(Attributes.MOVEMENT_SPEED)/p.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue(),901,.00001,"Actual destination speed is base times901 for +90000%");
         h.assertTrue(EquippedAbilityRules080.percent(body.state(),ChaoState.RUN)==900,"Destination live state retains the selection");
         air(p);h.assertFalse(CompanionContent.requestAbilityCycle080(p,2,origin.dimension().location(),e.chao()),"Delayed input from the prior actual dimension cannot edit this Chao");
         h.runAfterDelay(5,()->{
           h.assertTrue(cycle(e,3),"Fresh destination input still controls the authenticated current slot");
-          near(h,amount(p),8,.000001,"Fresh destination activation selects800 exactly");
+          near(h,amount(p),800,.000001,"Fresh destination activation selects800 exactly");
           h.assertTrue(p.changeDimension(new DimensionTransition(origin,originalPosition,Vec3.ZERO,0,0,DimensionTransition.DO_NOTHING))==p,"Native return dimension transition completes");
           near(h,amount(p),0,.000001,"Returning dimensions removes the destination modifier immediately");
           h.assertTrue(body.isRemoved(),"Destination projection is recalled on return");acknowledgeTeleport(p);
           awaitDimensionBody(h,e,origin,"return",p.server.getTickCount()+80,returned->{
             h.assertTrue(e.chao().equals(returned.getUUID())&&savedToken.equals(CompanionContent.token(e.inventory().getItem(0),false)),"Native return preserves the exact Chao UUID and carrier token");
-            near(h,amount(p),8,.000001,"Return to original world restores the current800 setting without an old900 snapshot");
+            near(h,amount(p),800,.000001,"Return to original world restores the current800 setting without an old900 snapshot");
             h.assertTrue(EquippedAbilityRules080.percent(returned.state(),ChaoState.RUN)==800
                 &&EquippedAbilityRules080.percent(ChaoCarrierItem.state(e.inventory().getItem(0)),ChaoState.RUN)==800,
                 "Current body and actual saved carrier agree after native round trip");
@@ -482,7 +516,7 @@ public final class EquippedAbilityGameTests080 {
               near(h,amount(p),1,.000001,"Rank loss after travel clears hidden800 and resumes only the ordinary +100% perk");
               h.assertTrue(returned.state().useHyperFruit(ChaoState.RUN),"Restore the expressed rank through its existing action");returned.sync();
               h.runAfterDelay(2,()->{
-                near(h,amount(p),8,.000001,"Eligibility restoration recovers the same persisted800 setting");
+                near(h,amount(p),800,.000001,"Eligibility restoration recovers the same persisted800 setting");
                 CompanionContent.unequip(p,e.inventory().getItem(0));
                 h.assertTrue(EquippedAbilityRules080.percent(ChaoCarrierItem.state(e.inventory().getItem(0)),ChaoState.RUN)==800,"Unequip preserves the saved selection");
                 e.inventory().setItem(0,ItemStack.EMPTY);near(h,amount(p),0,.000001,"Final unequip removes every companion speed modifier");

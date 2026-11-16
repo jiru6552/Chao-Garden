@@ -179,6 +179,41 @@ def rigid_toy_poses_only():
    write(A/'models/block'/(name+'.json'),native(rigid_toy_pose(n,frame),name,tex))
  print('Regenerated only rattle/drum block poses (rigid fixed-rest transforms).')
 
+# Ground placement has its own orientation. Keep the independent item OBJ and
+# sampled Chao hand landmarks untouched: their original source tilt is intentional.
+TAMBOURINE_GROUND_FLOOR=.08
+TAMBOURINE_GROUND_ANGLES=(0,8,0,-8)
+
+def tambourine_ground_rest():
+ mesh=toy_mesh('chao_tambourine')[0]
+ # The decorated skin's actual source triangle normal is its visible upper face.
+ source_face=next(f for f in TOYS['chao_tambourine']['faces'] if f['texture']=='star01')
+ n=normal(source_face['points']);c=n[1];axis=(-n[2],0,n[0]);s=math.sqrt(sum(v*v for v in axis))
+ if s<1e-8:
+  flat=mesh if c>0 else rotate(mesh,0,180,(0,0,0))
+ else:
+  u=tuple(v/s for v in axis);flat=Mesh()
+  for points,uv,material in mesh.faces:
+   transformed=[]
+   for p in points:
+    cross=(u[1]*p[2]-u[2]*p[1],u[2]*p[0]-u[0]*p[2],u[0]*p[1]-u[1]*p[0]);dot=sum(u[a]*p[a] for a in range(3))
+    transformed.append(tuple(p[a]*c+cross[a]*s+u[a]*dot*(1-c) for a in range(3)))
+   flat.face(transformed,material,uv)
+ return fit(flat,(3,TAMBOURINE_GROUND_FLOOR,3,13,7.92,13))
+
+def tambourine_ground_pose(frame):
+ rest=tambourine_ground_rest();angle=0 if frame<0 else TAMBOURINE_GROUND_ANGLES[frame]
+ pose=rotate(rest,2,angle,rigid_toy_pivot(rest)) if angle else rest
+ # Preserve the existing small active rocking, with a rigid shape and floor contact.
+ return pose.transformed(center=(0,0,0),offset=(0,TAMBOURINE_GROUND_FLOOR-pose.bounds()[1],0))
+
+def tambourine_ground_poses_only():
+ name='chao_tambourine';tex=json.loads((A/'models/block'/(name+'_idle.json')).read_text())['textures']
+ for frame in (-1,0,1,2,3):
+  stage='idle' if frame<0 else 'play_'+str(frame);key=name+'_'+stage
+  write(A/'models/block'/(key+'.json'),native(tambourine_ground_pose(frame),key,tex))
+ print('Regenerated only five ground-supported tambourine block poses; held item/animation unchanged.')
+
 def toys():
  report=[]
  for n in TOYS:
@@ -191,7 +226,7 @@ def toys():
     screen=source('al_toy','channel_a_0'+str(1 if frame<0 else frame+1));p='block/sa2_02515/chao_tv/screen_'+stage;screen.save(A/'textures'/(p+'.png'));binding[k]='chao_garden:'+p
    elif frame>=0:
     angle=(0,8,0,-8)[frame]
-    if n in (*MOUNTED_TOYS,*RIGID_TOYS):pass  # Fixed-rest transform applied below.
+    if n in (*MOUNTED_TOYS,*RIGID_TOYS,'chao_tambourine'):pass  # Fixed-rest transform applied below.
     elif n not in ('chao_radio','chao_piano','chao_organ'):pose=rotate(pose,2,angle)
     else:
      # Press source key faces / speaker membrane, while the cabinet remains planted.
@@ -205,6 +240,7 @@ def toys():
    lim[1]=.08;lim[4]-=.08
    if n in MOUNTED_TOYS:pose=mounted_toy_pose(n,frame)
    elif n in RIGID_TOYS:pose=rigid_toy_pose(n,frame)
+   elif n=='chao_tambourine':pose=tambourine_ground_pose(frame)
    else:pose=fit(pose,lim)
    d=native(pose,n+'_'+stage,binding);write(A/'models/block'/(n+'_'+stage+'.json'),d);poses.append({'stage':stage,'bounds':pose.bounds()})
   report.append({'id':n,'source':TOYS[n]['object_offset'],'faces':len(m.faces),'poses':poses})
@@ -313,5 +349,6 @@ if __name__=='__main__':
   print('Regenerated twelve canonical head covers, matching custom item models/icons, and real eye ports.')
  elif sys.argv[1:]==['--mounted-toy-poses']:mounted_toy_poses_only()
  elif sys.argv[1:]==['--rigid-toy-poses']:rigid_toy_poses_only()
+ elif sys.argv[1:]==['--tambourine-ground-poses']:tambourine_ground_poses_only()
  elif not sys.argv[1:]:main()
- else:raise SystemExit('Usage: generate_sa2_assets_02515.py [--hats-only | --mounted-toy-poses | --rigid-toy-poses]')
+ else:raise SystemExit('Usage: generate_sa2_assets_02515.py [--hats-only | --mounted-toy-poses | --rigid-toy-poses | --tambourine-ground-poses]')

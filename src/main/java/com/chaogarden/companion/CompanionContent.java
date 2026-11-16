@@ -174,6 +174,16 @@ public final class CompanionContent {
     return token != null && ACTIVE.values().stream().anyMatch(a -> a.token.equals(token) && a.body != null);
   }
 
+  /** Reject stale held copies even while their actual managed identity is in
+   * a hidden/non-ticking chunk or is waiting for its initial projection. */
+  public static boolean hasManagedIdentity084(UUID id) {
+    if(id==null)return false;
+    for(var active:ACTIVE.values())
+      if(active.body!=null&&!active.body.isRemoved()&&id.equals(active.body.getUUID())
+          ||active.stack!=null&&!active.stack.isEmpty()&&id.equals(ChaoCarrierItem.storedUUID(active.stack)))return true;
+    return false;
+  }
+
   private static long now(MinecraftServer server) { return server.overworld().getGameTime(); }
 
   public static Entity findEntity(MinecraftServer server, UUID uuid) {
@@ -636,6 +646,24 @@ public final class CompanionContent {
   public static double secretPowerBonus080(ServerPlayer player) {
     var active=ACTIVE.get(player.getUUID());
     return current(player,active)&&!CarryPreview.active(active.body)?EquippedAbilityRules080.bonus(active.body.state(),ChaoState.POWER):0;
+  }
+
+  /** Server-owned live Run authority, also used by flight and movement checks.
+   * The synchronized attribute is only the client's prediction surface. */
+  public static double secretRunBonus084(ServerPlayer player) {
+    var active=ACTIVE.get(player.getUUID());
+    return current(player,active)&&!CarryPreview.active(active.body)
+        ?EquippedAbilityRules080.bonus(active.body.state(),ChaoState.RUN):0;
+  }
+
+  /** The Power impulse belongs to this exact living equipped projection,
+   * never its keeper's melee attack or a natural/unmanaged garden Chao. */
+  public static double secretPowerBonus084(ChaoEntity attacker) {
+    if(!(attacker.level() instanceof ServerLevel level))return 0;
+    var active=active(attacker);
+    var keeper=active==null?null:level.getServer().getPlayerList().getPlayer(active.keeper);
+    return keeper!=null&&active.body==attacker&&current(keeper,active)&&!CarryPreview.active(attacker)
+        ?EquippedAbilityRules080.bonus(attacker.state(),ChaoState.POWER):0;
   }
 
   /** Special traits come only from the current authenticated Accessories body. */
